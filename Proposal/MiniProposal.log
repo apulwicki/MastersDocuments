@@ -1,0 +1,448 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.30)  27 JAN 2016 18:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**MiniProposal.tex
+(./MiniProposal.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 4 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count91
+) (./wrapfig.sty
+\wrapoverhang=\dimen113
+\WF@size=\dimen114
+\c@WF@wrappedlines=\count92
+\WF@box=\box26
+\WF@everypar=\toks16
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen115
+\captionmargin@=\dimen116
+\captionwidth=\dimen117
+\caption@tempdima=\dimen118
+\caption@indent=\dimen119
+\caption@parindent=\dimen120
+\caption@hangindent=\dimen121
+)
+\c@ContinuedFloat=\count93
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count94
+\c@subtable=\count95
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen122
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen123
+\extrarowheight=\dimen124
+\NC@list=\toks17
+\extratabsurround=\skip45
+\backup@length=\skip46
+)
+\everycr=\toks18
+\minrowclearance=\skip47
+)
+\rownum=\count96
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count97
+\sf@farskip=\skip48
+\sf@captopadj=\dimen125
+\sf@capskip=\skip49
+\sf@nearskip=\skip50
+\sf@top=\skip51
+\sf@bottom=\skip52
+) (./MiniProposal.aux)
+\openout1 = `MiniProposal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count98
+\scratchdimen=\dimen126
+\scratchbox=\box27
+\nofMPsegments=\count99
+\nofMParguments=\count100
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count101
+\MPscratchDim=\dimen127
+\MPnumerator=\count102
+\makeMPintoPDFobject=\count103
+\everyMPtoPDFconversion=\toks20
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 23.
+
+<flow1.png, id=1, 680.5425pt x 440.64626pt>
+File: flow1.png Graphic file (type png)
+ <use flow1.png>
+Package pdftex.def Info: flow1.png used on input line 29.
+(pdftex.def)             Requested size: 234.8775pt x 152.0769pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 38.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 42.
+
+Overfull \hbox (53.13853pt too wide) in paragraph at lines 42--49
+ [][] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./flow1.png>] [2]
+[3] [4]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 84.
+
+<probe_cell.jpeg, id=25, 696.6025pt x 604.2575pt>
+File: probe_cell.jpeg Graphic file (type jpg)
+ <use probe_cell.jpeg>
+Package pdftex.def Info: probe_cell.jpeg used on input line 110.
+(pdftex.def)             Requested size: 142.26234pt x 128.0319pt.
+
+<probe_curvature.jpeg, id=26, 728.7225pt x 574.145pt>
+File: probe_curvature.jpeg Graphic file (type jpg)
+
+<use probe_curvature.jpeg>
+Package pdftex.def Info: probe_curvature.jpeg used on input line 113.
+(pdftex.def)             Requested size: 142.26154pt x 128.02939pt.
+
+<probe_transect.jpeg, id=27, 2056.68375pt x 1483.5425pt>
+File: probe_transect.jpeg Graphic file (type jpg)
+
+<use probe_transect.jpeg>
+Package pdftex.def Info: probe_transect.jpeg used on input line 119.
+(pdftex.def)             Requested size: 142.25653pt x 128.0349pt.
+ <probe_L.jpeg, id=28, 2059.695pt x 1479.5275pt>
+File: probe_L.jpeg Graphic file (type jpg)
+
+<use probe_L.jpeg>
+Package pdftex.def Info: probe_L.jpeg used on input line 122.
+(pdftex.def)             Requested size: 142.24481pt x 128.02704pt.
+ <probe_hourglass.jpeg, id=29, 853.1875pt x 760.8425pt>
+File: probe_hourglass.jpeg Graphic file (type jpg)
+
+<use probe_hourglass.jpeg>
+Package pdftex.def Info: probe_hourglass.jpeg used on input line 128.
+(pdftex.def)             Requested size: 142.25398pt x 128.02963pt.
+ <probe_transverse.jpeg, id=30, 1204.5pt x 1043.9pt>
+File: probe_transverse.jpeg Graphic file (type jpg)
+
+<use probe_transverse.jpeg>
+Package pdftex.def Info: probe_transverse.jpeg used on input line 131.
+(pdftex.def)             Requested size: 142.25475pt x 128.03416pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 140.
+
+
+Overfull \hbox (3.45238pt too wide) in paragraph at lines 144--156
+ [][] 
+ []
+
+[5] [6 <./probe_cell.jpeg> <./probe_curvature.jpeg> <./probe_transect.jpeg> <./
+probe_L.jpeg> <./probe_hourglass.jpeg> <./probe_transverse.jpeg>]
+<flow_geography.png, id=38, 906.38625pt x 484.81125pt>
+File: flow_geography.png Graphic file (type png)
+
+<use flow_geography.png>
+Package pdftex.def Info: flow_geography.png used on input line 166.
+(pdftex.def)             Requested size: 229.694pt x 122.85876pt.
+ <flow_synoptic.png, id=39, 919.435pt x 371.3875pt>
+File: flow_synoptic.png Graphic file (type png)
+
+<use flow_synoptic.png>
+Package pdftex.def Info: flow_synoptic.png used on input line 173.
+(pdftex.def)             Requested size: 232.59392pt x 93.95122pt.
+
+Overfull \hbox (5.22215pt too wide) in paragraph at lines 165--177
+[][]  [] 
+ []
+
+[7] <donjeck_x.jpg, id=44, 1675.25874pt x 1746.525pt>
+File: donjeck_x.jpg Graphic file (type jpg)
+ <use donjeck_x.jpg>
+Package pdftex.def Info: donjeck_x.jpg used on input line 186.
+(pdftex.def)             Requested size: 223.1329pt x 232.59938pt.
+
+<donjeck_1.jpg, id=45, 1675.25874pt x 1746.525pt>
+File: donjeck_1.jpg Graphic file (type jpg)
+ <use donjeck_1.jpg>
+Package pdftex.def Info: donjeck_1.jpg used on input line 189.
+(pdftex.def)             Requested size: 223.1329pt x 232.59938pt.
+
+<donjeck_2.jpg, id=46, 1675.25874pt x 1746.525pt>
+File: donjeck_2.jpg Graphic file (type jpg)
+ <use donjeck_2.jpg>
+Package pdftex.def Info: donjeck_2.jpg used on input line 195.
+(pdftex.def)             Requested size: 223.1329pt x 232.59938pt.
+
+<donjeck_3.jpg, id=47, 1675.25874pt x 1746.525pt>
+File: donjeck_3.jpg Graphic file (type jpg)
+ <use donjeck_3.jpg>
+Package pdftex.def Info: donjeck_3.jpg used on input line 198.
+(pdftex.def)             Requested size: 223.1329pt x 232.59938pt.
+ [8 <./flow_geography.png> <./flow_synoptic.png>] [9 <./donjeck_x.jpg> <./donje
+ck_1.jpg> <./donjeck_2.jpg> <./donjeck_3.jpg>] [10] (./MiniProposal.bbl [11]
+Underfull \hbox (badness 2689) in paragraph at lines 124--127
+[]\OT1/cmr/m/n/12 Kerr T, Clark M, Hen-drikx J and An-der-son B (2013) Snow dis
+-tri-bu-tion in a
+ []
+
+[12]
+Underfull \hbox (badness 1168) in paragraph at lines 188--193
+[]\OT1/cmr/m/n/12 Mott R, Faure F, Lehn-ing M, L^^?owe H, Hynek B, Michlmayer G
+, Prokop A and
+ []
+
+[13]
+Underfull \hbox (badness 1603) in paragraph at lines 260--265
+\OT1/cmr/m/n/12 scal-ing over the North-west-ern United States us-ing nu-mer-i-
+cally sim-u-lated pre-cip-
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 260--265
+\OT1/cmr/m/n/12 i-ta-tion as a pre-dic-tor. \OT1/cmr/m/it/12 Jour-nal of Cli-ma
+te\OT1/cmr/m/n/12 , \OT1/cmr/bx/n/12 16\OT1/cmr/m/n/12 (5), 799--816 (doi: 10.1
+175/1520-
+ []
+
+) [14] (./MiniProposal.aux) ) 
+Here is how much of TeX's memory you used:
+ 4369 strings out of 494957
+ 65360 string characters out of 6180027
+ 150057 words of memory out of 5000000
+ 7557 multiletter control sequences out of 15000+600000
+ 8848 words of font info for 31 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 41i,18n,41p,1783b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on MiniProposal.pdf (14 pages, 13099091 bytes).
+PDF statistics:
+ 99 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+

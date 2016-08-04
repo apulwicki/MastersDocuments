@@ -1,0 +1,26 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citename{Crompton and Flowers, }In Press]{Crompton2016}
+Crompton JW and Flowers GE (In Press) {Correlations of suspended sediment size
+  with bedrock lithology and glacier dynamics}. \emph{Annals of Glaciology}
+
+\bibitem[\protect\citename{Pfeffer and others, }2014]{Pfeffer2014}
+Pfeffer WT, Arendt AA, Bliss A, Bolch T, Cogley JG, Gardner AS, Hagen JO, Hock
+  R, Kaser G, Kienholz C and others (2014) {The Randolph Glacier Inventory: a
+  globally complete inventory of glaciers}. \emph{Journal of Glaciology},
+  \textbf{60}(221), 537--552 (\doi {10.3189/2014JoG13J176})
+
+\bibitem[\protect\citename{Shea and Jamieson, }2010]{Shea2010}
+Shea C and Jamieson B (2010) {Star: an efficient snow point-sampling method}.
+  \emph{Annals of Glaciology}, \textbf{51}(54), 64--72 (\doi
+  {10.3189/172756410791386463})
+
+\bibitem[\protect\citename{Taylor-Barge, }1969]{Taylor1969}
+Taylor-Barge B (1969) {The summer climate of the {S}t. {E}lias {M}ountain
+  region}. Technical report, DTIC Document
+
+\end{thebibliography}

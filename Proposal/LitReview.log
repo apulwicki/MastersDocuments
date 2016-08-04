@@ -1,0 +1,1277 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.30)  20 JAN 2016 17:27
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**LitReview.tex
+(./LitReview.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 4 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count91
+) (./wrapfig.sty
+\wrapoverhang=\dimen113
+\WF@size=\dimen114
+\c@WF@wrappedlines=\count92
+\WF@box=\box26
+\WF@everypar=\toks16
+Package: wrapfig 2003/01/31  v 3.6
+)
+No file LitReview.aux.
+\openout1 = `LitReview.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen115
+\scratchbox=\box27
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen116
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 18.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+No file LitReview.toc.
+\tf@toc=\write3
+\openout3 = `LitReview.toc'.
+
+[2]
+
+Package natbib Warning: Citation `ONeel2014' on page 3 undefined on input line 
+30.
+
+
+Package natbib Warning: Citation `Barnett2005' on page 3 undefined on input lin
+e 30.
+
+
+Package natbib Warning: Citation `Gardner2013' on page 3 undefined on input lin
+e 30.
+
+
+Package natbib Warning: Citation `Nolan2015' on page 3 undefined on input line 
+30.
+
+
+Package natbib Warning: Citation `Deems2006' on page 3 undefined on input line 
+35.
+
+
+Package natbib Warning: Citation `Liston2006' on page 3 undefined on input line
+ 35.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 3 undefined on input lin
+e 35.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 38.
+
+Package natbib Warning: Citation `Clark2011' on page 3 undefined on input line 
+38.
+
+
+LaTeX Warning: Reference `scale' on page 3 undefined on input line 38.
+
+
+Package natbib Warning: Citation `Marchand2005' on page 3 undefined on input li
+ne 38.
+
+
+Package natbib Warning: Citation `Clark2011' on page 3 undefined on input line 
+38.
+
+
+Package natbib Warning: Citation `Hock2005' on page 3 undefined on input line 4
+0.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 3 undefined on input lin
+e 40.
+
+[3]
+
+Package natbib Warning: Citation `Bloeschl1999' on page 4 undefined on input li
+ne 42.
+
+
+Package natbib Warning: Citation `Sold2013' on page 4 undefined on input line 4
+2.
+
+
+Package natbib Warning: Citation `Bloschl1991' on page 4 undefined on input lin
+e 42.
+
+
+Package natbib Warning: Citation `Mott2008' on page 4 undefined on input line 4
+2.
+
+
+Package natbib Warning: Citation `Clark2011' on page 4 undefined on input line 
+44.
+
+
+Package natbib Warning: Citation `Mott2008' on page 4 undefined on input line 4
+4.
+
+
+Package natbib Warning: Citation `Sold2013' on page 4 undefined on input line 4
+4.
+
+
+Package natbib Warning: Citation `Bloschl1991' on page 4 undefined on input lin
+e 44.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 4 undefined on input li
+ne 44.
+
+
+Package natbib Warning: Citation `Clark2011' on page 4 undefined on input line 
+48.
+
+
+Package natbib Warning: Citation `Clark2011' on page 4 undefined on input line 
+48.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 50.
+
+
+Package natbib Warning: Citation `Clark2011' on page 4 undefined on input line 
+52.
+
+
+Package natbib Warning: Citation `Lehning2008' on page 4 undefined on input lin
+e 64.
+
+
+Package natbib Warning: Citation `Winstral2002' on page 4 undefined on input li
+ne 64.
+
+
+Package natbib Warning: Citation `Clark2011' on page 4 undefined on input line 
+64.
+
+
+Package natbib Warning: Citation `Mott2008' on page 4 undefined on input line 6
+4.
+
+
+Package natbib Warning: Citation `Lehning2008' on page 4 undefined on input lin
+e 64.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 4 undefined on input line 
+64.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 4 undefined on input line 
+66.
+
+
+Package natbib Warning: Citation `Liston1998' on page 4 undefined on input line
+ 66.
+
+
+Package natbib Warning: Citation `Mott2008' on page 4 undefined on input line 6
+6.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 4 undefined on input line 
+66.
+
+
+Package natbib Warning: Citation `Lehning2008' on page 4 undefined on input lin
+e 68.
+
+
+Package natbib Warning: Citation `Mott2008' on page 4 undefined on input line 6
+8.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 4 undefined on input line 
+68.
+
+[4]
+
+Package natbib Warning: Citation `Harrison1986' on page 5 undefined on input li
+ne 70.
+
+
+Package natbib Warning: Citation `Bloeschl1992' on page 5 undefined on input li
+ne 70.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 7
+0.
+
+
+Package natbib Warning: Citation `Winstral2002' on page 5 undefined on input li
+ne 70.
+
+
+Package natbib Warning: Citation `Clark2011' on page 5 undefined on input line 
+70.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 7
+6.
+
+
+Package natbib Warning: Citation `Smith2004' on page 5 undefined on input line 
+76.
+
+
+Package natbib Warning: Citation `Liston2006' on page 5 undefined on input line
+ 76.
+
+
+Package natbib Warning: Citation `Lehning2008' on page 5 undefined on input lin
+e 76.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 7
+6.
+
+
+Package natbib Warning: Citation `Lehning2008' on page 5 undefined on input lin
+e 76.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 7
+6.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 5 undefined on input line 
+76.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 5 undefined on input line 
+78.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 7
+8.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 5 undefined on input line 
+78.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 5 undefined on input line 
+78.
+
+
+Package natbib Warning: Citation `Lehning2008' on page 5 undefined on input lin
+e 78.
+
+
+Package natbib Warning: Citation `Smith2004' on page 5 undefined on input line 
+78.
+
+
+Package natbib Warning: Citation `Clark2011' on page 5 undefined on input line 
+80.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 8
+0.
+
+
+Package natbib Warning: Citation `Liston2006' on page 5 undefined on input line
+ 82.
+
+
+Package natbib Warning: Citation `Liston2006' on page 5 undefined on input line
+ 82.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 8
+2.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 5 undefined on input line 
+82.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 8
+2.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 5 undefined on input line
+ 82.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 8
+2.
+
+
+Package natbib Warning: Citation `Mott2008' on page 5 undefined on input line 8
+2.
+
+[5]
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 86.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 90.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 90.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 90.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Hanssen-Bauer1998' on page 6 undefined on inp
+ut line 92.
+
+
+Package natbib Warning: Citation `Kidson1998' on page 6 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Busuioc2001' on page 6 undefined on input lin
+e 92.
+
+
+Package natbib Warning: Citation `Zorita1999' on page 6 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Widmann2003' on page 6 undefined on input lin
+e 92.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 6 undefined on input line
+ 94.
+
+[6]
+
+Package natbib Warning: Citation `Fowler2007' on page 7 undefined on input line
+ 96.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 7 undefined on input line
+ 96.
+
+
+Package natbib Warning: Citation `Fowler2007' on page 7 undefined on input line
+ 96.
+
+
+Package natbib Warning: Citation `Wilby2000' on page 7 undefined on input line 
+96.
+
+
+Package natbib Warning: Citation `Anderson2014' on page 7 undefined on input li
+ne 99.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 7 undefined on input lin
+e 99.
+
+
+Package natbib Warning: Citation `Bloschl1991' on page 7 undefined on input lin
+e 99.
+
+
+Package natbib Warning: Citation `Liston1998' on page 7 undefined on input line
+ 99.
+
+
+Package natbib Warning: Citation `Anderton2004' on page 7 undefined on input li
+ne 99.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 7 undefined on input lin
+e 99.
+
+
+Package natbib Warning: Citation `Molotch2005' on page 7 undefined on input lin
+e 101.
+
+
+Package natbib Warning: Citation `Marchand2005' on page 7 undefined on input li
+ne 103.
+
+
+Package natbib Warning: Citation `Sold2013' on page 7 undefined on input line 1
+03.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 7 undefined on input lin
+e 103.
+
+
+Package natbib Warning: Citation `Clark2011' on page 7 undefined on input line 
+103.
+
+
+Package natbib Warning: Citation `Anderton2004' on page 7 undefined on input li
+ne 103.
+
+
+Package natbib Warning: Citation `Kerr2013' on page 7 undefined on input line 1
+03.
+
+
+Package natbib Warning: Citation `Elder1998' on page 7 undefined on input line 
+103.
+
+
+Package natbib Warning: Citation `Winstral2002' on page 7 undefined on input li
+ne 103.
+
+
+Package natbib Warning: Citation `Molotch2005' on page 7 undefined on input lin
+e 103.
+
+
+Package natbib Warning: Citation `Sold2013' on page 7 undefined on input line 1
+03.
+
+
+Package natbib Warning: Citation `Anderton2004' on page 7 undefined on input li
+ne 103.
+
+
+Package natbib Warning: Citation `Erxleben2002' on page 7 undefined on input li
+ne 103.
+
+
+Package natbib Warning: Citation `Molotch2005' on page 7 undefined on input lin
+e 103.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 7 undefined on input lin
+e 105.
+
+[7]
+
+Package natbib Warning: Citation `Marchand2005' on page 8 undefined on input li
+ne 107.
+
+
+Package natbib Warning: Citation `Sold2013' on page 8 undefined on input line 1
+13.
+
+
+Package natbib Warning: Citation `Sold2014' on page 8 undefined on input line 1
+13.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 8 undefined on input li
+ne 113.
+
+
+Package natbib Warning: Citation `Grunewald2010' on page 8 undefined on input l
+ine 113.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 8 undefined on input lin
+e 113.
+
+
+Package natbib Warning: Citation `Grunewald2010' on page 8 undefined on input l
+ine 113.
+
+
+Package natbib Warning: Citation `Herron1980' on page 8 undefined on input line
+ 113.
+
+
+Package natbib Warning: Citation `Sold2014' on page 8 undefined on input line 1
+13.
+
+
+Package natbib Warning: Citation `Mellor1974' on page 8 undefined on input line
+ 113.
+
+
+Package natbib Warning: Citation `Sold2014' on page 8 undefined on input line 1
+15.
+
+
+LaTeX Warning: File `snowpit.jpg' not found on input line 122.
+
+
+! Package pdftex.def Error: File `snowpit.jpg' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...raphics[width=0.5\textwidth]{snowpit.jpg}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 8 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 8 undefined on input lin
+e 129.
+
+
+Package natbib Warning: Citation `Grunewald2010' on page 8 undefined on input l
+ine 129.
+
+
+Package natbib Warning: Citation `Sold2014' on page 8 undefined on input line 1
+29.
+
+
+Package natbib Warning: Citation `Sold2013' on page 8 undefined on input line 1
+29.
+
+[8]
+
+Package natbib Warning: Citation `Wheler2014' on page 9 undefined on input line
+ 131.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 9 undefined on input lin
+e 131.
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 131--132
+[][]\OT1/cmr/m/n/12 To de-ter-mine the glacier-wide SWE,
+ []
+
+
+LaTeX Warning: Reference `snowpit' on page 9 undefined on input line 133.
+
+
+Package natbib Warning: Citation `Sold2013' on page 9 undefined on input line 1
+33.
+
+
+Package natbib Warning: Citation `Deems2006' on page 9 undefined on input line 
+135.
+
+
+Package natbib Warning: Citation `Sold2014' on page 9 undefined on input line 1
+35.
+
+
+Package natbib Warning: Citation `Sold2013' on page 9 undefined on input line 1
+35.
+
+
+LaTeX Warning: File `gpr_air.png' not found on input line 140.
+
+
+! Package pdftex.def Error: File `gpr_air.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...raphics[width=0.5\textwidth]{gpr_air.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Gusmeroli2014' on page 9 undefined on input l
+ine 141.
+
+
+Package natbib Warning: Citation `Gusmeroli2014' on page 9 undefined on input l
+ine 141.
+
+[9]
+
+Package natbib Warning: Citation `Sold2013' on page 10 undefined on input line 
+145.
+
+
+Package natbib Warning: Citation `Sold2013' on page 10 undefined on input line 
+145.
+
+
+LaTeX Warning: Reference `gprair' on page 10 undefined on input line 145.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 10 undefined on input l
+ine 145.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 10 undefined on input li
+ne 145.
+
+
+LaTeX Warning: Reference `gpr' on page 10 undefined on input line 145.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 10 undefined on input li
+ne 145.
+
+
+Package natbib Warning: Citation `Pelt2014' on page 10 undefined on input line 
+145.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 10 undefined on input l
+ine 147.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 10 undefined on input l
+ine 147.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 10 undefined on input li
+ne 149.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 10 undefined on input l
+ine 149.
+
+
+Package natbib Warning: Citation `Sold2013' on page 10 undefined on input line 
+149.
+
+
+Package natbib Warning: Citation `Sold2013' on page 10 undefined on input line 
+149.
+
+[10]
+
+LaTeX Warning: File `gpr.png' not found on input line 153.
+
+
+! Package pdftex.def Error: File `gpr.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 ...ncludegraphics[width=\textwidth]{gpr.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Sold2013' on page 11 undefined on input line 
+154.
+
+
+Package natbib Warning: Citation `Sold2013' on page 11 undefined on input line 
+154.
+
+
+LaTeX Warning: File `lidar.png' not found on input line 161.
+
+
+! Package pdftex.def Error: File `lidar.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 ...egraphics[width=0.5\textwidth]{lidar.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 162.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 162.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 165.
+
+
+Package natbib Warning: Citation `Sold2013' on page 11 undefined on input line 
+165.
+
+
+Package natbib Warning: Citation `Sold2013' on page 11 undefined on input line 
+165.
+
+
+Package natbib Warning: Citation `Sold2013' on page 11 undefined on input line 
+165.
+
+
+Package natbib Warning: Citation `Sold2013' on page 11 undefined on input line 
+165.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 167.
+
+
+Package natbib Warning: Citation `Sold2013' on page 11 undefined on input line 
+167.
+
+
+Package natbib Warning: Citation `Grunewald2010' on page 11 undefined on input 
+line 167.
+
+
+LaTeX Warning: Reference `lidar' on page 11 undefined on input line 167.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 167.
+
+
+Package natbib Warning: Citation `Grunewald2010' on page 11 undefined on input 
+line 167.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 169.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 169.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 169.
+
+
+Package natbib Warning: Citation `Deems2006' on page 11 undefined on input line
+ 169.
+
+[11] [12]
+
+Package natbib Warning: Citation `Nolan2015' on page 13 undefined on input line
+ 171.
+
+
+Package natbib Warning: Citation `Nolan2015' on page 13 undefined on input line
+ 171.
+
+
+Package natbib Warning: Citation `Farinotti2010' on page 13 undefined on input 
+line 171.
+
+
+Package natbib Warning: Citation `Nolan2015' on page 13 undefined on input line
+ 171.
+
+
+Package natbib Warning: Citation `Nolan2015' on page 13 undefined on input line
+ 173.
+
+
+Package natbib Warning: Citation `Nolan2015' on page 13 undefined on input line
+ 173.
+
+
+Package natbib Warning: Citation `Sold2013' on page 13 undefined on input line 
+181.
+
+[13]
+
+Package natbib Warning: Citation `Machguth2006' on page 14 undefined on input l
+ine 183.
+
+
+Package natbib Warning: Citation `Sold2013' on page 14 undefined on input line 
+183.
+
+
+Package natbib Warning: Citation `Sold2013' on page 14 undefined on input line 
+183.
+
+
+LaTeX Warning: Reference `snowprobing' on page 14 undefined on input line 183.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 14 undefined on input l
+ine 185.
+
+
+Package natbib Warning: Citation `Ryan2008' on page 14 undefined on input line 
+190.
+
+
+Package natbib Warning: Citation `Archer1995' on page 14 undefined on input lin
+e 190.
+
+
+Package natbib Warning: Citation `Larson2009' on page 14 undefined on input lin
+e 190.
+
+
+Package natbib Warning: Citation `McCreight2014' on page 14 undefined on input 
+line 190.
+
+
+Package natbib Warning: Citation `McCreight2014' on page 14 undefined on input 
+line 190.
+
+
+Package natbib Warning: Citation `Clark2011' on page 14 undefined on input line
+ 193.
+
+
+Package natbib Warning: Citation `Bloschl1991' on page 14 undefined on input li
+ne 193.
+
+
+Package natbib Warning: Citation `Mott2008' on page 14 undefined on input line 
+193.
+
+
+Package natbib Warning: Citation `Pomeroy1999' on page 14 undefined on input li
+ne 193.
+
+[14]
+
+Package natbib Warning: Citation `Winther1998' on page 15 undefined on input li
+ne 195.
+
+
+Package natbib Warning: Citation `Palli2002' on page 15 undefined on input line
+ 195.
+
+
+Package natbib Warning: Citation `Grabiec2011' on page 15 undefined on input li
+ne 195.
+
+
+Package natbib Warning: Citation `Grabiec2011' on page 15 undefined on input li
+ne 195.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 15 undefined on input l
+ine 197.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 15 undefined on input l
+ine 197.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 15 undefined on input li
+ne 199.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 15 undefined on input li
+ne 199.
+
+
+Package natbib Warning: Citation `Winther1998' on page 15 undefined on input li
+ne 201.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 15 undefined on input l
+ine 201.
+
+
+Package natbib Warning: Citation `Grabiec2011' on page 15 undefined on input li
+ne 201.
+
+
+Package natbib Warning: Citation `Pelt2014' on page 15 undefined on input line 
+201.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 15 undefined on input li
+ne 201.
+
+
+Package natbib Warning: Citation `Gusmeroli2014' on page 15 undefined on input 
+line 201.
+
+
+Package natbib Warning: Citation `Sold2013' on page 15 undefined on input line 
+201.
+
+
+LaTeX Warning: Reference `sec:comparemethods' on page 15 undefined on input lin
+e 201.
+
+
+Package natbib Warning: Citation `Pelt2014' on page 15 undefined on input line 
+201.
+
+
+Package natbib Warning: Citation `Pelt2014' on page 15 undefined on input line 
+201.
+
+[15]
+
+Package natbib Warning: Citation `Dadic2010' on page 16 undefined on input line
+ 203.
+
+
+LaTeX Warning: File `stelias.png' not found on input line 210.
+
+
+! Package pdftex.def Error: File `stelias.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.210 ...degraphics[width=\textwidth]{stelias.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Danby2003' on page 16 undefined on input line
+ 211.
+
+
+Package natbib Warning: Citation `Marcus1970' on page 16 undefined on input lin
+e 215.
+
+
+LaTeX Warning: Reference `map' on page 16 undefined on input line 215.
+
+
+Package natbib Warning: Citation `Marcus1970' on page 16 undefined on input lin
+e 215.
+
+
+Package natbib Warning: Citation `Danby2003' on page 16 undefined on input line
+ 215.
+
+
+Package natbib Warning: Citation `Clarke2002' on page 16 undefined on input lin
+e 215.
+
+
+Package natbib Warning: Citation `Kaser2006' on page 16 undefined on input line
+ 215.
+
+
+Package natbib Warning: Citation `Gardner2013' on page 16 undefined on input li
+ne 215.
+
+
+Package natbib Warning: Citation `Wood1948' on page 16 undefined on input line 
+217.
+
+
+Package natbib Warning: Citation `Danby2003' on page 16 undefined on input line
+ 217.
+
+
+Package natbib Warning: Citation `Clarke1984' on page 16 undefined on input lin
+e 217.
+
+
+Package natbib Warning: Citation `Paoli2009' on page 16 undefined on input line
+ 217.
+
+
+Package natbib Warning: Citation `Wheler2014' on page 16 undefined on input lin
+e 217.
+
+
+Package natbib Warning: Citation `Arendt2008' on page 16 undefined on input lin
+e 217.
+
+[16] [17]
+
+Package natbib Warning: Citation `Holdsworth1991' on page 18 undefined on input
+ line 219.
+
+
+Package natbib Warning: Citation `Moore2002' on page 18 undefined on input line
+ 219.
+
+
+Package natbib Warning: Citation `Wake2002' on page 18 undefined on input line 
+219.
+
+
+Package natbib Warning: Citation `Wake2002' on page 18 undefined on input line 
+219.
+
+
+Package natbib Warning: Citation `Marcus1970' on page 18 undefined on input lin
+e 221.
+
+
+Package natbib Warning: Citation `Taylor1969' on page 18 undefined on input lin
+e 221.
+
+
+Package natbib Warning: Citation `Marcus1970' on page 18 undefined on input lin
+e 221.
+
+
+Package natbib Warning: Citation `Taylor1969' on page 18 undefined on input lin
+e 223.
+
+
+Package natbib Warning: Citation `Taylor1969' on page 18 undefined on input lin
+e 223.
+
+
+Package natbib Warning: Citation `Taylor1969' on page 18 undefined on input lin
+e 225.
+
+
+Package natbib Warning: Citation `Pomeroy1999' on page 18 undefined on input li
+ne 227.
+
+
+Package natbib Warning: Citation `Pomeroy1999' on page 18 undefined on input li
+ne 227.
+
+[18] [19]
+No file LitReview.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[20] (./LitReview.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2451 strings out of 494957
+ 33834 string characters out of 6180027
+ 100492 words of memory out of 5000000
+ 5678 multiletter control sequences out of 15000+600000
+ 9932 words of font info for 35 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 38i,8n,32p,1626b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt12.pfb>
+Output written on LitReview.pdf (20 pages, 170060 bytes).
+PDF statistics:
+ 113 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
