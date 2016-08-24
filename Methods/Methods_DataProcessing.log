@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  23 AUG 2016 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  24 AUG 2016 09:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -246,33 +246,26 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+ [1
 
-./Methods_DataProcessing.tex:51: You can't use `macro parameter character #' in
- horizontal mode.
-l.51 ...cation was determined from the marked WP #
-                                                  45 and is 20 m behind this...
-
-? 
-[1
-
-{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] (./Methods_DataProcessing.aux) ) 
+{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+] [3] (./Methods_DataProcessing.aux) ) 
 Here is how much of TeX's memory you used:
- 3719 strings out of 494501
- 58149 string characters out of 6167030
- 125262 words of memory out of 5000000
- 6984 multiletter control sequences out of 15000+600000
+ 3721 strings out of 494501
+ 58173 string characters out of 6167030
+ 126262 words of memory out of 5000000
+ 6986 multiletter control sequences out of 15000+600000
  5318 words of font info for 20 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,4n,38p,818b,185s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015basic/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015basic/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Methods_DataProcessing.pdf (2 pages, 41821 bytes).
+ 38i,4n,38p,819b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015basic/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015basic/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015basic/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Methods_DataProcessing.pdf (3 pages, 44684 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 26 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
