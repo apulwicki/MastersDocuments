@@ -64,7 +64,7 @@ Data from zigzag measurements, which includes the measured snow depth and the di
 
 \subsection{Density}
 
-The density data from snowpit and Federal Sampler measurements were compiled into a spreadsheet and then summarized. Density values determined from Federal Sampler measurements that were deemed to unrepresentative were marked as bad quality data. This included measurements where the inner core length was more than ??? less than the snow depth, and more...........The data was processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
+The density data from snowpit and Federal Sampler measurements were compiled into a spreadsheet and then summarized. Density values determined from Federal Sampler measurements that were deemed to unrepresentative were marked as bad quality data. This included measurements where the inner core length was less than 70\% of the snow depth or where density values were exceptionally high (e.g. 490 kg m$^{-3}$). The data was processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
 \begin{enumerate}
 \item Data were imported into Matlab and only good quality data were kept. Indices for data subsets (e.g. only density values from snowpits) were identified manually. 
 \item The mean density, standard deviation, and number of good measurements was calculated for the zigzag locations (Federal Sampler).
@@ -72,8 +72,7 @@ The density data from snowpit and Federal Sampler measurements were compiled int
 \item A structure with the processed data was created.
 
 Density Data
-	Federal sampler
-		Quality decisions
+
 	Snowpit
 		Integrated density
 
