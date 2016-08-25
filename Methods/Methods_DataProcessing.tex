@@ -64,17 +64,17 @@ Data from zigzag measurements, which includes the measured snow depth and the di
 
 \subsection{Density}
 
-The density data from snowpit and Federal Sampler measurements were compiled into a spreadsheet and then summarized. Density values determined from Federal Sampler measurements that were deemed to unrepresentative were marked as bad quality data. This included measurements where the inner core length was less than 70\% of the snow depth or where density values were exceptionally high (e.g. 490 kg m$^{-3}$). The data was processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
+The density data from snowpit and Federal Sampler measurements were compiled into a spreadsheet and the density from each measurement caudated and summarized in a spreadsheet. 
+
+Integrated snow density was calculated from snowpit measurements. This was done by multiplying the measured density from each wedge sample by the depth of the sample and summing these values. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. When varying the ice density between 700 and 917 kg m$^{-3}$, the ice thickness by $\pm$ 1 cm, and the `hard` layer density between 500 and 600 kg m$^{-3}$, a maximum error of 10\% was found. This error was applied to all values of integrated snow density.
+
+Density values determined from Federal Sampler measurements were filtered based on quality and then averaged for each measurement location. Measurements that were deemed to be unrepresentative of the local snow pack, which included measurements where the inner core length was less than 70\% of the snow depth or where density values were exceptionally high (e.g. 490 kg m$^{-3}$), were marked as bad quality data. The data was processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
 \begin{enumerate}
 \item Data were imported into Matlab and only good quality data were kept. Indices for data subsets (e.g. only density values from snowpits) were identified manually. 
 \item The mean density, standard deviation, and number of good measurements was calculated for the zigzag locations (Federal Sampler).
 \item The mean density, standard deviation, and number of good measurements was calculated for the snowpit locations (Federal Sampler) and combined in a matrix with the corresponding snowpit derived density values.
 \item A structure with the processed data was created.
-
-Density Data
-
-	Snowpit
-		Integrated density
+\end{enumerate}
 
 
 
