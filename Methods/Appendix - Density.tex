@@ -1,7 +1,7 @@
 % LaTex Template
 
 \documentclass[12pt]{article}
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage[letterpaper, margin=1.1in]{geometry}
 \usepackage{graphicx}
 \usepackage{wrapfig}
@@ -19,8 +19,6 @@
 \Large \textbf{Appendix\\ Density}
 \end{center}
 
-SP vs tube
-snow pit ranges
 tube vs depth - correction, new SP vs tube
 elevation relation
 
@@ -28,16 +26,15 @@ elevation relation
 
 \subsection*{Basic statistics}
 
-A summary of density data collected in snowpits and when using a Federal Sampler can be seen in Table \ref{density_stats}. The standard deviation of each type of density measurement is also less than 10\% of the mean density. For snowpit derived densities, the mean density is indistinguishable between glaciers within one standard deviation. This was not observed in densities derived from Federal Sampler measurements --- Glacier 2 had the lowest mean density and Glacier 4 had the highest mean density. The mean of all Federal Sampler density values was likely skewed by the proportionally large number of measurements obtained on Glacier 13, and is thus indistinguishable from Glacier 13 mean density and different than both Glacier 4 and 2 mean density. 
+A summary of density data collected in snowpits and when using a Federal Sampler can be seen in Table \ref{tab:density_stats}. The standard deviation of each type of density measurement is also less than 10\% of the mean density. For snowpit derived densities, the mean density is indistinguishable between glaciers within one standard deviation. This was not observed in densities derived from Federal Sampler measurements --- Glacier 2 had the lowest mean density and Glacier 4 had the highest mean density. The mean of all Federal Sampler density values was likely skewed by the proportionally large number of measurements obtained on Glacier 13, and is thus indistinguishable from Glacier 13 mean density and different than both Glacier 4 and 2 mean density. 
 
-\begin{table}[]
+\begin{table}[b!]
 \centering
 \caption{Mean, standard deviation (std), and number of measurements (n) of snow density measured on study glaciers in snowpits and using a Federal Sampler. }
 \label{tab:density_stats}
-\begin{tabular}{lllllll}
 \begin{tabular}{ccccccc}
-\multirow{2}{*}{\textbf{Glacier}} & \multicolumn{3}{c}{\textbf{Snowpits}}     & \multicolumn{3}{c}{\textbf{Federal Sampler}} \\ \cline{2-7} 
-                                  & \textbf{Mean} & \textbf{Std} & \textbf{n} & \textbf{Mean}  & \textbf{Std}  & \textbf{n}  \\ \hline
+\multirow{2}{*}{\textbf{Glacier}} & \multicolumn{3}{c}{\textbf{Snowpits}}     & \multicolumn{3}{c}{\textbf{Federal Sampler}} \\ 
+                                  & Mean & Std & n & Mean  & Std  & n \\ \hline
 \textbf{G04}                      & 348           & 13           & 3          & 360            & 10            & 7           \\
 \textbf{G02}                      & 333           & 26           & 4          & 275            & 18            & 7           \\
 \textbf{G13}                      & 349           & 26           & 3         & 321            & 9             & 17          \\
@@ -55,32 +52,33 @@ Uncertainty in estimating density from snowpits is likely dominated by measureme
 \centering
 \caption{Range of snowpit density estimates. Minimum and maximum density values derived from varying ice layer density between 700 and 900 kg m$^{-3}$, ice layer thickness by $\pm$1 cm, and the density of layers identified as being too hard to sample (but not ice) between 600 and 700 kg m$^{-3}$. Reference values are those used in future analysis and were determined using an ice density of 900 kg m$^{-3}$, the recorded ice thickness, and a `hard' layer density of 600 kg m$^{-3}$.}
 \label{tab:density_pitrange}
-\begin{tabular}{lccccl}
-\multicolumn{1}{c}{\multirow{2}{*}{\textbf{Snowpit}}} & \textbf{Density (kg m$^{-3}$)} & \textbf{} & \textbf{} & \textbf{} & \multicolumn{1}{c}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Snowpit \\ depth (cm)\end{tabular}}}} \\
-\multicolumn{1}{c}{} & \textbf{Mean} & \textbf{Minimum} & \textbf{Maximum} & \textbf{Range} & \multicolumn{1}{c}{} \\ \hline
-G02\_LSP & 361 & 329 & 377 & 48 & 44 \\
-G02\_Z4A\_SWE & 326 & 308 & 345 & 37 & 35 \\
-G02\_USP & 344 & 327 & 362 & 35 & 119 \\
-G02\_ASP & 300 & 299 & 303 & 4 & 170 \\
-G04\_LSP & 351 & 343 & 359 & 16 & 190 \\
-G04\_USP & 333 & 317 & 350 & 33 & 160 \\
-G04\_ASP & 360 & 357 & 362 & 5 & 285 \\
+\begin{tabular}{lccccc}
+\multicolumn{1}{c}{\multirow{2}{*}{\textbf{Snowpit}}} & \multicolumn{3}{c}{\textbf{Density (kg m$^{-3}$)}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Range as \% \\ of mean (\%)\end{tabular}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Snowpit \\ depth (cm)\end{tabular}}} \\
+\multicolumn{1}{c}{} & Mean & Minimum & Maximum &  &  \\ \hline
+G02\_LSP & 361 & 329 & 377 & 13 & 44 \\
+G02\_Z4A\_SWE & 326 & 308 & 345 & 11 & 35 \\
+G02\_USP & 344 & 327 & 362 & 10 & 119 \\
+G02\_ASP & 300 & 299 & 303 & 1 & 170 \\
+G04\_LSP & 351 & 343 & 359 & 5 & 190 \\
+G04\_USP & 333 & 317 & 350 & 10 & 160 \\
+G04\_ASP & 360 & 357 & 362 & 1 & 285 \\
 G13\_LSP & 383 & 383 & 383 & 0 & 20 \\
-G13\_USP & 355 & 346 & 367 & 21 & 100 \\
-G13\_ASP & 308 & 306 & 308 & 2 & 145
+G13\_USP & 355 & 346 & 367 & 6 & 100 \\
+G13\_ASP & 308 & 306 & 308 & 1 & 145
 \end{tabular}
 \end{table}
 
 \subsubsection*{Federal Sampler densities}
 
+Density values estimated from Federal Sampler measurements are shown in Table \ref{tab:density_TubeRange}. Mean density is has a larger spread of values when compared to snowpit densities across the study area. The \% range is also larger than snowpit densities for many of the measurement locations. 
 
 \begin{table}[]
 \centering
-\caption{Range of densities estimated from Federal Sampler measurements. }
-\label{my-label}
+\caption{Range of densities estimated from Federal Sampler measurements. The number (n) of good quality measurements, as well as the minimum, maximum, and mean density are shown. The density range given as a percent of the mean density is also shown.}
+\label{tab:density_TubeRange}
 \begin{tabular}{lccccc}
-\multicolumn{1}{c}{\multirow{2}{*}{\textbf{Glacier}}} & \multirow{2}{*}{\textbf{n}} & \multicolumn{3}{c}{\textbf{Density (kg m$^{-3}$)\}}} & \multirow{2}{*}{\textbf{Range as \% of mean}} \\
-\multicolumn{1}{c}{} &  & \textbf{Mean} & \textbf{Minimum} & \textbf{Maximum} &  \\ \hline
+\multicolumn{1}{c}{\multirow{2}{*}{\textbf{Glacier}}} & \multirow{2}{*}{\textbf{n}} & \multicolumn{3}{c}{\textbf{Density (kg m$^{-3}$)\}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Range as \\ \% of mean (\%)\end{tabular}}} \\
+\multicolumn{1}{c}{} &  & Mean & Minimum & Maximum &  \\ \hline
 G04\_Z3A\_SWE & 3 & 370 & 361 & 379 & 5 \\
 G04\_USP & 6 & 352 & 328 & 364 & 10 \\
 G04\_Z2A\_SWE & 3 & 368 & 353 & 377 & 7 \\
@@ -115,15 +113,35 @@ G13\_Z5B\_SWE & 2 & 322 & 318 & 325 & 2
 \end{tabular}
 \end{table}
 
+\subsection*{Federal Sampler measurements and snow depth}
+
+A plot of measured SWE and snow depth can be seen in Figure \ref{fig:tube_depth}. A positive linear relation exists (R$^2$ = 0.55), which indicates that there either snow does because more dense with depth (due to compaction) or that the instrument is biased. A plot of the depth-density relationship in snowpits can be seen in Figure \ref{fig:pit_depth}. No linear relationship exists between depth and density for snowpits (R$^2$ = 0.05), leading to the likely conclusion that Federal Sampler measurements are biased. 
+
+\begin{wrapfigure}{r}{0.75\textwidth} 
+	\centering
+	\includegraphics[width =0.75\textwidth]{DepthDensity_SWEtube.png}\\
+	\caption{Relationship between measured density and snow depth for all Federal Sampler measurements.}
+	\label{fig:tube_depth}
+\end{wrapfigure}
+
+\begin{wrapfigure}{R}{0.75\textwidth} 
+	\centering
+	\includegraphics[width = 0.75\textwidth]{DepthDensity_SP.png}\\
+	\caption{Relationship between measured density and snow depth for all snowpit locations.}
+	\label{fig:pit_depth}
+\end{wrapfigure}
+
+
 \subsection*{Comparing density from snowpit and Federal Sampler measurements}
 
+To compare snowpit-derived densities and Federal Sampler-derived densities, eight Federal Sampler measurements were taken around two snowpit locations on each study glacier. The results are seen in Figure \ref{fig:density_pitVStube}. The overall range of Federal Sampler-derived densities is considerably larger than that of the snowpit-derived density values. A linear regression of the data gives a weak inverse relationship (R$^2$ = 0.24).
 
-\begin{figure}
+\begin{wrapfigure}{r}{\textwidth} 
 	\centering
-	\fbox{\includegraphics[\textwidth]{SnowpitVsSWEtube_all.png}}\\
-	\caption{Comparison of density estimated using wedge cutters in a snow pit and Federal Sampler measurements for three study glacier (G04, G02, G13).}
+	\fbox{\includegraphics[width = \textwidth]{SnowpitVsSWEtube_all.png}}\\
+	\caption{Comparison of density estimated using wedge cutters in a snow pit and Federal Sampler measurements for three study glacier (G04, G02, G13). Error bars are minimum and maximum values for each estimate as seen in Table \ref{tab:density_pitrange} and \ref{tab:density_TubeRange}.}
 	\label{fig:density_pitVStube}
-\end{figure}
+\end{wrapfigure}
 
 
 
