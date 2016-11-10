@@ -1234,6 +1234,7 @@
 
 @article{Elder1991,
 	author = "Elder, Kelly and Dozier, Jeff and Michaelsen, Joel",
+	doi = "10.1029/91WR00506",
 	journal = "Water Resources Research",
 	number = "7",
 	owner = "glaciology1",
@@ -2469,6 +2470,44 @@
 	publisher = "Elsevier",
 	title = "{Analysis of georadar data to estimate the snow depth distribution}",
 	volume = "129",
+	year = "2016"
+}
+
+@article{Dixon2012,
+	author = "Dixon, David and Boon, Sarah",
+	doi = "10.1002/hyp.9317",
+	issn = "1099-1085",
+	journal = "Hydrological Processes",
+	keywords = "snow; snow measurement; snow tubes; mountain snow; southwestern Alberta",
+	number = "17",
+	pages = "2555--2562",
+	title = "{Comparison of the {SnowHydro} snow sampler with existing snow tube designs}",
+	url = "http://dx.doi.org/10.1002/hyp.9317",
+	volume = "26",
+	year = "2012"
+}
+
+@article{Skaugen2016,
+	author = "Skaugen, T. and Weltzien, I. H.",
+	doi = "10.5194/tc-10-1947-2016",
+	journal = "The Cryosphere",
+	number = "5",
+	pages = "1947--1963",
+	title = "{A model for the spatial distribution of snow water equivalent parameterized from the spatial variability of precipitation}",
+	url = "http://www.the-cryosphere.net/10/1947/2016",
+	volume = "10",
+	year = "2016"
+}
+
+@article{Marti2016,
+	author = "Marti, R. and Gascoin, S. and Berthier, E. and de Pinel, M. and Houet, T. and Laffly, D.",
+	doi = "10.5194/tc-10-1361-2016",
+	journal = "The Cryosphere",
+	number = "4",
+	pages = "1361--1380",
+	title = "{\hack{\vspace*{-3mm}}Mapping snow depth in open alpine terrain\hack{\newpage} from stereo satellite imagery}",
+	url = "http://www.the-cryosphere.net/10/1361/2016/",
+	volume = "10",
 	year = "2016"
 }
 

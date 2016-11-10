@@ -1,0 +1,33 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citename{Korona and others, }2009]{Korona2009}
+Korona J, Berthier E, Bernard M, R{\'e}my F and Thouvenot E (2009) {{SPIRIT.
+  SPOT} 5 stereoscopic survey of {P}olar {I}ce: reference images and
+  topographies during the fourth {International Polar Year} (2007--2009)}.
+  \emph{ISPRS Journal of Photogrammetry and Remote Sensing}, \textbf{64}(2),
+  204--212
+
+\bibitem[\protect\citename{McGrath and others, }2015]{McGrath2015}
+McGrath D, Sass L, O'Neel S, Arendt A, Wolken G, Gusmeroli A, Kienholz C and
+  McNeil C (2015) {End-of-winter snow depth variability on glaciers in
+  {A}laska}. \emph{Journal of Geophysical Research: Earth Surface},
+  \textbf{120}(8), 1530--1550 (\doi {10.1002/2015JF003539})
+
+\bibitem[\protect\citename{Molotch and others, }2005]{Molotch2005}
+Molotch N, Colee M, Bales R and Dozier J (2005) {Estimating the spatial
+  distribution of snow water equivalent in an alpine basin using binary
+  regression tree models: the impact of digital elevation data and independent
+  variable selection}. \emph{Hydrological Processes}, \textbf{19}(7),
+  1459--1479 (\doi {10.1002/hyp.5586})
+
+\bibitem[\protect\citename{Winstral and others, }2002]{Winstral2002}
+Winstral A, Elder K and Davis RE (2002) {Spatial snow modeling of
+  wind-redistributed snow using terrain-based parameters}. \emph{Journal of
+  Hydrometeorology}, \textbf{3}(5), 524--538 (\doi
+  {10.1175/1525-7541(2002)003<0524:SSMOWR>2.0.CO;2})
+
+\end{thebibliography}
