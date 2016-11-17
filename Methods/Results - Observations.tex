@@ -7,6 +7,7 @@
 \usepackage{natbib}
 \usepackage[letterpaper, margin=1.1in]{geometry}
 \usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage{wrapfig}
 \usepackage{enumitem}
 \setlist[enumerate]{itemsep=0mm}
@@ -14,26 +15,249 @@
 \usepackage{lscape}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{float}
 \usepackage{hyperref}
+
 
 \begin{document}
 \noindent{Alexandra Pulwicki \\ \today}
 
 \begin{center}
-\Large \textbf{Results\\ Observations}
+\Large \textbf{Data\\ Observations}
 \end{center}
 
 
 \section*{Overview}
 
-A winter snow survey was conducted on three glaciers in the Donjek Range of the St. Elias Mountains in May 2016. This report documents the field design and planning and how the planned work was implemented in the field.
+This section documents the process of going from raw data to processed and consolidated data that will be used for analysis in subsequent components of the project. An overview of the various density interpolation methods and the eight group of SWE values is provided. An overview of the zigzag data is also included. 
 
-
+\tableofcontents
 \pagebreak
 
 %%%%
-\section{Field Design}
+\section{Initial Data Processing}
 %%%%
+
+\subsection{Linear and Curvilinear Transects}
+
+Snow depth measurements along the linear and curvilinear transects were taken at locations a certain distance from marked waypoints. Since only the coordinates of the waypoints (WP) were recorded, the measurement coordinates needed to be estimated. The measurement locations were assumed to be 10, 20, and 30 m behind the marked WP, in a straight line between the marked WP and the previous WP. In cases with only two observers, locations were assumed to be 10 and 20 m behind the marked WP. For the first marked WP of a pattern, it was assumed that the locations were along the same line as that between the first and second WPs. The following methodology was used to determine measurement locations (each step corresponds with a section of the Matlab code `MeasurementLocations.m'): 
+\begin{enumerate}
+\item Waypoint (WP) locations were exported from the GPS units using the BaseCamp program. They were then imported to QGIS and exported with UTM coordinates. This file was then used in the Matlab script and is entitled `GlacierWP\_UTM.xlsx'. 
+\item In order to obtain the measurement locations for the first WPs of each pattern, an ``imaginary'' WP was created that was along the line between the first and second WPs, but located ahead of the first WP. These waypoints were then inserted into the original data. 
+\item A set of 1000 equally spaced points was created along a straight line between each set of subsequent of WPs (including the ``imaginary'' WPs from the previous step) using the function linspaceNDim.m created by Steeve Ambroise and downloaded from the MathWorks File Exchange. The Euclidean distance between these interpolated points and the marked WP was then calculated and the points with distances closest to the assumed separation between observers were retained. The final matrix has the easting and northing of each measurement location and is labelled with the marked WP and a decimal that corresponds to the relative observer (e.g. label 45.2 means that the location was determined from the marked WP \#45 and is 20 m behind this WP because it is the second observer). 
+\end{enumerate}
+
+The data recorded by each observer in the field books was transcribed to a spreadsheet format and then imported and processed in Matlab according to the following steps (each step corresponds with a section of the Matlab code `Import\_Transect.m'):
+\begin{enumerate}
+\item A spreadsheet was created with a sheet for data from each field book (SD\#1, SD\#2, SD\#3, and SWEDepth). For each reference WP there were values for all snow depth measurements and their quality (1 for good, 0 for bad), comments written, field book name, glacier name, observer, pattern, and date collected.  
+\item The quality, comments, book name, glacier name, observer, pattern, and date entires were categorized. This allows for efficient grouping and data searching in future analysis.
+\item The depth data was then assigned the corresponding measurement location UTM from the `MeasurementLocations.m' script. This was done by matching the WP number from the field books and that of the marked WPs and then assigning the coordinates from the WP ending with .1 to depths recorded in book SD\#1, and likewise for the remaining books. The matrices for each set of observations were then made to be the same dimensions by inserting empty cells for WPs where no data was recorded in that set of observations. 
+\item The data was then arranged in a structure variable (called SD) with rows corresponding to each book (e.g. row 1 is data from book SD\#1) and columns corresponding to the various types of data (e.g. depth values or glacier category). For example, the matrix with the glacier category for each value recorded in the book SD\#1 can be accessed with `SD(1).glacier'.
+\end{enumerate}
+
+Subsets of the transect data can be pulled using the function `pulldata.m'. The function is called with \texttt{pulldata(data, book, glacier, person, pattern, quality, format)}. Here, \texttt{data} is the full SD structure, \texttt{book, glacier, person, and pattern} are all strings that refer to desired categories, \texttt{quality} differentiates between good (1), bad (0), or `all' data, and \texttt{format} specifies the formatting of the full depth matrix as being either a column vector ('skinny') or a matrix with depth values for one WP in a single row. 
+
+
+\subsection{Zigzag}
+
+Data from zigzag measurements, which includes the measured snow depth and the distance of that measurement from the previous measurement or vertex, was transcribed to a spreadsheet. The data were then processed using the following procedure (each step corresponds with a section of the Matlab code `Import\_Zigzag.m'):
+\begin{enumerate}
+\item Data were imported into Matlab.
+\item Descriptive data, including glacier name, zigzag zone label, reference vertex, data quality, observer name, date collected, and book name were categorized.
+\item A structure was created with the depth and categorical data.
+\item The distance of each measurement point from it's reference vertex was then calculated. These locations were assumed to be a cumulative sum of distances in a straight line between two subsequent vertices. Two options exist for the location of the reference vertex:
+ 	\begin{enumerate}
+	\item Option 1 calculates the distance of each point from the UTM coordinates of the reference vertex.
+	\item Option 2 calculates the distance of each point from the end of the previous line of measurements. Since the total distance measured with the avalanche probe did not always equal the distance between vertices (likely due to error in GPS units), this option takes the reference for each line to be from the end of the previous line. The coordinates of the vertices were used for the start of each `Z' shape (ZZ01 and ZZ05).
+	\end{enumerate}
+\item The final processing step involves removing bad quality data, obtaining the index for the start of each zigzag (needed for future analysis), as well as converting snow depth to snow water equivalent (SWE) based on the density calculated from the average SWE values measured with the Federal Sampler in each zigzag (if Option 2 is selected for that section).  
+\end{enumerate}
+
+\subsection{Density}
+
+The density data from snowpit and Federal Sampler measurements were compiled into a spreadsheet and the density from each measurement was calculated and summarized in a spreadsheet. 
+
+Integrated snow density was calculated from snowpit measurements. This was done by multiplying the measured density from each wedge sample by the depth of the sample and summing these values. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. When varying the ice density between 700 and 917 kg m$^{-3}$, the ice thickness by $\pm$ 1 cm, and the `hard` layer density between 500 and 600 kg m$^{-3}$, a maximum error of 10\% was found. This error was applied to all values of integrated snow density.
+
+Density values determined from Federal Sampler measurements were filtered based on quality and then averaged for each measurement location. Measurements that were deemed to be unrepresentative of the local snow pack, which included measurements where the inner core length was less than 70\% of the snow depth or where density values were exceptionally high (e.g. 490 kg m$^{-3}$), were marked as bad quality data. The data was processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
+\begin{enumerate}
+\item Data were imported into Matlab and only good quality data were kept. Indices for data subsets (e.g. only density values from snowpits) were identified manually. 
+\item The mean density, standard deviation, and number of good measurements was calculated for the zigzag locations (Federal Sampler).
+\item The mean density, standard deviation, and number of good measurements was calculated for the snowpit locations (Federal Sampler) and combined in a matrix with the corresponding snowpit derived density values.
+\item A structure with the processed data was created.
+\end{enumerate}
+
+%%%
+\section{Density Estimates}
+%%%
+
+\subsection*{Federal Sampler measurements and snow depth}
+
+A plot of measured SWE and snow depth can be seen in Figure \ref{fig:tube_depth}. A positive linear relation exists (R$^2$ = 0.59). This positive relationship could be a result of physical processes, such as compaction, and/or artefacts during data collection. The range of densities measured by the Federal sampler is large (225--410 kg m$^{-3}$) and the extreme values seem unlikely to exist at these study glaciers, which experience a continental snowpack with minimal mid-winter melt events. Furthermore, compaction effects would likely be small at these study glaciers because of the relatively shallow snowpack (deepest measurement was 340 cm). A plot of the depth-density relationship in snowpits can be seen in Figure \ref{fig:pit_depth}. No linear relationship exists between depth and snowpit-derived density (R$^2$ = 0.05). Together, these conditions lead to the likely conclusion that the Federal Sampler measurements are biased. 
+
+To account for this likely artefact, the simplest form of linear detrending was applied. The linear fit was subtracted from each data point and the original data mean was added to each point. A plot of the detrended density data can be seen in Figure \ref{fig:tube_depthDETREND}. This detrended data will be used for all subsequent analysis. 
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[height = 10cm]{DepthDensity_SWEtube.png}\\
+	\caption{Relationship between measured density and snow depth for all Federal Sampler measurements.}
+	\label{fig:tube_depth}
+
+	\includegraphics[height = 10cm]{DepthDensity_SP.png}\\
+	\caption{Relationship between measured density and snow depth for all snowpit locations.}
+	\label{fig:pit_depth}
+\end{figure}
+
+\subsection*{Basic statistics}
+
+A summary of density data collected in snowpits and when using a Federal Sampler can be seen in Table \ref{tab:density_stats}. The standard deviation of each type of density measurement is less than 10\% of the mean density. For snowpit derived densities, the mean density is indistinguishable between glaciers within one standard deviation. This was also observed in the detrended densities derived from Federal Sampler measurements . The mean of all Federal Sampler density values was likely skewed by the proportionally large number of measurements obtained on Glacier 13.
+
+\begin{table}[b!]
+\centering
+\caption{Mean, standard deviation (std), and number of measurements (n) of snow density measured on study glaciers in snowpits and using a Federal Sampler. }
+\label{tab:density_stats}
+\begin{tabular}{ccccccc}
+ & \multicolumn{3}{c}{\textbf{Snowpits}} & \multicolumn{3}{c}{\textbf{Federal Sampler}} \\
+\multirow{-2}{*}{\textbf{Glacier}} & Mean & Std & n & Mean & Std & n \\ \hline
+\textbf{Glacier 4} & 348 & 13 & 3 & 327 & 32 & 7 \\
+\textbf{Glacier 2} & 333 & 26 & 4 & 326 & 23 & 7 \\
+\textbf{Glacier 13} & 349 & 26 & 10 & 307 & 32 & 31 \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{All} & 342 & 26 & 10 & 316 & 31 & 31
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]%{R}{\textwidth} 
+	\centering
+	\includegraphics[width =0.95\textwidth]{DepthDensity_tubeDETREND.png}\\
+	\caption{Plot of depth-detrended density and snow depth for all Federal Sampler measurements.}
+	\label{fig:tube_depthDETREND}
+\end{figure}
+
+\subsection*{Density uncertainties}
+
+\subsubsection*{Snowpit density}
+
+Uncertainty in estimating density from snowpits is likely dominated by measurement errors and incorrect assumptions of density of layers that could not be sampled (i.e. ice lenses and `hard' layers). To determine a possible range of density values from snowpit measurements, the original data was used and three parameters were varied. Ice layer density was varied between 700 and 900 kg m$^{-3}$, ice layer thickness was varied by $\pm$1 cm, and the density of layers identified as being too hard to sample (but not ice) was varied between 600 and 700 kg m$^{-3}$. The resulting minimum and maximum possible densities for each snowpit can be seen in Table \ref{tab:density_pitrange}. The range of density values is always less than 10\% of the reference density (except for `G02\_LSP'). Density values for shallow pits that contained ice lenses were particularly sensitive to changes in density and ice lens thickness. 
+
+\begin{table}[]
+\centering
+\caption{Range of snowpit density estimates. Minimum and maximum density values derived from varying ice layer density between 700 and 900 kg m$^{-3}$, ice layer thickness by $\pm$1 cm, and the density of layers identified as being too hard to sample (but not ice) between 600 and 700 kg m$^{-3}$. Reference values are those used in future analysis and were determined using an ice density of 900 kg m$^{-3}$, the recorded ice thickness, and a `hard' layer density of 600 kg m$^{-3}$.}
+\label{tab:density_pitrange}
+\begin{tabular}{lccccc}
+\multicolumn{1}{c}{\multirow{2}{*}{\textbf{Snowpit}}} & \multicolumn{3}{c}{\textbf{Density (kg m$^{-3}$)}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Range as \% \\ of mean (\%)\end{tabular}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Snowpit \\ depth (cm)\end{tabular}}} \\
+\multicolumn{1}{c}{} & Mean & Minimum & Maximum &  &  \\ \hline
+G02\_LSP & 361 & 329 & 377 & 13 & 44 \\
+G02\_Z4A & 326 & 308 & 345 & 11 & 35 \\
+G02\_USP & 344 & 327 & 362 & 10 & 119 \\
+G02\_ASP & 300 & 299 & 303 & 1 & 170 \\
+G04\_LSP & 351 & 343 & 359 & 5 & 190 \\
+G04\_USP & 333 & 317 & 350 & 10 & 160 \\
+G04\_ASP & 360 & 357 & 362 & 1 & 285 \\
+G13\_LSP & 383 & 383 & 383 & 0 & 20 \\
+G13\_USP & 355 & 346 & 367 & 6 & 100 \\
+G13\_ASP & 308 & 306 & 308 & 1 & 145
+\end{tabular}
+\end{table}
+
+\subsubsection*{Federal Sampler densities}
+
+Density values estimated from Federal Sampler measurements are shown in Table \ref{tab:density_TubeRange}. Mean density has a larger spread of values over the study glaciers when compared to snowpit densities. The \% range is also larger than snowpit densities for many of the measurement locations. 
+
+\begin{table}[]
+\centering
+\caption{Range of densities estimated from Federal Sampler measuresments. The number (n) of good quality measurements, as well as the minimum, maximum, and mean density are shown. The density range given as a percent of the mean density is also shown.}
+\label{tab:density_TubeRange}
+\begin{tabular}{lccccc}
+\multicolumn{1}{c}{\multirow{2}{*}{\textbf{Location}}} & \multirow{2}{*}{\textbf{n}} & \multicolumn{3}{c}{\textbf{Density (kg m$^{-3}$)}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Range as \%\\ of mean (\%)\end{tabular}}} \\
+\multicolumn{1}{c}{} &  & Mean & Minimum & Maximum &  \\ \hline
+GL4\_Z3A\_SWE & 3 & 334 & 309 & 358 & 14 \\
+GL4\_USP & 6 & 311 & 274 & 353 & 22 \\
+G04\_Z2A\_SWE & 3 & 360 & 303 & 431 & 35 \\
+G04\_LSP & 7 & 272 & 250 & 297 & 13 \\
+GL4\_Z5B\_SWE & 2 & 337 & 324 & 350 & 7 \\
+GL4\_Z5A\_SWE & 3 & 311 & 275 & 351 & 21 \\
+GL4\_Z5C\_SWE & 2 & 361 & 350 & 373 & 6 \\
+GL02\_Z5C\_SWE & 2 & 296 & 245 & 347 & 28 \\
+G02\_USP & 7 & 294 & 232 & 353 & 34 \\
+G02\_Z7A\_SWE & 3 & 326 & 304 & 349 & 12 \\
+GL02\_Z7B\_SWE & 2 & 336 & 320 & 351 & 9 \\
+GL02\_Z7C\_SWE & 3 & 351 & 338 & 365 & 7 \\
+GL02\_Z3B\_SWE & 3 & 349 & 341 & 353 & 3 \\
+GL02\_LSP\_SWE & 7 & 331 & 302 & 349 & 13 \\
+GL13\_ASP & 8 & 343 & 277 & 395 & 33 \\
+G13\_651 & 3 & 329 & 318 & 345 & 7 \\
+G13\_652 & 2 & 319 & 291 & 346 & 15 \\
+G13\_654 & 3 & 298 & 266 & 318 & 14 \\
+G13\_655 & 1 & 300 & 300 & 300 & 0 \\
+G13\_656 & 3 & 279 & 227 & 315 & 24 \\
+G13\_657 & 3 & 331 & 323 & 338 & 4 \\
+G13\_658 & 2 & 343 & 333 & 354 & 6 \\
+G13\_659 & 3 & 245 & 232 & 258 & 7 \\
+G13\_Z7C\_SWE & 2 & 270 & 253 & 287 & 9 \\
+G13\_USP & 6 & 294 & 247 & 359 & 31 \\
+G13\_Z4C\_SWE & 4 & 342 & 334 & 350 & 5 \\
+G13\_744 & 3 & 323 & 298 & 347 & 14 \\
+G13\_Z3B\_SWE & 3 & 333 & 308 & 351 & 12 \\
+G13\_Z4B\_SWE & 2 & 332 & 312 & 351 & 11 \\
+G13\_Z5A\_SWE & 3 & 276 & 240 & 301 & 17 \\
+G13\_Z5B\_SWE & 2 & 255 & 254 & 257 & 1
+\end{tabular}
+\end{table}
+
+\subsection*{Comparing density from snowpit and Federal Sampler measurements}
+
+To compare snowpit-derived densities and Federal Sampler-derived densities, eight Federal Sampler measurements were taken around two snowpit locations on each study glacier. The results are shown in Figure \ref{fig:density_pitVStube}. The overall range of Federal Sampler-derived densities is larger than that of the snowpit-derived density values. A linear regression of the data gives a weak inverse relationship (R$^2$ = 0.27). Within the range of possible values (minimum and maximum densities), the density values are indistinguishable for all snowpit locations, except for `G13\_ASP'.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =0.95\textwidth]{SnowpitVsSWEtube_all.png}\\
+	\caption{Comparison of density estimated using wedge cutters in a snow pit and Federal Sampler measurements for three study glacier (G04, G02, G13). Error bars are minimum and maximum values for each estimate as seen in Table \ref{tab:density_pitrange} and \ref{tab:density_TubeRange}.}
+	\label{fig:density_pitVStube}
+\end{figure}
+
+
+\subsection*{Density and elevation}
+
+\subsubsection*{Snowpit density}
+
+A plot of snowpit-derived density and elevation can be seen in Figure \ref{fig:elev_snowpit}. 
+
+\begin{wrapfigure}{r}{\textwidth} 
+	\centering
+	\includegraphics[width = \textwidth]{ElevationVsSnowpit_all.png}\\
+	\caption{Relationship between snowpit-derived density and elevation for all study glaciers.}
+	\label{fig:elev_snowpit}
+\end{wrapfigure}
+
+\begin{wrapfigure}{r}{\textwidth} 
+	\centering
+	\includegraphics[width = \textwidth]{ElevationVsSWEtube_all.png}\\
+	\caption{Relationship between Federal Sampler-derived density and elevation for all study glaciers.}
+	\label{fig:elev_tube}
+\end{wrapfigure}
+
+
+\begin{table}[]
+\centering
+\caption{Summary of linear regressions between snowpit-derived density and elevation ($z$) as well as Federal Sampler-derived densities and elevation ($z$) for the study area.}
+\label{tab:elev_regress}
+\begin{tabular}{lcccc}
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Snowpit \\ Regression\end{tabular}}} & \multicolumn{2}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Fed. Sampler\\ Regression\end{tabular}}} \\
+\multicolumn{1}{c}{\multirow{-2}{*}{\textbf{Location}}} & Equation & R$^2$ & Equation & R$^2$ \\ \hline
+Glacier 4 & 0.03$z+$274 & 0.16 & 0.10$z+$111 & 0.06 \\
+Glacier 2 & -0.14$z+$659 & 0.75 & -0.01$z+$355 & \textless0.01 \\
+Glacier 13 & -0.20$z+$802 & 1.00 & 0.03$z+$248 & 0.01 \\
+\rowcolor[HTML]{EFEFEF} 
+All & -0.12$z+$618 & 0.50 & 0$z+$308 & \textless0.01
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+\item 
+\end{enumerate}
+
+
 
 \subsection{Sampling Scheme and Naming System}
 
