@@ -1,9 +1,13 @@
-% LaTex Template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% Last edits: Nov 9, 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[12pt]{article}
-%\usepackage{natbib}
+\usepackage{natbib}
 \usepackage[letterpaper, margin=1.1in]{geometry}
 \usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage{wrapfig}
 \usepackage{enumitem}
 \setlist[enumerate]{itemsep=0mm}
@@ -11,22 +15,29 @@
 \usepackage{lscape}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{float}
 \usepackage{hyperref}
+
 
 \begin{document}
 \noindent{Alexandra Pulwicki \\ \today}
 
 \begin{center}
-\Large \textbf{Methods\\ Initial Data Processing}
+\Large \textbf{Methods\\ Data Processing}
 \end{center}
 
 
-Transect Data
-	Converting to SWE??
+\section*{Overview}
+
+This section documents the process of going from raw data to processed and consolidated data that will be used for analysis in subsequent components of the project. An overview of the various density interpolation methods and the eight group of SWE values is provided. An overview of the zigzag data is also included. 
+
+\tableofcontents
+\pagebreak
 
 
-
+%%%%
 \section{Data Processing}
+%%%%
 
 \subsection{Linear and Curvilinear Transects}
 
@@ -40,7 +51,7 @@ Snow depth measurements along the linear and curvilinear transects were taken at
 The data recorded by each observer in the field books was transcribed to a spreadsheet format and then imported and processed in Matlab according to the following steps (each step corresponds with a section of the Matlab code `Import\_Transect.m'):
 \begin{enumerate}
 \item A spreadsheet was created with a sheet for data from each field book (SD\#1, SD\#2, SD\#3, and SWEDepth). For each reference WP there were values for all snow depth measurements and their quality (1 for good, 0 for bad), comments written, field book name, glacier name, observer, pattern, and date collected.  
-\item The quality, comments, book name, glacier name, observer, pattern, and date entires were categorized. This allows for efficient grouping and data searching in future analysis.
+\item The quality, comments, book name, glacier name, observer, pattern, and date entries were categorized. This allows for efficient grouping and data searching in future analysis.
 \item The depth data was then assigned the corresponding measurement location UTM from the `MeasurementLocations.m' script. This was done by matching the WP number from the field books and that of the marked WPs and then assigning the coordinates from the WP ending with .1 to depths recorded in book SD\#1, and likewise for the remaining books. The matrices for each set of observations were then made to be the same dimensions by inserting empty cells for WPs where no data was recorded in that set of observations. 
 \item The data was then arranged in a structure variable (called SD) with rows corresponding to each book (e.g. row 1 is data from book SD\#1) and columns corresponding to the various types of data (e.g. depth values or glacier category). For example, the matrix with the glacier category for each value recorded in the book SD\#1 can be accessed with `SD(1).glacier'.
 \end{enumerate}
@@ -67,7 +78,7 @@ Data from zigzag measurements, which includes the measured snow depth and the di
 
 The density data from snowpit and Federal Sampler measurements were compiled into a spreadsheet and the density from each measurement was calculated and summarized in a spreadsheet. 
 
-Integrated snow density was calculated from snowpit measurements. This was done by multiplying the measured density from each wedge sample by the depth of the sample and summing these values. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. When varying the ice density between 700 and 917 kg m$^{-3}$, the ice thickness by $\pm$ 1 cm, and the `hard` layer density between 500 and 600 kg m$^{-3}$, a maximum error of 10\% was found. This error was applied to all values of integrated snow density.
+Integrated snow density was calculated from snowpit measurements. This was done by multiplying the measured density from each wedge sample by the depth of the sample and summing these values. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice thickness, and the `hard` layer density was varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm, and 500 and 600 kg m$^{-3}$, respectively.  A summary of density values and ranges is shown in Table \ref{tab:density}.
 
 Density values determined from Federal Sampler measurements were filtered based on quality and then averaged for each measurement location. Measurements that were deemed to be unrepresentative of the local snow pack, which included measurements where the inner core length was less than 70\% of the snow depth or where density values were exceptionally high (e.g. 490 kg m$^{-3}$), were marked as bad quality data. The data was processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
 \begin{enumerate}
@@ -77,13 +88,26 @@ Density values determined from Federal Sampler measurements were filtered based 
 \item A structure with the processed data was created.
 \end{enumerate}
 
+The final version of the `Density' structure includes five fields:
+\begin{itemize}
+\item[]\texttt{Density.snowpit} includes the density data from the snowpit. Columns correspond to snowpit label, assumed density, easting, northing, elevation, minimum density, maximum density, snow depth.
+\item[]\texttt{Density.pitANDtube} includes data from locations where measurements were taken in a snowpit and with a Federal Sampler. Columns correspond to snowpit label, Federal  Sampler mean density, standard deviation, minimum values, maximum values, and number of observations, snowpit derived density, site elevation, minimum snowpit density, and maximum snowpit density.
+\item[]\texttt{Density.tube} includes Federal Sampler data. Columns correspond to location label, density mean, standard deviation, minimum, maximum, number of good quality observations, easting, northing, elevation, and depth. 
+\item[]\texttt{Density.zigzagtube} includes density values at each zigzag location estimated using a Federal Sampler. Columns correspond to ziglag label, mean density, standard deviation, number of observation, and site elevation. 
+\item[]\texttt{Density.SWEdepth} is a summary of all the snow depth and Federal Sampler derived density data. Columns correspond to location label, mean probe depth, depth measured by the Sampler, and snow density estimated using the Federal Sampler. 
+\end{itemize}
+
+\subsection{Snow water equivalent (SWE)}
 
 
-
-
-
-
-
+{
+\begin{wrapfigure}{r}{\textwidth} 
+	\centering
+	\includegraphics[width = \textwidth]{SWEoptions.png}\\
+	\caption{Relationship between various ways to interpolate between density measurements for the calculation of SWE.}
+	\label{fig:SWEoptions}
+\end{wrapfigure}
+}
 
 
 \end{document}
