@@ -206,34 +206,36 @@ All & -0.12$z+$618 & 0.50 & -0.14$z+$659 & 0.75
 \end{tabular}
 \end{table}
 
-{
-\begin{wrapfigure}{r}{\textwidth} 
+
+\begin{figure}[H]
 	\includegraphics[width =1.1\linewidth]{DepthElevation.png}\\
 	\caption{Relationship between measured snow depth and elevation at all sampling locations.}
 	\label{fig:depth_elev}
-\end{wrapfigure}
-}
-{
-\begin{wrapfigure}{r}{\textwidth} 
+\end{figure}
+
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.7\textwidth]{ElevationVsSnowpit_all.png}\\
 	\caption{Relationship between snowpit-derived density and elevation for all study glaciers.}
 	\label{fig:elev_snowpit}
-\end{wrapfigure}
-}
-{
-\begin{wrapfigure}{r}{\textwidth} 
+\end{figure}
+
+
+\begin{figure}[H]
 	\centering
-	\includegraphics[width = 0.7\textwidth]{ElevationVsSWEtube_all.png}\\
+	\includegraphics[width = 0.6\textwidth]{ElevationVsSWEtube_all.png}\\
 	\caption{Relationship between Federal Sampler-derived density and elevation for all study glaciers.}
 	\label{fig:elev_tube}
-\end{wrapfigure}
-}
+\end{figure}
+
+
+\pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Snow depth}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=\textwidth]{box_depth_wZZ.png}
@@ -253,10 +255,21 @@ All & -0.12$z+$618 & 0.50 & -0.14$z+$659 & 0.75
 
 A summary of the measured snow depth on all study glaciers is shown in Figure \ref{fig:box_depth} where \ref{fig:box_depth_wZZ} shows all snow depth measured (including zigzag values) and \ref{fig:box_depth_noZZ} shows snow depth values collected along curvilinear and linear transects. In both cases, Glacier 4 has the largest median and range of snow depth values, while Glacier 13 has the smallest. 
 
+\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zigzag data}
 
+A comparison of measured snow depth for each zigzag is shown in Figure \ref{fig:ZZ_boxplot}. The zigzags on Glacier 4 show minimal variability with a small range of values observed and few outliers. The mean depth is significantly larger at the upper most zigzag. Zigzags on Glacier 2 show more variability. The range on the mid zigzag is the largest of all the zigzags measured and the highest zigzag has many outliers. The zigzags on Glacier 13 do not vary considerably in range, although the lower zigzags show a large number of outliers which may be a results of these locations being close to a supraglacier meltwater channel. 
+
 The depth measured at each zigzag is shown in Figures \ref{fig:ZZ_G04}, \ref{fig:ZZ_G02}, and \ref{fig:ZZ_G13}. There is considerable variability both between zigzags and within each zigzag. For example, in Figure \ref{fig:ZZ_G04}, `G04\_Z5B' has a more uniform snow depth than `G04\_Z3A', which has a large range in depth values. 
+{
+\begin{wrapfigure}{r}{1.1\textwidth} 
+	\centering
+	\includegraphics[width = 1.1\textwidth]{Zigzag_Boxplot.png}\\
+	\caption{Boxplot of zigzag depths measured at each zigzag location.}
+	\label{fig:ZZ_boxplot}
+\end{wrapfigure}
+}
 
 \begin{landscape}
 \begin{figure}
@@ -272,39 +285,91 @@ The depth measured at each zigzag is shown in Figures \ref{fig:ZZ_G04}, \ref{fig
 	\label{fig:ZZ_G02}
 \end{figure}
 \end{landscape}
-{
-\begin{wrapfigure}{r}{\textwidth} 
+
+\begin{figure}[H] 
 	\centering
 	\includegraphics[width = \textwidth]{ZigzagDepth_G13.png}\\
 	\caption{Plot of depth measured at zigzags on Glacier 13.}
 	\label{fig:ZZ_G13}
-\end{wrapfigure}
-}
+\end{figure}
 
+
+
+
+\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Snow water equivalent (SWE)}
+
+Snow water equivalent (SWE) estimated for each sampling location can be seen in Figure \ref{SWEmaps}. For maps of SWE calculated for each density option see the Appendix. Generally, SWE is highest on Glacier 4 and lowest on Glacier 13. Glacier 4 also shows considerable SWE variability within the basin, with both high and low values seen along a single transect. Note that the individual measurement locations overlap on the figure.
+
 
 \begin{landscape}
 \begin{figure}
 	\centering
-	\includegraphics[width = 23 cm]{SWEmap.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the average of three integrated, snowpit-derived densities for each glacier. Arrow shows ice flow direction.}
-	\label{studysites}
+	\includegraphics[width = 23 cm]{SWEmap_opt8.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the average of three integrated, snowpit-derived densities for each glacier. Arrow shows ice flow direction. See Appendix for maps of SWE for other density options.}
+	\label{SWEmaps}
 \end{figure}
 
 \end{landscape}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Sampling Scheme and Naming System}
+\pagebreak
+\section*{Appendix - SWE maps}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{SWEmap_opt2.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of all snowpit-derived densities (Option 2). Arrow shows ice flow direction.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{SWEmap_opt3.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of all snowpit-derived densities (Option 3). Arrow shows ice flow direction.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{SWEmap_opt4.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of snowpit-derived densities for each glacier (Option 4). Arrow shows ice flow direction.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{SWEmap_opt5.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of Federal Sampler-derived densities for each glacier (Option 5). Arrow shows ice flow direction.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{SWEmap_opt6.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was determined by using a linear fit between snowpit-derived density and elevation for each glacier (Option 6). Arrow shows ice flow direction.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{SWEmap_opt7.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations.Density was determined by using a linear fit between Federal Sampler-derived density and elevation for each glacier (Option 7). Arrow shows ice flow direction.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{SWEmap_opt8.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was calculated using inverse distance weighting using all snowpit-derived densities (options 8). Arrow shows ice flow direction.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{SWEmap_opt9.png}\\
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was calculated using inverse distance weighting using all snowpit-derived densities (options 9). Arrow shows ice flow direction.}
+\end{figure}
 
 
 
+ %%%%%%%%
 
-
-
- \subsection{Federal Snow Sampler}
-\label{sec:SWE}
- 
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.38\textwidth}
@@ -326,7 +391,6 @@ The depth measured at each zigzag is shown in Figures \ref{fig:ZZ_G04}, \ref{fig
 	
 %%%%%%%%
 
-\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
-\bibliographystyle{igs}
+
 
 \end{document}

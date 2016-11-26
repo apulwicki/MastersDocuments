@@ -17,32 +17,39 @@
 \noindent{Alexandra Pulwicki \\ \today}
 
 \begin{center}
-\Large \textbf{Appendix\\ Variability}
+\Large \textbf{Results\\ Point Scale}
 \end{center}
 
 NORMALITY OF DATA
-Zigzag
-- vertex vs measured, plots, variograms, mean + std + vario summary table
-Watershed
-- plots, variograms, mean + std + vario summary table
+
+Binned data (with bar of total elevation):
+- Standard deviation vs elevation
+- Depth vs elevation
 
 
-\subsection*{Point Scale}
 
-\subsubsection*{Observer differences}
 
-A one-way ANOVA for each transect pattern of snow depth measurements taken by different observers  shows that there are no differences between observers. The only exception is the Lower Hourglass on Glacier 4, where one observer had higher mean snow depth than the other two (p $<$ 0.05). This shows that observer bias is not present in this study and no corrections to the data based on observer were applied.
 
-\subsubsection*{Standard deviation of snow depth}
+\tableofcontents
 
-The mean standard deviation of snow depth measurements taken at each location within various groups can be seen in Table \ref{tab:std_reproduce}. The mean standard deviation varies between glaciers, patterns, and observers but overall, the reproducibility of depth measurement is on the order of centimetres. This is a small variability compared to the overall standard deviation of measurements as seen in Table \ref{tab:std_measure}. The standard deviation of measurements over the study area is on the order of 10$^1$, while the standard deviation of measurement reproducibility is on the order of 10$^0$. 
+\section{Observer differences}
 
-Variability in snow depth differs considerably between glaciers, as can be seen in Figure \ref{fig:box_depth}. Both the range and mean depth are largest for Glacier 4 and smallest for Glacier 13. Glacier 13 has the most outliers (\textgreater 1.5 $\times$ inner quartile range), which could be a result of a prominent surface meltwater channel. 
+A one-way ANOVA for each transect pattern of snow depth measurements taken by different observers  shows that there are no differences between observers. The only exception is the Lower Hourglass on Glacier 4, where one observer had higher mean snow depth than the other two (p $<$ 0.05). Since this was the first transect completed and the only one to show difference in observer measurements, there is cause to consider this an anomaly. This result shows that observer bias is not present in this study and no corrections to the data based on observer were applied.
+
+\section{Standard deviation of snow depth along linear and curvilinear transects}
+
+The \textit{mean} standard deviation of snow depth measurements taken at each location within various groups can be seen in Table \ref{tab:std_reproduce}. This value was found by calculating the standard deviation of three to four measurement done by each person at each measurement location. The mean of these standard deviations for each grouping, as show in Table  \ref{tab:std_reproduce}, represents the variability in snow depth for the sampling locations. It can be used to evaluate the representativeness of the mean snow depth values that were used in analysis at larger scales.
+
+The \textit{overall} standard deviation of all measurements within a certain grouping is shown in Table \ref{tab:std_measure}. These values were calculated by taking all the depth measurements within the groups defined in the table and then calculating the standard deviation. These values represent the variability in the depth field. 
+
+The \textit{mean} standard deviation varies between glaciers, patterns, and observers but overall, the reproducibility of depth measurement is on the order of centimetres. This is a small variability compared to the \textit{overall} standard deviation of measurements. The standard deviation of measurements over the study area is on the order of 10$^1$, while the standard deviation of measurement reproducibility is on the order of 10$^0$. 
+
+Variability in snow depth differs considerably between glaciers, as can be seen in Figure \ref{fig:box_depth}. Both the range and mean depth are largest for Glacier 4 and smallest for Glacier 13. Glacier 13 has the most outliers (\textgreater 1.5 $\times$ inner quartile range), which could be a result of a prominent surface meltwater channel. Overall glacier standard deviation (Table \ref{tab:std_measure}) is lowest for Glacier 13 and highest for Glacier 2, which the standard deviation of Glacier 4 being close to that of Glacier 2. 
 
 %% Std of reproducibility
 \begin{table}[]
 \centering
-\caption{Mean standard deviation (cm) of snow depth measurements for various groupings.}
+\caption{\textit{Mean} standard deviation (cm) of snow depth measurements for various groupings.}
 \label{tab:std_reproduce}
 \begin{tabular}{cccccccc}
  &  &  &  & \multicolumn{4}{c}{\textbf{Person}} \\
@@ -60,7 +67,7 @@ Variability in snow depth differs considerably between glaciers, as can be seen 
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & UM & \cellcolor[HTML]{EFEFEF} & 1.9 & --- & 1.7 & 2 & 2 \\
 \rowcolor[HTML]{EFEFEF} 
-\multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}G04} & UT & \multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}3.5} & 3.9 & 3.7 & --- & 2.4 & 5.6 \\
+\multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & UT & \multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}3.5} & 3.9 & 3.7 & --- & 2.4 & 5.6 \\
  & LH &  & 5.4 & 4.8 & --- & 6.1 & --- \\
  & LC &  & 5 & 3.9 & --- & 6.2 & --- \\
  & LM &  & 6.5 & --- & 6.8 & 6.5 & 6 \\
@@ -68,7 +75,7 @@ Variability in snow depth differs considerably between glaciers, as can be seen 
  & UC &  & 7 & 5.5 & 7 & 8.7 & --- \\
  & UM &  & 4.2 & 3.2 & 5.2 & 4.1 & --- \\
  & UT &  & 5.6 & 3.2 & --- & 8.2 & --- \\
-\multirow{-8}{*}{G02} & BT & \multirow{-8}{*}{5.1} & 2.2 & 2.2 & --- & 3 & 1.5 \\
+\multirow{-8}{*}{Glacier 2} & BT & \multirow{-8}{*}{5.1} & 2.2 & 2.2 & --- & 3 & 1.5 \\
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & LH & \cellcolor[HTML]{EFEFEF} & 3.8 & 3.1 & 4.1 & 4 & --- \\
 \rowcolor[HTML]{EFEFEF} 
@@ -82,14 +89,14 @@ Variability in snow depth differs considerably between glaciers, as can be seen 
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & UM & \cellcolor[HTML]{EFEFEF} & 4.8 & 4.4 & 5.8 & 4.4 & --- \\
 \rowcolor[HTML]{EFEFEF} 
-\multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}G13} & UT & \multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}4.2} & 4.1 & 2.7 & 4.8 & 4.6 & ---
+\multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & UT & \multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}4.2} & 4.1 & 2.7 & 4.8 & 4.6 & ---
 \end{tabular}
 \end{table}
 
 %% Std of measurement
 \begin{table}[]
 \centering
-\caption{Standard deviation (cm) of snow depth measurements for various groupings.}
+\caption{\textit{Overall} standard deviation (cm) of snow depth measurements for various groupings. The standard deviation of all transect data was 64.6 cm.}
 \label{tab:std_measure}
 \begin{tabular}{cccccccc}
  &  &  &  & \multicolumn{4}{l}{\textbf{Person}} \\
@@ -107,7 +114,7 @@ Variability in snow depth differs considerably between glaciers, as can be seen 
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & UM & \cellcolor[HTML]{EFEFEF} & 22.5 & --- & 24.1 & 20.7 & 22.7 \\
 \rowcolor[HTML]{EFEFEF} 
-\multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}G04} & UT & \multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}44.7} & 26 & 25.1 & --- & 25.1 & 27.7 \\
+\multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & UT & \multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}44.7} & 26 & 25.1 & --- & 25.1 & 27.7 \\
  & LH &  & 29.9 & 29.2 & --- & 30.6 & --- \\
  & LC &  & 29.3 & 28.6 & --- & 30.1 & --- \\
  & LM &  & 18.4 & --- & 20.8 & 15.5 & 18.1 \\
@@ -115,7 +122,7 @@ Variability in snow depth differs considerably between glaciers, as can be seen 
  & UC &  & 55 & 55.3 & 55.2 & 56.1 & --- \\
  & UM &  & 35.1 & 38.4 & 34.5 & 31.8 & --- \\
  & UT &  & 36.4 & 27.3 & --- & 43.9 & --- \\
-\multirow{-8}{*}{G02} & BT & \multirow{-8}{*}{49.3} & 20.8 & 13.8 & --- & 13.7 & 30.4 \\
+\multirow{-8}{*}{Glacier 2} & BT & \multirow{-8}{*}{49.3} & 20.8 & 13.8 & --- & 13.7 & 30.4 \\
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & LH & \cellcolor[HTML]{EFEFEF} & 27.4 & 25.7 & 27.5 & 28.9 & --- \\
 \rowcolor[HTML]{EFEFEF} 
@@ -129,19 +136,20 @@ Variability in snow depth differs considerably between glaciers, as can be seen 
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & UM & \cellcolor[HTML]{EFEFEF} & 29.4 & 26.6 & 33.4 & 28 & --- \\
 \rowcolor[HTML]{EFEFEF} 
-\multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}G13} & UT & \multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}30.5} & 32.7 & 21.5 & 44.4 & 26.4 & ---
+\multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & UT & \multirow{-7}{*}{\cellcolor[HTML]{EFEFEF}30.5} & 32.7 & 21.5 & 44.4 & 26.4 & ---
 \end{tabular}
 \end{table}
 
-\begin{figure}[h]
-	\centering
+{
+\begin{wrapfigure}{r}{\textwidth} 
+\centering
 	\includegraphics[height = 10cm]{box_depth.png}\\
 	\caption{Variability in snow depth measurements taken at each glacier.}
 	\label{fig:box_depth}
-\end{figure}
+\end{wrapfigure}
+}
 
-
-\subsection{Zigzag variability}
+\section{Zigzag variability}
 
 
 

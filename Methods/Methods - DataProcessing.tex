@@ -28,8 +28,8 @@
 
 
 \section*{Overview}
+This section documents the process of going from raw data to processed and consolidated data that will be used for analysis in subsequent components of the project. A description of the various scripts used to process this data is provided and the final data structure is outlined.
 
-This section documents the process of going from raw data to processed and consolidated data that will be used for analysis in subsequent components of the project. An overview of the various density interpolation methods and the eight group of SWE values is provided. An overview of the zigzag data is also included. 
 
 \tableofcontents
 \pagebreak
@@ -38,6 +38,10 @@ This section documents the process of going from raw data to processed and conso
 %%%%
 \section{Data Processing}
 %%%%
+This section documents the process of going from raw data to processed and consolidated data that will be used for analysis in subsequent components of the project. A description of the various scripts used to process this data is provided and the final data structure is outlined.
+
+To run the entire data processing framework first ensure your desired outcome in reflect in the `OPTIONS.m' script and then run both `OPTIONS.m' and `MAIN.m'.
+
 
 \subsection{Linear and Curvilinear Transects}
 
@@ -78,7 +82,22 @@ Data from zigzag measurements, which includes the measured snow depth and the di
 
 The density data from snowpit and Federal Sampler measurements were compiled into a spreadsheet and the density from each measurement was calculated and summarized in a spreadsheet. 
 
-Integrated snow density was calculated from snowpit measurements. This was done by multiplying the measured density from each wedge sample by the depth of the sample and summing these values. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice thickness, and the `hard` layer density was varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm, and 500 and 600 kg m$^{-3}$, respectively.  A summary of density values and ranges is shown in Table \ref{tab:density}.
+Integrated snow density was calculated from snowpit measurements. This was done by multiplying the measured density from each wedge sample by the depth of the sample and summing these values. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice thickness, and the `hard` layer density was varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm, and 500 and 600 kg m$^{-3}$, respectively.  A summary of density values and ranges is shown in Table \ref{tab:density_stats}.
+
+\begin{table}[b!]
+\centering
+\caption{Mean and standard deviation (std) of snow density (kg m$^{-3}$) as well as number of measurements (n) of snow density measured on study glaciers in snowpits and using a Federal Sampler. }
+\label{tab:density_stats}
+\begin{tabular}{ccccccc}
+ & \multicolumn{3}{c}{\textbf{Snowpits}} & \multicolumn{3}{c}{\textbf{Federal Sampler}} \\
+\multirow{-2}{*}{\textbf{Glacier}} & Mean & Std & n & Mean & Std & n \\ \hline
+\textbf{Glacier 4} & 348 & 13 & 3 & 355 & 18 & 7 \\
+\textbf{Glacier 2} & 333 & 26 & 4 & 286 & 34 & 7 \\
+\textbf{Glacier 13} & 349 & 26 & 3 & 316 & 40 & 17 \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{All} & 342 & 26 & 10 & 318 & 42 & 31
+\end{tabular}
+\end{table}
 
 Density values determined from Federal Sampler measurements were filtered based on quality and then averaged for each measurement location. Measurements that were deemed to be unrepresentative of the local snow pack, which included measurements where the inner core length was less than 70\% of the snow depth or where density values were exceptionally high (e.g. 490 kg m$^{-3}$), were marked as bad quality data. The data was processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
 \begin{enumerate}
@@ -93,13 +112,13 @@ The final version of the `Density' structure includes five fields:
 \item[]\texttt{Density.snowpit} includes the density data from the snowpit. Columns correspond to snowpit label, assumed density, easting, northing, elevation, minimum density, maximum density, snow depth.
 \item[]\texttt{Density.pitANDtube} includes data from locations where measurements were taken in a snowpit and with a Federal Sampler. Columns correspond to snowpit label, Federal  Sampler mean density, standard deviation, minimum values, maximum values, and number of observations, snowpit derived density, site elevation, minimum snowpit density, and maximum snowpit density.
 \item[]\texttt{Density.tube} includes Federal Sampler data. Columns correspond to location label, density mean, standard deviation, minimum, maximum, number of good quality observations, easting, northing, elevation, and depth. 
-\item[]\texttt{Density.zigzagtube} includes density values at each zigzag location estimated using a Federal Sampler. Columns correspond to ziglag label, mean density, standard deviation, number of observation, and site elevation. 
+\item[]\texttt{Density.zigzagtube} includes density values at each zigzag location estimated using a Federal Sampler. Columns correspond to zigzag label, mean density, standard deviation, number of observation, and site elevation. 
 \item[]\texttt{Density.SWEdepth} is a summary of all the snow depth and Federal Sampler derived density data. Columns correspond to location label, mean probe depth, depth measured by the Sampler, and snow density estimated using the Federal Sampler. 
 \end{itemize}
 
 \subsection{Snow water equivalent (SWE)}
 
-
+The conversion of measured snow depth to snow water equivalent (SWE) proved to be challenging because snow density was not measured at all locations where snow depth was measured. This meant that the density measurements need to be interpolated. There are a number of different methodologies for doing this interpolation within the glaciology literature and that ones that were chosen for this project can be seen in Figure \ref{fig:SWEoptions}. Since there was no true justification for choosing one option over the other, a selection of methods applicable to the study were chosen. There were three main methods that were used. The first assumed a uniform spatial distribution of SWE \citep[e.g.]{McGrath2015, Elder1991}. A subset of this method was to use the mean density over the entire Donjek Range was used (same value for all glaciers) and a second subset used a mean density for each glacier (different value for all glaciers). The second and third methods involved spatially variable density values. One of these methods involved doing an elevation regression with the measured density values to interpolate between measurement locations and the other one used an inverse-distance weighted mean for interpolation. Since the snowpit derived density and Federal Sampler derived density had no relationship, the two density datasets were kept separate. This mean that for each density interpolation option, there were two outputs. In the end, there were eight different interpolations of density that would be carried forward throughout the study, which allows for a range of SWE estimates to be made.
 
 {
 \begin{wrapfigure}{r}{\textwidth} 
@@ -110,5 +129,36 @@ The final version of the `Density' structure includes five fields:
 \end{wrapfigure}
 }
 
+The final SWE values were calculated in Matlab using the following steps (this corresponds to the script `Import\_SWE.m'):
+\begin{enumerate}
+\item Data from transects, zigzags, and extra measurements was complied into a single structure called `SWE'.
+\item The elevation of each measurement location according to the SPOT5 DEM was found in QGIS and the data was imported to Matlab and assigned to each value.
+\item The density values were interpolated and assigned to each value
+	\begin{itemize}
+	\item[Option 1] Does not calculate SWE and keeps the depth value.
+	\item[Option 2] Calculates the mean density of all snowpit measurements.
+	\item[Option 3] Calculates the mean density of all Federal Sampler measurements.
+	\item[Option 4] Calculates the mean density for each glacier using the snowpit measurements. 
+	\item[Option 5] Calculates the mean density for each glacier using the Federal Sampler measurements. 
+	\item[Option 6] Calculates the slope and intercept of the snowpit densities with elevation for each glacier using the `fit' function and then uses this to determine density for all elevations associated with each measurement location.
+	\item[Option 7] Calculates the slope and intercept of the Federal Sampler densities with elevation for each glacier using the `fit' function and then uses this to determine density for all elevations associated with each measurement location.
+	\item[Option 8] Determines the distance between each measurement location and each snowpit the calculates the inverse-distance weight. For each measurement location, each snowpit density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
+	\item[Option 9] Determines the distance between each measurement location and each Federal Sampler the calculates the inverse-distance weight. For each measurement location, each Federal Sampler density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
+	\end{itemize}
+\end{enumerate}
+To chose which SWE calculation option to use (or to cycle through all options) the value of \texttt{options.DensitySWE} to changed to the option number.
+
+The final version the 'SWE' structure includes three rows that correspond to Glacier 4, 2, and 13 and ten fields that include information about each individual SWE estimate. The fields are: \texttt{book} (field book where they are written), \texttt{comments} (any comments noted by observer), \texttt{density} (the density value used to calculate SWE), \texttt{depth} (mean depth measured at each sampling location, $n=3$ usually), \texttt{glacier} (which glacier the measurement was taken on), \texttt{label} (measurement point reference label - for transects this is the waypoint number and relative position, for other measurements this is a label associated with shape and location), \texttt{pattern} (pattern that the measurement is a part of), \texttt{person} (initials of observer), \texttt{swe} (estimated SWE value), and \texttt{utm} (the easting and northing for the measurement location as well as the DEM elevation). To access the SWE values for Glacier 2, one would type \texttt{SWE(2).swe}. 
+
+The `SWE' structure includes all data that was collected for each glacier. If there is a need to remove the zigzag data or keep only the zigzag data, the script `ZigzagRemoval.m' can be run. Set the option for including or excluding zigzag data in the script `OPTIONS.m'.
+
+
+
+
+
+
+
+\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
+\bibliographystyle{igs}
 
 \end{document}
