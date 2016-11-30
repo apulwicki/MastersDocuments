@@ -11,6 +11,7 @@
 \usepackage{enumitem}
 \setlist[enumerate]{itemsep=0mm}
 \usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage{lscape}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -20,27 +21,36 @@
 \noindent{Alexandra Pulwicki \\ \today}
 
 \begin{center}
-\Large \textbf{Results\\ Observations}
+\Large \textbf{Results\\ Basin Scale}
 \end{center}
 
+Params
 - correlation matrix between topo params (sampled and full)
+- different rasters
+- get equations for topo params
+
+MLR
+- methods
 
 \section*{Overview}
 This is a document that shows the sampled and full ranges of topographic parameters and then goes into the multiple linear regression and Bayesian model averaging that was used to explain SWE with topographic parameters. 
 
-
+\tableofcontents
 \pagebreak
 
 %%%%
 \section{Topographic parameters of study sites}
 %%%%
 
-One method of interpolating snow water equivalent (SWE) is to relate the observed SWE with topographic parameters derived from a digital elevation model (DEM) of the study area. The imagery we were using was from the SPOT-5 DEMs and were provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size fo 40x40 m. The following topographic parameters were calculated from the DEM in QGIS:
+\subsection{Creating DEM}
+
+\subsection{Calculating topographic parameters}
+One method of interpolating snow water equivalent (SWE) is to relate the observed SWE with topographic parameters derived from a digital elevation model (DEM) of the study area. The imagery we were using was from the SPOT-5 DEMs and were provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40x40 m. The following topographic parameters were calculated from the DEM in QGIS:
 
 \begin{enumerate}
 \item[]\textbf{Elevation} values were taken from the SPOT-5 DEMs directly.
 
-\item[] \textbf{Distance from centreline} was calculated as the minimum distance between the Easting and Northing of the northwest corner of each cell and a centreline that was drawn by hand in QGIS. 
+\item[] \textbf{Distance from centreline} was calculated as the minimum distance between the Easting and Northing of the northwest corner of each cell and a centreline that was drawn by hand in QGIS. This was completed in Matlab using the script `CentrelineDistance.m'. 
 
 \item[]  \textbf{Slope} is the second derivative of the elevations. 
 
@@ -70,10 +80,58 @@ Glacier 13 & 325                            & 200
 \end{tabular}
 \end{table}
 
-
-
 \end{enumerate}
 
+\subsection{Parameter correlation}
+
+\begin{table}[]
+\centering
+\caption{Pearson correlation coefficients between topographic parameters at sampled locations.}
+\label{tab:pearson_correlation}
+\begin{tabular}{cccccccccc}
+\textbf{Glacier} &  & \textbf{$\alpha$} & \textbf{$z$} & \textbf{$N$} & \textbf{$\kappa_P$} & \textbf{$m$} & \textbf{$\kappa_T$} & \textbf{$Sx$} & \textbf{$C_d$} \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$\alpha$} & 1 & 0.52 & -0.78 & 0.24 & -0.2 & 0.12 & 0.3 & -0.12 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$z$} & 0 & 1 & -0.53 & 0.16 & 0 & 0.15 & 0.21 & 0.2 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$N$} & 0 & 0 & 1 & -0.33 & 0.07 & -0.13 & -0.49 & 0.09 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$\kappa_P$} & 0 & 0 & 0 & 1 & -0.2 & 0.44 & -0.3 & -0.16 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$m$} & 0 & 0 & 0 & 0 & 1 & 0 & 0.2 & 0.36 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$\kappa_T$} & 0 & 0 & 0 & 0 & 0 & 1 & -0.28 & -0.01 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$Sx$} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0.07 \\
+\rowcolor[HTML]{EFEFEF} 
+\multirow{-8}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & \textbf{$C_d$} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+ & \textbf{$\alpha$} & 1 & -0.02 & 0.04 & 0.13 & -0.16 & -0.02 & -0.02 & -0.12 \\
+ & \textbf{$z$} & 0 & 1 & -0.62 & 0.06 & -0.46 & 0.02 & 0.14 & 0.05 \\
+ & \textbf{$N$} & 0 & 0 & 1 & -0.03 & 0.5 & 0.09 & -0.15 & 0.32 \\
+ & $\kappa_P$ & 0 & 0 & 0 & 1 & -0.01 & 0.45 & 0.01 & 0.08 \\
+ & $m$ & 0 & 0 & 0 & 0 & 1 & -0.02 & -0.07 & 0.12 \\
+ & $\kappa_T$ & 0 & 0 & 0 & 0 & 0 & 1 & -0.03 & 0.19 \\
+ & $Sx$ & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -0.18 \\
+\multirow{-8}{*}{Glacier 2} & $C_d$ & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & $\alpha$ & 1 & -0.24 & -0.07 & 0.02 & -0.1 & 0.02 & 0.08 & 0.06 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & $z$ & 0 & 1 & 0.14 & 0.08 & 0.01 & 0.01 & -0.24 & 0.13 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & $N$ & 0 & 0 & 1 & 0.06 & 0.24 & 0.08 & -0.01 & 0.07 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & 0 & 0 & 0 & 1 & -0.02 & 0.37 & -0.04 & 0.07 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & $m$ & 0 & 0 & 0 & 0 & 1 & -0.15 & -0.02 & 0.09 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$\kappa_T$} & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & \textbf{$Sx$} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -0.06 \\
+\rowcolor[HTML]{EFEFEF} 
+\multirow{-8}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & \textbf{$C_d$} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
+\end{tabular}
+\end{table}
 
 \subsection{Maps of topographic parameters}
 
