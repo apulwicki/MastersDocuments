@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  29 NOV 2016 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  30 NOV 2016 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -276,7 +276,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-(./Results - Topographic Params.aux)
+(./Results - Topographic Params.aux
+
+LaTeX Warning: Label `sampledRange:Sx' multiply defined.
+
+)
 \openout1 = `"Results - Topographic Params.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -395,258 +399,265 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 71.
+               Default added (so using `tbp') on input line 77.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 87.
+               Default added (so using `tbp') on input line 101.
 
-[3] [4] <Map_elevation.png, id=83, 1011.78pt x 289.08pt>
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 110.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 110.
+ [3] [4] [5]
+<Map_elevation.png, id=101, 939.51pt x 433.62pt>
 File: Map_elevation.png Graphic file (type png)
+ <use Map_elevation.png>
+Package pdftex.def Info: Map_elevation.png used on input line 156.
+(pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<use Map_elevation.png>
-Package pdftex.def Info: Map_elevation.png used on input line 142.
-(pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
+<SampledRangeTopo_elevation.png, id=102, 1011.78pt x 289.08pt>
+File: SampledRangeTopo_elevation.png Graphic file (type png)
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 142--142
- [][] 
- []
+<use SampledRangeTopo_elevation.png>
+Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 163.
 
-<Map_centreD.png, id=84, 1011.78pt x 289.08pt>
-File: Map_centreD.png Graphic file (type png)
- <use Map_centreD.png>
-Package pdftex.def Info: Map_centreD.png used on input line 149.
-(pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
-
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 149--149
- [][] 
- []
-
-<Map_slope.png, id=85, 1011.78pt x 289.08pt>
-File: Map_slope.png Graphic file (type png)
- <use Map_slope.png>
-Package pdftex.def Info: Map_slope.png used on input line 156.
-(pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
-
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 156--156
- [][] 
- []
-
-<Map_tangentCurve.png, id=86, 1011.78pt x 289.08pt>
-File: Map_tangentCurve.png Graphic file (type png)
- <use Map_tangentCurve.png>
-Package pdftex.def Info: Map_tangentCurve.png used on input line 163.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
 Overfull \hbox (1.43422pt too wide) in paragraph at lines 163--163
  [][] 
  []
 
-<Map_profileCurve.png, id=87, 1011.78pt x 289.08pt>
-File: Map_profileCurve.png Graphic file (type png)
- <use Map_profileCurve.png>
-Package pdftex.def Info: Map_profileCurve.png used on input line 170.
-(pdftex.def)             Requested size: 573.67921pt x 163.90831pt.
+<Map_centreD.png, id=103, 939.51pt x 433.62pt>
+File: Map_centreD.png Graphic file (type png)
+ <use Map_centreD.png>
+Package pdftex.def Info: Map_centreD.png used on input line 170.
+(pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<Map_northness.png, id=88, 1011.78pt x 289.08pt>
-File: Map_northness.png Graphic file (type png)
- <use Map_northness.png>
-Package pdftex.def Info: Map_northness.png used on input line 177.
-(pdftex.def)             Requested size: 573.67921pt x 163.90831pt.
+<SampledRangeTopo_centreD.png, id=104, 1011.78pt x 289.08pt>
+File: SampledRangeTopo_centreD.png Graphic file (type png)
 
-<Map_aspect.png, id=89, 1011.78pt x 289.08pt>
-File: Map_aspect.png Graphic file (type png)
- <use Map_aspect.png>
-Package pdftex.def Info: Map_aspect.png used on input line 184.
+<use SampledRangeTopo_centreD.png>
+Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 177.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 184--184
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 177--177
  [][] 
  []
 
-<Map_Sx.png, id=90, 1011.78pt x 289.08pt>
-File: Map_Sx.png Graphic file (type png)
- <use Map_Sx.png>
-Package pdftex.def Info: Map_Sx.png used on input line 191.
+<Map_slope.png, id=105, 939.51pt x 433.62pt>
+File: Map_slope.png Graphic file (type png)
+ <use Map_slope.png>
+Package pdftex.def Info: Map_slope.png used on input line 184.
+(pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
+
+<SampledRangeTopo_slope.png, id=106, 1011.78pt x 289.08pt>
+File: SampledRangeTopo_slope.png Graphic file (type png)
+
+<use SampledRangeTopo_slope.png>
+Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 191.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
 Overfull \hbox (1.43422pt too wide) in paragraph at lines 191--191
  [][] 
  []
 
+<Map_tangentCurve.png, id=107, 939.51pt x 433.62pt>
+File: Map_tangentCurve.png Graphic file (type png)
+ <use Map_tangentCurve.png>
+Package pdftex.def Info: Map_tangentCurve.png used on input line 198.
+(pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-LaTeX Warning: Reference `Sec:Sx' on page 5 undefined on input line 192.
-
-
-LaTeX Warning: Reference `Sec:Sx' on page 5 undefined on input line 192.
-
-[5 <./Map_elevation.png (PNG copy)> <./Map_centreD.png (PNG copy)>] [6 <./Map_s
-lope.png (PNG copy)> <./Map_tangentCurve.png (PNG copy)>] [7 <./Map_profileCurv
-e.png (PNG copy)> <./Map_northness.png (PNG copy)>] [8 <./Map_aspect.png (PNG c
-opy)> <./Map_Sx.png (PNG copy)>] [9
-
-
-]
-<SampledRangeTopo_elevation.png, id=124, 1011.78pt x 289.08pt>
-File: SampledRangeTopo_elevation.png Graphic file (type png)
-
-<use SampledRangeTopo_elevation.png>
-Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 204.
-
-(pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
-
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 204--204
- [][] 
- []
-
-<SampledRangeTopo_centreD.png, id=125, 1011.78pt x 289.08pt>
-File: SampledRangeTopo_centreD.png Graphic file (type png)
-
-<use SampledRangeTopo_centreD.png>
-Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 211.
-(pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
-
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 211--211
- [][] 
- []
-
-<SampledRangeTopo_slope.png, id=126, 1011.78pt x 289.08pt>
-File: SampledRangeTopo_slope.png Graphic file (type png)
-
-<use SampledRangeTopo_slope.png>
-Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 218.
-(pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
-
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 218--218
- [][] 
- []
-
-<SampledRangeTopo_tangentCurve.png, id=127, 1011.78pt x 289.08pt>
+<SampledRangeTopo_tangentCurve.png, id=108, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_tangentCurve.png Graphic file (type png)
 
 <use SampledRangeTopo_tangentCurve.png>
 Package pdftex.def Info: SampledRangeTopo_tangentCurve.png used on input line 2
-25.
+05.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 225--225
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 205--205
  [][] 
  []
 
-<SampledRangeTopo_profileCurve.png, id=128, 1011.78pt x 289.08pt>
+<Map_profileCurve.png, id=109, 939.51pt x 433.62pt>
+File: Map_profileCurve.png Graphic file (type png)
+ <use Map_profileCurve.png>
+Package pdftex.def Info: Map_profileCurve.png used on input line 212.
+(pdftex.def)             Requested size: 355.13953pt x 163.90831pt.
+
+<SampledRangeTopo_profileCurve.png, id=110, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_profileCurve.png Graphic file (type png)
 
 <use SampledRangeTopo_profileCurve.png>
 Package pdftex.def Info: SampledRangeTopo_profileCurve.png used on input line 2
-32.
+19.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 232--232
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 219--219
  [][] 
  []
 
-<SampledRangeTopo_northness.png, id=129, 1011.78pt x 289.08pt>
+<Map_northness.png, id=111, 939.51pt x 433.62pt>
+File: Map_northness.png Graphic file (type png)
+ <use Map_northness.png>
+Package pdftex.def Info: Map_northness.png used on input line 227.
+(pdftex.def)             Requested size: 355.13953pt x 163.90831pt.
+
+<SampledRangeTopo_northness.png, id=112, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_northness.png Graphic file (type png)
 
 <use SampledRangeTopo_northness.png>
-Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 239.
+Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 234.
 
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 239--239
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 234--234
  [][] 
  []
 
-<SampledRangeTopo_aspect.png, id=130, 1011.78pt x 289.08pt>
+<Map_aspect.png, id=113, 939.51pt x 433.62pt>
+File: Map_aspect.png Graphic file (type png)
+ <use Map_aspect.png>
+Package pdftex.def Info: Map_aspect.png used on input line 241.
+(pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
+
+<SampledRangeTopo_aspect.png, id=114, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_aspect.png Graphic file (type png)
 
 <use SampledRangeTopo_aspect.png>
-Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 246.
+Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 248.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 246--246
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 248--248
  [][] 
  []
 
-<SampledRangeTopo_Sx.png, id=131, 1011.78pt x 289.08pt>
+<Map_Sx.png, id=115, 939.51pt x 433.62pt>
+File: Map_Sx.png Graphic file (type png)
+ <use Map_Sx.png>
+Package pdftex.def Info: Map_Sx.png used on input line 255.
+(pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
+
+
+LaTeX Warning: Reference `Sec:Sx' on page 6 undefined on input line 256.
+
+
+LaTeX Warning: Reference `Sec:Sx' on page 6 undefined on input line 256.
+
+<SampledRangeTopo_Sx.png, id=120, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_Sx.png Graphic file (type png)
 
 <use SampledRangeTopo_Sx.png>
-Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 253.
+Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 262.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 253--253
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 262--262
  [][] 
  []
 
-[10 <./SampledRangeTopo_elevation.png (PNG copy)> <./SampledRangeTopo_centreD.p
-ng (PNG copy)>] [11 <./SampledRangeTopo_slope.png (PNG copy)> <./SampledRangeTo
-po_tangentCurve.png (PNG copy)>] [12 <./SampledRangeTopo_profileCurve.png (PNG 
-copy)> <./SampledRangeTopo_northness.png (PNG copy)>] [13 <./SampledRangeTopo_a
-spect.png (PNG copy)> <./SampledRangeTopo_Sx.png (PNG copy)>]
-<photo_swe1.JPG, id=157, 1886.04625pt x 2498.33376pt>
-File: photo_swe1.JPG Graphic file (type jpg)
- <use photo_swe1.JPG>
-Package pdftex.def Info: photo_swe1.JPG used on input line 273.
-(pdftex.def)             Requested size: 173.01627pt x 229.14806pt.
+[6 <./Map_elevation.png (PNG copy)> <./SampledRangeTopo_elevation.png (PNG copy
+)>] [7 <./Map_centreD.png (PNG copy)> <./SampledRangeTopo_centreD.png (PNG copy
+)>] [8 <./Map_slope.png (PNG copy)> <./SampledRangeTopo_slope.png (PNG copy)>]
+[9 <./Map_tangentCurve.png (PNG copy)> <./SampledRangeTopo_tangentCurve.png (PN
+G copy)>] [10 <./Map_profileCurve.png (PNG copy)> <./SampledRangeTopo_profileCu
+rve.png (PNG copy)>] [11 <./Map_northness.png (PNG copy)> <./SampledRangeTopo_n
+orthness.png (PNG copy)>] [12 <./Map_aspect.png (PNG copy)> <./SampledRangeTopo
+_aspect.png (PNG copy)>] [13 <./Map_Sx.png (PNG copy)> <./SampledRangeTopo_Sx.p
+ng (PNG copy)>] [14
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 273--274
-[][] 
+
+] [15] <MLRfit_opt8.png, id=193, 867.24pt x 289.08pt>
+File: MLRfit_opt8.png Graphic file (type png)
+
+<use MLRfit_opt8.png>
+Package pdftex.def Info: MLRfit_opt8.png used on input line 305.
+(pdftex.def)             Requested size: 682.9419pt x 227.65005pt.
+
+Overfull \hbox (46.96678pt too wide) in paragraph at lines 305--305
+ [][] 
  []
 
-<photo_swe2.jpg, id=158, 581.17125pt x 523.9575pt>
-File: photo_swe2.jpg Graphic file (type jpg)
- <use photo_swe2.jpg>
-Package pdftex.def Info: photo_swe2.jpg used on input line 279.
-(pdftex.def)             Requested size: 254.96695pt x 229.87044pt.
+<MLRfit_allLines.png, id=194, 867.24pt x 289.08pt>
+File: MLRfit_allLines.png Graphic file (type png)
+ <use MLRfit_allLines.png>
+Package pdftex.def Info: MLRfit_allLines.png used on input line 314.
+(pdftex.def)             Requested size: 546.35088pt x 182.11726pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 279--280
-[][] 
+<MLRresiduals_all.png, id=197, 1011.78pt x 289.08pt>
+File: MLRresiduals_all.png Graphic file (type png)
+
+<use MLRresiduals_all.png>
+Package pdftex.def Info: MLRresiduals_all.png used on input line 321.
+(pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
+
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 321--321
+ [][] 
+ []
+
+[16 <./MLRfit_opt8.png (PNG copy)>] [17 <./MLRfit_allLines.png (PNG copy)> <./M
+LRresiduals_all.png (PNG copy)>]
+<Coeffs_DensityOpts.png, id=209, 939.51pt x 722.7pt>
+File: Coeffs_DensityOpts.png Graphic file (type png)
+
+<use Coeffs_DensityOpts.png>
+Package pdftex.def Info: Coeffs_DensityOpts.png used on input line 330.
+(pdftex.def)             Requested size: 500.83292pt x 385.25673pt.
+
+Overfull \hbox (45.53279pt too wide) in paragraph at lines 330--330
+ [][] 
  []
 
 (./Results - Topographic Params.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
- [14
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
+ [18
 
 
- <./photo_swe1.JPG> <./photo_swe2.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
-(./Results - Topographic Params.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
+] [19 <./Coeffs_DensityOpts.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
+ (./Results - Topographic Params.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `"Results - Topographic Params".out' has not 
 changed.
-(rerunfilecheck)             Checksum: 1C2A6795E58BAD08722984C102B26121;502.
+(rerunfilecheck)             Checksum: 7ABD27F88B5135837ED5764AFF07E070;661.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
  ) 
 Here is how much of TeX's memory you used:
- 7982 strings out of 494910
- 121331 string characters out of 6179836
- 237608 words of memory out of 5000000
- 11134 multiletter control sequences out of 15000+600000
- 8900 words of font info for 31 fonts, out of 8000000 for 9000
+ 8025 strings out of 494910
+ 122051 string characters out of 6179836
+ 242272 words of memory out of 5000000
+ 11154 multiletter control sequences out of 15000+600000
+ 8769 words of font info for 31 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,11n,43p,726b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,43p,1201b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti12.pfb>
-Output written on "Results - Topographic Params.pdf" (14 pages, 3054386 bytes).
+cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
+.pfb>
+Output written on "Results - Topographic Params.pdf" (19 pages, 1149945 bytes).
 
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 279 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -24,13 +24,16 @@
 \Large \textbf{Results\\ Basin Scale}
 \end{center}
 
+Calculating DEM
+- compiling and correcting DEMS
+
 Params
-- correlation matrix between topo params (sampled and full)
 - different rasters
 - get equations for topo params
 
-MLR
-- methods
+MLR Results
+- MLR coeffs table with R2 values
+
 
 \section*{Overview}
 This is a document that shows the sampled and full ranges of topographic parameters and then goes into the multiple linear regression and Bayesian model averaging that was used to explain SWE with topographic parameters. 
@@ -82,30 +85,38 @@ Glacier 13 & 325                            & 200
 
 \end{enumerate}
 
+\subsection{Topographic parameters from QGIS to Matlab}
+
+The values of each topographic parameters at the sampling locations was determined in QGIS. The sampling locations were imported to QGIS and the Point Sampling Tool was used to determine the value of the cell of the raster for each topographic parameter at that location. This set of parameters that corresponded to each location was then exported to a .csv file and imported into Matlab with the script 'Import\_Topo.m'.  Note that selection of $Sx$ values was completed first (see above) and only the $Sx$ data with highest correlation to SWE was exported. After importing to Matlab, the sets of parameter values ($x_i$) were standardized ($x_s$) using the equation $x_s = \frac{x_i-\mu}{\sigma}$. The resulting structure is called \texttt{topo\_sampled} and is used in the MLR to be able to compare the explanatory power of each parameter (Section \ref{sec:MLR}). A non-standardized copy of the topographic parameters at the sampling locations was also kept for plotting purposes and is called is called \texttt{topo\_sampled\_ns}. Both structures are organized as a vector of values corresponding to the vectors in the \texttt{SWE} variable. 
+
+The raster data for each topographic parameter was also exported from QGIS as a .csv file and then imported into Matlab with the script 'Import\_Topo.m'. The values are stored in the structure \texttt{topo\_full} and are a matrix, where each cell corresponds to one DEM cell. Cells outside of the glacier outline have no value (\texttt{NaN}).
+
 \subsection{Parameter correlation}
+
+The correlation between topographic parameters at sampling locations on each glacier is shown in Table \ref{tab:pearson_correlation}. Correlation values were generally low, with the exception of the correlation between northness and aspect on Glacier 4 and northness and elevation on Glacier 2, which were both negative and larger than 0.7. Since there is little correlation and correlation that varies between glaciers, the use of a multiple linear regression with these topographic parameters as predictor variables is warranted. 
 
 \begin{table}[]
 \centering
-\caption{Pearson correlation coefficients between topographic parameters at sampled locations.}
+\caption{Pearson correlation coefficients between topographic parameters at sampled locations. The parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
 \label{tab:pearson_correlation}
 \begin{tabular}{cccccccccc}
-\textbf{Glacier} &  & \textbf{$\alpha$} & \textbf{$z$} & \textbf{$N$} & \textbf{$\kappa_P$} & \textbf{$m$} & \textbf{$\kappa_T$} & \textbf{$Sx$} & \textbf{$C_d$} \\
+\textbf{Glacier} &  & \textbf{$\alpha$} & \textbf{$z$} & \textbf{$N$} & \textbf{$\kappa_P$} & \textbf{$m$} & \textbf{$\kappa_T$} & \textbf{$Sx$} & \textbf{$d_C$} \\
 \rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & \textbf{$\alpha$} & 1 & 0.52 & -0.78 & 0.24 & -0.2 & 0.12 & 0.3 & -0.12 \\
+\cellcolor[HTML]{EFEFEF} & \textbf{$\alpha$} & 1 & 0.52 & -0.78 & 0.24 & -0.2 & 0.12 & 0.30 & -0.12 \\
 \rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & \textbf{$z$} & 0 & 1 & -0.53 & 0.16 & 0 & 0.15 & 0.21 & 0.2 \\
+\cellcolor[HTML]{EFEFEF} & \textbf{$z$} & 0 & 1 & -0.53 & 0.16 & \textless 0.01 & 0.15 & 0.21 & 0.20 \\
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & \textbf{$N$} & 0 & 0 & 1 & -0.33 & 0.07 & -0.13 & -0.49 & 0.09 \\
 \rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & \textbf{$\kappa_P$} & 0 & 0 & 0 & 1 & -0.2 & 0.44 & -0.3 & -0.16 \\
+\cellcolor[HTML]{EFEFEF} & \textbf{$\kappa_P$} & 0 & 0 & 0 & 1 & -0.20 & 0.44 & -0.30 & -0.16 \\
 \rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & \textbf{$m$} & 0 & 0 & 0 & 0 & 1 & 0 & 0.2 & 0.36 \\
+\cellcolor[HTML]{EFEFEF} & \textbf{$m$} & 0 & 0 & 0 & 0 & 1 & \textless 0.01 & 0.20 & 0.36 \\
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & \textbf{$\kappa_T$} & 0 & 0 & 0 & 0 & 0 & 1 & -0.28 & -0.01 \\
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & \textbf{$Sx$} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0.07 \\
 \rowcolor[HTML]{EFEFEF} 
-\multirow{-8}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & \textbf{$C_d$} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\multirow{-8}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & \textbf{$d_C$} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
  & \textbf{$\alpha$} & 1 & -0.02 & 0.04 & 0.13 & -0.16 & -0.02 & -0.02 & -0.12 \\
  & \textbf{$z$} & 0 & 1 & -0.62 & 0.06 & -0.46 & 0.02 & 0.14 & 0.05 \\
  & \textbf{$N$} & 0 & 0 & 1 & -0.03 & 0.5 & 0.09 & -0.15 & 0.32 \\
@@ -113,7 +124,7 @@ Glacier 13 & 325                            & 200
  & $m$ & 0 & 0 & 0 & 0 & 1 & -0.02 & -0.07 & 0.12 \\
  & $\kappa_T$ & 0 & 0 & 0 & 0 & 0 & 1 & -0.03 & 0.19 \\
  & $Sx$ & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -0.18 \\
-\multirow{-8}{*}{Glacier 2} & $C_d$ & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\multirow{-8}{*}{Glacier 2} & $d_C$ & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & $\alpha$ & 1 & -0.24 & -0.07 & 0.02 & -0.1 & 0.02 & 0.08 & 0.06 \\
 \rowcolor[HTML]{EFEFEF} 
@@ -125,15 +136,15 @@ Glacier 13 & 325                            & 200
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & $m$ & 0 & 0 & 0 & 0 & 1 & -0.15 & -0.02 & 0.09 \\
 \rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & \textbf{$\kappa_T$} & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+\cellcolor[HTML]{EFEFEF} & \textbf{$\kappa_T$} & 0 & 0 & 0 & 0 & 0 & 1 &\textless 0.01 & \textless 0.01 \\
 \rowcolor[HTML]{EFEFEF} 
 \cellcolor[HTML]{EFEFEF} & \textbf{$Sx$} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -0.06 \\
 \rowcolor[HTML]{EFEFEF} 
-\multirow{-8}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & \textbf{$C_d$} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
+\multirow{-8}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & \textbf{$d_C$} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
 \end{tabular}
 \end{table}
 
-\subsection{Maps of topographic parameters}
+\subsection{Maps of topographic parameters and range of parameters sampled}
 
 \begin{landscape}
 
@@ -146,64 +157,16 @@ Glacier 13 & 325                            & 200
 
 \begin{figure}
 	\centering
-	\includegraphics[height = 0.4\textwidth]{Map_centreD.png}\\
-	\caption{Values of distance from centreline used in the topographic regressions for three study glaciers. Centreline was drawn by hand in QGIS.}
-	\label{map:centreD}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height = 0.4\textwidth]{Map_slope.png}\\
-	\caption{Values of slope used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
-	\label{map:slope}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height = 0.4\textwidth]{Map_tangentCurve.png}\\
-	\caption{Values of tangential curvature used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
-	\label{map:tangentC}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height = 0.36\textwidth]{Map_profileCurve.png}\\
-	\caption{Values of distance from centreline used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
-	\label{map:profileC}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height = 0.36\textwidth]{Map_northness.png}\\
-	\caption{Values of ``northness'' used in the topographic regressions for three study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and flat surfaces yield 0. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
-	\label{map:northness}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height = 0.4\textwidth]{Map_aspect.png}\\
-	\caption{Values of aspect, which represent what direction a slope is facing (0${^\circ}$ defined as north), used in the topographic regressions for three study glaciers.}
-	\label{map:aspect}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height = 0.4\textwidth]{Map_Sx.png}\\
-	\caption{Values of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for three study glaciers. See section \ref{Sec:Sx} and the original paper by \cite{Winstral2002} for more details on calculation .}
-	\label{map:Sx}
-\end{figure}
-
-\end{landscape}
-
-\subsection{Range of parameters sampled}
-
-\begin{landscape}
-
-\begin{figure}
-	\centering
 	\includegraphics[height = 0.4\textwidth]{SampledRangeTopo_elevation.png}\\
 	\caption{Range of elevation sampled as compared to total range of elevation of study glaciers.}
 	\label{sampledRange:elev}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.4\textwidth]{Map_centreD.png}\\
+	\caption{Values of distance from centreline used in the topographic regressions for three study glaciers. Centreline was drawn by hand in QGIS.}
+	\label{map:centreD}
 \end{figure}
 
 \begin{figure}
@@ -215,9 +178,23 @@ Glacier 13 & 325                            & 200
 
 \begin{figure}
 	\centering
+	\includegraphics[height = 0.4\textwidth]{Map_slope.png}\\
+	\caption{Values of slope used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
+	\label{map:slope}
+\end{figure}
+
+\begin{figure}
+	\centering
 	\includegraphics[height = 0.4\textwidth]{SampledRangeTopo_slope.png}\\
 	\caption{Range of slope sampled as compared to total range of slope of study glaciers.}
 	\label{sampledRange:slope}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.4\textwidth]{Map_tangentCurve.png}\\
+	\caption{Values of tangential curvature used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
+	\label{map:tangentC}
 \end{figure}
 
 \begin{figure}
@@ -229,9 +206,24 @@ Glacier 13 & 325                            & 200
 
 \begin{figure}
 	\centering
+	\includegraphics[height = 0.36\textwidth]{Map_profileCurve.png}\\
+	\caption{Values of distance from centreline used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
+	\label{map:profileC}
+\end{figure}
+
+\begin{figure}
+	\centering
 	\includegraphics[height = 0.4\textwidth]{SampledRangeTopo_profileCurve.png}\\
 	\caption{Range of profile curvature sampled as compared to total range of profile curvature of study glaciers.}
 	\label{sampledRange:profileC}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.36\textwidth]{Map_northness.png}\\
+	\caption{Values of ``northness'' used in the topographic regressions for three study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and flat surfaces yield 0. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
+	\label{map:northness}
 \end{figure}
 
 \begin{figure}
@@ -243,9 +235,23 @@ Glacier 13 & 325                            & 200
 
 \begin{figure}
 	\centering
+	\includegraphics[height = 0.4\textwidth]{Map_aspect.png}\\
+	\caption{Values of aspect, which represent what direction a slope is facing (0${^\circ}$ defined as north), used in the topographic regressions for three study glaciers.}
+	\label{map:aspect}
+\end{figure}
+
+\begin{figure}
+	\centering
 	\includegraphics[height = 0.4\textwidth]{SampledRangeTopo_aspect.png}\\
 	\caption{Range of aspect sampled as compared to total range of aspect of study glaciers.}
 	\label{sampledRange:aspect}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.4\textwidth]{Map_Sx.png}\\
+	\caption{Values of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for three study glaciers. See section \ref{Sec:Sx} and the original paper by \cite{Winstral2002} for more details on calculation .}
+	\label{map:Sx}
 \end{figure}
 
 \begin{figure}
@@ -258,36 +264,73 @@ Glacier 13 & 325                            & 200
 \end{landscape}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multiple Linear Regression}
+\label{sec:MLR}
+
+\subsection{Methods}
+
+A multiple linear regression (MLR) between snow water equivalent (SWE) and all linear combinations of the calculated topographic parameters was completed. This methodology for calculating the MLR also involved using cross validation, where a portion of the data is withheld from the MLR fit and these points are then used to assess the ability of the MLR to predict values. The MLR fit with the best prediction ability is then carried forward. 
+
+The MLR was completed with the following steps (executed using the function 'MLRcalval.m'):
+\begin{enumerate}
+\item The topographic parameters 
+
+\item The \texttt{topo\_sampled} structure for one glacier as well as the \texttt{SWE} strcture is passed into the function.
+
+\item A set of initializations is completed. This includes 1) creating a logical matrix to choose all linear combination of topographic parameters, 2) selecting the number of runs, 3) creating a matrix of random numbers for selecting data point in the cross validation procedure, 4) initializing matrices, and 5) converting the input structure to a table.
+
+\item For each linear combination of topographic parameters, one thousand runs of a cross validation MLR are then executed. Three-quarters of the total data is randomly selected to use for calculating the regression (using the function \texttt{regress()} which is a basic regression function with fast execution). The MLR equations is used to predict the SWE using the remaining one-quarter of the topographic parameters. The root-mean-squared error (RMSE) between the predicted and observed SWE values is then calculated and the MLR equation with the lowest RMSE is then chosen for that combination of topographic parameters. The function \texttt{fitlm()} is then used to calculate the MLR from the set of data that gave the lowest RMSE. This function is slower but calculates a number of additional values that characterize the fit of the model. One of these values is the Bayesian information criterion (BIC), which allows for model selection among a finite set of models \citep{Burnham2004}. The BIC from the best model for each combination of topographic parameters is saved.
+
+\item A weighted sum of all models found using linear combinations of topographic parameters was then found. The BIC values for each model ($BIC_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value $BIC_{min}$) according to \citep{Burnham2004}
+\begin{equation}
+w_i = \frac{e^{-0.5(BIC_i-BIC_{min})}}{\Sigma_{i=1}^R e^{-0.5(BIC_i-BIC_{min})}}.
+\end{equation}
+When parameters were excluded from a model, a coefficient of zero was assigned to that parameter. 
+
+\item The percent variance ($var_\%$) explained by each parameter was calculated using the equation $var_\% = \frac{SSr}{SSt}\times 100$, where $SSr$ is the sum of squares of the residual (fitted topographic parameters) and $SSt$ is the total sum of squares (SWE observations). The final coefficients and the percent varience explained by each one can be found in the \texttt{coeffs\_final} table within the function and in the \texttt{mlr} structure when run for all density options and glaciers in the main script 'TopoRegression.m'.
+
+\item The residuals of the fit have also been calculated as a separate variable than can be returned when the function is called. The residual was calculated as the difference between the predicted and observed value. 
+\end{enumerate}
 
 
+\subsection{Results}
 
-
-
-
-
-
- \begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.38\textwidth}
-        \fbox{\includegraphics[width=\textwidth]{photo_swe1.JPG}}
-        \caption{Inserting the Federal Sampler into the snow. Photo credit: C. Ariagno}
-        \label{photo_swe1}
-    \end{subfigure}
-    ~
-    \begin{subfigure}[b]{0.56\textwidth}
-        \fbox{\includegraphics[width=\textwidth]{photo_swe2.jpg}}
-        \caption{Weighing the Federal Sampler with snow core on the spring scale (units of cm SWE). Photo credit: G. Flowers}
-        \label{photo_swe2}
-    \end{subfigure}
-
-    \caption{Using the Federal Sampler to measure SWE}
-    \label{photo_swe}
+\begin{landscape}
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.5\textwidth]{MLRfit_opt8.png}\\
+	\caption{Comparison of predicted (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).}
+	\label{fig:MLRfit_opt8}
 \end{figure}
+
+\pagebreak
+
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.4\textwidth]{MLRfit_allLines.png}\\
+	\caption{Plot of all linear fits between modelled and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref{fig:MLRfit_opt8} for a plot of the data. }
+	\label{fig:MLRfit_allLines}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.4\textwidth]{MLRresiduals_all.png}\\
+	\caption{Residuals of SWE predicted using MLR for all options of estimating density.}
+	\label{fig:MLRresiduals_all}
+\end{figure}
+
+\end{landscape}
  
+\begin{figure}
+	\centering
+	\includegraphics[width =1.1 \textwidth]{Coeffs_DensityOpts.png}\\
+	\caption{Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
+	\label{sampledRange:Sx}
+\end{figure} 
 	
 %%%%%%%%
-
+\pagebreak
 \bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 \bibliographystyle{igs}
 
