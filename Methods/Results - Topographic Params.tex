@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
-% Last edits: Nov 9, 2016
+% Last edits: December, 2016
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[12pt]{article}
@@ -328,6 +328,43 @@ When parameters were excluded from a model, a coefficient of zero was assigned t
 	\caption{Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
 	\label{sampledRange:Sx}
 \end{figure} 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesian Model Averaging}
+\label{sec:BMS}
+
+Bayesian model averaging (BMA) is a method of estimating all possible linear combinations of predictor variables and then averaging over all models \citep{Raftery1997, Wasserman2000, Raftery2005}. The model weights stem from posterior model probability based on Bayes' theorem. The model weighted posterior distribution for the coefficients ($\beta$) of $K$ number of models after renormalization is given by \citep{Raftery1997}
+\begin{equation}
+p(\beta\ | y,X) = \sum\limits_{\gamma=1} 2^K p(\beta | M_\gamma , y, X)p(M_\gamma | X,y),
+\end{equation}
+where the responding variable is given by $y$ and the matrix of variables is given by $X$. Model prior ($p(M_\gamma)$) is specified by the researcher.
+
+Describe various options? MCMC? 
+
+
+\subsection{Methods}
+
+The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 %%%%%%%%
 \pagebreak
