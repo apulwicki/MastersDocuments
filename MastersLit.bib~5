@@ -2505,8 +2505,8 @@
 	journal = "The Cryosphere",
 	number = "4",
 	pages = "1361--1380",
-	title = "{\hack{\vspace*{-3mm}}Mapping snow depth in open alpine terrain\hack{\newpage} from stereo satellite imagery}",
-	url = "http://www.the-cryosphere.net/10/1361/2016/",
+	title = "{Mapping snow depth in open alpine terrain from stereo satellite imagery}",
+	url = "http://www.the-cryosphere.net/10/1361/2016",
 	volume = "10",
 	year = "2016"
 }
@@ -2516,5 +2516,27 @@
 	localfile = "/home/glaciology1/Documents/Papers/CRREL+Technical+Report+163.pdf",
 	organization = "Cold Regions Research \& Engineering Laboratory",
 	title = "{Accuracy of field snow surveys}"
+}
+
+@article{Pomeroy2004,
+	author = "Pomeroy, John and Essery, Richard and Toth, Brenda",
+	journal = "Annals of Glaciology",
+	number = "1",
+	pages = "195--201",
+	publisher = "International Glaciological Society",
+	title = "{Implications of spatial distributions of snow mass and melt rate for snow-cover depletion: observations in a subarctic mountain catchment}",
+	volume = "38",
+	year = "2004"
+}
+
+@article{McCartney2006,
+	author = "McCartney, Stephen E and Carey, Sean K and Pomeroy, John W",
+	journal = "Hydrological Processes",
+	number = "4",
+	pages = "1001--1016",
+	publisher = "Wiley Online Library",
+	title = "{Intra-basin variability of snowmelt water balance calculations in a subarctic catchment}",
+	volume = "20",
+	year = "2006"
 }
 
