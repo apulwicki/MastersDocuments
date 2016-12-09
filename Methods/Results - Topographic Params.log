@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  30 NOV 2016 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  8 DEC 2016 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Results - Topographic Params.tex"
 (./Results - Topographic Params.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 21 languages loaded.
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,29 +23,29 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count87
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -61,27 +61,27 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count91
@@ -89,7 +89,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen113
 \WF@size=\dimen114
 \c@WF@wrappedlines=\count92
@@ -97,7 +97,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \WF@everypar=\toks16
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip45
 \enit@outerparindent=\dimen115
@@ -105,21 +105,21 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box27
 \enitdp@description=\count93
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen116
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen117
 \extrarowheight=\dimen118
@@ -141,15 +141,15 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen119
 \captionmargin@=\dimen120
 \captionwidth=\dimen121
@@ -161,19 +161,21 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@ContinuedFloat=\count95
 Package caption Info: wrapfig package is loaded.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count96
 \c@subtable=\count97
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.s
+ty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/hobsub-generic.st
+y
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -211,23 +213,22 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen126
 \Hy@linkcounter=\count98
 \Hy@pagecounter=\count99
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count100
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -239,7 +240,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count101
 
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -264,40 +265,50 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count106
 \c@bookmark@seq@number=\count107
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip49
+) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
 )
-(./Results - Topographic Params.aux
-
-LaTeX Warning: Label `sampledRange:Sx' multiply defined.
-
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count108
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
 )
+No file "Results - Topographic Params".aux.
 \openout1 = `"Results - Topographic Params.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -332,23 +343,22 @@ LaTeX Font Info:    ... okay on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
+\scratchcounter=\count109
 \scratchdimen=\dimen130
-\scratchbox=\box28
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count111
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count112
 \MPscratchDim=\dimen131
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks21
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks23
+) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -356,50 +366,73 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 20.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 24.
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/gettitlestring.st
+y
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count114
+\c@section@level=\count115
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
-
-(./Results - Topographic Params.out) (./Results - Topographic Params.out)
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 \@outlinefile=\write3
 \openout3 = `"Results - Topographic Params.out"'.
 
-
-(./Results - Topographic Params.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
-)
 \tf@toc=\write4
 \openout4 = `"Results - Topographic Params.toc"'.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `Korona2009' on page 2 undefined on input line
+ 54.
+
+
+Package natbib Warning: Citation `Molotch2005' on page 2 undefined on input lin
+e 67.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 69.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 69.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 69.
+
+Package natbib Warning: Citation `Winstral2002' on page 2 undefined on input li
+ne 71.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 2 undefined on input lin
+e 75.
+
+
+LaTeX Warning: Reference `tab:Sxparams' on page 2 undefined on input line 75.
+
+[2]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 77.
+
+
+LaTeX Warning: Reference `sec:MLR' on page 3 undefined on input line 93.
+
+
+LaTeX Warning: Reference `tab:pearson_correlation' on page 3 undefined on input
+ line 99.
 
 
 LaTeX Warning: No positions in optional float specifier.
@@ -407,19 +440,19 @@ LaTeX Warning: No positions in optional float specifier.
 
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 110.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 110.
- [3] [4] [5]
-<Map_elevation.png, id=101, 939.51pt x 433.62pt>
+ [3] [4]
+[5] <Map_elevation.png, id=47, 939.51pt x 433.62pt>
 File: Map_elevation.png Graphic file (type png)
  <use Map_elevation.png>
 Package pdftex.def Info: Map_elevation.png used on input line 156.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_elevation.png, id=102, 1011.78pt x 289.08pt>
+<SampledRangeTopo_elevation.png, id=48, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_elevation.png Graphic file (type png)
 
 <use SampledRangeTopo_elevation.png>
@@ -431,13 +464,13 @@ Overfull \hbox (1.43422pt too wide) in paragraph at lines 163--163
  [][] 
  []
 
-<Map_centreD.png, id=103, 939.51pt x 433.62pt>
+<Map_centreD.png, id=49, 939.51pt x 433.62pt>
 File: Map_centreD.png Graphic file (type png)
  <use Map_centreD.png>
 Package pdftex.def Info: Map_centreD.png used on input line 170.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_centreD.png, id=104, 1011.78pt x 289.08pt>
+<SampledRangeTopo_centreD.png, id=50, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_centreD.png Graphic file (type png)
 
 <use SampledRangeTopo_centreD.png>
@@ -448,13 +481,13 @@ Overfull \hbox (1.43422pt too wide) in paragraph at lines 177--177
  [][] 
  []
 
-<Map_slope.png, id=105, 939.51pt x 433.62pt>
+<Map_slope.png, id=51, 939.51pt x 433.62pt>
 File: Map_slope.png Graphic file (type png)
  <use Map_slope.png>
 Package pdftex.def Info: Map_slope.png used on input line 184.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_slope.png, id=106, 1011.78pt x 289.08pt>
+<SampledRangeTopo_slope.png, id=52, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_slope.png Graphic file (type png)
 
 <use SampledRangeTopo_slope.png>
@@ -465,13 +498,13 @@ Overfull \hbox (1.43422pt too wide) in paragraph at lines 191--191
  [][] 
  []
 
-<Map_tangentCurve.png, id=107, 939.51pt x 433.62pt>
+<Map_tangentCurve.png, id=53, 939.51pt x 433.62pt>
 File: Map_tangentCurve.png Graphic file (type png)
  <use Map_tangentCurve.png>
 Package pdftex.def Info: Map_tangentCurve.png used on input line 198.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_tangentCurve.png, id=108, 1011.78pt x 289.08pt>
+<SampledRangeTopo_tangentCurve.png, id=54, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_tangentCurve.png Graphic file (type png)
 
 <use SampledRangeTopo_tangentCurve.png>
@@ -483,13 +516,13 @@ Overfull \hbox (1.43422pt too wide) in paragraph at lines 205--205
  [][] 
  []
 
-<Map_profileCurve.png, id=109, 939.51pt x 433.62pt>
+<Map_profileCurve.png, id=55, 939.51pt x 433.62pt>
 File: Map_profileCurve.png Graphic file (type png)
  <use Map_profileCurve.png>
 Package pdftex.def Info: Map_profileCurve.png used on input line 212.
 (pdftex.def)             Requested size: 355.13953pt x 163.90831pt.
 
-<SampledRangeTopo_profileCurve.png, id=110, 1011.78pt x 289.08pt>
+<SampledRangeTopo_profileCurve.png, id=56, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_profileCurve.png Graphic file (type png)
 
 <use SampledRangeTopo_profileCurve.png>
@@ -501,13 +534,13 @@ Overfull \hbox (1.43422pt too wide) in paragraph at lines 219--219
  [][] 
  []
 
-<Map_northness.png, id=111, 939.51pt x 433.62pt>
+<Map_northness.png, id=57, 939.51pt x 433.62pt>
 File: Map_northness.png Graphic file (type png)
  <use Map_northness.png>
 Package pdftex.def Info: Map_northness.png used on input line 227.
 (pdftex.def)             Requested size: 355.13953pt x 163.90831pt.
 
-<SampledRangeTopo_northness.png, id=112, 1011.78pt x 289.08pt>
+<SampledRangeTopo_northness.png, id=58, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_northness.png Graphic file (type png)
 
 <use SampledRangeTopo_northness.png>
@@ -519,13 +552,13 @@ Overfull \hbox (1.43422pt too wide) in paragraph at lines 234--234
  [][] 
  []
 
-<Map_aspect.png, id=113, 939.51pt x 433.62pt>
+<Map_aspect.png, id=59, 939.51pt x 433.62pt>
 File: Map_aspect.png Graphic file (type png)
  <use Map_aspect.png>
 Package pdftex.def Info: Map_aspect.png used on input line 241.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_aspect.png, id=114, 1011.78pt x 289.08pt>
+<SampledRangeTopo_aspect.png, id=60, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_aspect.png Graphic file (type png)
 
 <use SampledRangeTopo_aspect.png>
@@ -536,7 +569,7 @@ Overfull \hbox (1.43422pt too wide) in paragraph at lines 248--248
  [][] 
  []
 
-<Map_Sx.png, id=115, 939.51pt x 433.62pt>
+<Map_Sx.png, id=61, 939.51pt x 433.62pt>
 File: Map_Sx.png Graphic file (type png)
  <use Map_Sx.png>
 Package pdftex.def Info: Map_Sx.png used on input line 255.
@@ -546,9 +579,17 @@ Package pdftex.def Info: Map_Sx.png used on input line 255.
 LaTeX Warning: Reference `Sec:Sx' on page 6 undefined on input line 256.
 
 
+Package natbib Warning: Citation `Winstral2002' on page 6 undefined on input li
+ne 256.
+
+
 LaTeX Warning: Reference `Sec:Sx' on page 6 undefined on input line 256.
 
-<SampledRangeTopo_Sx.png, id=120, 1011.78pt x 289.08pt>
+
+Package natbib Warning: Citation `Winstral2002' on page 6 undefined on input li
+ne 256.
+
+<SampledRangeTopo_Sx.png, id=62, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_Sx.png Graphic file (type png)
 
 <use SampledRangeTopo_Sx.png>
@@ -567,97 +608,182 @@ G copy)>] [10 <./Map_profileCurve.png (PNG copy)> <./SampledRangeTopo_profileCu
 rve.png (PNG copy)>] [11 <./Map_northness.png (PNG copy)> <./SampledRangeTopo_n
 orthness.png (PNG copy)>] [12 <./Map_aspect.png (PNG copy)> <./SampledRangeTopo
 _aspect.png (PNG copy)>] [13 <./Map_Sx.png (PNG copy)> <./SampledRangeTopo_Sx.p
-ng (PNG copy)>] [14
+ng (PNG copy)>]
+
+Package natbib Warning: Citation `Woo1978' on page 14 undefined on input line 2
+73.
 
 
-] [15] <MLRfit_opt8.png, id=193, 867.24pt x 289.08pt>
+Package natbib Warning: Citation `Molotch2005' on page 14 undefined on input li
+ne 273.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 14 undefined on input li
+ne 273.
+
+
+Package natbib Warning: Citation `Cohen2013' on page 14 undefined on input line
+ 289.
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+
+Package natbib Warning: Citation `Burnham2004' on page 14 undefined on input li
+ne 297.
+
+[14
+
+
+]
+
+Package natbib Warning: Citation `Burnham2004' on page 15 undefined on input li
+ne 320.
+
+[15]
+
+LaTeX Warning: Reference `eq:BIC' on page 16 undefined on input line 322.
+
+[16] <MLRfit_opt8.png, id=141, 867.24pt x 289.08pt>
 File: MLRfit_opt8.png Graphic file (type png)
-
-<use MLRfit_opt8.png>
-Package pdftex.def Info: MLRfit_opt8.png used on input line 305.
+ <use MLRfit_opt8.png>
+Package pdftex.def Info: MLRfit_opt8.png used on input line 335.
 (pdftex.def)             Requested size: 682.9419pt x 227.65005pt.
 
-Overfull \hbox (46.96678pt too wide) in paragraph at lines 305--305
+Overfull \hbox (46.96678pt too wide) in paragraph at lines 335--335
  [][] 
  []
 
-<MLRfit_allLines.png, id=194, 867.24pt x 289.08pt>
+<MLRfit_allLines.png, id=142, 867.24pt x 289.08pt>
 File: MLRfit_allLines.png Graphic file (type png)
  <use MLRfit_allLines.png>
-Package pdftex.def Info: MLRfit_allLines.png used on input line 314.
+Package pdftex.def Info: MLRfit_allLines.png used on input line 344.
 (pdftex.def)             Requested size: 546.35088pt x 182.11726pt.
 
-<MLRresiduals_all.png, id=197, 1011.78pt x 289.08pt>
+
+LaTeX Warning: Reference `fig:MLRfit_opt8' on page 17 undefined on input line 3
+45.
+
+
+LaTeX Warning: Reference `fig:MLRfit_opt8' on page 17 undefined on input line 3
+45.
+
+<MLRresiduals_all.png, id=143, 1011.78pt x 289.08pt>
 File: MLRresiduals_all.png Graphic file (type png)
 
 <use MLRresiduals_all.png>
-Package pdftex.def Info: MLRresiduals_all.png used on input line 321.
+Package pdftex.def Info: MLRresiduals_all.png used on input line 351.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 321--321
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 351--351
  [][] 
  []
 
-[16 <./MLRfit_opt8.png (PNG copy)>] [17 <./MLRfit_allLines.png (PNG copy)> <./M
+[17 <./MLRfit_opt8.png (PNG copy)>] [18 <./MLRfit_allLines.png (PNG copy)> <./M
 LRresiduals_all.png (PNG copy)>]
-<Coeffs_DensityOpts.png, id=209, 939.51pt x 722.7pt>
+<Coeffs_DensityOpts.png, id=156, 939.51pt x 722.7pt>
 File: Coeffs_DensityOpts.png Graphic file (type png)
 
 <use Coeffs_DensityOpts.png>
-Package pdftex.def Info: Coeffs_DensityOpts.png used on input line 330.
+Package pdftex.def Info: Coeffs_DensityOpts.png used on input line 360.
 (pdftex.def)             Requested size: 500.83292pt x 385.25673pt.
 
-Overfull \hbox (45.53279pt too wide) in paragraph at lines 330--330
+Overfull \hbox (45.53279pt too wide) in paragraph at lines 360--360
  [][] 
  []
 
-(./Results - Topographic Params.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
- [18
+
+Package natbib Warning: Citation `Raftery1997' on page 19 undefined on input li
+ne 374.
 
 
-] [19 <./Coeffs_DensityOpts.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
- (./Results - Topographic Params.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
-Package rerunfilecheck Info: File `"Results - Topographic Params".out' has not 
-changed.
-(rerunfilecheck)             Checksum: 7ABD27F88B5135837ED5764AFF07E070;661.
+Package natbib Warning: Citation `Wasserman2000' on page 19 undefined on input 
+line 374.
 
+
+Package natbib Warning: Citation `Raftery2005' on page 19 undefined on input li
+ne 374.
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+[19
+
+
+ <./Coeffs_DensityOpts.png (PNG copy)>]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+
+
+Package natbib Warning: Citation `Raftery1997' on page 20 undefined on input li
+ne 386.
+
+
+Package natbib Warning: Citation `Zeugner2015' on page 20 undefined on input li
+ne 401.
+
+[20] (./Results - Topographic Params.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
+[21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+ (./Results - Topographic Params.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
+
+
+Package rerunfilecheck Warning: File `"Results - Topographic Params".out' has c
+hanged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Results - Topographic Params".out'
+:
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  86CC14C634703000B6E715DDE6172BB2;1030.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
  ) 
 Here is how much of TeX's memory you used:
- 8025 strings out of 494910
- 122051 string characters out of 6179836
- 242272 words of memory out of 5000000
- 11154 multiletter control sequences out of 15000+600000
- 8769 words of font info for 31 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 41i,11n,43p,1201b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
-.pfb>
-Output written on "Results - Topographic Params.pdf" (19 pages, 1149945 bytes).
+ 8140 strings out of 494501
+ 124180 string characters out of 6167030
+ 240691 words of memory out of 5000000
+ 11239 multiletter control sequences out of 15000+600000
+ 11231 words of font info for 39 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 41i,11n,39p,1201b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbxti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmex10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015basic/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015basic/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "Results - Topographic Params.pdf" (21 pages, 1185276 bytes).
 
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 245 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
