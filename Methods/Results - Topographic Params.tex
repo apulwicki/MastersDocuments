@@ -61,14 +61,15 @@ The merging process was complicated by the fact that there was a discrepancy in 
 
 \subsection{Calculating topographic parameters}
 
-Besides elevation ($z$), the topographic parameters of interest included distance from centreline ($d_C$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, ``northness'' ($N$), aspect ($\alpha$), and $Sx$, which is a proxy for wind redistribution. Distance from centreline and ``northness'' were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. 
+Topographic parameters are used to describe local topography that affects snow distribution and act as proxies for physical processes that determine snow deposition and redistribution. Topographic parameters used in snow accumulation studies on glaciers include elevation ($z$), distance from centreline ($d_C$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, ``northness'' ($N$), aspect ($\alpha$), and $Sx$, which is a proxy for wind redistribution \citep{Basist1994, Revuelto2014, McGrath2015}.	
+ 
+A number of programs were used calculate topographic parameters from the SPOT-5 DEM. Distance from centreline and ``northness'' were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. The remaining parameters were calculated using the \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS as defined in \cite{Mitavsova1993} and described in \cite{Hofierka2009}. 
 
-The remaining parameters were calculated using the \texttt{r.slope.aspect} modeule in GRASS GIS software run through QGIS as defined in \cite{Mitavsova1993} and described in \cite{Hofierka2009}. This module implements a local polynomial approximation method following:
+The GRASS module implements a local polynomial approximation method of the form 
 \begin{equation}
 z(x,y) = a\cdot x^2 +b\cdot y^2 +c \cdot x\cdot y +d \cdot x + e\cdot y +f.
 \end{equation}•
-This polynomial is fitted to 9 grid points (3 $\times$ 3 array) and the coefficients are determined by using a weighted least squares. 
-
+This polynomial is fitted to 9 grid points (3$\times$3 array) and the coefficients are determined by weighted least squares. 
 First order partial derivatives are derived using Horn's formula \citep{Horn1981, Neteler2013} . The gradient can be expressed as
 \begin{equation}
 \nabla \bar{ \bm{z}} = \left( \frac{\partial z}{\partial x}, \frac{\partial z}{\partial y} \right) = \left( 2 \cdot a  \cdot x + c  \cdot y +d, 2 \cdot b  \cdot y + c  \cdot x + e \right) .
@@ -90,22 +91,19 @@ f_{xx} &= \frac{z_1-2z_2+z_3+4z_4-8z_5+4z_6+z_7-2z_8+z_9}{6 \cdot (\Delta x)^2},
 f_{yy} &= \frac{z_1-4z_2+z_3-2z_4-8z_5-2z_6+z_7+4z_8+z_9}{6 \cdot (\Delta y)^2},\\
 f_{xy} &= \frac{(z_7-z_9)-(z_1-z_3)}{4 \cdot \Delta x \Delta y}.
 \end{align}
-The second derivates are most commonly used to calculate the curvature of a surface. The curvature at a given point is determined by finding the inverse of the radius of a circle that best fits the curve \citep{Olaya2009}. Convex surfaces have positive curvature and concave surfaces have negative curvature. 
-
-
+The second derivatives are most commonly used to calculate the curvature of a surface. The curvature at a given point on a curve is determined by finding the inverse of the radius of a circle that best fits the curve \citep{Olaya2009}. Convex surfaces have positive curvature and concave surfaces have negative curvature. 
 
 The calculation of topographic parameters is described below.
-
 \begin{enumerate}
 \item[]\textbf{Elevation} values were taken from the SPOT-5 DEMs directly.
 
 \item[] \textbf{Distance from centreline} was calculated as the minimum distance between the Easting and Northing of the northwest corner of each cell and a centreline that was drawn by hand in QGIS. This was completed in Matlab using the script `CentrelineDistance.m'. 
 
-\item[]  \textbf{Slope} is taken to be the steepest slope angle and is the magnitude of gradient \citep{Mitavsova1993}. Using the gradient, it can be expressed as 
+\item[]  \textbf{Slope} is taken to be the steepest slope angle and is the magnitude of gradient \citep{Mitavsova1993}. Using the gradient, it can be expressed as  \citep{Olaya2009}
 	\begin{equation}
-	m = \textrm{arctan}(|\nabla \bar{ \bm{z}}|) = \textrm{arctan} \left( \sqrt{(f_x)^2 +( f_y)^2} \right)
+	m = \textrm{arctan}(|\nabla \bar{ \vector{z}}|) = \textrm{arctan} \left( \sqrt{(f_x)^2 +( f_y)^2} \right)
 	\end{equation}•
-\item[] \textbf{Tangential Curvature} (horizontal curvature) represents the curvature in the direction of the contour tangent. The equation for tangential curvature can be written as
+\item[] \textbf{Tangential Curvature} (horizontal curvature) represents the curvature in the direction of the contour tangent. The equation for tangential curvature can be written as \citep{Olaya2009}
 	\begin{equation}
 	\kappa_T = - \frac{e^2 \cdot r -2 \cdot d\cdot e \cdot s +d^2 \cdot t}{(d^2+e^2) \cdot \sqrt{1+d^2+e^2}}
 	\end{equation}•
@@ -116,14 +114,14 @@ where $d$ and $e$ are as above and
 	t &= \frac{\partial^2 z}{\partial y^2} = \frac{z_1+z_2+z_3+z_7+z_8+z_9-2 \cdot (z_4+z_5+z_6)}{3 \cdot \Delta s^2}
 	\end{align}•	
 
-\item[] \textbf{Profile Curvature} (vertical curvature) represents the curvature in the direction of the the steepest slope (gradient). The equation for profile curvature can be written as
+\item[] \textbf{Profile Curvature} (vertical curvature) represents the curvature in the direction of the the steepest slope (gradient). The equation for profile curvature can be written as \citep{Olaya2009}
 	\begin{equation}
 	\kappa_P = - \frac{d^2 \cdot r +2 \cdot d\cdot e \cdot r \cdot s +e^2 \cdot t}{(d^2+e^2) \cdot \sqrt{(1+d^2+e^2)^3}}
 	\end{equation}•
 
 \item[] \textbf{``Northness''} is defined as the product of the cosine of aspect and sine of slope \citep{Molotch2005}. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and a flat surfaces yield 0. 
 
-\item[] \textbf{Aspect} represent the orientation of the steepest slope, with 0${^\circ}$ defined as north and no value given to cells that have no gradient. Using the gradient, it can expressed as
+\item[] \textbf{Aspect} represent the orientation of the steepest slope, with 0${^\circ}$ defined as north and no value given to cells that have no gradient. Using the gradient, it can expressed as \citep{Olaya2009}
 	\begin{equation}
 	\alpha = 180 - \textrm{arctan}\left(\frac{ f_y}{ f_x}\right)+90 \cdot \frac{ f_x}{| f_x|}
 	\end{equation}•
@@ -132,14 +130,14 @@ where $d$ and $e$ are as above and
 \begin{equation}
 Sx_{A, dmax}(x_i, y_i) = \textrm{max} \left[ \textrm{tan}^{-1} \left( \frac{z(x_v,y_v)-z(x_i,y_i)}{[(x_v-x_i)^2+(y_v-y_i)^2]^{1/2}} \right) \right] ,
 \end{equation}
-where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates of the cell of interest, and $(x_v, y_v)$ are the set of all cell coordinates located along the search vector defined by	$(x_i, y_i)$, the azimuth (A), and maximum search distance ($d$max). Code for this calculation was provided by Adam Winstral (2016, personal communication). As done by \cite{McGrath2015}, we computed $Sx$ at 5$^{\circ}$ azimuth increments for $d$max distances of 100, 200, and 300 m. These values were then correlated with observed values of SWE and the A and $d$max values with the highest correlation were used for subsequent analysis (see Table \ref{tab:Sxparams}). 
+where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates of the cell of interest, and $(x_v, y_v)$ are the set of all cell coordinates located along the search vector defined by	$(x_i, y_i)$, the azimuth ($A$), and maximum search distance ($d$max). Code for this calculation was provided by Adam Winstral (2016, personal communication). As done by \cite{McGrath2015}, we computed $Sx$ at 5$^{\circ}$ azimuth increments for $d$max distances of 100, 200, and 300 m. These values were then correlated with observed values of SWE and the azimuth and $d$max values with the highest correlation were used for subsequent analysis (see Table \ref{tab:Sxparams}). 
 
 \begin{table}[]
 \centering
-\caption{Values of azimuth (A) and maximum search distance($d$max), which define the $Sx$ that had the highest correlation to observed SWE.}
+\caption{Values of azimuth ($A$) and maximum search distance($d$max), which define the $Sx$ that had the highest correlation to observed SWE.}
 \label{tab:Sxparams}
 \begin{tabular}{lcc}
-           & \textbf{A ($^{\circ}$ from North)} & \textbf{\textit{d}max (m)} \\ \hline
+           & \textbf{$A$ ($^{\circ}$ from North)} & \textbf{\textit{d}max (m)} \\ \hline
 Glacier 4  & 75                                & 200                 \\
 Glacier 2  & 55                                & 200                 \\
 Glacier 13 & 325                            & 200                
@@ -334,11 +332,11 @@ Relating snow accumulation and terrain parameters to better predict accumulation
 
 A linear regression takes the form
 \begin{equation}
-\vec{y} = \vec{X} \bm{\beta} + \bm{\varepsilon},
+\vector{y} = \vector{X} \bm{\beta} + \bm{\varepsilon},
 \end{equation}
-where the matrix $\vec{X}$ contains the set of independent regressors $\vec{x}_i$ used to explain the dependant variable $\vec{y}$. The regression coefficients for each regressor is given by $\bm{\beta}$ and the error or noise of the system is given by $\bm{\varepsilon}$. Applied to this study, the matrix of independent regressors ($\vec{X}$) are the topographic parameters at the sampling locations, the dependant variable $\vec{y}$ is the observed SWE, and the  $\bm{\beta}$ values are determined using a fitting model. Two types of fitting models are the multiple linear regression (MLR) and Bayesian model averaging (BMA).
+where the matrix $\vector{X}$ contains the set of independent regressors $\vector{x}_i$ used to explain the dependant variable $\vector{y}$ \citep{Davis1986}. The regression coefficients for each regressor is given by $\bm{\beta}$ and the error or noise of the system is given by $\bm{\varepsilon}$. Applied to this study, the matrix of independent regressors ($\vector{X}$) contains the topographic parameters at the sampling locations, the dependant variable $\vector{y}$ contains the observed SWE, and the $\bm{\beta}$ values are determined using a fitting model. While there are many types of fitting models, the ones employed in this study are multiple linear regression (MLR) and Bayesian model averaging (BMA).
 
-The $\bm{\beta}$ values can then be applied to other locations where regressors are known to calculate values of the dependant variable. For example, known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of SWE for that DEM grid cell.
+Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependant variable in other locations where regressors are known \citep{Davis1986}. Known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of SWE for that DEM grid cell.
 
 
 \subsection{Multiple Linear Regression}
@@ -346,13 +344,13 @@ The $\bm{\beta}$ values can then be applied to other locations where regressors 
 
 \subsubsection{Background}
 
-Perhaps the most basic and well used method for relating SWE and topographic parameters is a multiple linear regression (MLR) \citep[e.g.][]{Cohen2013}. The best fit line of an MLR is the one described by coefficients that minimize the sum of squares of the vertical deviations of each data point from the line. Note that if a point falls on the line then the deviation is zero and that the positive and negative deviations from the line do not cancel because the values are first squared and then summed. The residuals are simply the difference between the modelled and observed data. 
+Perhaps the most basic and well used method for relating SWE and topographic parameters is a multiple linear regression (MLR) \citep[e.g.][]{Cohen2013}. The best fit line of an MLR is the one described by coefficients that minimize the sum of squares of the vertical deviations of each data point from the line \citep{Davis1986}. Note that if a point falls on the line then the deviation is zero and that the positive and negative deviations from the line do not cancel because the values are first squared and then summed. The residuals are simply the difference between the modelled and observed data. 
 
 To reduce the chance of over fitting the data, two additional methods were applied. The first method was model averaging over all possible models that allow for linear combinations of the chosen topographic parameters. An MLR was estimated for each model (total number of models is $2^n$, where $n$ is the number of topographic parameters) and the Bayesian information criterion (BIC) value was computed for the model according to
 \begin{equation}
 \textrm{BIC} = -2 \ln L(\hat\theta_k  | y) + k \ln(n),
 \end{equation}•
-where the values of $\hat \theta_k$, which are the model parameters, maximizes the likelihood function for data $y$. The number of data points is $n$ and the number of regressors is $k$. BIC values are used to assess the relative predictive success of models while penalizing for overfitting of data. While the absolute BIC value is meaningless, models can be selected or averaged using the relative BIC value, with lower values indicating a better model. 
+where the values of $\hat \theta_k$, which are the model parameters, maximizes the likelihood function for data $y$ \citep{Burnham2004}. The number of data points is $n$ and the number of regressors is $k$. BIC values are used to assess the relative predictive success of models while penalizing for overfitting of data. While the absolute BIC value is meaningless, models can be selected or averaged using the relative BIC value, with lower values indicating a better model \citep{Burnham2004}. 
 
 In this study, there was no reason to favour any of the models so a weighted average of all models based on their BIC values was conducted. The BIC values for each model ($BIC_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value $BIC_{min}$) according to \citep{Burnham2004}
 \begin{equation}
@@ -361,7 +359,7 @@ w_i = \frac{e^{-0.5(BIC_i-BIC_{min})}}{\Sigma_{i=1}^R e^{-0.5(BIC_i-BIC_{min})}}
 \end{equation}
 When parameters were excluded from a model, a coefficient of zero was assigned to that parameter. The sum of the weighted coefficients gave the final $\bm{\beta}$ values.
 
-The second method used to prevent over fitting was to calculate the MLRs within a cross validation framework. This meant that for each model, a randomly selected portion of the data was used to estimate regression coefficients and these were used to predict values that correspond to the remaining data. The root mean squared error (RMSE) between the modelled and observed data was then calculated. This process was done one thousand times and the set of coefficients that resulted in the lowest RMSE were then chosen for that model. 
+The second method used to prevent over fitting was to calculate the MLRs within a cross validation framework. This meant that for each model, a randomly selected portion of the data was used to estimate regression coefficients and these were used to predict values that correspond to the remaining data \citep{Kohavi1995}. The root mean squared error (RMSE) between the modelled and observed data was then calculated. This process was done one thousand times and the set of coefficients that resulted in the lowest RMSE were then chosen for that model. 
 
 Together, cross validation allowed for reputable choosing of regression coefficients for each possible model and model averaging with BIC weights allowed for stability of final coefficient values and favouring of simpler models, which would help to identify main topographic drivers of snow accumulation. 
 
@@ -378,9 +376,9 @@ The MLR was completed with the following steps (executed using the function 'MLR
 
 \item A set of initializations is completed. This includes 1) creating a logical matrix to choose all linear combination of topographic parameters, 2) selecting the number of runs, 3) creating a matrix of random numbers for selecting data point in the cross validation procedure, 4) initializing matrices, and 5) converting the input structure to a table.
 
-\item For each linear combination of topographic parameters, one thousand runs of a cross validation MLR are then executed. Three-quarters of the total data is randomly selected to use for calculating the regression (using the function \texttt{regress()} which is a basic regression function with fast execution). The MLR equations is used to predict the SWE using the remaining one-quarter of the topographic parameters. The root-mean-squared error (RMSE) between the predicted and observed SWE values is then calculated and the MLR equation with the lowest RMSE is then chosen for that combination of topographic parameters. The function \texttt{fitlm()} is then used to calculate the MLR from the set of data that gave the lowest RMSE. This function is slower but calculates a number of additional values that characterize the fit of the model. One of these values is the Bayesian information criterion (BIC), which allows for model selection among a finite set of models \citep{Burnham2004}. The BIC from the best model for each combination of topographic parameters is saved.
+\item For each linear combination of topographic parameters, one thousand runs of a cross validation MLR are then executed. Two-thirds of the total data is randomly selected \citep{Kohavi1995} to use for calculating the regression (using the function \texttt{regress()} which is a basic regression function with fast execution). The MLR equations is used to predict the SWE using the remaining one-quarter of the topographic parameters. The root-mean-squared error (RMSE) between the predicted and observed SWE values is then calculated and the MLR equation with the lowest RMSE is then chosen for that combination of topographic parameters. The function \texttt{fitlm()} is then used to calculate the MLR from the set of data that gave the lowest RMSE. This function is slower but calculates a number of additional values that characterize the fit of the model. One of these values is the Bayesian information criterion (BIC), which allows for model selection among a finite set of models \citep{Burnham2004}. The BIC from the best model for each combination of topographic parameters is saved.
 
-\item A weighted sum of all models found using linear combinations of topographic parameters was then found. The BIC values for each model ($BIC_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value $BIC_{min}$) according to Eq. \ref{eq:BIC}.
+\item A weighted sum of all models found using linear combinations of topographic parameters was then found. The BIC values for each model (BIC$_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value BIC$_{min}$) according to Eq. \ref{eq:BIC}.
 
 \item The percent variance ($var_\%$) explained by each parameter was calculated using the equation $var_\% = \frac{SSr}{SSt}\times 100$, where $SSr$ is the sum of squares of the residual (fitted topographic parameters) and $SSt$ is the total sum of squares (SWE observations). The final coefficients and the percent varience explained by each one can be found in the \texttt{coeffs\_final} table within the function and in the \texttt{mlr} structure when run for all density options and glaciers in the main script 'TopoRegression.m'.
 
@@ -390,19 +388,42 @@ The MLR was completed with the following steps (executed using the function 'MLR
 
 \subsubsection{Results}
 
+The coefficients determined using MLR for density Option 8 can be seen in Table \ref{tab:MLRcoeff}. These coefficients were found for standardized values of topographic parameters so their magnitude is indicative of their importance in predicting SWE. The range of percent variance explained by each variable (from all density options) can be seen in Figure \ref{fig:PercentVar_densityOptions}. The fit between modelled SWE and observed SWE for each glacier for density Option 8 can be seen in Figure \ref{fig:MLRfit_opt8} and the fit for all density options in Figure \ref{fig:MLRfit_allLines}. The distribution of residuals in then plotted in Figure \ref{fig:MLRresiduals_all}. A map of the predicted values of SWE over the entire glacier using density option 8 can be seen in Figure \ref{fig:MLRmodelledSWE}.
+
+\begin{wraptable}{R}{10cm}
+\centering
+\caption{MLR coefficients for topographic regression between measured SWE and standardized topographic parameters that include distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$),slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and wind redistribution ($Sx$). SInce parameters are standardizes, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.}
+\label{tab:MLRcoeff}
+\begin{tabular}{cccc}
+ & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
+d$_C$ & -0.017 & 0.017 & 0.025 \\
+$z$ & 0.001 & 0.118 & 0.052 \\
+$\alpha$ & \textless0.001 & -0.006 & \textless0.001 \\
+$m$ & -0.018 & -0.002 & -0.007 \\
+$N$ & 0.001 & \textless0.001 & 0.015 \\
+$\kappa_P$ & 0.001 & \textless0.001 & -0.004 \\
+$\kappa_T$ & \textless0.001 & \textless0.001 & -0.002 \\
+$Sx$ & 0.001 & 0.008 & \textless0.001 \\
+Intercept & 0.629 & 0.264 & 0.242 \\ \hline
+RMSE &  &  & 
+\end{tabular}
+\end{wraptable}
+
+For Glacier 4, the largest coefficients are distance from centreline and slope, which are an order of magnitude larger than the remaining coefficients. Both coefficients are negative, which indicates less snow along the margins of the glacier and less on more east facing slopes. These coefficients account for the largest percentage of variance explained, although this percentage is very small ($<2$\% each). The map of predicted SWE for the entire glacier closely resembles the distribution of distance from centreline (Figure \ref{map:centreD}), which also shows its dependence on this parameter. Overall, the modelled winter balance for Glacier 4 is very poorly explained by the topographic parameters, which results in no correlation between modelled and observed SWE (R$^2=0.04$). The modelled values of SWE are largely determined by the intercept value. RMSE???
+
+For Glacier 2, the largest coefficient (by an order of magnitude) is elevation. This coefficient is positive, which means that SWE will increase with elevation. Elevation explains the largest amount of variance (52\%) and this is consistent for all density options. The map of modelled SWE shows this strong dependence on elevation since the values closely resemble the elevation map (Figure \ref{map:elev}). Overall, the modelled winter balance is moderately good estimation of observed SWE (R$^2=0.57$) although it tends to underestimate the amount of accumulation. 
+
+For Glacier 13, the largest coefficient is elevation with distance from centreline and ``northness'' also of the same order of magnitude. All three coefficients are positive, which means that cell at higher elevation, closer to the margins, and more north facing had higher amounts of SWE. Elevation explains the majority of the variance (24\%), while distance from centreline and ``northness'' explain far less ($<$3\% each). The map of modelled SWE displays an increase with elevation, although it is not strong considering the large range of elevation on this glacier. Overall, the MLR modelled winter balance is poorly related to observed SWE (R$^2=0.3$) and tends to underestimate the amount of accumulation.
+
+Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density options for all glaciers and the residuals display a similar distribution between the density options.The percent variance explained by each parameter also varies little between different density options. 
+
+
 \begin{landscape}
 \begin{figure}
 	\centering
 	\includegraphics[height = 0.4\textwidth]{MLRfit_opt8.png}\\
 	\caption{Comparison of predicted (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).}
 	\label{fig:MLRfit_opt8}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height = 0.4\textwidth]{MLRcoeff_compare.png}\\
-	\caption{Plot of MLR coefficients for various density estimation options.}
-	\label{fig:MLRcoeff_compare}
 \end{figure}
 
 \pagebreak
@@ -430,7 +451,14 @@ The MLR was completed with the following steps (executed using the function 'MLR
 	\label{fig:PercentVar_densityOptions}
 \end{figure} 
 
-
+%\begin{landscape}
+%\begin{figure}
+%	\centering
+%	\includegraphics[height = 0.9\textwidth]{MLRmap_Modelled_Observed.png}
+%	\caption{Modelled SWE using coefficients determined using MLR and density interpolated with inverse-distance weighting from snowpits. Observed SWE values are overlain on the maps.}
+%	\label{fig:MLRmodelledSWE}
+%\end{figure}
+%\end{landscape}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -439,7 +467,6 @@ The MLR was completed with the following steps (executed using the function 'MLR
 
 \subsubsection{Background}
 
-
 \begin{wrapfigure}{L}{0.6\textwidth}
 	\centering
 	\includegraphics[width = 0.6\textwidth]{DistributionOfNumParams_topoRegress.png}\\
@@ -447,39 +474,38 @@ The MLR was completed with the following steps (executed using the function 'MLR
 	\label{fig:uni_model_prior}
 \end{wrapfigure}
 
-
 Bayesian model averaging (BMA) is a method of estimating all possible linear combinations of predictor variables and then averaging over all models \citep{Raftery1997, Wasserman2000, Raftery2005}.  This method is based on Bayesian principals where we wish to determine the probability of an outcome based on an initial ``guess'' as well as the data provided. Given that the predictive outcome has a probability distribution of $x$ given $y$, written as $P(x|y)$, we use Bayes' rule to to write this as
 \begin{equation}
 P(x|y) = \frac{P(y|x)P(x)}{P(y)}.
 \end{equation}•
-$P(x|y)$ is often called the posterior model probability (PMP). The quantity $P(y|x)$ is the likelihood function, which determines unknown parameters from a known outcome (i.e. observed data). The term $P(x)$ is an observer determined prior probability distribution (typically just called a \textit{prior}) and it reflects the prior knowledge of the system. Choosing an appropriate prior is one of the most challenge components of Bayesian probability theory. The$P(y)$ term can be obtained by integrating $P(y|x)P(x)$ over all $x$ and is thus a constant for all models that is typically discarded. 
+$P(x|y)$ is often called the posterior model probability (PMP). The quantity $P(y|x)$ is the likelihood function, which determines unknown parameters from a known outcome (i.e. observed data). The term $P(x)$ is an observer determined prior probability distribution (typically just called a \textit{prior}) and it reflects the prior knowledge of the system \citep{Raftery1997}. Choosing an appropriate prior is one of the most challenge components of Bayesian probability theory \citep{Wasserman2000}. The$P(y)$ term can be obtained by integrating $P(y|x)P(x)$ over all $x$ and is thus a constant for all models that is typically discarded \citep{Wasserman2000}. 
 
-Together then, the posterior model probability is a function of both the model prior, specified by the researcher, as well as the distribution of the observed data --- it is the transformation of the prior as a result of considering collected data. This can be loosely expressed as
+Together then, the posterior model probability is a function of both the model prior, specified by the researcher, as well as the distribution of the observed data --- it is the transformation of the prior as a result of considering collected data \citep{Wasserman2000}. This can be loosely expressed as
 \begin{equation}
 \textrm{posterior} \propto \textrm{prior} \times \textrm{likelihood}
 \end{equation}
-If the prior is uninformative then the posterior will be strongly influded by the data. An informative prior will result in a posterior that is a mix of the prior and the data as as the prior becomes more informative, the amount of data needed to transform the distribution increases. If there is a large amount of data then the prior will have little effect on the posterior. The final value of the desired output is often reported as the posterior distribution mean or the value that maximizes the log-likelihood. 
+If the prior is uninformative then the posterior will be strongly influenced by the data \citep{Wasserman2000}. An informative prior will result in a posterior that is a mix of the prior and the data as as the prior becomes more informative, the amount of data needed to transform the distribution increases. If there is a large amount of data then the prior will have little effect on the posterior. The final value of the desired output is often reported as the posterior distribution mean or the value that maximizes the log-likelihood. 
 
-Within BMA, Bayes' theorem is used to find the posterior model probability and this is used as a weight when averaging over all models. The model weighted posterior distribution for the coefficients $\beta$ of $K$ number of models after renormalization is given by \citep{Raftery1997}
+Within BMA, Bayes' theorem is used to find the posterior model probability and this is used as a weight when averaging over all models \citep{Wasserman2000}. The model weighted posterior distribution for the coefficients $\beta$ of $k$ number of models after renormalization is given by 
 \begin{equation}
-P(\beta\ | y,X) = \sum\limits_{i=1}^{2^K} P(M_i | X,y)P(\beta | M_i , y, X),
+P(\beta\ | y,X) = \sum\limits_{i=1}^{2^k} P(M_i | X,y)P(\beta | M_i , y, X),
 \end{equation}
-where the responding variable is given by $y$ and the matrix of variables is given by $X$. Here, the model prior is $P(M_i | X,y)$ and the likelihood for the $\beta$ coefficient is $P(\beta | M_i , y, X)$.
+where the responding variable is given by $y$ and the matrix of variables is given by $X$ \citep{Raftery1997}. Here, the model prior is $P(M_i | X,y)$ and the likelihood for the $\beta$ coefficient is $P(\beta | M_i , y, X)$.
 
-There are a number of different priors to describe model size distribution that have been applied in BMA. A commonly used prior is the `uniform' prior, which assumes a normal model distribution with a total of $2^n$ models, where $n$ is the number of regressors.  This model prior states that the observer has no knowledge of the system and all models are equally likely. The uniform prior has a prior model probability of the form $P(M_i)=2^{-n}$, as shown in Figure \ref{fig:uni_model_prior}, which is symmetric about the mean $n/2$. This prior inherently favours models of an intermediate size. 
+There are a number of different priors to describe model size distribution that have been applied in BMA. A commonly used prior is the `uniform' prior, which assumes a normal model distribution with a total of $2^n$ models, where $n$ is the number of regressors \citep{Wasserman2000}.  This model prior states that the observer has no knowledge of the system and all models are equally likely. The uniform prior has a prior model probability of the form $P(M_i)=2^{-n}$, as shown in Figure \ref{fig:uni_model_prior}, which is symmetric about the mean $n/2$ \citep{Zeugner2015}. This prior inherently favours models of an intermediate size. 
 
-Other types of priors include those that are skewed to favour smaller models, ones with equal probability for all model sizes, and ones with varying probability for individual regressors. In this case, a uniform prior was chosen because there was no knowledge of what the model distribution would look like and to match the distribution of models sizes in the MLR analysis. 
+Other types of priors include those that are skewed to favour smaller models, ones with equal probability for all model sizes, and ones with varying probability for individual regressors. In this project, a uniform prior was chosen because there was no knowledge of what the model distribution would look like and to match the distribution of models sizes in the MLR analysis. This is commonly done in BMA \citep{Wasserman2000}.
 
-With a small number of regressors, the posterior of all possible models can be determined. As the number of regressors increases, this computation becomes increasingly expensive since the total number of models is $2^n$. To overcome this, BMA can use Markov chain Monte Carlo (MCMC) model composition to directly approximate the posterior distribution. In our study, there are eight regressors so $2^8 = 256$models. It is possible to visit all models and to obtain an exact solution so a (MCMC) model composition was not employed. 
+With a small number of regressors, the posterior of all possible models can be determined. As the number of regressors increases, this computation becomes increasingly expensive since the total number of models is $2^n$. To overcome this, BMA can use Markov chain Monte Carlo (MCMC) model composition to directly approximate the posterior distribution \citep{Wasserman2000}. In our study, there are eight regressors, resulting in $2^8 = 256$models. It is possible to visit all models and to obtain an exact solution so an MCMC model composition was not employed. 
 
-BMA allows for the calculation of a metric called the posterior inclusion probability (PIP), which is used to evaluate the importance of a regressor in explaining the observed data. PIP is the sum of all posterior model probabilities (PMP) where the variable was included in the model. A higher PIP indicates that the regressor is more important in the regression.  
+BMA allows for the calculation of a metric called the posterior inclusion probability (PIP), which is used to evaluate the importance of a regressor in explaining the observed data. PIP is the sum of all posterior model probabilities (PMP) where the variable was included in the mode \citep{Zeugner2015}l. A higher PIP indicates that the regressor is more important in the regression.  
 
 \subsubsection{Methods}
 
 The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The function \texttt{BMS\_R()} computes the $\beta$ coefficients for all topographic parameters for all study glaciers as well as the percent variance explained by each parameter suing the following steps:
 \begin{enumerate}
 \item The SWE observations and associated topographic parameters are called in the function.
-\item A portion of the data ($3/4$) is randomly chosen as the calibration set and saved as a .mat file. 
+\item A portion of the data ($2/3$ as suggested by \cite{Kohavi1995}) is randomly chosen as the calibration set and saved as a .mat file. 
 \item The R script is called through the terminal
 	\begin{enumerate}
 		\item The R script imports the .mat file with SWE and topographic parameter values. It then creates a data 				frame with the SWE values as the first column and the topographic parameters as the remaining 					columns. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  10 DEC 2016 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  11 DEC 2016 12:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,6 +465,14 @@ LaTeX Info: Redefining \nameref on input line 25.
 
 {/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
+Package natbib Warning: Citation `Basist1994' on page 2 undefined on input line
+ 64.
+
+
+Package natbib Warning: Citation `Revuelto2014' on page 2 undefined on input li
+ne 64.
+
+
 Package natbib Warning: Citation `Mitavsova1993' on page 2 undefined on input l
 ine 66.
 
@@ -477,15 +485,12 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
 
 Package natbib Warning: Citation `Horn1981' on page 2 undefined on input line 7
-2.
+3.
 
 
 Package natbib Warning: Citation `Neteler2013' on page 2 undefined on input lin
-e 72.
+e 73.
 
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
@@ -496,26 +501,37 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ¢ in font cmr12!
 
 
 Package natbib Warning: Citation `Hofierka2009' on page 3 undefined on input li
-ne 87.
+ne 88.
 
 
 Package natbib Warning: Citation `Neteler2013' on page 3 undefined on input lin
-e 87.
+e 88.
 
 
 Package natbib Warning: Citation `Olaya2009' on page 3 undefined on input line 
-93.
+94.
 
 
 Package natbib Warning: Citation `Mitavsova1993' on page 3 undefined on input l
-ine 104.
+ine 102.
+
+
+Package natbib Warning: Citation `Olaya2009' on page 3 undefined on input line 
+102.
 
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
+
+Package natbib Warning: Citation `Olaya2009' on page 3 undefined on input line 
+106.
+
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
@@ -523,173 +539,181 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
+
+
+Package natbib Warning: Citation `Olaya2009' on page 4 undefined on input line 
+117.
+
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
 
+Package natbib Warning: Citation `Olaya2009' on page 4 undefined on input line 
+124.
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ¢ in font cmr12!
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 137.
+               Default added (so using `tbp') on input line 135.
 
 [4]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 161.
+               Default added (so using `tbp') on input line 159.
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 170.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 168.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 170.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 168.
  [5] [6]
-<Map_elevation.png, id=154, 939.51pt x 433.62pt>
+<Map_elevation.png, id=156, 939.51pt x 433.62pt>
 File: Map_elevation.png Graphic file (type png)
  <use Map_elevation.png>
-Package pdftex.def Info: Map_elevation.png used on input line 216.
+Package pdftex.def Info: Map_elevation.png used on input line 214.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_elevation.png, id=155, 1011.78pt x 289.08pt>
+<SampledRangeTopo_elevation.png, id=157, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_elevation.png Graphic file (type png)
 
 <use SampledRangeTopo_elevation.png>
-Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 223.
+Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 221.
 
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 223--223
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 221--221
  [][] 
  []
 
-<Map_centreD.png, id=156, 939.51pt x 433.62pt>
+<Map_centreD.png, id=158, 939.51pt x 433.62pt>
 File: Map_centreD.png Graphic file (type png)
  <use Map_centreD.png>
-Package pdftex.def Info: Map_centreD.png used on input line 230.
+Package pdftex.def Info: Map_centreD.png used on input line 228.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_centreD.png, id=157, 1011.78pt x 289.08pt>
+<SampledRangeTopo_centreD.png, id=159, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_centreD.png Graphic file (type png)
 
 <use SampledRangeTopo_centreD.png>
-Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 237.
+Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 235.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 237--237
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 235--235
  [][] 
  []
 
-<Map_slope.png, id=158, 939.51pt x 433.62pt>
+<Map_slope.png, id=160, 939.51pt x 433.62pt>
 File: Map_slope.png Graphic file (type png)
  <use Map_slope.png>
-Package pdftex.def Info: Map_slope.png used on input line 244.
+Package pdftex.def Info: Map_slope.png used on input line 242.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_slope.png, id=159, 1011.78pt x 289.08pt>
+<SampledRangeTopo_slope.png, id=161, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_slope.png Graphic file (type png)
 
 <use SampledRangeTopo_slope.png>
-Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 251.
+Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 249.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 251--251
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 249--249
  [][] 
  []
 
-<Map_tangentCurve.png, id=160, 939.51pt x 433.62pt>
+<Map_tangentCurve.png, id=162, 939.51pt x 433.62pt>
 File: Map_tangentCurve.png Graphic file (type png)
  <use Map_tangentCurve.png>
-Package pdftex.def Info: Map_tangentCurve.png used on input line 258.
+Package pdftex.def Info: Map_tangentCurve.png used on input line 256.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_tangentCurve.png, id=161, 1011.78pt x 289.08pt>
+<SampledRangeTopo_tangentCurve.png, id=163, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_tangentCurve.png Graphic file (type png)
 
 <use SampledRangeTopo_tangentCurve.png>
 Package pdftex.def Info: SampledRangeTopo_tangentCurve.png used on input line 2
-65.
+63.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 265--265
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 263--263
  [][] 
  []
 
-<Map_profileCurve.png, id=162, 939.51pt x 433.62pt>
+<Map_profileCurve.png, id=164, 939.51pt x 433.62pt>
 File: Map_profileCurve.png Graphic file (type png)
  <use Map_profileCurve.png>
-Package pdftex.def Info: Map_profileCurve.png used on input line 272.
+Package pdftex.def Info: Map_profileCurve.png used on input line 270.
 (pdftex.def)             Requested size: 355.13953pt x 163.90831pt.
 
-<SampledRangeTopo_profileCurve.png, id=163, 1011.78pt x 289.08pt>
+<SampledRangeTopo_profileCurve.png, id=165, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_profileCurve.png Graphic file (type png)
 
 <use SampledRangeTopo_profileCurve.png>
 Package pdftex.def Info: SampledRangeTopo_profileCurve.png used on input line 2
-79.
+77.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 279--279
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 277--277
  [][] 
  []
 
-<Map_northness.png, id=164, 939.51pt x 433.62pt>
+<Map_northness.png, id=166, 939.51pt x 433.62pt>
 File: Map_northness.png Graphic file (type png)
  <use Map_northness.png>
-Package pdftex.def Info: Map_northness.png used on input line 287.
+Package pdftex.def Info: Map_northness.png used on input line 285.
 (pdftex.def)             Requested size: 355.13953pt x 163.90831pt.
 
-<SampledRangeTopo_northness.png, id=165, 1011.78pt x 289.08pt>
+<SampledRangeTopo_northness.png, id=167, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_northness.png Graphic file (type png)
 
 <use SampledRangeTopo_northness.png>
-Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 294.
+Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 292.
 
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 294--294
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 292--292
  [][] 
  []
 
-<Map_aspect.png, id=166, 939.51pt x 433.62pt>
+<Map_aspect.png, id=168, 939.51pt x 433.62pt>
 File: Map_aspect.png Graphic file (type png)
  <use Map_aspect.png>
-Package pdftex.def Info: Map_aspect.png used on input line 301.
+Package pdftex.def Info: Map_aspect.png used on input line 299.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
-<SampledRangeTopo_aspect.png, id=167, 1011.78pt x 289.08pt>
+<SampledRangeTopo_aspect.png, id=169, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_aspect.png Graphic file (type png)
 
 <use SampledRangeTopo_aspect.png>
-Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 308.
+Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 306.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 308--308
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 306--306
  [][] 
  []
 
-<Map_Sx.png, id=168, 939.51pt x 433.62pt>
+<Map_Sx.png, id=170, 939.51pt x 433.62pt>
 File: Map_Sx.png Graphic file (type png)
  <use Map_Sx.png>
-Package pdftex.def Info: Map_Sx.png used on input line 315.
+Package pdftex.def Info: Map_Sx.png used on input line 313.
 (pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
 
 
-LaTeX Warning: Reference `Sec:Sx' on page 7 undefined on input line 316.
+LaTeX Warning: Reference `Sec:Sx' on page 7 undefined on input line 314.
 
 
-LaTeX Warning: Reference `Sec:Sx' on page 7 undefined on input line 316.
+LaTeX Warning: Reference `Sec:Sx' on page 7 undefined on input line 314.
 
-<SampledRangeTopo_Sx.png, id=173, 1011.78pt x 289.08pt>
+<SampledRangeTopo_Sx.png, id=175, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_Sx.png Graphic file (type png)
 
 <use SampledRangeTopo_Sx.png>
-Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 322.
+Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 320.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 322--322
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 320--320
  [][] 
  []
 
@@ -704,11 +728,23 @@ o_aspect.png (PNG copy)>] [14 <./Map_Sx.png (PNG copy)> <./SampledRangeTopo_Sx.
 png (PNG copy)>]
 
 Package natbib Warning: Citation `Woo1978' on page 15 undefined on input line 3
-33.
+31.
+
+
+Package natbib Warning: Citation `Davis1986' on page 15 undefined on input line
+ 337.
+
+
+Package natbib Warning: Citation `Davis1986' on page 15 undefined on input line
+ 339.
 
 
 Package natbib Warning: Citation `Cohen2013' on page 15 undefined on input line
- 349.
+ 347.
+
+
+Package natbib Warning: Citation `Davis1986' on page 15 undefined on input line
+ 347.
 
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
@@ -716,132 +752,208 @@ Missing character: There is no ¢ in font cmr12!
 [15
 
 
-] [16] [17] <MLRfit_opt8.png, id=257, 867.24pt x 289.08pt>
+]
+
+Package natbib Warning: Citation `Kohavi1995' on page 16 undefined on input lin
+e 362.
+
+
+Package natbib Warning: Citation `Kohavi1995' on page 16 undefined on input lin
+e 379.
+
+[16]
+
+LaTeX Warning: Reference `fig:MLRmodelledSWE' on page 17 undefined on input lin
+e 391.
+
+[17]
+Underfull \hbox (badness 1038) in paragraph at lines 414--415
+\OT1/cmr/m/n/12 Over-all, the mod-elled win-ter
+ []
+
+
+Underfull \hbox (badness 5231) in paragraph at lines 416--417
+\OT1/cmr/m/n/12 co-ef-fi-cient is el-e-va-tion with
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 416--417
+\OT1/cmr/m/n/12 dis-tance from cen-tre-line and
+ []
+
+[18] <MLRfit_opt8.png, id=279, 867.24pt x 289.08pt>
 File: MLRfit_opt8.png Graphic file (type png)
-
-<use MLRfit_opt8.png>
-Package pdftex.def Info: MLRfit_opt8.png used on input line 396.
+ <use MLRfit_opt8.png>
+Package pdftex.def Info: MLRfit_opt8.png used on input line 424.
 (pdftex.def)             Requested size: 546.35088pt x 182.11726pt.
- <MLRcoeff_compare.png, id=258, 939.51pt x 433.62pt>
-File: MLRcoeff_compare.png Graphic file (type png)
 
-<use MLRcoeff_compare.png>
-Package pdftex.def Info: MLRcoeff_compare.png used on input line 403.
-(pdftex.def)             Requested size: 394.5915pt x 182.11726pt.
- <MLRfit_allLines.png, id=259, 867.24pt x 289.08pt>
+<MLRfit_allLines.png, id=280, 867.24pt x 289.08pt>
 File: MLRfit_allLines.png Graphic file (type png)
-
-<use MLRfit_allLines.png>
-Package pdftex.def Info: MLRfit_allLines.png used on input line 412.
+ <use MLRfit_allLines.png>
+Package pdftex.def Info: MLRfit_allLines.png used on input line 433.
 (pdftex.def)             Requested size: 546.35088pt x 182.11726pt.
- <MLRresiduals_all.png, id=262, 1011.78pt x 289.08pt>
+
+<MLRresiduals_all.png, id=283, 1011.78pt x 289.08pt>
 File: MLRresiduals_all.png Graphic file (type png)
 
 <use MLRresiduals_all.png>
-Package pdftex.def Info: MLRresiduals_all.png used on input line 419.
+Package pdftex.def Info: MLRresiduals_all.png used on input line 440.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 419--419
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 440--440
  [][] 
  []
 
-[18 <./MLRfit_opt8.png (PNG copy)> <./MLRcoeff_compare.png (PNG copy)>]
-[19 <./MLRfit_allLines.png (PNG copy)> <./MLRresiduals_all.png (PNG copy)>]
-<Coeffs_DensityOpts.png, id=276, 939.51pt x 722.7pt>
+[19 <./MLRfit_opt8.png (PNG copy)> <./MLRfit_allLines.png (PNG copy)>] [20 <./M
+LRresiduals_all.png (PNG copy)>]
+<Coeffs_DensityOpts.png, id=294, 939.51pt x 722.7pt>
 File: Coeffs_DensityOpts.png Graphic file (type png)
 
 <use Coeffs_DensityOpts.png>
-Package pdftex.def Info: Coeffs_DensityOpts.png used on input line 428.
+Package pdftex.def Info: Coeffs_DensityOpts.png used on input line 449.
 (pdftex.def)             Requested size: 500.83292pt x 385.25673pt.
 
-Overfull \hbox (45.53279pt too wide) in paragraph at lines 428--428
+Overfull \hbox (45.53279pt too wide) in paragraph at lines 449--449
  [][] 
  []
 
-<DistributionOfNumParams_topoRegress.png, id=277, 433.62pt x 433.62pt>
+<DistributionOfNumParams_topoRegress.png, id=295, 433.62pt x 433.62pt>
 File: DistributionOfNumParams_topoRegress.png Graphic file (type png)
 
 <use DistributionOfNumParams_topoRegress.png>
 Package pdftex.def Info: DistributionOfNumParams_topoRegress.png used on input 
-line 445.
+line 472.
 (pdftex.def)             Requested size: 273.18285pt x 273.19528pt.
 
 
-Package natbib Warning: Citation `Raftery1997' on page 20 undefined on input li
-ne 451.
+Package natbib Warning: Citation `Raftery1997' on page 21 undefined on input li
+ne 477.
 
 
-Package natbib Warning: Citation `Wasserman2000' on page 20 undefined on input 
-line 451.
+Package natbib Warning: Citation `Wasserman2000' on page 21 undefined on input 
+line 477.
 
 
-Package natbib Warning: Citation `Raftery2005' on page 20 undefined on input li
-ne 451.
+Package natbib Warning: Citation `Raftery2005' on page 21 undefined on input li
+ne 477.
 
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
-[20
+
+Package natbib Warning: Citation `Raftery1997' on page 21 undefined on input li
+ne 481.
+
+
+Package natbib Warning: Citation `Wasserman2000' on page 21 undefined on input 
+line 481.
+
+
+Package natbib Warning: Citation `Wasserman2000' on page 21 undefined on input 
+line 481.
+
+[21
 
 
  <./Coeffs_DensityOpts.png (PNG copy)>]
 
-Package natbib Warning: Citation `Raftery1997' on page 21 undefined on input li
-ne 463.
+Package natbib Warning: Citation `Wasserman2000' on page 22 undefined on input 
+line 483.
 
-[21 <./DistributionOfNumParams_topoRegress.png (PNG copy)>]
+
+Package natbib Warning: Citation `Wasserman2000' on page 22 undefined on input 
+line 487.
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 486--488
+\OT1/cmr/m/n/12 be-comes more in-for-ma-tive, the
+ []
+
+
+Package natbib Warning: Citation `Wasserman2000' on page 22 undefined on input 
+line 489.
+
+
+Package natbib Warning: Citation `Raftery1997' on page 22 undefined on input li
+ne 493.
+
+
+Package natbib Warning: Citation `Wasserman2000' on page 22 undefined on input 
+line 495.
+
 
 Package natbib Warning: Citation `Zeugner2015' on page 22 undefined on input li
-ne 479.
+ne 495.
+
+[22 <./DistributionOfNumParams_topoRegress.png (PNG copy)>]
+
+Package natbib Warning: Citation `Wasserman2000' on page 23 undefined on input 
+line 497.
+
+
+Package natbib Warning: Citation `Wasserman2000' on page 23 undefined on input 
+line 499.
+
+
+Package natbib Warning: Citation `Zeugner2015' on page 23 undefined on input li
+ne 501.
+
+
+Package natbib Warning: Citation `Zeugner2015' on page 23 undefined on input li
+ne 505.
+
+
+Package natbib Warning: Citation `Kohavi1995' on page 23 undefined on input lin
+e 508.
 
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
-[22]
+[23]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
- [23] <BMSfit_opt8.png, id=315, 867.24pt x 289.08pt>
+ [24] <BMSfit_opt8.png, id=332, 867.24pt x 289.08pt>
 File: BMSfit_opt8.png Graphic file (type png)
  <use BMSfit_opt8.png>
-Package pdftex.def Info: BMSfit_opt8.png used on input line 504.
+Package pdftex.def Info: BMSfit_opt8.png used on input line 530.
 (pdftex.def)             Requested size: 682.9419pt x 227.65005pt.
 
-Overfull \hbox (46.96678pt too wide) in paragraph at lines 504--504
+Overfull \hbox (46.96678pt too wide) in paragraph at lines 530--530
  [][] 
  []
 
-<BMSfit_allLines.png, id=316, 867.24pt x 289.08pt>
+<BMSfit_allLines.png, id=333, 867.24pt x 289.08pt>
 File: BMSfit_allLines.png Graphic file (type png)
  <use BMSfit_allLines.png>
-Package pdftex.def Info: BMSfit_allLines.png used on input line 513.
+Package pdftex.def Info: BMSfit_allLines.png used on input line 539.
 (pdftex.def)             Requested size: 546.35088pt x 182.11726pt.
 
-<BMSresiduals_all.png, id=319, 1011.78pt x 289.08pt>
+<BMSresiduals_all.png, id=336, 1011.78pt x 289.08pt>
 File: BMSresiduals_all.png Graphic file (type png)
 
 <use BMSresiduals_all.png>
-Package pdftex.def Info: BMSresiduals_all.png used on input line 520.
+Package pdftex.def Info: BMSresiduals_all.png used on input line 546.
 (pdftex.def)             Requested size: 637.40933pt x 182.11726pt.
 
-Overfull \hbox (1.43422pt too wide) in paragraph at lines 520--520
+Overfull \hbox (1.43422pt too wide) in paragraph at lines 546--546
  [][] 
  []
 
-[24 <./BMSfit_opt8.png (PNG copy)>] [25 <./BMSfit_allLines.png (PNG copy)> <./B
+[25 <./BMSfit_opt8.png (PNG copy)>] [26 <./BMSfit_allLines.png (PNG copy)> <./B
 MSresiduals_all.png (PNG copy)>]
-<BMSCoeffs_DensityOpts.png, id=332, 939.51pt x 722.7pt>
+<BMSCoeffs_DensityOpts.png, id=349, 939.51pt x 722.7pt>
 File: BMSCoeffs_DensityOpts.png Graphic file (type png)
 
 <use BMSCoeffs_DensityOpts.png>
-Package pdftex.def Info: BMSCoeffs_DensityOpts.png used on input line 529.
+Package pdftex.def Info: BMSCoeffs_DensityOpts.png used on input line 555.
 (pdftex.def)             Requested size: 500.83292pt x 385.25673pt.
 
-Overfull \hbox (45.53279pt too wide) in paragraph at lines 529--529
+Overfull \hbox (45.53279pt too wide) in paragraph at lines 555--555
  [][] 
  []
 
-[26
+[27
 
 
  <./BMSCoeffs_DensityOpts.png (PNG copy)>]
@@ -849,12 +961,12 @@ Overfull \hbox (45.53279pt too wide) in paragraph at lines 529--529
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 542.
-[27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 542.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 568.
+[28]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 568.
  (./Results - Topographic Params.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 542.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 542.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 568.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 568.
 Package rerunfilecheck Info: File `"Results - Topographic Params".out' has not 
 changed.
 (rerunfilecheck)             Checksum: 7D29A701E8B4D071CDAD04D7E3CAA502;1097.
@@ -865,13 +977,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 542.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 568.
  ) 
 Here is how much of TeX's memory you used:
- 8821 strings out of 494501
- 132783 string characters out of 6167030
- 255822 words of memory out of 5000000
- 11848 multiletter control sequences out of 15000+600000
+ 8824 strings out of 494501
+ 132761 string characters out of 6167030
+ 256294 words of memory out of 5000000
+ 11851 multiletter control sequences out of 15000+600000
  11905 words of font info for 42 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  41i,11n,41p,1201b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -889,11 +1001,11 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015basic/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015basic/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "Results - Topographic Params.pdf" (27 pages, 1607454 bytes).
+Output written on "Results - Topographic Params.pdf" (28 pages, 1578979 bytes).
 
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 120 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 430 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

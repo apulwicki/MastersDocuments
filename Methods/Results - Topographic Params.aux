@@ -17,6 +17,7 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{Korona2009}
+\citation{Basist1994,Revuelto2014,McGrath2015}
 \citation{Winstral2002}
 \citation{Mitavsova1993}
 \citation{Hofierka2009}
@@ -27,12 +28,16 @@
 \citation{Hofierka2009,Neteler2013}
 \citation{Olaya2009}
 \citation{Mitavsova1993}
+\citation{Olaya2009}
+\citation{Olaya2009}
+\citation{Olaya2009}
 \citation{Molotch2005}
+\citation{Olaya2009}
 \citation{Winstral2002}
 \citation{McGrath2015}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Values of azimuth (A) and maximum search distance($d$max), which define the $Sx$ that had the highest correlation to observed SWE.\relax }}{5}{table.caption.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Values of azimuth ($A$) and maximum search distance($d$max), which define the $Sx$ that had the highest correlation to observed SWE.\relax }}{5}{table.caption.3}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:Sxparams}{{1}{5}{Values of azimuth (A) and maximum search distance($d$max), which define the $Sx$ that had the highest correlation to observed SWE.\relax }{table.caption.3}{}}
+\newlabel{tab:Sxparams}{{1}{5}{Values of azimuth ($A$) and maximum search distance($d$max), which define the $Sx$ that had the highest correlation to observed SWE.\relax }{table.caption.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Topographic parameters from QGIS to Matlab}{5}{subsection.1.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Parameter correlation}{5}{subsection.1.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Maps of topographic parameters and range of parameters sampled}{5}{subsection.1.5}}
@@ -73,45 +78,64 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Range of $Sx$ sampled as compared to total range of $Sx$ of study glaciers.\relax }}{14}{figure.caption.20}}
 \newlabel{sampledRange:Sx}{{16}{14}{Range of $Sx$ sampled as compared to total range of $Sx$ of study glaciers.\relax }{figure.caption.20}{}}
 \citation{Woo1978,Molotch2005,McGrath2015}
+\citation{Davis1986}
+\citation{Davis1986}
 \citation{Cohen2013}
+\citation{Davis1986}
+\citation{Burnham2004}
 \citation{Burnham2004}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Linear Regressions}{15}{section.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Multiple Linear Regression}{15}{subsection.2.1}}
 \newlabel{sec:MLR}{{2.1}{15}{Multiple Linear Regression}{subsection.2.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Background}{15}{subsubsection.2.1.1}}
 \citation{Burnham2004}
+\citation{Kohavi1995}
+\citation{Kohavi1995}
+\citation{Burnham2004}
 \newlabel{eq:BIC}{{19}{16}{Background}{equation.2.19}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Methods}{16}{subsubsection.2.1.2}}
 \newlabel{sec:MLRMethods}{{2.1.2}{16}{Methods}{subsubsection.2.1.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Results}{17}{subsubsection.2.1.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Comparison of predicted (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).\relax }}{18}{figure.caption.21}}
-\newlabel{fig:MLRfit_opt8}{{17}{18}{Comparison of predicted (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).\relax }{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Plot of MLR coefficients for various density estimation options.\relax }}{18}{figure.caption.22}}
-\newlabel{fig:MLRcoeff_compare}{{18}{18}{Plot of MLR coefficients for various density estimation options.\relax }{figure.caption.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Plot of all linear fits between modelled and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref  {fig:MLRfit_opt8} for a plot of the data. \relax }}{19}{figure.caption.23}}
-\newlabel{fig:MLRfit_allLines}{{19}{19}{Plot of all linear fits between modelled and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref {fig:MLRfit_opt8} for a plot of the data. \relax }{figure.caption.23}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Residuals of SWE predicted using MLR for all options of estimating density.\relax }}{19}{figure.caption.24}}
-\newlabel{fig:MLRresiduals_all}{{20}{19}{Residuals of SWE predicted using MLR for all options of estimating density.\relax }{figure.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces MLR coefficients for topographic regression between measured SWE and standardized topographic parameters that include distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha $),slope ($m$), northness ($N$), profile curvature ($\kappa _P$), tangent curvature ($\kappa _T$), and wind redistribution ($Sx$). SInce parameters are standardizes, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.\relax }}{18}{table.caption.21}}
+\newlabel{tab:MLRcoeff}{{3}{18}{MLR coefficients for topographic regression between measured SWE and standardized topographic parameters that include distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha $),slope ($m$), northness ($N$), profile curvature ($\kappa _P$), tangent curvature ($\kappa _T$), and wind redistribution ($Sx$). SInce parameters are standardizes, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.\relax }{table.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Comparison of predicted (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).\relax }}{19}{figure.caption.22}}
+\newlabel{fig:MLRfit_opt8}{{17}{19}{Comparison of predicted (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Plot of all linear fits between modelled and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref  {fig:MLRfit_opt8} for a plot of the data. \relax }}{19}{figure.caption.23}}
+\newlabel{fig:MLRfit_allLines}{{18}{19}{Plot of all linear fits between modelled and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref {fig:MLRfit_opt8} for a plot of the data. \relax }{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Residuals of SWE predicted using MLR for all options of estimating density.\relax }}{20}{figure.caption.24}}
+\newlabel{fig:MLRresiduals_all}{{19}{20}{Residuals of SWE predicted using MLR for all options of estimating density.\relax }{figure.caption.24}{}}
 \citation{Raftery1997,Wasserman2000,Raftery2005}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha $), elevation ($z$), northness ($N$), profile curvature ($\kappa _P$), slope ($m$), tangent curvature ($\kappa _T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).\relax }}{20}{figure.caption.25}}
-\newlabel{fig:PercentVar_densityOptions}{{21}{20}{Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha $), elevation ($z$), northness ($N$), profile curvature ($\kappa _P$), slope ($m$), tangent curvature ($\kappa _T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).\relax }{figure.caption.25}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Bayesian Model Averaging}{20}{subsection.2.2}}
-\newlabel{sec:BMS}{{2.2}{20}{Bayesian Model Averaging}{subsection.2.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Background}{20}{subsubsection.2.2.1}}
 \citation{Raftery1997}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Uniform model prior for eight topographic regressors used in BMA.\relax }}{21}{figure.caption.26}}
-\newlabel{fig:uni_model_prior}{{22}{21}{Uniform model prior for eight topographic regressors used in BMA.\relax }{figure.caption.26}{}}
+\citation{Wasserman2000}
+\citation{Wasserman2000}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha $), elevation ($z$), northness ($N$), profile curvature ($\kappa _P$), slope ($m$), tangent curvature ($\kappa _T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).\relax }}{21}{figure.caption.25}}
+\newlabel{fig:PercentVar_densityOptions}{{20}{21}{Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha $), elevation ($z$), northness ($N$), profile curvature ($\kappa _P$), slope ($m$), tangent curvature ($\kappa _T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).\relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Bayesian Model Averaging}{21}{subsection.2.2}}
+\newlabel{sec:BMS}{{2.2}{21}{Bayesian Model Averaging}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Background}{21}{subsubsection.2.2.1}}
+\citation{Wasserman2000}
+\citation{Wasserman2000}
+\citation{Wasserman2000}
+\citation{Raftery1997}
+\citation{Wasserman2000}
 \citation{Zeugner2015}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Methods}{22}{subsubsection.2.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Results}{23}{subsubsection.2.2.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Comparison of predicted (BMA) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).\relax }}{24}{figure.caption.27}}
-\newlabel{fig:BMSfit_opt8}{{23}{24}{Comparison of predicted (BMA) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).\relax }{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Plot of all linear fits between modelled (BMA) and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref  {fig:BMSfit_opt8} for a plot of the data. \relax }}{25}{figure.caption.28}}
-\newlabel{fig:BMSfit_allLines}{{24}{25}{Plot of all linear fits between modelled (BMA) and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref {fig:BMSfit_opt8} for a plot of the data. \relax }{figure.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Residuals of SWE predicted using BMA for all options of estimating density.\relax }}{25}{figure.caption.29}}
-\newlabel{fig:BMSresiduals_all}{{25}{25}{Residuals of SWE predicted using BMA for all options of estimating density.\relax }{figure.caption.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Boxplot showing the range of percent variance explained by each topographic parameter as calculated using BMA for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha $), elevation ($z$), northness ($N$), profile curvature ($\kappa _P$), slope ($m$), tangent curvature ($\kappa _T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).\relax }}{26}{figure.caption.30}}
-\newlabel{fig:PercentVar_densityOptions}{{26}{26}{Boxplot showing the range of percent variance explained by each topographic parameter as calculated using BMA for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha $), elevation ($z$), northness ($N$), profile curvature ($\kappa _P$), slope ($m$), tangent curvature ($\kappa _T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).\relax }{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Uniform model prior for eight topographic regressors used in BMA.\relax }}{22}{figure.caption.26}}
+\newlabel{fig:uni_model_prior}{{21}{22}{Uniform model prior for eight topographic regressors used in BMA.\relax }{figure.caption.26}{}}
+\citation{Wasserman2000}
+\citation{Wasserman2000}
+\citation{Zeugner2015}
+\citation{Zeugner2015}
+\citation{Kohavi1995}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Methods}{23}{subsubsection.2.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Results}{24}{subsubsection.2.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Comparison of predicted (BMA) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).\relax }}{25}{figure.caption.27}}
+\newlabel{fig:BMSfit_opt8}{{22}{25}{Comparison of predicted (BMA) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).\relax }{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Plot of all linear fits between modelled (BMA) and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref  {fig:BMSfit_opt8} for a plot of the data. \relax }}{26}{figure.caption.28}}
+\newlabel{fig:BMSfit_allLines}{{23}{26}{Plot of all linear fits between modelled (BMA) and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref {fig:BMSfit_opt8} for a plot of the data. \relax }{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Residuals of SWE predicted using BMA for all options of estimating density.\relax }}{26}{figure.caption.29}}
+\newlabel{fig:BMSresiduals_all}{{24}{26}{Residuals of SWE predicted using BMA for all options of estimating density.\relax }{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Boxplot showing the range of percent variance explained by each topographic parameter as calculated using BMA for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha $), elevation ($z$), northness ($N$), profile curvature ($\kappa _P$), slope ($m$), tangent curvature ($\kappa _T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).\relax }}{27}{figure.caption.30}}
+\newlabel{fig:PercentVar_densityOptions}{{25}{27}{Boxplot showing the range of percent variance explained by each topographic parameter as calculated using BMA for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha $), elevation ($z$), northness ($N$), profile curvature ($\kappa _P$), slope ($m$), tangent curvature ($\kappa _T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).\relax }{figure.caption.30}{}}
 \bibdata{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 \bibcite{Burnham2004}{{1}{2004}{{Burnham and Anderson}}{{}}}
 \bibcite{Korona2009}{{2}{2009}{{Korona and others}}{{}}}
