@@ -18,7 +18,8 @@
 \usepackage{hyperref}
 \usepackage{bm}
 \usepackage{float}
-\renewcommand{\vec}[1]{\mathbf{#1}}
+\usepackage{amsmath}
+\renewcommand{\vector}[1]{\mathbf{#1}}
 
 
 \begin{document}
@@ -30,6 +31,7 @@
 
 Calculating DEM
 - compiling and correcting DEMS
+- figures of it all
 
 Params
 - different rasters
@@ -50,23 +52,81 @@ This is a document that shows the sampled and full ranges of topographic paramet
 
 \subsection{Creating DEM}
 
+Topographic parameters can be derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery taken with the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m. 
+
+**Two DEMs were available for the Donjek Range. The first DEM (???) covered all three study glaciers but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds, resulting in incorrect elevation data. The second DEM spans only part of the Donjek Range, covering most of Glacier 4 and a large portion of Glacier 2. This DEM had no cloud cover over Glacier 2 and 4. As a result, it was decided to merge the two DEMs to create a cloud free DEM that spanned all three glaciers. 
+
+The merging process was complicated by the fact that there was a discrepancy in elevation values between the two DEMs. The second DEM had generally higher elevation values by about 10 m. Although the discrepancy was not consistent throughout the study area, the second DEM was generally higher than the first. ...
+
+
 \subsection{Calculating topographic parameters}
-One method of interpolating snow water equivalent (SWE) is to relate the observed SWE with topographic parameters derived from a digital elevation model (DEM) of the study area. The imagery we were using was from the SPOT-5 DEMs and were provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40x40 m. The following topographic parameters were calculated from the DEM in QGIS:
+
+Besides elevation ($z$), the topographic parameters of interest included distance from centreline ($d_C$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, ``northness'' ($N$), aspect ($\alpha$), and $Sx$, which is a proxy for wind redistribution. Distance from centreline and ``northness'' were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. 
+
+The remaining parameters were calculated using the \texttt{r.slope.aspect} modeule in GRASS GIS software run through QGIS as defined in \cite{Mitavsova1993} and described in \cite{Hofierka2009}. This module implements a local polynomial approximation method following:
+\begin{equation}
+z(x,y) = a\cdot x^2 +b\cdot y^2 +c \cdot x\cdot y +d \cdot x + e\cdot y +f.
+\end{equation}•
+This polynomial is fitted to 9 grid points (3 $\times$ 3 array) and the coefficients are determined by using a weighted least squares. 
+
+First order partial derivatives are derived using Horn's formula \citep{Horn1981, Neteler2013} . The gradient can be expressed as
+\begin{equation}
+\nabla \bar{ \bm{z}} = \left( \frac{\partial z}{\partial x}, \frac{\partial z}{\partial y} \right) = \left( 2 \cdot a  \cdot x + c  \cdot y +d, 2 \cdot b  \cdot y + c  \cdot x + e \right) .
+\end{equation}•
+Since we are interested in the value of the centre cell ($x=y=0$), the gradient is simply 
+\begin{equation}
+\nabla \bar{ \bm{z}} = (f_x,f_y) = (d,e),
+\end{equation}•
+where $d$ and $e$ are given by
+\begin{equation}
+f_x = \frac{(z_7-z_9)+(2z_4-2z_6)+(z_1-z_3)}{8 \cdot \Delta x},\\
+\end{equation}•
+\begin{equation}
+f_y = \frac{(z_7-z_1)+(2z_8-2z_2)+(z_9-z_3)}{8 \cdot \Delta y}.
+\end{equation}•
+Here, $z_k$ refers to one of the grid cells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. So $z_3 = z_{i+1,j+1}$, $z_7 = z_{i-1,j-1}$, and so on. $\Delta x$ and $\Delta y$ are the grid spacing (resolution) of the DEM. The second order partial derivatives can be written as \citep{Hofierka2009, Neteler2013}
+\begin{align}
+f_{xx} &= \frac{z_1-2z_2+z_3+4z_4-8z_5+4z_6+z_7-2z_8+z_9}{6 \cdot (\Delta x)^2},\\
+f_{yy} &= \frac{z_1-4z_2+z_3-2z_4-8z_5-2z_6+z_7+4z_8+z_9}{6 \cdot (\Delta y)^2},\\
+f_{xy} &= \frac{(z_7-z_9)-(z_1-z_3)}{4 \cdot \Delta x \Delta y}.
+\end{align}
+The second derivates are most commonly used to calculate the curvature of a surface. The curvature at a given point is determined by finding the inverse of the radius of a circle that best fits the curve \citep{Olaya2009}. Convex surfaces have positive curvature and concave surfaces have negative curvature. 
+
+
+
+The calculation of topographic parameters is described below.
 
 \begin{enumerate}
 \item[]\textbf{Elevation} values were taken from the SPOT-5 DEMs directly.
 
 \item[] \textbf{Distance from centreline} was calculated as the minimum distance between the Easting and Northing of the northwest corner of each cell and a centreline that was drawn by hand in QGIS. This was completed in Matlab using the script `CentrelineDistance.m'. 
 
-\item[]  \textbf{Slope} is the second derivative of the elevations. 
+\item[]  \textbf{Slope} is taken to be the steepest slope angle and is the magnitude of gradient \citep{Mitavsova1993}. Using the gradient, it can be expressed as 
+	\begin{equation}
+	m = \textrm{arctan}(|\nabla \bar{ \bm{z}}|) = \textrm{arctan} \left( \sqrt{(f_x)^2 +( f_y)^2} \right)
+	\end{equation}•
+\item[] \textbf{Tangential Curvature} (horizontal curvature) represents the curvature in the direction of the contour tangent. The equation for tangential curvature can be written as
+	\begin{equation}
+	\kappa_T = - \frac{e^2 \cdot r -2 \cdot d\cdot e \cdot s +d^2 \cdot t}{(d^2+e^2) \cdot \sqrt{1+d^2+e^2}}
+	\end{equation}•
+where $d$ and $e$ are as above and
+	\begin{align}
+	r &= \frac{\partial^2 z}{\partial x^2} = \frac{z_1+z_3+z_4+z_6+z_7+z_9-2 \cdot (z_2+z_5+z_8)}{3 \cdot \Delta s^2}\\
+	s &= \frac{\partial^2 z}{\partial x \partial y} = \frac{z_3 + z_7- z_1 - z_9}{4 \cdot \Delta s^2}\\
+	t &= \frac{\partial^2 z}{\partial y^2} = \frac{z_1+z_2+z_3+z_7+z_8+z_9-2 \cdot (z_4+z_5+z_6)}{3 \cdot \Delta s^2}
+	\end{align}•	
 
-\item[] \textbf{Tangential Curvature} represents the curvature in the direction of the contour tangent.
-
-\item[] \textbf{Profile Curvature} represents the curvature in the direction of the the steepest slope.
+\item[] \textbf{Profile Curvature} (vertical curvature) represents the curvature in the direction of the the steepest slope (gradient). The equation for profile curvature can be written as
+	\begin{equation}
+	\kappa_P = - \frac{d^2 \cdot r +2 \cdot d\cdot e \cdot r \cdot s +e^2 \cdot t}{(d^2+e^2) \cdot \sqrt{(1+d^2+e^2)^3}}
+	\end{equation}•
 
 \item[] \textbf{``Northness''} is defined as the product of the cosine of aspect and sine of slope \citep{Molotch2005}. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and a flat surfaces yield 0. 
 
-\item[] \textbf{Aspect} represent what direction a slope is facing with 0${^\circ}$ defined as north. These were calculated using Terrain Analysis in QGIS. 
+\item[] \textbf{Aspect} represent the orientation of the steepest slope, with 0${^\circ}$ defined as north and no value given to cells that have no gradient. Using the gradient, it can expressed as
+	\begin{equation}
+	\alpha = 180 - \textrm{arctan}\left(\frac{ f_y}{ f_x}\right)+90 \cdot \frac{ f_x}{| f_x|}
+	\end{equation}•
 
 \item[] \textbf{\textit{Sx}} represents wind exposure/shelter and is based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest \citep{Winstral2002}. This can be referred to as the maximum upwind slope. Negative $Sx$ values represent exposure relative to the shelter-defining pixel, which means that the cell of interest was higher than the cell with greatest upward slope. Conversely, positive values represent sheltered cells. To determine $Sx$ values, we use the equation
 \begin{equation}
@@ -333,9 +393,16 @@ The MLR was completed with the following steps (executed using the function 'MLR
 \begin{landscape}
 \begin{figure}
 	\centering
-	\includegraphics[height = 0.5\textwidth]{MLRfit_opt8.png}\\
+	\includegraphics[height = 0.4\textwidth]{MLRfit_opt8.png}\\
 	\caption{Comparison of predicted (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 8).}
 	\label{fig:MLRfit_opt8}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.4\textwidth]{MLRcoeff_compare.png}\\
+	\caption{Plot of MLR coefficients for various density estimation options.}
+	\label{fig:MLRcoeff_compare}
 \end{figure}
 
 \pagebreak
@@ -463,16 +530,6 @@ The BMA process was implemented in R, using the Bayesian model statistics (BMS) 
 	\caption{Boxplot showing the range of percent variance explained by each topographic parameter as calculated using BMA for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
 	\label{fig:PercentVar_densityOptions}
 \end{figure} 
-
-
-
-
-
-
-
-
-
-
 
 
 
