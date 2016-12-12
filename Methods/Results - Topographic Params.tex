@@ -29,17 +29,6 @@
 \Large \textbf{Results\\ Basin Scale}
 \end{center}
 
-Calculating DEM
-- compiling and correcting DEMS
-- figures of it all
-
-Params
-- different rasters
-- get equations for topo params
-
-MLR Results
-- MLR coeffs table with R2 values
-
 \section*{Overview}
 This is a document that shows the sampled and full ranges of topographic parameters and then goes into the multiple linear regression and Bayesian model averaging that was used to explain SWE with topographic parameters. 
 
@@ -409,7 +398,7 @@ RMSE &  &  &
 \end{tabular}
 \end{wraptable}
 
-For Glacier 4, the largest coefficients are distance from centreline and slope, which are an order of magnitude larger than the remaining coefficients. Both coefficients are negative, which indicates less snow along the margins of the glacier and less on more east facing slopes. These coefficients account for the largest percentage of variance explained, although this percentage is very small ($<2$\% each). The map of predicted SWE for the entire glacier closely resembles the distribution of distance from centreline (Figure \ref{map:centreD}), which also shows its dependence on this parameter. Overall, the modelled winter balance for Glacier 4 is very poorly explained by the topographic parameters, which results in no correlation between modelled and observed SWE (R$^2=0.04$). The modelled values of SWE are largely determined by the intercept value. RMSE???
+For Glacier 4, the largest coefficients are distance from centreline and slope, which are an order of magnitude larger than the remaining coefficients. Both coefficients are negative, which indicates less snow along the margins of the glacier and less on steeper slopes. These coefficients account for the largest percentage of variance explained, although this percentage is very small ($<2$\% each). The map of predicted SWE for the entire glacier closely resembles the distribution of distance from centreline (Figure \ref{map:centreD}), which also shows its dependence on this parameter. Overall, the modelled winter balance for Glacier 4 is very poorly explained by the topographic parameters, which results in no correlation between modelled and observed SWE (R$^2=0.04$). The modelled values of SWE are largely determined by the intercept value. RMSE???
 
 For Glacier 2, the largest coefficient (by an order of magnitude) is elevation. This coefficient is positive, which means that SWE will increase with elevation. Elevation explains the largest amount of variance (52\%) and this is consistent for all density options. The map of modelled SWE shows this strong dependence on elevation since the values closely resemble the elevation map (Figure \ref{map:elev}). Overall, the modelled winter balance is moderately good estimation of observed SWE (R$^2=0.57$) although it tends to underestimate the amount of accumulation. 
 
@@ -448,7 +437,7 @@ Qualitatively, there is little variation in the fit between modelled and observe
 	\centering
 	\includegraphics[width =1.1 \textwidth]{Coeffs_DensityOpts.png}\\
 	\caption{Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
-	\label{fig:PercentVar_densityOptions}
+	\label{fig:MLRPercentVar_densityOptions}
 \end{figure} 
 
 %\begin{landscape}
@@ -524,6 +513,35 @@ The BMA process was implemented in R, using the Bayesian model statistics (BMS) 
 
 \subsubsection{Results}
 
+The coefficients determined using BMA for density Option 8 can be seen in Table \ref{tab:BMScoeff}. These coefficients were found for standardized values of topographic parameters so their magnitude is indicative of their importance in predicting SWE. The range of percent variance explained by each variable (from all density options) can be seen in Figure \ref{fig:BMSPercentVar_densityOptions}. The fit between modelled SWE and observed SWE for each glacier for density option 8 can be seen in Figure \ref{fig:BMSfit_opt8} and the fit for all density options in Figure \ref{fig:BMSfit_allLines}. The distribution of residuals in then plotted in Figure \ref{fig:BMSresiduals_all}. A map of the predicted values of SWE over the entire glacier using density option 8 can be seen in Figure \ref{fig:BMSmodelledSWE}.
+
+\begin{wraptable}{R}{10cm}
+\centering
+\caption{BMS coefficients for topographic regression between measured SWE and standardized topographic parameters that include distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$),slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and wind redistribution ($Sx$). SInce parameters are standardizes, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.}
+\label{tab:BMScoeff}
+\begin{tabular}{cccc}
+ & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
+d$_C$ & -0.028 & 0.021 & 0.015 \\
+$z$ &  \textless0.001 & 0.118 & 0.051 \\
+$\alpha$ & -0.001 & -0.001 & 0.001 \\
+$m$ & -0.014 & 0.002 & -0.004 \\
+$N$ &  \textless0.001 & \textless0.001 & 0.014 \\
+$\kappa_P$ & 0.001 & \textless0.001 & -0.001 \\
+$\kappa_T$ & \textless0.001 & \textless0.001 & -0.002 \\
+$Sx$ & 0.002 & \textless0.001 & \textless0.001 \\
+Intercept & 0.623 & 0.266 & 0.242 \\ \hline
+RMSE &  &  & 
+\end{tabular}
+\end{wraptable}
+
+For Glacier 4, the largest coefficients are distance from centreline and slope, which are an order of magnitude larger than the remaining coefficients. Both coefficients are negative, which indicates less snow along the margins of the glacier and less on steeper slopes. These coefficients account for the largest percentage of variance explained, although this percentage is very small ($<3$\% each). The map of predicted SWE for the entire glacier closely resembles the distribution of distance from centreline (Figure \ref{map:centreD}), which also shows its dependence on this parameter. Overall, the modelled winter balance for Glacier 4 is very poorly explained by the topographic parameters, which results in no correlation between modelled and observed SWE (R$^2=0.05$). The modelled values of SWE are largely determined by the intercept value. RMSE???
+
+For Glacier 2, the largest coefficient (by an order of magnitude) is elevation. This coefficient is positive, which means that SWE will increase with elevation. Elevation explains the largest amount of variance (52\%) and this is consistent for all density options. The map of modelled SWE shows this strong dependence on elevation since the values closely resemble the elevation map (Figure \ref{map:elev}). The second largest coefficient is distance from centreline, which accounts for 2\% of the variance. Overall, the modelled winter balance is a good estimation of observed SWE (R$^2=0.62$) although it tends to underestimate the amount of accumulation. 
+
+For Glacier 13, the largest coefficient is elevation with distance from centreline and ``northness'' also of the same order of magnitude. All three coefficients are positive, which means that cells at higher elevation, closer to the margins, and more north facing had higher amounts of SWE. Elevation explains the majority of the variance (23\%), while distance from centreline and ``northness'' explain far less ($<$2\% each). The map of modelled SWE displays an increase with elevation, although it is not strong, especially considering the large range of elevation on this glacier. Overall, the MLR modelled winter balance is poorly related to observed SWE (R$^2=0.34$) and tends to underestimate the amount of accumulation.
+
+Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density options for all glaciers and the residuals display a similar distribution between the density options.The percent variance explained by each parameter also varies little between different density options. 
+
 \begin{landscape}
 \begin{figure}
 	\centering
@@ -554,11 +572,38 @@ The BMA process was implemented in R, using the Bayesian model statistics (BMS) 
 	\centering
 	\includegraphics[width =1.1 \textwidth]{BMSCoeffs_DensityOpts.png}\\
 	\caption{Boxplot showing the range of percent variance explained by each topographic parameter as calculated using BMA for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
-	\label{fig:PercentVar_densityOptions}
+	\label{fig:BMSPercentVar_densityOptions}
 \end{figure} 
 
+%\begin{landscape}
+%\begin{figure}
+%	\centering
+%	\includegraphics[height = 0.9\textwidth]{BMSmap_Modelled_Observed.png}
+%	\caption{Modelled SWE using coefficients determined using BMA and density interpolated with inverse-distance weighting from snowpits. Observed SWE values are overlain on the maps.}
+%	\label{fig:BMSmodelledSWE}
+%\end{figure}
+%\end{landscape}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{MLR and BMS comparison}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =1.1 \textwidth]{Coeff_Compare.png}\\
+	\caption{Boxplot showing the range of value for each topographic parameter from both MLR and BMA analysis. Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
+	\label{fig:allCeoffs_boxplot}
+\end{figure} 
+
+\begin{landscape}
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.5\textwidth]{SWEdifferenceMap.png}\\
+	\caption{Map of the difference between maximum and minimum SWE values for each DEM cell between all density options and from both MLR and BMA.}
+	\label{fig:SWEdiffMap}
+\end{figure}
+\end{landscape}
 	
 %%%%%%%%
 \pagebreak
