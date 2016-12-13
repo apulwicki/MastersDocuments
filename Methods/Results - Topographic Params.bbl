@@ -1,13 +1,41 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[\protect\citename{Basist and others, }1994]{Basist1994}
+Basist A, Bell GD and Meentemeyer V (1994) {Statistical relationships between
+  topography and precipitation patterns}. \emph{Journal of climate},
+  \textbf{7}(9), 1305--1315 (\doi
+  {10.1175/1520-0442(1994)007<1305:SRBTAP>2.0.CO;2})
+
 \bibitem[\protect\citename{Burnham and Anderson, }2004]{Burnham2004}
 Burnham KP and Anderson DR (2004) {Multimodel Inference: {U}nderstanding {AIC}
   and {BIC} in Model Selection}. \emph{Sociological Methods \& Research},
   \textbf{33}(2), 261--304 (\doi {10.1177/0049124104268644})
+
+\bibitem[\protect\citename{Cohen and others, }2013]{Cohen2013}
+Cohen J, Cohen P, West SG and Aiken LS (2013) \emph{{Applied multiple
+  regression/correlation analysis for the behavioral sciences}}. Routledge
+
+\bibitem[\protect\citename{Davis and Sampson, }1986]{Davis1986}
+Davis JC and Sampson RJ (1986) \emph{{Statistics and data analysis in
+  geology}}, volume 646. Wiley New York et al.
+
+\bibitem[\protect\citename{Hofierka and others, }2009]{Hofierka2009}
+Hofierka J, Mit{\'a}\v{s}ov{\'a} H and Neteler M (2009) {Geomorphometry in
+  {GRASS GIS}}. \emph{Developments in Soil Science}, \textbf{33}, 387--410
+  (\doi {10.1016/S0166-2481(08)00017-2})
+
+\bibitem[\protect\citename{Horn, }1981]{Horn1981}
+Horn BK (1981) {Hill shading and the reflectance map}. \emph{Proceedings of the
+  IEEE}, \textbf{69}(1), 14--47 (\doi {10.1109/PROC.1981.11918})
+
+\bibitem[\protect\citename{Kohavi and others, }1995]{Kohavi1995}
+Kohavi R and others (1995) {A study of cross-validation and bootstrap for
+  accuracy estimation and model selection}. In \emph{{Ijcai}}, volume~14,
+  1137--1145
 
 \bibitem[\protect\citename{Korona and others, }2009]{Korona2009}
 Korona J, Berthier E, Bernard M, R{\'e}my F and Thouvenot E (2009) {{SPIRIT.
@@ -22,6 +50,13 @@ McGrath D, Sass L, O'Neel S, Arendt A, Wolken G, Gusmeroli A, Kienholz C and
   {A}laska}. \emph{Journal of Geophysical Research: Earth Surface},
   \textbf{120}(8), 1530--1550 (\doi {10.1002/2015JF003539})
 
+\bibitem[\protect\citename{Mit{\'a}\v{s}ov{\'a} and Hofierka,
+  }1993]{Mitavsova1993}
+Mit{\'a}\v{s}ov{\'a} H and Hofierka J (1993) {Interpolation by regularized
+  spline with tension: {II}. {A}pplication to terrain modeling and surface
+  geometry analysis}. \emph{Mathematical Geology}, \textbf{25}(6), 657--669
+  (\doi {10.1007/BF00893172})
+
 \bibitem[\protect\citename{Molotch and others, }2005]{Molotch2005}
 Molotch N, Colee M, Bales R and Dozier J (2005) {Estimating the spatial
   distribution of snow water equivalent in an alpine basin using binary
@@ -29,9 +64,51 @@ Molotch N, Colee M, Bales R and Dozier J (2005) {Estimating the spatial
   variable selection}. \emph{Hydrological Processes}, \textbf{19}(7),
   1459--1479 (\doi {10.1002/hyp.5586})
 
+\bibitem[\protect\citename{Neteler and Mit{\'a}\v{s}ov{\'a},
+  }2013]{Neteler2013}
+Neteler M and Mit{\'a}\v{s}ov{\'a} H (2013) \emph{{Open source GIS: a GRASS GIS
+  approach}}, volume 689. Springer Science \& Business Media
+
+\bibitem[\protect\citename{Olaya, }2009]{Olaya2009}
+Olaya V (2009) {Basic land-surface parameters}. \emph{Developments in Soil
+  Science}, \textbf{33}, 141--169
+
+\bibitem[\protect\citename{Raftery and others, }1997]{Raftery1997}
+Raftery AE, Madigan D and Hoeting JA (1997) {Bayesian Model Averaging for
+  Linear Regression Models}. \emph{Journal of the American Statistical
+  Association}, \textbf{92}(437), 179--191 (\doi
+  {10.1080/01621459.1997.10473615})
+
+\bibitem[\protect\citename{Raftery and others, }2005]{Raftery2005}
+Raftery AE, Gneiting T, Balabdaoui F and Polakowski M (2005) {Using Bayesian
+  Model Averaging to Calibrate Forecast Ensembles}. \emph{Monthly Weather
+  Review}, \textbf{133}(5), 1155--1174 (\doi {10.1175/MWR2906.1})
+
+\bibitem[\protect\citename{Revuelto and others, }2014]{Revuelto2014}
+Revuelto J, L{\'o}pez-Moreno JI, Azor{\'i}n-Molina C and {Vicente Serrano} SM
+  (2014) {Topographic control of snowpack distribution in a small catchment in
+  the central Spanish Pyrenees: intra-and inter-annual persistence} (\doi
+  {10.5194/tc-8-1989-2014})
+
+\bibitem[\protect\citename{Wasserman, }2000]{Wasserman2000}
+Wasserman L (2000) {Bayesian Model Selection and Model Averaging}.
+  \emph{Journal of Mathematical Psychology}, \textbf{44}(1), 92--107, ISSN
+  0022-2496 (\doi {10.1006/jmps.1999.1278})
+
 \bibitem[\protect\citename{Winstral and others, }2002]{Winstral2002}
 Winstral A, Elder K and Davis RE (2002) {Spatial snow modeling of
   wind-redistributed snow using terrain-based parameters}. \emph{Journal of
   Hydrometeorology}, \textbf{3}(5), 524--538
+
+\bibitem[\protect\citename{Woo and Marsh, }1978]{Woo1978}
+Woo MK and Marsh P (1978) {Analysis of Error in the Determination of Snow
+  Storage for Small High {A}rctic Basins}. \emph{Journal of Applied
+  Meteorology}, \textbf{17}(10), 1537--1541 (\doi
+  {10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2})
+
+\bibitem[\protect\citename{Zeugner and Feldkircher, }2015]{Zeugner2015}
+Zeugner S and Feldkircher M (2015) {Bayesian Model Averaging Employing Fixed
+  and Flexible Priors: The {BMS} Package for {R}}. \emph{Journal of Statistical
+  Software}, \textbf{68}(4), 1--37
 
 \end{thebibliography}

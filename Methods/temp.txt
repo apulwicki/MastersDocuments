@@ -1,0 +1,12 @@
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+&\textbf{\alpha}&\textbf{{\itz}}&\textbf{{\itN}}&\textbf{{\kappa_P}}&\textbf{{\itm}}&\textbf{{\kappa_T}}&\textbf{{\itSx}}&\textbf{{\itd}}\\\hline
+\textbf{\alpha}&1&-0.24&-0.07&0.02&-0.1&0.02&0.08&0.06\\\hline
+\textbf{{\itz}}&0&1&0.14&0.08&0.01&0.01&-0.24&0.13\\\hline
+\textbf{{\itN}}&0&0&1&0.06&0.24&0.08&-0.01&0.07\\\hline
+\textbf{{\kappa_P}}&0&0&0&1&-0.02&0.37&-0.04&0.07\\\hline
+\textbf{{\itm}}&0&0&0&0&1&-0.15&-0.02&0.09\\\hline
+\textbf{{\kappa_T}}&0&0&0&0&0&1&0&0\\\hline
+\textbf{{\itSx}}&0&0&0&0&0&0&1&-0.06\\\hline
+\textbf{{\itd}}&0&0&0&0&0&0&0&1\\\hline
+\end{tabular}

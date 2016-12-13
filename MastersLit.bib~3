@@ -1,5 +1,164 @@
 @comment{x-kbibtex-personnameformatting=<%l><, %f>}
 
+@book{Davis1986,
+	author = "Davis, John C and Sampson, Robert J",
+	date-added = "2016-12-11 18:20:47 +0000",
+	date-modified = "2016-12-11 18:21:00 +0000",
+	publisher = "Wiley New York et al.",
+	title = "{Statistics and data analysis in geology}",
+	volume = "646",
+	year = "1986"
+}
+
+@inproceedings{Kohavi1995,
+	author = "Kohavi, Ron and others",
+	booktitle = "{Ijcai}",
+	date-added = "2016-12-11 18:00:58 +0000",
+	date-modified = "2016-12-11 18:02:09 +0000",
+	number = "2",
+	pages = "1137--1145",
+	title = "{A study of cross-validation and bootstrap for accuracy estimation and model selection}",
+	volume = "14",
+	year = "1995"
+}
+
+@article{Olaya2009,
+	author = "Olaya, V",
+	date-added = "2016-12-10 19:48:05 +0000",
+	date-modified = "2016-12-10 19:48:14 +0000",
+	journal = "Developments in Soil Science",
+	pages = "141--169",
+	publisher = "Elsevier",
+	title = "{Basic land-surface parameters}",
+	volume = "33",
+	year = "2009"
+}
+
+@book{Neteler2013,
+	author = "Neteler, Markus and Mitasova, Helena",
+	date-added = "2016-12-09 22:10:17 +0000",
+	date-modified = "2016-12-09 22:10:46 +0000",
+	publisher = "Springer Science \& Business Media",
+	title = "{Open source GIS: a GRASS GIS approach}",
+	volume = "689",
+	year = "2013"
+}
+
+@article{Horn1981,
+	author = "Horn, Berthold KP",
+	date-added = "2016-12-09 22:08:36 +0000",
+	date-modified = "2016-12-09 22:09:03 +0000",
+	doi = "10.1109/PROC.1981.11918",
+	journal = "Proceedings of the IEEE",
+	number = "1",
+	pages = "14--47",
+	publisher = "IEEE",
+	title = "{Hill shading and the reflectance map}",
+	volume = "69",
+	year = "1981"
+}
+
+@article{Hofierka2009,
+	author = "Hofierka, J and Mitasova, H and Neteler, M",
+	date-added = "2016-12-09 21:59:48 +0000",
+	date-modified = "2016-12-11 18:43:20 +0000",
+	doi = "10.1016/S0166-2481(08)00017-2",
+	journal = "Developments in Soil Science",
+	pages = "387--410",
+	publisher = "Elsevier",
+	title = "{Geomorphometry in {GRASS GIS}}",
+	volume = "33",
+	year = "2009"
+}
+
+@article{Mitavsova1993,
+	author = "Mit{\'a}sova, Helena and Hofierka, Jaroslav",
+	date-added = "2016-12-09 21:55:17 +0000",
+	date-modified = "2016-12-09 21:57:05 +0000",
+	doi = "10.1007/BF00893172",
+	journal = "Mathematical Geology",
+	number = "6",
+	pages = "657--669",
+	publisher = "Springer",
+	title = "{Interpolation by regularized spline with tension: {II}. {A}pplication to terrain modeling and surface geometry analysis}",
+	volume = "25",
+	year = "1993"
+}
+
+@book{Cohen2013,
+	author = "Cohen, Jacob and Cohen, Patricia and West, Stephen G and Aiken, Leona S",
+	date-added = "2016-12-09 03:05:29 +0000",
+	date-modified = "2016-12-09 04:23:50 +0000",
+	publisher = "Routledge",
+	title = "{Applied multiple regression/correlation analysis for the behavioral sciences}",
+	year = "2013"
+}
+
+@article{Zeugner2015,
+	author = "Zeugner, Stefan and Feldkircher, Martin",
+	bdsk-url-1 = "http://dx.doi.org/10.18637/jss.v068.i04",
+	date-added = "2016-12-05 22:56:15 +0000",
+	date-modified = "2016-12-05 22:56:22 +0000",
+	journal = "Journal of Statistical Software",
+	number = "4",
+	pages = "1--37",
+	title = "{Bayesian Model Averaging Employing Fixed and Flexible Priors: The {BMS} Package for {R}}",
+	volume = "68",
+	year = "2015"
+}
+
+@article{Raftery2005,
+	abstract = "Abstract Ensembles used for probabilistic weather forecasting often exhibit a spread-error correlation, but they tend to be underdispersive. This paper proposes a statistical method for postprocessing ensembles based on Bayesian model averaging (BMA), which is a standard method for combining predictive distributions from different sources. The BMA predictive probability density function (PDF) of any quantity of interest is a weighted average of PDFs centered on the individual bias-corrected forecasts, where the weights are equal to posterior probabilities of the models generating the forecasts and reflect the models' relative contributions to predictive skill over the training period. The BMA weights can be used to assess the usefulness of ensemble members, and this can be used as a basis for selecting ensemble members; this can be useful given the cost of running large ensembles. The BMA PDF can be represented as an unweighted ensemble of any desired size, by simulating from the BMA predictive distribution. The BMA predictive variance can be decomposed into two components, one corresponding to the between-forecast variability, and the second to the within-forecast variability. Predictive PDFs or intervals based solely on the ensemble spread incorporate the first component but not the second. Thus BMA provides a theoretical explanation of the tendency of ensembles to exhibit a spread-error correlation but yet be underdispersive. The method was applied to 48-h forecasts of surface temperature in the Pacific Northwest in January{\^a}June 2000 using the University of Washington fifth-generation Pennsylvania State University{\^a}NCAR Mesoscale Model (MM5) ensemble. The predictive PDFs were much better calibrated than the raw ensemble, and the BMA forecasts were sharp in that 90\% BMA prediction intervals were 66\% shorter on average than those produced by sample climatology. As a by-product, BMA yields a deterministic point forecast, and this had root-mean-square errors 7\% lower than the best of the ensemble members and 8\% lower than the ensemble mean. Similar results were obtained for forecasts of sea level pressure. Simulation experiments show that BMA performs reasonably well when the underlying ensemble is calibrated, or even overdispersed.",
+	author = "Raftery, Adrian E. and Gneiting, Tilmann and Balabdaoui, Fadoua and Polakowski, Michael",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/MWR2906.1",
+	date-added = "2016-12-05 22:53:01 +0000",
+	date-modified = "2016-12-05 22:53:10 +0000",
+	doi = "10.1175/MWR2906.1",
+	eprint = "http://dx.doi.org/10.1175/MWR2906.1",
+	journal = "Monthly Weather Review",
+	number = "5",
+	pages = "1155--1174",
+	title = "{Using Bayesian Model Averaging to Calibrate Forecast Ensembles}",
+	url = "http://dx.doi.org/10.1175/MWR2906.1",
+	volume = "133",
+	year = "2005"
+}
+
+@article{Wasserman2000,
+	author = "Wasserman, Larry",
+	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S0022249699912786",
+	bdsk-url-2 = "http://dx.doi.org/10.1006/jmps.1999.1278",
+	date-added = "2016-12-05 22:52:20 +0000",
+	date-modified = "2016-12-05 22:52:31 +0000",
+	doi = "10.1006/jmps.1999.1278",
+	issn = "0022-2496",
+	journal = "Journal of Mathematical Psychology",
+	keywords = "Markov chain Monte Carlo",
+	number = "1",
+	pages = "92--107",
+	title = "{Bayesian Model Selection and Model Averaging}",
+	url = "http://www.sciencedirect.com/science/article/pii/S0022249699912786",
+	volume = "44",
+	year = "2000"
+}
+
+@article{Raftery1997,
+	abstract = "Abstract We consider the problem of accounting for model uncertainty in linear regression models. Conditioning on a single selected model ignores model uncertainty, and thus leads to the underestimation of uncertainty when making inferences about quantities of interest. A Bayesian solution to this problem involves averaging over all possible models (i.e., combinations of predictors) when making inferences about quantities of interest. This approach is often not practical. In this article we offer two alternative approaches. First, we describe an ad hoc procedure, {\^a}Occam's window,{\^a} which indicates a small set of models over which a model average can be computed. Second, we describe a Markov chain Monte Carlo approach that directly approximates the exact solution. In the presence of model uncertainty, both of these model averaging procedures provide better predictive performance than any single model that might reasonably have been selected. In the extreme case where there are many candidate predictors but no relationship between any of them and the response, standard variable selection procedures often choose some subset of variables that yields a high R 2 and a highly significant overall F value. In this situation, Occam's window usually indicates the null model (or a small number of models including the null model) as the only one (or ones) to be considered thus largely resolving the problem of selecting significant models when there is no signal in the data. Software to implement our methods is available from StatLib.",
+	author = "Raftery, Adrian E. and Madigan, David and Hoeting, Jennifer A.",
+	bdsk-url-1 = "http://dx.doi.org/10.1080/01621459.1997.10473615",
+	date-added = "2016-12-05 22:38:52 +0000",
+	date-modified = "2016-12-05 22:39:13 +0000",
+	doi = "10.1080/01621459.1997.10473615",
+	eprint = "http://dx.doi.org/10.1080/01621459.1997.10473615",
+	journal = "Journal of the American Statistical Association",
+	number = "437",
+	pages = "179--191",
+	title = "{Bayesian Model Averaging for Linear Regression Models}",
+	url = "http://dx.doi.org/10.1080/01621459.1997.10473615",
+	volume = "92",
+	year = "1997"
+}
+
 @phdthesis{Matthews2013,
 	author = "Matthews, Tom KR",
 	date-added = "2016-03-21 03:02:59 +0000",
@@ -11,6 +170,7 @@
 
 @article{Serreze1995,
 	author = "Serreze, Mark C and Rehder, Mark C and Barry, Roger G and Kahl, Jonathan D and Zaitseva, Nina A",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/joc.3370150702",
 	date-added = "2016-03-21 01:49:27 +0000",
 	date-modified = "2016-03-21 01:49:46 +0000",
 	doi = "10.1002/joc.3370150702",
@@ -26,6 +186,8 @@
 
 @article{Lackmann1998,
 	author = "Lackmann, Gary M and Gyakum, John R and Benoit, Robert",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
+	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
 	date-added = "2016-03-21 01:48:37 +0000",
 	date-modified = "2016-03-21 01:48:54 +0000",
 	doi = "10.1175/1520-0493(1998)126<0668:MTDOAW>2.0.CO;2",
@@ -39,6 +201,7 @@
 
 @article{Roberge2009,
 	author = "Roberge, Alain and Gyakum, John R and Atallah, Eyad H",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/2009WAF2222198.1",
 	date-added = "2016-03-21 01:47:18 +0000",
 	date-modified = "2016-03-21 01:47:46 +0000",
 	doi = "10.1175/2009WAF2222198.1",
@@ -61,6 +224,7 @@
 
 @article{Neiman2008,
 	author = "Neiman, Paul J and Ralph, F Martin and Wick, Gary A and Lundquist, Jessica D and Dettinger, Michael D",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/2007JHM855.1",
 	date-added = "2016-03-20 22:15:57 +0000",
 	date-modified = "2016-03-20 22:16:15 +0000",
 	doi = "10.1175/2007JHM855.1",
@@ -74,6 +238,7 @@
 
 @article{Schirmer2011a,
 	author = "Schirmer, M and Lehning, M",
+	bdsk-url-1 = "http://dx.doi.org/10.1029/2010WR009429",
 	date-added = "2016-03-20 21:01:43 +0000",
 	date-modified = "2016-03-20 21:02:03 +0000",
 	doi = "10.1029/2010WR009429",
@@ -87,6 +252,7 @@
 
 @article{Schirmer2011,
 	author = "Schirmer, M and Wirz, V and Clifton, A and Lehning, M",
+	bdsk-url-1 = "http://dx.doi.org/10.1029/2010WR009426",
 	date-added = "2016-03-20 20:59:04 +0000",
 	date-modified = "2016-03-20 20:59:20 +0000",
 	doi = "10.1029/2010WR009426",
@@ -100,6 +266,7 @@
 
 @article{Arnold2003,
 	author = "Arnold, Neil S and Rees, W Gareth",
+	bdsk-url-1 = "http://dx.doi.org/10.3189/172756503781830368",
 	date-added = "2016-03-20 20:51:06 +0000",
 	date-modified = "2016-03-20 20:51:22 +0000",
 	doi = "10.3189/172756503781830368",
@@ -114,6 +281,7 @@
 
 @article{Shook1997,
 	author = "Shook, K and Gray, DM",
+	bdsk-url-1 = "http://dx.doi.org/10.1029/96WR03532",
 	date-added = "2016-03-20 20:50:25 +0000",
 	date-modified = "2016-03-20 20:50:39 +0000",
 	doi = "10.1029/96WR03532",
@@ -128,6 +296,7 @@
 
 @article{Deems2008,
 	author = "Deems, Jeffrey S and Fassnacht, Steven R and Elder, Kelly J",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/2008JHM901.1",
 	date-added = "2016-03-20 18:49:30 +0000",
 	date-modified = "2016-03-20 18:49:50 +0000",
 	doi = "10.1175/2008JHM901.1",
@@ -141,6 +310,7 @@
 
 @article{Granger2002,
 	author = "Granger, RJ and Pomeroy, JW and Parviainen, J",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.1227",
 	date-added = "2016-03-20 18:28:03 +0000",
 	date-modified = "2016-03-20 18:28:22 +0000",
 	doi = "10.1002/hyp.1227",
@@ -155,6 +325,8 @@
 
 @article{Shook1996,
 	author = "Shook, Kevin and Gray, DM",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
+	bdsk-url-2 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
 	date-added = "2016-03-20 18:25:55 +0000",
 	date-modified = "2016-03-20 18:26:12 +0000",
 	doi = "10.1002/(SICI)1099-1085(199610)10:10<1283::AID-HYP460>3.0.CO;2-M",
@@ -169,6 +341,7 @@
 
 @article{Deems2006a,
 	author = "Deems, Jeffrey S and Fassnacht, Steven R and Elder, Kelly J",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/JHM487.1",
 	date-added = "2016-03-20 17:44:15 +0000",
 	date-modified = "2016-03-20 17:44:52 +0000",
 	doi = "10.1175/JHM487.1",
@@ -182,6 +355,7 @@
 
 @article{Trujillo2009,
 	author = "Trujillo, Ernesto and Ram{\'i}rez, Jorge A and Elder, Kelly J",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.7270",
 	date-added = "2016-03-20 17:24:54 +0000",
 	date-modified = "2016-03-20 17:25:24 +0000",
 	doi = "10.1002/hyp.7270",
@@ -196,6 +370,7 @@
 
 @article{Matheron1963,
 	author = "Matheron, Georges",
+	bdsk-url-1 = "http://dx.doi.org/10.2113/gsecongeo.58.8.1246",
 	date-added = "2016-03-20 17:03:37 +0000",
 	date-modified = "2016-03-20 17:04:11 +0000",
 	doi = "10.2113/gsecongeo.58.8.1246",
@@ -210,6 +385,7 @@
 
 @article{Bloschl1995,
 	author = "Bl{\"o}schl, G{\"u}nter and Sivapalan, M",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.3360090305",
 	date-added = "2016-03-20 16:04:18 +0000",
 	date-modified = "2016-03-20 16:04:35 +0000",
 	doi = "10.1002/hyp.3360090305",
@@ -224,6 +400,7 @@
 
 @article{Wetlaufer2016,
 	author = "Wetlaufer, Karl and Hendrikx, Jordy and Marshall, Lucy",
+	bdsk-url-1 = "http://dx.doi.org/10.3390/hydrology3010003",
 	date-added = "2016-03-20 15:48:34 +0000",
 	date-modified = "2016-03-20 15:49:12 +0000",
 	doi = "10.3390/hydrology3010003",
@@ -238,6 +415,7 @@
 
 @article{Schweizer2008a,
 	author = "Schweizer, J{\"u}rg and Kronholm, Kalle and Jamieson, J Bruce and Birkeland, Karl W",
+	bdsk-url-1 = "http://dx.doi.org/10.1016/j.coldregions.2007.04.009",
 	date-added = "2016-03-20 15:37:25 +0000",
 	date-modified = "2016-03-20 15:37:57 +0000",
 	doi = "10.1016/j.coldregions.2007.04.009",
@@ -252,6 +430,7 @@
 
 @article{Grunewald2014,
 	author = "Gr{\"u}newald, T and B{\"u}hler, Y and Lehning, M",
+	bdsk-url-1 = "http://dx.doi.org/10.5194/tc-8-2381-2014",
 	date-added = "2016-03-20 15:32:41 +0000",
 	date-modified = "2016-03-20 15:32:59 +0000",
 	doi = "10.5194/tc-8-2381-2014",
@@ -266,6 +445,7 @@
 
 @article{Revuelto2014,
 	author = "Revuelto, Jes{\'u}s and L{\'o}pez-Moreno, Juan I and Azor{\'i}n-Molina, C{\'e}sar and {Vicente Serrano}, Sergio M",
+	bdsk-url-1 = "http://dx.doi.org/10.5194/tc-8-1989-2014",
 	date-added = "2016-03-20 15:28:06 +0000",
 	date-modified = "2016-03-20 15:28:38 +0000",
 	doi = "10.5194/tc-8-1989-2014",
@@ -276,6 +456,7 @@
 
 @article{Grunewald2013,
 	author = "Gr{\"u}newald, T and St{\"o}tter, J and Pomeroy, JW and Dadic, R and {Moreno Ba{\~n}os}, I and Marturi{\`a}, J and Spross, M and Hopkinson, C and Burlando, P and Lehning, M",
+	bdsk-url-1 = "http://dx.doi.org/10.5194/hess-17-3005-2013",
 	date-added = "2016-03-20 15:23:41 +0000",
 	date-modified = "2016-03-20 15:24:08 +0000",
 	doi = "10.5194/hess-17-3005-2013",
@@ -290,6 +471,7 @@
 
 @article{Schweizer2008,
 	author = "Schweizer, J{\"u}rg and Heilig, Achim and Bellaire, Sascha and Fierz, Charles",
+	bdsk-url-1 = "http://dx.doi.org/10.3189/002214308787780058",
 	date-added = "2016-03-20 05:08:38 +0000",
 	date-modified = "2016-03-20 05:10:34 +0000",
 	doi = "10.3189/002214308787780058",
@@ -304,6 +486,7 @@
 
 @article{Lopez2011,
 	author = "L{\'o}pez-Moreno, Juan I and Fassnacht, SR and Beguer{\'i}a, Santiago and Latron, JBP",
+	bdsk-url-1 = "http://dx.doi.org/10.5194/tc-5-617-2011",
 	date-added = "2016-03-20 05:08:08 +0000",
 	date-modified = "2016-03-20 05:09:09 +0000",
 	doi = "10.5194/tc-5-617-2011",
@@ -318,6 +501,7 @@
 
 @article{Kronholm2004,
 	author = "Kronholm, Kalle and Schneebeli, Martin and Schweizer, J{\"u}rg",
+	bdsk-url-1 = "http://dx.doi.org/10.3189/172756404781815257",
 	date-added = "2016-03-20 04:43:25 +0000",
 	date-modified = "2016-03-20 04:43:50 +0000",
 	doi = "10.3189/172756404781815257",
@@ -332,6 +516,7 @@
 
 @article{Kronholm2007,
 	author = "Kronholm, Kalle and Birkeland, Karl W",
+	bdsk-url-1 = "http://dx.doi.org/10.1016/j.cageo.2006.10.004",
 	date-added = "2016-03-20 04:41:45 +0000",
 	date-modified = "2016-03-20 04:42:13 +0000",
 	doi = "10.1016/j.cageo.2006.10.004",
@@ -346,6 +531,7 @@
 
 @article{Elder2009,
 	author = "Elder, Kelly and Cline, Don and Liston, Glen E and Armstrong, Richard",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/2008JHM877.1",
 	date-added = "2016-03-20 04:27:23 +0000",
 	date-modified = "2016-03-20 04:27:50 +0000",
 	doi = "10.1175/2008JHM877.1",
@@ -359,6 +545,8 @@
 
 @inproceedings{Bellaire2008,
 	author = "Bellaire, Sascha and Schweizer, J{\"u}rg",
+	bdsk-url-1 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
+	bdsk-url-2 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
 	booktitle = "{Proceedings ISSW}",
 	date-added = "2016-03-20 04:22:53 +0000",
 	date-modified = "2016-03-20 04:23:00 +0000",
@@ -370,6 +558,7 @@
 
 @article{Bellaire2011,
 	author = "Bellaire, Sascha and Schweizer, J{\"u}rg",
+	bdsk-url-1 = "http://dx.doi.org/10.1016/j.coldregions.2010.08.013",
 	date-added = "2016-03-20 04:20:11 +0000",
 	date-modified = "2016-03-20 04:20:33 +0000",
 	doi = "10.1016/j.coldregions.2010.08.013",
@@ -384,6 +573,7 @@
 
 @article{Watson2006,
 	author = "Watson, Fred GR and Anderson, Thor N and Newman, Wendi B and Alexander, Susan E and Garrott, Robert A",
+	bdsk-url-1 = "http://dx.doi.org/10.1016/j.jhydrol.2005.12.032",
 	date-added = "2016-03-20 02:15:56 +0000",
 	date-modified = "2016-03-20 02:16:16 +0000",
 	doi = "10.1016/j.jhydrol.2005.12.032",
@@ -398,6 +588,7 @@
 
 @article{Shea2010,
 	author = "Shea, Cora and Jamieson, Bruce",
+	bdsk-url-1 = "http://dx.doi.org/10.3189/172756410791386463",
 	date-added = "2016-03-20 01:21:47 +0000",
 	date-modified = "2016-03-20 01:22:25 +0000",
 	doi = "10.3189/172756410791386463",
@@ -412,6 +603,7 @@
 
 @article{Kasurak2011,
 	author = "Kasurak, Andrew and Kelly, Richard and Brenning, Alexander",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.8168",
 	date-added = "2016-03-20 01:01:52 +0000",
 	date-modified = "2016-03-20 01:02:30 +0000",
 	doi = "10.1002/hyp.8168",
@@ -426,6 +618,7 @@
 
 @article{Balk2000,
 	author = "Balk, Benjamin and Elder, Kelly",
+	bdsk-url-1 = "http://dx.doi.org/10.1029/1999WR900251",
 	date-added = "2016-03-20 00:54:11 +0000",
 	date-modified = "2016-03-20 00:54:40 +0000",
 	doi = "10.1029/1999WR900251",
@@ -440,6 +633,7 @@
 
 @article{Lopez2006,
 	author = "L{\'o}pez-Moreno, JI and Nogu{\'e}s-Bravo, D",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.6199",
 	date-added = "2016-03-20 00:53:08 +0000",
 	date-modified = "2016-03-20 00:53:33 +0000",
 	doi = "10.1002/hyp.6199",
@@ -453,6 +647,7 @@
 
 @article{Trujillo2007,
 	author = "Trujillo, Ernesto and Ram{\'i}rez, Jorge A and Elder, Kelly J",
+	bdsk-url-1 = "http://dx.doi.org/10.1029/2006WR005317",
 	date-added = "2016-03-20 00:14:09 +0000",
 	date-modified = "2016-03-20 00:14:37 +0000",
 	doi = "10.1029/2006WR005317",
@@ -489,6 +684,7 @@
 
 @article{Mott2010,
 	author = "Mott, Rebecca and Schirmer, Michael and Bavay, M and Gr{\"u}newald, T and Lehning, M",
+	bdsk-url-1 = "http://dx.doi.org/10.5194/tc-4-545-2010",
 	date-added = "2016-03-19 22:16:48 +0000",
 	date-modified = "2016-03-19 22:17:18 +0000",
 	doi = "10.5194/tc-4-545-2010",
@@ -503,6 +699,7 @@
 
 @article{Erickson2005,
 	author = "Erickson, Tyler A and Williams, Mark W and Winstral, Adam",
+	bdsk-url-1 = "http://dx.doi.org/10.1029/2003WR002973",
 	date-added = "2016-03-19 22:16:03 +0000",
 	date-modified = "2016-03-19 22:17:32 +0000",
 	doi = "10.1029/2003WR002973",
@@ -516,6 +713,7 @@
 
 @article{Mott2011,
 	author = "Mott, R and Schirmer, M and Lehning, M",
+	bdsk-url-1 = "http://dx.doi.org/10.1029/2010JD014886",
 	date-added = "2016-03-19 22:02:37 +0000",
 	date-modified = "2016-03-19 22:03:16 +0000",
 	doi = "10.1029/2010JD014886",
@@ -560,6 +758,8 @@
 @article{Cavazos2000,
 	author = "Cavazos, Tereza",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
+	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
 	date-added = "2015-12-21 20:36:02 +0000",
 	date-modified = "2015-12-21 20:37:54 +0000",
 	doi = "10.1175/1520-0442(2000)013<1718:USOMTI>2.0.CO;2",
@@ -857,6 +1057,7 @@
 
 @article{Grabiec2011,
 	author = "Grabiec, Mariusz and Puczko, Dariusz and Budzik, Tomasz and Gajek, Grzegorz",
+	bdsk-url-1 = "http://dx.doi.org/10.2478/v10183-011-0026-4",
 	date-added = "2015-12-13 18:03:02 +0000",
 	date-modified = "2015-12-19 04:07:09 +0000",
 	doi = "10.2478/v10183-011-0026-4",
@@ -913,6 +1114,8 @@
 	author = "Liston, Glen E",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
 	date-added = "2015-12-13 17:37:49 +0000",
 	date-modified = "2015-12-13 17:38:18 +0000",
 	doi = "10.1175/1520-0442(2004)017<1381:RSSCHI>2.0.CO;2",
@@ -1003,6 +1206,8 @@
 	author = "Bitz, CM and Battisti, DS",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1999)012<3181:ITDVIC>2.0.CO;2",
 	journal = "Journal of Climate",
 	number = "11",
@@ -1152,6 +1357,8 @@
 	author = "Daly, Christopher and Neilson, Ronald P and Phillips, Donald L",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
 	doi = "10.1175/1520-0450(1994)033<0140:ASTMFM>2.0.CO;2",
 	journal = "Journal of applied meteorology",
 	number = "2",
@@ -1235,6 +1442,7 @@
 
 @article{Elder1991,
 	author = "Elder, Kelly and Dozier, Jeff and Michaelsen, Joel",
+	bdsk-url-1 = "http://dx.doi.org/10.1029/91WR00506",
 	doi = "10.1029/91WR00506",
 	journal = "Water Resources Research",
 	number = "7",
@@ -1251,6 +1459,8 @@
 	author = "Elder, Kelly and Rosenthal, Walter and Davis, Robert E",
 	bdsk-url-1 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
 	bdsk-url-2 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
+	bdsk-url-3 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
+	bdsk-url-4 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
 	doi = "10.1002/(SICI)1099-1085(199808/09)12:10/11<1793::AID-HYP695>3.0.CO;2-",
 	journal = "Hydrological Processes",
 	number = "1011",
@@ -1596,6 +1806,8 @@
 	author = "Kidson, John W and Thompson, Craig S",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1998)011<0735:ACOSAM>2.0.CO;2",
 	journal = "Journal of Climate",
 	number = "4",
@@ -1928,6 +2140,8 @@
 	author = "Pandey, Ganesh R and Cayan, Daniel R and Dettinger, Michael D and Georgakakos, Konstantine P",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
 	doi = "10.1175/1525-7541(2000)001<0491:AHOPSM>2.0.CO;2",
 	journal = "Journal of Hydrometeorology",
 	number = "6",
@@ -2102,6 +2316,8 @@
 	author = "Smith, Ronald B and Barstad, Idar",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
 	doi = "10.1175/1520-0469(2004)061<1377:ALTOOP>2.0.CO;2",
 	journal = "Journal of the Atmospheric Sciences",
 	number = "12",
@@ -2165,6 +2381,8 @@
 	author = "Widmann, Martin and Bretherton, Christopher S and {Salath{\'e} Jr}, Eric P",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
 	date-modified = "2015-12-19 04:17:44 +0000",
 	doi = "10.1175/1520-0442(2003)016<0799:SPDOTN>2.0.CO;2",
 	journal = "Journal of Climate",
@@ -2181,6 +2399,8 @@
 	author = "Wilby, Robert L and Wigley, TML",
 	bdsk-url-1 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
 	bdsk-url-2 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
+	bdsk-url-3 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
+	bdsk-url-4 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
 	doi = "10.1002/(SICI)1097-0088(200005)20:6<641::AID-JOC501>3.0.CO;2-1",
 	journal = "International Journal of Climatology",
 	number = "6",
@@ -2196,13 +2416,15 @@
 	author = "Winstral, Adam and Elder, Kelly and Davis, Robert E",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;2",
-	doi = "10.1175/1525-7541(2002)003<0524:SSMOWR>2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
 	journal = "Journal of Hydrometeorology",
 	number = "5",
 	owner = "glaciology1",
 	pages = "524--538",
 	timestamp = "2015.11.06",
 	title = "{Spatial snow modeling of wind-redistributed snow using terrain-based parameters}",
+	url = "http://dx.doi.org/10.1175/1525-7541(2002)003<0524:SSMOWR>2.0.CO; 2",
 	volume = "3",
 	year = "2002"
 }
@@ -2253,6 +2475,8 @@
 	author = "Zorita, Eduardo and {Von Storch}, Hans",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
 	date-modified = "2015-12-19 04:18:31 +0000",
 	doi = "10.1175/1520-0442(1999)012<2474:TAMAAS>2.0.CO;2",
 	journal = "Journal of Climate",
@@ -2332,6 +2556,7 @@
 
 @article{Srivastava2013,
 	author = "Srivastava, R Mohan",
+	bdsk-url-1 = "http://dx.doi.org/10.1016/j.coal.2013.01.011",
 	doi = "10.1016/j.coal.2013.01.011",
 	journal = "International Journal of Coal Geology",
 	pages = "2--13",
@@ -2343,6 +2568,8 @@
 
 @article{Basist1994,
 	author = "Basist, Alan and Bell, Gerald D and Meentemeyer, Vernon",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
+	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1994)007<1305:SRBTAP>2.0.CO;2",
 	journal = "Journal of climate",
 	number = "9",
@@ -2354,6 +2581,7 @@
 
 @article{Nickling1985,
 	author = "Nickling, WG and Brazel, AJ",
+	bdsk-url-1 = "http://dx.doi.org/10.2307/1550842",
 	doi = "10.2307/1550842",
 	journal = "Arctic and Alpine Research",
 	pages = "125--134",
@@ -2364,6 +2592,7 @@
 
 @article{Masson2014,
 	author = "Masson, David and Frei, Christoph",
+	bdsk-url-1 = "http://dx.doi.org/10.5194/hess-18-4543-2014",
 	doi = "10.5194/hess-18-4543-2014",
 	journal = "Hydrology and Earth System Sciences",
 	number = "11",
@@ -2376,6 +2605,7 @@
 
 @article{Trujillo2015,
 	author = "Trujillo, E and Lehning, Michael",
+	bdsk-url-1 = "http://dx.doi.org/10.5194/tc-9-1249-2015",
 	doi = "10.5194/tc-9-1249-2015",
 	journal = "The Cryosphere",
 	number = "3",
@@ -2388,6 +2618,7 @@
 
 @article{Reuter2016,
 	author = "Reuter, Benjamin and Richter, Bettina and Schweizer, J{\"u}rg",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/2015JF003700",
 	doi = "10.1002/2015JF003700",
 	issn = "2169-9011",
 	journal = "Journal of Geophysical Research: Earth Surface",
@@ -2410,6 +2641,7 @@
 
 @article{Alford1985,
 	author = "Alford, Donald",
+	bdsk-url-1 = "http://dx.doi.org/10.2307/3673296",
 	doi = "10.2307/3673296",
 	journal = "Mountain Research and Development",
 	pages = "349--363",
@@ -2420,6 +2652,7 @@
 
 @article{Pfeffer2014,
 	author = "Pfeffer, W Tad and Arendt, Anthony A and Bliss, Andrew and Bolch, Tobias and Cogley, J Graham and Gardner, Alex S and Hagen, Jon-Ove and Hock, Regine and Kaser, Georg and Kienholz, Christian and others",
+	bdsk-url-1 = "http://dx.doi.org/10.3189/2014JoG13J176",
 	doi = "10.3189/2014JoG13J176",
 	journal = "Journal of Glaciology",
 	number = "221",
@@ -2432,6 +2665,8 @@
 
 @article{Winstral2013,
 	author = "Winstral, Adam and Marks, Danny and Gurney, Robert",
+	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S0309170812002394",
+	bdsk-url-2 = "http://dx.doi.org/10.1016/j.advwatres.2012.08.011",
 	doi = "10.1016/j.advwatres.2012.08.011",
 	issn = "0309-1708",
 	journal = "Advances in Water Resources",
@@ -2453,6 +2688,7 @@
 
 @article{Skoien2006,
 	author = "Sk{\o}ien, Jon Olav and Bl{\"o}schl, G{\"u}nter",
+	bdsk-url-1 = "http://dx.doi.org/10.1007/s10661-006-4939-z",
 	doi = "10.1007/s10661-006-4939-z",
 	journal = "Environmental Monitoring and Assessment",
 	number = "1-3",
@@ -2465,6 +2701,7 @@
 
 @article{Godio2016,
 	author = "Godio, A and Rege, RB",
+	bdsk-url-1 = "http://dx.doi.org/10.1016/j.jappgeo.2016.03.036",
 	doi = "10.1016/j.jappgeo.2016.03.036",
 	journal = "Journal of Applied Geophysics",
 	pages = "92--100",
@@ -2476,6 +2713,7 @@
 
 @article{Dixon2012,
 	author = "Dixon, David and Boon, Sarah",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.9317",
 	doi = "10.1002/hyp.9317",
 	issn = "1099-1085",
 	journal = "Hydrological Processes",
@@ -2490,6 +2728,8 @@
 
 @article{Skaugen2016,
 	author = "Skaugen, T. and Weltzien, I. H.",
+	bdsk-url-1 = "http://www.the-cryosphere.net/10/1947/2016",
+	bdsk-url-2 = "http://dx.doi.org/10.5194/tc-10-1947-2016",
 	doi = "10.5194/tc-10-1947-2016",
 	journal = "The Cryosphere",
 	number = "5",
@@ -2502,6 +2742,8 @@
 
 @article{Marti2016,
 	author = "Marti, R. and Gascoin, S. and Berthier, E. and de Pinel, M. and Houet, T. and Laffly, D.",
+	bdsk-url-1 = "http://www.the-cryosphere.net/10/1361/2016",
+	bdsk-url-2 = "http://dx.doi.org/10.5194/tc-10-1361-2016",
 	doi = "10.5194/tc-10-1361-2016",
 	journal = "The Cryosphere",
 	number = "4",
@@ -2543,6 +2785,7 @@
 
 @article{Sturm2010,
 	author = "Sturm, Matthew and Taras, Brian and Liston, Glen E. and Derksen, Chris and Jonas, Tobias and Lea, Jon",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/2010JHM1202.1",
 	doi = "10.1175/2010JHM1202.1",
 	journal = "Journal of Hydrometeorology",
 	number = "6",
@@ -2555,6 +2798,7 @@
 
 @article{Mizukami2008,
 	author = "Mizukami, Naoki and Perica, Sanja",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/2008JHM981.1",
 	doi = "10.1175/2008JHM981.1",
 	journal = "Journal of Hydrometeorology",
 	number = "6",
@@ -2567,6 +2811,8 @@
 
 @techreport{Boon2009,
 	author = "Boon, Sarah and Davis, Reed and Bladon, Kevin and Wagner, Michael",
+	bdsk-url-1 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
+	bdsk-url-2 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
 	journal = "Streamline: Watershed Management Bulletin",
 	month = "Spring",
 	number = "2",
@@ -2574,5 +2820,36 @@
 	url = "http://www.forrex.org/sites/default/files/publications/articles/Streamline_Vol12_No2_art2.pdf",
 	volume = "12",
 	year = "2009"
+}
+
+@article{Burnham2004,
+	abstract = "The model selection literature has been generally poor at reflecting the deep foundations of the Akaike information criterion (AIC) and at making appropriate comparisons to the Bayesian information criterion (BIC). There is a clear philosophy, a sound criterion based in information theory, and a rigorous statistical foundation for AIC. AIC can be justified as Bayesian using a ``savvy'' prior on models that is a function of sample size and the number of model parameters. Furthermore, BIC can be derived as a non-Bayesian result. Therefore, arguments about using AIC versus BIC for model selection cannot be from a Bayes versus frequentist perspective. The philosophical context of what is assumed about reality, approximating models, and the intent of model-based inference should determine whether AIC or BIC is used. Various facets of such multimodel inference are presented here, particularly methods of model averaging.",
+	author = "Burnham, Kenneth P. and Anderson, David R.",
+	bdsk-url-1 = "http://dx.doi.org/10.1177/0049124104268644",
+	doi = "10.1177/0049124104268644",
+	eprint = "http://smr.sagepub.com/content/33/2/261.full.pdf+html",
+	journal = "Sociological Methods \& Research",
+	number = "2",
+	pages = "261--304",
+	title = "{Multimodel Inference: {U}nderstanding {AIC} and {BIC} in Model Selection}",
+	volume = "33",
+	year = "2004"
+}
+
+@article{Woo1978,
+	abstract = "Abstract Water balance studies in tundra regions require accurate snowfall data but weather station records often underestimate basin snow storage. However, snow storage can be determined by snow surveys conducted prior to the melt period because Arctic snowpacks do not melt during winter. Topography strongly controls snow distribution. A basin can be subdivided into various terrain types and the snow survey then establishes the snow characteristics of each terrain type so that basin snow storage is obtained as their areally weighted mean. Such a survey was carried out in small basins near Resolute, Northwest Territories, traversing different types of terrain. The results confirmed that weather station snowfall grossly underestimated basin snow storage. Since it is also desirable to simplify future snow surveys by reducing the number of transects, an error analysis was performed to determine the error resulting from a grouping of terrain types. It was found that both maximum and mean error increased as the number of terrain types was reduced, but the increase was not substantial when certain terrain types were combined. A mean error of 15\% is expected when only four types of terrain (hilltops, flats, gullies-valleys and slopes) are recognized in the survey, but the error quickly increases when further simplification of the terrain is introduced.",
+	author = "Woo, Ming-Ko and Marsh, Philip",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
+	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
+	doi = "10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2",
+	eprint = "http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2",
+	journal = "Journal of Applied Meteorology",
+	localfile = "2",
+	number = "10",
+	pages = "1537--1541",
+	title = "{Analysis of Error in the Determination of Snow Storage for Small High {A}rctic Basins}",
+	url = "http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO",
+	volume = "17",
+	year = "1978"
 }
 

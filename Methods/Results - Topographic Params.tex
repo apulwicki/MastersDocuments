@@ -43,9 +43,46 @@ This is a document that shows the sampled and full ranges of topographic paramet
 
 Topographic parameters can be derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery taken with the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m. 
 
-**Two DEMs were available for the Donjek Range. The first DEM (???) covered all three study glaciers but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds, resulting in incorrect elevation data. The second DEM spans only part of the Donjek Range, covering most of Glacier 4 and a large portion of Glacier 2. This DEM had no cloud cover over Glacier 2 and 4. As a result, it was decided to merge the two DEMs to create a cloud free DEM that spanned all three glaciers. 
+Two DEMs were available for the Donjek Range. The first DEM (GES 08-029) was collected on September 3, 2007 and covered all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds, resulting in incorrect elevation data. The cloudy areas appear as a distortion in the DEM, as seen in eastern area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044) was collected on September 13, 2007 and spans only part of the Donjek Range, covering most of Glacier 4 and a large portion of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no cloud cover over Glacier 2 and 4. As a result, it was decided to merge the two DEMs to create a cloud free DEM that spanned all three glaciers. 
 
-The merging process was complicated by the fact that there was a discrepancy in elevation values between the two DEMs. The second DEM had generally higher elevation values by about 10 m. Although the discrepancy was not consistent throughout the study area, the second DEM was generally higher than the first. ...
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \fbox{\includegraphics[width=\textwidth]{8029_original.jpeg}}
+        \caption{DEM collected on September 3, 2007 (GES 08-029).}
+        \label{fig:8029_original}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.48\textwidth}
+        \fbox{\includegraphics[width=\textwidth]{7044_original.jpeg}}
+        \caption{DEM collected on September 13, 2007 (GES 07-044).}
+        \label{fig:7044_original}
+    \end{subfigure}
+
+    \caption{SPOT-5 DEMs available for the Donjek Range. Study glaciers are shown as red outlines. Areas with cloud cover have a distorted DEM as seen on the eastern side of (a).}
+    \label{photo_swe}
+\end{figure}
+
+The merging process was complicated by the fact that there was a horizontal and vertical discrepancy between the two DEMs. The second DEM had generally higher elevation values, as can be seen by the difference map shown in Figure \ref{fig:DEMdifferenceOriginal}. Although the discrepancy was not consistent throughout the study area, the second DEM was generally higher than the first, as can be seen by the overall purple colour in Figure \ref{fig:DEMdifferenceOriginal}. 
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \fbox{\includegraphics[width=\textwidth]{diff_7044-8029_original.jpeg}}
+        \caption{Difference between original DEMs}
+        \label{fig:DEMdifferenceOriginal}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.48\textwidth}
+        \fbox{\includegraphics[width=\textwidth]{diff_7044-8029_shift.jpeg}}
+        \caption{Difference between corrected DEMs.}
+        \label{fig:DEMdifferenceCorrected}
+    \end{subfigure}
+
+    \caption{Vertical difference between DEMs in overlapping area. Difference was found by subtracting GES 08-029 from GES 07-044.}
+    \label{fig:DEMdifference}
+\end{figure}
+
 
 
 \subsection{Calculating topographic parameters}
@@ -589,12 +626,12 @@ Qualitatively, there is little variation in the fit between modelled and observe
 \subsection{MLR and BMS comparison}
 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width =1.1 \textwidth]{Coeff_Compare.png}\\
-	\caption{Boxplot showing the range of value for each topographic parameter from both MLR and BMA analysis. Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
-	\label{fig:allCeoffs_boxplot}
-\end{figure} 
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width =1.1 \textwidth]{Coeff_Compare.png}\\
+%	\caption{Boxplot showing the range of value for each topographic parameter from both MLR and BMA analysis. Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$).}
+%	\label{fig:allCeoffs_boxplot}
+%\end{figure} 
 
 \begin{landscape}
 \begin{figure}
