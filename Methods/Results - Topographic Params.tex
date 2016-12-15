@@ -19,6 +19,7 @@
 \usepackage{bm}
 \usepackage{float}
 \usepackage{amsmath}
+\usepackage{adjustbox}
 \renewcommand{\vector}[1]{\mathbf{#1}}
 
 
@@ -41,9 +42,11 @@ This is a document that shows the sampled and full ranges of topographic paramet
 
 \subsection{Creating DEM}
 
-Topographic parameters can be derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery taken with the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m. 
+Topographic parameters can be derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery taken with the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m and the v2 version of the DEM, which employs a set of correlation parameters fit for steeper slopes (E. Berthier personal communication, 2016), was used. 
 
-Two DEMs were available for the Donjek Range. The first DEM (GES 08-029) was collected on September 3, 2007 and covered all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds, resulting in incorrect elevation data. The cloudy areas appear as a distortion in the DEM, as seen in eastern area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044) was collected on September 13, 2007 and spans only part of the Donjek Range, covering most of Glacier 4 and a large portion of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no cloud cover over Glacier 2 and 4. As a result, it was decided to merge the two DEMs to create a cloud free DEM that spanned all three glaciers. 
+Two DEMs were available for the Donjek Range. The first DEM (GES 08-029) was collected on September 3, 2007 and the second DEM (GES 07-044) was collected on September 13, 2007. Since the DEMs were collected in September, the surface would likely be at a seasonal minimum with minimum snow cover. This means that the surface described by the DEM represents the topography below the snow, which means that this study is similar in nature to other snow science investigations that examine ice free basins. A major flaw in using this DEM is that the DEM is from 2007 and almost certainly there have been changes in the end-of-summer glacier surface. However, the SPOT-5 DEM is currently the best resolution and most current DEM available for the study area. 
+
+and covered all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds and/or has limited contrast in the original stero image pairs, resulting in incorrect elevation data (E. Berthier personal communication, 2016). The cloudy areas appear as a black regions on the DEM mask (not shown) and as distortion in the DEM, as seen in eastern area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044)  spans only part of the Donjek Range, covering most of Glacier 4 and a large portion of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no cloud cover over Glacier 2 and 4. It was decided to merge the two DEMs to create a cloud free DEM that spanned all three glaciers. 
 
 \begin{figure}[H]
     \centering
@@ -83,7 +86,26 @@ The merging process was complicated by the fact that there was a horizontal and 
     \label{fig:DEMdifference}
 \end{figure}
 
+\begin{wrapfigure}{R}{0.6\textwidth}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{mergeLine.jpeg}\\
+	\caption{Outlines of the cropped GES 07-044 DEM (pink) and cropped GES 08-029 DEM (blue) used for merging. Note the small overlap of the two DEMs.}
+	\label{fig:mergeLine}
+\end{wrapfigure}
 
+The discrepancy was corrected by E. Bertier (2016, personal communication) following an iterative 3D-coregistration algorithm presented in \cite{Berthier2007}. The GES 07-044 DEM was arbitrarily chosen to be used as the reference DEM. Since there are no accurate ground control points and cells encompass an area with an elevation distribution, there was no way for us to determine whether one DEM was more accurate than the other. Further, the absolute value of the elevation is not necessarily important for the topographic regression, as long as the relative elevations are correct and that they represent the elevation profiles of the glacier. The reference DEM was first shifted vertically by +5.4 m, estimated using ICESat data \citep{Berthier2010}. Then, the mean horizontal and vertical (X, Y, Z) shift between the reference DEM and the GES 08-029 DEM was found by minimizing the standard deviation of the elevation difference between the DEMs. The values of the shift were $\sim$2 m east, $\sim$4 m north, and $\sim$1.9 m vertically. The DEM was then reprojected in the same projection as the reference DEM. 
+
+Merging of the corrected DEMs was completed in QGIS. First, the rasters were cropped to overlap by a few cells. The crop line was chosen by hand to include as much of the reference DEM as possible (fewer areas of poor data) but was some distance from the edge of the DEM, which can be distorted (see Figure \ref{fig:mergeLine}). The second DEM was cropped to follow the same merge line but overlap with the first image by a few cells. This was done to avoid gaps in cell values that arise from cropping across a DEM cell. The merging was completed using the built in QGIS tool `Merge'.
+
+The final DEM used for subsequent analysis can be seen in Figure \ref{fig:mergedDEM}. The contour lines (10 m) also plotted on this figure show sharp topographic gradients that are aligned with the merge line. Despite the corrections, there were still discrepancies along the intersection of the DEMs. Howevere, these discrepancies were not present on the study glaciers and located more than 250 m from the edge of the glacier so this DEM was used as the final version for the Donjek Range. All subsequent topographic analysis and calculations was based on elevation taken from this DEM.
+
+\begin{figure}
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Merged DEM of the Donjek range from two corrected SPOT-5 DEMs with 10 m contour lines. Study glaciers are shown in red. Discrepancies between the DEMs along the merge line can be seen as linear features in the contour lines (appear as sharp topographic boundary) and are emphasized by the yellow boxes. Distorted contours in the eastern regions are a result of errors in the DEM. 
+      }\end{minipage}},rotate=90,center}
+     	\includegraphics[height = 0.9\textwidth]{mergedDEM2.jpeg}%
+  \end{adjustbox}
+\end{figure}
 
 \subsection{Calculating topographic parameters}
 
@@ -145,7 +167,7 @@ where $d$ and $e$ are as above and
 	\kappa_P = - \frac{d^2 \cdot r +2 \cdot d\cdot e \cdot r \cdot s +e^2 \cdot t}{(d^2+e^2) \cdot \sqrt{(1+d^2+e^2)^3}}
 	\end{equation}•
 
-\item[] \textbf{``Northness''} is defined as the product of the cosine of aspect and sine of slope \citep{Molotch2005}. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and a flat surfaces yield 0. 
+\item[] \textbf{``Northness''} is a solar radiation parameter that has been shown to become increasingly important during the spring \citep{Revuelto2014}. It is also likely that this parameter may be related to sun included snow metamorphosis and/or sun crusts, both of which affect SWE and snow redistribution \citep{McGrath2015}. ``Northness'' is defined as the product of the cosine of aspect and sine of slope \citep{Molotch2005}. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and a flat surfaces yield 0. 
 
 \item[] \textbf{Aspect} represent the orientation of the steepest slope, with 0${^\circ}$ defined as north and no value given to cells that have no gradient. Using the gradient, it can expressed as \citep{Olaya2009}
 	\begin{equation}
@@ -156,25 +178,25 @@ where $d$ and $e$ are as above and
 \begin{equation}
 Sx_{A, dmax}(x_i, y_i) = \textrm{max} \left[ \textrm{tan}^{-1} \left( \frac{z(x_v,y_v)-z(x_i,y_i)}{[(x_v-x_i)^2+(y_v-y_i)^2]^{1/2}} \right) \right] ,
 \end{equation}
-where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates of the cell of interest, and $(x_v, y_v)$ are the set of all cell coordinates located along the search vector defined by	$(x_i, y_i)$, the azimuth ($A$), and maximum search distance ($d$max). Code for this calculation was provided by Adam Winstral (2016, personal communication). As done by \cite{McGrath2015}, we computed $Sx$ at 5$^{\circ}$ azimuth increments for $d$max distances of 100, 200, and 300 m. These values were then correlated with observed values of SWE and the azimuth and $d$max values with the highest correlation were used for subsequent analysis (see Table \ref{tab:Sxparams}). 
+where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates of the cell of interest, and $(x_v, y_v)$ are the set of all cell coordinates located along the search vector defined by	$(x_i, y_i)$, the azimuth ($A$), and maximum search distance ($d$max). Code for this calculation was provided by Adam Winstral (2016, personal communication). As done by \cite{McGrath2015}, we computed $Sx$ at 5$^{\circ}$ azimuth increments for $d$max distances of 100, 200, and 300 m. These values were then correlated with observed values of SWE and the azimuth and $d$max values with the highest correlation were used for subsequent analysis (see Table \ref{tab:Sxparams}). The code for calculating $Sx$ requires a UTM raster formatted to ASCII in ArcGIS. 
+\end{enumerate}
 
-\begin{table}[]
+\begin{wraptable}{l}{9.5cm}
 \centering
 \caption{Values of azimuth ($A$) and maximum search distance($d$max), which define the $Sx$ that had the highest correlation to observed SWE.}
 \label{tab:Sxparams}
-\begin{tabular}{lcc}
-           & \textbf{$A$ ($^{\circ}$ from North)} & \textbf{\textit{d}max (m)} \\ \hline
-Glacier 4  & 75                                & 200                 \\
-Glacier 2  & 55                                & 200                 \\
-Glacier 13 & 325                            & 200                
+\begin{tabular}{lccc}
+ & \begin{tabular}[c]{@{}c@{}}$A$\\ ($^{\circ}$ from North)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$d$max \\ (m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Correlation\\ Coefficient\end{tabular} \\ \hline
+Glacier 4 & 85 & 300 & -0.26 \\
+Glacier 2 & 330 & 300 & 0.56 \\
+Glacier 13 & 280 & 200 & 0.28
 \end{tabular}
-\end{table}
+\end{wraptable} 
 
-\end{enumerate}
 
 \subsection{Topographic parameters from QGIS to Matlab}
 
-The values of each topographic parameters at the sampling locations was determined in QGIS. The sampling locations were imported to QGIS and the Point Sampling Tool was used to determine the value of the cell of the raster for each topographic parameter at that location. This set of parameters that corresponded to each location was then exported to a .csv file and imported into Matlab with the script 'Import\_Topo.m'.  Note that selection of $Sx$ values was completed first (see above) and only the $Sx$ data with highest correlation to SWE was exported. After importing to Matlab, the sets of parameter values ($x_i$) were standardized ($x_s$) using the equation $x_s = \frac{x_i-\mu}{\sigma}$. The resulting structure is called \texttt{topo\_sampled} and is used in the MLR to be able to compare the explanatory power of each parameter (Section \ref{sec:MLR}). A non-standardized copy of the topographic parameters at the sampling locations was also kept for plotting purposes and is called is called \texttt{topo\_sampled\_ns}. Both structures are organized as a vector of values corresponding to the vectors in the \texttt{SWE} variable. 
+The values of each topographic parameters at the sampling locations was determined in QGIS. The sampling locations were imported to QGIS and the Point Sampling Tool was used to determine the value of the cell of the raster for each topographic parameter at that location. This set of parameters that corresponded to each location was then exported to a .csv file and imported into Matlab with the script 'Import\_Topo.m'.  Note that selection of $Sx$ values was completed first (see above) and only the $Sx$ data with highest correlation to SWE was exported. After importing to Matlab, the sets of parameter values ($x_i$) were standardized ($x_s$) by $x_s = \frac{x_i-\mu}{\sigma}$. The resulting structure is called \texttt{topo\_sampled} and is used in the MLR to be able to compare the explanatory power of each parameter (Section \ref{sec:MLR}). A non-standardized copy of the topographic parameters at the sampling locations was also kept for plotting purposes and is called is called \texttt{topo\_sampled\_ns}. Both structures are organized as a vector of values corresponding to the vectors in the \texttt{SWE} variable. 
 
 The raster data for each topographic parameter was also exported from QGIS as a .csv file and then imported into Matlab with the script 'Import\_Topo.m'. The values are stored in the structure \texttt{topo\_full} and are a matrix, where each cell corresponds to one DEM cell. Cells outside of the glacier outline have no value (\texttt{NaN}).
 
@@ -232,6 +254,26 @@ The correlation between topographic parameters at sampling locations on each gla
 \end{table}
 
 \subsection{Maps of topographic parameters and range of parameters sampled}
+
+Maps of the topographic parameters for each glacier are shown below. Additionally, the distribution of topographic parameter values and the sampled distribution for each parameter is also shown. The full range of parameters has highest frequencies for Glacier 13 and lowest for Glacier 4 because Glacier 13 is larger than Glacier 4. Frequency of sampled parameters are comparable between glaciers because the sampling schemes were similar.
+
+Elevation maps in Figure \ref{map:elev} show higher elevations at the head of the glacier and lowest elevation at the terminus for all glaciers. Maximum elevation values are lower for Glacier 4 than the other two glaciers. The elevation distribution differs between glaciers. Glacier 4 and 13 have a larger number of mid-elevations (broader distribution) than Glacier 2 (sharp peaked distribution). The sampled distribution for all glaciers is markedly different than the full distribution as seen in Figure \ref{sampledRange:elev}. In general, the distribution mean is lower an does not sample the full range of values. This is especially evident for Glacier 13 where a large portion of the higher elevations were not sampled. Unfortunately, high elevation locations are often dangerous to access and could not be sampled in situ. 
+
+Distance from centreline is shown in Figure \ref{map:centreD}. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier. The sampled distribution generally matches the full distribution. This is likely because the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured, although this is generally limited to the ablation area. However, the sampling did not allow for the locations at a far distance from the centreline to be measured because these locations are generally in steep, inaccessible terrain. 
+
+Slope of the three study glaciers is shown in Figure \ref{map:slope}. The majority of the area of the three glaciers has a slope of less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 have steep slopes. The distribution of slope is similar between glaciers (see Figure \ref{sampledRange:slope}). All have a peak frequency around 10$^{\circ}$ and few area with very steep slopes. The sampled distribution matches the full distribution near this peak but severely under samples steep slope (due to dangerous conditions).
+
+Tangential curvature is shown in Figure \ref{map:tangentC} and profile curvature is shown in Figure \ref{map:profileC}. The curvature values are generally moderate and centred about 0. The distribution of sampled curvature closely matches the full distribution although high curvature areas were not sampled (see Figure \ref{sampledRange:tangentC} and \ref{sampledRange:profileC}).
+
+Aspect of the glacier surface is shown in Figure \ref{map:aspect}. Glacier 2 and 13 have similar aspect distributions, with a mean aspect of $\sim100^{\circ}$. Glacier 4 has a mean aspect of $\sim300^{\circ}$, which is roughly $180^{\circ}$ to that of Glacier 2 and 13. The sampled distribution, as shown in Figure \ref{sampledRange:aspect}, for Glacier 4 follows that of the full distribution relatively well. However, the sampled distribution of Glacier 2 and 13 does not match that of the full distribution and there are many aspects that were not sampled.  
+
+``Northness'' for all study glaciers is shown in Figure \ref{map:northness}. The majority of cells have values close to zero, which is likely due to their low slope values. Even for Glacier 4, which is largely south facing and should thus have lower values of ``northness'', has a distribution with a mean close to zero. The low slope values mean that the values of ``northness'' were determined largely by the aspect, which can be seen by the resemblance between the ``northness'' map and the aspect map. 
+
+$Sx$ maps over the study glaciers are shown in Figure \ref{map:Sx} and the wind direction and maximum search distance with the highest correlation to SWE for each glacier are shown in Table \ref{tab:Sxparams}. For Glacier 4, an approximately east wind and 300 m search distance were most strongly correlated. The correlation was negative, which means that negative values of $Sx$ (exposure) correspond to areas with larger SWE (more snow). This is counter intuitive and perhaps indicates that $Sx$ is not an appropriate topographic parameter to correlate with SWE on Glacier 4. Despite this, $Sx$ was retained in future analysis for consistency between glaciers. For Glacier 2, a north wind with a 300 m search distance was most strongly correlated and for for Glacier 13, a west wind with a 200 m search distance exhibited the strongest correlation. Both of these correlations were positive, so a more positive $Sx$ value (sheltered) corresponded to higher values of SWE (more snow). The correlation values for Glacier 4 and 2 were low ($<$0.3), which indicates that $Sx$ will likely be an insignificant in modelling snow accumulation. The correlation between $Sx$ and SWE on Glacier 2 is relatively high (0.56). 
+
+Full distribution of $Sx$, as seen in Figure \ref{sampledRange:Sx}, is different for each glacier. Glacier 2 has a mean less than zero, indicating that a large portion of the glacier has exposed topography. Glacier 4 and 13 have positive mean values of $Sx$, indicating more sheltered topography. The sampled distribution for Glacier 4 and 2 generally follows that of the full distribution, although extreme values are not adequately sampled. For Glacier 13, the sample distribution does not closely match that of the full distribution, particularly for larger, more positive, values of $Sx$. 
+
+Overall, the sampled topographic parameters are representative of the full distribution of parameters. Extreme values are grossly under sampled so that the full range of parameter values was not sampled. This was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. This is especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the most accumulation and is likely to skew final winter mass balance values. It is also important to note that for a number of parameters (especially elevation) the sampling distribution is off-set from that of the full distribution. Generally, the sampled values do not fully capture the variance in topographic parameters but a regression is still valuable to conduct since topographic regressions are common when estimating winter mass balance. Acknowledging that this methodology is limited and prone to extrapolation errors is paramount to capturing uncertainty in accumulation studies. 
 
 \begin{landscape}
 
@@ -305,6 +347,19 @@ The correlation between topographic parameters at sampling locations on each gla
 	\label{sampledRange:profileC}
 \end{figure}
 
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.4\textwidth]{Map_aspect.png}\\
+	\caption{Values of aspect, which represent what direction a slope is facing (0${^\circ}$ defined as north), used in the topographic regressions for three study glaciers.}
+	\label{map:aspect}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[height = 0.4\textwidth]{SampledRangeTopo_aspect.png}\\
+	\caption{Range of aspect sampled as compared to total range of aspect of study glaciers.}
+	\label{sampledRange:aspect}
+\end{figure}
 
 \begin{figure}
 	\centering
@@ -322,22 +377,8 @@ The correlation between topographic parameters at sampling locations on each gla
 
 \begin{figure}
 	\centering
-	\includegraphics[height = 0.4\textwidth]{Map_aspect.png}\\
-	\caption{Values of aspect, which represent what direction a slope is facing (0${^\circ}$ defined as north), used in the topographic regressions for three study glaciers.}
-	\label{map:aspect}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[height = 0.4\textwidth]{SampledRangeTopo_aspect.png}\\
-	\caption{Range of aspect sampled as compared to total range of aspect of study glaciers.}
-	\label{sampledRange:aspect}
-\end{figure}
-
-\begin{figure}
-	\centering
 	\includegraphics[height = 0.4\textwidth]{Map_Sx.png}\\
-	\caption{Values of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for three study glaciers. See section \ref{Sec:Sx} and the original paper by \cite{Winstral2002} for more details on calculation .}
+	\caption{Values of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for three study glaciers. See section \ref{Sec:Sx} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier.}
 	\label{map:Sx}
 \end{figure}
 

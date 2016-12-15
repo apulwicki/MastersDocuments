@@ -35,7 +35,7 @@
 }
 
 @book{Neteler2013,
-	author = "Neteler, Markus and Mitasova, Helena",
+	author = "Neteler, Markus and Mit{\'a}\v{s}ov{\'a}, Helena",
 	date-added = "2016-12-09 22:10:17 +0000",
 	date-modified = "2016-12-09 22:10:46 +0000",
 	publisher = "Springer Science \& Business Media",
@@ -59,7 +59,7 @@
 }
 
 @article{Hofierka2009,
-	author = "Hofierka, J and Mitasova, H and Neteler, M",
+	author = "Hofierka, J and Mit{\'a}\v{s}ov{\'a}, H and Neteler, M",
 	date-added = "2016-12-09 21:59:48 +0000",
 	date-modified = "2016-12-11 18:43:20 +0000",
 	doi = "10.1016/S0166-2481(08)00017-2",
@@ -2851,5 +2851,16 @@
 	url = "http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO",
 	volume = "17",
 	year = "1978"
+}
+
+@article{Berthier2007,
+	author = "Berthier, Etienne and Arnaud, Yves and Kumar, Rajesh and Ahmad, Sarfaraz and Wagnon, Patrick and Chevallier, Pierre",
+	journal = "Remote Sensing of Environment",
+	number = "3",
+	pages = "327--338",
+	publisher = "Elsevier",
+	title = "{Remote sensing estimates of glacier mass balances in the {H}imachal {P}radesh ({W}estern {H}imalaya, {I}ndia)}",
+	volume = "108",
+	year = "2007"
 }
 
