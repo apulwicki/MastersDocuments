@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  29 NOV 2016 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  16 DEC 2016 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -269,7 +269,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip47
 )
-(./Results - Point Scale.aux)
+No file "Results - Point Scale".aux.
 \openout1 = `"Results - Point Scale.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -286,7 +286,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -372,11 +371,13 @@ LaTeX Info: Redefining \nameref on input line 17.
 \openout3 = `"Results - Point Scale.out"'.
 
 
-(./Results - Point Scale.toc)
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
 \openout4 = `"Results - Point Scale.toc"'.
 
- [1
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -386,18 +387,65 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 30.
 
+
+LaTeX Warning: Reference `tab:normality' on page 2 undefined on input line 30.
+
+
+LaTeX Warning: Reference `tab:std_reproduce' on page 2 undefined on input line 
+86.
+
+
+LaTeX Warning: Reference `tab:std_reproduce' on page 2 undefined on input line 
+86.
+
+
+LaTeX Warning: Reference `tab:std_reproduce_percent' on page 2 undefined on inp
+ut line 86.
+
+
 Underfull \hbox (badness 1270) in paragraph at lines 86--87
 \OT1/cmr/m/n/12 The \OT1/cmr/m/it/12 mean \OT1/cmr/m/n/12 stan-dard de-vi-a-tio
 n of snow
  []
 
+
+LaTeX Warning: Reference `tab:std_measure' on page 2 undefined on input line 88
+.
+
+
+LaTeX Warning: Reference `tab:std_measure_percent' on page 2 undefined on input
+ line 88.
+
 [2]
+
+LaTeX Warning: Reference `tab:std_measure_percent' on page 3 undefined on input
+ line 90.
+
+
+LaTeX Warning: Reference `tab:std_reproduce_percent' on page 3 undefined on inp
+ut line 90.
+
+
+LaTeX Warning: Reference `fig:box_depth' on page 3 undefined on input line 92.
+
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 92.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 92.
+
+
+LaTeX Warning: Reference `tab:std_measure' on page 3 undefined on input line 92
+.
+
+
+LaTeX Warning: Reference `fig:std_binned' on page 3 undefined on input line 94.
+
+
+
+LaTeX Warning: Reference `fig:std_binned_percent' on page 3 undefined on input 
+line 94.
 
 
 LaTeX Warning: No positions in optional float specifier.
@@ -415,7 +463,7 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 239.
 
-<box_depth.png, id=49, 429.2838pt x 338.7054pt>
+<box_depth.png, id=32, 429.2838pt x 338.7054pt>
 File: box_depth.png Graphic file (type png)
  <use box_depth.png>
 Package pdftex.def Info: box_depth.png used on input line 292.
@@ -425,7 +473,7 @@ Package pdftex.def Info: box_depth.png used on input line 292.
 Package wrapfig Warning: Collision between wrapping environments on input line 
 299.
 
-<binned_std.png, id=50, 578.16pt x 325.215pt>
+<binned_std.png, id=33, 578.16pt x 325.215pt>
 File: binned_std.png Graphic file (type png)
  <use binned_std.png>
 Package pdftex.def Info: binned_std.png used on input line 301.
@@ -440,7 +488,7 @@ Overfull \hbox (50.56216pt too wide) in paragraph at lines 301--301
 Package wrapfig Warning: Collision between wrapping environments on input line 
 308.
 
-<binned_std_percent.png, id=78, 578.16pt x 325.215pt>
+<binned_std_percent.png, id=60, 578.16pt x 325.215pt>
 File: binned_std_percent.png Graphic file (type png)
 
 <use binned_std_percent.png>
@@ -463,28 +511,31 @@ Package rerunfilecheck Info: File `"Results - Point Scale".out' has not changed
 (rerunfilecheck)             Checksum: 491C6F23AA8420BFF4ACBAD23FF923FE;210.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
  ) 
 Here is how much of TeX's memory you used:
- 7528 strings out of 494910
- 114613 string characters out of 6179836
- 293911 words of memory out of 5000000
+ 7524 strings out of 494910
+ 114509 string characters out of 6179836
+ 292577 words of memory out of 5000000
  10729 multiletter control sequences out of 15000+600000
  7636 words of font info for 27 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,18n,39p,1026b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,18n,39p,1026b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Results - Point Scale.pdf" (9 pages, 210757 bytes).
+Output written on "Results - Point Scale.pdf" (9 pages, 210085 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  22 named destinations out of 1000 (max. 500000)
  40 words of extra memory for PDF output out of 10000 (max. 10000000)
 
