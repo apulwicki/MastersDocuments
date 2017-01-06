@@ -38,9 +38,6 @@ This section documents the process of going from raw data to processed and conso
 %%%%
 \section{Data processing}
 %%%%
-
-Converting snow depth and density measurements to usable values of snow water equivalent (SWE) is done using a number of scripts written in Matlab. Since there are a number of possible variations for how SWE is estimated, various options are outlined in the `OPTIONS.m' script. To run the entire data processing framework first ensure your desired SWE estimation options are reflected in the `OPTIONS.m' script and then run both `OPTIONS.m' and `MAIN.m'.
-
 \subsection{Snow depth measured with graduated avalanche probe}
 
 \subsubsection{Linear and curvilinear transect surveys}
@@ -52,7 +49,83 @@ Converting snow depth and density measurements to usable values of snow water eq
 	\label{fig:transect_measure_loc}
 \end{wrapfigure}
 
-Snow depth measurements along the linear and curvilinear transects were taken at locations a certain distance from marked waypoints. Since only the coordinates of the waypoints (WP) were recorded, the measurement coordinates need to be estimated. The measurement locations were assumed to be 10, 20, and 30 m behind the marked WP, in a straight line between the marked WP and the previous WP (Figure \ref{fig:transect_measure_loc}). In cases with only two observers, locations were assumed to be 10 and 20 m behind the marked WP. For the first marked WP of a transect, it was assumed that the measurement locations were along the same line as that between the first and second WPs. The following methodology was used to determine measurement locations (each step corresponds with a section of the Matlab code `MeasurementLocations.m'): 
+Snow depth measurements along the linear and curvilinear transects were taken at locations a certain distance from marked waypoints. Since only the coordinates of the waypoints (WP) were recorded, the measurement coordinates need to be estimated. The measurement locations were assumed to be 10, 20, and 30 m behind the marked WP, in a straight line between the marked WP and the previous WP (Figure \ref{fig:transect_measure_loc}). In cases with only two observers, locations were assumed to be 10 and 20 m behind the marked WP. For the first marked WP of a transect, it was assumed that the measurement locations were along the same line as that between the first and second WPs. Details of the methodology used to estimate measurement locations can be found in Appendix ??.
+
+\subsubsection{Zigzag surveys}
+
+\begin{wrapfigure}{R}{0.5\textwidth}
+	\centering
+	\includegraphics[width = 0.5\textwidth]{Zigzag_calOptions.png}\\
+	\caption{Example of zigzag survey measurement locations calculated using difference reference vertices for each section of the zigzag. Black squares show measurement locations calculated using the original GPS coordinates of vertices (Option 1). Blue circles show measurement locations calculated using the last measurement location from the previous section as the reference vertex (Option 2). For the first and fifth vertices (located at (0, 40 m) and (0, 4 m)) the original GPS coordinates were used, which is why those sections have the same measurement locations for both options. }
+	\label{fig:zigzag_location_options}
+\end{wrapfigure}
+
+Depth measurements in zigzag surveys were taken along six sections that connected eight vertices. GPS coordinates of vertices were predetermined. The survey involved navigating to the first vertex, then taking measurements at random distances from this vertex along a straight line between that vertex and the next one. The location of each measurement was measured, using the avalanche probe, and recorded as the distance from the previous measurement location. Each section was recorded separately and identified by its start, or reference, vertex. 
+
+Originally, the location of measurements was found by taking the cumulative distance of a measurement from its reference vertex along a straight line between the reference and the next vertices. However, it was found that the cumulative distance (measured using an avalanche probe) of each zigzag section was not equivalent to the distance between UTM coordinates of each vertex (due to error in GPS and/or walking between vertices not along a straight line). Therefore, a second option for calculating the measurement locations was established. This second option still assumes the measurement was along a straight line between two vertices but the location is relative to the end of the previous section, not the reference vertex. Vertices 1 and 5 were used as reference vertices for their respective section because they began a section with no prior measurements. An example of differences between these two location estimation methods can be seen in Figure \ref{fig:zigzag_location_options}.
+
+\subsection{Snow density}
+
+The snowpit and Federal Sampler measurements were entered into a spreadsheet and the snow density from each measurement was calculated. For snowpit measurements the snow density was calculated by multiplying the measured density from each wedge sample by the thickness of the sample and summing these values. This is known as an integrated snow density and it encompasses the whole snow column. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice-layer thickness, and the `hard' layer density were varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm (representing 20-100\% of the ice-layer thickness), and 500 and 600 kg m$^{-3}$, respectively.  A summary of density values and ranges is shown in Table \ref{tab:density_stats}.
+
+\begin{table}[b!]
+\centering
+\caption{Mean and standard deviation (std) of snow density (kg m$^{-3}$) measured on study glaciers in snowpits and using a Federal Sampler. The number of sampling locations ($n$) is also given.}
+\label{tab:density_stats}
+\begin{tabular}{c|ccc|ccc}
+\multirow{2}{*}{} & \multicolumn{3}{c}{\textbf{Snowpits}} & \multicolumn{3}{| c}{\textbf{Federal Sampler}} \\
+ & Mean & Std & $n$ & Mean & Std & $n$ \\ \hline \hline
+\textbf{Glacier 4} & 348 & 13 & 3 & 327 & 32 & 7 \\
+\textbf{Glacier 2} & 333 & 26 & 4 & 326 & 23 & 7 \\
+\textbf{Glacier 13} & 349 & 26 & 10 & 307 & 32 & 31 \\ \hline
+\textbf{All} & 342 & 26 & 10 & 316 & 31 & 31
+\end{tabular}
+\end{table}
+
+Density values determined from Federal Sampler measurements that were deemed to be unrepresentative of the local snow pack, including measurements where the inner core length was less than 70\% of the snow depth or where density values were exceptionally high (e.g. 490 kg m$^{-3}$), were flagged as poor quality and removed. The remaining Federal Sampler density values were then averaged for each measurement location.
+
+\subsection{Snow water equivalent (SWE)}
+\label{sec:swe_calc}
+
+\begin{wrapfigure}{R}{0.7\textwidth} 
+	\centering
+	\includegraphics[width = 0.7\textwidth]{SWEoptions.png}\\
+	\caption{Relationship between various ways to interpolate between density measurements for the calculation of SWE. The bottom row shows the code for each density interpolation option as described in Section \ref{sec:swe_calc}.}
+	\label{fig:SWEoptions}
+\end{wrapfigure}
+
+The conversion of measured snow depth to snow water equivalent (SWE) could not be done at all measurement locations because snow density was not measured at all locations where snow depth was measured. This meant that the density measurements need to be interpolated. A subset of appropriate interpolation methods was chosen for this project. In the absence of a clear justification for choosing one option over the other, all options were carried forward in the analysis. A schematic of the interpolation method choices is shown in Figure \ref{fig:SWEoptions}. 
+
+Four main interpolation methods are used \citep{McGrath2015, Elder1991}. The first assumes a uniform spatial distribution of density, calculated as the mean from all measurement locations on all three glaciers, over the entire study area. The second  also assumes a uniform spatial distribution of density but uses a mean density for individual glaciers (different value for each glacier). The third and fourth methods involve spatially variable density values. One of these methods involves using a regression of elevation and measured density values to interpolate between measurement locations. The other spatially variable interpolation method uses an inverse-distance weighted mean for interpolation. 
+
+Since the snowpit-derived densities and Federal Sampler-derived densities had no discernible relationship, the two density datasets are kept separate. This means that for each density interpolation option, there are two outputs. In the end, there are eight different interpolations of density that are carried forward throughout the study, which allows for a range of SWE estimates to be made. 
+
+The eight density distributions can be classified as using either snowpit-derived densities (SP) or Federal Sampler-derived densities (FS) and as using a certain method, indicated by a number.
+\begin{itemize}
+	\item[S1] Calculates the mean density of all snowpit measurements.
+	\item[F1] Calculates the mean density of all Federal Sampler measurements.
+	\item[S2] Calculates the mean density for each glacier using the snowpit measurements. 
+	\item[F2] Calculates the mean density for each glacier using the Federal Sampler measurements. 
+	\item[S3] Calculates the slope and intercept of the best-fit regression line of snowpit densities with elevation for each glacier using the `fit' function and then uses slope and intercept to determine density for all elevations associated with each measurement location.
+	\item[F3] Calculates the slope and intercept of the best-fit regression line of Federal Sampler densities with elevation for each glacier using the `fit' function and then uses the slope and intercept to determine density for all elevations associated with each measurement location.
+	\item[S4] Determines the distance between each measurement location and each snowpit and then calculates the inverse-distance weight. For each measurement location, each snowpit density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
+	\item[F4] Determines the distance between each measurement location and each Federal Sampler and then calculates the inverse-distance weight. For each measurement location, each Federal Sampler density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
+	\end{itemize}
+
+
+
+
+
+%%%%
+\section{Appendix - Data Processing Scripts}
+%%%%
+
+Converting snow depth and density measurements to usable values of snow water equivalent (SWE) is done using a number of scripts written in Matlab. Since there are a number of possible variations for how SWE is estimated, various options are outlined in the `OPTIONS.m' script. To run the entire data processing framework first ensure your desired SWE estimation options are reflected in the `OPTIONS.m' script and then run both `OPTIONS.m' and `MAIN.m'
+
+\subsection{Snow depth measured with graduated avalanche probe}
+\subsubsection{Linear and curvilinear transect surveys}
+
+ The following methodology was used to determine measurement locations along transects (each step corresponds with a section of the Matlab code `MeasurementLocations.m'): 
 \begin{enumerate}
 	\item Waypoint (WP) locations were exported from the GPS units using the Garmin BaseCamp program. They were then imported to QGIS and exported with UTM coordinates in the file `GlacierWP\_UTM.xlsx'. 
 	\item In order to obtain the measurement locations for the first WPs of each pattern, a fictitious WP was created that was along the line between the first and second WPs, but located ahead of the first WP. These fictitious waypoints were then inserted into the original data. 
@@ -71,13 +144,6 @@ Subsets of the transect data can be pulled using the function `pulldata.m'. The 
 
 \subsubsection{Zigzag surveys}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-	\centering
-	\includegraphics[width = 0.5\textwidth]{Zigzag_calOptions.png}\\
-	\caption{Example of zigzag survey measurement locations calculated using difference reference vertices for each section of the zigzag. Black squares show measurement locations calculated using the original GPS coordinates of vertices (Option 1). Blue circles show measurement locations calculated using the last measurement location from the previous section as the reference vertex (Option 2). For the first and fifth vertices (located at (0, 40 m) and (0, 4 m)) the original GPS coordinates were used, which is why those sections have the same measurement locations for both options. }
-	\label{fig:zigzag_location_options}
-\end{wrapfigure}
-
 Data from zigzag surveys, which include the measured snow depths and distances between adjacent measurement points, were entered to a spreadsheet. The data were then processed using the following procedure (each step corresponds with a section of the Matlab code `Import\_Zigzag.m'):
 \begin{enumerate}
 \item Data were imported into Matlab.
@@ -86,35 +152,19 @@ Data from zigzag surveys, which include the measured snow depths and distances b
 \item The distance of each measurement point from its reference vertex was then calculated (Figure \ref{fig:zigzag_location_options}). These locations were assumed to be a cumulative sum of distances in a straight line between two subsequent vertices. Two options exist for determining the location of the reference vertex:
  	\begin{enumerate}
 	\item Option 1 calculates the distance of each point from the UTM coordinates of the reference vertex.
-	\item Option 2 calculates the distance of each point from the end of the previous line of measurements. Since the cumulative distance (measured using an avalanche probe) of each zigzag section was not equivalent to the distance between UTM coordinates of each vertex (due to error in GPS and/or walking between vertices not along a straight line), this option takes the reference for each line to be the end of the previous line. The coordinates of the vertices were used for the start of each `Z' shape (ZZ01 and ZZ05).
+	\item Option 2 calculates the distance of each point from the end of the previous line of measurements. The coordinates of the vertices were used for the start of each `Z' shape (ZZ01 and ZZ05).
 	\end{enumerate}
 \item The final processing removes poor quality data and converts snow depth to snow water equivalent (SWE) based on the density calculated from the average SWE values measured with the Federal Sampler in each zigzag (see Section \ref{sec:zigzag_density}).
 \end{enumerate}
 
 \subsection{Snow density}
-\label{sec:zigzag_density}
 
-The snowpit and Federal Sampler measurements were entered into a spreadsheet and the snow density from each measurement was calculated. For snowpit measurements the snow density was calculated by multiplying the measured density from each wedge sample by the thickness of the sample and summing these values. This is known as an integrated snow density and it encompasses the whole snow column. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice-layer thickness, and the `hard' layer density were varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm (representing 20-100\% of the ice-layer thickness), and 500 and 600 kg m$^{-3}$, respectively.  A summary of density values and ranges is shown in Table \ref{tab:density_stats}.
-
-\begin{table}[b!]
-\centering
-\caption{Mean and standard deviation (std) of snow density (kg m$^{-3}$)measured on study glaciers in snowpits and using a Federal Sampler. The number of sampling locations ($n$) is also given.}
-\label{tab:density_stats}
-\begin{tabular}{c|ccc|ccc}
-\multirow{2}{*}{} & \multicolumn{3}{c}{\textbf{Snowpits}} & \multicolumn{3}{| c}{\textbf{Federal Sampler}} \\
- & Mean & Std & $n$ & Mean & Std & $n$ \\ \hline
-\textbf{Glacier 4} & 348 & 13 & 3 & 327 & 32 & 7 \\
-\textbf{Glacier 2} & 333 & 26 & 4 & 326 & 23 & 7 \\
-\textbf{Glacier 13} & 349 & 26 & 10 & 307 & 32 & 31 \\ \hline
-\textbf{All} & 342 & 26 & 10 & 316 & 31 & 31
-\end{tabular}
-\end{table}
-
-Density values determined from Federal Sampler measurements that were deemed to be unrepresentative of the local snow pack, including measurements where the inner core length was less than 70\% of the snow depth or where density values were exceptionally high (e.g. 490 kg m$^{-3}$), were flagged as poor quality and removed. The remaining Federal Sampler density values were then averaged for each measurement location. The data were processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
+Snow density data were first entered into and organized in a spreadsheet then processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
 \begin{enumerate}
-\item Data were imported into Matlab and poor quality data were removed. 
-\item The mean snow density (Federal Sampler), snow density standard deviation, and number of good measurements were calculated for each zigzag survey .
-\item The mean snow density (Federal Sampler), snow density standard deviation, and number of good measurements were calculated. 
+\item Snow density data were imported into Matlab and poor quality data were removed. 
+\item Snowpit-derived snow density values were assigned to their respective location names and coordinates.
+\item For each zigzag survey, the mean snow density (Federal Sampler), snow density standard deviation, and number of good quality measurements were calculated.
+\item For remaining Federal Sampler measurement locations, the mean snow density, snow density standard deviation, and number of good quality measurements were calculated. 
 \item A structure with the processed data was created (\texttt{Density}).
 \end{enumerate}
 
@@ -129,43 +179,16 @@ The final version of the \texttt{Density} structure includes five fields:
 
 \subsection{Snow water equivalent (SWE)}
 
-The conversion of measured snow depth to snow water equivalent (SWE) could not be done at all measurement locations because snow density was not measured at all locations where snow depth was measured. This meant that the density measurements need to be interpolated. A subset of appropriate interpolation methods was chosen for this project. In the absence of a clear justification for choosing one option over the other, all options were carried forward in the analysis. A schematic of the interpolation method choices is shown in Figure \ref{fig:SWEoptions}. 
-
-Four main interpolation methods are used \citep{McGrath2015, Elder1991}. The first assumes a uniform spatial distribution of density, calculated as the mean from all measurement locations on all three glaciers, over the entire study area. The second  also assumes a uniform spatial distribution of density but uses a mean density for individual glaciers (different value for each glacier). The third and fourth methods involve spatially variable density values. One of these methods involves using a regression of elevation and measured density values to interpolate between measurement locations. The other spatially variable interpolation method uses an inverse-distance weighted mean for interpolation. 
-
-Since the snowpit-derived densities and Federal Sampler-derived densities had no discernible relationship, the two density datasets are kept separate. This means that for each density interpolation option, there are two outputs. In the end, there are eight different interpolations of density that are carried forward throughout the study, which allows for a range of SWE estimates to be made. 
-
-The eight density distributions can be classified as using either snowpit-derived densities (SP) or Federal Sampler-derived densities (FS) and as using a certain method, indicated by a number.
-\begin{itemize}
-	\item[SP1] Calculates the mean density of all snowpit measurements.
-	\item[FS1] Calculates the mean density of all Federal Sampler measurements.
-	\item[SP2] Calculates the mean density for each glacier using the snowpit measurements. 
-	\item[FS2] Calculates the mean density for each glacier using the Federal Sampler measurements. 
-	\item[SP3] Calculates the slope and intercept of the best-fit regression line of snowpit densities with elevation for each glacier using the `fit' function and then uses slope and intercept to determine density for all elevations associated with each measurement location.
-	\item[FS3] Calculates the slope and intercept of the best-fit regression line of Federal Sampler densities with elevation for each glacier using the `fit' function and then uses the slope and intercept to determine density for all elevations associated with each measurement location.
-	\item[SP4] Determines the distance between each measurement location and each snowpit and then calculates the inverse-distance weight. For each measurement location, each snowpit density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
-	\item[FS4] Determines the distance between each measurement location and each Federal Sampler and then calculates the inverse-distance weight. For each measurement location, each Federal Sampler density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
-	\end{itemize}
-
-
-{
-\begin{wrapfigure}{r}{\textwidth} 
-	\centering
-	\includegraphics[width = \textwidth]{SWEoptions.png}\\
-	\caption{Relationship between various ways to interpolate between density measurements for the calculation of SWE.}
-	\label{fig:SWEoptions}
-\end{wrapfigure}
-}
-
 The final SWE values for each measurement location are calculated in Matlab using the following steps (this corresponds to the script `Import\_SWE.m'):
 \begin{enumerate}
+\item The desired density interpolation method is selected in the `OPTIONS.m' script.
 \item Snow depth values from transects, zigzags, and extra measurements is complied into a single structure called `SWE'.
 \item The elevation of each measurement location according to the SPOT5 DEM was found in QGIS and the elevations are imported to Matlab and assigned to their respective depth measurement values.
 \item The density values for each snow depth measurement location were estimated according to the chosen method. SWE was then calculated. 
 \end{enumerate}
 To select the desired density calculation option (or to cycle through all options), change the value of \texttt{options.DensitySWE} to the appropriate option number.
 
-The final version the \texttt{SWE} structure includes three rows that correspond to Glacier 4, 2, and 13 and ten fields. The fields are: 
+The final version the \texttt{SWE} structure includes three rows, which correspond to Glacier 4, 2, and 13, and ten fields. The fields are: 
 \begin{itemize}
 \item \texttt{book} (field book where measurement is written)
 \item \texttt{comments} (any comments noted by observer)
