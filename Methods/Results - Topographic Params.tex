@@ -23,7 +23,7 @@
 \usepackage{amssymb}
 \renewcommand{\vector}[1]{\mathbf{#1}}
 
-\newcommand{\params}{Topographic parameters include distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and wind redistribution ($Sx$).}
+\newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and $Sx$.}
 \newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points.}
 
 
@@ -35,42 +35,46 @@
 \end{center}
 
 \section*{Overview}
-This is a document that shows the sampled and full ranges of topographic parameters and then goes into the multiple linear regression and Bayesian model averaging that was used to explain SWE with topographic parameters. Modelled SWE is found for the three study glaciers using the regressions. 
+This document describes the sampled and full ranges of topographic parameters and then discusses the multiple linear regression and Bayesian model averaging that were used to explain SWE with topographic parameters. Distributed SWE is found for the three study glaciers using the regressions. 
 
 \tableofcontents
 \pagebreak
 
 %%%%
-\section{Topographic parameters of study sites}
+\section{Topographic parameters}
 %%%%
 
-\subsection{Creating DEM}
+\subsection{Obtaining digital elevation models (DEMs) for study glaciers}
 
-Topographic parameters can be derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery taken with the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m. The v2 version of the DEM was used, which employs a set of correlation parameters fit for steeper slopes (E. Berthier personal communication, 2016). 
+Topographic parameters can be derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery collected by the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m. The DEM was created using a set of correlation parameters fit for steeper slopes (E. Berthier personal communication, 2016). 
 
-Two DEMs were available for the Donjek Range. The first DEM (GES 08-029) was collected on September 3, 2007 and the second DEM (GES 07-044) was collected on September 13, 2007. Since the DEMs were collected in September, the surface would likely be at a seasonal minimum with minimum snow cover. Therefore, the surface described by the DEM represents the topography below the snow, which means that this study is similar in nature to other snow science investigations that examine ice free basins. A major flaw in using this DEM is that the DEM is from 2007 and there have almost certainly been changes in the end-of-summer glacier surface. However, the SPOT-5 DEM is the best resolution and most current DEM available for the study area. 
+Two DEMs were available for the Donjek Range. The first DEM (GES 08-029) was made from images collected on September 3, 2007 and the second DEM (GES 07-044) was made from images collected on September 13, 2007. The snow extent on September 13, 2007, as imaged by a Landsat 7 satellite can be seen in Figure \ref{fig:Landsat_2007}. Since the images were collected in September, the surface would likely be at a seasonal minimum with minimum snow cover. Therefore, the surface described by the DEM in the ablation area represents the topography below the snow. A limitation in using this DEM is that the DEM is from 2007 and there have almost certainly been changes in the end-of-summer glacier surface. However, the SPOT-5 DEM is the best resolution and most current DEM available for the study area. 
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
-        \fbox{\includegraphics[width=\textwidth]{8029_original.jpeg}}
-        \caption{DEM collected on September 3, 2007 (GES 08-029).}
+        \fbox{\includegraphics[width=\textwidth]{8029_original2.jpeg}}
+        \caption{}
         \label{fig:8029_original}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.48\textwidth}
         \fbox{\includegraphics[width=\textwidth]{7044_original.jpeg}}
-        \caption{DEM collected on September 13, 2007 (GES 07-044).}
+        \caption{}
         \label{fig:7044_original}
     \end{subfigure}
 
-    \caption{SPOT-5 DEMs available for the Donjek Range. Study glaciers are shown as red outlines. Areas with cloud cover have a distorted DEM as seen on the eastern side of (a).}
+    \caption{SPOT-5 DEMs available for the Donjek Range. Study glaciers are shown as red outlines. The DEM made from imagery collected on September 3, 2007 (GES 08-029) is shown in (a) and the DEM made from imagery collected on September 13, 2007 (GES 07-044) is shown in (b). Imagery that contains cloud cover result in a distorted DEM, as seen in the boxed area of (a).}
     \label{photo_swe}
 \end{figure}
 
-The GES 08-029 DEM covered all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds and/or there was limited contrast in the original stero image pairs, resulting in incorrect elevation data (E. Berthier personal communication, 2016). The cloudy areas appear as a black regions on the DEM mask (not shown) and as distortion in the DEM, as seen in eastern area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044)  spans only part of the Donjek Range, covering most of Glacier 4 and a large portion of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no masked areas over Glacier 2 and 4. It was therefore decided to merge the two DEMs to create a cloud free DEM that spanned all three glaciers. 
+\begin{figure}[H]
+  \makebox[\textwidth][c]{\includegraphics[width=\textwidth]{Landsat_2007.jpeg}}%
+	\caption{Landsat 7 ETM images of study glaciers on September 13, 2007. Snow cover is shown as light blue and ice is shown as dark blue.}
+	\label{fig:Landsat_2007}
+\end{figure}
 
-The merging process was complicated by the fact that there was a horizontal and vertical discrepancy between the two DEMs. The second DEM had generally higher elevation values, as can be seen by the difference map shown in Figure \ref{fig:DEMdifferenceOriginal}. Although the discrepancy was not consistent throughout the study area, the second DEM was generally higher than the first, as can be seen by the overall purple colour in Figure \ref{fig:DEMdifferenceOriginal}. 
+The GES 08-029 DEM coveres all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds and/or showed limited contrast in the original steroimage pairs, resulting in incorrect elevation data (E. Berthier personal communication, 2016). The cloudy areas appear as black regions on the DEM mask (not shown) and as distortion in the DEM, as seen in the boxed area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044)  spans only part of the Donjek Range, covering most of Glacier 4 and $\sim$60\% of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no masked areas over Glaciers 2 and 4. The two DEMs were therefore merged to create a cloud free DEM that spanned all three glaciers. 
 
 \begin{figure}[H]
     \centering
@@ -86,26 +90,29 @@ The merging process was complicated by the fact that there was a horizontal and 
         \label{fig:DEMdifferenceCorrected}
     \end{subfigure}
 
-    \caption{Vertical difference between DEMs in overlapping area. Difference was found by subtracting GES 08-029 from GES 07-044.}
+    \caption{Vertical difference between DEMs in overlapping area. Difference was found by subtracting GES 08-029 from GES 07-044. Positive values indicate that GES 07-044 values are higher than GES 08-029 values. }
     \label{fig:DEMdifference}
 \end{figure}
+
+The merging process was complicated by the fact that there was a horizontal and vertical discrepancy between the two DEMs. Although the discrepancy was not consistent throughout the study area, the GES 07-044 DEM was generally higher than the first, as can be seen by the overall purple colour in Figure \ref{fig:DEMdifferenceOriginal}. 
+
 
 \begin{wrapfigure}{R}{0.6\textwidth}
 	\centering
 	\includegraphics[width = 0.6\textwidth]{mergeLine.jpeg}\\
-	\caption{Outlines of the cropped GES 07-044 DEM (pink) and cropped GES 08-029 DEM (blue) used for merging. Note the small overlap of the two DEMs.}
+	\caption{Outlines of the cropped GES 07-044 DEM (pink, left) and cropped GES 08-029 DEM (blue, right) used for merging. There is a slight overlap between the two DEMs that cannot be seen at this scale.}
 	\label{fig:mergeLine}
 \end{wrapfigure}
 
-The discrepancy was corrected by E. Bertier (2016, personal communication) following an iterative 3D-coregistration algorithm presented by \cite{Berthier2007}. The GES 07-044 DEM was arbitrarily chosen to be used as the reference DEM. Since there are no accurate ground control points and cells encompass an area with an elevation distribution, there was no way for us to determine whether one DEM was more accurate than the other. Further, the absolute value of the elevation is not necessarily important for the topographic regression, as long as the relative elevations are correct and that they represent the elevation profiles of the glacier. The reference DEM was first shifted vertically by +5.4 m, estimated using ICESat data \citep{Berthier2010}. Then, the mean horizontal and vertical (X, Y, Z) shift between the reference DEM and the GES 08-029 DEM was found by minimizing the standard deviation of the elevation difference between the DEMs. The values of the shift were $\sim$2 m east, $\sim$4 m north, and $\sim$1.9 m vertically. The DEM was then reprojected in the same projection as the reference DEM. The difference map between the two corrected DEMs is shown in figure \ref{fig:DEMdifferenceCorrected}. Difference values are not uniform but do show both positive and negative values.
+The discrepancy was corrected by E. Bertier (2016, personal communication) using an iterative 3D-coregistration algorithm \citep{Berthier2007}. The GES 07-044 DEM was arbitrarily chosen to be used as the reference DEM. Note that the absolute value of the elevation is not necessarily important for the topographic regression, as long as the relative elevations are correct. The reference DEM, GES 07-044, was first shifted vertically by +5.4 m, estimated using ICESat data \citep{Berthier2010}. Then, the mean horizontal and vertical (X, Y, Z) shift between the reference DEM and the GES 08-029 DEM was found by minimizing the standard deviation of the elevation differences between the DEMs. Using this correlation, the GES 08-029 DEM  was shifted $\sim$2 m east, $\sim$4 m north, and $\sim$1.9 m vertically. The GES 08-029 DEM was then reprojected in the same projection as the reference DEM (GES 07-044). The difference map between the two shifted DEMs is shown in Figure \ref{fig:DEMdifferenceCorrected}. Difference values are not uniform but do show both positive and negative values.
 
-Merging of the corrected DEMs was completed in QGIS. First, the rasters were cropped to overlap by a few cells. The crop line was chosen by hand to include as much of the reference DEM as possible (fewer areas of poor data) but was a relatively small distance from the edge of the DEM (see Figure \ref{fig:mergeLine}). The second DEM was cropped to follow the same merge line but overlap with the first image by a few cells. This was done to avoid gaps in cell values that arise from cropping across a DEM cell. The merging was completed using the built in QGIS tool `Merge' and in areas where the two DEMs overlapped, the GES 08-029 DEM values were chosen.
+Merging of the corrected DEMs was completed in QGIS. First, the rasters were cropped to overlap by a few cells. The crop line was chosen by hand to include as much of the reference DEM as possible (fewer areas of poor data) but was a relatively small distance from the edge of the DEM (see Figure \ref{fig:mergeLine}). The second DEM was cropped to follow the same merge line but overlap with the first DEM by a few cells. This was done to avoid gaps in cell values that arise from cropping across a DEM cell. The merging was completed using the built in QGIS tool `Merge' and in areas where the two DEMs overlapped, the GES 08-029 DEM values were chosen.
 
-The final DEM used for subsequent analysis can be seen in Figure 4. Despite the corrections, there were still discrepancies along the intersection of the DEMs. The contour lines (10 m) that also plotted on this figure show sharp topographic gradients that are aligned with the merge line.  However, these discrepancies were not present on the study glaciers and located more than 250 m from the edge of the glacier so this DEM was used as the final version for the Donjek Range. All subsequent topographic analysis and calculations was based on elevation taken from this DEM.
+The final DEM used for subsequent analysis can be seen in Figure 4. Despite the corrections, there were still discrepancies along the intersection of the DEMs, which can be seen as sharp boundaries in the contour lines. However, these discrepancies are not present on the study glaciers and are located more than 250 m from the edge of the glacier so this DEM was used as the final version for the Donjek Range.
 
 \begin{figure}
 \begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
-      Merged DEM of the Donjek range from two corrected SPOT-5 DEMs with 10 m contour lines. Study glaciers are shown in red. Discrepancies between the DEMs along the merge line can be seen as linear features in the contour lines (appear as sharp topographic boundary) and are emphasized by the yellow boxes. Distorted contours in the eastern regions are a result of errors in the DEM. 
+      Merged DEM of the Donjek range from two corrected SPOT-5 DEMs, plotted with 10 m contour lines. Study glaciers are shown in red. Discrepancies between the DEMs along the merge line can be seen as anomalous linear features in the contour map (yellow boxes). Distorted contours in the eastern regions (white box) are a result of errors in the DEM. 
       }\end{minipage}},rotate=90,center}
      	\includegraphics[height = 0.9\textwidth]{mergedDEM2.jpeg}%
  \end{adjustbox}  
@@ -115,9 +122,9 @@ The final DEM used for subsequent analysis can be seen in Figure 4. Despite the 
 \subsection{Calculating topographic parameters}
 \label{sec:topoCalc}
 
-Topographic parameters are used to describe local topography that affects snow distribution and act as proxies for physical processes that determine snow deposition and redistribution. Topographic parameters used in snow accumulation studies on glaciers include elevation ($z$), distance from centreline ($d_C$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, ``northness'' ($N$), aspect ($\alpha$), and $Sx$, which is a proxy for wind redistribution \citep{Basist1994, Revuelto2014, McGrath2015}.	
+Topographic parameters are used to describe characteristics of the local topography that may affect snow distribution and can act as proxies for physical processes that determine snow deposition and redistribution. Topographic parameters used in snow accumulation studies on glaciers include elevation ($z$), distance from centreline ($d_C$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, ``northness'' ($N$), aspect ($\alpha$), and $Sx$, which is a proxy for wind redistribution \citep{Basist1994, Revuelto2014, McGrath2015}.	
  
-A number of programs were used calculate topographic parameters from the SPOT-5 DEM. Distance from centreline and ``northness'' were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. The remaining parameters were calculated using the \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS as described in \cite{Mitavsova1993} and described in \cite{Hofierka2009}. 
+A number of programs were used calculate topographic parameters from the DEM. Distance from centreline and ``northness'' were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. The remaining parameters were calculated using the \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS as described in \cite{Mitavsova1993} and \cite{Hofierka2009}. 
 
 The GRASS module implements a local polynomial approximation method of the form 
 \begin{equation}
@@ -189,7 +196,7 @@ where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates
 
 \begin{table}[H]
 \centering
-\caption{Values of azimuth ($A$) and maximum search distance($d$max), which define the $Sx$ that had the highest correlation to observed SWE.}
+\caption{Values of azimuth ($A$) and maximum search distance ($d$max), that correspond to the $Sx$ that had the highest absolute correlation to observed SWE.}
 \label{tab:Sxparams}
 \begin{tabular}{lccc}
  & \begin{tabular}[c]{@{}c@{}}$A$\\ ($^{\circ}$ from North)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$d$max \\ (m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Correlation\\ Coefficient\end{tabular} \\ \hline
@@ -202,65 +209,65 @@ Glacier 13 & 280 & 200 & 0.28
 
 \subsection{Topographic parameters from QGIS to Matlab}
 
-The values of each topographic parameter at the sampling locations was determined in QGIS. The sampling locations were imported to QGIS and the Point Sampling Tool was used to determine the value of the cell of the raster for each topographic parameter at that location. The set of parameters that corresponded to each location was then exported to a .csv file and imported into Matlab with the script 'Import\_Topo.m'.  Note that selection of $Sx$ values was completed first (see above) and only the $Sx$ data with highest correlation to SWE was exported. After importing to Matlab, the sets of parameter values ($x_i$) were standardized ($x_s$) by $x_s = \frac{x_i-\mu}{\sigma}$. The resulting structure is called \texttt{topo\_sampled} and is used in the MLR to be able to compare the explanatory power of each parameter (Section \ref{sec:MLR}). A non-standardized copy of the topographic parameters at the sampling locations was also kept for plotting purposes and is called is called \texttt{topo\_sampled\_ns}. Both structures are organized as a vector of values corresponding to the vectors in the \texttt{SWE} variable. 
+The value of each topographic parameter at the sampling locations was determined in QGIS. The sampling locations were imported to QGIS and the Point Sampling Tool was used to determine the value of the topographic parameter raster cell at each measurement location. The set of parameters that corresponds to e`ch location was then exported to a .csv file and imported into Matlab with the script 'Import\_Topo.m'.  Note that selection of $Sx$ values was completed first (see above) and only the $Sx$ values with highest correlation to SWE was exported. After importing to Matlab, the sets of parameter values ($x_p$) were standardized ($x_s$) by $x_s = \frac{x_p-\mu}{\sigma}$. The resulting structure is called \texttt{topo\_sampled} and is used in the MLR to be able to compare the explanatory power of each parameter (Section \ref{sec:MLR}). A non-standardized copy of the topographic parameters at the sampling locations was also kept for plotting purposes and is called is called \texttt{topo\_sampled\_ns}. Both structures are organized as a vector of values corresponding to the vectors in the \texttt{SWE} variable. 
 
-The raster data for each topographic parameter was also exported from QGIS as a .csv file and then imported into Matlab with the script 'Import\_Topo.m'. The values are stored in the structure \texttt{topo\_full} and are a matrix, where each cell corresponds to one DEM cell. Cells outside of the glacier outline have no value (\texttt{NaN}). These values were standardized using the mean and standard deviation of the sampled topographic parameters so that this set of full topographic parameters could be used for modelling SWE using the regression. A copy of the non-standardized values was stored as \texttt{topo\_full\_ns}.
+The topographic parameter rasters were also exported from QGIS as a .csv file and then imported into Matlab with the script `Import\_Topo.m'. The values are stored in the structure \texttt{topo\_full}, where each cell corresponds to one DEM cell. Cells outside of the glacier outline have no value (\texttt{NaN}). The raster values were standardized using the mean and standard deviation of the sampled topographic parameters so that this set of full topographic parameters could be used for modelling SWE using the regression. A copy of the non-standardized values was stored as \texttt{topo\_full\_ns}.
 
-\subsection{Parameter correlation}
+\subsection{Parameter correlations}
 
-The correlation between topographic parameters at sampling locations on each glacier is shown in Table \ref{tab:pearson_correlation}. Correlation values were generally low, with the exception of the correlation between northness and aspect on Glacier 2 and northness and $Sx$ on Glacier 13, which were both larger than 0.7. Since there is little correlation between parameters and the correlations vary between glaciers, the use of a linear regression with these topographic parameters as predictor variables is warranted. 
+The correlation between topographic parameters at sampling locations on each glacier is shown in Table \ref{tab:pearson_correlation}. Correlation values are generally low, with the exception of the correlation between northness and aspect on Glacier 2 and northness and $Sx$ on Glacier 13, which were both larger than 0.7. Since there is little correlation between parameters and the correlations vary between glaciers, the use of a linear regression with these topographic parameters as predictor variables is warranted. 
 
 \begin{table}[H]
 \centering
 \caption{Pearson correlation coefficients between topographic parameters at sampled locations. \params}
 \label{tab:pearson_correlation}
-\begin{tabular}{cccccccccc}
+\begin{tabular}{cc|cccccccc}
  &  & $d_C$ & $z$ & $\alpha$ & $m$ & $N$ & $\kappa_P$ & $\kappa_T$ & $Sx$ \\ \hline
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $d_C$ & 1 & 0.2 & -0.28 & 0.36 & 0.11 & -0.19 & -0.13 & 0.37 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $z$ & 0 & 1 & 0.27 & -0.11 & -0.35 & 0.13 & 0.04 & 0.36 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\alpha$ & 0 & 0 & 1 & -0.29 & -0.24 & 0.19 & 0.07 & 0.22 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $m$ & 0 & 0 & 0 & 1 & 0.55 & -0.36 & -0.09 & 0.03 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $N$ & 0 & 0 & 0 & 0 & 1 & -0.16 & -0.03 & -0.47 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & 0 & 0 & 0 & 0 & 0 & 1 & 0.41 & -0.18 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_T$ & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -0.28 \\
-\rowcolor[HTML]{EFEFEF} 
-\multirow{-8}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & $Sx$ & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
- & $d_C$ & 1 & 0.05 & -0.22 & 0.11 & 0.24 & 0.07 & 0.2 & -0.01 \\
- & $z$ & 0 & 1 & 0.56 & -0.49 & -0.32 & 0.08 & 0.03 & 0.58 \\
- & $\alpha$ & 0 & 0 & 1 & -0.39 & -0.72 & 0.19 & 0.04 & 0.49 \\
- & $m$ & 0 & 0 & 0 & 1 & 0.04 & -0.03 & -0.02 & -0.37 \\
- & $N$ & 0 & 0 & 0 & 0 & 1 & -0.19 & -0.03 & -0.11 \\
- & $\kappa_P$ & 0 & 0 & 0 & 0 & 0 & 1 & 0.44 & -0.23 \\
- & $\kappa_T$ & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -0.27 \\
-\multirow{-8}{*}{Glacier 2} & $Sx$ & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $d_C$ & 1 & 0.13 & -0.09 & 0.06 & 0.01 & 0.1 & 0.03 & 0.05 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $z$ & 0 & 1 & -0.11 & -0.01 & 0.3 & 0.06 & -0 & 0.31 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\alpha$ & 0 & 0 & 1 & 0.01 & -0.59 & -0.01 & -0.13 & -0.47 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $m$ & 0 & 0 & 0 & 1 & -0.26 & 0 & -0.1 & -0 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $N$ & 0 & 0 & 0 & 0 & 1 & -0.07 & -0.11 & 0.76 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & 0 & 0 & 0 & 0 & 0 & 1 & 0.36 & -0.3 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_T$ & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -0.47 \\
-\rowcolor[HTML]{EFEFEF} 
-\multirow{-8}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & $Sx$ & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
+ 
+ & $d_C$ & 1 & 0.20 &  $-$0.28 & 0.36 & 0.11 &  $-$0.19 &  $-$0.13 & 0.37 \\
+ 
+ & $z$ & & 1 & 0.27 &  $-$0.11 &  $-$0.35 & 0.13 & 0.04 & 0.36 \\
+ 
+ & $\alpha$ & & & 1 &  $-$0.29 &  $-$0.24 & 0.19 & 0.07 & 0.22 \\
+ 
+ & $m$ & & & & 1 & 0.55 &  $-$0.36 &  $-$0.09 & 0.03 \\
+ 
+ & $N$ & & & & & 1 &  $-$0.16 &  $-$0.03 &  $-$0.47 \\
+ 
+ & $\kappa_P$ & & & & & & 1 & 0.41 &  $-$0.18 \\
+ 
+ & $\kappa_T$ & & & & & & & 1 &  $-$0.28 \\
+ 
+\multirow{ -8}{*}{Glacier 4} & $Sx$ & & & & & & & & 1 \\ \hline
+ & $d_C$ & 1 & 0.05 &  $-$0.22 & 0.11 & 0.24 & 0.07 & 0.20 &  $-$0.01 \\
+ & $z$ & & 1 & 0.56 &  $-$0.49 &  $-$0.32 & 0.08 & 0.03 & 0.58 \\
+ & $\alpha$ & & & 1 &  $-$0.39 &  $-$0.72 & 0.19 & 0.04 & 0.49 \\
+ & $m$ & & & & 1 & 0.04 &  $-$0.03 &  $-$0.02 &  $-$0.37 \\
+ & $N$ & & & & & 1 &  $-$0.19 &  $-$0.03 &  $-$0.11 \\
+ & $\kappa_P$ & & & & & & 1 & 0.44 &  $-$0.23 \\
+ & $\kappa_T$ & & & & & & & 1 &  $-$0.27 \\
+\multirow{ -8}{*}{Glacier 2} & $Sx$ & & & & & & & & 1 \\ \hline
+ 
+ & $d_C$ & 1 & 0.13 &  $-$0.09 & 0.06 & 0.01 & 0.10 & 0.03 & 0.05 \\
+ 
+ & $z$ & & 1 &  $-$0.11 &  $-$0.01 & 0.30 & 0.06 &  $<$0.01 & 0.31 \\
+ 
+ & $\alpha$ & & & 1 & 0.01 &  $-$0.59 &  $-$0.01 &  $-$0.13 &  $-$0.47 \\
+ 
+ & $m$ & & & & 1 &  $-$0.26 & $<$0.01 &  $-$0.10 &  $<$0.01 \\
+ 
+ & $N$ & & & & & 1 &  $-$0.07 &  $-$0.11 & 0.76 \\
+ 
+ & $\kappa_P$ & & & & & & 1 & 0.36 &  $-$0.30 \\
+ 
+ & $\kappa_T$ & & & & & & & 1 &  $-$0.47 \\
+ 
+\multirow{-8}{*}{Glacier 13} & $Sx$ & & & & & & & & 1
 \end{tabular}
 \end{table}
 
 
-\subsection{Maps of topographic parameters and range of parameters sampled}
+\subsection{Maps of topographic parameters and distribution of parameters sampled}
 
 Maps of the topographic parameters for each glacier are shown below. Additionally, the distribution of topographic parameter values and the sampled distribution for each parameter is also shown. The full range of parameters has highest frequencies for Glacier 13 and lowest for Glacier 4 because Glacier 13 is larger than Glacier 4. Frequency of sampled parameters are comparable between glaciers because the sampling schemes were similar.
 
@@ -281,6 +288,43 @@ $Sx$ maps over the study glaciers are shown in Figure \ref{map:Sx} and the wind 
 Full distribution of $Sx$, as seen in Figure \ref{sampledRange:Sx}, is different for each glacier. Glacier 2 has a mean less than zero, indicating that a large portion of the glacier has exposed topography. Glacier 4 and 13 have positive mean values of $Sx$, indicating more sheltered topography. The sampled distribution for Glacier 4 and 2 generally follows that of the full distribution, although extreme values are not adequately sampled. For Glacier 13, the sample distribution does not closely match that of the full distribution, particularly for larger, more positive, values of $Sx$. 
 
 Overall, the sampled topographic parameters are representative of the full distribution of parameters. Extreme values are grossly under sampled so that the full range of parameter values was not sampled. This was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. This is especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the most accumulation and is likely to heavily influence final winter mass balance values. It is also important to note that for a number of parameters (especially elevation) the sampling distribution is off-set from that of the full distribution. Generally, the sampled values do not fully capture the variance in topographic parameters but a regression is still valuable to conduct since topographic regressions are common when estimating winter mass balance. Acknowledging that this methodology is limited and prone to extrapolation errors is paramount to capturing uncertainty in accumulation studies. 
+
+\begin{landscape}
+\begin{table}[]
+\small
+\centering
+\caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature, and are unitless for cosine of aspect ($\alpha$), ``northness'' ($N$), slope ($m$), and $Sx$. Skewness is a measure of the data asymmetry about the mean, with positive values indicating data are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
+\label{tab:sampled&fullParams_stats}
+\begin{tabular}{cc|cccc|cccc}
+\textbf{} &  & \multicolumn{4}{c}{\textbf{Full distribution}} & \multicolumn{4}{|c}{\textbf{Sampled distribution}} \\
+\textbf{} &  & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} \\ \hline
+\multirow{8}{*}{\textbf{Glacier 4}} & $d_C$ & 317.46 & 256.74 & 1.37 & 5.01 & 114.99 & 90.35 & 0.33 & 2.02 \\
+ & $z$ & 2343.37 & 177.93 &  $-$0.18 & 2.11 & 2238.93 & 85.11 & 0.00 & 2.55 \\
+ & $\alpha$ & 0.45 & 0.56 &  $-$1.14 & 3.24 & 263.72 & 114.59 &  $-$1.50 & 3.49 \\
+ & $m$ & 12.52 & 8.27 & 1.45 & 4.86 & 8.19 & 3.58 & 1.61 & 7.18 \\
+ & $N$ & 0.09 & 0.15 & 0.06 & 5.26 & 0.10 & 0.06 & 0.22 & 5.71 \\
+ & $\kappa_P$ &  $-$73.82 & 303.08 &  $-$0.23 & 6.32 &  $-$30.20 & 206.62 &  $-$0.54 & 4.12 \\
+ & $\kappa_T$ &  $-$41.43 & 293.06 &  $-$0.20 & 6.61 &  $-$41.76 & 198.50 &  $-$0.04 & 3.15 \\
+ & $Sx$ & 1.53 & 11.42 & 1.02 & 4.28 &  $-$1.44 & 4.81 & 1.97 & 8.17 \\ \hline
+\multirow{8}{*}{\textbf{Glacier 2}} & $d_C$ & 297.60 & 234.02 & 1.20 & 4.38 & 136.78 & 98.64 & 0.33 & 2.52 \\
+ & $z$ & 2495.11 & 232.60 & 0.10 & 2.81 & 2297.04 & 93.82 & 0.08 & 1.80 \\
+ & $\alpha$ &  $-$0.35 & 0.59 & 0.72 & 2.29 & 140.34 & 34.68 & 0.08 & 3.06 \\
+ & $m$ & 14.10 & 11.54 & 1.15 & 3.11 & 6.56 & 2.06 & 0.44 & 3.97 \\
+ & $N$ &  $-$0.03 & 0.18 & 0.96 & 5.18 &  $-$0.07 & 0.05 & 1.15 & 7.26 \\
+ & $\kappa_P$ &  $-$16.81 & 270.23 & 0.65 & 10.34 &  $-$3.54 & 149.77 &  $-$0.34 & 3.96 \\
+ & $\kappa_T$ &  $-$0.88 & 253.45 & 0.38 & 9.69 & 7.73 & 197.08 & 0.29 & 3.78 \\
+ & $Sx$ &  $-$3.82 & 9.34 &  $-$0.18 & 6.09 &  $-$3.71 & 2.54 & 0.84 & 4.87 \\ \hline
+\multirow{8}{*}{\textbf{Glacier 13}} & $d_C$ & 426.39 & 306.73 & 0.83 & 3.31 & 181.98 & 152.02 & 0.37 & 2.10 \\
+ & $z$ & 2427.62 & 225.15 & 0.13 & 2.45 & 2214.21 & 75.84 & 0.61 & 4.80 \\
+ & $\alpha$ &  $-$0.12 & 0.66 & 0.25 & 1.70 & 130.72 & 46.58 & 0.80 & 6.23 \\
+ & $m$ & 15.00 & 11.90 & 1.15 & 3.47 & 5.80 & 2.63 & 1.11 & 5.62 \\
+ & $N$ & 0.01 & 0.19 & 0.71 & 3.88 &  $-$0.05 & 0.06 & 0.25 & 4.79 \\
+ & $\kappa_P$ &  $-$27.37 & 234.18 & 0.30 & 5.29 & 19.50 & 127.35 &  $-$0.82 & 7.08 \\
+ & $\kappa_T$ &  $-$3.57 & 236.64 & 0.92 & 8.61 &  $-$0.41 & 143.17 &  $-$0.69 & 5.59 \\
+ & $Sx$ & 3.69 & 12.08 & 0.97 & 3.68 &  $-$1.65 & 3.91 & 1.02 & 5.69
+\end{tabular}
+\end{table}
+\end{landscape}
 
 \pagebreak
 \begin{figure}[H]
@@ -402,7 +446,7 @@ where the matrix $\vector{X}$ contains the set of independent regressors $\vecto
 
 Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependant variable in other locations where regressors are known \citep{Davis1986}. Known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of SWE for that DEM grid cell.
 
-\subsection{Density options resulting in various SWE values}
+\subsection{Snow density options resulting in various SWE values}
 
 Within this analysis, a range of SWE values is used in the topographic regression. These SWE values arise from different choices in density interpolation. Table \ref{tab:densityOptions} summarizes these options.
 
@@ -414,15 +458,15 @@ Within this analysis, a range of SWE values is used in the topographic regressio
  & \multicolumn{2}{c}{\textbf{Density Values Used}} &  \\
  & Snow pit & \begin{tabular}[c]{@{}c@{}}Federal\\ Sampler\end{tabular} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Interpolation\\ Method\end{tabular}}} \\   \hline
 
-\rowcolor[HTML]{EFEFEF} 
-Option 1 & $\blacksquare$ &  & \cellcolor[HTML]{EFEFEF} \\
-\rowcolor[HTML]{EFEFEF} 
+ 
+Option 1 & $\blacksquare$ &  &  \\
+ 
 Option 2 &  & $\blacksquare$ & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Range mean \\ (all glaciers)\end{tabular}} \\
 Option 3 & $\blacksquare$ &  &  \\
 Option 4 &  & $\blacksquare$ & \multirow{-2}{*}{Glacier mean} \\
-\rowcolor[HTML]{EFEFEF} 
-Option 5 & $\blacksquare$ &  & \cellcolor[HTML]{EFEFEF} \\
-\rowcolor[HTML]{EFEFEF} 
+ 
+Option 5 & $\blacksquare$ &  &  \\
+ 
 Option 6 &  & $\blacksquare$ & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Linear elevation regression \\ (individual glacier)\end{tabular}} \\
 Option 7 & $\blacksquare$ &  &  \\
 Option 8 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Inverse distance weighted \\ mean (all glaciers)\end{tabular}}
@@ -430,7 +474,7 @@ Option 8 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Inver
 \end{table}
 
 
-\subsection{Multiple Linear Regression}
+\subsection{Multiple Linear Regression (MLR)}
 \label{sec:MLR}
 
 \subsubsection{Background}
@@ -641,25 +685,25 @@ The effect of density values on the percent variance explained by each topograph
 \label{tab:MLRcoeffFull}
 \begin{tabular}{cccccccccc}
  & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic\\ Parameter\end{tabular}} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} & \textbf{Option 4} & \textbf{Option 5} & \textbf{Option 6} & \textbf{Option 7} & \textbf{Option 8} \\ \hline
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $d_C$ & -0.003 & -0.001 & -0.001 & -0.001 & -0.002 & -0.002 & -0.001 & -0.005 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $z$ & 0.008 & 0.014 & 0.004 & 0.022 & 0.028 & 0.000 & 0.009 & 0.002 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\alpha$ & 0.001 & 0.002 & 0.001 & 0.001 & 0.003 & 0.000 & 0.001 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $m$ & -0.020 & -0.014 & -0.025 & -0.012 & -0.009 & -0.020 & -0.021 & -0.023 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $N$ & -0.001 & -0.004 & 0.000 & -0.006 & -0.004 & -0.001 & 0.000 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & -0.001 & -0.003 & 0.000 & -0.004 & -0.004 & -0.001 & -0.002 & -0.001 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $Sx$ & -0.040 & -0.044 & -0.046 & -0.053 & -0.048 & -0.051 & -0.045 & -0.038 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & Intercept & 0.619 & 0.581 & 0.627 & 0.646 & 0.630 & 0.648 & 0.625 & 0.639 \\
-\rowcolor[HTML]{EFEFEF} 
+ 
+ & $d_C$ & -0.003 & -0.001 & -0.001 & -0.001 & -0.002 & -0.002 & -0.001 & -0.005 \\
+ 
+ & $z$ & 0.008 & 0.014 & 0.004 & 0.022 & 0.028 & 0.000 & 0.009 & 0.002 \\
+ 
+ & $\alpha$ & 0.001 & 0.002 & 0.001 & 0.001 & 0.003 & 0.000 & 0.001 & 0.000 \\
+ 
+ & $m$ & -0.020 & -0.014 & -0.025 & -0.012 & -0.009 & -0.020 & -0.021 & -0.023 \\
+ 
+ & $N$ & -0.001 & -0.004 & 0.000 & -0.006 & -0.004 & -0.001 & 0.000 & 0.000 \\
+ 
+ & $\kappa_P$ & -0.001 & -0.003 & 0.000 & -0.004 & -0.004 & -0.001 & -0.002 & -0.001 \\
+ 
+ & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+ 
+ & $Sx$ & -0.040 & -0.044 & -0.046 & -0.053 & -0.048 & -0.051 & -0.045 & -0.038 \\
+ 
+ & Intercept & 0.619 & 0.581 & 0.627 & 0.646 & 0.630 & 0.648 & 0.625 & 0.639 \\
+ 
 \multirow{-10}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & RMSE & 0.146 & 0.135 & 0.149 & 0.151 & 0.148 & 0.152 & 0.147 & 0.150 \\
  & $d_C$ & 0.020 & 0.020 & 0.020 & 0.018 & 0.020 & 0.017 & 0.019 & 0.012 \\
  & $z$ & 0.113 & 0.100 & 0.109 & 0.089 & 0.090 & 0.107 & 0.098 & 0.110 \\
@@ -671,25 +715,25 @@ The effect of density values on the percent variance explained by each topograph
  & $Sx$ & 0.041 & 0.039 & 0.040 & 0.032 & 0.040 & 0.033 & 0.041 & 0.035 \\
  & Intercept & 0.268 & 0.250 & 0.263 & 0.225 & 0.256 & 0.225 & 0.267 & 0.229 \\
 \multirow{-10}{*}{Glacier 2} & RMSE & 0.104 & 0.097 & 0.101 & 0.087 & 0.102 & 0.087 & 0.104 & 0.088 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $d_C$ & 0.013 & 0.009 & 0.009 & 0.009 & 0.013 & 0.010 & 0.013 & 0.009 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $z$ & 0.049 & 0.047 & 0.054 & 0.047 & 0.044 & 0.050 & 0.047 & 0.047 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\alpha$ & -0.002 & -0.002 & -0.003 & -0.003 & -0.005 & -0.001 & -0.004 & -0.002 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $m$ & -0.002 & -0.001 & -0.001 & 0.000 & -0.001 & -0.001 & 0.000 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $N$ & 0.003 & 0.002 & 0.001 & 0.006 & 0.002 & 0.001 & 0.002 & 0.001 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & -0.001 & -0.001 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $Sx$ & 0.011 & 0.011 & 0.011 & 0.006 & 0.009 & 0.012 & 0.012 & 0.010 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & Intercept & 0.231 & 0.213 & 0.235 & 0.214 & 0.246 & 0.202 & 0.241 & 0.207 \\
-\rowcolor[HTML]{EFEFEF} 
+ 
+ & $d_C$ & 0.013 & 0.009 & 0.009 & 0.009 & 0.013 & 0.010 & 0.013 & 0.009 \\
+ 
+ & $z$ & 0.049 & 0.047 & 0.054 & 0.047 & 0.044 & 0.050 & 0.047 & 0.047 \\
+ 
+ & $\alpha$ & -0.002 & -0.002 & -0.003 & -0.003 & -0.005 & -0.001 & -0.004 & -0.002 \\
+ 
+ & $m$ & -0.002 & -0.001 & -0.001 & 0.000 & -0.001 & -0.001 & 0.000 & 0.000 \\
+ 
+ & $N$ & 0.003 & 0.002 & 0.001 & 0.006 & 0.002 & 0.001 & 0.002 & 0.001 \\
+ 
+ & $\kappa_P$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 \\
+ 
+ & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & -0.001 & -0.001 \\
+ 
+ & $Sx$ & 0.011 & 0.011 & 0.011 & 0.006 & 0.009 & 0.012 & 0.012 & 0.010 \\
+ 
+ & Intercept & 0.231 & 0.213 & 0.235 & 0.214 & 0.246 & 0.202 & 0.241 & 0.207 \\
+ 
 \multirow{-10}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & RMSE & 0.085 & 0.080 & 0.087 & 0.079 & 0.092 & 0.074 & 0.089 & 0.077
 \end{tabular}
 \end{table}	
@@ -697,7 +741,7 @@ The effect of density values on the percent variance explained by each topograph
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Bayesian Model Averaging}
+\subsection{Bayesian Model Averaging (BMA)}
 \label{sec:BMS}
 
 \subsubsection{Background}
@@ -914,25 +958,25 @@ The effect of density values on the percent variance explained by each topograph
 \label{tab:BMScoeffFull}
 \begin{tabular}{cccccccccc}
  & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic \\ Parameter\end{tabular}} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} & \textbf{Option 4} & \textbf{Option 5} & \textbf{Option 6} & \textbf{Option 7} & \textbf{Option 8} \\ \hline
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $d_C$ & -0.004 & -0.002 & -0.002 & 0.000 & -0.007 & -0.004 & -0.004 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $z$ & 0.021 & 0.005 & 0.028 & 0.007 & 0.028 & 0.000 & 0.012 & 0.001 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\alpha$ & 0.003 & 0.003 & 0.001 & 0.001 & 0.000 & 0.001 & 0.002 & 0.001 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $m$ & -0.006 & -0.010 & -0.008 & -0.022 & -0.016 & -0.005 & -0.020 & -0.029 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $N$ & -0.006 & 0.000 & 0.000 & -0.006 & -0.003 & -0.001 & 0.001 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & 0.000 & -0.001 & 0.000 & -0.002 & -0.011 & 0.000 & 0.000 & -0.003 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_T$ & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $Sx$ & -0.046 & -0.037 & -0.034 & -0.047 & -0.047 & -0.050 & -0.027 & -0.042 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & Intercept & 0.622 & 0.575 & 0.635 & 0.650 & 0.628 & 0.650 & 0.619 & 0.638 \\
-\rowcolor[HTML]{EFEFEF} 
+ 
+ & $d_C$ & -0.004 & -0.002 & -0.002 & 0.000 & -0.007 & -0.004 & -0.004 & 0.000 \\
+ 
+ & $z$ & 0.021 & 0.005 & 0.028 & 0.007 & 0.028 & 0.000 & 0.012 & 0.001 \\
+ 
+ & $\alpha$ & 0.003 & 0.003 & 0.001 & 0.001 & 0.000 & 0.001 & 0.002 & 0.001 \\
+ 
+ & $m$ & -0.006 & -0.010 & -0.008 & -0.022 & -0.016 & -0.005 & -0.020 & -0.029 \\
+ 
+ & $N$ & -0.006 & 0.000 & 0.000 & -0.006 & -0.003 & -0.001 & 0.001 & 0.000 \\
+ 
+ & $\kappa_P$ & 0.000 & -0.001 & 0.000 & -0.002 & -0.011 & 0.000 & 0.000 & -0.003 \\
+ 
+ & $\kappa_T$ & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+ 
+ & $Sx$ & -0.046 & -0.037 & -0.034 & -0.047 & -0.047 & -0.050 & -0.027 & -0.042 \\
+ 
+ & Intercept & 0.622 & 0.575 & 0.635 & 0.650 & 0.628 & 0.650 & 0.619 & 0.638 \\
+ 
 \multirow{-10}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & RMSE & 0.140 & 0.132 & 0.139 & 0.133 & 0.140 & 0.140 & 0.136 & 0.146 \\
  & $d_C$ & 0.020 & 0.020 & 0.016 & 0.016 & 0.017 & 0.008 & 0.020 & 0.015 \\
  & $z$ & 0.108 & 0.101 & 0.106 & 0.091 & 0.100 & 0.117 & 0.107 & 0.107 \\
@@ -944,25 +988,25 @@ The effect of density values on the percent variance explained by each topograph
  & $Sx$ & 0.044 & 0.037 & 0.040 & 0.037 & 0.041 & 0.036 & 0.040 & 0.028 \\
  & Intercept & 0.267 & 0.251 & 0.260 & 0.225 & 0.260 & 0.227 & 0.268 & 0.232 \\
 \multirow{-10}{*}{Glacier 2} & RMSE & 0.097 & 0.088 & 0.094 & 0.083 & 0.097 & 0.084 & 0.098 & 0.086 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $d_C$ & 0.011 & 0.010 & 0.009 & 0.005 & 0.014 & 0.007 & 0.007 & 0.008 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $z$ & 0.053 & 0.050 & 0.052 & 0.053 & 0.041 & 0.051 & 0.047 & 0.047 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\alpha$ & -0.003 & -0.003 & -0.009 & -0.002 & -0.007 & -0.003 & -0.010 & -0.002 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $m$ & -0.002 & -0.002 & -0.001 & -0.006 & -0.001 & 0.000 & 0.000 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $N$ & 0.001 & 0.001 & 0.000 & 0.001 & 0.000 & 0.001 & 0.001 & 0.002 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & 0.000 & -0.002 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.002 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_T$ & -0.002 & 0.000 & -0.003 & -0.001 & -0.003 & -0.001 & -0.003 & 0.000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $Sx$ & 0.008 & 0.007 & 0.008 & 0.008 & 0.010 & 0.010 & 0.007 & 0.007 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & Intercept & 0.232 & 0.216 & 0.240 & 0.213 & 0.242 & 0.201 & 0.238 & 0.206 \\
-\rowcolor[HTML]{EFEFEF} 
+ 
+ & $d_C$ & 0.011 & 0.010 & 0.009 & 0.005 & 0.014 & 0.007 & 0.007 & 0.008 \\
+ 
+ & $z$ & 0.053 & 0.050 & 0.052 & 0.053 & 0.041 & 0.051 & 0.047 & 0.047 \\
+ 
+ & $\alpha$ & -0.003 & -0.003 & -0.009 & -0.002 & -0.007 & -0.003 & -0.010 & -0.002 \\
+ 
+ & $m$ & -0.002 & -0.002 & -0.001 & -0.006 & -0.001 & 0.000 & 0.000 & 0.000 \\
+ 
+ & $N$ & 0.001 & 0.001 & 0.000 & 0.001 & 0.000 & 0.001 & 0.001 & 0.002 \\
+ 
+ & $\kappa_P$ & 0.000 & -0.002 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.002 \\
+ 
+ & $\kappa_T$ & -0.002 & 0.000 & -0.003 & -0.001 & -0.003 & -0.001 & -0.003 & 0.000 \\
+ 
+ & $Sx$ & 0.008 & 0.007 & 0.008 & 0.008 & 0.010 & 0.010 & 0.007 & 0.007 \\
+ 
+ & Intercept & 0.232 & 0.216 & 0.240 & 0.213 & 0.242 & 0.201 & 0.238 & 0.206 \\
+ 
 \multirow{-10}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & RMSE & 0.072 & 0.077 & 0.080 & 0.072 & 0.083 & 0.071 & 0.086 & 0.070
 \end{tabular}
 \end{table}
@@ -971,7 +1015,7 @@ The effect of density values on the percent variance explained by each topograph
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{MLR and BMS comparison}
+\subsection{MLR and BMA comparison}
 
 A plot of the ranges of coefficient values resulting from different choices in density interpolation is shown in Figure \ref{fig:allCeoffs_boxplot}. In general, the range of coefficient values for all glacier is similar between MLR and BMS and the ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density options these coefficients are small. 
 
@@ -990,25 +1034,25 @@ The range of coefficient values for Glacier 2 and 13 is generally small for all 
 \caption{Final regression coefficients. Values are calculated from all coefficients found using MLR and BMA and using all density options.}
 \label{tab:finalCoeff}
 \begin{tabular}{ccccc}
- & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic \\ Parameter\end{tabular}} & \textbf{Mean} & \textbf{Min} & \textbf{Max} \\ \hline
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $d_C$ & -0.0024 & -0.0068 & 0.0000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $z$ & 0.0118 & 0.0000 & 0.0280 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\alpha$ & 0.0014 & 0.0000 & 0.0034 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $m$ & -0.0162 & -0.0290 & -0.0047 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $N$ & -0.0020 & -0.0064 & 0.0013 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & -0.0022 & -0.0113 & 0.0000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_T$ & 0.0001 & -0.0003 & 0.0005 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $Sx$ & -0.0435 & -0.0534 & -0.0271 \\
-\rowcolor[HTML]{EFEFEF} 
-\multirow{-9}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & Intercept & 0.6270 & 0.5749 & 0.6501 \\
+ & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic \\ Parameter\end{tabular}} & \textbf{Mean} & \textbf{Min} & \textbf{Max} \\ \hline \hline
+ 
+ & $d_C$ & -0.0024 & -0.0068 & 0.0000 \\
+ 
+ & $z$ & 0.0118 & 0.0000 & 0.0280 \\
+ 
+ & $\alpha$ & 0.0014 & 0.0000 & 0.0034 \\
+ 
+ & $m$ & -0.0162 & -0.0290 & -0.0047 \\
+ 
+ & $N$ & -0.0020 & -0.0064 & 0.0013 \\
+ 
+ & $\kappa_P$ & -0.0022 & -0.0113 & 0.0000 \\
+ 
+ & $\kappa_T$ & 0.0001 & -0.0003 & 0.0005 \\
+ 
+ & $Sx$ & -0.0435 & -0.0534 & -0.0271 \\
+ 
+\multirow{-9}{*}{Glacier 4} & Intercept & 0.6270 & 0.5749 & 0.6501 \\  \hline
  & $d_C$ & 0.0072 & -0.0053 & 0.0203 \\
  & $z$ & 0.0578 & 0.0003 & 0.1171 \\
  & $\alpha$ & -0.0019 & -0.0132 & 0.0031 \\
@@ -1017,25 +1061,25 @@ The range of coefficient values for Glacier 2 and 13 is generally small for all 
  & $\kappa_P$ & -0.0005 & -0.0040 & 0.0032 \\
  & $\kappa_T$ & 0.0012 & -0.0003 & 0.0075 \\
  & $Sx$ & -0.0039 & -0.0534 & 0.0444 \\
-\multirow{-9}{*}{Glacier 2} & Intercept & 0.4377 & 0.2245 & 0.6483 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $d_C$ & 0.0034 & -0.0053 & 0.0137 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $z$ & 0.0301 & 0.0003 & 0.0528 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\alpha$ & -0.0019 & -0.0102 & 0.0031 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $m$ & -0.0097 & -0.0247 & -0.0002 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $N$ & -0.0005 & -0.0064 & 0.0022 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_P$ & -0.0013 & -0.0040 & 0.0000 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $\kappa_T$ & -0.0007 & -0.0030 & 0.0004 \\
-\rowcolor[HTML]{EFEFEF} 
-\cellcolor[HTML]{EFEFEF} & $Sx$ & -0.0187 & -0.0534 & 0.0104 \\
-\rowcolor[HTML]{EFEFEF} 
-\multirow{-9}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & Intercept & 0.4251 & 0.2014 & 0.6483
+\multirow{-9}{*}{Glacier 2} & Intercept & 0.4377 & 0.2245 & 0.6483 \\ \hline
+ 
+ & $d_C$ & 0.0034 & -0.0053 & 0.0137 \\
+ 
+ & $z$ & 0.0301 & 0.0003 & 0.0528 \\
+ 
+ & $\alpha$ & -0.0019 & -0.0102 & 0.0031 \\
+ 
+ & $m$ & -0.0097 & -0.0247 & -0.0002 \\
+ 
+ & $N$ & -0.0005 & -0.0064 & 0.0022 \\
+ 
+ & $\kappa_P$ & -0.0013 & -0.0040 & 0.0000 \\
+ 
+ & $\kappa_T$ & -0.0007 & -0.0030 & 0.0004 \\
+ 
+ & $Sx$ & -0.0187 & -0.0534 & 0.0104 \\
+ 
+\multirow{-9}{*}{Glacier 13} & Intercept & 0.4251 & 0.2014 & 0.6483
 \end{tabular}
 \end{wraptable}	
 Since the range of coefficient values is so similar between MLR and BMA regression methods, it was decided to calculate a single set of regression coefficients that encompassed both methods. Further, it appears that the choice of density interpolation methods does not alter the relative importance of the coefficients. Therefore, we can generate a set of coefficients and their range of values that is gathers information from both the regression method and density interpolation choice. To do this, the the mean, minimum, and maximum values of each regression coefficient was calculated. These values are shown in Table \ref{tab:finalCoeff}. 

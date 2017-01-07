@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  5 JAN 2017 11:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  6 JAN 2017 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Results - Observations.tex"
 (./Results - Observations.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 21 languages loaded.
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,29 +23,29 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count87
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -61,27 +61,27 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count91
@@ -89,18 +89,18 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/array.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen113
 \extrarowheight=\dimen114
@@ -122,7 +122,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen115
 \WF@size=\dimen116
 \c@WF@wrappedlines=\count93
@@ -130,7 +130,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \WF@everypar=\toks18
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip48
 \enit@outerparindent=\dimen117
@@ -138,18 +138,18 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box27
 \enitdp@description=\count94
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/multirow/multirow.sty
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen118
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/lscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen119
 \captionmargin@=\dimen120
 \captionwidth=\dimen121
@@ -161,12 +161,12 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count95
 Package caption Info: wrapfig package is loaded.
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 \c@subfigure=\count96
 \c@subtable=\count97
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count98
 \float@exts=\toks20
@@ -174,16 +174,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box29
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.s
-ty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/hobsub-generic.st
-y
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -221,22 +219,23 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/auxhook.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen126
 \Hy@linkcounter=\count99
 \Hy@pagecounter=\count100
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count101
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -248,7 +247,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count102
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -273,18 +272,19 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count107
 \c@bookmark@seq@number=\count108
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip49
-) (./Results - Observations.aux)
+)
+(./Results - Observations.aux)
 \openout1 = `"Results - Observations.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -336,7 +336,7 @@ LaTeX Font Info:    ... okay on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen130
@@ -349,9 +349,10 @@ LaTeX Font Info:    ... okay on input line 22.
 \MPnumerator=\count113
 \makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks23
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/grfext.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -359,7 +360,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -369,11 +370,11 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box31
 Package hyperref Info: Link coloring OFF on input line 22.
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/gettitlestring.st
-y
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count115
@@ -381,7 +382,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
- (./Results - Observations.out) (./Results - Observations.out)
+
+(./Results - Observations.out) (./Results - Observations.out)
 \@outlinefile=\write3
 \openout3 = `"Results - Observations.out"'.
 
@@ -399,8 +401,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1
 
-{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<DepthDensity_SWEtube.png, id=69, 413.8662pt x 293.4162pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <DepthDensity_SWEtube.png,
+ id=69, 413.8662pt x 293.4162pt>
 File: DepthDensity_SWEtube.png Graphic file (type png)
 
 <use DepthDensity_SWEtube.png>
@@ -528,94 +530,92 @@ Overfull \hbox (3.98337pt too wide) in paragraph at lines 278--278
 File: ZigzagDepth_G13.png Graphic file (type png)
  <use ZigzagDepth_G13.png>
 Package pdftex.def Info: ZigzagDepth_G13.png used on input line 286.
-(pdftex.def)             Requested size: 516.73338pt x 413.39009pt.
+(pdftex.def)             Requested size: 422.77664pt x 338.21782pt.
 
-[13
-
-
- <./ZigzagDepth_G13.png (PNG copy)>]
-<SWEmap_opt2.png, id=182, 939.51pt x 433.62pt>
+<SWEmap_opt2.png, id=177, 939.51pt x 433.62pt>
 File: SWEmap_opt2.png Graphic file (type png)
  <use SWEmap_opt2.png>
-Package pdftex.def Info: SWEmap_opt2.png used on input line 302.
+Package pdftex.def Info: SWEmap_opt2.png used on input line 299.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
+ [13
 
-<SWEmap_opt3.png, id=183, 939.51pt x 433.62pt>
-File: SWEmap_opt3.png Graphic file (type png)
- <use SWEmap_opt3.png>
-Package pdftex.def Info: SWEmap_opt3.png used on input line 309.
-(pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- [14 <./SWEmap_opt2.png (PNG copy)>] <SWEmap_opt4.png, id=190, 939.51pt x 433.6
+
+ <./ZigzagDepth_G13.png (PNG copy)>] <SWEmap_opt3.png, id=185, 939.51pt x 433.6
 2pt>
+File: SWEmap_opt3.png Graphic file (type png)
+
+<use SWEmap_opt3.png>
+Package pdftex.def Info: SWEmap_opt3.png used on input line 306.
+(pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
+ <SWEmap_opt4.png, id=186, 939.51pt x 433.62pt>
 File: SWEmap_opt4.png Graphic file (type png)
 
 <use SWEmap_opt4.png>
-Package pdftex.def Info: SWEmap_opt4.png used on input line 316.
+Package pdftex.def Info: SWEmap_opt4.png used on input line 313.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- <SWEmap_opt5.png, id=191, 939.51pt x 433.62pt>
+ [14 <./SWEmap_opt2.png (PNG copy)> <./SWEmap_opt3.png (PNG copy)>] <SWEmap_opt
+5.png, id=192, 939.51pt x 433.62pt>
 File: SWEmap_opt5.png Graphic file (type png)
-
-<use SWEmap_opt5.png>
-Package pdftex.def Info: SWEmap_opt5.png used on input line 323.
+ <use SWEmap_opt5.png>
+Package pdftex.def Info: SWEmap_opt5.png used on input line 320.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- [15 <./SWEmap_opt3.png (PNG copy)> <./SWEmap_opt4.png (PNG copy)>] <SWEmap_opt
-6.png, id=198, 939.51pt x 433.62pt>
+
+<SWEmap_opt6.png, id=193, 939.51pt x 433.62pt>
 File: SWEmap_opt6.png Graphic file (type png)
  <use SWEmap_opt6.png>
-Package pdftex.def Info: SWEmap_opt6.png used on input line 330.
+Package pdftex.def Info: SWEmap_opt6.png used on input line 327.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
-
-<SWEmap_opt7.png, id=199, 939.51pt x 433.62pt>
+ [15 <./SWEmap_opt4.png (PNG copy)> <./SWEmap_opt5.png (PNG copy)>]
+<SWEmap_opt7.png, id=200, 939.51pt x 433.62pt>
 File: SWEmap_opt7.png Graphic file (type png)
  <use SWEmap_opt7.png>
-Package pdftex.def Info: SWEmap_opt7.png used on input line 337.
-(pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- [16 <./SWEmap_opt5.png (PNG copy)> <./SWEmap_opt6.png (PNG copy)>]
-<SWEmap_opt8.png, id=206, 939.51pt x 433.62pt>
-File: SWEmap_opt8.png Graphic file (type png)
- <use SWEmap_opt8.png>
-Package pdftex.def Info: SWEmap_opt8.png used on input line 344.
+Package pdftex.def Info: SWEmap_opt7.png used on input line 334.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
 
-<SWEmap_opt9.png, id=207, 939.51pt x 433.62pt>
+<SWEmap_opt8.png, id=201, 939.51pt x 433.62pt>
+File: SWEmap_opt8.png Graphic file (type png)
+ <use SWEmap_opt8.png>
+Package pdftex.def Info: SWEmap_opt8.png used on input line 341.
+(pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
+ [16 <./SWEmap_opt6.png (PNG copy)> <./SWEmap_opt7.png (PNG copy)>]
+<SWEmap_opt9.png, id=208, 939.51pt x 433.62pt>
 File: SWEmap_opt9.png Graphic file (type png)
  <use SWEmap_opt9.png>
-Package pdftex.def Info: SWEmap_opt9.png used on input line 351.
+Package pdftex.def Info: SWEmap_opt9.png used on input line 348.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- [17 <./SWEmap_opt7.png (PNG copy)> <./SWEmap_opt8.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
- [18 <./SWEmap_opt9.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
- (./Results - Observations.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+ [17 <./SWEmap_opt8.png (PNG copy)> <./SWEmap_opt9.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
+
+(./Results - Observations.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
 Package rerunfilecheck Info: File `"Results - Observations".out' has not change
 d.
 (rerunfilecheck)             Checksum: 4B960B6C370EDC5D322FE57ADDB55621;776.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 357.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
  ) 
 Here is how much of TeX's memory you used:
- 8021 strings out of 494501
- 122702 string characters out of 6167030
- 242656 words of memory out of 5000000
- 11152 multiletter control sequences out of 15000+600000
+ 8041 strings out of 494910
+ 121997 string characters out of 6179836
+ 242159 words of memory out of 5000000
+ 11184 multiletter control sequences out of 15000+600000
  8710 words of font info for 31 fonts, out of 8000000 for 9000
- 319 hyphenation exceptions out of 8191
- 41i,19n,38p,1221b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "Results - Observations.pdf" (18 pages, 1542649 bytes).
+ 36 hyphenation exceptions out of 8191
+ 41i,19n,39p,1221b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb>
+Output written on "Results - Observations.pdf" (17 pages, 1577322 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
  199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
