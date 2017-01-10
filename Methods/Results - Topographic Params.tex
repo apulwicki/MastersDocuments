@@ -25,6 +25,7 @@
 
 \newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and $Sx$.}
 \newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points.}
+\newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations.}
 
 
 \begin{document}
@@ -269,23 +270,40 @@ The correlation between topographic parameters at sampling locations on each gla
 
 \subsection{Maps of topographic parameters and distribution of parameters sampled}
 
+
+Elevation maps (Figure \ref{map:elev}) show that both Glacier 2 and 13 have small areas with high elevation, which correspond to steep headwalls. Mean elevation is the same for all glaciers for the full and sampled distribution within one standard deviation (Table \ref{tab:sampled&fullParams_stats}). However, maximum elevation values are lower for Glacier 4 than the other two glaciers (Figure \ref{sampledRange:elev}) and the sampled elevation means are approximately 200 m less than that of the full distribution. Standard deviations are smaller for sampled ranges for all glaciers. The skewness of sampled and full distributions is similar for Glacier 2 but differs considerably for Glacier 4 and 13. Elevation full distributions are similar for the study glaciers, with kurtosis for all distributions, except sampled elevation on Glacier 13, being less than 3 (value for normal distribution). Kurtosis of sampled distributions show that Glacier 13 had a broader distribution and Glacier 2 has a narrower distribution. 
+
+The distribution of sampled distance from centreline (Figure \ref{sampledRange:centreD}) is different from that of the full distribution. Generally, large distance were not sampled. Larger values of skewness and kurtosis in the full distribution indicate that these distributions are broader and span a larger range of values (Table \ref{tab:sampled&fullParams_stats}). This is also seen in the mean and standard deviation values, which are also larger for the full distribution. Large values of distance from centreline are located at the edges of the glacier in the accumulation area (Figure \ref{map:centreD}), which constitute steep, inaccessible terrain. Within the ablation area, the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier.
+
+Slope of the three study glaciers (Figure \ref{map:slope}) is generally less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 having steep slopes. The full and sampled distributions of slope are similar between glaciers (Table \ref{tab:sampled&fullParams_stats}), with mean values between 12$^{\circ}$ and 15$^{\circ}$ for the full distribution and 5$^{\circ}$ to 8$^{\circ}$ for the sampled distribution. The sampled distributions are all different than the full range, as indicated by the lower means, standard deviations, and skewness, as well as larger kurtosis. This shows that the sampled distributions are generally narrower than full distributions and severely under samples steep slopes (Figure \ref{sampledRange:slope}).
+
+
+$Sx$ maps over the study glaciers are shown in Figure \ref{map:Sx} and the wind direction and maximum search distance with the highest correlation to SWE for each glacier are shown in Table \ref{tab:Sxparams}. For Glacier 4, an approximately east wind and 300 m search distance were most strongly correlated. The correlation was negative, which means that negative values of $Sx$ (exposure) correspond to areas with larger SWE (more snow). This is counter intuitive and perhaps indicates that $Sx$ is not an appropriate topographic parameter to correlate with SWE on Glacier 4. Despite this, $Sx$ was retained in future analysis for consistency between glaciers. For Glacier 2, a north wind with a 300 m search distance was most strongly correlated and for Glacier 13, a west wind with a 200 m search distance produced the strongest correlation. Both of these correlations were positive, so a more positive $Sx$ value (sheltered) corresponds to higher values of SWE (more snow). The correlation values for Glacier 4 and 2 are low ($<$0.3) which indicates that $Sx$ will likely be insignificant in estimating snow accumulation. The correlation between $Sx$ and SWE on Glacier 2 is higher at 0.56. 
+
+The full distribution of $Sx$ (Figure \ref{sampledRange:Sx}) is different for each glacier and differs greatly between sampled and full distributions. Glacier 2 has a mean less than zero, indicating that a large portion of the glacier has exposed topography (Table \ref{tab:sampled&fullParams_stats}). Glacier 4 and 13 have positive mean values of $Sx$, indicating more sheltered topography. Extreme values of $Sx$ are generally located along the edges of the accumulation areas (Figure \ref{map:Sx}). The sampled distribution mean for Glacier 2 is close to that of its full distribution, while the sampled distribution means of Glacier 4 and 13 are different (negative) than that of the full distribution means (positive). The sampled distribution are more sharply peaked, as indicated by the smaller standard deviation values and larger kurtosis when compared to the full distributions. The skewness also differs for Glaciers 4 and 2, with the sampled distributions skewed more to the right than full distributions. Overall, the sampled distribution of $Sx$ is a poor representation of the full distribution. 
+
+
+---------
+
 Maps of the topographic parameters for each glacier are shown below. Additionally, the distribution of topographic parameter values and the sampled distribution for each parameter is also shown. The full range of parameters has highest frequencies for Glacier 13 and lowest for Glacier 4 because Glacier 13 is larger than Glacier 4. Frequency of sampled parameters are comparable between glaciers because the sampling schemes were similar.
 
-Elevation maps in Figure \ref{map:elev} show higher elevations at the head of the glacier and lowest elevation at the terminus for all glaciers. Maximum elevation values are lower for Glacier 4 than the other two glaciers. The elevation distribution differs between glaciers. Glacier 4 and 13 have a larger number of mid-elevations (broader distribution) than Glacier 2 (sharp peaked distribution). The sampled distribution for all glaciers is markedly different than the full distribution as seen in Figure \ref{sampledRange:elev}. In general, the distribution mean is lower and does not sample the full range of values. This is especially evident for Glacier 13 where a large portion of the higher elevations were not sampled. Unfortunately, high elevation locations are often dangerous to access and could not be sampled. 
+ 
 
-Distance from centreline is shown in Figure \ref{map:centreD}. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier. The sampled distribution generally matches the full distribution. This is likely because the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured, although this is generally limited to the ablation area. However, the sampling did not allow for the locations at a far distance from the centreline to be measured because these locations are generally in steep, inaccessible terrain. 
 
-Slope of the three study glaciers is shown in Figure \ref{map:slope}. The majority of the area of the three glaciers has a slope of less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 having steep slopes. The distribution of slope is similar between glaciers (see Figure \ref{sampledRange:slope}). All have a peak frequency around 10$^{\circ}$ and few areas with very steep slopes. The sampled distribution matches the full distribution near this peak but severely under samples steep slope due to dangerous conditions.
+
 
 Tangential curvature is shown in Figure \ref{map:tangentC} and profile curvature is shown in Figure \ref{map:profileC}. The curvature values are generally moderate and centred about 0. The distribution of sampled curvature closely matches the full distribution although high curvature areas were not sampled (see Figure \ref{sampledRange:tangentC} and \ref{sampledRange:profileC}).
 
+
 Aspect of the glacier surface is shown in Figure \ref{map:aspect}. Glacier 2 and 13 have similar aspect distributions, with a mean aspect of $\sim100^{\circ}$. Glacier 4 has a mean aspect of $\sim300^{\circ}$, which is roughly $180^{\circ}$ to that of Glacier 2 and 13. The sampled distribution, as shown in Figure \ref{sampledRange:aspect}, for Glacier 4 follows that of the full distribution relatively well. However, the sampled distribution of Glacier 2 and 13 does not match that of the full distribution and there are many aspects that were not sampled.  
+
+
+QGIS Aspect: 90 degrees is North, 180 is West, 270 is South 360 is East
+Olaya2009 Aspect : 0=N and read clockwise
 
 ``Northness'' for all study glaciers is shown in Figure \ref{map:northness}. The majority of cells have values close to zero, which is likely due to their low slope values. Even for Glacier 4, which is largely south facing and should thus have lower values of ``northness'', has a distribution with a mean close to zero. The low slope values mean that the values of ``northness'' were determined largely by the aspect, which can be seen by the resemblance between the ``northness'' map and the aspect map. 
 
-$Sx$ maps over the study glaciers are shown in Figure \ref{map:Sx} and the wind direction and maximum search distance with the highest correlation to SWE for each glacier are shown in Table \ref{tab:Sxparams}. For Glacier 4, an approximately east wind and 300 m search distance were most strongly correlated. The correlation was negative, which means that negative values of $Sx$ (exposure) correspond to areas with larger SWE (more snow). This is counter intuitive and perhaps indicates that $Sx$ is not an appropriate topographic parameter to correlate with SWE on Glacier 4. Despite this, $Sx$ was retained in future analysis for consistency between glaciers. For Glacier 2, a north wind with a 300 m search distance was most strongly correlated and for for Glacier 13, a west wind with a 200 m search distance exhibited the strongest correlation. Both of these correlations were positive, so a more positive $Sx$ value (sheltered) corresponded to higher values of SWE (more snow). The correlation values for Glacier 4 and 2 were low ($<$0.3), which indicates that $Sx$ will likely be an insignificant in modelling snow accumulation. The correlation between $Sx$ and SWE on Glacier 2 is relatively high (0.56). 
 
-Full distribution of $Sx$, as seen in Figure \ref{sampledRange:Sx}, is different for each glacier. Glacier 2 has a mean less than zero, indicating that a large portion of the glacier has exposed topography. Glacier 4 and 13 have positive mean values of $Sx$, indicating more sheltered topography. The sampled distribution for Glacier 4 and 2 generally follows that of the full distribution, although extreme values are not adequately sampled. For Glacier 13, the sample distribution does not closely match that of the full distribution, particularly for larger, more positive, values of $Sx$. 
 
 Overall, the sampled topographic parameters are representative of the full distribution of parameters. Extreme values are grossly under sampled so that the full range of parameter values was not sampled. This was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. This is especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the most accumulation and is likely to heavily influence final winter mass balance values. It is also important to note that for a number of parameters (especially elevation) the sampling distribution is off-set from that of the full distribution. Generally, the sampled values do not fully capture the variance in topographic parameters but a regression is still valuable to conduct since topographic regressions are common when estimating winter mass balance. Acknowledging that this methodology is limited and prone to extrapolation errors is paramount to capturing uncertainty in accumulation studies. 
 
@@ -293,12 +311,12 @@ Overall, the sampled topographic parameters are representative of the full distr
 \begin{table}[]
 \small
 \centering
-\caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature, and are unitless for cosine of aspect ($\alpha$), ``northness'' ($N$), slope ($m$), and $Sx$. Skewness is a measure of the data asymmetry about the mean, with positive values indicating data are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
+\caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature, and are unitless for cosine of aspect ($\alpha$), ``northness'' ($N$), slope ($m$), and $Sx$. Skewness is a measure of the data asymmetry about the mean, with positive values indicating data that are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
 \label{tab:sampled&fullParams_stats}
 \begin{tabular}{cc|cccc|cccc}
 \textbf{} &  & \multicolumn{4}{c}{\textbf{Full distribution}} & \multicolumn{4}{|c}{\textbf{Sampled distribution}} \\
 \textbf{} &  & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} \\ \hline
-\multirow{8}{*}{\textbf{Glacier 4}} & $d_C$ & 317.46 & 256.74 & 1.37 & 5.01 & 114.99 & 90.35 & 0.33 & 2.02 \\
+\multirow{8}{*}{\textbf{Glacier 4}} & $d_C$ & 258.48 & 233.03 & 1.83 & 6.56 & 117.05 & 87.75 & 0.36 & 2.06 \\
  & $z$ & 2343.37 & 177.93 &  $-$0.18 & 2.11 & 2238.93 & 85.11 & 0.00 & 2.55 \\
  & $\alpha$ & 0.45 & 0.56 &  $-$1.14 & 3.24 & 263.72 & 114.59 &  $-$1.50 & 3.49 \\
  & $m$ & 12.52 & 8.27 & 1.45 & 4.86 & 8.19 & 3.58 & 1.61 & 7.18 \\
@@ -306,7 +324,7 @@ Overall, the sampled topographic parameters are representative of the full distr
  & $\kappa_P$ &  $-$73.82 & 303.08 &  $-$0.23 & 6.32 &  $-$30.20 & 206.62 &  $-$0.54 & 4.12 \\
  & $\kappa_T$ &  $-$41.43 & 293.06 &  $-$0.20 & 6.61 &  $-$41.76 & 198.50 &  $-$0.04 & 3.15 \\
  & $Sx$ & 1.53 & 11.42 & 1.02 & 4.28 &  $-$1.44 & 4.81 & 1.97 & 8.17 \\ \hline
-\multirow{8}{*}{\textbf{Glacier 2}} & $d_C$ & 297.60 & 234.02 & 1.20 & 4.38 & 136.78 & 98.64 & 0.33 & 2.52 \\
+\multirow{8}{*}{\textbf{Glacier 2}} & $d_C$ & 305.03 & 237.02 & 1.21 & 4.50 & 136.78 & 98.64 & 0.33 & 2.52 \\
  & $z$ & 2495.11 & 232.60 & 0.10 & 2.81 & 2297.04 & 93.82 & 0.08 & 1.80 \\
  & $\alpha$ &  $-$0.35 & 0.59 & 0.72 & 2.29 & 140.34 & 34.68 & 0.08 & 3.06 \\
  & $m$ & 14.10 & 11.54 & 1.15 & 3.11 & 6.56 & 2.06 & 0.44 & 3.97 \\
@@ -314,7 +332,7 @@ Overall, the sampled topographic parameters are representative of the full distr
  & $\kappa_P$ &  $-$16.81 & 270.23 & 0.65 & 10.34 &  $-$3.54 & 149.77 &  $-$0.34 & 3.96 \\
  & $\kappa_T$ &  $-$0.88 & 253.45 & 0.38 & 9.69 & 7.73 & 197.08 & 0.29 & 3.78 \\
  & $Sx$ &  $-$3.82 & 9.34 &  $-$0.18 & 6.09 &  $-$3.71 & 2.54 & 0.84 & 4.87 \\ \hline
-\multirow{8}{*}{\textbf{Glacier 13}} & $d_C$ & 426.39 & 306.73 & 0.83 & 3.31 & 181.98 & 152.02 & 0.37 & 2.10 \\
+\multirow{8}{*}{\textbf{Glacier 13}} & $d_C$ & 443.87 & 308.48 & 0.76 & 3.22 & 181.98 & 152.02 & 0.37 & 2.10 \\
  & $z$ & 2427.62 & 225.15 & 0.13 & 2.45 & 2214.21 & 75.84 & 0.61 & 4.80 \\
  & $\alpha$ &  $-$0.12 & 0.66 & 0.25 & 1.70 & 130.72 & 46.58 & 0.80 & 6.23 \\
  & $m$ & 15.00 & 11.90 & 1.15 & 3.47 & 5.80 & 2.63 & 1.11 & 5.62 \\
@@ -330,110 +348,111 @@ Overall, the sampled topographic parameters are representative of the full distr
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{Map_elevation.png}\\
-	\caption{Values of elevation used in the topographic regressions for three study glaciers. This DEM is derived from a SPOT5 satellite image and has a grid size of 40x40 m. Subsequent topographic parameters were derived from this DEM.}
+	\caption{Distributions of elevation ($z$) used in the topographic regressions for the study glaciers. This DEM is derived from a SPOT5 satellite image and has a grid size of 40$\times$40 m. Subsequent topographic parameters were derived from this DEM. \topomap}
 	\label{map:elev}
 \end{figure}
 
 \begin{figure}[H]
   \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_elevation.png}}%
-	\caption{Range of elevation sampled as compared to total range of elevation of study glaciers.}
+	\caption{Histograms of elevation ($z$) sampled (brown) as compared to total range of elevation (blue) of study glaciers.}
 	\label{sampledRange:elev}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_centreD.png}\\
-	\caption{Values of distance from centreline used in the topographic regressions for three study glaciers. Centreline was drawn by hand in QGIS.}
+	\caption{Distributions of distance from centreline ($d_C$) used in the topographic regressions for the study glaciers. Centreline was drawn by hand in QGIS. \topomap}
 	\label{map:centreD}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_centreD.png}}%
-	\caption{Range of distance from centreline sampled as compared to total range of distance from centreline of study glaciers.}
+	\caption{Histograms of distance from centreline ($d_c$) sampled (brown) as compared to total range (blue) of distance from centreline of study glaciers.}
 	\label{sampledRange:centreD}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_slope.png}\\
-	\caption{Values of slope used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
+	\caption{Distributions of slope ($m$) used in the topographic regressions for the study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:slope}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_slope.png}}%
-	\caption{Range of slope sampled as compared to total range of slope of study glaciers.}
+	\caption{Histograms of slope ($m$) sampled (brown) as compared to total range (blue) of slope of study glaciers.}
 	\label{sampledRange:slope}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_tangentCurve.png}\\
-	\caption{Values of tangential curvature used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero.}
+	\caption{Distributions of tangential curvature ($\kappa_T$) used in the topographic regressions for the study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
 	\label{map:tangentC}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_tangentCurve.png}}%
-	\caption{Range of tangential curvature sampled as compared to total range of tangential curvature of study glaciers.}
+	\caption{Histograms of tangential curvature ($\kappa_T$) sampled (brown) as compared to total range (blue) of tangential curvature of study glaciers.}
 	\label{sampledRange:tangentC}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_profileCurve.png}\\
-	\caption{Values of distance from centreline used in the topographic regressions for three study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero.}
+	\caption{Distributions of profile curvature ($\kappa_P$) used in the topographic regressions for the study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
 	\label{map:profileC}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_profileCurve.png}}%
-	\caption{Range of profile curvature sampled as compared to total range of profile curvature of study glaciers.}
+	\caption{Histograms of profile curvature ($\kappa_P$) sampled (brown) as compared to total range (blue) of profile curvature of study glaciers.}
 	\label{sampledRange:profileC}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_aspect.png}\\
-	\caption{Values of aspect, which represent what direction a slope is facing (0${^\circ}$ defined as north), used in the topographic regressions for three study glaciers.}
+	\caption{Distributions of aspect ($\alpha$), which indicates the direction that a slope is facing (0${^\circ}$ defined as north), used in the topographic regressions for the study glaciers. \topomap}
 	\label{map:aspect}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_aspect.png}}%
-	\caption{Range of aspect sampled as compared to total range of aspect of study glaciers.}
+	\caption{Histograms of aspect ($\alpha$) sampled (brown) as compared to total range (blue) of aspect of study glaciers.}
 	\label{sampledRange:aspect}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_northness.png}\\
-	\caption{Values of ``northness'' used in the topographic regressions for three study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and flat surfaces yield 0. Values were derived from a SPOT5 satellite derived DEM (grid size of 40x40 m) in QGIS.}
+	\caption{Distributions of ``northness'' ($N$) used in the topographic regressions for the study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and flat surfaces yield 0. Values were derived from a SPOT5 satellite derived DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:northness}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_northness.png}}%
-	\caption{Range of ``northness'' sampled as compared to total range of ``northness'' of study glaciers.}
+	\caption{Histograms of ``northness'' ($N$) sampled (brown) as compared to total range (blue) of ``northness'' of study glaciers.}
 	\label{sampledRange:northness}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_Sx.png}\\
-	\caption{Values of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for three study glaciers. See section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier.}
+	\caption{Distributions of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for the study glaciers. See section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier. \topomap}
 	\label{map:Sx}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_Sx.png}}%
-	\caption{Range of $Sx$ sampled as compared to total range of $Sx$ of study glaciers.}
+	\caption{Histograms of $Sx$ sampled (brown) as compared to total range (blue) of $Sx$ of study glaciers.}
 	\label{sampledRange:Sx}
 \end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Linear Regressions}
+\label{sec:linearregression}
 
 \subsection{Background}
 Relating snow accumulation and terrain parameters to better predict accumulation within a basin has been employed for decades \citep[e.g.][]{Woo1978, Molotch2005, McGrath2015}. The most common type of relation between topographic parameters and accumulation is a linear regression, where the observed snow water equivalent (SWE) is related to a linear combination of topographic parameters at each measurement location. 
@@ -442,34 +461,37 @@ A linear regression takes the form
 \begin{equation}
 \vector{y} = \vector{X} \bm{\beta} + \bm{\varepsilon},
 \end{equation}
-where the matrix $\vector{X}$ contains the set of independent regressors $\vector{x}_i$ used to explain the dependant variable $\vector{y}$ \citep{Davis1986}. The regression coefficients for each regressor is given by $\bm{\beta}$ and the error or noise of the system is given by $\bm{\varepsilon}$. Applied to this study, the matrix of independent regressors ($\vector{X}$) contains the topographic parameters at the sampling locations, the dependant variable $\vector{y}$ contains the observed SWE, and the $\bm{\beta}$ values are determined using a fitting model. While there are many types of fitting models, the ones employed in this study are multiple linear regression (MLR) and Bayesian model averaging (BMA).
+where the matrix $\vector{X}$ contains the set of independent regressors $\vector{x}_i$ used to explain the dependant variable $\vector{y}$ \citep[e.g.][]{Davis1986}. The regression coefficient for each regressor is given by $\bm{\beta}$ and the error of the system is given by $\bm{\varepsilon}$. Applied to this study, the matrix of independent regressors ($\vector{X}$) contains the topographic parameters at the sampling locations, the dependent variable $\vector{y}$ contains the observed SWE, and the $\bm{\beta}$ values are determined using a fitting model. While there are many types of fitting models, the ones employed in this study are multiple linear regression (MLR) and Bayesian model averaging (BMA).
 
-Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependant variable in other locations where regressors are known \citep{Davis1986}. Known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of SWE for that DEM grid cell.
+To prevent over fitting of the data, regressions are calculated using cross validation. This means that for each regression, a randomly selected portion of the data is used to estimate regression coefficients and the coefficients are used to predict values that correspond to the remaining data \citep{Kohavi1995}. The root mean squared error (RMSE) between the estimated and observed data is then calculated. This process was repeated 1000 times and the regression coefficients that resulted in the lowest RMSE are then chosen for that model. 
 
-\subsection{Snow density options resulting in various SWE values}
+In this study, regressions for all possible combinations of topographic parameters are calculated. The total number of models is $2^n$ , where $n$ is the number of topographic parameters. Eight topographic parameters are used, resulting in $2^8 = 256$ models. Model averaging is then used to determine the final regression coefficients. Model averaging is described in more details for multiple linear regressions (MLRs) in Section \ref{sec:MLR} and for Bayesian Model Averaging (BMA) in Section \ref{sec:BMS}.
 
-Within this analysis, a range of SWE values is used in the topographic regression. These SWE values arise from different choices in density interpolation. Table \ref{tab:densityOptions} summarizes these options.
+Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependent variable in other locations where regressors are known \citep{Davis1986}. For each grid cell, known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of SWE.
+
+\subsection{Snow density estimation methods}
+
+In this study, snow density was not measured at every location where snow depth was measured. Therefore, snow density values need to be estimated at snow depth measurement locations in order to estimate observed SWE values. There are a number of different methods for interpolating between snow density measurement locations. Four methods were chosen for this study and include (1) using a constant value, the mean of all observed snow density values, for all measurement locations, (2) using a constant value (mean) for each glacier, (3) using a linear regression of elevation and snow density to interpolate for each glacier, and (4) taking an inverse-distance weighted mean of density observations. As discussed in Section ??, the snowpit-derived densities and Federal Sampler-derived densities are inconsistent so these two data set are kept separate for the analysis. In total there are eight different methods for estimating density, as summarized in Table \ref{tab:densityOptions}.
 
 \begin{table}[H]
 \centering
-\caption{Description of density interpolation methods used to calculate SWE used in the topographic regression.}
+\caption{Description of density interpolation methods used to calculate SWE used in the topographic regression. Abbreviations with `S' used snowpit-derived densities and abbrviations with an `F' used Federal Sampler-derived densities.}
 \label{tab:densityOptions}
-\begin{tabular}{cccc}
- & \multicolumn{2}{c}{\textbf{Density Values Used}} &  \\
- & Snow pit & \begin{tabular}[c]{@{}c@{}}Federal\\ Sampler\end{tabular} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Interpolation\\ Method\end{tabular}}} \\   \hline
+\begin{tabular}{c|cc|c}
+ & \multicolumn{2}{c|}{\textbf{Source of snow density}} &  \\
+ & \textit{Snowpit} & \begin{tabular}[c|]{c} \textit{Federal}\\  \textit{Sampler}\end{tabular} & \multirow{-2}{*}{\textbf{\begin{tabular}[|c]{c}Estimation\\ method\end{tabular}}} \\   \hline
 
+S1 & $\blacksquare$ &  &  \\
  
-Option 1 & $\blacksquare$ &  &  \\
+F1 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Mean of all glaciers \end{tabular}} \\  \hline
+S2 & $\blacksquare$ &  &  \\
+F2 &  & $\blacksquare$ & \multirow{-2}{*}{Glacier mean} \\ \hline
  
-Option 2 &  & $\blacksquare$ & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Range mean \\ (all glaciers)\end{tabular}} \\
-Option 3 & $\blacksquare$ &  &  \\
-Option 4 &  & $\blacksquare$ & \multirow{-2}{*}{Glacier mean} \\
+S3 & $\blacksquare$ &  &  \\
  
-Option 5 & $\blacksquare$ &  &  \\
- 
-Option 6 &  & $\blacksquare$ & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Linear elevation regression \\ (individual glacier)\end{tabular}} \\
-Option 7 & $\blacksquare$ &  &  \\
-Option 8 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Inverse distance weighted \\ mean (all glaciers)\end{tabular}}
+F3 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Linear regression of elevation and\\ density for each glacier \end{tabular}} \\ \hline
+S4 & $\blacksquare$ &  &  \\
+F4 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Inverse distance\\ weighted mean\end{tabular}}
 \end{tabular}
 \end{table}
 
@@ -479,9 +501,15 @@ Option 8 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Inver
 
 \subsubsection{Background}
 
-Perhaps the most basic and well used method for relating SWE and topographic parameters is a multiple linear regression (MLR) \citep[e.g.][]{Cohen2013}. The best fit line of an MLR is the one described by coefficients that minimize the sum of squares of the vertical deviations of each data point from the line \citep{Davis1986}. Note that if a point falls on the line then the deviation is zero and that the positive and negative deviations from the line do not cancel because the values are first squared and then summed. The residuals are simply the difference between the modelled and observed data. 
+Perhaps the most basic and well used method for relating SWE and topographic parameters is a multiple linear regression (MLR) \citep[e.g.][]{Cohen2013}. The best fit line of one type of MLR is the one described by coefficients that minimize the sum of squares of the vertical deviations of each data point ($Y_i$) from the estimated value according to the equation ($\hat{Y}_i$) \citep{Davis1986}
+\begin{equation}
+\sum^n_{i=1}(\hat{Y}_i-Y_i)^2 = \mathrm{minimum}.
+\end{equation}
+Note that if a point falls on the line then the deviation is zero and  the positive and negative deviations from the line do not cancel because the values are first squared and then summed. The residuals are simply the differences between the estimated and observed data values. To prevent over fitting of the data, cross validation is done for each MLR, as described in Section \ref{sec:linearregression}.
 
-To reduce the chance of over fitting the data, two additional methods were applied. The first method was model averaging over all possible models that allow for linear combinations of the chosen topographic parameters. An MLR was estimated for each model (total number of models is $2^n$, where $n$ is the number of topographic parameters) and the Bayesian information criterion (BIC) value was computed for the model.
+HERE!
+
+To reduce over fitting the data, all possible  model averaging over all possible models that allow for linear combinations of the chosen topographic parameters. An MLR was estimated for each model (total number of models is $2^n$, where $n$ is the number of topographic parameters) and the Bayesian information criterion (BIC) value was computed for the model.
 
 BIC is found according to
 \begin{equation}
@@ -496,7 +524,7 @@ w_i = \frac{e^{-0.5(BIC_i-BIC_{min})}}{\Sigma_{i=1}^R e^{-0.5(BIC_i-BIC_{min})}}
 \end{equation}
 When parameters were excluded from a model, a coefficient of zero was assigned to that parameter. The sum of the weighted coefficients gave the final $\bm{\beta}$ values.
 
-The second method used to prevent over fitting was to calculate the MLRs within a cross validation framework. This meant that for each model, a randomly selected portion of the data was used to estimate regression coefficients and these were used to predict values that correspond to the remaining data \citep{Kohavi1995}. The root mean squared error (RMSE) between the modelled and observed data was then calculated. This process was done one thousand times and the set of coefficients that resulted in the lowest RMSE were then chosen for that model. 
+
 
 Together, cross validation allowed for reputable choosing of regression coefficients for each possible model and model averaging with BIC weights allowed for stability of final coefficient values and favouring of simpler models, which would help to identify main topographic drivers of snow accumulation. 
 
