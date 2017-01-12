@@ -20,12 +20,15 @@
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{adjustbox}
+\usepackage{rotating}
 \usepackage{amssymb}
+\captionsetup[subfigure]{position=top, labelfont=bf,textfont=normalfont,singlelinecheck=off,justification=raggedright}
 \renewcommand{\vector}[1]{\mathbf{#1}}
+\usepackage{tabularx}
 
-\newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and $Sx$.}
-\newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points.}
-\newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations.}
+\newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and $Sx$. }
+\newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points. }
+\newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations. }
 
 
 \begin{document}
@@ -507,74 +510,127 @@ Perhaps the most basic and well used method for relating SWE and topographic par
 \end{equation}
 Note that if a point falls on the line then the deviation is zero and  the positive and negative deviations from the line do not cancel because the values are first squared and then summed. The residuals are simply the differences between the estimated and observed data values. To prevent over fitting of the data, cross validation is done for each MLR, as described in Section \ref{sec:linearregression}.
 
-HERE!
+In this study, there are $2^8$ models that encompass all possible linear combinations of topographic parameters. There is no reason to favour any of the models so a weighted sum of all models is used to estimate regression coefficients. The Bayesian information criterion (BIC) value is used to assess the relative predictive success of each model. 
 
-To reduce over fitting the data, all possible  model averaging over all possible models that allow for linear combinations of the chosen topographic parameters. An MLR was estimated for each model (total number of models is $2^n$, where $n$ is the number of topographic parameters) and the Bayesian information criterion (BIC) value was computed for the model.
-
-BIC is found according to
+A BIC value is found according to
 \begin{equation}
 \textrm{BIC} = -2 \ln L(\hat\theta_k  | y) + k \ln(n),
-\end{equation}•
-where the values of $\hat \theta_k$, which are the model parameters, maximizes the likelihood function for data $y$ \citep{Burnham2004}. The number of data points is $n$ and the number of regressors is $k$. BIC values are used to assess the relative predictive success of models while penalizing for overfitting of data. While the absolute BIC value is meaningless, models can be selected or averaged using the relative BIC value, with lower values indicating a better model \citep{Burnham2004}. 
+\end{equation}
+where the values of $\hat \theta_k$, which are the model parameters, maximize the likelihood function for data $y$ \citep{Burnham2004}. The likelihood function, $ L(\hat\theta_k  | y)$, is the probability of the model parameters occurring given the data. The number of data points is $n$ and the number of regressors is $k$. BIC values are used to assess the relative predictive success of models while penalizing for overfitting of data. While the absolute BIC value is meaningless, models can be selected or averaged using the relative BIC values, with lower values indicating a better model \citep{Burnham2004}. 
 
-In this study, there was no reason to favour any of the models so a weighted average of all models based on their BIC values was conducted. The BIC values for each model ($BIC_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value indicated by $BIC_{min}$) according to \citep{Burnham2004}
+The BIC value for each model ($BIC_i$) is used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value indicated by $BIC_{\min}$) as defined by the equation \citep{Burnham2004}
 \begin{equation}
-w_i = \frac{e^{-0.5(BIC_i-BIC_{min})}}{\Sigma_{i=1}^R e^{-0.5(BIC_i-BIC_{min})}}.
+w_i = \frac{e^{-0.5(BIC_i-BIC_{\min})}}{\Sigma_{i=1}^R e^{-0.5(BIC_i-BIC_{\min})}}.
 \label{eq:BIC}
 \end{equation}
-When parameters were excluded from a model, a coefficient of zero was assigned to that parameter. The sum of the weighted coefficients gave the final $\bm{\beta}$ values.
+Parameters not included in a particular model are assigned coefficients of zero. The sum of the weighted coefficients gives the final $\bm{\beta}$ values.
 
-
-
-Together, cross validation allowed for reputable choosing of regression coefficients for each possible model and model averaging with BIC weights allowed for stability of final coefficient values and favouring of simpler models, which would help to identify main topographic drivers of snow accumulation. 
-
-\subsubsection{Methods}
+\subsubsection{Computational Methods}
 \label{sec:MLRMethods}
-
-A multiple linear regression (MLR) between snow water equivalent (SWE) and all linear combinations of the calculated topographic parameters was completed. This methodology for calculating the MLR also involved using cross validation, where a portion of the data is withheld from the MLR fit and these points are then used to assess the ability of the MLR to predict values. The MLR fit with the best prediction ability is then carried forward. 
 
 The MLR was completed with the following steps (executed using the function 'MLRcalval.m'):
 \begin{enumerate}
-\item The topographic parameters 
+\item The topographic parameters are imported to Matlab using the script `Import\_Topo.m'.
 
-\item The \texttt{topo\_sampled} structure for one glacier as well as the \texttt{SWE} strcture is passed into the function.
+\item The \texttt{topo\_sampled} structure for one glacier as well as the \texttt{SWE} structure is passed into the function.
 
-\item A set of initializations is completed. This includes 1) creating a logical matrix to choose all linear combination of topographic parameters, 2) selecting the number of runs, 3) creating a matrix of random numbers for selecting data point in the cross validation procedure, 4) initializing matrices, and 5) converting the input structure to a table.
+\item A set of initializations is completed. This includes 1) creating a logical matrix to choose all linear combinations of topographic parameters, 2) selecting the number of runs, 3) creating a matrix of random numbers for selecting data points in the cross validation procedure, 4) initializing matrices, and 5) converting the input structure to a table.
 
-\item For each linear combination of topographic parameters, one thousand runs of a cross validation MLR are then executed. Two-thirds of the total data is randomly selected \citep{Kohavi1995} to use for calculating the regression (using the function \texttt{regress()} which is a basic regression function with fast execution). The MLR equations is used to predict the SWE using the remaining one-quarter of the topographic parameters. The root-mean-squared error (RMSE) between the predicted and observed SWE values is then calculated and the MLR equation with the lowest RMSE is then chosen for that combination of topographic parameters. The function \texttt{fitlm()} is then used to calculate the MLR from the set of data that gave the lowest RMSE. This function is slower but calculates a number of additional values that characterize the fit of the model. One of these values is the Bayesian information criterion (BIC), which allows for model selection among a finite set of models \citep{Burnham2004}. The BIC from the best model for each combination of topographic parameters is saved.
+\item For each linear combination of topographic parameters, 1000 runs of a cross validation MLR are then executed. Two-thirds of the total data is randomly selected \citep{Kohavi1995} to use for calculating the regression (using the function \texttt{regress()} which is a basic regression function with fast execution). The MLR equation is used to predict the SWE using the remaining one-third of the topographic parameters. The root-mean-squared error (RMSE) between the predicted and observed SWE values is then calculated and the set fo regression coefficients that produce the lowest RMSE are then chosen for that combination of topographic parameters. The function \texttt{fitlm()} is then used to calculate the MLR from the set of data that gave the lowest RMSE. This function is slower but calculates a number of additional values that characterize the fit of the model. One of these values is the Bayesian information criterion (BIC), which allows for model selection among a finite set of models \citep{Burnham2004}. The BIC from the best model for each combination of topographic parameters is saved.
 
 \item A weighted sum of all models found using linear combinations of topographic parameters was then found. The BIC values for each model (BIC$_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value BIC$_{min}$) according to Eq. \ref{eq:BIC}.
 
-\item The percent variance ($var_\%$) explained by each parameter was calculated using the equation $var_\% = \frac{SSr}{SSt}\times 100$, where $SSr$ is the sum of squares of the residual (fitted topographic parameters) and $SSt$ is the total sum of squares (SWE observations). The final coefficients and the percent varience explained by each one can be found in the \texttt{coeffs\_final} table within the function and in the \texttt{mlr} structure when run for all density options and glaciers in the main script 'TopoRegression.m'.
+\item The percent variance ($var_\%$) explained by each parameter was calculated using the equation $var_\% = \frac{SSr}{SSt}\times 100$, where $SSr$ is the sum of squares of the residual (fitted topographic parameters) and $SSt$ is the total sum of squares (SWE observations). The final coefficients and the percent variance explained by each one can be found in the \texttt{coeffs\_final} table within the function and in the \texttt{mlr} structure when run for all density options and glaciers in the main script `TopoRegression.m'.
 
-\item The residuals of the fit have also been calculated as a separate variable than can be returned when the function is called. The residual was calculated as the difference between the predicted and observed value. 
+\item The residuals of the fit have also been calculated as a separate variable that can be returned when the function is called. The residual is calculated as the difference between the estimated SWE value and observed value. 
 \end{enumerate}
 
 
 \subsubsection{Results}
 
-\begin{wraptable}{R}{10cm}
+\begin{wraptable}{R}{11cm}
 \centering
-\caption{MLR coefficients for topographic regression between measured SWE (found using inverse-distance weighted snowpit-derived densities) and standardized topographic parameters. \params Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.}
+\caption{MLR coefficients for topographic regression between measured SWE (found using inverse-distance weighted snowpit-derived densities) and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.}
 \label{tab:MLRcoeff}
-\begin{tabular}{cccc}
- & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
-d$_C$ 			&  \textless-0.001		& 0.019 					& 0.013 \\
-$z$ 				& 0.009 						& 0.098					& 0.047 \\
-$\alpha$ 		& 0.001 						& -0.002 					& -0.004 \\
-$m$ 			& -0.021 						& 0.013					 &  \textless-0.001 \\
-$N$ 				& \textless-0.001		  	& 0.001 					& 0.002 \\
-$\kappa_P$ & -0.002 						& \textless0.001 		& -0.001 \\
-$\kappa_T$ & \textless-0.001 		& 0.005 					& -0.001 \\
-$Sx$ 			& -0.045 						& 0.041 					&0.012 \\
-Intercept 		& 0.625 						& 0.267 					& 0.241 \\ \hline
-RMSE 			& 0.147						& 0.104 					& 0.089
+\begin{tabular}{ccrrr}
+ Parameter & Units & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
+d$_C$ 			&m&  \textless-0.001		& 0.019 					& 0.013 \\
+$z$ 				&m a.s.l & 0.009 						& 0.098					& 0.047 \\
+$\alpha$ 		& ---& 0.001 						& -0.002 					& -0.004 \\
+$m$ 			& ---& -0.021 						& 0.013					 &  \textless-0.001 \\
+$N$ 				& ---& \textless-0.001		  	& 0.001 					& 0.002 \\
+$\kappa_P$ &m$^{-1}$& -0.002 						& \textless0.001 		& -0.001 \\
+$\kappa_T$&m$^{-1}$ & \textless-0.001 		& 0.005 					& -0.001 \\
+$Sx$ 			& ---& -0.045 						& 0.041 					&0.012 \\
+Intercept 		&& 0.625 						& 0.267 					& 0.241 \\ \hline
+RMSE 			&& 0.147						& 0.104 					& 0.089
 \end{tabular}
 \end{wraptable}
 
-The coefficients determined using MLR for density Option 7 can be seen in Table \ref{tab:MLRcoeff} and can be used to examine the relative importance of topographic parameters in the regression. These coefficients were found for standardized values of topographic parameters so their magnitude is indicative of their importance in predicting SWE. Table \ref{tab:MLRcoeffFull} shows coefficient values for all density options. The range of percent variance explained by each variable (from all density options) can be seen in Figure \ref{fig:MLRPercentVar_densityOptions}. The fit between modelled SWE and observed SWE for each glacier for density Option 7 can be seen in Figure \ref{fig:MLRfit_opt8} and the fit for all density options in Figure \ref{fig:MLRfit_allLines}. The distribution of residuals in then plotted in Figure \ref{fig:MLRresiduals_all}. A map of the predicted values of SWE over the entire glacier using density option 7 can be seen in Figure \ref{fig:MLRmodelledSWE} with basic summary statistics found in Table \ref{tab:MLRsweMinMax}. Modelled SWE using all density options is shown in Figure \ref{fig:allMLRmodelled}. A map of the difference between maximum and minimum modelled SWE values is shown in Figure \ref{fig:MLR_SWEdiffMap}.
 
-For Glacier 4, the largest coefficients are wind redistribution and slope, which are an order of magnitude larger than the remaining coefficients. Both coefficients are negative, which indicates less snow in `sheltered' areas and less on steeper slopes. These coefficients account for the largest percentage of variance explained, although this percentage is small ($\sim$7\% and $\sim$1\%, respectively). Overall, the modelled winter balance for Glacier 4 is very poorly explained by the topographic parameters, which results in no correlation between modelled and observed SWE (R$^2_{avg}=0.06$) and a comparatively high RMSE value. The modelled values of SWE are largely determined by the intercept value. The map of predicted SWE for the entire glacier shows a relatively uniform SWE distribution over Glacier 4, likely due to the large influence of the intercept on the regression. Areas with steep slopes and high $Sx$ values (sheltered), especially in the accumulation area, have the lowest values of SWE. This regression indicates that the wind effects play a significant role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining $Sx$ values that assume wind moving up or down glacier and changing direction to follow the valley could allow the $Sx$ parameter to explain more of the variance. 
+\begin{sidewaystable}
+\centering
+\caption{Topographic regression coefficients of standardized parameters determined using MLR. See Table \ref{tab:densityOptions} for description of density options.}
+\label{tab:MLRcoeffFull}
+\begin{tabular}{ccrrrrrrrr}
+ & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic\\ Parameter\end{tabular}} & \textbf{S1} & \textbf{F1} & \textbf{S2} & \textbf{F2} & \textbf{S3} & \textbf{F3} & \textbf{S4} & \textbf{F4} \\ \hline \hline
+ 
+ & $d_C$ & $-$0.003 & $-$0.001 & $-$0.001 & $-$0.001 & $-$0.002 & $-$0.002 & $-$0.001 & $-$0.005 \\
+ 
+ & $z$ & 0.008 & 0.014 & 0.004 & 0.022 & 0.028 & 0.000 & 0.009 & 0.002 \\
+ 
+ & $\alpha$ & 0.001 & 0.002 & 0.001 & 0.001 & 0.003 & 0.000 & 0.001 & 0.000 \\
+ 
+ & $m$ & $-$0.020 & $-$0.014 & $-$0.025 & $-$0.012 & $-$0.009 & $-$0.020 & $-$0.021 & $-$0.023 \\
+ 
+ & $N$ & $-$0.001 & $-$0.004 & 0.000 & $-$0.006 & $-$0.004 & $-$0.001 & 0.000 & 0.000 \\
+ 
+ & $\kappa_P$ & $-$0.001 & $-$0.003 & 0.000 & $-$0.004 & $-$0.004 & $-$0.001 & $-$0.002 & $-$0.001 \\
+ 
+ & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+ 
+ & $Sx$ & $-$0.040 & $-$0.044 & $-$0.046 & $-$0.053 & $-$0.048 & $-$0.051 & $-$0.045 & $-$0.038 \\
+ 
+ & Intercept & 0.619 & 0.581 & 0.627 & 0.646 & 0.630 & 0.648 & 0.625 & 0.639 \\
+ 
+\multirow{-10}{*}{Glacier 4} & RMSE & 0.146 & 0.135 & 0.149 & 0.151 & 0.148 & 0.152 & 0.147 & 0.150 \\ \hline
+ & $d_C$ & 0.020 & 0.020 & 0.020 & 0.018 & 0.020 & 0.017 & 0.019 & 0.012 \\
+ & $z$ & 0.113 & 0.100 & 0.109 & 0.089 & 0.090 & 0.107 & 0.098 & 0.110 \\
+ & $\alpha$ & $-$0.004 & $-$0.001 & $-$0.007 & $-$0.001 & $-$0.001 & $-$0.001 & $-$0.001 & $-$0.010 \\
+ & $m$ & 0.019 & 0.018 & 0.016 & 0.011 & 0.007 & 0.012 & 0.013 & 0.011 \\
+ & $N$ & 0.002 & 0.000 & 0.004 & 0.001 & 0.000 & 0.001 & 0.001 & 0.005 \\
+ & $\kappa_P$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 \\
+ & $\kappa_T$ & 0.001 & 0.002 & 0.004 & 0.000 & 0.004 & 0.002 & 0.005 & 0.002 \\
+ & $Sx$ & 0.041 & 0.039 & 0.040 & 0.032 & 0.040 & 0.033 & 0.041 & 0.035 \\
+ & Intercept & 0.268 & 0.250 & 0.263 & 0.225 & 0.256 & 0.225 & 0.267 & 0.229 \\
+\multirow{-10}{*}{Glacier 2} & RMSE & 0.104 & 0.097 & 0.101 & 0.087 & 0.102 & 0.087 & 0.104 & 0.088 \\ \hline
+ 
+ & $d_C$ & 0.013 & 0.009 & 0.009 & 0.009 & 0.013 & 0.010 & 0.013 & 0.009 \\
+ 
+ & $z$ & 0.049 & 0.047 & 0.054 & 0.047 & 0.044 & 0.050 & 0.047 & 0.047 \\
+ 
+ & $\alpha$ & $-$0.002 & $-$0.002 & $-$0.003 & $-$0.003 & $-$0.005 & $-$0.001 & $-$0.004 & $-$0.002 \\
+ 
+ & $m$ & $-$0.002 & $-$0.001 & $-$0.001 & 0.000 & $-$0.001 & $-$0.001 & 0.000 & 0.000 \\
+ 
+ & $N$ & 0.003 & 0.002 & 0.001 & 0.006 & 0.002 & 0.001 & 0.002 & 0.001 \\
+ 
+ & $\kappa_P$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & $-$0.001 & 0.000 \\
+ 
+ & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & $-$0.001 & 0.000 & $-$0.001 & $-$0.001 \\
+ 
+ & $Sx$ & 0.011 & 0.011 & 0.011 & 0.006 & 0.009 & 0.012 & 0.012 & 0.010 \\
+ 
+ & Intercept & 0.231 & 0.213 & 0.235 & 0.214 & 0.246 & 0.202 & 0.241 & 0.207 \\
+ 
+\multirow{-10}{*}{Glacier 13} & RMSE & 0.085 & 0.080 & 0.087 & 0.079 & 0.092 & 0.074 & 0.089 & 0.077
+
+\end{tabular}
+\end{sidewaystable}
+
+The coefficients determined using MLR for density S4 can be seen in Table \ref{tab:MLRcoeff} and can be used to examine the relative importance of topographic parameters in the regression. These coefficients were found for standardized values of topographic parameters so their magnitude is indicative of their importance in predicting SWE. Table \ref{tab:MLRcoeffFull} shows coefficient values for all density options. The range of percent variance explained by each variable (from all density options) can be seen in Figure \ref{fig:MLRPercentVar_densityOptions}. The fit between modelled SWE and observed SWE for each glacier for density Option 7 can be seen in Figure \ref{fig:MLRfit_opt8} and the fit for all density options in Figure \ref{fig:MLRfit_allLines}. The distribution of residuals in then plotted in Figure \ref{fig:MLRresiduals_all}. A map of the predicted values of SWE over the entire glacier using density option 7 can be seen in Figure \ref{fig:MLRmodelledSWE} with basic summary statistics found in Table \ref{tab:MLRsweMinMax}. Modelled SWE using all density options is shown in Figure \ref{fig:allMLRmodelled}. A map of the difference between maximum and minimum modelled SWE values is shown in Figure \ref{fig:MLR_SWEdiffMap}.
+
+For Glacier 4, the largest coefficients are $Sx$ and slope ($m$), which are an order of magnitude larger than the remaining coefficients. Both coefficients are negative, which indicates less snow in `sheltered' areas and less on steeper slopes. These coefficients account for the largest percentage of variance explained, although this percentage is small ($\sim$7\% and $\sim$1\%, respectively). Overall, the modelled winter balance for Glacier 4 is very poorly explained by the topographic parameters, which results in no correlation between modelled and observed SWE (R$^2_{avg}=0.06$) and a comparatively high RMSE value. The modelled values of SWE are largely determined by the intercept value. The map of predicted SWE for the entire glacier shows a relatively uniform SWE distribution over Glacier 4, likely due to the large influence of the intercept on the regression. Areas with steep slopes and high $Sx$ values (sheltered), especially in the accumulation area, have the lowest values of SWE. This regression indicates that the wind effects play a significant role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining $Sx$ values that assume wind moving up or down glacier and changing direction to follow the valley could allow the $Sx$ parameter to explain more of the variance. 
 
 \begin{wraptable}{l}{8.5cm}
 \centering
@@ -584,12 +640,12 @@ For Glacier 4, the largest coefficients are wind redistribution and slope, which
 \multicolumn{1}{l}{} & \multicolumn{3}{c}{\textbf{Modelled SWE (m w.e.)}} \\
                      & Mean          & Minimum          & Maximum         \\ \hline
 Glacier 4            & 0.58          & 0.10             & 0.85            \\
-Glacier 2            & 0.55          & -0.23            & 1.76            \\
+Glacier 2            & 0.55          & $-$0.23            & 1.76            \\
 Glacier 13           & 0.41          & 0.03             & 0.90           
 \end{tabular}
 \end{wraptable} 
 
-For Glacier 2, the largest coefficient (by an order of magnitude) is elevation. This coefficient is positive, which means that SWE will increase with elevation. Elevation explains the largest amount of variance ($\sim$45\%) and this is consistent for all density options. $Sx$ and distance from centreline are also significant coefficients in the MLR, explaining $\sim$6\% and $\sim$1\% of the variance, respectively.  Overall, the modelled winter balance is a good estimation of observed SWE (R$^2_{avg}=0.62$) although it tends to underestimate the amount of accumulation. The map of modelled SWE shows the strong dependence on elevation since the values closely resemble the elevation map (Figure \ref{map:elev}). The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE (1.76 m w.e) and the lowest SWE (-0.23 m w.e.) values. Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating from the regression, which largely depends on elevation. The southwest region of the accumulation area that has the area of high accumulation is a result of the high elevation and $Sx$ values. The negative values of SWE at the terminus are a result of the low elevation, as the $Sx$ values are close to zero there. 
+For Glacier 2, the largest coefficient (by an order of magnitude) is elevation. This coefficient is positive, which means that SWE will increase with elevation. Elevation explains the largest amount of variance ($\sim$45\%) and this is consistent for all density options. $Sx$ and distance from centreline are also significant coefficients in the MLR, explaining $\sim$6\% and $\sim$1\% of the variance, respectively.  Overall, the modelled winter balance is a good estimation of observed SWE (R$^2_{avg}=0.62$) although it tends to underestimate the amount of accumulation. The map of modelled SWE shows the strong dependence on elevation since the values closely resemble the elevation map (Figure \ref{map:elev}). The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE (1.76 m w.e) and the lowest SWE ($-$0.23 m w.e.) values. Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating from the regression, which largely depends on elevation. The southwest region of the accumulation area that has the area of high accumulation is a result of the high elevation and $Sx$ values. The negative values of SWE at the terminus are a result of the low elevation, as the $Sx$ values are close to zero there. 
 
 For Glacier 13, the largest coefficient is elevation with distance from centreline and $Sx$ also of the same order of magnitude. All three coefficients are positive, which means that cells at higher elevation, closer to the margins, and more sheltered had higher amounts of SWE. Elevation explains the majority of the variance (24\%), while distance from centreline and $Sx$ explain far less ($\sim$1\% each).  Overall, the MLR modelled winter balance is poorly related to observed SWE (R$^2_{avg}=0.35$) and tends to underestimate the amount of accumulation. The map of modelled SWE displays an increase with elevation, although it is not strong considering the large range of elevation on this glacier.
 
@@ -597,24 +653,34 @@ Qualitatively, there is little variation in the fit between modelled and observe
 
 The effect of density values on the percent variance explained by each topographic parameters in the MLR is shown in Figure \ref{fig:MLRPercentVar_densityOptions}. The range of percent variance explained by elevation is large for both Glacier 2 and 13 but it does not affect the importance of elevation relative to the other parameters. For these two MLR coefficients, the choice of density interpolation has a large effect on the ability of the model to explain variance in SWE. Using inverse distance weighted, Federal Sampler derived density resulted in the highest percent variance explained (54\%). Since the Federal Sampler derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. The range of percent variance explained for all other parameters is small so the MLR coefficients for these parameters are insensitive to the choice of density interpolation. The values for aspect, ``northness'', and both curvatures are essentially zero. 
 
+
 \begin{figure}[H]
-	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_opt8.png}}%
-	\caption{Comparison of predicted (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 7).}
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_opt8.png}}
 	\label{fig:MLRfit_opt8}
-\end{figure}
-
-
-\begin{figure}[H]
-	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_allLines.png}}%
-	\caption{Plot of all linear fits between modelled and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref{fig:MLRfit_opt8} for a plot of the data. }
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{\textwidth}
+       \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_allLines.png}}
 	\label{fig:MLRfit_allLines}
+    \end{subfigure}
+
+    \caption{Top panel shows comparison of estimated (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snowpit densities (S4). Bottom panel shows plots of all linear fits between estimated and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. Black line highlights the S4 option from the top panel. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated SWE values.}
 \end{figure}
+
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRresiduals_all.png}}%
 	\caption{Residuals of SWE predicted using MLR for all options of estimating density.}
 	\label{fig:MLRresiduals_all}
 \end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =1.1 \textwidth]{Coeffs_DensityOpts.png}\\
+	\caption{Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$). Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points.}
+	\label{fig:MLRPercentVar_densityOptions}
+\end{figure} 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{MLRmap_Modelled_Observed8.png}}%
@@ -636,12 +702,7 @@ The effect of density values on the percent variance explained by each topograph
 	\label{fig:MLR_SWEdiffMapPercent}
 \end{figure}
  
-\begin{figure}[H]
-	\centering
-	\includegraphics[width =1.1 \textwidth]{Coeffs_DensityOpts.png}\\
-	\caption{Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution ($Sx$) and distance from centreline ($d_C$). Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points.}
-	\label{fig:MLRPercentVar_densityOptions}
-\end{figure} 
+
 
 \begin{figure}
         \centering
@@ -706,66 +767,7 @@ The effect of density values on the percent variance explained by each topograph
         \label{fig:allMLRmodelled}
     \end{figure}
     
-\begin{landscape}	
-\begin{table}
-\centering
-\caption{Topographic regression coefficients determined using MLR. See Table \ref{tab:densityOptions} for description of density options.}
-\label{tab:MLRcoeffFull}
-\begin{tabular}{cccccccccc}
- & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic\\ Parameter\end{tabular}} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} & \textbf{Option 4} & \textbf{Option 5} & \textbf{Option 6} & \textbf{Option 7} & \textbf{Option 8} \\ \hline
- 
- & $d_C$ & -0.003 & -0.001 & -0.001 & -0.001 & -0.002 & -0.002 & -0.001 & -0.005 \\
- 
- & $z$ & 0.008 & 0.014 & 0.004 & 0.022 & 0.028 & 0.000 & 0.009 & 0.002 \\
- 
- & $\alpha$ & 0.001 & 0.002 & 0.001 & 0.001 & 0.003 & 0.000 & 0.001 & 0.000 \\
- 
- & $m$ & -0.020 & -0.014 & -0.025 & -0.012 & -0.009 & -0.020 & -0.021 & -0.023 \\
- 
- & $N$ & -0.001 & -0.004 & 0.000 & -0.006 & -0.004 & -0.001 & 0.000 & 0.000 \\
- 
- & $\kappa_P$ & -0.001 & -0.003 & 0.000 & -0.004 & -0.004 & -0.001 & -0.002 & -0.001 \\
- 
- & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
- 
- & $Sx$ & -0.040 & -0.044 & -0.046 & -0.053 & -0.048 & -0.051 & -0.045 & -0.038 \\
- 
- & Intercept & 0.619 & 0.581 & 0.627 & 0.646 & 0.630 & 0.648 & 0.625 & 0.639 \\
- 
-\multirow{-10}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & RMSE & 0.146 & 0.135 & 0.149 & 0.151 & 0.148 & 0.152 & 0.147 & 0.150 \\
- & $d_C$ & 0.020 & 0.020 & 0.020 & 0.018 & 0.020 & 0.017 & 0.019 & 0.012 \\
- & $z$ & 0.113 & 0.100 & 0.109 & 0.089 & 0.090 & 0.107 & 0.098 & 0.110 \\
- & $\alpha$ & -0.004 & -0.001 & -0.007 & -0.001 & -0.001 & -0.001 & -0.001 & -0.010 \\
- & $m$ & 0.019 & 0.018 & 0.016 & 0.011 & 0.007 & 0.012 & 0.013 & 0.011 \\
- & $N$ & 0.002 & 0.000 & 0.004 & 0.001 & 0.000 & 0.001 & 0.001 & 0.005 \\
- & $\kappa_P$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 \\
- & $\kappa_T$ & 0.001 & 0.002 & 0.004 & 0.000 & 0.004 & 0.002 & 0.005 & 0.002 \\
- & $Sx$ & 0.041 & 0.039 & 0.040 & 0.032 & 0.040 & 0.033 & 0.041 & 0.035 \\
- & Intercept & 0.268 & 0.250 & 0.263 & 0.225 & 0.256 & 0.225 & 0.267 & 0.229 \\
-\multirow{-10}{*}{Glacier 2} & RMSE & 0.104 & 0.097 & 0.101 & 0.087 & 0.102 & 0.087 & 0.104 & 0.088 \\
- 
- & $d_C$ & 0.013 & 0.009 & 0.009 & 0.009 & 0.013 & 0.010 & 0.013 & 0.009 \\
- 
- & $z$ & 0.049 & 0.047 & 0.054 & 0.047 & 0.044 & 0.050 & 0.047 & 0.047 \\
- 
- & $\alpha$ & -0.002 & -0.002 & -0.003 & -0.003 & -0.005 & -0.001 & -0.004 & -0.002 \\
- 
- & $m$ & -0.002 & -0.001 & -0.001 & 0.000 & -0.001 & -0.001 & 0.000 & 0.000 \\
- 
- & $N$ & 0.003 & 0.002 & 0.001 & 0.006 & 0.002 & 0.001 & 0.002 & 0.001 \\
- 
- & $\kappa_P$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 \\
- 
- & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & -0.001 & 0.000 & -0.001 & -0.001 \\
- 
- & $Sx$ & 0.011 & 0.011 & 0.011 & 0.006 & 0.009 & 0.012 & 0.012 & 0.010 \\
- 
- & Intercept & 0.231 & 0.213 & 0.235 & 0.214 & 0.246 & 0.202 & 0.241 & 0.207 \\
- 
-\multirow{-10}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & RMSE & 0.085 & 0.080 & 0.087 & 0.079 & 0.092 & 0.074 & 0.089 & 0.077
-\end{tabular}
-\end{table}	
-\end{landscape}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
