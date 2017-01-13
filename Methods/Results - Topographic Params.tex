@@ -783,48 +783,47 @@ The effect of density values on the percent variance explained by each topograph
 	\label{fig:uni_model_prior}
 \end{wrapfigure}
 
-Bayesian model averaging (BMA) is a method of estimating all possible linear combinations of predictor variables and then averaging over all models \citep{Raftery1997, Wasserman2000, Raftery2005}.  This method is based on Bayesian principals where we wish to determine the probability of an outcome based on an initial ``guess'' as well as the data provided. Given that the predictive outcome has a probability distribution of $x$ given $y$, written as $P(x|y)$, we use Bayes' rule to to write this as
+Bayesian model averaging (BMA) is a method of estimating all possible linear combinations of predictor variables, in this case topographic parameters, and then averaging over all models \citep{Raftery1997, Wasserman2000, Raftery2005}.  This method is based on Bayesian principals in which the probability of an outcome is determined based on an initial probably distribution that is determined by the researcher, as well as the data provided. Given that the predictive outcome has a probability distribution of $x$ given $y$, written as $P(x|y)$, we use Bayes' theorem to to write this as
 \begin{equation}
 P(x|y) = \frac{P(y|x)P(x)}{P(y)}.
 \end{equation}•
 $P(x|y)$ is often called the posterior model probability (PMP). The quantity $P(y|x)$ is the likelihood function, which determines unknown parameters from a known outcome (i.e. observed data). The term $P(x)$ is an observer determined prior probability distribution (typically just called a \textit{prior}) and it reflects the prior knowledge of the system \citep{Raftery1997}. Choosing an appropriate prior is one of the most challenge components of Bayesian probability theory \citep{Wasserman2000}. The $P(y)$ term can be obtained by integrating $P(y|x)P(x)$ over all $x$ and is thus a constant for all models that is typically discarded \citep{Wasserman2000}. 
 
-Together then, the posterior model probability is a function of both the model prior, specified by the researcher, as well as the distribution of the observed data --- it is the transformation of the prior as a result of considering collected data \citep{Wasserman2000}. This can be loosely expressed as
+Together then, the posterior model probability is a function of both the model prior, specified by the researcher, as well as the distribution of the observed data --- the PMP is the transformation of the prior as a result of considering collected data \citep{Wasserman2000}. This can be loosely expressed as
 \begin{equation}
-\textrm{posterior} \propto \textrm{prior} \times \textrm{likelihood}
+\textrm{posterior} \propto \textrm{prior} \times \textrm{likelihood}.
 \end{equation}
-If the prior is uninformative then the posterior will be strongly influenced by the data \citep{Wasserman2000}. An informative prior will result in a posterior that is a mix of the prior and the data as as the prior becomes more informative, the amount of data needed to transform the distribution increases. If there is a large amount of data then the prior will have little effect on the posterior. The final value of the desired output is often reported as the posterior distribution mean or the value that maximizes the log-likelihood. 
+If the prior is uninformative then the posterior will be strongly influenced by the data \citep{Wasserman2000}. An informative prior will result in a posterior that is a mix of the prior and the data. As the prior becomes more informative, the amount of data needed to transform the distribution increases. If there is a large amount of data then the prior will have little effect on the posterior. The final coefficients for the linear combination of predictor variables is often reported as posterior distribution means or values that maximize the log-likelihood. 
 
-Within BMA, Bayes' theorem is used to find the posterior model probability and this is used as a weight when averaging over all models \citep{Wasserman2000}. The model weighted posterior distribution for the coefficients $\beta$ of $k$ number of models after renormalization is given by 
+Within BMA, Bayes' theorem is used to find the posterior model probability and the PMP is used as a weight when averaging over all models \citep{Wasserman2000}. The model weighted posterior distribution for the coefficients $\beta$ of $k$ models after normalization is given by 
 \begin{equation}
-P(\beta\ | y,X) = \sum\limits_{i=1}^{2^k} P(M_i | X,y)P(\beta | M_i , y, X),
+P(\beta| y,X) = \sum\limits_{i=1}^{2^k} P(M_i | X,y)P(\beta | M_i , y, X),
 \end{equation}
-where the responding variable is given by $y$ and the matrix of variables is given by $X$ \citep{Raftery1997}. Here, the model prior is $P(M_i | X,y)$ and the likelihood for the $\beta$ coefficient is $P(\beta | M_i , y, X)$.
+where the responding variable is given by $y$ and the matrix of variables is given by $X$ \citep{Raftery1997}. Here, the model prior is $P(M_i | X,y)$ and the likelihood of the $\beta$ coefficient is $P(\beta | M_i , y, X)$.
 
-There are a number of different priors to describe model size distribution that have been applied in BMA. A commonly used prior is the `uniform' prior, which assumes a normal model distribution with a total of $2^n$ models, where $n$ is the number of regressors \citep{Wasserman2000}.  This model prior states that the observer has no knowledge of the system and all models are equally likely. The uniform prior has a prior model probability of the form $P(M_i)=2^{-n}$, as shown in Figure \ref{fig:uni_model_prior}, which is symmetric about the mean $n/2$ \citep{Zeugner2015}. This prior inherently favours models of an intermediate size. 
+There are a number of different priors to describe model size distribution that have been applied in BMA. A commonly used prior is the `uniform' prior, which assumes a normal model distribution with a total of $2^n$ models, where $n$ is the number of regressors \citep{Wasserman2000}.  This model prior states that the observer has no knowledge of the system and all models are equally likely. The uniform prior has a prior model probability of the form $P(M_i)=2^{-n}$ (Figure \ref{fig:uni_model_prior}), which is symmetric about the mean $n/2$ \citep{Zeugner2015}. This prior inherently favours models of an intermediate size. 
 
-Other types of priors include those that are skewed to favour smaller models, ones with equal probability for all model sizes, and ones with varying probability for individual regressors. In this project, a uniform prior was chosen because there was no knowledge of what the model distribution would look like as well as wanting to match the distribution of models sizes in the MLR analysis. This is a common approach in BMA \citep{Wasserman2000}.
+Other types of priors include those that are skewed to favour smaller models, ones with equal probability for all model sizes, and ones with varying probability for individual regressors. In this project, a uniform prior was chosen for two reasons. First, there was no knowledge of the model distribution so we aim to minimize the observer influence on the final distribution. Second, the MLR estimation (Section \ref{sec:MLR}) assumes a uniform distribution so chosing a uniform distribution for BMA allows for consistency between methods. Using a uniform distribution is commonly done in BMA \citep{Wasserman2000}.
 
-With a small number of regressors, the posterior of all possible models can be determined. As the number of regressors increases, this computation becomes increasingly expensive since the total number of models is $2^n$. To overcome this, BMA can use Markov chain Monte Carlo (MCMC) model composition to directly approximate the posterior distribution \citep{Wasserman2000}. In our study, there are eight regressors so $2^8 = 256$ models. It is possible to visit all models and to obtain an exact solution so an MCMC model composition was not employed. 
+With a small number of regressors, the posterior of all possible models can be determined. However, with a large set of regressors, this computation becomes increasingly expensive. To reduce computation time for a large set of regressors, BMA can use Markov chain Monte Carlo (MCMC) model composition to directly approximate the posterior distribution \citep{Wasserman2000}. In our study, there are eight regressors so $2^8 = 256$ models. It is possible to visit all models and to obtain an exact solution so an MCMC model composition was not employed. 
 
-BMA allows for the calculation of a metric called the posterior inclusion probability (PIP), which is used to evaluate the importance of a regressor in explaining the observed data. PIP is the sum of all posterior model probabilities (PMP) where the variable was included in the mode \citep{Zeugner2015}l. A higher PIP indicates that the regressor is more important in the regression.  
+BMA allows for the calculation of a metric called the posterior inclusion probability (PIP), which is used to evaluate the importance of a regressor in explaining the observed data. PIP is the sum of all posterior model probabilities (PMP) where the variable was included in the model \citep{Zeugner2015}. A higher PIP indicates that the regressor is more important in the regression.  
 
 \subsubsection{Methods}
 
-The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The function \texttt{BMS\_R()} computes the mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter using the following steps:
+The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The function \texttt{BMS\_R()} computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter using the following steps:
 \begin{enumerate}
-\item The SWE observations and associated topographic parameters are called in the function.
 \item A portion of the data ($2/3$ as suggested by \cite{Kohavi1995}) is randomly chosen as the calibration set and saved as a .mat file. 
-\item The R script is called through the terminal
+\item The Bayesian model statistics (BMS) package developed by \cite{Zeugner2015} is run in R (called through an operating system command in Matlab)
 	\begin{enumerate}
 		\item The R script imports the .mat file with SWE and topographic parameter values. It then creates a data 				frame with the SWE values as the first column and the topographic parameters as the remaining 					columns. 
 		\item The BMS package is used to complete BMA for the imported values. A uniform model prior was chosen. 				The mean coefficient value, coefficient standard deviation, PIP, and the posterior probability of a positive 			coefficient (how probable it is for the sign of the coefficient to be positive) were computed.
 		\item The coefficients are saved as a .mat file.
-	\end{enumerate}•
-\item Values calculated in R are loaded into Matlab and a data table is created with the coefficients.
-\item The remaining portion of the topographic parameter values ($1/4$) are then used to calculate a modelled value of 		SWE at those locations. These are compared to the observed SWE values and a RMSE value is determined.
-\item The above step are completed 1000 times and the coefficients associated with the lowest RMSE are chosen.
-\item Percent variance explained by each parameter is the calculated in the same way as for the MLR (see Section 			\ref{sec:MLRMethods}). 
+	\end{enumerate}
+\item Regressor coefficient values calculated in R are loaded into Matlab and a data table is created with the coefficients.
+\item The remaining portion of the data ($1/3$) are then used to calculate a modelled value of SWE at those locations. These are compared to the observed SWE values and a RMSE value is determined.
+\item The above steps are completed 1000 times and the coefficients associated with the lowest RMSE are chosen.
+\item Percent variance explained by each parameter is then calculated in the same way as for the MLR (see Section 			\ref{sec:MLRMethods}). 
 \item The final table of values includes the coefficients and percent variance explained for all topographic parameters associated with the lowest RMSE. It also includes the intercept and the actual RMSE value. This table is returned from the function.
 \item The residuals of the best BMA fit are also calculated and can be return from the function.  
 \end{enumerate}
