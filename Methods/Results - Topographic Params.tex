@@ -667,6 +667,7 @@ The effect of density values on the percent variance explained by each topograph
     \end{subfigure}
 
     \caption{Top panel shows comparison of estimated (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snowpit densities (S4). Bottom panel shows plots of all linear fits between estimated and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. Black line highlights the S4 option from the top panel. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated SWE values.}
+    \label{fig:MLRfit}
 \end{figure}
 
 
@@ -823,7 +824,7 @@ The BMA process was implemented in R, using the Bayesian model statistics (BMS) 
 \item Regressor coefficient values calculated in R are loaded into Matlab and a data table is created with the coefficients.
 \item The remaining portion of the data ($1/3$) are then used to calculate a modelled value of SWE at those locations. These are compared to the observed SWE values and a RMSE value is determined.
 \item The above steps are completed 1000 times and the coefficients associated with the lowest RMSE are chosen.
-\item Percent variance explained by each parameter is then calculated in the same way as for the MLR (see Section 			\ref{sec:MLRMethods}). 
+\item Percent variance explained by each parameter is then calculated in the same way as for the MLR (see Section \ref{sec:MLRMethods}). 
 \item The final table of values includes the coefficients and percent variance explained for all topographic parameters associated with the lowest RMSE. It also includes the intercept and the actual RMSE value. This table is returned from the function.
 \item The residuals of the best BMA fit are also calculated and can be return from the function.  
 \end{enumerate}
@@ -834,9 +835,9 @@ The coefficients determined using BMA for density Option 7 can be seen in Table 
 
 \begin{wraptable}{R}{10cm}
 \centering
-\caption{BMS coefficients for topographic regression between measured SWE and standardized topographic parameters that include distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$),slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and wind redistribution ($Sx$). SInce parameters are standardizes, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.}
+\caption{BMS coefficients for topographic regression between measured SWE and standardized topographic parameters that include distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$),slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and wind redistribution ($Sx$). Since parameters are standardizes, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.}
 \label{tab:BMScoeff}
-\begin{tabular}{cccc}
+\begin{tabular}{crrr}
  & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
 d$_C$ 			& -0.004 					& 0.020 	& 0.007 \\
 $z$ 				&  0.013 					& 0.107 	& 0.047 \\
@@ -982,11 +983,12 @@ The effect of density values on the percent variance explained by each topograph
   
 \begin{landscape}
 \begin{table}
+\footnotesize
 \centering
-\caption{Topographic regression coefficients determined using BMA. See Table \ref{tab:densityOptions} for description of density options.}
+\caption{Topographic regression coefficients for standardized parameters determined using BMA. See Table \ref{tab:densityOptions} for description of density options.}
 \label{tab:BMScoeffFull}
 \begin{tabular}{cccccccccc}
- & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic \\ Parameter\end{tabular}} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} & \textbf{Option 4} & \textbf{Option 5} & \textbf{Option 6} & \textbf{Option 7} & \textbf{Option 8} \\ \hline
+ & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic \\ Parameter\end{tabular}} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} & \textbf{Option 4} & \textbf{Option 5} & \textbf{Option 6} & \textbf{Option 7} & \textbf{Option 8} \\ \hline \hline
  
  & $d_C$ & -0.004 & -0.002 & -0.002 & 0.000 & -0.007 & -0.004 & -0.004 & 0.000 \\
  
@@ -1006,7 +1008,7 @@ The effect of density values on the percent variance explained by each topograph
  
  & Intercept & 0.622 & 0.575 & 0.635 & 0.650 & 0.628 & 0.650 & 0.619 & 0.638 \\
  
-\multirow{-10}{*}{\cellcolor[HTML]{EFEFEF}Glacier 4} & RMSE & 0.140 & 0.132 & 0.139 & 0.133 & 0.140 & 0.140 & 0.136 & 0.146 \\
+\multirow{-10}{*}{Glacier 4} & RMSE & 0.140 & 0.132 & 0.139 & 0.133 & 0.140 & 0.140 & 0.136 & 0.146 \\ \hline
  & $d_C$ & 0.020 & 0.020 & 0.016 & 0.016 & 0.017 & 0.008 & 0.020 & 0.015 \\
  & $z$ & 0.108 & 0.101 & 0.106 & 0.091 & 0.100 & 0.117 & 0.107 & 0.107 \\
  & $\alpha$ & -0.009 & -0.002 & -0.004 & -0.001 & -0.001 & -0.013 & -0.008 & -0.001 \\
@@ -1016,7 +1018,7 @@ The effect of density values on the percent variance explained by each topograph
  & $\kappa_T$ & 0.005 & 0.001 & 0.008 & 0.000 & 0.000 & 0.001 & 0.002 & 0.001 \\
  & $Sx$ & 0.044 & 0.037 & 0.040 & 0.037 & 0.041 & 0.036 & 0.040 & 0.028 \\
  & Intercept & 0.267 & 0.251 & 0.260 & 0.225 & 0.260 & 0.227 & 0.268 & 0.232 \\
-\multirow{-10}{*}{Glacier 2} & RMSE & 0.097 & 0.088 & 0.094 & 0.083 & 0.097 & 0.084 & 0.098 & 0.086 \\
+\multirow{-10}{*}{Glacier 2} & RMSE & 0.097 & 0.088 & 0.094 & 0.083 & 0.097 & 0.084 & 0.098 & 0.086 \\ \hline
  
  & $d_C$ & 0.011 & 0.010 & 0.009 & 0.005 & 0.014 & 0.007 & 0.007 & 0.008 \\
  
@@ -1036,7 +1038,7 @@ The effect of density values on the percent variance explained by each topograph
  
  & Intercept & 0.232 & 0.216 & 0.240 & 0.213 & 0.242 & 0.201 & 0.238 & 0.206 \\
  
-\multirow{-10}{*}{\cellcolor[HTML]{EFEFEF}Glacier 13} & RMSE & 0.072 & 0.077 & 0.080 & 0.072 & 0.083 & 0.071 & 0.086 & 0.070
+\multirow{-10}{*}{Glacier 13} & RMSE & 0.072 & 0.077 & 0.080 & 0.072 & 0.083 & 0.071 & 0.086 & 0.070
 \end{tabular}
 \end{table}
 \end{landscape}
@@ -1046,7 +1048,7 @@ The effect of density values on the percent variance explained by each topograph
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{MLR and BMA comparison}
 
-A plot of the ranges of coefficient values resulting from different choices in density interpolation is shown in Figure \ref{fig:allCeoffs_boxplot}. In general, the range of coefficient values for all glacier is similar between MLR and BMS and the ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density options these coefficients are small. 
+The range of coefficient values resulting from different choices in density interpolation found using MLR and BMA is similar for all glaciers (Figure \ref{fig:allCeoffs_boxplot}). Coefficient value ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density options these coefficients are small. 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width =1.2 \textwidth]{CoeffBoxplot_BMSMLRcompare.png}}%
@@ -1054,13 +1056,13 @@ A plot of the ranges of coefficient values resulting from different choices in d
 	\label{fig:allCeoffs_boxplot}
 \end{figure}
 
-The elevation, slope, and $Sx$ coefficients for Glacier 4 are both the most significant and have the largest range for this glacier. Despite this, the choice of density option would not affect the relative important of these coefficients (i.e. $Sx$ will always be the most important). For Glacier 4, the choice of density option has a non-negligible impact on modelled SWE values. However, the regression fit is so poor that the fit does not improve regardless of the choice of density option (Figure \ref{fig:MLRfit_allLines} and \ref{fig:BMSfit_allLines}). The type of regression model used does not appear to have a large impact on the coefficient values. The range is similar between methods, although the mean and median within each method differ for $Sx$ and slope with MLR producing larger coefficients.
+The elevation, slope, and $Sx$ coefficients for Glacier 4 are both the most significant and have the largest range for this glacier. Regardless of the choice of density option, the relative importance of these coefficients is the same (i.e. $Sx$ will always be the most important). For Glacier 4, the choice of density option has a non-negligible impact on modelled SWE values. However, the regression fit is so poor that the fit does not change with the choice of density interpolation method (Figure \ref{fig:MLRfit} and \ref{fig:BMSfit_allLines}). MLR and BMA appear to have similar ranges of coefficient values, although the mean and median within each regressoin method differ for $Sx$ and slope, with MLR producing larger coefficients.
 
 The range of coefficient values for Glacier 2 and 13 is generally small for all parameters indicating that the choice of density option does not have a large impact on modelled SWE. Further, the relative importance of the coefficients does not change with choice of density option. The greatest range of coefficient values is for elevation, which is also the most significant coefficient. The type of regression model used does not appear to have a large impact on the coefficient values.
 
-\begin{wraptable}{r}{10cm}
+\begin{wraptable}[33]{r}{10cm}
 \centering
-\caption{Final regression coefficients. Values are calculated from all coefficients found using MLR and BMA and using all density options.}
+\caption{Final regression coefficients. Values are calculated from all coefficients found using MLR and BMA and using all density options.\params}
 \label{tab:finalCoeff}
 \begin{tabular}{ccccc}
  & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic \\ Parameter\end{tabular}} & \textbf{Mean} & \textbf{Min} & \textbf{Max} \\ \hline \hline
@@ -1111,9 +1113,10 @@ The range of coefficient values for Glacier 2 and 13 is generally small for all 
 \multirow{-9}{*}{Glacier 13} & Intercept & 0.4251 & 0.2014 & 0.6483
 \end{tabular}
 \end{wraptable}	
-Since the range of coefficient values is so similar between MLR and BMA regression methods, it was decided to calculate a single set of regression coefficients that encompassed both methods. Further, it appears that the choice of density interpolation methods does not alter the relative importance of the coefficients. Therefore, we can generate a set of coefficients and their range of values that is gathers information from both the regression method and density interpolation choice. To do this, the the mean, minimum, and maximum values of each regression coefficient was calculated. These values are shown in Table \ref{tab:finalCoeff}. 
 
-A map of SWE calculated using the mean (Figure \ref{fig:SWEmeanModelled}), minimum (Figure \ref{fig:SWEminModelled}), and maximum (Figure \ref{fig:SWEmaxModelled} coefficient values are shown below. The modelled SWE found using the mean coefficients shows a relatively uniform SWE distribution on Glacier 4 and a strong elevation dependence on Glacier 2 and 13. This is also seen when using the minimum and maximum coefficient values. It is interesting to note that when using the minimum coefficients, there is almost no snow along the edge of the accumulation area on Glacier 4. The difference in SWE using the minimum and maximum coefficients shows that or all three glaciers, the accumulation area is most sensitive to choice of coefficient values. This is likely due to the fact that the most significant coefficients also showed the largest range in values when using different density options. 	
+The range of coefficient values found using the eight density options is similar between MLR and BMA regression methods. Therefore, a single set of minimum and maximum (signed), and mean values for each regression coefficients are used to estimate SWE. These coefficient values are shown in Table \ref{tab:finalCoeff}. 
+
+The modelled SWE found using the mean coefficients (Figure \ref{fig:SWEmeanModelled}) shows a relatively uniform SWE distribution on Glacier 4 and a strong elevation dependence on Glacier 2 and 13. This is also seen when using the minimum (Figure \ref{fig:SWEminModelled}) and maximum (Figure \ref{fig:SWEmaxModelled}) coefficient values. It is interesting to note that when using the minimum coefficients, there is almost no snow along the edge of the accumulation area on Glacier 4. The difference in SWE using the minimum and maximum coefficients shows that for all three glaciers, the accumulation area is most sensitive to choice of coefficient values. 
 
 \begin{figure}[H]
 	\centering
@@ -1147,11 +1150,11 @@ A map of SWE calculated using the mean (Figure \ref{fig:SWEmeanModelled}), minim
 
 \section{Summary}
 
-In this portion of the project, the relation between topographic parameters and SWE at the basin scale was examined. First, a suitable DEM was produced by correcting and merging two SPOT-5 DEMs. Then, a series of topographic parameters was calculated for the study glaciers. The sampled portion of the topographic parameters generally was not a good representation of the full range of parameters on the study glaciers. The sampling was minimal in the accumulation area and did not sample locations with extreme values of topographic parameters (e.g. high elevation, steep slopes in the accumulation area). This is a major limitation of this study and there is likely a large error induced when extrapolating from relationships between SWE and topographic parameters. 
+In this portion of the project, the relation between topographic parameters and SWE at the basin scale was examined. First, a suitable DEM is produced by correcting and merging two SPOT-5 DEMs. Then, a series of topographic parameters are calculated for the study glaciers. The sampled topographic parameters are a poor representation of the full range of parameters on the study glaciers. Major limitations include minimal sampling in the accumulation areas and a lack of sample locations with extreme values of topographic parameters (e.g. high elevation, steep slopes in the accumulation area). This is a major limitation of this study and there is likely a large error induced when extrapolating from relationships between SWE and topographic parameters. 
 
-A linear regression between observed SWE (using various density interpolation options) and topographic parameters was then completed. This was done using MLR and BMA. It was found that the choice of density interpolation and the regression method did not have a major impact on the values of  topographic coefficients. As a result, a set of mean, minimum, and maximum coefficient values was calculated from all of the ways of completing the regression. 
+A linear regression between observed SWE (using various density interpolation options) and topographic parameters is done using MLR and BMA. It is found that the choice of density interpolation and the regression method do not have a major impact on the values of topographic regressor coefficients. As a result, a set of mean, minimum, and maximum coefficient values is calculated. 
 
-The study glaciers showed varied relationships between SWE and topographic parameters. Glacier 4 had low coefficient values and the modelled SWE was a poor representation of observed SWE. The most significant parameter on Glacier 4 was $Sx$, which was negatively correlated with SWE. Glacier 2 regression showed that elevation was the strongest predictor of SWE and that the regression was able to explain a large portion of the observed variability. Glacier 13 regression also showed a strong dependence on elevation although less of the observed variable could be explained by this parameter. 
+The study glaciers showed varied relationships between SWE and topographic parameters. Glacier 4 has low coefficient values and the modelled SWE is a poor representation of observed SWE. The most significant parameter on Glacier 4 is $Sx$, which is negatively correlated with SWE. The regression for Glacier 2 indicates that elevation is the strongest predictor of SWE and is able to explain approximately 45\% of the observed variability.  A strong dependence on elevation is seen on Glacier 13 as well, although less ($\sim25\%$) of the observed variable could be explained by this parameter. 
 
  
 

@@ -7,37 +7,37 @@ Warning--can't use both volume and number fields in Kohavi1995
 Warning--empty journal in Revuelto2014
 You've used 22 entries,
             2869 wiz_defined-function locations,
-            776 strings with 9333 characters,
-and the built_in function-call counts, 24022 in all, are:
-= -- 2583
+            777 strings with 9483 characters,
+and the built_in function-call counts, 24039 in all, are:
+= -- 2585
 > -- 458
 < -- 23
 + -- 160
 - -- 139
-* -- 1849
-:= -- 2665
+* -- 1852
+:= -- 2666
 add.period$ -- 21
 call.type$ -- 22
-change.case$ -- 178
+change.case$ -- 179
 chr.to.int$ -- 23
 cite$ -- 24
-duplicate$ -- 2471
-empty$ -- 1892
+duplicate$ -- 2473
+empty$ -- 1893
 format.name$ -- 227
-if$ -- 4994
+if$ -- 4998
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 243
+missing$ -- 244
 newline$ -- 73
 num.names$ -- 88
 pop$ -- 1153
 preamble$ -- 1
 purify$ -- 157
 quote$ -- 0
-skip$ -- 514
+skip$ -- 513
 stack$ -- 0
 substring$ -- 2777
-swap$ -- 591
+swap$ -- 593
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
@@ -45,5 +45,5 @@ type$ -- 258
 warning$ -- 2
 while$ -- 150
 width$ -- 0
-write$ -- 281
+write$ -- 282
 (There were 2 warnings)
