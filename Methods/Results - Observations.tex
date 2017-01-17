@@ -29,7 +29,7 @@
 
 \section*{Overview}
 
-This document shows an overview of the data that is available for the project. It provides a first look at the processed data and provides figures that visualize the data. Section 1 examines the density data and uncertainty and potential systematic errors associated with measurements made in the snowpits and using a Federal Sampler. Section 2 briefly looks at the snow depths measured at the study glaciers. Section 3 visualizes the collected zigzag data. Section 4 examines the various ways to estimate snow water equivalent (SWE) at each measurement location. It focuses on options for how to interpolate density measurements and then visualizes estimated SWE at the measurement locations. 
+This document shows an overview of the data that are available for the project. It provides a first look at the processed data and provides figures that visualize the data. Section 1 examines the density data and uncertainty and potential systematic errors associated with measurements made in the snowpits and using a Federal Sampler. Section 2 briefly looks at the snow depths measured at the study glaciers. Section 3 visualizes the collected zigzag data. Section 4 examines the various ways to estimate snow water equivalent (SWE) at each measurement location. It focuses on options for how to interpolate density measurements and then visualizes estimated SWE at the measurement locations. 
 
 
 \tableofcontents
@@ -43,11 +43,11 @@ This document shows an overview of the data that is available for the project. I
 
 \subsection{Basic statistics}
 
-A summary of density data collected in snowpits and when using a Federal Sampler can be seen in Table \ref{tab:density_stats}. The standard deviation of each type of density measurement is less than 10\% of the mean density. For snowpit derived densities, the mean density is indistinguishable between glaciers within one standard deviation. The densities estimated using the Federal Sampler differed with one standard deviation. Glacier 2 had a lower density than Glacier 4, while Glacier 13 had the same density as both. The mean of all Federal Sampler density values was likely skewed by the proportionally large number of measurements obtained on Glacier 13.
+The standard deviation of each type of density measurement is less than 10\% of the mean density (Table \ref{tab:density_stats}). For snowpit derived densities, the mean density is within one standard deviation between glaciers . The densities estimated using the Federal Sampler differed between glacier within one standard deviation. Our density measurements on Glacier 2 were lower than those on Glacier 4, while density measurements taken on Glacier 13 were the same as Both Glaciers 2 and 4. The mean of all Federal Sampler derived density values was skewed by the proportionally large number of measurements obtained on Glacier 13.
 
 \begin{table}[h!]
 \centering
-\caption{ Mean and standard deviation (std) of snow density (kg m$^{-3}$) measured on study glaciers in snowpits and using a Federal Sampler. The number of sampling locations ($n$) is also given.}
+\caption{Statistics of integrated densities measured using Federal Sampler or vertical density profiles (of snow wedge measurmenets) in snow pits. Mean, standard deviation (std), and number ($n$) of snow density (kg m$^{-3}$) measurements on study glaciers is shown.}
 \label{tab:density_stats}
 \begin{tabular}{c|ccc|ccc}
  & \multicolumn{3}{c}{\textbf{Snowpits}} & \multicolumn{3}{|c}{\textbf{Federal Sampler}} \\
@@ -61,48 +61,29 @@ A summary of density data collected in snowpits and when using a Federal Sampler
 
 \subsection{Federal Sampler measurements and snow depth}
 
-\begin{wrapfigure}[18]{l}{0.6\textwidth} 
-	\centering
-	\includegraphics[width =0.6\textwidth]{DepthDensity_SWEtube.png}\\
-	\caption{Linear regression of measured snow density and depth for all Federal Sampler measurements.}
-	\label{fig:tube_depth}
-\end{wrapfigure}
+There is a positive linear relation (R$^2$ = 0.59, p$<$0.01) between measured snow density and depth for all Federal Sampler measurements (Figure \ref{fig:all_depth}). This positive relationship could be a result of physical processes, such as compaction, and/or artefacts during data collection; however, it seems more likely that this trend is a result of measurement artefacts for a number of reasons. First, the range of densities measured by the Federal sampler is large (225--410 kg m$^{-3}$) and the extreme values seem unlikely to exist at these study glaciers, which experience a continental snowpack with minimal mid-winter melt events. Previous unpublished density measurements taken on Glacier 2 range between 264 and 396 kg m$^{-3}$ for five study years with a maximum density difference of 110 kg m$^{-3}$ in any one year (Flowers, 2016, personal communication). Second, compaction effects would likely be small at these study glaciers because of the relatively shallow snowpack (deepest measurement was 340 cm). Third, no linear relationship exists between depth and snowpit-derived density (R$^2$ = 0.05) as can be seen in a plot of the depth-density relationship in snowpits in Figure \ref{fig:all_depth}. Together, these reasons lead us to conclude that the Federal Sampler measurements are biased. Linear detrending can correct the density data but it was decided to use uncorrected data for future analysis.
 
-A plot of measured SWE and snow depth can be seen in Figure \ref{fig:tube_depth}. A positive linear relation exists (R$^2$ = 0.59, p$<$0.01). This positive relationship could be a result of physical processes, such as compaction, and/or artefacts during data collection however, it seems more likely that this trend is a result measurement artefacts for a number of reasons. First, the range of densities measured by the Federal sampler is large (225--410 kg m$^{-3}$) and the extreme values seem unlikely to exist at these study glaciers, which experience a continental snowpack with minimal mid-winter melt events. Second, compaction effects would likely be small at these study glaciers because of the relatively shallow snowpack (deepest measurement was 340 cm). Third, no linear relationship exists between depth and snowpit-derived density (R$^2$ = 0.05) as can be seen in a plot of the depth-density relationship in snowpits in Figure \ref{fig:pit_depth}. A plot of both Federal Sampler measurements and snowpit measurements can be seen in \ref{fig:all_depth}. Together, these reasons lead to the likely conclusion that the Federal Sampler measurements are biased. 
- 
- \begin{wrapfigure}[17]{t}{0.55\textwidth} 
-	\includegraphics[width =0.55\textwidth]{DepthDensity_SP.png}\\
-	\caption{Relationship between measured density and snow depth for all snowpit locations.}
-	\label{fig:pit_depth}
-\end{wrapfigure}
 
-To account for this likely artefact, the simplest form of linear detrending can be applied. The linear fit was subtracted from each data point and the original data mean was added to each point. A plot of the detrended density data can be seen in Figure \ref{fig:tube_depthDETREND}. This detrended data will not be used for subsequent analysis but can be accessed by changing \texttt{options.TubeDensity} accordingly.
 
 \begin{figure}[p]
 	\centering
-	\includegraphics[width =0.7\textwidth]{DepthDensity_SWEonly.png}\\
+	\includegraphics[width =0.85\textwidth]{DepthDensity_SWEonly.png}\\
 	\caption{Relationship between measured density and snow depth for all Federal Sampler and snowpit locations.}
 	\label{fig:all_depth}
-
-	\centering
-	\includegraphics[width =0.7\textwidth]{DepthDensity_tubeDETREND.png}\\
-	\caption{Plot of depth-detrended density and snow depth for all Federal Sampler measurements.}
-	\label{fig:tube_depthDETREND}
 \end{figure}
-
 
 
 \subsection{Density uncertainties}
 
-\subsubsection{Snowpit density}
+\subsubsection{Snowpit densities}
 
-Uncertainty in estimating density from snowpits is likely dominated by measurement errors and incorrect assumptions of density of layers that could not be sampled (i.e. ice lenses and `hard' layers). To determine a possible range of density values from snowpit measurements, the original data was used and three parameters were varied. Ice layer density was varied between 700 and 900 kg m$^{-3}$, ice layer thickness was varied by $\pm$1 cm, and the density of layers identified as being too hard to sample (but not ice) was varied between 600 and 700 kg m$^{-3}$. 
+Uncertainty in estimating density from snowpits stems from measurement errors and incorrect assignment of density to layers that could not be sampled (i.e. ice lenses and `hard' layers). To determine a possible range of snowpit derived integrated snow density values, the original data were used and three quantities were varied. Ice layer density was varied between 700 and 900 kg m$^{-3}$, ice layer thickness was varied by $\pm$1 cm of the observed thickness, and the density of layers identified as being too hard to sample (but not ice) was varied between 600 and 700 kg m$^{-3}$. 
 
-The resulting minimum and maximum possible densities for each snowpit can be seen in Table \ref{tab:density}. The range of density values is always less than 15\% of the reference density, with the largest ranges present on Glacier 2. Density values for shallow pits that contained ice lenses were particularly sensitive to changes in density and ice lens thickness. 
+The range of integrated density values is always less than 15\% of the reference density, with the largest ranges present on Glacier 2 (Table \ref{tab:density}). Density values for shallow pits that contained ice lenses were particularly sensitive to changes in density and ice lens thickness. 
 
 \begin{table}[]
 \centering
-\caption{Summary of assumed and range of integrated snow density calculated in snowpits. The assumed density values arose from taking a density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice thickness, and the `hard' layer density was varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm, and 500 and 600 kg m$^{-3}$, respectively.}
+\caption{Summary of reference and range of integrated snow density calculated in snowpits . The assumed density values arose from taking a density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice thickness, and the `hard' layer density was varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm, and 500 and 600 kg m$^{-3}$, respectively.}
 \label{tab:density}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lcccccc}
@@ -124,7 +105,7 @@ G13\_ASP & 145 & 307.8 & 306.4 & 308.2 & 1.8 & 0.6
 
 \subsubsection{Federal Sampler densities}
 
-Density values estimated from Federal Sampler measurements are shown in Table \ref{tab:density_TubeRange}. Mean density has a larger spread of values over the study glaciers when compared to snowpit densities. The \% range is also larger than snowpit densities for many of the measurement locations. 
+Mean Federal Sampler derived density has a larger range of values over the study glaciers when compared to snowpit densities (Table \ref{tab:density_TubeRange}). The percent range is also larger than snowpit densities for many of the measurement locations. 
 
 \begin{table}[]
 \centering
@@ -227,7 +208,7 @@ All & -0.12$z+$618 & 0.50 & -0.14$z+$659 & 0.75
 \pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Snow depth}
+\section{Linear and curvilinear transect snow depth data}
 
 \begin{figure}[H]
     \centering
@@ -251,7 +232,7 @@ A summary of the measured snow depth on all study glaciers is shown in Figure \r
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zigzag data}
+\section{Zigzag snow depth data}
 
 A comparison of measured snow depth for each zigzag is shown in Figure \ref{fig:ZZ_boxplot}. The zigzags on Glacier 4 show minimal variability with a small range of values observed and few outliers. The mean depth is significantly larger at the upper most zigzag. Zigzags on Glacier 2 show more variability. The range on the mid zigzag is the largest of all the zigzags measured and the highest zigzag has many outliers. The zigzags on Glacier 13 do not vary considerably in range, although the lower zigzags show a large number of outliers which may be a results of these locations being close to a supraglacier meltwater channel. 
 

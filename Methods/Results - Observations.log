@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  6 JAN 2017 10:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  16 JAN 2017 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,208 +401,176 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <DepthDensity_SWEtube.png,
- id=69, 413.8662pt x 293.4162pt>
-File: DepthDensity_SWEtube.png Graphic file (type png)
-
-<use DepthDensity_SWEtube.png>
-Package pdftex.def Info: DepthDensity_SWEtube.png used on input line 66.
-(pdftex.def)             Requested size: 281.85587pt x 199.83377pt.
-
-Underfull \hbox (badness 1168) in paragraph at lines 71--72
-\OT1/cmr/m/n/12 ti-nen-tal snow-pack with min-i-mal
- []
-
-[2 <./DepthDensity_SWEtube.png (PNG copy)>]
-<DepthDensity_SP.png, id=82, 421.575pt x 316.0608pt>
-File: DepthDensity_SP.png Graphic file (type png)
- <use DepthDensity_SP.png>
-Package pdftex.def Info: DepthDensity_SP.png used on input line 74.
-(pdftex.def)             Requested size: 258.36668pt x 193.70348pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-<DepthDensity_SWEonly.png, id=84, 505.89pt x 469.755pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <DepthDensity_SWEonly.png,
+ id=71, 505.89pt x 469.755pt>
 File: DepthDensity_SWEonly.png Graphic file (type png)
 
 <use DepthDensity_SWEonly.png>
-Package pdftex.def Info: DepthDensity_SWEonly.png used on input line 83.
-(pdftex.def)             Requested size: 328.82707pt x 305.3443pt.
+Package pdftex.def Info: DepthDensity_SWEonly.png used on input line 68.
+(pdftex.def)             Requested size: 399.29463pt x 370.77983pt.
+ [2] [3 <./DepthDensity_SWEonly.png (PNG copy)>]
 
-<DepthDensity_tubeDETREND.png, id=85, 421.575pt x 316.18124pt>
-File: DepthDensity_tubeDETREND.png Graphic file (type png)
-
-<use DepthDensity_tubeDETREND.png>
-Package pdftex.def Info: DepthDensity_tubeDETREND.png used on input line 88.
-(pdftex.def)             Requested size: 328.82707pt x 246.6252pt.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 82.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 103.
+               Default added (so using `tbp') on input line 108.
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 129.
-
-[3 <./DepthDensity_SP.png (PNG copy)>] [4 <./DepthDensity_SWEonly.png (PNG copy
-)> <./DepthDensity_tubeDETREND.png (PNG copy)>]
-<SnowpitVsSWEtube_all.png, id=103, 429.2838pt x 338.7054pt>
+[4] [5] <SnowpitVsSWEtube_all.png, id=100, 429.2838pt x 338.7054pt>
 File: SnowpitVsSWEtube_all.png Graphic file (type png)
 
 <use SnowpitVsSWEtube_all.png>
-Package pdftex.def Info: SnowpitVsSWEtube_all.png used on input line 176.
+Package pdftex.def Info: SnowpitVsSWEtube_all.png used on input line 155.
 (pdftex.def)             Requested size: 446.26582pt x 352.1006pt.
- [5] [6]
+ [6 <./SnowpitVsSWEtube_all.png (PNG copy)>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 189.
+               Default added (so using `tbp') on input line 168.
 
-<DepthElevation.png, id=122, 939.51pt x 361.35pt>
+<DepthElevation.png, id=115, 939.51pt x 361.35pt>
 File: DepthElevation.png Graphic file (type png)
  <use DepthElevation.png>
-Package pdftex.def Info: DepthElevation.png used on input line 205.
+Package pdftex.def Info: DepthElevation.png used on input line 184.
 (pdftex.def)             Requested size: 563.70459pt x 216.80615pt.
 
-[7 <./SnowpitVsSWEtube_all.png (PNG copy)>]
-<ElevationVsSnowpit_all.png, id=132, 505.89pt x 361.35pt>
+<ElevationVsSnowpit_all.png, id=116, 505.89pt x 361.35pt>
 File: ElevationVsSnowpit_all.png Graphic file (type png)
 
 <use ElevationVsSnowpit_all.png>
-Package pdftex.def Info: ElevationVsSnowpit_all.png used on input line 213.
+Package pdftex.def Info: ElevationVsSnowpit_all.png used on input line 192.
 (pdftex.def)             Requested size: 328.82707pt x 234.88023pt.
- [8 <./DepthElevation.png (PNG copy)>]
-<ElevationVsSWEtube_all.png, id=137, 527.571pt x 505.89pt>
+ [7 <./DepthElevation.png (PNG copy)>]
+<ElevationVsSWEtube_all.png, id=125, 527.571pt x 505.89pt>
 File: ElevationVsSWEtube_all.png Graphic file (type png)
 
 <use ElevationVsSWEtube_all.png>
-Package pdftex.def Info: ElevationVsSWEtube_all.png used on input line 221.
+Package pdftex.def Info: ElevationVsSWEtube_all.png used on input line 200.
 (pdftex.def)             Requested size: 281.85587pt x 270.27408pt.
- [9 <./ElevationVsSnowpit_all.png (PNG copy)> <./ElevationVsSWEtube_all.png (PN
+ [8 <./ElevationVsSnowpit_all.png (PNG copy)> <./ElevationVsSWEtube_all.png (PN
 G copy)>]
-<box_depth_wZZ.png, id=142, 429.2838pt x 338.7054pt>
+<box_depth_wZZ.png, id=130, 429.2838pt x 338.7054pt>
 File: box_depth_wZZ.png Graphic file (type png)
  <use box_depth_wZZ.png>
-Package pdftex.def Info: box_depth_wZZ.png used on input line 235.
+Package pdftex.def Info: box_depth_wZZ.png used on input line 214.
 (pdftex.def)             Requested size: 225.4804pt x 177.90051pt.
 
-<box_depth_noZZ.png, id=143, 429.2838pt x 338.7054pt>
+<box_depth_noZZ.png, id=131, 429.2838pt x 338.7054pt>
 File: box_depth_noZZ.png Graphic file (type png)
  <use box_depth_noZZ.png>
-Package pdftex.def Info: box_depth_noZZ.png used on input line 241.
+Package pdftex.def Info: box_depth_noZZ.png used on input line 220.
 (pdftex.def)             Requested size: 225.4804pt x 177.90051pt.
 
-[10 <./box_depth_wZZ.png (PNG copy)> <./box_depth_noZZ.png (PNG copy)>]
-<Zigzag_Boxplot.png, id=159, 1084.05pt x 361.35pt>
+[9 <./box_depth_wZZ.png (PNG copy)> <./box_depth_noZZ.png (PNG copy)>]
+<Zigzag_Boxplot.png, id=146, 1084.05pt x 361.35pt>
 File: Zigzag_Boxplot.png Graphic file (type png)
  <use Zigzag_Boxplot.png>
-Package pdftex.def Info: Zigzag_Boxplot.png used on input line 262.
+Package pdftex.def Info: Zigzag_Boxplot.png used on input line 241.
 (pdftex.def)             Requested size: 516.73338pt x 172.24954pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--265
-\OT1/cmr/m/n/12 val-ues.
- []
-
-[11 <./Zigzag_Boxplot.png (PNG copy)>]
-<ZigzagDepth_G04.png, id=168, 1011.78pt x 289.08pt>
+[10 <./Zigzag_Boxplot.png (PNG copy)>]
+<ZigzagDepth_G04.png, id=156, 1011.78pt x 289.08pt>
 File: ZigzagDepth_G04.png Graphic file (type png)
  <use ZigzagDepth_G04.png>
-Package pdftex.def Info: ZigzagDepth_G04.png used on input line 271.
+Package pdftex.def Info: ZigzagDepth_G04.png used on input line 250.
 (pdftex.def)             Requested size: 654.41338pt x 186.97786pt.
 
-Overfull \hbox (3.98337pt too wide) in paragraph at lines 271--271
+Overfull \hbox (3.98337pt too wide) in paragraph at lines 250--250
  [][] 
  []
 
-<ZigzagDepth_G02.png, id=169, 1011.78pt x 289.08pt>
+<ZigzagDepth_G02.png, id=157, 1011.78pt x 289.08pt>
 File: ZigzagDepth_G02.png Graphic file (type png)
  <use ZigzagDepth_G02.png>
-Package pdftex.def Info: ZigzagDepth_G02.png used on input line 278.
+Package pdftex.def Info: ZigzagDepth_G02.png used on input line 257.
 (pdftex.def)             Requested size: 654.41338pt x 186.97786pt.
 
-Overfull \hbox (3.98337pt too wide) in paragraph at lines 278--278
+Overfull \hbox (3.98337pt too wide) in paragraph at lines 257--257
  [][] 
  []
 
-[12 <./ZigzagDepth_G04.png (PNG copy)> <./ZigzagDepth_G02.png (PNG copy)>]
-<ZigzagDepth_G13.png, id=174, 722.7pt x 578.16pt>
+[11 <./ZigzagDepth_G04.png (PNG copy)> <./ZigzagDepth_G02.png (PNG copy)>]
+<ZigzagDepth_G13.png, id=162, 722.7pt x 578.16pt>
 File: ZigzagDepth_G13.png Graphic file (type png)
  <use ZigzagDepth_G13.png>
-Package pdftex.def Info: ZigzagDepth_G13.png used on input line 286.
+Package pdftex.def Info: ZigzagDepth_G13.png used on input line 265.
 (pdftex.def)             Requested size: 422.77664pt x 338.21782pt.
 
-<SWEmap_opt2.png, id=177, 939.51pt x 433.62pt>
+<SWEmap_opt2.png, id=165, 939.51pt x 433.62pt>
 File: SWEmap_opt2.png Graphic file (type png)
  <use SWEmap_opt2.png>
-Package pdftex.def Info: SWEmap_opt2.png used on input line 299.
+Package pdftex.def Info: SWEmap_opt2.png used on input line 278.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- [13
+ [12
 
 
- <./ZigzagDepth_G13.png (PNG copy)>] <SWEmap_opt3.png, id=185, 939.51pt x 433.6
+ <./ZigzagDepth_G13.png (PNG copy)>] <SWEmap_opt3.png, id=172, 939.51pt x 433.6
 2pt>
 File: SWEmap_opt3.png Graphic file (type png)
 
 <use SWEmap_opt3.png>
-Package pdftex.def Info: SWEmap_opt3.png used on input line 306.
+Package pdftex.def Info: SWEmap_opt3.png used on input line 285.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- <SWEmap_opt4.png, id=186, 939.51pt x 433.62pt>
+ <SWEmap_opt4.png, id=173, 939.51pt x 433.62pt>
 File: SWEmap_opt4.png Graphic file (type png)
 
 <use SWEmap_opt4.png>
-Package pdftex.def Info: SWEmap_opt4.png used on input line 313.
+Package pdftex.def Info: SWEmap_opt4.png used on input line 292.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- [14 <./SWEmap_opt2.png (PNG copy)> <./SWEmap_opt3.png (PNG copy)>] <SWEmap_opt
-5.png, id=192, 939.51pt x 433.62pt>
+ [13 <./SWEmap_opt2.png (PNG copy)> <./SWEmap_opt3.png (PNG copy)>] <SWEmap_opt
+5.png, id=180, 939.51pt x 433.62pt>
 File: SWEmap_opt5.png Graphic file (type png)
  <use SWEmap_opt5.png>
-Package pdftex.def Info: SWEmap_opt5.png used on input line 320.
+Package pdftex.def Info: SWEmap_opt5.png used on input line 299.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
 
-<SWEmap_opt6.png, id=193, 939.51pt x 433.62pt>
+<SWEmap_opt6.png, id=181, 939.51pt x 433.62pt>
 File: SWEmap_opt6.png Graphic file (type png)
  <use SWEmap_opt6.png>
-Package pdftex.def Info: SWEmap_opt6.png used on input line 327.
+Package pdftex.def Info: SWEmap_opt6.png used on input line 306.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- [15 <./SWEmap_opt4.png (PNG copy)> <./SWEmap_opt5.png (PNG copy)>]
-<SWEmap_opt7.png, id=200, 939.51pt x 433.62pt>
+ [14 <./SWEmap_opt4.png (PNG copy)> <./SWEmap_opt5.png (PNG copy)>]
+<SWEmap_opt7.png, id=188, 939.51pt x 433.62pt>
 File: SWEmap_opt7.png Graphic file (type png)
  <use SWEmap_opt7.png>
-Package pdftex.def Info: SWEmap_opt7.png used on input line 334.
+Package pdftex.def Info: SWEmap_opt7.png used on input line 313.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
 
-<SWEmap_opt8.png, id=201, 939.51pt x 433.62pt>
+<SWEmap_opt8.png, id=189, 939.51pt x 433.62pt>
 File: SWEmap_opt8.png Graphic file (type png)
  <use SWEmap_opt8.png>
-Package pdftex.def Info: SWEmap_opt8.png used on input line 341.
+Package pdftex.def Info: SWEmap_opt8.png used on input line 320.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
- [16 <./SWEmap_opt6.png (PNG copy)> <./SWEmap_opt7.png (PNG copy)>]
-<SWEmap_opt9.png, id=208, 939.51pt x 433.62pt>
+ [15 <./SWEmap_opt6.png (PNG copy)> <./SWEmap_opt7.png (PNG copy)>]
+<SWEmap_opt9.png, id=196, 939.51pt x 433.62pt>
 File: SWEmap_opt9.png Graphic file (type png)
  <use SWEmap_opt9.png>
-Package pdftex.def Info: SWEmap_opt9.png used on input line 348.
+Package pdftex.def Info: SWEmap_opt9.png used on input line 327.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
- [17 <./SWEmap_opt8.png (PNG copy)> <./SWEmap_opt9.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
+ [16 <./SWEmap_opt8.png (PNG copy)> <./SWEmap_opt9.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
 
 (./Results - Observations.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 333.
 Package rerunfilecheck Info: File `"Results - Observations".out' has not change
 d.
-(rerunfilecheck)             Checksum: 4B960B6C370EDC5D322FE57ADDB55621;776.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
+(rerunfilecheck)             Checksum: 42723441AC66B516C0E1DC33FDC64A5A;826.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
  ) 
 Here is how much of TeX's memory you used:
- 8041 strings out of 494910
- 121997 string characters out of 6179836
- 242159 words of memory out of 5000000
- 11184 multiletter control sequences out of 15000+600000
- 8710 words of font info for 31 fonts, out of 8000000 for 9000
+ 8018 strings out of 494910
+ 121469 string characters out of 6179836
+ 238875 words of memory out of 5000000
+ 11168 multiletter control sequences out of 15000+600000
+ 8541 words of font info for 30 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,19n,39p,1221b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,19n,39p,1477b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -610,12 +578,11 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb>
-Output written on "Results - Observations.pdf" (17 pages, 1577322 bytes).
+blic/amsfonts/cm/cmti12.pfb>
+Output written on "Results - Observations.pdf" (16 pages, 1498174 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 243 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 
