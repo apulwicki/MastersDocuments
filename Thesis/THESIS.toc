@@ -3,8 +3,8 @@
 \contentsline {chapter}{Dedication}{iv}{section*.5}
 \contentsline {chapter}{Acknowledgements}{v}{section*.7}
 \contentsline {chapter}{Table of Contents}{vi}{section*.9}
-\contentsline {chapter}{List of Tables}{viii}{section*.10}
-\contentsline {chapter}{List of Figures}{ix}{section*.11}
+\contentsline {chapter}{List of Tables}{ix}{section*.10}
+\contentsline {chapter}{List of Figures}{xi}{section*.11}
 \contentsline {chapter}{\numberline {1}Literature review}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Accumulation variability}{2}{section.1.2}
@@ -34,27 +34,41 @@
 \contentsline {chapter}{\numberline {3}Field methods and data processing}{36}{chapter.3}
 \contentsline {section}{\numberline {3.1}Field Design}{36}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Sampling Scheme and Naming System}{36}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Implementation}{42}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Linear and Curvilinear Transects}{42}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Zigzag}{50}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Federal Snow Sampler}{50}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Firn Corer}{53}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Snowpit}{54}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Data processing}{56}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Snow depth measured with graduated avalanche probe}{56}{subsection.3.3.1}
-\contentsline {subsubsection}{Linear and curvilinear transect surveys}{56}{section*.42}
-\contentsline {section}{\numberline {3.4}Data processing}{56}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Snow depth measured with graduated avalanche probe}{56}{subsection.3.4.1}
-\contentsline {subsubsection}{Linear and curvilinear transect surveys}{56}{section*.44}
-\contentsline {subsubsection}{Zigzag surveys}{57}{section*.46}
-\contentsline {subsection}{\numberline {3.4.2}Snow density}{58}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Snow water equivalent (SWE)}{58}{subsection.3.4.3}
-\contentsline {chapter}{Bibliography}{61}{section*.50}
-\contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{70}{Appendix.a.A}
-\contentsline {chapter}{Appendix \numberline {B}Field Maps}{72}{Appendix.a.B}
-\contentsline {chapter}{Appendix \numberline {C}Data Processing Scripts}{85}{Appendix.a.C}
-\contentsline {section}{\numberline {C.1}Snow depth measured with graduated avalanche probe}{85}{section.a.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Linear and curvilinear transect surveys}{85}{subsection.a.C.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Zigzag surveys}{86}{subsection.a.C.1.2}
-\contentsline {section}{\numberline {C.2}Snow density}{87}{section.a.C.2}
-\contentsline {section}{\numberline {C.3}Snow water equivalent (SWE)}{88}{section.a.C.3}
+\contentsline {section}{\numberline {3.2}Implementation}{41}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Linear and Curvilinear Transects}{41}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Zigzag}{49}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Federal Snow Sampler}{49}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Firn Corer}{52}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Snowpit}{53}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Data processing}{54}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Snow depth measured with graduated avalanche probe}{54}{subsection.3.3.1}
+\contentsline {subsubsection}{Linear and curvilinear transect surveys}{54}{section*.42}
+\contentsline {subsubsection}{Zigzag surveys}{56}{section*.44}
+\contentsline {subsection}{\numberline {3.3.2}Snow density}{57}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Snow water equivalent (SWE)}{57}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Data observations}{60}{chapter.4}
+\contentsline {section}{\numberline {4.1}Density Estimates}{60}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Basic statistics}{60}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Federal Sampler measurements and snow depth}{60}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Density uncertainties}{61}{subsection.4.1.3}
+\contentsline {subsubsection}{Snowpit densities}{61}{section*.49}
+\contentsline {subsubsection}{Federal Sampler densities}{61}{section*.51}
+\contentsline {subsection}{\numberline {4.1.4}Comparing density from snowpit and Federal Sampler measurements}{65}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Density and elevation}{65}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Linear and curvilinear transect snow depth data}{68}{section.4.2}
+\contentsline {section}{\numberline {4.3}Zigzag snow depth data}{69}{section.4.3}
+\contentsline {section}{\numberline {4.4}Snow water equivalent (SWE)}{71}{section.4.4}
+\contentsline {chapter}{\numberline {5}Point scale results}{78}{chapter.5}
+\contentsline {section}{\numberline {5.1}Point Scale}{78}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Data normality}{78}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Observer differences}{78}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Standard deviation of snow depth along linear and curvilinear transects}{78}{subsection.5.1.3}
+\contentsline {chapter}{Bibliography}{84}{section*.78}
+\contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{93}{Appendix.a.A}
+\contentsline {chapter}{Appendix \numberline {B}Field Maps}{95}{Appendix.a.B}
+\contentsline {chapter}{Appendix \numberline {C}Data Processing Scripts}{108}{Appendix.a.C}
+\contentsline {section}{\numberline {C.1}Snow depth measured with graduated avalanche probe}{108}{section.a.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Linear and curvilinear transect surveys}{108}{subsection.a.C.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Zigzag surveys}{109}{subsection.a.C.1.2}
+\contentsline {section}{\numberline {C.2}Snow density}{110}{section.a.C.2}
+\contentsline {section}{\numberline {C.3}Snow water equivalent (SWE)}{111}{section.a.C.3}

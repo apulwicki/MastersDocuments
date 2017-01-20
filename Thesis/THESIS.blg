@@ -6,45 +6,47 @@ Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
 Warning--there's a number but no volume in Clarke2002
 Warning--empty journal in Revuelto2014
 Warning--empty journal in Walmsley2015
-You've used 113 entries,
+Warning--empty institution in Work1965
+Warning--empty year in Work1965
+You've used 119 entries,
             2118 wiz_defined-function locations,
-            1216 strings with 26346 characters,
-and the built_in function-call counts, 41506 in all, are:
-= -- 4120
-> -- 2244
-< -- 7
-+ -- 879
-- -- 766
-* -- 3384
-:= -- 7040
-add.period$ -- 341
-call.type$ -- 113
-change.case$ -- 718
+            1255 strings with 27304 characters,
+and the built_in function-call counts, 43698 in all, are:
+= -- 4340
+> -- 2342
+< -- 9
++ -- 917
+- -- 798
+* -- 3540
+:= -- 7390
+add.period$ -- 359
+call.type$ -- 119
+change.case$ -- 753
 chr.to.int$ -- 0
-cite$ -- 116
-duplicate$ -- 1289
-empty$ -- 2939
-format.name$ -- 766
-if$ -- 8320
+cite$ -- 124
+duplicate$ -- 1372
+empty$ -- 3112
+format.name$ -- 798
+if$ -- 8782
 int.to.chr$ -- 0
-int.to.str$ -- 113
-missing$ -- 113
-newline$ -- 570
-num.names$ -- 226
-pop$ -- 542
+int.to.str$ -- 119
+missing$ -- 118
+newline$ -- 600
+num.names$ -- 238
+pop$ -- 578
 preamble$ -- 1
-purify$ -- 607
+purify$ -- 635
 quote$ -- 0
-skip$ -- 906
+skip$ -- 969
 stack$ -- 0
-substring$ -- 2985
-swap$ -- 170
-text.length$ -- 7
+substring$ -- 3141
+swap$ -- 191
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 448
-warning$ -- 3
-while$ -- 416
-width$ -- 116
-write$ -- 1241
-(There were 3 warnings)
+type$ -- 472
+warning$ -- 5
+while$ -- 440
+width$ -- 122
+write$ -- 1305
+(There were 5 warnings)

@@ -64,7 +64,9 @@ The standard deviation of each type of density measurement is less than 10\% of 
 \subsection{Federal Sampler measurements and snow depth}
 \label{sec:FSdensity&depth}
 
-There is a positive linear relation (R$^2$ = 0.59, p$<$0.01) between measured snow density and depth for all Federal Sampler measurements (Figure \ref{fig:all_depth}). This positive relationship could be a result of physical processes, such as compaction, and/or artefacts during data collection; however, it seems more likely that this trend is a result of measurement artefacts for a number of reasons. First, the range of densities measured by the Federal sampler is large (225--410 kg m$^{-3}$) and the extreme values seem unlikely to exist at these study glaciers, which experience a continental snowpack with minimal mid-winter melt events. Previous unpublished density measurements taken on Glacier 2 range between 264 and 396 kg m$^{-3}$ for five study years with a maximum density difference of 110 kg m$^{-3}$ in any one year (Flowers, 2016, personal communication). Second, compaction effects would likely be small at these study glaciers because of the relatively shallow snowpack (deepest measurement was 340 cm). Third, no linear relationship exists between depth and snowpit-derived density (R$^2$ = 0.05) as can be seen in a plot of the depth-density relationship in snowpits in Figure \ref{fig:all_depth}. Together, these reasons lead us to conclude that the Federal Sampler measurements are biased. Linear detrending can correct the density data but it was decided to use uncorrected data for future analysis.
+There is a positive linear relation (R$^2$ = 0.59, p$<$0.01) between measured snow density and depth for all Federal Sampler measurements (Figure \ref{fig:all_depth}). This positive relationship could be a result of physical processes, such as compaction, and/or artefacts during data collection; however, it seems more likely that this trend is a result of measurement artefacts for a number of reasons. First, the range of densities measured by the Federal sampler is large (225--410 kg m$^{-3}$) and the extreme values seem unlikely to exist at these study glaciers, which experience a continental snowpack with minimal mid-winter melt events. Previous unpublished density measurements taken on Glacier 2 for five study years have a mean snow density of 298 kg m$^{-3}$ and a standard deviation of 48 kg m$^{-3}$ (range of 264-396 kg m$^{-3}$ with a maximum density difference of 110 kg m$^{-3}$ in any one year) (Flowers, 2016, personal communication). Second, compaction effects would likely be small at these study glaciers because of the relatively shallow snowpack (deepest measurement was 340 cm). Third, no linear relationship exists between depth and snowpit-derived density (R$^2$ = 0.05) as can be seen in a plot of the depth-density relationship in snowpits in Figure \ref{fig:all_depth}. Together, these reasons lead us to conclude that the Federal Sampler measurements are biased. Linear detrending can correct the density data but it was decided to use uncorrected data for future analysis.
+
+The Federal Sampler appears to oversample in deep snow and undersample in shallow snow. Oversampling by small diameter (area of 1O--12 cm$^2$) sampling tubes has been observed in previous studies, with a percent error between +6.8\% and 11.8\%\citep{Work1965, Farnes1983, Conger2009}. Studies that use Federal Samplers often apply a 10\% correction to all measurements \citep[e.g.][]{Molotch2005}. \cite{Dixon2012} attributed oversampling to slots ``shaving'' snow into the tube as it is rotated as well as cutter deign forcing snow into the tube. \cite{Beaumont1963} found that only when snow samples had densities greater than 400 kg m$^{-3}$ and snow depth greater than 1 m, the Federal Sampler oversampled due to snow falling into the greater area of slots. Undersampling is likely to occur due to snow falling out of the bottom of the sampler \citep{Turcan1975}. It is likely that this occurred during our study since a large portion of the lower elevation snow on both Glaciers 2 and 13 was melt affected and thin, allowing for easier lateral displacement of the snow as the sampler was inserted. For example, on Glacier 13 the snow surface had been affected by radiation melt (especially at lower elevations where the snow was shallower) and the surface would collapse when the sampler was inserted into the snow. It is also difficult to measure the weight of the sampler and snow with the spring scale when there was little snow because the weight was at the lower limit of what could be detected by the scale. 
 
 
 
@@ -197,7 +199,7 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 0.7\textwidth]{ElevationVsSnowpit_all.png}\\
+	\includegraphics[width = 0.6\textwidth]{ElevationVsSnowpit_all.png}\\
 	\caption{Relationship between snowpit-derived density and elevation for all study glaciers.}
 	\label{fig:elev_snowpit}
 \end{figure}
@@ -205,7 +207,7 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 0.6\textwidth]{ElevationVsSWEtube_all.png}\\
+	\includegraphics[width = 0.5\textwidth]{ElevationVsSWEtube_all.png}\\
 	\caption{Relationship between Federal Sampler-derived density and elevation for all study glaciers.}
 	\label{fig:elev_tube}
 \end{figure}
@@ -286,61 +288,76 @@ The depths measured in each zigzag are shown in Figures \ref{fig:ZZ_G04}, \ref{f
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Snow water equivalent (SWE)}
 
-Snow water equivalent (SWE) estimated for each sampling location can be seen in Figures  \ref{fig:SWEmap_S1} to \ref{fig:SWEmap_F4}. For maps of SWE calculated for each density option see the Appendix. Generally, SWE is highest on Glacier 4 and lowest on Glacier 13. Glacier 4 also shows considerable SWE variability within the basin, with both high and low values seen along a single transect. Note that the individual measurement locations overlap on the figure.
+Snow water equivalent (SWE) at sampling locations is estimated using eight density options (Section ??). Estimates of SWE on each glacier are significantly different (Figure \ref{fig:AllSWEopts_boxplot}). Glacier 4 has two main groups of SWE estimates with a number of estimates that overlap (belong to group A and C). The estimate calculated using density F1 has a lower mean than the remaining estimates. Glacier 2 has four different grouping of SWE estimates but all estimates belong to multiple groups so there is no one estimate that differs from the rest. SWE estimates on Glacier 13 found using Federal Sampler-derived densities (Group B) have a higher mean SWE than those found using snowpit-derived densities (Groups A, C and D). The percent difference between the means of the SWE estimates are 12\%, 18\% and 19\%  for Glacier 4, 2 and 13, respectively. 
+
+Density option 3 (Figures \ref{fig:SWEmap_S3} and \ref{fig:SWEmap_F3}), which uses a linear regression of density with elevation, is used in this study to examine how a regression based on topography could affect SWE estimates. Despite opposite relationships between density and elevation for Federal Sampler-derived densities and snowpit-derived densities (Table \ref{tab:elev_regress}), the SWE estimates do not differ significantly for Glaciers 4 and 2. On Glacier 13, these two SWE estimates do differ but all SWE estimates with density F differ from SWE estimates with density S. This systematic difference is perhaps a result of undersampling by the Federal Sampler on Glacier 13. Undersampling could have occurred because a considerable portion of the snowpack had undergone recent melt and snow depths were generally shallow, resulting in snow falling out of the sampling tube. 
+
+For all density options, SWE is highest on Glacier 4 and lowest on Glacier 13. Glacier 4 also shows considerable SWE variability within the basin, with both high and low values along a single transect (Figures \ref{fig:SWEmap_S1} to \ref{fig:SWEmap_F4}). The lower, left side of Glacier 2 has low SWE with visible variability along transects. During field data collection, this area was observed to have dune-like ice features ($\sim$2 m) with alternating bare ice and wind-deposited snow patches.
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height = 0.8\textheight]{AllSWEopts_boxplot.png}\\
+	\caption{Boxplots of estimated SWE at sampling locations for Glacier 4 (a), Glacier 2 (b) and Glacier 13 (c). The density options using snowpit (S) or Federal Sampler (F) derived densities are mean from all glaciers (1), mean for individual glaciers (2), elevation regression (3) and inverse-distance weighting (4). SWE estimations using various density options were tested for differences using ANOVA (p$<$0.05). SWE estimates that were not significantly different for each glacier are labelled with the same letter (e.g. all estimates with A on Glacier 4 are significant different than all estimates with B).}
+	\label{fig:AllSWEopts_boxplot}
+\end{figure}
+
+
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt2.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of all snowpit-derived densities (S1). Arrow shows ice flow direction.}
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of all snowpit-derived densities from all glaciers (S1). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt3.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of all snowpit-derived densities (F1). Arrow shows ice flow direction.}
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of all Federal Sampler-derived densities from all glaciers (F1). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{SWEmap_opt4.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of snowpit-derived densities for each glacier (S2). Arrow shows ice flow direction.}
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density for each glacier was taken to be the mean value of snowpit-derived densities from that glacier (S2). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt5.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of Federal Sampler-derived densities for each glacier (F2). Arrow shows ice flow direction.}
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density for each glacier was taken to be the mean value of Federal Sampler-derived densities from that glacier (F2). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt6.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was determined by using a linear fit between snowpit-derived density and elevation for each glacier (S3). Arrow shows ice flow direction.}
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was determined by using a linear fit between snowpit-derived density and elevation for each glacier (S3). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt7.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations.Density was determined by using a linear fit between Federal Sampler-derived density and elevation for each glacier (F3). Arrow shows ice flow direction.}
+	\caption{Estimated snow water equivalent (SWE) at measurement locations.Density was determined by using a linear fit between Federal Sampler-derived density and elevation for each glacier (F3). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt8.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was calculated using inverse distance weighting using all snowpit-derived densities (S4). Arrow shows ice flow direction.}
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was calculated using inverse distance weighting using all snowpit-derived densities (S4). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S4}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{SWEmap_opt9.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was calculated using inverse distance weighting using all snowpit-derived densities (F4). Arrow shows ice flow direction.}
+	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was calculated using inverse distance weighting using all snowpit-derived densities (F4). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F4}
 \end{figure}
 
