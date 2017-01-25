@@ -12,7 +12,7 @@
 
 @inproceedings{Kohavi1995,
 	author = "Kohavi, Ron and others",
-	booktitle = "{Ijcai}",
+	booktitle = "{ {Proceedings of the Fourteenth International Joint Conference on Artificial Intelligence}}",
 	date-added = "2016-12-11 18:00:58 +0000",
 	date-modified = "2016-12-11 18:02:09 +0000",
 	number = "2",
@@ -36,11 +36,13 @@
 
 @book{Neteler2013,
 	author = "Neteler, Markus and Mit{\'a}\v{s}ov{\'a}, Helena",
+	booktitle = "{The International Series in Engineering and Computer Science}",
 	date-added = "2016-12-09 22:10:17 +0000",
 	date-modified = "2016-12-09 22:10:46 +0000",
+	edition = "3",
 	publisher = "Springer Science \& Business Media",
 	title = "{Open source GIS: a GRASS GIS approach}",
-	volume = "689",
+	volume = "773",
 	year = "2013"
 }
 
@@ -450,7 +452,7 @@
 	date-modified = "2016-03-20 15:28:38 +0000",
 	doi = "10.5194/tc-8-1989-2014",
 	publisher = "European Geosciences Union",
-	title = "{Topographic control of snowpack distribution in a small catchment in the central Spanish Pyrenees: intra-and inter-annual persistence}",
+	title = "{Topographic control of snowpack distribution in a small catchment in the central Spanish Pyrenees: {I}ntra-and inter-annual persistence}",
 	year = "2014"
 }
 
@@ -677,7 +679,7 @@
 	number = "2",
 	pages = "204--212",
 	publisher = "Elsevier",
-	title = "{{SPIRIT. SPOT} 5 stereoscopic survey of {P}olar {I}ce: reference images and topographies during the fourth {International Polar Year} (2007--2009)}",
+	title = "{{SPIRIT SPOT} 5 stereoscopic survey of {P}olar {I}ce: {R}eference images and topographies during the fourth {International Polar Year} (2007--2009)}",
 	volume = "64",
 	year = "2009"
 }
@@ -1008,7 +1010,7 @@
 	journal = "Water Resources Research",
 	number = "11",
 	publisher = "Wiley Online Library",
-	title = "{Scaling snow observations from the point to the grid element: Implications for observation network design}",
+	title = "{Scaling snow observations from the point to the grid element:{ I}mplications for observation network design}",
 	volume = "41",
 	year = "2005"
 }
@@ -2873,5 +2875,39 @@
 	title = "{Contribution of {A}laskan glaciers to sea-level rise derived from satellite imagery}",
 	volume = "3",
 	year = "2010"
+}
+
+@article{Goodison1987,
+	author = "Goodison, BE and Glynn, JE and Harvey, KD and Slater, JE",
+	journal = "Canadian Water Resources Journal",
+	number = "2",
+	pages = "27--42",
+	publisher = "Taylor \& Francis",
+	title = "{Snow surveying in {C}anada: {A} perspective}",
+	url = "http://dx.doi.org/10.4296/cwrj1202027",
+	volume = "12",
+	year = "1987"
+}
+
+@article{Beaumont2009,
+	author = "BEAUMONT, Robert T. and WORK, R. A.",
+	doi = "10.1080/02626666309493359",
+	eprint = "http://dx.doi.org/10.1080/02626666309493359",
+	journal = "International Association of Scientific Hydrology. Bulletin",
+	number = "4",
+	pages = "74--78",
+	title = "{Snow sampling results from three sampler}",
+	url = "http://dx.doi.org/10.1080/02626666309493359",
+	volume = "8",
+	year = "1963"
+}
+
+@inproceedings{Fames1982,
+	author = "Fames, Phillip E and Peterson, NR and Goodison, BE and Richards, Robert P",
+	booktitle = "{Proceedings of the 50th Western Snow Conference}",
+	pages = "120--132",
+	title = "{Metrication of Manual Snow Sampling Equipment}",
+	url = "http://www.westernsnowconference.org/sites/westernsnowconference.org/PDFs/1982Farnes.pdf",
+	year = "1982"
 }
 

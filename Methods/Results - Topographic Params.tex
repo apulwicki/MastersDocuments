@@ -482,6 +482,16 @@ In this study, regressions for all possible combinations of topographic paramete
 
 Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependent variable in other locations where regressors are known \citep{Davis1986}. For each grid cell, known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of SWE.
 
+\subsection{Importance of variables in regression models}
+
+Regressions are used not only for estimating the response variable but also for assessing the relative importance of the regressors. Most types of regression models, including the ones used in this study, cannot be used to directly determine variable importance, so many additional metrics have been developed to address this need. \cite{Gromping2015} lists seven simple metrics for assessing variable importance in a univariate regression (one dependant variable). Two of these metrics, raw correlation and semi-partial correlation, are chosen for this study. For both metrics, a larger value indicates a larger influence of a regressor in the model.
+
+The first metric is the square of the raw correlations between regressors and response variable \citep{Gromping2015}. Raw correlation values can aid in identifying important variables for explaining and interpreting results because it is ignorant of which other regressors are included in the model \citep{Darlington1968}. 
+
+The second metric is the square of the semi-partial (or part) correlations for each regressor variable \citep{Gromping2015}. Semi-partial correlations are the correlation between the response variable and the residuals of the regression between each regressor and the remaining regressors. The value can be interprested as the unique variance accounted for by $\vector{x}_1$ in the presence of other predictors $\vector{x}_2,...,\vector{x}_\mathrm{k}$ \citep{Darlington1968, Bring1996}. Semi-partial correlations are helpful in identifying a small number of regressors that have the most influence in the regression \citep{Gromping2009}.
+
+An assumption for semi-partial correlation is that regressors are independent of each other. When regressors are independent, the semi-partial correlations of all regressors sum to the total coefficient of determination (R$^2$) of the regression  \citep{Gromping2015}. In this study, the regressors are all independent (R$^2<$0.35 for all glaciers) except for aspect and northness, which have R$^2$ values of 0.79, 0.83 and 0.64 for Glaciers 4, 2 and 13, respectively. Despite this correlation, semi-partial correlation is used because of its simplicity. 
+
 \subsection{Snow density estimation methods}
 
 In this study, snow density was not measured at every location where snow depth was measured. Therefore, snow density values need to be estimated at snow depth measurement locations in order to estimate observed SWE values. There are a number of different methods for interpolating between snow density measurement locations. Four methods were chosen for this study and include (1) using a constant value, the mean of all observed snow density values, for all measurement locations, (2) using a constant value (mean) for each glacier, (3) using a linear regression of elevation and snow density to interpolate for each glacier, and (4) taking an inverse-distance weighted mean of density observations. As discussed in Section ??, the snowpit-derived densities and Federal Sampler-derived densities are inconsistent so these two data set are kept separate for the analysis. In total there are eight different methods for estimating density, as summarized in Table \ref{tab:densityOptions}.
@@ -535,25 +545,8 @@ w_i = \frac{e^{-0.5(BIC_i-BIC_{\min})}}{\Sigma_{i=1}^R e^{-0.5(BIC_i-BIC_{\min})
 \end{equation}
 Parameters not included in a particular model are assigned coefficients of zero. The sum of the weighted coefficients gives the final $\bm{\beta}$ values.
 
-\subsubsection{Computational Methods}
-\label{sec:MLRMethods}
+\subsubsection{Methods}
 
-The MLR was completed with the following steps (executed using the function 'MLRcalval.m'):
-\begin{enumerate}
-\item The topographic parameters are imported to Matlab using the script `Import\_Topo.m'.
-
-\item The \texttt{topo\_sampled} structure for one glacier as well as the \texttt{SWE} structure is passed into the function.
-
-\item A set of initializations is completed. This includes 1) creating a logical matrix to choose all linear combinations of topographic parameters, 2) selecting the number of runs, 3) creating a matrix of random numbers for selecting data points in the cross validation procedure, 4) initializing matrices, and 5) converting the input structure to a table.
-
-\item For each linear combination of topographic parameters, 1000 runs of a cross validation MLR are then executed. Two-thirds of the total data is randomly selected \citep{Kohavi1995} to use for calculating the regression (using the function \texttt{regress()} which is a basic regression function with fast execution). The MLR equation is used to predict the SWE using the remaining one-third of the topographic parameters. The root-mean-squared error (RMSE) between the predicted and observed SWE values is then calculated and the set fo regression coefficients that produce the lowest RMSE are then chosen for that combination of topographic parameters. The function \texttt{fitlm()} is then used to calculate the MLR from the set of data that gave the lowest RMSE. This function is slower but calculates a number of additional values that characterize the fit of the model. One of these values is the Bayesian information criterion (BIC), which allows for model selection among a finite set of models \citep{Burnham2004}. The BIC from the best model for each combination of topographic parameters is saved.
-
-\item A weighted sum of all models found using linear combinations of topographic parameters was then found. The BIC values for each model (BIC$_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value BIC$_{min}$) according to Eq. \ref{eq:BIC}.
-
-\item The percent variance ($var_\%$) explained by each parameter was calculated using the equation $var_\% = \frac{SSr}{SSt}\times 100$, where $SSr$ is the sum of squares of the residual (fitted topographic parameters) and $SSt$ is the total sum of squares (SWE observations). The final coefficients and the percent variance explained by each one can be found in the \texttt{coeffs\_final} table within the function and in the \texttt{mlr} structure when run for all density options and glaciers in the main script `TopoRegression.m'.
-
-\item The residuals of the fit have also been calculated as a separate variable that can be returned when the function is called. The residual is calculated as the difference between the estimated SWE value and observed value. 
-\end{enumerate}
 
 
 \subsubsection{Results}
@@ -644,13 +637,13 @@ For Glacier 4, the largest coefficients are $Sx$ and slope ($m$), which are an o
 
 \begin{wraptable}{l}{8.5cm}
 \centering
-\caption{Basic summary statistics of modelled SWE using coefficients found using MLR. Values are for coefficients determined using SWE with inverse distance weighted snowpit densities. }
+\caption{Summary statistics of estimated SWE using MLR coefficients. Values are for coefficients determined using SWE with inverse-distance weighted snowpit densities. }
 \label{tab:MLRsweMinMax}
 \begin{tabular}{lccc}
 \multicolumn{1}{l}{} & \multicolumn{3}{c}{\textbf{Modelled SWE (m w.e.)}} \\
                      & Mean          & Minimum          & Maximum         \\ \hline
 Glacier 4            & 0.58          & 0.10             & 0.85            \\
-Glacier 2            & 0.55          & $-$0.23            & 1.76            \\
+Glacier 2            & 0.55          & 0            & 1.76            \\
 Glacier 13           & 0.41          & 0.03             & 0.90           
 \end{tabular}
 \end{wraptable} 
@@ -822,22 +815,7 @@ BMA allows for the calculation of a metric called the posterior inclusion probab
 
 \subsubsection{Methods}
 
-The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The function \texttt{BMS\_R()} computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter using the following steps:
-\begin{enumerate}
-\item A portion of the data ($2/3$ as suggested by \cite{Kohavi1995}) is randomly chosen as the calibration set and saved as a .mat file. 
-\item The Bayesian model statistics (BMS) package developed by \cite{Zeugner2015} is run in R (called through an operating system command in Matlab)
-	\begin{enumerate}
-		\item The R script imports the .mat file with SWE and topographic parameter values. It then creates a data 				frame with the SWE values as the first column and the topographic parameters as the remaining 					columns. 
-		\item The BMS package is used to complete BMA for the imported values. A uniform model prior was chosen. 				The mean coefficient value, coefficient standard deviation, PIP, and the posterior probability of a positive 			coefficient (how probable it is for the sign of the coefficient to be positive) were computed.
-		\item The coefficients are saved as a .mat file.
-	\end{enumerate}
-\item Regressor coefficient values calculated in R are loaded into Matlab and a data table is created with the coefficients.
-\item The remaining portion of the data ($1/3$) are then used to calculate a modelled value of SWE at those locations. These are compared to the observed SWE values and a RMSE value is determined.
-\item The above steps are completed 1000 times and the coefficients associated with the lowest RMSE are chosen.
-\item Percent variance explained by each parameter is then calculated in the same way as for the MLR (see Section \ref{sec:MLRMethods}). 
-\item The final table of values includes the coefficients and percent variance explained for all topographic parameters associated with the lowest RMSE. It also includes the intercept and the actual RMSE value. This table is returned from the function.
-\item The residuals of the best BMA fit are also calculated and can be return from the function.  
-\end{enumerate}
+The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The package computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter.
 
 \subsubsection{Results and Discussion}
 
@@ -1168,9 +1146,48 @@ The study glaciers showed varied relationships between SWE and topographic param
 
  
 
+%%%%%%%%%%%%%%%%%%
+\section{Appendix}
 
+	\subsection{MLR software}
+\label{sec:MLRMethods}
+
+The MLR was completed with the following steps (executed using the function 'MLRcalval.m'):
+\begin{enumerate}
+\item The topographic parameters are imported to Matlab using the script `Import\_Topo.m'.
+
+\item The \texttt{topo\_sampled} structure for one glacier as well as the \texttt{SWE} structure is passed into the function.
+
+\item A set of initializations is completed. This includes 1) creating a logical matrix to choose all linear combinations of topographic parameters, 2) selecting the number of runs, 3) creating a matrix of random numbers for selecting data points in the cross validation procedure, 4) initializing matrices, and 5) converting the input structure to a table.
+
+\item For each linear combination of topographic parameters, 1000 runs of a cross validation MLR are then executed. Two-thirds of the total data is randomly selected \citep{Kohavi1995} to use for calculating the regression (using the function \texttt{regress()} which is a basic regression function with fast execution). The MLR equation is used to predict the SWE using the remaining one-third of the topographic parameters. The root-mean-squared error (RMSE) between the predicted and observed SWE values is then calculated and the set fo regression coefficients that produce the lowest RMSE are then chosen for that combination of topographic parameters. The function \texttt{fitlm()} is then used to calculate the MLR from the set of data that gave the lowest RMSE. This function is slower but calculates a number of additional values that characterize the fit of the model. One of these values is the Bayesian information criterion (BIC), which allows for model selection among a finite set of models \citep{Burnham2004}. The BIC from the best model for each combination of topographic parameters is saved.
+
+\item A weighted sum of all models found using linear combinations of topographic parameters was then found. The BIC values for each model (BIC$_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value BIC$_{min}$) according to Eq. \ref{eq:BIC}.
+
+\item The percent variance ($var_\%$) explained by each parameter was calculated using the equation $var_\% = \frac{SSr}{SSt}\times 100$, where $SSr$ is the sum of squares of the residual (fitted topographic parameters) and $SSt$ is the total sum of squares (SWE observations). The final coefficients and the percent variance explained by each one can be found in the \texttt{coeffs\_final} table within the function and in the \texttt{mlr} structure when run for all density options and glaciers in the main script `TopoRegression.m'.
+
+\item The residuals of the fit have also been calculated as a separate variable that can be returned when the function is called. The residual is calculated as the difference between the estimated SWE value and observed value. 
+\end{enumerate}
 	
 	
+	\subsection{BMA software}
+
+The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The function \texttt{BMS\_R()} computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter using the following steps:
+\begin{enumerate}
+\item A portion of the data ($2/3$ as suggested by \cite{Kohavi1995}) is randomly chosen as the calibration set and saved as a .mat file. 
+\item The Bayesian model statistics (BMS) package developed by \cite{Zeugner2015} is run in R (called through an operating system command in Matlab)
+	\begin{enumerate}
+		\item The R script imports the .mat file with SWE and topographic parameter values. It then creates a data frame with the SWE values as the first column and the topographic parameters as the remaining 	columns. 
+		\item The BMS package is used to complete BMA for the imported values. A uniform model prior was chosen. The mean coefficient value, coefficient standard deviation, PIP, and the posterior probability of a positive coefficient (how probable it is for the sign of the coefficient to be positive) were computed.
+		\item The coefficients are saved as a .mat file.
+	\end{enumerate}
+\item Regressor coefficient values calculated in R are loaded into Matlab and a data table is created with the coefficients.
+\item The remaining portion of the data ($1/3$) are then used to calculate a modelled value of SWE at those locations. These are compared to the observed SWE values and a RMSE value is determined.
+\item The above steps are completed 1000 times and the coefficients associated with the lowest RMSE are chosen.
+\item Percent variance explained by each parameter is then calculated in the same way as for the MLR (see Section \ref{sec:MLRMethods}). 
+\item The final table of values includes the coefficients and percent variance explained for all topographic parameters associated with the lowest RMSE. It also includes the intercept and the actual RMSE value. This table is returned from the function.
+\item The residuals of the best BMA fit are also calculated and can be return from the function.  
+\end{enumerate}
 	
 %%%%%%%%
 \pagebreak
