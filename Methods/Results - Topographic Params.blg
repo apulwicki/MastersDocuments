@@ -5,45 +5,45 @@ The style file: igs.bst
 Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
 Warning--can't use both volume and number fields in Kohavi1995
 Warning--empty journal in Revuelto2014
-You've used 26 entries,
+You've used 25 entries,
             2869 wiz_defined-function locations,
-            808 strings with 10147 characters,
-and the built_in function-call counts, 26780 in all, are:
-= -- 2856
-> -- 490
-< -- 31
-+ -- 172
-- -- 147
-* -- 2050
-:= -- 3012
-add.period$ -- 25
-call.type$ -- 26
-change.case$ -- 203
-chr.to.int$ -- 27
-cite$ -- 28
-duplicate$ -- 2749
-empty$ -- 2139
-format.name$ -- 243
-if$ -- 5569
+            800 strings with 10020 characters,
+and the built_in function-call counts, 26163 in all, are:
+= -- 2797
+> -- 482
+< -- 29
++ -- 169
+- -- 145
+* -- 2005
+:= -- 2930
+add.period$ -- 24
+call.type$ -- 25
+change.case$ -- 197
+chr.to.int$ -- 26
+cite$ -- 27
+duplicate$ -- 2690
+empty$ -- 2083
+format.name$ -- 239
+if$ -- 5441
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 280
-newline$ -- 85
-num.names$ -- 104
-pop$ -- 1250
+missing$ -- 271
+newline$ -- 82
+num.names$ -- 100
+pop$ -- 1231
 preamble$ -- 1
-purify$ -- 177
+purify$ -- 172
 quote$ -- 0
-skip$ -- 581
+skip$ -- 564
 stack$ -- 0
-substring$ -- 3043
-swap$ -- 685
+substring$ -- 2992
+swap$ -- 662
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 298
+type$ -- 288
 warning$ -- 2
-while$ -- 169
+while$ -- 164
 width$ -- 0
-write$ -- 333
+write$ -- 320
 (There were 2 warnings)

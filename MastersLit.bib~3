@@ -2889,7 +2889,7 @@
 	year = "1987"
 }
 
-@article{Beaumont2009,
+@article{Beaumont1963,
 	author = "BEAUMONT, Robert T. and WORK, R. A.",
 	doi = "10.1080/02626666309493359",
 	eprint = "http://dx.doi.org/10.1080/02626666309493359",
@@ -2923,5 +2923,25 @@
 	title = "{Which empirical model is best suited to simulate glacier mass balances?}",
 	url = "https://www.cambridge.org/core/article/div-class-title-which-empirical-model-is-best-suited-to-simulate-glacier-mass-balances-div/210F94E4C2103A82109F323819D8BC72",
 	year = "2016"
+}
+
+@article{Conger2009,
+	author = "Conger, Steven M and McCLUNG, David M",
+	journal = "Journal of Glaciology",
+	number = "189",
+	pages = "163--169",
+	publisher = "International Glaciological Society",
+	title = "{Comparison of density cutters for snow profile observations}",
+	url = "https://doi.org/10.3189/002214309788609038",
+	volume = "55",
+	year = "2009"
+}
+
+@inproceedings{Turcan1975,
+	author = "Turcan, J and Loijens, HS",
+	booktitle = "{32nd {E}astern {S}now {C}onference}",
+	pages = "2--11",
+	title = "{Accuracy of snow survey data and errors in snow sampler measurements}",
+	year = "1975"
 }
 

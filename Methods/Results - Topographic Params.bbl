@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -58,10 +58,6 @@ Hofierka J, Mit{\'a}\v{s}ov{\'a} H and Neteler M (2009) {Geomorphometry in
   {GRASS GIS}}. \emph{Developments in Soil Science}, \textbf{33}, 387--410
   (\doi {10.1016/S0166-2481(08)00017-2})
 
-\bibitem[\protect\citename{Horn, }1981]{Horn1981}
-Horn BK (1981) {Hill shading and the reflectance map}. \emph{Proceedings of the
-  IEEE}, \textbf{69}(1), 14--47 (\doi {10.1109/PROC.1981.11918})
-
 \bibitem[\protect\citename{Kohavi and others, }1995]{Kohavi1995}
 Kohavi R and others (1995) {A study of cross-validation and bootstrap for
   accuracy estimation and model selection}. In \emph{{ {Proceedings of the
@@ -96,8 +92,8 @@ Molotch N, Colee M, Bales R and Dozier J (2005) {Estimating the spatial
   1459--1479 (\doi {10.1002/hyp.5586})
 
 \bibitem[\protect\citename{Neteler and Mit{\'a}\v{s}ov{\'a},
-  }2013]{Neteler2013}
-Neteler M and Mit{\'a}\v{s}ov{\'a} H (2013) \emph{{Open source GIS: a GRASS GIS
+  }2008]{Neteler2008}
+Neteler M and Mit{\'a}\v{s}ov{\'a} H (2008) \emph{{Open source GIS: a GRASS GIS
   approach}}, volume 773. Springer Science \& Business Media, 3 edition
 
 \bibitem[\protect\citename{Olaya, }2009]{Olaya2009}
