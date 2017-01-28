@@ -150,13 +150,6 @@ Elevation ($z$) values were taken from the (corrected) SPOT-5 DEMs directly (Fig
 Distance from centreline ($d_C$) was calculated as the minimum distance between the Easting and Northing of the northwest corner of each cell and a manually defined centreline (Figure \ref{map:centreD}). 
 
 
-\begin{wrapfigure}[18]{r}{0.3\textwidth}
-	\centering
-	\includegraphics[width = 0.3\textwidth]{DEMGrid.png}\\
-	\caption{Labelling of DEM grid cells surrounding the cell of interest. The eight surrounding cells are used for estimating topographic parameters in QGIS. The cell of interest, which is located at row $i$ and column $j$ of the DEM, is shown as a shaded cell and is labelled $z_5$.}
-	\label{fig:DEMgrid}
-\end{wrapfigure}
-
 \subsubsection*{Slope} 
 
 Slope ($m$) is the maximal rate of change of elevation and is defined as the angle between a plane tangential to the surface (gradient) and the horizontal \citep{Olaya2009} (Figure \ref{map:slope}). Slope ($m$) is calculated according to 
@@ -170,6 +163,12 @@ where the partial derivatives can be approximated by \citep{Mitavsova1993, Netel
 \end{align}
 Here, $z_k$ refers to one of the grid cells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. So $z_3 = z_{i+1,j+1}$, $z_7 = z_{i-1,j-1}$, and so on (Figure \ref{fig:DEMgrid}). The grid spacing (resolution) of the DEM is $\Delta x$ and $\Delta y$ in the east-west and north-south direction, respectively \citep{Neteler2008}. 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 0.3\textwidth]{DEMGrid.png}\\
+	\caption{Labelling of DEM grid cells surrounding the cell of interest. The eight surrounding cells are used for estimating topographic parameters in QGIS. The cell of interest, which is located at row $i$ and column $j$ of the DEM, is shown as a shaded cell and is labelled $z_5$.}
+	\label{fig:DEMgrid}
+\end{figure}
 
 \subsubsection*{Curvature} 
 
@@ -214,15 +213,15 @@ Sx_{A, d\max}(x_i, y_i) = \textrm{max} \left[ \textrm{tan}^{-1} \left( \frac{z(x
 \end{equation}
 where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates of the cell of interest, and $(x_v, y_v)$ are the set of all cell coordinates located along the search vector defined by	$(x_i, y_i)$, the azimuth ($A$), and maximum search distance ($d$max). Code for this calculation was provided by Adam Winstral (2016, personal communication). As done by \cite{McGrath2015}, we compute Sx at 5$^{\circ}$ azimuth increments for $d$max distances of 100, 200 and 300 m. These values are then correlated (Pearson correlation) with observed values of SWE and the Sx values from the combination of azimuth and $d$max input values that have the highest correlation are used for subsequent analysis (Table \ref{tab:Sxparams}). The code for calculating Sx requires a UTM raster formatted to ASCII in ArcGIS. 
 
-\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{figure}[h]
 	\centering
-	\includegraphics[width = 0.5\textwidth]{Sx_infographic.jpeg}\\
+	\includegraphics[width = 0.6\textwidth]{Sx_infographic.jpeg}\\
 	\caption{Image and description from \citep{Winstral2002}. Example of Sx calculations for three cells of interest along a 270$^\circ$ search vector. As depicted, with dmax set equal to 300 m, the shelter-defining pixel for cells 1 and 2 is cell A, producing positive Sx values. The shelter-defining cell for cell 3 is cell B, producing a negative Sx. Had dmax been equal to 100 m, the search for the shelter-
 defining  pixel  for  cell  1  would  not  extend  across  the  valley,  thus
 producing a negative Sx for cell 1, while Sx for cell 2 would remain
 the same and that for cell 3 would be slightly lower.}
 	\label{fig:Sx_infographic}
-\end{wrapfigure}
+\end{figure}
 
 
 \begin{table}[H]
@@ -236,13 +235,6 @@ Glacier 2 & 330 & 300 & 0.56 \\
 Glacier 13 & 280 & 200 & 0.28
 \end{tabular}
 \end{table} 
-
-
-\subsection{Topographic parameters from QGIS to Matlab}
-
-The value of each topographic parameter at the sampling locations was determined in QGIS. The sampling locations were imported to QGIS and the Point Sampling Tool was used to determine the value of the topographic parameter raster cell at each measurement location. The set of parameters that corresponds to e`ch location was then exported to a .csv file and imported into Matlab with the script 'Import\_Topo.m'.  Note that selection of Sx values was completed first (see above) and only the Sx values with highest correlation to SWE was exported. After importing to Matlab, the sets of parameter values ($x_p$) were standardized ($x_s$) by $x_s = \frac{x_p-\mu}{\sigma}$. The resulting structure is called \texttt{topo\_sampled} and is used in the MLR to be able to compare the explanatory power of each parameter (Section \ref{sec:MLR}). A non-standardized copy of the topographic parameters at the sampling locations was also kept for plotting purposes and is called is called \texttt{topo\_sampled\_ns}. Both structures are organized as a vector of values corresponding to the vectors in the \texttt{SWE} variable. 
-
-The topographic parameter rasters were also exported from QGIS as a .csv file and then imported into Matlab with the script `Import\_Topo.m'. The values are stored in the structure \texttt{topo\_full}, where each cell corresponds to one DEM cell. Cells outside of the glacier outline have no value (\texttt{NaN}). The raster values were standardized using the mean and standard deviation of the sampled topographic parameters so that this set of full topographic parameters could be used for modelling SWE using the regression. A copy of the non-standardized values was stored as \texttt{topo\_full\_ns}.
 
 \subsection{Parameter correlations}
 
@@ -1165,6 +1157,15 @@ The study glaciers showed varied relationships between SWE and topographic param
 
 %%%%%%%%%%%%%%%%%%
 \section{Appendix}
+
+\subsection{Topographic parameters from QGIS to Matlab}
+
+The value of each topographic parameter at the sampling location is determined in QGIS. The sampling locations are imported to QGIS and the Point Sampling Tool is used to determine the value of the topographic parameter raster cell at each measurement location. The set of parameters that corresponds to each location is then exported to a .csv file and imported into Matlab with the script `Import\_Topo.m'. Note that selection of Sx values is completed first, as described in Section \ref{sec:topoCalc}. The Sx map made with the combination of $d$max and azimuth values that produces Sx values most strongly correlated with SWE is exported.
+
+ After importing values of sampled topographic parameters to Matlab, the sets of parameter values ($x_p$) are standardized ($x_s$) by $x_s = \frac{x_p-\mu}{\sigma}$. The resulting structure is called \texttt{topo\_sampled} and is used in the regression to be able to compare the explanatory power of each parameter (Section \ref{sec:MLR} and \ref{sec:BMS}). A non-standardized copy of the topographic parameters at the sampling locations is also kept for plotting purposes and is called is called \texttt{topo\_sampled\_ns}. Both structures are organized as a vector of values corresponding to the vectors in the \texttt{SWE} variable. 
+
+The topographic parameter rasters are also exported from QGIS as a .csv file and then imported into Matlab with the script `Import\_Topo.m'. The values are stored in the structure \texttt{topo\_full}, where each cell corresponds to one DEM cell. Cells outside of the glacier outline have no value (\texttt{NaN}). The raster values were standardized using the mean and standard deviation of the sampled topographic parameters so that this set of full topographic parameters could be used for modelling SWE using the regression. A copy of the non-standardized values was stored as \texttt{topo\_full\_ns}.
+
 
 	\subsection{MLR software}
 \label{sec:MLRMethods}
