@@ -28,6 +28,7 @@
 
 \newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$), and Sx. }
 \newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points. }
+\newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
 \newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations. }
 
 
@@ -563,20 +564,22 @@ Parameters not included in a particular model are assigned coefficients of zero.
 
 \begin{sidewaystable}
 \centering
-\caption{Mean MLR coefficients for topographic regression between measured SWE  and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given. Semi-partial correlation is a metric that describes the increase in R$^2$ from the addition of a parameter to a regression that contains all other regressors. Raw correlation is the square of the Pearson correlation between a parameter and SWE.}
+\caption{Mean MLR and BMA coefficients for topographic regression between measured SWE  and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given. Semi-partial correlation is a metric that describes the increase in R$^2$ from the addition of a parameter to a regression that contains all other regressors. Raw correlation is the square of the Pearson correlation between a parameter and SWE.}
 \label{tab:MLRmeancoeff}
-\begin{tabular}{c|rrr|rrr|rrr}
-\multirow{2}{*}{Parameter} & \multicolumn{3}{c|}{\textbf{Glacier 4}} & \multicolumn{3}{c}{\textbf{Glacier 2}} & \multicolumn{3}{|c}{\textbf{Glacier 13}} \\
- & \multicolumn{1}{c}{\textit{Coefficient}} & \multicolumn{1}{c}{\textit{\begin{tabular}[c]{@{}c@{}}Semi-\\ partial R$^2$\end{tabular}}} & \multicolumn{1}{c|}{\textit{\begin{tabular}[c]{@{}c@{}}Raw \\ correlation\end{tabular}}} & \multicolumn{1}{c}{\textit{Coefficient}} & \multicolumn{1}{c}{\textit{\begin{tabular}[c]{@{}c@{}}Semi-\\ partial R$^2$\end{tabular}}} & \multicolumn{1}{c|}{\textit{\begin{tabular}[c]{@{}c@{}}Raw \\ correlation\end{tabular}}} & \multicolumn{1}{c}{\textit{Coefficient}} & \multicolumn{1}{c}{\textit{\begin{tabular}[c]{@{}c@{}}Semi-\\ partial R$^2$\end{tabular}}} & \multicolumn{1}{c}{\textit{\begin{tabular}[c]{@{}c@{}}Raw \\ correlation\end{tabular}}} \\ \hline
-$z$ & 0.008 & 0.015 & 0.003 & 0.110 & 0.205 & 0.586 & 0.054 & 0.245 & 0.347 \\
-$d_C$ & -0.001 & $<$0.001 & 0.044 & 0.008 & 0.014 & 0.031 & $<$0.001 & 0.003 & 0.051 \\
-$\alpha$ & -0.012 & $<$0.001 & 0.001 & -0.010 & 0.004 & 0.210 & $<$0.001 & 0.007 & 0.012 \\
-$m$ & -0.004 & 0.007 & 0.027 & 0.026 & $<$0.001 & 0.100 & 0.001 & 0.002 & $<$0.001 \\
-$N$ & -0.002 & 0.001 & 0.001 & 0.011 & 0.003 & 0.193 & 0.001 & 0.005 & 0.022 \\
-$\kappa$ & 0.016 & 0.010 & 0.041 & 0.001 & 0.004 & 0.078 & -0.021 & 0.008 & 0.040 \\
-Sx & -0.051 & 0.034 & 0.065 & 0.036 & 0.028 & 0.333 & 0.003 & 0.009 & 0.083 \\
-Intercept & 0.619 & --- & --- & 0.262 & --- & --- & 0.229 & --- & --- \\
-RMSE & 0.145 & --- & --- & 0.089 & --- & --- & 0.076 & --- & ---
+\begin{tabular}{ll|rrrrrrrc|c}
+ &  & \multicolumn{1}{c}{$z$} & \multicolumn{1}{c}{$d_C$} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{$m$} & \multicolumn{1}{c}{$N$} & \multicolumn{1}{c}{$\kappa$} & \multicolumn{1}{c}{Sx} & Intercept & RMSE \\ \hline
+\multirow{4}{*}{\textbf{Glacier 4}} & MLR Coefficient & 0.008 & $-$0.001 & $-$0.012 & $-$0.004 & $-$0.002 & 0.016 & $-$0.051 & 0.619 & 0.145 \\
+ & BMA Coefficient & 0.006 & $-$0.001 & $-$0.010 & $-$0.007 & $-$0.003 & 0.016 & $-$0.050 & 0.619 & 0.106 \\
+ & Semi-partial R$^2$ & 0.015 & $<$0.001 & $<$0.001 & 0.007 & 0.001 & 0.010 & 0.034 & --- & --- \\
+ & Raw correlation & 0.003 & 0.044 & 0.001 & 0.027 & 0.001 & 0.041 & 0.065 & --- & --- \\ \hline
+\multirow{4}{*}{\textbf{Glacier 2}} & MLR Coefficient & 0.110 & 0.008 & $-$0.010 & 0.026 & 0.011 & 0.001 & 0.036 & 0.262 & 0.089 \\
+ & BMA Coefficient & 0.111 & 0.008 & $-$0.011 & 0.029 & 0.012 & 0.002 & 0.036 & 0.261 & 0.075 \\
+ & Semi-partial R$^2$ & 0.205 & 0.014 & 0.004 & $<$0.001 & 0.003 & 0.004 & 0.028 & --- & --- \\
+ & Raw correlation & 0.586 & 0.031 & 0.211 & 0.100 & 0.193 & 0.078 & 0.333 & --- & --- \\ \hline
+\multirow{4}{*}{\textbf{Glacier 13}} & MLR Coefficient & 0.054 & $<$0.001 & $<$0.001 & 0.001 & 0.001 & $-$0.021 & 0.003 & 0.229 & 0.076 \\
+ & BMA Coefficient & 0.054 & $<$0.001 & $-$0.001 & $<$0.001 & 0.001 & $-$0.019 & 0.003 & 0.228 & 0.060 \\
+ & Semi-partial R$^2$ & 0.245 & 0.003 & 0.007 & 0.002 & 0.005 & 0.008 & 0.009 & --- & --- \\
+ & Raw correlation & 0.347 & 0.051 & 0.012 & $<$0.001 & 0.022 & 0.040 & 0.083 & --- & ---
 \end{tabular}
 \end{sidewaystable}
 
@@ -641,37 +644,30 @@ RMSE & 0.145 & --- & --- & 0.089 & --- & --- & 0.076 & --- & ---
 \end{tabular}
 \end{sidewaystable}
 
-The coefficients determined using MLR for density S4 can be seen in Table \ref{tab:MLRcoeff} and can be used to examine the relative importance of topographic parameters in the regression. These coefficients were found for standardized values of topographic parameters so their magnitude is indicative of their importance in predicting SWE. Table \ref{tab:MLRcoeffFull} shows coefficient values for all density options. The range of percent variance explained by each variable (from all density options) can be seen in Figure \ref{fig:MLRPercentVar_densityOptions}. The fit between modelled SWE and observed SWE for each glacier for density Option 7 can be seen in Figure \ref{fig:MLRfit_opt8} and the fit for all density options in Figure \ref{fig:MLRfit_allLines}. The distribution of residuals in then plotted in Figure \ref{fig:MLRresiduals_all}. A map of the predicted values of SWE over the entire glacier using density option 7 can be seen in Figure \ref{fig:MLRmodelledSWE} with basic summary statistics found in Table \ref{tab:MLRsweMinMax}. Modelled SWE using all density options is shown in Figure \ref{fig:allMLRmodelled}. A map of the difference between maximum and minimum modelled SWE values is shown in Figure \ref{fig:MLR_SWEdiffMap}.
-
-
 The importance of regressors and total variance explained using MLR differs for the three study glaciers (Table \ref{tab:MLRmeancoeff}). The regression for Glacier 2 explained a large portion of the variance (R$^2$=0.66), although the RMSE was higher than that of Glacier 13, for which the regression explained less variance (R$^2$=0.40) (Figure \ref{fig:MLRfit_allLines}). Glacier 4 had the least variance explained by the regression (R$^2$=0.12) and the highest RMSE. The intercepts of the regression were similar for Glaciers 2 and 13 ($\sim$0.25 m w.e.), which is much less than the intercept for Glacier 4 (0.62 m w.e.). The discrepancy between intercept values is a result of the poor fit of the Glacier 4 regression that results in the value of the intercept approaching that of the data mean (??). The residuals for Glacier 4 have a larger range than those of Glacier 2 and 13 (Figure \ref{fig:MLRresiduals_all}).
 
-The most important regressors for Glacier 4 are Sx, curvature ($\kappa$) and aspect ($\alpha$). The regression coefficients for these parameters are an order of magnitude larger than those of the remaining parameters for all density options (Table \ref{tab:MLRcoeffFull}) and for the mean of all density options (Table \ref{tab:MLRmeancoeff}). Sx has the highest mean semi-partial correlation (0.034)  and raw correlation (0.065) (Table \ref{tab:MLRmeancoeff}). The Sx coefficient is negative, which indicates less snow in `sheltered' areas. The negative correlation is counter intuitive so it is surprising that it is the best predictor for accumulation.
+The most important regressors for Glacier 4 are Sx, curvature ($\kappa$) and aspect ($\alpha$). The regression coefficients for these parameters are an order of magnitude larger than those of the remaining parameters for all density options (Table \ref{tab:MLRcoeffFull}) and for the mean of all density options (Table \ref{tab:MLRmeancoeff}). Sx has the highest mean semi-partial correlation (0.034)  and raw correlation (0.065) (Table \ref{tab:MLRmeancoeff}). The Sx coefficient is negative, which indicates less snow in `sheltered' areas. The negative correlation is counter intuitive so it is surprising that Sx is the best predictor for accumulation.
 
-The map of estimated SWE for the entire glacier shows a relatively uniform SWE distribution over Glacier 4 (Figure \ref{fig:MLRmodelledSWE}), due to the large influence of the intercept on the regression.  Areas with high Sx values (sheltered), especially in the accumulation area, have the lowest values of SWE. This regression indicates that the wind plays a role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining Sx values that assume wind moving up or down glacier and changing direction to follow the valley could allow the Sx parameter to explain more of the variance. 
+The map of estimated SWE for the entire glacier shows a relatively uniform SWE distribution over Glacier 4 (Figure \ref{fig:MLRmodelledSWE}), due to the large influence of the intercept on the regression. Areas with high Sx values (sheltered), especially in the accumulation area, have the lowest values of SWE. This regression indicates that the wind plays a role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining Sx values that assume wind moving up or down glacier and changing direction to follow the valley could allow the Sx parameter to explain more of the variance. 
 
-\begin{wraptable}{l}{8.5cm}
+\begin{wrapfigure}{l}{8.5cm}
 \centering
-\caption{Summary statistics of estimated SWE using MLR coefficients. Values are for coefficients determined using SWE with inverse-distance weighted snowpit densities. }
+	\includegraphics[width = 8.5cm]{ModelledSWE_box_MLR.png}\\
+\caption{Summary of estimated SWE values found using MLR coefficients. \boxMatlab}
 \label{tab:MLRsweMinMax}
-\begin{tabular}{lccc}
-\multicolumn{1}{l}{} & \multicolumn{3}{c}{\textbf{Modelled SWE (m w.e.)}} \\
-                     & Mean          & Minimum          & Maximum         \\ \hline
-Glacier 4            & 0.58          & 0.10             & 0.85            \\
-Glacier 2            & 0.55          & 0            & 1.76            \\
-Glacier 13           & 0.41          & 0.03             & 0.90           
-\end{tabular}
-\end{wraptable} 
+\end{wrapfigure} 
 
-HERE*************
+For Glacier 2, the most important regressor is elevation. This coefficient is positive, which means that SWE will increase with elevation. The elevation regression coefficient is an order of magnitude larger than the other coefficients and has the highest semi-partial R$^2$ and raw correlation (Table \ref{tab:MLRmeancoeff}). Sx is the second most important regresor and has a positive correlation, which indicates that `sheltered' areas are likely to have high accumulation. 
 
-For Glacier 2, the largest coefficient (by an order of magnitude) is elevation. This coefficient is positive, which means that SWE will increase with elevation. Elevation explains the largest amount of variance ($\sim$45\%) and this is consistent for all density options. Sx and distance from centreline are also significant coefficients in the MLR, explaining $\sim$6\% and $\sim$1\% of the variance, respectively.  Overall, the modelled winter balance is a good estimation of observed SWE (R$^2_{avg}=0.62$) although it tends to underestimate the amount of accumulation. The map of modelled SWE shows the strong dependence on elevation since the values closely resemble the elevation map (Figure \ref{map:elev}). The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE (1.76 m w.e) and the lowest SWE ($-$0.23 m w.e.) values. Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating from the regression, which largely depends on elevation. The southwest region of the accumulation area that has the area of high accumulation is a result of the high elevation and Sx values. The negative values of SWE at the terminus are a result of the low elevation, as the Sx values are close to zero there. 
+The map of modelled SWE on Glacier 2 closely matches that of elevation (Figure \ref{map:elev}), which highlights the strong dependence of SWE on elevation. The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE (1.92 m w.e) and the lowest SWE (0 m w.e.) values (Table \ref{tab:MLRsweMinMax}). Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating from the regression, which largely depends on elevation. The southwest region of the accumulation area that has the area of high estimated accumulation is a result of the high elevation and Sx values. The low SWE values at the terminus are a result of the low elevation and Sx values are close to zero there. 
 
-For Glacier 13, the largest coefficient is elevation with distance from centreline and Sx also of the same order of magnitude. All three coefficients are positive, which means that cells at higher elevation, closer to the margins, and more sheltered had higher amounts of SWE. Elevation explains the majority of the variance (24\%), while distance from centreline and Sx explain far less ($\sim$1\% each).  Overall, the MLR modelled winter balance is poorly related to observed SWE (R$^2_{avg}=0.35$) and tends to underestimate the amount of accumulation. The map of modelled SWE displays an increase with elevation, although it is not strong considering the large range of elevation on this glacier.
+The most important regressor for Glacier 13 is elevation. The coefficient is positive, which means that cells at higher elevation had higher values of SWE. Despite a low value of raw correlation between elevation and SWE, the semi-partial R$^2$ value is  the largest between the glaciers. The high semi-partial R$^2$ value indicates that when elevation is added to the regression the total variance explained increases considerably because the remaining regressors are unimportant. 
 
-Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density options for all glaciers and the residuals display a similar distribution between the density options.The percent variance explained by each parameter also varies little between different density options. 
+Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density options for all glaciers and the residuals display a similar distribution between the density options. The semi-partial R$^2$ and raw correlation for each regressor also varies little between different density options. 
 
-The effect of density values on the percent variance explained by each topographic parameters in the MLR is shown in Figure \ref{fig:MLRPercentVar_densityOptions}. The range of percent variance explained by elevation is large for both Glacier 2 and 13 but it does not affect the importance of elevation relative to the other parameters. For these two MLR coefficients, the choice of density interpolation has a large effect on the ability of the model to explain variance in SWE. Using inverse distance weighted, Federal Sampler derived density resulted in the highest percent variance explained (54\%). Since the Federal Sampler derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. The range of percent variance explained for all other parameters is small so the MLR coefficients for these parameters are insensitive to the choice of density interpolation. The values for aspect, ``northness'', and both curvatures are essentially zero. 
+The the choice of density measurements and interpolation techniques does not affect the relative importance of regressors. Although there is a range of coefficient values that result from the choice of density options (Figure \ref{fig:MLRcoeff_densityOptions}), the relative dominance of Sx for Glacier 4 and elevation for Glacier 2 and 13 is consistent. The largest range in semi-partial correlation is for elevation for Glaciers 2 and 13 (Figure \ref{fig:MLRsemiR2_densityOptions}). Using the linear elevation regression and Federal Sampler-derived density (F3) resulted in the highest semi-partial correlation for Glaciers 2 and 13 (0.24 and 0.30, respectively). Since the Federal Sampler derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. 
+
+The largest difference in estimated SWE between the various density options is found on Glacier 2 in the upper part of the accumulation area (Figure \ref{fig:MLR_SWEdiffMap}). Glacier 2 also has the lowest difference in estimated SWE, which result from all density options estimating values of 0 m w.e. at the terminus. The strong relationship between elevation and SWE makes the estimation of glacier-wise SWE sensitive to this parameter. The difference in estimated SWE expressed as a percent (Figure \ref{fig:MLR_SWEdiffMapPercent}) is relatively consistent between glaciers. Extreme values in percent difference are located in areas with low values of estimated SWE (small denominator). 
 
 
 \begin{figure}[H]
@@ -690,22 +686,30 @@ The effect of density values on the percent variance explained by each topograph
     \label{fig:MLRfit}
 \end{figure}
 
-
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRresiduals_all.png}}%
 	\caption{Residuals of SWE predicted using MLR for all options of estimating density.}
 	\label{fig:MLRresiduals_all}
 \end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =1.1 \textwidth]{MLRcoeff_DensityOpts.png}\\
+	\caption{Boxplot showing the range of regressor coefficients explained by each topographic parameter for each option of estimating snow water equivalent (SWE). \params \boxplot }
+	\label{fig:MLRcoeff_densityOptions}
+\end{figure}
+
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width =1.1 \textwidth]{Coeffs_DensityOpts.png}\\
-	\caption{Boxplot showing the range of percent variance explained by each topographic parameter for each option of estimating snow water equivalent (SWE). Topographic parameters include aspect ($\alpha$), elevation ($z$), northness ($N$), profile curvature ($\kappa_P$), slope ($m$), tangent curvature ($\kappa_T$), wind redistribution (Sx) and distance from centreline ($d_C$). Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points.}
-	\label{fig:MLRPercentVar_densityOptions}
+	\includegraphics[width =1.1 \textwidth]{MLRsemiR2_DensityOpts.png}\\
+	\caption{Boxplot showing the range of semi-partial correlation explained by each topographic parameter for each option of estimating snow water equivalent (SWE). \params \boxplot }
+	\label{fig:MLRsemiR2_densityOptions}
 \end{figure} 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{MLRmap_Modelled_Observed8.png}}%
-	\caption{Modelled SWE using coefficients determined using MLR and density interpolated with inverse-distance weighting from snowpits (Option 7). Observed SWE values are overlain on the maps.}
+	\caption{Modelled SWE using coefficients determined using MLR and density interpolated with inverse-distance weighting from snowpits (S4). Observed SWE values are overlain on the maps.}
 	\label{fig:MLRmodelledSWE}
 \end{figure}
 
@@ -719,7 +723,7 @@ The effect of density values on the percent variance explained by each topograph
  \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap_percent.png}\\
-	\caption{Map of the difference between maximum and minimum SWE values, expressed as a percent of the mean SWE, for each DEM cell between all density options using MLR coefficients. The colours have been scaled to highlight difference in the main part of the glaciers.}
+	\caption{Map of the difference between maximum and minimum SWE values, expressed as a percent of the maximum SWE, for each DEM cell between all density options using MLR coefficients. The colours have been scaled to highlight difference in the main part of the glaciers. Values of zero are found where the minimum estimated SWE is zero m w.e.}
 	\label{fig:MLR_SWEdiffMapPercent}
 \end{figure}
  
