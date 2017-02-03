@@ -30,6 +30,7 @@
 \newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points. }
 \newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
 \newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations. }
+\newcommand{\blackdots}{Observed SWE values are overlain on the maps. }
 
 
 \begin{document}
@@ -237,6 +238,13 @@ Glacier 13 & 280 & 200 & 0.28
 \end{tabular}
 \end{table} 
 
+\subsection{DEM smoothing}
+
+Visual inspection of the curvature fields calculated using the DEM showed noisy spatial distribution that did not vary smoothly. \cite{Olaya2009} states that the curvature calculation is sensitive to noisy data and a smoothing filter often needs to be applied to the DEM prior to calculation. Curvature, as well as slope, aspect and ``northness'', are all sensitive to noise because calculating these parameters involves calculating the first and second derivatives of the elevation, which are highly dependent on the size of the DEM cell. To minimize the effect of noise on these four parameters, a smoothing filter was applied to the DEM and this smoothed DEM was used to calculate curvature, slope, aspect and ``northness''. The non-smoothed DEM was used to determine elevation and Sx because these parameters do not depend on a topographic length scale and their values are not sensitive to the size of the DEM cell size.
+
+To choose a smoothing algorithm and window size, a number of smoothing algorithms was applied and the one that resulted in topographic parameters that had the highest correlation with SWE was chosen. Window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 were used. For all sizes, inverse-distance weighted smoothing and Gaussian smoothing were poorly correlated with SWE. An average value smoothing with a 7$\times$7 window resulted in the highest correlation between curvature (second derivative) and SWE as well as slope (first derivative) and SWE. The window size that produced the highest correlation of SWE values and curvature for each glacier differed, but for all SWE values taken together, the 7$\times$7 window resulted in the highest correlation. For slope, the highest correlation for individual glaciers was from the DEM with a 7$\times$7 smoothing window but the overall correlation was not the highest with this window. To maintain consistency between parameters, the 7$\times$7 smoothing window was chosen and applied to the DEM for calculation of curvature, slope, aspect and ``northness''. 
+
+
 \subsection{Parameter correlations}
 
 The correlation between topographic parameters at sampling locations on each glacier is shown in Table \ref{tab:pearson_correlation}. Correlation values are generally low, with the exception of the correlation between northness and aspect on Glacier 2 and northness and Sx on Glacier 13, which were both larger than 0.7. Since there is little correlation between parameters and the correlations vary between glaciers, the use of a linear regression with these topographic parameters as predictor variables is warranted. 
@@ -245,48 +253,29 @@ The correlation between topographic parameters at sampling locations on each gla
 \centering
 \caption{Pearson correlation coefficients between topographic parameters at sampled locations. \params}
 \label{tab:pearson_correlation}
-\begin{tabular}{cc|cccccccc}
- &  & $d_C$ & $z$ & $\alpha$ & $m$ & $N$ & $\kappa_P$ & $\kappa_T$ & Sx \\ \hline
- 
- & $d_C$ & 1 & 0.20 &  $-$0.28 & 0.36 & 0.11 &  $-$0.19 &  $-$0.13 & 0.37 \\
- 
- & $z$ & & 1 & 0.27 &  $-$0.11 &  $-$0.35 & 0.13 & 0.04 & 0.36 \\
- 
- & $\alpha$ & & & 1 &  $-$0.29 &  $-$0.24 & 0.19 & 0.07 & 0.22 \\
- 
- & $m$ & & & & 1 & 0.55 &  $-$0.36 &  $-$0.09 & 0.03 \\
- 
- & $N$ & & & & & 1 &  $-$0.16 &  $-$0.03 &  $-$0.47 \\
- 
- & $\kappa_P$ & & & & & & 1 & 0.41 &  $-$0.18 \\
- 
- & $\kappa_T$ & & & & & & & 1 &  $-$0.28 \\
- 
-\multirow{ -8}{*}{Glacier 4} & Sx & & & & & & & & 1 \\ \hline
- & $d_C$ & 1 & 0.05 &  $-$0.22 & 0.11 & 0.24 & 0.07 & 0.20 &  $-$0.01 \\
- & $z$ & & 1 & 0.56 &  $-$0.49 &  $-$0.32 & 0.08 & 0.03 & 0.58 \\
- & $\alpha$ & & & 1 &  $-$0.39 &  $-$0.72 & 0.19 & 0.04 & 0.49 \\
- & $m$ & & & & 1 & 0.04 &  $-$0.03 &  $-$0.02 &  $-$0.37 \\
- & $N$ & & & & & 1 &  $-$0.19 &  $-$0.03 &  $-$0.11 \\
- & $\kappa_P$ & & & & & & 1 & 0.44 &  $-$0.23 \\
- & $\kappa_T$ & & & & & & & 1 &  $-$0.27 \\
-\multirow{ -8}{*}{Glacier 2} & Sx & & & & & & & & 1 \\ \hline
- 
- & $d_C$ & 1 & 0.13 &  $-$0.09 & 0.06 & 0.01 & 0.10 & 0.03 & 0.05 \\
- 
- & $z$ & & 1 &  $-$0.11 &  $-$0.01 & 0.30 & 0.06 &  $<$0.01 & 0.31 \\
- 
- & $\alpha$ & & & 1 & 0.01 &  $-$0.59 &  $-$0.01 &  $-$0.13 &  $-$0.47 \\
- 
- & $m$ & & & & 1 &  $-$0.26 & $<$0.01 &  $-$0.10 &  $<$0.01 \\
- 
- & $N$ & & & & & 1 &  $-$0.07 &  $-$0.11 & 0.76 \\
- 
- & $\kappa_P$ & & & & & & 1 & 0.36 &  $-$0.30 \\
- 
- & $\kappa_T$ & & & & & & & 1 &  $-$0.47 \\
- 
-\multirow{-8}{*}{Glacier 13} & Sx & & & & & & & & 1
+\begin{tabular}{cc|ccccccc}
+ &  & $z$ & $d_C$ & $\alpha$ & $m$ & $N$ & $\kappa$ & Sx \\ \hline
+\multirow{7}{*}{Glacier 4} & $z$ & 1 & 0.16 & $-$0.57 & $-$0.08 & $-$0.51 & 0.17 & 0.43 \\
+ & $d_C$ &  & 1 & 0.13 & 0.56 & 0.16 & $-$0.43 & 0.35 \\
+ & $\alpha$ &   &  & 1 & 0.57 & 0.95 & $-$0.61 & $-$0.58 \\
+ & $m$ &   &   &   & 1 & 0.64 & $-$0.58 & $-$0.10 \\
+ & $N$ &   &   &   &   & 1 & $-$0.59 & $-$0.59 \\
+ & $\kappa$ &   &   &   &   &   & 1 & 0.05 \\
+ & Sx &   &   &   &   &   &   & 1 \\ \hline
+\multirow{7}{*}{Glacier 2} & $z$ & 1 & 0.06 & $-$0.52 & $-$0.58 & $-$0.62 & 0.45 & 0.57 \\
+ & $d_C$ &   & 1 & 0.06 & 0.13 & 0.11 & $-$0.27 & 0.01 \\
+ & $\alpha$ &   &  & 1 & 0.33 & 0.86 & $-$0.42 & $-$0.45 \\
+ & $m$ &   &   &   & 1 & 0.74 & $-$0.67 & $-$0.41 \\
+ & $N$ &   &   &   &   & 1 & $-$0.67 & $-$0.48 \\
+ & $\kappa$ & &   &   &   &   & 1 & 0.28 \\
+ & Sx &   &   &   &   &   &   & 1 \\ \hline
+\multirow{7}{*}{Glacier 13} & $z$ & 1 & 0.15 & 0.19 & $-$0.15 & 0.10 & 0.02 & 0.27 \\
+ & $d_C$ &   & 1 & $-$0.05 & 0.18 & 0.10 & $-$0.45 & 0.06 \\
+ & $\alpha$ &   &   & 1 & $-$0.07 & 0.68 & $<$0.01 & 0.45 \\
+ & $m$ &   &   &   & 1 & 0.63 & $-$0.22 & $-$0.22 \\
+ & $N$ &   &   &   &   & 1 & $-$0.21 & 0.23 \\
+ & $\kappa$ &   &   &   &   &   & 1 & $-$0.30 \\
+ & Sx &   &   &   &   &   &   & 1
 \end{tabular}
 \end{table}
 
@@ -294,78 +283,55 @@ The correlation between topographic parameters at sampling locations on each gla
 \subsection{Maps of topographic parameters and distribution of parameters sampled}
 
 
-Elevation maps (Figure \ref{map:elev}) show that both Glacier 2 and 13 have small areas with high elevation, which correspond to steep headwalls. Mean elevation is the same for all glaciers for the full and sampled distribution within one standard deviation (Table \ref{tab:sampled&fullParams_stats}). However, maximum elevation values are lower for Glacier 4 than the other two glaciers (Figure \ref{sampledRange:elev}) and the sampled elevation means are approximately 200 m less than that of the full distribution. Standard deviations are smaller for sampled ranges for all glaciers. The skewness of sampled and full distributions is similar for Glacier 2 but differs considerably for Glacier 4 and 13. Elevation full distributions are similar for the study glaciers, with kurtosis for all distributions, except sampled elevation on Glacier 13, being less than 3 (value for normal distribution). Kurtosis of sampled distributions show that Glacier 13 had a broader distribution and Glacier 2 has a narrower distribution. 
+Elevation maps (Figure \ref{map:elev}) show that both Glacier 2 and 13 have small areas with high elevation, which correspond to steep headwalls. Mean elevation is the same for all glaciers for the full and sampled distribution within one standard deviation (Table \ref{tab:sampled&fullParams_stats}). However, maximum elevation values are lower for Glacier 4 than the other two glaciers (Figure \ref{sampledRange:elev}) and the sampled elevation means are approximately 200 m less than that of the full distribution. Standard deviations are smaller for sampled ranges for all glaciers. The skewness of sampled and full distributions is different for all glaciers. Elevation full distributions are similar for the study glaciers, with kurtosis for all distributions, except sampled elevation on Glacier 13, being less than 3 (value for normal distribution). Kurtosis of sampled distributions show that Glacier 13 had a broader distribution and Glacier 2 has a narrower distribution. 
 
-The distribution of sampled distance from centreline (Figure \ref{sampledRange:centreD}) is different from that of the full distribution. Generally, large distance were not sampled. Larger values of skewness and kurtosis in the full distribution indicate that these distributions are broader and span a larger range of values (Table \ref{tab:sampled&fullParams_stats}). This is also seen in the mean and standard deviation values, which are also larger for the full distribution. Large values of distance from centreline are located at the edges of the glacier in the accumulation area (Figure \ref{map:centreD}), which constitute steep, inaccessible terrain. Within the ablation area, the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier.
+The distribution of sampled distance from centreline (Figure \ref{sampledRange:centreD}) is different from that of the full distribution. Generally, large distances were not sampled. Larger values of skewness and kurtosis in the full distribution indicate that these distributions are broader and span a larger range of values (Table \ref{tab:sampled&fullParams_stats}). This is also seen in the mean and standard deviation values, which are also larger for the full distribution. Large values of distance from centreline are located at the edges of the glacier in the accumulation area (Figure \ref{map:centreD}), which constitute steep, inaccessible terrain. Within the ablation area, the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier.
 
-Slope of the three study glaciers (Figure \ref{map:slope}) is generally less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 having steep slopes. The full and sampled distributions of slope are similar between glaciers (Table \ref{tab:sampled&fullParams_stats}), with mean values between 12$^{\circ}$ and 15$^{\circ}$ for the full distribution and 5$^{\circ}$ to 8$^{\circ}$ for the sampled distribution. The sampled distributions are all different than the full range, as indicated by the lower means, standard deviations, and skewness, as well as larger kurtosis. This shows that the sampled distributions are generally narrower than full distributions and severely under samples steep slopes (Figure \ref{sampledRange:slope}).
+The aspect of Glaciers 2 and 13 indicate that the majority of these two glaciers is north facing, while the majority of Glacier 4 is south facing (Figure \ref{map:aspect}). This is also highlighted in the mean values of aspect, which are positive for Glaciers 2 and 13 and negative for Glacier 4 (Table \ref{tab:sampled&fullParams_stats}). Sampled mean aspect is similar to the full distribution, although the standard deviation of sampled aspects is much lower. Further, the skewness and kurtosis of the sampled distributions differs considerably from the full distribution and there are many aspects that were not sampled (Figure \ref{sampledRange:aspect}). 
 
+Slope of the three study glaciers (Figure \ref{map:slope}) is generally less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 having steep slopes. The full and sampled distributions of slope are similar between glaciers (Table \ref{tab:sampled&fullParams_stats}), with mean values of $\sim$13$^{\circ}$ for the full distribution and 5$^{\circ}$ to 8$^{\circ}$ for the sampled distribution. The sampled distributions are all different than the full range, as indicated by the lower means, standard deviations, and skewness, as well as larger kurtosis. This shows that the sampled distributions are generally narrower than full distributions and severely under sample steep slopes (Figure \ref{sampledRange:slope}).
+
+The mean ``northness'' values for all glaciers were close to zero and the majority of cells have values close to zero, which is likely due to their low slope values (Figure \ref{map:northness}). Even for Glacier 4, which is largely south facing and should thus have lower values of ``northness'', has a distribution with a mean close to zero (Table \ref{tab:sampled&fullParams_stats}). The low slope values mean that the values of ``northness'' were determined largely by the aspect, which can be seen by the resemblance between the ``northness'' map and the aspect map and their high correlation (Table \ref{tab:pearson_correlation}). Sampled distributions of ``northness'' did not resemble the full distributions. Although the mean values were similar, the skewness and kurtosis values were higher for all glaciers, indicating that the sampling was biased.
+
+Curvature values on all glaciers are largely negative, indicating that concave topography is more prevalent than convex topography (Figures \ref{map:curvature} and \ref{sampledRange:curvature}). The sampled distribution of curvature is a poor representation of the full distribution as shown by the dramatically different values of skewness, which are positive for the full distribution and negative for the sampled distribution (Table \ref{tab:sampled&fullParams_stats}). 
 
 Sx maps over the study glaciers are shown in Figure \ref{map:Sx} and the wind direction and maximum search distance with the highest correlation to SWE for each glacier are shown in Table \ref{tab:Sxparams}. For Glacier 4, an approximately east wind and 300 m search distance were most strongly correlated. The correlation was negative, which means that negative values of Sx (exposure) correspond to areas with larger SWE (more snow). This is counter intuitive and perhaps indicates that Sx is not an appropriate topographic parameter to correlate with SWE on Glacier 4. Despite this, Sx was retained in future analysis for consistency between glaciers. For Glacier 2, a north wind with a 300 m search distance was most strongly correlated and for Glacier 13, a west wind with a 200 m search distance produced the strongest correlation. Both of these correlations were positive, so a more positive Sx value (sheltered) corresponds to higher values of SWE (more snow). The correlation values for Glacier 4 and 2 are low ($<$0.3) which indicates that Sx will likely be insignificant in estimating snow accumulation. The correlation between Sx and SWE on Glacier 2 is higher at 0.56. 
 
 The full distribution of Sx (Figure \ref{sampledRange:Sx}) is different for each glacier and differs greatly between sampled and full distributions. Glacier 2 has a mean less than zero, indicating that a large portion of the glacier has exposed topography (Table \ref{tab:sampled&fullParams_stats}). Glacier 4 and 13 have positive mean values of Sx, indicating more sheltered topography. Extreme values of Sx are generally located along the edges of the accumulation areas (Figure \ref{map:Sx}). The sampled distribution mean for Glacier 2 is close to that of its full distribution, while the sampled distribution means of Glacier 4 and 13 are different (negative) than that of the full distribution means (positive). The sampled distribution are more sharply peaked, as indicated by the smaller standard deviation values and larger kurtosis when compared to the full distributions. The skewness also differs for Glaciers 4 and 2, with the sampled distributions skewed more to the right than full distributions. Overall, the sampled distribution of Sx is a poor representation of the full distribution. 
 
+Overall, the sampled topographic parameters are poor representatives of the full distribution of parameters. Extreme values of all parameters are grossly under sampled and the distribution of the sampled parameters generally differs from the full distribution. This was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. These errors are especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the highest values of SWE and is likely to heavily influence final winter mass balance values. Improvements to this study could include using an air-borne GPR to collect a dense network of SWE measurements in difficult to access areas \citep[e.g.][]{McGrath2015} (see Section ?? for more details). Generally, the sampled values do not fully capture the variance in topographic parameters but a regression is still valuable  since topographic regressions are common when estimating winter mass balance. Acknowledging that this methodology is limited and prone to extrapolation errors is paramount to capturing uncertainty in accumulation studies. 
 
----------
-
-Maps of the topographic parameters for each glacier are shown below. Additionally, the distribution of topographic parameter values and the sampled distribution for each parameter is also shown. The full range of parameters has highest frequencies for Glacier 13 and lowest for Glacier 4 because Glacier 13 is larger than Glacier 4. Frequency of sampled parameters are comparable between glaciers because the sampling schemes were similar.
-
- 
-
-
-
-
-Tangential curvature is shown in Figure \ref{map:tangentC} and profile curvature is shown in Figure \ref{map:profileC}. The curvature values are generally moderate and centred about 0. The distribution of sampled curvature closely matches the full distribution although high curvature areas were not sampled (see Figure \ref{sampledRange:tangentC} and \ref{sampledRange:profileC}).
-
-
-Aspect of the glacier surface is shown in Figure \ref{map:aspect}. Glacier 2 and 13 have similar aspect distributions, with a mean aspect of $\sim100^{\circ}$. Glacier 4 has a mean aspect of $\sim300^{\circ}$, which is roughly $180^{\circ}$ to that of Glacier 2 and 13. The sampled distribution, as shown in Figure \ref{sampledRange:aspect}, for Glacier 4 follows that of the full distribution relatively well. However, the sampled distribution of Glacier 2 and 13 does not match that of the full distribution and there are many aspects that were not sampled.  
-
-
-QGIS Aspect: 90 degrees is North, 180 is West, 270 is South 360 is East
-Olaya2009 Aspect : 0=N and read clockwise
-
-``Northness'' for all study glaciers is shown in Figure \ref{map:northness}. The majority of cells have values close to zero, which is likely due to their low slope values. Even for Glacier 4, which is largely south facing and should thus have lower values of ``northness'', has a distribution with a mean close to zero. The low slope values mean that the values of ``northness'' were determined largely by the aspect, which can be seen by the resemblance between the ``northness'' map and the aspect map. 
-
-
-
-Overall, the sampled topographic parameters are representative of the full distribution of parameters. Extreme values are grossly under sampled so that the full range of parameter values was not sampled. This was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. This is especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the most accumulation and is likely to heavily influence final winter mass balance values. It is also important to note that for a number of parameters (especially elevation) the sampling distribution is off-set from that of the full distribution. Generally, the sampled values do not fully capture the variance in topographic parameters but a regression is still valuable to conduct since topographic regressions are common when estimating winter mass balance. Acknowledging that this methodology is limited and prone to extrapolation errors is paramount to capturing uncertainty in accumulation studies. 
-
-\begin{landscape}
-\begin{table}[]
+\begin{sidewaystable}
 \small
 \centering
 \caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature, and are unitless for cosine of aspect ($\alpha$), ``northness'' ($N$), slope ($m$), and Sx. Skewness is a measure of the data asymmetry about the mean, with positive values indicating data that are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
 \label{tab:sampled&fullParams_stats}
 \begin{tabular}{cc|cccc|cccc}
-\textbf{} &  & \multicolumn{4}{c}{\textbf{Full distribution}} & \multicolumn{4}{|c}{\textbf{Sampled distribution}} \\
-\textbf{} &  & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} \\ \hline
-\multirow{8}{*}{\textbf{Glacier 4}} & $d_C$ & 258.48 & 233.03 & 1.83 & 6.56 & 117.05 & 87.75 & 0.36 & 2.06 \\
- & $z$ & 2343.37 & 177.93 &  $-$0.18 & 2.11 & 2238.93 & 85.11 & 0.00 & 2.55 \\
- & $\alpha$ & 0.45 & 0.56 &  $-$1.14 & 3.24 & 263.72 & 114.59 &  $-$1.50 & 3.49 \\
- & $m$ & 12.52 & 8.27 & 1.45 & 4.86 & 8.19 & 3.58 & 1.61 & 7.18 \\
- & $N$ & 0.09 & 0.15 & 0.06 & 5.26 & 0.10 & 0.06 & 0.22 & 5.71 \\
- & $\kappa_P$ &  $-$73.82 & 303.08 &  $-$0.23 & 6.32 &  $-$30.20 & 206.62 &  $-$0.54 & 4.12 \\
- & $\kappa_T$ &  $-$41.43 & 293.06 &  $-$0.20 & 6.61 &  $-$41.76 & 198.50 &  $-$0.04 & 3.15 \\
- & Sx & 1.53 & 11.42 & 1.02 & 4.28 &  $-$1.44 & 4.81 & 1.97 & 8.17 \\ \hline
-\multirow{8}{*}{\textbf{Glacier 2}} & $d_C$ & 305.03 & 237.02 & 1.21 & 4.50 & 136.78 & 98.64 & 0.33 & 2.52 \\
- & $z$ & 2495.11 & 232.60 & 0.10 & 2.81 & 2297.04 & 93.82 & 0.08 & 1.80 \\
- & $\alpha$ &  $-$0.35 & 0.59 & 0.72 & 2.29 & 140.34 & 34.68 & 0.08 & 3.06 \\
- & $m$ & 14.10 & 11.54 & 1.15 & 3.11 & 6.56 & 2.06 & 0.44 & 3.97 \\
- & $N$ &  $-$0.03 & 0.18 & 0.96 & 5.18 &  $-$0.07 & 0.05 & 1.15 & 7.26 \\
- & $\kappa_P$ &  $-$16.81 & 270.23 & 0.65 & 10.34 &  $-$3.54 & 149.77 &  $-$0.34 & 3.96 \\
- & $\kappa_T$ &  $-$0.88 & 253.45 & 0.38 & 9.69 & 7.73 & 197.08 & 0.29 & 3.78 \\
- & Sx &  $-$3.82 & 9.34 &  $-$0.18 & 6.09 &  $-$3.71 & 2.54 & 0.84 & 4.87 \\ \hline
-\multirow{8}{*}{\textbf{Glacier 13}} & $d_C$ & 443.87 & 308.48 & 0.76 & 3.22 & 181.98 & 152.02 & 0.37 & 2.10 \\
- & $z$ & 2427.62 & 225.15 & 0.13 & 2.45 & 2214.21 & 75.84 & 0.61 & 4.80 \\
- & $\alpha$ &  $-$0.12 & 0.66 & 0.25 & 1.70 & 130.72 & 46.58 & 0.80 & 6.23 \\
- & $m$ & 15.00 & 11.90 & 1.15 & 3.47 & 5.80 & 2.63 & 1.11 & 5.62 \\
- & $N$ & 0.01 & 0.19 & 0.71 & 3.88 &  $-$0.05 & 0.06 & 0.25 & 4.79 \\
- & $\kappa_P$ &  $-$27.37 & 234.18 & 0.30 & 5.29 & 19.50 & 127.35 &  $-$0.82 & 7.08 \\
- & $\kappa_T$ &  $-$3.57 & 236.64 & 0.92 & 8.61 &  $-$0.41 & 143.17 &  $-$0.69 & 5.59 \\
- & Sx & 3.69 & 12.08 & 0.97 & 3.68 &  $-$1.65 & 3.91 & 1.02 & 5.69
+ & \textbf{} & \multicolumn{4}{c|}{\textbf{Full}} & \multicolumn{4}{c}{\textbf{Sampled}} \\
+\textit{\textbf{}} & \textit{} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} \\ \hline
+\multirow{7}{*}{\textbf{Glacier 4}} & $z$ & 2343.76 & 178.36 & $-$0.17 & 2.13 & 2242.63 & 89.52 & 0.00 & 2.59 \\
+ & $d_C$ & 258.95 & 233.49 & 1.82 & 6.52 & 124.33 & 89.56 & 0.32 & 2.04 \\
+ & $\alpha$ & $-$0.35 & 0.61 & 0.75 & 2.23 & $-$0.37 & 0.53 & 0.85 & 2.57 \\
+ & $m$ & 12.81 & 7.03 & 1.11 & 3.37 & 8.32 & 3.17 & 2.19 & 8.10 \\
+ & $N$ & $-$0.05 & 0.17 & 0.52 & 4.04 & $-$0.04 & 0.10 & 1.35 & 5.04 \\
+ & $\kappa$ & $-$53.32 & 70.30 & 0.76 & 7.81 & $-$33.34 & 38.33 & $-$0.80 & 2.95 \\
+ & Sx & 1.56 & 11.46 & 1.03 & 4.28 & $-$1.06 & 5.17 & 1.62 & 6.21 \\ \hline
+\multirow{7}{*}{\textbf{Glacier 2}} & $z$ & 2494.71 & 233.03 & 0.09 & 2.82 & 2306.90 & 93.74 & $-$0.02 & 1.93 \\
+ & $d_C$ & 304.95 & 236.97 & 1.22 & 4.51 & 140.65 & 98.84 & 0.37 & 2.74 \\
+ & $\alpha$ & 0.59 & 0.43 & $-$1.43 & 4.83 & 0.52 & 0.33 & $-$0.42 & 2.14 \\
+ & $m$ & 13.02 & 9.48 & 1.08 & 3.00 & 6.54 & 2.24 & 1.97 & 9.12 \\
+ & $N$ & 0.14 & 0.16 & 0.74 & 3.68 & 0.06 & 0.05 & 1.01 & 4.10 \\
+ & $\kappa$ & $-$18.40 & 91.35 & 1.30 & 6.83 & $-$22.94 & 43.91 & $-$1.44 & 4.75 \\
+ & Sx & $-$3.82 & 9.34 & $-$0.18 & 6.09 & $-$3.63 & 2.59 & 0.81 & 4.81 \\ \hline
+\multirow{7}{*}{\textbf{Glacier 13}} & $z$ & 2427.62 & 225.15 & 0.13 & 2.45 & 2219.45 & 82.25 & 0.92 & 5.67 \\
+ & $d_C$ & 443.88 & 308.48 & 0.76 & 3.21 & 181.91 & 152.29 & 0.46 & 2.33 \\
+ & $\alpha$ & 0.55 & 0.49 & $-$1.30 & 3.89 & 0.69 & 0.28 & $-$1.31 & 4.91 \\
+ & $m$ & 13.36 & 10.13 & 1.15 & 3.51 & 5.10 & 1.98 & 2.20 & 12.99 \\
+ & $N$ & 0.13 & 0.18 & 1.01 & 4.02 & 0.06 & 0.04 & 1.58 & 9.63 \\
+ & $\kappa$ & $-$13.31 & 89.16 & 1.24 & 6.65 & $-$6.93 & 32.44 & $-$0.77 & 4.51 \\
+ & Sx & 3.69 & 12.08 & 0.97 & 3.68 & $-$1.62 & 3.94 & 0.90 & 4.95
 \end{tabular}
-\end{table}
-\end{landscape}
+\end{sidewaystable}
 
 \pagebreak
 \begin{figure}[H]
@@ -377,7 +343,7 @@ Overall, the sampled topographic parameters are representative of the full distr
 
 \begin{figure}[H]
   \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_elevation.png}}%
-	\caption{Histograms of elevation ($z$) sampled (brown) as compared to total range of elevation (blue) of study glaciers.}
+	\caption{Histograms of elevation ($z$) sampled (black) as compared to total range of elevation (white) of study glaciers.}
 	\label{sampledRange:elev}
 \end{figure}
 
@@ -390,85 +356,72 @@ Overall, the sampled topographic parameters are representative of the full distr
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_centreD.png}}%
-	\caption{Histograms of distance from centreline ($d_c$) sampled (brown) as compared to total range (blue) of distance from centreline of study glaciers.}
+	\caption{Histograms of distance from centreline ($d_c$) sampled (black) as compared to total range (white) of distance from centreline of study glaciers.}
 	\label{sampledRange:centreD}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{Map_slope.png}\\
-	\caption{Distributions of slope ($m$) used in the topographic regressions for the study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
-	\label{map:slope}
-\end{figure}
-
-\begin{figure}[H]
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_slope.png}}%
-	\caption{Histograms of slope ($m$) sampled (brown) as compared to total range (blue) of slope of study glaciers.}
-	\label{sampledRange:slope}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{Map_tangentCurve.png}\\
-	\caption{Distributions of tangential curvature ($\kappa_T$) used in the topographic regressions for the study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
-	\label{map:tangentC}
-\end{figure}
-
-\begin{figure}[H]
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_tangentCurve.png}}%
-	\caption{Histograms of tangential curvature ($\kappa_T$) sampled (brown) as compared to total range (blue) of tangential curvature of study glaciers.}
-	\label{sampledRange:tangentC}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{Map_profileCurve.png}\\
-	\caption{Distributions of profile curvature ($\kappa_P$) used in the topographic regressions for the study glaciers. Values were derived from a SPOT5 satellite derived DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
-	\label{map:profileC}
-\end{figure}
-
-\begin{figure}[H]
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_profileCurve.png}}%
-	\caption{Histograms of profile curvature ($\kappa_P$) sampled (brown) as compared to total range (blue) of profile curvature of study glaciers.}
-	\label{sampledRange:profileC}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
 	\includegraphics[width=\textwidth]{Map_aspect.png}\\
-	\caption{Distributions of aspect ($\alpha$), which indicates the direction that a slope is facing (0${^\circ}$ defined as north), used in the topographic regressions for the study glaciers. \topomap}
+	\caption{Distributions of the sine of aspect ($\alpha$), which indicates north-south component of a slope (+1 defined as north), used in the topographic regressions for the study glaciers. Values are derived from a smoothed DEM. \topomap}
 	\label{map:aspect}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_aspect.png}}%
-	\caption{Histograms of aspect ($\alpha$) sampled (brown) as compared to total range (blue) of aspect of study glaciers.}
+	\caption{Histograms of aspect ($\alpha$) sampled (black) as compared to total range (white) of aspect of study glaciers.}
 	\label{sampledRange:aspect}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[width=\textwidth]{Map_slope.png}\\
+	\caption{Distributions of slope ($m$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
+	\label{map:slope}
+\end{figure}
+
+\begin{figure}[H]
+	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_slope.png}}%
+	\caption{Histograms of slope ($m$) sampled (black) as compared to total range (white) of slope of study glaciers.}
+	\label{sampledRange:slope}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
 	\includegraphics[width=\textwidth]{Map_northness.png}\\
-	\caption{Distributions of ``northness'' ($N$) used in the topographic regressions for the study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and flat surfaces yield 0. Values were derived from a SPOT5 satellite derived DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
+	\caption{Distributions of ``northness'' ($N$) used in the topographic regressions for the study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope, and flat surfaces yield 0. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:northness}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_northness.png}}%
-	\caption{Histograms of ``northness'' ($N$) sampled (brown) as compared to total range (blue) of ``northness'' of study glaciers.}
+	\caption{Histograms of ``northness'' ($N$) sampled (black) as compared to total range (white) of ``northness'' of study glaciers.}
 	\label{sampledRange:northness}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[width=\textwidth]{Map_curvature.png}\\
+	\caption{Distributions of curvature ($\kappa$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
+	\label{map:curvature}
+\end{figure}
+
+\begin{figure}[H]
+	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_curvature.png}}%
+	\caption{Histograms of curvature ($\kappa$) sampled (black) as compared to total range (white) of profile curvature of study glaciers.}
+	\label{sampledRange:curvature}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
 	\includegraphics[width=\textwidth]{Map_Sx.png}\\
-	\caption{Distributions of Sx, which is a wind redistribution parameter, used in the topographic regressions for the study glaciers. See section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier. \topomap}
+	\caption{Distributions of Sx, which is a wind redistribution parameter, used in the topographic regressions for the study glaciers. See section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier. \topomap }
 	\label{map:Sx}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_Sx.png}}%
-	\caption{Histograms of Sx sampled (brown) as compared to total range (blue) of Sx of study glaciers.}
+	\caption{Histograms of Sx sampled (black) as compared to total range (white) of Sx of study glaciers.}
 	\label{sampledRange:Sx}
 \end{figure}
 
@@ -557,17 +510,16 @@ Parameters not included in a particular model are assigned coefficients of zero.
 
 \subsubsection{Methods}
 
+The MLR of SWE values and topographic parameters is done in Matlab (Appendix \ref{sec:MLRMethods}). The best set of regression coefficients for each model is selected using cross-validation of a linear regression, with the coefficients chosen by minimizing the vertical sum of squares. Then, the regression coefficients from all models are weighted according to the BIC value of the model.
 
-
-\subsubsection{Results}
-
+\subsubsection{Results and Discussion}
 
 \begin{sidewaystable}
 \centering
 \caption{Mean MLR and BMA coefficients for topographic regression between measured SWE  and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given. Semi-partial correlation is a metric that describes the increase in R$^2$ from the addition of a parameter to a regression that contains all other regressors. Raw correlation is the square of the Pearson correlation between a parameter and SWE.}
 \label{tab:MLRmeancoeff}
 \begin{tabular}{ll|rrrrrrrc|c}
- &  & \multicolumn{1}{c}{$z$} & \multicolumn{1}{c}{$d_C$} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{$m$} & \multicolumn{1}{c}{$N$} & \multicolumn{1}{c}{$\kappa$} & \multicolumn{1}{c}{Sx} & Intercept & RMSE \\ \hline
+ &  & \multicolumn{1}{c}{$z$} & \multicolumn{1}{c}{$d_C$} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{$m$} & \multicolumn{1}{c}{$N$} & \multicolumn{1}{c}{$\kappa$} & \multicolumn{1}{c}{Sx} & Intercept & RMSE \\ \hline \hline
 \multirow{4}{*}{\textbf{Glacier 4}} & MLR Coefficient & 0.008 & $-$0.001 & $-$0.012 & $-$0.004 & $-$0.002 & 0.016 & $-$0.051 & 0.619 & 0.145 \\
  & BMA Coefficient & 0.006 & $-$0.001 & $-$0.010 & $-$0.007 & $-$0.003 & 0.016 & $-$0.050 & 0.619 & 0.106 \\
  & Semi-partial R$^2$ & 0.015 & $<$0.001 & $<$0.001 & 0.007 & 0.001 & 0.010 & 0.034 & --- & --- \\
@@ -585,106 +537,82 @@ Parameters not included in a particular model are assigned coefficients of zero.
 
 
 \begin{sidewaystable}
+\footnotesize
 \centering
 \caption{MLR coefficients for topographic regression between measured SWE and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given. See Table \ref{tab:densityOptions} for description of density options.}
 \label{tab:MLRcoeffFull}
 \begin{tabular}{ccrrrrrrrr}
- & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic\\ Parameter\end{tabular}} & \textbf{S1} & \textbf{F1} & \textbf{S2} & \textbf{F2} & \textbf{S3} & \textbf{F3} & \textbf{S4} & \textbf{F4} \\ \hline \hline
- 
- & $d_C$ & $-$0.003 & $-$0.001 & $-$0.001 & $-$0.001 & $-$0.002 & $-$0.002 & $-$0.001 & $-$0.005 \\
- 
- & $z$ & 0.008 & 0.014 & 0.004 & 0.022 & 0.028 & 0.000 & 0.009 & 0.002 \\
- 
- & $\alpha$ & 0.001 & 0.002 & 0.001 & 0.001 & 0.003 & 0.000 & 0.001 & 0.000 \\
- 
- & $m$ & $-$0.020 & $-$0.014 & $-$0.025 & $-$0.012 & $-$0.009 & $-$0.020 & $-$0.021 & $-$0.023 \\
- 
- & $N$ & $-$0.001 & $-$0.004 & 0.000 & $-$0.006 & $-$0.004 & $-$0.001 & 0.000 & 0.000 \\
- 
- & $\kappa_P$ & $-$0.001 & $-$0.003 & 0.000 & $-$0.004 & $-$0.004 & $-$0.001 & $-$0.002 & $-$0.001 \\
- 
- & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
- 
- & Sx & $-$0.040 & $-$0.044 & $-$0.046 & $-$0.053 & $-$0.048 & $-$0.051 & $-$0.045 & $-$0.038 \\
- 
- & Intercept & 0.619 & 0.581 & 0.627 & 0.646 & 0.630 & 0.648 & 0.625 & 0.639 \\
- 
-\multirow{-10}{*}{Glacier 4} & RMSE & 0.146 & 0.135 & 0.149 & 0.151 & 0.148 & 0.152 & 0.147 & 0.150 \\ \hline
- & $d_C$ & 0.020 & 0.020 & 0.020 & 0.018 & 0.020 & 0.017 & 0.019 & 0.012 \\
- & $z$ & 0.113 & 0.100 & 0.109 & 0.089 & 0.090 & 0.107 & 0.098 & 0.110 \\
- & $\alpha$ & $-$0.004 & $-$0.001 & $-$0.007 & $-$0.001 & $-$0.001 & $-$0.001 & $-$0.001 & $-$0.010 \\
- & $m$ & 0.019 & 0.018 & 0.016 & 0.011 & 0.007 & 0.012 & 0.013 & 0.011 \\
- & $N$ & 0.002 & 0.000 & 0.004 & 0.001 & 0.000 & 0.001 & 0.001 & 0.005 \\
- & $\kappa_P$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.001 \\
- & $\kappa_T$ & 0.001 & 0.002 & 0.004 & 0.000 & 0.004 & 0.002 & 0.005 & 0.002 \\
- & Sx & 0.041 & 0.039 & 0.040 & 0.032 & 0.040 & 0.033 & 0.041 & 0.035 \\
- & Intercept & 0.268 & 0.250 & 0.263 & 0.225 & 0.256 & 0.225 & 0.267 & 0.229 \\
-\multirow{-10}{*}{Glacier 2} & RMSE & 0.104 & 0.097 & 0.101 & 0.087 & 0.102 & 0.087 & 0.104 & 0.088 \\ \hline
- 
- & $d_C$ & 0.013 & 0.009 & 0.009 & 0.009 & 0.013 & 0.010 & 0.013 & 0.009 \\
- 
- & $z$ & 0.049 & 0.047 & 0.054 & 0.047 & 0.044 & 0.050 & 0.047 & 0.047 \\
- 
- & $\alpha$ & $-$0.002 & $-$0.002 & $-$0.003 & $-$0.003 & $-$0.005 & $-$0.001 & $-$0.004 & $-$0.002 \\
- 
- & $m$ & $-$0.002 & $-$0.001 & $-$0.001 & 0.000 & $-$0.001 & $-$0.001 & 0.000 & 0.000 \\
- 
- & $N$ & 0.003 & 0.002 & 0.001 & 0.006 & 0.002 & 0.001 & 0.002 & 0.001 \\
- 
- & $\kappa_P$ & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & $-$0.001 & 0.000 \\
- 
- & $\kappa_T$ & 0.000 & 0.000 & 0.000 & 0.000 & $-$0.001 & 0.000 & $-$0.001 & $-$0.001 \\
- 
- & Sx & 0.011 & 0.011 & 0.011 & 0.006 & 0.009 & 0.012 & 0.012 & 0.010 \\
- 
- & Intercept & 0.231 & 0.213 & 0.235 & 0.214 & 0.246 & 0.202 & 0.241 & 0.207 \\
- 
-\multirow{-10}{*}{Glacier 13} & RMSE & 0.085 & 0.080 & 0.087 & 0.079 & 0.092 & 0.074 & 0.089 & 0.077
-
+ & \textbf{Parameter} & \multicolumn{1}{c}{\textbf{S1}} & \multicolumn{1}{c}{\textbf{F1}} & \multicolumn{1}{c}{\textbf{S2}} & \multicolumn{1}{c}{\textbf{F2}} & \multicolumn{1}{c}{\textbf{S3}} & \multicolumn{1}{c}{\textbf{F3}} & \multicolumn{1}{c}{\textbf{S4}} & \multicolumn{1}{c}{\textbf{F4}} \\ \hline \hline
+\multirow{9}{*}{\textbf{Glacier 4}} & $z$ & 0.011 & 0.006 & 0.008 & 0.009 & 0.018 & $<$0.001 & 0.008 & 0.003 \\
+ & $d_C$ & $<$0.001 & $-$0.002 & $<$0.001 & $-$0.002 & $-$0.001 & $-$0.001 & $-$0.001 & $<$0.001 \\
+ & $\alpha$ & $-$0.021 & $-$0.006 & $-$0.024 & $-$0.013 & $-$0.016 & $-$0.002 & $-$0.008 & $-$0.010 \\
+ & $m$ & $-$0.002 & $-$0.004 & $-$0.002 & $-$0.005 & $-$0.013 & $-$0.002 & $-$0.004 & $-$0.003 \\
+ & $N$ & $-$0.002 & $-$0.002 & $-$0.002 & $-$0.002 & $-$0.004 & $-$0.001 & $-$0.001 & $-$0.002 \\
+ & $\kappa$ & 0.009 & 0.021 & 0.012 & 0.018 & 0.009 & 0.028 & 0.016 & 0.015 \\
+ & Sx & $-$0.059 & $-$0.046 & $-$0.055 & $-$0.053 & $-$0.057 & $-$0.051 & $-$0.045 & $-$0.042 \\
+ & Intercept & 0.617 & 0.567 & 0.626 & 0.631 & 0.621 & 0.642 & 0.618 & 0.633 \\
+ & RMSE & 0.144 & 0.134 & 0.146 & 0.149 & 0.146 & 0.148 & 0.144 & 0.147 \\ \hline
+\multirow{9}{*}{\textbf{Glacier 2}} & $z$ & 0.119 & 0.109 & 0.114 & 0.099 & 0.102 & 0.120 & 0.109 & 0.109 \\
+ & $d_C$ & 0.009 & 0.021 & 0.008 & 0.003 & 0.007 & 0.002 & 0.011 & 0.001 \\
+ & $\alpha$ & $-$0.011 & $-$0.007 & $-$0.019 & $-$0.009 & $-$0.013 & $-$0.003 & $-$0.011 & $-$0.005 \\
+ & $m$ & 0.030 & 0.024 & 0.023 & 0.023 & 0.025 & 0.029 & 0.022 & 0.029 \\
+ & $N$ & 0.012 & 0.008 & 0.022 & 0.009 & 0.012 & 0.003 & 0.011 & 0.008 \\
+ & $\kappa$ & 0.003 & 0.002 & 0.002 & 0.001 & 0.001 & 0.001 & 0.001 & 0.001 \\
+ & Sx & 0.040 & 0.036 & 0.040 & 0.031 & 0.035 & 0.027 & 0.040 & 0.037 \\
+ & Intercept & 0.287 & 0.263 & 0.275 & 0.235 & 0.273 & 0.240 & 0.282 & 0.238 \\
+ & RMSE & 0.096 & 0.089 & 0.093 & 0.081 & 0.093 & 0.082 & 0.096 & 0.084 \\ \hline
+\multirow{9}{*}{\textbf{Glacier 13}} & $z$ & 0.058 & 0.052 & 0.055 & 0.052 & 0.045 & 0.058 & 0.054 & 0.055 \\
+ & $d_C$ & $<$0.001 & $<$0.001 & 0.001 & 0.001 & 0.001 & $<$0.001 & $<$0.001 & $<$0.001 \\
+ & $\alpha$ & $<$0.001 & $<$0.001 & $<$0.001 & $-$0.002 & $<$0.001 & $<$0.001 & $<$0.001 & $<$0.001 \\
+ & $m$ & 0.001 & $<$0.001 & $<$0.001 & 0.001 & 0.001 & 0.001 & $<$0.001 & $<$0.001 \\
+ & $N$ & 0.002 & $<$0.001 & $<$0.001 & 0.001 & 0.001 & $<$0.001 & $<$0.001 & $<$0.001 \\
+ & $\kappa$ & $-$0.024 & $-$0.020 & $-$0.021 & $-$0.019 & $-$0.023 & $-$0.018 & $-$0.021 & $-$0.020 \\
+ & Sx & 0.001 & 0.002 & 0.001 & 0.007 & 0.004 & 0.008 & 0.001 & 0.001 \\
+ & Intercept & 0.236 & 0.220 & 0.241 & 0.217 & 0.250 & 0.208 & 0.246 & 0.211 \\
+ & RMSE & 0.078 & 0.073 & 0.080 & 0.072 & 0.084 & 0.068 & 0.081 & 0.071
 \end{tabular}
 \end{sidewaystable}
 
-The importance of regressors and total variance explained using MLR differs for the three study glaciers (Table \ref{tab:MLRmeancoeff}). The regression for Glacier 2 explained a large portion of the variance (R$^2$=0.66), although the RMSE was higher than that of Glacier 13, for which the regression explained less variance (R$^2$=0.40) (Figure \ref{fig:MLRfit_allLines}). Glacier 4 had the least variance explained by the regression (R$^2$=0.12) and the highest RMSE. The intercepts of the regression were similar for Glaciers 2 and 13 ($\sim$0.25 m w.e.), which is much less than the intercept for Glacier 4 (0.62 m w.e.). The discrepancy between intercept values is a result of the poor fit of the Glacier 4 regression that results in the value of the intercept approaching that of the data mean (??). The residuals for Glacier 4 have a larger range than those of Glacier 2 and 13 (Figure \ref{fig:MLRresiduals_all}).
+The importance of the various topographic parameters differs for the three study glaciers (Table \ref{tab:MLRmeancoeff}). The regression for Glacier 2 explains a large portion of the variance (R$^2$=0.66), although the RMSE is higher than that of Glacier 13, for which the regression explains less variance (R$^2$=0.40) (Figure \ref{fig:MLRfit}). Glacier 4 has the least variance explained by the regression (R$^2$=0.12) and the highest RMSE. The intercepts of the regression are similar for Glaciers 2 and 13 ($\sim$0.25 m w.e.) and these are much lower than the intercept for Glacier 4 (0.62 m w.e.). The discrepancy between intercept values is a result of the poor fit of the Glacier 4 regression - the value of the intercept approaches that of the data mean (0.63 m w.e.). The residuals for Glacier 4 have a larger range than those of Glacier 2 and 13 (Figure \ref{fig:MLRresiduals_all}).
 
-The most important regressors for Glacier 4 are Sx, curvature ($\kappa$) and aspect ($\alpha$). The regression coefficients for these parameters are an order of magnitude larger than those of the remaining parameters for all density options (Table \ref{tab:MLRcoeffFull}) and for the mean of all density options (Table \ref{tab:MLRmeancoeff}). Sx has the highest mean semi-partial correlation (0.034)  and raw correlation (0.065) (Table \ref{tab:MLRmeancoeff}). The Sx coefficient is negative, which indicates less snow in `sheltered' areas. The negative correlation is counter intuitive so it is surprising that Sx is the best predictor for accumulation.
+The most important regressor for Glacier 4 is Sx. The Sx regression coefficient is a factor of five larger than those of the remaining parameters for all density options (Table \ref{tab:MLRcoeffFull}) and for the mean of all density options (Table \ref{tab:MLRmeancoeff}). Sx has the highest mean semi-partial correlation (0.034)  and raw correlation (0.065) (Table \ref{tab:MLRmeancoeff}). The Sx coefficient is negative, which indicates less snow in `sheltered' areas. The negative correlation is counter intuitive so it is surprising that Sx is the best predictor for accumulation.
 
 The map of estimated SWE for the entire glacier shows a relatively uniform SWE distribution over Glacier 4 (Figure \ref{fig:MLRmodelledSWE}), due to the large influence of the intercept on the regression. Areas with high Sx values (sheltered), especially in the accumulation area, have the lowest values of SWE. This regression indicates that the wind plays a role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining Sx values that assume wind moving up or down glacier and changing direction to follow the valley could allow the Sx parameter to explain more of the variance. 
 
-\begin{wrapfigure}{l}{8.5cm}
-\centering
-	\includegraphics[width = 8.5cm]{ModelledSWE_box_MLR.png}\\
-\caption{Summary of estimated SWE values found using MLR coefficients. \boxMatlab}
-\label{tab:MLRsweMinMax}
-\end{wrapfigure} 
+For Glacier 2, the most important regressor is elevation (Table \ref{tab:MLRmeancoeff}). This coefficient is positive, which means that SWE will increase with elevation. The elevation regression coefficient is an order of magnitude larger than the other coefficients and has the highest semi-partial R$^2$ and raw correlation (Table \ref{tab:MLRmeancoeff}). Sx is the second most important regresor and has a positive correlation, which indicates that `sheltered' areas are likely to have high accumulation. 
 
-For Glacier 2, the most important regressor is elevation. This coefficient is positive, which means that SWE will increase with elevation. The elevation regression coefficient is an order of magnitude larger than the other coefficients and has the highest semi-partial R$^2$ and raw correlation (Table \ref{tab:MLRmeancoeff}). Sx is the second most important regresor and has a positive correlation, which indicates that `sheltered' areas are likely to have high accumulation. 
+The map of modelled SWE on Glacier 2 closely matches that of elevation (Figure \ref{map:elev}), which highlights the strong dependence of SWE on elevation. The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE (1.92 m w.e) and the lowest SWE (0 m w.e.) values (Table \ref{tab:MLRsweMinMax}). Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating from the regression, which largely depends on elevation. The southwest region of the accumulation area with high estimated accumulation results from the combination of high elevation and Sx values. The low SWE values at the terminus are a result of low elevation values and Sx values that are close to zero. 
 
-The map of modelled SWE on Glacier 2 closely matches that of elevation (Figure \ref{map:elev}), which highlights the strong dependence of SWE on elevation. The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE (1.92 m w.e) and the lowest SWE (0 m w.e.) values (Table \ref{tab:MLRsweMinMax}). Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating from the regression, which largely depends on elevation. The southwest region of the accumulation area that has the area of high estimated accumulation is a result of the high elevation and Sx values. The low SWE values at the terminus are a result of the low elevation and Sx values are close to zero there. 
+The most important regressor for Glacier 13 is elevation (Table \ref{tab:MLRmeancoeff}). The coefficient is positive, which means that cells at higher elevation had higher values of SWE. Despite a low value of raw correlation between elevation and SWE, the semi-partial R$^2$ value is  the largest between the glaciers. The high semi-partial R$^2$ value indicates that when elevation is added to the regression the total variance explained increases considerably because the remaining regressors are not important. The map of estimated SWE on Glacier 13 (Figure \ref{fig:MLRmodelledSWE}) closely follows elevation although the range of SWE values is relatively small so the elevation effect is less pronounced than on Glacier 2. 
 
-The most important regressor for Glacier 13 is elevation. The coefficient is positive, which means that cells at higher elevation had higher values of SWE. Despite a low value of raw correlation between elevation and SWE, the semi-partial R$^2$ value is  the largest between the glaciers. The high semi-partial R$^2$ value indicates that when elevation is added to the regression the total variance explained increases considerably because the remaining regressors are unimportant. 
+Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density options for all glaciers and the residuals display a similar distribution between the density options (Figure \ref{fig:MLRresiduals_all}). The semi-partial R$^2$ and raw correlation for each regressor also varies little between different density options (Figure \ref{fig:MLRsemiR2_densityOptions}).
 
-Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density options for all glaciers and the residuals display a similar distribution between the density options. The semi-partial R$^2$ and raw correlation for each regressor also varies little between different density options. 
+The the choice of density measurements and interpolation techniques does not affect the relative importance of regressors. Although there is a range of coefficient values that result from the choice of density options (Figure \ref{fig:MLRcoeff_densityOptions}), the relative dominance of Sx for Glacier 4 and elevation for Glacier 2 and 13 is consistent. The largest range in semi-partial correlation is in elevation for Glaciers 2 and 13 (Figure \ref{fig:MLRsemiR2_densityOptions}). Estimating SWE using the linear elevation regression and Federal Sampler-derived density (F3) resulted in the highest semi-partial correlation for Glaciers 2 and 13 (0.24 and 0.30, respectively). Since the Federal Sampler derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. 
 
-The the choice of density measurements and interpolation techniques does not affect the relative importance of regressors. Although there is a range of coefficient values that result from the choice of density options (Figure \ref{fig:MLRcoeff_densityOptions}), the relative dominance of Sx for Glacier 4 and elevation for Glacier 2 and 13 is consistent. The largest range in semi-partial correlation is for elevation for Glaciers 2 and 13 (Figure \ref{fig:MLRsemiR2_densityOptions}). Using the linear elevation regression and Federal Sampler-derived density (F3) resulted in the highest semi-partial correlation for Glaciers 2 and 13 (0.24 and 0.30, respectively). Since the Federal Sampler derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. 
-
-The largest difference in estimated SWE between the various density options is found on Glacier 2 in the upper part of the accumulation area (Figure \ref{fig:MLR_SWEdiffMap}). Glacier 2 also has the lowest difference in estimated SWE, which result from all density options estimating values of 0 m w.e. at the terminus. The strong relationship between elevation and SWE makes the estimation of glacier-wise SWE sensitive to this parameter. The difference in estimated SWE expressed as a percent (Figure \ref{fig:MLR_SWEdiffMapPercent}) is relatively consistent between glaciers. Extreme values in percent difference are located in areas with low values of estimated SWE (small denominator). 
+The largest difference in estimated SWE between the various density options is found on Glacier 2 in the upper part of the accumulation area (Figure \ref{fig:MLR_SWEdiffMap}). Glacier 2 also has the lowest difference in estimated SWE, which result from all density options estimating values of 0 m w.e. at the terminus. The strong relationship between elevation and SWE makes the estimation of glacier-wise SWE sensitive to this parameter. The difference in estimated SWE expressed as a percent (Figure \ref{fig:MLR_SWEdiffMapPercent}) is relatively consistent on each glacier. The mean percent difference is highest on Glacier 2 (25\%) and slightly lower on Glaciers 4 and 13 (18\% and 20\%, respectively). Extreme values in percent difference are located in areas with low values of estimated SWE (small denominator), including the terminus of Glaciers 2 and 13 as well as parts of the accumulation area on Glacier 4.  
 
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}[b]{\textwidth}
         \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_opt8.png}}
-	\label{fig:MLRfit_opt8}
     \end{subfigure}
     
     \begin{subfigure}[b]{\textwidth}
        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_allLines.png}}
-	\label{fig:MLRfit_allLines}
     \end{subfigure}
 
     \caption{Top panel shows comparison of estimated (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snowpit densities (S4). Bottom panel shows plots of all linear fits between estimated and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. Black line highlights the S4 option from the top panel. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated SWE values.}
     \label{fig:MLRfit}
 \end{figure}
+
+\begin{figure}
+\centering
+	\includegraphics[width =0.6\textwidth]{ModelledSWE_box_MLR.png}\\
+\caption{Summary of estimated SWE values found using MLR coefficients. \boxMatlab}
+\label{fig:MLRsweboxplot}
+\end{figure} 
+
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRresiduals_all.png}}%
@@ -709,21 +637,21 @@ The largest difference in estimated SWE between the various density options is f
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{MLRmap_Modelled_Observed8.png}}%
-	\caption{Modelled SWE using coefficients determined using MLR and density interpolated with inverse-distance weighting from snowpits (S4). Observed SWE values are overlain on the maps.}
+	\caption{Modelled SWE using coefficients determined using MLR and density interpolated with inverse-distance weighting from snowpits (S4). \blackdots}
 	\label{fig:MLRmodelledSWE}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap.png}\\
-	\caption{Map of the difference between maximum and minimum SWE values for each DEM cell between all density options using MLR coefficients.}
+	\caption{Map of the difference between maximum and minimum SWE values for each DEM cell between all density options using MLR coefficients. \blackdots}
 	\label{fig:MLR_SWEdiffMap}
 \end{figure}
 
  \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap_percent.png}\\
-	\caption{Map of the difference between maximum and minimum SWE values, expressed as a percent of the maximum SWE, for each DEM cell between all density options using MLR coefficients. The colours have been scaled to highlight difference in the main part of the glaciers. Values of zero are found where the minimum estimated SWE is zero m w.e.}
+	\caption{Map of the difference between maximum and minimum SWE values, expressed as a percent of the maximum SWE, for each DEM cell between all density options using MLR coefficients. The colours have been scaled to highlight difference in the main part of the glaciers. Values of zero are found where the minimum estimated SWE is zero m w.e. \blackdots}
 	\label{fig:MLR_SWEdiffMapPercent}
 \end{figure}
  
@@ -733,62 +661,62 @@ The largest difference in estimated SWE between the various density options is f
         \centering
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed_Opt1.png}
+            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed1.png}
             \caption[Option 1]%
-            {{\small Option 1}}    
+            {{\small S1}}    
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
-            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed_Opt2.png}
+            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed2.png}
             \caption[]%
-            {{\small Option 2}}    
+            {{\small F1}}    
         \end{subfigure}
         \vskip\baselineskip
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed_Opt3.png}
+            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed3.png}
             \caption[]%
-            {{\small Option 3}}    
+            {{\small S2}}    
         \end{subfigure}
         \quad
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed_Opt4.png}
+            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed4.png}
             \caption[]%
-            {{\small Option 4}}    
+            {{\small F2}}    
         \end{subfigure}
         
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed_Opt5.png}
+            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed5.png}
             \caption[Option 5]%
-            {{\small Option 5}}    
+            {{\small S3}}    
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
-            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed_Opt6.png}
+            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed6.png}
             \caption[]%
-            {{\small Option 6}}    
+            {{\small F3}}    
         \end{subfigure}
         \vskip\baselineskip
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed_Opt7.png}
+            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed7.png}
             \caption[]%
-            {{\small Option 7}}    
+            {{\small S4}}    
         \end{subfigure}
         \quad
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed_Opt8.png}
+            \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed8.png}
             \caption[]%
-            {{\small Option 8}}    
+            {{\small F4}}    
         \end{subfigure}
         
-        \caption[Map of modelled SWE using the MLR coefficient values for all density options. Measured SWE is plotted as overlain filled circles.]
-        {\small Map of modelled SWE using the MLR coefficient values for all density options. Measured SWE is plotted as overlain filled circles.} 
+        \caption[Map of modelled SWE using the MLR coefficient values for all density options. Measured SWE is plotted as overlain filled circles. Glacier flow directions are indicated by black arrows and mean estimated SWE values for each glacier are shown.]
+        {\small Map of modelled SWE using the MLR coefficient values for all density options. Measured SWE is plotted as overlain filled circles. Glacier flow directions are indicated by black arrows and mean estimated SWE values for each glacier are shown.} 
         \label{fig:allMLRmodelled}
     \end{figure}
     
@@ -836,55 +764,55 @@ BMA allows for the calculation of a metric called the posterior inclusion probab
 
 \subsubsection{Methods}
 
-The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The package computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter.
+The BMA process was implemented in R (Appendix \ref{sec:BMAmethods}), using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The package computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter.
 
 \subsubsection{Results and Discussion}
 
-The coefficients determined using BMA for density Option 7 can be seen in Table \ref{tab:BMScoeff} and can be used to examine the relative importance of topographic parameters in the regression. These coefficients were found for standardized values of topographic parameters so their magnitude is indicative of their importance in predicting SWE. Table \ref{tab:BMScoeffFull} shows coefficient values for all density options. The range of percent variance explained by each variable (from all density options) can be seen in Figure \ref{fig:BMSPercentVar_densityOptions}. The fit between modelled SWE and observed SWE for each glacier for density option 7 can be seen in Figure \ref{fig:BMSfit_opt8} and the fit for all density options in Figure \ref{fig:BMSfit_allLines}. The distribution of residuals in then plotted in Figure \ref{fig:BMSresiduals_all}. A map of the predicted values of SWE over the entire glacier using density option 7 can be seen in Figure \ref{fig:BMSmodelledSWE} with basic summary statistics found in Table \ref{tab:BMSsweMinMax}. Modelled SWE using all density options is shown in Figure \ref{fig:allBMSmodelled}. A map of the difference between maximum and minimum modelled SWE values is shown in Figure \ref{fig:BMS_SWEdiffMap}.
-
-\begin{wraptable}{R}{10cm}
+\begin{sidewaystable}
+\footnotesize
 \centering
-\caption{BMS coefficients for topographic regression between measured SWE and standardized topographic parameters that include distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$),slope ($m$), northness ($N$), profile curvature ($\kappa_P$), tangent curvature ($\kappa_T$), and wind redistribution (Sx). Since parameters are standardizes, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given.}
-\label{tab:BMScoeff}
-\begin{tabular}{crrr}
- & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
-d$_C$ 			& -0.004 					& 0.020 	& 0.007 \\
-$z$ 				&  0.013 					& 0.107 	& 0.047 \\
-$\alpha$ 		& 0.002 					& -0.008 	& -0.010 \\
-$m$ 			& -0.020 					& 0.011 	&  \textless-0.001 \\
-$N$ 				&   \textless-0.001 	& 0.004 	& 0.001 \\
-$\kappa_P$ 	&  \textless0.001 	& 0.003 	&\textless -0.001 \\
-$\kappa_T$ 	& \textless0.001 		& 0.002 	& -0.003 \\
-Sx 			& -0.027 					& 0.040 	& 0.007 \\
-Intercept 		& 0.619 					& 0.268 	& 0.238 \\ \hline
-RMSE 			& 0.136 					& 0.098	& 0.086 
+\caption{BMA coefficients for topographic regression between measured SWE and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting SWE. The root-mean-squared error (RMSE) between modelled SWE using those coefficients and observed SWE is also given. See Table \ref{tab:densityOptions} for description of density options.}
+\label{tab:BMAcoeffFull}
+\begin{tabular}{ccrrrrrrrr}
+\textbf{} & \textbf{Parameter} & \multicolumn{1}{c}{\textbf{S1}} & \multicolumn{1}{c}{\textbf{F1}} & \multicolumn{1}{c}{\textbf{S2}} & \multicolumn{1}{c}{\textbf{F2}} & \multicolumn{1}{c}{\textbf{S3}} & \multicolumn{1}{c}{\textbf{F3}} & \multicolumn{1}{c}{\textbf{S4}} & \multicolumn{1}{c}{\textbf{F4}} \\ \hline \hline
+\multirow{9}{*}{\textbf{Glacier 4}} & $z$ & 0.007 & 0.010 & 0.004 & 0.003 & 0.014 & -0.001 & 0.005 & 0.004 \\
+ & $d_C$ & $<$0.001 & $<$0.001 & -0.001 & -0.002 & -0.001 & -0.002 & $<$0.001 & -0.001 \\
+ & $\alpha$ & -0.022 & -0.004 & -0.008 & -0.012 & -0.015 & -0.006 & -0.007 & -0.008 \\
+ & $m$ & -0.004 & -0.003 & -0.005 & -0.004 & -0.017 & -0.007 & -0.001 & -0.013 \\
+ & $N$ & -0.006 & -0.003 & $<$0.001 & -0.001 & -0.005 & -0.002 & -0.003 & $<$0.001 \\
+ & $\kappa$ & 0.008 & 0.026 & 0.026 & 0.012 & 0.008 & 0.014 & 0.029 & 0.005 \\
+ & Sx & -0.061 & -0.044 & -0.047 & -0.047 & -0.056 & -0.051 & -0.046 & -0.052 \\
+ & Intercept & 0.618 & 0.578 & 0.623 & 0.631 & 0.618 & 0.635 & 0.614 & 0.637 \\
+ & RMSE & 0.104 & 0.099 & 0.104 & 0.098 & 0.110 & 0.110 & 0.108 & 0.112 \\ \hline
+\multirow{9}{*}{\textbf{Glacier 2}} & $z$ & 0.123 & 0.105 & 0.118 & 0.102 & 0.103 & 0.117 & 0.107 & 0.113 \\
+ & $d_C$ & 0.005 & 0.015 & 0.010 & 0.006 & 0.011 & 0.003 & 0.009 & 0.004 \\
+ & $\alpha$ & -0.010 & -0.022 & -0.014 & -0.006 & -0.018 & -0.004 & -0.006 & -0.007 \\
+ & $m$ & 0.035 & 0.018 & 0.024 & 0.033 & 0.033 & 0.030 & 0.031 & 0.028 \\
+ & $N$ & 0.013 & 0.025 & 0.016 & 0.005 & 0.018 & 0.006 & 0.003 & 0.011 \\
+ & $\kappa$ & 0.001 & $<$0.001 & 0.002 & 0.002 & 0.006 & 0.004 & 0.001 & 0.002 \\
+ & Sx & 0.037 & 0.034 & 0.032 & 0.033 & 0.039 & 0.037 & 0.042 & 0.036 \\
+ & Intercept & 0.280 & 0.263 & 0.273 & 0.235 & 0.275 & 0.241 & 0.276 & 0.243 \\
+ & RMSE & 0.082 & 0.075 & 0.078 & 0.068 & 0.077 & 0.070 & 0.081 & 0.070 \\ \hline
+\multirow{9}{*}{\textbf{Glacier 13}} & $z$ & 0.061 & 0.054 & 0.056 & 0.057 & 0.044 & 0.056 & 0.054 & 0.054 \\
+ & $d_C$ & $<$0.001 & $<$0.001 & 0.001 & $<$0.001 & $<$0.001 & $<$0.001 & $<$0.001 & 0.001 \\
+ & $\alpha$ & -0.001 & $<$0.001 & -0.002 & -0.002 & $<$0.001 & -0.002 & $<$0.001 & $<$0.001 \\
+ & $m$ & 0.001 & $<$0.001 & 0.002 & -0.001 & $<$0.001 & $<$0.001 & $<$0.001 & 0.001 \\
+ & $N$ & 0.001 & 0.001 & 0.002 & 0.001 & 0.001 & $<$0.001 & 0.001 & $<$0.001 \\
+ & $\kappa$ & -0.021 & -0.018 & -0.016 & -0.019 & -0.021 & -0.019 & -0.023 & -0.016 \\
+ & Sx & 0.003 & 0.003 & 0.007 & 0.001 & 0.006 & 0.005 & 0.001 & 0.002 \\
+ & Intercept & 0.236 & 0.222 & 0.238 & 0.219 & 0.248 & 0.210 & 0.243 & 0.209 \\
+ & RMSE & 0.063 & 0.056 & 0.063 & 0.058 & 0.068 & 0.056 & 0.067 & 0.052
 \end{tabular}
-\end{wraptable}
+\end{sidewaystable}
 
-For Glacier 4, the largest coefficients are wind redistribution (Sx), slope, and elevation, which are an order of magnitude larger than the remaining coefficients. The Sx and slope coefficients are negative, which indicates less snow in `sheltered' areas and less on steeper slopes. The elevation coefficient is positive, indicating that there is more snow at higher elevation. These coefficients account for the largest percentage of variance explained, although this percentage is small ($\sim$7\%, $\sim$1\% and $\sim$1\%, respectively). Overall, the modelled winter balance for Glacier 4 is very poorly explained by the topographic parameters, which results in no correlation between modelled and observed SWE (R$^2_{avg}=0.05$) and a comparatively high RMSE value. The modelled values of SWE are largely determined by the intercept value. The map of predicted SWE for the entire glacier shows a relatively uniform SWE distribution over Glacier 4, likely due to the large influence of the intercept on the regression. The variation of SWE across the width of the glacier is not captured by the regression. Modelled values on glacier right are less than observed and on glacier left the modelled values are greater than observed. This regression indicates that the wind effects play a significant role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining Sx values that assume wind moving up or down glacier and changing direction to follow the valley could allow the Sx parameter to explain more of the variance. 
-\begin{wraptable}{l}{8.5cm}
-\centering
-\caption{Basic summary statistics of modelled SWE using coefficients found using BMA. Values are for coefficients determined using SWE with inverse distance weighted snowpit densities. }
-\label{tab:BMSsweMinMax}
-\begin{tabular}{lccc}
-\multicolumn{1}{l}{} & \multicolumn{3}{c}{\textbf{Modelled SWE (m w.e.)}} \\
-                     & Mean          & Minimum          & Maximum         \\ \hline
-Glacier 4            & 0.58          & 0.26             & 0.75            \\
-Glacier 2            & 0.57          & -0.25            & 1.76            \\
-Glacier 13           & 0.39          & 0.02             & 0.85           
-\end{tabular}
-\end{wraptable} 
-For Glacier 2, the largest coefficient (by an order of magnitude) is elevation. This coefficient is positive, which means that SWE will increase with elevation. Elevation explains the largest amount of variance ($\sim$45\%). Sx, distance from centreline, and slope are also significant coefficients in BMA, explaining $\sim$6\%, $\sim$1\% and $\sim$1\% of the variance, respectively.  Overall, the modelled winter balance is a good estimation of observed SWE (R$^2_{avg}=0.62$) although it tends to underestimate the amount of accumulation. The map of modelled SWE shows the strong dependence on elevation since the values closely resemble the elevation map (Figure \ref{map:elev}). The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE and the lowest SWE values. Although negative values are inconsistent with with accumulation, they do reflect the lack of snow cover over the lower portion of the terminus. 
+The regression coefficients generated using BMA and their relative importance is similar to those generated by MLR. The most important topographic parameter is Sx on Glacier 4 and elevation ($z$) on Glaciers 2 and 13 (Tables \ref{tab:MLRmeancoeff} and \ref{tab:BMAcoeffFull}). The variance explained by the BMA models is also comparable to that of the MLR models (Figures \ref{fig:BMSfit_opt8} and \ref{fig:BMSfit_allLines}). The distribution of residuals is largest for Glacier 4 as a result of the poor fit of the regression (Figures \ref{fig:BMSresiduals_all}). For a more detailed discussion of the regression of SWE and topographic parameters refer to Section \ref{sec:MLR}.
 
-For Glacier 13, the largest coefficient is elevation with aspect also of the same order of magnitude. The elevation coefficient is positive, which means that cells at higher elevation had higher amounts of SWE. The aspect coefficient was negative, which indicates that larger values of aspect correspond to less snow. Elevation explains the majority of the variance (24\%), while aspect explains far less ($<$1\%).  Overall, the MLR modelled winter balance is poorly related to observed SWE (R$^2_{avg}=0.34$) and tends to underestimate the amount of accumulation. The map of modelled SWE displays an increase with elevation, although it is not strong considering the large range of elevation on this glacier.
+The distribution of estimated glacier-wise SWE is different between glaciers but consistent with the distribution found using MLR (Figures \ref{fig:BMAsweboxplot}). The estimated SWE range is greatest for Glacier 2 and there are a large number of outliers on Glacier 4. Mean estimated SWE decreases with distance from the topographic divide, which is consistent with the observed mean SWE (Figure ??). The range of regression coefficient values found using the different density options (Figure \ref{fig:BMAcoeff_densityOptions}) and the semi-partial correlation range (Figure \ref{fig:BMAsemiR2_densityOptions}) are also similar to those found using MLR. The glacier wide estimates of SWE (Figure \ref{fig:BMSmodelledSWE}), difference between density option variation in SWE (Figure \ref{fig:BMS_SWEdiffMap}), and SWE difference as percent (Figure \ref{fig:BMSPercentVar_densityOptions}) resemble those of MLR. The mean percent difference is highest for Glaciers 2 and 13 (22\%) and lowest for Glacier 4 (15\%). For a more detailed analysis of estimated SWE found using the regression coefficients, see Section \ref{sec:MLR}. These consistent results indicate that the choice of regression method does not strongly affect the final regression of SWE and topographic parameters.
 
-Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density options for all glaciers and the residuals display a similar distribution between the density options.The percent variance explained by each parameter also varies little between different density options. 
-
-The effect of density values on the percent variance explained by each topographic parameters from BMA is shown in Figure \ref{fig:BMSPercentVar_densityOptions}. The range of percent variance explained by elevation is large for both Glacier 2 and 13 but it does not affect the importance of elevation relative to the other parameters. For these two BMA coefficients, the choice of density interpolation has a large effect on the ability of the model to explain variance in SWE. Using elevation regressed Federal Sampler derived density resulted in the highest percent variance explained (59\%). Since the Federal Sampler derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. The range of percent variance explained for all other parameters is small so the BMA coefficients for these parameters are insensitive to the choice of density interpolation. The values for ``northness'' and both curvatures are essentially zero and have negligible ranges. 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSfit_opt8.png}}%
-	\caption{Comparison of predicted (BMA) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (Option 7).}
+	\caption{Comparison of predicted (BMA) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (S4).}
 	\label{fig:BMSfit_opt8}
 \end{figure}
 
@@ -899,6 +827,28 @@ The effect of density values on the percent variance explained by each topograph
 	\caption{Residuals of SWE predicted using BMA for all options of estimating density.}
 	\label{fig:BMSresiduals_all}
 \end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width =0.6\textwidth]{ModelledSWE_box_BMS.png}\\
+\caption{Summary of estimated SWE values found using BMA coefficients. \boxMatlab}
+\label{fig:BMAsweboxplot}
+\end{figure} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =1.1 \textwidth]{BMScoeff_DensityOpts.png}\\
+	\caption{Boxplot showing the range of regressor coefficients explained by each topographic parameter for each option of estimating snow water equivalent (SWE) using BMA. \params \boxplot }
+	\label{fig:BMAcoeff_densityOptions}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =1.1 \textwidth]{BMSsemiR2_DensityOpts.png}\\
+	\caption{Boxplot showing the range of semi-partial correlation explained by each topographic parameter for each option of estimating snow water equivalent (SWE) using BMA. \params \boxplot }
+	\label{fig:BMAsemiR2_densityOptions}
+\end{figure} 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{BMSmap_Modelled_Observed8.png}}%
@@ -920,12 +870,6 @@ The effect of density values on the percent variance explained by each topograph
 	\label{fig:BMS_SWEdiffMap}
 \end{figure} 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width = 1.1 \textwidth]{BMSCoeffs_DensityOpts.png}\\
-	\caption{Boxplot showing the range of percent variance explained by each topographic parameter as calculated using BMA for each option of estimating snow water equivalent (SWE). \params \boxplot}
-	\label{fig:BMSPercentVar_densityOptions}
-\end{figure} 
 
 \begin{figure*}
         \centering
@@ -989,75 +933,14 @@ The effect of density values on the percent variance explained by each topograph
         {\small Map of modelled SWE using the BMS coefficient values for all density options. Measured SWE is plotted as overlain filled circles.} 
         \label{fig:allBMSmodelled}
     \end{figure*}
-  
-\begin{landscape}
-\begin{table}
-\footnotesize
-\centering
-\caption{Topographic regression coefficients for standardized parameters determined using BMA. See Table \ref{tab:densityOptions} for description of density options.}
-\label{tab:BMScoeffFull}
-\begin{tabular}{cccccccccc}
- & \textbf{\begin{tabular}[c]{@{}c@{}}Topographic \\ Parameter\end{tabular}} & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} & \textbf{Option 4} & \textbf{Option 5} & \textbf{Option 6} & \textbf{Option 7} & \textbf{Option 8} \\ \hline \hline
- 
- & $d_C$ & -0.004 & -0.002 & -0.002 & 0.000 & -0.007 & -0.004 & -0.004 & 0.000 \\
- 
- & $z$ & 0.021 & 0.005 & 0.028 & 0.007 & 0.028 & 0.000 & 0.012 & 0.001 \\
- 
- & $\alpha$ & 0.003 & 0.003 & 0.001 & 0.001 & 0.000 & 0.001 & 0.002 & 0.001 \\
- 
- & $m$ & -0.006 & -0.010 & -0.008 & -0.022 & -0.016 & -0.005 & -0.020 & -0.029 \\
- 
- & $N$ & -0.006 & 0.000 & 0.000 & -0.006 & -0.003 & -0.001 & 0.001 & 0.000 \\
- 
- & $\kappa_P$ & 0.000 & -0.001 & 0.000 & -0.002 & -0.011 & 0.000 & 0.000 & -0.003 \\
- 
- & $\kappa_T$ & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
- 
- & Sx & -0.046 & -0.037 & -0.034 & -0.047 & -0.047 & -0.050 & -0.027 & -0.042 \\
- 
- & Intercept & 0.622 & 0.575 & 0.635 & 0.650 & 0.628 & 0.650 & 0.619 & 0.638 \\
- 
-\multirow{-10}{*}{Glacier 4} & RMSE & 0.140 & 0.132 & 0.139 & 0.133 & 0.140 & 0.140 & 0.136 & 0.146 \\ \hline
- & $d_C$ & 0.020 & 0.020 & 0.016 & 0.016 & 0.017 & 0.008 & 0.020 & 0.015 \\
- & $z$ & 0.108 & 0.101 & 0.106 & 0.091 & 0.100 & 0.117 & 0.107 & 0.107 \\
- & $\alpha$ & -0.009 & -0.002 & -0.004 & -0.001 & -0.001 & -0.013 & -0.008 & -0.001 \\
- & $m$ & 0.017 & 0.017 & 0.018 & 0.020 & 0.025 & 0.017 & 0.011 & 0.016 \\
- & $N$ & 0.001 & 0.002 & 0.001 & 0.003 & 0.011 & 0.005 & 0.004 & 0.008 \\
- & $\kappa_P$ & 0.001 & 0.001 & 0.001 & 0.000 & 0.001 & 0.001 & 0.003 & 0.000 \\
- & $\kappa_T$ & 0.005 & 0.001 & 0.008 & 0.000 & 0.000 & 0.001 & 0.002 & 0.001 \\
- & Sx & 0.044 & 0.037 & 0.040 & 0.037 & 0.041 & 0.036 & 0.040 & 0.028 \\
- & Intercept & 0.267 & 0.251 & 0.260 & 0.225 & 0.260 & 0.227 & 0.268 & 0.232 \\
-\multirow{-10}{*}{Glacier 2} & RMSE & 0.097 & 0.088 & 0.094 & 0.083 & 0.097 & 0.084 & 0.098 & 0.086 \\ \hline
- 
- & $d_C$ & 0.011 & 0.010 & 0.009 & 0.005 & 0.014 & 0.007 & 0.007 & 0.008 \\
- 
- & $z$ & 0.053 & 0.050 & 0.052 & 0.053 & 0.041 & 0.051 & 0.047 & 0.047 \\
- 
- & $\alpha$ & -0.003 & -0.003 & -0.009 & -0.002 & -0.007 & -0.003 & -0.010 & -0.002 \\
- 
- & $m$ & -0.002 & -0.002 & -0.001 & -0.006 & -0.001 & 0.000 & 0.000 & 0.000 \\
- 
- & $N$ & 0.001 & 0.001 & 0.000 & 0.001 & 0.000 & 0.001 & 0.001 & 0.002 \\
- 
- & $\kappa_P$ & 0.000 & -0.002 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & -0.002 \\
- 
- & $\kappa_T$ & -0.002 & 0.000 & -0.003 & -0.001 & -0.003 & -0.001 & -0.003 & 0.000 \\
- 
- & Sx & 0.008 & 0.007 & 0.008 & 0.008 & 0.010 & 0.010 & 0.007 & 0.007 \\
- 
- & Intercept & 0.232 & 0.216 & 0.240 & 0.213 & 0.242 & 0.201 & 0.238 & 0.206 \\
- 
-\multirow{-10}{*}{Glacier 13} & RMSE & 0.072 & 0.077 & 0.080 & 0.072 & 0.083 & 0.071 & 0.086 & 0.070
-\end{tabular}
-\end{table}
-\end{landscape}
+
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{MLR and BMA comparison}
 
-The range of coefficient values resulting from different choices in density interpolation found using MLR and BMA is similar for all glaciers (Figure \ref{fig:allCeoffs_boxplot}). Coefficient value ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density options these coefficients are small. 
+The range of coefficient values resulting from different choices in density interpolation found using MLR and BMA is similar for all glaciers (Figure \ref{fig:allCeoffs_boxplot}). The range of coefficient value for all glaciers are not significantly different between MLR and BMA (p$>$0.05). Visually, these ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density options these coefficients are small. 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width =1.2 \textwidth]{CoeffBoxplot_BMSMLRcompare.png}}%
@@ -1065,11 +948,31 @@ The range of coefficient values resulting from different choices in density inte
 	\label{fig:allCeoffs_boxplot}
 \end{figure}
 
-The elevation, slope, and Sx coefficients for Glacier 4 are both the most significant and have the largest range for this glacier. Regardless of the choice of density option, the relative importance of these coefficients is the same (i.e. Sx will always be the most important). For Glacier 4, the choice of density option has a non-negligible impact on modelled SWE values. However, the regression fit is so poor that the fit does not change with the choice of density interpolation method (Figure \ref{fig:MLRfit} and \ref{fig:BMSfit_allLines}). MLR and BMA appear to have similar ranges of coefficient values, although the mean and median within each regressoin method differ for Sx and slope, with MLR producing larger coefficients.
+The aspect, curvature, and Sx coefficients for Glacier 4 have the largest range of coefficients. Regardless of the choice of density option, the relative importance of these coefficients is the same (i.e. Sx will always be the most important). For Glacier 4, the choice of density option has a negligible impact on modelled SWE values - the regression fit is so poor that the fit does not change with the choice of density interpolation method (Figure \ref{fig:MLRfit} and \ref{fig:BMSfit_allLines}). MLR and BMA appear to have similar ranges of coefficient values, although the mean and median within each regression method differs for Sx and slope, with MLR producing larger coefficients.
 
-The range of coefficient values for Glacier 2 and 13 is generally small for all parameters indicating that the choice of density option does not have a large impact on modelled SWE. Further, the relative importance of the coefficients does not change with choice of density option. The greatest range of coefficient values is for elevation, which is also the most significant coefficient. The type of regression model used does not appear to have a large impact on the coefficient values.
+The range of coefficient values for Glacier 2 and 13 is generally small for all parameters indicating that the choice of density option does not have a large impact on modelled SWE. The range is especially small for Glacier 13 and most coefficients are close to zero, with the exception of elevation and curvature. This highlights the large sei-partial correlation of elevation on Glacier 13. Further, the relative importance of the coefficients does not change with choice of density option. The greatest range of coefficient values is for elevation, which is also the most significant coefficient. The type of regression model used does not appear to have a large impact on the coefficient values.
 
-\begin{wraptable}[33]{r}{10cm}
+\begin{wraptable}[10]{r}{10cm}
+\centering
+\caption{ANOVA p-values between estimated SWE found using MLR and BMS regression coefficients for various density options. Significance is taken to be p$<$0.05.}
+\label{tab:estimatedSWEpvalue}
+\begin{tabular}{crrr}
+\textbf{\begin{tabular}[c]{@{}c@{}}Density \\ Option\end{tabular}} & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
+S1 & 0.03 & 0.14 & $<$0.01 \\
+F1 & $<$0.01 & 0.08 & $<$0.01 \\
+S2 & $<$0.01 & 0.37 & $<$0.01 \\
+F2 & 0.97 & $<$0.01 & 0.34 \\
+S3 & $<$0.01 & $<$0.01 & $<$0.01 \\
+F3 & 0.02 & 0.84 & $<$0.01 \\
+S4 & 0.04 & 0.93 & 0.14 \\
+F4 & 0.01 & 0.01 & 0.96
+\end{tabular}
+\end{wraptable}
+
+For all glaciers, the BMA regression produced a smaller RMSE and a slightly higher R$^2$. It is not clear why the BMA regression is better at minimizing RMSE. For some density options, estimated values of SWE can be significantly different when found using either MLR- or BMA-derived coefficients (Table \ref{tab:estimatedSWEpvalue}). Although the range of coefficients is not different between BMA and MLR, the resulting SWE values are significantly different. 
+
+
+\begin{wraptable}[33]{R}{10cm}
 \centering
 \caption{Final regression coefficients. Values are calculated from all coefficients found using MLR and BMA and using all density options.\params}
 \label{tab:finalCoeff}
@@ -1201,7 +1104,7 @@ The MLR was completed with the following steps (executed using the function 'MLR
 	
 	
 	\subsection{BMA software}
-
+\label{sec:BMAmethods}
 The BMA process was implemented in R, using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The function \texttt{BMS\_R()} computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter using the following steps:
 \begin{enumerate}
 \item A portion of the data ($2/3$ as suggested by \cite{Kohavi1995}) is randomly chosen as the calibration set and saved as a .mat file. 
