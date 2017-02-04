@@ -4,49 +4,50 @@ The top-level auxiliary file: THESIS.aux
 The style file: plain.bst
 Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
 Warning--there's a number but no volume in Clarke2002
+Warning--can't use both volume and number fields in Kohavi1995
 Warning--empty journal in Revuelto2014
 Warning--empty journal in Walmsley2015
 Warning--empty institution in Work1965
 Warning--empty year in Work1965
-You've used 119 entries,
+You've used 139 entries,
             2118 wiz_defined-function locations,
-            1255 strings with 27304 characters,
-and the built_in function-call counts, 43698 in all, are:
-= -- 4340
-> -- 2342
-< -- 9
-+ -- 917
-- -- 798
-* -- 3540
-:= -- 7390
-add.period$ -- 359
-call.type$ -- 119
-change.case$ -- 753
+            1386 strings with 31022 characters,
+and the built_in function-call counts, 50496 in all, are:
+= -- 5025
+> -- 2646
+< -- 13
++ -- 1037
+- -- 898
+* -- 4063
+:= -- 8521
+add.period$ -- 419
+call.type$ -- 139
+change.case$ -- 860
 chr.to.int$ -- 0
-cite$ -- 124
-duplicate$ -- 1372
-empty$ -- 3112
-format.name$ -- 798
-if$ -- 8782
+cite$ -- 145
+duplicate$ -- 1609
+empty$ -- 3644
+format.name$ -- 898
+if$ -- 10171
 int.to.chr$ -- 0
-int.to.str$ -- 119
-missing$ -- 118
-newline$ -- 600
-num.names$ -- 238
-pop$ -- 578
+int.to.str$ -- 139
+missing$ -- 141
+newline$ -- 700
+num.names$ -- 278
+pop$ -- 665
 preamble$ -- 1
-purify$ -- 635
+purify$ -- 724
 quote$ -- 0
-skip$ -- 969
+skip$ -- 1133
 stack$ -- 0
-substring$ -- 3141
-swap$ -- 191
-text.length$ -- 9
+substring$ -- 3653
+swap$ -- 227
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 472
-warning$ -- 5
-while$ -- 440
-width$ -- 122
-write$ -- 1305
-(There were 5 warnings)
+type$ -- 546
+warning$ -- 6
+while$ -- 514
+width$ -- 142
+write$ -- 1526
+(There were 6 warnings)

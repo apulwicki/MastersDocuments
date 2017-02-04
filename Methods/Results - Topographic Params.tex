@@ -244,6 +244,13 @@ Visual inspection of the curvature fields calculated using the DEM showed noisy 
 
 To choose a smoothing algorithm and window size, a number of smoothing algorithms was applied and the one that resulted in topographic parameters that had the highest correlation with SWE was chosen. Window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 were used. For all sizes, inverse-distance weighted smoothing and Gaussian smoothing were poorly correlated with SWE. An average value smoothing with a 7$\times$7 window resulted in the highest correlation between curvature (second derivative) and SWE as well as slope (first derivative) and SWE. The window size that produced the highest correlation of SWE values and curvature for each glacier differed, but for all SWE values taken together, the 7$\times$7 window resulted in the highest correlation. For slope, the highest correlation for individual glaciers was from the DEM with a 7$\times$7 smoothing window but the overall correlation was not the highest with this window. To maintain consistency between parameters, the 7$\times$7 smoothing window was chosen and applied to the DEM for calculation of curvature, slope, aspect and ``northness''. 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 0.7\textwidth]{G13curvatureSmoothing.jpeg}\\
+	\caption{Curvature found using the orginal DEM (a) and the smoothed (7$\times$7 window moving average) DEM (b).}
+	\label{fig:smoothingCurve}
+\end{figure}
+
 
 \subsection{Parameter correlations}
 

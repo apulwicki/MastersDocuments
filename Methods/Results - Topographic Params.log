@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  2 FEB 2017 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  3 FEB 2017 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,242 +664,250 @@ Package pdftex.def Info: Sx_infographic.jpeg used on input line 220.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] [10 <./Sx_infographic.jpeg>] [11] [12] [13] [14] [15]
-<Map_elevation.png, id=370, 939.51pt x 433.62pt>
+[9] [10 <./Sx_infographic.jpeg>]
+<G13curvatureSmoothing.jpeg, id=309, 3043.37pt x 1759.57375pt>
+File: G13curvatureSmoothing.jpeg Graphic file (type jpg)
+
+<use G13curvatureSmoothing.jpeg>
+Package pdftex.def Info: G13curvatureSmoothing.jpeg used on input line 249.
+(pdftex.def)             Requested size: 318.7087pt x 184.26399pt.
+ [11 <./G13curvatureSmoothing.jpeg>] [12]
+[13] [14] [15] <Map_elevation.png, id=372, 939.51pt x 433.62pt>
 File: Map_elevation.png Graphic file (type png)
- <use Map_elevation.png>
-Package pdftex.def Info: Map_elevation.png used on input line 339.
+
+<use Map_elevation.png>
+Package pdftex.def Info: Map_elevation.png used on input line 346.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
 
-<SampledRangeTopo_elevation.png, id=371, 1011.78pt x 289.08pt>
+<SampledRangeTopo_elevation.png, id=373, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_elevation.png Graphic file (type png)
 
 <use SampledRangeTopo_elevation.png>
-Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 345.
+Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 352.
 
 (pdftex.def)             Requested size: 546.35875pt x 156.10527pt.
 
-<Map_centreD.png, id=372, 939.51pt x 433.62pt>
+<Map_centreD.png, id=374, 939.51pt x 433.62pt>
 File: Map_centreD.png Graphic file (type png)
  <use Map_centreD.png>
-Package pdftex.def Info: Map_centreD.png used on input line 352.
+Package pdftex.def Info: Map_centreD.png used on input line 359.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [16 <./Map_elevation.png (PNG copy)> <./SampledRangeTopo_elevation.png (PNG co
 py)>]
-<SampledRangeTopo_centreD.png, id=377, 1011.78pt x 289.08pt>
+<SampledRangeTopo_centreD.png, id=379, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_centreD.png Graphic file (type png)
 
 <use SampledRangeTopo_centreD.png>
-Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 358.
+Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 365.
 (pdftex.def)             Requested size: 546.35875pt x 156.10527pt.
 
-<Map_aspect.png, id=378, 939.51pt x 433.62pt>
+<Map_aspect.png, id=380, 939.51pt x 433.62pt>
 File: Map_aspect.png Graphic file (type png)
  <use Map_aspect.png>
-Package pdftex.def Info: Map_aspect.png used on input line 365.
+Package pdftex.def Info: Map_aspect.png used on input line 372.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [17 <./Map_centreD.png (PNG copy)> <./SampledRangeTopo_centreD.png (PNG copy)>
 ]
-<SampledRangeTopo_aspect.png, id=383, 1011.78pt x 289.08pt>
+<SampledRangeTopo_aspect.png, id=385, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_aspect.png Graphic file (type png)
 
 <use SampledRangeTopo_aspect.png>
-Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 371.
+Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 378.
 (pdftex.def)             Requested size: 546.35875pt x 156.10527pt.
- <Map_slope.png, id=384, 939.51pt x 433.62pt>
+ <Map_slope.png, id=386, 939.51pt x 433.62pt>
 File: Map_slope.png Graphic file (type png)
 
 <use Map_slope.png>
-Package pdftex.def Info: Map_slope.png used on input line 378.
+Package pdftex.def Info: Map_slope.png used on input line 385.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [18 <./Map_aspect.png (PNG copy)> <./SampledRangeTopo_aspect.png (PNG copy)>] 
-<SampledRangeTopo_slope.png, id=389, 1011.78pt x 289.08pt>
+<SampledRangeTopo_slope.png, id=391, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_slope.png Graphic file (type png)
 
 <use SampledRangeTopo_slope.png>
-Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 384.
+Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 391.
 (pdftex.def)             Requested size: 546.35875pt x 156.10527pt.
 
-<Map_northness.png, id=390, 939.51pt x 433.62pt>
+<Map_northness.png, id=392, 939.51pt x 433.62pt>
 File: Map_northness.png Graphic file (type png)
  <use Map_northness.png>
-Package pdftex.def Info: Map_northness.png used on input line 391.
+Package pdftex.def Info: Map_northness.png used on input line 398.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
 
 [19 <./Map_slope.png (PNG copy)> <./SampledRangeTopo_slope.png (PNG copy)>]
-<SampledRangeTopo_northness.png, id=396, 1011.78pt x 289.08pt>
+<SampledRangeTopo_northness.png, id=398, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_northness.png Graphic file (type png)
 
 <use SampledRangeTopo_northness.png>
-Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 397.
+Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 404.
 
 (pdftex.def)             Requested size: 546.35875pt x 156.10527pt.
 
-<Map_curvature.png, id=397, 939.51pt x 433.62pt>
+<Map_curvature.png, id=399, 939.51pt x 433.62pt>
 File: Map_curvature.png Graphic file (type png)
  <use Map_curvature.png>
-Package pdftex.def Info: Map_curvature.png used on input line 404.
+Package pdftex.def Info: Map_curvature.png used on input line 411.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
 
 [20 <./Map_northness.png (PNG copy)> <./SampledRangeTopo_northness.png (PNG cop
-y)>] <SampledRangeTopo_curvature.png, id=403, 1011.78pt x 289.08pt>
+y)>] <SampledRangeTopo_curvature.png, id=405, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_curvature.png Graphic file (type png)
 
 <use SampledRangeTopo_curvature.png>
-Package pdftex.def Info: SampledRangeTopo_curvature.png used on input line 410.
+Package pdftex.def Info: SampledRangeTopo_curvature.png used on input line 417.
 
 (pdftex.def)             Requested size: 546.35875pt x 156.10527pt.
- <Map_Sx.png, id=404, 939.51pt x 433.62pt>
+ <Map_Sx.png, id=406, 939.51pt x 433.62pt>
 File: Map_Sx.png Graphic file (type png)
 
 <use Map_Sx.png>
-Package pdftex.def Info: Map_Sx.png used on input line 417.
+Package pdftex.def Info: Map_Sx.png used on input line 424.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [21 <./Map_curvature.png (PNG copy)> <./SampledRangeTopo_curvature.png (PNG co
-py)>] <SampledRangeTopo_Sx.png, id=417, 1011.78pt x 289.08pt>
+py)>] <SampledRangeTopo_Sx.png, id=419, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_Sx.png Graphic file (type png)
 
 <use SampledRangeTopo_Sx.png>
-Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 423.
+Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 430.
 (pdftex.def)             Requested size: 546.35875pt x 156.10527pt.
  [22 <./Map_Sx.png (PNG copy)> <./SampledRangeTopo_Sx.png (PNG copy)>] [23] [24
 ] [25] [26] [27] [28]
 
 LaTeX Warning: Reference `tab:MLRsweMinMax' on page 29 undefined on input line 
-584.
+591.
 
-[29] <MLRfit_opt8.png, id=542, 867.24pt x 289.08pt>
+[29] <MLRfit_opt8.png, id=544, 867.24pt x 289.08pt>
 File: MLRfit_opt8.png Graphic file (type png)
  <use MLRfit_opt8.png>
-Package pdftex.def Info: MLRfit_opt8.png used on input line 598.
+Package pdftex.def Info: MLRfit_opt8.png used on input line 605.
 (pdftex.def)             Requested size: 546.35875pt x 182.12576pt.
 
-<MLRfit_allLines.png, id=543, 867.24pt x 289.08pt>
+<MLRfit_allLines.png, id=545, 867.24pt x 289.08pt>
 File: MLRfit_allLines.png Graphic file (type png)
  <use MLRfit_allLines.png>
-Package pdftex.def Info: MLRfit_allLines.png used on input line 602.
+Package pdftex.def Info: MLRfit_allLines.png used on input line 609.
 (pdftex.def)             Requested size: 546.35875pt x 182.12576pt.
 
-<ModelledSWE_box_MLR.png, id=546, 429.10312pt x 338.76563pt>
+<ModelledSWE_box_MLR.png, id=548, 429.10312pt x 338.76563pt>
 File: ModelledSWE_box_MLR.png Graphic file (type png)
 
 <use ModelledSWE_box_MLR.png>
-Package pdftex.def Info: ModelledSWE_box_MLR.png used on input line 611.
+Package pdftex.def Info: ModelledSWE_box_MLR.png used on input line 618.
 (pdftex.def)             Requested size: 273.18285pt x 215.67204pt.
 
-<MLRresiduals_all.png, id=547, 1084.05pt x 361.35pt>
+<MLRresiduals_all.png, id=549, 1084.05pt x 361.35pt>
 File: MLRresiduals_all.png Graphic file (type png)
 
 <use MLRresiduals_all.png>
-Package pdftex.def Info: MLRresiduals_all.png used on input line 618.
+Package pdftex.def Info: MLRresiduals_all.png used on input line 625.
 (pdftex.def)             Requested size: 546.35875pt x 182.12466pt.
  [30 <./MLRfit_opt8.png (PNG copy)> <./MLRfit_allLines.png (PNG copy)>] <MLRcoe
-ff_DensityOpts.png, id=554, 939.51pt x 722.7pt>
+ff_DensityOpts.png, id=556, 939.51pt x 722.7pt>
 File: MLRcoeff_DensityOpts.png Graphic file (type png)
 
 <use MLRcoeff_DensityOpts.png>
-Package pdftex.def Info: MLRcoeff_DensityOpts.png used on input line 625.
+Package pdftex.def Info: MLRcoeff_DensityOpts.png used on input line 632.
 (pdftex.def)             Requested size: 500.83292pt x 385.25673pt.
 
-Overfull \hbox (45.53279pt too wide) in paragraph at lines 625--625
+Overfull \hbox (45.53279pt too wide) in paragraph at lines 632--632
  [][] 
  []
 
-<MLRsemiR2_DensityOpts.png, id=555, 939.51pt x 722.7pt>
+<MLRsemiR2_DensityOpts.png, id=557, 939.51pt x 722.7pt>
 File: MLRsemiR2_DensityOpts.png Graphic file (type png)
 
 <use MLRsemiR2_DensityOpts.png>
-Package pdftex.def Info: MLRsemiR2_DensityOpts.png used on input line 633.
+Package pdftex.def Info: MLRsemiR2_DensityOpts.png used on input line 640.
 (pdftex.def)             Requested size: 500.83292pt x 385.25673pt.
 
-Overfull \hbox (45.53279pt too wide) in paragraph at lines 633--633
+Overfull \hbox (45.53279pt too wide) in paragraph at lines 640--640
  [][] 
  []
 
 [31 <./ModelledSWE_box_MLR.png (PNG copy)> <./MLRresiduals_all.png (PNG copy)>]
 [32 <./MLRcoeff_DensityOpts.png (PNG copy)>]
-<MLRmap_Modelled_Observed8.png, id=567, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed8.png, id=569, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed8.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed8.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed8.png used on input line 639.
+Package pdftex.def Info: MLRmap_Modelled_Observed8.png used on input line 646.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [33 <./MLRsemiR2_DensityOpts.png (PNG copy)>] <MLR_SWEdifferenceMap.png, id=57
-2, 939.51pt x 433.62pt>
+4, 939.51pt x 433.62pt>
 File: MLR_SWEdifferenceMap.png Graphic file (type png)
 
 <use MLR_SWEdifferenceMap.png>
-Package pdftex.def Info: MLR_SWEdifferenceMap.png used on input line 646.
+Package pdftex.def Info: MLR_SWEdifferenceMap.png used on input line 653.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
 
-<MLR_SWEdifferenceMap_percent.png, id=573, 939.51pt x 433.62pt>
+<MLR_SWEdifferenceMap_percent.png, id=575, 939.51pt x 433.62pt>
 File: MLR_SWEdifferenceMap_percent.png Graphic file (type png)
 
 <use MLR_SWEdifferenceMap_percent.png>
-Package pdftex.def Info: MLR_SWEdifferenceMap_percent.png used on input line 65
-3.
+Package pdftex.def Info: MLR_SWEdifferenceMap_percent.png used on input line 66
+0.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [34 <./MLRmap_Modelled_Observed8.png (PNG copy)> <./MLR_SWEdifferenceMap.png (
 PNG copy)>]
-<MLRmap_Modelled_Observed1.png, id=578, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed1.png, id=580, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed1.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed1.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed1.png used on input line 664.
+Package pdftex.def Info: MLRmap_Modelled_Observed1.png used on input line 671.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<MLRmap_Modelled_Observed2.png, id=579, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed2.png, id=581, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed2.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed2.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed2.png used on input line 671.
+Package pdftex.def Info: MLRmap_Modelled_Observed2.png used on input line 678.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<MLRmap_Modelled_Observed3.png, id=580, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed3.png, id=582, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed3.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed3.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed3.png used on input line 678.
+Package pdftex.def Info: MLRmap_Modelled_Observed3.png used on input line 685.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<MLRmap_Modelled_Observed4.png, id=581, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed4.png, id=583, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed4.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed4.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed4.png used on input line 685.
+Package pdftex.def Info: MLRmap_Modelled_Observed4.png used on input line 692.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<MLRmap_Modelled_Observed5.png, id=582, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed5.png, id=584, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed5.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed5.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed5.png used on input line 692.
+Package pdftex.def Info: MLRmap_Modelled_Observed5.png used on input line 699.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<MLRmap_Modelled_Observed6.png, id=583, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed6.png, id=585, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed6.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed6.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed6.png used on input line 699.
+Package pdftex.def Info: MLRmap_Modelled_Observed6.png used on input line 706.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<MLRmap_Modelled_Observed7.png, id=584, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed7.png, id=586, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed7.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed7.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed7.png used on input line 706.
+Package pdftex.def Info: MLRmap_Modelled_Observed7.png used on input line 713.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 File: MLRmap_Modelled_Observed8.png Graphic file (type png)
  <use MLRmap_Modelled_Observed8.png>
-Package pdftex.def Info: MLRmap_Modelled_Observed8.png used on input line 713.
+Package pdftex.def Info: MLRmap_Modelled_Observed8.png used on input line 720.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<DistributionOfNumParams_topoRegress.png, id=585, 433.62pt x 433.62pt>
+<DistributionOfNumParams_topoRegress.png, id=587, 433.62pt x 433.62pt>
 File: DistributionOfNumParams_topoRegress.png Graphic file (type png)
 
 <use DistributionOfNumParams_topoRegress.png>
 Package pdftex.def Info: DistributionOfNumParams_topoRegress.png used on input 
-line 734.
+line 741.
 (pdftex.def)             Requested size: 273.18285pt x 273.19528pt.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
@@ -912,150 +920,150 @@ Modelled_Observed3.png (PNG copy)> <./MLRmap_Modelled_Observed4.png (PNG copy)>
 NumParams_topoRegress.png (PNG copy)>]
 
 LaTeX Warning: Reference `fig:BMSPercentVar_densityOptions' on page 38 undefine
-d on input line 810.
+d on input line 817.
 
-[38] [39] <BMSfit_opt8.png, id=675, 867.24pt x 289.08pt>
+[38] [39] <BMSfit_opt8.png, id=677, 867.24pt x 289.08pt>
 File: BMSfit_opt8.png Graphic file (type png)
  <use BMSfit_opt8.png>
-Package pdftex.def Info: BMSfit_opt8.png used on input line 814.
+Package pdftex.def Info: BMSfit_opt8.png used on input line 821.
 (pdftex.def)             Requested size: 546.35875pt x 182.12576pt.
 
-<BMSfit_allLines.png, id=676, 867.24pt x 289.08pt>
+<BMSfit_allLines.png, id=678, 867.24pt x 289.08pt>
 File: BMSfit_allLines.png Graphic file (type png)
  <use BMSfit_allLines.png>
-Package pdftex.def Info: BMSfit_allLines.png used on input line 820.
+Package pdftex.def Info: BMSfit_allLines.png used on input line 827.
 (pdftex.def)             Requested size: 546.35875pt x 182.12576pt.
 
-<BMSresiduals_all.png, id=679, 1084.05pt x 361.35pt>
+<BMSresiduals_all.png, id=681, 1084.05pt x 361.35pt>
 File: BMSresiduals_all.png Graphic file (type png)
 
 <use BMSresiduals_all.png>
-Package pdftex.def Info: BMSresiduals_all.png used on input line 826.
+Package pdftex.def Info: BMSresiduals_all.png used on input line 833.
 (pdftex.def)             Requested size: 546.35875pt x 182.12466pt.
  [40 <./BMSfit_opt8.png (PNG copy)> <./BMSfit_allLines.png (PNG copy)>]
-<ModelledSWE_box_BMS.png, id=684, 429.10312pt x 338.76563pt>
+<ModelledSWE_box_BMS.png, id=686, 429.10312pt x 338.76563pt>
 File: ModelledSWE_box_BMS.png Graphic file (type png)
 
 <use ModelledSWE_box_BMS.png>
-Package pdftex.def Info: ModelledSWE_box_BMS.png used on input line 833.
+Package pdftex.def Info: ModelledSWE_box_BMS.png used on input line 840.
 (pdftex.def)             Requested size: 273.18285pt x 215.67204pt.
 
-<BMScoeff_DensityOpts.png, id=685, 939.51pt x 722.7pt>
+<BMScoeff_DensityOpts.png, id=687, 939.51pt x 722.7pt>
 File: BMScoeff_DensityOpts.png Graphic file (type png)
 
 <use BMScoeff_DensityOpts.png>
-Package pdftex.def Info: BMScoeff_DensityOpts.png used on input line 840.
+Package pdftex.def Info: BMScoeff_DensityOpts.png used on input line 847.
 (pdftex.def)             Requested size: 500.83292pt x 385.25673pt.
 
-Overfull \hbox (45.53279pt too wide) in paragraph at lines 840--840
+Overfull \hbox (45.53279pt too wide) in paragraph at lines 847--847
  [][] 
  []
 
 [41 <./BMSresiduals_all.png (PNG copy)> <./ModelledSWE_box_BMS.png (PNG copy)>]
-<BMSsemiR2_DensityOpts.png, id=691, 939.51pt x 722.7pt>
+<BMSsemiR2_DensityOpts.png, id=693, 939.51pt x 722.7pt>
 File: BMSsemiR2_DensityOpts.png Graphic file (type png)
 
 <use BMSsemiR2_DensityOpts.png>
-Package pdftex.def Info: BMSsemiR2_DensityOpts.png used on input line 848.
+Package pdftex.def Info: BMSsemiR2_DensityOpts.png used on input line 855.
 (pdftex.def)             Requested size: 500.83292pt x 385.25673pt.
 
-Overfull \hbox (45.53279pt too wide) in paragraph at lines 848--848
+Overfull \hbox (45.53279pt too wide) in paragraph at lines 855--855
  [][] 
  []
 
 [42 <./BMScoeff_DensityOpts.png (PNG copy)>]
-<BMSmap_Modelled_Observed8.png, id=696, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed8.png, id=698, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed8.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed8.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed8.png used on input line 854.
+Package pdftex.def Info: BMSmap_Modelled_Observed8.png used on input line 861.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [43 <./BMSsemiR2_DensityOpts.png (PNG copy)>] <BMS_SWEdifferenceMap.png, id=70
-2, 939.51pt x 433.62pt>
+4, 939.51pt x 433.62pt>
 File: BMS_SWEdifferenceMap.png Graphic file (type png)
 
 <use BMS_SWEdifferenceMap.png>
-Package pdftex.def Info: BMS_SWEdifferenceMap.png used on input line 861.
+Package pdftex.def Info: BMS_SWEdifferenceMap.png used on input line 868.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
 
-<BMS_SWEdifferenceMap_percent.png, id=703, 939.51pt x 433.62pt>
+<BMS_SWEdifferenceMap_percent.png, id=705, 939.51pt x 433.62pt>
 File: BMS_SWEdifferenceMap_percent.png Graphic file (type png)
 
 <use BMS_SWEdifferenceMap_percent.png>
-Package pdftex.def Info: BMS_SWEdifferenceMap_percent.png used on input line 86
-8.
+Package pdftex.def Info: BMS_SWEdifferenceMap_percent.png used on input line 87
+5.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [44 <./BMSmap_Modelled_Observed8.png (PNG copy)> <./BMS_SWEdifferenceMap.png (
 PNG copy)>]
-<BMSmap_Modelled_Observed_Opt1.png, id=709, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed_Opt1.png, id=711, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed_Opt1.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed_Opt1.png>
 Package pdftex.def Info: BMSmap_Modelled_Observed_Opt1.png used on input line 8
-78.
+85.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<BMSmap_Modelled_Observed_Opt2.png, id=710, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed_Opt2.png, id=712, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed_Opt2.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed_Opt2.png>
 Package pdftex.def Info: BMSmap_Modelled_Observed_Opt2.png used on input line 8
-85.
+92.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<BMSmap_Modelled_Observed_Opt3.png, id=711, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed_Opt3.png, id=713, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed_Opt3.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed_Opt3.png>
 Package pdftex.def Info: BMSmap_Modelled_Observed_Opt3.png used on input line 8
-92.
-(pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
-
-<BMSmap_Modelled_Observed_Opt4.png, id=712, 939.51pt x 433.62pt>
-File: BMSmap_Modelled_Observed_Opt4.png Graphic file (type png)
-
-<use BMSmap_Modelled_Observed_Opt4.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed_Opt4.png used on input line 8
 99.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<BMSmap_Modelled_Observed_Opt5.png, id=713, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed_Opt4.png, id=714, 939.51pt x 433.62pt>
+File: BMSmap_Modelled_Observed_Opt4.png Graphic file (type png)
+
+<use BMSmap_Modelled_Observed_Opt4.png>
+Package pdftex.def Info: BMSmap_Modelled_Observed_Opt4.png used on input line 9
+06.
+(pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
+
+<BMSmap_Modelled_Observed_Opt5.png, id=715, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed_Opt5.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed_Opt5.png>
 Package pdftex.def Info: BMSmap_Modelled_Observed_Opt5.png used on input line 9
-06.
+13.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<BMSmap_Modelled_Observed_Opt6.png, id=714, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed_Opt6.png, id=716, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed_Opt6.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed_Opt6.png>
 Package pdftex.def Info: BMSmap_Modelled_Observed_Opt6.png used on input line 9
-13.
+20.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<BMSmap_Modelled_Observed_Opt7.png, id=715, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed_Opt7.png, id=717, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed_Opt7.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed_Opt7.png>
 Package pdftex.def Info: BMSmap_Modelled_Observed_Opt7.png used on input line 9
-20.
+27.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<BMSmap_Modelled_Observed_Opt8.png, id=716, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed_Opt8.png, id=718, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed_Opt8.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed_Opt8.png>
 Package pdftex.def Info: BMSmap_Modelled_Observed_Opt8.png used on input line 9
-27.
+34.
 (pdftex.def)             Requested size: 216.27032pt x 99.81651pt.
 
-<CoeffBoxplot_BMSMLRcompare.png, id=718, 1011.78pt x 289.08pt>
+<CoeffBoxplot_BMSMLRcompare.png, id=720, 1011.78pt x 289.08pt>
 File: CoeffBoxplot_BMSMLRcompare.png Graphic file (type png)
 
 <use CoeffBoxplot_BMSMLRcompare.png>
-Package pdftex.def Info: CoeffBoxplot_BMSMLRcompare.png used on input line 946.
+Package pdftex.def Info: CoeffBoxplot_BMSMLRcompare.png used on input line 953.
 
 (pdftex.def)             Requested size: 546.35875pt x 156.10527pt.
  [45 <./BMS_SWEdifferenceMap_percent.png (PNG copy)>] [46 <./BMSmap_Modelled_Ob
@@ -1064,80 +1072,80 @@ served_Opt1.png (PNG copy)> <./BMSmap_Modelled_Observed_Opt2.png (PNG copy)> <.
 .png (PNG copy)> <./BMSmap_Modelled_Observed_Opt5.png (PNG copy)> <./BMSmap_Mod
 elled_Observed_Opt6.png (PNG copy)> <./BMSmap_Modelled_Observed_Opt7.png (PNG c
 opy)> <./BMSmap_Modelled_Observed_Opt8.png (PNG copy)>]
-Underfull \hbox (badness 1337) in paragraph at lines 972--973
+Underfull \hbox (badness 1337) in paragraph at lines 979--980
 \OT1/cmr/m/n/12 re-gres-sion is bet-ter at min-i-
  []
 
 [47 <./CoeffBoxplot_BMSMLRcompare.png (PNG copy)>]
-Overfull \hbox (10.65549pt too wide) in paragraph at lines 979--1027
+Overfull \hbox (10.65549pt too wide) in paragraph at lines 986--1034
  [][] 
  []
 
 
-Underfull \hbox (badness 5771) in paragraph at lines 1029--1030
+Underfull \hbox (badness 5771) in paragraph at lines 1036--1037
 [][]\OT1/cmr/m/n/12 The range of co-ef-fi-cient
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 1029--1030
+Underfull \hbox (badness 1137) in paragraph at lines 1036--1037
 \OT1/cmr/m/n/12 ues for each re-gres-sion co-ef-
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 1029--1030
+Underfull \hbox (badness 1072) in paragraph at lines 1036--1037
 \OT1/cmr/m/n/12 fi-cients are used to es-ti-mate
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 1031--1032
+Underfull \hbox (badness 5924) in paragraph at lines 1038--1039
 \OT1/cmr/m/n/12 us-ing the mean co-ef-fi-cients
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 1031--1032
+Underfull \hbox (badness 1024) in paragraph at lines 1038--1039
 \OT1/cmr/m/n/12 ef-fi-cient val-ues. It is in-ter-
  []
 
-<SWEmeanModelled.png, id=741, 939.51pt x 433.62pt>
+<SWEmeanModelled.png, id=743, 939.51pt x 433.62pt>
 File: SWEmeanModelled.png Graphic file (type png)
  <use SWEmeanModelled.png>
-Package pdftex.def Info: SWEmeanModelled.png used on input line 1035.
+Package pdftex.def Info: SWEmeanModelled.png used on input line 1042.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
 
-[48] <SWEminModelled.png, id=750, 939.51pt x 433.62pt>
+[48] <SWEminModelled.png, id=752, 939.51pt x 433.62pt>
 File: SWEminModelled.png Graphic file (type png)
 
 <use SWEminModelled.png>
-Package pdftex.def Info: SWEminModelled.png used on input line 1042.
+Package pdftex.def Info: SWEminModelled.png used on input line 1049.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
- <SWEmaxModelled.png, id=751, 939.51pt x 433.62pt>
+ <SWEmaxModelled.png, id=753, 939.51pt x 433.62pt>
 File: SWEmaxModelled.png Graphic file (type png)
 
 <use SWEmaxModelled.png>
-Package pdftex.def Info: SWEmaxModelled.png used on input line 1049.
+Package pdftex.def Info: SWEmaxModelled.png used on input line 1056.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [49 <./SWEmeanModelled.png (PNG copy)> <./SWEminModelled.png (PNG copy)>] <SWE
-rangeModelled.png, id=757, 939.51pt x 433.62pt>
+rangeModelled.png, id=759, 939.51pt x 433.62pt>
 File: SWErangeModelled.png Graphic file (type png)
 
 <use SWErangeModelled.png>
-Package pdftex.def Info: SWErangeModelled.png used on input line 1056.
+Package pdftex.def Info: SWErangeModelled.png used on input line 1063.
 (pdftex.def)             Requested size: 455.30013pt x 210.14003pt.
  [50 <./SWEmaxModelled.png (PNG copy)> <./SWErangeModelled.png (PNG copy)>] [51
 ]
-Overfull \hbox (8.99449pt too wide) in paragraph at lines 1090--1091
+Overfull \hbox (8.99449pt too wide) in paragraph at lines 1097--1098
 []\OT1/cmr/m/n/12 The to-po-graphic pa-ram-e-ters are im-ported to Mat-lab us-i
 ng the script `Im-port[]Topo.m'. 
  []
 
 [52] [53] (./Results - Topographic Params.bbl [54])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1130.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1137.
  [55]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1137.
 
 (./Results - Topographic Params.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1130.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1137.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1137.
 
 Package rerunfilecheck Info: File `"Results - Topographic Params".out' has not 
 changed.
@@ -1149,13 +1157,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1130.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1137.
  ) 
 Here is how much of TeX's memory you used:
- 10427 strings out of 494910
- 158012 string characters out of 6179836
- 287020 words of memory out of 5000000
- 13275 multiletter control sequences out of 15000+600000
+ 10434 strings out of 494910
+ 158197 string characters out of 6179836
+ 287151 words of memory out of 5000000
+ 13280 multiletter control sequences out of 15000+600000
  20411 words of font info for 75 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  45i,18n,85p,1385b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1177,11 +1185,11 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "Results - Topographic Params.pdf" (55 pages, 19544081 bytes)
+Output written on "Results - Topographic Params.pdf" (55 pages, 20415892 bytes)
 .
 PDF statistics:
- 925 PDF objects out of 1000 (max. 8388607)
- 767 compressed objects within 8 object streams
- 203 named destinations out of 1000 (max. 500000)
- 508 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 927 PDF objects out of 1000 (max. 8388607)
+ 768 compressed objects within 8 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 513 words of extra memory for PDF output out of 10000 (max. 10000000)
 

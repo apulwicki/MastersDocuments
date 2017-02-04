@@ -49,17 +49,36 @@
 \BOOKMARK [1][-]{section.4.2}{Linear and curvilinear transect snow depth data}{chapter.4}% 49
 \BOOKMARK [1][-]{section.4.3}{Zigzag snow depth data}{chapter.4}% 50
 \BOOKMARK [1][-]{section.4.4}{Snow water equivalent \(SWE\)}{chapter.4}% 51
-\BOOKMARK [0][-]{chapter.5}{Point scale results}{}% 52
+\BOOKMARK [0][-]{chapter.5}{Variability at multiple scales}{}% 52
 \BOOKMARK [1][-]{section.5.1}{Point Scale}{chapter.5}% 53
 \BOOKMARK [2][-]{subsection.5.1.1}{Data normality}{section.5.1}% 54
 \BOOKMARK [2][-]{subsection.5.1.2}{Observer differences}{section.5.1}% 55
 \BOOKMARK [2][-]{subsection.5.1.3}{Standard deviation of snow depth along linear and curvilinear transects}{section.5.1}% 56
-\BOOKMARK [0][-]{section*.78}{Bibliography}{}% 57
-\BOOKMARK [0][-]{Appendix.a.A}{Appendix GPS Waypoint Creation and Upload to GPS Device}{}% 58
-\BOOKMARK [0][-]{Appendix.a.B}{Appendix Field Maps}{}% 59
-\BOOKMARK [0][-]{Appendix.a.C}{Appendix Data Processing Scripts}{}% 60
-\BOOKMARK [1][-]{section.a.C.1}{Snow depth measured with graduated avalanche probe}{Appendix.a.C}% 61
-\BOOKMARK [2][-]{subsection.a.C.1.1}{Linear and curvilinear transect surveys}{section.a.C.1}% 62
-\BOOKMARK [2][-]{subsection.a.C.1.2}{Zigzag surveys}{section.a.C.1}% 63
-\BOOKMARK [1][-]{section.a.C.2}{Snow density}{Appendix.a.C}% 64
-\BOOKMARK [1][-]{section.a.C.3}{Snow water equivalent \(SWE\)}{Appendix.a.C}% 65
+\BOOKMARK [2][-]{subsection.5.1.4}{Standard deviation of SWE in DEM cell}{section.5.1}% 57
+\BOOKMARK [0][-]{chapter.6}{Interpolation}{}% 58
+\BOOKMARK [1][-]{section.6.1}{Topographic parameters}{chapter.6}% 59
+\BOOKMARK [2][-]{subsection.6.1.1}{Obtaining digital elevation models \(DEMs\) for study glaciers}{section.6.1}% 60
+\BOOKMARK [2][-]{subsection.6.1.2}{Calculating topographic parameters}{section.6.1}% 61
+\BOOKMARK [2][-]{subsection.6.1.3}{DEM smoothing}{section.6.1}% 62
+\BOOKMARK [2][-]{subsection.6.1.4}{Parameter correlations}{section.6.1}% 63
+\BOOKMARK [2][-]{subsection.6.1.5}{Maps of topographic parameters and distribution of parameters sampled}{section.6.1}% 64
+\BOOKMARK [1][-]{section.6.2}{Linear Regressions}{chapter.6}% 65
+\BOOKMARK [2][-]{subsection.6.2.1}{Background}{section.6.2}% 66
+\BOOKMARK [2][-]{subsection.6.2.2}{Importance of variables in regression models}{section.6.2}% 67
+\BOOKMARK [2][-]{subsection.6.2.3}{Snow density estimation methods}{section.6.2}% 68
+\BOOKMARK [2][-]{subsection.6.2.4}{Multiple Linear Regression \(MLR\)}{section.6.2}% 69
+\BOOKMARK [2][-]{subsection.6.2.5}{Bayesian Model Averaging \(BMA\)}{section.6.2}% 70
+\BOOKMARK [2][-]{subsection.6.2.6}{MLR and BMA comparison}{section.6.2}% 71
+\BOOKMARK [1][-]{section.6.3}{Summary}{chapter.6}% 72
+\BOOKMARK [0][-]{section*.149}{Bibliography}{}% 73
+\BOOKMARK [0][-]{Appendix.a.A}{Appendix GPS Waypoint Creation and Upload to GPS Device}{}% 74
+\BOOKMARK [0][-]{Appendix.a.B}{Appendix Field Maps}{}% 75
+\BOOKMARK [0][-]{Appendix.a.C}{Appendix Data Processing Scripts}{}% 76
+\BOOKMARK [1][-]{section.a.C.1}{Snow depth measured with graduated avalanche probe}{Appendix.a.C}% 77
+\BOOKMARK [2][-]{subsection.a.C.1.1}{Linear and curvilinear transect surveys}{section.a.C.1}% 78
+\BOOKMARK [2][-]{subsection.a.C.1.2}{Zigzag surveys}{section.a.C.1}% 79
+\BOOKMARK [1][-]{section.a.C.2}{Snow density}{Appendix.a.C}% 80
+\BOOKMARK [1][-]{section.a.C.3}{Snow water equivalent \(SWE\)}{Appendix.a.C}% 81
+\BOOKMARK [0][-]{Appendix.a.D}{Appendix Topographic parameters from QGIS to Matlab}{}% 82
+\BOOKMARK [0][-]{Appendix.a.E}{Appendix MLR software}{}% 83
+\BOOKMARK [0][-]{Appendix.a.F}{Appendix BMA software}{}% 84
