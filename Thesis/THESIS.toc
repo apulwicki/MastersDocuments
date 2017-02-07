@@ -40,12 +40,12 @@
 \contentsline {subsection}{\numberline {3.2.3}Federal Snow Sampler}{49}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Firn Corer}{52}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Snowpit}{53}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Data processing}{54}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Snow depth measured with graduated avalanche probe}{54}{subsection.3.3.1}
-\contentsline {subsubsection}{Linear and curvilinear transect surveys}{54}{section*.42}
+\contentsline {section}{\numberline {3.3}Data processing}{55}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Snow depth measured with graduated avalanche probe}{55}{subsection.3.3.1}
+\contentsline {subsubsection}{Linear and curvilinear transect surveys}{55}{section*.42}
 \contentsline {subsubsection}{Zigzag surveys}{56}{section*.44}
 \contentsline {subsection}{\numberline {3.3.2}Snow density}{57}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Snow water equivalent (SWE)}{57}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Snow water equivalent (SWE)}{58}{subsection.3.3.3}
 \contentsline {chapter}{\numberline {4}Data observations}{60}{chapter.4}
 \contentsline {section}{\numberline {4.1}Density Estimates}{60}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Basic statistics}{60}{subsection.4.1.1}
@@ -67,33 +67,33 @@
 \contentsline {chapter}{\numberline {6}Interpolation}{84}{chapter.6}
 \contentsline {section}{\numberline {6.1}Topographic parameters}{84}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Obtaining digital elevation models (DEMs) for study glaciers}{84}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Calculating topographic parameters}{89}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Calculating topographic parameters}{87}{subsection.6.1.2}
 \contentsline {subsection}{\numberline {6.1.3}DEM smoothing}{93}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Parameter correlations}{93}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Maps of topographic parameters and distribution of parameters sampled}{95}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}Linear Regressions}{106}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Background}{106}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Importance of variables in regression models}{107}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Snow density estimation methods}{108}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Multiple Linear Regression (MLR)}{109}{subsection.6.2.4}
-\contentsline {subsubsection}{Background}{109}{section*.113}
-\contentsline {subsubsection}{Methods}{110}{section*.114}
-\contentsline {subsubsection}{Results and Discussion}{110}{section*.115}
-\contentsline {subsection}{\numberline {6.2.5}Bayesian Model Averaging (BMA)}{120}{subsection.6.2.5}
-\contentsline {subsubsection}{Background}{120}{section*.127}
-\contentsline {subsubsection}{Methods}{123}{section*.129}
-\contentsline {subsubsection}{Results and Discussion}{123}{section*.130}
-\contentsline {subsection}{\numberline {6.2.6}MLR and BMA comparison}{130}{subsection.6.2.6}
-\contentsline {section}{\numberline {6.3}Summary}{135}{section.6.3}
-\contentsline {chapter}{Bibliography}{137}{section*.149}
-\contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{148}{Appendix.a.A}
-\contentsline {chapter}{Appendix \numberline {B}Field Maps}{150}{Appendix.a.B}
-\contentsline {chapter}{Appendix \numberline {C}Data Processing Scripts}{163}{Appendix.a.C}
-\contentsline {section}{\numberline {C.1}Snow depth measured with graduated avalanche probe}{163}{section.a.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Linear and curvilinear transect surveys}{163}{subsection.a.C.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Zigzag surveys}{164}{subsection.a.C.1.2}
-\contentsline {section}{\numberline {C.2}Snow density}{165}{section.a.C.2}
-\contentsline {section}{\numberline {C.3}Snow water equivalent (SWE)}{166}{section.a.C.3}
-\contentsline {chapter}{Appendix \numberline {D}Topographic parameters from QGIS to Matlab}{168}{Appendix.a.D}
-\contentsline {chapter}{Appendix \numberline {E}MLR software}{169}{Appendix.a.E}
-\contentsline {chapter}{Appendix \numberline {F}BMA software}{171}{Appendix.a.F}
+\contentsline {subsection}{\numberline {6.1.4}Parameter correlations}{94}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Maps of topographic parameters and distribution of parameters sampled}{94}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Linear Regressions}{105}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Background}{105}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Importance of variables in regression models}{106}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Snow density estimation methods}{107}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Multiple Linear Regression (MLR)}{108}{subsection.6.2.4}
+\contentsline {subsubsection}{Background}{108}{section*.113}
+\contentsline {subsubsection}{Methods}{109}{section*.114}
+\contentsline {subsubsection}{Results and Discussion}{109}{section*.115}
+\contentsline {subsection}{\numberline {6.2.5}Bayesian Model Averaging (BMA)}{121}{subsection.6.2.5}
+\contentsline {subsubsection}{Background}{121}{section*.129}
+\contentsline {subsubsection}{Methods}{123}{section*.131}
+\contentsline {subsubsection}{Results and Discussion}{124}{section*.132}
+\contentsline {subsection}{\numberline {6.2.6}MLR and BMA comparison}{132}{subsection.6.2.6}
+\contentsline {section}{\numberline {6.3}Summary}{134}{section.6.3}
+\contentsline {chapter}{Bibliography}{135}{section*.148}
+\contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{146}{Appendix.a.A}
+\contentsline {chapter}{Appendix \numberline {B}Field Maps}{148}{Appendix.a.B}
+\contentsline {chapter}{Appendix \numberline {C}Data Processing Scripts}{161}{Appendix.a.C}
+\contentsline {section}{\numberline {C.1}Snow depth measured with graduated avalanche probe}{161}{section.a.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Linear and curvilinear transect surveys}{161}{subsection.a.C.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Zigzag surveys}{162}{subsection.a.C.1.2}
+\contentsline {section}{\numberline {C.2}Snow density}{163}{section.a.C.2}
+\contentsline {section}{\numberline {C.3}Snow water equivalent (SWE)}{164}{section.a.C.3}
+\contentsline {chapter}{Appendix \numberline {D}Topographic parameters from QGIS to Matlab}{166}{Appendix.a.D}
+\contentsline {chapter}{Appendix \numberline {E}MLR software}{167}{Appendix.a.E}
+\contentsline {chapter}{Appendix \numberline {F}BMA software}{169}{Appendix.a.F}

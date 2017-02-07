@@ -34,7 +34,7 @@
 	year = "2009"
 }
 
-@book{Neteler2013,
+@book{Neteler2008,
 	author = "Neteler, Markus and Mit{\'a}\v{s}ov{\'a}, Helena",
 	booktitle = "{The International Series in Engineering and Computer Science}",
 	date-added = "2016-12-09 22:10:17 +0000",
@@ -43,7 +43,7 @@
 	publisher = "Springer Science \& Business Media",
 	title = "{Open source GIS: a GRASS GIS approach}",
 	volume = "773",
-	year = "2013"
+	year = "2008"
 }
 
 @article{Horn1981,
@@ -2889,7 +2889,7 @@
 	year = "1987"
 }
 
-@article{Beaumont2009,
+@article{Beaumont1963,
 	author = "BEAUMONT, Robert T. and WORK, R. A.",
 	doi = "10.1080/02626666309493359",
 	eprint = "http://dx.doi.org/10.1080/02626666309493359",
@@ -2923,5 +2923,126 @@
 	title = "{Which empirical model is best suited to simulate glacier mass balances?}",
 	url = "https://www.cambridge.org/core/article/div-class-title-which-empirical-model-is-best-suited-to-simulate-glacier-mass-balances-div/210F94E4C2103A82109F323819D8BC72",
 	year = "2016"
+}
+
+@article{Conger2009,
+	author = "Conger, Steven M and McCLUNG, David M",
+	journal = "Journal of Glaciology",
+	number = "189",
+	pages = "163--169",
+	publisher = "International Glaciological Society",
+	title = "{Comparison of density cutters for snow profile observations}",
+	url = "https://doi.org/10.3189/002214309788609038",
+	volume = "55",
+	year = "2009"
+}
+
+@inproceedings{Turcan1975,
+	author = "Turcan, J and Loijens, HS",
+	booktitle = "{32nd {E}astern {S}now {C}onference}",
+	pages = "2--11",
+	title = "{Accuracy of snow survey data and errors in snow sampler measurements}",
+	year = "1975"
+}
+
+@article{Gromping2015,
+	author = "Gr{\"o}mping, Ulrike",
+	doi = "10.1002/wics.1346",
+	journal = "Wiley Interdisciplinary Reviews: Computational Statistics",
+	number = "2",
+	pages = "137--152",
+	publisher = "Wiley Online Library",
+	title = "{Variable importance in regression models}",
+	volume = "7",
+	year = "2015"
+}
+
+@article{Darlington1968,
+	author = "Darlington, Richard B",
+	journal = "Psychological bulletin",
+	number = "3",
+	pages = "161",
+	publisher = "American Psychological Association",
+	title = "{Multiple regression in psychological research and practice}",
+	url = "http://dx.doi.org/10.1037/h0025471",
+	volume = "69",
+	year = "1968"
+}
+
+@article{Kim2015,
+	author = "Kim, Seongho",
+	doi = "10.5351/CSAM.2015.22.6.665",
+	journal = "Communications for statistical applications and methods",
+	number = "6",
+	pages = "665",
+	publisher = "NIH Public Access",
+	title = "{{ppcor: An R} package for a fast calculation to semi-partial correlation coefficients}",
+	volume = "22",
+	year = "2015"
+}
+
+@article{Bring1996,
+	author = "Bring, Johan",
+	doi = "10.1080/00031305.1996.10473543",
+	journal = "The American Statistician",
+	number = "1",
+	pages = "57--62",
+	publisher = "Taylor \& Francis",
+	title = "{A geometric approach to compare variables in a regression model}",
+	volume = "50",
+	year = "1996"
+}
+
+@article{Gromping2009,
+	author = "Gr{\"o}mping, Ulrike",
+	doi = "10.1198/tast.2009.08199",
+	eprint = "http://dx.doi.org/10.1198/tast.2009.08199",
+	journal = "The American Statistician",
+	number = "4",
+	pages = "308--319",
+	title = "{Variable Importance Assessment in Regression: {L}inear Regression versus Random Forest}",
+	url = "http://dx.doi.org/10.1198/tast.2009.08199",
+	volume = "63",
+	year = "2009"
+}
+
+@article{Sommer2015,
+	abstract = "Terrestrial laser scanning was used to measure snow thickness changes (perpendicular to the surface) in a rock face. The aim was to investigate the accumulation and redistribution of snow in extremely steep terrain (>60°). The north-east face of the Chlein Schiahorn in the region of Davos in eastern Switzerland was scanned before and several times after a snowfall event. A summer scan without snow was acquired to calculate the total snow thickness. An improved postprocessing procedure is introduced. The data quality could be increased by using snow thickness instead of snow depth (measured vertically) and by consistently applying Multi Station Adjustment to improve the registration. More snow was deposited in the flatter, smoother areas of the rock face. The spatial variability of the snow thickness change was high. The spatial patterns of the total snow thickness were similar to those of the snow thickness change. The correlation coefficient between them was 0.86. The fresh snow was partly redistributed from extremely steep to flatter terrain, presumably mostly through avalanching. The redistribution started during the snowfall and ended several days later. Snow was able to accumulate permanently at every slope angle. The amount of snow in extremely steep terrain was limited but not negligible. Areas steeper than 60° received 15\% of the snowfall and contained 10\% of the total amount of snow.",
+	author = "Sommer, Christian G. and Lehning, Michael and Mott, Rebecca",
+	doi = "10.3389/feart.2015.00073",
+	issn = "2296-6463",
+	journal = "Frontiers in Earth Science",
+	pages = "73",
+	title = "{Snow in a Very Steep Rock Face: {A{ccumulation and Redistribution During and After a Snowfall Event}",
+	url = "http://journal.frontiersin.org/article/10.3389/feart.2015.00073",
+	volume = "3",
+	year = "2015"
+}
+
+@article{Vogeli2016,
+	author = "V{\"o}geli, Christian and Lehning, Michael and Wever, Nander and Bavay, Mathias",
+	doi = "10.3389/feart.2016.00108",
+	issn = "2296-6463",
+	journal = "Frontiers in Earth Science",
+	pages = "108",
+	title = "{Scaling Precipitation Input to Spatially Distributed Hydrological Models by Measured Snow Distribution}",
+	url = "http://journal.frontiersin.org/article/10.3389/feart.2016.00108",
+	volume = "4",
+	year = "2016"
+}
+
+@article{Harshburger2010,
+	author = "Harshburger, Brian J. and Humes, Karen S. and Walden, Von P. and Blandford, Troy R. and Moore, Brandon C. and Dezzani, Raymond J.",
+	doi = "10.1002/hyp.7590",
+	issn = "1099-1085",
+	journal = "Hydrological Processes",
+	month = "5",
+	number = "10",
+	pages = "1285--1295",
+	publisher = "Wiley Online Library",
+	title = "{Spatial interpolation of snow water equivalency using surface observations and remotely sensed images of snow‐covered area}",
+	url = "https://dx.doi.org/10.1002/hyp.7590",
+	volume = "24",
+	year = "2010"
 }
 
