@@ -12,9 +12,10 @@
 
 @inproceedings{Kohavi1995,
 	author = "Kohavi, Ron and others",
-	booktitle = "{Proceedings of the Fourteenth International Joint Conference on Artificial Intelligence}",
+	booktitle = "{ {Proceedings of the Fourteenth International Joint Conference on Artificial Intelligence}}",
 	date-added = "2016-12-11 18:00:58 +0000",
 	date-modified = "2016-12-11 18:02:09 +0000",
+	number = "2",
 	pages = "1137--1145",
 	title = "{A study of cross-validation and bootstrap for accuracy estimation and model selection}",
 	volume = "14",
@@ -450,11 +451,8 @@
 	date-added = "2016-03-20 15:28:06 +0000",
 	date-modified = "2016-03-20 15:28:38 +0000",
 	doi = "10.5194/tc-8-1989-2014",
-	journal = "The Cryosphere",
-	number = "5",
 	publisher = "European Geosciences Union",
-	title = "{Topographic control of snowpack distribution in a small catchment in the central {S}panish {P}yrenees: {I}ntra-and inter-annual persistence}",
-	volume = "8",
+	title = "{Topographic control of snowpack distribution in a small catchment in the central Spanish Pyrenees: {I}ntra-and inter-annual persistence}",
 	year = "2014"
 }
 
@@ -1335,6 +1333,7 @@
 @article{Clarke2002,
 	author = "Clarke, G. K. Garry KC and Holdsworth, Gerald",
 	journal = "US Geological Survey professional paper",
+	number = "1386J",
 	owner = "glaciology1",
 	publisher = "US Geological Survey",
 	timestamp = "2015.11.09",
@@ -2553,7 +2552,6 @@
 
 @article{Walmsley2015,
 	author = "Walmsley, Alexander Philip Unwin",
-	booktitle = "{MSc Thesis}",
 	title = "{Long-term observations of snow spatial distributions at {H}ellstugubreen and {G}r{\aa}subreen, {N}orway}",
 	year = "2015"
 }
@@ -2762,8 +2760,7 @@
 	author = "Work, R.A. and Stockwell, H.J. and Freeman, T.G. and Beaumont, R.T.",
 	localfile = "/home/glaciology1/Documents/Papers/CRREL+Technical+Report+163.pdf",
 	organization = "Cold Regions Research \& Engineering Laboratory",
-	title = "{Accuracy of field snow surveys}",
-	year = "1965"
+	title = "{Accuracy of field snow surveys}"
 }
 
 @article{Pomeroy2004,
@@ -3009,43 +3006,59 @@
 	year = "2009"
 }
 
-@article{Sommer2015,
-	abstract = "Terrestrial laser scanning was used to measure snow thickness changes (perpendicular to the surface) in a rock face. The aim was to investigate the accumulation and redistribution of snow in extremely steep terrain (>60°). The north-east face of the Chlein Schiahorn in the region of Davos in eastern Switzerland was scanned before and several times after a snowfall event. A summer scan without snow was acquired to calculate the total snow thickness. An improved postprocessing procedure is introduced. The data quality could be increased by using snow thickness instead of snow depth (measured vertically) and by consistently applying Multi Station Adjustment to improve the registration. More snow was deposited in the flatter, smoother areas of the rock face. The spatial variability of the snow thickness change was high. The spatial patterns of the total snow thickness were similar to those of the snow thickness change. The correlation coefficient between them was 0.86. The fresh snow was partly redistributed from extremely steep to flatter terrain, presumably mostly through avalanching. The redistribution started during the snowfall and ended several days later. Snow was able to accumulate permanently at every slope angle. The amount of snow in extremely steep terrain was limited but not negligible. Areas steeper than 60° received 15\% of the snowfall and contained 10\% of the total amount of snow.",
-	author = "Sommer, Christian G. and Lehning, Michael and Mott, Rebecca",
-	doi = "10.3389/feart.2015.00073",
-	issn = "2296-6463",
-	journal = "Frontiers in Earth Science",
-	pages = "73",
-	title = "{{Snow in a Very Steep Rock Face: {A{ccumulation and Redistribution During and After a Snowfall Event}}",
-	url = "http://journal.frontiersin.org/article/10.3389/feart.2015.00073",
-	volume = "3",
-	year = "2015"
+@article{Li2008,
+	author = "Li, Jin and Heap, Andrew D",
+	publisher = "Geoscience Australia Canberra",
+	title = "{A review of spatial interpolation methods for environmental scientists}",
+	year = "2008"
 }
 
-@article{Vogeli2016,
-	author = "V{\"o}geli, Christian and Lehning, Michael and Wever, Nander and Bavay, Mathias",
-	doi = "10.3389/feart.2016.00108",
-	issn = "2296-6463",
-	journal = "Frontiers in Earth Science",
-	pages = "108",
-	title = "{Scaling Precipitation Input to Spatially Distributed Hydrological Models by Measured Snow Distribution}",
-	url = "http://journal.frontiersin.org/article/10.3389/feart.2016.00108",
-	volume = "4",
-	year = "2016"
+@article{Li2014,
+	author = "Li, Jin and Heap, Andrew D.",
+	doi = "10.1016/j.envsoft.2013.12.008",
+	issn = "1364-8152",
+	journal = "Environmental Modelling \& Software",
+	keywords = "Statistics; Interpolator; Geostatistics; Kriging; Analysis; Spatially continuous surfaces",
+	note = "",
+	number = "",
+	pages = "173--189",
+	title = "{Spatial interpolation methods applied in the environmental sciences: A review}",
+	url = "http://www.sciencedirect.com/science/article/pii/S1364815213003113",
+	volume = "53",
+	year = "2014"
 }
 
-@article{Harshburger2010,
-	author = "Harshburger, Brian J. and Humes, Karen S. and Walden, Von P. and Blandford, Troy R. and Moore, Brandon C. and Dezzani, Raymond J.",
-	doi = "10.1002/hyp.7590",
-	issn = "1099-1085",
-	journal = "Hydrological Processes",
-	month = "5",
+@book{Wackernagel2003,
+	author = "Wackernagel, Hans",
+	publisher = "Springer Science \& Business Media",
+	title = "{Multivariate geostatistics: an introduction with applications}",
+	year = "2013"
+}
+
+@article{Hengl2007,
+	author = "Hengl, Tomislav and Heuvelink, Gerard B.M. and Rossiter, David G.",
+	doi = "10.1016/j.cageo.2007.05.001",
+	journal = "Computers \& Geosciences",
+	keywords = "Spatial prediction; Multiple regression; GSTAT; Environmental predictors; SRTM; MODIS",
 	number = "10",
-	pages = "1285--1295",
-	publisher = "Wiley Online Library",
-	title = "{Spatial interpolation of snow water equivalency using surface observations and remotely sensed images of snow‐covered area}",
-	url = "https://dx.doi.org/10.1002/hyp.7590",
-	volume = "24",
-	year = "2010"
+	pages = "1301--1315",
+	title = "{About regression-kriging: From equations to case studies}",
+	url = "http://www.sciencedirect.com/science/article/pii/S0098300407001008",
+	volume = "33",
+	year = "2007"
+}
+
+@article{Knotters1995,
+	author = "Knotters, M. and Brus, D.J. and Voshaar, J.H. Oude",
+	doi = "10.1016/0016-7061(95)00011-C",
+	issn = "0016-7061",
+	journal = "Geoderma",
+	note = "",
+	number = "3",
+	pages = "227--246",
+	title = "{A comparison of kriging, co-kriging and kriging combined with regression for spatial interpolation of horizon depth with censored observations}",
+	url = "http://www.sciencedirect.com/science/article/pii/001670619500011C",
+	volume = "67",
+	year = "1995"
 }
 
