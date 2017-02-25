@@ -3038,15 +3038,27 @@
 @article{Hengl2007,
 	author = "Hengl, Tomislav and Heuvelink, Gerard B.M. and Rossiter, David G.",
 	doi = "10.1016/j.cageo.2007.05.001",
-	issn = "0098-3004",
 	journal = "Computers \& Geosciences",
 	keywords = "Spatial prediction; Multiple regression; GSTAT; Environmental predictors; SRTM; MODIS",
-	note = "Spatial AnalysisSpatial Analysis",
 	number = "10",
 	pages = "1301--1315",
 	title = "{About regression-kriging: From equations to case studies}",
 	url = "http://www.sciencedirect.com/science/article/pii/S0098300407001008",
 	volume = "33",
 	year = "2007"
+}
+
+@article{Knotters1995,
+	author = "Knotters, M. and Brus, D.J. and Voshaar, J.H. Oude",
+	doi = "10.1016/0016-7061(95)00011-C",
+	issn = "0016-7061",
+	journal = "Geoderma",
+	note = "",
+	number = "3",
+	pages = "227--246",
+	title = "{A comparison of kriging, co-kriging and kriging combined with regression for spatial interpolation of horizon depth with censored observations}",
+	url = "http://www.sciencedirect.com/science/article/pii/001670619500011C",
+	volume = "67",
+	year = "1995"
 }
 
