@@ -1,0 +1,40 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citename{Davis and Sampson, }1986]{Davis1986}
+Davis JC and Sampson RJ (1986) \emph{{Statistics and data analysis in
+  geology}}, volume 646. Wiley New York et al.
+
+\bibitem[\protect\citename{Hengl and others, }2007]{Hengl2007}
+Hengl T, Heuvelink GB and Rossiter DG (2007) {About regression-kriging: From
+  equations to case studies}. \emph{Computers \& Geosciences}, \textbf{33}(10),
+  1301--1315 (\doi {10.1016/j.cageo.2007.05.001})
+
+\bibitem[\protect\citename{Knotters and others, }1995]{Knotters1995}
+Knotters M, Brus D and Voshaar JO (1995) {A comparison of kriging, co-kriging
+  and kriging combined with regression for spatial interpolation of horizon
+  depth with censored observations}. \emph{Geoderma}, \textbf{67}(3), 227--246
+  (\doi {10.1016/0016-7061(95)00011-C})
+
+\bibitem[\protect\citename{Li and Heap, }2008]{Li2008}
+Li J and Heap AD (2008) {A review of spatial interpolation methods for
+  environmental scientists}
+
+\bibitem[\protect\citename{Li and Heap, }2014]{Li2014}
+Li J and Heap AD (2014) {Spatial interpolation methods applied in the
+  environmental sciences: A review}. \emph{Environmental Modelling \&
+  Software}, \textbf{53}, 173--189 (\doi {10.1016/j.envsoft.2013.12.008})
+
+\bibitem[\protect\citename{Roustant and others, }2012]{Roustant2012}
+Roustant O, Ginsbourger D and Deville Y (2012) {DiceKriging, DiceOptim: Two R
+  packages for the analysis of computer experiments by kriging-based
+  metamodeling and optimization}, working paper or preprint
+
+\bibitem[\protect\citename{Wackernagel, }2013]{Wackernagel2003}
+Wackernagel H (2013) \emph{{Multivariate geostatistics: an introduction with
+  applications}}. Springer Science \& Business Media
+
+\end{thebibliography}
