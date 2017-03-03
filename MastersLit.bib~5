@@ -3008,6 +3008,7 @@
 
 @article{Li2008,
 	author = "Li, Jin and Heap, Andrew D",
+	organization = "Geoscience Australia",
 	publisher = "Geoscience Australia Canberra",
 	title = "{A review of spatial interpolation methods for environmental scientists}",
 	year = "2008"
@@ -3016,11 +3017,8 @@
 @article{Li2014,
 	author = "Li, Jin and Heap, Andrew D.",
 	doi = "10.1016/j.envsoft.2013.12.008",
-	issn = "1364-8152",
 	journal = "Environmental Modelling \& Software",
 	keywords = "Statistics; Interpolator; Geostatistics; Kriging; Analysis; Spatially continuous surfaces",
-	note = "",
-	number = "",
 	pages = "173--189",
 	title = "{Spatial interpolation methods applied in the environmental sciences: A review}",
 	url = "http://www.sciencedirect.com/science/article/pii/S1364815213003113",
@@ -3051,7 +3049,6 @@
 @article{Knotters1995,
 	author = "Knotters, M. and Brus, D.J. and Voshaar, J.H. Oude",
 	doi = "10.1016/0016-7061(95)00011-C",
-	issn = "0016-7061",
 	journal = "Geoderma",
 	note = "",
 	number = "3",
@@ -3060,5 +3057,16 @@
 	url = "http://www.sciencedirect.com/science/article/pii/001670619500011C",
 	volume = "67",
 	year = "1995"
+}
+
+@article{MacDonald2015,
+	abstract = "Gaussian process (GP) models are commonly used statistical metamodels for emulating expensive computer simulators. Fitting a GP model can be numerically unstable if any pair of design points in the input space are close together. Ranjan, Haynes, and Karsten (2011) proposed a computationally stable approach for fitting GP models to deterministic computer simulators. They used a genetic algorithm based approach that is robust but computationally intensive for maximizing the likelihood. This paper implements a slightly modified version ofthe model proposed by Ranjan et al. (2011 ) in the R package GPfit. A novel parameterization of the spatial correlation function and a clustering based multi-start gradient based optimization algorithm yield robust optimization that is typically faster than the genetic algorithm based approach. We present two examples with R codes to illustrate the usage of the main functions in GPfit . Several test functions are used for performance comparison with the popular R package mlegp . We also use GPfit for a real application, i.e., for emulating the tidal kinetic energy model for the Bay of Fundy, Nova Scotia, Canada. GPfit is free software and distributed under the General Public License and available from the Comprehensive R Archive Network.",
+	author = "MacDonald, Blake and Ranjan, Pritam and Chipman, Hugh",
+	journal = "Journal of Statistical Software",
+	number = "i12",
+	title = "{GPfit: An R Package for Fitting a Gaussian Process Model to Deterministic Simulator Outputs}",
+	url = "https://ideas.repec.org/a/jss/jstsof/v064i12.html",
+	volume = "64",
+	year = 2015
 }
 

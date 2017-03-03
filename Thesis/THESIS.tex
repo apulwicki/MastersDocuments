@@ -1771,7 +1771,7 @@ Overall, the sampled topographic parameters are poor representatives of the full
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Linear Regressions}
+\section{Linear Topographic Regressions}
 \label{sec:linearregression}
 
 \subsection{Background}
@@ -1800,7 +1800,7 @@ The second metric is the square of the semi-partial (or part) correlations for e
 An assumption for semi-partial correlation is that regressors are independent of each other. When regressors are independent, the semi-partial correlations of all regressors sum to the total coefficient of determination (R$^2$) of the regression  \citep{Gromping2015}. In this study, the regressors are all independent (R$^2<$0.35 for all glaciers) except for aspect and northness, which have R$^2$ values of 0.79, 0.83 and 0.64 for Glaciers 4, 2 and 13, respectively. Despite this correlation, semi-partial correlation is used because of its simplicity. 
 
 \subsection{Snow density estimation methods}
-
+\label{sec:densityoptions}
 In this study, snow density was not measured at every location where snow depth was measured. Therefore, snow density values need to be estimated at snow depth measurement locations in order to estimate observed SWE values. There are a number of different methods for interpolating between snow density measurement locations. Four methods were chosen for this study and include (1) using a constant value, the mean of all observed snow density values, for all measurement locations, (2) using a constant value (mean) for each glacier, (3) using a linear regression of elevation and snow density to interpolate for each glacier, and (4) taking an inverse-distance weighted mean of density observations. As discussed in Section \ref{sec:density}, the snowpit-derived densities and Federal Sampler-derived densities are inconsistent so these two data set are kept separate for the analysis. In total there are eight different methods for estimating density, as summarized in Table \ref{tab:densityOptions}.
 
 \begin{table}[H]

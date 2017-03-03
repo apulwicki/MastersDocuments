@@ -3008,6 +3008,7 @@
 
 @article{Li2008,
 	author = "Li, Jin and Heap, Andrew D",
+	journal = "Geoscience Australia",
 	organization = "Geoscience Australia",
 	publisher = "Geoscience Australia Canberra",
 	title = "{A review of spatial interpolation methods for environmental scientists}",
@@ -3057,5 +3058,18 @@
 	url = "http://www.sciencedirect.com/science/article/pii/001670619500011C",
 	volume = "67",
 	year = "1995"
+}
+
+@unpublished{Roustant2012,
+	author = "Roustant, Olivier and Ginsbourger, David and Deville, Yves",
+	hal_id = "hal-00495766",
+	hal_version = "v3",
+	keywords = "Global Optimization; Computer Experiments; Gaussian Processes; Global Optimization.",
+	month = dec,
+	note = "working paper or preprint",
+	pdf = "https://hal.archives-ouvertes.fr/hal-00495766/file/jss642.pdf",
+	title = "{DiceKriging, DiceOptim: Two R packages for the analysis of computer experiments by kriging-based metamodeling and optimization}",
+	url = "https://hal.archives-ouvertes.fr/hal-00495766",
+	year = "2012"
 }
 

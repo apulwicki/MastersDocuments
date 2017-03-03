@@ -29,7 +29,7 @@
 \newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points. }
 \newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
 \newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations. }
-\newcommand{\blackdots}{Observed SWE values are overlain on the maps. }
+\newcommand{\swedots}{Observed SWE values are overlain on the maps. }
 
 
 \begin{document}
@@ -81,22 +81,22 @@ Simple kriging is implemented using the R package \texttt{DiceKriging}, which ap
 
 \subsubsection{Simple Kriging}
 
-The interpolated snow accumulation patterns found using simple kriging are different for the three study glaciers  (Figure \ref{fig:sweKRIGING}). The lower half of Glacier 4 has a relatively uniform SWE, while the accumulation area has both low and high values of SWE. Glacier 2 has two distinct and relatively uniform areas --- the lower ablation area has low SWE ($\sim$ 0.1 m w.e.) and the upper ablation and accumulation areas have higher SWE values ($\sim$ 0.6 m w.e.). Glacier 13 does not appear to have any strong patterns and accumulation is generally low ($\sim$ 0.1--0.5 m w.e.). 
+There are large different in spatial pattern of interpolated SWE distributions for the three study glaciers found using simple kriging (Figure \ref{fig:sweKRIGING}). The lower half of Glacier 4 has a relatively uniform SWE, while the accumulation area has both low and high values of SWE. The low density of sampling points in the accumulation area of Glacier 4 result in large gradients in SWE. Glacier 2 has two distinct and relatively uniform areas --- the lower ablation area has low SWE ($\sim$ 0.1 m w.e.) and the upper ablation and accumulation areas have higher SWE values ($\sim$ 0.6 m w.e.). The boundary between two these zones closely follows the outline of the ice dune area observed during field data collection. Glacier 13 does not appear to have any strong patterns and accumulation is generally low ($\sim$ 0.1--0.5 m w.e.). 
 
-The mean SWE on each glacier found using simple kriging is considerably different to that found using a regression (Figure \ref{fig:BMSmodelledSWE}). Accumulation on Glacier 4 is higher and has larger spatially gradients in SWE when simple kriging is used. Conversely, simple kriging estimates are lower and have a smaller range for Glaciers 2 and 13.  The accumulation distribution estimated by simple kriging and by regression is qualitatively similar for Glacier 13 but differs considerably for Glacier 4 and 2. Glacier 4 has large SWE values in the accumulation area when simple kriging is used, which contrasts strongly with the mostly uniform accumulation estimated with regression. The converse is observed on Glacier 2, where the simple kriging estimate has a small SWE range and two distinct regions of SWE values while the regression estimate has a large range and a significant elevation gradient in accumulation.
+The glacier-wide winter mass balance on each glacier ($\mathrm{B_w}$), calculated as the mean SWE, that is found using simple kriging is considerably different to that found using a topographic regression (Figure \ref{fig:BMSmodelledSWE}). Accumulation on Glacier 4 is 0.09 m w.e. (15\%) higher and has larger spatial gradients in SWE when simple kriging is used. Conversely, simple kriging estimates are 0.13 m w.e. (23\%) and 0.08 m w.e. (22\%) lower for Glaciers 2 and 13, respectively, and the range of SWE values is smaller. The accumulation distribution estimated by simple kriging and by regression is qualitatively similar for Glacier 13 but differs considerably for Glacier 4 and 2. Glacier 4 has large SWE values in the accumulation area when simple kriging is used, which contrasts strongly with the mostly uniform accumulation estimated with regression. The converse is observed on Glacier 2, where the simple kriging estimate has a small SWE range and two distinct regions of SWE values while the regression estimate has a large range and a significant elevation gradient in accumulation.
 
-Estimates of the nugget found using maximum likelihood in the DiceKriging package also vary between glaciers (Table \ref{tab:sweKrigNugget}). Nugget values are small for both Glacier 2 and 13 ($\sim$ 0.004 m w.e.) and do not vary when different density options are used. The nugget values for Glacier 4 are an order of magnitude larger and vary by $\sim$80\% of the minimum nugget value for this glacier. 
+Estimates of the nugget found using maximum likelihood in the DiceKriging package also vary between glaciers (Table \ref{tab:sweKrigNugget}). Nugget values are small for both Glacier 2 and 13 ($\sim$ 0.004 m w.e.) and do not vary when different methods for interpolating snow density (Section \ref{sec:densityoptions}) are used. The nugget values for Glacier 4 are an order of magnitude larger and vary by $\sim$80\% of the minimum nugget value for this glacier. 
 
 \begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{sweKriged.png}\\
-	\caption{Estimated SWE found by kriging measured SWE. \topomap}
+	\caption{SWE distributions estimated by kriging. \topomap}
 	\label{fig:sweKRIGING}
 \end{figure}
 
 \begin{table}[]
 \centering
-\caption{Nugget (m w.e.) estimated for SWE data using maximum likelihood in DiceKriging package.}
+\caption{Nugget (m w.e.) values for SWE data with various snow density interpolation schemes estimated using maximum likelihood in DiceKriging package. S = Snowpit density values, F = Federal Sampler density values. See Section \ref{sec:densityoptions} for details on density options.}
 \label{tab:sweKrigNugget}
 \begin{tabular}{c|ccc}
 \textbf{\begin{tabular}[c]{@{}c@{}}Density\\ Option\end{tabular}} & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
@@ -111,7 +111,7 @@ Estimates of the nugget found using maximum likelihood in the DiceKriging packag
 \end{tabular}
 \end{table}
 
-Comparing estimated and observed values of SWE (Figure \ref{fig:R2simplekrig}) shows that kriging is best able to predict SWE values on Glacier 2 and that kriging has the lowest predictive power on Glacier 4. This is a similar trend to regression estimates (Figure \ref{fig:BMSfit_opt8}), where the least variance was explained on Glacier 4 and the most variance was explained on Glacier 2. When compared to regression estimates, the R$^2$ values between SWE estimated using simple kriging and observed SWE are higher for all glaciers. The largest difference in R$^2$ between these two methods is on Glacier 2, which also has the highest R$^2$ values. 
+Comparing estimated and observed values of SWE (Figure \ref{fig:R2simplekrig}) shows that kriging is best able to predict SWE values on Glacier 2 and that kriging has the lowest predictive power on Glacier 4. This is similar to topographic regression estimates (Figure \ref{fig:BMSfit_opt8}), where the least variance was explained on Glacier 4 and the most variance was explained on Glacier 2. When compared to regression estimates, the R$^2$ values between SWE estimated using simple kriging and observed SWE are higher for all glaciers. Correlation values increase from 0.11, 0.63 and 0.36 to 0.25, 0.84 and 0.49 for Glaciers 4, 2 and 13, respectively. The largest difference in R$^2$ between these two methods is on Glacier 2, which also has the highest R$^2$ values. Note that the scatter of estimated and observed SWE values in Figure \ref{fig:R2simplekrig} is due to the nugget, which encompasses sampling-error variance and variance at distances smaller than the sample spacing.
 
 
 \begin{figure}
@@ -122,32 +122,32 @@ Comparing estimated and observed values of SWE (Figure \ref{fig:R2simplekrig}) s
 
 \subsubsection{Residual Kriging}
 
-Estimating a regression of SWE values with topographic parameters is described in Section \ref{sec:linearregression}. For this section, the BMA regression is used because it resulted in a better fit between estimated and observed SWE. 
+Estimating SWE values with a regression oftopographic parameters is described in Section \ref{sec:linearregression}. For this section, the BMA regression is used because it resulted in a better fit than MLR between estimated and observed SWE. 
 
-The estimated distribution of regression residuals found using simple kriging varies between the three study glaciers (Figure \ref{fig:residualsKRIGING}). Generally, the range of residual values is highest on Glacier 4 and lowest on Glacier 13. Extreme value are located in the accumulation area of Glacier 4 with both strongly negative and strongly positive residuals located within a kilometre of each other. The low density of sampling points in the accumulation area biases the interpolation of residuals to fit the over- and underestimation of SWE at the two uppermost sampling locations. Residuals show less variation on Glacier 2, although large negative residuals are present on the left side of the upper ablation area, close to the ice fall. Glacier 13 has the smallest range of residuals but the values are close to that of estimated SWE. The mean value of distributed residuals is positive for Glacier 4, indicating that the regression may have underestimated the total winter balance. Conversely, the mean residual for Glacier 2 is negative, indicating that the regression may have over estimated the total winter balance for this glacier. 
+The range, magnitude and spatial pattern of estimated regression residuals found using simple kriging varies between the three study glaciers (Figure \ref{fig:residualsKRIGING}). Generally, the range of residual values is highest on Glacier 4 and lowest on Glacier 13. Extreme value are located in the accumulation area of Glacier 4 with both strongly negative and strongly positive residuals located within a kilometre of each other. The low density of sampling points in the accumulation area biases the interpolation of residuals to fit the over- and underestimation of SWE at the two uppermost sampling locations. Residuals show less variation on Glacier 2, although relatively large residuals of $\sim \pm 0.4$ m w.e. are present in the upper ablation area along the ice margins. Glacier 13 has the smallest range of residuals but residual values are approximately equal to those of estimated SWE. The mean value of distributed residuals is positive for Glacier 4, indicating that the topographic regression may have underestimated the winter balance. Conversely, the mean residual for Glacier 2 is negative, indicating that the regression may have over estimated the winter balance for this glacier. 
 
-The winter balance found using regression kriging (Figure \ref{fig:Regression-Kriging}) shows a gradient in accumulation across the mountain range. Glacier 4 has the highest mean SWE and Glacier 13 has the lowest mean SWE. All three glacier have the largest values of SWE in the upper part of the accumulation areas. 
+The SWE distribution found using simple kriging and regression kriging (Figure \ref{fig:Regression-Kriging}) shows a gradient in accumulation across the mountain range. Glacier 4 has the highest mean SWE and Glacier 13 has the lowest mean SWE. However, the accumulation gradient is steeper for simple kriged estimates than for regression kriged estimates. Glacier 4 has a similar mean SWE between the two methods but mean SWE on Glaciers 2 and 13 are much lower. All three glacier have the largest values of SWE in the upper part of the accumulation areas. 
 
-The winter balance estimated using regression kriging is similar to the winter balance estimated using regressions for Glaciers 2 and 13 (Figure \ref{fig:Regression-Kriging}). The similarity is due to the relatively high explanatory power of the regressions, so the regression kriging estimate is closer to a pure regression. The distribution of accumulation on Glacier 4 is more strongly affected by the kriged residuals because the regression had low explanatory power, resulting in larger residual values that changed the snow distribution, particularly in the upper portion of the glacier. The regression kriging for Glacier 4 is therefore closer to pure kriging.
+SWE distribution estimated using regression kriging is similar to the winter balance estimated using topographic regressions for Glaciers 2 and 13 (Figure \ref{fig:Regression-Kriging}). The similarity is due to the relatively high explanatory power of the regressions, so the regression kriging estimate is closer to a pure regression. The distribution of SWE on Glacier 4 is more strongly affected by the kriged residuals because the regression had low explanatory power, resulting in larger residual values that changed the snow distribution, particularly in the accumulation area. The regression kriging for Glacier 4 is therefore closer to pure kriging.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{residualsKriged.png}\\
-	\caption{Estimate of BMA residuals found by simple kriging. \topomap}
+	\caption{Distributed BMA residuals estimated by simple kriging.  \topomap Dashed line indicates approximate ELA.}
 	\label{fig:residualsKRIGING}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{RegressionKriging.png}\\
-	\caption{Estimated SWE found by adding the estimated residuals (simple kriging) to the estimated SWE found using BMA. \topomap}
+	\caption{SWE distributions estimated by adding the kriged residuals to the SWE distributions estimated using topographic regression with BMA. \swedots Arrows indicate glacier flow direction.}
 	\label{fig:Regression-Kriging}
 \end{figure}
 
-Comparison of estimates of SWE found using regression kriging and observed SWE (Figure \ref{fig:R2regressionkrig}) indicates that regression kriging is best able to estimate SWE at measured locations. There is a large increase in R$^2$ values for both Glaciers 4 and 13 when compared to simple kriging and pure regression. The R$^2$ value for Glacier 2 is only slightly lower than that for simple kriging. Together, regression kriging produces the highest overall set of R$^2$ values. 
+Regression kriging produces the highest overall set of R$^2$ values (Figure \ref{fig:R2regressionkrig}). There is a large increase in correlation for both Glaciers 4 and 13 when compared to simple kriging and pure regression (Figure ???). The R$^2$ value for Glacier 2 is only slightly lower than that for simple kriging.
 
 
-\begin{figure}
+\begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{krigRKfit.png}}%
 	\caption{Comparison of estimated (regression kriging) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snowpit densities (S4).}
 	\label{fig:R2regressionkrig}
@@ -161,17 +161,17 @@ Comparison of estimates of SWE found using regression kriging and observed SWE (
 
 \section{APPENDIX - Kriging software}
 \label{sec:KrigingMethods}
-Data kriging is executed using the DiceKriging package in R \citep{Roustant2012}. The Matlab function \texttt{KrigingR()} moves SWE data to R and then uses DiceKriging to find the estimated kriged surface of input data, as well as the upper and lower confidence intervals, the cross-validated (leave-one-out) estimates of SWE, as well as parameters that describe the kriging model fit (nugget, maximum log likelihood and mean constant). Input parameters of  \texttt{KrigingR()} are the snow data (e.g. SWE values), locations of measurements, and the glacier that the data is located on. The function follows these steps:
+Kriging is executed using the DiceKriging package in R \citep{Roustant2012}. The author-written Matlab function \texttt{KrigingR()} moves SWE data to R and then uses DiceKriging to find the estimated kriged surface, the upper and lower confidence intervals, the cross-validated (leave-one-out) estimates of SWE, as well as parameters that describe the kriging model fit (nugget, maximum log likelihood and mean constant). Input parameters of  \texttt{KrigingR()} are the snow data (e.g. SWE values), locations of measurements, and the name of the relevant glacier. The function follows these steps:
 \begin{enumerate}
 \item The working directory is changed to the `Kriging' folder
 \item The DiceKriging.R script is run
 	\begin{enumerate}
 	\item The function \texttt{km()} estimates the best fit kriging model with a constant mean using the Mat\'ern $\nu = 3/2$ covariance kernel. The maximum log likelihood, model intercept (mean) and nugget estimates from the model are then extracted. 
-	\item Leave-one-out cross validation is then completed using the function \texttt{leaveOneOut.km()}.
-	\item Surface prediction is then completed for the entire glacier. First, a grid that is the same size as the glacier is created (point spacing every 40 m to match the size of the DEM). Then, the function \texttt{predict()} is used to predict the surface values at all grid locations. The predicted values, as well as the upper and lower 95\% confidence intervals are returned. 
+	\item Leave-one-out cross validation is then applied to estimated values using the built-in DiceKriging function \texttt{leaveOneOut.km()}.
+	\item Surface prediction is then done for the entire glacier. First, a grid that replicates the glacier DEM is created (point spacing every 40 m to match the size of the DEM). Then, the built-in DiceKriging function \texttt{predict()} is used to predict the surface values at all grid locations. The predicted values, as well as the upper and lower 95\% confidence intervals are returned. 
 	\item All returned values are then saved as a .mat file.
 	\end{enumerate}
-\item The .mat file is imported into Matlab and the data is organized into a structure. Cells outside of the glacier outlines are set to \texttt{NaN} and negative SWE values are set to zero. The final data structure is then outputted from the Matlab function. 
+\item The .mat file is imported into Matlab and the data are organized into a structure. Cells outside of the glacier outlines are set to \texttt{NaN} and negative SWE values are set to zero. The final data are then output from the Matlab function. 
 \end{enumerate}
 
 

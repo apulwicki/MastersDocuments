@@ -3,46 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Kriging.aux
 The style file: igs.bst
 Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
-Warning--empty journal in Li2008
 You've used 7 entries,
             2869 wiz_defined-function locations,
-            646 strings with 5827 characters,
-and the built_in function-call counts, 5804 in all, are:
-= -- 597
+            648 strings with 5858 characters,
+and the built_in function-call counts, 5947 in all, are:
+= -- 608
 > -- 110
 < -- 9
 + -- 39
 - -- 33
-* -- 445
-:= -- 698
-add.period$ -- 5
+* -- 456
+:= -- 708
+add.period$ -- 7
 call.type$ -- 7
-change.case$ -- 50
+change.case$ -- 49
 chr.to.int$ -- 8
-cite$ -- 8
-duplicate$ -- 578
-empty$ -- 465
+cite$ -- 7
+duplicate$ -- 595
+empty$ -- 485
 format.name$ -- 64
-if$ -- 1192
+if$ -- 1229
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 63
+missing$ -- 68
 newline$ -- 28
 num.names$ -- 28
-pop$ -- 269
+pop$ -- 274
 preamble$ -- 1
 purify$ -- 44
 quote$ -- 0
-skip$ -- 138
+skip$ -- 141
 stack$ -- 0
-substring$ -- 583
-swap$ -- 140
+substring$ -- 593
+swap$ -- 152
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 73
-warning$ -- 1
-while$ -- 36
+warning$ -- 0
+while$ -- 37
 width$ -- 0
-write$ -- 89
-(There was 1 warning)
+write$ -- 91
