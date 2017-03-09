@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  2 MAR 2017 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  8 MAR 2017 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -390,7 +390,11 @@ Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
-) (./Kriging.aux)
+) (./Kriging.aux
+
+LaTeX Warning: Label `fig:Regression-Kriging' multiply defined.
+
+)
 \openout1 = `Kriging.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -409,8 +413,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 \AtBeginShipoutBox=\box35
 Package hyperref Info: Link coloring OFF on input line 35.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -460,116 +463,172 @@ Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: Reference `sec:variogram_intro' on page 1 undefined on input lin
-e 53.
+e 54.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
-LaTeX Warning: Reference `sec:linearregression' on page 2 undefined on input li
-ne 67.
-
-[2] [3]
-
-LaTeX Warning: Reference `fig:BMSmodelledSWE' on page 4 undefined on input line
- 86.
+LaTeX Warning: Reference `fig:BMSmodelledSWE' on page 3 undefined on input line
+ 73.
 
 
-LaTeX Warning: Reference `sec:densityoptions' on page 4 undefined on input line
- 88.
+LaTeX Warning: Reference `sec:densityoptions' on page 3 undefined on input line
+ 75.
 
-<sweKriged.png, id=111, 939.51pt x 433.62pt>
+<sweKriged.png, id=99, 939.51pt x 433.62pt>
 File: sweKriged.png Graphic file (type png)
  <use sweKriged.png>
-Package pdftex.def Info: sweKriged.png used on input line 92.
+Package pdftex.def Info: sweKriged.png used on input line 79.
 (pdftex.def)             Requested size: 390.0pt x 179.99525pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 97.
+               Default added (so using `tbp') on input line 84.
 
 
-LaTeX Warning: Reference `sec:densityoptions' on page 4 undefined on input line
- 99.
+LaTeX Warning: Reference `sec:densityoptions' on page 3 undefined on input line
+ 86.
 
 
-LaTeX Warning: Reference `sec:densityoptions' on page 4 undefined on input line
- 99.
+LaTeX Warning: Reference `sec:densityoptions' on page 3 undefined on input line
+ 86.
 
 
-LaTeX Warning: Reference `fig:BMSfit_opt8' on page 4 undefined on input line 11
-4.
+LaTeX Warning: Reference `fig:BMSfit_opt8' on page 3 undefined on input line 10
+1.
 
-<krigSWEfit.png, id=114, 867.24pt x 289.08pt>
+[3] [4 <./sweKriged.png (PNG copy)>]
+<krigSWEfit.png, id=112, 867.24pt x 289.08pt>
 File: krigSWEfit.png Graphic file (type png)
  <use krigSWEfit.png>
-Package pdftex.def Info: krigSWEfit.png used on input line 118.
+Package pdftex.def Info: krigSWEfit.png used on input line 104.
 (pdftex.def)             Requested size: 467.99881pt x 155.9994pt.
- [4] [5 <./sweKriged.png (PNG copy)>]
+
+<KrigingCI_percent.png, id=113, 939.51pt x 433.62pt>
+File: KrigingCI_percent.png Graphic file (type png)
+
+<use KrigingCI_percent.png>
+Package pdftex.def Info: KrigingCI_percent.png used on input line 113.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+ [5 <./krigSWEfit.png (PNG copy)>]
 
 LaTeX Warning: Reference `sec:linearregression' on page 6 undefined on input li
-ne 125.
+ne 123.
 
-[6 <./krigSWEfit.png (PNG copy)>]
-<residualsKriged.png, id=133, 939.51pt x 433.62pt>
+[6 <./KrigingCI_percent.png (PNG copy)>]
+
+LaTeX Warning: Reference `sec:linearregression' on page 7 undefined on input li
+ne 134.
+
+[7] <residualsKriged.png, id=148, 939.51pt x 433.62pt>
 File: residualsKriged.png Graphic file (type png)
- <use residualsKriged.png>
-Package pdftex.def Info: residualsKriged.png used on input line 135.
-(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
 
-<RegressionKriging.png, id=134, 939.51pt x 433.62pt>
+<use residualsKriged.png>
+Package pdftex.def Info: residualsKriged.png used on input line 148.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+ [8]
+<RegressionKriging.png, id=155, 939.51pt x 433.62pt>
 File: RegressionKriging.png Graphic file (type png)
 
 <use RegressionKriging.png>
-Package pdftex.def Info: RegressionKriging.png used on input line 142.
+Package pdftex.def Info: RegressionKriging.png used on input line 155.
 (pdftex.def)             Requested size: 390.0pt x 179.99525pt.
- [7 <./residualsKriged.png (PNG copy)>]
-<krigRKfit.png, id=142, 867.24pt x 289.08pt>
+ <krigRKfit.png, id=156, 867.24pt x 289.08pt>
 File: krigRKfit.png Graphic file (type png)
- <use krigRKfit.png>
-Package pdftex.def Info: krigRKfit.png used on input line 151.
+
+<use krigRKfit.png>
+Package pdftex.def Info: krigRKfit.png used on input line 161.
 (pdftex.def)             Requested size: 467.99881pt x 155.9994pt.
- (./Kriging.bbl [8 <./RegressionKriging.png (PNG copy)> <./krigRKfit.png (PNG c
-opy)>])
-[9]
+ [9 <./residualsKriged.png (PNG copy)> <./RegressionKriging.png (PNG copy)>] <I
+nterpMethod_mean.png, id=162, 939.51pt x 433.62pt>
+File: InterpMethod_mean.png Graphic file (type png)
+
+<use InterpMethod_mean.png>
+Package pdftex.def Info: InterpMethod_mean.png used on input line 172.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+ [10 <./krigRKfit.png (PNG copy)>]
+<InterpMethod_meanR2.png, id=169, 939.51pt x 433.62pt>
+File: InterpMethod_meanR2.png Graphic file (type png)
+
+<use InterpMethod_meanR2.png>
+Package pdftex.def Info: InterpMethod_meanR2.png used on input line 180.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+
+Overfull \hbox (6.9806pt too wide) in paragraph at lines 187--188
+[]\OT1/cmr/m/n/12 Regression krig-ing and krig-ing out-per-form to-po-graphic r
+e-gres-sion in predic-
+ []
+
+[11 <./InterpMethod_mean.png (PNG copy)>] [12 <./InterpMethod_meanR2.png (PNG c
+opy)>] <InterpMethod_allopts.png, id=184, 1403.2425pt x 349.305pt>
+File: InterpMethod_allopts.png Graphic file (type png)
+
+<use InterpMethod_allopts.png>
+Package pdftex.def Info: InterpMethod_allopts.png used on input line 192.
+(pdftex.def)             Requested size: 595.37453pt x 148.2019pt.
+
+Overfull \hbox (46.87453pt too wide) in paragraph at lines 192--193
+[][] 
+ []
+
+<InterpMethod_alloptsR2.png, id=185, 1403.2425pt x 349.305pt>
+File: InterpMethod_alloptsR2.png Graphic file (type png)
+
+<use InterpMethod_alloptsR2.png>
+Package pdftex.def Info: InterpMethod_alloptsR2.png used on input line 198.
+(pdftex.def)             Requested size: 595.37453pt x 148.2019pt.
+
+Overfull \hbox (46.87453pt too wide) in paragraph at lines 198--199
+[][] 
+ []
+
+[13 <./InterpMethod_allopts.png (PNG copy)> <./InterpMethod_alloptsR2.png (PNG 
+copy)>] (./Kriging.bbl) [14
+
+
+]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 21.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
-[10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+[15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./Kriging.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `Kriging.out' has not changed.
-(rerunfilecheck)             Checksum: 022DA3F78ED9750B4484B97A793AD195;573.
+(rerunfilecheck)             Checksum: BD17B7A1CCBEA651B65F7886708A9F34;570.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 8918 strings out of 494910
- 132510 string characters out of 6179836
- 226755 words of memory out of 5000000
- 12017 multiletter control sequences out of 15000+600000
+ 8961 strings out of 494910
+ 133404 string characters out of 6179836
+ 227614 words of memory out of 5000000
+ 12044 multiletter control sequences out of 15000+600000
  12781 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 36i,14n,77p,1242b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,77p,1515b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -579,10 +638,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on Kriging.pdf (10 pages, 375848 bytes).
+Output written on Kriging.pdf (15 pages, 599940 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

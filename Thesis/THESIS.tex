@@ -88,9 +88,7 @@
 
 \mainmatter%
 
-\chapter{Literature review}
-
-\section{Introduction}
+\chapter{Introduction}
 
 Snow accumulation, as the dominant input of mass to alpine glaciers, plays an important role in governing their mass balance and the hydrology of alpine catchments more broadly. This has implications not only for the availability of water for local ecological and human use \citep{Barnett2005,ONeel2014}, but also for rates of global sea-level rise \citep{Gardner2013}. It is therefore necessary to understand the spatial distribution of snow on glaciers. However, achieving such an understanding is complicated by the fact that snow distribution in alpine regions is not uniform or static, but rather highly variable and influenced by diverse and dynamic processes operating on multiple spatial and temporal scales. Although previous research has attempted to account for these processes through the development of various techniques of measurement and modelling, little is known about how they operate in glacierized alpine environments. This severely limits possibilities of quantifying and predicting snow distribution on glaciers, particularly in remote locations where frequent empirical measurements are difficult \citep{Nolan2015}.
 
@@ -379,42 +377,29 @@ A study done by \cite{Pomeroy1999} looked at snow mass balance in a non-glacieri
 
 There is clearly a strong need for a more comprehensive understanding of snow accumulation in the St. Elias Mountains. Although a few studies have examined accumulation, no studies have examined the distribution of snow and how it varies spatially. This is especially true of small alpine glaciers in the St. Elias Mountains, since most of the accumulation differences have been observed on large glaciers. It is likely that orographic lifting as well as wind redistribution and preferential deposition play major roles in determining accumulation on small alpine glaciers, so future studies should focus on the impact of these factors. 
 
-\chapter{Proposed research}%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+\section{Research scope}
 
- \begin{figure*}
-           \includegraphics[height=19cm]{SnowSpatialVariability.png}
-       \caption{Visual representation of proposed research}
-       \label{flowchart}
-\end{figure*}
+There is a need for a multi-scale investigation of snow accumulation on glaciers. The goal of this project is to improve understanding of processes and parameters that affect snow accumulation on glaciers. The snow distribution is characterized by identifying relevant length scales and by investigating the uncertainty, techniques, and controlling factors associated with calculating spatial patterns of the winter balance.  The project is structured in four main stages (Figure \ref{fig:flowchart_project}). First, observations are described generally using basic statistics and variability of point measured is investigated. Spatial correlations and relevant length scales of measured values are also estimated. Second, regression and kriging methods are used to interpolate observed SWE. An evaluation of the various interpolation techniques is then done. Third, a range of winter balance values is found based on combinations of interpolation and estimation methods and the impact of experimental design on winter balance values is also investigated. Fourth, the transferability between glaciers of statistical relationships found in the first three stages is examined. Meso-scale weather typing is then used to identify possible factors that affect differences in accumulation at the mountain-range scale.
 
-The proposed research aims to examine the spatial and temporal variability of snow distribution in the St. Elias Mountains using direct measurements and statistical models (Figure \ref{flowchart}). The spatial variability will be measured by conducting an extensive snow survey in May 2016. Accumulation will be measured using a combination of probing, firn coring, and snow pits on three alpine glaciers in the Donjek Range, located in the eastern part of the St. Elias Mountains. A combination of statistical techniques, including basic statistics, variograms, and regressions, will then be used to investigate spatial variability at multiple scales. Weather-typing will also be used to examine meso-scale weather conditions that affect precipitation distribution. 
+ \begin{figure}
+           \includegraphics[width = \textwidth]{MastersFlow.png}
+       \caption{Visual representation of proposed research. General scope is described on the left (ovals) and specific investigations are shown on the right (squares).}
+       \label{fig:flowchart_project}
+\end{figure}
+ 
+The thesis work aims to examine the spatial variability of snow distribution  in the St. Elias Mountains using direct measurements and statistical models. Four spatial scales that are relevant to accumulation on glaciers will be considered: point measurement, DEM resolution, glacier and mountain range (Figure \ref{fig:flowchart_scales}). The spatial variability is measured by conducting an extensive snow survey and accumulation is be measured using a combination of probing, firn coring, and snow pits on three alpine glaciers in the Donjek Range, located in the eastern part of the St. Elias Mountains (Table \ref{tab:glacierstats}). A combination of statistical techniques, including basic statistics, variograms, and regressions, will then be used to investigate spatial variability at multiple scales. Weather-typing will also be used to examine meso-scale weather conditions that affect precipitation distribution. 
 
-The three glaciers chosen for this study can be seen in Figure \ref{donjek}. Glaciers in the Donjek Range are unnamed but working names have been employed by \cite{Crompton2016} and are adopted for this work. Glacier 4, Glacier 2, and Glacier 12 were selected. These glaciers were chosen because they are safe to travel on (with most of the glacier accessible on skis), have SPOT5 DEM coverage (highest resolution), and are a small enough (see Table \ref{glacierstats}) to allow for reasonable coverage using point measurement can be obtained. The selected glaciers also have similar orientations and one central glacier-filled valley (similar shape). Additionally, these glaciers are spread throughout the Donjek Range and are located increasingly further from the large-scale topographic divide (located at the head of the Kaskawalsh Glacier \citep{Taylor1969}) allowing for the potential investigation of distance from mountain divide as an effect on regional snow distribution. The three glaciers are also located on different sides of the range-scale topographic divides, which run roughly from west to east in the southern area and from south to north in the eastern area and form an `L' shape. Glacier 4 is located on the southern side of the first arm, Glacier 2 is located on the northern side of the first arm and the western side of the second arm, and Glacier 12 is located on the eastern side of the second arm. From anecdotal observations, these different configurations likely affect the winter balance of glaciers in the Donjek Range with glaciers on the southern side of the first arm receiving more snow.
-
-\begin{figure}
-  \begin{minipage}[c][22cm][t]{\textwidth}
-        \vspace*{\fill}
-  \centering
-  \includegraphics[height=10.5cm]{chosenglaciers.jpeg}
-  \subcaption{Donjek Range with study glaciers. From left to right: Glacier 4, Glacier 2, Glacier 12. Dashed line indicates local topographic divide, which forms an `L' shape.}
-  \par\vfill
-  \includegraphics[height=9.5cm]{threeglaciers.jpeg}
-  \subcaption{Study glaciers with 50 m contour lines. From left to right: Glacier 4, Glacier 2, Glacier 12.}
-\end{minipage}%
-\caption{Study glaciers in the Donjek Range.}
-\label{donjek}
+  \begin{figure}
+           \includegraphics[width = \textwidth]{ScalesOfVariability.png}
+       \caption{Visualization of four spatial scales investigated in project. The lower panels show examples of the amount of data analysed at each scale.}
+       \label{fig:flowchart_scales}
 \end{figure}
 
-\section{Snow Measurement} 
-
-Each glacier was divided into seven regions to determine sampling schemes and their locations. This allowed for snow depth and density be taken throughout a large portion of the glacier area. The glaciers were divided into three attitudinally distributed areas, with the upper area encompassing the accumulation zone, the middle area encompassing the upper half of the ablation zone, and the lower area encompassing the lower half of the ablation zone. During the snow survey, approximately one day will be spent taking measurements in each area. With these divisions, the ablation area will have a higher density of snow probe, firn core, and snow pit measurements than the accumulation area. Since measurements are more difficult and time consuming to make in the accumulation area, measurement efforts will be focused on the ablation area, where the snow pack is well defined. Higher density sampling in the ablation zone may also be warranted because \cite{McGrath2015} found that the highest variability in SWE was in the ablation zone, especially in sections that had rough and crevassed ice.
-
-The middle and lower areas were further divided into left, central, and right areas. The left and right areas encompass the margin of the glacier and were defined as being within 300 m of the ice edge (as mapped by the Randolph Glacier Inventory (RGI 5.0) \citep{Pfeffer2014}), while the central area encompasses the central part of the glacier between the margins. This division was chosen because the snow distribution is likely to be affected by different processes at the margins compared to the centre. The margins are closer to steep rock slopes, which can affect the wind patterns and radiation at the snow surface. Avalanching can also affect snow distribution along the margins \citep{Bloschl1991}. 
-
-\begin{table}[t!]
+\begin{table}[b]
 \centering
 \caption{Area, length, and elevation descriptors of three chosen glacier.}
-\label{glacierstats}
+\label{tab:glacierstats}
 \begin{tabular}{|l|c|c|ccc|}
 \hline
 \multicolumn{1}{|c|}{} & \multirow{2}{*}{\textbf{Area (km$^2$)}} & \multirow{2}{*}{\textbf{Length (km)}} & \multicolumn{3}{c|}{\textbf{Elevation (m)}}         \\
@@ -425,60 +410,14 @@ Glacier 12             & 25.59                                   & 9.5          
 \end{tabular}
 \end{table} 
 
-Probing will be done at point, hillslope, and watershed scales on the three glaciers (regional scale) in a number of patterns and orientations in an attempt to estimate snow distribution at multiple scales (Figure \ref{sampling}). For the point scale, the star design will be used to measure snow depth within 40x40 m grids (SPOT5 DEM resolution). For the hillslope scale, the hourglass with inscribed circle (referred to just as hourglass) will be used to measure snow depth within an entire elevation band of the glacier, with the upper and lower transects also serving as transverse transects. Cross transects will be completed opportunistically when areas of high curvature are present. A centreline profile and additional transverse transects will also be probed, which can be combined with hourglass measurements to estimate watershed-scale mass balance. A comparison of these measurements between the three study glaciers will allow for investigation of regional scale variability. Sampling schemes will be placed to ensure that SWE is measured in locations that represent a full range of topographic parameters found on each glacier. 
+Mass balance models often estimate winter balance by using interpolation methods based on only a small number of observations. It is likely that these accumulation estimates are poor representations of mass balance input. The proposed work will attempt to improve how these estimates are made by determining uncertainty in SWE measurement and interpolation, identifying topographic parameters that affect snow distribution, and examining the transferability of statistical models within a mountain range. While these aspects have been investigated in mountain environments, there are few studies that look at winter balance estimates on glaciers. By examining various statistical techniques used when calculating regressions between observed accumulation and topographic parameters (e.g. linear regression versus Bayesian model averaging) as well as different methods for interpolating between measurements (e.g. kriging), a range of winter mass balance estimates can be complied. Various subsets of measured SWE can also be used in these regressions and interpolations to examine the effect of sample size and measurement location on accumulation estimates. Valuable insights into optimizing snow survey design are likely to be gained from this process. Transferability of regressions between nearby basins will also be addressed, which will aid in determining winter mass balance across mountain ranges. Examining potential impacts of mesoscale weather systems (weather typing) on mountain range snow accumulation will also contribute to improving current understanding of conditions that may affect observed snow distribution. 
 
-For each glacier, the following series of snow depth measurements have been planned:
-\begin{itemize}
-\item Star design in a random location in thirteen regions of the ablation zone, with seven in the lower ablation area and six in the upper ablation zone (125 points each, random distance between 0.1 m and 1.5 m)
-\item Hourglass in two regions of the glacier ablation zone and span the entire width (random distance between 5 and 20 m). The upper and lower portions will thus also serve as cross-glacier transects.
-\item Transverse transects in three locations: one close to the terminus and two between the hourglass schemes (random distance between 5 and 20 m).
-\item A centre-line transect with a low resolution ($\sim$100m). 
-\end{itemize}
-
- \begin{figure*}
-           \includegraphics[height=19cm]{SamplingDesign.jpeg}
-       \caption{Planned sampling design on Glaciers 4, 2 and 12.}
-       \label{sampling}
-\end{figure*}
-
-Snow density will be measured in various areas of each glacier. A firn corer will be used to determine bulk density of the snow column by extracting snow cores (known volume) and weighting them. This instrument will be used because it allows for faster estimation of snow column density than snow-pit derived density. The measurements obtained with the firn corer will be compared to density measured in a snow pit using a wedge cutter, which is considered the most accurate way to measure density but is more time consuming \citep{Ostrem1991}. In areas with shallow snow packs, a Federal sampler (i.e. SWE tube) will be used for snow density measurements. Other snow properties observed in the snow pit, including stratigraphy and snow pack temperature will also be recorded.
-
-For each glacier, the following series of snow density measurements have been planned (note that each measurement also serves as a depth measurement):
-\begin{itemize}
-\item Firn core at the edge of each star design located throughout the glacier.
-\item Four firn cores at the centre of each hourglass scheme.
-\item Approximately six firn cores in the transverse direction and four in the along-flow direction of the accumulation area.
-\item Snow pit measurements at the centre of each hourglass schemes and one in the accumulation aree (allows for comparison of firn core and snow-pit density)
-\end{itemize}
-
-\section{Statistical Analysis}
-
-Spatial variability of snow accumulation at multiple scales will be investigated using a number of statistical techniques. Variograms will be constructed from all snow-depth measurements within a basin. This will allow for an investigation of relevant length scales and scale breaks that may address the autocorrelation of snow depth on glaciers and identify how much variance can be observed using our methods (variogram nugget). Identification of scale breaks could also help determine processes that drive snow distribution patterns at various scales. 
-
-At the point scale, the goal is to determine measurement error. To accomplish this, variability of snow depth within a grid cell will be quantified using basic statistical descriptors (e.g. standard deviation) of measurements from the star sampling schemes. It is valuable to estimate the uncertainty of a snow depth measurement at the resolution of the DEM used. 
-
-Regressions of SWE and DEM-derived terrain parameters will be done to investigate variability at the hillslope scale. Terrain parameters, including elevation, slope, curvature, ``northness'', aspect, and wind exposure/shelter, will be calculated from SPOT5 DEMs (40 x 40 m resolution). Both linear statistical methods (e.g. multiple linear regression) and non-linear methods (e.g. regression tree models) will be applied to best try to capture the relationships between geography and accumulation. The regression method that is able to capture the most variance will be used to interpolate between accumulation measurements to obtain a spatial distribution of SWE. 
-
-Variability at the watershed scale will be investigated by comparing winter balance estimates using different combinations of observed snow distribution and terrain parameters used for the regression. Different subsets of measured SWE values will be used to determine regressions and estimate winter balance, which will provide a range of possible winter-balance values. Comparing interpolated values of SWE from various regressions with measured values will examine the error when interpolating between point observations. This analysis is likely to provide insight into optimizing future glacier snow surveys.
-
-At the regional scale, various analyses will be conducted. First, the transferability of regressions will be investigated by applying the regressions from one glacier to the other two and evaluating their performance. 
-
-Second, an investigation into the mesoscale weather conditions in the Pacific northwest during the 2015--2016 winter season will be done in an attempt to explain regional scale differences in accumulation. Weather conditions, including geopotential height, integrated vapour transport (IVT), and mean sea-level pressure, in the North Pacific will be obtained from ERA-Interim reanalysis data and statistical methods, including PCA and neural networks, will then be applied to find weather patterns. The frequency and types of patterns observed at the mesoscale, such as atmospheric rivers of IVT \citep{Neiman2008, Roberge2009}, could provide insight into moisture sources for the Donjek Range and how they affect glaciers at different distances from the large-scale topographic divide as well as various orientations to range-scale topographic divides. 
-
-Links with other studies that examined relationships between local precipitation and mesoscale and synoptic weather conditions will aid in understanding processes that affect regional snow distribution differences and in formulating hypotheses for future research. For example, \cite{Serreze1995} and \cite{Lackmann1998} found that vapour fluxes originating in the Pacific Ocean tend to peak in the lower troposphere (800 hPa) so the presence of a high mountain range is likely to block these sources. Additionally, \cite{Neiman2008} observed that on the west coast, atmospheric rivers are responsible for twice as much precipitation as all storms and that atmospheric rivers have a tendency to increase SWE in the autumn and winter and decrease SWE in the spring. Furthermore, work done by \cite{Roberge2009} found that atmospheric rivers, which result in intense cold-season precipitation events in the Yukon, can be clustered by the general area of moisture origins and that they are associated with certain synoptic conditions in the North Pacific. A study done by \cite{Matthews2013} found that including weather type found from reanalysis data improved the simulation of daily ablation by up to 14\% compared to a temperature-index model. Although this study did not examine precipitation, it is possible that investigation of weather conditions could also improve precipitation modelling through statistical down-scaling and account for inter-annual variability in precipitation. Preliminary work to correlate synoptic patterns to glacier-wide accumulation reveals significant correlations between patterns in the 750 hPa geopotential, found using a self organizing map (SOM), and winter balance on one glacier in the Donjek Range between 2007 and 2011, which is consistent with observations made by \cite{Taylor1969} in the St. Elias Mountains. 
-
-\section{Expected Outcomes}
-
-The goal of this project is to improve understanding of processes and parameters that affect snow accumulation on glaciers. Currently, there is little work that addresses length scales of SWE on glaciers. A large portion of the proposed work will therefore focus on identifying length scales within glacierized basins. This will be done by constructing and analysing variograms using data from star sampling schemes as well as hourglass, transverse, and centreline sampling schemes. From this, lag distances between 0.1 m and $\sim$5 km can be plotted, which allows for identification of multiple relevant length scales. Fractal analysis could also be attempted, which may aid in the identification of scale breaks. Determining length scales is likely to provide insight into conditions and processes that affect snow distribution, including underlying topography such as crevasses as well as wind redistribution. 
-
-Mass balance models often estimate winter balance by using interpolation methods based on only a small number of observations. It is likely that these accumulation estimates are poor representations of mass balance input. The proposed work will attempt to improve how these estimates are made by determining uncertainty in SWE measurement and interpolation, identifying topographic parameters that affect snow distribution, and examining the transferability of statistical models within a mountain range. While these aspects have been investigated in mountain environments, there are few studies that look at winter balance estimates on glaciers. By examining various statistical techniques used when calculating regressions between observed accumulation and topographic parameters (e.g. linear regression versus binary tree) as well as different methods for interpolating between measurements (e.g. kriging), a range of winter mass balance estimates can be complied. Various subsets of measured SWE can also be used in these regressions and interpolations to examine the effect of sample size and measurement location on accumulation estimates. Valuable insights into optimizing snow survey design are likely to be gained from this process. Transferability of regressions between nearby basins will also be addressed, which will aid in determining winter mass balance across mountain ranges. Examining potential impacts of mesoscale weather systems (weather typing) on mountain range snow accumulation will also contribute to improving current understanding of conditions that may affect observed snow distribution. 
-
-There is a need for a multi-scale investigation of snow accumulation on glaciers. The proposed work aims to characterise the snow distribution by identifying relevant length scales and by investigating the uncertainty, techniques, and controlling factors associated with calculating spatial patterns of SWE. 
-
-\section{Summary}
+\subsection{Summary}
 Snow accumulation plays a central role in alpine hydrology and has a prominent impact on glacier mass balance. In mountainous regions, accumulation is highly variable on point, hillslope, watershed, and regional scales. The contribution of accumulation to glacier mass balance is controlled mainly by the distribution of snow. Processes such as orographic lifting, preferential deposition, and wind redistribution, all arising from the interaction of atmospheric conditions and topography, strongly affect snow distribution. Statistical models have been used to relate meteorological and topographic variables to snow accumulation in order to better understand the effects of these processes. These models rely on accurate measurement of snow distribution, which can be achieved by determining SWE from snow density and depth. Results from previous studies of accumulation on glaciers have shown large spatial variability at many scales and a dependence on multiple processes that affect snow distribution. 
 
 Accumulation in the St. Elias Mountains is poorly understood, largely because the glaciers are remote. There is a need to quantify snow accumulation in this region and how it varies both between glaciers and within glacierized basins. The proposed study would be the first within the St. Elias Mountains to examine accumulation variability at the point, hillslope, watershed, and regional scale. Well-established methods will be applied to measure accumulation variability.  These measurements will be used to investigate measurement uncertainty and relevant length scales, the role of topography in determining snow distribution, optimizing winter balance measurement, and the transferability of statistical relationship as well as regional differences in accumulation across a range. This comprehensive approach to examining spatial patterns in snow distribution on glaciers will contribute to the current understanding of processes and parameters that affect winter balance variability on glaciers. 
+
+\section{Thesis overview}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -487,7 +426,7 @@ Accumulation in the St. Elias Mountains is poorly understood, largely because th
 ***Still needed: close up photo of swe tube, snowpit cut outs?
 
 %%%%
-\section{Field Design}
+\section{Experimental design}
 %%%%
 \label{sec:FieldDesign}
 
@@ -535,7 +474,7 @@ The zigzag points have a name with the glacier number, the zone that they were l
 
 
 %%%%
-\section{Implementation}
+\section{Field methods}
 %%%%
 
 \subsection{Linear and Curvilinear Transects}
@@ -1176,207 +1115,6 @@ For all density options, SWE is highest on Glacier 4 and lowest on Glacier 13. G
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Variability at multiple scales}
-
-
-
-\begin{wraptable}[30]{R}{8cm}
-\centering
-\caption{Normality of data with various subgroups. $\chi^2$ values are shown and normally distributed data is bold ($p<0.05$). \transectAbb}
-\label{tab:normality}
-\begin{tabular}{cccc}
-\textbf{Glacier} & \textbf{Transect} & \multicolumn{2}{c}{\textbf{$\chi^2$}} \\ 
-\hline
-\hline 
-& LH & 14.9 &   \\
-  & LC & 17.3 &   \\
-  & LM & 6.6 &   \\
-  & UH & 52.1 &   \\
-  & UC & \textbf{5.9} &   \\
-& UM & \textbf{1.4} &   \\
-\multirow{-7}{*}{Glacier 4} & UT & 15.7 & \multirow{-7}{*}{ 115.4} \\ \hline
- & LH & 27.8 &  \\
- & LC & \textbf{5.0} &  \\
- & LM & \textbf{6.2} &  \\
- & UH & 43.8 &  \\
- & UC & 13.1 &  \\
- & UM & 31.3 &  \\
- & UT & \textbf{0.1} &  \\
-\multirow{-8}{*}{Glacier 2} & BT & 13.1 & \multirow{-8}{*}{127.1} \\ \hline
-  
-  & LH & 32.1 &   \\ 
-  
-  & LC & 11.4 &   \\
-  
-  & LM & 18.1 &   \\
-  
-  & UH & 12.8 &   \\
-  
-  & UC & 17.6 &   \\
-  
-  & UM & 9.7 &   \\
-  
-\multirow{-7}{*}{ Glacier 13} & UT & 8.6 & \multirow{-7}{*}{ 39.4}
-\end{tabular}
-\end{wraptable}
-
-\section{Point Scale}
-
-This section details basic statistical results of the snow depth data at the point scale. The goal of these analyses is to examine variability of single measurements and to determine whether any correction need to be made to the collected data for future analysis. 
-
-\subsection{Data normality}
-
-A $\chi^2$ test is done to test whether the collected snow depth data are normally distributed. Generally, the transect snow depth data are not normally distributed and are even further from normality (larger $\chi^2$ values) for data grouped by glacier (Table \ref{tab:normality}). However, we chose to not transform the data in order to maintain its original context and because transformation of snow depth data is not typically done.  
-
-\subsection{Observer differences}
-
-An ANOVA for each transect of snow depth measurements taken by different observers shows that there are no differences between observers (p $>$ 0.05) (data not shown). The only exception is the Lower Hourglass on Glacier 4, where snow depth values collected by one observer were, on average, greater than the snow depth measurements taken by the other two observers ( AC$>$AP=CA with p $<$ 0.01). Since this was the first transect completed and the only one to show differences by observer, this difference can be considered an anomaly. This result shows that observer bias is likely to not affect the results of this study and no corrections to the data based on observer were applied.
-
-\subsection{Standard deviation of snow depth along linear and curvilinear transects}
-\label{sec:stdTransects}
-
-The mean standard deviation of snow depth measurements collected at each location within various transects was found by calculating the standard deviation of the three to four measurements made by each observer at each measurement location (Table \ref{tab:std_reproduce}. The mean of these standard deviations for each grouping (Table \ref{tab:std_reproduce}) represents the variability in snow depth for the sampling locations. It can be used to evaluate the representativeness of the mean snow depth values that were used in the analysis at larger scales.
-
-The overall standard deviation of all measurements was calculated by taking all the depth measurements within a subset of the data and then calculating the standard deviation (Table \ref{tab:std_measure}). The overall standard deviation represents the variability in the depth field. 
-
-The mean standard deviation varies between glaciers, transects, and observers but  generally, the reproducibility of depth measurement is on the order of centimetres (10$^0$). The overall standard deviation of measurements over the study area is on the order of 10$^1$. Therefore, the standard deviation of a snow depth measurement is small compared to the standard deviation of all snow depth measurements. When expressed as a percentage of the mean, the overall standard deviation (Table \ref{tab:std_measure}) is also larger than that of the mean standard deviation (Table \ref{tab:std_reproduce}). This shows that variability at the point scale (a single measurement location) is an order of magnitude smaller than the variability of the depth field for the length of a transect, so the use of the mean snow depth at each measurement location is a valid value to carry forward in the analysis. 
-
-Variability in snow depth differs considerably between glaciers (Figure \ref{fig:box_depth}). Both the range and mean depth are largest for Glacier 4 and smallest for Glacier 13. Glacier 13 has the most outliers (\textgreater 1.5 $\times$ inner quartile range). The standard deviation of all measurement taken on a glacier (Table \ref{tab:std_measure}) is lowest for Glacier 13 and highest for Glacier 2, with the standard deviation of Glacier 4 being close to that of Glacier 2. 
-
-
-\begin{wrapfigure}[22]{l}{0.7\textwidth} 
-\centering
-	\includegraphics[width = 0.7\textwidth]{box_depth.png}\\
-	\caption{Variability in all snow depth measurements taken at each glacier. Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$).}
-	\label{fig:box_depth}
-\end{wrapfigure}
-
-The standard deviation as a function of binned elevation show that the standard deviation decreases with elevation on both Glacier 2 and 13 but it increases with elevation on Glacier 4 (Figure \ref{fig:std_snowdepth_binned}). The regression of elevation and standard deviation as percent of the mean is strong for Glacier 2 (R$^2$ = 0.79) and weak for Glacier 13 (R$^2$ = 0.38) and Glacier 4 (R$^2$ = 0.12). Therefore, the variability is higher closer to the terminus of the Glacier 2 and there is no significant trend on Glacier 4 and 13. However, there are comparatively fewer depth measurements taken at higher elevations, which may skew the trend of higher variability close to the terminus. 
-
-%% Std of reproducibility
-\begin{table}[h]
-\footnotesize
-\centering
-\caption{Mean standard deviation (cm) of snow depth measurements for the entire glacier (Overall Glacier), different transects (Overall Transect), and each observer. Standard deviation as a percent of the mean snow depth is shown in brackets. \transectAbb}
-\label{tab:std_reproduce}
-\begin{tabular}{cccccccc}
- &  &  &  & \multicolumn{4}{c}{\textbf{Observer}} \\
-\multirow{-2}{*}{} & \multirow{-2}{*}{\textbf{Transect}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Overall \\ Glacier\end{tabular}}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Overall \\ Transect\end{tabular}}} & AP & GF & CA & AC \\ \hline \hline
-  
-  & LH &   & 5.1 (3\%)& 4.8  (3\%)& --- & 8.5 (5\%) & 2.0 (1\%) \\
-  
-  & LC &   & 4.7  (3\%)& 4.3  (3\%)& --- & 8.2  (5\%)& 1.7  (1\%)\\
-  
-  & LM &   & 3.7  (2\%)& --- & 4.7  (3\%)& 4.6  (2\%)& 1.9  (1\%)\\
-  
-  & UH &   & 2.6   (1\%)& 3.4   (1\%)& 2.2   (1\%)& --- & 2.3   (1\%)\\
-  
-  & UC &   & 1.9   (1\%)& 1.9   (2\%)& 2.3   (1\%)& --- & 1.5  (1\%) \\
-  
-  & UM &   & 1.9   (1\%)& --- & 1.7   (1\%)& 2.0 (1\%) & 2.0 (1\%)\\
-  
-\multirow{-7}{*}{ Glacier 4} & UT & \multirow{-7}{*}{ 3.5 (2\%)} & 3.9 (2\%)& 3.7 (2\%) & --- & 2.4 (1\%)& 5.6 (3\%)\\ \hline
- & LH &  & 5.4 (11\%)& 4.8 (9\%)& --- & 6.1 (13\%)& --- \\ 
- & LC &  & 5.0 (12\%)& 3.9 (11\%)& --- & 6.2 (15\%)& --- \\
- & LM &  & 6.5 (17\%)& --- & 6.8 (16\%)& 6.5 (18\%)& 6.0 (16\%)\\
- & UH &  & 4.1 (7\%)& 3.5 (5\%)& 4.4 (7\%)& 4.5 (9\%)& --- \\
- & UC &  & 7.0 (4\%)& 5.5 (3\%)& 7.0 (4\%)& 8.7 (4\%)& --- \\
- & UM &  & 4.2 (4\%)& 3.2 (3\%)& 5.2 (4\%)& 4.1 (4\%)& --- \\
- & UT &  & 5.6 (10\%)& 3.2 (6\%)& --- & 8.2 (13\%)& --- \\
-\multirow{-8}{*}{Glacier 2} & BT & \multirow{-8}{*}{5.1 (7\%)} & 2.2 (2\%)& 2.2 (2\%)& --- & 3.0 (2\%)& 1.5 (1\%) \\ \hline
-  
-  & LH &   & 3.8 (10\%)& 3.1 (6\%)& 4.1 (12\%) & 4.0 (13\%)& --- \\ 
-  
-  & LC &   & 4.5 (8\%)& 2.9 (6\%)& 4.8 (9\%)& 5.8 (8\%)& --- \\
-  
-  & LM &   & 6.6 (13\%)& 4.6 (10\%)& 7.7 (16\%)& 7.6 (14\%)& --- \\
-  
-  & UH &   & 3.5 (4\%)& 3.4 (4\%)& 3.6 (5\%)& 3.4 (5\%)& --- \\
-  
-  & UC &   & 3.8 (4\%)& 3.4 (4\%)& 4.0 (4\%)& 4.0 (4\%)& --- \\
-  
-  & UM &   & 4.8 (6\%)& 4.4 (5\%)& 5.8 (7\%) & 4.4 (5\%) & --- \\
-  
-\multirow{-7}{*}{ Glacier 13} & UT & \multirow{-7}{*}{ 4.2 (6\%)} & 4.1 (6\%)& 2.7 (4\%)& 4.8 (6\%)& 4.6 (7\%)& ---
-\end{tabular}
-\end{table}
-
-
-%% Std of measurement
-\begin{table}[]
-\footnotesize
-\centering
-\caption{Overall standard deviation (cm) of snow depth measurements for the entire glacier (Overall Glacier), different transects (Overall Transect), and each observer. Standard deviation as a percent of the mean snow depth is shown in brackets. \transectAbb The standard deviation of all transect data was 64.6 cm.}
-\label{tab:std_measure}
-\begin{tabular}{cccccccc}
- &  &  &  & \multicolumn{4}{l}{\textbf{Person}} \\
-\multirow{-2}{*}{\textbf{Glacier}} & \multirow{-2}{*}{\textbf{Pattern}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Overall \\ Glacier\end{tabular}}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Overall \\ Pattern\end{tabular}}} & AP & GF & CA & AC \\ \hline \hline
-  
-  & LH &   & 51.3  (28\%)& 51.4  (29\%) & --- & 54.8  (32\%) & 45.7  (24\%) \\
-  
-  & LC &   & 45.2  (26\%) & 50.5  (30\%) & --- & 44.1  (25\%) & 39.8  (23\%) \\
-  
-  & LM &   & 27.2  (15\%) & --- & 21.6   (11\%)& 36.3  (19\%) & 22.5  (12\%) \\
-  
-  & UH &   & 48.5  (28\%) & 48.6  (28\%) & 51.2   (29\%)& --- & 45.8  (27\%) \\
-  
-  & UC &   & 44.2  (23\%) & 44.8  (23\%) & 38.2   (21\%)& --- & 48.2   (26\%)\\
-  
-  & UM &   & 22.5  (13\%) & --- & 24.1  (14\%) & 20.7  (12\%) & 22.7  (13\%) \\
-  
-\multirow{-7}{*}{ Glacier 4} & UT & \multirow{-7}{*}{ 44.7  (25\%)} & 26.0   (13\%)& 25.1  (13\%) & --- & 25.1  (13\%) & 27.7  (14\%) \\ \hline
- & LH &  & 29.9  (67\%) & 29.2  (63\%) & --- & 30.6  (71\%) & --- \\
- & LC &  & 29.3  (61\%) & 28.6  (63\%) & --- & 30.1  (59\%) & --- \\
- & LM &  & 18.4  (43\%) & --- & 20.8   (45\%)& 15.5  (39\%) & 18.1  (43\%) \\
- & UH &  & 42.0  (39\%) & 39.1  (37\%) & 41.6  (38\%) & 45.6  (42\%) & --- \\
- & UC &  & 55.0   (52\%)& 55.3  (53\%) & 55.2  (52\%) & 56.1  (52\%) & --- \\
- & UM &  & 35.1  (29\%) & 38.4  (33\%) & 34.5  (29\%) & 31.8  (27\%) & --- \\
- & UT &  & 36.4  (61\%) & 27.3 (51\%) & --- & 43.9  (70\%) & --- \\
-\multirow{-8}{*}{Glacier 2} & BT & \multirow{-8}{*}{49.3 (62\%)} & 20.8 (14\%)& 13.8 (10\%)& --- & 13.7 (9\%) & 30.4 (22\%) \\ \hline
-  
-  & LH &   & 27.4  (56\%) & 25.7 (53\%) & 27.5 (58\%) & 28.9 (57\%) & --- \\
-  
-  & LC &   & 27.1  (59\%) & 25.8 (57\%) & 21.4 (52\%) & 32.6 (68\%) & --- \\
-  
-  & LM &   & 24.9  (52\%) & 22.8 (60\%) & 27.5 (56\%) & 23.6 (42\%) & --- \\
-  
-  & UH &   & 21.0  (25\%) & 21.1 (25\%) & 21.4 (25\%) & 20.4 (24\%) & --- \\
-  
-  & UC &   & 16.3  (18\%) & 17.6 (21\%) & 14.5 (16\%) & 16.6 (18\%) & --- \\
-  
-  & UM &   & 29.4  34(\%) & 26.6 (32\%) & 33.4 (39\%) & 28.0 (33\%) & --- \\
-  
-\multirow{-7}{*}{ Glacier 13} & UT & \multirow{-7}{*}{ 30.5 (46\%)} & 32.7 (50\%) & 21.5 (31\%) & 44.4 (63\%) & 26.4 (42\%) & ---
-\end{tabular}
-\end{table}
-
-
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.8\textwidth}
-        \includegraphics[width=\textwidth]{binned_std.png}
-        \caption{}
-    \end{subfigure}
-    
-    \begin{subfigure}[b]{0.8\textwidth}
-        \includegraphics[width=\textwidth]{binned_std_percent.png}
-        \caption{}
-    \end{subfigure}
-
-    \caption{Standard deviation (a) and standard deviation as percent of mean (b) of all snow depth measurements binned in elevation bands of 10 m. Bars at the top of the figure indicate the elevation ranges of the three study glaciers. The regression of elevation and standard deviation of snow depth is shown as a coloured line within the data.}
-    \label{fig:std_snowdepth_binned}
-\end{figure}
-
-\subsection{Standard deviation of SWE in DEM cell}
-
-The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas that correspond to a single DEM cell containing multiple SWE measurement locations. To extrapolate SWE over the glacier it is valuable to have one value of SWE for each DEM grid cell. Therefore, the mean SWE was used for a DEM cell with multiple observations. Using the mean value is supported by the small standard deviation of SWE within one DEM cell for all glaciers (Figure \ref{fig:DEMcellSTD}). The mean standard deviation is 0.03 m w.e., which is low compared to the variability of SWE over the entire glacier (Section \ref{sec:stdTransects}). Extreme standard deviation values result from highly variable locations such as transects across deep supra glacier streams (Glacier 13) or on debris covered ice or ice-cored moraines (Glacier 4). However, the mean standard deviation is small so future analyses use the mean SWE value within one DEM cell. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width = 0.6\textwidth]{DEMcellSTD.png}\\
-	\caption{Boxplot of the standard deviation of measured SWE in one DEM grid cell. \boxMatlab}
-	\label{fig:DEMcellSTD}
-\end{figure}
 
 
 
@@ -2532,6 +2270,206 @@ For example, to access the SWE values for Glacier 2, one would type \texttt{SWE(
 
 The \texttt{SWE} structure includes all data that is collected for each glacier. If there is a need to remove the zigzag data or keep only the zigzag data, the script `ZigzagRemoval.m' can be run. Set the option for including or excluding zigzag data in the script `OPTIONS.m'.
 
+%%%
+\chapter{Variability of data at various scales}
+
+\begin{wraptable}[30]{R}{8cm}
+\centering
+\caption{Normality of data with various subgroups. $\chi^2$ values are shown and normally distributed data is bold ($p<0.05$). \transectAbb}
+\label{tab:normality}
+\begin{tabular}{cccc}
+\textbf{Glacier} & \textbf{Transect} & \multicolumn{2}{c}{\textbf{$\chi^2$}} \\ 
+\hline
+\hline 
+& LH & 14.9 &   \\
+  & LC & 17.3 &   \\
+  & LM & 6.6 &   \\
+  & UH & 52.1 &   \\
+  & UC & \textbf{5.9} &   \\
+& UM & \textbf{1.4} &   \\
+\multirow{-7}{*}{Glacier 4} & UT & 15.7 & \multirow{-7}{*}{ 115.4} \\ \hline
+ & LH & 27.8 &  \\
+ & LC & \textbf{5.0} &  \\
+ & LM & \textbf{6.2} &  \\
+ & UH & 43.8 &  \\
+ & UC & 13.1 &  \\
+ & UM & 31.3 &  \\
+ & UT & \textbf{0.1} &  \\
+\multirow{-8}{*}{Glacier 2} & BT & 13.1 & \multirow{-8}{*}{127.1} \\ \hline
+  
+  & LH & 32.1 &   \\ 
+  
+  & LC & 11.4 &   \\
+  
+  & LM & 18.1 &   \\
+  
+  & UH & 12.8 &   \\
+  
+  & UC & 17.6 &   \\
+  
+  & UM & 9.7 &   \\
+  
+\multirow{-7}{*}{ Glacier 13} & UT & 8.6 & \multirow{-7}{*}{ 39.4}
+\end{tabular}
+\end{wraptable}
+
+\section{Point Scale}
+
+This section details basic statistical results of the snow depth data at the point scale. The goal of these analyses is to examine variability of single measurements and to determine whether any correction need to be made to the collected data for future analysis. 
+
+\subsection{Data normality}
+
+A $\chi^2$ test is done to test whether the collected snow depth data are normally distributed. Generally, the transect snow depth data are not normally distributed and are even further from normality (larger $\chi^2$ values) for data grouped by glacier (Table \ref{tab:normality}). However, we chose to not transform the data in order to maintain its original context and because transformation of snow depth data is not typically done.  
+
+\subsection{Observer differences}
+
+An ANOVA for each transect of snow depth measurements taken by different observers shows that there are no differences between observers (p $>$ 0.05) (data not shown). The only exception is the Lower Hourglass on Glacier 4, where snow depth values collected by one observer were, on average, greater than the snow depth measurements taken by the other two observers ( AC$>$AP=CA with p $<$ 0.01). Since this was the first transect completed and the only one to show differences by observer, this difference can be considered an anomaly. This result shows that observer bias is likely to not affect the results of this study and no corrections to the data based on observer were applied.
+
+\subsection{Standard deviation of snow depth along linear and curvilinear transects}
+\label{sec:stdTransects}
+
+The mean standard deviation of snow depth measurements collected at each location within various transects was found by calculating the standard deviation of the three to four measurements made by each observer at each measurement location (Table \ref{tab:std_reproduce}. The mean of these standard deviations for each grouping (Table \ref{tab:std_reproduce}) represents the variability in snow depth for the sampling locations. It can be used to evaluate the representativeness of the mean snow depth values that were used in the analysis at larger scales.
+
+The overall standard deviation of all measurements was calculated by taking all the depth measurements within a subset of the data and then calculating the standard deviation (Table \ref{tab:std_measure}). The overall standard deviation represents the variability in the depth field. 
+
+The mean standard deviation varies between glaciers, transects, and observers but  generally, the reproducibility of depth measurement is on the order of centimetres (10$^0$). The overall standard deviation of measurements over the study area is on the order of 10$^1$. Therefore, the standard deviation of a snow depth measurement is small compared to the standard deviation of all snow depth measurements. When expressed as a percentage of the mean, the overall standard deviation (Table \ref{tab:std_measure}) is also larger than that of the mean standard deviation (Table \ref{tab:std_reproduce}). This shows that variability at the point scale (a single measurement location) is an order of magnitude smaller than the variability of the depth field for the length of a transect, so the use of the mean snow depth at each measurement location is a valid value to carry forward in the analysis. 
+
+Variability in snow depth differs considerably between glaciers (Figure \ref{fig:box_depth}). Both the range and mean depth are largest for Glacier 4 and smallest for Glacier 13. Glacier 13 has the most outliers (\textgreater 1.5 $\times$ inner quartile range). The standard deviation of all measurement taken on a glacier (Table \ref{tab:std_measure}) is lowest for Glacier 13 and highest for Glacier 2, with the standard deviation of Glacier 4 being close to that of Glacier 2. 
+
+
+\begin{wrapfigure}[22]{l}{0.7\textwidth} 
+\centering
+	\includegraphics[width = 0.7\textwidth]{box_depth.png}\\
+	\caption{Variability in all snow depth measurements taken at each glacier. Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$).}
+	\label{fig:box_depth}
+\end{wrapfigure}
+
+The standard deviation as a function of binned elevation show that the standard deviation decreases with elevation on both Glacier 2 and 13 but it increases with elevation on Glacier 4 (Figure \ref{fig:std_snowdepth_binned}). The regression of elevation and standard deviation as percent of the mean is strong for Glacier 2 (R$^2$ = 0.79) and weak for Glacier 13 (R$^2$ = 0.38) and Glacier 4 (R$^2$ = 0.12). Therefore, the variability is higher closer to the terminus of the Glacier 2 and there is no significant trend on Glacier 4 and 13. However, there are comparatively fewer depth measurements taken at higher elevations, which may skew the trend of higher variability close to the terminus. 
+
+%% Std of reproducibility
+\begin{table}[h]
+\footnotesize
+\centering
+\caption{Mean standard deviation (cm) of snow depth measurements for the entire glacier (Overall Glacier), different transects (Overall Transect), and each observer. Standard deviation as a percent of the mean snow depth is shown in brackets. \transectAbb}
+\label{tab:std_reproduce}
+\begin{tabular}{cccccccc}
+ &  &  &  & \multicolumn{4}{c}{\textbf{Observer}} \\
+\multirow{-2}{*}{} & \multirow{-2}{*}{\textbf{Transect}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Overall \\ Glacier\end{tabular}}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Overall \\ Transect\end{tabular}}} & AP & GF & CA & AC \\ \hline \hline
+  
+  & LH &   & 5.1 (3\%)& 4.8  (3\%)& --- & 8.5 (5\%) & 2.0 (1\%) \\
+  
+  & LC &   & 4.7  (3\%)& 4.3  (3\%)& --- & 8.2  (5\%)& 1.7  (1\%)\\
+  
+  & LM &   & 3.7  (2\%)& --- & 4.7  (3\%)& 4.6  (2\%)& 1.9  (1\%)\\
+  
+  & UH &   & 2.6   (1\%)& 3.4   (1\%)& 2.2   (1\%)& --- & 2.3   (1\%)\\
+  
+  & UC &   & 1.9   (1\%)& 1.9   (2\%)& 2.3   (1\%)& --- & 1.5  (1\%) \\
+  
+  & UM &   & 1.9   (1\%)& --- & 1.7   (1\%)& 2.0 (1\%) & 2.0 (1\%)\\
+  
+\multirow{-7}{*}{ Glacier 4} & UT & \multirow{-7}{*}{ 3.5 (2\%)} & 3.9 (2\%)& 3.7 (2\%) & --- & 2.4 (1\%)& 5.6 (3\%)\\ \hline
+ & LH &  & 5.4 (11\%)& 4.8 (9\%)& --- & 6.1 (13\%)& --- \\ 
+ & LC &  & 5.0 (12\%)& 3.9 (11\%)& --- & 6.2 (15\%)& --- \\
+ & LM &  & 6.5 (17\%)& --- & 6.8 (16\%)& 6.5 (18\%)& 6.0 (16\%)\\
+ & UH &  & 4.1 (7\%)& 3.5 (5\%)& 4.4 (7\%)& 4.5 (9\%)& --- \\
+ & UC &  & 7.0 (4\%)& 5.5 (3\%)& 7.0 (4\%)& 8.7 (4\%)& --- \\
+ & UM &  & 4.2 (4\%)& 3.2 (3\%)& 5.2 (4\%)& 4.1 (4\%)& --- \\
+ & UT &  & 5.6 (10\%)& 3.2 (6\%)& --- & 8.2 (13\%)& --- \\
+\multirow{-8}{*}{Glacier 2} & BT & \multirow{-8}{*}{5.1 (7\%)} & 2.2 (2\%)& 2.2 (2\%)& --- & 3.0 (2\%)& 1.5 (1\%) \\ \hline
+  
+  & LH &   & 3.8 (10\%)& 3.1 (6\%)& 4.1 (12\%) & 4.0 (13\%)& --- \\ 
+  
+  & LC &   & 4.5 (8\%)& 2.9 (6\%)& 4.8 (9\%)& 5.8 (8\%)& --- \\
+  
+  & LM &   & 6.6 (13\%)& 4.6 (10\%)& 7.7 (16\%)& 7.6 (14\%)& --- \\
+  
+  & UH &   & 3.5 (4\%)& 3.4 (4\%)& 3.6 (5\%)& 3.4 (5\%)& --- \\
+  
+  & UC &   & 3.8 (4\%)& 3.4 (4\%)& 4.0 (4\%)& 4.0 (4\%)& --- \\
+  
+  & UM &   & 4.8 (6\%)& 4.4 (5\%)& 5.8 (7\%) & 4.4 (5\%) & --- \\
+  
+\multirow{-7}{*}{ Glacier 13} & UT & \multirow{-7}{*}{ 4.2 (6\%)} & 4.1 (6\%)& 2.7 (4\%)& 4.8 (6\%)& 4.6 (7\%)& ---
+\end{tabular}
+\end{table}
+
+
+%% Std of measurement
+\begin{table}[]
+\footnotesize
+\centering
+\caption{Overall standard deviation (cm) of snow depth measurements for the entire glacier (Overall Glacier), different transects (Overall Transect), and each observer. Standard deviation as a percent of the mean snow depth is shown in brackets. \transectAbb The standard deviation of all transect data was 64.6 cm.}
+\label{tab:std_measure}
+\begin{tabular}{cccccccc}
+ &  &  &  & \multicolumn{4}{l}{\textbf{Person}} \\
+\multirow{-2}{*}{\textbf{Glacier}} & \multirow{-2}{*}{\textbf{Pattern}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Overall \\ Glacier\end{tabular}}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Overall \\ Pattern\end{tabular}}} & AP & GF & CA & AC \\ \hline \hline
+  
+  & LH &   & 51.3  (28\%)& 51.4  (29\%) & --- & 54.8  (32\%) & 45.7  (24\%) \\
+  
+  & LC &   & 45.2  (26\%) & 50.5  (30\%) & --- & 44.1  (25\%) & 39.8  (23\%) \\
+  
+  & LM &   & 27.2  (15\%) & --- & 21.6   (11\%)& 36.3  (19\%) & 22.5  (12\%) \\
+  
+  & UH &   & 48.5  (28\%) & 48.6  (28\%) & 51.2   (29\%)& --- & 45.8  (27\%) \\
+  
+  & UC &   & 44.2  (23\%) & 44.8  (23\%) & 38.2   (21\%)& --- & 48.2   (26\%)\\
+  
+  & UM &   & 22.5  (13\%) & --- & 24.1  (14\%) & 20.7  (12\%) & 22.7  (13\%) \\
+  
+\multirow{-7}{*}{ Glacier 4} & UT & \multirow{-7}{*}{ 44.7  (25\%)} & 26.0   (13\%)& 25.1  (13\%) & --- & 25.1  (13\%) & 27.7  (14\%) \\ \hline
+ & LH &  & 29.9  (67\%) & 29.2  (63\%) & --- & 30.6  (71\%) & --- \\
+ & LC &  & 29.3  (61\%) & 28.6  (63\%) & --- & 30.1  (59\%) & --- \\
+ & LM &  & 18.4  (43\%) & --- & 20.8   (45\%)& 15.5  (39\%) & 18.1  (43\%) \\
+ & UH &  & 42.0  (39\%) & 39.1  (37\%) & 41.6  (38\%) & 45.6  (42\%) & --- \\
+ & UC &  & 55.0   (52\%)& 55.3  (53\%) & 55.2  (52\%) & 56.1  (52\%) & --- \\
+ & UM &  & 35.1  (29\%) & 38.4  (33\%) & 34.5  (29\%) & 31.8  (27\%) & --- \\
+ & UT &  & 36.4  (61\%) & 27.3 (51\%) & --- & 43.9  (70\%) & --- \\
+\multirow{-8}{*}{Glacier 2} & BT & \multirow{-8}{*}{49.3 (62\%)} & 20.8 (14\%)& 13.8 (10\%)& --- & 13.7 (9\%) & 30.4 (22\%) \\ \hline
+  
+  & LH &   & 27.4  (56\%) & 25.7 (53\%) & 27.5 (58\%) & 28.9 (57\%) & --- \\
+  
+  & LC &   & 27.1  (59\%) & 25.8 (57\%) & 21.4 (52\%) & 32.6 (68\%) & --- \\
+  
+  & LM &   & 24.9  (52\%) & 22.8 (60\%) & 27.5 (56\%) & 23.6 (42\%) & --- \\
+  
+  & UH &   & 21.0  (25\%) & 21.1 (25\%) & 21.4 (25\%) & 20.4 (24\%) & --- \\
+  
+  & UC &   & 16.3  (18\%) & 17.6 (21\%) & 14.5 (16\%) & 16.6 (18\%) & --- \\
+  
+  & UM &   & 29.4  34(\%) & 26.6 (32\%) & 33.4 (39\%) & 28.0 (33\%) & --- \\
+  
+\multirow{-7}{*}{ Glacier 13} & UT & \multirow{-7}{*}{ 30.5 (46\%)} & 32.7 (50\%) & 21.5 (31\%) & 44.4 (63\%) & 26.4 (42\%) & ---
+\end{tabular}
+\end{table}
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{binned_std.png}
+        \caption{}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{binned_std_percent.png}
+        \caption{}
+    \end{subfigure}
+
+    \caption{Standard deviation (a) and standard deviation as percent of mean (b) of all snow depth measurements binned in elevation bands of 10 m. Bars at the top of the figure indicate the elevation ranges of the three study glaciers. The regression of elevation and standard deviation of snow depth is shown as a coloured line within the data.}
+    \label{fig:std_snowdepth_binned}
+\end{figure}
+
+\subsection{Standard deviation of SWE in DEM cell}
+
+The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas that correspond to a single DEM cell containing multiple SWE measurement locations. To extrapolate SWE over the glacier it is valuable to have one value of SWE for each DEM grid cell. Therefore, the mean SWE was used for a DEM cell with multiple observations. Using the mean value is supported by the small standard deviation of SWE within one DEM cell for all glaciers (Figure \ref{fig:DEMcellSTD}). The mean standard deviation is 0.03 m w.e., which is low compared to the variability of SWE over the entire glacier (Section \ref{sec:stdTransects}). Extreme standard deviation values result from highly variable locations such as transects across deep supra glacier streams (Glacier 13) or on debris covered ice or ice-cored moraines (Glacier 4). However, the mean standard deviation is small so future analyses use the mean SWE value within one DEM cell. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{DEMcellSTD.png}\\
+	\caption{Boxplot of the standard deviation of measured SWE in one DEM grid cell. \boxMatlab}
+	\label{fig:DEMcellSTD}
+\end{figure}
 
 %%%
 
