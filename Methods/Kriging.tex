@@ -184,12 +184,7 @@ For all glaciers, the topographic regression results in the lowest mean variance
 
 The choice of density interpolation method generally does not affect the mean SWE value and their relative magnitudes (Figure \ref{fig:InterpMethod_allopts}). The main exception to this is that of kriging interpolation on Glacier 2, where a difference of almost 0.25 m w.e. exists between F3 and F4. The F3 option uses a linear regression between Federal Sampler-derived density and elevation to interpolate density values. There is a positive relationship (Figure ??), which means that the elevation gradient in SWE is increased, resulting in higher SWE point measurements in the accumulation area. This is turn increases the kriging estimate for the accumulation area beyond these points and raises the mean SWE. Again, it is clear that kriging is sensitive to individual measurement in sparsely sampled areas. It is surprising that the R$^2$ value for both these options is similar and high (Figure \ref{fig:InterpMethod_alloptsR2}), indicating that both estimates of winter balance are equally good. 
 
-Regression kriging and kriging outperform topographic regression in prediciting SWE at measurement locations (Figure \ref{fig:InterpMethod_alloptsR2}). The correlation coefficient is similar for all density options on Glaciers 2 and 13. In all cases, R$^2$ values are highest for kriging and slightly lower for regression kriging (c.f. S3 on Glacier 13). However, the relative magnitude of R$^2$ values on Glacier 4 differs between kriging and regression kriging when different density options are chosen.  ??Reason??
-
-topo vs kriging
-topo -> spatial and temporal transferability (minimal/reference data needed), physically based so extrapolation less crazy)
-kriging -> temporal transferability but not spatial, sensitive to sparsely sampled areas (our case, we have locally density and globally spare so lar extrapolation problems)
-
+Regression kriging and kriging outperform topographic regression in predicting SWE at measurement locations (Figure \ref{fig:InterpMethod_alloptsR2}). The correlation coefficient is similar for all density options on Glaciers 2 and 13. In all cases, R$^2$ values are highest for kriging and slightly lower for regression kriging (c.f. S3 on Glacier 13). However, the relative magnitude of R$^2$ values on Glacier 4 differs between kriging and regression kriging when different density options are chosen.  ??Reason??
 
 \begin{landscape}
 \begin{figure}
@@ -204,6 +199,12 @@ kriging -> temporal transferability but not spatial, sensitive to sparsely sampl
 	\label{fig:InterpMethod_alloptsR2}
 \end{figure}
 \end{landscape}
+
+The two interpolation end-members, topographic regression and kriging, produce distributed fields that have different applications. Topographic regressions are, theoretically, both spatially and temporally transferable. If the field is relatively stationary then the topographic regression model can be applied to the same location at other times and/or at other locations. After the regression model is calculated, only a few measurements are needed to scale the regression values higher or lower to obtain a distributed field. Additionally, topographic parameters are chosen as proxies for physical processes so if the regression coefficients are physically realistic, extrapolation of the regression is likely to produce more realistic fields. Topographic regressions are also less sensitive to data outliers. When extreme values are present in a well sampled area, the regression will not significantly be affected, resulting in more realistic extrapolation. The main limitation of topographic regressions is that the field must be well sampled to initiate the model and the model is highly dependent on the accuracy and resolution of the DEM. 
+
+Kriging is, in theory, temporally transferable but not spatially transferable. Once kriging weights are calculated, they can be applied to the same area where the mean value is estimated with a few observations. Kriging weights cannot be applied to another location. A benefit of kriging is that the resulting field is not limited to the accuracy, resolution and availability of external data (i.e. DEM). Therefore, this interpolation technique is valuable in areas with no topographic data or at scales less than the resolution of available DEMs. Another benefit of kriging is that confidence intervals can easily be calculated for the field of interest, providing concrete bounds on the distribution of values. However, kriging often produces poor results when extrapolating data. The distributed field is highly sensitive to individual measurements with extreme values in sparsely sampled areas, so extrapolating past these points can result in unrealistic values and large confidence intervals (i.e. accumulation area of Glacier 2). Problems with extrapolation are especially prevalent when observations are locally dense but globally sparse.
+
+
 %%%%%%%%%%%%%%%%%%%%%
 \bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 \bibliographystyle{igs}

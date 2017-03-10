@@ -322,6 +322,11 @@ W~Harrison.
   catchment in central {O}tago}.
 \newblock {\em Journal of Hydrology (NZ)}, 25(1):1--17, 1986.
 
+\bibitem{Hengl2007}
+Tomislav Hengl, Gerard~B.M. Heuvelink, and David~G. Rossiter.
+\newblock {About regression-kriging: From equations to case studies}.
+\newblock {\em Computers \& Geosciences}, 33(10):1301--1315, 2007.
+
 \bibitem{Herron1980}
 Michael~M Herron and Chester~C {Langway Jr}.
 \newblock {Firn densification: an empirical model}.
@@ -367,6 +372,13 @@ John~W Kidson and Craig~S Thompson.
   for estimating local climate variations}.
 \newblock {\em Journal of Climate}, 11(4):735--753, 1998.
 
+\bibitem{Knotters1995}
+M.~Knotters, D.J. Brus, and J.H.~Oude Voshaar.
+\newblock {A comparison of kriging, co-kriging and kriging combined with
+  regression for spatial interpolation of horizon depth with censored
+  observations}.
+\newblock {\em Geoderma}, 67(3):227--246, 1995.
+
 \bibitem{Kohavi1995}
 Ron Kohavi et~al.
 \newblock {A study of cross-validation and bootstrap for accuracy estimation
@@ -405,6 +417,18 @@ M~Lehning, H~L{\"o}we, M~Ryser, and N~Raderschall.
 \newblock {Inhomogeneous precipitation distribution and snow transport in steep
   terrain}.
 \newblock {\em Water Resources Research}, 44(7), 2008.
+
+\bibitem{Li2008}
+Jin Li and Andrew~D Heap.
+\newblock {A review of spatial interpolation methods for environmental
+  scientists No. Record 2008/23}.
+\newblock {\em Geoscience Australia}, 2008.
+
+\bibitem{Li2014}
+Jin Li and Andrew~D. Heap.
+\newblock {Spatial interpolation methods applied in the environmental sciences:
+  A review}.
+\newblock {\em Environmental Modelling \& Software}, 53:173--189, 2014.
 
 \bibitem{Liston2006}
 Glen~E Liston and Kelly Elder.
@@ -598,6 +622,12 @@ Jes{\'u}s Revuelto, Juan~I L{\'o}pez-Moreno, C{\'e}sar Azor{\'i}n-Molina, and
   the central Spanish Pyrenees: {I}ntra-and inter-annual persistence}.
 \newblock 2014.
 
+\bibitem{Roustant2012}
+Olivier Roustant, David Ginsbourger, and Yves Deville.
+\newblock {DiceKriging, DiceOptim: Two R packages for the analysis of computer
+  experiments by kriging-based metamodeling and optimization}.
+\newblock {\em Journal of Statistical Software}, 21:1--55, December 2012.
+
 \bibitem{Ryan2008}
 Wendy~A Ryan, Nolan~J Doesken, and Steven~R Fassnacht.
 \newblock {Evaluation of ultrasonic snow depth sensors for {US} snow
@@ -704,6 +734,12 @@ J~van Pelt, J~Ward, Rickard Pettersson, Veijo~A Pohjola, Sergey Marchenko,
   Nordenski{\"o}ldbreen, Svalbard}.
 \newblock {\em Journal of Geophysical Research: Earth Surface},
   119(4):816--835, 2014.
+
+\bibitem{Wackernagel2003}
+Hans Wackernagel.
+\newblock {\em {Multivariate geostatistics: an introduction with
+  applications}}.
+\newblock Springer Science \& Business Media, 2013.
 
 \bibitem{Wake2002}
 Cameron~P Wake, Kaplan Yalcin, and Niels~S Gundestrup.

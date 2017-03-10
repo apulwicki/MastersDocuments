@@ -4,7 +4,7 @@
 \contentsline {chapter}{Acknowledgements}{v}{section*.7}
 \contentsline {chapter}{Table of Contents}{vi}{section*.9}
 \contentsline {chapter}{List of Tables}{ix}{section*.10}
-\contentsline {chapter}{List of Figures}{xii}{section*.11}
+\contentsline {chapter}{List of Figures}{xiii}{section*.11}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Accumulation variability}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Topographic scales}{2}{subsection.1.1.1}
@@ -75,22 +75,32 @@
 \contentsline {subsubsection}{Methods}{110}{section*.124}
 \contentsline {subsubsection}{Results and Discussion}{111}{section*.125}
 \contentsline {subsection}{\numberline {4.2.6}MLR and BMA comparison}{119}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Summary}{121}{section.4.3}
-\contentsline {chapter}{Bibliography}{122}{section*.141}
-\contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{132}{Appendix.a.A}
-\contentsline {chapter}{Appendix \numberline {B}Field Maps}{134}{Appendix.a.B}
-\contentsline {chapter}{Appendix \numberline {C}Data Processing Scripts}{147}{Appendix.a.C}
-\contentsline {section}{\numberline {C.1}Snow depth measured with graduated avalanche probe}{147}{section.a.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Linear and curvilinear transect surveys}{147}{subsection.a.C.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Zigzag surveys}{148}{subsection.a.C.1.2}
-\contentsline {section}{\numberline {C.2}Snow density}{149}{section.a.C.2}
-\contentsline {section}{\numberline {C.3}Snow water equivalent (SWE)}{150}{section.a.C.3}
-\contentsline {chapter}{Appendix \numberline {D}Variability of data at various scales}{152}{Appendix.a.D}
-\contentsline {section}{\numberline {D.1}Point Scale}{152}{section.a.D.1}
-\contentsline {subsection}{\numberline {D.1.1}Data normality}{152}{subsection.a.D.1.1}
-\contentsline {subsection}{\numberline {D.1.2}Observer differences}{152}{subsection.a.D.1.2}
-\contentsline {subsection}{\numberline {D.1.3}Standard deviation of snow depth along linear and curvilinear transects}{153}{subsection.a.D.1.3}
-\contentsline {subsection}{\numberline {D.1.4}Standard deviation of SWE in DEM cell}{154}{subsection.a.D.1.4}
-\contentsline {chapter}{Appendix \numberline {E}Topographic parameters from QGIS to Matlab}{158}{Appendix.a.E}
-\contentsline {chapter}{Appendix \numberline {F}MLR software}{159}{Appendix.a.F}
-\contentsline {chapter}{Appendix \numberline {G}BMA software}{161}{Appendix.a.G}
+\contentsline {section}{\numberline {4.3}Kriging}{121}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Background}{121}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Methods}{122}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Results}{122}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Regression kriging}{125}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Background}{125}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Methods}{126}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Results}{126}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Comparison of interpolation methods}{128}{section.4.5}
+\contentsline {section}{\numberline {4.6}Summary}{132}{section.4.6}
+\contentsline {chapter}{Bibliography}{134}{section*.152}
+\contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{145}{Appendix.a.A}
+\contentsline {chapter}{Appendix \numberline {B}Field Maps}{147}{Appendix.a.B}
+\contentsline {chapter}{Appendix \numberline {C}Data Processing Scripts}{160}{Appendix.a.C}
+\contentsline {section}{\numberline {C.1}Snow depth measured with graduated avalanche probe}{160}{section.a.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Linear and curvilinear transect surveys}{160}{subsection.a.C.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Zigzag surveys}{161}{subsection.a.C.1.2}
+\contentsline {section}{\numberline {C.2}Snow density}{162}{section.a.C.2}
+\contentsline {section}{\numberline {C.3}Snow water equivalent (SWE)}{163}{section.a.C.3}
+\contentsline {chapter}{Appendix \numberline {D}Variability of data at various scales}{165}{Appendix.a.D}
+\contentsline {section}{\numberline {D.1}Point Scale}{165}{section.a.D.1}
+\contentsline {subsection}{\numberline {D.1.1}Data normality}{165}{subsection.a.D.1.1}
+\contentsline {subsection}{\numberline {D.1.2}Observer differences}{165}{subsection.a.D.1.2}
+\contentsline {subsection}{\numberline {D.1.3}Standard deviation of snow depth along linear and curvilinear transects}{166}{subsection.a.D.1.3}
+\contentsline {subsection}{\numberline {D.1.4}Standard deviation of SWE in DEM cell}{167}{subsection.a.D.1.4}
+\contentsline {chapter}{Appendix \numberline {E}Topographic parameters from QGIS to Matlab}{171}{Appendix.a.E}
+\contentsline {chapter}{Appendix \numberline {F}MLR software}{172}{Appendix.a.F}
+\contentsline {chapter}{Appendix \numberline {G}BMA software}{174}{Appendix.a.G}
+\contentsline {section}{\numberline {G.1}APPENDIX - Kriging software}{175}{section.a.G.1}
