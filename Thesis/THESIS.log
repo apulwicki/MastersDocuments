@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  9 MAR 2017 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  13 MAR 2017 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -749,7 +749,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 66--66
  [8] (./THESIS.lot [9
 
 ]
-Overfull \hbox (3.3431pt too wide) in paragraph at lines 15--15
+Overfull \hbox (3.3431pt too wide) in paragraph at lines 14--14
  [][] [][]\T1/lmr/m/n/10.95 Pearson cor-re-la-tion co-ef-fi-cients be-tween to-
 po-graphic pa-ram-e-ters at sam- 
  []
@@ -785,13 +785,13 @@ e-ment lo-ca-tions.Density
  []
 
 
-Overfull \hbox (1.04364pt too wide) in paragraph at lines 52--52
+Overfull \hbox (1.04364pt too wide) in paragraph at lines 51--51
  [][] [][]\T1/lmr/m/n/10.95 Merged DEM of the Don-jek range from two cor-rected
  SPOT-5 DEMs, 
  []
 
 [17]
-Overfull \hbox (0.7599pt too wide) in paragraph at lines 60--60
+Overfull \hbox (0.7599pt too wide) in paragraph at lines 59--59
  \T1/lmr/m/n/10.95 re-gres-sions for the study glaciers. Val-ues are de-rived f
 rom a smoothed 
  []
@@ -1296,15 +1296,14 @@ File: SWEmap_opt9.png Graphic file (type png)
 Package pdftex.def Info: SWEmap_opt9.png used on input line 1113.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [70 <./SWEmap_opt8.png (PNG copy)> <./SWEmap_opt9.png (PNG copy)>]
-Chapter 4.
 <8029_original2.jpeg, id=2167, 3307.35625pt x 2489.3pt>
 File: 8029_original2.jpeg Graphic file (type jpg)
 
 <use 8029_original2.jpeg>
-Package pdftex.def Info: 8029_original2.jpeg used on input line 1138.
+Package pdftex.def Info: 8029_original2.jpeg used on input line 1133.
 (pdftex.def)             Requested size: 208.13574pt x 156.64441pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1138--1139
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1133--1134
 [][] 
  []
 
@@ -1312,30 +1311,28 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 1138--1139
 File: 7044_original.jpeg Graphic file (type jpg)
 
 <use 7044_original.jpeg>
-Package pdftex.def Info: 7044_original.jpeg used on input line 1144.
+Package pdftex.def Info: 7044_original.jpeg used on input line 1139.
 (pdftex.def)             Requested size: 208.13574pt x 156.65305pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1144--1145
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1139--1140
 [][] 
  []
 
-[71
-
-] <Landsat_2007.jpeg, id=2174, 3520.15125pt x 1095.09125pt>
+<Landsat_2007.jpeg, id=2169, 3520.15125pt x 1095.09125pt>
 File: Landsat_2007.jpeg Graphic file (type jpg)
 
 <use Landsat_2007.jpeg>
-Package pdftex.def Info: Landsat_2007.jpeg used on input line 1154.
+Package pdftex.def Info: Landsat_2007.jpeg used on input line 1149.
 (pdftex.def)             Requested size: 433.62001pt x 134.88089pt.
-
+ [71 <./8029_original2.jpeg> <./7044_original.jpeg>]
 <diff_7044-8029_original.jpeg, id=2178, 3307.35625pt x 2489.3pt>
 File: diff_7044-8029_original.jpeg Graphic file (type jpg)
 
 <use diff_7044-8029_original.jpeg>
-Package pdftex.def Info: diff_7044-8029_original.jpeg used on input line 1164.
+Package pdftex.def Info: diff_7044-8029_original.jpeg used on input line 1159.
 (pdftex.def)             Requested size: 208.13574pt x 156.64441pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1164--1165
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1159--1160
 [][] 
  []
 
@@ -1343,93 +1340,99 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 1164--1165
 File: diff_7044-8029_shift.jpeg Graphic file (type jpg)
 
 <use diff_7044-8029_shift.jpeg>
-Package pdftex.def Info: diff_7044-8029_shift.jpeg used on input line 1170.
+Package pdftex.def Info: diff_7044-8029_shift.jpeg used on input line 1165.
 (pdftex.def)             Requested size: 208.13574pt x 156.64441pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1170--1171
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1165--1166
 [][] 
  []
 
-[72 <./8029_original2.jpeg> <./7044_original.jpeg> <./Landsat_2007.jpeg>]
-<DEMcorrection_hist.png, id=2184, 527.72156pt x 505.89pt>
+<DEMcorrection_hist.png, id=2180, 527.72156pt x 505.89pt>
 File: DEMcorrection_hist.png Graphic file (type png)
 
 <use DEMcorrection_hist.png>
-Package pdftex.def Info: DEMcorrection_hist.png used on input line 1181.
+Package pdftex.def Info: DEMcorrection_hist.png used on input line 1176.
 (pdftex.def)             Requested size: 260.17465pt x 249.40895pt.
+ [72 <./Landsat_2007.jpeg> <./diff_7044-8029_original.jpeg> <./diff_7044-8029_s
+hift.jpeg>]
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+1187.
 
 <mergeLine.jpeg, id=2187, 796.42023pt x 599.4301pt>
 File: mergeLine.jpeg Graphic file (type jpg)
  <use mergeLine.jpeg>
-Package pdftex.def Info: mergeLine.jpeg used on input line 1194.
+Package pdftex.def Info: mergeLine.jpeg used on input line 1189.
 (pdftex.def)             Requested size: 260.17465pt x 195.81859pt.
 
-[73 <./diff_7044-8029_original.jpeg> <./diff_7044-8029_shift.jpeg> <./DEMcorrec
-tion_hist.png (PNG copy)>]
-Overfull \hbox (0.62025pt too wide) in paragraph at lines 1201--1202
-[][]\T1/lmr/m/n/10.95 Merging of the cor-rected DEMs
+[73 <./DEMcorrection_hist.png (PNG copy)>]
+Underfull \hbox (badness 1173) in paragraph at lines 1198--1199
+\T1/lmr/m/n/10.95 Fig-ure 4. De-spite the cor-rec-
  []
 
 <mergedDEM2.jpeg, id=2200, 3307.35625pt x 2489.3pt>
 File: mergedDEM2.jpeg Graphic file (type jpg)
  <use mergedDEM2.jpeg>
-Package pdftex.def Info: mergedDEM2.jpeg used on input line 1209.
+Package pdftex.def Info: mergedDEM2.jpeg used on input line 1204.
 (pdftex.def)             Requested size: 518.489pt x 390.25536pt.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 1219
-.
 
+Overfull \hbox (18.13113pt too wide) in paragraph at lines 1209--1209
+[]\T1/lmr/bx/n/12 Calculating to-po-graphic
+ []
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 1214
+.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [74 <./mergeLine.jpeg>] [75 <./mergedDEM2.jpeg>] <DEMGrid.png, id=2224, 537.0
+) [74 <./mergeLine.jpeg>] [75 <./mergedDEM2.jpeg>] <DEMGrid.png, id=2227, 537.0
 0626pt x 537.00626pt>
 File: DEMGrid.png Graphic file (type png)
 
 <use DEMGrid.png>
-Package pdftex.def Info: DEMGrid.png used on input line 1246.
+Package pdftex.def Info: DEMGrid.png used on input line 1241.
 (pdftex.def)             Requested size: 130.08733pt x 130.08046pt.
+ [76 <./DEMGrid.png>] [77]
+<Sx_infographic.jpeg, id=2267, 1421.31pt x 963.6pt>
+File: Sx_infographic.jpeg Graphic file (type jpg)
+ <use Sx_infographic.jpeg>
+Package pdftex.def Info: Sx_infographic.jpeg used on input line 1291.
+(pdftex.def)             Requested size: 260.17465pt x 176.38118pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[76] [77 <./DEMGrid.png>] [78]
-<Sx_infographic.jpeg, id=2275, 1421.31pt x 963.6pt>
-File: Sx_infographic.jpeg Graphic file (type jpg)
- <use Sx_infographic.jpeg>
-Package pdftex.def Info: Sx_infographic.jpeg used on input line 1296.
-(pdftex.def)             Requested size: 260.17465pt x 176.38118pt.
-
-[79 <./Sx_infographic.jpeg>]
+[78] [79 <./Sx_infographic.jpeg>]
 <G13curvatureSmoothing.jpeg, id=2285, 3043.37pt x 1759.57375pt>
 File: G13curvatureSmoothing.jpeg Graphic file (type jpg)
 
 <use G13curvatureSmoothing.jpeg>
-Package pdftex.def Info: G13curvatureSmoothing.jpeg used on input line 1325.
+Package pdftex.def Info: G13curvatureSmoothing.jpeg used on input line 1320.
 (pdftex.def)             Requested size: 303.53267pt x 175.4844pt.
  [80 <./G13curvatureSmoothing.jpeg>] [81]
 [82] [83]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1392.
+(Font)              <10> on input line 1387.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1392.
+(Font)              <7> on input line 1387.
  [84] [85] <Map_elevation.png, id=2338, 939.51pt x 433.62pt>
 File: Map_elevation.png Graphic file (type png)
 
 <use Map_elevation.png>
-Package pdftex.def Info: Map_elevation.png used on input line 1422.
+Package pdftex.def Info: Map_elevation.png used on input line 1417.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
 <SampledRangeTopo_elevation.png, id=2339, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_elevation.png Graphic file (type png)
 
 <use SampledRangeTopo_elevation.png>
-Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 1428
+Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 1423
 .
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
 <Map_centreD.png, id=2340, 939.51pt x 433.62pt>
 File: Map_centreD.png Graphic file (type png)
  <use Map_centreD.png>
-Package pdftex.def Info: Map_centreD.png used on input line 1435.
+Package pdftex.def Info: Map_centreD.png used on input line 1430.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [86 <./Map_elevation.png (PNG copy)> <./SampledRangeTopo_elevation.png (PNG co
 py)>]
@@ -1437,13 +1440,13 @@ py)>]
 File: SampledRangeTopo_centreD.png Graphic file (type png)
 
 <use SampledRangeTopo_centreD.png>
-Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 1441.
+Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 1436.
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
 <Map_aspect.png, id=2346, 939.51pt x 433.62pt>
 File: Map_aspect.png Graphic file (type png)
  <use Map_aspect.png>
-Package pdftex.def Info: Map_aspect.png used on input line 1448.
+Package pdftex.def Info: Map_aspect.png used on input line 1443.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [87 <./Map_centreD.png (PNG copy)> <./SampledRangeTopo_centreD.png (PNG copy)>
 ]
@@ -1451,26 +1454,26 @@ Package pdftex.def Info: Map_aspect.png used on input line 1448.
 File: SampledRangeTopo_aspect.png Graphic file (type png)
 
 <use SampledRangeTopo_aspect.png>
-Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 1454.
+Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 1449.
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
 <Map_slope.png, id=2352, 939.51pt x 433.62pt>
 File: Map_slope.png Graphic file (type png)
  <use Map_slope.png>
-Package pdftex.def Info: Map_slope.png used on input line 1461.
+Package pdftex.def Info: Map_slope.png used on input line 1456.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [88 <./Map_aspect.png (PNG copy)> <./SampledRangeTopo_aspect.png (PNG copy)>]
 <SampledRangeTopo_slope.png, id=2357, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_slope.png Graphic file (type png)
 
 <use SampledRangeTopo_slope.png>
-Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 1467.
+Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 1462.
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
 <Map_northness.png, id=2358, 939.51pt x 433.62pt>
 File: Map_northness.png Graphic file (type png)
  <use Map_northness.png>
-Package pdftex.def Info: Map_northness.png used on input line 1474.
+Package pdftex.def Info: Map_northness.png used on input line 1469.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
 [89 <./Map_slope.png (PNG copy)> <./SampledRangeTopo_slope.png (PNG copy)>]
@@ -1478,14 +1481,14 @@ Package pdftex.def Info: Map_northness.png used on input line 1474.
 File: SampledRangeTopo_northness.png Graphic file (type png)
 
 <use SampledRangeTopo_northness.png>
-Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 1480
+Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 1475
 .
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
 <Map_curvature.png, id=2364, 939.51pt x 433.62pt>
 File: Map_curvature.png Graphic file (type png)
  <use Map_curvature.png>
-Package pdftex.def Info: Map_curvature.png used on input line 1487.
+Package pdftex.def Info: Map_curvature.png used on input line 1482.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
 [90 <./Map_northness.png (PNG copy)> <./SampledRangeTopo_northness.png (PNG cop
@@ -1493,14 +1496,14 @@ y)>] <SampledRangeTopo_curvature.png, id=2369, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_curvature.png Graphic file (type png)
 
 <use SampledRangeTopo_curvature.png>
-Package pdftex.def Info: SampledRangeTopo_curvature.png used on input line 1493
+Package pdftex.def Info: SampledRangeTopo_curvature.png used on input line 1488
 .
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
 <Map_Sx.png, id=2370, 939.51pt x 433.62pt>
 File: Map_Sx.png Graphic file (type png)
  <use Map_Sx.png>
-Package pdftex.def Info: Map_Sx.png used on input line 1500.
+Package pdftex.def Info: Map_Sx.png used on input line 1495.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [91 <./Map_curvature.png (PNG copy)> <./SampledRangeTopo_curvature.png (PNG co
 py)>]
@@ -1508,10 +1511,13 @@ py)>]
 File: SampledRangeTopo_Sx.png Graphic file (type png)
 
 <use SampledRangeTopo_Sx.png>
-Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 1506.
+Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 1501.
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
- [92 <./Map_Sx.png (PNG copy)> <./SampledRangeTopo_Sx.png (PNG copy)>] [93] [94
-] [95] [96] [97] [98] [99]
+ [92 <./Map_Sx.png (PNG copy)> <./SampledRangeTopo_Sx.png (PNG copy)>]
+Chapter 4.
+[93
+
+] [94] [95] [96] [97] [98] [99]
 <MLRfit_opt8.png, id=2486, 867.24pt x 289.08pt>
 File: MLRfit_opt8.png Graphic file (type png)
  <use MLRfit_opt8.png>
@@ -2208,7 +2214,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2717.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2717.
 
 Package rerunfilecheck Info: File `THESIS.out' has not changed.
-(rerunfilecheck)             Checksum: 2B913641A5BF894A419F1B9C4D445D07;6615.
+(rerunfilecheck)             Checksum: BD544D90F27B7F6E1A9CF7B3478D6A21;6617.
 
 
 LaTeX Warning: There were undefined references.
@@ -2216,8 +2222,8 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  12597 strings out of 494910
- 192274 string characters out of 6179836
- 371979 words of memory out of 5000000
+ 192257 string characters out of 6179836
+ 371973 words of memory out of 5000000
  14801 multiletter control sequences out of 15000+600000
  131494 words of font info for 103 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -2242,7 +2248,7 @@ b></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type
 ic/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb>
-Output written on THESIS.pdf (199 pages, 49580465 bytes).
+Output written on THESIS.pdf (199 pages, 49580063 bytes).
 PDF statistics:
  3320 PDF objects out of 3580 (max. 8388607)
  2873 compressed objects within 29 object streams

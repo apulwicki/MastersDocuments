@@ -21,8 +21,8 @@
 \BOOKMARK [1][-]{section.1.4}{Snow distribution on glaciers}{chapter.1}% 21
 \BOOKMARK [1][-]{section.1.5}{Glaciers in the St. Elias Mountains}{chapter.1}% 22
 \BOOKMARK [1][-]{section.1.6}{Research scope}{chapter.1}% 23
-\BOOKMARK [2][-]{subsection.1.6.1}{Summary}{section.1.6}% 24
-\BOOKMARK [1][-]{section.1.7}{Thesis overview}{chapter.1}% 25
+\BOOKMARK [1][-]{section.1.7}{Summary}{chapter.1}% 24
+\BOOKMARK [1][-]{section.1.8}{Thesis overview}{chapter.1}% 25
 \BOOKMARK [0][-]{chapter.2}{Field methods and data processing}{}% 26
 \BOOKMARK [1][-]{section.2.1}{Experimental design}{chapter.2}% 27
 \BOOKMARK [2][-]{subsection.2.1.1}{Sampling Scheme and Naming System}{section.2.1}% 28
@@ -36,7 +36,7 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Snow depth measured with graduated avalanche probe}{section.2.3}% 36
 \BOOKMARK [2][-]{subsection.2.3.2}{Snow density}{section.2.3}% 37
 \BOOKMARK [2][-]{subsection.2.3.3}{Snow water equivalent \(SWE\)}{section.2.3}% 38
-\BOOKMARK [0][-]{chapter.3}{Data observations}{}% 39
+\BOOKMARK [0][-]{chapter.3}{Field and topographic data}{}% 39
 \BOOKMARK [1][-]{section.3.1}{Density Estimates}{chapter.3}% 40
 \BOOKMARK [2][-]{subsection.3.1.1}{Basic statistics}{section.3.1}% 41
 \BOOKMARK [2][-]{subsection.3.1.2}{Federal Sampler measurements and snow depth}{section.3.1}% 42
@@ -46,30 +46,30 @@
 \BOOKMARK [1][-]{section.3.2}{Linear and curvilinear transect snow depth data}{chapter.3}% 46
 \BOOKMARK [1][-]{section.3.3}{Zigzag snow depth data}{chapter.3}% 47
 \BOOKMARK [1][-]{section.3.4}{Snow water equivalent \(SWE\)}{chapter.3}% 48
-\BOOKMARK [0][-]{chapter.4}{Interpolation}{}% 49
-\BOOKMARK [1][-]{section.4.1}{Topographic parameters}{chapter.4}% 50
-\BOOKMARK [2][-]{subsection.4.1.1}{Obtaining digital elevation models \(DEMs\) for study glaciers}{section.4.1}% 51
-\BOOKMARK [2][-]{subsection.4.1.2}{Calculating topographic parameters}{section.4.1}% 52
-\BOOKMARK [2][-]{subsection.4.1.3}{DEM smoothing}{section.4.1}% 53
-\BOOKMARK [2][-]{subsection.4.1.4}{Parameter correlations}{section.4.1}% 54
-\BOOKMARK [2][-]{subsection.4.1.5}{Maps of topographic parameters and distribution of parameters sampled}{section.4.1}% 55
-\BOOKMARK [1][-]{section.4.2}{Linear Topographic Regressions}{chapter.4}% 56
-\BOOKMARK [2][-]{subsection.4.2.1}{Background}{section.4.2}% 57
-\BOOKMARK [2][-]{subsection.4.2.2}{Importance of variables in regression models}{section.4.2}% 58
-\BOOKMARK [2][-]{subsection.4.2.3}{Snow density estimation methods}{section.4.2}% 59
-\BOOKMARK [2][-]{subsection.4.2.4}{Multiple Linear Regression \(MLR\)}{section.4.2}% 60
-\BOOKMARK [2][-]{subsection.4.2.5}{Bayesian Model Averaging \(BMA\)}{section.4.2}% 61
-\BOOKMARK [2][-]{subsection.4.2.6}{MLR and BMA comparison}{section.4.2}% 62
-\BOOKMARK [1][-]{section.4.3}{Kriging}{chapter.4}% 63
-\BOOKMARK [2][-]{subsection.4.3.1}{Background}{section.4.3}% 64
-\BOOKMARK [2][-]{subsection.4.3.2}{Methods}{section.4.3}% 65
-\BOOKMARK [2][-]{subsection.4.3.3}{Results}{section.4.3}% 66
-\BOOKMARK [1][-]{section.4.4}{Regression kriging}{chapter.4}% 67
-\BOOKMARK [2][-]{subsection.4.4.1}{Background}{section.4.4}% 68
-\BOOKMARK [2][-]{subsection.4.4.2}{Methods}{section.4.4}% 69
-\BOOKMARK [2][-]{subsection.4.4.3}{Results}{section.4.4}% 70
-\BOOKMARK [1][-]{section.4.5}{Comparison of interpolation methods}{chapter.4}% 71
-\BOOKMARK [1][-]{section.4.6}{Summary}{chapter.4}% 72
+\BOOKMARK [1][-]{section.3.5}{Topographic parameters}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.5.1}{Obtaining digital elevation models \(DEMs\) for study glaciers}{section.3.5}% 50
+\BOOKMARK [2][-]{subsection.3.5.2}{Calculating topographic parameters}{section.3.5}% 51
+\BOOKMARK [2][-]{subsection.3.5.3}{DEM smoothing}{section.3.5}% 52
+\BOOKMARK [2][-]{subsection.3.5.4}{Parameter correlations}{section.3.5}% 53
+\BOOKMARK [2][-]{subsection.3.5.5}{Maps of topographic parameters and distribution of parameters sampled}{section.3.5}% 54
+\BOOKMARK [0][-]{chapter.4}{Interpolation}{}% 55
+\BOOKMARK [1][-]{section.4.1}{Linear topographic regressions}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.1.1}{Background}{section.4.1}% 57
+\BOOKMARK [2][-]{subsection.4.1.2}{Importance of variables in regression models}{section.4.1}% 58
+\BOOKMARK [2][-]{subsection.4.1.3}{Snow density estimation methods}{section.4.1}% 59
+\BOOKMARK [2][-]{subsection.4.1.4}{Multiple Linear Regression \(MLR\)}{section.4.1}% 60
+\BOOKMARK [2][-]{subsection.4.1.5}{Bayesian Model Averaging \(BMA\)}{section.4.1}% 61
+\BOOKMARK [2][-]{subsection.4.1.6}{MLR and BMA comparison}{section.4.1}% 62
+\BOOKMARK [1][-]{section.4.2}{Kriging}{chapter.4}% 63
+\BOOKMARK [2][-]{subsection.4.2.1}{Background}{section.4.2}% 64
+\BOOKMARK [2][-]{subsection.4.2.2}{Methods}{section.4.2}% 65
+\BOOKMARK [2][-]{subsection.4.2.3}{Results}{section.4.2}% 66
+\BOOKMARK [1][-]{section.4.3}{Regression kriging}{chapter.4}% 67
+\BOOKMARK [2][-]{subsection.4.3.1}{Background}{section.4.3}% 68
+\BOOKMARK [2][-]{subsection.4.3.2}{Methods}{section.4.3}% 69
+\BOOKMARK [2][-]{subsection.4.3.3}{Results}{section.4.3}% 70
+\BOOKMARK [1][-]{section.4.4}{Comparison of interpolation methods}{chapter.4}% 71
+\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}% 72
 \BOOKMARK [0][-]{section*.152}{Bibliography}{}% 73
 \BOOKMARK [0][-]{Appendix.a.A}{Appendix GPS Waypoint Creation and Upload to GPS Device}{}% 74
 \BOOKMARK [0][-]{Appendix.a.B}{Appendix Field Maps}{}% 75

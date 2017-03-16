@@ -26,8 +26,8 @@
 \contentsline {section}{\numberline {1.4}Snow distribution on glaciers}{19}{section.1.4}
 \contentsline {section}{\numberline {1.5}Glaciers in the St. Elias Mountains}{22}{section.1.5}
 \contentsline {section}{\numberline {1.6}Research scope}{25}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Summary}{27}{subsection.1.6.1}
-\contentsline {section}{\numberline {1.7}Thesis overview}{28}{section.1.7}
+\contentsline {section}{\numberline {1.7}Summary}{27}{section.1.7}
+\contentsline {section}{\numberline {1.8}Thesis overview}{28}{section.1.8}
 \contentsline {chapter}{\numberline {2}Field methods and data processing}{29}{chapter.2}
 \contentsline {section}{\numberline {2.1}Experimental design}{29}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Sampling Scheme and Naming System}{29}{subsection.2.1.1}
@@ -43,7 +43,7 @@
 \contentsline {subsubsection}{Zigzag surveys}{49}{section*.43}
 \contentsline {subsection}{\numberline {2.3.2}Snow density}{50}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Snow water equivalent (SWE)}{51}{subsection.2.3.3}
-\contentsline {chapter}{\numberline {3}Data observations}{53}{chapter.3}
+\contentsline {chapter}{\numberline {3}Field and topographic data}{53}{chapter.3}
 \contentsline {section}{\numberline {3.1}Density Estimates}{53}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Basic statistics}{53}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Federal Sampler measurements and snow depth}{53}{subsection.3.1.2}
@@ -55,36 +55,36 @@
 \contentsline {section}{\numberline {3.2}Linear and curvilinear transect snow depth data}{61}{section.3.2}
 \contentsline {section}{\numberline {3.3}Zigzag snow depth data}{62}{section.3.3}
 \contentsline {section}{\numberline {3.4}Snow water equivalent (SWE)}{64}{section.3.4}
-\contentsline {chapter}{\numberline {4}Interpolation}{71}{chapter.4}
-\contentsline {section}{\numberline {4.1}Topographic parameters}{71}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Obtaining digital elevation models (DEMs) for study glaciers}{71}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Calculating topographic parameters}{74}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}DEM smoothing}{80}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Parameter correlations}{81}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Maps of topographic parameters and distribution of parameters sampled}{81}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Linear Topographic Regressions}{92}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Background}{92}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Importance of variables in regression models}{93}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Snow density estimation methods}{94}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Multiple Linear Regression (MLR)}{95}{subsection.4.2.4}
+\contentsline {section}{\numberline {3.5}Topographic parameters}{71}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Obtaining digital elevation models (DEMs) for study glaciers}{71}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Calculating topographic parameters}{74}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}DEM smoothing}{79}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Parameter correlations}{80}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Maps of topographic parameters and distribution of parameters sampled}{81}{subsection.3.5.5}
+\contentsline {chapter}{\numberline {4}Interpolation}{93}{chapter.4}
+\contentsline {section}{\numberline {4.1}Linear topographic regressions}{93}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Background}{93}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Importance of variables in regression models}{94}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Snow density estimation methods}{94}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Multiple Linear Regression (MLR)}{95}{subsection.4.1.4}
 \contentsline {subsubsection}{Background}{95}{section*.106}
 \contentsline {subsubsection}{Methods}{96}{section*.107}
 \contentsline {subsubsection}{Results and Discussion}{96}{section*.108}
-\contentsline {subsection}{\numberline {4.2.5}Bayesian Model Averaging (BMA)}{108}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.1.5}Bayesian Model Averaging (BMA)}{108}{subsection.4.1.5}
 \contentsline {subsubsection}{Background}{108}{section*.122}
 \contentsline {subsubsection}{Methods}{110}{section*.124}
 \contentsline {subsubsection}{Results and Discussion}{111}{section*.125}
-\contentsline {subsection}{\numberline {4.2.6}MLR and BMA comparison}{119}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Kriging}{121}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Background}{121}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Methods}{122}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Results}{122}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Regression kriging}{125}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Background}{125}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Methods}{126}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Results}{126}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Comparison of interpolation methods}{128}{section.4.5}
-\contentsline {section}{\numberline {4.6}Summary}{132}{section.4.6}
+\contentsline {subsection}{\numberline {4.1.6}MLR and BMA comparison}{119}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}Kriging}{121}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Background}{121}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Methods}{122}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Results}{122}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Regression kriging}{125}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Background}{125}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Methods}{126}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Results}{126}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Comparison of interpolation methods}{128}{section.4.4}
+\contentsline {section}{\numberline {4.5}Summary}{132}{section.4.5}
 \contentsline {chapter}{Bibliography}{134}{section*.152}
 \contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{145}{Appendix.a.A}
 \contentsline {chapter}{Appendix \numberline {B}Field Maps}{147}{Appendix.a.B}

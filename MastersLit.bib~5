@@ -3008,9 +3008,11 @@
 
 @article{Li2008,
 	author = "Li, Jin and Heap, Andrew D",
+	journal = "Geoscience Australia",
+	location = "Canberra",
 	organization = "Geoscience Australia",
 	publisher = "Geoscience Australia Canberra",
-	title = "{A review of spatial interpolation methods for environmental scientists}",
+	title = "{A review of spatial interpolation methods for environmental scientists No. Record 2008/23}",
 	year = "2008"
 }
 
@@ -3059,14 +3061,57 @@
 	year = "1995"
 }
 
-@article{MacDonald2015,
-	abstract = "Gaussian process (GP) models are commonly used statistical metamodels for emulating expensive computer simulators. Fitting a GP model can be numerically unstable if any pair of design points in the input space are close together. Ranjan, Haynes, and Karsten (2011) proposed a computationally stable approach for fitting GP models to deterministic computer simulators. They used a genetic algorithm based approach that is robust but computationally intensive for maximizing the likelihood. This paper implements a slightly modified version ofthe model proposed by Ranjan et al. (2011 ) in the R package GPfit. A novel parameterization of the spatial correlation function and a clustering based multi-start gradient based optimization algorithm yield robust optimization that is typically faster than the genetic algorithm based approach. We present two examples with R codes to illustrate the usage of the main functions in GPfit . Several test functions are used for performance comparison with the popular R package mlegp . We also use GPfit for a real application, i.e., for emulating the tidal kinetic energy model for the Bay of Fundy, Nova Scotia, Canada. GPfit is free software and distributed under the General Public License and available from the Comprehensive R Archive Network.",
-	author = "MacDonald, Blake and Ranjan, Pritam and Chipman, Hugh",
+@article{Roustant2012,
+	author = "Roustant, Olivier and Ginsbourger, David and Deville, Yves",
+	hal_id = "hal-00495766",
+	hal_version = "v3",
 	journal = "Journal of Statistical Software",
-	number = "i12",
-	title = "{GPfit: An R Package for Fitting a Gaussian Process Model to Deterministic Simulator Outputs}",
-	url = "https://ideas.repec.org/a/jss/jstsof/v064i12.html",
-	volume = "64",
-	year = 2015
+	keywords = "Global Optimization; Computer Experiments; Gaussian Processes; Global Optimization.",
+	month = dec,
+	pages = "1--55",
+	pdf = "https://hal.archives-ouvertes.fr/hal-00495766/file/jss642.pdf",
+	title = "{DiceKriging, DiceOptim: Two R packages for the analysis of computer experiments by kriging-based metamodeling and optimization}",
+	url = "https://hal.archives-ouvertes.fr/hal-00495766",
+	volume = "21",
+	year = "2012"
+}
+
+@article{Lopez2013,
+	author = "L{\'o}pez-Moreno, J.I. and Fassnacht, S.R. and Heath, J.T. and Musselman, K.N. and Revuelto, J. and Latron, J. and Mor{\'a}n-Tejeda, E. and Jonas, T.",
+	doi = "10.1016/j.advwatres.2012.08.010",
+	issn = "0309-1708",
+	journal = "Advances in Water Resources",
+	keywords = "Snow depth and density; Snow water equivalent (SWE); Spatial variability; Pyrenees",
+	note = "Snow--Atmosphere Interactions and Hydrological Consequences",
+	number = "",
+	pages = "40--52",
+	title = "{Small scale spatial variability of snow density and depth over complex alpine terrain: Implications for estimating snow water equivalent}",
+	url = "http://www.sciencedirect.com/science/article/pii/S0309170812002382",
+	volume = "55",
+	year = "2013"
+}
+
+@article{Kucerova2014,
+	author = "Kucerova, Dana and Jenicek, Michal",
+	journal = "Geografie",
+	number = "3",
+	pages = "199--217",
+	publisher = "Czech Geographic Society",
+	title = "{Comparison of selected methods used for the calculation of  the snowpack spatial distribution, {Byst\v{r}ice River Basin, Czechia}}",
+	url = "http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3_s199-217_kucerova_jenicek.pdf",
+	volume = "119",
+	year = "2014"
+}
+
+@article{Carroll1995,
+	author = "Carroll, Steven S and Day, Gerald N and Cressie, Noel and Carroll, Thomas R",
+	doi = "10.1002/env.3170060204",
+	journal = "Environmetrics",
+	number = "2",
+	pages = "127--139",
+	publisher = "Wiley Online Library",
+	title = "{Spatial modelling of snow water equivalent using airborne and ground-based snow data}",
+	volume = "6",
+	year = "1995"
 }
 

@@ -8,7 +8,7 @@
 \degree{Master of Science}
 \discipline{Earth Science}
 \department{Earth Science}
-\faculty{Earth Science?}
+\faculty{Faculty of Science}
 \copyrightyear{2017}
 \semester{Summer 2017}
 \date{??}
@@ -413,7 +413,7 @@ Glacier 12             & 25.59                                   & 9.5          
 
 Mass balance models often estimate winter balance by using interpolation methods based on only a small number of observations. It is likely that these accumulation estimates are poor representations of mass balance input. The proposed work will attempt to improve how these estimates are made by determining uncertainty in SWE measurement and interpolation, identifying topographic parameters that affect snow distribution, and examining the transferability of statistical models within a mountain range. While these aspects have been investigated in mountain environments, there are few studies that look at winter balance estimates on glaciers. By examining various statistical techniques used when calculating regressions between observed accumulation and topographic parameters (e.g. linear regression versus Bayesian model averaging) as well as different methods for interpolating between measurements (e.g. kriging), a range of winter mass balance estimates can be complied. Various subsets of measured SWE can also be used in these regressions and interpolations to examine the effect of sample size and measurement location on accumulation estimates. Valuable insights into optimizing snow survey design are likely to be gained from this process. Transferability of regressions between nearby basins will also be addressed, which will aid in determining winter mass balance across mountain ranges. Examining potential impacts of mesoscale weather systems (weather typing) on mountain range snow accumulation will also contribute to improving current understanding of conditions that may affect observed snow distribution. 
 
-\subsection{Summary}
+\section{Summary}
 Snow accumulation plays a central role in alpine hydrology and has a prominent impact on glacier mass balance. In mountainous regions, accumulation is highly variable on point, hillslope, watershed, and regional scales. The contribution of accumulation to glacier mass balance is controlled mainly by the distribution of snow. Processes such as orographic lifting, preferential deposition, and wind redistribution, all arising from the interaction of atmospheric conditions and topography, strongly affect snow distribution. Statistical models have been used to relate meteorological and topographic variables to snow accumulation in order to better understand the effects of these processes. These models rely on accurate measurement of snow distribution, which can be achieved by determining SWE from snow density and depth. Results from previous studies of accumulation on glaciers have shown large spatial variability at many scales and a dependence on multiple processes that affect snow distribution. 
 
 Accumulation in the St. Elias Mountains is poorly understood, largely because the glaciers are remote. There is a need to quantify snow accumulation in this region and how it varies both between glaciers and within glacierized basins. The proposed study would be the first within the St. Elias Mountains to examine accumulation variability at the point, hillslope, watershed, and regional scale. Well-established methods will be applied to measure accumulation variability.  These measurements will be used to investigate measurement uncertainty and relevant length scales, the role of topography in determining snow distribution, optimizing winter balance measurement, and the transferability of statistical relationship as well as regional differences in accumulation across a range. This comprehensive approach to examining spatial patterns in snow distribution on glaciers will contribute to the current understanding of processes and parameters that affect winter balance variability on glaciers. 
@@ -805,7 +805,7 @@ The eight density distributions can be classified as using either snowpit-derive
 
 
 
-\chapter{Data observations}
+\chapter{Field and topographic data}
 
 %%%
 \section{Density Estimates}
@@ -1116,11 +1116,6 @@ For all density options, SWE is highest on Glacier 4 and lowest on Glacier 13. G
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%% INTERPOLATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Interpolation}
 
 %%%%
 \section{Topographic parameters}
@@ -1509,8 +1504,13 @@ Overall, the sampled topographic parameters are poor representatives of the full
 \end{figure}
 
 
+
+%%%%%% INTERPOLATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Interpolation}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Linear Topographic Regressions}
+\section{Linear topographic regressions}
 \label{sec:linearregression}
 
 \subsection{Background}
@@ -2270,6 +2270,7 @@ A linear regression between observed SWE (using various density interpolation op
 
 The study glaciers showed varied relationships between SWE and topographic parameters. Glacier 4 has low coefficient values and the modelled SWE is a poor representation of observed SWE. The most significant parameter on Glacier 4 is Sx, which is negatively correlated with SWE. The regression for Glacier 2 indicates that elevation is the strongest predictor of SWE and is able to explain a large portion of the observed variability.  A strong dependence on elevation is seen on Glacier 13 as well, although less of the observed variable could be explained by this parameter. 
 
+** Incorporate Yukon Snow Bulletin 
  
 %   BACK MATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -2697,7 +2698,7 @@ The BMA process was implemented in R, using the Bayesian model statistics (BMS) 
 	
 
 
-\section{APPENDIX - Kriging software}
+\chapter{Kriging software}
 \label{app:KrigingMethods}
 Kriging is executed using the DiceKriging package in R \citep{Roustant2012}. The author-written Matlab function \texttt{KrigingR()} moves SWE data to R and then uses DiceKriging to find the estimated kriged surface, the upper and lower confidence intervals, the cross-validated (leave-one-out) estimates of SWE, as well as parameters that describe the kriging model fit (nugget, maximum log likelihood and mean constant). Input parameters of  \texttt{KrigingR()} are the snow data (e.g. SWE values), locations of measurements, and the name of the relevant glacier. The function follows these steps:
 \begin{enumerate}
