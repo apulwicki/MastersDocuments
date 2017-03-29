@@ -567,18 +567,18 @@ In this arrangement, snow depth measurements could be taken every 10 m along a t
 \centering
 \caption{Summary information for zigzag measurements}
 \label{tab:zigzagsummary}
-\begin{tabular}{cccccl}
-\textbf{Glacier} & \textbf{Zone} & \textbf{Priority} & \textbf{Date} & \textbf{Observers} & \multicolumn{1}{c}{\textbf{Comments}}                                                                          \\ \hline
-G04              & 3             & A                 & 5 May 2016    & AP/CA              &                                                                                                                \\
-G04              & 2             & A                 & 7 May 2016    & CA/AC              &                                                                                                                \\
-G04              & 5             & B                 & 7 May 2016    & AP/GF              & \begin{tabular}[t]{@{}l@{}}Sticky layer - many points not collected\\ Snowing during measurements\end{tabular} \\ \hline
-G02              & 5             & C                 & 10 May 2016   & CA/GF              & \begin{tabular}[t]{@{}l@{}}Extra line measured\\ Vertex labelling error in GPS device \end{tabular}                                                                                   \\
-G02              & 7             & A                 & 10 May 2016   & CA/GF/AP/AC              & \begin{tabular}[t]{@{}l@{}}Channel present\\ Vertex labelling error in GPS device\end{tabular}                        \\
-G02              & 3             & B                 & 10 May 2016   & GF/AP              & Vertex labelling error in GPS device                                                                                  \\ \hline
-G13              & 7             & C                 & 14 May 2016   & AC/AP              & Vertex labelling error in GPS device                                                                                  \\
-G13              & 4             & C                 & 14 May 2016   & GF/CA              & \begin{tabular}[t]{@{}l@{}}Channel present\\ Vertex labelling error in GPS device\end{tabular}                        \\
-G13              & 3             & B                 & 15 May 2016   & GF/CA              & Vertex labelling error in GPS device                                                                                  \\
-G13              & 5             & A                 & 15 May 2016   & AP/AC              & \begin{tabular}[t]{@{}l@{}}Mushy snow that collapses\\ Vertex labelling error in GPS device\end{tabular}             
+\begin{tabular}{ccccccl}
+\textbf{Glacier} & \textbf{Zone} & \textbf{Priority} & \textbf{Date} & \textbf{Observers} & \textbf{\begin{tabular}[c]{@{}c@{}}Number of\\ Measurements\end{tabular}} & \multicolumn{1}{c}{\textbf{Comments}}                                                                          \\ \hline
+G04              & 3             & A                 & 5 May 2016    & AP/CA  &168            &                                                                                                                \\
+G04              & 2             & A                 & 7 May 2016    & CA/AC   &135           &                                                                                                                \\
+G04              & 5             & B                 & 7 May 2016    & AP/GF  &146            & \begin{tabular}[t]{@{}l@{}}Sticky layer - many points not collected\\ Snowing during measurements\end{tabular} \\ \hline
+G02              & 5             & C                 & 10 May 2016   & CA/GF   &152           & \begin{tabular}[t]{@{}l@{}}Extra line measured\\ Vertex labelling error in GPS device \end{tabular}                                                                                   \\
+G02              & 7             & A                 & 10 May 2016   & CA/GF/AP/AC   &191           & \begin{tabular}[t]{@{}l@{}}Channel present\\ Vertex labelling error in GPS device\end{tabular}                        \\
+G02              & 3             & B                 & 10 May 2016   & GF/AP   &160           & Vertex labelling error in GPS device                                                                                  \\ \hline
+G13              & 7             & C                 & 14 May 2016   & AC/AP  &167            & Vertex labelling error in GPS device                                                                                  \\
+G13              & 4             & C                 & 14 May 2016   & GF/CA   &143           & \begin{tabular}[t]{@{}l@{}}Channel present\\ Vertex labelling error in GPS device\end{tabular}                        \\
+G13              & 3             & B                 & 15 May 2016   & GF/CA    &164          & Vertex labelling error in GPS device                                                                                  \\
+G13              & 5             & A                 & 15 May 2016   & AP/AC   &157           & \begin{tabular}[t]{@{}l@{}}Mushy snow that collapses\\ Vertex labelling error in GPS device\end{tabular}             
 \end{tabular}
 \end{table}
 
@@ -596,8 +596,8 @@ G13              & 5             & A                 & 15 May 2016   & AP/AC    
 \caption{Summary information for SWE measurements with the Federal Snow Sampler}
 \label{tab:SWEsummary}
 \begin{tabular}{ccccccl}
-\textbf{Glacier}      & \textbf{Location} & \textbf{\begin{tabular}[c]{@{}c@{}}Total\\ Values\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Number \\ of Tube \\ Lengths\end{tabular}} & \textbf{Date} & \textbf{Observers} & \multicolumn{1}{c}{\textbf{Comments}}                                        \\ \hline
-\multirow{7}{*}{G04}  & Z3A               & 5                                                               & 3                                                                             & 5 May 2016    & GF/AC              &                                                                              \\
+\textbf{Glacier}      & \textbf{Location} & \textbf{\begin{tabular}[c]{@{}c@{}}Total\\ Values\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Number \\ of Tube \\ Lengths\end{tabular}} & \textbf{Date} & \textbf{Observers} & \multicolumn{1}{c}{\textbf{Comments}}  \\ \hline
+\multirow{7}{*}{G04}  & Z3A & 5    & 3 & 5 May 2016    & GF/AC   &  \\
                       & USP               & 2+2+2+3                                                         & 3                                                                             & 5 May 2016    & GF/CA              &                                                                              \\
                       & Z2A               & 3                                                               & 3                                                                             & 7 May 2016    & GF/AP              &                                                                              \\
                       & LSP               & 3+2+2+2                                                         & 3                                                                             & 7 May 2016    & GF/CA              &                                                                              \\
@@ -636,10 +636,11 @@ G13              & 5             & A                 & 15 May 2016   & AP/AC    
 
 
 \subsection{Zigzag}
+\label{sec:zigzagmethods}
 
-The zigzag sampling pattern was used to obtain many measurements within a 40 x 40 m area.  The pattern consisted of two intersecting `Z' shaped transects. Snow depth was measured with random spacing between 0.3 m and 3.0 m. 
+The zigzag sampling pattern was used to obtain many measurements within a 40 $x$ 40 m area.  The pattern consisted of two intersecting `Z' shaped transects. Snow depth was measured with random spacing between 0.3 m and 3.0 m. 
 
-Two teams of two people were used to complete each zigzag. The first team would navigate to the vertices of the zigzag using the GPS device and place wands at each vertex. Often the tracks would not be straight between two vertices so the second team would use the wands to travel between vertices in as straight a line as possible. The first person would use the avalanche probe to measure out the distance to the next measurement spot and then probe at that point (Sturm, M., 2016 personal communication). Probing protocol was exactly the same as for transect measurements (see Section \ref{sec:transects}). The first person would call out the depth to the second person, who was responsible for recording the distance between measurements and the depth at the measurement point. A field book was dedicated to zigzag measurements and each page would have the name of the vertex where measurements started, the distance from the previous measurement point and the depth at that point. The second person also had a sheet with random numbers from a uniform distribution between 0.3 and 3.0 m (generated used Matlab) and would call out these numbers in order as the distance between measurement points. While the second team was measuring snow depth, the first team took three SWE measurements with a $\sim$1 m area around the predetermined location within the zigzag area (see Section \ref{sec:SWE} for protocol). An example of a completed zigzag pattern can be seen in Figure \ref{zigzag_example} and a summary of information about completed zigzags can be seen in Table \ref{tab:zigzagsummary}.
+Two teams of two people were used to complete each zigzag. The first team would navigate to the vertices of the zigzag using the GPS device and place wands at each vertex. Often the tracks would not be straight between two vertices so the second team would use the wands to travel between vertices in as straight a line as possible. The first person would use the avalanche probe to measure out the distance to the next measurement spot and then probe at that point (Sturm, M., 2016 personal communication). Probing protocol was exactly the same as for transect measurements (see Section \ref{sec:transects}). The first person would call out the depth to the second person, who was responsible for recording the distance between measurements and the depth at the measurement point. A field book was dedicated to zigzag measurements and each page would have the name of the vertex where measurements started, the distance from the previous measurement point and the depth at that point. The second person also had a sheet with random numbers from a uniform distribution between 0.3 and 3.0 m (generated used Matlab) and would call out these numbers in order as the distance between measurement points. While the second team was measuring snow depth, the first team took three SWE measurements with a $\sim$1 m area around the predetermined location within the zigzag area (see Section \ref{sec:SWE} for protocol). An example of a completed zigzag pattern can be seen in Figure \ref{zigzag_example} and a summary of information about completed zigzags can be seen in Table \ref{tab:zigzagsummary}.  
 
 
  \subsection{Federal Snow Sampler}
@@ -1115,6 +1116,114 @@ For all density options, SWE is highest on Glacier 4 and lowest on Glacier 13. G
 	\label{fig:SWEmap_F4}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%
+\section{Variability at multiple scales}
+%%%%
+
+In an attempt to compare sources of variability in values of observed SWE, a distribution of percent variability of measurements about a local mean is plotted at multiple scales. SWE variability (var$_{\mathrm{SWE}}$) of observations ($x$), expressed as a percent of the local mean $\mu_{\mathrm{loc}}$ is calculated according to 
+\begin{equation}
+\mathrm{var}_{\mathrm{SWE}} = \frac{x-\mu_{\mathrm{loc}}}{\mu_{\mathrm{loc}}}.
+\end{equation}
+
+The coefficient of variation (CV), or relative standard deviation, is a standardized measure of data variability and is defined as 
+\begin{equation}
+\mathrm{CV} = \frac{\sigma}{\mu},
+\end{equation}
+where $\sigma$ is the standard deviation and $\mu$ is the mean of a given data set. The ratio is often displayed as a percentage.
+
+\begin{table}[b]
+\centering
+\caption{$2\sigma$ values of SWE variability (\%) distributions at the point and grid cell scale.}
+\label{tab:2sigmaPointGrid}
+\begin{tabular}{lcccc}
+ & \multirow{2}{*}{\textbf{Point Scale}} & \multicolumn{3}{c}{\textbf{Grid Cell Scale}} \\
+ &  & \textit{\begin{tabular}[c]{@{}c@{}}Zigzag\\ data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Multiple measurement\\ location data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Density\\ Interpolation\end{tabular}} \\ \hline
+\textbf{Glacier 4} & 13\% & 14\% & 15\% & 7\% \\
+\textbf{Glacier 2} & 50\% & 26\% & 29\% & 17\% \\
+\textbf{Glacier 13} & 28\% & 19\% & 57\% & 15\%
+\end{tabular}
+\end{table}
+
+\subsection{Point scale}
+
+The SWE variability at a single measurement location (Figure \ref{fig:SWEvar_oneloc_hist}) varies considerably between glaciers (Table \ref{tab:2sigmaPointGrid}). Glacier 2 has the largest $2\sigma$ value, with SWE values varying by as much as 50\% of the location mean. The map of coefficients of variation (Figure \ref{fig:SWEvar_oneloc_map}) show that the lower portion of Glacier 2, which corresponds to scoured `ice dunes' observed during field work, has large variability. The lower portion of Glacier 13 also has higher variability. This area had shallow snow and bare ice was often observed. From these observations, it appears that areas with almost no snow have relatively high variability.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{SWEvarOneLocHIST.png}\\
+	\caption{SWE variability at one measurement location. Three to four snow depth measurement were taken at each location and converted to SWE values using S1 density option.}
+	\label{fig:SWEvar_oneloc_hist}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{Map_pointstd.png}\\
+	\caption{Coefficient of variation of observations at one measurement location. Three to four snow depth measurement were taken at each location and converted to SWE values using S1 density option.}
+	\label{fig:SWEvar_oneloc_map}
+\end{figure}
+
+\subsection{Grid cell scale}
+
+\subsubsection{Zigzag data}
+Two data sets are used to investigate grid cell scale variability. The first is zigzag data (Section \ref{sec:zigzagmethods}), which contains extensive snow depth data within a 40 $x$ 40 m area that corresponds to a DEM grid cell. Snow depth was converted to SWE by using the Federal Sampler density measurement within the zigzag. Kruskal--Wallis test shows that zigzag variability (Figure \ref{fig:SWEvar_ZZ_hist}) has the same distribution within each glacier (p$>$0.05), with the exception of G13\_Z3B and G13\_Z7C having different distributions. Since variability is consistent for each glacier, the distributions are combined to produce a grid cell scale SWE variability for each glacier (Figure \ref{fig:SWEvar_ZZG_hist}). Glacier 4 has the lowest variability and Glacier 13 has the highest variability, with variation of more than 50\% about the grid cell mean (Table  \ref{tab:2sigmaPointGrid}). 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =0.8\textwidth]{ZigzagPDF.png}\\
+	\caption{SWE variability for each set of zigzag measurements.}
+	\label{fig:SWEvar_ZZ_hist}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{ZigzagPDF_G.png}\\
+	\caption{SWE variability at the grid cell scale based on zigzag measurements.}
+	\label{fig:SWEvar_ZZG_hist}
+\end{figure}
+
+\subsubsection{Multiple measurement location data}
+The second data set includes all grid cells that include more than one sampling location. These grid cells are distributed throughout the sampling area so they can provide insight into spatial changes in grid cell variability. Most grid cells with multiple measurements have two or three measurements (Figure \ref{fig:NumObsPerCell}) so variability values are limited by sample size and generally underestimate variability. The variability is similar between Glaciers 4 and 13 and largest for Glacier 2 (Figure \ref{fig:SWEvar_MultLoc_hist}). The $2\sigma$ values of the two grid cell scale  data sets are similar for Glaciers 4 and 2, but the zigzag $2\sigma$ value on Glacier 13 is considerably larger than the multiple measurement value (Table  \ref{tab:2sigmaPointGrid}). The spatial distribution of grid cell scale variability (Figure \ref{fig:SWEvar_MultLoc_map}) closely resembles that of the point scale variability. Coefficient of variation values are highest in the `ice dune' area of Glacier 2 and in the lower portion of Glacier 13.  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{NumObsPerCell.png}\\
+	\caption{Number of measurements locations within DEM grid cells.}
+	\label{fig:NumObsPerCell}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{SWEvarMeasureLocHIST.png}\\
+	\caption{SWE variability at the grid cell scale based on multiple measurements in a DEM grid cell.}
+	\label{fig:SWEvar_MultLoc_hist}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{Map_cellstd_measureLoc.png}\\
+	\caption{SWE variability at the grid cell scale based on zigzag measurements.}
+	\label{fig:SWEvar_MultLoc_map}
+\end{figure}
+
+\subsubsection{Density interpolation}
+
+Variability due to choice of density interpolation method is investigated at the grid cell scale. SWE variability is calculated using the SWE values estimated at each measurement grid cell using the eight density options (Section \ref{sec:densityoptions}). The choice of density option does results in relatively low variability that is consistent between glaciers (Figure \ref{fig:SWEvar_Density_hist}). However, there are noticeable spatial patterns in the coefficient of variation due to choice of density option that seems to closely follow the elevation gradient, with the lower portions of Glaciers 2 and 13 showing especially high variability (Figure \ref{fig:SWEvar_Density_map}). This spatial pattern likely arises from the elevation dependent interpolation that results in low SWE estimates close to the glacier terminus. Despite this, the density variability has the lowest $2\sigma$ value of the investigated sources of variability (Table  \ref{tab:2sigmaPointGrid})
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{SWEvarDensityHIST.png}\\
+	\caption{SWE variability at the grid cell scale based on eight different density interpolation methods in a DEM grid cell.}
+	\label{fig:SWEvar_Density_hist}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{Map_cellstd_density.png}\\
+	\caption{SWE variability at the grid cell scale based on eight different density interpolation methods.}
+	\label{fig:SWEvar_Density_map}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%

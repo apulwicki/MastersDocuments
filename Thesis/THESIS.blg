@@ -11,15 +11,15 @@ Warning--empty institution in Work1965
 Warning--empty year in Work1965
 You've used 140 entries,
             2118 wiz_defined-function locations,
-            1391 strings with 31148 characters,
-and the built_in function-call counts, 50740 in all, are:
-= -- 5048
+            1391 strings with 31149 characters,
+and the built_in function-call counts, 50750 in all, are:
+= -- 5051
 > -- 2649
 < -- 13
 + -- 1038
 - -- 898
-* -- 4072
-:= -- 8558
+* -- 4073
+:= -- 8559
 add.period$ -- 422
 call.type$ -- 140
 change.case$ -- 863
@@ -40,14 +40,14 @@ purify$ -- 726
 quote$ -- 0
 skip$ -- 1141
 stack$ -- 0
-substring$ -- 3670
+substring$ -- 3674
 swap$ -- 228
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 548
 warning$ -- 6
-while$ -- 517
+while$ -- 518
 width$ -- 143
 write$ -- 1536
 (There were 6 warnings)
