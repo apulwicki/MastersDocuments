@@ -2196,6 +2196,30 @@ The range of coefficient values for Glacier 2 and 13 is generally small for all 
 
 For all glaciers, the BMA regression produced a smaller RMSE and a slightly higher R$^2$. It is not clear why the BMA regression is better at minimizing RMSE. For some density options, estimated values of SWE can be significantly different when found using either MLR- or BMA-derived coefficients (Table \ref{tab:estimatedSWEpvalue}). Although the range of coefficients is not different between BMA and MLR, the resulting SWE values are significantly different. 
 
+\subsection{Number of cross validation runs}
+
+\begin{figure}
+\begin{minipage}[l][8cm][t]{.58\textwidth}
+        \vspace*{\fill}
+  \centering
+  \includegraphics[height=6.5cm]{MLRrunWSMB.png}
+  \subcaption{}
+\end{minipage}%
+\begin{minipage}[l][8cm][t]{.38\textwidth}
+        \vspace*{\fill} 
+          \centering
+         \includegraphics[height=6.5cm]{MLRrunCoeffs.png}
+  \subcaption{}
+  \end{minipage}%
+
+\caption{(a) Mean winter surface mass balance (WSMB) and (b) elevation regression coefficient found with varying number of runs for cross validation. }
+\label{fig:MLRruns}
+\end{figure}
+
+Cross validation is used to prevent overfitting of the regression coefficients in both MLR and BMA. A random subset of the data is used to fit the regression and a RMSE is calculated using the remaining data. The process is repeated 1000 times and the coefficients with the lowest RMSE are chosen. The number of runs is large to ensure that the regression coefficients that result in the lowest RMSE are found. However, computational expense increases with the number of runs so it is desirable to determine the minimum number of runs that provide a reliable set of regression coefficients. 
+
+The mean WSMB for each glacier does not appear to vary after about 200 runs (Figure \ref{fig:MLRruns}). The value of the elevation regression coefficient, which is the most important coefficient for Glaciers 2 and 13, also does not change considerably after 200 runs. A similar decrease in variation is seen for the remaining important regressors (not shown). Therefore, the number of cross validation runs can be decreased to 200 for future analysis if decreased computational time is desired. 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 \section{Kriging}
 \label{sec:kriging}
