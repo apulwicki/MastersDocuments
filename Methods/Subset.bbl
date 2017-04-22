@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citename{Shea and Jamieson, }2010]{Shea2010}
+Shea C and Jamieson B (2010) {Star: an efficient snow point-sampling method}.
+  \emph{Annals of Glaciology}, \textbf{51}(54), 64--72 (\doi
+  {10.3189/172756410791386463})
+
+\end{thebibliography}
