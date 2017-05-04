@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  21 APR 2017 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  1 MAY 2017 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,38 +461,77 @@ Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-[1
+<SamplingDesign_Acentreline.png, id=28, 939.51pt x 433.62pt>
+File: SamplingDesign_Acentreline.png Graphic file (type png)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<MapSubset_LRcentreline_n10S4.png, id=42, 939.51pt x 433.62pt>
+<use SamplingDesign_Acentreline.png>
+Package pdftex.def Info: SamplingDesign_Acentreline.png used on input line 61.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <SamplingDesign_ACentreTra
+nsect4.png, id=47, 939.51pt x 433.62pt>
+File: SamplingDesign_ACentreTransect4.png Graphic file (type png)
+
+<use SamplingDesign_ACentreTransect4.png>
+Package pdftex.def Info: SamplingDesign_ACentreTransect4.png used on input line
+ 68.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+
+<SamplingDesign_ACentreTransect3.png, id=48, 939.51pt x 433.62pt>
+File: SamplingDesign_ACentreTransect3.png Graphic file (type png)
+
+<use SamplingDesign_ACentreTransect3.png>
+Package pdftex.def Info: SamplingDesign_ACentreTransect3.png used on input line
+ 75.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+ [2 <./SamplingDesign_Acentreline.png (PNG copy)> <./SamplingDesign_ACentreTran
+sect4.png (PNG copy)>]
+<SamplingDesign_Ahourglass.png, id=54, 939.51pt x 433.62pt>
+File: SamplingDesign_Ahourglass.png Graphic file (type png)
+
+<use SamplingDesign_Ahourglass.png>
+Package pdftex.def Info: SamplingDesign_Ahourglass.png used on input line 82.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+
+<SamplingDesign_AhourglassCircle.png, id=55, 939.51pt x 433.62pt>
+File: SamplingDesign_AhourglassCircle.png Graphic file (type png)
+
+<use SamplingDesign_AhourglassCircle.png>
+Package pdftex.def Info: SamplingDesign_AhourglassCircle.png used on input line
+ 89.
+(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+ [3 <./SamplingDesign_ACentreTransect3.png (PNG copy)> <./SamplingDesign_Ahourg
+lass.png (PNG copy)>] [4 <./SamplingDesign_AhourglassCircle.png (PNG copy)>]
+<MapSubset_LRcentreline_n10S4.png, id=64, 939.51pt x 433.62pt>
 File: MapSubset_LRcentreline_n10S4.png Graphic file (type png)
 
 <use MapSubset_LRcentreline_n10S4.png>
-Package pdftex.def Info: MapSubset_LRcentreline_n10S4.png used on input line 67
-.
+Package pdftex.def Info: MapSubset_LRcentreline_n10S4.png used on input line 10
+3.
 (pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
 
-<MapSubset_SKcentreline_n10S4.png, id=43, 939.51pt x 433.62pt>
+<MapSubset_SKcentreline_n10S4.png, id=65, 939.51pt x 433.62pt>
 File: MapSubset_SKcentreline_n10S4.png Graphic file (type png)
 
 <use MapSubset_SKcentreline_n10S4.png>
-Package pdftex.def Info: MapSubset_SKcentreline_n10S4.png used on input line 68
-.
+Package pdftex.def Info: MapSubset_SKcentreline_n10S4.png used on input line 10
+4.
 (pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
 
-<MapSubset_RKcentreline_n10S4.png, id=44, 939.51pt x 433.62pt>
+<MapSubset_RKcentreline_n10S4.png, id=66, 939.51pt x 433.62pt>
 File: MapSubset_RKcentreline_n10S4.png Graphic file (type png)
 
 <use MapSubset_RKcentreline_n10S4.png>
-Package pdftex.def Info: MapSubset_RKcentreline_n10S4.png used on input line 69
-.
+Package pdftex.def Info: MapSubset_RKcentreline_n10S4.png used on input line 10
+5.
 (pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+LaTeX Font Info:    Try loading font information for U+msa on input line 106.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 106.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -500,7 +539,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Overfull \vbox (7.49513pt too high) has occurred while \output is active []
 
 
-[3 <./MapSubset_LRcentreline_n10S4.png (PNG copy)> <./MapSubset_SKcentreline_n1
+[5 <./MapSubset_LRcentreline_n10S4.png (PNG copy)> <./MapSubset_SKcentreline_n1
 0S4.png (PNG copy)> <./MapSubset_RKcentreline_n10S4.png (PNG copy)>]
 (./Subset.bbl
 Underfull \hbox (badness 4595) in paragraph at lines 8--11
@@ -510,33 +549,33 @@ Underfull \hbox (badness 4595) in paragraph at lines 8--11
 
 )
 
-LaTeX Warning: Reference `sec:FieldDesign' on page 4 undefined on input line 84
-.
+LaTeX Warning: Reference `sec:FieldDesign' on page 6 undefined on input line 12
+0.
 
-[4]
+[6]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 21.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+[7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
  (./Subset.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `Subset.out' has not changed.
 (rerunfilecheck)             Checksum: 11FD71169671C9A8DE3779A6819BC3D4;225.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 8849 strings out of 494910
- 131600 string characters out of 6179836
- 221636 words of memory out of 5000000
- 11973 multiletter control sequences out of 15000+600000
+ 8885 strings out of 494910
+ 132774 string characters out of 6179836
+ 222769 words of memory out of 5000000
+ 11998 multiletter control sequences out of 15000+600000
  12612 words of font info for 46 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  36i,6n,77p,698b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -544,10 +583,10 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Subset.pdf (5 pages, 195337 bytes).
+Output written on Subset.pdf (7 pages, 538829 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 31 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
