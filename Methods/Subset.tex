@@ -107,6 +107,30 @@ The measured locations in the accumulation area of each glacier are then added t
 	\label{fig:MapSubset_centreline_n10S4}
 \end{figure}
 
+
+Based on RMSE
+- LR sample size of 50 for G13 deffs, G2 pretty good
+
+- G13 needs ~30 sample size regardless of interpolation (cf RK centreline wo accum)
+- G4 centreline is garbage 
+
+- RK sample size of 40-50 for all G generally good
+- RK has lower RMSE (cf centreline)
+- density affects it
+
+- SK density has larger impact 
+- sample size less of an impact (cf G13 usually has reduction of error at 40 points)
+
+- centreline worst when linear regression used (not too bad for SK)
+- hourglass has lowest RMSE (though no significant I image) on G2 and G13 (better than HGwC)
+- CT4 better than CT3 but not by much
+
+- generally, if you had accumulation points it's better but not a huge amount -> sometimes better to have a different design and no accum than another design and accum (e.g. G2 RK 
+
+Based on SWE
+- sample size doesn't really have effect
+- kriging sampling design has little effect
+
 %%%%%%%%%%%%%%%%%%%%%
 \bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 \bibliographystyle{igs}
