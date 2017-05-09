@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  1 MAY 2017 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  8 MAY 2017 10:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -549,27 +549,27 @@ Underfull \hbox (badness 4595) in paragraph at lines 8--11
 
 )
 
-LaTeX Warning: Reference `sec:FieldDesign' on page 6 undefined on input line 12
-0.
+LaTeX Warning: Reference `sec:FieldDesign' on page 6 undefined on input line 14
+4.
 
 [6]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 21.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
  (./Subset.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `Subset.out' has not changed.
 (rerunfilecheck)             Checksum: 11FD71169671C9A8DE3779A6819BC3D4;225.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
  8885 strings out of 494910
@@ -583,7 +583,7 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Subset.pdf (7 pages, 538829 bytes).
+Output written on Subset.pdf (7 pages, 539812 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  91 compressed objects within 1 object stream
