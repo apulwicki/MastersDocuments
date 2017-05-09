@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  9 MAY 2017 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  9 MAY 2017 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Kriging.tex
-(./Kriging.tex
+**WSMBDistribution.tex
+(./WSMBDistribution.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 21 languages loaded.
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/article.cls
@@ -347,12 +347,9 @@ Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
-) (./Kriging.aux
-
-LaTeX Warning: Label `fig:Regression-Kriging' multiply defined.
-
 )
-\openout1 = `Kriging.aux'.
+(./WSMBDistribution.aux)
+\openout1 = `WSMBDistribution.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
@@ -370,7 +367,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 \AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring OFF on input line 35.
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/gettitlestring.st
@@ -382,9 +380,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 35.
 LaTeX Info: Redefining \pageref on input line 35.
 LaTeX Info: Redefining \nameref on input line 35.
- (./Kriging.out) (./Kriging.out)
+ (./WSMBDistribution.out) (./WSMBDistribution.out)
 \@outlinefile=\write3
-\openout3 = `Kriging.out'.
+\openout3 = `WSMBDistribution.out'.
 
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -419,177 +417,86 @@ Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
  (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: Reference `sec:variogram_intro' on page 1 undefined on input lin
-e 54.
-
-[1
+) [1
 
 {/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
+<WSMB_allDensityBeta.png, id=35, 1082.0425pt x 308.15125pt>
+File: WSMB_allDensityBeta.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:BMSmodelledSWE' on page 3 undefined on input line
- 73.
+<use WSMB_allDensityBeta.png>
+Package pdftex.def Info: WSMB_allDensityBeta.png used on input line 60.
+(pdftex.def)             Requested size: 467.99881pt x 133.27827pt.
 
+<WSMB_allDensityBetaNzz.png, id=36, 1082.0425pt x 308.15125pt>
+File: WSMB_allDensityBetaNzz.png Graphic file (type png)
 
-LaTeX Warning: Reference `sec:densityoptions' on page 3 undefined on input line
- 75.
+<use WSMB_allDensityBetaNzz.png>
+Package pdftex.def Info: WSMB_allDensityBetaNzz.png used on input line 61.
+(pdftex.def)             Requested size: 467.99881pt x 133.27827pt.
+ [2]
+<WSMB_beta.png, id=43, 562.1pt x 421.575pt>
+File: WSMB_beta.png Graphic file (type png)
+ <use WSMB_beta.png>
+Package pdftex.def Info: WSMB_beta.png used on input line 69.
+(pdftex.def)             Requested size: 272.99881pt x 204.74666pt.
 
-<sweKriged.png, id=99, 939.51pt x 433.62pt>
-File: sweKriged.png Graphic file (type png)
- <use sweKriged.png>
-Package pdftex.def Info: sweKriged.png used on input line 79.
-(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
+<WSMB_betaNsigmaZZ.png, id=44, 562.1pt x 421.575pt>
+File: WSMB_betaNsigmaZZ.png Graphic file (type png)
 
+<use WSMB_betaNsigmaZZ.png>
+Package pdftex.def Info: WSMB_betaNsigmaZZ.png used on input line 70.
+(pdftex.def)             Requested size: 272.99881pt x 204.74666pt.
+ [3 <./WSMB_allDensityBeta.png (PNG copy)> <./WSMB_allDensityBetaNzz.png (PNG c
+opy)>]
+<WSMB_compareBetaAndZZBeta.png, id=49, 1107.13625pt x 415.5525pt>
+File: WSMB_compareBetaAndZZBeta.png Graphic file (type png)
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 84.
-
-
-LaTeX Warning: Reference `sec:densityoptions' on page 3 undefined on input line
- 86.
-
-
-LaTeX Warning: Reference `sec:densityoptions' on page 3 undefined on input line
- 86.
-
-
-LaTeX Warning: Reference `fig:BMSfit_opt8' on page 3 undefined on input line 10
-1.
-
-[3] [4 <./sweKriged.png (PNG copy)>]
-<krigSWEfit.png, id=112, 867.24pt x 289.08pt>
-File: krigSWEfit.png Graphic file (type png)
- <use krigSWEfit.png>
-Package pdftex.def Info: krigSWEfit.png used on input line 104.
-(pdftex.def)             Requested size: 467.99881pt x 155.9994pt.
-
-<KrigingCI_percent.png, id=113, 939.51pt x 433.62pt>
-File: KrigingCI_percent.png Graphic file (type png)
-
-<use KrigingCI_percent.png>
-Package pdftex.def Info: KrigingCI_percent.png used on input line 113.
-(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
- [5 <./krigSWEfit.png (PNG copy)>]
-
-LaTeX Warning: Reference `sec:linearregression' on page 6 undefined on input li
-ne 123.
-
-[6 <./KrigingCI_percent.png (PNG copy)>]
-
-LaTeX Warning: Reference `sec:linearregression' on page 7 undefined on input li
-ne 134.
-
-[7] <residualsKriged.png, id=148, 939.51pt x 433.62pt>
-File: residualsKriged.png Graphic file (type png)
-
-<use residualsKriged.png>
-Package pdftex.def Info: residualsKriged.png used on input line 148.
-(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
- [8]
-<RegressionKriging.png, id=155, 939.51pt x 433.62pt>
-File: RegressionKriging.png Graphic file (type png)
-
-<use RegressionKriging.png>
-Package pdftex.def Info: RegressionKriging.png used on input line 155.
-(pdftex.def)             Requested size: 390.0pt x 179.99525pt.
- <krigRKfit.png, id=156, 867.24pt x 289.08pt>
-File: krigRKfit.png Graphic file (type png)
-
-<use krigRKfit.png>
-Package pdftex.def Info: krigRKfit.png used on input line 161.
-(pdftex.def)             Requested size: 467.99881pt x 155.9994pt.
- [9 <./residualsKriged.png (PNG copy)> <./RegressionKriging.png (PNG copy)>] <I
-nterpMethod_mean.png, id=162, 1246.6575pt x 455.45157pt>
-File: InterpMethod_mean.png Graphic file (type png)
-
-<use InterpMethod_mean.png>
-Package pdftex.def Info: InterpMethod_mean.png used on input line 172.
-(pdftex.def)             Requested size: 390.0pt x 142.48116pt.
- [10 <./krigRKfit.png (PNG copy)>]
-<InterpMethod_meanR2.png, id=169, 529.98pt x 189.70876pt>
-File: InterpMethod_meanR2.png Graphic file (type png)
-
-<use InterpMethod_meanR2.png>
-Package pdftex.def Info: InterpMethod_meanR2.png used on input line 180.
-(pdftex.def)             Requested size: 390.0pt x 139.60359pt.
- [11 <./InterpMethod_mean.png (PNG copy)>]
-[12 <./InterpMethod_meanR2.png (PNG copy)>]
-<InterpMethod_allopts.png, id=184, 1246.6575pt x 455.45157pt>
-File: InterpMethod_allopts.png Graphic file (type png)
-
-<use InterpMethod_allopts.png>
-Package pdftex.def Info: InterpMethod_allopts.png used on input line 191.
-(pdftex.def)             Requested size: 405.65347pt x 148.2019pt.
-
-<InterpMethod_alloptsR2.png, id=185, 1403.2425pt x 349.305pt>
-File: InterpMethod_alloptsR2.png Graphic file (type png)
-
-<use InterpMethod_alloptsR2.png>
-Package pdftex.def Info: InterpMethod_alloptsR2.png used on input line 197.
-(pdftex.def)             Requested size: 595.37453pt x 148.2019pt.
-
-Overfull \hbox (46.87453pt too wide) in paragraph at lines 197--198
-[][] 
- []
-
-[13 <./InterpMethod_allopts.png (PNG copy)> <./InterpMethod_alloptsR2.png (PNG 
-copy)>] (./Kriging.bbl [14
-
-
-]) [15]
+<use WSMB_compareBetaAndZZBeta.png>
+Package pdftex.def Info: WSMB_compareBetaAndZZBeta.png used on input line 77.
+(pdftex.def)             Requested size: 467.99881pt x 175.65952pt.
+ [4 <./WSMB_beta.png (PNG copy)> <./WSMB_betaNsigmaZZ.png (PNG copy)>]
+No file WSMBDistribution.bbl.
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 21.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
-[16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
- (./Kriging.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
-Package rerunfilecheck Info: File `Kriging.out' has not changed.
-(rerunfilecheck)             Checksum: BD17B7A1CCBEA651B65F7886708A9F34;570.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+[5 <./WSMB_compareBetaAndZZBeta.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+ (./WSMBDistribution.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package rerunfilecheck Info: File `WSMBDistribution.out' has not changed.
+(rerunfilecheck)             Checksum: 7D713E0F8A26262B03562EFF94395D4B;246.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 8205 strings out of 494501
- 122356 string characters out of 6167030
- 213951 words of memory out of 5000000
- 11310 multiletter control sequences out of 15000+600000
- 12781 words of font info for 47 fonts, out of 8000000 for 9000
+ 8076 strings out of 494501
+ 120519 string characters out of 6167030
+ 209910 words of memory out of 5000000
+ 11235 multiletter control sequences out of 15000+600000
+ 12434 words of font info for 46 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 36i,14n,38p,1515b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,7n,38p,1076b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mex10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Kriging.pdf (16 pages, 595955 bytes).
+mmi12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmtt12.pfb>
+Output written on WSMBDistribution.pdf (5 pages, 235421 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 84 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

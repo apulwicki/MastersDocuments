@@ -1,0 +1,92 @@
+%   PACKAGES AND CUSTOMIzATIONS  %%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{natbib}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0mm}
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{rotating}
+\captionsetup[subfigure]{position=top, labelfont=bf,textfont=normalfont,singlelinecheck=off,justification=raggedright}
+\renewcommand{\vector}[1]{\mathbf{#1}}
+\usepackage{adjustbox}
+\usepackage{bm}
+
+
+\newcommand{\transectAbb}{Data for each glacier are divided into lower hourglass (LH), lower circle (LC), lower midline (LM), upper hourglass (UH), upper circle (UC), upper midline (UM), and upper transect (UT).}
+\newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$), and Sx. }
+\newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points. }
+\newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
+\newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations. }
+\newcommand{\swedots}{Observed SWE values are overlain on the maps. }
+
+
+\begin{document}
+
+\section{Winter Surface Mass Balance Distribution}
+\label{sec:WSMBdistribution}
+
+\subsection{Background}
+
+The effect of two sources of variability on the estimation of winter surface mass balance (WSMB) are investigated in this section. Variability in observed values of SWE and variability in the linear regression coefficients influences the final estimate of WSMB. To quantify the effects of these two sources of variability, a Monte Carlo sampling of the distribution of observed SWE and the distribution of regression coefficients is used to obtain a distribution of WSMB.  
+
+
+\subsection{Methods}
+
+Variability in estimated WSMB is found by considering variability due to estimation of regression coefficients as well as variability in observed SWE for each grid cell. Variability from regression coefficient estimation was found by calculating a linear regression using the built-in MATLAB function \texttt{fitlm} and then using the built-in function \texttt{coefCI} to obtain confidence intervals and dividing values by $2\times 1.96$ to calculate the standard deviation of the distribution of regression coefficients. A normal distribution of $\beta$ values for each regressor is then obtained using the built-in function \texttt{makedist} and a random value from the distribution is chosen using the function \texttt{random}. The random draw of $\beta$ values from the distribution is done 1000 times. A mean SWE value for each glacier is calculated using the random $\beta$ values to obtain the distribution of WSMB.
+
+Variability in observed SWE is included by generating a normal distribution with $\mu=0$ and a standard deviation equal to the glacier-wide mean standard deviation of the observed zigzag SWE values ($\sigma_{\mathrm{G4}} = 0.027 $ m w.e., $\sigma_{\mathrm{G2}} = 0.035$ m w.e., $\sigma_{\mathrm{G13}} = 0.040 $ m w.e.). A random set of values is drawn from this distribution and added to the SWE values used to calculate the regression. 
+
+
+\subsection{Results}
+
+The distribution of winter surface mass balance (WSMB) is similar when different density interpolation methods are used to obtain SWE. When variation due to regression coefficients is considered (Figure \ref{fig:WSMB_allDensity}) the distribution of WSMB is approximately normal. On Glacier 4, the mean WSMB is similar for all density options except F1, which produces a lower estimate. Glaciers 2 and 13 have similar mean WSMB values although the Federal Sampler density interpolations (F) tend to produce smaller estimates. When variability due to regression coefficient estimation and SWE measurement is considered, the distribution of WSMB is skewed for Glaciers 2 and 13. There is a higher prevalence of low WSMB because larger portions of the glaciers are estimated to have minimal or no snow accumulation. Density interpolation option F2 on Glacier 13 results in an anomalously narrow WSMB distribution. WSMB distributions for Glacier 4 with both sources of variability are approximately normal and have similar mean values. 
+
+The WSMB distribution is generally broader and more skewed when SWE measurement variability is included (Figures \ref{fig:WSMB_oneDensity} and \ref{fig:WSMB_compareBetaAndZZBeta}). The distributions are more normal when only regression coefficient variation is included because the regression coefficients are, by definition, normally distributed. The SWE variability is also normally distributed about the local SWE mean but negative values of SWE are not permitted, which skews the overall distribution of WSMB. Since the observed SWE values were generally lower on Glaciers 2 and 13, more of the values are set to zero when variability is included because they are more likely to High values of WSMB are also more common when SWE variability is introduced on Glaciers 2 and 13. The mean standard deviation of SWE values from zigzags on Glaciers 2 and 13 is higher than on Glacier 4, which allows comparatively higher and lower SWE values to be included in the regression. 
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensityBeta.png}}\\%
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensityBetaNzz.png}}%
+	\caption{Distribution of winter surface mass balance (WSMB). (a)  WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (b) WSMB values obtained as in (a) but with the addition of a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
+	\label{fig:WSMB_allDensity}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =0.7\textwidth]{WSMB_beta.png}\\
+	\includegraphics[width =0.7\textwidth]{WSMB_betaNsigmaZZ.png}\\
+	\caption{Distribution of winter surface mass balance (WSMB). (a)  WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (b) WSMB values obtained as in (a) but with the addition of a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
+	\label{fig:WSMB_oneDensity}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_compareBetaAndZZBeta.png}}\\
+	\caption{Comparison of winter surface mass balance distribution when variation due to regression coefficient estimation is included (dark) and when variation from both regression coefficient estimation and observed SWE variation within a grid cell is included (light). }
+	\label{fig:WSMB_compareBetaAndZZBeta}
+\end{figure}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
+\bibliographystyle{igs}
+%%%%%%%%%%%%%%%%%%%%%
+
+\end{document} 
