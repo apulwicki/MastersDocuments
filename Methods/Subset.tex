@@ -41,12 +41,12 @@
 
 Efficient collection of snow depth and density data is critical to a successful snow measurement campaign. Since snow is spatially and temporally variable, snow properties must be measured over an extensive area within a short period of time. Often, researchers aim to collect snow data at the end of the winter season, when accumulation is at a maximum and melt has not yet begun. This window of time is narrow, which makes it difficult to obtain data over a large study area. Therefore, it is advantageous for researchers to gain insight into the minimum amount of data needed to find reliable interpolations as well as the most efficient way to collect this data. 
 
-The number of snow depth and density data collected during this project far exceeds the that of most snow accumulation studies (c.f. ??) and utilizes non-traditional sampling designs \citep{Shea2010}. By using subsets of this extensive data set, we hope to better understand the spatial extent and sampling frequency that result in accurate estimates of distributed winter surface mass balance.  
+The number of snow depth and density data collected during this project far exceeds the scope of most snow accumulation studies (c.f. ??) and utilizes non-traditional sampling designs \citep[e.g. zigzag design from][]{Shea2010}. By using subsets of this extensive data set, we hope to better understand the spatial extent and sampling frequency that result in accurate estimates of distributed winter surface mass balance.  
 
 \subsection{Methods}
 \label{sec:experimentaldesign_methods}
 
-To investigate the effect of sample size and distribution on WSMB estimates, data subsets are selected and LR, SK and RK are used to find the distributed SWE field on each glacier. Subsets that are likely to be used in future snow survey campaigns are selected. Five main sampling designs are chosen:
+To investigate the effect of sample size and sampling design on WSMB estimates, data subsets are selected and LR, SK and RK are used to find the distributed SWE field on each glacier. Subsets that are likely to be used in future snow survey campaigns are selected. Five main sampling designs are chosen:
 \begin{enumerate}
 \item Centreline transect (Figure \ref{fig:SamplingDesign_Acentreline})
 \item Centreline and four transverse transects (Figure \ref{fig:SamplingDesign_ACentreTransect4})
@@ -97,7 +97,39 @@ The measured locations in the accumulation area of each glacier are then added t
 
 \subsection{Results}
 
+Estimates of mean SWE are generally not affected by the number of measurement locations (Figure \ref{fig:SubsetInterpSizeCompile_SWE}). Although variability in WSMB estimates exist with different number of sampling points, there is no clear convergence of values with an increase in sample size. When SK is used to interpolate SWE values, there is little variation in WSMB with different sample sizes and with different data subsets. For Glacier 4 and 13, the SWE estimates are close to that of the full data but for Glacier 2, the SWE estimates are lower than that of the full data. When using LR and RK, the SWE estimates are far more variable for all three glaciers, especially when accumulation area points are not used in the regression. Using the accumulation area points likely better constrains the regression coefficients, which results in more consistent SWE estimates. 
+
+The mean RMSE between estimated and observed SWE values generally decreases as the sample size increases (Figure \ref{fig:SubsetInterpSizeCompile_SWE}). When a LR is used for interpolation, a sample size of approximately 50 results in a minimum RMSE. Especially notable is that an increased sample size dramatically decreases the RMSE on Glacier 13 and with a sample size of 30 points the RMSE of the full data set is achieved. A sample size of 30 gives low RMSE values for all interpolation methods on Glacier 13 (c.f. RK on centreline subset with no accumulation area points).  When RK is used, a sample size of approximately 50 points also results in a minimum RMSE although the different in RMSE between the full data set and the subsets is higher than that of LR. 
+
+The choice of data subset affects the RMSE of SWE estimates, especially when a regression is used for interpolation (LR or RK). When SK is used for interpolation, the difference between data subsets is smaller. Using LR or RK on only the centreline point results in a large RMSE, especially on Glacier 4. Generally, centreline and four transects results in a slightly lower RMSE than centreline and three transects. The hourglass subsets often result in the lowest RMSE on Glaciers 2 and 13 with hourglass and circle producing a slightly higher RMSE overall. On Glacier 4, the hourglass and circle with more than $\sim$60 points tends to result in lowest RMSE. For all glaciers, the centreline (with no transects) results in high RMSE values.
+
+Generally, the RMSE decreases when accumulation area points are included in the interpolation. However, the decrease in RMSE is not large and often the RMSE is lower if a different sampling design with no accumulation area points is chosen. For example, on Glacier 2 when RK is used, an hourglass sampling design with more than 30 points results in a lower RMSE than a centreline with three transects and accumulation area points. 
+
+
+- density affects it
+- SK density has larger impact 
+- sample size less of an impact (cf G13 usually has reduction of error at 40 points)
+
+
+
 \pagebreak
+\begin{landscape}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height =0.9\textwidth]{SubsetInterpSizeCompile_SWE.png}\\
+	\caption{Mean WSMB (m w.e.) from all density options for data subsets with (solid) and without (dashed) accumulation area measurement locations. Linear regression (top panels), simple kriging (middle panels) and regression kriging (bottom panels) are used to interpolate data. Sample size indicates number of measurement location from each sampling design used to find distributed SWE. Black dashed lines show the mean WSMB found using all available data and the respective interpolation method.  }
+	\label{fig:SubsetInterpSizeCompile_SWE}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height =0.9\textwidth]{SubsetInterpSizeCompile_RMS.png}\\
+	\caption{Mean root mean squared error (RMSE) from all density options for data subsets with (solid) and without (dashed) accumulation area measurement locations. RMSE refers to the difference between the estimated values of SWE using the various interpolation methods and data subsets and the observed values of SWE. Linear regression (top panels), simple kriging (middle panels) and regression kriging (bottom panels) are used to interpolate data. Sample size indicates number of measurement location from each sampling design used to find distributed SWE. Black dashed lines show the mean RMSE between estimated and observed SWE values found using all available data and the respective interpolation method. Note that plots of Glacier 4 RMSE have a different y-axis.}
+	\label{fig:SubsetInterpSizeCompile_RMSE}
+\end{figure}
+
+\end{landscape}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =0.9\textwidth]{MapSubset_LRcentreline_n10S4.png}\\
@@ -106,30 +138,6 @@ The measured locations in the accumulation area of each glacier are then added t
 	\caption{Distributed winter surface mass balance found using  linear regression (MLR) (top), simple kriging (middle) and regression kriging (BMA) (bottom) on centreline subset data ($n=10$).  \topomap}
 	\label{fig:MapSubset_centreline_n10S4}
 \end{figure}
-
-
-Based on RMSE
-- LR sample size of 50 for G13 deffs, G2 pretty good
-
-- G13 needs ~30 sample size regardless of interpolation (cf RK centreline wo accum)
-- G4 centreline is garbage 
-
-- RK sample size of 40-50 for all G generally good
-- RK has lower RMSE (cf centreline)
-- density affects it
-
-- SK density has larger impact 
-- sample size less of an impact (cf G13 usually has reduction of error at 40 points)
-
-- centreline worst when linear regression used (not too bad for SK)
-- hourglass has lowest RMSE (though no significant I image) on G2 and G13 (better than HGwC)
-- CT4 better than CT3 but not by much
-
-- generally, if you had accumulation points it's better but not a huge amount -> sometimes better to have a different design and no accum than another design and accum (e.g. G2 RK 
-
-Based on SWE
-- sample size doesn't really have effect
-- kriging sampling design has little effect
 
 %%%%%%%%%%%%%%%%%%%%%
 \bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
@@ -143,7 +151,7 @@ The experimental design component of this study examines the estimated WSMB usin
 \item SWE values at all measurement locations are estimated using one of the density options (S1, F1, S2, F2, S3, F3, S4, F4).
 \item The author-made function `DataSubset.m' is used to select all points that are a part of the chosen design subset (e.g. centreline, hourglass, etc.). The selection is made based on the sampling point classification that was determined in the sampling design (Sections \ref{sec:FieldDesign}). For example, only points that are classified as `UM' and `LM' are included in the `centreline' subset. Measurement locations that happen to fall along on the centreline but are a part of another sampling design subset, such as the hourglass, are not included. The corresponding topographic parameter values for each sampling subset location are then selected. 
 \item The author-made function `ObsInCell.m' then takes the average SWE value of multiple measurement values within a single DEM cell. The result is one SWE value with a set of topographic parameters for each DEM cell where subset measurements are available.
-\item Then, the author-made function `SortNSelect.m' orders the data by the cell number (origin at NW corner of DEM and increasing in the eastward and southward directions) and selects $n$ number of between the first and last point. The data are selected based on an equally spaced index vector that spans the length of the subset, not on the actual location of the data points, because data were collected in equally spaced intervals along a subset transect. The number of points ranged from 10 to 100 in increments of 10 for all subsets, expect for centreline subset where the range was from 10 to 50 points in increments of 5 points because of small subset length. 
+\item The author-made function `SortNSelect.m' then orders the data by the cell number (origin at NW corner of DEM and increasing in the eastward and southward directions) and selects $n$ number of locations between the first and last points. The data are selected based on an equally spaced index vector that spans the length of the subset, not on the actual location of the data points, because data were collected in equally spaced intervals along a subset transect. The number of points ranged from 10 to 100 in increments of 10 for all subsets, except for centreline subset where the range was from 10 to 50 points in increments of 5 points because the subsets were smaller than 100 points for Glaciers 4 and 2. 
 \item Estimation of distributed SWE is then completed using the author-made functions `LinearRegression.m' for linear regression (LR), `KrigingR\_G.m' for simple kriging (SK) and `RegressionKriging.m' for regression kriging (RK). Each function uses its respective interpolation method to calculate a distributed SWE field and returns regression coefficients for LR and RK. 
 \end{enumerate}
 
