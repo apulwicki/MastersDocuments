@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  10 MAY 2017 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  16 MAY 2017 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -464,84 +464,87 @@ Package caption Info: End \AtBeginDocument code.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<SamplingDesign_Acentreline.png, id=47, 939.51pt x 433.62pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 59.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<SamplingDesign_Acentreline.png, id=49, 939.51pt x 433.62pt>
 File: SamplingDesign_Acentreline.png Graphic file (type png)
 
 <use SamplingDesign_Acentreline.png>
-Package pdftex.def Info: SamplingDesign_Acentreline.png used on input line 61.
+Package pdftex.def Info: SamplingDesign_Acentreline.png used on input line 77.
 (pdftex.def)             Requested size: 390.0pt x 179.99525pt.
 
-<SamplingDesign_ACentreTransect4.png, id=48, 939.51pt x 433.62pt>
+<SamplingDesign_ACentreTransect4.png, id=50, 939.51pt x 433.62pt>
 File: SamplingDesign_ACentreTransect4.png Graphic file (type png)
 
 <use SamplingDesign_ACentreTransect4.png>
 Package pdftex.def Info: SamplingDesign_ACentreTransect4.png used on input line
- 68.
+ 84.
 (pdftex.def)             Requested size: 390.0pt x 179.99525pt.
-
-<SamplingDesign_ACentreTransect3.png, id=49, 939.51pt x 433.62pt>
+ [2 <./SamplingDesign_Acentreline.png (PNG copy)>] <SamplingDesign_ACentreTrans
+ect3.png, id=56, 939.51pt x 433.62pt>
 File: SamplingDesign_ACentreTransect3.png Graphic file (type png)
 
 <use SamplingDesign_ACentreTransect3.png>
 Package pdftex.def Info: SamplingDesign_ACentreTransect3.png used on input line
- 75.
+ 91.
 (pdftex.def)             Requested size: 390.0pt x 179.99525pt.
- [2 <./SamplingDesign_Acentreline.png (PNG copy)> <./SamplingDesign_ACentreTran
-sect4.png (PNG copy)>]
-<SamplingDesign_Ahourglass.png, id=55, 939.51pt x 433.62pt>
+
+<SamplingDesign_Ahourglass.png, id=57, 939.51pt x 433.62pt>
 File: SamplingDesign_Ahourglass.png Graphic file (type png)
 
 <use SamplingDesign_Ahourglass.png>
-Package pdftex.def Info: SamplingDesign_Ahourglass.png used on input line 82.
+Package pdftex.def Info: SamplingDesign_Ahourglass.png used on input line 98.
 (pdftex.def)             Requested size: 390.0pt x 179.99525pt.
-
-<SamplingDesign_AhourglassCircle.png, id=56, 939.51pt x 433.62pt>
+ [3 <./SamplingDesign_ACentreTransect4.png (PNG copy)> <./SamplingDesign_ACentr
+eTransect3.png (PNG copy)>]
+<SamplingDesign_AhourglassCircle.png, id=62, 939.51pt x 433.62pt>
 File: SamplingDesign_AhourglassCircle.png Graphic file (type png)
 
 <use SamplingDesign_AhourglassCircle.png>
 Package pdftex.def Info: SamplingDesign_AhourglassCircle.png used on input line
- 89.
+ 105.
 (pdftex.def)             Requested size: 390.0pt x 179.99525pt.
- [3 <./SamplingDesign_ACentreTransect3.png (PNG copy)> <./SamplingDesign_Ahourg
-lass.png (PNG copy)>] [4 <./SamplingDesign_AhourglassCircle.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 104.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 104.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5]
-<SubsetInterpSizeCompile_SWE.png, id=73, 1445.4pt x 843.90282pt>
+ [4 <./SamplingDesign_Ahourglass.png (PNG copy)> <./SamplingDesign_AhourglassCi
+rcle.png (PNG copy)>] [5] [6]
+<SubsetInterpSizeCompile_SWE.png, id=96, 1445.4pt x 843.90282pt>
 File: SubsetInterpSizeCompile_SWE.png Graphic file (type png)
 
 <use SubsetInterpSizeCompile_SWE.png>
-Package pdftex.def Info: SubsetInterpSizeCompile_SWE.png used on input line 119
+Package pdftex.def Info: SubsetInterpSizeCompile_SWE.png used on input line 135
 .
 (pdftex.def)             Requested size: 601.17519pt x 350.99762pt.
 
-Overfull \hbox (52.67519pt too wide) in paragraph at lines 119--119
+Overfull \hbox (52.67519pt too wide) in paragraph at lines 135--135
  [][] 
  []
 
-[6
+[7
 
 ]
 Overfull \vbox (43.4976pt too high) has occurred while \output is active []
 
 
-[7 <./SubsetInterpSizeCompile_SWE.png (PNG copy)>]
-<SubsetInterpSizeCompile_RMS.png, id=83, 1445.4pt x 843.90282pt>
+[8 <./SubsetInterpSizeCompile_SWE.png (PNG copy)>]
+<SubsetInterpSizeCompile_RMS.png, id=106, 1445.4pt x 843.90282pt>
 File: SubsetInterpSizeCompile_RMS.png Graphic file (type png)
 
 <use SubsetInterpSizeCompile_RMS.png>
-Package pdftex.def Info: SubsetInterpSizeCompile_RMS.png used on input line 126
+Package pdftex.def Info: SubsetInterpSizeCompile_RMS.png used on input line 142
 .
 (pdftex.def)             Requested size: 601.17519pt x 350.99762pt.
 
-Overfull \hbox (52.67519pt too wide) in paragraph at lines 126--126
+Overfull \hbox (52.67519pt too wide) in paragraph at lines 142--142
  [][] 
  []
 
@@ -549,39 +552,189 @@ Overfull \hbox (52.67519pt too wide) in paragraph at lines 126--126
 Overfull \vbox (86.9976pt too high) has occurred while \output is active []
 
 
-[8 <./SubsetInterpSizeCompile_RMS.png (PNG copy)>]
-<MapSubset_LRcentreline_n10S4.png, id=89, 939.51pt x 433.62pt>
+[9 <./SubsetInterpSizeCompile_RMS.png (PNG copy)>]
+<MapSubset_LRcentreline_n10S4.png, id=112, 939.51pt x 433.62pt>
 File: MapSubset_LRcentreline_n10S4.png Graphic file (type png)
 
 <use MapSubset_LRcentreline_n10S4.png>
-Package pdftex.def Info: MapSubset_LRcentreline_n10S4.png used on input line 13
-5.
+Package pdftex.def Info: MapSubset_LRcentreline_n10S4.png used on input line 15
+2.
 (pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
 
-<MapSubset_SKcentreline_n10S4.png, id=90, 939.51pt x 433.62pt>
+<MapSubset_SKcentreline_n10S4.png, id=113, 939.51pt x 433.62pt>
 File: MapSubset_SKcentreline_n10S4.png Graphic file (type png)
 
 <use MapSubset_SKcentreline_n10S4.png>
-Package pdftex.def Info: MapSubset_SKcentreline_n10S4.png used on input line 13
-6.
+Package pdftex.def Info: MapSubset_SKcentreline_n10S4.png used on input line 15
+3.
 (pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
 
-<MapSubset_RKcentreline_n10S4.png, id=91, 939.51pt x 433.62pt>
+<MapSubset_RKcentreline_n10S4.png, id=114, 939.51pt x 433.62pt>
 File: MapSubset_RKcentreline_n10S4.png Graphic file (type png)
 
 <use MapSubset_RKcentreline_n10S4.png>
-Package pdftex.def Info: MapSubset_RKcentreline_n10S4.png used on input line 13
-7.
+Package pdftex.def Info: MapSubset_RKcentreline_n10S4.png used on input line 15
+4.
 (pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
- [9
 
-]
+<SubsetMeanSWE_samplesizeNdensity_LRcentreline.png, id=115, 1090.0725pt x 334.2
+4875pt>
+File: SubsetMeanSWE_samplesizeNdensity_LRcentreline.png Graphic file (type png)
+
+ <use SubsetMeanSWE_samplesizeNdensity_LRcentreline.png>
+Package pdftex.def Info: SubsetMeanSWE_samplesizeNdensity_LRcentreline.png used
+ on input line 161.
+(pdftex.def)             Requested size: 507.00119pt x 155.45975pt.
+
+<SubsetMeanSWE_samplesizeNdensity_SKcentreline.png, id=116, 1090.0725pt x 334.2
+4875pt>
+File: SubsetMeanSWE_samplesizeNdensity_SKcentreline.png Graphic file (type png)
+
+ <use SubsetMeanSWE_samplesizeNdensity_SKcentreline.png>
+Package pdftex.def Info: SubsetMeanSWE_samplesizeNdensity_SKcentreline.png used
+ on input line 162.
+(pdftex.def)             Requested size: 507.00119pt x 155.45975pt.
+
+<SubsetMeanSWE_samplesizeNdensity_RKcentreline.png, id=117, 1090.0725pt x 334.2
+4875pt>
+File: SubsetMeanSWE_samplesizeNdensity_RKcentreline.png Graphic file (type png)
+
+ <use SubsetMeanSWE_samplesizeNdensity_RKcentreline.png>
+Package pdftex.def Info: SubsetMeanSWE_samplesizeNdensity_RKcentreline.png used
+ on input line 163.
+(pdftex.def)             Requested size: 507.00119pt x 155.45975pt.
+ [10
+
+ <./MapSubset_LRcentreline_n10S4.png (PNG copy)> <./MapSubset_SKcentreline_n10S
+4.png (PNG copy)> <./MapSubset_RKcentreline_n10S4.png (PNG copy)>]
+<SubsetRMSE_samplesizeNdensity_LRcentreline.png, id=122, 1096.84781pt x 229.607
+82pt>
+File: SubsetRMSE_samplesizeNdensity_LRcentreline.png Graphic file (type png)
+ <use SubsetRMSE_samplesizeNdensity_LRcentreline.png>
+Package pdftex.def Info: SubsetRMSE_samplesizeNdensity_LRcentreline.png used on
+ input line 170.
+(pdftex.def)             Requested size: 507.00119pt x 106.13239pt.
+
+<SubsetRMSE_samplesizeNdensity_SKcentreline.png, id=123, 1096.84781pt x 229.607
+82pt>
+File: SubsetRMSE_samplesizeNdensity_SKcentreline.png Graphic file (type png)
+ <use SubsetRMSE_samplesizeNdensity_SKcentreline.png>
+Package pdftex.def Info: SubsetRMSE_samplesizeNdensity_SKcentreline.png used on
+ input line 171.
+(pdftex.def)             Requested size: 507.00119pt x 106.13239pt.
+
+<SubsetRMSE_samplesizeNdensity_RKcentreline.png, id=124, 1096.84781pt x 229.607
+82pt>
+File: SubsetRMSE_samplesizeNdensity_RKcentreline.png Graphic file (type png)
+ <use SubsetRMSE_samplesizeNdensity_RKcentreline.png>
+Package pdftex.def Info: SubsetRMSE_samplesizeNdensity_RKcentreline.png used on
+ input line 172.
+(pdftex.def)             Requested size: 507.00119pt x 106.13239pt.
+ [11 <./SubsetMeanSWE_samplesizeNdensity_LRcentreline.png (PNG copy)> <./Subset
+MeanSWE_samplesizeNdensity_SKcentreline.png (PNG copy)> <./SubsetMeanSWE_sample
+sizeNdensity_RKcentreline.png (PNG copy)>]
+<MapSubset_LRAhourglass_n40S4.png, id=129, 939.51pt x 433.62pt>
+File: MapSubset_LRAhourglass_n40S4.png Graphic file (type png)
+
+<use MapSubset_LRAhourglass_n40S4.png>
+Package pdftex.def Info: MapSubset_LRAhourglass_n40S4.png used on input line 18
+2.
+(pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
+
+<MapSubset_SKAhourglass_n40S4.png, id=130, 939.51pt x 433.62pt>
+File: MapSubset_SKAhourglass_n40S4.png Graphic file (type png)
+
+<use MapSubset_SKAhourglass_n40S4.png>
+Package pdftex.def Info: MapSubset_SKAhourglass_n40S4.png used on input line 18
+3.
+(pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
+
+<MapSubset_RKAhourglass_n40S4.png, id=131, 939.51pt x 433.62pt>
+File: MapSubset_RKAhourglass_n40S4.png Graphic file (type png)
+
+<use MapSubset_RKAhourglass_n40S4.png>
+Package pdftex.def Info: MapSubset_RKAhourglass_n40S4.png used on input line 18
+4.
+(pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
+ [12 <./SubsetRMSE_samplesizeNdensity_LRcentreline.png (PNG copy)> <./SubsetRMS
+E_samplesizeNdensity_SKcentreline.png (PNG copy)> <./SubsetRMSE_samplesizeNdens
+ity_RKcentreline.png (PNG copy)>]
 Overfull \vbox (7.49513pt too high) has occurred while \output is active []
 
 
-[10 <./MapSubset_LRcentreline_n10S4.png (PNG copy)> <./MapSubset_SKcentreline_n
-10S4.png (PNG copy)> <./MapSubset_RKcentreline_n10S4.png (PNG copy)>]
-(./Subset.bbl
+[13 <./MapSubset_LRAhourglass_n40S4.png (PNG copy)> <./MapSubset_SKAhourglass_n
+40S4.png (PNG copy)> <./MapSubset_RKAhourglass_n40S4.png (PNG copy)>]
+<SubsetMeanSWE_samplesizeNdensity_LRAhourglass.png, id=141, 1090.0725pt x 334.2
+4875pt>
+File: SubsetMeanSWE_samplesizeNdensity_LRAhourglass.png Graphic file (type png)
+
+ <use SubsetMeanSWE_samplesizeNdensity_LRAhourglass.png>
+Package pdftex.def Info: SubsetMeanSWE_samplesizeNdensity_LRAhourglass.png used
+ on input line 191.
+(pdftex.def)             Requested size: 507.00119pt x 155.45975pt.
+
+<SubsetMeanSWE_samplesizeNdensity_SKAhourglass.png, id=142, 1090.0725pt x 334.2
+4875pt>
+File: SubsetMeanSWE_samplesizeNdensity_SKAhourglass.png Graphic file (type png)
+
+ <use SubsetMeanSWE_samplesizeNdensity_SKAhourglass.png>
+Package pdftex.def Info: SubsetMeanSWE_samplesizeNdensity_SKAhourglass.png used
+ on input line 192.
+(pdftex.def)             Requested size: 507.00119pt x 155.45975pt.
+
+<SubsetMeanSWE_samplesizeNdensity_RKAhourglass.png, id=143, 1090.0725pt x 334.2
+4875pt>
+File: SubsetMeanSWE_samplesizeNdensity_RKAhourglass.png Graphic file (type png)
+
+ <use SubsetMeanSWE_samplesizeNdensity_RKAhourglass.png>
+Package pdftex.def Info: SubsetMeanSWE_samplesizeNdensity_RKAhourglass.png used
+ on input line 193.
+(pdftex.def)             Requested size: 507.00119pt x 155.45975pt.
+
+<SubsetRMSE_samplesizeNdensity_LRAhourglass.png, id=144, 1096.84781pt x 229.607
+82pt>
+File: SubsetRMSE_samplesizeNdensity_LRAhourglass.png Graphic file (type png)
+ <use SubsetRMSE_samplesizeNdensity_LRAhourglass.png>
+Package pdftex.def Info: SubsetRMSE_samplesizeNdensity_LRAhourglass.png used on
+ input line 200.
+(pdftex.def)             Requested size: 507.00119pt x 106.13239pt.
+
+<SubsetRMSE_samplesizeNdensity_SKAhourglass.png, id=145, 1096.84781pt x 229.607
+82pt>
+File: SubsetRMSE_samplesizeNdensity_SKAhourglass.png Graphic file (type png)
+ <use SubsetRMSE_samplesizeNdensity_SKAhourglass.png>
+Package pdftex.def Info: SubsetRMSE_samplesizeNdensity_SKAhourglass.png used on
+ input line 201.
+(pdftex.def)             Requested size: 507.00119pt x 106.13239pt.
+
+<SubsetRMSE_samplesizeNdensity_RKAhourglass.png, id=146, 1096.84781pt x 229.607
+82pt>
+File: SubsetRMSE_samplesizeNdensity_RKAhourglass.png Graphic file (type png)
+ <use SubsetRMSE_samplesizeNdensity_RKAhourglass.png>
+Package pdftex.def Info: SubsetRMSE_samplesizeNdensity_RKAhourglass.png used on
+ input line 202.
+(pdftex.def)             Requested size: 507.00119pt x 106.13239pt.
+ [14 <./SubsetMeanSWE_samplesizeNdensity_LRAhourglass.png (PNG copy)> <./Subset
+MeanSWE_samplesizeNdensity_SKAhourglass.png (PNG copy)> <./SubsetMeanSWE_sample
+sizeNdensity_RKAhourglass.png (PNG copy)>] [15 <./SubsetRMSE_samplesizeNdensity
+_LRAhourglass.png (PNG copy)> <./SubsetRMSE_samplesizeNdensity_SKAhourglass.png
+ (PNG copy)> <./SubsetRMSE_samplesizeNdensity_RKAhourglass.png (PNG copy)>]
+<Subset_SKthetaS2.png, id=155, 1443.89438pt x 555.57562pt>
+File: Subset_SKthetaS2.png Graphic file (type png)
+
+<use Subset_SKthetaS2.png>
+Package pdftex.def Info: Subset_SKthetaS2.png used on input line 211.
+(pdftex.def)             Requested size: 608.15001pt x 234.00238pt.
+ [16
+
+ <./Subset_SKthetaS2.png (PNG copy)>]
+<FullData_SKTheta.png, id=161, 438.13687pt x 377.91188pt>
+File: FullData_SKTheta.png Graphic file (type png)
+
+<use FullData_SKTheta.png>
+Package pdftex.def Info: FullData_SKTheta.png used on input line 219.
+(pdftex.def)             Requested size: 234.00238pt x 201.83775pt.
+ (./Subset.bbl
 Underfull \hbox (badness 4595) in paragraph at lines 8--11
 []\OT1/cmr/m/n/12 Shea C and Jamieson B (2010) Star: an ef-fi-cient snow point-
 
@@ -589,45 +742,47 @@ Underfull \hbox (badness 4595) in paragraph at lines 8--11
 
 )
 
-LaTeX Warning: Reference `sec:FieldDesign' on page 11 undefined on input line 1
-52.
+LaTeX Warning: Reference `sec:FieldDesign' on page 17 undefined on input line 2
+34.
 
-[11]
+[17
+
+ <./FullData_SKTheta.png (PNG copy)>]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 21.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
-[12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 240.
+[18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
  (./Subset.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 240.
 Package rerunfilecheck Info: File `Subset.out' has not changed.
 (rerunfilecheck)             Checksum: 11FD71169671C9A8DE3779A6819BC3D4;225.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 240.
  ) 
 Here is how much of TeX's memory you used:
- 8904 strings out of 494910
- 133255 string characters out of 6179836
- 224080 words of memory out of 5000000
- 12008 multiletter control sequences out of 15000+600000
+ 9013 strings out of 494910
+ 137602 string characters out of 6179836
+ 226047 words of memory out of 5000000
+ 12086 multiletter control sequences out of 15000+600000
  12612 words of font info for 46 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 36i,6n,77p,926b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,77p,926b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Subset.pdf (12 pages, 943931 bytes).
+Output written on Subset.pdf (18 pages, 2078794 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -51,38 +51,67 @@ Variability in observed SWE is included by generating a normal distribution with
 
 \subsection{Results}
 
+density effect-> same for G4 and 13 (kind of bimodal for G13), spread out for G2
+swe vs beta -> distribution from swe is narrower than distribution from beta -> regression introduces a 
+accum grad -> exists for some density values not for other
+
+
+
 The distribution of winter surface mass balance (WSMB) is similar when different density interpolation methods are used to obtain SWE. When variation due to regression coefficients is considered (Figure \ref{fig:WSMB_allDensity}) the distribution of WSMB is approximately normal. On Glacier 4, the mean WSMB is similar for all density options except F1, which produces a lower estimate. Glaciers 2 and 13 have similar mean WSMB values although the Federal Sampler density interpolations (F) tend to produce lower estimates. When variability due to regression coefficient estimation and SWE measurement is considered, the distribution of WSMB is skewed for Glaciers 2 and 13 (Figure \ref{fig:WSMB_allDensity}). There is a higher prevalence of low WSMB because larger portions of the glaciers are estimated to have minimal or no snow accumulation. Density interpolation option F2 on Glacier 13 results in an anomalously narrow and low WSMB distribution. WSMB distributions for Glacier 4 with both sources of variability are approximately normal and have similar mean values. 
 
 The WSMB distribution is generally broader and more skewed when SWE measurement variability is included (Figures \ref{fig:WSMB_oneDensity} and \ref{fig:WSMB_compareBetaAndZZBeta}). The distributions are more normal when only regression coefficient variation is included because the regression coefficients are, by definition, normally distributed. The SWE variability is also normally distributed about the local SWE mean but negative values of SWE are not permitted, which skews the overall distribution of WSMB. Since the observed SWE values were generally lower on Glaciers 2 and 13, more of the values are set to zero when variability is included.  High values of WSMB are also more common when SWE variability is introduced on Glaciers 2 and 13. The mean standard deviation of SWE values from zigzags on Glaciers 2 and 13 is higher than on Glacier 4, which allows comparatively higher and lower SWE values to be included in the regression. 
 
 \begin{figure}[H]
 	\centering
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensityzz.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensityBeta.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensityBetaNzz.png}}%
-	\caption{Distribution of winter surface mass balance (WSMB). (a)  WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (b) WSMB values obtained as in (a) but with the addition of a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
+	\caption{Distribution of winter surface mass balance (WSMB). (Top) WSMB values obtained from a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. (Middle) WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) WSMB values obtained using both SWE variability and regression coefficient variability. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
 	\label{fig:WSMB_allDensity}
 \end{figure}
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width =0.7\textwidth]{WSMB_beta.png}\\
-	\includegraphics[width =0.7\textwidth]{WSMB_betaNsigmaZZ.png}\\
-	\caption{Distribution of winter surface mass balance (WSMB). (a)  WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (b) WSMB values obtained as in (a) but with the addition of a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. Only data for density interpolation option S4 are shown.}
+	\includegraphics[width =0.5\textwidth]{WSMB_zz.png}\\
+	\includegraphics[width =0.5\textwidth]{WSMB_beta.png}\\
+	\includegraphics[width =0.5\textwidth]{WSMB_betaNzz.png}\\
+	\caption{Distribution of winter surface mass balance (WSMB). (a)  WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (b) WSMB values obtained as in (a) but with the addition of a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. Only data for density interpolation option F4 are shown.}
 	\label{fig:WSMB_oneDensity}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_compareBetaAndZZBeta.png}}\\
-	\caption{Comparison of winter surface mass balance distribution when variation due to regression coefficient estimation is included (dark) and when variation from both regression coefficient estimation and observed SWE variation within a grid cell is included (light). }
+	\caption{Comparison of winter surface mass balance distribution when variation due to SWE measurement ( $\sigma_{ZZ}$) and variation due to regression coefficient estimation is included ($\beta$) as well as when variation from both regression coefficient estimation and observed SWE variation within a grid cell is included ($\beta$ and $\sigma_{ZZ}$). }
 	\label{fig:WSMB_compareBetaAndZZBeta}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distributionzz.png}}\\
+	\caption{Winter surface mass balance distribution for eight density interpolation options when variation due to SWE measurement ( $\sigma_{ZZ}$) is included. }
+	\label{fig:WSMB_Distributionzz}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distributionbeta.png}}\\
+	\caption{Winter surface mass balance distribution for eight density interpolation options when variation due to regression coefficient estimation ( $\beta$) is included. }
+	\label{fig:WSMB_Distributionbeta}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_DistributionbetaNzz.png}}\\
+	\caption{Winter surface mass balance distribution for eight density interpolation options when variation due to regression coefficient estimation and SWE measurement ($\beta$ and $\sigma_{ZZ}$) is included. }
+	\label{fig:WSMB_DistributionbetaNzz}
+\end{figure}
 
-
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{WSMB_dNbetaNzz.png}
+	\caption{Total winter surface mass balance (WSMB) distribution. Variability from density interpolation options, regression coefficient estimation and SWE measurement is included. }
+	\label{fig:WSMB_dNbetaNzz}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%
 \bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}

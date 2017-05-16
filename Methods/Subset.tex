@@ -54,7 +54,23 @@ To investigate the effect of sample size and sampling design on WSMB estimates, 
 \item Hourglass transects (Figure \ref{fig:SamplingDesign_Ahourglass})
 \item Hourglass and circle transects (Figure \ref{fig:SamplingDesign_AhourglassCircle})
 \end{enumerate}
-The measured locations in the accumulation area of each glacier are then added to each subset resulting in a total of ten sampling designs. Within each subset, sample sizes of 10 to 100 (maximum 50 for centreline) equally spaced points are selected and the three interpolation methods are used to estimate WSMB. SWE values from all eight density options are separately used for subset interpolation. Further details are described in Appendix \ref{app:Subsets}. 
+The measured locations in the accumulation area of each glacier are also added to each subset resulting in a total of ten sampling designs - five without accumulation area points and five with accumulation area points. The total number of measurement location grid cells is given in Table \ref{tab:ExperimentalDesign_numpoints}. Within each subset, sample sizes of 10 to 100 (maximum 50 for centreline) equally spaced points are selected and the three interpolation methods are used to estimate WSMB. SWE values from all eight density options are separately used for subset interpolation. Further details are described in Appendix \ref{app:Subsets}. 
+
+\begin{table}[]
+\centering
+\caption{Number of measurement location grid cells in each subset as well as the number of measurement locations in the accumulation area for each glacier.}
+\label{tab:ExperimentalDesign_numpoints}
+\begin{tabular}{cccc}
+ & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline \hline
+Centreline & 57 & 67 & 107 \\ \hline 
+\begin{tabular}[c]{@{}c@{}}Centreline \&\\ 4 transects\end{tabular} & 113 & 121 & 187 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Centreline \&\\ 3 transects\end{tabular} & 100 & 105 & 174 \\ \hline
+Hourglass & 151 & 162 & 220 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Hourglass \\ \& circle\end{tabular} & 228 & 256 & 330 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Accumulation\\ area\end{tabular} & 4 & 4 & 10
+\end{tabular}
+\end{table}
+
 
 \begin{figure}[H]
 	\centering
@@ -99,20 +115,20 @@ The measured locations in the accumulation area of each glacier are then added t
 
 Estimates of mean SWE are generally not affected by the number of measurement locations (Figure \ref{fig:SubsetInterpSizeCompile_SWE}). Although variability in WSMB estimates exist with different number of sampling points, there is no clear convergence of values with an increase in sample size. When SK is used to interpolate SWE values, there is little variation in WSMB with different sample sizes and with different data subsets. For Glacier 4 and 13, the SWE estimates are close to that of the full data but for Glacier 2, the SWE estimates are lower than that of the full data. When using LR and RK, the SWE estimates are far more variable for all three glaciers, especially when accumulation area points are not used in the regression. Using the accumulation area points likely better constrains the regression coefficients, which results in more consistent SWE estimates. 
 
-The mean RMSE between estimated and observed SWE values generally decreases as the sample size increases (Figure \ref{fig:SubsetInterpSizeCompile_SWE}). When a LR is used for interpolation, a sample size of approximately 50 results in a minimum RMSE. Especially notable is that an increased sample size dramatically decreases the RMSE on Glacier 13 and with a sample size of 30 points the RMSE of the full data set is achieved. A sample size of 30 gives low RMSE values for all interpolation methods on Glacier 13 (c.f. RK on centreline subset with no accumulation area points).  When RK is used, a sample size of approximately 50 points also results in a minimum RMSE although the different in RMSE between the full data set and the subsets is higher than that of LR. 
+The mean RMSE between estimated and observed SWE values generally decreases as the sample size increases (Figure \ref{fig:SubsetInterpSizeCompile_SWE}). When a LR is used for interpolation, a sample size of approximately 50 results in a minimum RMSE. Especially notable is that an increased sample size dramatically decreases the RMSE on Glacier 13 and with a sample size of 30 points the RMSE of the full data set is achieved. A sample size of 30 gives low RMSE values for all interpolation methods on Glacier 13 (c.f. RK on centreline subset with no accumulation area points).  When RK is used, a sample size of approximately 50 points also results in a minimum RMSE although the difference in RMSE between the full data set and the subsets is higher than that of LR. 
 
-The choice of data subset affects the RMSE of SWE estimates, especially when a regression is used for interpolation (LR or RK). When SK is used for interpolation, the difference between data subsets is smaller. Using LR or RK on only the centreline point results in a large RMSE, especially on Glacier 4. Generally, centreline and four transects results in a slightly lower RMSE than centreline and three transects. The hourglass subsets often result in the lowest RMSE on Glaciers 2 and 13 with hourglass and circle producing a slightly higher RMSE overall. On Glacier 4, the hourglass and circle with more than $\sim$60 points tends to result in lowest RMSE. For all glaciers, the centreline (with no transects) results in high RMSE values.
+The choice of data subset types affects the RMSE of SWE estimates, especially when a regression is used for interpolation (LR or RK). When SK is used for interpolation, the difference between data subsets is smaller. Using LR or RK on only the centreline point results in a large RMSE, especially on Glacier 4. Generally, centreline and four transects results in a slightly lower RMSE than centreline and three transects. The hourglass subsets often result in the lowest RMSE on Glaciers 2 and 13 with hourglass and circle producing a slightly higher RMSE overall. On Glacier 4, the hourglass and circle with more than $\sim$60 points tends to result in lowest RMSE. For all glaciers, the centreline (with no transects) results in high RMSE values.
 
 Generally, the RMSE decreases when accumulation area points are included in the interpolation. However, the decrease in RMSE is not large and often the RMSE is lower if a different sampling design with no accumulation area points is chosen. For example, on Glacier 2 when RK is used, an hourglass sampling design with more than 30 points results in a lower RMSE than a centreline with three transects and accumulation area points. 
 
+The density interpolation option affects the RMSE and mean SWE value of estimated winter surface mass balance. However, the effects are different for different experimental designs. The results from the centreline subset (Figure \ref{fig:MapSubset_centreline_n10S4}) and hourglass with accumulation area subset (Figure \ref{fig:MapSubset_Ahourglass_n40S4}) are shown to exemplify some of the differences. As mentioned above, the centreline and hourglass generally produce the worst and best, respectively, estimates of distributed SWE when compared to the full data set.
 
-- density affects it
-- SK density has larger impact 
-- sample size less of an impact (cf G13 usually has reduction of error at 40 points)
+Density interpolation introduces large variability when estimating mean SWE (Figure \ref{fig:SubsetMeanSWE_samplesizeNdensity_centreline}) and calculating RMSE (Figure \ref{fig:SubsetRMSE_samplesizeNdensity_centreline}) with the centreline subset. The range of mean SWE values and RMSE is largest for RK and smallest for SK. The variability introduced by using different density options is relatively consistent between glaciers and there is little change with a varying sample size. 
 
+The hourglass subset results in comparatively less variability in mean SWE (Figure \ref{fig:SubsetMeanSWE_samplesizeNdensity_Ahourglass}) and RMSE (Figure \ref{fig:SubsetRMSE_samplesizeNdensity_Ahourglass}. With the hourglass subset there is little difference in variability due to density when using different interpolation methods. However, the variability differs between glaciers. Glacier 2 has the largest range in mean SWE and RMSE values. The sample size affects the estimated mean SWE and RMSE but does not appear to change the range of values. For Glacier 4, density options F1 stands out as producing a lower mean SWE value and higher RMSE value for all sample sizes. 
 
+In general, SK estimates resulted in the least variability when considering both mean SWE and RMSE. However, there is considerable variability in the estimates of the kriging range ($\theta$) for data subsets and in most cases they are much larger than the $\theta$ distance estimated using the full data set (Figure \ref{fig:Subset_theta}). The range distance tends to be over estimated when data subsets are used and the $\theta$ values span more than an order of magnitude. The variability introduced by using different subsets is larger than that of the variability due to choice of density option (Figure \ref{fig:FullData_theta}). Despite the inconsistent $\theta$ values, estimates of mean SWE and RMSE are similar between data subsets so winter surface mass balance is relatively insensitive to calculated kriging range. 
 
-\pagebreak
 \begin{landscape}
 \begin{figure}[H]
 	\centering
@@ -127,16 +143,82 @@ Generally, the RMSE decreases when accumulation area points are included in the 
 	\caption{Mean root mean squared error (RMSE) from all density options for data subsets with (solid) and without (dashed) accumulation area measurement locations. RMSE refers to the difference between the estimated values of SWE using the various interpolation methods and data subsets and the observed values of SWE. Linear regression (top panels), simple kriging (middle panels) and regression kriging (bottom panels) are used to interpolate data. Sample size indicates number of measurement location from each sampling design used to find distributed SWE. Black dashed lines show the mean RMSE between estimated and observed SWE values found using all available data and the respective interpolation method. Note that plots of Glacier 4 RMSE have a different y-axis.}
 	\label{fig:SubsetInterpSizeCompile_RMSE}
 \end{figure}
-
 \end{landscape}
+
+%% Centreline
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =0.9\textwidth]{MapSubset_LRcentreline_n10S4.png}\\
 	\includegraphics[width =0.9\textwidth]{MapSubset_SKcentreline_n10S4.png}\\
 	\includegraphics[width =0.9\textwidth]{MapSubset_RKcentreline_n10S4.png}\\
-	\caption{Distributed winter surface mass balance found using  linear regression (MLR) (top), simple kriging (middle) and regression kriging (BMA) (bottom) on centreline subset data ($n=10$).  \topomap}
+	\caption{Distributed winter surface mass balance found using  linear regression (MLR) (top), simple kriging (middle) and regression kriging (BMA) (bottom) on centreline subset data ($n=10$).}
 	\label{fig:MapSubset_centreline_n10S4}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetMeanSWE_samplesizeNdensity_LRcentreline.png}}\\
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetMeanSWE_samplesizeNdensity_SKcentreline.png}}\\
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetMeanSWE_samplesizeNdensity_RKcentreline.png}}\\
+	\caption{Distributed winter surface mass balance found using linear regression (MLR) (top), simple kriging (middle) and regression kriging (BMA) (bottom) on centreline subset data at various sample sizes. }
+	\label{fig:SubsetMeanSWE_samplesizeNdensity_centreline}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetRMSE_samplesizeNdensity_LRcentreline.png}}\\
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetRMSE_samplesizeNdensity_SKcentreline.png}}\\
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetRMSE_samplesizeNdensity_RKcentreline.png}}\\
+	\caption{RMSE between estimated and sampled SWE at all measurement locations. Estimates were found using linear regression (MLR) (top), simple kriging (middle) and regression kriging (BMA) (bottom) on centreline at various sample sizes. Note the different y-axis scale for Glacier 4 plots.}
+	\label{fig:SubsetRMSE_samplesizeNdensity_centreline}
+\end{figure}
+
+
+%%% AHOURGLASS
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =0.9\textwidth]{MapSubset_LRAhourglass_n40S4.png}\\
+	\includegraphics[width =0.9\textwidth]{MapSubset_SKAhourglass_n40S4.png}\\
+	\includegraphics[width =0.9\textwidth]{MapSubset_RKAhourglass_n40S4.png}\\
+	\caption{Distributed winter surface mass balance found using linear regression (MLR) (top), simple kriging (middle) and regression kriging (BMA) (bottom) on hourglass subset data with accumulation area points ($n=40+$accumulation area points). }
+	\label{fig:MapSubset_Ahourglass_n40S4}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetMeanSWE_samplesizeNdensity_LRAhourglass.png}}\\
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetMeanSWE_samplesizeNdensity_SKAhourglass.png}}\\
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetMeanSWE_samplesizeNdensity_RKAhourglass.png}}\\
+	\caption{Distributed winter surface mass balance found using linear regression (MLR) (top), simple kriging (middle) and regression kriging (BMA) (bottom) on hourglass subset data with accumulation points at various sample sizes. }
+	\label{fig:SubsetMeanSWE_samplesizeNdensity_Ahourglass}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetRMSE_samplesizeNdensity_LRAhourglass.png}}\\
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetRMSE_samplesizeNdensity_SKAhourglass.png}}\\
+	\makebox[\textwidth][c]{\includegraphics[width =1.3\textwidth]{SubsetRMSE_samplesizeNdensity_RKAhourglass.png}}\\
+	\caption{RMSE between estimated and sampled SWE at all measurement locations. Estimates were found using linear regression (MLR) (top), simple kriging (middle) and regression kriging (BMA) (bottom) on hourglass subset data with accumulation points at various sample sizes.Note the different y-axis scale for Glacier 4 plots.}
+	\label{fig:SubsetRMSE_samplesizeNdensity_Ahourglass}
+\end{figure}
+
+%% Theta
+\begin{landscape}
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[height =0.6\textwidth]{Subset_SKthetaS2.png}}\\
+	\caption{Simple kriging range distance ($\theta$) for data subsets with various sizes. The frequency of $\theta$ values from subset data is shown as inset figures for each glacier. Solid black line is the mean $\theta$ from full data set.}
+	\label{fig:Subset_theta}
+\end{figure}
+\end{landscape}
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =0.6\textwidth]{FullData_SKTheta.png}}\\
+	\caption{Boxplot of simple kriging range distance ($\theta$) for full data set with different density options.}
+	\label{fig:FullData_theta}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%
