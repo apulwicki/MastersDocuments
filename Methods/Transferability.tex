@@ -6,7 +6,6 @@
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{graphicx}
 \usepackage{caption}
-\usepackage{natbib}
 \usepackage{wrapfig}
 \usepackage{enumitem}
 \setlist[enumerate]{itemsep=0mm}
@@ -37,17 +36,18 @@
 \section{Transferability}
 \label{sec:transferability}
 
-To determine the spatial transferability of LR coefficients, the coefficients from each glacier are used to estimate WSMB on the remaining glaciers. 
+To determine the spatial transferability of LR coefficients, the coefficients from each glacier are used to estimate WSMB on the remaining glaciers. All collected data is then used to generate LR coefficients, which are applied to the study glaciers to estimate WSMB. 
 
 
 \subsection{Results}
 
-There are considerable differences in the spatial pattern and mean estimated WSMB found using transferred regression coefficients (Figure \ref{fig:MapTransferabilityS4}). The spatial patterns found using the Glacier 2 and Glacier 13 coefficients reflect the dominance of elevation within the regression. The uniform distributions found using Glacier 4 coefficients reflect the low regression coefficient values for the topographic parameters on Glacier 4. 
+There are considerable differences in the spatial pattern and mean estimated WSMB found using transferred regression coefficients (Figure \ref{fig:MapTransferabilityGlaciersMean}). The spatial patterns found using the Glacier 2 and Glacier 13 coefficients reflect the dominance of elevation within the regression. The uniform distributions found using Glacier 4 coefficients reflect the low regression coefficient values for the topographic parameters on Glacier 4. 
 
-The mean estimated WSMB differs considerably when the various LR coefficients are used. For Glacier 13 especially, the range of mean WSMB is large (0.30 m w.e.) between different coefficients. Glacier 4 coefficients result in the lowest mean WSMB values because the mean value is approximately equal to the mean of the observed values.
+The mean estimated WSMB differs considerably when the various LR coefficients are used. Glacier 4 coefficients result in the highest mean WSMB values because the mean value is approximately equal to the mean of the observed values on Glacier 4, which are higher than that of Glaciers 2 and 13. The range of mean WSMB between different coefficients is especially large for Glacier 4 (0.34 m w.e.).
 
-The range-scale accumulation gradient (Glacier 4 highest accumulation, Glacier 13 lowest accumulation) is present when using Glacier 4 and 13 coefficients but not present when using Glacier 2 coefficients. However, Glacier 4 always has the highest mean WSMB by $\geq0.2$ m w.e. regardless of the regression coefficients because a smaller portion of Glacier 4 is at lower elevation and the minimum elevation (1958 m a.s.l.) is the greatest between the three study glaciers. Furthermore, a significant portion of the ablation area on Glacier 2 and 13 has little or no accumulation (especially when Glacier 2 coefficients are used), which decreases the mean WSMB.  
+The range-scale accumulation gradient (Glacier 4 highest accumulation, Glacier 13 lowest accumulation) is not present when using transferred coefficients. Glacier 4 coefficients result in an almost uniform snow distribution on all glaciers. Coefficients from Glaciers 2 and 13 result in Glacier 13 having the highest WSMB. For Glaciers 4 and 2, transferring coefficients decreases the mean WSMB and for Glacier 13, using transferred coefficients increases the mean WSMB. When using all the data to estimate a LR, the mean WSMB and spatial pattern of SWE on each glacier is similar to when Glacier 13 coefficients are used, but the larger LR intercept value results in a higher mean WSMB. 
 
+The WSMB is largely determined by the intercept of the LR used and the magnitude of the elevation regression coefficient (Table \ref{tab:TransferabilityElevCoeffIntercept}) because all other regressors have small coefficients. Therefore, estimating WSMB in the Donjek Range from transferred coefficients is especially sensitive to LR intercept value and magnitude of the elevation regression coefficient.
 
 \pagebreak
 \begin{figure}[H]
@@ -55,8 +55,39 @@ The range-scale accumulation gradient (Glacier 4 highest accumulation, Glacier 1
 	\includegraphics[width =0.9\textwidth]{MapTransferabilityG4Coeffs.png}\\
 	\includegraphics[width =0.9\textwidth]{MapTransferabilityG2Coeffs.png}\\
 	\includegraphics[width =0.9\textwidth]{MapTransferabilityG13Coeffs.png}\\
-	\caption{Transfer of LR coefficients to estimate distributed winter surface mass balance (WSMB) on study glaciers. WSMB found using Glacier 4 (top), Glacier 2 (middle) and Glacier 13 (bottom) regression coefficients.  \topomap}
-	\label{fig:MapTransferabilityS4}
+	\caption{Transfer of LR coefficients to estimate distributed winter surface mass balance (WSMB) on study glaciers. WSMB found using Glacier 4 (top), Glacier 2 (middle) and Glacier 13 (bottom) regression coefficients. The mean SWE from all density interpolation options is shown. Arrows indicate glacier flow direction.}
+	\label{fig:MapTransferabilityGlaciersMean}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =0.9\textwidth]{MapTransferabilityComboCoeffs.png}\\
+	\caption{Transfer of LR coefficients to estimate distributed winter surface mass balance (WSMB) on study glaciers. WSMB found using coefficients determined from all available SWE observations. The mean SWE from all density interpolation options is shown. Arrows indicate glacier flow direction.}
+	\label{fig:MapTransferabilityComboMean}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Elevation regression coefficients and intercepts used in linear regression transferability. The mean RMSE for all glaciers is also shown.}
+\label{tab:TransferabilityElevCoeffIntercept}
+\begin{tabular}{ccccc}
+ & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 4\\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 2\\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 13 \\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}All Data \\ Coefficients\end{tabular}} \\ \hline \hline
+\begin{tabular}[c]{@{}c@{}}Elevation \\ Regression\\ Coefficient\end{tabular} & 0.0082 & 0.1084 & 0.0510 & 0.0523 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Intercept\\ (m w.e)\end{tabular} & 0.6217 & 0.2497 & 0.2247 & 0.3435 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Mean RMSE\\ (m w.e.)\end{tabular} & 0.3066 & 0.2065 & 0.2142 & 0.1994
+\end{tabular}
+\end{table}
+
+
+The RMSE of estimated WSMB found using transferred coefficients is larger for all glaciers then when using glacier specific coefficients (Figure \ref{fig:TransferabilityRMSE}). Glacier 4 coefficients introduce a large RMSE for Glaciers 2 and 13, while all other coefficient sets result in large RMSE on Glacier 4. Glaciers 2 and 13 have relatively small changes in RMSE when coefficients from Glacier 2, Glacier 13 or all data coefficients are used. Interestingly, the lowest average RMSE for all glaciers occurs when all data coefficients are used (Table \ref{tab:TransferabilityElevCoeffIntercept}). Therefore, if transfer of coefficients is needed, using all the data to generate LR coefficients will result in the lowest error with observed values.  
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =0.8\textwidth]{TransferabilityRMSE.png}\\
+	\caption{Root mean squred error (RMSE) at sampling locations when LR coefficients are transfered between glaciers. The mean RMSE from all density interpolation options is shown.}
+	\label{fig:TransferabilityRMSE}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  10 MAY 2017 10:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  2 JUN 2017 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -260,28 +260,21 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@ContinuedFloat=\count110
 Package caption Info: hyperref package is loaded.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip50
-\bibsep=\skip51
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count111
-)
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen125
 \WF@size=\dimen126
-\c@WF@wrappedlines=\count112
+\c@WF@wrappedlines=\count111
 \WF@box=\box28
 \WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip52
+\labelindent=\skip50
 \enit@outerparindent=\dimen127
 \enit@toks=\toks27
 \enit@inbox=\box29
-\enitdp@description=\count113
+\enitdp@description=\count112
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen128
@@ -291,12 +284,12 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-\c@subfigure=\count114
-\c@subtable=\count115
+\c@subfigure=\count113
+\c@subtable=\count114
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count116
+\c@float@type=\count115
 \float@exts=\toks28
 \float@box=\box30
 \@float@everytoks=\toks29
@@ -310,15 +303,15 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen129
 \extrarowheight=\dimen130
 \NC@list=\toks30
-\extratabsurround=\skip53
-\backup@length=\skip54
+\extratabsurround=\skip51
+\backup@length=\skip52
 )
 \TX@col@width=\dimen131
 \TX@old@table=\dimen132
 \TX@old@col=\dimen133
 \TX@target=\dimen134
 \TX@delta=\dimen135
-\TX@cols=\count117
+\TX@cols=\count116
 \TX@ftn=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
@@ -327,9 +320,9 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count118
-\rotFPtop=\skip55
-\rotFPbot=\skip56
+\c@r@tfl@t=\count117
+\rotFPtop=\skip53
+\rotFPbot=\skip54
 \rot@float@box=\box32
 \rot@mess@toks=\toks32
 )
@@ -344,7 +337,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks33
 \XKV@tempa@toks=\toks34
 )
-\XKV@depth=\count119
+\XKV@depth=\count118
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -374,12 +367,12 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count120
+\c@checkoddpage=\count119
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box34
-\sift@deathcycles=\count121
+\sift@deathcycles=\count120
 \@vwid@loff=\dimen144
 \@vwid@roff=\dimen145
 ))
@@ -393,22 +386,22 @@ LaTeX Info: Redefining \bm on input line 207.
 ) (./Transferability.aux)
 \openout1 = `Transferability.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -416,11 +409,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count121
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (./Transferability.out) (./Transferability.out)
 \@outlinefile=\write3
@@ -429,16 +422,16 @@ LaTeX Info: Redefining \nameref on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count123
+\scratchcounter=\count122
 \scratchdimen=\dimen146
 \scratchbox=\box36
-\nofMPsegments=\count124
-\nofMParguments=\count125
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count126
+\MPscratchCnt=\count125
 \MPscratchDim=\dimen147
-\MPnumerator=\count127
-\makeMPintoPDFobject=\count128
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -460,16 +453,8 @@ Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 <MapTransferabilityG4Coeffs.png, id=23, 939.51pt x 433.62pt>
@@ -499,35 +484,63 @@ Overfull \vbox (21.99513pt too high) has occurred while \output is active []
 
 [2 <./MapTransferabilityG4Coeffs.png (PNG copy)> <./MapTransferabilityG2Coeffs.
 png (PNG copy)> <./MapTransferabilityG13Coeffs.png (PNG copy)>]
+<MapTransferabilityComboCoeffs.png, id=30, 939.51pt x 433.62pt>
+File: MapTransferabilityComboCoeffs.png Graphic file (type png)
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 21.
+<use MapTransferabilityComboCoeffs.png>
+Package pdftex.def Info: MapTransferabilityComboCoeffs.png used on input line 6
+4.
+(pdftex.def)             Requested size: 350.99762pt x 161.99838pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (7.82153pt too wide) in paragraph at lines 73--79
+ [][] 
+ []
+
+[3 <./MapTransferabilityComboCoeffs.png (PNG copy)>]
+<TransferabilityRMSE.png, id=39, 593.21625pt x 344.78813pt>
+File: TransferabilityRMSE.png Graphic file (type png)
+
+<use TransferabilityRMSE.png>
+Package pdftex.def Info: TransferabilityRMSE.png used on input line 88.
+(pdftex.def)             Requested size: 312.00119pt x 181.34792pt.
+
+
+Package caption Warning: Unused \captionsetup[subfigure] on input line 20.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
-(./Transferability.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
+[4 <./TransferabilityRMSE.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
+ (./Transferability.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `Transferability.out' has not changed.
 (rerunfilecheck)             Checksum: 5F03081DBA456D39BDC7FC6A1ACE1A62;106.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 8809 strings out of 494910
- 131236 string characters out of 6179836
- 220557 words of memory out of 5000000
- 11956 multiletter control sequences out of 15000+600000
+ 8512 strings out of 494910
+ 128017 string characters out of 6179836
+ 216607 words of memory out of 5000000
+ 11656 multiletter control sequences out of 15000+600000
  12265 words of font info for 45 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 36i,6n,77p,753b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,77p,814b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Transferability.pdf (2 pages, 174057 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on Transferability.pdf (4 pages, 227320 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 32 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 57 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
