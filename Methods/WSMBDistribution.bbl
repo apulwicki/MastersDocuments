@@ -1,7 +1,12 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{1}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citename{Bagos and Adam, }2015]{Bagos2015}
+Bagos PG and Adam M (2015) {On the Covariance of Regression Coefficients}.
+  \emph{Open Journal of Statistics}, \textbf{5}(07), 680 (\doi
+  {10.4236/ojs.2015.57069})
 
 \end{thebibliography}

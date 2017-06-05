@@ -39,15 +39,27 @@
 
 \subsection{Background}
 
-The effect of two sources of variability on the estimation of winter surface mass balance (WSMB) are investigated in this section. Variability in observed values of SWE and variability in the linear regression coefficients influences the final estimate of WSMB. To quantify the effects of these two sources of variability, a Monte Carlo sampling of the distribution of observed SWE and the distribution of regression coefficients is used to obtain a distribution of WSMB.  
-
+The effect of three sources of variability on the estimation of winter surface mass balance (WSMB) are investigated in this section. Variability in (1) observed values of SWE in a grid cell, (2) linear regression coefficients and (3) choice of density interpolation method, influences the final estimate of WSMB. To quantify the effects of these two sources of variability, a Monte Carlo sampling of the distribution of observed SWE and regression coefficients is used to obtain a distribution of WSMB for eight chosen density interpolation methods.  
 
 \subsection{Methods}
 
-Variability in estimated WSMB is found by considering variability due to estimation of regression coefficients as well as variability in observed SWE for each grid cell. Variability from regression coefficient estimation was found by calculating a linear regression using the built-in MATLAB function \texttt{fitlm}. A set of multivariate normal random regression coefficients are then found using the coefficient covariance and coefficient values from the linear regression in the built-in function \texttt{mvnrnd}. The random $\beta$ values are generated 1000 times and the WSMB is calculated for each set of coefficients.
+Distributions of WSMB are calculated by first determining a normal distribution of SWE values in a grid cell and/or of regression coefficients. The distributions are sampled individually and a WSMB is calculated. Then, both distributions are sampled to get a combined WSMB distribution. A WSMB distribution is calculated for each density option (Section \ref{sec:density}). The data combined to estimate the WSMB distribution for variability due to observed SWE, regression coefficient estimation and density interpolation method. 
+
+\subsubsection{Observed SWE in grid cells}
 
 Variability in observed SWE is included by generating a normal distribution with $\mu=0$ and a standard deviation equal to the glacier-wide mean standard deviation of the observed zigzag SWE values ($\sigma_{\mathrm{G4}} = 0.027 $ m w.e., $\sigma_{\mathrm{G2}} = 0.035$ m w.e., $\sigma_{\mathrm{G13}} = 0.040 $ m w.e.). A random set of values is drawn from this distribution and added to the SWE values used to calculate the regression. SWE values that end up being less than zero are assigned a SWE of zero.
 
+\subsubsection{Regression coefficients}
+
+Variability from regression coefficient estimation was found by first calculating linear regression coefficients ($\boldsymbol{\beta}$) using cross-correlation and BIC weighting of multivariate linear regression models (Section \ref{sec:MLR}). A set of multivariate normal random regression coefficient distributions are then found using the coefficient covariance and coefficient values from the linear regression using the built-in function \texttt{mvnrnd}. The covariance of regression coefficients is given by \citep{Bagos2015}:
+\begin{equation}
+\mathrm{cov}\left( \boldsymbol{\beta} \right) = \sigma^2 \left( \boldsymbol{X}'  \boldsymbol{X} \right)^{-1}
+\end{equation}
+where $\boldsymbol{X}$ is the $n \times k$ matrix of predictor variables. The variance of the regression, $\sigma^2$, is estimated using
+\begin{equation}
+\sigma^2 = \frac{\sum^n_{i=1} \left(\boldsymbol{y}_i-\bar{\boldsymbol{y}} \right)^2}{n-k-1}
+\end{equation}
+The distributions of each $\beta$ are sampled 1000 times and the WSMB is calculated for each set of coefficients.
 
 \subsection{Results}
 
@@ -76,7 +88,7 @@ The WSMB distribution is generally broader and more skewed when SWE measurement 
 	\includegraphics[width =0.5\textwidth]{WSMB_zz.png}\\
 	\includegraphics[width =0.5\textwidth]{WSMB_beta.png}\\
 	\includegraphics[width =0.5\textwidth]{WSMB_betaNzz.png}\\
-	\caption{Distribution of winter surface mass balance (WSMB). (a)  WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (b) WSMB values obtained as in (a) but with the addition of a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. Only data for density interpolation option F4 are shown.}
+	\caption{Distribution of winter surface mass balance (WSMB). (a)  WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (b) WSMB values obtained as in (a) but with the addition of a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
 	\label{fig:WSMB_oneDensity}
 \end{figure}
 

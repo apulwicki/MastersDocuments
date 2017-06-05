@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  12 MAY 2017 12:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  5 JUN 2017 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,137 +459,149 @@ Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 
+
+LaTeX Warning: Reference `sec:density' on page 1 undefined on input line 46.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<WSMB_allDensityzz.png, id=34, 1408.51219pt x 390.70969pt>
+LaTeX Warning: Reference `sec:MLR' on page 1 undefined on input line 54.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<WSMB_allDensityzz.png, id=59, 1408.51219pt x 390.70969pt>
 File: WSMB_allDensityzz.png Graphic file (type png)
 
 <use WSMB_allDensityzz.png>
-Package pdftex.def Info: WSMB_allDensityzz.png used on input line 66.
+Package pdftex.def Info: WSMB_allDensityzz.png used on input line 78.
 (pdftex.def)             Requested size: 467.99881pt x 129.81693pt.
 
-<WSMB_allDensityBeta.png, id=35, 1408.51219pt x 390.70969pt>
+<WSMB_allDensityBeta.png, id=60, 1408.51219pt x 390.70969pt>
 File: WSMB_allDensityBeta.png Graphic file (type png)
 
 <use WSMB_allDensityBeta.png>
-Package pdftex.def Info: WSMB_allDensityBeta.png used on input line 67.
+Package pdftex.def Info: WSMB_allDensityBeta.png used on input line 79.
 (pdftex.def)             Requested size: 467.99881pt x 129.81693pt.
 
-<WSMB_allDensityBetaNzz.png, id=36, 1408.51219pt x 390.70969pt>
+<WSMB_allDensityBetaNzz.png, id=61, 1408.51219pt x 390.70969pt>
 File: WSMB_allDensityBetaNzz.png Graphic file (type png)
 
 <use WSMB_allDensityBetaNzz.png>
-Package pdftex.def Info: WSMB_allDensityBetaNzz.png used on input line 68.
+Package pdftex.def Info: WSMB_allDensityBetaNzz.png used on input line 80.
 (pdftex.def)             Requested size: 467.99881pt x 129.81693pt.
- [2]
-<WSMB_zz.png, id=44, 429.10312pt x 338.76563pt>
+ [3]
+<WSMB_zz.png, id=66, 429.10312pt x 338.76563pt>
 File: WSMB_zz.png Graphic file (type png)
  <use WSMB_zz.png>
-Package pdftex.def Info: WSMB_zz.png used on input line 76.
+Package pdftex.def Info: WSMB_zz.png used on input line 88.
 (pdftex.def)             Requested size: 195.0pt x 153.94733pt.
 
-<WSMB_beta.png, id=45, 429.10312pt x 338.76563pt>
+<WSMB_beta.png, id=67, 429.10312pt x 338.76563pt>
 File: WSMB_beta.png Graphic file (type png)
  <use WSMB_beta.png>
-Package pdftex.def Info: WSMB_beta.png used on input line 77.
+Package pdftex.def Info: WSMB_beta.png used on input line 89.
 (pdftex.def)             Requested size: 195.0pt x 153.94733pt.
 
-<WSMB_betaNzz.png, id=46, 429.10312pt x 338.76563pt>
+<WSMB_betaNzz.png, id=68, 429.10312pt x 338.76563pt>
 File: WSMB_betaNzz.png Graphic file (type png)
  <use WSMB_betaNzz.png>
-Package pdftex.def Info: WSMB_betaNzz.png used on input line 78.
+Package pdftex.def Info: WSMB_betaNzz.png used on input line 90.
 (pdftex.def)             Requested size: 195.0pt x 153.94733pt.
 
-[3 <./WSMB_allDensityzz.png (PNG copy)> <./WSMB_allDensityBeta.png (PNG copy)> 
+[4 <./WSMB_allDensityzz.png (PNG copy)> <./WSMB_allDensityBeta.png (PNG copy)> 
 <./WSMB_allDensityBetaNzz.png (PNG copy)>]
-Overfull \vbox (12.34196pt too high) has occurred while \output is active []
+Overfull \vbox (26.84196pt too high) has occurred while \output is active []
 
 
-[4 <./WSMB_zz.png (PNG copy)> <./WSMB_beta.png (PNG copy)> <./WSMB_betaNzz.png 
+[5 <./WSMB_zz.png (PNG copy)> <./WSMB_beta.png (PNG copy)> <./WSMB_betaNzz.png 
 (PNG copy)>]
-<WSMB_compareBetaAndZZBeta.png, id=55, 1282.03969pt x 537.50812pt>
+<WSMB_compareBetaAndZZBeta.png, id=77, 1282.03969pt x 537.50812pt>
 File: WSMB_compareBetaAndZZBeta.png Graphic file (type png)
 
 <use WSMB_compareBetaAndZZBeta.png>
-Package pdftex.def Info: WSMB_compareBetaAndZZBeta.png used on input line 85.
+Package pdftex.def Info: WSMB_compareBetaAndZZBeta.png used on input line 97.
 (pdftex.def)             Requested size: 467.99881pt x 196.20934pt.
 
-<WSMB_Distributionzz.png, id=56, 1197.72469pt x 804.00375pt>
+<WSMB_Distributionzz.png, id=78, 1197.72469pt x 804.00375pt>
 File: WSMB_Distributionzz.png Graphic file (type png)
 
 <use WSMB_Distributionzz.png>
-Package pdftex.def Info: WSMB_Distributionzz.png used on input line 92.
+Package pdftex.def Info: WSMB_Distributionzz.png used on input line 104.
 (pdftex.def)             Requested size: 467.99881pt x 314.14908pt.
 
-<WSMB_Distributionbeta.png, id=57, 1197.72469pt x 804.00375pt>
+<WSMB_Distributionbeta.png, id=79, 1197.72469pt x 804.00375pt>
 File: WSMB_Distributionbeta.png Graphic file (type png)
 
 <use WSMB_Distributionbeta.png>
-Package pdftex.def Info: WSMB_Distributionbeta.png used on input line 98.
+Package pdftex.def Info: WSMB_Distributionbeta.png used on input line 110.
 (pdftex.def)             Requested size: 467.99881pt x 314.14908pt.
- [5 <./WSMB_compareBetaAndZZBeta.png (PNG copy)>] <WSMB_DistributionbetaNzz.png
-, id=63, 1197.72469pt x 804.00375pt>
+ [6 <./WSMB_compareBetaAndZZBeta.png (PNG copy)>] <WSMB_DistributionbetaNzz.png
+, id=84, 1197.72469pt x 804.00375pt>
 File: WSMB_DistributionbetaNzz.png Graphic file (type png)
 
 <use WSMB_DistributionbetaNzz.png>
-Package pdftex.def Info: WSMB_DistributionbetaNzz.png used on input line 104.
+Package pdftex.def Info: WSMB_DistributionbetaNzz.png used on input line 116.
 (pdftex.def)             Requested size: 467.99881pt x 314.14908pt.
- [6 <./WSMB_Distributionzz.png (PNG copy)>]
-[7 <./WSMB_Distributionbeta.png (PNG copy)>]
-<WSMB_dNbetaNzz.png, id=75, 640.64343pt x 509.65407pt>
+ [7 <./WSMB_Distributionzz.png (PNG copy)>]
+[8 <./WSMB_Distributionbeta.png (PNG copy)>]
+<WSMB_dNbetaNzz.png, id=96, 640.64343pt x 509.65407pt>
 File: WSMB_dNbetaNzz.png Graphic file (type png)
 
 <use WSMB_dNbetaNzz.png>
-Package pdftex.def Info: WSMB_dNbetaNzz.png used on input line 111.
+Package pdftex.def Info: WSMB_dNbetaNzz.png used on input line 123.
 (pdftex.def)             Requested size: 390.0pt x 310.26639pt.
- [8 <./WSMB_DistributionbetaNzz.png (PNG copy)>]
-(./WSMBDistribution.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 7.
-
-)
+ [9 <./WSMB_DistributionbetaNzz.png (PNG copy)>]
+(./WSMBDistribution.bbl)
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 21.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
-[9 <./WSMB_dNbetaNzz.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
+[10 <./WSMB_dNbetaNzz.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (./WSMBDistribution.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
 Package rerunfilecheck Info: File `WSMBDistribution.out' has not changed.
-(rerunfilecheck)             Checksum: 7D713E0F8A26262B03562EFF94395D4B;246.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
+(rerunfilecheck)             Checksum: 83F3121539FEE2BF32B93D6432DAAC2C;413.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 8880 strings out of 494910
- 132551 string characters out of 6179836
- 224454 words of memory out of 5000000
- 11999 multiletter control sequences out of 15000+600000
- 12434 words of font info for 46 fonts, out of 8000000 for 9000
+ 8895 strings out of 494910
+ 132770 string characters out of 6179836
+ 224534 words of memory out of 5000000
+ 12007 multiletter control sequences out of 15000+600000
+ 12781 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  36i,7n,77p,1117b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on WSMBDistribution.pdf (9 pages, 678977 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt12.pfb>
+Output written on WSMBDistribution.pdf (10 pages, 723557 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
