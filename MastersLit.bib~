@@ -10,6 +10,16 @@
 	year = "1986"
 }
 
+@article{Logan1973,
+	author = "Logan, L",
+	journal = "Role of Snow and Ice in Hydrology, IAHS AIHS Publ",
+	pages = "864--884",
+	title = "{Basin-wide water equivalent estimation from snowpack depth measurements}",
+	url = "http://hydrologie.org/redbooks/a107/107069.pdf",
+	volume = "107",
+	year = "1973"
+}
+
 @inproceedings{Kohavi1995,
 	author = "Kohavi, Ron and others",
 	booktitle = "{ {Proceedings of the Fourteenth International Joint Conference on Artificial Intelligence}}",
@@ -542,6 +552,15 @@
 	pages = "320--329",
 	title = "{NASA Cold Land Processes Experiment (CLPX 2002/03): Field measurements of snowpack properties and soil moisture}",
 	volume = "10",
+	year = "2009"
+}
+
+@book{Fierz2009,
+	author = "Fierz, CRLA and Armstrong, Richard L and Durand, Yves and Etchevers, Pierre and Greene, Ethan and McClung, David M and Nishimura, Kouichi and Satyawali, Pramod K and Sokratov, Sergey A",
+	publisher = "UNESCO/IHP Paris",
+	title = "{The international classification for seasonal snow on the ground}",
+	url = "http://unesdoc.unesco.org/images/0018/001864/186462e.pdf",
+	volume = "25",
 	year = "2009"
 }
 
@@ -3201,5 +3220,24 @@
 	title = "{An 11-year record of mass balance of {Brewster Glacier, New Zealand}, determined using a geostatistical approach}",
 	volume = "63",
 	year = "2017"
+}
+
+@article{Bagos2015,
+	author = "Bagos, Pantelis G and Adam, Maria",
+	doi = "10.4236/ojs.2015.57069",
+	journal = "Open Journal of Statistics",
+	number = "07",
+	pages = "680",
+	publisher = "Scientific Research Publishing",
+	title = "{On the Covariance of Regression Coefficients}",
+	volume = "5",
+	year = "2015"
+}
+
+@book{Gray1981,
+	author = "Gray, Donald Maurice and Male, David Harold",
+	publisher = "Pergamon Press",
+	title = "{Handbook of snow: principles, processes, management \& use}",
+	year = "1981"
 }
 
