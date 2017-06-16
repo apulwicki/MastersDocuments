@@ -2700,13 +2700,6 @@
 	year = "2013"
 }
 
-@article{Crompton2016,
-	author = "Crompton, Jeff W. and Flowers, Gwenn E",
-	journal = "Annals of Glaciology",
-	title = "{Correlations of suspended sediment size with bedrock lithology and glacier dynamics}",
-	year = "In Press"
-}
-
 @article{Skoien2006,
 	author = "Sk{\o}ien, Jon Olav and Bl{\"o}schl, G{\"u}nter",
 	bdsk-url-1 = "http://dx.doi.org/10.1007/s10661-006-4939-z",
@@ -3246,5 +3239,15 @@
 	title = "{Circular No. 99-Utah Snow Sampler and Scales for Measuring Water Content of Snow}",
 	url = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars",
 	year = "1932"
+}
+
+@article{Crompton2016,
+	author = "Crompton, Jeff W and Flowers, Gwenn E",
+	doi = "10.1017/aog.2016.6",
+	journal = "Annals of Glaciology",
+	pages = "1--9",
+	publisher = "Cambridge Univ Press",
+	title = "{Correlations of suspended sediment size with bedrock lithology and glacier dynamics}",
+	year = "2016"
 }
 
