@@ -555,6 +555,15 @@
 	year = "2009"
 }
 
+@book{Fierz2009,
+	author = "Fierz, CRLA and Armstrong, Richard L and Durand, Yves and Etchevers, Pierre and Greene, Ethan and McClung, David M and Nishimura, Kouichi and Satyawali, Pramod K and Sokratov, Sergey A",
+	publisher = "UNESCO/IHP Paris",
+	title = "{The international classification for seasonal snow on the ground}",
+	url = "http://unesdoc.unesco.org/images/0018/001864/186462e.pdf",
+	volume = "25",
+	year = "2009"
+}
+
 @inproceedings{Bellaire2008,
 	author = "Bellaire, Sascha and Schweizer, J{\"u}rg",
 	bdsk-url-1 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
@@ -3223,5 +3232,19 @@
 	title = "{On the Covariance of Regression Coefficients}",
 	volume = "5",
 	year = "2015"
+}
+
+@book{Gray1981,
+	author = "Gray, Donald Maurice and Male, David Harold",
+	publisher = "Pergamon Press",
+	title = "{Handbook of snow: principles, processes, management \& use}",
+	year = "1981"
+}
+
+@article{Clyde1932,
+	author = "Clyde, George D",
+	title = "{Circular No. 99-Utah Snow Sampler and Scales for Measuring Water Content of Snow}",
+	url = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars",
+	year = "1932"
 }
 

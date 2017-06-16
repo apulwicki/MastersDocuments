@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -170,6 +170,11 @@ Watson FG, Anderson TN, Newman WB, Alexander SE and Garrott RA (2006) {Optimal
   sampling schemes for estimating mean snow water equivalents in stratified
   heterogeneous landscapes}. \emph{Journal of Hydrology}, \textbf{328}(3),
   432--452 (\doi {10.1016/j.jhydrol.2005.12.032})
+
+\bibitem[\protect\citename{Williams, }1998]{Williams1998}
+Williams CKI (1998) \emph{{Prediction with Gaussian Processes: From Linear
+  Regression to Linear Prediction and Beyond}}, 599--621. Springer Netherlands,
+  Dordrecht, ISBN 978-94-011-5014-9 (\doi {10.1007/978-94-011-5014-9_23})
 
 \bibitem[\protect\citename{Winstral and others, }2002]{Winstral2002}
 Winstral A, Elder K and Davis RE (2002) {Spatial snow modeling of

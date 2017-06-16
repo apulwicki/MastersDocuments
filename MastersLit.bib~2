@@ -2377,6 +2377,7 @@
 	publisher = "International Glaciological Society",
 	timestamp = "2015.11.06",
 	title = "{Methodological approaches to infer end-of-winter snow distribution on alpine glaciers}",
+	url = "https://doi.org/10.3189/2013JoG13J015",
 	volume = "59",
 	year = "2013"
 }
@@ -2698,13 +2699,6 @@
 	url = "http://www.sciencedirect.com/science/article/pii/S0309170812002394",
 	volume = "55",
 	year = "2013"
-}
-
-@article{Crompton2016,
-	author = "Crompton, Jeff W. and Flowers, Gwenn E",
-	journal = "Annals of Glaciology",
-	title = "{Correlations of suspended sediment size with bedrock lithology and glacier dynamics}",
-	year = "In Press"
 }
 
 @article{Skoien2006,
@@ -3239,5 +3233,22 @@
 	publisher = "Pergamon Press",
 	title = "{Handbook of snow: principles, processes, management \& use}",
 	year = "1981"
+}
+
+@article{Clyde1932,
+	author = "Clyde, George D",
+	title = "{Circular No. 99-Utah Snow Sampler and Scales for Measuring Water Content of Snow}",
+	url = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars",
+	year = "1932"
+}
+
+@article{Crompton2016,
+	author = "Crompton, Jeff W and Flowers, Gwenn E",
+	doi = "10.1017/aog.2016.6",
+	journal = "Annals of Glaciology",
+	pages = "1--9",
+	publisher = "Cambridge Univ Press",
+	title = "{Correlations of suspended sediment size with bedrock lithology and glacier dynamics}",
+	year = "2016"
 }
 

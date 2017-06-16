@@ -52,13 +52,6 @@ and depth for all Federal Sampler measurements and both under and over sampling 
 The magnitude and slope of a linear regression of density with elevation differed between
 SP and FS densities. SP density decreases with elevation, likely indicating melt at lower elevations, on Glaciers 2 and 13 and does not change with elevation on Glacier 4. Opposite relationship are seen in the regression of Federal Sampler-derived densities and elevation. Density increases with elevation on Glacier 2 and there is no relationship with elevation on Glaciers 4 and 13. 
 
-\begin{figure}
-	\centering
-	\includegraphics[width =0.5\textwidth]{SnowpitVsSWEtube_all.png}\\
-	\caption{Comparison of integrated density estimated using wedge cutters in a snow pit and density estimated using Federal Sampler measurements for Glacier 4 (G04), Glacier 2 (G02) and Glacier 13 (G13). Snow pits were distributed in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars are minimum and maximum values.}
-	\label{fig:density_pitVStube}
-\end{figure}
-
 \subsection{Grid-cell averaging}
 
 We then average SWE values within a SPOT-5 DEM-aligned grid \citep{Korona2009}. The locations of measurements have considerable uncertainty both from the error of the GPS unit ($2.7 - 4.6$ m) and the estimation of observer location based on the GPS unit. These errors could easily result in the incorrect assigning of a SWE measurement to a certain grid but this source of variability was not further investigated because we assume that SWE variability is captured in the zigzag measurements described below. 
@@ -93,6 +86,50 @@ To provide insight on the effects of variability from density interpolation, obs
 %------------------------------------------------
 \pagebreak
 \section{Results}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.5\textwidth]{DepthBoxplot.pdf}\\
+	\caption{}
+	\label{fig:DepthBoxplot}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.5\textwidth]{SPvsFS.pdf}\\
+	\caption{Comparison of integrated density estimated using wedge cutters in a snow pit and density estimated using Federal Sampler measurements for Glacier 4 (G04), Glacier 2 (G02) and Glacier 13 (G13). Snow pits were distributed in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars are minimum and maximum values.}
+	\label{fig:density_pitVStube}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =\textwidth]{LR_map.pdf}\\
+    \includegraphics[width =\textwidth]{SK_map.pdf}\\
+	\caption{}
+	\label{fig:LR_SK_map}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =\textwidth]{observedVSestimated_S2.pdf}\\
+	\caption{}
+	\label{fig:observedVSestimated_S2}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.5\textwidth]{BetaCoeffs.pdf}\\
+	\caption{}
+	\label{fig:BetaCoeffs}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.5\textwidth]{ZigzagHistogram.pdf}\\
+	\caption{}
+	\label{fig:ZigzagHistogram}
+\end{figure}
+
 
 The spatial patterns and specific winter surface mass balance (WSMB) are affected by variability introduced when interpolating density, estimating grid-cell SWE values, and when interpolating observations.  
 
