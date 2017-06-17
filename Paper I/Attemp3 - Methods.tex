@@ -24,12 +24,12 @@ Estimating accumulation from measured values of snow depth and density requires 
 
 \subsection{Measuring snow depth and density}
 
-\begin{figure}
+\begin{figure*}
 	\centering
-	\includegraphics[width =0.5\textwidth]{Sampling.pdf}\\
+	\includegraphics[width =\textwidth]{Sampling.pdf}\\
 	\caption{}
 	\label{fig:Sampling}
-\end{figure}
+\end{figure*}
 
 The estimated SWE is the product of the snow depth and density. Snow depth is generally accepted to be more variable than density \citep{Elder1991, Clark2011, Lopez2013} so we chose a sampling design with relatively small measurement spacing along transects that resulted in a ratio of approximately 55:1 snow depth to snow density measurements. The sampling design attempted to capture depth variability at multiple spatial scales and to account for known variation with elevation. Our sampling design is created to avoids bias, allow for the greatest variability to be measured, and minimize distance travelled \citep{Shea2010}.
 
@@ -55,7 +55,7 @@ When designing the sampling campaign we assumed that SP and FS densities could b
 
 \subsection{Grid-cell averaging}
 
-We average SWE values within each SPOT-5 DEM-aligned grid cell \citep{Korona2009}. The locations of measurements have considerable uncertainty both from the error of the GPS unit ($2.7 - 4.6$ m) and the estimation of observer location based on the GPS unit. These errors could easily result in the incorrect assigning of a SWE measurement to a certain grid but this source of variability was not further investigated because we assume that SWE variability is captured in the zigzag measurements described below.  
+We average SWE values within each SPOT-5 DEM-aligned grid cell \citep{Korona2009}. The locations of measurements have considerable uncertainty both from the error of the GPS unit ($2.7 - 4.6$ m) and the estimation of observer location based on the GPS unit. These errors could easily result in the incorrect assigning of a SWE measurement to a certain grid but this source of variability was not further investigated because we assume that SWE variability is captured in the zigzag measurements described below. There are no differences between observers (p$>$0.05), with the exception of the first transect on Glacier 4, so no corrections to the data based on observer are applied.
 
 To encompass variability at spatial scales smaller than a DEM grid cell, we measured snow depth extensively ($135-191$ points) using a `zigzag' configuration (Figure \ref{fig:Sampling}c). SWE variability is assumed to be normally distributed about the mean SWE at a measured grid cell with a standard deviation equal to the average standard deviation of all zigzags on a glacier.
 
@@ -87,44 +87,23 @@ To provide insight on the effects of variability from (1) density interpolation,
 
 \subsection{Measuring snow depth and density}
 
-To determine a possible range of snow pit-derived integrated snow density values, the measured values are used and the following quantities are varied. Ice layer density is varied between 700 and 900 kg m$^{-3}$ , ice layer thickness is varied by $\pm$1 cm of the observed thickness, and the density of layers identified as being too hard to sample (but not ice) was varied between 600 and 700 kg m$^{-3}$.The range of integrated density values is always less than 15\% of the reference density, with the largest ranges present on Glacier 2. Density values for shallow pits that contained ice lenses were particularly sensitive to changes in density and ice lens thickness.
-
-
-
-Mean FS-derived density has a larger range of values over the study glaciers when compared to SP densities. The standard deviation of density measurement is less than 10\% of the mean density for both SP and FS densities. For SP densities, the mean density is within one standard deviation between glaciers.
-
-\subsection{Estimating SWE}
-
-However, there is no correlation between co-located SP and FS densities (Figure \ref{fig:density_pitVStube}). Further, there is a positive linear relation (R$^2= 0.59$, p$<$0.01) between measured snow density and depth for all Federal Sampler measurements and both under and over sampling is believed to have occurred (more details or just sources??). 
-
-The magnitude and slope of a linear regression of density with elevation differed between
-SP and FS densities. At Glaciers 2 and 13, SP density decreases with elevation, likely indicating melt at lower elevations. SP density is independent of elevation on Glacier 4. FS density increases with elevation on Glacier 2 and there is no relationship with elevation on Glaciers 4 and 13. 
-
-\subsection{Grid-cell averaging}
-
-
-To assess systematic differences in depth measurement collected by observers, an analysis of variance (ANOVA) is applied to each transect of snow depth measurements. There are no differences between observers (p$>$0.05), with the exception of the first transect on Glacier 4. This result shows that observer bias is likely to not affect the results of this study and no corrections to the data based on observer were applied.
-
-To encompass variability at spatial scales smaller than a DEM grid cell, we measured snow depth extensively ($135-191$ points) using a `zigzag' configuration. SWE variability is assumed to be normally distributed about the mean SWE at a measured grid cell with a standard deviation equal to the average standard deviation of all zigzags on a glacier ($\sigma_{\mathrm{G4}} =  0.027$ m w.e., $\sigma_{\mathrm{G2}} =  0.035$ m w.e., $\sigma_{\mathrm{G13}} =  0.040$ m w.e.).
-
-
-
-\subsection{Interpolation}
-
-
-
-
-\subsection{Quantifying effects of variability}
-
-
-
-
 \begin{figure}
 	\centering
 	\includegraphics[width =0.5\textwidth]{DepthBoxplot.pdf}\\
-	\caption{}
+	\caption{Boxplot of measured snow depth on Glaciers 4, 2 and 13. The box shows first quartiles, the line within the box indicates data median, bars indicate minimum and maximum values (excluding outliers), and circles show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }}
 	\label{fig:DepthBoxplot}
 \end{figure}
+
+A wide range of snow depth is observed on all three study glaciers (Figure \ref{fig:DepthBoxplot}). Glacier 4 has the highest mean snow depth and a high proportion of outliers, indicating a more variable snow depth overall. Glacier 13 has the lowest mean snow depth and a narrower distribution of observed values. At each measurement location, the median range of measured depths ($3-4$ points) as a percent of the mean depth at that location is 2\%, 11\%, and 12\%, for Glaciers 4, 2 and 13, respectively. 
+
+Mean SP and FS density values are within one standard deviation for each glacier and over all three glaciers. The standard deviation of glacier-wide mean density is less than 10\% of the mean density. However, FS densities have a larger range of values over each study glacier when compared to SP densities.  The mean SP densities are within one standard deviation between glaciers.
+
+Uncertainty in SP density is largely due to sampling error of exceptionally dense snow layers. We quantify this uncertainty by varying three values. Ice layer density is varied between 700 and 900 kg m$^{-3}$ , ice layer thickness is varied by $\pm$1 cm of the observed thickness, and the density of layers identified as being too hard to sample (but not ice) is varied between 600 and 700 kg m$^{-3}$.The range of integrated density values is always less than 15\% of the reference density, with the largest ranges present on Glacier 2. Density values for shallow pits that contained ice lenses are particularly sensitive to changes in density and ice lens thickness.
+
+\subsection{Estimating SWE}
+
+There is no correlation between co-located SP and FS densities (Figure \ref{fig:density_pitVStube}) so each set of densities values is used for all four density interpolation options. Range and glacier mean densities are higher when SP densities are used (Table \ref{tab:Density}). The magnitude and slope of a linear regression of density with elevation differed between SP and FS densities (Table \ref{tab:Density}). At Glaciers 2 and 13, SP density decreases with elevation, likely indicating melt at lower elevations. SP density is independent of elevation on Glacier 4. FS density increases with elevation on Glacier 2 and there is no relationship with elevation on Glaciers 4 and 13. There is a positive linear relation (R$^2= 0.59$, p$<$0.01) between measured snow density and depth for all Federal Sampler measurements. 
+
 
 \begin{figure}
 	\centering
@@ -133,20 +112,56 @@ To encompass variability at spatial scales smaller than a DEM grid cell, we meas
 	\label{fig:density_pitVStube}
 \end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width =\textwidth]{LR_map.pdf}\\
-    \includegraphics[width =\textwidth]{SK_map.pdf}\\
-	\caption{}
-	\label{fig:LR_SK_map}
-\end{figure}
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{tab:Density}
+\begin{tabular}{cccc}
+ &  & \textbf{\begin{tabular}[c]{@{}c@{}}SP density\\ (kg m$^3$)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}FS density\\ (kg m$^3$)\end{tabular}} \\
+\textbf{\begin{tabular}[c]{@{}c@{}}Range \\ mean density\end{tabular}} &  & 342 & 316 \\
+\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Glacier\\ mean density\end{tabular}}} & G4 & 348 & 327 \\
+ & G2 & 333 & 326 \\
+ & G13 & 349 & 307 \\
+\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Elevation \\ regression\end{tabular}}} & G4 & $0.03z+274$ & $-0.16z+714$ \\
+ & G2 & $-0.14z+659$ & $0.24z-282$ \\
+ & G13 & $-0.20z+802$ & $0.12z+33$
+\end{tabular}
+\end{table}
+
+\subsection{Grid-cell averaging}
+
+SWE observations within a DEM grid cell are averaged. Between one and six measurement locations are in each measured grid cell. The distribution of grid-cell SWE values for each glacier is similar to that of Figure \ref{fig:DepthBoxplot} but with fewer outliers. 
+
+SWE measurements for each zigzag are not normally distributed about the mean SWE (Figure \ref{fig:ZigzagHistogram}). The average standard deviation of all zigzags on Glacier 4 is $\sigma_{\mathrm{G4}} =  0.027$ m w.e., on Glacier 2 is $\sigma_{\mathrm{G2}} =  0.035$ m w.e. and on Glacier 13 is $\sigma_{\mathrm{G13}} =  0.040$ m w.e.
 
 \begin{figure}
+	\centering
+	\includegraphics[width =0.5\textwidth]{ZigzagHistogram.pdf}\\
+	\caption{Distribution of SWE values about the mean SWE from each zigzag.}
+	\label{fig:ZigzagHistogram}
+\end{figure}
+
+\subsection{Interpolation}
+
+The importance of the various topographic parameters differs for the three study glaciers (Table 4.2). The regression for Glacier 2 explains a large portion of the variance (R2=0.66), although the RMSE is higher than that of Glacier 13, for which the regression explains less variance (R2=0.40) (Figure 4.1). Glacier 4 has the least variance explained by the regression (R2=0.12) and the highest RMSE. The intercepts of the regression are similar for Glaciers 2 and 13 (∼0.25 m w.e.) and these are much lower than the intercept for Glacier 4 (0.62 m w.e.). The discrepancy between intercept values is a result of the poor fit of the Glacier 4 regression - the value of the intercept approaches that of the data mean (0.63 m w.e.). The residuals for Glacier 4 have a larger range than those of Glacier 2 and 13 (Figure 4.3).
+
+- residuals are normally distributed
+
+\begin{figure*}
 	\centering
 	\includegraphics[width =\textwidth]{observedVSestimated_S2.pdf}\\
 	\caption{}
 	\label{fig:observedVSestimated_S2}
-\end{figure}
+\end{figure*}
+
+
+The most important regressor for Glacier 4 is Sx. The Sx regression coefficient is a factor of five larger than those of the remaining parameters for all density options (Table 4.3) and for the mean of all density options (Table 4.2). Sx has the highest mean semi- partial correlation (0.034) and raw correlation (0.065) (Table 4.2). The Sx coefficient is negative, which indicates less snow in ‘sheltered’ areas. The negative correlation is counter intuitive so it is surprising that Sx is the best predictor for accumulation.
+
+For Glacier 2, the most important regressor is elevation (Table 4.2). This coefficient is positive, which means that SWE will increase with elevation. The elevation regression coefficient is an order of magnitude larger than the other coefficients and has the highest semi-partial R2 and raw correlation (Table 4.2). Sx is the second most important regresor and has a positive correlation, which indicates that ‘sheltered’ areas are likely to have high accumulation.
+
+
+The most important regressor for Glacier 13 is elevation (Table 4.2). The coefficient is positive, which means that cells at higher elevation had higher values of SWE. Despite a low value of raw correlation between elevation and SWE, the semi-partial R2 value is the largest between the glaciers. The high semi-partial R2 value indicates that when elevation is added to the regression the total variance explained increases considerably because the remaining regressors are not important. 
+
 
 \begin{figure}
 	\centering
@@ -155,36 +170,51 @@ To encompass variability at spatial scales smaller than a DEM grid cell, we meas
 	\label{fig:BetaCoeffs}
 \end{figure}
 
-\begin{figure}
+
+
+The map of estimated SWE for the entire glacier shows a relatively uniform SWE distribution over Glacier 4 (Figure 4.8), due to the large influence of the intercept on the regression. Areas with high Sx values (sheltered), especially in the accumulation area, have the lowest values of SWE. This regression indicates that the wind plays a role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining Sx values that assume wind moving up or down glacier and changing direction to follow the valley could allow the Sx parameter to explain more of the variance.
+
+The map of modelled SWE on Glacier 2 closely matches that of elevation (Figure 3.39), which highlights the strong dependence of SWE on elevation. The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE (1.92 m w.e) and the lowest SWE (0 m w.e.) values (Figure 4.2). Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating from the regression, which largely depends on elevation. The southwest region of the accumulation area with high estimated accumulation results from the combination of high elevation and Sx values. The low SWE values at the terminus are a result of low elevation values and Sx values that are close to zero. The map of estimated SWE on Glacier 13 (Figure 4.8) closely follows elevation although the range of SWE values is relatively small so the elevation effect is less pronounced than on Glacier 2.
+
+spatial patterns
+
+There are large differences in spatial patterns of interpolated SWE distributions for the three study glaciers found using simple kriging (Figure 4.26). The lower half of Glacier 4 has a relatively uniform SWE, while the accumulation area has both low and high values of SWE. The low density of sampling points in the accumulation area of Glacier 4 result in large gradients in SWE. Glacier 2 has two distinct and relatively uniform areas — the lower ablation area has low SWE (∼ 0.1 m w.e.) and the upper ablation and accumulation areas have higher SWE values (∼ 0.6 m w.e.). The boundary between two these zones closely follows the outline of the ice dune area observed during field data collection. Glacier 13 does not appear to have any strong patterns and accumulation is generally low (∼ 0.1–0.5 m w.e.).
+
+The accumulation distribution estimated by simple kriging and by regression is qualitatively similar for Glacier 13 but differs con- siderably for Glacier 4 and 2. Glacier 4 has large SWE values in the accumulation area when simple kriging is used, which contrasts strongly with the mostly uniform accumula- tion estimated with regression. The converse is observed on Glacier 2, where the simple kriging estimate has a small SWE range and two distinct regions of SWE values while the regression estimate has a large range and a significant elevation gradient in accumulation. These spatial patterns highlight that kriging is sensitive to individual observation values in areas with sparse sampling.
+
+\begin{figure*}
 	\centering
-	\includegraphics[width =0.5\textwidth]{ZigzagHistogram.pdf}\\
+	\includegraphics[width =\textwidth]{LR_map.pdf}\\
+    \includegraphics[width =\textwidth]{SK_map.pdf}\\
 	\caption{}
-	\label{fig:ZigzagHistogram}
-\end{figure}
+	\label{fig:LR_SK_map}
+\end{figure*}
+
+
+
+
+The choice of interpolation method affects the mean winter balance (Figure 4.32). Kriging interpolation produces the highest mean value of SWE on Glacier 4. The estimates of SWE in the accumulation area are greatest when kriging is used because there is a single single high SWE value in the accumulation area. Kriging is sensitive to outliers in areas with sparse sampling. However, the winter balance is similar between interpolation methods and mean of observed data for Glacier 4. This similarity arises from the low correlation coefficient for all methods, resulting in values closer to the data mean. Relative differences in mean SWE between the three interpolation methods are similar for Glacier 2 and 13, with topographic regression producing the highest mean SWE and kriging producting the lowest. Kriging estimates lower SWE in the accumulation area of both glaciers because elevation is not incorporated into the model.
+
+For all glaciers, the topographic regression results in the lowest mean variance explained (Figure 4.33). The mean correlation coefficients for kriging and regression kriging are similar for all glaciers, with regression kriging being slightly lower than kriging. Variance explained on Glacier 4 is consistently the lowest, indicating that observed SWE values are highly variable. The converse is seen on Glacier 2, where correlation coefficients are consistently high regardless of the interpolation method.
+
+The glacier-wide winter mass balance on each glacier (Bw), calculated as the mean SWE, that is found using simple kriging is considerably different to that found using a topographic regression (Figure 4.21). Accumulation on Glacier 4 is 0.09 m w.e. (15\%) higher and has larger spatial gradients in SWE when simple kriging is used. Conversely, simple kriging estimates are 0.13 m w.e. (23\%) and 0.08 m w.e. (22\%) lower for Glaciers 2 and 13, respec- tively, and the range of SWE values is smaller.
+
+\subsection{Quantifying effects of variability}
+
+
+
+
+The largest difference in estimated SWE between the various density options is found on Glacier 2 in the upper part of the accumulation area (Figure 4.9). Glacier 2 also has the lowest difference in estimated SWE, which result from all density options estimating values of 0 m w.e. at the terminus. The strong relationship between elevation and SWE makes the estimation of glacier-wise SWE sensitive to this parameter.
+
+
+
+
 
 
 The spatial patterns and specific winter surface mass balance (WSMB) are affected by variability introduced when interpolating density, estimating grid-cell SWE values, and when interpolating observations.  
 
 
-\subsection{Spatial patterns in accumulation}
 
-
-\subsection{Specific winter surface mass balance (WSMB)}
-
-The choice of interpolation method affects the mean winter balance (Figure 4.32). Kriging
-interpolation produces the highest mean value of SWE on Glacier 4. The estimates of SWE
-in the accumulation area are greatest when kriging is used because there is a single single
-high SWE value in the accumulation area. Kriging is sensitive to outliers in areas with sparse
-sampling. However, the winter balance is similar between interpolation methods and mean
-of observed data for Glacier 4. This similarity arises from the low correlation coefficient for
-all methods, resulting in values closer to the data mean. The observed SWE mean values
-for Glaciers 2 and 13 are much lower than the estimated winter balance. Both glacier show
-a significant correlation between SWE and elevation, so limiting sampling to the ablation
-area skewed the observed values of SWE to be lower than the mean. Relative differences in
-mean SWE between the three interpolation methods are similar for Glacier 2 and 13, with
-topographic regression producing the highest mean SWE and kriging producting the lowest.
-Kriging estimates lower SWE in the accumulation area of both glaciers because elevation
-is not incorporated into the model.
 
 
 
@@ -232,6 +262,9 @@ important to acknowledge because this area has the highest values of SWE and is 
 heavily influence final winter mass balance values. Improvements to this study could include
 using an air-borne GPR to collect a dense network of SWE measurements in difficult to
 access areas [e.g. 82] (see Section 1.3.2 for more details).
+
+
+ and both under and over sampling is believed to have occurred using the FS (more details or just sources??). 
 
 
 Lopez 2013 for small scale var
