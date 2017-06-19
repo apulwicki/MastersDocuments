@@ -27,7 +27,7 @@ Estimating accumulation from measured values of snow depth and density requires 
 \begin{figure*}
 	\centering
 	\includegraphics[width =\textwidth]{Sampling.pdf}\\
-	\caption{}
+	\caption{Sampling design for Glaciers 4, 2 and 13, located in the the Donjek Range, Yukon (a,b). Centreline and transverse transects are shown in blue dots, hourglass and circle design are shown in green dots and zigzag measurements are shown as grey dots (c). Linear and curvilinear transects typically consist of sets of three measurement locations, spaced $\sim$10 m apart (d). At each measurement location, three snow depth observation are made (e). Orange squares are locations of snow density measurements. }
 	\label{fig:Sampling}
 \end{figure*}
 
@@ -57,7 +57,7 @@ When designing the sampling campaign we assumed that SP and FS densities could b
 
 We average SWE values within each SPOT-5 DEM-aligned grid cell \citep{Korona2009}. The locations of measurements have considerable uncertainty both from the error of the GPS unit ($2.7 - 4.6$ m) and the estimation of observer location based on the GPS unit. These errors could easily result in the incorrect assigning of a SWE measurement to a certain grid but this source of variability was not further investigated because we assume that SWE variability is captured in the zigzag measurements described below. There are no differences between observers (p$>$0.05), with the exception of the first transect on Glacier 4, so no corrections to the data based on observer are applied.
 
-To encompass variability at spatial scales smaller than a DEM grid cell, we measured snow depth extensively ($135-191$ points) using a `zigzag' configuration (Figure \ref{fig:Sampling}c). SWE variability is assumed to be normally distributed about the mean SWE at a measured grid cell with a standard deviation equal to the average standard deviation of all zigzags on a glacier.
+To encompass variability at spatial scales smaller than a DEM grid cell, we measured snow depth extensively ($135-191$ points) using a `zigzag' configuration (Figure \ref{fig:Sampling}c). Zigzag locations were randomly chosen within the upper ($\sim$2350 m a.s.l.), middle ($\sim$2250 m a.s.l.), and lower portions ($\sim$2150 m a.s.l.) of the ablation area of each glacier. We were able to measure a fourth zigzag on Glacier 13, which was located in the middle ablation area ($\sim$2200 m a.s.l.). SWE variability is assumed to be normally distributed about the mean SWE at a measured grid cell with a standard deviation equal to the average standard deviation of all zigzags on a glacier.
 
 \subsection{Interpolation}
 
@@ -96,13 +96,15 @@ To provide insight on the effects of variability from (1) density interpolation,
 
 A wide range of snow depth is observed on all three study glaciers (Figure \ref{fig:DepthBoxplot}). Glacier 4 has the highest mean snow depth and a high proportion of outliers, indicating a more variable snow depth overall. Glacier 13 has the lowest mean snow depth and a narrower distribution of observed values. At each measurement location, the median range of measured depths ($3-4$ points) as a percent of the mean depth at that location is 2\%, 11\%, and 12\%, for Glaciers 4, 2 and 13, respectively. 
 
-Mean SP and FS density values are within one standard deviation for each glacier and over all three glaciers. The standard deviation of glacier-wide mean density is less than 10\% of the mean density. However, FS densities have a larger range of values over each study glacier when compared to SP densities.  The mean SP densities are within one standard deviation between glaciers.
+Mean SP and FS density values are within one standard deviation of each other for each glacier and over all three glaciers. The standard deviation of glacier-wide mean density is less than 10\% of the mean density. However, FS densities have a larger range of values ($227-431$kg m$^{-3}$) when compared to SP densities ($299-381$kg m$^{-3}$).  The mean SP densities are within one standard deviation between glaciers, whereas mean FS densities are not.
 
-Uncertainty in SP density is largely due to sampling error of exceptionally dense snow layers. We quantify this uncertainty by varying three values. Ice layer density is varied between 700 and 900 kg m$^{-3}$ , ice layer thickness is varied by $\pm$1 cm of the observed thickness, and the density of layers identified as being too hard to sample (but not ice) is varied between 600 and 700 kg m$^{-3}$.The range of integrated density values is always less than 15\% of the reference density, with the largest ranges present on Glacier 2. Density values for shallow pits that contained ice lenses are particularly sensitive to changes in density and ice lens thickness.
+Uncertainty in SP density is largely due to sampling error of exceptionally dense snow layers. We quantify this uncertainty by varying three values. Ice layer density is varied between 700 and 900 kg m$^{-3}$, ice layer thickness is varied by $\pm$1 cm of the observed thickness, and the density of layers identified as being too hard to sample (but not ice) is varied between 600 and 700 kg m$^{-3}$. The range of integrated density values is always less than 15\% of the reference density, with the largest ranges present on Glacier 2. Density values for shallow pits that contain ice lenses are particularly sensitive to changes in density and ice lens thickness.
 
 \subsection{Estimating SWE}
 
-There is no correlation between co-located SP and FS densities (Figure \ref{fig:density_pitVStube}) so each set of densities values is used for all four density interpolation options. Range and glacier mean densities are higher when SP densities are used (Table \ref{tab:Density}). The magnitude and slope of a linear regression of density with elevation differed between SP and FS densities (Table \ref{tab:Density}). At Glaciers 2 and 13, SP density decreases with elevation, likely indicating melt at lower elevations. SP density is independent of elevation on Glacier 4. FS density increases with elevation on Glacier 2 and there is no relationship with elevation on Glaciers 4 and 13. There is a positive linear relation (R$^2= 0.59$, p$<$0.01) between measured snow density and depth for all Federal Sampler measurements. 
+There is no correlation between co-located SP and FS densities (Figure \ref{fig:density_pitVStube}) so each set of density values is used for all four density interpolation options. Range and glacier mean densities are higher when SP densities are used (Table \ref{tab:Density}). The magnitude and slope of a linear regression of density with elevation differs between SP and FS densities (Table \ref{tab:Density}). At Glaciers 2 and 13, SP density decreases with elevation, likely indicating melt at lower elevations. SP density is independent of elevation on Glacier 4. FS density increases with elevation on Glacier 2 and there is no relationship with elevation on Glaciers 4 and 13. 
+
+There is a positive linear relation (R$^2= 0.59$, p$<$0.01) between measured snow density and depth for all FS measurements. No correlation exists between SP density and elevation.
 
 
 \begin{figure}
@@ -114,10 +116,10 @@ There is no correlation between co-located SP and FS densities (Figure \ref{fig:
 
 \begin{table}[]
 \centering
-\caption{My caption}
+\caption{Snow density values used for interpolating density based on snow pit (SP) densities and Federal Sampler (FS) densities. Four interpolation methods are chosen: (1) using a mean snow density for all three glaciers (Range mean density), (2) using a mean density for each glacier (Glacier mean density), (3) using a regression between density and elevation (Elevation regression), and (4) inverse-distance weighted mean density (not shown).}
 \label{tab:Density}
 \begin{tabular}{cccc}
- &  & \textbf{\begin{tabular}[c]{@{}c@{}}SP density\\ (kg m$^3$)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}FS density\\ (kg m$^3$)\end{tabular}} \\
+ &  & \textbf{\begin{tabular}[c]{@{}c@{}}SP density\\ (kg m$^{-3}$)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}FS density\\ (kg m$^{-3}$)\end{tabular}} \\
 \textbf{\begin{tabular}[c]{@{}c@{}}Range \\ mean density\end{tabular}} &  & 342 & 316 \\
 \multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Glacier\\ mean density\end{tabular}}} & G4 & 348 & 327 \\
  & G2 & 333 & 326 \\
@@ -137,7 +139,7 @@ SWE measurements for each zigzag are not normally distributed about the mean SWE
 \begin{figure}
 	\centering
 	\includegraphics[width =0.5\textwidth]{ZigzagHistogram.pdf}\\
-	\caption{Distribution of SWE values about the mean SWE from each zigzag.}
+	\caption{Distribution of zigzag SWE values about the local mean on Glacier 4 (upper panel), Glacier 2 (middle panel) and Glacier 13 (lower panel). Zigzags are distributed throughout the ablation area of each glacier, with one located in the lower portion (L), one in the middle portion (M), and one in the upper portion (U). There were two zigzags in the middle ablation area of Glacier 13.}
 	\label{fig:ZigzagHistogram}
 \end{figure}
 

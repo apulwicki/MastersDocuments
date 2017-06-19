@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  17 JUN 2017 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  19 JUN 2017 08:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,39 +333,42 @@ File: Sampling.pdf Graphic file (type pdf)
  <use Sampling.pdf>
 Package pdftex.def Info: Sampling.pdf used on input line 29.
 (pdftex.def)             Requested size: 506.45905pt x 278.75192pt.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 36.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 30.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 36.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 30.
 
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 36.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 30.
 
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.5> on input line 36.
+(Font)              <8.5> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 36.
+(Font)              <7> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 36.
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+(Font)              <5> on input line 30.
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9.5> on input line 36.
+
 Underfull \vbox (badness 2269) has occurred while \output is active []
 
 
@@ -380,20 +383,18 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-
-Package natbib Warning: Citation `Madigan1994' on page 2 undefined on input lin
-e 66.
-
-
-Underfull \vbox (badness 1616) has occurred while \output is active []
+Underfull \vbox (badness 1337) has occurred while \output is active []
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [2 <./Sampling.pdf>]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 68.
 
+Package natbib Warning: Citation `Madigan1994' on page 3 undefined on input lin
+e 66.
+
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 68.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -423,7 +424,7 @@ Underfull \hbox (badness 2573) in paragraph at lines 77--78
 Package natbib Warning: Citation `Bagos2015' on page 3 undefined on input line 
 81.
 
-<DepthBoxplot.pdf, id=42, 244.915pt x 244.915pt>
+<DepthBoxplot.pdf, id=44, 244.915pt x 244.915pt>
 File: DepthBoxplot.pdf Graphic file (type pdf)
  <use DepthBoxplot.pdf>
 Package pdftex.def Info: DepthBoxplot.pdf used on input line 92.
@@ -433,8 +434,6 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 92--92
  [][] 
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.5> on input line 93.
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
@@ -442,88 +441,80 @@ l.95 \end{figure}
                  
 ? 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[3] <SPvsFS.pdf, id=47, 244.915pt x 244.915pt>
+[3]
+Underfull \hbox (badness 1062) in paragraph at lines 99--100
+\OT1/lmr/m/n/9.5 deviation of each other for each glacier and over all
+ []
+
+<SPvsFS.pdf, id=49, 244.915pt x 244.915pt>
 File: SPvsFS.pdf Graphic file (type pdf)
  <use SPvsFS.pdf>
-Package pdftex.def Info: SPvsFS.pdf used on input line 110.
+Package pdftex.def Info: SPvsFS.pdf used on input line 112.
 (pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 110--110
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 112--112
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 115.
+               Default added (so using `tbp') on input line 117.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 119.
+(Font)              <8> on input line 121.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 119.
+(Font)              <6> on input line 121.
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [4 <./DepthBoxplot.pdf> <./SPvsFS.pdf>]
-<ZigzagHistogram.pdf, id=73, 244.915pt x 506.89375pt>
+<ZigzagHistogram.pdf, id=69, 244.915pt x 506.89375pt>
 File: ZigzagHistogram.pdf Graphic file (type pdf)
 
 <use ZigzagHistogram.pdf>
-Package pdftex.def Info: ZigzagHistogram.pdf used on input line 139.
+Package pdftex.def Info: ZigzagHistogram.pdf used on input line 141.
 (pdftex.def)             Requested size: 253.22952pt x 524.11739pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 139--139
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 141--141
  [][] 
  []
 
-<LR_map.pdf, id=74, 506.89375pt x 244.915pt>
-File: LR_map.pdf Graphic file (type pdf)
- <use LR_map.pdf>
-Package pdftex.def Info: LR_map.pdf used on input line 159.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
-<SK_map.pdf, id=75, 506.89375pt x 244.915pt>
-File: SK_map.pdf Graphic file (type pdf)
- <use SK_map.pdf>
-Package pdftex.def Info: SK_map.pdf used on input line 160.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+Underfull \hbox (badness 1817) in paragraph at lines 148--149
+\OT1/lmr/m/n/9.5 differs for the three study glaciers (Table 4.2). The
+ []
 
-<observedVSestimated_S2.pdf, id=76, 506.89375pt x 284.06125pt>
+<observedVSestimated_S2.pdf, id=70, 506.89375pt x 284.06125pt>
 File: observedVSestimated_S2.pdf Graphic file (type pdf)
 
 <use observedVSestimated_S2.pdf>
-Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 167.
+Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 154.
 (pdftex.def)             Requested size: 506.45905pt x 283.82646pt.
 
-<BetaCoeffs.pdf, id=77, 244.915pt x 244.915pt>
+Underfull \hbox (badness 1406) in paragraph at lines 162--163
+\OT1/lmr/m/n/9.5 (Table 4.2). This coefficient is positive, which means
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 162--163
+\OT1/lmr/m/n/9.5 that SWE will increase with elevation. The elevation
+ []
+
+<BetaCoeffs.pdf, id=71, 244.915pt x 244.915pt>
 File: BetaCoeffs.pdf Graphic file (type pdf)
  <use BetaCoeffs.pdf>
-Package pdftex.def Info: BetaCoeffs.pdf used on input line 174.
+Package pdftex.def Info: BetaCoeffs.pdf used on input line 170.
 (pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 174--174
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 170--170
  [][] 
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 182--183
-\OT1/lmr/m/n/9.5 The spatial patterns and specific winter surface mass
- []
-
-
-Underfull \hbox (badness 2894) in paragraph at lines 182--183
-\OT1/lmr/m/n/9.5 when interpolating density, estimating grid-cell SWE
- []
-
-
-Underfull \vbox (badness 5924) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1558) in paragraph at lines 244--251
-[]\OT1/lmr/m/n/9.5 extrapolation of regression models will likely result
  []
 
 
@@ -531,26 +522,62 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [5 <./ZigzagHistogram.pdf>]
-Underfull \hbox (badness 1199) in paragraph at lines 258--259
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[6 <./observedVSestimated_S2.pdf> <./BetaCoeffs.pdf>]
+Underfull \hbox (badness 2393) in paragraph at lines 185--186
+[]\OT1/lmr/m/n/9.5 The accumulation distribution estimated by simple
+ []
+
+<LR_map.pdf, id=167, 506.89375pt x 244.915pt>
+File: LR_map.pdf Graphic file (type pdf)
+ <use LR_map.pdf>
+Package pdftex.def Info: LR_map.pdf used on input line 189.
+(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+
+<SK_map.pdf, id=168, 506.89375pt x 244.915pt>
+File: SK_map.pdf Graphic file (type pdf)
+ <use SK_map.pdf>
+Package pdftex.def Info: SK_map.pdf used on input line 190.
+(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 216--217
+\OT1/lmr/m/n/9.5 when interpolating density, estimating grid-cell SWE
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 260--267
+[]\OT1/lmr/m/n/9.5 extrapolation of regression models will likely result
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 274--275
 []\OT1/lmr/m/n/9.5 Winter snow pack in southwestern Yukon was well
  []
 
 
+Underfull \vbox (badness 3701) has occurred while \output is active []
+
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[6 <./LR_map.pdf> <./SK_map.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[7 <./observedVSestimated_S2.pdf> <./BetaCoeffs.pdf>]
-Underfull \hbox (badness 1383) in paragraph at lines 297--301
+[8 <./LR_map.pdf> <./SK_map.pdf>]
+Underfull \hbox (badness 1383) in paragraph at lines 313--317
 []\OT1/lmr/m/n/9.5 derived accumulation estimated winter surface mass
  []
 
@@ -666,7 +693,7 @@ Underfull \hbox (badness 2409) in paragraph at lines 116--120
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[8]
+[9]
 Underfull \hbox (badness 2903) in paragraph at lines 150--154
 []\OT1/lmr/m/n/9.5 Sold L, Huss M, Hoel-zle M, An-dereggen H, Jo-erg
  []
@@ -713,7 +740,7 @@ Package natbib Warning: There were undefined citations.
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[9
+[10
 
 ] (./Attemp3 - Methods.aux)
 
@@ -727,11 +754,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  3660 strings out of 494501
  49821 string characters out of 6167030
- 114814 words of memory out of 5000000
+ 115814 words of memory out of 5000000
  6846 multiletter control sequences out of 15000+600000
  52186 words of font info for 56 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,15n,24p,2000b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,24p,2000b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/l
 ocal/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/
 texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texli
@@ -750,14 +777,15 @@ texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive
 /2015basic/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2015
 basic/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2015basic/
 texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2015basic/texmf
--dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/
-fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/
-type1/public/lm/lmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/
-public/lm/lmtt10.pfb>
-Output written on "Attemp3 - Methods.pdf" (9 pages, 1572392 bytes).
+-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2015basic/texmf-dist/
+fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/
+type1/public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/
+public/lm/lmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
+/lm/lmtt10.pfb>
+Output written on "Attemp3 - Methods.pdf" (10 pages, 1583471 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
+ 293 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
