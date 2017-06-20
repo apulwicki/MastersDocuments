@@ -257,6 +257,41 @@ The spatial patterns of WSMB uncertainty are affected by density, SWE, and $\bet
 %------------------------------------------------
 
 \section{Discussion}
+
+
+\subsection{Measuring snow depth and density}
+
+Snow probing is the simplest and oldest method used to determine accumulation. Directly measurement of snow depth means that no data processing or corrections are needed and depth uncertainty is simple to quantify by taking multiple depth measurements close together \citep{Sold2013}. However, probing is time consuming and this limits the number of measurements that can be made. Further, measurement is limited to areas that are both accessible and safe for researchers. In complex terrain many areas cannot be surveyed, resulting in data gaps \citep{Deems2006,Sold2014}. \cite{Sold2013} noted that this systematic bias can result in incorrect values of glacier-wide accumulation, particularly because inaccessible areas such as cliffs and ridges have relatively shallow accumulations (due to wind erosion), while heavily crevassed areas can accumulate deep snow packs. Despite these limitations, we chose to use snow probing for this study to minimize cost, simplify field logistics and reduce data processing time. By focusing on simple field methods that are easy to execute, we hope to make our conclusions and recommendations for estimating WSMB more broadly applicable and reproducible.
+ 
+Most contemporary studies that investigate glacier accumulation use ground penetrating radar (GPR), either airborne or ground-based, to obtain continuous and extensive snow depth profiles \citep[e.g.][]{Machguth2006, McGrath2015}. GPR snow surveys, especially when airborne, are able to quickly collect data over large areas and terrain accessibility does not hamper data collection. The main limitation of GPR is the misinterpretation of radargram layers, especially in areas where the snow-ice boundary is ill-defined such as the accumulation area or heavily crevassed terrain \citep{Machguth2006, McGrath2015}. Complications also arise when radar wave speed is altered due to varying snow density and liquid water content. Further, there is no universal procedure for obtaining snow depth data so results depend on available equipment, selection of processing parameters and radargram processing algorithms and are difficult to reproduce \citep{Sold2013}.
+
+DEM differencing has also been used to estimate glacier-wide accumulation \citep{Deems2006,Nolan2015}. This method allows for maximal spatial data coverage. However, DEM differencing requires knowledge of glacier dynamics to account for surface changes and data collection, either by lidar or photogrammetry, is subject to considerable errors and noise \citep{Deems2006,Nolan2015}. 
+
+Our study suffers from lack of data in the accumulation area. Snow probing cannot be used in the accumulation area because the snow-firn transition is often difficult to determine and ice lenses can be misinterpreted. Both GPR and DEM differencing are also not reliable in the accumulation area. It can be difficult to observed the snow-firn transition using GPR because the density difference between snow and firn may be small. Observing the snow surface and correlating two DEMs for differencing can be difficult in the accumulation area because camera sensor noise and poor lighting can result in significant topographic noise. Measuring SWE in the accumulation area is difficult and subject to large errors regardless of the data collection method.
+
+We measured snow density by sampling a snow pit (SP) and by using a Federal Sampler (FS). We found that FS and SP measurements are not correlated and that FS density values are positively correlated with snow depth. This positive relationship could be a result of physical processes, such as compaction, and/or artefacts during data collection. However, it seems more likely that this trend is a result of measurement artefacts for a number of reasons. First, the range of densities measured by the Federal sampler is large (225--410 kg m$^{-3}$) and the extreme values seem unlikely to exist at these study glaciers, which experience a continental snow pack with minimal mid-winter melt events. Second, compaction effects would likely be small at these study glaciers because of the relatively shallow snow pack (deepest measurement was 340 cm). Third, no linear relationship exists between depth and SP density (R$^2=$ 0.05). Together, these reasons lead us to conclude that the Federal Sampler measurements are biased. 
+
+The FS appears to oversample in deep snow and undersample in shallow snow. Oversampling by small diameter (area of 10--12 cm$^2$) sampling tubes has been observed in previous studies, with a percent error between +6.8\% and 11.8\% \citep{Work1965, Fames1982, Conger2009}. Studies that use Federal Samplers often apply a 10\% correction to all measurements \citep[e.g.][]{Molotch2005}. \cite{Dixon2012} attributed oversampling to slots ``shaving'' snow into the tube as it is rotated as well as cutter deign forcing snow into the tube. \cite{Beaumont1963} found that only when snow samples had densities greater than 400 kg m$^{-3}$ and snow depth greater than 1 m, the FS oversampled due to snow falling into the greater area of slots. Undersampling is likely to occur due to snow falling out of the bottom of the sampler \citep{Turcan1975}. It is likely that this occurred during our study since a large portion of the lower elevation snow on both Glaciers 2 and 13 was melt affected and thin, allowing for easier lateral displacement of the snow as the sampler was inserted. For example, on Glacier 13 the snow surface had been affected by radiation melt (especially at lower elevations where the snow was shallower) and the surface would collapse when the sampler was inserted into the snow. It is also difficult to measure the weight of the sampler and snow with the spring scale when there was little snow because the weight was at the lower limit of what could be detected by the scale.
+
+\subsection{Estimating SWE}
+
+We choose four different density interpolation methods and keep SP and FS measurements separate. Despite the wide range of measured density values and variety in density interpolation, density does not appear to strongly affect WSMB estimates and is usually not the dominant source of WSMB uncertainty. We have relatively few density measurements throughout the study glaciers, as is common in many snow surveys, and we believe our FS measurements to be biased. Therefore, our preferred density interpolation is to use a glacier-wise mean of SP densities. This method employs common snow density measurement techniques and is easily transferable to other study areas. While using a glacier-wide mean density omits spatial variability in snow density \citep{Wetlaufer2016}, it does not assume unmeasured spatial correlation or trends in density.
+
+\cite{Wetlaufer2016} found that estimating SWE from snow depth and density results in more variability than directly measuring SWE using a FS. Future studies could consider decreasing the number of sample locations (SWE is more time consuming to measure than snow depth) but directly measure SWE to reduce the variability in estimating SWE at a measurement location.
+
+\subsection{Grid-cell averaging}
+
+\subsection{Interpolation}
+
+elevation trend
+LR vs SK
+
+\subsection{Quantifying effects of variability}
+
+\subsection{Assumptions}
+
+
+
 [77] conducted an airborne GRP survey of two adjacent glaciers in Switzerland. The
 lower part of the larger valley glacier showed a clear correlation between altitude and snow
 accumulation. The upper part of the glacier and the adjacent smaller glacier had no alti-
@@ -289,7 +324,7 @@ access areas [e.g. 82] (see Section 1.3.2 for more details).
  and both under and over sampling is believed to have occurred using the FS (more details or just sources??). 
 
 
-Lopez 2013 for small scale var
+Lopez 2013 for small scale var Molotch2005a?
 
 Winter snow pack in southwestern Yukon was well below normal in 2015 (Yukon Snow Survey Bulletin and Water Supply Forecast, May 1, 2016). Temperatures were generally warmer than normal and the melt season began $1-2$ weeks early. 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  20 JUN 2017 08:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  20 JUN 2017 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,8 +629,33 @@ File: SpatialVar_SK.pdf Graphic file (type pdf)
 Package pdftex.def Info: SpatialVar_SK.pdf used on input line 250.
 (pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
-Underfull \hbox (badness 1558) in paragraph at lines 280--287
-[]\OT1/lmr/m/n/9.5 extrapolation of regression models will likely result
+
+Package natbib Warning: Citation `Deems2006' on page 7 undefined on input line 
+264.
+
+
+Package natbib Warning: Citation `Sold2014' on page 7 undefined on input line 2
+64.
+
+
+Package natbib Warning: Citation `Deems2006' on page 7 undefined on input line 
+268.
+
+
+Package natbib Warning: Citation `Nolan2015' on page 7 undefined on input line 
+268.
+
+
+Package natbib Warning: Citation `Deems2006' on page 7 undefined on input line 
+268.
+
+
+Package natbib Warning: Citation `Nolan2015' on page 7 undefined on input line 
+268.
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 268--269
+[]\OT1/lmr/m/n/9.5 DEM differencing has also been used to estimate
  []
 
 
@@ -638,11 +663,6 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [7]
-Underfull \hbox (badness 1199) in paragraph at lines 294--295
-[]\OT1/lmr/m/n/9.5 Winter snow pack in southwestern Yukon was well
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -653,7 +673,97 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [8 <./LR_map.pdf> <./SK_map.pdf>]
-Underfull \hbox (badness 1383) in paragraph at lines 348--352
+
+Package natbib Warning: Citation `Work1965' on page 9 undefined on input line 2
+74.
+
+
+Package natbib Warning: Citation `Fames1982' on page 9 undefined on input line 
+274.
+
+
+Package natbib Warning: Citation `Conger2009' on page 9 undefined on input line
+ 274.
+
+
+Package natbib Warning: Citation `Dixon2012' on page 9 undefined on input line 
+274.
+
+
+Package natbib Warning: Citation `Beaumont1963' on page 9 undefined on input li
+ne 274.
+
+
+Package natbib Warning: Citation `Turcan1975' on page 9 undefined on input line
+ 274.
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 274--275
+[]\OT1/lmr/m/n/9.5 The FS appears to oversample in deep snow and
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 274--275
+\OT1/lmr/m/n/9.5 undersample in shallow snow. Oversampling by small
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package natbib Warning: Citation `Wetlaufer2016' on page 9 undefined on input l
+ine 278.
+
+
+Package natbib Warning: Citation `Wetlaufer2016' on page 9 undefined on input l
+ine 280.
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 280--281
+\OT1/lmr/m/n/9.5 the number of sample locations (SWE is more time
+ []
+
+
+Underfull \vbox (badness 2401) has occurred while \output is active []
+
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[9 <./WSMBDist_LR.pdf>]
+Underfull \hbox (badness 1558) in paragraph at lines 315--322
+[]\OT1/lmr/m/n/9.5 extrapolation of regression models will likely result
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 329--330
+[]\OT1/lmr/m/n/9.5 Winter snow pack in southwestern Yukon was well
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[10 <./WSMBDist_LRvsSK.pdf>]
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[11 <./WSMBDist_full.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[12 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
+Underfull \hbox (badness 1383) in paragraph at lines 383--387
 []\OT1/lmr/m/n/9.5 derived accumulation estimated winter surface mass
  []
 
@@ -663,10 +773,6 @@ Underfull \hbox (badness 1442) in paragraph at lines 13--17
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[9 <./WSMBDist_LR.pdf>]
 Underfull \hbox (badness 3407) in paragraph at lines 23--26
 []\OT1/lmr/m/n/9.5 Crompton JW and Flow-ers GE (2016) Cor-re-la-tions
  []
@@ -721,9 +827,6 @@ gamon
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 1509) in paragraph at lines 59--62
 []\OT1/lmr/m/n/9.5 Grunewald T, Schirmer M, Mott R and Lehning M
  []
@@ -757,17 +860,6 @@ lmr/m/n/9.5 , 40--52, ISSN 0309-1708 (doi:
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[10 <./WSMBDist_LRvsSK.pdf>]
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[11 <./WSMBDist_full.pdf>]
 Underfull \hbox (badness 1394) in paragraph at lines 99--103
 \OT1/lmr/m/n/9.5 with helicopter-borne GPR on two adjacent Alpine
  []
@@ -779,21 +871,15 @@ mr/m/n/9.5 , \OT1/lmr/bx/n/9.5 33\OT1/lmr/m/n/9.5 (13) (doi:
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
+[13]
 Underfull \hbox (badness 2409) in paragraph at lines 116--120
 []\OT1/lmr/m/n/9.5 Mit^^Sa^^Tsov^^Sa H and Hofierka J (1993) Interpolation by
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[12 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
 Underfull \hbox (badness 2903) in paragraph at lines 150--154
 []\OT1/lmr/m/n/9.5 Sold L, Huss M, Hoel-zle M, An-dereggen H, Jo-erg
  []
@@ -840,7 +926,7 @@ Package natbib Warning: There were undefined citations.
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[13
+[14
 
 ] (./Attemp3 - Methods.aux)
 
@@ -852,13 +938,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3691 strings out of 494501
- 50449 string characters out of 6167030
- 118897 words of memory out of 5000000
- 6872 multiletter control sequences out of 15000+600000
+ 3701 strings out of 494501
+ 50566 string characters out of 6167030
+ 120009 words of memory out of 5000000
+ 6882 multiletter control sequences out of 15000+600000
  52186 words of font info for 56 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,15n,24p,2000b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,24p,2000b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/l
 ocal/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/
 texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texli
@@ -883,10 +969,10 @@ type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/
 public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
 /lm/lmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lm
 tt10.pfb>
-Output written on "Attemp3 - Methods.pdf" (13 pages, 3023452 bytes).
+Output written on "Attemp3 - Methods.pdf" (14 pages, 3029601 bytes).
 PDF statistics:
- 29279 PDF objects out of 31911 (max. 8388607)
- 28888 compressed objects within 289 object streams
+ 29282 PDF objects out of 31911 (max. 8388607)
+ 28890 compressed objects within 289 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
