@@ -218,28 +218,28 @@ Specific WSMB is affected by variability introduced when interpolating density (
 \end{tabular}
 \end{table}
 
-\begin{figure*}
+\begin{figure}
 	\centering
-	\includegraphics[width =\textwidth]{WSMBDist_LR.pdf}\\
+	\includegraphics[width =0.5\textwidth]{WSMBDist_LR.pdf}\\
 	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values that arise from SWE variability ($\sigma_{ZZ}$) and regression estimation ($\sigma_{\beta}$). Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
 	\label{fig:WSMBDist_LR}
-\end{figure*}
+\end{figure}
 
 The full WSMB uncertainty PDF when LR or SK is used for interpolation differs significantly on Glaciers 2 and 13. With a LR interpolation, the PDF for Glaciers 4 and 2 completely overlap, while the PDF of Glacier 13 is centred at a lower WSMB. However, SK interpolation results in three distinct PDFs, with the PDFs of Glaciers 2 and 13 centred at lower WSMB values. 
 
-\begin{figure*}
+\begin{figure}
 	\centering
-	\includegraphics[width =\textwidth]{WSMBDist_LRvsSK.pdf}\\
+	\includegraphics[width =0.5\textwidth]{WSMBDist_LRvsSK.pdf}\\
 	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (LR) or simple kriging (SK). Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right).}
 	\label{fig:WSMBDist_LRvsSK}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}
+\begin{figure}
 	\centering
-	\includegraphics[width =\textwidth]{WSMBDist_full.pdf}\\
+	\includegraphics[width =0.5\textwidth]{WSMBDist_full.pdf}\\
 	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (top) or simple kriging (bottom). Each PDF includes density variability, SWE variability and regression estimation (linear regression only) for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
 	\label{fig:WSMBDist_LRvsSK}
-\end{figure*}
+\end{figure}
 
 
 The spatial patterns of WSMB uncertainty are affected by density, SWE, and $\beta$ variability (Figure \ref{fig:WSMBspatialvar}).  For both LR and SK, the greatest variability in estimated SWE occurs in the accumulation area. When LR is used, estimated SWE is highly sensitive to the elevation regression parameter. In the case of SK, variability is greatest in areas far from observed SWE, which consist of the upper accumulation area on Glaciers 2 and 13. Variability is greatest on Glacier 4 when LR interpolation is used at the upper edges of the accumulation area, which correspond to the locations with extreme values of the wind redistribution parameter. When SK is used for interpolation on Glacier 4, variability is greatest at the measured grid cells, which highlights the short correlation length and the large effect of density interpolation on the SK accumulation estimate.
@@ -263,7 +263,7 @@ The spatial patterns of WSMB uncertainty are affected by density, SWE, and $\bet
 
 Snow probing is the simplest and oldest method used to determine accumulation. Directly measurement of snow depth means that no data processing or corrections are needed and depth uncertainty is simple to quantify by taking multiple depth measurements close together \citep{Sold2013}. However, probing is time consuming and this limits the number of measurements that can be made. Further, measurement is limited to areas that are both accessible and safe for researchers. In complex terrain many areas cannot be surveyed, resulting in data gaps \citep{Deems2006,Sold2014}. \cite{Sold2013} noted that this systematic bias can result in incorrect values of glacier-wide accumulation, particularly because inaccessible areas such as cliffs and ridges have relatively shallow accumulations (due to wind erosion), while heavily crevassed areas can accumulate deep snow packs. Despite these limitations, we chose to use snow probing for this study to minimize cost, simplify field logistics and reduce data processing time. By focusing on simple field methods that are easy to execute, we hope to make our conclusions and recommendations for estimating WSMB more broadly applicable and reproducible.
  
-Most contemporary studies that investigate glacier accumulation use ground penetrating radar (GPR), either airborne or ground-based, to obtain continuous and extensive snow depth profiles \citep[e.g.][]{Machguth2006, McGrath2015}. GPR snow surveys, especially when airborne, are able to quickly collect data over large areas and terrain accessibility does not hamper data collection. The main limitation of GPR is the misinterpretation of radargram layers, especially in areas where the snow-ice boundary is ill-defined such as the accumulation area or heavily crevassed terrain \citep{Machguth2006, McGrath2015}. Complications also arise when radar wave speed is altered due to varying snow density and liquid water content. Further, there is no universal procedure for obtaining snow depth data so results depend on available equipment, selection of processing parameters and radargram processing algorithms and are difficult to reproduce \citep{Sold2013}.
+Most contemporary studies that investigate glacier accumulation use ground penetrating radar (GPR), either airborne or ground-based, to obtain continuous and extensive snow depth profiles \citep[e.g.][]{Winther1998,Machguth2006, Gusmeroli2014, McGrath2015}. GPR snow surveys, especially when airborne, are able to quickly collect data over large areas and terrain accessibility does not hamper data collection. The main limitation of GPR is the misinterpretation of radargram layers, especially in areas where the snow-ice boundary is ill-defined such as the accumulation area or heavily crevassed terrain \citep{Machguth2006, Gusmeroli2014, McGrath2015}. Complications also arise when radar wave speed is altered due to varying snow density and liquid water content. Further, there is no universal procedure for obtaining snow depth data so results depend on available equipment, selection of processing parameters and radargram processing algorithms and are difficult to reproduce \citep{Sold2013}.
 
 DEM differencing has also been used to estimate glacier-wide accumulation \citep{Deems2006,Nolan2015}. This method allows for maximal spatial data coverage. However, DEM differencing requires knowledge of glacier dynamics to account for surface changes and data collection, either by lidar or photogrammetry, is subject to considerable errors and noise \citep{Deems2006,Nolan2015}. 
 
@@ -281,9 +281,22 @@ We choose four different density interpolation methods and keep SP and FS measur
 
 \subsection{Grid-cell averaging}
 
+\cite{Lopez2011} completed an extensive survey of snow depth variability at the plot scale (10$\times$10 m) in the Spanish Pyrenees Mountains. The authors concluded that at least five measurement points are needed in each plot to ensure estimation error is $\lt$10\% for plot averaged SWE. Their suggestion amounts to at least 80 measurement points for the grid cells in this study (40$\times$40 m). Rather than gridded or random sampling, as executed by the authors, we suggest a zigzag sampling scheme. The zigzag offered a comprehensive estimation of snow depth variability in a grid cell. \cite{Shea2010} proposed this linear-random sampling scheme and showed that it performs equally well in detecting spatial correlations as pure-random sampling, but is considerably easier to execute. 
+
+Since such a large number of points are needed to characterize the variability in a grid cell there is little advantage to measuring and then averaging snow depth at multiple measurement locations. Rather, time should be spent extensively characterizing grid-cell variability in a few locations and to then decrease the spacing of transect measurements to extend their spatial coverage over the glacier. In our study, the grid cell variability appeared to be captured with dense sampling in select locations but the basin-scale variability was not captured because sampling was limited to the ablation area. By decreasing transect spacing grid cells would only have one or two measurements but more grid cells could be measured. 
+
 \subsection{Interpolation}
 
-elevation trend
+Linear regression (LR) is chosen for this study because topographic parameters can be used as proxies for physical processes that affect snow distribution. Elevation was the only topographic parameter that offered relevant insight into topographic controls on accumulation. Even so, elevation had little predictive ability for Glacier 4 and the correlation was moderate on Glacier 13. Many snow accumulation studies have found elevation to be the most significant predictor of SWE \citep[e.g.][]{Machguth2006, McGrath2015}. However, accumulation-elevation gradients vary considerably between glaciers \citep{Winther1998} and other factors, such as orientation relative to dominant wind direction and glacier shape, have been noted to affect accumulation distribution \citep{Machguth2006,Grabiec2011}.  \cite{Machguth2006}, \cite{Grunewald2014} and \cite{Kirchner2014} observed elevation trends in accumulation in the lower part of the basin and no correlation or a decrease in SWE with elevation in the upper portion of the basin. Wind redistribution and other complex effects appear to create highly spatially variable snow pack at high elevations. \cite{Helbig2017} suggest that an increase in accumulation with elevation can better be approximated by a power law. A number of accumulation studies on glaciers found no significant correlation between accumulation and topographic parameters and the highly variable snow distribution has been attributed to complex local conditions \citep[e.g.][]{Grabiec2011,Lopez2011}.
+
+Elevation affects snow distribution through melt at lower elevation due to higher temperatures, as well as increased precipitation at higher elevation arising from orographic lift. It is possible that the elevation correlation was accentuated during the field campaign due to warmer than normal temperatures and an early ($1-2$ weeks) start to the melt season (Yukon Snow Survey Bulletin and Water Supply Forecast, May 1, 2016). The southwestern Yukon winter snow pack in 2015 was also well below average, likely resulting in the effects of early melt onset to be emphasized. Glacier 4 had deeper snow and cloudier conditions during the field campaign so perhaps a correlation between SWE and elevation had not manifested. 
+
+Wind redistribution and preferential deposition of snow is known to have a large influence on accumulation at sub-basin scales. \cite{Dadic2010} used a dynamic model to show that wind speed, and in turn snow deposition, was controlled by small-scale topography and had a significant impact on glacier-wide accumulation. The wind redistribution parameter used in the study was found to be a small but significant predictor of accumulation on Glacier 4 (negative correlation) and Glacier 2 (positive correlation). This result indicates that snow likely has an impact on snow distribution but that the parameter is perhaps not the most appropriate way to characterize the effect of wind on our study glaciers. For example, Glacier 4 is located in a curved valley with steep side walls so perhaps having a single cardinal direction for wind is inappropriate. Examining wind redistribution parameter values that assume wind moving up or down glacier and changing direction to follow the valley could allow the wind redistribution parameter to explain more of the variance in SWE.
+
+Since we were unable to measure SWE in grid cells that corresponded to the extreme values of all topographic parameters, we must extrapolate linear relationships. The accumulation area, where there are few observations, is most susceptible to extrapolation errors. This area typically also has the highest SWE values, affecting the specific WSMB estimated for the glacier. In our study, the dependence of SWE on elevation, especially on Glacier 2, means that LR extrapolation results in almost 2 m w.e. estimated in the parts of the accumulation area. This exceptionally large estimate of SWE is unlikely for a continental snow pack. As described above, snow in the accumulation area has been shown to have no correlation or a negative correlation with elevation and wind effects have been observed. Therefore, extrapolating a LR that is fitted to predominantly ablation area SWE values is likely erroneous. Future studies need to focus on collecting SWE observations in the accumulation area, even if it means collecting fewer observations in the ablation area. Accumulation area observations can be used both to characterize accumulation patterns in the upper portions on a glacierized basin and to generally increase the spatial extent and topographic parameter range coverage of observations.
+
+
+
 LR vs SK
 
 \subsection{Quantifying effects of variability}
@@ -291,53 +304,13 @@ LR vs SK
 \subsection{Assumptions}
 
 
-
-[77] conducted an airborne GRP survey of two adjacent glaciers in Switzerland. The
-lower part of the larger valley glacier showed a clear correlation between altitude and snow
-accumulation. The upper part of the glacier and the adjacent smaller glacier had no alti-
-tudinal trend and the fluctuations in depth were large. Additionally, the accumulation was
-40\% lower on the smaller glacier. The altitudinal trend is a well documented pattern and
-was thought to be a result of melt that occurred during warmer weather, which is more
-pronounced at lower elevations. Spatial variability of precipitation and redistribution of
-snow were believed to have resulted in the high spatial variability in higher parts of the
-study area. Since the majority of the precipitation events originated from one direction and
-the large glacier was on the lee side of a ridge, it experienced preferential deposition. Mean-
-while, the smaller glacier was further along the storm track so it received less precipitation.
-Overall, [77] showed that snow distribution on glaciers is not simply a function of altitude,
-which corroborated research done in other alpine catchments.
-
  In most cases, the resolution of measurements over a large area is insufficient to
 approximate the true variability [15, 32].
 
 
  The estimates of SWE in the accumulation area are greatest when kriging is used because there is a single single high SWE value in the accumulation area. Kriging is sensitive to outliers in areas with sparse sampling. Kriging estimates lower SWE in the accumulation area of both glaciers because elevation is not incorporated into the model.
 
-extrapolation of regression models will
-likely result in large errors. These errors are especially relevant in the accumulation area,
-which has extreme values for all parameters. Errors in the accumulation area are especially
-important to acknowledge because this area has the highest values of SWE and is likely to
-heavily influence final winter mass balance values. Improvements to this study could include
-using an air-borne GPR to collect a dense network of SWE measurements in difficult to
-access areas [e.g. 82] (see Section 1.3.2 for more details).
 
-
- and both under and over sampling is believed to have occurred using the FS (more details or just sources??). 
-
-
-Lopez 2013 for small scale var Molotch2005a?
-
-Winter snow pack in southwestern Yukon was well below normal in 2015 (Yukon Snow Survey Bulletin and Water Supply Forecast, May 1, 2016). Temperatures were generally warmer than normal and the melt season began $1-2$ weeks early. 
-
-Field sampling (also called direct glaciological method) is known to be biased towards small alpine glaciers with simple topography.
-
-The Sx coefficient is negative, which indicates less snow in ‘sheltered’ areas. The negative correlation is counter intuitive so it is surprising that Sx is the best predictor for accumulation.
- Areas with high Sx values (sheltered), especially in the accumulation area, have the lowest values of SWE. This regression indicates that the wind plays a role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining Sx values that assume wind moving up or down glacier and changing direction to follow the valley could allow the Sx parameter to explain more of the variance.
-
-
-
-
-
-The range of predicted SWE is largest for Glacier 2 and it also has the highest SWE (1.92 m w.e) and the lowest SWE (0 m w.e.) values. Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating from the regression, which largely depends on elevation.
 
 
 

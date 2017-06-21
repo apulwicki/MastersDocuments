@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  20 JUN 2017 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  20 JUN 2017 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -599,23 +599,32 @@ Overfull \hbox (18.73663pt too wide) in paragraph at lines 212--219
 File: WSMBDist_LR.pdf Graphic file (type pdf)
  <use WSMBDist_LR.pdf>
 Package pdftex.def Info: WSMBDist_LR.pdf used on input line 223.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+(pdftex.def)             Requested size: 253.22952pt x 122.35254pt.
+
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 223--223
+ [][] 
+ []
 
 <WSMBDist_LRvsSK.pdf, id=170, 506.89375pt x 244.915pt>
 File: WSMBDist_LRvsSK.pdf Graphic file (type pdf)
 
 <use WSMBDist_LRvsSK.pdf>
 Package pdftex.def Info: WSMBDist_LRvsSK.pdf used on input line 232.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
- <WSMBDist_full.pdf, id=171, 244.915pt x 370.38374pt>
+(pdftex.def)             Requested size: 253.22952pt x 122.35254pt.
+
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 232--232
+ [][] 
+ []
+
+<WSMBDist_full.pdf, id=171, 244.915pt x 370.38374pt>
 File: WSMBDist_full.pdf Graphic file (type pdf)
-
-<use WSMBDist_full.pdf>
+ <use WSMBDist_full.pdf>
 Package pdftex.def Info: WSMBDist_full.pdf used on input line 239.
-(pdftex.def)             Requested size: 506.45905pt x 765.93785pt.
+(pdftex.def)             Requested size: 253.22952pt x 382.96892pt.
 
-
-LaTeX Warning: Float too large for page by 121.06285pt on input line 242.
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 239--239
+ [][] 
+ []
 
 <SpatialVar_LR.pdf, id=172, 506.89375pt x 244.915pt>
 File: SpatialVar_LR.pdf Graphic file (type pdf)
@@ -636,6 +645,18 @@ Package natbib Warning: Citation `Deems2006' on page 7 undefined on input line
 
 Package natbib Warning: Citation `Sold2014' on page 7 undefined on input line 2
 64.
+
+
+Package natbib Warning: Citation `Winther1998' on page 7 undefined on input lin
+e 266.
+
+
+Package natbib Warning: Citation `Gusmeroli2014' on page 7 undefined on input l
+ine 266.
+
+
+Package natbib Warning: Citation `Gusmeroli2014' on page 7 undefined on input l
+ine 266.
 
 
 Package natbib Warning: Citation `Deems2006' on page 7 undefined on input line 
@@ -708,16 +729,17 @@ Underfull \hbox (badness 1460) in paragraph at lines 274--275
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
+[9 <./WSMBDist_LR.pdf> <./WSMBDist_LRvsSK.pdf> <./WSMBDist_full.pdf>]
 
-Package natbib Warning: Citation `Wetlaufer2016' on page 9 undefined on input l
-ine 278.
+Package natbib Warning: Citation `Wetlaufer2016' on page 10 undefined on input 
+line 278.
 
 
-Package natbib Warning: Citation `Wetlaufer2016' on page 9 undefined on input l
-ine 280.
+Package natbib Warning: Citation `Wetlaufer2016' on page 10 undefined on input 
+line 280.
 
 
 Underfull \hbox (badness 1484) in paragraph at lines 280--281
@@ -725,35 +747,70 @@ Underfull \hbox (badness 1484) in paragraph at lines 280--281
  []
 
 
-Underfull \vbox (badness 2401) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[9 <./WSMBDist_LR.pdf>]
-Underfull \hbox (badness 1558) in paragraph at lines 315--322
-[]\OT1/lmr/m/n/9.5 extrapolation of regression models will likely result
+[10 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
+
+Package natbib Warning: Citation `Lopez2011' on page 11 undefined on input line
+ 284.
+
+! Undefined control sequence.
+<recently read> \lt 
+                    
+l.284 ...h plot to ensure estimation error is $\lt
+                                                  $10\% for plot averaged SW...
+
+? 
+
+Underfull \hbox (badness 1629) in paragraph at lines 284--285
+\OT1/lmr/m/n/9.5 Mountains. The authors concluded that at least five
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 329--330
-[]\OT1/lmr/m/n/9.5 Winter snow pack in southwestern Yukon was well
+Package natbib Warning: Citation `Winther1998' on page 11 undefined on input li
+ne 290.
+
+
+Package natbib Warning: Citation `Grabiec2011' on page 11 undefined on input li
+ne 290.
+
+
+Package natbib Warning: Citation `Grunewald2014' on page 11 undefined on input 
+line 290.
+
+
+Package natbib Warning: Citation `Kirchner2014' on page 11 undefined on input l
+ine 290.
+
+
+Package natbib Warning: Citation `Helbig2017' on page 11 undefined on input lin
+e 290.
+
+
+Package natbib Warning: Citation `Grabiec2011' on page 11 undefined on input li
+ne 290.
+
+
+Package natbib Warning: Citation `Lopez2011' on page 11 undefined on input line
+ 290.
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 290--291
+\OT1/lmr/m/n/9.5 processes that affect snow distribution. Elevation was
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1881) in paragraph at lines 290--291
+\OT1/lmr/m/n/9.5 the only topographic parameter that offered relevant
+ []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[10 <./WSMBDist_LRvsSK.pdf>]
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[11 <./WSMBDist_full.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: Citation `Dadic2010' on page 11 undefined on input line
+ 294.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -762,8 +819,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[12 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
-Underfull \hbox (badness 1383) in paragraph at lines 383--387
+[11]
+Underfull \hbox (badness 1383) in paragraph at lines 356--360
 []\OT1/lmr/m/n/9.5 derived accumulation estimated winter surface mass
  []
 
@@ -848,6 +905,10 @@ Underfull \hbox (badness 2744) in paragraph at lines 64--67
  []
 
 
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[12]
 Underfull \hbox (badness 2426) in paragraph at lines 91--97
 \OT1/lmr/m/n/9.5 for es-ti-mat-ing snow wa-ter equiv-a-lent. \OT1/lmr/m/it/9.5 
 Ad-vances in
@@ -871,10 +932,6 @@ mr/m/n/9.5 , \OT1/lmr/bx/n/9.5 33\OT1/lmr/m/n/9.5 (13) (doi:
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[13]
 Underfull \hbox (badness 2409) in paragraph at lines 116--120
 []\OT1/lmr/m/n/9.5 Mit^^Sa^^Tsov^^Sa H and Hofierka J (1993) Interpolation by
  []
@@ -926,9 +983,7 @@ Package natbib Warning: There were undefined citations.
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[14
-
-] (./Attemp3 - Methods.aux)
+[13] (./Attemp3 - Methods.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -938,10 +993,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3701 strings out of 494501
- 50566 string characters out of 6167030
- 120009 words of memory out of 5000000
- 6882 multiletter control sequences out of 15000+600000
+ 3710 strings out of 494501
+ 50672 string characters out of 6167030
+ 120118 words of memory out of 5000000
+ 6891 multiletter control sequences out of 15000+600000
  52186 words of font info for 56 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  38i,15n,24p,2000b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -969,10 +1024,10 @@ type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/
 public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
 /lm/lmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lm
 tt10.pfb>
-Output written on "Attemp3 - Methods.pdf" (14 pages, 3029601 bytes).
+Output written on "Attemp3 - Methods.pdf" (13 pages, 3032603 bytes).
 PDF statistics:
- 29282 PDF objects out of 31911 (max. 8388607)
- 28890 compressed objects within 289 object streams
+ 29279 PDF objects out of 31911 (max. 8388607)
+ 28888 compressed objects within 289 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
