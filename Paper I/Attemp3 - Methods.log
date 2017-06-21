@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  20 JUN 2017 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  20 JUN 2017 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,14 +813,11 @@ Package natbib Warning: Citation `Dadic2010' on page 11 undefined on input line
  294.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [11]
-Underfull \hbox (badness 1383) in paragraph at lines 356--360
+Underfull \hbox (badness 1383) in paragraph at lines 358--362
 []\OT1/lmr/m/n/9.5 derived accumulation estimated winter surface mass
  []
 
@@ -850,6 +847,10 @@ Underfull \hbox (badness 2680) in paragraph at lines 39--42
  []
 
 
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[12]
 Underfull \hbox (badness 2875) in paragraph at lines 44--48
 \OT1/lmr/m/n/9.5 the spa-tial dis-tri-bu-tion of snow wa-ter equiv-a-lence
  []
@@ -905,10 +906,6 @@ Underfull \hbox (badness 2744) in paragraph at lines 64--67
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[12]
 Underfull \hbox (badness 2426) in paragraph at lines 91--97
 \OT1/lmr/m/n/9.5 for es-ti-mat-ing snow wa-ter equiv-a-lent. \OT1/lmr/m/it/9.5 
 Ad-vances in
@@ -995,7 +992,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3710 strings out of 494501
  50672 string characters out of 6167030
- 120118 words of memory out of 5000000
+ 120117 words of memory out of 5000000
  6891 multiletter control sequences out of 15000+600000
  52186 words of font info for 56 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -1024,7 +1021,7 @@ type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/
 public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
 /lm/lmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lm
 tt10.pfb>
-Output written on "Attemp3 - Methods.pdf" (13 pages, 3032603 bytes).
+Output written on "Attemp3 - Methods.pdf" (13 pages, 3033752 bytes).
 PDF statistics:
  29279 PDF objects out of 31911 (max. 8388607)
  28888 compressed objects within 289 object streams
