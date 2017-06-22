@@ -208,14 +208,15 @@ Specific WSMB is affected by variability introduced when interpolating density (
 
  \begin{table}[]
 \centering
-\caption{Mean standard deviation ([m w.e.]) of specific winter surface mass balance estimated using linear regression and simple kriging when variability is introduced. Variability in grid cell SWE is approximated by a normal distribution about the local SWE value with standard deviation equal to the glacier-wide mean zigzag standard deviation ($\sigma_{ZZ}$). Variability in regression estimation is accounted for by varying the regression coefficients with a normal distribution with standard deviation calculated from regression covariance ($\sigma_{\beta}$).}
+\caption{Standard deviation ([m w.e.]) of specific winter surface mass balance estimated using linear regression (LR) and simple kriging (SK) when variability is introduced. Density variability ($\sigma_{\rho}$) is the standard deviation of WSMB estimated using SWE data with different density interpolation methods. SWE variability ($\sigma_{\mathrm{SWE}}$) is approximated by a normal distribution about the local SWE value with standard deviation equal to the glacier-wide mean zigzag standard deviation. LR interpolation variability ($\sigma_{\beta}$) is accounted for by varying the regression coefficients with a normal distribution with standard deviation calculated from regression covariance. SK interpolation variability ($\sigma_{\mathrm{KRIG}}$) is taken from the range of distributed SWE estimates calculated by the DiceKriging package.}
 \label{tab:WSMBdistribution_sigma}
 \begin{tabular}{ccccccc}
 \textbf{} & \multicolumn{3}{c}{\textbf{Linear Regression}} & \multicolumn{3}{c}{\textbf{Simple Kriging}} \\
  & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\beta}$ & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\mathrm{KRIG}}$ \\
-G4 & 0.0204 & 0.0086 & 0.0213 &  & 0.0086 & 0.1405 \\
-G2 & 0.0263 & 0.0180 & 0.0309 &  & 0.0256 & 0.1378 \\
-G13 & 0.0112 & 0.0112 & 0.0280 &  & 0.0116 & 0.0965
+\midrule
+\textbf{G4} & 0.0190 & 0.0086 & 0.0213 & 0.0215 & 0.0085 & 0.1405 \\
+\textbf{G2} & 0.0337 & 0.0180 & 0.0309 & 0.0203 & 0.0253 & 0.1378 \\
+\textbf{G13} & 0.0168 & 0.0112 & 0.0280 & 0.0127 & 0.0115 & 0.0965
 \end{tabular}
 \end{table}
 
