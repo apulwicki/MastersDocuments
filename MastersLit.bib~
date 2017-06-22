@@ -1,5 +1,48 @@
 @comment{x-kbibtex-personnameformatting=<%l><, %f>}
 
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+%% Created for Alexandra Pulwicki at 2017-06-20 17:58:48 -0700 
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+@article{Helbig2017,
+	abstract = "Snow depth is an important variable for a variety of models including land‐surface, meteorological, and climate models. Various measurement networks were therefore developed to measure snow depth on the ground. Measurement stations are generally located in gentle terrain (flat field measurements) most often at lower or mid elevation. While these sites have provided a wealth of information, various studies have questioned the representativity of such flat field measurements for the surrounding topography, especially in alpine regions. Using highly resolved snow depth maps at the peak of winter from two distinct climatic regions in Switzerland and in the Spanish Pyrenees, we developed two parameterizations to estimate domain‐averaged snow depth in coarse‐scale model applications over complex topography using easy to derive topographic parameters. The first parameterization uses a commonly applied linear lapse rate. Removing the dominant elevation gradient in mean snow depth revealed remaining underlying correlations with other topographic parameters, in particular the sky view factor. The second parameterization combines a power law elevation trend scaled with the subgrid parameterized sky view factor. Using a variety of statistic measures showed that the more complex parameterization performs better when using mean high‐resolution flat field snow depth. The performances slightly decreased when formulating the parameterizations for a single flat field snow depth measurement. Nevertheless, the more complex parameterization still outperformed the linear lapse rate model. As the parameterization was developed independently of a specific geographic region, we suggest it could be used to assimilate flat field snow depth or snowfall into coarse‐scale snow model frameworks. Mean snow depth is parameterized using elevation, sky view factors, and flat field snow depth as input Power law describes elevation trend of domain‐averaged snow depth better than a linear lapse rate Seven high‐resolution snow depth data sets were normalized, pooled, and detrended to derive the parameterizations",
+	author = "Helbig, N. and {Van Herwijnen}, A.",
+	date-added = "2017-06-21 00:11:46 +0000",
+	date-modified = "2017-06-21 00:11:54 +0000",
+	issn = "0043-1397",
+	journal = "Water Resources Research",
+	keywords = "Snow Depth; Complex Topography; Coarse‐Scale Models; Subgrid Parameterization; Sky View Factor; Spatial Variability",
+	month = "February",
+	number = "2",
+	pages = "1444--1456",
+	title = "{Subgrid parameterization for snow depth over mountainous terrain from flat field snow depth}",
+	volume = "53",
+	year = "2017"
+}
+
+@article{Kirchner2014,
+	abstract = "We present results from snow-on and snow-off airborne-scanning LiDAR measurements over a 53 km2 area in the southern Sierra Nevada. We found that snow depth as a function of elevation increased approximately 15 cm per 100 m, until reaching an elevation of 3300 m, where depth sharply decreased at a rate of 48 cm per 100 m. Departures from the 15 cm per 100 m trend, based on 1 m elevation-band means of regression residuals, showed slightly less steep increases below 2050 m; steeper increases between 2050 and 3300 m; and less steep increases above 3300 m. Although the study area is partly forested, only measurements in open areas were used. Below approximately 2050 m elevation, ablation and rainfall are the primary causes of departure from the orographic trend. From 2050 to 3300 m, greater snow depths than predicted were found on the steeper terrain of the northwest and the less steep northeast-facing slopes, suggesting that ablation, aspect, slope and wind redistribution all play a role in local snow-depth variability. At elevations above 3300 m, orographic processes mask the effect of wind deposition when averaging over large areas. Also, terrain in this basin becomes less steep above 3300 m. This suggests a reduction in precipitation from upslope lifting and/or the exhaustion of precipitable water from ascending air masses. Our results suggest a cumulative precipitation lapse rate for the 2100--3300 m range of about 6 cm per 100 m elevation for the accumulation period of 3 December 2009 to 23 March 2010. This is a higher gradient than the widely used PRISM (Parameter-elevation Relationships on Independent Slopes Model) precipitation products, but similar to that from reconstruction of snowmelt amounts from satellite snow-cover data. Our findings provide a unique characterization of the consistent, steep average increase in precipitation with elevation in snow-dominated terrain, using high-resolution, highly accurate data and highlighs the importance of solar radiation, wind redistribution and mid-winter melt with regard to snow distribution.",
+	author = "Kirchner, P. B. and Bales, R. C. and Molotch, N. P. and Flanagan, J. and Guo, Q.",
+	bdsk-url-1 = "https://doaj.org/article/7b12a8100c0f48ef8c2146f566063d43",
+	date-added = "2017-06-21 00:03:58 +0000",
+	date-modified = "2017-06-21 00:04:14 +0000",
+	issn = "1027-5606",
+	journal = "Hydrology and Earth System Sciences",
+	keywords = "Geography. Anthropology. Recreation; Physical Geography; Gb3-5030; Environmental Sciences; Ge1-350; Technology; Environmental Technology. Sanitary Engineering; Td1-1066; Environmental Sciences; Geography",
+	language = "eng",
+	month = "October",
+	number = "10",
+	pages = "4261--4275",
+	publisher = "Copernicus Publications",
+	title = "{LiDAR measurement of seasonal snow accumulation along an elevation gradient in the southern Sierra Nevada, California}",
+	url = "https://doaj.org/article/7b12a8100c0f48ef8c2146f566063d43",
+	volume = "18",
+	year = "2014"
+}
+
 @book{Davis1986,
 	author = "Davis, John C and Sampson, Robert J",
 	date-added = "2016-12-11 18:20:47 +0000",
@@ -12,6 +55,7 @@
 
 @article{Logan1973,
 	author = "Logan, L",
+	bdsk-url-1 = "http://hydrologie.org/redbooks/a107/107069.pdf",
 	journal = "Role of Snow and Ice in Hydrology, IAHS AIHS Publ",
 	pages = "864--884",
 	title = "{Basin-wide water equivalent estimation from snowpack depth measurements}",
@@ -58,6 +102,7 @@
 
 @article{Horn1981,
 	author = "Horn, Berthold KP",
+	bdsk-url-1 = "http://dx.doi.org/10.1109/PROC.1981.11918",
 	date-added = "2016-12-09 22:08:36 +0000",
 	date-modified = "2016-12-09 22:09:03 +0000",
 	doi = "10.1109/PROC.1981.11918",
@@ -72,6 +117,7 @@
 
 @article{Hofierka2009,
 	author = "Hofierka, J and Mit{\'a}\v{s}ov{\'a}, H and Neteler, M",
+	bdsk-url-1 = "http://dx.doi.org/10.1016/S0166-2481(08)00017-2",
 	date-added = "2016-12-09 21:59:48 +0000",
 	date-modified = "2016-12-11 18:43:20 +0000",
 	doi = "10.1016/S0166-2481(08)00017-2",
@@ -85,6 +131,7 @@
 
 @article{Mitavsova1993,
 	author = "Mit{\'a}\v{s}ov{\'a}, Helena and Hofierka, Jaroslav",
+	bdsk-url-1 = "http://dx.doi.org/10.1007/BF00893172",
 	date-added = "2016-12-09 21:55:17 +0000",
 	date-modified = "2016-12-09 21:57:05 +0000",
 	doi = "10.1007/BF00893172",
@@ -200,6 +247,7 @@
 	author = "Lackmann, Gary M and Gyakum, John R and Benoit, Robert",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
 	date-added = "2016-03-21 01:48:37 +0000",
 	date-modified = "2016-03-21 01:48:54 +0000",
 	doi = "10.1175/1520-0493(1998)126<0668:MTDOAW>2.0.CO;2",
@@ -339,6 +387,7 @@
 	author = "Shook, Kevin and Gray, DM",
 	bdsk-url-1 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
 	bdsk-url-2 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
+	bdsk-url-3 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
 	date-added = "2016-03-20 18:25:55 +0000",
 	date-modified = "2016-03-20 18:26:12 +0000",
 	doi = "10.1002/(SICI)1099-1085(199610)10:10<1283::AID-HYP460>3.0.CO;2-M",
@@ -557,6 +606,7 @@
 
 @book{Fierz2009,
 	author = "Fierz, CRLA and Armstrong, Richard L and Durand, Yves and Etchevers, Pierre and Greene, Ethan and McClung, David M and Nishimura, Kouichi and Satyawali, Pramod K and Sokratov, Sergey A",
+	bdsk-url-1 = "http://unesdoc.unesco.org/images/0018/001864/186462e.pdf",
 	publisher = "UNESCO/IHP Paris",
 	title = "{The international classification for seasonal snow on the ground}",
 	url = "http://unesdoc.unesco.org/images/0018/001864/186462e.pdf",
@@ -568,6 +618,7 @@
 	author = "Bellaire, Sascha and Schweizer, J{\"u}rg",
 	bdsk-url-1 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
 	bdsk-url-2 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
+	bdsk-url-3 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
 	booktitle = "{Proceedings ISSW}",
 	date-added = "2016-03-20 04:22:53 +0000",
 	date-modified = "2016-03-20 04:23:00 +0000",
@@ -781,6 +832,7 @@
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
 	date-added = "2015-12-21 20:36:02 +0000",
 	date-modified = "2015-12-21 20:37:54 +0000",
 	doi = "10.1175/1520-0442(2000)013<1718:USOMTI>2.0.CO;2",
@@ -1137,6 +1189,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
 	date-added = "2015-12-13 17:37:49 +0000",
 	date-modified = "2015-12-13 17:38:18 +0000",
 	doi = "10.1175/1520-0442(2004)017<1381:RSSCHI>2.0.CO;2",
@@ -1229,6 +1282,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1999)012<3181:ITDVIC>2.0.CO;2",
 	journal = "Journal of Climate",
 	number = "11",
@@ -1380,6 +1434,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
 	doi = "10.1175/1520-0450(1994)033<0140:ASTMFM>2.0.CO;2",
 	journal = "Journal of applied meteorology",
 	number = "2",
@@ -1482,6 +1537,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
 	bdsk-url-3 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
 	bdsk-url-4 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
+	bdsk-url-5 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
 	doi = "10.1002/(SICI)1099-1085(199808/09)12:10/11<1793::AID-HYP695>3.0.CO;2-",
 	journal = "Hydrological Processes",
 	number = "1011",
@@ -1829,6 +1885,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1998)011<0735:ACOSAM>2.0.CO;2",
 	journal = "Journal of Climate",
 	number = "4",
@@ -2163,6 +2220,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
 	doi = "10.1175/1525-7541(2000)001<0491:AHOPSM>2.0.CO;2",
 	journal = "Journal of Hydrometeorology",
 	number = "6",
@@ -2339,6 +2397,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
 	doi = "10.1175/1520-0469(2004)061<1377:ALTOOP>2.0.CO;2",
 	journal = "Journal of the Atmospheric Sciences",
 	number = "12",
@@ -2405,6 +2464,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
 	date-modified = "2015-12-19 04:17:44 +0000",
 	doi = "10.1175/1520-0442(2003)016<0799:SPDOTN>2.0.CO;2",
 	journal = "Journal of Climate",
@@ -2423,6 +2483,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
 	bdsk-url-3 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
 	bdsk-url-4 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
+	bdsk-url-5 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
 	doi = "10.1002/(SICI)1097-0088(200005)20:6<641::AID-JOC501>3.0.CO;2-1",
 	journal = "International Journal of Climatology",
 	number = "6",
@@ -2440,6 +2501,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
 	journal = "Journal of Hydrometeorology",
 	number = "5",
 	owner = "glaciology1",
@@ -2499,6 +2561,7 @@
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
+	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
 	date-modified = "2015-12-19 04:18:31 +0000",
 	doi = "10.1175/1520-0442(1999)012<2474:TAMAAS>2.0.CO;2",
 	journal = "Journal of Climate",
@@ -2592,6 +2655,7 @@
 	author = "Basist, Alan and Bell, Gerald D and Meentemeyer, Vernon",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1994)007<1305:SRBTAP>2.0.CO;2",
 	journal = "Journal of climate",
 	number = "9",
@@ -2773,7 +2837,8 @@
 	author = "Work, R.A. and Stockwell, H.J. and Freeman, T.G. and Beaumont, R.T.",
 	localfile = "/home/glaciology1/Documents/Papers/CRREL+Technical+Report+163.pdf",
 	organization = "Cold Regions Research \& Engineering Laboratory",
-	title = "{Accuracy of field snow surveys}"
+	title = "{Accuracy of field snow surveys}",
+	year = "1965"
 }
 
 @article{Pomeroy2004,
@@ -2828,6 +2893,7 @@
 	author = "Boon, Sarah and Davis, Reed and Bladon, Kevin and Wagner, Michael",
 	bdsk-url-1 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
 	bdsk-url-2 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
+	bdsk-url-3 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
 	journal = "Streamline: Watershed Management Bulletin",
 	month = "Spring",
 	number = "2",
@@ -2856,6 +2922,8 @@
 	author = "Woo, Ming-Ko and Marsh, Philip",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
+	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
 	doi = "10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2",
 	eprint = "http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2",
 	journal = "Journal of Applied Meteorology",
@@ -2892,6 +2960,7 @@
 
 @article{Goodison1987,
 	author = "Goodison, BE and Glynn, JE and Harvey, KD and Slater, JE",
+	bdsk-url-1 = "http://dx.doi.org/10.4296/cwrj1202027",
 	journal = "Canadian Water Resources Journal",
 	number = "2",
 	pages = "27--42",
@@ -2904,6 +2973,7 @@
 
 @article{Beaumont1963,
 	author = "BEAUMONT, Robert T. and WORK, R. A.",
+	bdsk-url-1 = "http://dx.doi.org/10.1080/02626666309493359",
 	doi = "10.1080/02626666309493359",
 	eprint = "http://dx.doi.org/10.1080/02626666309493359",
 	journal = "International Association of Scientific Hydrology. Bulletin",
@@ -2917,6 +2987,7 @@
 
 @inproceedings{Fames1982,
 	author = "Fames, Phillip E and Peterson, NR and Goodison, BE and Richards, Robert P",
+	bdsk-url-1 = "http://www.westernsnowconference.org/sites/westernsnowconference.org/PDFs/1982Farnes.pdf",
 	booktitle = "{Proceedings of the 50th Western Snow Conference}",
 	pages = "120--132",
 	title = "{Metrication of Manual Snow Sampling Equipment}",
@@ -2927,6 +2998,8 @@
 @article{Reveillet2016,
 	abstractnote = "ABSTRACTBased on an extensive dataset of surface mass balances (SMB) from four glaciers in the French Alps for the period 1995--2012 and in the framework of enhanced temperature-index models, we investigate the sensitivity of seasonal glacier SMB to temperature, solar radiation, precipitation and topographical variables. Our results reveal strong correlations between winter SMB and precipitation, although the precipitation gradient cannot explain the high-accumulation rates. Based on the available point measurements, we found no relevant relationship between winter SMB and topographical variables. Temperature was found to be the main driver of ice/snow ablation while solar radiation was found to strongly influence the spatial distribution of summer SMB. We compared the ability of several enhanced temperature-index models to accurately simulate point SMB and glacier-wide MB. Our analyses revealed that the uncertainties in the simulated annual SMB due to winter SMB uncertainties are larger than differences between models and prevented us from concluding, which model is the most suitable. In contrast with results of previous studies, including solar radiation in melt models did not improve the performances when modelling glacier-wide MB. We conclude that a classical degree-day model is sufficient to simulate the long-term glacier-wide MB if the underlying processes are not required to be resolved.",
 	author = "R{\'E}VEILLET, MARION and VINCENT, CHRISTIAN and SIX, DELPHINE and RABATEL, ANTOINE",
+	bdsk-url-1 = "https://www.cambridge.org/core/article/div-class-title-which-empirical-model-is-best-suited-to-simulate-glacier-mass-balances-div/210F94E4C2103A82109F323819D8BC72",
+	bdsk-url-2 = "http://dx.doi.org/10.1017/jog.2016.110",
 	doi = "10.1017/jog.2016.110",
 	journal = "Journal of Glaciology",
 	month = "Oct",
@@ -2939,7 +3012,8 @@
 }
 
 @article{Conger2009,
-	author = "Conger, Steven M and McCLUNG, David M",
+	author = "Conger, Steven M and McClung, David M",
+	bdsk-url-1 = "https://doi.org/10.3189/002214309788609038",
 	journal = "Journal of Glaciology",
 	number = "189",
 	pages = "163--169",
@@ -2960,6 +3034,7 @@
 
 @article{Gromping2015,
 	author = "Gr{\"o}mping, Ulrike",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/wics.1346",
 	doi = "10.1002/wics.1346",
 	journal = "Wiley Interdisciplinary Reviews: Computational Statistics",
 	number = "2",
@@ -2972,6 +3047,7 @@
 
 @article{Darlington1968,
 	author = "Darlington, Richard B",
+	bdsk-url-1 = "http://dx.doi.org/10.1037/h0025471",
 	journal = "Psychological bulletin",
 	number = "3",
 	pages = "161",
@@ -2984,6 +3060,7 @@
 
 @article{Kim2015,
 	author = "Kim, Seongho",
+	bdsk-url-1 = "http://dx.doi.org/10.5351/CSAM.2015.22.6.665",
 	doi = "10.5351/CSAM.2015.22.6.665",
 	journal = "Communications for statistical applications and methods",
 	number = "6",
@@ -2996,6 +3073,7 @@
 
 @article{Bring1996,
 	author = "Bring, Johan",
+	bdsk-url-1 = "http://dx.doi.org/10.1080/00031305.1996.10473543",
 	doi = "10.1080/00031305.1996.10473543",
 	journal = "The American Statistician",
 	number = "1",
@@ -3008,6 +3086,7 @@
 
 @article{Gromping2009,
 	author = "Gr{\"o}mping, Ulrike",
+	bdsk-url-1 = "http://dx.doi.org/10.1198/tast.2009.08199",
 	doi = "10.1198/tast.2009.08199",
 	eprint = "http://dx.doi.org/10.1198/tast.2009.08199",
 	journal = "The American Statistician",
@@ -3031,6 +3110,8 @@
 
 @article{Li2014,
 	author = "Li, Jin and Heap, Andrew D.",
+	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S1364815213003113",
+	bdsk-url-2 = "http://dx.doi.org/10.1016/j.envsoft.2013.12.008",
 	doi = "10.1016/j.envsoft.2013.12.008",
 	journal = "Environmental Modelling \& Software",
 	keywords = "Statistics; Interpolator; Geostatistics; Kriging; Analysis; Spatially continuous surfaces",
@@ -3050,6 +3131,8 @@
 
 @article{Hengl2007,
 	author = "Hengl, Tomislav and Heuvelink, Gerard B.M. and Rossiter, David G.",
+	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S0098300407001008",
+	bdsk-url-2 = "http://dx.doi.org/10.1016/j.cageo.2007.05.001",
 	doi = "10.1016/j.cageo.2007.05.001",
 	journal = "Computers \& Geosciences",
 	keywords = "Spatial prediction; Multiple regression; GSTAT; Environmental predictors; SRTM; MODIS",
@@ -3063,9 +3146,10 @@
 
 @article{Knotters1995,
 	author = "Knotters, M. and Brus, D.J. and Voshaar, J.H. Oude",
+	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/001670619500011C",
+	bdsk-url-2 = "http://dx.doi.org/10.1016/0016-7061(95)00011-C",
 	doi = "10.1016/0016-7061(95)00011-C",
 	journal = "Geoderma",
-	note = "",
 	number = "3",
 	pages = "227--246",
 	title = "{A comparison of kriging, co-kriging and kriging combined with regression for spatial interpolation of horizon depth with censored observations}",
@@ -3076,6 +3160,7 @@
 
 @article{Roustant2012,
 	author = "Roustant, Olivier and Ginsbourger, David and Deville, Yves",
+	bdsk-url-1 = "https://hal.archives-ouvertes.fr/hal-00495766",
 	hal_id = "hal-00495766",
 	hal_version = "v3",
 	journal = "Journal of Statistical Software",
@@ -3091,12 +3176,13 @@
 
 @article{Lopez2013,
 	author = "L{\'o}pez-Moreno, J.I. and Fassnacht, S.R. and Heath, J.T. and Musselman, K.N. and Revuelto, J. and Latron, J. and Mor{\'a}n-Tejeda, E. and Jonas, T.",
+	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S0309170812002382",
+	bdsk-url-2 = "http://dx.doi.org/10.1016/j.advwatres.2012.08.010",
 	doi = "10.1016/j.advwatres.2012.08.010",
 	issn = "0309-1708",
 	journal = "Advances in Water Resources",
 	keywords = "Snow depth and density; Snow water equivalent (SWE); Spatial variability; Pyrenees",
 	note = "Snow--Atmosphere Interactions and Hydrological Consequences",
-	number = "",
 	pages = "40--52",
 	title = "{Small scale spatial variability of snow density and depth over complex alpine terrain: Implications for estimating snow water equivalent}",
 	url = "http://www.sciencedirect.com/science/article/pii/S0309170812002382",
@@ -3106,6 +3192,7 @@
 
 @article{Kucerova2014,
 	author = "Kucerova, Dana and Jenicek, Michal",
+	bdsk-url-1 = "http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3\_s199-217\_kucerova\_jenicek.pdf",
 	journal = "Geografie",
 	number = "3",
 	pages = "199--217",
@@ -3118,6 +3205,7 @@
 
 @article{Carroll1995,
 	author = "Carroll, Steven S and Day, Gerald N and Cressie, Noel and Carroll, Thomas R",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/env.3170060204",
 	doi = "10.1002/env.3170060204",
 	journal = "Environmetrics",
 	number = "2",
@@ -3130,11 +3218,12 @@
 
 @article{Jonas2009,
 	author = "Jonas, T. and Marty, C. and Magnusson, J.",
+	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S0022169409005848",
+	bdsk-url-2 = "http://dx.doi.org/10.1016/j.jhydrol.2009.09.021",
 	doi = "10.1016/j.jhydrol.2009.09.021",
 	issn = "0022-1694",
 	journal = "Journal of Hydrology",
 	keywords = "Snow hydrology; Mountain water resources; Seasonal snow; Spatiotemporal variability; Switzerland",
-	note = "",
 	number = "1--2",
 	pages = "161--167",
 	title = "{Estimating the snow water equivalent from snow depth measurements in the {Swiss Alps}}",
@@ -3145,12 +3234,12 @@
 
 @article{Bormann2013,
 	author = "Bormann, Kathryn J. and Westra, Seth and Evans, Jason P. and McCabe, Matthew F.",
+	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S0022169413000784",
+	bdsk-url-2 = "http://dx.doi.org/10.1016/j.jhydrol.2013.01.032",
 	doi = "10.1016/j.jhydrol.2013.01.032",
 	issn = "0022-1694",
 	journal = "Journal of Hydrology",
 	keywords = "Snow density; Snow densification; Climate variability; Spring snow density; Snow hydrology",
-	note = "",
-	number = "",
 	pages = "63--73",
 	title = "{Spatial and temporal variability in seasonal snow density}",
 	url = "http://www.sciencedirect.com/science/article/pii/S0022169413000784",
@@ -3160,6 +3249,7 @@
 
 @article{Schuler2008,
 	author = "Schuler, T. V. and Crochet, P. and Hock, R. and Jackson, M. and Barstad, I. and J{\'o}hannesson, T.",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.7073",
 	doi = "10.1002/hyp.7073",
 	issn = "1099-1085",
 	journal = "Hydrological Processes",
@@ -3175,6 +3265,7 @@
 
 @mastersthesis{Roth2016,
 	author = "Roth, Aurora",
+	bdsk-url-1 = "https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth\_A\_2016.pdf?sequence=1",
 	school = "UNIVERSITY OF ALASKA FAIRBANKS",
 	title = "{Applying a model of orographic precipitation to improve mass balance modeling of the {Juneau Icefield}}",
 	url = "https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth_A_2016.pdf?sequence=1",
@@ -3183,6 +3274,7 @@
 
 @article{Bieniek2016,
 	author = "Bieniek, Peter A and Bhatt, Uma S and Walsh, John E and Rupp, T Scott and Zhang, Jing and Krieger, Jeremy R and Lader, Rick",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/JAMC-D-15-0153.1",
 	doi = "10.1175/JAMC-D-15-0153.1",
 	journal = "Journal of Applied Meteorology and Climatology",
 	number = "3",
@@ -3194,6 +3286,7 @@
 
 @article{Whiteman1993,
 	author = "Whiteman, C. David and Doran, J. Christopher",
+	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0450(1993)032\%3C1669:TRBOSS\%3E2.0.CO;\%202",
 	eprint = "http://dx.doi.org/10.1175/1520-0450(1993)032<1669:TRBOSS>2.0.CO;2",
 	journal = "Journal of Applied Meteorology",
 	number = "11",
@@ -3206,6 +3299,7 @@
 
 @article{Cullen2017,
 	author = "Cullen, Nicolas J. and Anderson, Brian and Sirguey, Pascal and Stumm, Dorothea and Mackintosh, Andrew and Conway, Jonathan P. and Horgan, Huw J. and Dadic, Ruszica and Fitzsimons, Sean J. and Lorrey, Andrew",
+	bdsk-url-1 = "http://dx.doi.org/10.1017/jog.2016.128",
 	doi = "10.1017/jog.2016.128",
 	journal = "Journal of Glaciology",
 	number = "238",
@@ -3218,6 +3312,7 @@
 
 @article{Bagos2015,
 	author = "Bagos, Pantelis G and Adam, Maria",
+	bdsk-url-1 = "http://dx.doi.org/10.4236/ojs.2015.57069",
 	doi = "10.4236/ojs.2015.57069",
 	journal = "Open Journal of Statistics",
 	number = "07",
@@ -3237,6 +3332,7 @@
 
 @article{Clyde1932,
 	author = "Clyde, George D",
+	bdsk-url-1 = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089\&context=uaes\_circulars",
 	title = "{Circular No. 99-Utah Snow Sampler and Scales for Measuring Water Content of Snow}",
 	url = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars",
 	year = "1932"
@@ -3244,6 +3340,7 @@
 
 @article{Crompton2016,
 	author = "Crompton, Jeff W and Flowers, Gwenn E",
+	bdsk-url-1 = "http://dx.doi.org/10.1017/aog.2016.6",
 	doi = "10.1017/aog.2016.6",
 	journal = "Annals of Glaciology",
 	pages = "1--9",
@@ -3255,6 +3352,7 @@
 @article{Metropolis1949,
 	abstract = "We shall present here the motivation and a general description of a method dealing with a class of problems in mathematical physics. The method is, essentially, a statistical approach to the study of differential equations, or more generally, of integro-differential equations that occur in various branches of the natural sciences.",
 	author = "Metropolis, Nicholas and Ulam, S.",
+	bdsk-url-1 = "http://www.jstor.org/stable/2280232",
 	issn = "01621459",
 	journal = "Journal of the American Statistical Association",
 	number = "247",
@@ -3269,6 +3367,7 @@
 @inbook{Williams1998,
 	address = "Dordrecht",
 	author = "Williams, C. K. I.",
+	bdsk-url-1 = "http://dx.doi.org/10.1007/978-94-011-5014-9\_23",
 	booktitle = "{Learning in Graphical Models}",
 	doi = "10.1007/978-94-011-5014-9_23",
 	editor = "Jordan, Michael I.",
@@ -3278,5 +3377,20 @@
 	title = "{Prediction with Gaussian Processes: From Linear Regression to Linear Prediction and Beyond}",
 	url = "http://dx.doi.org/10.1007/978-94-011-5014-9_23",
 	year = "1998"
+}
+
+@article{Madigan1994,
+	abstract = "We consider the problem of model selection and accounting for model uncertainty in high-dimensional contingency tables, motivated by expert system applications. The approach most used currently is a stepwise strategy guided by tests based on approximate asymptotic P values leading to the selection of a single model; inference is then conditional on the selected model. The sampling properties of such a strategy are complex, and the failure to take account of model uncertainty leads to underestimation of uncertainty about quantities of interest. In principle, a panacea is provided by the standard Bayesian formalism that averages the posterior distributions of the quantity of interest under each of the models, weighted by their posterior model probabilities. Furthermore, this approach is optimal in the sense of maximizing predictive ability. But this has not been used in practice, because computing the posterior model probabilities is hard and the number of models is very large (often greater than 10<sup>11</sup>). We argue that the standard Bayesian formalism is unsatisfactory and propose an alternative Bayesian approach that, we contend, takes full account of the true model uncertainty by averaging over a much smaller set of models. An efficient search algorithm is developed for finding these models. We consider two classes of graphical models that arise in expert systems: the recursive causal models and the decomposable log-linear models. For each of these, we develop efficient ways of computing exact Bayes factors and hence posterior model probabilities. For the decomposable log-linear models, this is based on properties of chordal graphs and hyper-Markov prior distributions and the resultant calculations can be carried out locally. The end product is an overall strategy for model selection and accounting for model uncertainty that searches efficiently through the very large classes of models involved. Three examples are given. The first two concern data sets that have been analyzed by several authors in the context of model selection. The third addresses a urological diagnostic problem. In each example, our model averaging approach provides better out-of-sample predictive performance than any single model that might reasonably have been selected.",
+	author = "Madigan, David and Raftery, Adrian E.",
+	bdsk-url-1 = "http://www.jstor.org/stable/2291017",
+	issn = "01621459",
+	journal = "Journal of the American Statistical Association",
+	number = "428",
+	pages = "1535--1546",
+	publisher = "[American Statistical Association, Taylor \& Francis, Ltd.]",
+	title = "{Model Selection and Accounting for Model Uncertainty in Graphical Models Using Occam's Window}",
+	url = "http://www.jstor.org/stable/2291017",
+	volume = "89",
+	year = "1994"
 }
 

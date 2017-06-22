@@ -1,8 +1,18 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citename{Bagos and Adam, }2015]{Bagos2015}
+Bagos PG and Adam M (2015) {On the Covariance of Regression Coefficients}.
+  \emph{Open Journal of Statistics}, \textbf{5}(07), 680 (\doi
+  {10.4236/ojs.2015.57069})
+
+\bibitem[\protect\citename{Beauont and Work, }1963]{Beaumont1963}
+Beauont RT and Work RA (1963) {Snow sampling results from three sampler}.
+  \emph{International Association of Scientific Hydrology. Bulletin},
+  \textbf{8}(4), 74--78 (\doi {10.1080/02626666309493359})
 
 \bibitem[\protect\citename{Burnham and Anderson, }2004]{Burnham2004}
 Burnham KP and Anderson DR (2004) {Multimodel Inference: {U}nderstanding {AIC}
@@ -19,6 +29,10 @@ Clark MP, Hendrikx J, Slater AG, Kavetski D, Anderson B, Cullen NJ, Kerr T,
 Clyde GD (1932) {Circular No. 99-Utah Snow Sampler and Scales for Measuring
   Water Content of Snow}
 
+\bibitem[\protect\citename{Conger and McClung, }2009]{Conger2009}
+Conger SM and McClung DM (2009) {Comparison of density cutters for snow profile
+  observations}. \emph{Journal of Glaciology}, \textbf{55}(189), 163--169
+
 \bibitem[\protect\citename{Crompton and Flowers, }2016]{Crompton2016}
 Crompton JW and Flowers GE (2016) {Correlations of suspended sediment size with
   bedrock lithology and glacier dynamics}. \emph{Annals of Glaciology}, 1--9
@@ -31,9 +45,25 @@ Cullen NJ, Anderson B, Sirguey P, Stumm D, Mackintosh A, Conway JP, Horgan HJ,
   approach}. \emph{Journal of Glaciology}, \textbf{63}(238), 199--217 (\doi
   {10.1017/jog.2016.128})
 
+\bibitem[\protect\citename{Dadic and others, }2010]{Dadic2010}
+Dadic R, Mott R, Lehning M and Burlando P (2010) {Wind influence on snow depth
+  distribution and accumulation over glaciers}. \emph{Journal of Geophysical
+  Research: Earth Surface (2003--2012)}, \textbf{115} (\doi
+  {10.1029/2009JF001261})
+
 \bibitem[\protect\citename{Davis and Sampson, }1986]{Davis1986}
 Davis JC and Sampson RJ (1986) \emph{{Statistics and data analysis in
   geology}}, volume 646. Wiley New York et al.
+
+\bibitem[\protect\citename{Deems and Painter, }2006]{Deems2006}
+Deems JS and Painter TH (2006) {Lidar measurement of snow depth: accuracy and
+  error sources}. In \emph{{Proceedings of the International Snow Science
+  Workshop}}, 1--6
+
+\bibitem[\protect\citename{Dixon and Boon, }2012]{Dixon2012}
+Dixon D and Boon S (2012) {Comparison of the {SnowHydro} snow sampler with
+  existing snow tube designs}. \emph{Hydrological Processes}, \textbf{26}(17),
+  2555--2562, ISSN 1099-1085 (\doi {10.1002/hyp.9317})
 
 \bibitem[\protect\citename{Elder and others, }1991]{Elder1991}
 Elder K, Dozier J and Michaelsen J (1991) {Snow accumulation and distribution
@@ -46,10 +76,20 @@ Elder K, Rosenthal W and Davis RE (1998) {Estimating the spatial distribution
   Processes}, \textbf{12}(1011), 1793--1808 (\doi
   {10.1002/(SICI)1099-1085(199808/09)12:10/11<1793::AID-HYP695>3.0.CO;2-})
 
+\bibitem[\protect\citename{Fames and others, }1982]{Fames1982}
+Fames PE, Peterson N, Goodison B and Richards RP (1982) {Metrication of Manual
+  Snow Sampling Equipment}. In \emph{{Proceedings of the 50th Western Snow
+  Conference}}, 120--132
+
 \bibitem[\protect\citename{Fierz and others, }2009]{Fierz2009}
 Fierz C, Armstrong RL, Durand Y, Etchevers P, Greene E, McClung DM, Nishimura
   K, Satyawali PK and Sokratov SA (2009) \emph{{The international
   classification for seasonal snow on the ground}}, volume~25. UNESCO/IHP Paris
+
+\bibitem[\protect\citename{Grabiec and others, }2011]{Grabiec2011}
+Grabiec M, Puczko D, Budzik T and Gajek G (2011) {Snow distribution patterns on
+  {S}valbard glaciers derived from radio-echo soundings}. \emph{Polish Polar
+  Research}, \textbf{32}(4), 393--421 (\doi {10.2478/v10183-011-0026-4})
 
 \bibitem[\protect\citename{Gray and Male, }1981]{Gray1981}
 Gray DM and Male DH (1981) \emph{{Handbook of snow: principles, processes,
@@ -60,6 +100,21 @@ Grunewald T, Schirmer M, Mott R and Lehning M (2010) {Spatial and temporal
   variability of snow depth and ablation rates in a small mountain catchment}.
   \emph{Cryosphere}, \textbf{4}(2), 215--225 (\doi {10.5194/tc-4-215-2010})
 
+\bibitem[\protect\citename{Gr{\"u}newald and others, }2014]{Grunewald2014}
+Gr{\"u}newald T, B{\"u}hler Y and Lehning M (2014) {Elevation dependency of
+  mountain snow depth}. \emph{The Cryosphere}, \textbf{8}(6), 2381--2394 (\doi
+  {10.5194/tc-8-2381-2014})
+
+\bibitem[\protect\citename{Gusmeroli and others, }2014]{Gusmeroli2014}
+Gusmeroli A, Wolken GJ and Arendt AA (2014) {Helicopter-borne radar imaging of
+  snow cover on and around glaciers in {A}laska}. \emph{Annals of Glaciology},
+  \textbf{55}(67), 78--88 (\doi {10.3189/2014AoG67A029})
+
+\bibitem[\protect\citename{Helbig and {Van Herwijnen}, }2017]{Helbig2017}
+Helbig N and {Van Herwijnen} A (2017) {Subgrid parameterization for snow depth
+  over mountainous terrain from flat field snow depth}. \emph{Water Resources
+  Research}, \textbf{53}(2), 1444--1456, ISSN 0043-1397
+
 \bibitem[\protect\citename{Hengl and others, }2007]{Hengl2007}
 Hengl T, Heuvelink GB and Rossiter DG (2007) {About regression-kriging: From
   equations to case studies}. \emph{Computers \& Geosciences}, \textbf{33}(10),
@@ -69,6 +124,12 @@ Hengl T, Heuvelink GB and Rossiter DG (2007) {About regression-kriging: From
 Hofierka J, Mit{\'a}\v{s}ov{\'a} H and Neteler M (2009) {Geomorphometry in
   {GRASS GIS}}. \emph{Developments in Soil Science}, \textbf{33}, 387--410
   (\doi {10.1016/S0166-2481(08)00017-2})
+
+\bibitem[\protect\citename{Kirchner and others, }2014]{Kirchner2014}
+Kirchner PB, Bales RC, Molotch NP, Flanagan J and Guo Q (2014) {LiDAR
+  measurement of seasonal snow accumulation along an elevation gradient in the
+  southern Sierra Nevada, California}. \emph{Hydrology and Earth System
+  Sciences}, \textbf{18}(10), 4261--4275, ISSN 1027-5606
 
 \bibitem[\protect\citename{Kohavi and others, }1995]{Kohavi1995}
 Kohavi R and others (1995) {A study of cross-validation and bootstrap for
@@ -95,11 +156,23 @@ L{\'o}pez-Moreno J, Fassnacht S, Heath J, Musselman K, Revuelto J, Latron J,
   \textbf{55}, 40--52, ISSN 0309-1708 (\doi {10.1016/j.advwatres.2012.08.010}),
   snow--Atmosphere Interactions and Hydrological Consequences
 
+\bibitem[\protect\citename{L{\'o}pez-Moreno and others, }2011]{Lopez2011}
+L{\'o}pez-Moreno JI, Fassnacht S, Beguer{\'i}a S and Latron J (2011)
+  {Variability of snow depth at the plot scale: implications for mean depth
+  estimation and sampling strategies}. \emph{The Cryosphere}, \textbf{5}(3),
+  617--629 (\doi {10.5194/tc-5-617-2011})
+
 \bibitem[\protect\citename{Machguth and others, }2006]{Machguth2006}
 Machguth H, Eisen O, Paul F and Hoelzle M (2006) {Strong spatial variability of
   snow accumulation observed with helicopter-borne {GPR} on two adjacent Alpine
   glaciers}. \emph{Geophysical Research Letters}, \textbf{33}(13) (\doi
   {10.1029/2006GL026576})
+
+\bibitem[\protect\citename{Madigan and Raftery, }1994]{Madigan1994}
+Madigan D and Raftery AE (1994) {Model Selection and Accounting for Model
+  Uncertainty in Graphical Models Using Occam's Window}. \emph{Journal of the
+  American Statistical Association}, \textbf{89}(428), 1535--1546, ISSN
+  01621459
 
 \bibitem[\protect\citename{McGrath and others, }2015]{McGrath2015}
 McGrath D, Sass L, O'Neel S, Arendt A, Wolken G, Gusmeroli A, Kienholz C and
@@ -124,6 +197,12 @@ Molotch N, Colee M, Bales R and Dozier J (2005) {Estimating the spatial
   regression tree models: the impact of digital elevation data and independent
   variable selection}. \emph{Hydrological Processes}, \textbf{19}(7),
   1459--1479 (\doi {10.1002/hyp.5586})
+
+\bibitem[\protect\citename{Nolan and others, }2015]{Nolan2015}
+Nolan M, Larsen C and Sturm M (2015) {Mapping snow-depth from manned-aircraft
+  on landscape scales at centimeter resolution using {Structure-from-Motion}
+  photogrammetry}. \emph{The Cryosphere Discussions}, \textbf{9}, 333--381
+  (\doi {10.5194/tcd-9-333-2015})
 
 \bibitem[\protect\citename{Olaya, }2009]{Olaya2009}
 Olaya V (2009) {Basic land-surface parameters}. \emph{Developments in Soil
@@ -152,18 +231,23 @@ Sold L, Huss M, Hoelzle M, Andereggen H, Joerg PC and Zemp M (2013)
   glaciers}. \emph{Journal of Glaciology}, \textbf{59}(218), 1047--1059 (\doi
   {10.3189/2013JoG13J015})
 
+\bibitem[\protect\citename{Sold and others, }2014]{Sold2014}
+Sold L, Huss M, Eichler A, Schwikowski M and Hoelzle M (2014) {Recent
+  accumulation rates of an alpine glacier derived from firn cores and repeated
+  helicopter-borne {GPR}}. \emph{The Cryosphere Discussions}, \textbf{8}(4),
+  4431--4462 (\doi {10.5194/tcd-8-4431-201})
+
 \bibitem[\protect\citename{Taylor-Barge, }1969]{Taylor1969}
 Taylor-Barge B (1969) {The summer climate of the {S}t. {E}lias {M}ountain
   region}. Technical report, DTIC Document
 
+\bibitem[\protect\citename{Turcan and Loijens, }1975]{Turcan1975}
+Turcan J and Loijens H (1975) {Accuracy of snow survey data and errors in snow
+  sampler measurements}. In \emph{{32nd {E}astern {S}now {C}onference}}, 2--11
+
 \bibitem[\protect\citename{Walmsley, }2015]{Walmsley2015}
 Walmsley APU (2015) {Long-term observations of snow spatial distributions at
   {H}ellstugubreen and {G}r{\aa}subreen, {N}orway}
-
-\bibitem[\protect\citename{Wasserman, }2000]{Wasserman2000}
-Wasserman L (2000) {Bayesian Model Selection and Model Averaging}.
-  \emph{Journal of Mathematical Psychology}, \textbf{44}(1), 92--107, ISSN
-  0022-2496 (\doi {10.1006/jmps.1999.1278})
 
 \bibitem[\protect\citename{Watson and others, }2006]{Watson2006}
 Watson FG, Anderson TN, Newman WB, Alexander SE and Garrott RA (2006) {Optimal
@@ -171,19 +255,24 @@ Watson FG, Anderson TN, Newman WB, Alexander SE and Garrott RA (2006) {Optimal
   heterogeneous landscapes}. \emph{Journal of Hydrology}, \textbf{328}(3),
   432--452 (\doi {10.1016/j.jhydrol.2005.12.032})
 
-\bibitem[\protect\citename{Williams, }1998]{Williams1998}
-Williams CKI (1998) \emph{{Prediction with Gaussian Processes: From Linear
-  Regression to Linear Prediction and Beyond}}, 599--621. Springer Netherlands,
-  Dordrecht, ISBN 978-94-011-5014-9 (\doi {10.1007/978-94-011-5014-9_23})
+\bibitem[\protect\citename{Wetlaufer and others, }2016]{Wetlaufer2016}
+Wetlaufer K, Hendrikx J and Marshall L (2016) {Spatial Heterogeneity of Snow
+  Density and Its Influence on Snow Water Equivalence Estimates in a Large
+  Mountainous Basin}. \emph{Hydrology}, \textbf{3}(1), 3 (\doi
+  {10.3390/hydrology3010003})
 
 \bibitem[\protect\citename{Winstral and others, }2002]{Winstral2002}
 Winstral A, Elder K and Davis RE (2002) {Spatial snow modeling of
   wind-redistributed snow using terrain-based parameters}. \emph{Journal of
   Hydrometeorology}, \textbf{3}(5), 524--538
 
-\bibitem[\protect\citename{Zeugner and Feldkircher, }2015]{Zeugner2015}
-Zeugner S and Feldkircher M (2015) {Bayesian Model Averaging Employing Fixed
-  and Flexible Priors: The {BMS} Package for {R}}. \emph{Journal of Statistical
-  Software}, \textbf{68}(4), 1--37
+\bibitem[\protect\citename{Winther and others, }1998]{Winther1998}
+Winther J, Bruland O, Sand K, Killingtveit A and Marechal D (1998) {Snow
+  accumulation distribution on {S}pitsbergen, {S}valbard, in 1997}. \emph{Polar
+  Research}, \textbf{17}, 155--164
+
+\bibitem[\protect\citename{Work and others, }1965]{Work1965}
+Work R, Stockwell H, Freeman T and Beaumont R (1965) {Accuracy of field snow
+  surveys}. Technical report
 
 \end{thebibliography}

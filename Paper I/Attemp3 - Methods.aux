@@ -46,9 +46,9 @@
 \citation{Bagos2015}
 \@writefile{toc}{\contentsline {subsection}{}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Boxplot of measured snow depth on Glaciers 4, 2 and 13. The box shows first quartiles, the line within the box indicates data median, bars indicate minimum and maximum values (excluding outliers), and circles show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm 2.7\sigma $). }}{4}}
+\newlabel{fig:DepthBoxplot}{{2}{4}}
 \@writefile{toc}{\contentsline {section}{}{4}}
 \@writefile{toc}{\contentsline {subsection}{}{4}}
-\newlabel{fig:DepthBoxplot}{{}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of integrated density estimated using wedge cutters in a snow pit and density estimated using Federal Sampler measurements for Glacier 4 (G04), Glacier 2 (G02) and Glacier 13 (G13). Snow pits were distributed in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars are minimum and maximum values.}}{4}}
 \newlabel{fig:density_pitVStube}{{3}{4}}
 \@writefile{toc}{\contentsline {subsection}{}{4}}
@@ -56,12 +56,12 @@
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Snow density values used for interpolating density based on snow pit (SP) densities and Federal Sampler (FS) densities. Four interpolation methods are chosen: (1) using a mean snow density for all three glaciers (Range mean density), (2) using a mean density for each glacier (Glacier mean density), (3) using a regression between density and elevation (Elevation regression), and (4) inverse-distance weighted mean density (not shown).}}{5}}
 \newlabel{tab:Density}{{1}{5}}
 \@writefile{toc}{\contentsline {subsection}{}{5}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Specific winter surface mass balance (WSMB [m w.e.]) estimated using linear regression and simple kriging interpolation for study glaciers. Average root mean squared error (RMSE [m w.e.]) between estimated and observed grid cells that were randomly selected and excluded from interpolation.}}{5}}
-\newlabel{tab:WSMB&RMSE}{{2}{5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Distribution of zigzag SWE values about the local mean on Glacier 4 (upper panel), Glacier 2 (middle panel) and Glacier 13 (lower panel). Zigzags are distributed throughout the ablation area of each glacier, with one located in the lower portion (L), one in the middle portion (M), and one in the upper portion (U). There were two zigzags in the middle ablation area of Glacier 13.}}{5}}
 \newlabel{fig:ZigzagHistogram}{{4}{5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Estimated grid cell SWE found using linear regression (LR) and simple kriging (SK) plotted against observed values of SWE on Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right). Line of best fit between estimated and observed SWE is also plotted.}}{6}}
 \newlabel{fig:observedVSestimated_S2}{{5}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Specific winter surface mass balance (WSMB [m w.e.]) estimated using linear regression and simple kriging interpolation for study glaciers. Average root mean squared error (RMSE [m w.e.]) between estimated and observed grid cells that were randomly selected and excluded from interpolation.}}{6}}
+\newlabel{tab:WSMB&RMSE}{{2}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Distribution of regression coefficients for linear regression of grid cell topographic parameters and SWE calculated using eight density options on study glaciers. Topographic parameters include elevation ($z$), distance from centreline ($d_C$), slope ($m$), aspect ($\alpha $), curvature ($\kappa $), ``northness'' ($N$) and wind exposure (Sx). Regression coefficients that were not significant were assigned a value of zero.}}{6}}
 \newlabel{fig:BetaCoeffs}{{6}{6}}
 \citation{Sold2013}
@@ -70,13 +70,13 @@
 \citation{Winther1998,Machguth2006,Gusmeroli2014,McGrath2015}
 \citation{Machguth2006,Gusmeroli2014,McGrath2015}
 \citation{Sold2013}
-\citation{Deems2006,Nolan2015}
-\citation{Deems2006,Nolan2015}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Mean standard deviation ([m w.e.]) of specific winter surface mass balance estimated using linear regression and simple kriging when variability is introduced. Variability in grid cell SWE is approximated by a normal distribution about the local SWE value with standard deviation equal to the glacier-wide mean zigzag standard deviation ($\sigma _{ZZ}$). Variability in regression estimation is accounted for by varying the regression coefficients with a normal distribution with standard deviation calculated from regression covariance ($\sigma _{\beta }$).}}{7}}
 \newlabel{tab:WSMBdistribution_sigma}{{3}{7}}
 \@writefile{toc}{\contentsline {subsection}{}{7}}
 \@writefile{toc}{\contentsline {section}{}{7}}
 \@writefile{toc}{\contentsline {subsection}{}{7}}
+\citation{Deems2006,Nolan2015}
+\citation{Deems2006,Nolan2015}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Spatial distribution of SWE estimated using linear regression (upper) and simple kriging (lower). Grid-cell SWE observations are calculated using glacier wide mean snow pit density and are shown as black dots. Glacier flow directions are indicated by arrows. Specific WSMB values are also shown.}}{8}}
 \newlabel{fig:LR_SK_map}{{7}{8}}
 \citation{Work1965,Fames1982,Conger2009}
@@ -84,19 +84,17 @@
 \citation{Dixon2012}
 \citation{Beaumont1963}
 \citation{Turcan1975}
+\citation{Wetlaufer2016}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values that arise from SWE variability ($\sigma _{ZZ}$) and regression estimation ($\sigma _{\beta }$). Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}}{9}}
 \newlabel{fig:WSMBDist_LR}{{8}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (LR) or simple kriging (SK). Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right).}}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (top) or simple kriging (bottom). Each PDF includes density variability, SWE variability and regression estimation (linear regression only) for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}}{9}}
 \newlabel{fig:WSMBDist_LRvsSK}{{9}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (top) or simple kriging (bottom). Each PDF includes density variability, SWE variability and regression estimation (linear regression only) for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}}{9}}
-\newlabel{fig:WSMBDist_LRvsSK}{{10}{9}}
+\@writefile{toc}{\contentsline {subsection}{}{9}}
 \citation{Wetlaufer2016}
-\citation{Wetlaufer2016}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Variability of SWE estimated using linear regression (top) and simple kriging (bottom). Variability is measured by taking the sum of differences between one hundred estimates of distributed WSMB that include SWE variability and, in the case of linear regression, regression variability. The sum is then normalized for each glacier.}}{10}}
-\newlabel{fig:WSMBspatialvar}{{11}{10}}
-\@writefile{toc}{\contentsline {subsection}{}{10}}
 \citation{Lopez2011}
 \citation{Shea2010}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Variability of SWE estimated using linear regression (top) and simple kriging (bottom). Variability is measured by taking the sum of differences between one hundred estimates of distributed WSMB that include SWE variability and, in the case of linear regression, regression variability. The sum is then normalized for each glacier.}}{10}}
+\newlabel{fig:WSMBspatialvar}{{10}{10}}
 \citation{Machguth2006,McGrath2015}
 \citation{Winther1998}
 \citation{Machguth2006,Grabiec2011}
@@ -109,41 +107,58 @@
 \@writefile{toc}{\contentsline {subsection}{}{11}}
 \@writefile{toc}{\contentsline {subsection}{}{11}}
 \bibdata{/home/glaciology1/Documents/MastersDocuments/MastersLit}
-\bibcite{Burnham2004}{{1}{2004}{{Burnham and Anderson}}{{}}}
-\bibcite{Clark2011}{{2}{2011}{{Clark and others}}{{}}}
-\bibcite{Clyde1932}{{3}{1932}{{Clyde}}{{}}}
-\bibcite{Crompton2016}{{4}{2016}{{Crompton and Flowers}}{{}}}
-\bibcite{Cullen2017}{{5}{2017}{{Cullen and others}}{{}}}
-\bibcite{Davis1986}{{6}{1986}{{Davis and Sampson}}{{}}}
-\bibcite{Elder1991}{{7}{1991}{{Elder and others}}{{}}}
+\bibcite{Bagos2015}{{1}{2015}{{Bagos and Adam}}{{}}}
+\bibcite{Beaumont1963}{{2}{1963}{{Beauont and Work}}{{}}}
+\bibcite{Burnham2004}{{3}{2004}{{Burnham and Anderson}}{{}}}
+\bibcite{Clark2011}{{4}{2011}{{Clark and others}}{{}}}
+\bibcite{Clyde1932}{{5}{1932}{{Clyde}}{{}}}
+\bibcite{Conger2009}{{6}{2009}{{Conger and McClung}}{{}}}
 \@writefile{toc}{\contentsline {subsection}{}{12}}
 \@writefile{toc}{\contentsline {subsection}{}{12}}
 \@writefile{toc}{\contentsline {section}{}{12}}
-\bibcite{Elder1998}{{8}{1998}{{Elder and others}}{{}}}
-\bibcite{Fierz2009}{{9}{2009}{{Fierz and others}}{{}}}
-\bibcite{Gray1981}{{10}{1981}{{Gray and Male}}{{}}}
-\bibcite{Grunewald2010}{{11}{2010}{{Grunewald and others}}{{}}}
-\bibcite{Hengl2007}{{12}{2007}{{Hengl and others}}{{}}}
-\bibcite{Hofierka2009}{{13}{2009}{{Hofierka and others}}{{}}}
-\bibcite{Kohavi1995}{{14}{1995}{{Kohavi and others}}{{}}}
-\bibcite{Korona2009}{{15}{2009}{{Korona and others}}{{}}}
-\bibcite{Li2008}{{16}{2008}{{Li and Heap}}{{}}}
-\bibcite{Lopez2013}{{17}{2013}{{L{\'o}pez-Moreno and others}}{{}}}
-\bibcite{Machguth2006}{{18}{2006}{{Machguth and others}}{{}}}
-\bibcite{McGrath2015}{{19}{2015}{{McGrath and others}}{{}}}
-\bibcite{Metropolis1949}{{20}{1949}{{Metropolis and Ulam}}{{}}}
-\bibcite{Mitavsova1993}{{21}{1993}{{Mit{\'a}\v {s}ov{\'a} and Hofierka}}{{}}}
-\bibcite{Molotch2005}{{22}{2005}{{Molotch and others}}{{}}}
-\bibcite{Olaya2009}{{23}{2009}{{Olaya}}{{}}}
-\bibcite{Raftery1997}{{24}{1997}{{Raftery and others}}{{}}}
-\bibcite{Roustant2012}{{25}{2012}{{Roustant and others}}{{}}}
-\bibcite{Shea2010}{{26}{2010}{{Shea and Jamieson}}{{}}}
-\bibcite{Sold2013}{{27}{2013}{{Sold and others}}{{}}}
-\bibcite{Taylor1969}{{28}{1969}{{Taylor-Barge}}{{}}}
-\bibcite{Walmsley2015}{{29}{2015}{{Walmsley}}{{}}}
-\bibcite{Wasserman2000}{{30}{2000}{{Wasserman}}{{}}}
-\bibcite{Watson2006}{{31}{2006}{{Watson and others}}{{}}}
-\bibcite{Williams1998}{{32}{1998}{{Williams}}{{}}}
-\bibcite{Winstral2002}{{33}{2002}{{Winstral and others}}{{}}}
-\bibcite{Zeugner2015}{{34}{2015}{{Zeugner and Feldkircher}}{{}}}
+\bibcite{Crompton2016}{{7}{2016}{{Crompton and Flowers}}{{}}}
+\bibcite{Cullen2017}{{8}{2017}{{Cullen and others}}{{}}}
+\bibcite{Dadic2010}{{9}{2010}{{Dadic and others}}{{}}}
+\bibcite{Davis1986}{{10}{1986}{{Davis and Sampson}}{{}}}
+\bibcite{Deems2006}{{11}{2006}{{Deems and Painter}}{{}}}
+\bibcite{Dixon2012}{{12}{2012}{{Dixon and Boon}}{{}}}
+\bibcite{Elder1991}{{13}{1991}{{Elder and others}}{{}}}
+\bibcite{Elder1998}{{14}{1998}{{Elder and others}}{{}}}
+\bibcite{Fames1982}{{15}{1982}{{Fames and others}}{{}}}
+\bibcite{Fierz2009}{{16}{2009}{{Fierz and others}}{{}}}
+\bibcite{Grabiec2011}{{17}{2011}{{Grabiec and others}}{{}}}
+\bibcite{Gray1981}{{18}{1981}{{Gray and Male}}{{}}}
+\bibcite{Grunewald2010}{{19}{2010}{{Grunewald and others}}{{}}}
+\bibcite{Grunewald2014}{{20}{2014}{{Gr{\"u}newald and others}}{{}}}
+\bibcite{Gusmeroli2014}{{21}{2014}{{Gusmeroli and others}}{{}}}
+\bibcite{Helbig2017}{{22}{2017}{{Helbig and {Van Herwijnen}}}{{}}}
+\bibcite{Hengl2007}{{23}{2007}{{Hengl and others}}{{}}}
+\bibcite{Hofierka2009}{{24}{2009}{{Hofierka and others}}{{}}}
+\bibcite{Kirchner2014}{{25}{2014}{{Kirchner and others}}{{}}}
+\bibcite{Kohavi1995}{{26}{1995}{{Kohavi and others}}{{}}}
+\bibcite{Korona2009}{{27}{2009}{{Korona and others}}{{}}}
+\bibcite{Li2008}{{28}{2008}{{Li and Heap}}{{}}}
+\bibcite{Lopez2013}{{29}{2013}{{L{\'o}pez-Moreno and others}}{{}}}
+\bibcite{Lopez2011}{{30}{2011}{{L{\'o}pez-Moreno and others}}{{}}}
+\bibcite{Machguth2006}{{31}{2006}{{Machguth and others}}{{}}}
+\bibcite{Madigan1994}{{32}{1994}{{Madigan and Raftery}}{{}}}
+\bibcite{McGrath2015}{{33}{2015}{{McGrath and others}}{{}}}
+\bibcite{Metropolis1949}{{34}{1949}{{Metropolis and Ulam}}{{}}}
+\bibcite{Mitavsova1993}{{35}{1993}{{Mit{\'a}\v {s}ov{\'a} and Hofierka}}{{}}}
+\bibcite{Molotch2005}{{36}{2005}{{Molotch and others}}{{}}}
+\bibcite{Nolan2015}{{37}{2015}{{Nolan and others}}{{}}}
+\bibcite{Olaya2009}{{38}{2009}{{Olaya}}{{}}}
+\bibcite{Raftery1997}{{39}{1997}{{Raftery and others}}{{}}}
+\bibcite{Roustant2012}{{40}{2012}{{Roustant and others}}{{}}}
+\bibcite{Shea2010}{{41}{2010}{{Shea and Jamieson}}{{}}}
+\bibcite{Sold2013}{{42}{2013}{{Sold and others}}{{}}}
+\bibcite{Sold2014}{{43}{2014}{{Sold and others}}{{}}}
+\bibcite{Taylor1969}{{44}{1969}{{Taylor-Barge}}{{}}}
+\bibcite{Turcan1975}{{45}{1975}{{Turcan and Loijens}}{{}}}
+\bibcite{Walmsley2015}{{46}{2015}{{Walmsley}}{{}}}
+\bibcite{Watson2006}{{47}{2006}{{Watson and others}}{{}}}
+\bibcite{Wetlaufer2016}{{48}{2016}{{Wetlaufer and others}}{{}}}
+\bibcite{Winstral2002}{{49}{2002}{{Winstral and others}}{{}}}
+\bibcite{Winther1998}{{50}{1998}{{Winther and others}}{{}}}
+\bibcite{Work1965}{{51}{1965}{{Work and others}}{{}}}
 \bibstyle{igs}

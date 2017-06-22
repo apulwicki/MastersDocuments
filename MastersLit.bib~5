@@ -2377,6 +2377,7 @@
 	publisher = "International Glaciological Society",
 	timestamp = "2015.11.06",
 	title = "{Methodological approaches to infer end-of-winter snow distribution on alpine glaciers}",
+	url = "https://doi.org/10.3189/2013JoG13J015",
 	volume = "59",
 	year = "2013"
 }
@@ -2698,13 +2699,6 @@
 	url = "http://www.sciencedirect.com/science/article/pii/S0309170812002394",
 	volume = "55",
 	year = "2013"
-}
-
-@article{Crompton2016,
-	author = "Crompton, Jeff W. and Flowers, Gwenn E",
-	journal = "Annals of Glaciology",
-	title = "{Correlations of suspended sediment size with bedrock lithology and glacier dynamics}",
-	year = "In Press"
 }
 
 @article{Skoien2006,
@@ -3246,5 +3240,29 @@
 	title = "{Circular No. 99-Utah Snow Sampler and Scales for Measuring Water Content of Snow}",
 	url = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars",
 	year = "1932"
+}
+
+@article{Crompton2016,
+	author = "Crompton, Jeff W and Flowers, Gwenn E",
+	doi = "10.1017/aog.2016.6",
+	journal = "Annals of Glaciology",
+	pages = "1--9",
+	publisher = "Cambridge Univ Press",
+	title = "{Correlations of suspended sediment size with bedrock lithology and glacier dynamics}",
+	year = "2016"
+}
+
+@article{Metropolis1949,
+	abstract = "We shall present here the motivation and a general description of a method dealing with a class of problems in mathematical physics. The method is, essentially, a statistical approach to the study of differential equations, or more generally, of integro-differential equations that occur in various branches of the natural sciences.",
+	author = "Metropolis, Nicholas and Ulam, S.",
+	issn = "01621459",
+	journal = "Journal of the American Statistical Association",
+	number = "247",
+	pages = "335--341",
+	publisher = "[American Statistical Association, Taylor \& Francis, Ltd.]",
+	title = "{The Monte Carlo Method}",
+	url = "http://www.jstor.org/stable/2280232",
+	volume = "44",
+	year = "1949"
 }
 
