@@ -204,18 +204,18 @@ Transferring LR coefficients between glaciers results in a high RMSE across the 
 
 \subsection{Quantifying effects of variability}
 
-Specific WSMB is affected by variability introduced when interpolating density (density variability), when calculating grid cell SWE values (SWE variability), and when interpolating observations ($\beta$ variability). We find that $\beta$ variability has a larger effect on WSMB uncertainty than density variability or SWE variability when a LR is used for interpolation. The probability density function (PDF) that arises from SWE variability is much narrower than the PDF that arises from $\beta$ variability (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). WSMB uncertainty found with SK interpolation is dominated by density variability on Glaciers 4 and 13 but by SWE variability on Glacier 2 (Table \ref{tab:WSMBdistribution_sigma}). 
+Specific WSMB is affected by variability introduced when interpolating density (density variability), when calculating grid cell SWE values (SWE variability), and when interpolating observations (interpolation variability). We find that when using a LR, $\beta$ variability has a larger effect on WSMB uncertainty than density variability or SWE variability. The probability density function (PDF) that arises from SWE variability is much narrower than the PDF that arises from interpolation variability (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). WSMB uncertainty found with SK interpolation is dominated by interpolation variability (Table \ref{tab:WSMBdistribution_sigma}).  
 
  \begin{table}[]
 \centering
 \caption{Mean standard deviation ([m w.e.]) of specific winter surface mass balance estimated using linear regression and simple kriging when variability is introduced. Variability in grid cell SWE is approximated by a normal distribution about the local SWE value with standard deviation equal to the glacier-wide mean zigzag standard deviation ($\sigma_{ZZ}$). Variability in regression estimation is accounted for by varying the regression coefficients with a normal distribution with standard deviation calculated from regression covariance ($\sigma_{\beta}$).}
 \label{tab:WSMBdistribution_sigma}
 \begin{tabular}{ccccccc}
- & \multicolumn{4}{c}{\textbf{Linear Regression}} & \multicolumn{2}{c}{\textbf{Simple Kriging}} \\
- & $\rho$ & $\sigma_{ZZ}$ & $\sigma_{\beta}$ & $\sigma_{ZZ}$ \& $\sigma_{\beta}$ & $\rho$ & $\sigma_{ZZ}$ \\
-\textbf{G4} & 0.0204 & 0.0086 & 0.0213 & 0.0231 & 0.0202 & 0.0086 \\
-\textbf{G2} & 0.0263 & 0.0180 & 0.0309 & 0.0377 & 0.0187 & 0.0256 \\
-\textbf{G13} & 0.0112 & 0.0112 & 0.0232 & 0.0280 & 0.0138 & 0.0116
+\textbf{} & \multicolumn{3}{c}{\textbf{Linear Regression}} & \multicolumn{3}{c}{\textbf{Simple Kriging}} \\
+ & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\beta}$ & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\mathrm{KRIG}}$ \\
+G4 & 0.0204 & 0.0086 & 0.0213 &  & 0.0086 & 0.1405 \\
+G2 & 0.0263 & 0.0180 & 0.0309 &  & 0.0256 & 0.1378 \\
+G13 & 0.0112 & 0.0112 & 0.0280 &  & 0.0116 & 0.0965
 \end{tabular}
 \end{table}
 
@@ -227,14 +227,7 @@ Specific WSMB is affected by variability introduced when interpolating density (
 	\label{fig:WSMBDist_LR}
 \end{figure}
 
-The full WSMB uncertainty PDF when LR or SK is used for interpolation differs significantly on Glaciers 2 and 13. With a LR interpolation, the PDF for Glaciers 4 and 2 completely overlap, while the PDF of Glacier 13 is centred at a lower WSMB. However, SK interpolation results in three distinct PDFs, with the PDFs of Glaciers 2 and 13 centred at lower WSMB values. 
-
-%\begin{figure}
-%	\centering
-%	\includegraphics[width =0.5\textwidth]{WSMBDist_LRvsSK.pdf}\\
-%	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (LR) or simple kriging (SK). Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right).}
-%	\label{fig:WSMBDist_LRvsSK}
-%\end{figure}
+The total WSMB uncertainty from SK interpolation is -----??---- times greater than uncertainty from LR interpolation. The PDFs overlap between the two interpolation methods although the PDF peaks are lower when SK is used for Glaciers 2 and 13 and higher for Glacier 4. SK results in WSMB distributions that overlap between glaciers and there is small probability of estimating a WSMB value of zero for Glaciers 2 and 13. LR results in overlapping WSMB distributions for Glaciers 2 and 4, with the PDF peak of Glacier 4 being slightly higher than that of Glacier 2. 
 
 \begin{figure}
 	\centering
@@ -300,29 +293,57 @@ Wind redistribution and preferential deposition of snow is known to have a large
 
 Since we were unable to measure SWE in grid cells that corresponded to the extreme values of all topographic parameters, we must extrapolate linear relationships. The accumulation area, where there are few observations, is most susceptible to extrapolation errors. This area typically also has the highest SWE values, affecting the specific WSMB estimated for the glacier. In our study, the dependence of SWE on elevation, especially on Glacier 2, means that LR extrapolation results in almost 2 m w.e. estimated in the parts of the accumulation area. This exceptionally large estimate of SWE is unlikely for a continental snow pack. As described above, snow in the accumulation area has been shown to have no correlation or a negative correlation with elevation and wind effects have been observed. Therefore, extrapolating a LR that is fitted to predominantly ablation area SWE values is likely erroneous. Future studies need to focus on collecting SWE observations in the accumulation area, even if it means collecting fewer observations in the ablation area. Accumulation area observations can be used both to characterize accumulation patterns in the upper portions on a glacierized basin and to generally increase the spatial extent and topographic parameter range coverage of observations.
 
-For all study glaciers, simple kriging (SK) is a better predictor of observed SWE. However, our observations are generally limited to the ablation area. SK estimates an almost uniform distribution of SWE in the accumulation areas of the study glaciers, which is inconsistent with observations described in the literature. Extrapolation using SK is also erroneous, which further emphasis the need for SWE observations in the accumulation area.
+For all study glaciers, simple kriging (SK) is a better predictor of observed SWE. However, the WSMB uncertainty that arises from using SK is large, and unrealistic values of 0 m w.e. WSMB can be estimated. Such a large uncertainty is undesirable when estimating WSMB.  Our observations are generally limited to the ablation area so SK estimates an almost uniform distribution of SWE in the accumulation areas of the study glaciers, which is inconsistent with observations described in the literature. Extrapolation using SK is erroneous and leads to large uncertainty in estimating WSMB, which further emphasis the need for SWE observations in the accumulation area. 
 
 SK cannot be used to understand physical processes that may be controlling snow distribution and cannot be used to estimate accumulation beyond the study area. However, a LR applied to our study glaciers resulted in little insight into dominant physical processes. Additionally, while LR can be used to predict distributed SWE in other basins, we found that transfer of LR coefficients between glaciers results in large estimation error. The LR fitted to all observed data produced the best overall predictor of SWE in the Donjek range, so transferability of LR is also limited in our study area. Therefore, if the intent of a study is to estimate range-scale accumulation it is perhaps best to sparsely sample many glaciers and to make assumptions about variability within the basin rather than conducting a detailed study of one basin. The inter-basin variability in our study range is greater than the intra-basin variability (is this true?). 
 
+A major assumption in our study is that RMSE is an appropriate error metric with which we can choose best models and assess their quality. MORE HERE!!!!
+
 \subsection{Quantifying effects of variability}
 
-Glacier 2 has the greatest WSMB uncertainty of the three study glaciers
+Interpolation variability is the greatest contributor to WSMB uncertainty for both SK and LR. This uncertainty arises from extrapolation beyond the sampled region, which results in highly variability in estimated SWE in the accumulation area. To reduce WSMB uncertainty, emphasis must therefore be placed on sampling in the accumulation area and generally obtaining measurements throughout the study basin. 
+
+SWE variability is the smallest contributor to WSMB uncertainty. Therefore, obtaining the most accurate value of SWE to represent a grid cell, even a relatively large grid cell, does not need to be a priority when designing a snow survey. Extensively measuring SWE variability in a few locations using a zigzag design appears to be a good constraint on SWE variability. However, we assume that the sampled grid cells are representative of the variability across the entire glacier, which is likely not true for areas with debris cover, crevasses and steep slopes. Effects of SWE variability in either smaller or larger grid cells could also be different so further investigation is needed.
+
+Using a Monte Carlo experiment to propagate variability allowed us to quantify effects of variability on estimates of WSMB. However, our analysis did not include variability arising from a number of data sources. Error associated with SP and FS density measurement is not included but we believe that this error is likely to be encompassed in the wide range of density interpolation methods. DEM vertical and horizontal error are not considered in the Monte Carlo experiment mainly because there is no DEM validation data at our study location. Error associated with estimating measurement locations, which is a combination of hand-held GPS error, distance of observers from GPS and travel along a straight line, is also not considered. However, we feel that this source of error is encompassed in the variability estimated from zigzag measurements. 
 
 
 what is realistic uncertainty?
 
-The greatest uncertainty in estimating WSMB is in the accumulation area. 
-
-SWE variability has the smallest effect on WSMB uncertainty. 
-
-
- In most cases, the resolution of measurements over a large area is insufficient to
-approximate the true variability [15, 32].
-
-
- The estimates of SWE in the accumulation area are greatest when kriging is used because there is a single single high SWE value in the accumulation area. Kriging is sensitive to outliers in areas with sparse sampling. Kriging estimates lower SWE in the accumulation area of both glaciers because elevation is not incorporated into the model.
 
 \subsection{Future work}
+
+Extensions to this work could include an investigation of experimental design, examining implications of a non-linear SWE elevation trend, and examining the effects of DEM grid size on WSMB. 
+
+Our sampling design was chosen to extensively sample the ablation area and is likely too finely resolved for many future mass balance surveys to replicate. Therefore, it is valuable to investigate how best to reduce our sampling design and measurement spacing while maintaining a reasonable estimate of distributed WSMB. Determining a sampling design that minimizes error and reduces the number of measurements would contribute to optimizing snow surveys in mountainous regions. 
+
+A non-linear SWE elevation trend has been documented in a number of studies so it would be valuable to further investigate this relationship. Although more observations in the accumulation area are needed to confirm this relationship on our study glaciers, we could apply a variety of non-linear elevation trends to investigate their effects on WSMB estimates. 
+
+DEM grid cell size affects the resolution of topographic features, which can have implications for calculating a LR. 
+
+- Accumulation variability is often due to small scale feature in complex terrain 
+- Parameters designed for slowly changing topography 
+- Discontinuities between grid cells
+
+\citep{Zhang1994} 
+DEM grid size significantly affects computed topographic parameters and hydrographs
+A 10-m grid size provides a substantial improvement over 30- and 90-m data, but 2- or 4-m data provide only marginal additional improvement for the moderately to steep gradient topography of our study areas. Our analyses suggest that for many landscapes, a 10-m grid size presents a rational compromise between increasing resolution and data volume for simulating geomorphic and hydrological processes.
+
+\citep{Garbrecht1994}
+- focus on extracting drainage channels but still
+- DEM resolution is investigated for a 84km 2
+watershed in southwestern Oklahoma. Grid resolution
+is decreased by grid cell aggregation of a
+30 x 30 m baseline DEM,
+- The sensitivity analysis
+suggests that a DEM should have a grid area less than
+5\% of the network reference area to reproduce
+important drainage features with an accuracy of
+about 10\%. 
+
+\citep{Wechsler2006}
+- This paper describes a Monte Carlo methodology for evaluation of the effects of uncertainty on elevation and derived topographic parameters. 
+-When uncertainty was quantified by the average relative absolute difference, elevation did not deviate. The range of deviation across the four methods for slope was 5 to 8 percent, 460 to 950 percent for derived catchment areas and 4 to 9 percent for the topographic index. This research demonstrates how application of this methodology can address DEM uncertainty, contributing to more responsible use of elevation and derived topographic parameters, and ultimately results obtained from their use.
 
 
 
