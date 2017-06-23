@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  23 JUN 2017 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  23 JUN 2017 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -653,6 +653,10 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 [11]
 
+Package natbib Warning: Citation `Grunewald2013' on page 12 undefined on input 
+line 299.
+
+
 Package natbib Warning: Citation `Erickson2005' on page 12 undefined on input l
 ine 301.
 
@@ -670,71 +674,109 @@ Underfull \hbox (badness 1237) in paragraph at lines 308--309
  []
 
 
+Underfull \hbox (badness 1019) in paragraph at lines 318--319
+\OT1/lmr/m/n/9.5 data is compiled from Taylor-Barge (1969), the three
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 318--319
+\OT1/lmr/m/n/9.5 SWE with distance from the main mountain divide
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 318--319
+\OT1/lmr/m/n/9.5 m w.e. km$[]$. This relationship indicates that glacier
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 318--319
+\OT1/lmr/m/n/9.5 accumulation trends can be achieved by investigating
+ []
+
+<AccumGrad.pdf, id=6705, 244.915pt x 244.915pt>
+File: AccumGrad.pdf Graphic file (type pdf)
+ <use AccumGrad.pdf>
+Package pdftex.def Info: AccumGrad.pdf used on input line 323.
+(pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
+
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 323--323
+ [][] 
+ []
+
+
 Package natbib Warning: Citation `Lopez2010' on page 12 undefined on input line
- 318.
+ 333.
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 318--319
+Underfull \hbox (badness 1158) in paragraph at lines 333--334
 \OT1/lmr/m/n/9.5 concluded that $200 \OMS/lmsy/m/n/9.5 ^^@ \OT1/lmr/m/n/9.5 400
 $ observations are needed to
  []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 320--321
-\OT1/lmr/m/n/9.5 in the accumulation area are needed to confirm this
- []
-
-
-Package natbib Warning: Citation `Lopez2010' on page 12 undefined on input line
- 322.
-
-
-Package natbib Warning: Citation `Zhang1994' on page 12 undefined on input line
- 322.
-
-
-Package natbib Warning: Citation `Garbrecht1994' on page 12 undefined on input 
-line 322.
-
-
-Package natbib Warning: Citation `Guo-an2001' on page 12 undefined on input lin
-e 322.
-
-
-Package natbib Warning: Citation `Zhang1994' on page 12 undefined on input line
- 322.
-
-
-Package natbib Warning: Citation `Lopez2010' on page 12 undefined on input line
- 322.
-
-
-Package natbib Warning: Citation `Kienzle2004' on page 12 undefined on input li
-ne 322.
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [12]
+Underfull \hbox (badness 1259) in paragraph at lines 335--336
+\OT1/lmr/m/n/9.5 in the accumulation area are needed to confirm this
+ []
 
-Package natbib Warning: Citation `Wechsler2006' on page 13 undefined on input l
-ine 324.
+
+Package natbib Warning: Citation `Lopez2010' on page 13 undefined on input line
+ 337.
+
+
+Package natbib Warning: Citation `Zhang1994' on page 13 undefined on input line
+ 337.
+
+
+Package natbib Warning: Citation `Garbrecht1994' on page 13 undefined on input 
+line 337.
 
 
 Package natbib Warning: Citation `Guo-an2001' on page 13 undefined on input lin
-e 324.
+e 337.
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 326--327
+Package natbib Warning: Citation `Zhang1994' on page 13 undefined on input line
+ 337.
+
+
+Package natbib Warning: Citation `Lopez2010' on page 13 undefined on input line
+ 337.
+
+
+Package natbib Warning: Citation `Kienzle2004' on page 13 undefined on input li
+ne 337.
+
+
+Package natbib Warning: Citation `Wechsler2006' on page 13 undefined on input l
+ine 339.
+
+
+Package natbib Warning: Citation `Guo-an2001' on page 13 undefined on input lin
+e 339.
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 341--342
 \OT1/lmr/m/n/9.5 accumulation investigations should therefore focus on
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: Citation `Grunewald2013' on page 13 undefined on input 
+line 343.
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 369--373
+Package natbib Warning: Citation `Revuelto2014' on page 13 undefined on input l
+ine 343.
+
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[13 <./AccumGrad.pdf>]
+Underfull \hbox (badness 1383) in paragraph at lines 381--385
 []\OT1/lmr/m/n/9.5 derived accumulation estimated winter surface mass
  []
 
@@ -751,10 +793,6 @@ Underfull \hbox (badness 2735) in paragraph at lines 13--16
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[13]
 Underfull \hbox (badness 1442) in paragraph at lines 23--27
 []\OT1/lmr/m/n/9.5 Clark MP, Hen-drikx J, Slater AG, Kavet-ski D, An-
  []
@@ -807,6 +845,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--78
  []
 
 
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[14]
 Underfull \hbox (badness 2277) in paragraph at lines 95--97
 []\OT1/lmr/m/n/9.5 Gray DM and Male DH (1981) \OT1/lmr/m/it/9.5 Handbook of sno
 w:
@@ -863,13 +905,6 @@ mr/m/n/9.5 , \OT1/lmr/bx/n/9.5 33\OT1/lmr/m/n/9.5 (13) (doi:
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[14]
 Underfull \hbox (badness 2409) in paragraph at lines 189--193
 []\OT1/lmr/m/n/9.5 Mit^^Sa^^Tsov^^Sa H and Hofierka J (1993) Interpolation by
  []
@@ -897,7 +932,11 @@ Underfull \hbox (badness 3291) in paragraph at lines 229--233
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[15])
 
 Package natbib Warning: There were undefined citations.
 
@@ -905,20 +944,22 @@ Package natbib Warning: There were undefined citations.
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[15] (./Attemp3 - Methods.aux)
+[16
+
+] (./Attemp3 - Methods.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3801 strings out of 494501
- 52128 string characters out of 6167030
- 121591 words of memory out of 5000000
- 6979 multiletter control sequences out of 15000+600000
+ 3809 strings out of 494501
+ 52256 string characters out of 6167030
+ 121601 words of memory out of 5000000
+ 6986 multiletter control sequences out of 15000+600000
  52186 words of font info for 56 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,15n,24p,2014b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,27p,2014b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/l
 ocal/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/
 texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texli
@@ -943,10 +984,10 @@ type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/
 public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
 /lm/lmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lm
 tt10.pfb>
-Output written on "Attemp3 - Methods.pdf" (15 pages, 2103748 bytes).
+Output written on "Attemp3 - Methods.pdf" (16 pages, 2121909 bytes).
 PDF statistics:
- 6790 PDF objects out of 7423 (max. 8388607)
- 6620 compressed objects within 67 object streams
+ 6804 PDF objects out of 7423 (max. 8388607)
+ 6632 compressed objects within 67 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
