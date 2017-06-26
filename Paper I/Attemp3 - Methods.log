@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.21)  26 JUN 2017 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.21)  26 JUN 2017 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,17 +730,42 @@ Underfull \hbox (badness 1189) in paragraph at lines 342--343
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 348--349
-\OT1/lmr/m/n/9.5 SK assumes spatial correlation of the quantity being
- []
-
-
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [14 <./AccumGrad.pdf>]
-Underfull \hbox (badness 1609) in paragraph at lines 350--351
-\OT1/lmr/m/n/9.5 were able to explain snow distribution on Glacier 4
+Underfull \hbox (badness 2277) in paragraph at lines 350--351
+[]\OT1/lmr/m/n/9.5 Overall, elevation is the dominant driver of SWE
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 350--351
+\OT1/lmr/m/n/9.5 different on Glacier 4 when compared to Glaciers 2
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 350--351
+\OT1/lmr/m/n/9.5 indicating that accumulation is controlled by complex
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 350--351
+\OT1/lmr/m/n/9.5 interactions between topography and the atmosphere
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 354--355
+\OT1/lmr/m/n/9.5 study stems from vari-abil-ity in in-ter-po-la-tion method,
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 354--355
+\OT1/lmr/m/n/9.5 both within and be-tween meth-ods. We find that SK
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 354--355
+\OT1/lmr/m/n/9.5 ac-cu-mu-la-tion area be-ing poorly sam-pled, sen-si-tive to
  []
 
 (./Attemp3 - Methods.bbl
@@ -776,6 +801,10 @@ Underfull \hbox (badness 2359) in paragraph at lines 37--40
  []
 
 
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[15]
 Underfull \hbox (badness 3482) in paragraph at lines 69--72
 []\OT1/lmr/m/n/9.5 Elder K, Dozier J and Michaelsen J (1991) Snow
  []
@@ -813,13 +842,6 @@ Underfull \hbox (badness 2158) in paragraph at lines 80--84
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[15]
 Underfull \hbox (badness 2277) in paragraph at lines 112--114
 []\OT1/lmr/m/n/9.5 Gray DM and Male DH (1981) \OT1/lmr/m/it/9.5 Handbook of sno
 w:
@@ -860,6 +882,10 @@ lmr/m/n/9.5 , 40--52, ISSN 0309-1708 (doi:
  []
 
 
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[16]
 Underfull \hbox (badness 1394) in paragraph at lines 204--208
 \OT1/lmr/m/n/9.5 with helicopter-borne GPR on two adjacent Alpine
  []
@@ -886,10 +912,6 @@ Underfull \hbox (badness 1033) in paragraph at lines 240--244
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[16]
 Underfull \hbox (badness 2932) in paragraph at lines 256--260
 []\OT1/lmr/m/n/9.5 Revuelto J, L^^Sopez-Moreno JI, Azor^^S^^Pn-Molina C and
  []
@@ -915,6 +937,9 @@ Underfull \hbox (badness 3291) in paragraph at lines 273--277
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1205) in paragraph at lines 303--306
 []\OT1/lmr/m/n/9.5 Wechsler SP and Kroll CN (2006) Quantifying DEM
  []
@@ -923,9 +948,7 @@ Underfull \hbox (badness 1205) in paragraph at lines 303--306
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[17
-
-] (./Attemp3 - Methods.aux)
+[17] (./Attemp3 - Methods.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -938,7 +961,7 @@ Here is how much of TeX's memory you used:
  7267 multiletter control sequences out of 15000+600000
  52186 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,15n,27p,2196b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,27p,2196b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}</usr/share/texmf/fonts/type1/public/
@@ -955,7 +978,7 @@ ts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb
 e1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Attemp3 - Methods.pdf" (17 pages, 2127664 bytes).
+Output written on "Attemp3 - Methods.pdf" (17 pages, 2129208 bytes).
 PDF statistics:
  6807 PDF objects out of 7423 (max. 8388607)
  6634 compressed objects within 67 object streams
