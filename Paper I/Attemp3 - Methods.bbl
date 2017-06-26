@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -46,8 +46,8 @@ Cullen NJ, Anderson B, Sirguey P, Stumm D, Mackintosh A, Conway JP, Horgan HJ,
   {10.1017/jog.2016.128})
 
 \bibitem[\protect\citename{Dadic and others, }2010]{Dadic2010}
-Dadic R, Mott R, Lehning M and Burlando P (2010) {Wind influence on snow depth
-  distribution and accumulation over glaciers}. \emph{Journal of Geophysical
+Dadic R, Mott R, Lehning M and Burlando P (2010) {Parameterization for
+  wind-induced preferential deposition of snow}. \emph{Journal of Geophysical
   Research: Earth Surface (2003--2012)}, \textbf{115} (\doi
   {10.1029/2009JF001261})
 
@@ -76,6 +76,18 @@ Elder K, Rosenthal W and Davis RE (1998) {Estimating the spatial distribution
   Processes}, \textbf{12}(1011), 1793--1808 (\doi
   {10.1002/(SICI)1099-1085(199808/09)12:10/11<1793::AID-HYP695>3.0.CO;2-})
 
+\bibitem[\protect\citename{Erickson and others, }2005]{Erickson2005}
+Erickson TA, Williams MW and Winstral A (2005) {Persistence of topographic
+  controls on the spatial distribution of snow in rugged mountain terrain,
+  Colorado, United States}. \emph{Water Resources Research}, \textbf{41}(4)
+  (\doi {10.1029/2003WR002973})
+
+\bibitem[\protect\citename{Erxleben and others, }2002]{Erxleben2002}
+Erxleben J, Elder K and Davis R (2002) {Comparison of spatial interpolation
+  methods for estimating snow distribution in the {Colorado Rocky Mountains}}.
+  \emph{Hydrological Processes}, \textbf{16}(18), 3627--3649 (\doi
+  {10.1002/hyp.1239})
+
 \bibitem[\protect\citename{Fames and others, }1982]{Fames1982}
 Fames PE, Peterson N, Goodison B and Richards RP (1982) {Metrication of Manual
   Snow Sampling Equipment}. In \emph{{Proceedings of the 50th Western Snow
@@ -85,6 +97,11 @@ Fames PE, Peterson N, Goodison B and Richards RP (1982) {Metrication of Manual
 Fierz C, Armstrong RL, Durand Y, Etchevers P, Greene E, McClung DM, Nishimura
   K, Satyawali PK and Sokratov SA (2009) \emph{{The international
   classification for seasonal snow on the ground}}, volume~25. UNESCO/IHP Paris
+
+\bibitem[\protect\citename{Garbrecht and Martz, }1994]{Garbrecht1994}
+Garbrecht J and Martz L (1994) {Grid size dependency of parameters extracted
+  from digital elevation models}. \emph{Computers \& Geosciences},
+  \textbf{20}(1), 85--87, ISSN 0098-3004 (\doi {10.1016/0098-3004(94)90098-1})
 
 \bibitem[\protect\citename{Grabiec and others, }2011]{Grabiec2011}
 Grabiec M, Puczko D, Budzik T and Gajek G (2011) {Snow distribution patterns on
@@ -100,30 +117,45 @@ Grunewald T, Schirmer M, Mott R and Lehning M (2010) {Spatial and temporal
   variability of snow depth and ablation rates in a small mountain catchment}.
   \emph{Cryosphere}, \textbf{4}(2), 215--225 (\doi {10.5194/tc-4-215-2010})
 
+\bibitem[\protect\citename{Gr{\"u}newald and others, }2013]{Grunewald2013}
+Gr{\"u}newald T, St{\"o}tter J, Pomeroy J, Dadic R, {Moreno Ba{\~n}os} I,
+  Marturi{\`a} J, Spross M, Hopkinson C, Burlando P and Lehning M (2013)
+  {Statistical modelling of the snow depth distribution in open alpine
+  terrain}. \emph{Hydrology and Earth System Sciences}, \textbf{17}(8),
+  3005--3021 (\doi {10.5194/hess-17-3005-2013})
+
 \bibitem[\protect\citename{Gr{\"u}newald and others, }2014]{Grunewald2014}
 Gr{\"u}newald T, B{\"u}hler Y and Lehning M (2014) {Elevation dependency of
   mountain snow depth}. \emph{The Cryosphere}, \textbf{8}(6), 2381--2394 (\doi
   {10.5194/tc-8-2381-2014})
+
+\bibitem[\protect\citename{Guo-an and others, }2001]{Guo-an2001}
+Guo-an T, Yang-he H, Strobl J and Wang-qing L (2001) {The impact of resolution
+  on the accuracy of hydrologic data derived from DEMs}. \emph{Journal of
+  Geographical Sciences}, \textbf{11}(4), 393--401, ISSN 1861-9568 (\doi
+  {10.1007/BF02837966})
 
 \bibitem[\protect\citename{Gusmeroli and others, }2014]{Gusmeroli2014}
 Gusmeroli A, Wolken GJ and Arendt AA (2014) {Helicopter-borne radar imaging of
   snow cover on and around glaciers in {A}laska}. \emph{Annals of Glaciology},
   \textbf{55}(67), 78--88 (\doi {10.3189/2014AoG67A029})
 
-\bibitem[\protect\citename{Helbig and {Van Herwijnen}, }2017]{Helbig2017}
-Helbig N and {Van Herwijnen} A (2017) {Subgrid parameterization for snow depth
+\bibitem[\protect\citename{Helbig and {van Herwijnen}, }2017]{Helbig2017}
+Helbig N and {van Herwijnen} A (2017) {Subgrid parameterization for snow depth
   over mountainous terrain from flat field snow depth}. \emph{Water Resources
-  Research}, \textbf{53}(2), 1444--1456, ISSN 0043-1397
-
-\bibitem[\protect\citename{Hengl and others, }2007]{Hengl2007}
-Hengl T, Heuvelink GB and Rossiter DG (2007) {About regression-kriging: From
-  equations to case studies}. \emph{Computers \& Geosciences}, \textbf{33}(10),
-  1301--1315 (\doi {10.1016/j.cageo.2007.05.001})
+  Research}, \textbf{53}(2), 1444--1456, ISSN 0043-1397 (\doi
+  {10.1002/2016WR019872})
 
 \bibitem[\protect\citename{Hofierka and others, }2009]{Hofierka2009}
 Hofierka J, Mit{\'a}\v{s}ov{\'a} H and Neteler M (2009) {Geomorphometry in
   {GRASS GIS}}. \emph{Developments in Soil Science}, \textbf{33}, 387--410
   (\doi {10.1016/S0166-2481(08)00017-2})
+
+\bibitem[\protect\citename{Kienzle, }2004]{Kienzle2004}
+Kienzle S (2004) {The Effect of DEM Raster Resolution on First Order, Second
+  Order and Compound Terrain Derivatives}. \emph{Transactions in GIS},
+  \textbf{8}(1), 83--111, ISSN 1467-9671 (\doi
+  {10.1111/j.1467-9671.2004.00169.x})
 
 \bibitem[\protect\citename{Kirchner and others, }2014]{Kirchner2014}
 Kirchner PB, Bales RC, Molotch NP, Flanagan J and Guo Q (2014) {LiDAR
@@ -147,6 +179,12 @@ Korona J, Berthier E, Bernard M, R{\'e}my F and Thouvenot E (2009) {{SPIRIT
 \bibitem[\protect\citename{Li and Heap, }2008]{Li2008}
 Li J and Heap AD (2008) {A review of spatial interpolation methods for
   environmental scientists No. Record 2008/23}. \emph{Geoscience Australia}
+
+\bibitem[\protect\citename{L{\'o}pez-Moreno and others, }2010]{Lopez2010}
+L{\'o}pez-Moreno J, Latron J and Lehmann A (2010) {Effects of sample and grid
+  size on the accuracy and stability of regression-based snow interpolation
+  methods}. \emph{Hydrological Processes}, \textbf{24}(14), 1914--1928, ISSN
+  1099-1085 (\doi {10.1002/hyp.7564})
 
 \bibitem[\protect\citename{L{\'o}pez-Moreno and others, }2013]{Lopez2013}
 L{\'o}pez-Moreno J, Fassnacht S, Heath J, Musselman K, Revuelto J, Latron J,
@@ -214,6 +252,12 @@ Raftery AE, Madigan D and Hoeting JA (1997) {Bayesian Model Averaging for
   Association}, \textbf{92}(437), 179--191 (\doi
   {10.1080/01621459.1997.10473615})
 
+\bibitem[\protect\citename{Revuelto and others, }2014]{Revuelto2014}
+Revuelto J, L{\'o}pez-Moreno JI, Azor{\'i}n-Molina C and {Vicente Serrano} SM
+  (2014) {Topographic control of snowpack distribution in a small catchment in
+  the central Spanish Pyrenees: {I}ntra-and inter-annual persistence} (\doi
+  {10.5194/tc-8-1989-2014})
+
 \bibitem[\protect\citename{Roustant and others, }2012]{Roustant2012}
 Roustant O, Ginsbourger D and Deville Y (2012) {DiceKriging, DiceOptim: Two R
   packages for the analysis of computer experiments by kriging-based
@@ -255,6 +299,11 @@ Watson FG, Anderson TN, Newman WB, Alexander SE and Garrott RA (2006) {Optimal
   heterogeneous landscapes}. \emph{Journal of Hydrology}, \textbf{328}(3),
   432--452 (\doi {10.1016/j.jhydrol.2005.12.032})
 
+\bibitem[\protect\citename{Wechsler and Kroll, }2006]{Wechsler2006}
+Wechsler SP and Kroll CN (2006) {Quantifying DEM Uncertainty and its Effect on
+  Topographic Parameters}. \emph{Photogrammetric Engineering \& Remote
+  Sensing}, \textbf{72}(9), 1081--1090, ISSN 0099-1112
+
 \bibitem[\protect\citename{Wetlaufer and others, }2016]{Wetlaufer2016}
 Wetlaufer K, Hendrikx J and Marshall L (2016) {Spatial Heterogeneity of Snow
   Density and Its Influence on Snow Water Equivalence Estimates in a Large
@@ -274,5 +323,10 @@ Winther J, Bruland O, Sand K, Killingtveit A and Marechal D (1998) {Snow
 \bibitem[\protect\citename{Work and others, }1965]{Work1965}
 Work R, Stockwell H, Freeman T and Beaumont R (1965) {Accuracy of field snow
   surveys}. Technical report
+
+\bibitem[\protect\citename{Zhang and Montgomery, }1994]{Zhang1994}
+Zhang W and Montgomery DR (1994) {Digital elevation model grid size, landscape
+  representation, and hydrologic simulations}. \emph{Water Resources Research},
+  \textbf{30}(4), 1019--1028, ISSN 1944-7973 (\doi {10.1029/93WR03553})
 
 \end{thebibliography}
