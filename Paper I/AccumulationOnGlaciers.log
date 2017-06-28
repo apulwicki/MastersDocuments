@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  28 JUN 2017 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  28 JUN 2017 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,6 +404,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5.5> on input line 47.
 
+Underfull \vbox (badness 1681) has occurred while \output is active []
+
+
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
@@ -411,7 +414,13 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 ]
-<Sampling.pdf, id=14, 667.49374pt x 367.3725pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.98238pt too high) has occurred while \output is active []
+
+
+[2] <Sampling.pdf, id=18, 667.49374pt x 367.3725pt>
 File: Sampling.pdf Graphic file (type pdf)
  <use Sampling.pdf>
 Package pdftex.def Info: Sampling.pdf used on input line 74.
@@ -419,13 +428,6 @@ Package pdftex.def Info: Sampling.pdf used on input line 74.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 75.
 
-Underfull \vbox (badness 4492) has occurred while \output is active []
-
-
-Overfull \vbox (5.98238pt too high) has occurred while \output is active []
-
-
-[2]
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
@@ -444,6 +446,13 @@ Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
 [5]
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+
+Overfull \vbox (5.98238pt too high) has occurred while \output is active []
+
+
+[6]
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 111
 .
  (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmtt.fd
@@ -461,33 +470,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[7]
+Underfull \vbox (badness 3701) has occurred while \output is active []
 
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[7] <DepthBoxplot.pdf, id=61, 244.915pt x 244.915pt>
+[8] <DepthBoxplot.pdf, id=64, 244.915pt x 244.915pt>
 File: DepthBoxplot.pdf Graphic file (type pdf)
  <use DepthBoxplot.pdf>
 Package pdftex.def Info: DepthBoxplot.pdf used on input line 135.
 (pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2478) has occurred while \output is active []
 
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[8]
-Overfull \vbox (5.98238pt too high) has occurred while \output is active []
-
-
-[9 <./DepthBoxplot.pdf>] <SPvsFS.pdf, id=72, 244.915pt x 244.915pt>
+[9] <SPvsFS.pdf, id=69, 244.915pt x 244.915pt>
 File: SPvsFS.pdf Graphic file (type pdf)
-
-<use SPvsFS.pdf>
+ <use SPvsFS.pdf>
 Package pdftex.def Info: SPvsFS.pdf used on input line 155.
 (pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
 
@@ -498,13 +502,14 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9.5> on input line 164.
 
-Underfull \vbox (badness 3375) has occurred while \output is active []
+Underfull \vbox (badness 2573) has occurred while \output is active []
 
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[10 <./SPvsFS.pdf>] <ZigzagHistogram.pdf, id=88, 244.915pt x 506.89375pt>
+[10 <./DepthBoxplot.pdf>]
+<ZigzagHistogram.pdf, id=76, 244.915pt x 506.89375pt>
 File: ZigzagHistogram.pdf Graphic file (type pdf)
 
 <use ZigzagHistogram.pdf>
@@ -514,19 +519,12 @@ Package pdftex.def Info: ZigzagHistogram.pdf used on input line 187.
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[11]
-Underfull \vbox (badness 4242) has occurred while \output is active []
-
-
-Overfull \vbox (5.98238pt too high) has occurred while \output is active []
-
-
-[12 <./ZigzagHistogram.pdf>]
+[11 <./SPvsFS.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 198.
 
-<observedVSestimated_S2.pdf, id=130, 506.89375pt x 284.06125pt>
+<observedVSestimated_S2.pdf, id=92, 506.89375pt x 284.06125pt>
 File: observedVSestimated_S2.pdf Graphic file (type pdf)
 
 <use observedVSestimated_S2.pdf>
@@ -536,34 +534,52 @@ Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 216.
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[13 <./observedVSestimated_S2.pdf>]
-<BetaCoeffs.pdf, id=174, 244.915pt x 244.915pt>
+[12]
+Overfull \vbox (5.98238pt too high) has occurred while \output is active []
+
+
+[13 <./ZigzagHistogram.pdf>] <BetaCoeffs.pdf, id=135, 244.915pt x 244.915pt>
 File: BetaCoeffs.pdf Graphic file (type pdf)
- <use BetaCoeffs.pdf>
+
+<use BetaCoeffs.pdf>
 Package pdftex.def Info: BetaCoeffs.pdf used on input line 225.
 (pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[14 <./BetaCoeffs.pdf>] <LR_map.pdf, id=191, 506.89375pt x 244.915pt>
+[14 <./observedVSestimated_S2.pdf>]
+Underfull \vbox (badness 2556) has occurred while \output is active []
+
+
+Overfull \vbox (5.98238pt too high) has occurred while \output is active []
+
+
+[15 <./BetaCoeffs.pdf>] <LR_map.pdf, id=194, 506.89375pt x 244.915pt>
 File: LR_map.pdf Graphic file (type pdf)
 
 <use LR_map.pdf>
 Package pdftex.def Info: LR_map.pdf used on input line 238.
 (pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
- <SK_map.pdf, id=192, 506.89375pt x 244.915pt>
+ <SK_map.pdf, id=195, 506.89375pt x 244.915pt>
 File: SK_map.pdf Graphic file (type pdf)
 
 <use SK_map.pdf>
 Package pdftex.def Info: SK_map.pdf used on input line 239.
 (pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
+Underfull \vbox (badness 6428) has occurred while \output is active []
+
+
+Overfull \vbox (5.98238pt too high) has occurred while \output is active []
+
+
+[16 <./LR_map.pdf> <./SK_map.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 251.
 
-<WSMBDist_LR.pdf, id=193, 506.89375pt x 341.275pt>
+<WSMBDist_LR.pdf, id=241, 506.89375pt x 341.275pt>
 File: WSMBDist_LR.pdf Graphic file (type pdf)
  <use WSMBDist_LR.pdf>
 Package pdftex.def Info: WSMBDist_LR.pdf used on input line 268.
@@ -573,35 +589,11 @@ Overfull \hbox (69.25813pt too wide) in paragraph at lines 267--268
  []|  [] 
  []
 
-
-Underfull \vbox (badness 3701) has occurred while \output is active []
-
-
-Overfull \vbox (5.98238pt too high) has occurred while \output is active []
-
-
-[15] <WSMBDist_full.pdf, id=197, 244.915pt x 284.06125pt>
+<WSMBDist_full.pdf, id=242, 244.915pt x 284.06125pt>
 File: WSMBDist_full.pdf Graphic file (type pdf)
-
-<use WSMBDist_full.pdf>
+ <use WSMBDist_full.pdf>
 Package pdftex.def Info: WSMBDist_full.pdf used on input line 277.
 (pdftex.def)             Requested size: 253.22952pt x 293.71327pt.
-
-Overfull \vbox (5.98238pt too high) has occurred while \output is active []
-
-
-[16 <./LR_map.pdf> <./SK_map.pdf>]
-<SpatialVar_LR.pdf, id=243, 506.89375pt x 244.915pt>
-File: SpatialVar_LR.pdf Graphic file (type pdf)
- <use SpatialVar_LR.pdf>
-Package pdftex.def Info: SpatialVar_LR.pdf used on input line 287.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
-
-<SpatialVar_SK.pdf, id=244, 506.89375pt x 244.915pt>
-File: SpatialVar_SK.pdf Graphic file (type pdf)
- <use SpatialVar_SK.pdf>
-Package pdftex.def Info: SpatialVar_SK.pdf used on input line 288.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
@@ -610,14 +602,23 @@ Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[18 <./WSMBDist_LR.pdf>]
+[18 <./WSMBDist_LR.pdf>] <SpatialVar_LR.pdf, id=261, 506.89375pt x 244.915pt>
+File: SpatialVar_LR.pdf Graphic file (type pdf)
+
+<use SpatialVar_LR.pdf>
+Package pdftex.def Info: SpatialVar_LR.pdf used on input line 287.
+(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+ <SpatialVar_SK.pdf, id=262, 506.89375pt x 244.915pt>
+File: SpatialVar_SK.pdf Graphic file (type pdf)
+
+<use SpatialVar_SK.pdf>
+Package pdftex.def Info: SpatialVar_SK.pdf used on input line 288.
+(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
 [19 <./WSMBDist_full.pdf>]
-Underfull \vbox (badness 1371) has occurred while \output is active []
-
-
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
@@ -629,16 +630,13 @@ Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
 [21]
-Underfull \vbox (badness 4595) has occurred while \output is active []
+Underfull \vbox (badness 3701) has occurred while \output is active []
 
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
 [22]
-Underfull \vbox (badness 3701) has occurred while \output is active []
-
-
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
@@ -663,19 +661,19 @@ Underfull \vbox (badness 3701) has occurred while \output is active []
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[26] <AccumGrad.pdf, id=6750, 244.915pt x 244.915pt>
-File: AccumGrad.pdf Graphic file (type pdf)
- <use AccumGrad.pdf>
-Package pdftex.def Info: AccumGrad.pdf used on input line 367.
-(pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
-
-Underfull \vbox (badness 4595) has occurred while \output is active []
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[27]
+[27] <AccumGrad.pdf, id=6753, 244.915pt x 244.915pt>
+File: AccumGrad.pdf Graphic file (type pdf)
+ <use AccumGrad.pdf>
+Package pdftex.def Info: AccumGrad.pdf used on input line 367.
+(pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
+
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
@@ -690,14 +688,18 @@ Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[30] (./AccumulationOnGlaciers.bbl
-Underfull \vbox (badness 3977) has occurred while \output is active []
+[30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[31]
+[31] (./AccumulationOnGlaciers.bbl
+Overfull \vbox (5.98238pt too high) has occurred while \output is active []
+
+
+[32]
 Underfull \hbox (badness 1122) in paragraph at lines 54--58
 \OT1/lmr/m/n/11 tial de-po-si-tion of snow. \OT1/lmr/m/it/11 Jour-nal of Geo-ph
 ys-i-cal Re-search: Earth Sur-face (2003--2012)\OT1/lmr/m/n/11 , \OT1/lmr/bx/n/
@@ -712,13 +714,6 @@ Underfull \hbox (badness 2012) in paragraph at lines 79--83
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.98238pt too high) has occurred while \output is active []
-
-
-[32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -740,6 +735,13 @@ Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
 [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.98238pt too high) has occurred while \output is active []
+
+
+[36]
 Underfull \hbox (badness 1082) in paragraph at lines 341--345
 \OT1/lmr/m/n/11 on Snow Water Equivalence Estimates in a Large Mountainous Basi
 n. \OT1/lmr/m/it/11 Hydrology\OT1/lmr/m/n/11 , \OT1/lmr/bx/n/11 3\OT1/lmr/m/n/1
@@ -760,13 +762,6 @@ r Re-sources\OT1/lmr/m/n/11 , \OT1/lmr/bx/n/11 55\OT1/lmr/m/n/11 , 64--79, ISSN
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.98238pt too high) has occurred while \output is active []
-
-
-[36]
 Underfull \hbox (badness 1803) in paragraph at lines 368--371
 \OT1/lmr/m/n/11 and hydrologic simulations. \OT1/lmr/m/it/11 Water Resources Re
 search\OT1/lmr/m/n/11 , \OT1/lmr/bx/n/11 30\OT1/lmr/m/n/11 (4), 1019--1028, ISS
@@ -789,11 +784,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  4108 strings out of 494501
  57231 string characters out of 6167030
- 117078 words of memory out of 5000000
+ 116078 words of memory out of 5000000
  7277 multiletter control sequences out of 15000+600000
  77791 words of font info for 72 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,15n,27p,2449b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,27p,2449b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/u
 sr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
 texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texli
@@ -814,7 +809,7 @@ exlive/2015basic/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive
 basic/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/
 texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-
 dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on AccumulationOnGlaciers.pdf (37 pages, 2096550 bytes).
+Output written on AccumulationOnGlaciers.pdf (37 pages, 2100809 bytes).
 PDF statistics:
  6857 PDF objects out of 7423 (max. 8388607)
  6668 compressed objects within 67 object streams
