@@ -12,7 +12,6 @@
  % \usepackage{igsnatbib}
   \usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm}
-%\usepackage{graphicx}
 \usepackage{natbib} 
 \usepackage{wrapfig}
 \usepackage{enumitem}
@@ -46,17 +45,15 @@ $^2$University of British Columbia, Vancouver, BC, Canada\\
 \abstract{}
 
 \maketitle
- %\documentclass[twocolumn,letterpaper]{igs} 
-
 
 %%%%%%%%%%%%%%%
 \section{Introduction}
 
 Accurate estimation of winter surface mass balance is critical for correctly simulating the summer and overall mass balance of a glacier \citep{Reveillet2016}. Effectively representing spatial distribution of snow is also important for simulating snow and ice melt as well as energy and mass exchange between the land and atmosphere to better monitor surface runoff and its downstream effects \citep{Clark2011}. Snow distribution is sensitive to a number of complex process that partially depend on glacier location, topography, and orientation \citep{Bloschl1991, Mott2008, Clark2011, Sold2013}. Current models are not able to fully represent these processes so the distribution of snow in remote, mountainous locations is not well known. This is a significant source of uncertainty that undermines the ability of models to represent current glacier conditions and make predictions of glacier response to a warming climate. 
 
-Winter mass balance is notoriously difficult to measure. Snow distribution in alpine regions is highly variable and influenced by dynamic interactions between the atmosphere and complex topography operating on multiple spatial and temporal scales. Extensive, high resolution and accurate accumulation measurements on glaciers are almost impossible to achieve due to cost benefits of the various methods used to quantify snow water equivalent. For example, snow probes obtain accurate point observations but have negligible spatial coverage. Conversely, gravimetric methods obtain extensive measurements of mass change but cannot capture relevant spatial variability of snow. Glacierized regions are also generally remote and challenging to access during the winter due to poor travelling conditions. 
+Winter mass balance is notoriously difficult to measure. Snow distribution in alpine regions is highly variable and influenced by dynamic interactions between the atmosphere and complex topography operating on multiple spatial and temporal scales \citep{Liston2006}. Extensive, high resolution and accurate accumulation measurements on glaciers are almost impossible to achieve due to cost benefits of the various methods used to quantify snow water equivalent \citep{McGrath2015}. For example, snow probes obtain accurate point observations but have negligible spatial coverage. Conversely, gravimetric methods obtain extensive measurements of mass change but cannot capture relevant spatial variability of snow. Glacierized regions are also generally remote and challenging to access during the winter due to poor travelling conditions. 
 
-Predicting winter mass balance is a further challenge. Physically-based dynamic models are able to capture the intricate interactions between the atmosphere and local topography but they are operationally complex and computationally expensive, and require a diverse set of detailed observations. Empirical models that rely on statistical relationships between proxy parameters and measured accumulation are widely applied and simple to execute but most are unable to explain the majority of variance observed or lack insight into processes that affect snow distribution.
+Predicting winter mass balance is a further challenge. Physically-based dynamic models are able to capture the intricate interactions between the atmosphere and local topography but they are operationally complex and computationally expensive, and require a diverse set of detailed observations \citep{Dadic2010}. Empirical models that rely on statistical relationships between proxy parameters and measured accumulation are widely applied and simple to execute but most are unable to explain the majority of variance observed or lack insight into processes that affect snow distribution \citep[e.g.][]{Grabiec2011,Lopez2011}..
 
 There is clearly a strong need for a more comprehensive understanding of uncertainties inherent when estimating accumulation on glaciers. Ultimately, we need a thorough knowledge of the processes that affect spatial and temporal snow variability and an effective method to predict snow accumulation. The contribution of our work toward this goal is to (1) conduct a comprehensive sweep of choices and assumptions made when moving from snow measurements to estimating accumulation and (2) show how snow variability, data error and our methodological choices interact to create uncertainty in our estimate of accumulation. We focus on simple and commonly applied methods of measuring and predicting accumulation with the hope of making our results broadly applicable to past and current winter mass balance programs.
 
@@ -75,7 +72,7 @@ Estimating accumulation involves transforming snow depth and density measurement
 \begin{figure*}
 	\centering
 	\includegraphics[width =\textwidth]{Sampling.pdf}\\
-	\caption{Sampling design for Glaciers 4, 2 and 13, located in the the Donjek Range, Yukon (a,b). Centreline and transverse transects are shown in blue dots, hourglass and circle design are shown in green dots and zigzag measurements are shown as grey dots (c). Linear and curvilinear transects typically consist of sets of three measurement locations, spaced $\sim$10 m apart (d). At each measurement location, three snow depth observation are made (e). Orange squares are locations of snow density measurements. }
+	\caption{Sampling design for Glaciers 4, 2 and 13, located in the Donjek Range, Yukon (a,b). Centreline and transverse transects are shown in blue dots, hourglass and circle design are shown in green dots. (d) Linear and curvilinear transects typically consist of sets of three measurement locations, spaced $\sim$10 m apart. (e) At each measurement location, three snow depth observation are made. (c) Linear-random snow depth measurements in `zigzag' design are shown as grey dots. Orange squares are locations of snow density measurements. }
 	\label{fig:Sampling}
 \end{figure*}
 
@@ -253,7 +250,7 @@ Specific WSMB is affected by variability introduced when interpolating density (
 
  \begin{table}[]
 \centering
-\caption{Standard deviation ([m w.e.]) of specific winter surface mass balance estimated using linear regression (LR) and simple kriging (SK) when variability is introduced. Density variability ($\sigma_{\rho}$) is the standard deviation of WSMB estimated using SWE data with different density interpolation methods. SWE variability ($\sigma_{\mathrm{SWE}}$) is approximated by a normal distribution about the local SWE value with standard deviation equal to the glacier-wide mean zigzag standard deviation. LR interpolation variability ($\sigma_{\beta}$) is accounted for by varying the regression coefficients with a normal distribution with standard deviation calculated from regression covariance. SK interpolation variability ($\sigma_{\mathrm{KRIG}}$) is taken from the range of distributed SWE estimates calculated by the DiceKriging package.}
+\caption{Standard deviation ([m w.e.]) of specific winter surface mass balance estimated using linear regression (LR) and simple kriging (SK) when variability is introduced. Density variability ($\sigma_{\rho}$) is the standard deviation of WSMB estimated using SWE data with different density interpolation methods. SWE variability ($\sigma_{\mathrm{SWE}}$) is approximated by a normal distribution about the local SWE value with standard deviation equal to the glacier-wide mean zigzag standard deviation. LR interpolation variability ($\sigma_{\beta}$) is accounted for by varying the regression coefficients with a normal distribution with standard deviation calculated from regression covariance. SK interpolation variability ($\sigma_{\mathrm{KRIG}}$) is taken from the range of distributed SWE estimates calculated by the DiceKriging package. Result for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13) are shown.}
 \label{tab:WSMBdistribution_sigma}
 \begin{tabular}{ccccccc}
 \textbf{} & \multicolumn{3}{c}{\textbf{Linear Regression}} & \multicolumn{3}{c}{\textbf{Simple Kriging}} \\
@@ -269,7 +266,7 @@ Specific WSMB is affected by variability introduced when interpolating density (
 	\centering
 \hspace*{-1.2cm}
 	\includegraphics[width =1.2\textwidth]{WSMBDist_LR.pdf}\\
-	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values that arise from SWE variability ($\sigma_{ZZ}$) and regression estimation ($\sigma_{\beta}$). Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
+	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values that arise from SWE variability ($\sigma_{ZZ}$) and interpolation variability ($\sigma_{\beta}$ or $\sigma_{\mathrm{KRIG}}$). Results from a linear regression interpolation (top panels) and simple kriging (bottom panels) are shown. Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
 	\label{fig:WSMBDist_LR}
 \end{figure*}
 
@@ -278,7 +275,7 @@ The total WSMB uncertainty from SK interpolation is 3 to 5 times greater than un
 \begin{figure}
 	\centering
 	\includegraphics[width =0.5\textwidth]{WSMBDist_full.pdf}\\
-	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (top) or simple kriging (bottom). Each PDF includes density variability, SWE variability and regression estimation (linear regression only) for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
+	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (top) or simple kriging (bottom). Each PDF includes density variability, SWE variability and interpolation variability for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
 	\label{fig:WSMBDist_LRvsSK}
 \end{figure}
 
@@ -289,7 +286,7 @@ The spatial patterns of WSMB uncertainty are affected by density, SWE, and inter
 	\centering
 	\includegraphics[width =\textwidth]{SpatialVar_LR.pdf}\\
 	\includegraphics[width =\textwidth]{SpatialVar_SK.pdf}\\
-	\caption{Variability of SWE estimated using linear regression (top) and simple kriging (bottom).	Variability is measured by taking the sum of differences between one hundred estimates of distributed WSMB that include SWE variability and, in the case of linear regression, regression variability. The sum is then normalized for each glacier.}
+	\caption{Variability of SWE estimated using linear regression (top) and simple kriging (bottom).	Variability is a relative quantity measured by taking the sum of differences between one hundred estimates of distributed WSMB that include SWE variability and, in the case of linear regression, regression variability. The sum is then normalized for each glacier. Glacier flow directions are indicated by arrows.}
 	\label{fig:WSMBspatialvar}
 \end{figure*}
 

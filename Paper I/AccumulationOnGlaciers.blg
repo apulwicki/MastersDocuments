@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: Attemp3 - Methods.aux
+The top-level auxiliary file: AccumulationOnGlaciers.aux
 The style file: igs.bst
 Database file #1: /Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit.bib
 Warning--empty journal in Clyde1932
@@ -8,45 +8,45 @@ Warning--can't use both volume and number fields in Kohavi1995
 Warning--empty journal in Revuelto2014
 Warning--empty journal in Walmsley2015
 Warning--missing institution in Work1965
-You've used 66 entries,
+You've used 67 entries,
             2869 wiz_defined-function locations,
-            1102 strings with 19223 characters,
-and the built_in function-call counts, 75683 in all, are:
-= -- 8219
-> -- 1518
-< -- 55
-+ -- 528
-- -- 463
-* -- 5822
-:= -- 8328
-add.period$ -- 63
-call.type$ -- 66
-change.case$ -- 570
-chr.to.int$ -- 67
-cite$ -- 71
-duplicate$ -- 7828
-empty$ -- 5852
-format.name$ -- 732
-if$ -- 15751
+            1108 strings with 19370 characters,
+and the built_in function-call counts, 76543 in all, are:
+= -- 8308
+> -- 1532
+< -- 57
++ -- 533
+- -- 467
+* -- 5894
+:= -- 8430
+add.period$ -- 64
+call.type$ -- 67
+change.case$ -- 577
+chr.to.int$ -- 68
+cite$ -- 72
+duplicate$ -- 7908
+empty$ -- 5923
+format.name$ -- 743
+if$ -- 15929
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 742
-newline$ -- 205
-num.names$ -- 264
-pop$ -- 3690
+missing$ -- 752
+newline$ -- 208
+num.names$ -- 268
+pop$ -- 3721
 preamble$ -- 1
-purify$ -- 495
+purify$ -- 501
 quote$ -- 0
-skip$ -- 1614
+skip$ -- 1633
 stack$ -- 0
-substring$ -- 8767
-swap$ -- 1825
+substring$ -- 8857
+swap$ -- 1853
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 816
+type$ -- 827
 warning$ -- 5
-while$ -- 474
+while$ -- 480
 width$ -- 0
-write$ -- 847
+write$ -- 860
 (There were 5 warnings)

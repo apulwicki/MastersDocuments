@@ -1,4 +1,4 @@
-\begin{thebibliography}{66}
+\begin{thebibliography}{67}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -189,6 +189,11 @@ Korona J, Berthier E, Bernard M, R{\'e}my F and Thouvenot E (2009) {{SPIRIT
 \bibitem[\protect\citename{Li and Heap, }2008]{Li2008}
 Li J and Heap AD (2008) {A review of spatial interpolation methods for
   environmental scientists No. Record 2008/23}. \emph{Geoscience Australia}
+
+\bibitem[\protect\citename{Liston and Elder, }2006]{Liston2006}
+Liston GE and Elder K (2006) {A distributed snow-evolution modeling system
+  ({SnowModel})}. \emph{Journal of Hydrometeorology}, \textbf{7}(6), 1259--1276
+  (\doi {10.1175/JHM548.1})
 
 \bibitem[\protect\citename{L{\'o}pez-Moreno and others, }2010]{Lopez2010}
 L{\'o}pez-Moreno J, Latron J and Lehmann A (2010) {Effects of sample and grid
