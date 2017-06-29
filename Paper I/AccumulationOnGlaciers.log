@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  28 JUN 2017 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  29 JUN 2017 09:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,20 +404,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5.5> on input line 47.
 
-Underfull \vbox (badness 1681) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (6.54431pt too high) has occurred while \output is active []
+Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
 [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.98238pt too high) has occurred while \output is active []
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [2] <Sampling.pdf, id=18, 667.49374pt x 367.3725pt>
@@ -431,14 +428,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[3 <./Sampling.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[3]
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
-[4]
+[4 <./Sampling.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -446,9 +440,6 @@ Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
 [5]
-Underfull \vbox (badness 2922) has occurred while \output is active []
-
-
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
 
@@ -501,9 +492,6 @@ LaTeX Warning: No positions in optional float specifier.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9.5> on input line 164.
-
-Underfull \vbox (badness 2573) has occurred while \output is active []
-
 
 Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 
@@ -777,14 +765,11 @@ Overfull \vbox (5.98238pt too high) has occurred while \output is active []
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  4108 strings out of 494501
  57231 string characters out of 6167030
- 116078 words of memory out of 5000000
+ 116079 words of memory out of 5000000
  7277 multiletter control sequences out of 15000+600000
  77791 words of font info for 72 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -809,10 +794,10 @@ exlive/2015basic/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive
 basic/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/
 texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-
 dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on AccumulationOnGlaciers.pdf (37 pages, 2100809 bytes).
+Output written on AccumulationOnGlaciers.pdf (37 pages, 2101384 bytes).
 PDF statistics:
- 6857 PDF objects out of 7423 (max. 8388607)
- 6668 compressed objects within 67 object streams
+ 6860 PDF objects out of 7423 (max. 8388607)
+ 6671 compressed objects within 67 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
