@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -8,5 +8,20 @@
 Bagos PG and Adam M (2015) {On the Covariance of Regression Coefficients}.
   \emph{Open Journal of Statistics}, \textbf{5}(07), 680 (\doi
   {10.4236/ojs.2015.57069})
+
+\bibitem[\protect\citename{Hock, }2005]{Hock2005}
+Hock R (2005) {Glacier melt: a review of processes and their modelling}.
+  \emph{Progress in Physical Geography}, \textbf{29}(3), 362--391 (\doi
+  {10.1191/0309133305pp453ra})
+
+\bibitem[\protect\citename{McGrath and others, }2015]{McGrath2015}
+McGrath D, Sass L, O'Neel S, Arendt A, Wolken G, Gusmeroli A, Kienholz C and
+  McNeil C (2015) {End-of-winter snow depth variability on glaciers in
+  {A}laska}. \emph{Journal of Geophysical Research: Earth Surface},
+  \textbf{120}(8), 1530--1550 (\doi {10.1002/2015JF003539})
+
+\bibitem[\protect\citename{Metropolis and Ulam, }1949]{Metropolis1949}
+Metropolis N and Ulam S (1949) {The Monte Carlo Method}. \emph{Journal of the
+  American Statistical Association}, \textbf{44}(247), 335--341, ISSN 01621459
 
 \end{thebibliography}

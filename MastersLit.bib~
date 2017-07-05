@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Alexandra Pulwicki at 2017-06-23 15:04:42 -0700 
+%% Created for Alexandra Pulwicki at 2017-06-29 09:53:40 -0600 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -22,7 +22,7 @@
 	Number = {1},
 	Pages = {83--111},
 	Publisher = {Blackwell Publishing Ltd},
-	Title = {The Effect of DEM Raster Resolution on First Order, Second Order and Compound Terrain Derivatives},
+	Title = {{The Effect of DEM Raster Resolution on First Order, Second Order and Compound Terrain Derivatives}},
 	Url = {http://dx.doi.org/10.1111/j.1467-9671.2004.00169.x},
 	Volume = {8},
 	Year = {2004},
@@ -38,15 +38,14 @@
 	Journal = {Journal of Geographical Sciences},
 	Number = {4},
 	Pages = {393--401},
-	Title = {The impact of resolution on the accuracy of hydrologic data derived from DEMs},
+	Title = {{The impact of resolution on the accuracy of hydrologic data derived from DEMs}},
 	Url = {http://dx.doi.org/10.1007/BF02837966},
 	Volume = {11},
 	Year = {2001},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1007/BF02837966}}
 
 @article{Lopez2010,
-	Abstract = {This work analyses the responses of four regression-based interpolation methods for predicting snowpack distribution to changes in the number of data points (sample size) and resolution of the employed digital elevation model (DEM). For this purpose, we used data obtained from intensive and random sampling of snow depth (991 measurements) in a small catchment (6 km2) in the Pyrenees, Spain. Linear regression, classification trees, generalized additive models (GAMs), and a recent method based on a correction made by applying tree classification to GAM residuals were used to calculate snow-depth distribution based on terrain characteristics under different combinations of sample size and DEM spatial resolution (grid size).
-The application of a tree classification to GAM residuals yielded the highest accuracy scores and the most stable models. The other tested methods yielded scores with slightly lower accuracy and varying levels of robustness under different conditions of grid and sample size. The accuracy of the model predictions declined with decreasing resolution of DEMs and sample size; however, the sensitivities of the models to the number of data points showed threshold values, which has implications (when planning fieldwork) for optimizing the relation between the effort expended in gathering data and the quality of the results. Copyright  2009 John Wiley & Sons, Ltd.},
+	Abstract = {This work analyses the responses of four regression-based interpolation methods for predicting snowpack distribution to changes in the number of data points (sample size) and resolution of the employed digital elevation model (DEM). For this purpose, we used data obtained from intensive and random sampling of snow depth (991 measurements) in a small catchment (6 km2) in the Pyrenees, Spain. Linear regression, classification trees, generalized additive models (GAMs), and a recent method based on a correction made by applying tree classification to GAM residuals were used to calculate snow-depth distribution based on terrain characteristics under different combinations of sample size and DEM spatial resolution (grid size). The application of a tree classification to GAM residuals yielded the highest accuracy scores and the most stable models. The other tested methods yielded scores with slightly lower accuracy and varying levels of robustness under different conditions of grid and sample size. The accuracy of the model predictions declined with decreasing resolution of DEMs and sample size; however, the sensitivities of the models to the number of data points showed threshold values, which has implications (when planning fieldwork) for optimizing the relation between the effort expended in gathering data and the quality of the results. Copyright 2009 John Wiley \& Sons, Ltd.},
 	Author = {L{\'o}pez-Moreno, JI and Latron, J. and Lehmann, A.},
 	Date-Added = {2017-06-23 17:06:42 +0000},
 	Date-Modified = {2017-06-23 17:14:51 +0000},
@@ -57,7 +56,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Number = {14},
 	Pages = {1914--1928},
 	Publisher = {Wiley Online Library},
-	Title = {Effects of sample and grid size on the accuracy and stability of regression-based snow interpolation methods},
+	Title = {{Effects of sample and grid size on the accuracy and stability of regression-based snow interpolation methods}},
 	Url = {http:https://doi.org/10.1002/hyp.7564},
 	Volume = {24},
 	Year = {2010},
@@ -68,15 +67,14 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Author = {Wechsler, Suzanne P. and Kroll, Charles N.},
 	Date-Added = {2017-06-22 18:21:47 +0000},
 	Date-Modified = {2017-06-22 18:21:47 +0000},
-	Doi = {doi:10.14358/PERS.72.9.1081},
 	Issn = {0099-1112},
 	Itemtype = {ARTICLE},
-	Journal = {Photogrammetric Engineering & Remote Sensing},
+	Journal = {Photogrammetric Engineering \& Remote Sensing},
 	Number = {9},
-	Pages = {1081-1090},
+	Pages = {1081--1090},
 	Parent_Itemid = {infobike://asprs/pers},
 	Publishercode = {asprs},
-	Title = {Quantifying DEM Uncertainty and its Effect on Topographic Parameters},
+	Title = {{Quantifying DEM Uncertainty and its Effect on Topographic Parameters}},
 	Url = {http://www.ingentaconnect.com/content/asprs/pers/2006/00000072/00000009/art00007},
 	Volume = {72},
 	Year = {2006},
@@ -84,15 +82,15 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-2 = {http://dx.doi.org/10.14358/PERS.72.9.1081}}
 
 @article{Garbrecht1994,
-	Author = {J. Garbrecht and L. Martz},
+	Author = {Garbrecht, J. and Martz, L.},
 	Date-Added = {2017-06-22 18:14:41 +0000},
 	Date-Modified = {2017-06-22 18:14:41 +0000},
-	Doi = {http://dx.doi.org/10.1016/0098-3004(94)90098-1},
+	Doi = {10.1016/0098-3004(94)90098-1},
 	Issn = {0098-3004},
-	Journal = {Computers & Geosciences},
+	Journal = {Computers \& Geosciences},
 	Number = {1},
-	Pages = {85 - 87},
-	Title = {Grid size dependency of parameters extracted from digital elevation models},
+	Pages = {85--87},
+	Title = {{Grid size dependency of parameters extracted from digital elevation models}},
 	Url = {http://www.sciencedirect.com/science/article/pii/0098300494900981},
 	Volume = {20},
 	Year = {1994},
@@ -106,10 +104,10 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Doi = {10.1029/93WR03553},
 	Issn = {1944-7973},
 	Journal = {Water Resources Research},
-	Keywords = {Geomorphology: general, Streamflow},
+	Keywords = {Geomorphology: general; Streamflow},
 	Number = {4},
 	Pages = {1019--1028},
-	Title = {Digital elevation model grid size, landscape representation, and hydrologic simulations},
+	Title = {{Digital elevation model grid size, landscape representation, and hydrologic simulations}},
 	Url = {http://dx.doi.org/10.1029/93WR03553},
 	Volume = {30},
 	Year = {1994},
@@ -117,9 +115,10 @@ The application of a tree classification to GAM residuals yielded the highest ac
 
 @article{Helbig2017,
 	Abstract = {Snow depth is an important variable for a variety of models including land‐surface, meteorological, and climate models. Various measurement networks were therefore developed to measure snow depth on the ground. Measurement stations are generally located in gentle terrain (flat field measurements) most often at lower or mid elevation. While these sites have provided a wealth of information, various studies have questioned the representativity of such flat field measurements for the surrounding topography, especially in alpine regions. Using highly resolved snow depth maps at the peak of winter from two distinct climatic regions in Switzerland and in the Spanish Pyrenees, we developed two parameterizations to estimate domain‐averaged snow depth in coarse‐scale model applications over complex topography using easy to derive topographic parameters. The first parameterization uses a commonly applied linear lapse rate. Removing the dominant elevation gradient in mean snow depth revealed remaining underlying correlations with other topographic parameters, in particular the sky view factor. The second parameterization combines a power law elevation trend scaled with the subgrid parameterized sky view factor. Using a variety of statistic measures showed that the more complex parameterization performs better when using mean high‐resolution flat field snow depth. The performances slightly decreased when formulating the parameterizations for a single flat field snow depth measurement. Nevertheless, the more complex parameterization still outperformed the linear lapse rate model. As the parameterization was developed independently of a specific geographic region, we suggest it could be used to assimilate flat field snow depth or snowfall into coarse‐scale snow model frameworks. Mean snow depth is parameterized using elevation, sky view factors, and flat field snow depth as input Power law describes elevation trend of domain‐averaged snow depth better than a linear lapse rate Seven high‐resolution snow depth data sets were normalized, pooled, and detrended to derive the parameterizations},
-	Author = {Helbig, N. and {Van Herwijnen}, A.},
+	Author = {Helbig, N. and {van Herwijnen}, A.},
 	Date-Added = {2017-06-21 00:11:46 +0000},
 	Date-Modified = {2017-06-21 00:11:54 +0000},
+	Doi = {10.1002/2016WR019872},
 	Issn = {0043-1397},
 	Journal = {Water Resources Research},
 	Keywords = {Snow Depth; Complex Topography; Coarse‐Scale Models; Subgrid Parameterization; Sky View Factor; Spatial Variability},
@@ -128,7 +127,8 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Pages = {1444--1456},
 	Title = {{Subgrid parameterization for snow depth over mountainous terrain from flat field snow depth}},
 	Volume = {53},
-	Year = {2017}}
+	Year = {2017},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1002/2016WR019872}}
 
 @article{Kirchner2014,
 	Abstract = {We present results from snow-on and snow-off airborne-scanning LiDAR measurements over a 53 km2 area in the southern Sierra Nevada. We found that snow depth as a function of elevation increased approximately 15 cm per 100 m, until reaching an elevation of 3300 m, where depth sharply decreased at a rate of 48 cm per 100 m. Departures from the 15 cm per 100 m trend, based on 1 m elevation-band means of regression residuals, showed slightly less steep increases below 2050 m; steeper increases between 2050 and 3300 m; and less steep increases above 3300 m. Although the study area is partly forested, only measurements in open areas were used. Below approximately 2050 m elevation, ablation and rainfall are the primary causes of departure from the orographic trend. From 2050 to 3300 m, greater snow depths than predicted were found on the steeper terrain of the northwest and the less steep northeast-facing slopes, suggesting that ablation, aspect, slope and wind redistribution all play a role in local snow-depth variability. At elevations above 3300 m, orographic processes mask the effect of wind deposition when averaging over large areas. Also, terrain in this basin becomes less steep above 3300 m. This suggests a reduction in precipitation from upslope lifting and/or the exhaustion of precipitable water from ascending air masses. Our results suggest a cumulative precipitation lapse rate for the 2100--3300 m range of about 6 cm per 100 m elevation for the accumulation period of 3 December 2009 to 23 March 2010. This is a higher gradient than the widely used PRISM (Parameter-elevation Relationships on Independent Slopes Model) precipitation products, but similar to that from reconstruction of snowmelt amounts from satellite snow-cover data. Our findings provide a unique characterization of the consistent, steep average increase in precipitation with elevation in snow-dominated terrain, using high-resolution, highly accurate data and highlighs the importance of solar radiation, wind redistribution and mid-winter melt with regard to snow distribution.},
@@ -339,6 +339,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-1 = {http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2},
 	Bdsk-Url-2 = {http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2},
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2},
+	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2},
 	Date-Added = {2016-03-21 01:48:37 +0000},
 	Date-Modified = {2016-03-21 01:48:54 +0000},
 	Doi = {10.1175/1520-0493(1998)126<0668:MTDOAW>2.0.CO;2},
@@ -348,7 +349,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Moisture transport diagnosis of a wintertime precipitation event in the Mackenzie River Basin}},
 	Volume = {126},
 	Year = {1998},
-	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0493(1998)126%3C0668:MTDOAW%3E2.0.CO;2}}
+	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0493(1998)126%3C0668:MTDOAW%3E2.0.CO;2}}
 
 @article{Roberge2009,
 	Author = {Roberge, Alain and Gyakum, John R and Atallah, Eyad H},
@@ -470,6 +471,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-1 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M},
 	Bdsk-Url-2 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M},
 	Bdsk-Url-3 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M},
+	Bdsk-Url-4 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M},
 	Date-Added = {2016-03-20 18:25:55 +0000},
 	Date-Modified = {2016-03-20 18:26:12 +0000},
 	Doi = {10.1002/(SICI)1099-1085(199610)10:10<1283::AID-HYP460>3.0.CO;2-M},
@@ -480,7 +482,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Small-scale spatial structure of shallow snowcovers}},
 	Volume = {10},
 	Year = {1996},
-	Bdsk-Url-4 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10%3C1283::AID-HYP460%3E3.0.CO;2-M}}
+	Bdsk-Url-5 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10%3C1283::AID-HYP460%3E3.0.CO;2-M}}
 
 @article{Deems2006a,
 	Author = {Deems, Jeffrey S and Fassnacht, Steven R and Elder, Kelly J},
@@ -686,6 +688,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-1 = {http://www.issw2008.com/papers/P\_\_8175.pdf},
 	Bdsk-Url-2 = {http://www.issw2008.com/papers/P\_\_8175.pdf},
 	Bdsk-Url-3 = {http://www.issw2008.com/papers/P\_\_8175.pdf},
+	Bdsk-Url-4 = {http://www.issw2008.com/papers/P\_\_8175.pdf},
 	Booktitle = {{Proceedings ISSW}},
 	Date-Added = {2016-03-20 04:22:53 +0000},
 	Date-Modified = {2016-03-20 04:23:00 +0000},
@@ -693,7 +696,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Deriving spatial stability variations from penetration resistance measurements}},
 	Url = {http://www.issw2008.com/papers/P__8175.pdf},
 	Year = {2008},
-	Bdsk-Url-4 = {http://www.issw2008.com/papers/P__8175.pdf}}
+	Bdsk-Url-5 = {http://www.issw2008.com/papers/P__8175.pdf}}
 
 @article{Bellaire2011,
 	Author = {Bellaire, Sascha and Schweizer, J{\"u}rg},
@@ -886,6 +889,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-2 = {http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2},
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2},
+	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2},
 	Date-Added = {2015-12-21 20:36:02 +0000},
 	Date-Modified = {2015-12-21 20:37:54 +0000},
 	Doi = {10.1175/1520-0442(2000)013<1718:USOMTI>2.0.CO;2},
@@ -895,7 +899,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Using self-organizing maps to investigate extreme climate events: An application to wintertime precipitation in the Balkans}},
 	Volume = {13},
 	Year = {2000},
-	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0442(2000)013%3C1718:USOMTI%3E2.0.CO;2}}
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(2000)013%3C1718:USOMTI%3E2.0.CO;2}}
 
 @article{Hewitson2002,
 	Author = {Hewitson, BC and Crane, RG},
@@ -1218,6 +1222,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2},
 	Date-Added = {2015-12-13 17:37:49 +0000},
 	Date-Modified = {2015-12-13 17:38:18 +0000},
 	Doi = {10.1175/1520-0442(2004)017<1381:RSSCHI>2.0.CO;2},
@@ -1227,7 +1232,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Representing subgrid snow cover heterogeneities in regional and global models}},
 	Volume = {17},
 	Year = {2004},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(2004)017%3C1381:RSSCHI%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1520-0442(2004)017%3C1381:RSSCHI%3E2.0.CO;2}}
 
 @article{Anderton2004,
 	Author = {Anderton, SP and White, SM and Alvera, B},
@@ -1306,6 +1311,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2},
 	Doi = {10.1175/1520-0442(1999)012<3181:ITDVIC>2.0.CO;2},
 	Journal = {Journal of Climate},
 	Number = {11},
@@ -1315,7 +1321,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Interannual to Decadal Variability in Climate and the Glacier Mass Balance in Washington, Western Canada, and Alaska*}},
 	Volume = {12},
 	Year = {1999},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(1999)012%3C3181:ITDVIC%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1520-0442(1999)012%3C3181:ITDVIC%3E2.0.CO;2}}
 
 @article{Bloeschl1999,
 	Author = {Bl{\"o}schl, G{\"u}nter},
@@ -1436,7 +1442,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Owner = {glaciology1},
 	Publisher = {Wiley Online Library},
 	Timestamp = {2015.11.09},
-	Title = {Parameterization for wind-induced preferential deposition of snow},
+	Title = {{Parameterization for wind-induced preferential deposition of snow}},
 	Volume = {115},
 	Year = {2010},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1029/2009JF001261}}
@@ -1449,6 +1455,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2},
 	Doi = {10.1175/1520-0450(1994)033<0140:ASTMFM>2.0.CO;2},
 	Journal = {Journal of applied meteorology},
 	Number = {2},
@@ -1458,7 +1465,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{A statistical-topographic model for mapping climatological precipitation over mountainous terrain}},
 	Volume = {33},
 	Year = {1994},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0450(1994)033%3C0140:ASTMFM%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1520-0450(1994)033%3C0140:ASTMFM%3E2.0.CO;2}}
 
 @article{Danby2003,
 	Author = {Danby, Ryan K and Hik, David S and Slocombe, D Scott and Williams, Andrew},
@@ -1546,6 +1553,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-},
 	Doi = {10.1002/(SICI)1099-1085(199808/09)12:10/11<1793::AID-HYP695>3.0.CO;2-},
 	Journal = {Hydrological Processes},
 	Number = {1011},
@@ -1555,7 +1563,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Estimating the spatial distribution of snow water equivalence in a montane watershed}},
 	Volume = {12},
 	Year = {1998},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11%3C1793::AID-HYP695%3E3.0.CO;2-}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11%3C1793::AID-HYP695%3E3.0.CO;2-}}
 
 @article{Enke2005,
 	__Markedentry = {[glaciology1:6]},
@@ -1872,6 +1880,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2},
 	Doi = {10.1175/1520-0442(1998)011<0735:ACOSAM>2.0.CO;2},
 	Journal = {Journal of Climate},
 	Number = {4},
@@ -1881,7 +1890,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{A comparison of statistical and model-based downscaling techniques for estimating local climate variations}},
 	Volume = {11},
 	Year = {1998},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(1998)011%3C0735:ACOSAM%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1520-0442(1998)011%3C0735:ACOSAM%3E2.0.CO;2}}
 
 @article{Kotlarski2010,
 	Author = {Kotlarski, Sven and Paul, Frank and Jacob, Daniela},
@@ -2185,6 +2194,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2},
 	Doi = {10.1175/1525-7541(2000)001<0491:AHOPSM>2.0.CO;2},
 	Journal = {Journal of Hydrometeorology},
 	Number = {6},
@@ -2194,7 +2204,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{A hybrid orographic plus statistical model for downscaling daily precipitation in northern California}},
 	Volume = {1},
 	Year = {2000},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1525-7541(2000)001%3C0491:AHOPSM%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1525-7541(2000)001%3C0491:AHOPSM%3E2.0.CO;2}}
 
 @article{Pelt2014,
 	Author = {van Pelt, J and Ward, J and Pettersson, Rickard and Pohjola, Veijo A and Marchenko, Sergey and Claremar, Bj{\"o}rn and Oerlemans, Johannes},
@@ -2351,6 +2361,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2},
 	Doi = {10.1175/1520-0469(2004)061<1377:ALTOOP>2.0.CO;2},
 	Journal = {Journal of the Atmospheric Sciences},
 	Number = {12},
@@ -2360,7 +2371,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{A linear theory of orographic precipitation}},
 	Volume = {61},
 	Year = {2004},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0469(2004)061%3C1377:ALTOOP%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1520-0469(2004)061%3C1377:ALTOOP%3E2.0.CO;2}}
 
 @article{Sold2014,
 	Author = {Sold, L and Huss, M and Eichler, A and Schwikowski, M and Hoelzle, M},
@@ -2415,6 +2426,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2},
 	Date-Modified = {2015-12-19 04:17:44 +0000},
 	Doi = {10.1175/1520-0442(2003)016<0799:SPDOTN>2.0.CO;2},
 	Journal = {Journal of Climate},
@@ -2425,7 +2437,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Statistical precipitation downscaling over the {Northwestern United States} using numerically simulated precipitation as a predictor}},
 	Volume = {16},
 	Year = {2003},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(2003)016%3C0799:SPDOTN%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1520-0442(2003)016%3C0799:SPDOTN%3E2.0.CO;2}}
 
 @article{Wilby2000,
 	Author = {Wilby, Robert L and Wigley, TML},
@@ -2434,6 +2446,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1},
 	Doi = {10.1002/(SICI)1097-0088(200005)20:6<641::AID-JOC501>3.0.CO;2-1},
 	Journal = {International Journal of Climatology},
 	Number = {6},
@@ -2443,7 +2456,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Precipitation predictors for downscaling: observed and general circulation model relationships}},
 	Volume = {20},
 	Year = {2000},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6%3C641::AID-JOC501%3E3.0.CO;2-1}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6%3C641::AID-JOC501%3E3.0.CO;2-1}}
 
 @article{Winstral2002,
 	Author = {Winstral, Adam and Elder, Kelly and Davis, Robert E},
@@ -2452,6 +2465,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202},
 	Journal = {Journal of Hydrometeorology},
 	Number = {5},
 	Owner = {glaciology1},
@@ -2461,7 +2475,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Url = {http://dx.doi.org/10.1175/1525-7541(2002)003<0524:SSMOWR>2.0.CO; 2},
 	Volume = {3},
 	Year = {2002},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1525-7541(2002)003%3C0524:SSMOWR%3E2.0.CO;%202}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1525-7541(2002)003%3C0524:SSMOWR%3E2.0.CO;%202}}
 
 @article{Winstral2002a,
 	Author = {Winstral, Adam and Marks, Danny},
@@ -2509,6 +2523,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2},
 	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2},
 	Date-Modified = {2015-12-19 04:18:31 +0000},
 	Doi = {10.1175/1520-0442(1999)012<2474:TAMAAS>2.0.CO;2},
 	Journal = {Journal of Climate},
@@ -2519,7 +2534,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{The analog method as a simple statistical downscaling technique: comparison with more complicated methods}},
 	Volume = {12},
 	Year = {1999},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0442(1999)012%3C2474:TAMAAS%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1520-0442(1999)012%3C2474:TAMAAS%3E2.0.CO;2}}
 
 @article{Nievinski2014Part1,
 	Author = {Nievinski, Felipe G and Larson, Kristine M},
@@ -2596,6 +2611,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-1 = {http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2},
 	Bdsk-Url-2 = {http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2},
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2},
+	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2},
 	Doi = {10.1175/1520-0442(1994)007<1305:SRBTAP>2.0.CO;2},
 	Journal = {Journal of climate},
 	Number = {9},
@@ -2603,7 +2619,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Statistical relationships between topography and precipitation patterns}},
 	Volume = {7},
 	Year = {1994},
-	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0442(1994)007%3C1305:SRBTAP%3E2.0.CO;2}}
+	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0442(1994)007%3C1305:SRBTAP%3E2.0.CO;2}}
 
 @article{Nickling1985,
 	Author = {Nickling, WG and Brazel, AJ},
@@ -2816,6 +2832,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-1 = {http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf},
 	Bdsk-Url-2 = {http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf},
 	Bdsk-Url-3 = {http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf},
+	Bdsk-Url-4 = {http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf},
 	Journal = {Streamline: Watershed Management Bulletin},
 	Month = {Spring},
 	Number = {2},
@@ -2823,7 +2840,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Url = {http://www.forrex.org/sites/default/files/publications/articles/Streamline_Vol12_No2_art2.pdf},
 	Volume = {12},
 	Year = {2009},
-	Bdsk-Url-4 = {http://www.forrex.org/sites/default/files/publications/articles/Streamline_Vol12_No2_art2.pdf}}
+	Bdsk-Url-5 = {http://www.forrex.org/sites/default/files/publications/articles/Streamline_Vol12_No2_art2.pdf}}
 
 @article{Burnham2004,
 	Abstract = {The model selection literature has been generally poor at reflecting the deep foundations of the Akaike information criterion (AIC) and at making appropriate comparisons to the Bayesian information criterion (BIC). There is a clear philosophy, a sound criterion based in information theory, and a rigorous statistical foundation for AIC. AIC can be justified as Bayesian using a ``savvy'' prior on models that is a function of sample size and the number of model parameters. Furthermore, BIC can be derived as a non-Bayesian result. Therefore, arguments about using AIC versus BIC for model selection cannot be from a Bayes versus frequentist perspective. The philosophical context of what is assumed about reality, approximating models, and the intent of model-based inference should determine whether AIC or BIC is used. Various facets of such multimodel inference are presented here, particularly methods of model averaging.},
@@ -2845,6 +2862,8 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Bdsk-Url-2 = {http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2},
 	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO},
 	Bdsk-Url-4 = {http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2},
+	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO},
+	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2},
 	Doi = {10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2},
 	Eprint = {http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2},
 	Journal = {Journal of Applied Meteorology},
@@ -2855,8 +2874,8 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Url = {http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO},
 	Volume = {17},
 	Year = {1978},
-	Bdsk-Url-5 = {http://dx.doi.org/10.1175/1520-0450(1978)017%3C1537:AOEITD%3E2.0.CO},
-	Bdsk-Url-6 = {http://dx.doi.org/10.1175/1520-0450(1978)017%3C1537:AOEITD%3E2.0.CO;2}}
+	Bdsk-Url-7 = {http://dx.doi.org/10.1175/1520-0450(1978)017%3C1537:AOEITD%3E2.0.CO},
+	Bdsk-Url-8 = {http://dx.doi.org/10.1175/1520-0450(1978)017%3C1537:AOEITD%3E2.0.CO;2}}
 
 @article{Berthier2007,
 	Author = {Berthier, Etienne and Arnaud, Yves and Kumar, Rajesh and Ahmad, Sarfaraz and Wagnon, Patrick and Chevallier, Pierre},
@@ -2914,7 +2933,8 @@ The application of a tree classification to GAM residuals yielded the highest ac
 
 @article{Reveillet2016,
 	Abstractnote = {ABSTRACTBased on an extensive dataset of surface mass balances (SMB) from four glaciers in the French Alps for the period 1995--2012 and in the framework of enhanced temperature-index models, we investigate the sensitivity of seasonal glacier SMB to temperature, solar radiation, precipitation and topographical variables. Our results reveal strong correlations between winter SMB and precipitation, although the precipitation gradient cannot explain the high-accumulation rates. Based on the available point measurements, we found no relevant relationship between winter SMB and topographical variables. Temperature was found to be the main driver of ice/snow ablation while solar radiation was found to strongly influence the spatial distribution of summer SMB. We compared the ability of several enhanced temperature-index models to accurately simulate point SMB and glacier-wide MB. Our analyses revealed that the uncertainties in the simulated annual SMB due to winter SMB uncertainties are larger than differences between models and prevented us from concluding, which model is the most suitable. In contrast with results of previous studies, including solar radiation in melt models did not improve the performances when modelling glacier-wide MB. We conclude that a classical degree-day model is sufficient to simulate the long-term glacier-wide MB if the underlying processes are not required to be resolved.},
-	Author = {R{\'E}VEILLET, MARION and VINCENT, CHRISTIAN and SIX, DELPHINE and RABATEL, ANTOINE},
+	Author = {R\'{e}veillet, Marion and Vincent, Christian and Six, Delphine and Rabatel, Antoine},
+	Date-Modified = {2017-06-28 17:50:07 +0000},
 	Doi = {10.1017/jog.2016.110},
 	Journal = {Journal of Glaciology},
 	Month = {Oct},
@@ -3095,6 +3115,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 @article{Kucerova2014,
 	Author = {Kucerova, Dana and Jenicek, Michal},
 	Bdsk-Url-1 = {http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3\_s199-217\_kucerova\_jenicek.pdf},
+	Bdsk-Url-2 = {http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3\_s199-217\_kucerova\_jenicek.pdf},
 	Journal = {Geografie},
 	Number = {3},
 	Pages = {199--217},
@@ -3103,7 +3124,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Url = {http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3_s199-217_kucerova_jenicek.pdf},
 	Volume = {119},
 	Year = {2014},
-	Bdsk-Url-2 = {http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3_s199-217_kucerova_jenicek.pdf}}
+	Bdsk-Url-3 = {http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3_s199-217_kucerova_jenicek.pdf}}
 
 @article{Carroll1995,
 	Author = {Carroll, Steven S and Day, Gerald N and Cressie, Noel and Carroll, Thomas R},
@@ -3164,11 +3185,12 @@ The application of a tree classification to GAM residuals yielded the highest ac
 @mastersthesis{Roth2016,
 	Author = {Roth, Aurora},
 	Bdsk-Url-1 = {https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth\_A\_2016.pdf?sequence=1},
+	Bdsk-Url-2 = {https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth\_A\_2016.pdf?sequence=1},
 	School = {UNIVERSITY OF ALASKA FAIRBANKS},
 	Title = {{Applying a model of orographic precipitation to improve mass balance modeling of the {Juneau Icefield}}},
 	Url = {https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth_A_2016.pdf?sequence=1},
 	Year = {2016},
-	Bdsk-Url-2 = {https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth_A_2016.pdf?sequence=1}}
+	Bdsk-Url-3 = {https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth_A_2016.pdf?sequence=1}}
 
 @article{Bieniek2016,
 	Author = {Bieniek, Peter A and Bhatt, Uma S and Walsh, John E and Rupp, T Scott and Zhang, Jing and Krieger, Jeremy R and Lader, Rick},
@@ -3184,6 +3206,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 @article{Whiteman1993,
 	Author = {Whiteman, C. David and Doran, J. Christopher},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1175/1520-0450(1993)032\%3C1669:TRBOSS\%3E2.0.CO;\%202},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1175/1520-0450(1993)032\%3C1669:TRBOSS\%3E2.0.CO;\%202},
 	Eprint = {http://dx.doi.org/10.1175/1520-0450(1993)032<1669:TRBOSS>2.0.CO;2},
 	Journal = {Journal of Applied Meteorology},
 	Number = {11},
@@ -3192,7 +3215,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Url = {http://dx.doi.org/10.1175/1520-0450(1993)032<1669:TRBOSS>2.0.CO; 2},
 	Volume = {32},
 	Year = {1993},
-	Bdsk-Url-2 = {http://dx.doi.org/10.1175/1520-0450(1993)032%3C1669:TRBOSS%3E2.0.CO;%202}}
+	Bdsk-Url-3 = {http://dx.doi.org/10.1175/1520-0450(1993)032%3C1669:TRBOSS%3E2.0.CO;%202}}
 
 @article{Cullen2017,
 	Author = {Cullen, Nicolas J. and Anderson, Brian and Sirguey, Pascal and Stumm, Dorothea and Mackintosh, Andrew and Conway, Jonathan P. and Horgan, Huw J. and Dadic, Ruszica and Fitzsimons, Sean J. and Lorrey, Andrew},
@@ -3227,10 +3250,11 @@ The application of a tree classification to GAM residuals yielded the highest ac
 @article{Clyde1932,
 	Author = {Clyde, George D},
 	Bdsk-Url-1 = {http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089\&context=uaes\_circulars},
+	Bdsk-Url-2 = {http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089\&context=uaes\_circulars},
 	Title = {{Circular No. 99-Utah Snow Sampler and Scales for Measuring Water Content of Snow}},
 	Url = {http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars},
 	Year = {1932},
-	Bdsk-Url-2 = {http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars}}
+	Bdsk-Url-3 = {http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars}}
 
 @article{Crompton2016,
 	Author = {Crompton, Jeff W and Flowers, Gwenn E},
@@ -3260,6 +3284,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Address = {Dordrecht},
 	Author = {Williams, C. K. I.},
 	Bdsk-Url-1 = {http://dx.doi.org/10.1007/978-94-011-5014-9\_23},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1007/978-94-011-5014-9\_23},
 	Booktitle = {{Learning in Graphical Models}},
 	Doi = {10.1007/978-94-011-5014-9_23},
 	Editor = {Jordan, Michael I.},
@@ -3269,7 +3294,7 @@ The application of a tree classification to GAM residuals yielded the highest ac
 	Title = {{Prediction with Gaussian Processes: From Linear Regression to Linear Prediction and Beyond}},
 	Url = {http://dx.doi.org/10.1007/978-94-011-5014-9_23},
 	Year = {1998},
-	Bdsk-Url-2 = {http://dx.doi.org/10.1007/978-94-011-5014-9_23}}
+	Bdsk-Url-3 = {http://dx.doi.org/10.1007/978-94-011-5014-9_23}}
 
 @article{Madigan1994,
 	Abstract = {We consider the problem of model selection and accounting for model uncertainty in high-dimensional contingency tables, motivated by expert system applications. The approach most used currently is a stepwise strategy guided by tests based on approximate asymptotic P values leading to the selection of a single model; inference is then conditional on the selected model. The sampling properties of such a strategy are complex, and the failure to take account of model uncertainty leads to underestimation of uncertainty about quantities of interest. In principle, a panacea is provided by the standard Bayesian formalism that averages the posterior distributions of the quantity of interest under each of the models, weighted by their posterior model probabilities. Furthermore, this approach is optimal in the sense of maximizing predictive ability. But this has not been used in practice, because computing the posterior model probabilities is hard and the number of models is very large (often greater than 10<sup>11</sup>). We argue that the standard Bayesian formalism is unsatisfactory and propose an alternative Bayesian approach that, we contend, takes full account of the true model uncertainty by averaging over a much smaller set of models. An efficient search algorithm is developed for finding these models. We consider two classes of graphical models that arise in expert systems: the recursive causal models and the decomposable log-linear models. For each of these, we develop efficient ways of computing exact Bayes factors and hence posterior model probabilities. For the decomposable log-linear models, this is based on properties of chordal graphs and hyper-Markov prior distributions and the resultant calculations can be carried out locally. The end product is an overall strategy for model selection and accounting for model uncertainty that searches efficiently through the very large classes of models involved. Three examples are given. The first two concern data sets that have been analyzed by several authors in the context of model selection. The third addresses a urological diagnostic problem. In each example, our model averaging approach provides better out-of-sample predictive performance than any single model that might reasonably have been selected.},
