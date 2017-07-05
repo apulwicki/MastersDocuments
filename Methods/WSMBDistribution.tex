@@ -39,19 +39,20 @@
 
 \subsection{Background}
 
-The effect of three sources of variability on the estimation of winter surface mass balance (WSMB) are investigated in this section. Variability in (1) observed values of SWE in a grid cell, (2) linear regression coefficients and (3) choice of density interpolation method, influences the final estimate of WSMB. To quantify the effects of these two sources of variability, a Monte Carlo sampling of the distribution of observed SWE and regression coefficients is used to obtain a distribution of WSMB for eight chosen density interpolation methods.  
+We identify three major sources of variability within the process of translating snow measurements to winter surface mass balance (WSMB). These variability sources encompass error and uncertainty within each processing step. We refer to the three variability sources as (1) density variability, (2) SWE variability and (3) interpolation variability. To quantify the effects of these sources of variability, a Monte Carlo sampling of the distribution of SWE variability and interpolation variability is used to obtain a distribution of WSMB for eight chosen density interpolation methods.  
 
 \subsection{Methods}
 
-Distributions of WSMB are calculated by first determining a normal distribution of SWE values in a grid cell and/or of regression coefficients. The distributions are sampled individually and a WSMB is calculated. Then, both distributions are sampled to get a combined WSMB distribution. A WSMB distribution is calculated for each density option (Section \ref{sec:density}). The data combined to estimate the WSMB distribution for variability due to observed SWE, regression coefficient estimation and density interpolation method. 
+To quantify the effects of the three variability sources on the final WSMB estimate, we conduct a Monte Carlo experiment, which uses repeated random sampling to calculate a numerical solution \citep{Metropolis1949}. In our study, we randomly sample the distributions for SWE variability and interpolation variability and carry these values through the data processing steps to obtain a value of WSMB. First, random values from the distribution of SWE values for each grid cell are independently chosen. Then, LR or SK is used to interpolate these SWE values. With the LR, a set of $\beta_i$ values and their distributions are calculated and the $\beta_i$ distributions are randomly sampled. These new $\beta_i$ values are used to calculate WSMB. With SK, a distribution of WSMB is calculated from the 95\% confidence interval kriging surfaces. Density variability is accounted for by repeating the process for each density interpolation method. This random sampling process is done 1000 times, which results in a distribution of possible WSMB values based on variability within the data processing steps.
 
-\subsubsection{Observed SWE in grid cells}
+
+\subsubsection{SWE variability}
 
 Variability in observed SWE is included by generating a normal distribution with $\mu=0$ and a standard deviation equal to the glacier-wide mean standard deviation of the observed zigzag SWE values ($\sigma_{\mathrm{G4}} = 0.027 $ m w.e., $\sigma_{\mathrm{G2}} = 0.035$ m w.e., $\sigma_{\mathrm{G13}} = 0.040 $ m w.e.). A random set of values is drawn from this distribution and added to the SWE values used to calculate the regression. SWE values that end up being less than zero are assigned a SWE of zero.
 
-\subsubsection{Regression coefficients}
+\subsubsection{Interpolation variability}
 
-Variability from regression coefficient estimation was found by first calculating linear regression coefficients ($\boldsymbol{\beta}$) using cross-correlation and BIC weighting of multivariate linear regression models (Section \ref{sec:MLR}). A set of multivariate normal random regression coefficient distributions are then found using the coefficient covariance and coefficient values from the linear regression using the built-in function \texttt{mvnrnd}. The covariance of regression coefficients is given by \citep{Bagos2015}:
+For the linear regression, variability from regression coefficient estimation was found by first calculating linear regression coefficients ($\boldsymbol{\beta}$) using cross-correlation and BIC weighting of multivariate linear regression models (Section \ref{sec:MLR}). A set of multivariate normal random regression coefficient distributions are then found using the coefficient covariance and coefficient values from the linear regression using the built-in function \texttt{mvnrnd}. The covariance of regression coefficients is given by \citep{Bagos2015}:
 \begin{equation}
 \mathrm{cov}\left( \boldsymbol{\beta} \right) = \sigma^2 \left( \boldsymbol{X}'  \boldsymbol{X} \right)^{-1}
 \end{equation}
@@ -61,17 +62,49 @@ where $\boldsymbol{X}$ is the $n \times k$ matrix of predictor variables. The va
 \end{equation}
 The distributions of each $\beta$ are sampled 1000 times and the WSMB is calculated for each set of coefficients.
 
+Simple kriging (SK) variability is calculated using the DiceKriging package. The upper and lower 95\% confidence interval (CI) for SWE at each grid cell are returned and the mean WSMB for the upper and lower limits is then calculated. When there is no SWE variability then the SK variability is assumed to be normally distributed between the upper and lower CI. When SWE variability is introduced, upper and lower CI values are calculated for each SWE variability random sampling. The mean upper and lower CIs are then used to find a normal distribution for SK variability combined with SWE variability. 
+
 \subsection{Results}
 
-density effect-> same for G4 and 13 (kind of bimodal for G13), spread out for G2
-swe vs beta -> distribution from swe is narrower than distribution from beta -> regression introduces a 
-accum grad -> exists for some density values not for other
+\subsubsection{WSMB uncertainty}
+
+Specific WSMB is affected by variability introduced when interpolating density (density variability), when calculating grid cell SWE values (SWE variability), and when interpolating observations (interpolation variability). We find that when using a LR, interpolation variability has a larger effect on WSMB uncertainty than density variability or SWE variability. The probability density function (PDF) that arises from SWE variability is much narrower than the PDF that arises from interpolation variability (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). WSMB uncertainty found with SK interpolation is dominated by interpolation variability (Table \ref{tab:WSMBdistribution_sigma}).  
+
+ \begin{table}[]
+\centering
+\caption{Standard deviation ([m w.e.]) of specific winter surface mass balance estimated using linear regression (LR) and simple kriging (SK) when variability is introduced. Density variability ($\sigma_{\rho}$) is the standard deviation of WSMB estimated using SWE data with different density interpolation methods. SWE variability ($\sigma_{\mathrm{SWE}}$) is approximated by a normal distribution about the local SWE value with standard deviation equal to the glacier-wide mean zigzag standard deviation. LR interpolation variability ($\sigma_{\beta}$) is accounted for by varying the regression coefficients with a normal distribution with standard deviation calculated from regression covariance. SK interpolation variability ($\sigma_{\mathrm{KRIG}}$) is taken from the range of distributed SWE estimates calculated by the DiceKriging package. Result for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13) are shown.}
+\label{tab:WSMBdistribution_sigma}
+\begin{tabular}{ccccccc}
+\textbf{} & \multicolumn{3}{c}{\textbf{Linear Regression}} & \multicolumn{3}{c}{\textbf{Simple Kriging}} \\
+ & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\beta}$ & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\mathrm{KRIG}}$ \\
+\midrule
+\textbf{G4} & 0.0190 & 0.0086 & 0.0213 & 0.0215 & 0.0085 & 0.1405 \\
+\textbf{G2} & 0.0337 & 0.0180 & 0.0309 & 0.0203 & 0.0253 & 0.1378 \\
+\textbf{G13} & 0.0168 & 0.0112 & 0.0280 & 0.0127 & 0.0115 & 0.0965
+\end{tabular}
+\end{table}
+
+\begin{figure*}
+	\centering
+\hspace*{-1.2cm}
+	\includegraphics[width =1.2\textwidth]{WSMBDist_LR.pdf}\\
+	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values that arise from SWE variability ($\sigma_{ZZ}$) and interpolation variability ($\sigma_{\beta}$ or $\sigma_{\mathrm{KRIG}}$). Results from a linear regression interpolation (top panels) and simple kriging (bottom panels) are shown. Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
+	\label{fig:WSMBDist_LR}
+\end{figure*}
+
+The total WSMB uncertainty from SK interpolation is 3 to 5 times greater than uncertainty from LR interpolation. The PDFs overlap between the two interpolation methods although the PDF peaks are lower when SK is used for Glaciers 2 and 13 and higher for Glacier 4. SK results in WSMB distributions that overlap between glaciers and there is also a small probability of estimating a WSMB value of 0 m w.e. for Glaciers 2 and 13. LR results in overlapping WSMB distributions for Glaciers 2 and 4, with the PDF peak of Glacier 4 being slightly higher than that of Glacier 2. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.5\textwidth]{WSMBDist_full.pdf}\\
+	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (top) or simple kriging (bottom). Each PDF includes density variability, SWE variability and interpolation variability for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
+	\label{fig:WSMBDist_LRvsSK}
+\end{figure}
 
 
+\subsubsection{Spatial patterns of winter balance uncertainty}
 
-The distribution of winter surface mass balance (WSMB) is similar when different density interpolation methods are used to obtain SWE. When variation due to regression coefficients is considered (Figure \ref{fig:WSMB_allDensity}) the distribution of WSMB is approximately normal. On Glacier 4, the mean WSMB is similar for all density options except F1, which produces a lower estimate. Glaciers 2 and 13 have similar mean WSMB values although the Federal Sampler density interpolations (F) tend to produce lower estimates. When variability due to regression coefficient estimation and SWE measurement is considered, the distribution of WSMB is skewed for Glaciers 2 and 13 (Figure \ref{fig:WSMB_allDensity}). There is a higher prevalence of low WSMB because larger portions of the glaciers are estimated to have minimal or no snow accumulation. Density interpolation option F2 on Glacier 13 results in an anomalously narrow and low WSMB distribution. WSMB distributions for Glacier 4 with both sources of variability are approximately normal and have similar mean values. 
-
-The WSMB distribution is generally broader and more skewed when SWE measurement variability is included (Figures \ref{fig:WSMB_oneDensity} and \ref{fig:WSMB_compareBetaAndZZBeta}). The distributions are more normal when only regression coefficient variation is included because the regression coefficients are, by definition, normally distributed. The SWE variability is also normally distributed about the local SWE mean but negative values of SWE are not permitted, which skews the overall distribution of WSMB. Since the observed SWE values were generally lower on Glaciers 2 and 13, more of the values are set to zero when variability is included.  High values of WSMB are also more common when SWE variability is introduced on Glaciers 2 and 13. The mean standard deviation of SWE values from zigzags on Glaciers 2 and 13 is higher than on Glacier 4, which allows comparatively higher and lower SWE values to be included in the regression. 
+The spatial patterns of WSMB uncertainty are affected by density, SWE, and interpolation variability (Figure \ref{fig:WSMBspatialvar}).  For both LR and SK, the greatest variability in estimated SWE occurs in the accumulation area. When LR is used, estimated SWE is highly sensitive to the elevation regression parameter. In the case of SK, variability is greatest in areas far from observed SWE, which consist of the upper accumulation area on Glaciers 2 and 13. Variability is greatest on Glacier 4 when LR interpolation is used at the upper edges of the accumulation area, which correspond to the locations with extreme values of the wind redistribution parameter. When SK is used for interpolation on Glacier 4, variability is greatest at the measured grid cells, which highlights the short correlation length and the large effect of density interpolation on the SK accumulation estimate.
 
 \begin{figure}[H]
 	\centering
@@ -82,22 +115,6 @@ The WSMB distribution is generally broader and more skewed when SWE measurement 
 	\label{fig:WSMB_allDensity}
 \end{figure}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width =0.5\textwidth]{WSMB_zz.png}\\
-	\includegraphics[width =0.5\textwidth]{WSMB_beta.png}\\
-	\includegraphics[width =0.5\textwidth]{WSMB_betaNzz.png}\\
-	\caption{Distribution of winter surface mass balance (WSMB). (a)  WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (b) WSMB values obtained as in (a) but with the addition of a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
-	\label{fig:WSMB_oneDensity}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_compareBetaAndZZBeta.png}}\\
-	\caption{Comparison of winter surface mass balance distribution when variation due to SWE measurement ( $\sigma_{ZZ}$) and variation due to regression coefficient estimation is included ($\beta$) as well as when variation from both regression coefficient estimation and observed SWE variation within a grid cell is included ($\beta$ and $\sigma_{ZZ}$). }
-	\label{fig:WSMB_compareBetaAndZZBeta}
-\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -118,12 +135,22 @@ The WSMB distribution is generally broader and more skewed when SWE measurement 
 	\label{fig:WSMB_DistributionbetaNzz}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure*}
 	\centering
-	\includegraphics[width =\textwidth]{WSMB_dNbetaNzz.png}
-	\caption{Total winter surface mass balance (WSMB) distribution. Variability from density interpolation options, regression coefficient estimation and SWE measurement is included. }
-	\label{fig:WSMB_dNbetaNzz}
-\end{figure}
+	\includegraphics[width =\textwidth]{SpatialVar_LR.pdf}\\
+	\includegraphics[width =\textwidth]{SpatialVar_SK.pdf}\\
+	\caption{Variability of SWE estimated using linear regression (top) and simple kriging (bottom).	Variability is a relative quantity measured by taking the sum of differences between one hundred estimates of distributed WSMB that include SWE variability and, in the case of linear regression, regression variability. The sum is then normalized for each glacier. Glacier flow directions are indicated by arrows.}
+	\label{fig:WSMBspatialvar}
+\end{figure*}
+
+
+\subsection{Discussion}
+
+Interpolation variability is the greatest contributor to WSMB uncertainty for both SK and LR. This uncertainty arises from extrapolation beyond the sampled region, which results in highly variability in estimated SWE in the accumulation area. To reduce WSMB uncertainty, emphasis must therefore be placed on sampling in the accumulation area and generally obtaining measurements throughout the study basin. 
+
+SWE variability is the smallest contributor to WSMB uncertainty. Therefore, obtaining the most accurate value of SWE to represent a grid cell, even a relatively large grid cell, does not need to be a priority when designing a snow survey. Extensively measuring SWE variability in a few locations using a zigzag design appears to be a good constraint on SWE variability. Many parts of a glacier though are characterized by a relatively smooth surface, with roughness lengths on the order of centimeters \citep{Hock2005} resulting in low snow depth variability. However, we assume that the sampled grid cells are representative of the variability across the entire glacier, which is likely not true for areas with debris cover, crevasses and steep slopes. Snow depth variability can be large and thus exert a dominant control on snow distribution in these area \citep{McGrath2015}. Effects of SWE variability in either smaller or larger grid cells could also be different so further investigation is needed.
+
+Using a Monte Carlo experiment to propagate variability allowed us to quantify effects of variability on estimates of WSMB. However, our analysis did not include variability arising from a number of data sources. Error associated with SP and FS density measurement is not included but we believe that this error is likely to be encompassed in the wide range of density interpolation methods. DEM vertical and horizontal error are not considered in the Monte Carlo experiment mainly because there is no DEM validation data at our study location. Error associated with estimating measurement locations, which is a combination of hand-held GPS error, distance of observers from GPS and travel along a straight line, is also not considered. However, we feel that this source of error is encompassed in the variability estimated from zigzag measurements. 
 
 %%%%%%%%%%%%%%%%%%%%%
 \bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
