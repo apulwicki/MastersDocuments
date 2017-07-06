@@ -73,23 +73,37 @@
 \BOOKMARK [2][-]{subsection.4.3.2}{Methods}{section.4.3}% 73
 \BOOKMARK [2][-]{subsection.4.3.3}{Results}{section.4.3}% 74
 \BOOKMARK [1][-]{section.4.4}{Comparison of interpolation methods}{chapter.4}% 75
-\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}% 76
-\BOOKMARK [0][-]{section*.166}{Bibliography}{}% 77
-\BOOKMARK [0][-]{Appendix.a.A}{Appendix GPS Waypoint Creation and Upload to GPS Device}{}% 78
-\BOOKMARK [0][-]{Appendix.a.B}{Appendix Field Maps}{}% 79
-\BOOKMARK [0][-]{Appendix.a.C}{Appendix Data Processing Scripts}{}% 80
-\BOOKMARK [1][-]{section.a.C.1}{Snow depth measured with graduated avalanche probe}{Appendix.a.C}% 81
-\BOOKMARK [2][-]{subsection.a.C.1.1}{Linear and curvilinear transect surveys}{section.a.C.1}% 82
-\BOOKMARK [2][-]{subsection.a.C.1.2}{Zigzag surveys}{section.a.C.1}% 83
-\BOOKMARK [1][-]{section.a.C.2}{Snow density}{Appendix.a.C}% 84
-\BOOKMARK [1][-]{section.a.C.3}{Snow water equivalent \(SWE\)}{Appendix.a.C}% 85
-\BOOKMARK [0][-]{Appendix.a.D}{Appendix Variability of data at various scales}{}% 86
-\BOOKMARK [1][-]{section.a.D.1}{Point Scale}{Appendix.a.D}% 87
-\BOOKMARK [2][-]{subsection.a.D.1.1}{Data normality}{section.a.D.1}% 88
-\BOOKMARK [2][-]{subsection.a.D.1.2}{Observer differences}{section.a.D.1}% 89
-\BOOKMARK [2][-]{subsection.a.D.1.3}{Standard deviation of snow depth along linear and curvilinear transects}{section.a.D.1}% 90
-\BOOKMARK [2][-]{subsection.a.D.1.4}{Standard deviation of SWE in DEM cell}{section.a.D.1}% 91
-\BOOKMARK [0][-]{Appendix.a.E}{Appendix Topographic parameters from QGIS to Matlab}{}% 92
-\BOOKMARK [0][-]{Appendix.a.F}{Appendix MLR software}{}% 93
-\BOOKMARK [0][-]{Appendix.a.G}{Appendix BMA software}{}% 94
-\BOOKMARK [0][-]{Appendix.a.H}{Appendix Kriging software}{}% 95
+\BOOKMARK [1][-]{section.4.5}{Transferability of linear regression coefficients}{chapter.4}% 76
+\BOOKMARK [2][-]{subsection.4.5.1}{Results}{section.4.5}% 77
+\BOOKMARK [1][-]{section.4.6}{Summary}{chapter.4}% 78
+\BOOKMARK [0][-]{chapter.5}{Winter Surface Mass Balance Distribution}{}% 79
+\BOOKMARK [1][-]{section.5.1}{Background}{chapter.5}% 80
+\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 81
+\BOOKMARK [2][-]{subsection.5.2.1}{SWE variability}{section.5.2}% 82
+\BOOKMARK [2][-]{subsection.5.2.2}{Interpolation variability}{section.5.2}% 83
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 84
+\BOOKMARK [2][-]{subsection.5.3.1}{WSMB uncertainty}{section.5.3}% 85
+\BOOKMARK [2][-]{subsection.5.3.2}{Spatial patterns of winter balance uncertainty}{section.5.3}% 86
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 87
+\BOOKMARK [0][-]{section*.174}{Bibliography}{}% 88
+\BOOKMARK [0][-]{Appendix.a.A}{Appendix GPS Waypoint Creation and Upload to GPS Device}{}% 89
+\BOOKMARK [0][-]{Appendix.a.B}{Appendix Field Maps}{}% 90
+\BOOKMARK [0][-]{Appendix.a.C}{Appendix Data Processing Scripts}{}% 91
+\BOOKMARK [1][-]{section.a.C.1}{Snow depth measured with graduated avalanche probe}{Appendix.a.C}% 92
+\BOOKMARK [2][-]{subsection.a.C.1.1}{Linear and curvilinear transect surveys}{section.a.C.1}% 93
+\BOOKMARK [2][-]{subsection.a.C.1.2}{Zigzag surveys}{section.a.C.1}% 94
+\BOOKMARK [1][-]{section.a.C.2}{Snow density}{Appendix.a.C}% 95
+\BOOKMARK [1][-]{section.a.C.3}{Snow water equivalent \(SWE\)}{Appendix.a.C}% 96
+\BOOKMARK [0][-]{Appendix.a.D}{Appendix Variability of data at various scales}{}% 97
+\BOOKMARK [1][-]{section.a.D.1}{Point Scale}{Appendix.a.D}% 98
+\BOOKMARK [2][-]{subsection.a.D.1.1}{Data normality}{section.a.D.1}% 99
+\BOOKMARK [2][-]{subsection.a.D.1.2}{Observer differences}{section.a.D.1}% 100
+\BOOKMARK [2][-]{subsection.a.D.1.3}{Standard deviation of snow depth along linear and curvilinear transects}{section.a.D.1}% 101
+\BOOKMARK [2][-]{subsection.a.D.1.4}{Standard deviation of SWE in DEM cell}{section.a.D.1}% 102
+\BOOKMARK [0][-]{Appendix.a.E}{Appendix Topographic parameters from QGIS to Matlab}{}% 103
+\BOOKMARK [0][-]{Appendix.a.F}{Appendix MLR software}{}% 104
+\BOOKMARK [0][-]{Appendix.a.G}{Appendix BMA software}{}% 105
+\BOOKMARK [0][-]{Appendix.a.H}{Appendix Kriging software}{}% 106
+\BOOKMARK [0][-]{Appendix.a.I}{Appendix Winter surface mass balance distribution}{}% 107
+\BOOKMARK [1][-]{section.a.I.1}{Linear regression WSMB distribution}{Appendix.a.I}% 108
+\BOOKMARK [1][-]{section.a.I.2}{Simple kriging WSMB distribution}{Appendix.a.I}% 109

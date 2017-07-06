@@ -132,12 +132,14 @@ Using a Monte Carlo experiment to propagate variability allowed us to quantify e
 
 \section{APPENDIX}
 
+\subsection{Linear regression WSMB distribution}
+
 \begin{figure}[H]
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_zz.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_beta.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_betaNzz.png}}%
-	\caption{Distribution of winter surface mass balance (WSMB). (Top) WSMB values obtained from a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. (Middle) WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) WSMB values obtained using both SWE variability and regression coefficient variability. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
+	\caption{Distribution of winter surface mass balance (WSMB) obtained using linear regression. (Top) WSMB values obtained from a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. (Middle) WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) WSMB values obtained using both SWE variability and regression coefficient variability. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
 	\label{fig:WSMB_allDensity}
 \end{figure}
 
@@ -145,21 +147,52 @@ Using a Monte Carlo experiment to propagate variability allowed us to quantify e
 \begin{figure}[H]
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distributionzz.png}}\\
-	\caption{Winter surface mass balance distribution for eight density interpolation options when variation due to SWE measurement ( $\sigma_{ZZ}$) is included. }
+	\caption{Winter surface mass balance distribution obtained using linear regression for eight density interpolation options when variation due to SWE measurement ( $\sigma_{ZZ}$) is included. }
 	\label{fig:WSMB_Distributionzz}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distributionbeta.png}}\\
-	\caption{Winter surface mass balance distribution for eight density interpolation options when variation due to regression coefficient estimation ( $\beta$) is included. }
+	\caption{Winter surface mass balance distribution obtained using linear regression for eight density interpolation options when variation due to regression coefficient estimation ( $\beta$) is included. }
 	\label{fig:WSMB_Distributionbeta}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_DistributionbetaNzz.png}}\\
-	\caption{Winter surface mass balance distribution for eight density interpolation options when variation due to regression coefficient estimation and SWE measurement ($\beta$ and $\sigma_{ZZ}$) is included. }
+	\caption{Winter surface mass balance distribution obtained using linear regression for eight density interpolation options when variation due to regression coefficient estimation and SWE measurement ($\beta$ and $\sigma_{ZZ}$) is included. }
 	\label{fig:WSMB_DistributionbetaNzz}
 \end{figure}
 
+
+\subsection{Simple kriging WSMB distribution}
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_SK_allDensity_zz.png}}\\%
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_SK_allDensity_beta.png}}\\%
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_SK_allDensity_betaNzz.png}}%
+	\caption{Distribution of winter surface mass balance (WSMB) obtained using simple kriging. (Top) WSMB values obtained from a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. (Middle) WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) WSMB values obtained using both SWE variability and regression coefficient variability. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
+	\label{fig:WSMB_allDensity}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distribution_SK_zz.png}}\\
+	\caption{Winter surface mass balance distribution obtained using simple kriging for eight density interpolation options when variation due to SWE measurement ( $\sigma_{ZZ}$) is included. }
+	\label{fig:WSMB_Distributionzz}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distribution_SK_beta.png}}\\
+	\caption{Winter surface mass balance distribution obtained using simple kriging for eight density interpolation options when variation due to regression coefficient estimation ( $\beta$) is included. }
+	\label{fig:WSMB_Distributionbeta}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distribution_SK_betaNzz.png}}\\
+	\caption{Winter surface mass balance distribution obtained using simple kriging for eight density interpolation options when variation due to regression coefficient estimation and SWE measurement ($\beta$ and $\sigma_{ZZ}$) is included. }
+	\label{fig:WSMB_DistributionbetaNzz}
+\end{figure}
 
 \end{document} 
