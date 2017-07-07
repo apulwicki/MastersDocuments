@@ -1,4 +1,4 @@
-\begin{thebibliography}{67}
+\begin{thebibliography}{68}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -210,7 +210,7 @@ L{\'o}pez-Moreno J, Fassnacht S, Heath J, Musselman K, Revuelto J, Latron J,
   snow--Atmosphere Interactions and Hydrological Consequences
 
 \bibitem[\protect\citename{L{\'o}pez-Moreno and others, }2011]{Lopez2011}
-L{\'o}pez-Moreno JI, Fassnacht S, Beguer{\'\i}a S and Latron J (2011)
+L{\'o}pez-Moreno JI, Fassnacht S, Beguer{\'i}a S and Latron J (2011)
   {Variability of snow depth at the plot scale: implications for mean depth
   estimation and sampling strategies}. \emph{The Cryosphere}, \textbf{5}(3),
   617--629 (\doi {10.5194/tc-5-617-2011})
@@ -258,6 +258,12 @@ Mott R, Faure F, Lehning M, L{\"o}we H, Hynek B, Michlmayer G, Prokop A and
   \emph{Annals of Glaciology}, \textbf{49}(1), 155--160 (\doi
   {10.3189/172756408787814924})
 
+\bibitem[\protect\citename{Musselman and others, }2015]{Musselman2015}
+Musselman KN, Pomeroy JW, Essery RL and Leroux N (2015) {Impact of windflow
+  calculations on simulations of alpine snow accumulation, redistribution and
+  ablation}. \emph{Hydrological Processes}, \textbf{29}(18), 3983--3999 (\doi
+  {10.1002/hyp.10595})
+
 \bibitem[\protect\citename{Nolan and others, }2015]{Nolan2015}
 Nolan M, Larsen C and Sturm M (2015) {Mapping snow-depth from manned-aircraft
   on landscape scales at centimeter resolution using {Structure-from-Motion}
@@ -280,13 +286,13 @@ Raftery AE, Madigan D and Hoeting JA (1997) {Bayesian Model Averaging for
   Association}, \textbf{92}(437), 179--191 (\doi
   {10.1080/01621459.1997.10473615})
 
-\bibitem[\protect\citename{R\'{e}veillet and others, }2016]{Reveillet2016}
-R\'{e}veillet M, Vincent C, Six D and Rabatel A (2016) {Which empirical model
+\bibitem[\protect\citename{R{\'e}veillet and others, }2016]{Reveillet2016}
+R{\'e}veillet M, Vincent C, Six D and Rabatel A (2016) {Which empirical model
   is best suited to simulate glacier mass balances?} \emph{Journal of
   Glaciology}, 1--16 (\doi {10.1017/jog.2016.110})
 
 \bibitem[\protect\citename{Revuelto and others, }2014]{Revuelto2014}
-Revuelto J, L{\'o}pez-Moreno JI, Azor{\'\i}n-Molina C and {Vicente Serrano} SM
+Revuelto J, L{\'o}pez-Moreno JI, Azor{\'i}n-Molina C and {Vicente Serrano} SM
   (2014) {Topographic control of snowpack distribution in a small catchment in
   the central Spanish Pyrenees: {I}ntra-and inter-annual persistence} (\doi
   {10.5194/tc-8-1989-2014})
