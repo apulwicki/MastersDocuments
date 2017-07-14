@@ -1,4 +1,4 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{72}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -30,6 +30,11 @@ Clark MP, Hendrikx J, Slater AG, Kavetski D, Anderson B, Cullen NJ, Kerr T,
   of snow water equivalent in hydrologic and land-surface models: A review}.
   \emph{Water Resources Research}, \textbf{47}(7) (\doi {10.1029/2011WR010745})
 
+\bibitem[\protect\citename{Clarke and others, }1984]{Clarke1984}
+Clarke GK, Collins SG and Thompson DE (1984) {Flow, thermal structure, and
+  subglacial conditions of a surge-type glacier}. \emph{Canadian Journal of
+  Earth Sciences}, \textbf{21}(2), 232--240 (\doi {10.1139/e84-024})
+
 \bibitem[\protect\citename{Clyde, }1932]{Clyde1932}
 Clyde GD (1932) {Circular No. 99-Utah Snow Sampler and Scales for Measuring
   Water Content of Snow}
@@ -55,6 +60,12 @@ Dadic R, Mott R, Lehning M and Burlando P (2010) {Parameterization for
   wind-induced preferential deposition of snow}. \emph{Journal of Geophysical
   Research: Earth Surface (2003--2012)}, \textbf{115} (\doi
   {10.1029/2009JF001261})
+
+\bibitem[\protect\citename{Danby and others, }2003]{Danby2003}
+Danby RK, Hik DS, Slocombe DS and Williams A (2003) {Science and the {St.
+  Elias}: an evolving framework for sustainability in {North America's} highest
+  mountains}. \emph{The Geographical Journal}, \textbf{169}(3), 191--204 (\doi
+  {10.1111/1475-4959.00084})
 
 \bibitem[\protect\citename{Davis and Sampson, }1986]{Davis1986}
 Davis JC and Sampson RJ (1986) \emph{{Statistics and data analysis in
@@ -274,6 +285,11 @@ Nolan M, Larsen C and Sturm M (2015) {Mapping snow-depth from manned-aircraft
 Olaya V (2009) {Basic land-surface parameters}. \emph{Developments in Soil
   Science}, \textbf{33}, 141--169
 
+\bibitem[\protect\citename{Paoli and Flowers, }2009]{Paoli2009}
+Paoli LD and Flowers GE (2009) {Dynamics of a small surge-type glacier using
+  one-dimensional geophysical inversion}. \emph{Journal of Glaciology},
+  \textbf{55}(194), 1101--1112 (\doi {10.3189/002214309790794850})
+
 \bibitem[\protect\citename{Pomeroy and others, }1999]{Pomeroy1999}
 Pomeroy J, Hedstrom N and Parviainen J (1999) {The snow mass balance of {Wolf
   Creek, Yukon}: effects of snow sublimation and redistribution}. \emph{Wolf
@@ -365,6 +381,10 @@ Winstral A, Marks D and Gurney R (2013) {Simulating wind-affected snow
 Winther J, Bruland O, Sand K, Killingtveit A and Marechal D (1998) {Snow
   accumulation distribution on {S}pitsbergen, {S}valbard, in 1997}. \emph{Polar
   Research}, \textbf{17}, 155--164
+
+\bibitem[\protect\citename{Wood, }1948]{Wood1948}
+Wood WA (1948) {Project {``Snow Cornice"}: the establishment of the {Seward
+  Glacial} research station}. \emph{Arctic}, 107--112
 
 \bibitem[\protect\citename{Work and others, }1965]{Work1965}
 Work R, Stockwell H, Freeman T and Beaumont R (1965) {Accuracy of field snow
