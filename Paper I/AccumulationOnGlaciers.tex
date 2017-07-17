@@ -90,7 +90,7 @@ Estimating winter balance involves transforming snow depth and density measureme
 \begin{figure*}
 	\centering
 	\includegraphics[width =\textwidth]{Sampling.pdf}\\
-	\caption{Sampling design for Glaciers 4, 2 and 13, located in the Donjek Range, Yukon (a,b). Centreline and transverse transects are shown in blue dots, hourglass and circle design are shown in green dots. (d) Linear and curvilinear transects typically consist of sets of three measurement locations, spaced $\sim$10 m apart. (e) At each measurement location, three snow depth observation are made. (c) Linear-random snow depth measurements in `zigzag' design are shown as grey dots. Orange squares are locations of snow density measurements. }
+	\caption{Sampling design for Glaciers 4, 2 and 13, located in the Donjek Range, Yukon (a,b). Centreline and transverse transects are shown in blue dots, hourglass and circle design are shown in green dots. (c) Linear and curvilinear transects typically consist of sets of three measurement locations, spaced $\sim$10 m apart (d). (e) At each measurement location, three snow depth observation are made. (f) Linear-random snow depth measurements in `zigzag' design are shown as grey dots. Orange squares are locations of snow density measurements. }
 	\label{fig:Sampling}
 \end{figure*}
 
@@ -148,14 +148,14 @@ To quantify the effects of the three variability sources on the final WSMB estim
 
 \subsection{Measurements}
 
-\begin{figure}
+\begin{figure*}
 	\centering
-	\includegraphics[width =0.5\textwidth]{DepthBoxplot.pdf}\\
-	\caption{Boxplot of measured snow depth on Glaciers 4, 2 and 13. The box shows first quartiles, the line within the box indicates data median, bars indicate minimum and maximum values (excluding outliers), and circles show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
-	\label{fig:DepthBoxplot}
-\end{figure}
+	\includegraphics[width =\textwidth]{DepthBoxplot_SPvsFS.pdf}\\
+	\caption{(Left) Boxplot of measured snow depth on Glaciers 4, 2 and 13. The box shows first quartiles, the line within the box indicates data median, bars indicate minimum and maximum values (excluding outliers), and circles show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). (Right) Comparison of integrated density estimated using wedge cutters in a snow pit and density estimated using Federal Sampler measurements for Glacier 4 (G04), Glacier 2 (G02) and Glacier 13 (G13). Snow pits were distributed in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars are minimum and maximum values.}
+	\label{fig:DepthBoxplot_SPvsFS}
+\end{figure*}
 
-A wide range of snow depth is observed on all three study glaciers (Figure \ref{fig:DepthBoxplot}). Glacier 4 has the highest mean snow depth and a high proportion of outliers, indicating a more variable snow depth overall. Glacier 13 has the lowest mean snow depth and a narrower distribution of observed values. At each measurement location, the median range of measured depths ($3-4$ points) as a percent of the mean depth at that location is 2\%, 11\%, and 12\%, for Glaciers 4, 2 and 13, respectively. 
+A wide range of snow depth is observed on all three study glaciers (Figure \ref{fig:DepthBoxplot_SPvsFS}). Glacier 4 has the highest mean snow depth and a high proportion of outliers, indicating a more variable snow depth overall. Glacier 13 has the lowest mean snow depth and a narrower distribution of observed values. At each measurement location, the median range of measured depths ($3-4$ points) as a percent of the mean depth at that location is 2\%, 11\%, and 12\%, for Glaciers 4, 2 and 13, respectively. 
 
 Mean SP and FS density values are within one standard deviation of each other for each glacier and over all three glaciers. The standard deviation of glacier-wide mean density is less than 10\% of the mean density. However, FS densities have a larger range of values ($227-431$kg m$^{-3}$) when compared to SP densities ($299-381$kg m$^{-3}$).  The mean SP densities are within one standard deviation between glaciers, whereas mean FS densities are not.
 
@@ -166,14 +166,6 @@ Uncertainty in SP density is largely due to sampling error of exceptionally dens
 There is no correlation between co-located SP and FS densities (Figure \ref{fig:density_pitVStube}) so each set of density values is used for all four density interpolation options. Range and glacier mean densities are higher when SP densities are used (Table \ref{tab:Density}). The magnitude and slope of a linear regression of density with elevation differs between SP and FS densities (Table \ref{tab:Density}). At Glaciers 2 and 13, SP density decreases with elevation, likely indicating melt at lower elevations. SP density is independent of elevation on Glacier 4. FS density increases with elevation on Glacier 2 and there is no relationship with elevation on Glaciers 4 and 13. 
 
 There is a positive linear relation (R$^2= 0.59$, p$<$0.01) between measured snow density and depth for all FS measurements. No correlation exists between SP density and elevation.
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width =0.5\textwidth]{SPvsFS.pdf}\\
-	\caption{Comparison of integrated density estimated using wedge cutters in a snow pit and density estimated using Federal Sampler measurements for Glacier 4 (G04), Glacier 2 (G02) and Glacier 13 (G13). Snow pits were distributed in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars are minimum and maximum values.}
-	\label{fig:density_pitVStube}
-\end{figure}
 
 \begin{table}[]
 \centering
@@ -196,7 +188,7 @@ There is a positive linear relation (R$^2= 0.59$, p$<$0.01) between measured sno
 
 \subsection{Grid cell average}
 
-SWE observations within a DEM grid cell are averaged. Between one and six measurement locations are in each measured grid cell. The distribution of grid-cell SWE values for each glacier is similar to that of Figure \ref{fig:DepthBoxplot} but with fewer outliers. 
+SWE observations within a DEM grid cell are averaged. Between one and six measurement locations are in each measured grid cell. The distribution of grid-cell SWE values for each glacier is similar to that of Figure \ref{fig:DepthBoxplot_SPvsFS} but with fewer outliers. 
 
 SWE measurements for each zigzag are not normally distributed about the mean SWE (Figure \ref{fig:ZigzagHistogram}). The average standard deviation of all zigzags on Glacier 4 is $\sigma_{\mathrm{G4}} =  0.027$ m w.e., on Glacier 2 is $\sigma_{\mathrm{G2}} =  0.035$ m w.e. and on Glacier 13 is $\sigma_{\mathrm{G13}} =  0.040$ m w.e.
 
