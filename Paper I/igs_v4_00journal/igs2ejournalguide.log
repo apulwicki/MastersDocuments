@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  28 JUN 2017 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  18 JUL 2017 13:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -131,8 +131,7 @@ G,.JBIG2,.JB2,.eps]
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)))
-No file igs2ejournalguide.aux.
+))) (./igs2ejournalguide.aux)
 \openout1 = `igs2ejournalguide.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -302,21 +301,9 @@ Overfull \hbox (3.90479pt too wide) in paragraph at lines 183--194
  []
 
 
-LaTeX Warning: Reference `seasonal' on page 5 undefined on input line 227.
-
-
-LaTeX Warning: Reference `period' on page 5 undefined on input line 227.
-
-
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 227.
-
-
-LaTeX Warning: Reference `period' on page 5 undefined on input line 227.
-
-
-LaTeX Warning: Reference `seasonal' on page 5 undefined on input line 227.
 
 
 Overfull \vbox (6.25pt too high) has occurred while \output is active []
@@ -333,35 +320,12 @@ Overfull \hbox (0.55519pt too wide) in paragraph at lines 237--256
 LaTeX Warning: Float too large for page by 112.48999pt on input line 284.
 
 
-LaTeX Warning: Reference `tracks' on page 7 undefined on input line 289.
-
-
-LaTeX Warning: Reference `filters' on page 7 undefined on input line 289.
-
-
-LaTeX Warning: Reference `filters' on page 7 undefined on input line 289.
-
-
-LaTeX Warning: Reference `tracks' on page 7 undefined on input line 293.
-
-
-LaTeX Warning: Reference `filters' on page 7 undefined on input line 293.
-
-
-LaTeX Warning: Reference `arrayexample' on page 7 undefined on input line 315.
-
-
 Overfull \vbox (6.25pt too high) has occurred while \output is active []
 
  [7]
 Overfull \vbox (6.25pt too high) has occurred while \output is active []
 
  [8]
-
-LaTeX Warning: Reference `eqnarrayexample' on page 9 undefined on input line 34
-5.
-
-
 Overfull \vbox (6.25pt too high) has occurred while \output is active []
 
  [9]
@@ -374,7 +338,7 @@ Overfull \vbox (6.25pt too high) has occurred while \output is active []
 
  [10]
 Package epstopdf Info: Source file: <15J299Fig01.eps>
-(epstopdf)                    date: 2017-06-09 08:11:56
+(epstopdf)                    date: 2017-06-09 07:11:56
 (epstopdf)                    size: 486138 bytes
 (epstopdf)             Output file: <15J299Fig01.pdf>
 (epstopdf)             Command: <repstopdf 15J299Fig01.eps>
@@ -407,136 +371,11 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <11> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 449.
 
-
-Package natbib Warning: Citation `Rignot08' on page 12 undefined on input line 
-452.
-
-
-Package natbib Warning: Citation `Rignot08_2' on page 12 undefined on input lin
-e 453.
-
-
-Package natbib Warning: Citation `Motyka11' on page 12 undefined on input line 
-454.
-
-
-Package natbib Warning: Citation `Morlighem10' on page 12 undefined on input li
-ne 455.
-
-
-Package natbib Warning: Citation `Morlighem11' on page 12 undefined on input li
-ne 456.
-
-
-Package natbib Warning: Citation `Seroussi11' on page 12 undefined on input lin
-e 457.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 458
-.
-
-
-Package natbib Warning: Citation `Rogozhina12' on page 12 undefined on input li
-ne 459.
-
-
-Package natbib Warning: Citation `Hanna13' on page 12 undefined on input line 4
-60.
-
-
-Package natbib Warning: Citation `Goelzer13' on page 12 undefined on input line
- 461.
-
-
-Package natbib Warning: Citation `Lucas12' on page 12 undefined on input line 4
-62.
-
-
-Package natbib Warning: Citation `Edwards14' on page 12 undefined on input line
- 463.
-
-
-Package natbib Warning: Citation `gladstone_grl_10' on page 12 undefined on inp
-ut line 464.
-
-
-Package natbib Warning: Citation `Morlighem13' on page 12 undefined on input li
-ne 465.
-
-
-Package natbib Warning: Citation `Goldberg11' on page 12 undefined on input lin
-e 466.
-
-
-Package natbib Warning: Citation `paterson94' on page 12 undefined on input lin
-e 467.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 470
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 472
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 474
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 476
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 478
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 480
-.
-
-
-Package natbib Warning: Citation `Edwards14' on page 12 undefined on input line
- 480.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 482
-.
-
-
-Package natbib Warning: Citation `Edwards14' on page 12 undefined on input line
- 482.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 484
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 486
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 488
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 490
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 492
-.
-
-
-Package natbib Warning: Citation `Yan13' on page 12 undefined on input line 494
-.
-
-
 Overfull \vbox (6.25pt too high) has occurred while \output is active []
 
  [12]
 Package epstopdf Info: Source file: <15J299Fig02.eps>
-(epstopdf)                    date: 2017-06-09 08:11:57
+(epstopdf)                    date: 2017-06-09 07:11:57
 (epstopdf)                    size: 935646 bytes
 (epstopdf)             Output file: <15J299Fig02.pdf>
 (epstopdf)             Command: <repstopdf 15J299Fig02.eps>
@@ -593,26 +432,13 @@ Overfull \vbox (6.25pt too high) has occurred while \output is active []
 Overfull \vbox (6.25pt too high) has occurred while \output is active []
 
  [19]
-
-LaTeX Warning: Reference `appeqn' on page 20 undefined on input line 816.
-
-
 Overfull \vbox (6.25pt too high) has occurred while \output is active []
 
  [20]
-
-Package natbib Warning: There were undefined citations.
-
-
 Overfull \vbox (6.25pt too high) has occurred while \output is active []
 
  [21]
-(./igs2ejournalguide.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+(./igs2ejournalguide.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.9pt have occurred.
@@ -620,17 +446,11 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 2598 strings out of 494501
- 34284 string characters out of 6167030
- 100218 words of memory out of 5000000
+ 2600 strings out of 494501
+ 34328 string characters out of 6167030
+ 100855 words of memory out of 5000000
  5823 multiletter control sequences out of 15000+600000
  28912 words of font info for 109 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -667,7 +487,7 @@ ti7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm
 onts/cm/cmtt9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/a
 msfonts/euler/eurb10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/p
 ublic/amsfonts/euler/eurm10.pfb>
-Output written on igs2ejournalguide.pdf (21 pages, 368820 bytes).
+Output written on igs2ejournalguide.pdf (21 pages, 368628 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
