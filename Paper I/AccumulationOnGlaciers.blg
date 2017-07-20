@@ -1,141 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: AccumulationOnGlaciers.aux
-I couldn't open database file /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
----line 182 of file AccumulationOnGlaciers.aux
- : \bibdata{/home/glaciology1/Documents/MastersDocuments/MastersLit
- :                                                                 }
-I'm skipping whatever remains of this command
 The style file: igs.bst
-I found no database files---while reading file AccumulationOnGlaciers.aux
-Warning--I didn't find a database entry for "Reveillet2016"
-Warning--I didn't find a database entry for "Clark2011"
-Warning--I didn't find a database entry for "Bloschl1991"
-Warning--I didn't find a database entry for "Mott2008"
-Warning--I didn't find a database entry for "Sold2013"
-Warning--I didn't find a database entry for "Cogley2011"
-Warning--I didn't find a database entry for "Hock2005"
-Warning--I didn't find a database entry for "Hock1999"
-Warning--I didn't find a database entry for "MacDougall2011"
-Warning--I didn't find a database entry for "Cullen2017"
-Warning--I didn't find a database entry for "Lehning2008"
-Warning--I didn't find a database entry for "Bernhardt2009"
-Warning--I didn't find a database entry for "Musselman2015"
-Warning--I didn't find a database entry for "Barry1992"
-Warning--I didn't find a database entry for "Anderton2004"
-Warning--I didn't find a database entry for "Egli2011"
-Warning--I didn't find a database entry for "Grunewald2010"
-Warning--I didn't find a database entry for "Helbig2017"
-Warning--I didn't find a database entry for "Lopez2011"
-Warning--I didn't find a database entry for "Lopez2013"
-Warning--I didn't find a database entry for "Machguth2006"
-Warning--I didn't find a database entry for "Marshall2006"
-Warning--I didn't find a database entry for "Liston2006"
-Warning--I didn't find a database entry for "McGrath2015"
-Warning--I didn't find a database entry for "Dadic2010"
-Warning--I didn't find a database entry for "Grabiec2011"
-Warning--I didn't find a database entry for "Elder1991"
-Warning--I didn't find a database entry for "Deems2006"
-Warning--I didn't find a database entry for "Nolan2015"
-Warning--I didn't find a database entry for "Godio2016"
-Warning--I didn't find a database entry for "Lopez2010"
-Warning--I didn't find a database entry for "Molotch2005"
-Warning--I didn't find a database entry for "Erxleben2002"
-Warning--I didn't find a database entry for "Balk2000"
-Warning--I didn't find a database entry for "Lehning2006"
-Warning--I didn't find a database entry for "Schneiderbauer2011"
-Warning--I didn't find a database entry for "Trujillo2015"
-Warning--I didn't find a database entry for "Turcan1975"
-Warning--I didn't find a database entry for "Woo1978"
-Warning--I didn't find a database entry for "Kaser2003"
-Warning--I didn't find a database entry for "Tangborn1975"
-Warning--I didn't find a database entry for "Crompton2016"
-Warning--I didn't find a database entry for "Taylor1969"
-Warning--I didn't find a database entry for "Wood1948"
-Warning--I didn't find a database entry for "Danby2003"
-Warning--I didn't find a database entry for "Clarke1984"
-Warning--I didn't find a database entry for "Paoli2009"
-Warning--I didn't find a database entry for "Shea2010"
-Warning--I didn't find a database entry for "Walmsley2015"
-Warning--I didn't find a database entry for "Gray1981"
-Warning--I didn't find a database entry for "Fierz2009"
-Warning--I didn't find a database entry for "Clyde1932"
-Warning--I didn't find a database entry for "Elder1998"
-Warning--I didn't find a database entry for "Davis1986"
-Warning--I didn't find a database entry for "Kohavi1995"
-Warning--I didn't find a database entry for "Madigan1994"
-Warning--I didn't find a database entry for "Raftery1997"
-Warning--I didn't find a database entry for "Burnham2004"
-Warning--I didn't find a database entry for "Korona2009"
-Warning--I didn't find a database entry for "Mitavsova1993"
-Warning--I didn't find a database entry for "Hofierka2009"
-Warning--I didn't find a database entry for "Olaya2009"
-Warning--I didn't find a database entry for "Winstral2002"
-Warning--I didn't find a database entry for "Li2008"
-Warning--I didn't find a database entry for "Roustant2012"
-Warning--I didn't find a database entry for "Watson2006"
-Warning--I didn't find a database entry for "Bagos2015"
-Warning--I didn't find a database entry for "Metropolis1949"
-Warning--I didn't find a database entry for "Sold2014"
-Warning--I didn't find a database entry for "Winther1998"
-Warning--I didn't find a database entry for "Gusmeroli2014"
-Warning--I didn't find a database entry for "Work1965"
-Warning--I didn't find a database entry for "Fames1982"
-Warning--I didn't find a database entry for "Conger2009"
-Warning--I didn't find a database entry for "Dixon2012"
-Warning--I didn't find a database entry for "Beaumont1963"
-Warning--I didn't find a database entry for "Wetlaufer2016"
-Warning--I didn't find a database entry for "Grunewald2014"
-Warning--I didn't find a database entry for "Kirchner2014"
-Warning--I didn't find a database entry for "Pomeroy1999"
-Warning--I didn't find a database entry for "Winstral2013"
-Warning--I didn't find a database entry for "Grunewald2013"
-Warning--I didn't find a database entry for "Erickson2005"
-Warning--I didn't find a database entry for "Zhang1994"
-Warning--I didn't find a database entry for "Garbrecht1994"
-Warning--I didn't find a database entry for "Guo-an2001"
-Warning--I didn't find a database entry for "Kienzle2004"
-Warning--I didn't find a database entry for "Wechsler2006"
-Warning--I didn't find a database entry for "Revuelto2014"
-You've used 0 entries,
+Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
+Warning--empty journal in Clyde1932
+Warning--can't use both volume and number fields in Kohavi1995
+Warning--empty journal in Walmsley2015
+Warning--missing institution in Work1965
+You've used 85 entries,
             2869 wiz_defined-function locations,
-            770 strings with 6373 characters,
-and the built_in function-call counts, 33 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 1
-* -- 2
-:= -- 10
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 1
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+            1237 strings with 23022 characters,
+and the built_in function-call counts, 95735 in all, are:
+= -- 10357
+> -- 1934
+< -- 77
++ -- 673
+- -- 589
+* -- 7383
+:= -- 10598
+add.period$ -- 82
+call.type$ -- 85
+change.case$ -- 728
+chr.to.int$ -- 86
+cite$ -- 89
+duplicate$ -- 9814
+empty$ -- 7425
+format.name$ -- 949
+if$ -- 19924
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 7
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 949
+newline$ -- 262
+num.names$ -- 340
+pop$ -- 4595
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 634
 quote$ -- 0
-skip$ -- 1
+skip$ -- 2067
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 10999
+swap$ -- 2348
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 1044
+warning$ -- 4
+while$ -- 608
 width$ -- 0
-write$ -- 6
-(There were 2 error messages)
+write$ -- 1086
+(There were 4 warnings)
