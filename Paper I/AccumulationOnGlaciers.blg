@@ -7,45 +7,45 @@ Warning--empty journal in Clyde1932
 Warning--can't use both volume and number fields in Kohavi1995
 Warning--empty journal in Walmsley2015
 Warning--missing institution in Work1965
-You've used 85 entries,
+You've used 86 entries,
             2869 wiz_defined-function locations,
-            1237 strings with 23022 characters,
-and the built_in function-call counts, 95735 in all, are:
-= -- 10357
-> -- 1934
+            1244 strings with 23220 characters,
+and the built_in function-call counts, 96786 in all, are:
+= -- 10470
+> -- 1954
 < -- 77
-+ -- 673
-- -- 589
-* -- 7383
-:= -- 10598
-add.period$ -- 82
-call.type$ -- 85
-change.case$ -- 728
-chr.to.int$ -- 86
-cite$ -- 89
-duplicate$ -- 9814
-empty$ -- 7425
-format.name$ -- 949
-if$ -- 19924
++ -- 680
+- -- 595
+* -- 7467
+:= -- 10716
+add.period$ -- 83
+call.type$ -- 86
+change.case$ -- 736
+chr.to.int$ -- 87
+cite$ -- 90
+duplicate$ -- 9923
+empty$ -- 7508
+format.name$ -- 958
+if$ -- 20141
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 949
-newline$ -- 262
-num.names$ -- 340
-pop$ -- 4595
+missing$ -- 960
+newline$ -- 265
+num.names$ -- 344
+pop$ -- 4644
 preamble$ -- 1
-purify$ -- 634
+purify$ -- 641
 quote$ -- 0
-skip$ -- 2067
+skip$ -- 2089
 stack$ -- 0
-substring$ -- 10999
-swap$ -- 2348
+substring$ -- 11116
+swap$ -- 2376
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1044
+type$ -- 1056
 warning$ -- 4
-while$ -- 608
+while$ -- 615
 width$ -- 0
-write$ -- 1086
+write$ -- 1099
 (There were 4 warnings)
