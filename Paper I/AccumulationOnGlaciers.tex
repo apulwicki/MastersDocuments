@@ -19,6 +19,10 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}%
+
+
 % check if we are compiling under latex or pdflatex
   \ifx\pdftexversion\undefined
     \usepackage[dvips]{graphicx}
@@ -87,9 +91,9 @@ Winter balance surveys were conducted on three glaciers in the Donjek Range of t
 \caption{Physical details of study glaciers}
 \label{tab:GlacierDetails}
 \begin{tabular}{cccccc}
-\hline
+\midrule
 \textbf{} & \multirow{2}{*}{\textbf{Location}} & \multicolumn{2}{c}{\textbf{Elevation (m a.s.l)}} & \textbf{Slope ($^{\circ}$)} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Area\\ (km)\end{tabular}}} \\
- &  & \textit{Mean} & \textit{Range} & \textit{Mean} &  \\ \hline
+ &  & \textit{Mean} & \textit{Range} & \textit{Mean} &  \\ \midrule
 \textbf{G4} & \begin{tabular}[c]{@{}c@{}}595470 E\\ 6740730 N\end{tabular} & 2344 & 1958--2809 & 12.8 & 3.8 \\
 \textbf{G2} & \begin{tabular}[c]{@{}c@{}}601160 E\\ 6753785 N\end{tabular} & 2495 & 1899--3103 & 13.0 & 7.0 \\
 \textbf{G13} & \begin{tabular}[c]{@{}c@{}}604602 E\\ 6763400 N\end{tabular} & 2428 & 1923--3067 & 13.4 & 12.6
@@ -119,8 +123,8 @@ Estimating winter balance involves transforming snow depth and density measureme
 \caption{Details of snow survey conducted in May 2016 at Glacier 4 (G4), Glacier 2 (G2), and Glacier 13 (G13). Values shown include number of snow depth measurement locations along transects ($n_{T}$), total length of transects ($d_T$ [km]), number of combined SP and FS density measurement locations ($n_{\rho}$) and number of zigzag ($n_{zz}$). }
 \label{tab:SurveyDetails}
 \begin{tabular}{cccccc}
-\hline
-\textbf{} & \textbf{Date} & \textbf{$n_{T}$} & \textbf{$d_T$} & \textbf{$n_{\rho}$} & \textbf{$n_{zz}$} \\ \hline
+\midrule
+\textbf{} & \textbf{Date} & \textbf{$n_{T}$} & \textbf{$d_T$} & \textbf{$n_{\rho}$} & \textbf{$n_{zz}$} \\ \midrule
 \textbf{G4} & May 4--7 & 649 & 13.1 & 7 & 3 \\
 \textbf{G2} & May 8--11 & 762 & 13.6 & 7 & 3 \\
 \textbf{G13} & May 12--15 & 941 & 18.1 & 19 & 4
@@ -151,7 +155,27 @@ During the field campaign there were two small accumulation events. The first, o
 
 \subsection{Distributed snow density}
 
-Measured density is interpolated to estimate SWE at each depth sampling location. We chose four separate methods that are commonly applied to interpolate density: (1) mean density over an entire range \citep[e.g.][]{Cullen2017}, (2) mean density for each glacier \citep[e.g.][]{Elder1991, McGrath2015}, (3) linear regression of density with elevation \citep[e.g.][]{Elder1998, Molotch2005} and (4) inverse-distance weighted density \citep[e.g.][]{Molotch2005}.  SP and FS densities are treated separately, for reasons explained below, which results in eight density interpolation options. 
+Measured density is interpolated to estimate SWE at each depth sampling location. We chose four separate methods that are commonly applied to interpolate density: (1) mean density over an entire range \citep[e.g.][]{Cullen2017}, (2) mean density for each glacier \citep[e.g.][]{Elder1991, McGrath2015}, (3) linear regression of density with elevation \citep[e.g.][]{Elder1998, Molotch2005} and (4) inverse-distance weighted density \citep[e.g.][]{Molotch2005}.  SP and FS densities are treated separately, for reasons explained below, which results in eight density interpolation options (Table \ref{tab:densityOptions}).
+
+\begin{table}
+\centering
+\caption{Description of density interpolation methods used to calculate SWE used in the topographic regression. Abbreviations with `S' used snowpit-derived densities and abbreviations with an `F' used Federal Sampler-derived densities.}
+\label{tab:densityOptions}
+\begin{tabular}{cccc}
+\midrule
+ & \multicolumn{2}{c}{\textbf{Snow density source}} &  \\
+ & \textit{Snowpit} & \begin{tabular}[c]{c} \textit{Federal}\\  \textit{Sampler}\end{tabular} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{c}Estimation\\ method\end{tabular}}} \\   \midrule
+S1 & $\blacksquare$ &  &  \\
+F1 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Mean of all glaciers \end{tabular}} \\  \midrule
+S2 & $\blacksquare$ &  &  \\
+F2 &  & $\blacksquare$ & \multirow{-2}{*}{Glacier mean} \\ \midrule
+S3 & $\blacksquare$ &  &  \\
+F3 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Linear regression of elevation \\ and density for each glacier \end{tabular}} \\ \midrule
+S4 & $\blacksquare$ &  &  \\
+F4 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Inverse distance\\ weighted mean\end{tabular}}
+\end{tabular}
+\end{table}
+ 
 
 \subsection{Grid cell average SWE}
 
@@ -167,10 +191,25 @@ Snow depth data are highly variable so there is a possibility for the LR to fit 
 
 \subsubsection{Topographic parameters}
 
-Topographic parameters are easy to calculate proxies for physical processes, such as orographic precipitation, solar radiation effects, wind redistribution and preferential deposition. We derive all parameters for our study from a SPOT-5 DEM ($40\times40$ m) \citep{Korona2009}. Elevation ($z$) values were taken from the SPOT-5 DEM directly. Distance from centreline ($d_C$) was calculated as the minimum distance between the Easting and Northing of the northwest corner of each grid cell and a manually defined centreline. Slope, aspect and curvature were calculated using the \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS as described in \cite{Mitavsova1993} and \cite{Hofierka2009}. Slope ($m$) is defined as the angle between a plane tangential to the surface (gradient) and the horizontal \citep{Olaya2009}. Aspect ($\alpha$) is the dip direction of the slope and $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression. Mean curvature ($\kappa$) is found by taking the average of profile and tangential curvature. Profile curvature is the curvature in the direction of the surface gradient and it describes the change in slope angle. Tangential curvature represents the curvature in the direction of the contour tangent. Curvature differentiates between mean-concave (positive values) terrain with relative accumulation and mean-convex (negative values) terrain with relative scouring \citep{Olaya2009}. ``Northness'' ($N$) is defined as the product of the cosine of aspect and sine of slope \citep{Molotch2005}. A value of $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope, and a flat surface yields 0. The wind exposure/shelter parameter (Sx) is based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest \citep{Winstral2002}. Sx was calculated using an executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. 
+Topographic parameters are easy to calculate proxies for physical processes, such as orographic precipitation, solar radiation effects, wind redistribution and preferential deposition. We derive all parameters for our study from a SPOT-5 DEM ($40\times40$ m) \citep{Korona2009}. Visual inspection of the curvature fields calculated using the DEM showed a noisy spatial distribution that did not vary smoothly. To minimize the effect of noise on parameters sensitive to DEM grid cell size, we applied a $7\times7$ grid cell smoothing window to the DEM, which was then used to calculate curvature, slope, aspect and ``northness''.
 
-Visual inspection of the curvature fields calculated using the DEM showed a noisy spatial
-distribution that did not vary smoothly. To minimize the effect of noise on parameters sensitive to DEM grid cell size, we applied a $7\times7$ grid cell smoothing window to the DEM, which was then used to calculate curvature, slope, aspect and ``northness''.
+\begin{table*}[!htbp]
+\centering%
+\caption{}
+\begin{tabularx}{\linewidth}{XXXXX}
+\midrule
+\textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \midrule
+\textbf{Elevation ($z$)} &  & Values taken directly from DEM &  &  \\
+\textbf{Distance from centreline ($d_C$)} &  & Minimum distance between the Easting and Northing of the northwest corner of each grid cell and a manually defined centreline &  &  \\
+\textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
+\textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
+\textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential curvature (direction of the contour tangent) & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & mean-concave (positive values) terrain with relative accumulation and mean-convex (negative values) terrain with relative scouring & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
+\textbf{``Northness'' ($N$)} & $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope, and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \cite{Molotch2005} \\
+\textbf{Wind exposure/shelter parameter (Sx)} &  & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \cite{Winstral2002}
+\end{tabularx}
+\end{table*}
+
+
 
 \subsubsection{Simple kriging}
 
@@ -250,11 +289,11 @@ The predictive ability of SK and LR differ on the study glaciers. Generally, SK 
  & \multicolumn{2}{c}{\textbf{Linear Regression}} & \multicolumn{2}{c}{\textbf{Simple Kriging}} \\
  & WB & RMSE & WB & RMSE \\
   \midrule
-\textbf{Glacier 4} & 0.582 & 0.153 (26\%) & 0.616 & 0.134 (22\%) \\
+\textbf{G4} & 0.582 & 0.153 (26\%) & 0.616 & 0.134 (22\%) \\
  \midrule
-\textbf{Glacier 2} & 0.577 & 0.102 (18\%) & 0.367 & 0.073 (20\%) \\
+\textbf{G2} & 0.577 & 0.102 (18\%) & 0.367 & 0.073 (20\%) \\
  \midrule
-\textbf{Glacier 13} & 0.381 & 0.080 (21\%) & 0.271 & 0.068 (25\%)
+\textbf{G13} & 0.381 & 0.080 (21\%) & 0.271 & 0.068 (25\%)
 \end{tabular}
 \end{table}
 
@@ -279,7 +318,20 @@ Our sampling design ensured that the ranges of topographic parameters covered by
 
 Spatial patterns of SWE found using LR are similar between Glaciers 2 and 13 and differ considerably for Glacier 4 (Figure \ref{fig:LR_SK_map}). Estimated SWE on Glacier 4 is relatively uniform, which results from the low predictive ability of the LR. Areas with high wind redistribution values (sheltered), especially in the accumulation area, have the lowest values of SWE. The map of modelled SWE on Glacier 2 closely matches that of elevation, which highlights the strong dependence of SWE on elevation. Glacier 2 has the largest range of estimated SWE ($0 - 1.92$ m w.e). The area of high estimated accumulation in the southwest region of the glacier  results from the combination of high elevation and Sx values. The low SWE values at the terminus arise from low elevation and Sx values close to zero. The map of estimated SWE on Glacier 13 also closely follows elevation. However, the lower correlation between SWE and elevation results in a relatively small range of distributed SWE values.
 
-There are large differences in spatial patterns of estimated winter balance for the three study glaciers found using SK (Figure \ref{fig:LR_SK_map}). On Glacier 4, the isotropic correlation length is considerably shorter (90 m) compared to Glacier 2 (404 m) and Glacier 13 (444 m), which results in a relatively uniform SWE distribution over the glacier with small deviations at measured grid cells. Nugget values for the study glaciers also differ, with the nugget of Glacier 4 (0.0105 m w.e.) more than twice as large as that of Glacier 2 (0.0036 m w.e.) and Glacier 13 (0.0048 m w.e.). Glacier 2 has two distinct and relatively uniform areas of estimated accumulation. The lower ablation area has low SWE ($\sim$0.1 m w.e.) and the upper ablation and accumulation areas have higher SWE values ($\sim$0.6 m w.e.). Glacier 13 does not appear to have any strong patterns and accumulation is generally low ($\sim0.1-0.5$ m w.e.).
+There are large differences in spatial patterns of estimated winter balance for the three study glaciers found using SK (Figure \ref{fig:LR_SK_map}). On Glacier 4, the isotropic correlation length is considerably shorter compared to Glacier 2 and Glacier 13 (Table \ref{tab:range&nugget}), which results in a relatively uniform SWE distribution over the glacier with small deviations at measured grid cells. Nugget values for the study glaciers also differ, with the nugget of Glacier 4 more than twice as large as that of Glacier 2 and Glacier 13 (Table \ref{tab:range&nugget}). Glacier 2 has two distinct and relatively uniform areas of estimated accumulation. The lower ablation area has low SWE ($\sim$0.1 m w.e.) and the upper ablation and accumulation areas have higher SWE values ($\sim$0.6 m w.e.). Glacier 13 does not appear to have any strong patterns and accumulation is generally low ($\sim0.1-0.5$ m w.e.).
+
+\begin{table}[]
+\centering
+\caption{Range and nugget values for simple kriging interpolation}
+\label{tab:range&nugget}
+\begin{tabular}{ccc}
+\midrule
+ & \textbf{\begin{tabular}[c]{@{}c@{}}Range \\ (m)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Nugget \\ ($\times10^3$m w.e.)\end{tabular}} \\ \midrule
+\textbf{G4} & 90 & 10.5 \\
+\textbf{G2} & 404 & 3.6 \\
+\textbf{G13} & 444 & 4.8
+\end{tabular}
+\end{table}
 
 SWE estimated with LR and SK differ considerably in the upper accumulation areas of Glaciers 2 and 13. The significant influence of elevation in the LR results in substantially higher SWE values at high elevation, whereas the accumulation area of the SK estimates approximate the mean observed SWE. 
 

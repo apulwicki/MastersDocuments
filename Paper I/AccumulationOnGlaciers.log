@@ -1,11 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.21)  21 JUL 2017 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  24 JUL 2017 10:18
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **AccumulationOnGlaciers.tex
 (./AccumulationOnGlaciers.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 21 languages loaded.
 (./igs.cls
 Document Class: igs 2015/09/03 v4.00 IGS document class
 
@@ -58,39 +59,41 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
- (./amsgen.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(./amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
-))
-(./amsbsy.sty
+)) (./amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -111,8 +114,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
 (./amssymb.sty
 Package: amssymb 2009/06/22 v3.00
@@ -123,7 +126,7 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks19
 \thm@bodyfont=\toks20
@@ -135,14 +138,14 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip48
 \dth@everypar=\toks24
 )
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count100
 )
-(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen112
 \WF@size=\dimen113
 \c@WF@wrappedlines=\count101
@@ -150,7 +153,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \WF@everypar=\toks25
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks26
 \labelindent=\skip51
@@ -159,13 +162,13 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box29
 \enitdp@description=\count102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen115
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen116
 \extrarowheight=\dimen117
@@ -181,7 +184,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@cols=\count103
 \TX@ftn=\toks29
 )
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen123
 \lightrulewidth=\dimen124
@@ -200,30 +203,32 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count106
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen135
-) (./graphicx.sty
+)
+(./graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks30
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count108
@@ -231,28 +236,27 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -261,11 +265,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -279,27 +283,27 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)))
-(./AccumulationOnGlaciers.aux)
+))) (./AccumulationOnGlaciers.aux)
 \openout1 = `AccumulationOnGlaciers.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 32.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 36.
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
@@ -322,7 +326,7 @@ Found AMS Symbol fonts on the system, using the 'amssymb' package.
 
 Found the 'amsbsy' package on the system, using it.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen138
@@ -336,52 +340,52 @@ Found the 'amsbsy' package on the system, using it.
 \makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks32
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 52.
- (/usr/share/texmf/tex/latex/lm/omllmm.fd
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 56.
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 56.
 
 
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 52.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 56.
 
 
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.5> on input line 52.
+(Font)              <13.5> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 52.
+(Font)              <10> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 52.
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+(Font)              <7> on input line 56.
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.5> on input line 52.
+(Font)              <9.5> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 52.
+(Font)              <5> on input line 56.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 66--67
+Underfull \hbox (badness 2035) in paragraph at lines 70--71
 []\OT1/lmr/m/n/9.5 Winter balance is notoriously difficult to estimate.
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 68--69
+Underfull \hbox (badness 1077) in paragraph at lines 72--73
 \OT1/lmr/m/n/9.5 large spatial domains (Barry, 1992). Conversely, snow
  []
 
@@ -391,59 +395,59 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 1715) in paragraph at lines 70--71
+Underfull \hbox (badness 1715) in paragraph at lines 74--75
 \OT1/lmr/m/n/9.5 summer balance models (R^^Seveillet and others, 2016).
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 70--71
+Underfull \hbox (badness 1082) in paragraph at lines 74--75
 \OT1/lmr/m/n/9.5 2011), with elevation being the most common. Other
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 72--73
+Underfull \hbox (badness 1014) in paragraph at lines 76--77
 \OT1/lmr/m/n/9.5 within the snow science literature. Snow survey error
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 72--73
+Underfull \hbox (badness 1097) in paragraph at lines 76--77
 \OT1/lmr/m/n/9.5 has been considered from both a theoretical (Trujillo
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 74--75
+Underfull \hbox (badness 2197) in paragraph at lines 78--79
 \OT1/lmr/m/n/9.5 comprehensive understanding of uncertainties inherent
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 74--75
+Underfull \hbox (badness 1097) in paragraph at lines 78--79
 \OT1/lmr/m/n/9.5 applicable to current and future winter mass balance
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 83--84
+Underfull \hbox (badness 1331) in paragraph at lines 87--88
 \OT1/lmr/m/n/9.5 Flowers (2016)) are located along a SW-NE transect
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 85.
+               Default added (so using `tbp') on input line 89.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 89.
+(Font)              <8> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 89.
+(Font)              <6> on input line 93.
 
-Overfull \hbox (10.2311pt too wide) in paragraph at lines 89--97
+Overfull \hbox (10.2311pt too wide) in paragraph at lines 93--101
  [][] 
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 106--107
+Underfull \hbox (badness 1603) in paragraph at lines 110--111
 \OT1/lmr/m/n/9.5 Estimating winter balance involves transforming snow
  []
 
@@ -457,32 +461,32 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 [2] <Sampling.pdf, id=19, 669.50125pt x 413.545pt>
 File: Sampling.pdf Graphic file (type pdf)
  <use Sampling.pdf>
-Package pdftex.def Info: Sampling.pdf used on input line 112.
+Package pdftex.def Info: Sampling.pdf used on input line 116.
 (pdftex.def)             Requested size: 506.45905pt x 312.84612pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.5> on input line 113.
+(Font)              <8.5> on input line 117.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 117.
+               Default added (so using `tbp') on input line 121.
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 136--137
+Underfull \hbox (badness 1337) in paragraph at lines 140--141
 \OT1/lmr/m/n/9.5 to be more variable than density (Elder and others,
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 136--137
+Underfull \hbox (badness 1460) in paragraph at lines 140--141
 \OT1/lmr/m/n/9.5 2013) so we chose a sampling design with relatively
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 136--137
+Underfull \hbox (badness 1072) in paragraph at lines 140--141
 \OT1/lmr/m/n/9.5 locations as possible (Figure 1[]). The remaining three
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 138--139
+Underfull \hbox (badness 2401) in paragraph at lines 142--143
 \OT1/lmr/m/n/9.5 we were unable to obtain cohesive cores. Successful
  []
 
@@ -491,9 +495,7 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [3]
-Underfull \hbox (badness 1024) in paragraph at lines 158--159
-\OT1/lmr/m/n/9.5 cell. The locations of measurements have considerable
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -503,26 +505,152 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [4 <./Sampling.pdf>]
-Underfull \hbox (badness 1052) in paragraph at lines 166--167
+Underfull \hbox (badness 1024) in paragraph at lines 182--183
+\OT1/lmr/m/n/9.5 cell. The locations of measurements have considerable
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 190--191
 []\OT1/lmr/m/n/9.5 Snow depth data are highly variable so there is a
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 166--167
+Underfull \hbox (badness 2409) in paragraph at lines 190--191
 \OT1/lmr/m/n/9.5 possibility for the LR to fit to this data noise, a
  []
 
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 170
-.
-(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 1515) in paragraph at lines 170--171
+
+Underfull \hbox (badness 1515) in paragraph at lines 194--195
 \OT1/lmr/m/n/9.5 Topographic parameters are easy to calculate proxies
  []
 
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmtt.fd)
+Underfull \hbox (badness 5985) in paragraph at lines 209--209
+[]|\OT1/lmr/m/n/8 Values taken di-rectly
+ []
 
-Underfull \hbox (badness 1024) in paragraph at lines 177--178
+
+Underfull \hbox (badness 1546) in paragraph at lines 209--209
+[]|\OT1/lmr/bx/n/8 Distance from cen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 (1993); Hofierka and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 oth-ers (2009); Olaya
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 209--209
+[]|\OT1/lmr/m/n/8 Dip di-rec-tion of the
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 describing a slope as
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 north/south facing, is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 (1993); Hofierka and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 oth-ers (2009); Olaya
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 rec-tion of the sur-face
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 209--209
+[]|\OT1/lmr/m/n/8 mean-concave (pos-i-tive
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 mean-convex (neg-a-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 (1993); Hofierka and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 oth-ers (2009); Olaya
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 south facing slope, a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]|\OT1/lmr/m/n/8 Molotch and oth-ers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]|\OT1/lmr/bx/n/8 Wind
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/bx/n/8 ex-po-sure/shelter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]|\OT1/lmr/m/n/8 Executable ob-tained
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 from Adam Win-stral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 that fol-lows the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 pro-ce-dure out-lined
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 in-ter-est that has the
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 209--209
+\OT1/lmr/m/n/8 great-est up-ward slope
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]|\OT1/lmr/m/n/8 Winstral and oth-ers
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 216--217
 \OT1/lmr/m/n/9.5 pack-age (Rous-tant and oth-ers, 2012) to cal-cu-late the
  []
 
@@ -530,130 +658,143 @@ Underfull \hbox (badness 1024) in paragraph at lines 177--178
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[5] <DepthBoxplot_SPvsFS.pdf, id=62, 506.89375pt x 244.915pt>
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<DepthBoxplot_SPvsFS.pdf, id=63, 506.89375pt x 244.915pt>
 File: DepthBoxplot_SPvsFS.pdf Graphic file (type pdf)
 
 <use DepthBoxplot_SPvsFS.pdf>
-Package pdftex.def Info: DepthBoxplot_SPvsFS.pdf used on input line 194.
+Package pdftex.def Info: DepthBoxplot_SPvsFS.pdf used on input line 233.
 (pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
-Underfull \hbox (badness 1062) in paragraph at lines 201--202
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[6]
+Underfull \hbox (badness 1062) in paragraph at lines 240--241
 \OT1/lmr/m/n/9.5 deviation of each other for each glacier and over all
  []
 
 
-LaTeX Warning: Reference `fig:density_pitVStube' on page 6 undefined on input l
-ine 207.
+LaTeX Warning: Reference `fig:density_pitVStube' on page 7 undefined on input l
+ine 246.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 209.
+               Default added (so using `tbp') on input line 248.
+
+<ZigzagHistogram.pdf, id=69, 244.915pt x 506.89375pt>
+File: ZigzagHistogram.pdf Graphic file (type pdf)
+
+<use ZigzagHistogram.pdf>
+Package pdftex.def Info: ZigzagHistogram.pdf used on input line 273.
+(pdftex.def)             Requested size: 253.22952pt x 524.11739pt.
+
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 273--273
+ [][] 
+ []
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[6] <ZigzagHistogram.pdf, id=69, 244.915pt x 506.89375pt>
-File: ZigzagHistogram.pdf Graphic file (type pdf)
-
-<use ZigzagHistogram.pdf>
-Package pdftex.def Info: ZigzagHistogram.pdf used on input line 234.
-(pdftex.def)             Requested size: 253.22952pt x 524.11739pt.
-
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 234--234
- [][] 
- []
-
+[7 <./DepthBoxplot_SPvsFS.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 245.
+               Default added (so using `tbp') on input line 284.
 
-<observedVSestimated_S2.pdf, id=70, 506.89375pt x 284.06125pt>
+<observedVSestimated_S2.pdf, id=87, 506.89375pt x 284.06125pt>
 File: observedVSestimated_S2.pdf Graphic file (type pdf)
 
 <use observedVSestimated_S2.pdf>
-Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 263.
+Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 302.
 (pdftex.def)             Requested size: 506.45905pt x 283.82646pt.
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[7 <./DepthBoxplot_SPvsFS.pdf>] <BetaCoeffs.pdf, id=87, 244.915pt x 244.915pt>
+[8 <./ZigzagHistogram.pdf>] <BetaCoeffs.pdf, id=258, 244.915pt x 244.915pt>
 File: BetaCoeffs.pdf Graphic file (type pdf)
 
 <use BetaCoeffs.pdf>
-Package pdftex.def Info: BetaCoeffs.pdf used on input line 275.
+Package pdftex.def Info: BetaCoeffs.pdf used on input line 314.
 (pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 275--275
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 314--314
  [][] 
  []
 
-<LR_map.pdf, id=88, 506.89375pt x 244.915pt>
-File: LR_map.pdf Graphic file (type pdf)
- <use LR_map.pdf>
-Package pdftex.def Info: LR_map.pdf used on input line 288.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
-<SK_map.pdf, id=89, 506.89375pt x 244.915pt>
-File: SK_map.pdf Graphic file (type pdf)
- <use SK_map.pdf>
-Package pdftex.def Info: SK_map.pdf used on input line 290.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-[8 <./ZigzagHistogram.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 301.
+               Default added (so using `tbp') on input line 323.
 
-
-Underfull \hbox (badness 1158) in paragraph at lines 303--303
-\OT1/lmr/m/n/8.5 winter balance estimated using linear regression (LR) and
- []
-
-<WSMBDist.pdf, id=259, 506.89375pt x 341.275pt>
-File: WSMBDist.pdf Graphic file (type pdf)
- <use WSMBDist.pdf>
-Package pdftex.def Info: WSMBDist.pdf used on input line 318.
-(pdftex.def)             Requested size: 607.7493pt x 409.18945pt.
-
-Overfull \hbox (69.03595pt too wide) in paragraph at lines 317--318
- []|  [] 
- []
-
-<SpatialVar_LR.pdf, id=260, 506.89375pt x 244.915pt>
-File: SpatialVar_LR.pdf Graphic file (type pdf)
- <use SpatialVar_LR.pdf>
-Package pdftex.def Info: SpatialVar_LR.pdf used on input line 329.
+<LR_map.pdf, id=259, 506.89375pt x 244.915pt>
+File: LR_map.pdf Graphic file (type pdf)
+ <use LR_map.pdf>
+Package pdftex.def Info: LR_map.pdf used on input line 340.
 (pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
-<SpatialVar_SK.pdf, id=261, 506.89375pt x 244.915pt>
-File: SpatialVar_SK.pdf Graphic file (type pdf)
- <use SpatialVar_SK.pdf>
-Package pdftex.def Info: SpatialVar_SK.pdf used on input line 331.
+<SK_map.pdf, id=260, 506.89375pt x 244.915pt>
+File: SK_map.pdf Graphic file (type pdf)
+ <use SK_map.pdf>
+Package pdftex.def Info: SK_map.pdf used on input line 342.
 (pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [9 <./observedVSestimated_S2.pdf>]
-Underfull \hbox (badness 1845) in paragraph at lines 350--351
-[]\OT1/lmr/m/n/9.5 The FS appears to oversample in deep snow and
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 353.
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 355--355
+\OT1/lmr/m/n/8.5 winter balance estimated using linear regression (LR) and
  []
 
+<WSMBDist.pdf, id=302, 506.89375pt x 341.275pt>
+File: WSMBDist.pdf Graphic file (type pdf)
+ <use WSMBDist.pdf>
+Package pdftex.def Info: WSMBDist.pdf used on input line 370.
+(pdftex.def)             Requested size: 607.7493pt x 409.18945pt.
 
-Underfull \hbox (badness 1460) in paragraph at lines 350--351
-\OT1/lmr/m/n/9.5 undersample in shallow snow. Oversampling by small
+Overfull \hbox (69.03595pt too wide) in paragraph at lines 369--370
+ []|  [] 
  []
 
+<SpatialVar_LR.pdf, id=303, 506.89375pt x 244.915pt>
+File: SpatialVar_LR.pdf Graphic file (type pdf)
+ <use SpatialVar_LR.pdf>
+Package pdftex.def Info: SpatialVar_LR.pdf used on input line 381.
+(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+
+<SpatialVar_SK.pdf, id=304, 506.89375pt x 244.915pt>
+File: SpatialVar_SK.pdf Graphic file (type pdf)
+ <use SpatialVar_SK.pdf>
+Package pdftex.def Info: SpatialVar_SK.pdf used on input line 383.
+(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [10 <./BetaCoeffs.pdf>]
+Underfull \hbox (badness 1845) in paragraph at lines 402--403
+[]\OT1/lmr/m/n/9.5 The FS appears to oversample in deep snow and
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 402--403
+\OT1/lmr/m/n/9.5 undersample in shallow snow. Oversampling by small
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -667,11 +808,6 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 372--373
-\OT1/lmr/m/n/9.5 up or down glacier and changing direction to follow
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -682,25 +818,33 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[13 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
+Underfull \hbox (badness 1371) in paragraph at lines 424--425
+\OT1/lmr/m/n/9.5 up or down glacier and changing direction to follow
+ []
+
+
+Underfull \vbox (badness 5622) has occurred while \output is active []
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[13 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
-<AccumGrad.pdf, id=425, 244.915pt x 244.915pt>
+[14] <AccumGrad.pdf, id=430, 244.915pt x 244.915pt>
 File: AccumGrad.pdf Graphic file (type pdf)
  <use AccumGrad.pdf>
-Package pdftex.def Info: AccumGrad.pdf used on input line 400.
+Package pdftex.def Info: AccumGrad.pdf used on input line 452.
 (pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 400--400
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 452--452
  [][] 
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 412--413
+Underfull \hbox (badness 1348) in paragraph at lines 464--465
 \OT1/lmr/m/n/9.5 path-ways) in the land-scape (Zhang and Mont-gomery,
  []
 
@@ -708,41 +852,37 @@ Underfull \hbox (badness 1348) in paragraph at lines 412--413
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[14]
-Underfull \hbox (badness 2277) in paragraph at lines 423--424
+[15 <./AccumGrad.pdf>]
+Underfull \hbox (badness 2277) in paragraph at lines 475--476
 []\OT1/lmr/m/n/9.5 Overall, elevation is the dominant driver of SWE
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 423--424
+Underfull \hbox (badness 1642) in paragraph at lines 475--476
 \OT1/lmr/m/n/9.5 different on Glacier 4 when compared to Glaciers 2
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 423--424
+Underfull \hbox (badness 1014) in paragraph at lines 475--476
 \OT1/lmr/m/n/9.5 indicating that accumulation is controlled by complex
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 423--424
+Underfull \hbox (badness 2653) in paragraph at lines 475--476
 \OT1/lmr/m/n/9.5 interactions between topography and the atmosphere
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 427--428
+Underfull \hbox (badness 1424) in paragraph at lines 479--480
 \OT1/lmr/m/n/9.5 We con-duct a Monte Carlo ex-per-i-ment to prop-a-gate
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 427--428
+Underfull \hbox (badness 1077) in paragraph at lines 479--480
 \OT1/lmr/m/n/9.5 both within and be-tween meth-ods. We find that SK
  []
 
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[15 <./AccumGrad.pdf>] (./AccumulationOnGlaciers.bbl
+(./AccumulationOnGlaciers.bbl
 Underfull \hbox (badness 2753) in paragraph at lines 26--29
 \OT1/lmr/m/n/9.5 sults from three sam-pler. \OT1/lmr/m/it/9.5 In-ter-na-tional 
 As-so-ci-a-tion
@@ -765,6 +905,10 @@ Underfull \hbox (badness 1442) in paragraph at lines 47--51
  []
 
 
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[16]
 Underfull \hbox (badness 1320) in paragraph at lines 67--69
 []\OT1/lmr/m/n/9.5 Conger SM and McClung DM (2009) Comparison of
  []
@@ -848,13 +992,6 @@ x/n/9.5 129\OT1/lmr/m/n/9.5 , 92--100 (doi:
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[16]
 Underfull \hbox (badness 2277) in paragraph at lines 163--165
 []\OT1/lmr/m/n/9.5 Gray DM and Male DH (1981) \OT1/lmr/m/it/9.5 Handbook of sno
 w:
@@ -899,9 +1036,10 @@ Underfull \hbox (badness 2662) in paragraph at lines 206--209
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
+[17]
 Underfull \hbox (badness 2426) in paragraph at lines 271--277
 \OT1/lmr/m/n/9.5 for es-ti-mat-ing snow wa-ter equiv-a-lent. \OT1/lmr/m/it/9.5 
 Ad-vances in
@@ -930,10 +1068,9 @@ mr/m/n/9.5 , \OT1/lmr/bx/n/9.5 33\OT1/lmr/m/n/9.5 (13) (doi:
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-[17]
 Underfull \hbox (badness 2409) in paragraph at lines 319--323
 []\OT1/lmr/m/n/9.5 Mit^^Sa^^Tsov^^Sa H and Hofierka J (1993) Interpolation by
  []
@@ -970,6 +1107,10 @@ Underfull \hbox (badness 2343) in paragraph at lines 366--369
  []
 
 
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 378--381
 []\OT1/lmr/m/n/9.5 Schneiderbauer S and Prokop A (2011) The
  []
@@ -1026,7 +1167,7 @@ r/m/n/9.5 (10), 1537--1541 (doi: 10.1175/1520-
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[18] (./AccumulationOnGlaciers.aux)
+[19] (./AccumulationOnGlaciers.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1034,37 +1175,50 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3931 strings out of 493029
- 53564 string characters out of 6136234
- 124340 words of memory out of 5000000
- 7359 multiletter control sequences out of 15000+600000
- 70138 words of font info for 68 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 42i,15n,27p,2198b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/
-lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmb
-x9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-tt10.pfb>
-Output written on AccumulationOnGlaciers.pdf (18 pages, 1910573 bytes).
+ 3930 strings out of 494501
+ 54599 string characters out of 6167030
+ 134365 words of memory out of 5000000
+ 7102 multiletter control sequences out of 15000+600000
+ 70451 words of font info for 69 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 42i,16n,27p,1717b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/l
+ocal/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/
+texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive
+/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2015
+basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2015basic
+/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2015basic/texm
+f-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2015basic/texmf-dist
+/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts
+/type1/public/lm/lmmi10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type
+1/public/lm/lmmi6.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/publ
+ic/lm/lmmi7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/
+lmmi8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmmi9.
+pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></
+usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/lo
+cal/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/tex
+live/2015basic/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/20
+15basic/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2015basic
+/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2015basic/texmf-
+dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2015basic/texmf-dist/
+fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/
+type1/public/lm/lmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1
+/public/lm/lmsy6.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/publi
+c/lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/l
+msy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmsy9.p
+fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></
+usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/lo
+cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+>
+Output written on AccumulationOnGlaciers.pdf (19 pages, 1949061 bytes).
 PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 415 compressed objects within 5 object streams
+ 539 PDF objects out of 1000 (max. 8388607)
+ 424 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
