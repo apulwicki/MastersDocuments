@@ -35,7 +35,7 @@
 
 \begin{document}
 
-\title[]{Analysis of methods and uncertainties in estimating winter surface mass balance from direct measurements on alpine glaciers}
+\title[]{Uncertainties in estimating winter balance from direct measurements on  glaciers}
 
 \author[]{Alexandra PULWICKI,$^1$
   Gwenn E. FLOWERS,$^1$ Valentina  RADI\'C,$^2$}
@@ -194,36 +194,6 @@ Snow depth data are highly variable so there is a possibility for the LR to fit 
 Topographic parameters are easy to calculate proxies for physical processes, such as orographic precipitation, solar radiation effects, wind redistribution and preferential deposition. We derive all parameters (Table \ref{tab:TopoParams}) for our study from a SPOT-5 DEM ($40\times40$ m) \citep{Korona2009}. Two DEMs are stitched together to encompass the Donjek Range. An iterative 3D-coregistration algorithm \citep{Berthier2007} is used to correct the horizontal ($\sim$2 m E, $\sim$4 m N) and vertical (5.4 m) discrepancy between the two DEMs before stitching. 
 
 Visual inspection of the curvature fields calculated using the full DEM shows a noisy spatial distribution that did not vary smoothly. To smooth the DEM, various smoothing algorithms and window sizes are applied and the combination that produces the highest correlation between topographic parameters and SWE is chosen. Inverse-distance weighted, Gaussian and grid cell averaging smoothing all with window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 are used. Grid cell average smoothing with a 7$\times$7 window resulted in the highest overall correlation between curvature (second derivative) and SWE as well as slope (first derivative) and SWE. We use the smoothed DEM to calculate curvature, slope, aspect and ``northness''.
-
-\begin{table*}[!htbp]
-\centering%
-\caption{Description of topographic parameters used in the linear regression.}
-\label{tab:TopoParams}
-\begin{tabularx}{\linewidth}{XXXXX}
-\midrule
-\textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \midrule
-\textbf{Elevation ($z$)} &  & Values taken directly from DEM &  &  \\
-\textbf{Distance from centreline ($d_C$)} &  & Minimum distance between the Easting and Northing of the northwest corner of each grid cell and a manually defined centreline &  &  \\
-\textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
-\textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
-\textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential curvature (direction of the contour tangent) & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & mean-concave (positive values) terrain with relative accumulation and mean-convex (negative values) terrain with relative scouring & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
-\textbf{``Northness'' ($N$)} & $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope, and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \cite{Molotch2005} \\
-\textbf{Wind exposure/shelter parameter (Sx)} &  & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \cite{Winstral2002}
-\end{tabularx}
-\end{table*}
-
-\begin{figure*}
-	\centering
-	\includegraphics[width =\textwidth]{TopoParamsSampled1.pdf}\\
-	\caption{Distribution of topographic parameters over Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right) are shown in white. Distribution of topographic parameter values from sampled grid cells in shown in gray. Topographic parameters include elevation ($z$), distance from centreline ($d_C$), aspect ($\alpha$), slope ($m$), northness ($N$), mean curvature ($\kappa$), and winter redistribution (Sx).}
-	\label{fig:TopoParamsSampled1}
-\end{figure*}
-\begin{figure*}
-	\centering
-	\includegraphics[width =\textwidth]{TopoParamsSampled2.pdf}\\
-	\caption{See Figure \ref{fig:TopoParamsSampled1}}
-	\label{fig:TopoParamsSampled2}
-\end{figure*}
 
 \subsubsection{Simple kriging}
 
@@ -500,30 +470,38 @@ Our thorough analysis of linear regression to estimate winter balance and rigoro
 \bibliographystyle{igs}
 
 %----------------------------------------------------------------------------------------
+\pagebreak 
+\section{Supplementary material}
 
-%
-%%1
-%Snow distribution affects the availability of water for human and ecological needs. In alpine regions, glaciers act as important mediators of this relationship by delaying snow melt and providing water from ice melt during the late summer. The distribution of snow on glaciers therefore has a large impact on water resources. Snow is also the dominant input of glacier mass and decreasing uncertainty in estimating winter mass balance by focusing on the  amount and spatial distribution of winter accumulation is central to assessing health of glaciers \citep{Reveillet2016}. Glacier mass loss is predicted to contribute ?? m to global sea level rise so understanding how local glacier mass balance is affected by distribution of snow is critical for accurate predictions of glacier response to a warming climate. Snow distribution is sensitive to a number of complex process that partially depend on glacier location, topography, and orientation. Current models are not able to fully represent these processes so the distribution of snow in remote, mountainous locations is not well known. This is a significant source of uncertainty that undermines the ability of models to represent current glacier conditions and make predictions about how they will change.
-%
-%%2
-%Snow distribution in alpine regions is not uniform or static, but rather highly variable and influenced by diverse and dynamic interactions the atmosphere and complex topography operating on multiple spatial and temporal scales. Several key processes are responsible for patterns of snow distribution. Orographic precipitation associated with air mass lifting along high topographic slopes generally results in increased precipitation at higher elevations \citep{Clark2011, Sold2013}. Cooler temperatures at high elevations result in more precipitation falling as snow, further increasing the amount of snow at high elevation \citep{Bloschl1991}. Location of a basin within a mountain range and its proximity to a moisture source also affects the overall amount of snow \citep{McGrath2015}. Decreased precipitation is observed on the lee side of topographic divides and in locations further from large bodies of water. Solar radiation causes increased snow melt on south-facing slopes \citep{Mott2008}. Wind redistribution and preferential deposition are crucial factors that influence the distribution of snow \citep{Lehning2008, Winstral2002, Clark2011}. Sharp changes in topography cause convergent and divergent airflows close to the surface, leading to terrain induced turbulence that modifies mean wind and snow particle velocities \citep{Mott2008, Lehning2008, Dadic2010}. In general, high wind speeds and up drafts on the windward side of ridges causes reduced deposition and increased erosion of snow. On the leeward side of a ridge, lower wind speeds result in snow particle fall out and deposition leading to increased accumulation \citep{Liston1998, Mott2011}. 
-%
-%The atmospheric processes interact with complex mountain topography to create variability in snow distribution at multiple spatial scales. \cite{Clark2011} identifies the point scale ($<$5 m), hillslope scale (1--100 m), basin scale (100--10,000 m) and regional scale (10--1000 km) as the most important scales for snow accumulation. Topographic features on glaciers and surrounding mountains such a rocks, crevasses, local ridges and depressions and variations in curvature and slope can affect where snow is located  \citep{Bloeschl1999, Sold2013}. Avalanching can also redistribute snow, especially on the margins of a glacier \citep{Bloschl1991, Mott2008}. 
-%
-%%3
-%Estimating the distribution and variability of snow accumulation requires accurately accounting for the interaction of atmospheric processes and topography. Dynamic models use known physical relationships to simulate temporally and spatially resolved surface processes and use the results to predict where and how much snow will be deposited \citep{Mott2008}. Dynamic models are a valuable way to determine accumulation variability but application is operationally complex and computationally expensive, and also requires a diverse set of detailed observations. Statistical models of snow variability establish empirical relationships between snow distribution and external variables, which act as proximes for physical processes \citep{Fowler2007}. Two commonly applied statistical techniques that interpolate and extrapolate snow measurements include regression and kriging. 
-%
-%Measuring snow can be done in a number of 
-%
-%
-%%5
-%The St. Elias Mountains contain the largest non-polar ice field and the longest valley glaciers outside of Greenland and Antarctica \citep{Marcus1970, Marcus1970}. Steep climatic gradients across the mountains create sharp changes in glacier cover and mass balance \citep{Clarke2002}. This region currently has the most negative mass budget and is the largest contributor to sea-level rise in the world \citep{Kaser2006,Gardner2013}. Research on snow distribution and glacier mass balance in the St. Elias is limited. The first significant investigations took place under Project Snow Cornice \citep{Wood1948}. Researchers looked at snow accumulation and ice formation as well as ice-mass thermal regime, density, and depth. Studies were conducted primarily on large glaciers such as the Kaskawalsh and Seward, and thus provided insights into large-scale accumulation patterns. This initiative was then followed by the Icefield Ranges Research Project (IRRP), which was established in 1961 \citep{Danby2003}. A number of subsequent long-term studies have been established in the St. Elias since IRRP \citep[e.g.][]{Clarke1984, Paoli2009}. \cite{Arendt2008} and \cite{Wheler2014} briefly studied the mass balance of a number of glaciers throughout the St. Elias. Ice cores have also been used to study the local and regional climate and precipitation history \citep{Holdsworth1991, Moore2002, Wake2002}. 
-%
-%The weather in the St. Elias varies considerably over the range. The west side of the mountains is characterized by a cool, Marine West Coast climate due to the influence of the Pacific ocean, while the eastern side (just 250 from the ocean) is considered subarctic \citep{Marcus1970}. The mountains are oriented perpendicular to frequent and intense storms that originate in the ocean, which are orographically lifted resulting in significant precipitation \citep{Taylor1969}. Eventually, the fronts spill over the mountain divide (located to the west of the Kaskawalsh Glacier) and descend along the eastern side, which often results in decreased precipitation. This rain shadow is likely the major cause of the significant difference in accumulation and equilibrium line altitude (ELA) between the two sides of the mountains. The marine side has an ELA of $\sim$1100 m and the continental side has an ELA of $\sim$2100 m, while at the same elevation there is three times more accumulation on the marine side \citep{Marcus1970}.
-%
-%There is clearly a strong need for a more comprehensive understanding of snow accumulation in the St. Elias Mountains. Although a few studies have examined accumulation, no studies have examined the distribution of snow and how it varies spatially, especially on small alpine glaciers. 
-%
-%%6
-%The main objectives of our study are to (1) conduct a comprehensive sweep of choices and assumptions made when moving from snow measurements to estimating accumulation and (2) show how snow variability, data error and our methodological choices interact to create uncertainty in our estimate of accumulation. 
+\begin{table*}[!htbp]
+\centering%
+\caption{Description of topographic parameters used in the linear regression.}
+\label{tab:TopoParams}
+\begin{tabularx}{\linewidth}{XXXXX}
+\midrule
+\textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \midrule
+\textbf{Elevation ($z$)} &  & Values taken directly from DEM &  &  \\
+\textbf{Distance from centreline ($d_C$)} &  & Minimum distance between the Easting and Northing of the northwest corner of each grid cell and a manually defined centreline &  &  \\
+\textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
+\textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
+\textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential curvature (direction of the contour tangent) & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & mean-concave (positive values) terrain with relative accumulation and mean-convex (negative values) terrain with relative scouring & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\
+\textbf{``Northness'' ($N$)} & $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope, and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \cite{Molotch2005} \\
+\textbf{Wind exposure/shelter parameter (Sx)} &  & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \cite{Winstral2002}
+\end{tabularx}
+\end{table*}
+
+\begin{figure*}
+	\centering
+	\includegraphics[width =\textwidth]{TopoParamsSampled1.pdf}\\
+	\caption{Distribution of topographic parameters over Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right) are shown in white. Distribution of topographic parameter values from sampled grid cells in shown in gray. Topographic parameters include elevation ($z$), distance from centreline ($d_C$), aspect ($\alpha$), slope ($m$), northness ($N$), mean curvature ($\kappa$), and winter redistribution (Sx).}
+	\label{fig:TopoParamsSampled1}
+\end{figure*}
+\begin{figure*}
+	\centering
+	\includegraphics[width =\textwidth]{TopoParamsSampled2.pdf}\\
+	\caption{See Figure \ref{fig:TopoParamsSampled1}}
+	\label{fig:TopoParamsSampled2}
+\end{figure*}
+
 
 \end{document}
