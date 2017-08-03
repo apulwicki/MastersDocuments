@@ -170,39 +170,6 @@ Relating topographic parameters and observed data is a simple approach to unders
 
 While terrain-based parametrization is easy to employ, its usefulness in understanding snow distribution can be limited. This method assumes that variability between cells is larger than within cell variability, which may not necessarily apply to all cells, especially in steep terrain or where grid size is comparatively large. \cite{Marchand2005} found that the standard deviation within the 30 m by 30 m grid cells used in the study was slightly larger than the between-grid variability. Additionally, \cite{Grunewald2013} observed that local statistical models are able to perform well but that they cannot be transferred to different regions and that regional-scale models are not able to explain the majority of variance. The temporal transferability of terrain-based parameterization is also not reliable. \cite{Grunewald2013} found that local models could be applied between years while \cite{Revuelto2014} found that snow distribution variability could not be explained by their model in low snow years. Furthermore, the use of terrain parameters as proxies does not provide meaningful insight into relevant processes. This is important when attempting to predict distribution of variables in a different climate or location. 
 
-\subsubsection{Variograms}
-\label{sec:variogram_intro}
-Length scales are distances over which data is correlated and they describe the degree of spatial dependence of a variable, which is likely due to a controlling processes. It is important to identify scaling processes of snow properties so that more effective models that account for processes at many scales can be developed \citep{Bloeschl1999, Deems2006a}. For example, the correlation length of snow depth can give insight into the effects of underlying topography and wind effects. The length scale of snow depth changes with time and is dependent on the amount of snow, influence of wind, and occurrence of melt. 
-
-Geostatistical techniques and fractal analysis are the two main categories of tools that can be used to determine the length scale. Geostatitical techniques characterize a spatial pattern as composed of random deviations from a mean value and neglects any spatial structure that could exist in the random field \citep{Deems2006a}. These tools are used for distinguishing between autocorrelated and uncorrelated scale regions and have been widely used for snow science applications \citep[e.g][]{Bloeschl1999, Deems2006, Marshall2006}. Fractal analysis allows for stochastic structure within the random component and is able to identify multiple scales of variability \citep{Deems2006a}. Changes, or breaks, in variability scales are linked to important changes in processes that affect the observed spatial pattern. Fractal geometry (also known as scale invariance or self-similarity), has been observed in snow distribution patterns \citep{Shook1996, Granger2002, Deems2006a,Trujillo2007, Deems2008} and has been used to interpolate between snow depth observations \citep{Shook1997}.
-
-The most traditional geospatial technique is to construct a variogram (or semivariogram), which is a plot of the variance between points at two locations (Figure \ref{variogram}(a)). The goal of the variogram is to estimate the autocorrelation structure of the underlying stochastic process. The semivariance $\gamma \left(h\right)$ is calculated by
-\begin{equation}
-\gamma(h) = \frac{1}{2\left| N(h) \right|}\sum_{N(h)} \left(z_i-z_j \right)^2 ,
-\end{equation}
-where $N(h)$ is the set of all pairwise Euclidean distances $i-j=h$, $\left|N(h)\right|$ is the number of distinct pairs of $N(h)$, and $z_i$ and $z_j$ are the data vales at spatial locations $i$ and $j$, respectively \citep{Schirmer2011a}. Variance will increase as the distance between points increases, indicating that the values at these points are increasingly less dependent on each other. The distance at which this value no longer increases is the correlation length (also called the range) and the variance at this point (random field) is referred to as the sill ($\lim_{h\to\infty}\gamma(h)$) \citep{Srivastava2013}. In practice, the correlation length exists only for stationary processes with a constant mean and is defined as the distance at which semivariance reaches 95\% \citep{Deems2006a}. Variability that was not captured in the measurement, due to insufficient sampling resolution and measurement error, is referred to at the nugget and is the y-intercept of a variogram. Data with a high degree of spatial structure will exhibit a steep slope for the sill is reached and data with low spatial structure would show a more gradual slope. Other analyses that present similar information to the semivariogram include autocorrelation and covariance.
-
-Information from variograms is often used for interpolating point measurements to find spatial patterns. \cite{Reuter2016} claim that geostatistical methods are preferred over simple regressions for interpolating data because they incorporate spatial autocorrelation directly from measurements. Kriging is a commonly used interpolation technique that assigns weights for observed values based on the data covariance. There are many types of kriging, including ordinary, universal, block, and external drift, which have different assumptions about the mean of the data and include different components of the data (e.g. residuals) \citep{Webster2001}. 
-
-\begin{figure}
-\begin{minipage}[c][8cm][t]{.58\textwidth}
-        \vspace*{\fill}
-  \centering
-  \includegraphics[height=6cm]{variogram.png}
-  \subcaption{Variogram}
-\end{minipage}%
-\begin{minipage}[c][8cm][t]{.38\textwidth}
-        \vspace*{\fill} 
-          \centering
-         \includegraphics[height=5.5cm]{loglogvario.png}
-  \subcaption{Log-log variogram}
-  \end{minipage}%
-
-\caption{Example of a variogram (from \cite{Srivastava2013}) and a log-log variogram with scale breaks (from \cite{Deems2006a}).}
-\label{variogram}
-\end{figure}
-
-Fractal analysis attempts to identify scale-invariant spatial patterns, which means the observed variable has similar statistical properties at multiple scales. In this case, spatial pattern characteristics can be transferred from one scale to another using a scaling factor and this can also provide information about the scale, scope, and resolution of modelling and sampling efforts \citep{Deems2006a}. The most common way of identifying scale-invariance and scale breaks is by analyzing the slope of a log-transformed variogram (see Figure\ref{variogram} (b)), where log-linear segments indicate self-similar, fractal distributions \citep{Deems2006a}. For example, \cite{Schirmer2011a} used fractal analysis to confirm the effect of dominant wind direction on snow distribution by examining differences in scale break between windward, lee, and cross-loaded slopes. Power spectra (log-log plots) can also be used to examine scale-invariant patterns with the wave number and spectral exponent representing the spatial scale and degree of variability, respectively \citep{Trujillo2007, Trujillo2009}.
 
 % Measuring accumulation
 \section{Measuring accumulation}
@@ -390,11 +357,11 @@ There is a need for a multi-scale investigation of snow accumulation on glaciers
        \label{fig:flowchart_project}
 \end{figure}
  
-The thesis work aims to examine the spatial variability of snow distribution  in the St. Elias Mountains using direct measurements and statistical models. Four spatial scales that are relevant to accumulation on glaciers will be considered: point measurement, DEM resolution, glacier and mountain range (Figure \ref{fig:flowchart_scales}). The spatial variability is measured by conducting an extensive snow survey and accumulation is be measured using a combination of probing, firn coring, and snow pits on three alpine glaciers in the Donjek Range, located in the eastern part of the St. Elias Mountains (Table \ref{tab:glacierstats}). A combination of statistical techniques, including basic statistics, variograms, and regressions, will then be used to investigate spatial variability at multiple scales. Weather-typing will also be used to examine meso-scale weather conditions that affect precipitation distribution. 
+The thesis work aims to examine the spatial variability of snow distribution  in the St. Elias Mountains using direct measurements and statistical models. Four spatial scales that are relevant to accumulation on glaciers will be considered: point measurement, DEM resolution, glacier and mountain range (Figure \ref{fig:flowchart_scales}). The spatial variability is measured by conducting an extensive snow survey and accumulation is be measured using a combination of probing, firn coring, and snow pits on three alpine glaciers in the Donjek Range, located in the eastern part of the St. Elias Mountains (Table \ref{tab:glacierstats}). A combination of statistical techniques, including basic statistics and regressions, will then be used to investigate spatial variability at multiple scales. Weather-typing and particle trajectories will also be used to examine meso-scale weather conditions that affect precipitation distribution. 
 
   \begin{figure}
            \includegraphics[width = \textwidth]{ScalesOfVariability.png}
-       \caption{Visualization of four spatial scales investigated in project. The lower panels show examples of the amount of data analysed at each scale.}
+       \caption{Visualization of four spatial scales investigated in project. The lower panels show examples of the amount of data analyzed at each scale.}
        \label{fig:flowchart_scales}
 \end{figure}
 
@@ -412,7 +379,7 @@ Glacier 12             & 12.6                                   & 9.5           
 \end{tabular}
 \end{table} 
 
-Mass balance models often estimate winter balance by using interpolation methods based on only a small number of observations. It is likely that these accumulation estimates are poor representations of mass balance input. The proposed work will attempt to improve how these estimates are made by determining uncertainty in SWE measurement and interpolation, identifying topographic parameters that affect snow distribution, and examining the transferability of statistical models within a mountain range. While these aspects have been investigated in mountain environments, there are few studies that look at winter balance estimates on glaciers. By examining various statistical techniques used when calculating regressions between observed accumulation and topographic parameters (e.g. linear regression versus Bayesian model averaging) as well as different methods for interpolating between measurements (e.g. kriging), a range of winter mass balance estimates can be complied. Various subsets of measured SWE can also be used in these regressions and interpolations to examine the effect of sample size and measurement location on accumulation estimates. Valuable insights into optimizing snow survey design are likely to be gained from this process. Transferability of regressions between nearby basins will also be addressed, which will aid in determining winter mass balance across mountain ranges. Examining potential impacts of mesoscale weather systems (weather typing) on mountain range snow accumulation will also contribute to improving current understanding of conditions that may affect observed snow distribution. 
+Mass balance models often estimate winter balance by using interpolation methods based on only a small number of observations. It is likely that these accumulation estimates are poor representations of mass balance input. The proposed work will attempt to improve how these estimates are made by determining uncertainty in SWE measurement and interpolation, identifying topographic parameters that affect snow distribution, and examining the transferability of statistical models within a mountain range. While these aspects have been investigated in mountain environments, there are few studies that look at winter balance estimates on glaciers. By examining various statistical techniques used when calculating regressions between observed accumulation and topographic parameters (e.g. linear regression versus Bayesian model averaging) as well as different methods for interpolating between measurements (e.g. kriging versus linear regression), a range of winter mass balance estimates can be complied. Various subsets of measured SWE can also be used in these regressions and interpolations to examine the effect of sample size and measurement location on accumulation estimates. Valuable insights into optimizing snow survey design are likely to be gained from this process. Transferability of regressions between nearby basins will also be addressed, which will aid in determining winter mass balance across mountain ranges. Examining potential impacts of mesoscale weather systems (weather typing and moisture trajectory tracking) on mountain range snow accumulation will also contribute to improving current understanding of conditions that may affect observed snow distribution. 
 
 \section{Summary}
 Snow accumulation plays a central role in alpine hydrology and has a prominent impact on glacier mass balance. In mountainous regions, accumulation is highly variable on point, hillslope, watershed, and regional scales. The contribution of accumulation to glacier mass balance is controlled mainly by the distribution of snow. Processes such as orographic lifting, preferential deposition, and wind redistribution, all arising from the interaction of atmospheric conditions and topography, strongly affect snow distribution. Statistical models have been used to relate meteorological and topographic variables to snow accumulation in order to better understand the effects of these processes. These models rely on accurate measurement of snow distribution, which can be achieved by determining SWE from snow density and depth. Results from previous studies of accumulation on glaciers have shown large spatial variability at many scales and a dependence on multiple processes that affect snow distribution. 
@@ -420,12 +387,10 @@ Snow accumulation plays a central role in alpine hydrology and has a prominent i
 Accumulation in the St. Elias Mountains is poorly understood, largely because the glaciers are remote. There is a need to quantify snow accumulation in this region and how it varies both between glaciers and within glacierized basins. The proposed study would be the first within the St. Elias Mountains to examine accumulation variability at the point, hillslope, watershed, and regional scale. Well-established methods will be applied to measure accumulation variability.  These measurements will be used to investigate measurement uncertainty and relevant length scales, the role of topography in determining snow distribution, optimizing winter balance measurement, and the transferability of statistical relationship as well as regional differences in accumulation across a range. This comprehensive approach to examining spatial patterns in snow distribution on glaciers will contribute to the current understanding of processes and parameters that affect winter balance variability on glaciers. 
 
 \section{Thesis overview}
-
+??
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Field methods and data processing}
-
-***Still needed: close up photo of swe tube, snowpit cut outs?
 
 %%%%
 \section{Experimental design}
@@ -510,7 +475,6 @@ In this arrangement, snow depth measurements could be taken every 10 m along a t
 	\caption{Implementation of transect probing. The first person navigated to the intended waypoint using the GPS device. The second, third, and fourth (not seen) observers are probing using 3.2 m long avalanche probes. There is approximately 10 m between observers. Photo credit: G. Flowers}
 	\label{photo_probing}
 	\end{figure}
-
 
 \begin{figure}
     \centering
@@ -793,7 +757,7 @@ Four main interpolation methods are used \citep{McGrath2015, Elder1991}. The fir
 
 Since the snowpit-derived densities and Federal Sampler-derived densities had no discernible relationship, the two density datasets are kept separate. This means that for each density interpolation option, there are two outputs. In the end, there are eight different interpolations of density that are carried forward throughout the study, which allows for a range of SWE estimates to be made. 
 
-The eight density distributions can be classified as using either snowpit-derived densities (SP) or Federal Sampler-derived densities (FS) and as using a certain method, indicated by a number.
+The eight density distributions can be classified as using either snowpit-derived densities (SP) or Federal Sampler-derived densities (FS) and as using a certain method, indicated by a number (Table \ref{tab:densityOptions}).
 \begin{itemize}
 	\item[S1] Calculates the mean density of all snowpit measurements.
 	\item[F1] Calculates the mean density of all Federal Sampler measurements.
@@ -805,7 +769,27 @@ The eight density distributions can be classified as using either snowpit-derive
 	\item[F4] Determines the distance between each measurement location and each Federal Sampler and then calculates the inverse-distance weight. For each measurement location, each Federal Sampler density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
 	\end{itemize}
 
+\begin{table}[H]
+\centering
+\caption{Description of density interpolation methods used to calculate SWE used in the topographic regression. Abbreviations with `S' used snowpit-derived densities and abbrviations with an `F' used Federal Sampler-derived densities.}
+\label{tab:densityOptions}
+\begin{tabular}{c|cc|c}
+ & \multicolumn{2}{c|}{\textbf{Source of snow density}} &  \\
+ & \textit{Snowpit} & \begin{tabular}[c|]{c} \textit{Federal}\\  \textit{Sampler}\end{tabular} & \multirow{-2}{*}{\textbf{\begin{tabular}[|c]{c}Estimation\\ method\end{tabular}}} \\   \hline
 
+S1 & $\blacksquare$ &  &  \\
+ 
+F1 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Mean of all glaciers \end{tabular}} \\  \hline
+S2 & $\blacksquare$ &  &  \\
+F2 &  & $\blacksquare$ & \multirow{-2}{*}{Glacier mean} \\ \hline
+ 
+S3 & $\blacksquare$ &  &  \\
+ 
+F3 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Linear regression of elevation and\\ density for each glacier \end{tabular}} \\ \hline
+S4 & $\blacksquare$ &  &  \\
+F4 &  & $\blacksquare$ & \multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}Inverse distance\\ weighted mean\end{tabular}}
+\end{tabular}
+\end{table}
 
 \chapter{Field and topographic data}
 
@@ -2453,18 +2437,11 @@ The RMSE of estimated WSMB found using transferred coefficients is larger for al
 
 \section{Summary}
 
-In this portion of the project, the relation between topographic parameters and SWE at the basin scale is examined. First, a suitable DEM is produced by correcting and merging two SPOT-5 DEMs. Then, a series of topographic parameters are calculated for the study glaciers. The sampled topographic parameters are a poor representation of the full range of parameters on the study glaciers. Major limitations include minimal sampling in the accumulation areas and a lack of sample locations with extreme values of topographic parameters (e.g. high elevation, steep slopes in the accumulation area). This is a major limitation of this study and there is likely a large error induced when extrapolating  relationships between SWE and topographic parameters. 
-
-A linear regression between observed SWE (using various density interpolation options) and topographic parameters is found using MLR and BMA. The choice of density interpolation and the regression method do not have a major impact on the values of topographic regressor coefficients. 
-
-The study glaciers showed varied relationships between SWE and topographic parameters. Glacier 4 has low coefficient values and the modelled SWE is a poor representation of observed SWE. The most significant parameter on Glacier 4 is Sx, which is negatively correlated with SWE. The regression for Glacier 2 indicates that elevation is the strongest predictor of SWE and is able to explain a large portion of the observed variability.  A strong dependence on elevation is seen on Glacier 13 as well, although less of the observed variable could be explained by this parameter. 
-
-** Incorporate Yukon Snow Bulletin 
-
+??
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% WSMB Distibutrion
+% Winter Balance
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Winter Surface Mass Balance Distribution}
@@ -2520,20 +2497,12 @@ Specific WSMB is affected by variability introduced when interpolating density (
 \begin{figure*}
 	\centering
 \hspace*{-1.2cm}
-	\includegraphics[width =1.2\textwidth]{WSMBDist_LR.pdf}\\
+	\includegraphics[width =1.2\textwidth]{WSMBDist.pdf}\\
 	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values that arise from SWE variability ($\sigma_{ZZ}$) and interpolation variability ($\sigma_{\beta}$ or $\sigma_{\mathrm{KRIG}}$). Results from a linear regression interpolation (top panels) and simple kriging (bottom panels) are shown. Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
-	\label{fig:WSMBDist_LR}
+	\label{fig:WSMBDist}
 \end{figure*}
 
 The total WSMB uncertainty from SK interpolation is 3 to 5 times greater than uncertainty from LR interpolation. The PDFs overlap between the two interpolation methods although the PDF peaks are lower when SK is used for Glaciers 2 and 13 and higher for Glacier 4. SK results in WSMB distributions that overlap between glaciers and there is also a small probability of estimating a WSMB value of 0 m w.e. for Glaciers 2 and 13. LR results in overlapping WSMB distributions for Glaciers 2 and 4, with the PDF peak of Glacier 4 being slightly higher than that of Glacier 2. 
-
-\begin{figure}
-	\centering
-	\includegraphics[width =0.8\textwidth]{WSMBDist_full.pdf}\\
-	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values estimated using linear regression (top) or simple kriging (bottom). Each PDF includes density variability, SWE variability and interpolation variability for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
-	\label{fig:WSMBDist_LRvsSK}
-\end{figure}
-
 
 \subsection{Spatial patterns of winter balance uncertainty}
 
@@ -2557,6 +2526,12 @@ SWE variability is the smallest contributor to WSMB uncertainty. Therefore, obta
 Using a Monte Carlo experiment to propagate variability allowed us to quantify effects of variability on estimates of WSMB. However, our analysis did not include variability arising from a number of data sources. Error associated with SP and FS density measurement is not included but we believe that this error is likely to be encompassed in the wide range of density interpolation methods. DEM vertical and horizontal error are not considered in the Monte Carlo experiment mainly because there is no DEM validation data at our study location. Error associated with estimating measurement locations, which is a combination of hand-held GPS error, distance of observers from GPS and travel along a straight line, is also not considered. However, we feel that this source of error is encompassed in the variability estimated from zigzag measurements. 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Regional Controls
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Regional Controls}
+\label{sec:RegionalControls}
 
 
  
@@ -2577,7 +2552,8 @@ Using a Monte Carlo experiment to propagate variability allowed us to quantify e
 	\bibliographystyle{plain}
 	\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 
-\begin{appendices} % optional
+\begin{appendices} 
+
 	\chapter{GPS Waypoint Creation and Upload to GPS Device}
 	
 	To create the desired \textbf{transect} waypoints and enter them into the handheld GPS devices (Garmin GPSMAP 64s) the following steps were taken:
