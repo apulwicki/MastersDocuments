@@ -73,37 +73,42 @@
 \BOOKMARK [2][-]{subsection.4.3.2}{Methods}{section.4.3}% 73
 \BOOKMARK [2][-]{subsection.4.3.3}{Results}{section.4.3}% 74
 \BOOKMARK [1][-]{section.4.4}{Comparison of interpolation methods}{chapter.4}% 75
-\BOOKMARK [1][-]{section.4.5}{Transferability of linear regression coefficients}{chapter.4}% 76
-\BOOKMARK [2][-]{subsection.4.5.1}{Results}{section.4.5}% 77
-\BOOKMARK [1][-]{section.4.6}{Summary}{chapter.4}% 78
-\BOOKMARK [0][-]{chapter.5}{Winter Surface Mass Balance Distribution}{}% 79
-\BOOKMARK [1][-]{section.5.1}{Background}{chapter.5}% 80
-\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 81
-\BOOKMARK [2][-]{subsection.5.2.1}{SWE variability}{section.5.2}% 82
-\BOOKMARK [2][-]{subsection.5.2.2}{Interpolation variability}{section.5.2}% 83
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 84
-\BOOKMARK [2][-]{subsection.5.3.1}{WSMB uncertainty}{section.5.3}% 85
-\BOOKMARK [2][-]{subsection.5.3.2}{Spatial patterns of winter balance uncertainty}{section.5.3}% 86
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 87
-\BOOKMARK [0][-]{section*.175}{Bibliography}{}% 88
-\BOOKMARK [0][-]{chapter.6}{GPS Waypoint Creation and Upload to GPS Device}{}% 89
-\BOOKMARK [0][-]{chapter.7}{Field Maps}{}% 90
-\BOOKMARK [0][-]{chapter.8}{Data Processing Scripts}{}% 91
-\BOOKMARK [1][-]{section.8.1}{Snow depth measured with graduated avalanche probe}{chapter.8}% 92
-\BOOKMARK [2][-]{subsection.8.1.1}{Linear and curvilinear transect surveys}{section.8.1}% 93
-\BOOKMARK [2][-]{subsection.8.1.2}{Zigzag surveys}{section.8.1}% 94
-\BOOKMARK [1][-]{section.8.2}{Snow density}{chapter.8}% 95
-\BOOKMARK [1][-]{section.8.3}{Snow water equivalent \(SWE\)}{chapter.8}% 96
-\BOOKMARK [0][-]{chapter.9}{Variability of data at various scales}{}% 97
-\BOOKMARK [1][-]{section.9.1}{Point Scale}{chapter.9}% 98
-\BOOKMARK [2][-]{subsection.9.1.1}{Data normality}{section.9.1}% 99
-\BOOKMARK [2][-]{subsection.9.1.2}{Observer differences}{section.9.1}% 100
-\BOOKMARK [2][-]{subsection.9.1.3}{Standard deviation of snow depth along linear and curvilinear transects}{section.9.1}% 101
-\BOOKMARK [2][-]{subsection.9.1.4}{Standard deviation of SWE in DEM cell}{section.9.1}% 102
-\BOOKMARK [0][-]{chapter.10}{Topographic parameters from QGIS to Matlab}{}% 103
-\BOOKMARK [0][-]{chapter.11}{MLR software}{}% 104
-\BOOKMARK [0][-]{chapter.12}{BMA software}{}% 105
-\BOOKMARK [0][-]{chapter.13}{Kriging software}{}% 106
-\BOOKMARK [0][-]{chapter.14}{Winter surface mass balance distribution}{}% 107
-\BOOKMARK [1][-]{section.14.1}{Linear regression WSMB distribution}{chapter.14}% 108
-\BOOKMARK [1][-]{section.14.2}{Simple kriging WSMB distribution}{chapter.14}% 109
+\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}% 76
+\BOOKMARK [0][-]{chapter.5}{Winter Balance }{}% 77
+\BOOKMARK [1][-]{section.5.1}{Background}{chapter.5}% 78
+\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 79
+\BOOKMARK [2][-]{subsection.5.2.1}{SWE uncertainty}{section.5.2}% 80
+\BOOKMARK [2][-]{subsection.5.2.2}{Density uncertainty}{section.5.2}% 81
+\BOOKMARK [2][-]{subsection.5.2.3}{Interpolation uncertainty}{section.5.2}% 82
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 83
+\BOOKMARK [2][-]{subsection.5.3.1}{Winter balance uncertainty}{section.5.3}% 84
+\BOOKMARK [2][-]{subsection.5.3.2}{Spatial patterns of winter balance uncertainty}{section.5.3}% 85
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 86
+\BOOKMARK [0][-]{chapter.6}{Regional Controls}{}% 87
+\BOOKMARK [1][-]{section.6.1}{Transferability of linear regression coefficients}{chapter.6}% 88
+\BOOKMARK [2][-]{subsection.6.1.1}{Results}{section.6.1}% 89
+\BOOKMARK [2][-]{subsection.6.1.2}{Accumulation gradient}{section.6.1}% 90
+\BOOKMARK [2][-]{subsection.6.1.3}{Limitations and future work}{section.6.1}% 91
+\BOOKMARK [1][-]{section.6.2}{Conclusion}{chapter.6}% 92
+\BOOKMARK [0][-]{section*.176}{Bibliography}{}% 93
+\BOOKMARK [0][-]{chapter.7}{GPS Waypoint Creation and Upload to GPS Device}{}% 94
+\BOOKMARK [0][-]{chapter.8}{Field Maps}{}% 95
+\BOOKMARK [0][-]{chapter.9}{Data Processing Scripts}{}% 96
+\BOOKMARK [1][-]{section.9.1}{Snow depth measured with graduated avalanche probe}{chapter.9}% 97
+\BOOKMARK [2][-]{subsection.9.1.1}{Linear and curvilinear transect surveys}{section.9.1}% 98
+\BOOKMARK [2][-]{subsection.9.1.2}{Zigzag surveys}{section.9.1}% 99
+\BOOKMARK [1][-]{section.9.2}{Snow density}{chapter.9}% 100
+\BOOKMARK [1][-]{section.9.3}{Snow water equivalent \(SWE\)}{chapter.9}% 101
+\BOOKMARK [0][-]{chapter.10}{Variability of data at various scales}{}% 102
+\BOOKMARK [1][-]{section.10.1}{Point Scale}{chapter.10}% 103
+\BOOKMARK [2][-]{subsection.10.1.1}{Data normality}{section.10.1}% 104
+\BOOKMARK [2][-]{subsection.10.1.2}{Observer differences}{section.10.1}% 105
+\BOOKMARK [2][-]{subsection.10.1.3}{Standard deviation of snow depth along linear and curvilinear transects}{section.10.1}% 106
+\BOOKMARK [2][-]{subsection.10.1.4}{Standard deviation of SWE in DEM cell}{section.10.1}% 107
+\BOOKMARK [0][-]{chapter.11}{Topographic parameters from QGIS to Matlab}{}% 108
+\BOOKMARK [0][-]{chapter.12}{MLR software}{}% 109
+\BOOKMARK [0][-]{chapter.13}{BMA software}{}% 110
+\BOOKMARK [0][-]{chapter.14}{Kriging software}{}% 111
+\BOOKMARK [0][-]{chapter.15}{Winter surface mass balance distribution}{}% 112
+\BOOKMARK [1][-]{section.15.1}{Linear regression winter balance distribution}{chapter.15}% 113
+\BOOKMARK [1][-]{section.15.2}{Simple kriging winter balance distribution}{chapter.15}% 114

@@ -2197,13 +2197,13 @@ For all glaciers, the BMA regression produced a smaller RMSE and a slightly high
   \subcaption{}
   \end{minipage}%
 
-\caption{(a) Mean winter surface mass balance (WSMB) and (b) elevation regression coefficient found with varying number of runs for cross validation. }
+\caption{(a) Mean winter balance and (b) elevation regression coefficient found with varying number of runs for cross validation. }
 \label{fig:MLRruns}
 \end{figure}
 
 Cross validation is used to prevent overfitting of the regression coefficients in both MLR and BMA. A random subset of the data is used to fit the regression and a RMSE is calculated using the remaining data. The process is repeated 1000 times and the coefficients with the lowest RMSE are chosen. The number of runs is large to ensure that the regression coefficients that result in the lowest RMSE are found. However, computational expense increases with the number of runs so it is desirable to determine the minimum number of runs that provide a reliable set of regression coefficients. 
 
-The mean WSMB for each glacier does not appear to vary after about 200 runs (Figure \ref{fig:MLRruns}). The value of the elevation regression coefficient, which is the most important coefficient for Glaciers 2 and 13, also does not change considerably after 200 runs. A similar decrease in variation is seen for the remaining important regressors (not shown). Therefore, the number of cross validation runs can be decreased to 200 for future analysis if decreased computational time is desired. 
+The mean winter balance for each glacier does not appear to vary after about 200 runs (Figure \ref{fig:MLRruns}). The value of the elevation regression coefficient, which is the most important coefficient for Glaciers 2 and 13, also does not change considerably after 200 runs. A similar decrease in variation is seen for the remaining important regressors (not shown). Therefore, the number of cross validation runs can be decreased to 200 for future analysis if decreased computational time is desired. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 \section{Kriging}
@@ -2255,18 +2255,19 @@ Estimates of the nugget found using maximum likelihood in the DiceKriging packag
 
 \begin{table}[]
 \centering
-\caption{Nugget (m w.e.) values for SWE data with various snow density interpolation schemes estimated using maximum likelihood in DiceKriging package. S = Snowpit density values, F = Federal Sampler density values. See Section \ref{sec:densityoptions} for details on density options.}
+\caption{Nugget ($\times 10^{-3}$ m w.e.) and range length (m) values for SWE data with various snow density interpolation schemes estimated using maximum likelihood in DiceKriging package. S = Snowpit density values, F = Federal Sampler density values. See Section \ref{sec:densityoptions} for details on density options.}
 \label{tab:sweKrigNugget}
-\begin{tabular}{c|ccc}
-\textbf{\begin{tabular}[c]{@{}c@{}}Density\\ Option\end{tabular}} & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
-\textbf{S1} & 0.015 & 0.004 & 0.004 \\
-\textbf{F1} & 0.013 & 0.003 & 0.003 \\ \hline
-\textbf{S2} & 0.009 & 0.004 & 0.004 \\
-\textbf{F2} & 0.009 & 0.003 & 0.003 \\ \hline
-\textbf{S3} & 0.016 & 0.004 & 0.005 \\
-\textbf{F3} & 0.017 & 0.002 & 0.003 \\ \hline
-\textbf{S4} & 0.014 & 0.004 & 0.004 \\
-\textbf{F4} & 0.009 & 0.002 & 0.003
+\begin{tabular}{ccccccc}
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Density\\ Option\end{tabular}}} & \multicolumn{3}{c}{\textbf{Nugget }} & \multicolumn{3}{c}{\textbf{Range length }} \\
+ & \textit{G4} & \textit{G2} & \textit{G13} & \textit{G4} & \textit{G2} & \textit{G13} \\ \midrule
+\textbf{S1} & 9.2 & 3.6 & 3.3 & 89 & 784 & 318 \\ 
+\textbf{F1} & 8.0 & 2.7 & 2.9 & 89 & 364 & 318 \\ \midrule
+\textbf{S2} & 9.5 & 3.0 & 3.4 & 89 & 364 & 318 \\
+\textbf{F2} & 9.9 & 2.6 & 3.3 & 89 & 1375 & 770 \\ \midrule
+\textbf{S3} & 9.5 & 3.1 & 3.8 & 91 & 350 & 279 \\
+\textbf{F3} & 10.2 & 2.0 & 2.8 & 87 & 390 & 682 \\ \midrule
+\textbf{S4} & 9.4 & 3.6 & 3.6 & 88 & 884 & 294 \\
+\textbf{F4} & 9.8 & 2.5 & 2.8 & 88 & 759 & 317
 \end{tabular}
 \end{table}
 
@@ -2356,7 +2357,7 @@ For all glaciers, the topographic regression results in the lowest mean variance
 
 The choice of density interpolation method generally does not affect the mean SWE value and their relative magnitudes (Figure \ref{fig:InterpMethod_allopts}). The main exception to this is that of kriging interpolation on Glacier 2, where a difference of almost 0.25 m w.e. exists between F3 and F4. The F3 option uses a linear regression between Federal Sampler-derived density and elevation to interpolate density values. There is a positive relationship (Figure ??), which means that the elevation gradient in SWE is increased, resulting in higher SWE point measurements in the accumulation area. This is turn increases the kriging estimate for the accumulation area beyond these points and raises the mean SWE. Again, it is clear that kriging is sensitive to individual measurement in sparsely sampled areas. It is surprising that the R$^2$ value for both these options is similar and high (Figure \ref{fig:InterpMethod_alloptsR2}), indicating that both estimates of winter balance are equally good. 
 
-Regression kriging and kriging outperform topographic regression in predicting SWE at measurement locations (Figure \ref{fig:InterpMethod_alloptsR2}). The correlation coefficient is similar for all density options on Glaciers 2 and 13. In all cases, R$^2$ values are highest for kriging and slightly lower for regression kriging (c.f. S3 on Glacier 13). However, the relative magnitude of R$^2$ values on Glacier 4 differs between kriging and regression kriging when different density options are chosen.  ??Reason??
+Regression kriging and kriging outperform topographic regression in predicting SWE at measurement locations (Figure \ref{fig:InterpMethod_alloptsR2}). The correlation coefficient is similar for all density options on Glaciers 2 and 13. In all cases, R$^2$ values are highest for kriging and slightly lower for regression kriging (c.f. S3 on Glacier 13). However, the relative magnitude of R$^2$ values on Glacier 4 differs between kriging and regression kriging when different density options are chosen.  
 
 \begin{landscape}
 \begin{figure}
@@ -2377,21 +2378,123 @@ The two interpolation end-members, topographic regression and kriging, produce d
 Kriging is, in theory, temporally transferable but not spatially transferable. Once kriging weights are calculated, they can be applied to the same area where the mean value is estimated with a few observations. Kriging weights cannot be applied to another location. A benefit of kriging is that the resulting field is not limited to the accuracy, resolution and availability of external data (i.e. DEM). Therefore, this interpolation technique is valuable in areas with no topographic data or at scales less than the resolution of available DEMs. Another benefit of kriging is that confidence intervals can easily be calculated for the field of interest, providing concrete bounds on the distribution of values. However, kriging often produces poor results when extrapolating data. The distributed field is highly sensitive to individual measurements with extreme values in sparsely sampled areas, so extrapolating past these points can result in unrealistic values and large confidence intervals (i.e. accumulation area of Glacier 2). Problems with extrapolation are especially prevalent when observations are locally dense but globally sparse.
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+\section{Summary}
+
+??
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Winter Balance
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Winter Balance }
+\label{sec:WinterBalance}
+
+\section{Background}
+
+??
+\section{Methods}
+
+To quantify effects of uncertainty on the winter balance estimate, we conduct a Monte Carlo experiment, which uses repeated random sampling to calculate a numerical solution \citep{Metropolis1949}. This random sampling process is done 1000 times, which results in a distribution of possible winter balance values based on uncertainty within the data processing steps. We quantify the effect of uncertainty as the standard deviation of the distribution. Three sources of uncertainty, which encompass error and uncertainty within each processing step, are considered: (1) density uncertainty, (2) SWE uncertainty and (3) interpolation uncertainty. Individual sources of uncertainty are propagated through the process of converting snow measurements to winter balance. Then, all three uncertainty sources are considered together and their combined effect on winter balance uncertainty is quantified.
+
+	\subsection{SWE uncertainty}
+To estimate winter balance, we must represent SWE within a grid cell with a single value despite the fact that each grid cell contains a distribution of SWE values. The resulting uncertainty from this SWE representation is characterized by generating a normal distribution ($\mu=0$), with a standard deviation equal to the mean standard deviation of all zigzags on each glacier ($\sigma_{\mathrm{G4}} = 0.027 $ m w.e., $\sigma_{\mathrm{G2}} = 0.035$ m w.e., $\sigma_{\mathrm{G13}} = 0.040 $ m w.e.). For each iteration of the Monte Carlo, a set of random values is generated from the distribution and added to the observed SWE values. These perturbed SWE values are then used to estimate winter balance. The winter balance uncertainty due to SWE uncertainty ($\sigma_{\mathrm{SWE}}$) is calculated as the standard deviation of the resulting distribution of winter balance estimates.  
+
+	\subsection{Density uncertainty}
+We incorporate uncertainty in interpolating density measurements by carrying forward all eight density interpolation options when estimating winter balance. The density measurement and interpolation methods used in our study encompass a broad spectrum of possible density values. The winter balance uncertainty due to density uncertainty ($\sigma_{\rho}$) is calculated as the standard deviation of winter balance estimates calculated using each density interpolation option.
+
+	\subsection{Interpolation uncertainty}
+We represent the uncertainty in fitting an interpolation model to observed data in different ways for LR and SK. LR uncertainty is represented by obtaining a multivariate normal distribution of possible $\beta_i$ values. The set of multivariate normal random regression coefficient distributions is found using the coefficient covariance and coefficient values from the linear regression using the built-in function \texttt{mvnrnd}. The covariance of regression coefficients is given by \citep{Bagos2015}:
+\begin{equation}
+\mathrm{cov}\left( \boldsymbol{\beta} \right) = \sigma^2 \left( \boldsymbol{X}'  \boldsymbol{X} \right)^{-1}
+\end{equation}
+where $\boldsymbol{X}$ is the $n \times k$ matrix of predictor variables. The variance of the regression, $\sigma^2$, is estimated using
+\begin{equation}
+\sigma^2 = \frac{\sum^n_{i=1} \left(\boldsymbol{y}_i-\bar{\boldsymbol{y}} \right)^2}{n-k-1}
+\end{equation}
+The standard deviation of each distribution is calculated using the covariance of regression coefficients as outlined in \cite{Bagos2015}. The $\beta_i$ distributions are randomly sampled and the new $\beta_i$ values are used to estimate winter balance. 
+
+SK uncertainty is derived from the 95\% confidence interval SWE surfaces generated within the \texttt{DiceKriging} package. The standard deviation of each grid cell is then calculated from the confidence interval surfaces and the glacier wide standard deviation is found by taking the square root of the average variance. The distribution of winter balance values is centred at the SK winter balance estimate and has a standard deviation equal to the glacier wide standard deviation. For consistency, the standard deviation of winter balance values that result from either LR or SK interpolation uncertainty is referred to as $\sigma_{\mathrm{INT}}$.
+
+
+\section{Results}
+
+\subsection{Winter balance uncertainty}
+
+Specific winter balance is affected by uncertainty introduced when interpolating density (density uncertainty), when calculating grid cell SWE values (SWE uncertainty), and when interpolating observations (interpolation uncertainty). We find that when using LR and SK, interpolation uncertainty has a larger effect on winter balance uncertainty than density uncertainty or SWE uncertainty. The probability density function (PDF) that arises from SWE uncertainty is much narrower than the PDF that arises from interpolation uncertainty (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}).
+
+ \begin{table}[]
+\centering
+\caption{Standard deviation ([$\times10^{-2}$ m w.e.]) of winter balance distributions arising from SWE ($\sigma_{\mathrm{SWE}}$), density ($\sigma_{\rho}$) and interpolation ($\sigma_{\mathrm{INT}}$) uncertainty. Result for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13) are shown.}
+\label{tab:WSMBdistribution_sigma}
+\begin{tabular}{ccccccc}
+\textbf{} & \multicolumn{3}{c}{\textbf{Linear Regression}} & \multicolumn{3}{c}{\textbf{Simple Kriging}} \\
+ & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{INT}$ & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\mathrm{INT}}$ \\
+\midrule
+\textbf{G4} & 1.90 & 0.86 & 2.13 & 2.15 & 0.85 & 14.05 \\
+\textbf{G2} &3.37 & 1.80 & 3.09 & 2.03 & 2.53 & 13.78 \\
+\textbf{G13} & 1.68 & 1.12 & 2.80 & 1.27 & 1.15 & 9.65
+\end{tabular}
+\end{table}
+
+\begin{figure*}
+	\centering
+\hspace*{-1.2cm}
+	\includegraphics[width =1.2\textwidth]{WSMBDist.pdf}\\
+	\caption{Probability density functions (PDFs) fitted to distributions of specific winter balance values that arise from (left) SWE uncertainty ($\sigma_{SWE}$), (middle) interpolation uncertainty ($\sigma_{INT}$) and (right) all three sources of uncertainty. Results from a linear regression interpolation (top panels) and simple kriging (bottom panels) are shown. Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
+	\label{fig:WSMBDist}
+\end{figure*}
+
+The total winter balance uncertainty from SK interpolation is 3 to 5 times greater than uncertainty from LR interpolation. The PDFs overlap between the two interpolation methods although the PDF modes have lower winter balance values when SK is used for Glaciers 2 and 13 and higher for Glacier 4. SK results in winter balance distributions that overlap between glaciers and there is also a small probability of estimating a winter balance value of 0 m w.e. for Glaciers 2 and 13. LR results in overlapping winter balance distributions for Glaciers 2 and 4, with the PDF peak of Glacier 4 being slightly higher than that of Glacier 2. 
+
+\subsection{Spatial patterns of winter balance uncertainty}
+
+Density, SWE, and interpolation uncertainty all contribute to spatial patterns of winter balance uncertainty (Figure \ref{fig:WSMBspatialvar}).  For both LR and SK, the greatest uncertainty in estimated SWE occurs in the accumulation area. When LR is used, estimated SWE is highly sensitive to the elevation regression parameter. In the case of SK, uncertainty is greatest in areas far from observed SWE, which consist of the upper accumulation area on Glaciers 2 and 13. uncertainty is greatest on Glacier 4 when LR interpolation is used at the upper edges of the accumulation area, which correspond to the locations with extreme values of the wind redistribution parameter. When SK is used for interpolation on Glacier 4, uncertainty is greatest at the measured grid cells, which highlights the short correlation length and the large effect of density interpolation on the SK accumulation estimate.
+
+\begin{figure*}
+	\centering
+	\includegraphics[width =\textwidth]{SpatialVar_LR.pdf}\\
+	\vspace{-20 mm}
+	\includegraphics[width =\textwidth]{SpatialVar_SK.pdf}\\
+	\caption{Uncertainty of SWE estimated using linear regression (top) and simple kriging (bottom). Uncertainty is a relative quantity measured by taking the sum of differences between one hundred estimates of distributed winter balance that include SWE uncertainty and, in the case of linear regression, regression uncertainty. The sum is then normalized for each glacier. Glacier flow directions are indicated by arrows.}
+	\label{fig:WSMBspatialvar}
+\end{figure*}
+
+
+\section{Discussion}
+
+Interpolation uncertainty is the greatest contributor to winter balance uncertainty for both SK and LR. A large contributor to uncertainty arises from extrapolation beyond the sampled region, which results in high uncertainty in estimated SWE in the accumulation area. The winter balance distributions obtained using LR and SK overlap for each glacier but the distribution modes differ, with SK generally estimating lower winter balance in the accumulation area, which lowers the overall winter balance estimate. It is important to note that although the distributions from LR are narrower than those from SK, that does not necessitate that LR is a more accurate method of estimating winter balance. Based on the sources of uncertainty chosen, LR appears to be more precise than SK but the methods of calculating interpolation uncertainty are different so the distributions should not be directly compared. 
+
+SWE uncertainty is the smallest contributor to winter balance uncertainty. Therefore, obtaining the most accurate value of SWE to represent a grid cell, even a relatively large grid cell, does not need to be a priority when designing a snow survey. Many parts of a glacier are characterized by a relatively smooth surface, with roughness lengths on the order of centimeters \citep{Hock2005} resulting in low snow depth uncertainty. However, we assume that the sampled grid cells are representative of the uncertainty across the entire glacier, which is likely not true for areas with debris cover, crevasses and steep slopes. 
+
+Using a Monte Carlo experiment to propagate uncertainty allowed us to quantify effects of uncertainty on estimates of winter balance. However, our analysis did not include uncertainty arising from a number of data sources, which we assumed to contribute negligibly to the uncertainty in winter balance or to be encompassed by investigated sources of uncertainty. These sources of uncertainty include error associated with SP and FS density measurement, DEM vertical and horizontal error and error associated with estimating measurement locations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Regional Controls
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Regional Controls}
+\label{sec:RegionalControls}
+
 \section{Transferability of linear regression coefficients}
 \label{sec:transferability}
 
-To determine the spatial transferability of LR coefficients, the coefficients from each glacier are used to estimate WSMB on the remaining glaciers. All collected data is then used to generate LR coefficients, which are applied to the study glaciers to estimate WSMB. 
+To determine the spatial transferability of LR coefficients, the coefficients from each glacier are used to estimate winter balance on the remaining glaciers. All collected data is then used to generate LR coefficients, which are applied to the study glaciers to estimate winter balance. 
 
 
 \subsection{Results}
 
-There are considerable differences in the spatial pattern and mean estimated WSMB found using transferred regression coefficients (Figure \ref{fig:MapTransferabilityGlaciersMean}). The spatial patterns found using the Glacier 2 and Glacier 13 coefficients reflect the dominance of elevation within the regression. The uniform distributions found using Glacier 4 coefficients reflect the low regression coefficient values for the topographic parameters on Glacier 4. 
+There are considerable differences in the spatial pattern and mean estimated winter balance found using transferred regression coefficients (Figure \ref{fig:MapTransferabilityGlaciersMean}). The spatial patterns found using the Glacier 2 and Glacier 13 coefficients reflect the dominance of elevation within the regression. The uniform distributions found using Glacier 4 coefficients reflect the low regression coefficient values for the topographic parameters on Glacier 4. 
 
-The mean estimated WSMB differs considerably when the various LR coefficients are used. Glacier 4 coefficients result in the highest mean WSMB values because the mean value is approximately equal to the mean of the observed values on Glacier 4, which are higher than that of Glaciers 2 and 13. The range of mean WSMB between different coefficients is especially large for Glacier 4 (0.34 m w.e.).
+The mean estimated winter balance differs considerably when the various LR coefficients are used. Glacier 4 coefficients result in the highest mean winter balance values because the mean value is approximately equal to the mean of the observed values on Glacier 4, which are higher than that of Glaciers 2 and 13. The range of mean winter balance between different coefficients is especially large for Glacier 4 (0.34 m w.e.).
 
-The range-scale accumulation gradient (Glacier 4 highest accumulation, Glacier 13 lowest accumulation) is not present when using transferred coefficients. Glacier 4 coefficients result in an almost uniform snow distribution on all glaciers. Coefficients from Glaciers 2 and 13 result in Glacier 13 having the highest WSMB. For Glaciers 4 and 2, transferring coefficients decreases the mean WSMB and for Glacier 13, using transferred coefficients increases the mean WSMB. When using all the data to estimate a LR, the mean WSMB and spatial pattern of SWE on each glacier is similar to when Glacier 13 coefficients are used, but the larger LR intercept value results in a higher mean WSMB. 
+The range-scale accumulation gradient (Glacier 4 highest accumulation, Glacier 13 lowest accumulation) is not present when using transferred coefficients. Glacier 4 coefficients result in an almost uniform snow distribution on all glaciers. Coefficients from Glaciers 2 and 13 result in Glacier 13 having the highest winter balance. For Glaciers 4 and 2, transferring coefficients decreases the mean winter balance and for Glacier 13, using transferred coefficients increases the mean winter balance. When using all the data to estimate a LR, the mean winter balance and spatial pattern of SWE on each glacier is similar to when Glacier 13 coefficients are used, but the larger LR intercept value results in a higher mean winter balance. 
 
-The WSMB is largely determined by the intercept of the LR used and the magnitude of the elevation regression coefficient (Table \ref{tab:TransferabilityElevCoeffIntercept}) because all other regressors have small coefficients. Therefore, estimating WSMB in the Donjek Range from transferred coefficients is especially sensitive to LR intercept value and magnitude of the elevation regression coefficient.
+The winter balance is largely determined by the intercept of the LR used and the magnitude of the elevation regression coefficient (Table \ref{tab:TransferabilityElevCoeffIntercept}) because all other regressors have small coefficients. Therefore, estimating winter balance in the Donjek Range from transferred coefficients is especially sensitive to LR intercept value and magnitude of the elevation regression coefficient.
 
 \pagebreak
 \begin{figure}[H]
@@ -2399,14 +2502,14 @@ The WSMB is largely determined by the intercept of the LR used and the magnitude
 	\includegraphics[width =0.9\textwidth]{MapTransferabilityG4Coeffs.png}\\
 	\includegraphics[width =0.9\textwidth]{MapTransferabilityG2Coeffs.png}\\
 	\includegraphics[width =0.9\textwidth]{MapTransferabilityG13Coeffs.png}\\
-	\caption{Transfer of LR coefficients to estimate distributed winter surface mass balance (WSMB) on study glaciers. WSMB found using Glacier 4 (top), Glacier 2 (middle) and Glacier 13 (bottom) regression coefficients. The mean SWE from all density interpolation options is shown. Arrows indicate glacier flow direction.}
+	\caption{Transfer of LR coefficients to estimate distributed winter balance on study glaciers. winter balance found using Glacier 4 (top), Glacier 2 (middle) and Glacier 13 (bottom) regression coefficients. The mean SWE from all density interpolation options is shown. Arrows indicate glacier flow direction.}
 	\label{fig:MapTransferabilityGlaciersMean}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =0.9\textwidth]{MapTransferabilityComboCoeffs.png}\\
-	\caption{Transfer of LR coefficients to estimate distributed winter surface mass balance (WSMB) on study glaciers. WSMB found using coefficients determined from all available SWE observations. The mean SWE from all density interpolation options is shown. Arrows indicate glacier flow direction.}
+	\caption{Transfer of LR coefficients to estimate distributed winter balance on study glaciers. Winter balance found using coefficients determined from all available SWE observations. The mean SWE from all density interpolation options is shown. Arrows indicate glacier flow direction.}
 	\label{fig:MapTransferabilityComboMean}
 \end{figure}
 
@@ -2423,7 +2526,7 @@ The WSMB is largely determined by the intercept of the LR used and the magnitude
 \end{table}
 
 
-The RMSE of estimated WSMB found using transferred coefficients is larger for all glaciers then when using glacier specific coefficients (Figure \ref{fig:TransferabilityRMSE}). Glacier 4 coefficients introduce a large RMSE for Glaciers 2 and 13, while all other coefficient sets result in large RMSE on Glacier 4. Glaciers 2 and 13 have relatively small changes in RMSE when coefficients from Glacier 2, Glacier 13 or all data coefficients are used. Interestingly, the lowest average RMSE for all glaciers occurs when all data coefficients are used (Table \ref{tab:TransferabilityElevCoeffIntercept}). Therefore, if transfer of coefficients is needed, using all the data to generate LR coefficients will result in the lowest error with observed values.  
+The RMSE of estimated winter balance found using transferred coefficients is larger for all glaciers then when using glacier specific coefficients (Figure \ref{fig:TransferabilityRMSE}). Glacier 4 coefficients introduce a large RMSE for Glaciers 2 and 13, while all other coefficient sets result in large RMSE on Glacier 4. Glaciers 2 and 13 have relatively small changes in RMSE when coefficients from Glacier 2, Glacier 13 or all data coefficients are used. Interestingly, the lowest average RMSE for all glaciers occurs when all data coefficients are used (Table \ref{tab:TransferabilityElevCoeffIntercept}). Therefore, if transfer of coefficients is needed, using all the data to generate LR coefficients will result in the lowest error with observed values.  
 
 \begin{figure}[H]
 	\centering
@@ -2432,109 +2535,41 @@ The RMSE of estimated WSMB found using transferred coefficients is larger for al
 	\label{fig:TransferabilityRMSE}
 \end{figure}
 
+ \subsection{Accumulation gradient}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+An accumulation gradient is observed for the continental side of the St. Elias Mountains (Figure \ref{fig:AccumGrad}). Accumulation data are compiled from \cite{Taylor1969}, the three study glaciers, as well as two snow pits we dug near the head of the Kaskawalsh Glacier in May 2016. The data show a linear decrease in observed SWE as distance from the main mountain divide (identified by \cite{Taylor1969}) increases, with a gradient of $-0.024$ m w.e. km$^{-1}$. While the three study glaciers fit the regional relationship, the same relationship would not apply when just the Donjek Range is considered. Therefore, glacier location within a mountain range also affects glacier-wide winter balance. Interaction between meso-scale weather patterns and mountain topography is a major driver of glacier-wide accumulation. Further insight into mountain-scale accumulation trends can be achieved by investigating moisture source trajectories and orographic precipitation contribution to accumulation. 
 
-\section{Summary}
-
-??
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Winter Balance
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Winter Surface Mass Balance Distribution}
-\label{sec:WSMBdistribution}
-
-\section{Background}
-
-We identify three major sources of variability within the process of translating snow measurements to winter surface mass balance (WSMB). These variability sources encompass error and uncertainty within each processing step. We refer to the three variability sources as (1) density variability, (2) SWE variability and (3) interpolation variability. To quantify the effects of these sources of variability, a Monte Carlo sampling of the distribution of SWE variability and interpolation variability is used to obtain a distribution of WSMB for eight chosen density interpolation methods.  
-
-\section{Methods}
-
-To quantify the effects of the three variability sources on the final WSMB estimate, we conduct a Monte Carlo experiment, which uses repeated random sampling to calculate a numerical solution \citep{Metropolis1949}. In our study, we randomly sample the distributions for SWE variability and interpolation variability and carry these values through the data processing steps to obtain a value of WSMB. First, random values from the distribution of SWE values for each grid cell are independently chosen. Then, LR or SK is used to interpolate these SWE values. With the LR, a set of $\beta_i$ values and their distributions are calculated and the $\beta_i$ distributions are randomly sampled. These new $\beta_i$ values are used to calculate WSMB. With SK, a distribution of WSMB is calculated from the 95\% confidence interval kriging surfaces. Density variability is accounted for by repeating the process for each density interpolation method. This random sampling process is done 1000 times, which results in a distribution of possible WSMB values based on variability within the data processing steps.
-
-
-\subsection{SWE variability}
-
-Variability in observed SWE is included by generating a normal distribution with $\mu=0$ and a standard deviation equal to the glacier-wide mean standard deviation of the observed zigzag SWE values ($\sigma_{\mathrm{G4}} = 0.027 $ m w.e., $\sigma_{\mathrm{G2}} = 0.035$ m w.e., $\sigma_{\mathrm{G13}} = 0.040 $ m w.e.). A random set of values is drawn from this distribution and added to the SWE values used to calculate the regression. SWE values that end up being less than zero are assigned a SWE of zero.
-
-\subsection{Interpolation variability}
-
-For the linear regression, variability from regression coefficient estimation was found by first calculating linear regression coefficients ($\boldsymbol{\beta}$) using cross-correlation and BIC weighting of multivariate linear regression models (Section \ref{sec:MLR}). A set of multivariate normal random regression coefficient distributions are then found using the coefficient covariance and coefficient values from the linear regression using the built-in function \texttt{mvnrnd}. The covariance of regression coefficients is given by \citep{Bagos2015}:
-\begin{equation}
-\mathrm{cov}\left( \boldsymbol{\beta} \right) = \sigma^2 \left( \boldsymbol{X}'  \boldsymbol{X} \right)^{-1}
-\end{equation}
-where $\boldsymbol{X}$ is the $n \times k$ matrix of predictor variables. The variance of the regression, $\sigma^2$, is estimated using
-\begin{equation}
-\sigma^2 = \frac{\sum^n_{i=1} \left(\boldsymbol{y}_i-\bar{\boldsymbol{y}} \right)^2}{n-k-1}
-\end{equation}
-The distributions of each $\beta$ are sampled 1000 times and the WSMB is calculated for each set of coefficients.
-
-Simple kriging (SK) variability is calculated using the DiceKriging package. The upper and lower 95\% confidence interval (CI) for SWE at each grid cell are returned and the mean WSMB for the upper and lower limits is then calculated. When there is no SWE variability then the SK variability is assumed to be normally distributed between the upper and lower CI. When SWE variability is introduced, upper and lower CI values are calculated for each SWE variability random sampling. The mean upper and lower CIs are then used to find a normal distribution for SK variability combined with SWE variability. 
-
-\section{Results}
-
-\subsection{WSMB uncertainty}
-
-Specific WSMB is affected by variability introduced when interpolating density (density variability), when calculating grid cell SWE values (SWE variability), and when interpolating observations (interpolation variability). We find that when using a LR, interpolation variability has a larger effect on WSMB uncertainty than density variability or SWE variability. The probability density function (PDF) that arises from SWE variability is much narrower than the PDF that arises from interpolation variability (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). WSMB uncertainty found with SK interpolation is dominated by interpolation variability (Table \ref{tab:WSMBdistribution_sigma}).  
-
- \begin{table}[]
-\centering
-\caption{Standard deviation ([m w.e.]) of specific winter surface mass balance estimated using linear regression (LR) and simple kriging (SK) when variability is introduced. Density variability ($\sigma_{\rho}$) is the standard deviation of WSMB estimated using SWE data with different density interpolation methods. SWE variability ($\sigma_{\mathrm{SWE}}$) is approximated by a normal distribution about the local SWE value with standard deviation equal to the glacier-wide mean zigzag standard deviation. LR interpolation variability ($\sigma_{\beta}$) is accounted for by varying the regression coefficients with a normal distribution with standard deviation calculated from regression covariance. SK interpolation variability ($\sigma_{\mathrm{KRIG}}$) is taken from the range of distributed SWE estimates calculated by the DiceKriging package. Result for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13) are shown.}
-\label{tab:WSMBdistribution_sigma}
-\begin{tabular}{ccccccc}
-\textbf{} & \multicolumn{3}{c}{\textbf{Linear Regression}} & \multicolumn{3}{c}{\textbf{Simple Kriging}} \\
- & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\beta}$ & $\sigma_{\rho}$ & $\sigma_{\mathrm{SWE}}$ & $\sigma_{\mathrm{KRIG}}$ \\
-\midrule
-\textbf{G4} & 0.0190 & 0.0086 & 0.0213 & 0.0215 & 0.0085 & 0.1405 \\
-\textbf{G2} & 0.0337 & 0.0180 & 0.0309 & 0.0203 & 0.0253 & 0.1378 \\
-\textbf{G13} & 0.0168 & 0.0112 & 0.0280 & 0.0127 & 0.0115 & 0.0965
-\end{tabular}
-\end{table}
-
-\begin{figure*}
+\begin{figure}
 	\centering
-\hspace*{-1.2cm}
-	\includegraphics[width =1.2\textwidth]{WSMBDist.pdf}\\
-	\caption{Probability density functions (PDFs) fitted to distributions of specific winter surface mass balance (WSMB) values that arise from SWE variability ($\sigma_{ZZ}$) and interpolation variability ($\sigma_{\beta}$ or $\sigma_{\mathrm{KRIG}}$). Results from a linear regression interpolation (top panels) and simple kriging (bottom panels) are shown. Each PDF is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
-	\label{fig:WSMBDist}
-\end{figure*}
+	\includegraphics[width =0.5\textwidth]{AccumGrad.pdf}\\
+	\caption{Relation between SWE and linear distance from St. Elias mountain divide, located at the head of the Kaskawalsh Glacier. Blue dots are snow pit derived SWE values from \cite{Taylor1969}. Orange dots furthest from the divide are mean winter balance from Glaciers 4, 2 and 13, with 95\% confidence interval using a linear regression interpolation. Orange dots close to the divide are snow pit derived SWE value at two locations in the accumulation area of the Kaskawalsh Glacier collect in May 2016. Black line indicates line of best fit (R$^2=0.85$).}
+	\label{fig:AccumGrad}
+\end{figure}
 
-The total WSMB uncertainty from SK interpolation is 3 to 5 times greater than uncertainty from LR interpolation. The PDFs overlap between the two interpolation methods although the PDF peaks are lower when SK is used for Glaciers 2 and 13 and higher for Glacier 4. SK results in WSMB distributions that overlap between glaciers and there is also a small probability of estimating a WSMB value of 0 m w.e. for Glaciers 2 and 13. LR results in overlapping WSMB distributions for Glaciers 2 and 4, with the PDF peak of Glacier 4 being slightly higher than that of Glacier 2. 
-
-\subsection{Spatial patterns of winter balance uncertainty}
-
-The spatial patterns of WSMB uncertainty are affected by density, SWE, and interpolation variability (Figure \ref{fig:WSMBspatialvar}).  For both LR and SK, the greatest variability in estimated SWE occurs in the accumulation area. When LR is used, estimated SWE is highly sensitive to the elevation regression parameter. In the case of SK, variability is greatest in areas far from observed SWE, which consist of the upper accumulation area on Glaciers 2 and 13. Variability is greatest on Glacier 4 when LR interpolation is used at the upper edges of the accumulation area, which correspond to the locations with extreme values of the wind redistribution parameter. When SK is used for interpolation on Glacier 4, variability is greatest at the measured grid cells, which highlights the short correlation length and the large effect of density interpolation on the SK accumulation estimate.
-
-\begin{figure*}
-	\centering
-	\includegraphics[width =\textwidth]{SpatialVar_LR.pdf}\\
-	\includegraphics[width =\textwidth]{SpatialVar_SK.pdf}\\
-	\caption{Variability of SWE estimated using linear regression (top) and simple kriging (bottom).	Variability is a relative quantity measured by taking the sum of differences between one hundred estimates of distributed WSMB that include SWE variability and, in the case of linear regression, regression variability. The sum is then normalized for each glacier. Glacier flow directions are indicated by arrows.}
-	\label{fig:WSMBspatialvar}
-\end{figure*}
-
-
-\section{Discussion}
-
-Interpolation variability is the greatest contributor to WSMB uncertainty for both SK and LR. This uncertainty arises from extrapolation beyond the sampled region, which results in highly variability in estimated SWE in the accumulation area. To reduce WSMB uncertainty, emphasis must therefore be placed on sampling in the accumulation area and generally obtaining measurements throughout the study basin. 
-
-SWE variability is the smallest contributor to WSMB uncertainty. Therefore, obtaining the most accurate value of SWE to represent a grid cell, even a relatively large grid cell, does not need to be a priority when designing a snow survey. Extensively measuring SWE variability in a few locations using a zigzag design appears to be a good constraint on SWE variability. Many parts of a glacier though are characterized by a relatively smooth surface, with roughness lengths on the order of centimeters \citep{Hock2005} resulting in low snow depth variability. However, we assume that the sampled grid cells are representative of the variability across the entire glacier, which is likely not true for areas with debris cover, crevasses and steep slopes. Snow depth variability can be large and thus exert a dominant control on snow distribution in these area \citep{McGrath2015}. Effects of SWE variability in either smaller or larger grid cells could also be different so further investigation is needed.
-
-Using a Monte Carlo experiment to propagate variability allowed us to quantify effects of variability on estimates of WSMB. However, our analysis did not include variability arising from a number of data sources. Error associated with SP and FS density measurement is not included but we believe that this error is likely to be encompassed in the wide range of density interpolation methods. DEM vertical and horizontal error are not considered in the Monte Carlo experiment mainly because there is no DEM validation data at our study location. Error associated with estimating measurement locations, which is a combination of hand-held GPS error, distance of observers from GPS and travel along a straight line, is also not considered. However, we feel that this source of error is encompassed in the variability estimated from zigzag measurements. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Regional Controls
+% Conclusion
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Regional Controls}
-\label{sec:RegionalControls}
+\subsection{Limitations and future work}
 
+Extensions to this work could include an investigation of experimental design, examining the effects of DEM grid size on winter balance and resolving temporal variability. Our sampling design was chosen to extensively sample the ablation area and is likely too finely resolved for many future mass balance surveys to replicate. Determining a sampling design that minimizes error and reduces the number of measurements, known as data efficiency thresholds, would contribute to optimizing snow surveys in mountainous regions. For example, \cite{Lopez2010} concluded that $200-400$ observations are needed to obtain accurate and robust snow distribution models. 
 
- 
+DEM grid cell size is known to significantly affect computed topographic parameters and the ability for a DEM to resolve important hydrological features (i.e. drainage pathways) in the landscape \citep{Zhang1994, Garbrecht1994, Guo-an2001, Lopez2010}, which can have implications for calculating a LR that uses topographic parameters.  \cite{Zhang1994} found that a 10 m grid cell size is an optimal compromise between increasing resolution and large data volumes. Further, the importance of topographic parameters in predicting SWE is correlated with DEM grid size \citep[e.g.][]{Kienzle2004, Lopez2010}. A decrease in spatial resolution of the DEM results in a decrease in the importance of curvature and an increase in the importance of elevation. A detailed and ground controlled DEM is therefore needed to identify the features that drive accumulation variability. Even with a high resolution DEM, microtopography that creates small scale snow variability cannot be resolved. For example, the lower part of Glacier 2 has an undulating ice surface (on the order of 5 m horizontal and 0.5 m vertical) that results in large variability in snow depth. Future studies could also evaluate the effects of DEM uncertainty on elevation and derived topographic parameters \citep [e.g.][]{Guo-an2001, Wechsler2006}. 
+
+Temporal variability in accumulation is not considered in our study. While this limits the extent of our conclusions, a number of studies have found temporal stability in spatial patterns of snow accumulation and that terrain-based model could be applied reliable between years \citep[e.g.][]{Grunewald2013}. For example, \cite{Walmsley2015} analyzed more than 40 years of accumulation recorded on two Norwegian glaciers and found that snow accumulation is spatially heterogeneous yet exhibits robust time stability in its distribution. 
+
+\section{Conclusion}
+
+We estimate spatial accumulation patterns and specific winter balance for three glaciers in the St. Elias mountains from extensive snow depth and density sampling. Our objectives are to (1) examine methods and uncertainties when moving from snow measurements to estimating winter balance and (2) show how snow variability, data error and our methodological choices interact to create uncertainty in our estimate of winter balance.
+
+We find that the method used to interpolate observations has a large effect on winter balance estimates and its associated uncertainty. On Glacier 4, winter balance estimates are consistent between linear regression (LR) and simple kriging (SK) but both explain only a small portion of observed variance, highlighting that although the winter balance estimates are relatively precise they may not necessarily be accurate. On Glaciers 2 and 13, LR and SK are better able to estimate observed SWE values but winter balance estimates differ considerably between the two interpolation methods due to extrapolation into the accumulation area. SK is a non-parametric interpolation method that relies heavily on regular and dense sampling so extrapolation is sensitive to marginal data values and the data mean. LR employs parameters that act as proxies for physical processes, which provides insight into drivers of SWE distribution, constrains extrapolation values and can be spatially transferred. It is therefore critical that future winter balance studies report which interpolation method is used to estimate winter balance, the ability for the model to estimate observed measurements and the uncertainty that results from fitting the interpolation model. 
+
+For our study glaciers, the total winter balance uncertainty ranges from 0.03 (8\%) to 0.15 (54\%) m w.e. depending primarily on the interpolation method. The smallest winter balance uncertainty source is the representation of grid cell SWE. Future studies could reduce winter balance uncertainty by increasing the spatial distribution of snow depth sampling rather than obtaining many measurements within a single grid cell. In our work, increased sampling within the accumulation area would better constrain SWE extrapolation and decrease uncertainty. Our results indicate that using extrapolated data to compare with winter balance estimates from remote sensing or modelling studies may produce misleading results. If possible, comparison studies should use observed SWE data rather than interpolated winter balance values. 
+
+Snow distribution patterns are found to differ considerably between glaciers, highlighting strong intra- and inter-basin variability and accumulation drivers acting on multiple scales. SWE distribution on Glacier 4 is highly variable, as indicated by shorter range distance, higher nugget value and lower explained variance. Glaciers 2 and 13 have lower SWE variability and elevation is the primary control of observed variation. Despite challenges in accurately estimating winter balance, our data are consistent with a previously reported linear decrease in SWE with increased distance from the main topographic divide along the continental side of the St. Elias Mountains. This trend indicates that glacier location within a mountain range has a large influence on winter balance. 
+
 %   BACK MATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %   References and appendices. Appendices come after the bibliography and
@@ -2980,14 +3015,14 @@ Kriging is executed using the DiceKriging package in R \citep{Roustant2012}. The
 
 \chapter{Winter surface mass balance distribution}
 
-\section{Linear regression WSMB distribution}
+\section{Linear regression winter balance distribution}
 
 \begin{figure}[H]
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_zz.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_beta.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_betaNzz.png}}%
-	\caption{Distribution of winter surface mass balance (WSMB) obtained using linear regression. (Top) WSMB values obtained from a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. (Middle) WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) WSMB values obtained using both SWE variability and regression coefficient variability. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
+	\caption{Distribution of winter balance obtained using linear regression. (Top) Winter balance values obtained from a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. (Middle) Winter balance  values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) Winter balance  values obtained using both SWE variability and regression coefficient variability. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
 	\label{fig:WSMB_LR_allDensity}
 \end{figure}
 
@@ -3012,14 +3047,14 @@ Kriging is executed using the DiceKriging package in R \citep{Roustant2012}. The
 \end{figure}
 
 
-\section{Simple kriging WSMB distribution}
+\section{Simple kriging winter balance distribution}
 
 \begin{figure}[H]
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_SK_allDensity_zz.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_SK_allDensity_beta.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_SK_allDensity_betaNzz.png}}%
-	\caption{Distribution of winter surface mass balance (WSMB) obtained using simple kriging. (Top) WSMB values obtained from a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. (Middle) WSMB values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) WSMB values obtained using both SWE variability and regression coefficient variability. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
+	\caption{Distribution of winter balance obtained using simple kriging. (Top) Winter balance  values obtained from a Monte Carlo sampling of normally distributed SWE variation (obtained from zigzag measurements) about the local SWE value. (Middle) Winter balance  values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) Winter balance  values obtained using both SWE variability and regression coefficient variability. Eight different density interpolation methods are used to obtain SWE values used in the regression.}
 	\label{fig:WSMB_SK_allDensity}
 \end{figure}
 
