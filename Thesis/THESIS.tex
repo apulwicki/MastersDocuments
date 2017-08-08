@@ -346,14 +346,14 @@ A study done by \cite{Pomeroy1999} looked at snow mass balance in a non-glacieri
 
 There is clearly a strong need for a more comprehensive understanding of snow accumulation in the St. Elias Mountains. Although a few studies have examined accumulation, no studies have examined the distribution of snow and how it varies spatially. This is especially true of small alpine glaciers in the St. Elias Mountains, since most of the accumulation differences have been observed on large glaciers. It is likely that orographic lifting as well as wind redistribution and preferential deposition play major roles in determining accumulation on small alpine glaciers, so future studies should focus on the impact of these factors. 
 
-%%
+
 \section{Research scope}
 
 There is a need for a multi-scale investigation of snow accumulation on glaciers. The goal of this project is to improve understanding of processes and parameters that affect snow accumulation on glaciers. The snow distribution is characterized by identifying relevant length scales and by investigating the uncertainty, techniques, and controlling factors associated with calculating spatial patterns of the winter balance.  The project is structured in four main stages (Figure \ref{fig:flowchart_project}). First, observations are described generally using basic statistics and variability of point measured is investigated. Spatial correlations and relevant length scales of measured values are also estimated. Second, regression and kriging methods are used to interpolate observed SWE. An evaluation of the various interpolation techniques is then done. Third, a range of winter balance values is found based on combinations of interpolation and estimation methods and the impact of experimental design on winter balance values is also investigated. Fourth, the transferability between glaciers of statistical relationships found in the first three stages is examined. Meso-scale weather typing is then used to identify possible factors that affect differences in accumulation at the mountain-range scale.
 
  \begin{figure}
            \includegraphics[width = \textwidth]{MastersFlow.png}
-       \caption{Visual representation of proposed research. General scope is described on the left (ovals) and specific investigations are shown on the right (squares).}
+       \caption{Visual representation of research project. General scope is described on the left (ovals) and specific investigations are shown on the right (squares).}
        \label{fig:flowchart_project}
 \end{figure}
  
@@ -387,7 +387,7 @@ Snow accumulation plays a central role in alpine hydrology and has a prominent i
 Accumulation in the St. Elias Mountains is poorly understood, largely because the glaciers are remote. There is a need to quantify snow accumulation in this region and how it varies both between glaciers and within glacierized basins. The proposed study would be the first within the St. Elias Mountains to examine accumulation variability at the point, hillslope, watershed, and regional scale. Well-established methods will be applied to measure accumulation variability.  These measurements will be used to investigate measurement uncertainty and relevant length scales, the role of topography in determining snow distribution, optimizing winter balance measurement, and the transferability of statistical relationship as well as regional differences in accumulation across a range. This comprehensive approach to examining spatial patterns in snow distribution on glaciers will contribute to the current understanding of processes and parameters that affect winter balance variability on glaciers. 
 
 \section{Thesis overview}
-??
+The thesis is structured to follow the visual representation of research scope presented in Figure \ref{fig:flowchart_project}. Chapter 2 provides a detailed description of the intended and executed experimental design as well as a description of how the data is processed to produce data that could be analyzed. Chapter 3 encompasses the first section of the outlined research called ``Sampling''. This section focuses on presenting snow depth and density observation as well as subsequent data processing, which includes interpolating density values, converting snow depth and density to snow water equivalent (SWE) as well as calculating topographic parameters used for interpolation. Chapter 4 details three interpolation methods used to obtain a distributed estimate of SWE. Linear regression, simple kriging and regression kriging are compared and insights gained through the interpolation processes about controls on SWE are discussed. Chapter 5 examines estimates of winter balance and how snow variability, data error and our methodological choices interact to create uncertainty in our estimate of winter balance. Chapter 6 places winter balance estimates in the context of regional accumulation by examining the transferability of linear regression models between glaciers and how the study glaciers are related to the regional accumulation gradient within the continental side of the St. Elias mountains. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Field methods and data processing}
@@ -2396,7 +2396,8 @@ Kriging is, in theory, temporally transferable but not spatially transferable. O
 
 \section{Background}
 
-??
+Winter surface mass balance is the net accumulation and ablation of snow over the winter season \citep{Cogley2011}, which constitutes glacier mass input. We refer to this quantity as winter balance throughout the thesis. Accurate estimates of winter balance are critical for calculating glacier mass balance, not only because winter balance constitutes half of the glacier mass balance but also because the distribution of snow on a glacier initializes the summer balance and high snow albedo contributes to reduced summer melt \citep[e.g.][]{Hock2005, Reveillet2016}. Currently, uncertainty in winter balance estimates overshadow differences between melt models when estimating glacier mass balance \citep{Reveillet2016}. The goal of this chapter is to show how snow variability, data error and our methodological choices interact to create uncertainty in our estimate of winter balance.
+
 \section{Methods}
 
 To quantify effects of uncertainty on the winter balance estimate, we conduct a Monte Carlo experiment, which uses repeated random sampling to calculate a numerical solution \citep{Metropolis1949}. This random sampling process is done 1000 times, which results in a distribution of possible winter balance values based on uncertainty within the data processing steps. We quantify the effect of uncertainty as the standard deviation of the distribution. Three sources of uncertainty, which encompass error and uncertainty within each processing step, are considered: (1) density uncertainty, (2) SWE uncertainty and (3) interpolation uncertainty. Individual sources of uncertainty are propagated through the process of converting snow measurements to winter balance. Then, all three uncertainty sources are considered together and their combined effect on winter balance uncertainty is quantified.
