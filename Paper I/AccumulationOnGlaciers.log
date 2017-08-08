@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  8 AUG 2017 10:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  8 AUG 2017 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -441,7 +441,7 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 File: Sampling.pdf Graphic file (type pdf)
  <use Sampling.pdf>
 Package pdftex.def Info: Sampling.pdf used on input line 116.
-(pdftex.def)             Requested size: 506.45905pt x 312.84612pt.
+(pdftex.def)             Requested size: 455.81004pt x 281.56024pt.
 
 Underfull \hbox (badness 1337) in paragraph at lines 127--128
 \OT1/lmr/m/n/9.5 to be more variable than density (Elder and others,
@@ -513,15 +513,12 @@ Underfull \hbox (badness 1412) in paragraph at lines 192--193
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[5] <DepthBoxplot_SPvsFS.pdf, id=64, 506.89375pt x 244.915pt>
+[5] <DepthBoxplot_SPvsFS.pdf, id=64, 208.179pt x 361.77037pt>
 File: DepthBoxplot_SPvsFS.pdf Graphic file (type pdf)
 
 <use DepthBoxplot_SPvsFS.pdf>
 Package pdftex.def Info: DepthBoxplot_SPvsFS.pdf used on input line 205.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
-
-Underfull \vbox (badness 3690) has occurred while \output is active []
-
+(pdftex.def)             Requested size: 202.58052pt x 352.04846pt.
 
 Underfull \hbox (badness 1845) in paragraph at lines 216--217
 []\OT1/lmr/m/n/9.5 The FS appears to oversample in deep snow and
@@ -538,56 +535,69 @@ Underfull \hbox (badness 1173) in paragraph at lines 216--217
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[6] <ZigzagHistogram.pdf, id=69, 244.915pt x 506.89375pt>
+[6 <./DepthBoxplot_SPvsFS.pdf>]
+<ZigzagHistogram.pdf, id=84, 414.46158pt x 138.81276pt>
 File: ZigzagHistogram.pdf Graphic file (type pdf)
 
 <use ZigzagHistogram.pdf>
-Package pdftex.def Info: ZigzagHistogram.pdf used on input line 232.
-(pdftex.def)             Requested size: 253.22952pt x 524.11739pt.
+Package pdftex.def Info: ZigzagHistogram.pdf used on input line 226.
+(pdftex.def)             Requested size: 430.49327pt x 144.18816pt.
+ <LR_map.pdf, id=85, 352.25554pt x 191.56554pt>
+File: LR_map.pdf Graphic file (type pdf)
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 232--232
+<use LR_map.pdf>
+Package pdftex.def Info: LR_map.pdf used on input line 239.
+(pdftex.def)             Requested size: 253.22952pt x 137.71368pt.
+
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 239--239
  [][] 
  []
 
+<SK_map.pdf, id=86, 354.03804pt x 192.6997pt>
+File: SK_map.pdf Graphic file (type pdf)
+ <use SK_map.pdf>
+Package pdftex.def Info: SK_map.pdf used on input line 240.
+(pdftex.def)             Requested size: 253.22952pt x 137.83215pt.
 
-Underfull \hbox (badness 1005) in paragraph at lines 239--240
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 240--240
+ [][] 
+ []
+
+<BetaCoeffs.pdf, id=87, 205.80775pt x 188.70926pt>
+File: BetaCoeffs.pdf Graphic file (type pdf)
+ <use BetaCoeffs.pdf>
+Package pdftex.def Info: BetaCoeffs.pdf used on input line 248.
+(pdftex.def)             Requested size: 202.58052pt x 185.75732pt.
+
+Underfull \hbox (badness 1005) in paragraph at lines 257--258
 \OT1/lmr/m/n/9.5 estimated by SK is $\OMS/lmsy/m/n/9.5 ^^X$\OT1/lmr/m/n/9.5 30%
  lower than winter balance
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 241.
+               Default added (so using `tbp') on input line 259.
 
-<LR_map.pdf, id=70, 506.89375pt x 244.915pt>
-File: LR_map.pdf Graphic file (type pdf)
- <use LR_map.pdf>
-Package pdftex.def Info: LR_map.pdf used on input line 259.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+<SpatialVar_LR.pdf, id=88, 353.53206pt x 182.1976pt>
+File: SpatialVar_LR.pdf Graphic file (type pdf)
+ <use SpatialVar_LR.pdf>
+Package pdftex.def Info: SpatialVar_LR.pdf used on input line 277.
+(pdftex.def)             Requested size: 253.22952pt x 130.50937pt.
 
-<SK_map.pdf, id=71, 506.89375pt x 244.915pt>
-File: SK_map.pdf Graphic file (type pdf)
- <use SK_map.pdf>
-Package pdftex.def Info: SK_map.pdf used on input line 261.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 277--277
+ [][] 
+ []
 
-<BetaCoeffs.pdf, id=72, 244.915pt x 244.915pt>
-File: BetaCoeffs.pdf Graphic file (type pdf)
- <use BetaCoeffs.pdf>
-Package pdftex.def Info: BetaCoeffs.pdf used on input line 269.
-(pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
+<SpatialVar_SK.pdf, id=89, 351.60445pt x 184.49124pt>
+File: SpatialVar_SK.pdf Graphic file (type pdf)
+ <use SpatialVar_SK.pdf>
+Package pdftex.def Info: SpatialVar_SK.pdf used on input line 278.
+(pdftex.def)             Requested size: 253.22952pt x 132.87581pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 269--269
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 278--278
  [][] 
  []
 
@@ -595,120 +605,63 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 269--269
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[7 <./DepthBoxplot_SPvsFS.pdf>]
+[7]
 
 Package natbib Warning: Citation `Gerber2017' on page 8 undefined on input line
- 282.
+ 291.
 
-./AccumulationOnGlaciers.tex:282: Undefined control sequence.
-<recently read> \<
-                  
-l.282 .... Regression coefficients were small ($\<
-                                                  $ 0.3) and in some cases, ...
-
-? 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[8 <./ZigzagHistogram.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<SpatialVar_LR.pdf, id=267, 506.89375pt x 244.915pt>
-File: SpatialVar_LR.pdf Graphic file (type pdf)
- <use SpatialVar_LR.pdf>
-Package pdftex.def Info: SpatialVar_LR.pdf used on input line 291.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
-
-<SpatialVar_SK.pdf, id=268, 506.89375pt x 244.915pt>
-File: SpatialVar_SK.pdf Graphic file (type pdf)
- <use SpatialVar_SK.pdf>
-Package pdftex.def Info: SpatialVar_SK.pdf used on input line 293.
-(pdftex.def)             Requested size: 506.45905pt x 244.71257pt.
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[9 <./LR_map.pdf> <./SK_map.pdf>]
-<observedVSestimated_S2.pdf, id=314, 506.89375pt x 284.06125pt>
+[8 <./ZigzagHistogram.pdf> <./LR_map.pdf> <./SK_map.pdf> <./BetaCoeffs.pdf>]
+<observedVSestimated_S2.pdf, id=202, 385.03743pt x 229.20879pt>
 File: observedVSestimated_S2.pdf Graphic file (type pdf)
 
 <use observedVSestimated_S2.pdf>
-Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 306.
-(pdftex.def)             Requested size: 506.45905pt x 283.82646pt.
+Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 300.
+(pdftex.def)             Requested size: 354.51978pt x 211.0425pt.
 
-./AccumulationOnGlaciers.tex:313: Missing $ inserted.
-<inserted text> 
-                $
-l.313 ... when interpolating observations ($\sigma
-                                                  _{\mathrm{INT}}$). We find...
-
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
-\OT1/lmr/m/n/9.5 Specific win-ter bal-ance is af-fected by un-cer-tainty
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
-\OT1/lmr/m/n/9.5 in-tro-duced when in-ter-po-lat-ing den-sity ($\OML/lmm/m/it/9
-.5 ^^[[]$\OT1/lmr/m/n/9.5 ),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
-\OT1/lmr/m/n/9.5 when cal-cu-lat-ing grid cell SWE val-ues
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
-\OT1/lmr/m/n/9.5 ($\OML/lmm/m/it/9.5 ^^[[]\OT1/lmr/m/n/9.5 )\OML/lmm/m/it/9.5 ;
- andwheninterpolatingobservations\OT1/lmr/m/n/9.5 ($$\OML/lmm/m/it/9.5 ^^[[]$\O
-T1/lmr/m/n/9.5 ). We
- []
+<WSMBDist.pdf, id=203, 431.07469pt x 188.73535pt>
+File: WSMBDist.pdf Graphic file (type pdf)
+ <use WSMBDist.pdf>
+Package pdftex.def Info: WSMBDist.pdf used on input line 313.
+(pdftex.def)             Requested size: 481.13454pt x 210.6564pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 315.
+               Default added (so using `tbp') on input line 322.
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 317--317
+Underfull \hbox (badness 1147) in paragraph at lines 324--324
 \OT1/lmr/m/n/8.5 distributions arising from SWE ($\OML/lmm/m/it/8.5 ^^[[]$\OT1/
 lmr/m/n/8.5 ), density ($\OML/lmm/m/it/8.5 ^^[[]$\OT1/lmr/m/n/8.5 ) and
  []
 
-<WSMBDist.pdf, id=315, 506.89375pt x 341.275pt>
-File: WSMBDist.pdf Graphic file (type pdf)
- <use WSMBDist.pdf>
-Package pdftex.def Info: WSMBDist.pdf used on input line 332.
-(pdftex.def)             Requested size: 557.10803pt x 375.0912pt.
-
-Overfull \hbox (18.39468pt too wide) in paragraph at lines 331--332
- []|  [] 
- []
-
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[10 <./BetaCoeffs.pdf>] <AccumGrad.pdf, id=331, 244.915pt x 244.915pt>
+[9 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
+<AccumGrad.pdf, id=271, 244.915pt x 221.82875pt>
 File: AccumGrad.pdf Graphic file (type pdf)
+ <use AccumGrad.pdf>
+Package pdftex.def Info: AccumGrad.pdf used on input line 353.
+(pdftex.def)             Requested size: 253.22952pt x 229.3662pt.
 
-<use AccumGrad.pdf>
-Package pdftex.def Info: AccumGrad.pdf used on input line 352.
-(pdftex.def)             Requested size: 253.22952pt x 253.2369pt.
-
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 352--352
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 353--353
  [][] 
  []
 
 
+Underfull \vbox (badness 1178) has occurred while \output is active []
+
+
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[11 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
-Underfull \hbox (badness 1348) in paragraph at lines 362--363
+[10 <./observedVSestimated_S2.pdf>]
+Underfull \hbox (badness 1348) in paragraph at lines 363--364
 \OT1/lmr/m/n/9.5 path-ways) in the land-scape (Zhang and Mont-gomery,
  []
 
@@ -716,35 +669,25 @@ Underfull \hbox (badness 1348) in paragraph at lines 362--363
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 373--374
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[11 <./WSMBDist.pdf> <./AccumGrad.pdf>]
+Underfull \hbox (badness 2426) in paragraph at lines 374--375
 \OT1/lmr/m/n/9.5 associated uncertainty. On Glacier 4, winter balance
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[12 <./observedVSestimated_S2.pdf>]
-Underfull \hbox (badness 1112) in paragraph at lines 375--376
+Underfull \hbox (badness 1112) in paragraph at lines 376--377
 \OT1/lmr/m/n/9.5 that us-ing ex-trap-o-lated data to com-pare with win-ter
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 377--378
+Underfull \hbox (badness 1005) in paragraph at lines 378--379
 \OT1/lmr/m/n/9.5 in ac-cu-rately es-ti-mat-ing win-ter bal-ance, our data are
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[13 <./WSMBDist.pdf>] (./AccumulationOnGlaciers.bbl
+(./AccumulationOnGlaciers.bbl
 Underfull \hbox (badness 2753) in paragraph at lines 26--29
 \OT1/lmr/m/n/9.5 sults from three sam-pler. \OT1/lmr/m/it/9.5 In-ter-na-tional 
 As-so-ci-a-tion
@@ -773,6 +716,10 @@ Underfull \hbox (badness 1442) in paragraph at lines 53--57
  []
 
 
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[12]
 Underfull \hbox (badness 1320) in paragraph at lines 73--75
 []\OT1/lmr/m/n/9.5 Conger SM and McClung DM (2009) Comparison of
  []
@@ -793,10 +740,6 @@ Underfull \hbox (badness 1983) in paragraph at lines 95--99
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[14 <./AccumGrad.pdf>]
 Underfull \hbox (badness 1874) in paragraph at lines 115--119
 []\OT1/lmr/m/n/9.5 Egli L, Griessinger N and Jonas T (2011) Seasonal
  []
@@ -904,13 +847,10 @@ Underfull \hbox (badness 2662) in paragraph at lines 212--215
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[15]
+[13]
 Underfull \hbox (badness 2426) in paragraph at lines 277--283
 \OT1/lmr/m/n/9.5 for es-ti-mat-ing snow wa-ter equiv-a-lent. \OT1/lmr/m/it/9.5 
 Ad-vances in
@@ -975,6 +915,13 @@ Underfull \hbox (badness 2343) in paragraph at lines 372--375
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 384--387
 []\OT1/lmr/m/n/9.5 Schneiderbauer S and Prokop A (2011) The
  []
@@ -1001,13 +948,12 @@ Underfull \hbox (badness 3291) in paragraph at lines 394--398
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[16]
 Underfull \hbox (badness 1205) in paragraph at lines 435--438
 []\OT1/lmr/m/n/9.5 Wechsler SP and Kroll CN (2006) Quantifying DEM
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 4531) in paragraph at lines 463--467
@@ -1035,156 +981,160 @@ r/m/n/9.5 (10), 1537--1541 (doi: 10.1175/1520-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 5985) in paragraph at lines 406--406
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[15]
+Underfull \hbox (badness 5985) in paragraph at lines 407--407
 []|\OT1/lmr/m/n/8 Values taken di-rectly
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 406--406
+Underfull \hbox (badness 1546) in paragraph at lines 407--407
 []|\OT1/lmr/bx/n/8 Distance from cen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 (1993); Hofierka and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 oth-ers (2009); Olaya
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 406--406
+Underfull \hbox (badness 5302) in paragraph at lines 407--407
 []|\OT1/lmr/m/n/8 Dip di-rec-tion of the
  []
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 406--406
+Underfull \hbox (badness 2772) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 describing a slope as
  []
 
 
-Underfull \hbox (badness 2865) in paragraph at lines 406--406
+Underfull \hbox (badness 2865) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 north/south facing, is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 (1993); Hofierka and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 oth-ers (2009); Olaya
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 406--406
+Underfull \hbox (badness 1655) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 rec-tion of the sur-face
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 406--406
+Underfull \hbox (badness 1259) in paragraph at lines 407--407
 []|\OT1/lmr/m/n/8 mean-concave (pos-i-tive
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 406--406
+Underfull \hbox (badness 3792) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 mean-convex (neg-a-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 (1993); Hofierka and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 oth-ers (2009); Olaya
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 406--406
+Underfull \hbox (badness 2970) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 south facing slope, a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 []|\OT1/lmr/m/n/8 Molotch and oth-ers
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 []|\OT1/lmr/bx/n/8 Wind
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/bx/n/8 ex-po-sure/shelter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 []|\OT1/lmr/m/n/8 Executable ob-tained
  []
 
 
-Underfull \hbox (badness 7221) in paragraph at lines 406--406
+Underfull \hbox (badness 7221) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 from Adam Win-stral
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 that fol-lows the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 pro-ce-dure out-lined
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 406--406
+Underfull \hbox (badness 3128) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 in-ter-est that has the
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 406--406
+Underfull \hbox (badness 2418) in paragraph at lines 407--407
 \OT1/lmr/m/n/8 great-est up-ward slope
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 []|\OT1/lmr/m/n/8 Winstral and oth-ers
  []
 
-<TopoParamsSampled1.pdf, id=453, 506.89375pt x 569.12625pt>
+<TopoParamsSampled1.pdf, id=352, 506.89375pt x 569.12625pt>
 File: TopoParamsSampled1.pdf Graphic file (type pdf)
 
 <use TopoParamsSampled1.pdf>
-Package pdftex.def Info: TopoParamsSampled1.pdf used on input line 412.
+Package pdftex.def Info: TopoParamsSampled1.pdf used on input line 413.
 (pdftex.def)             Requested size: 506.45905pt x 568.65591pt.
 
-<TopoParamsSampled2.pdf, id=454, 506.89375pt x 426.59375pt>
+<TopoParamsSampled2.pdf, id=353, 506.89375pt x 426.59375pt>
 File: TopoParamsSampled2.pdf Graphic file (type pdf)
 
 <use TopoParamsSampled2.pdf>
-Package pdftex.def Info: TopoParamsSampled2.pdf used on input line 418.
+Package pdftex.def Info: TopoParamsSampled2.pdf used on input line 419.
 (pdftex.def)             Requested size: 506.45905pt x 426.24118pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 425.
+               Default added (so using `tbp') on input line 426.
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 451--452
+Underfull \hbox (badness 1552) in paragraph at lines 452--453
 \OT1/lmr/m/n/9.5 between topographic parameters and SWE is chosen.
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 454.
+               Default added (so using `tbp') on input line 455.
 
 
 Package natbib Warning: There were undefined citations.
@@ -1193,19 +1143,21 @@ Package natbib Warning: There were undefined citations.
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
+[16
+
+]
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
 [17]
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[18]
+[18 <./TopoParamsSampled1.pdf>]
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[19 <./TopoParamsSampled1.pdf>]
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[20 <./TopoParamsSampled2.pdf>] (./AccumulationOnGlaciers.aux)
+[19 <./TopoParamsSampled2.pdf>] (./AccumulationOnGlaciers.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1217,11 +1169,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  3953 strings out of 494501
  55087 string characters out of 6167030
- 128953 words of memory out of 5000000
+ 127977 words of memory out of 5000000
  7123 multiletter control sequences out of 15000+600000
  71521 words of font info for 73 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,16n,27p,1655b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,16n,27p,1655b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/u
 sr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/loca
 l/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/tex
@@ -1250,10 +1202,10 @@ fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></
 usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 >
-Output written on AccumulationOnGlaciers.pdf (20 pages, 2022360 bytes).
+Output written on AccumulationOnGlaciers.pdf (19 pages, 3172011 bytes).
 PDF statistics:
- 1620 PDF objects out of 1728 (max. 8388607)
- 1489 compressed objects within 15 object streams
+ 1519 PDF objects out of 1728 (max. 8388607)
+ 1361 compressed objects within 14 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

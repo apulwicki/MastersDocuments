@@ -113,7 +113,7 @@ Estimating winter balance involves transforming snow depth and density measureme
 
 \begin{figure*}
 	\centering
-	\includegraphics[width =\textwidth]{Sampling.pdf}\\
+	\includegraphics[width =0.9\textwidth]{Sampling.pdf}\\
 	\caption{Sampling design for Glaciers 4, 2 and 13, located in the Donjek Range, Yukon (a,b). Centreline and transverse transects are shown in blue dots, hourglass and circle design are shown in green dots. (c) Linear and curvilinear transects typically consist of sets of three measurement locations, spaced $\sim$10 m apart (d). (e) At each measurement location, three snow depth observation are made. (f) Linear-random snow depth measurements in `zigzag' design are shown as grey dots. Orange squares are locations of snow density measurements. }
 	\label{fig:Sampling}
 \end{figure*}
@@ -200,12 +200,12 @@ We represent the uncertainty in fitting an interpolation model to observed data 
 
 \subsection{Field measurements}
 
-\begin{figure*}
+\begin{figure}
 	\centering
-	\includegraphics[width =\textwidth]{DepthBoxplot_SPvsFS.pdf}\\
+	\includegraphics[width =0.4\textwidth]{DepthBoxplot_SPvsFS.pdf}\\
 	\caption{(Left) Boxplot of measured snow depth on Glaciers 4, 2 and 13. The box shows first quartiles, the line within the box indicates data median, bars indicate minimum and maximum values (excluding outliers), and circles show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). (Right) Comparison of integrated density estimated using wedge cutters in a snow pit and density estimated using Federal Sampler measurements for Glacier 4 (G04), Glacier 2 (G02) and Glacier 13 (G13). Snow pits were distributed in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars are minimum and maximum values.}
 	\label{fig:DepthBoxplot_SPvsFS}
-\end{figure*}
+\end{figure}
 
 Despite the lack of measurements in the accumulation area, especially along steep head walls, we observed a wide range of snow depth on all three study glaciers (Figure \ref{fig:DepthBoxplot_SPvsFS}). Glacier 4 has the highest mean snow depth and a high proportion of outliers, indicating a more variable snow depth overall. Glacier 13 has the lowest mean snow depth and a narrower distribution of observed values. At each measurement location, the median range of measured depths ($3-4$ points) as a percent of the mean depth at that location is 2\%, 11\%, and 12\%, for Glaciers 4, 2 and 13, respectively. 
 
@@ -221,18 +221,36 @@ Uncertainty in SP density is largely due to sampling error of exceptionally dens
 
 Since we find no correlation between co-located SP and FS densities (Figure \ref{fig:DepthBoxplot_SPvsFS}), each set of density values is used for all four density interpolation options. Regional and glacier mean densities are higher when SP densities are used (see Supplementary Material Table \ref{tab:Density}). Density gradient with elevation differs between SP and FS densities (see Supplementary Material Table \ref{tab:Density}). At Glaciers 2 and 13, SP density decreases with elevation, likely indicating melt and/or compaction at lower elevations. SP density is independent of elevation on Glacier 4. FS density increases with elevation on Glacier 2 and there is no relationship with elevation on Glaciers 4 and 13. There is a positive linear relation between measured snow density and depth for all FS measurements but no correlation exists between SP density and elevation. Considering these results, of the four interpolation methods used our preferred method is a glacier-wide mean of SP densities. Many winter balance studies assume uniform density \citep[e.g.][]{Elder1991,McGrath2015,Cullen2017} and it is realistic for future studies to measure snow density profiles at a few locations in the study basin.
 
+\begin{figure*}
+	\centering
+	\includegraphics[width =0.85\textwidth]{ZigzagHistogram.pdf}\\
+	\caption{Distribution of zigzag SWE values with the local mean subtracted on Glacier 4 (upper panel), Glacier 2 (middle panel) and Glacier 13 (lower panel). Zigzags are distributed throughout the ablation area of each glacier, with one located in the lower portion (L), one in the middle portion (M), and one in the upper portion (U). There were two zigzags in the middle ablation area of Glacier 13.}
+	\label{fig:ZigzagHistogram}
+\end{figure*}
+
 \subsection{Grid cell average}
 
-In an attempt to capture the spatial variability of SWE in a grid cell, we use a zigzag sampling scheme, which offers a relatively easy way to take a large number of probe measurements. The average standard deviation of all zigzags on Glacier 4 is $\sigma_{\mathrm{G4}} =  0.027$ m w.e., on Glacier 2 is $\sigma_{\mathrm{G2}} =  0.035$ m w.e. and on Glacier 13 is $\sigma_{\mathrm{G13}} =  0.040$ m w.e. SWE measurements for each zigzag are not normally distributed about the mean SWE (Figure \ref{fig:ZigzagHistogram}). For simplicity, we assume uniform variability within grid cells across each glacier, which is represented by a normal distribution with the mean zigzag standard deviation for each glacier. 
+In an attempt to capture the spatial variability of SWE in a grid cell, we use a zigzag sampling scheme, which offers a relatively easy way to take a large number of probe measurements. The average standard deviation of all zigzags on Glacier 4 is $\sigma_{\mathrm{G4ZZ}} =  0.027$ m w.e., on Glacier 2 is $\sigma_{\mathrm{G2ZZ}} =  0.035$ m w.e. and on Glacier 13 is $\sigma_{\mathrm{G13ZZ}} =  0.040$ m w.e. SWE measurements for each zigzag are not normally distributed about the mean SWE (Figure \ref{fig:ZigzagHistogram}). For simplicity, we assume uniform SWE uncertainty within grid cells across each glacier and represent this uncertainty by a normal distribution with the mean zigzag standard deviation for each glacier. 
 
-Each measured grid cell contains one to six measurements which are then averaged to give SWE grid cell average values. The distribution of grid-cell SWE values for each glacier is similar to that of Figure \ref{fig:DepthBoxplot_SPvsFS} but with fewer outliers. The zigzag standard deviation is almost two times larger than the mean standard deviation within grid cells measured along transects. However, a small number of grid cells sampled along transects have standard deviations that exceed 0.25 m w.e. We deem these values to be outliers but further work on the distribution of grid cell variability is needed. Therefore, we assume that the grid cell variability is captured with dense sampling in select grid cells. Since grid cell variability is relatively easy to quantify using zigzags, there is little need to take multiple measurements within a grid cell along a transect. Instead, transect spacing can be decreased to allow for more time to increase the spatial extent of sampling to better nature basin-scale variability.   
+Each measured grid cell contains one to six measurements which are then averaged to give SWE grid cell average values. The distribution of grid-cell SWE values for each glacier is similar to that of Figure \ref{fig:DepthBoxplot_SPvsFS} but with fewer outliers. The zigzag standard deviation is almost two times larger than the mean standard deviation within grid cells measured along transects. However, a small number of grid cells sampled along transects have standard deviations that exceed 0.25 m w.e. We deem these values to be outliers but further work on the distribution of grid cell variability is needed. Therefore, we assume that the grid cell variability is captured with dense sampling in zigzag grid cells. Since grid cell variability is relatively easy to quantify using zigzags, there is little need to take multiple measurements within a grid cell along a transect. Instead, transect spacing can be decreased to allow for greater spatial extent of sampling, which would better capture basin-scale variability.   
 
 \begin{figure}
 	\centering
-	\includegraphics[width =0.5\textwidth]{ZigzagHistogram.pdf}\\
-	\caption{Distribution of zigzag SWE values with the local mean subtracted on Glacier 4 (upper panel), Glacier 2 (middle panel) and Glacier 13 (lower panel). Zigzags are distributed throughout the ablation area of each glacier, with one located in the lower portion (L), one in the middle portion (M), and one in the upper portion (U). There were two zigzags in the middle ablation area of Glacier 13.}
-	\label{fig:ZigzagHistogram}
+	\includegraphics[width =0.5\textwidth]{LR_map.pdf}\\
+    \includegraphics[width =0.5\textwidth]{SK_map.pdf}\\
+	\caption{Spatial distribution of SWE estimated using linear regression (upper) and simple kriging (lower). Grid-cell SWE observations are found using glacier wide mean snow pit density and are shown as black dots. Glacier flow directions are indicated by arrows. Specific winter balance values are also shown.}
+	\label{fig:LR_SK_map}
 \end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.4\textwidth]{BetaCoeffs.pdf}\\
+	\caption{Distribution of regression coefficients for linear regression of grid cell topographic parameters and SWE calculated using eight density options on study glaciers. Topographic parameters include elevation ($z$), distance from centreline ($d_C$), slope ($m$) , curvature ($\kappa$), and wind exposure (Sx). Regression coefficients that were not significant were assigned a value of zero. Aspect and ``northeness'' are not shown because coefficient values are zero for all glaciers. Outlier values are shown as gray dots.}
+	\label{fig:BetaCoeffs}
+\end{figure}
+
+
 
 \subsection{Interpolated SWE}
  
@@ -254,21 +272,12 @@ The choice of interpolation method affects the specific winter balance (Table \r
 \end{tabular}
 \end{table}
 
-\begin{figure*}
-	\centering
-	\includegraphics[width =\textwidth]{LR_map.pdf}\\
-		\vspace{-16 mm}
-    \includegraphics[width =\textwidth]{SK_map.pdf}\\
-	\caption{Spatial distribution of SWE estimated using linear regression (upper) and simple kriging (lower). Grid-cell SWE observations are found using glacier wide mean snow pit density and are shown as black dots. Glacier flow directions are indicated by arrows. Specific winter balance values are also shown.}
-	\label{fig:LR_SK_map}
-\end{figure*}
-
-
 \begin{figure}
 	\centering
-	\includegraphics[width =0.5\textwidth]{BetaCoeffs.pdf}\\
-	\caption{Distribution of regression coefficients for linear regression of grid cell topographic parameters and SWE calculated using eight density options on study glaciers. Topographic parameters include elevation ($z$), distance from centreline ($d_C$), slope ($m$) , curvature ($\kappa$), and wind exposure (Sx). Regression coefficients that were not significant were assigned a value of zero. Aspect and ``northeness'' are not shown because coefficient values are zero for all glaciers. Outlier values are shown as gray dots.}
-	\label{fig:BetaCoeffs}
+	\includegraphics[width =0.5\textwidth]{SpatialVar_LR.pdf}\\
+	\includegraphics[width =0.5\textwidth]{SpatialVar_SK.pdf}\\
+	\caption{Uncertainty of SWE estimated using linear regression (top) and simple kriging (bottom). Uncertainty is a relative quantity measured by taking the sum of differences between one hundred estimates of distributed winter balance that include SWE uncertainty and, in the case of linear regression, regression uncertainty. The sum is then normalized for each glacier. Glacier flow directions are indicated by arrows.}
+	\label{fig:WSMBspatialvar}
 \end{figure}
 
 \subsubsection{Linear Regression}
@@ -279,7 +288,7 @@ Our mixed insights into dominant predictors of accumulation are consistent with 
 orientation relative to dominant wind direction and glacier shape, have been noted to affect accumulation distribution \citep{Machguth2006,Grabiec2011}.There are also a number of accumulation studies on glaciers that found no significant correlation between accumulation and
 topographic parameters and the highly variable snow distribution was attributed to complex local conditions \citep[e.g.][]{Grabiec2011,Lopez2011}.
 
-Wind redistribution and preferential deposition of snow is known to have a large influence on accumulation at sub-basin scales \citep[e.g.][]{Dadic2010, Winstral2013,Gerber2017}. Our results indicate that wind likely has an impact on snow distribution but that the wind redistribution parameter may not adequately represent this impact. For example, Glacier 4 is located in a curved valley with steep side walls so having a single cardinal direction for wind may be inappropriate. Further, the scale of deposition may be smaller than the resolution of the Sx parameter estimated from our DEM. Our results corroborate \cite{McGrath2015}, who completed a winter balance study on six Alaskan glaciers (DEM resolutions of 5 m) and found that Sx was the only other significant parameter, besides elevation, for all glaciers. Regression coefficients were small ($\<$ 0.3) and in some cases, negative. Sublimation from blowing snow has also been shown to be an important mass loss from ridges  \citep[e.g.][]{Musselman2015}. Incorporating snow loss as well as redistribution and preferential deposition may be needed for accurate representations of seasonal accumulation.
+Wind redistribution and preferential deposition of snow is known to have a large influence on accumulation at sub-basin scales \citep[e.g.][]{Dadic2010, Winstral2013,Gerber2017}. Our results indicate that wind likely has an impact on snow distribution but that the wind redistribution parameter may not adequately represent this impact. For example, Glacier 4 is located in a curved valley with steep side walls so having a single cardinal direction for wind may be inappropriate. Further, the scale of deposition may be smaller than the resolution of the Sx parameter estimated from our DEM. Our results corroborate \cite{McGrath2015}, who completed a winter balance study on six Alaskan glaciers (DEM resolutions of 5 m) and found that Sx was the only other significant parameter, besides elevation, for all glaciers. Regression coefficients were small ($<$ 0.3) and in some cases, negative. Sublimation from blowing snow has also been shown to be an important mass loss from ridges  \citep[e.g.][]{Musselman2015}. Incorporating snow loss as well as redistribution and preferential deposition may be needed for accurate representations of seasonal accumulation.
 
 Since we are unable to measure SWE in grid cells that have high topographic parameter values, we
 must linearly extrapolate relationships. The accumulation area, where there are few observations, is most susceptible to extrapolation errors (Figure \ref{fig:WSMBspatialvar}). This area typically also has the highest SWE values (Figure \ref{fig:LR_SK_map}), affecting the specific winter balance estimated for the glacier. In our study, the dependence of SWE on elevation, especially on Glacier 2, means that LR extrapolation results in almost 2 m w.e. estimated in the parts of the accumulation area. This exceptionally large estimate of SWE is unlikely for a continental snow pack. Extrapolating a LR that is fitted to predominantly ablation area SWE values is likely erroneous.
@@ -288,11 +297,9 @@ While a LR can be used to predict distributed SWE in other basins, we found that
 
 \begin{figure*}
 	\centering
-	\includegraphics[width =\textwidth]{SpatialVar_LR.pdf}\\
-	\vspace{-20 mm}
-	\includegraphics[width =\textwidth]{SpatialVar_SK.pdf}\\
-	\caption{Uncertainty of SWE estimated using linear regression (top) and simple kriging (bottom). Uncertainty is a relative quantity measured by taking the sum of differences between one hundred estimates of distributed winter balance that include SWE uncertainty and, in the case of linear regression, regression uncertainty. The sum is then normalized for each glacier. Glacier flow directions are indicated by arrows.}
-	\label{fig:WSMBspatialvar}
+	\includegraphics[width =0.7\textwidth]{observedVSestimated_S2.pdf}\\
+	\caption{Estimated grid cell SWE found using linear regression (LR) and simple kriging (SK) plotted against observed values of SWE on Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right). Line of best fit between estimated and observed SWE is also plotted.}
+	\label{fig:observedVSestimated_S2}
 \end{figure*}
 
 \subsubsection{Simple kriging}
@@ -303,14 +310,14 @@ SK cannot be used to understand physical processes that may be controlling snow 
 
 \begin{figure*}
 	\centering
-	\includegraphics[width =\textwidth]{observedVSestimated_S2.pdf}\\
-	\caption{Estimated grid cell SWE found using linear regression (LR) and simple kriging (SK) plotted against observed values of SWE on Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right). Line of best fit between estimated and observed SWE is also plotted.}
-	\label{fig:observedVSestimated_S2}
+	\includegraphics[width =0.95\textwidth]{WSMBDist.pdf}\\
+	\caption{Distributions of winter balance values that arise from (left) SWE uncertainty ($\sigma_{SWE}$), (middle) interpolation uncertainty ($\sigma_{INT}$) and (right) all three sources of uncertainty. Results from a linear regression interpolation (top panels) and simple kriging (bottom panels) are shown. Each distribution is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
+	\label{fig:WSMBDist_LR}
 \end{figure*}
 
 \subsection{Uncertainty analysis}
 
-Specific winter balance is affected by uncertainty introduced when interpolating density ($\sigma_{\rho}$), when calculating grid cell SWE values ($\sigma_{\mathrm{SWE}}), and when interpolating observations ($\sigma_{\mathrm{INT}}$). We find that when using LR and SK, interpolation uncertainty has a larger effect on winter balance uncertainty than density uncertainty or SWE uncertainty. The distribution of winter balance values that arises from SWE uncertainty is much narrower than the distribution that arises from interpolation uncertainty (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}).
+Specific winter balance is affected by uncertainty introduced when interpolating density ($\sigma_{\rho}$), when calculating grid cell SWE values ($\sigma_{\mathrm{SWE}}$), and when interpolating observations ($\sigma_{\mathrm{INT}}$). We find that when using LR and SK, interpolation uncertainty has a larger effect on winter balance uncertainty than density uncertainty or SWE uncertainty. The distribution of winter balance values that arises from SWE uncertainty is much narrower than the distribution that arises from interpolation uncertainty (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}).
 
  \begin{table}[]
 \centering
@@ -326,13 +333,7 @@ Specific winter balance is affected by uncertainty introduced when interpolating
 \end{tabular}
 \end{table}
 
-\begin{figure*}
-	\centering
-\hspace*{-1.2cm}
-	\includegraphics[width =1.1\textwidth]{WSMBDist.pdf}\\
-	\caption{Distributions of winter balance values that arise from (left) SWE uncertainty ($\sigma_{SWE}$), (middle) interpolation uncertainty ($\sigma_{INT}$) and (right) all three sources of uncertainty. Results from a linear regression interpolation (top panels) and simple kriging (bottom panels) are shown. Each distribution is calculated using one of eight density interpolation methods for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13).}
-	\label{fig:WSMBDist_LR}
-\end{figure*}
+
 
 A large contributor to uncertainty arises from extrapolation beyond the sampled region, which results in high uncertainty in estimated SWE in the accumulation area (Figure \ref{fig:WSMBspatialvar}). The winter balance distributions obtained using LR and SK overlap for each glacier but the distribution modes differ. SK generally estimating lower winter balance in the accumulation area, which lowers the overall winter balance estimate. It is important to note that although the distributions from LR are narrower than those from SK, that does not necessitate that LR is a more accurate method of estimating winter balance. Based on the sources of uncertainty chosen, LR appears to be more precise than SK but the methods of calculating interpolation uncertainty are different so the distributions should not be directly compared.
 
