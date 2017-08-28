@@ -1,5 +1,38 @@
 @comment{x-kbibtex-personnameformatting=<%l><, %f>}
 
+@article{Flowers2014,
+	abstract = "With an extensive ice cover and rich display of glacier behaviour, the St. Elias Mountains continue to be an enviable natural laboratory for glaciological research. Recent work has been motivated in part by the magnitude and pace of observed glacier change in this area, which is so ice-rich that ice loss has a measurable impact on global sea level. Both detection and attribution of these changes, as well as investigations into fundamental glacier processes, have been central themes in projects initiated within the last decade and based at the Kluane Lake Research Station. The scientific objectives of these projects are: 1. to quantify recent area and volume changes of Kaskawulsh Glacier and place them in historical perspective, 2. to investigate the regional variability of glacier response to climate and the modulating influence of ice dynamics, and 3. to characterize the hydromechanical controls on glacier sliding. A wide range of methods is being used, from ground-based manual measurements to space-based remote sensing.",
+	author = "Flowers, Gwenn E. and Copland, Luke and Schoof, Christian G.",
+	bdsk-url-1 = "http://proxy.lib.sfu.ca/login?url=https://search-proquest-com.proxy.lib.sfu.ca/docview/1670216514?accountid=13800",
+	date-added = "2017-08-19 22:42:31 +0000",
+	date-modified = "2017-08-19 22:43:38 +0000",
+	isbn = "00040843",
+	journal = "Arctic",
+	language = "English",
+	note = "Copyright - Copyright Arctic Institute of North America 2014; Document feature - Maps; Illustrations; Graphs; ; Last updated - 2015-04-07",
+	pages = "22--34",
+	title = "{Contemporary Glacier Processes and Global Change: Recent Observations from Kaskawulsh Glacier and the Donjek Range, St. Elias Mountains}",
+	url = "http://proxy.lib.sfu.ca/login?url=https://search-proquest-com.proxy.lib.sfu.ca/docview/1670216514?accountid=13800",
+	volume = "67",
+	year = "2014"
+}
+
+@article{Gerber2017,
+	author = "Gerber, F. and Lehning, M. and Hoch, S. W. and Mott, R.",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/2016JD026258",
+	date-added = "2017-08-08 15:01:56 +0000",
+	date-modified = "2017-08-08 15:02:31 +0000",
+	doi = "10.1002/2016JD026258",
+	issn = "2169-8996",
+	journal = "Journal of Geophysical Research: Atmospheres",
+	keywords = "Snow; Modeling; Boundary layer processes; leeside flow field; preferential deposition; lidar; TLS",
+	note = "2016JD026258",
+	pages = "n/a--n/a",
+	title = "{A close-ridge small-scale atmospheric flow field and its influence on snow accumulation}",
+	url = "http://dx.doi.org/10.1002/2016JD026258",
+	year = "2017"
+}
+
 @article{Kienzle2004,
 	author = "Kienzle, Stefan",
 	bdsk-url-1 = "http://dx.doi.org/10.1111/j.1467-9671.2004.00169.x",
@@ -11,7 +44,7 @@
 	number = "1",
 	pages = "83--111",
 	publisher = "Blackwell Publishing Ltd",
-	title = "{The Effect of DEM Raster Resolution on First Order, Second Order and Compound Terrain Derivatives}",
+	title = "{The Effect of {DEM} Raster Resolution on First Order, Second Order and Compound Terrain Derivatives}",
 	url = "http://dx.doi.org/10.1111/j.1467-9671.2004.00169.x",
 	volume = "8",
 	year = "2004"
@@ -19,7 +52,8 @@
 
 @article{Lehning2006,
 	author = "Lehning, Michael and V{\"o}lksch, Ingo and Gustafsson, David and Nguyen, Tuan Anh and St{\"a}hli, Manfred and Zappa, Massimiliano",
-	journal = "Hydrological processes",
+	doi = "10.1002/hyp.6204",
+	journal = "Hydrological Processes",
 	number = "10",
 	pages = "2111--2128",
 	publisher = "Wiley Online Library",
@@ -87,9 +121,11 @@
 
 @book{Kaser2003,
 	author = "Kaser, Georg and Fountain, Andrew and Jansson, Peter and others",
-	publisher = "Unesco Paris",
+	organization = "{IHP-VI- Technical documents in hydrology}",
+	publisher = "{IHP-VI- Technical documents in hydrology}",
 	title = "{A manual for monitoring the mass balance of mountain glaciers}",
-	year = "2003"
+	url = "http://unesdoc.unesco.org/images/0012/001295/129593e.pdf",
+	year = "2002"
 }
 
 @article{Wechsler2006,
@@ -98,14 +134,13 @@
 	bdsk-url-2 = "http://dx.doi.org/10.14358/PERS.72.9.1081",
 	date-added = "2017-06-22 18:21:47 +0000",
 	date-modified = "2017-06-22 18:21:47 +0000",
-	issn = "0099-1112",
 	itemtype = "ARTICLE",
 	journal = "Photogrammetric Engineering \& Remote Sensing",
 	number = "9",
 	pages = "1081--1090",
 	parent_itemid = "infobike://asprs/pers",
 	publishercode = "asprs",
-	title = "{Quantifying DEM Uncertainty and its Effect on Topographic Parameters}",
+	title = "{Quantifying {DEM} Uncertainty and its Effect on Topographic Parameters}",
 	url = "http://www.ingentaconnect.com/content/asprs/pers/2006/00000072/00000009/art00007",
 	volume = "72",
 	year = "2006"
@@ -187,9 +222,9 @@
 	author = "Davis, John C and Sampson, Robert J",
 	date-added = "2016-12-11 18:20:47 +0000",
 	date-modified = "2016-12-11 18:21:00 +0000",
+	edition = "2nd",
 	publisher = "Wiley New York et al.",
 	title = "{Statistics and data analysis in geology}",
-	volume = "646",
 	year = "1986"
 }
 
@@ -220,6 +255,7 @@
 	author = "Olaya, V",
 	date-added = "2016-12-10 19:48:05 +0000",
 	date-modified = "2016-12-10 19:48:14 +0000",
+	doi = "10.1016/S0166-2481(08)00006-8",
 	journal = "Developments in Soil Science",
 	pages = "141--169",
 	publisher = "Elsevier",
@@ -390,6 +426,7 @@
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
+	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0493(1998)126\%3C0668:MTDOAW\%3E2.0.CO;2",
 	date-added = "2016-03-21 01:48:37 +0000",
 	date-modified = "2016-03-21 01:48:54 +0000",
 	doi = "10.1175/1520-0493(1998)126<0668:MTDOAW>2.0.CO;2",
@@ -532,6 +569,7 @@
 	bdsk-url-3 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
 	bdsk-url-4 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
 	bdsk-url-5 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
+	bdsk-url-6 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199610)10:10\%3C1283::AID-HYP460\%3E3.0.CO;2-M",
 	date-added = "2016-03-20 18:25:55 +0000",
 	date-modified = "2016-03-20 18:26:12 +0000",
 	doi = "10.1002/(SICI)1099-1085(199610)10:10<1283::AID-HYP460>3.0.CO;2-M",
@@ -610,8 +648,8 @@
 	date-modified = "2016-03-20 15:49:12 +0000",
 	doi = "10.3390/hydrology3010003",
 	journal = "Hydrology",
-	number = "1",
-	pages = "3",
+	number = "3",
+	pages = "1--17",
 	publisher = "Multidisciplinary Digital Publishing Institute",
 	title = "{Spatial Heterogeneity of Snow Density and Its Influence on Snow Water Equivalence Estimates in a Large Mountainous Basin}",
 	volume = "3",
@@ -765,6 +803,7 @@
 	bdsk-url-3 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
 	bdsk-url-4 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
 	bdsk-url-5 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
+	bdsk-url-6 = "http://www.issw2008.com/papers/P\_\_8175.pdf",
 	booktitle = "{Proceedings ISSW}",
 	date-added = "2016-03-20 04:22:53 +0000",
 	date-modified = "2016-03-20 04:23:00 +0000",
@@ -879,7 +918,7 @@
 
 @inproceedings{Marshall2006,
 	author = "Marshall, Hans Peter and Koh, Gary and Sturm, Matthew and Johnson, JB and Demuth, Mike and Landry, Chris and Deems, JS and Gleason, JA",
-	booktitle = "{Proceedings ISSW}",
+	booktitle = "{Proceedings International Snow Science Workshop}",
 	date-added = "2016-03-20 00:07:43 +0000",
 	date-modified = "2016-03-20 00:09:39 +0000",
 	pages = "359--364",
@@ -891,6 +930,7 @@
 	author = "Korona, J{\'e}r{\^o}me and Berthier, Etienne and Bernard, Marc and R{\'e}my, Fr{\'e}d{\'e}rique and Thouvenot, Eric",
 	date-added = "2016-03-19 23:53:01 +0000",
 	date-modified = "2016-03-19 23:53:41 +0000",
+	doi = "10.1016/j.isprsjprs.2008.10.005",
 	journal = "ISPRS Journal of Photogrammetry and Remote Sensing",
 	number = "2",
 	pages = "204--212",
@@ -923,6 +963,7 @@
 	doi = "10.1029/2003WR002973",
 	journal = "Water Resources Research",
 	number = "4",
+	pages = "1--17",
 	publisher = "Wiley Online Library",
 	title = "{Persistence of topographic controls on the spatial distribution of snow in rugged mountain terrain, Colorado, United States}",
 	volume = "41",
@@ -981,6 +1022,7 @@
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
+	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0442(2000)013\%3C1718:USOMTI\%3E2.0.CO;2",
 	date-added = "2015-12-21 20:36:02 +0000",
 	date-modified = "2015-12-21 20:37:54 +0000",
 	doi = "10.1175/1520-0442(2000)013<1718:USOMTI>2.0.CO;2",
@@ -1065,12 +1107,13 @@
 	year = "1999"
 }
 
-@techreport{Taylor1969,
+@book{Taylor1969,
 	author = "Taylor-Barge, Bea",
 	date-added = "2015-12-19 03:35:49 +0000",
 	date-modified = "2015-12-19 03:36:26 +0000",
 	institution = "DTIC Document",
 	localfile = "/home/glaciology1/Documents/Papers/Masters/Taylor 1969 - St. Elias climate.pdf",
+	publisher = "{Montreal: Arctic Institute of North America, Research Paper No. 53}",
 	title = "{The summer climate of the {S}t. {E}lias {M}ountain region}",
 	year = "1969"
 }
@@ -1125,9 +1168,11 @@
 	date-added = "2015-12-19 03:29:21 +0000",
 	date-modified = "2015-12-19 04:18:11 +0000",
 	journal = "Arctic",
+	number = "2",
 	pages = "107--112",
 	publisher = "JSTOR",
 	title = {{Project {``Snow Cornice"}: the establishment of the {Seward Glacial} research station}},
+	volume = "1",
 	year = "1948"
 }
 
@@ -1340,6 +1385,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0442(2004)017\%3C1381:RSSCHI\%3E2.0.CO;2",
 	date-added = "2015-12-13 17:37:49 +0000",
 	date-modified = "2015-12-13 17:38:18 +0000",
 	doi = "10.1175/1520-0442(2004)017<1381:RSSCHI>2.0.CO;2",
@@ -1414,7 +1460,7 @@
 	author = "Bernhardt, Matthias and Z{\"a}ngl, G and Liston, GE and Strasser, U and Mauser, W",
 	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.7208",
 	doi = "10.1002/hyp.7208",
-	journal = "Hydrological processes",
+	journal = "Hydrological Processes",
 	number = "7",
 	owner = "glaciology1",
 	pages = "1064--1075",
@@ -1435,6 +1481,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C3181:ITDVIC\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1999)012<3181:ITDVIC>2.0.CO;2",
 	journal = "Journal of Climate",
 	number = "11",
@@ -1567,16 +1614,18 @@
 }
 
 @article{Dadic2010,
-	author = "Dadic, R and Mott, R and Lehning, M and Burlando, P",
+	author = "Dadi{\'c}, R and Mott, R and Lehning, M and Burlando, P",
 	bdsk-url-1 = "http://dx.doi.org/10.1029/2009JF001261",
 	date-modified = "2017-06-23 20:06:32 +0000",
 	doi = "10.1029/2009JF001261",
 	journal = "Journal of Geophysical Research: Earth Surface (2003--2012)",
+	number = "14",
 	owner = "glaciology1",
+	pages = "1994--2006",
 	publisher = "Wiley Online Library",
 	timestamp = "2015.11.09",
 	title = "{Parameterization for wind-induced preferential deposition of snow}",
-	volume = "115",
+	volume = "24",
 	year = "2010"
 }
 
@@ -1590,6 +1639,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0450(1994)033\%3C0140:ASTMFM\%3E2.0.CO;2",
 	doi = "10.1175/1520-0450(1994)033<0140:ASTMFM>2.0.CO;2",
 	journal = "Journal of applied meteorology",
 	number = "2",
@@ -1637,7 +1687,6 @@
 	booktitle = "{Proceedings of the International Snow Science Workshop}",
 	date-added = "2015-12-06 03:36:12 +0000",
 	date-modified = "2015-12-19 04:02:57 +0000",
-	pages = "1--6",
 	title = "{Lidar measurement of snow depth: accuracy and error sources}",
 	year = "2006"
 }
@@ -1695,7 +1744,8 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
 	bdsk-url-6 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
 	bdsk-url-7 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
-	doi = "10.1002/(SICI)1099-1085(199808/09)12:10/11<1793::AID-HYP695>3.0.CO;2-",
+	bdsk-url-8 = "http://dx.doi.org/10.1002/(SICI)1099-1085(199808/09)12:10/11\%3C1793::AID-HYP695\%3E3.0.CO;2-",
+	doi = "10.1002/(SICI)1099-1085(199808/09)12:10/111793::AID-HYP6953.0.CO;2-K",
 	journal = "Hydrological Processes",
 	number = "1011",
 	owner = "glaciology1",
@@ -2045,6 +2095,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0442(1998)011\%3C0735:ACOSAM\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1998)011<0735:ACOSAM>2.0.CO;2",
 	journal = "Journal of Climate",
 	number = "4",
@@ -2106,6 +2157,7 @@
 	journal = "Water Resources Research",
 	number = "7",
 	owner = "glaciology1",
+	pages = "1--19",
 	publisher = "Wiley Online Library",
 	timestamp = "2015.11.09",
 	title = "{Inhomogeneous precipitation distribution and snow transport in steep terrain}",
@@ -2174,6 +2226,7 @@
 	journal = "Geophysical Research Letters",
 	number = "13",
 	owner = "glaciology1",
+	pages = "1--5",
 	publisher = "Wiley Online Library",
 	timestamp = "2015.11.06",
 	title = "{Strong spatial variability of snow accumulation observed with helicopter-borne {GPR} on two adjacent Alpine glaciers}",
@@ -2382,6 +2435,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1525-7541(2000)001\%3C0491:AHOPSM\%3E2.0.CO;2",
 	doi = "10.1175/1525-7541(2000)001<0491:AHOPSM>2.0.CO;2",
 	journal = "Journal of Hydrometeorology",
 	number = "6",
@@ -2561,6 +2615,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0469(2004)061\%3C1377:ALTOOP\%3E2.0.CO;2",
 	doi = "10.1175/1520-0469(2004)061<1377:ALTOOP>2.0.CO;2",
 	journal = "Journal of the Atmospheric Sciences",
 	number = "12",
@@ -2630,6 +2685,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0442(2003)016\%3C0799:SPDOTN\%3E2.0.CO;2",
 	date-modified = "2015-12-19 04:17:44 +0000",
 	doi = "10.1175/1520-0442(2003)016<0799:SPDOTN>2.0.CO;2",
 	journal = "Journal of Climate",
@@ -2651,6 +2707,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
 	bdsk-url-6 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
 	bdsk-url-7 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
+	bdsk-url-8 = "http://dx.doi.org/10.1002/(SICI)1097-0088(200005)20:6\%3C641::AID-JOC501\%3E3.0.CO;2-1",
 	doi = "10.1002/(SICI)1097-0088(200005)20:6<641::AID-JOC501>3.0.CO;2-1",
 	journal = "International Journal of Climatology",
 	number = "6",
@@ -2671,13 +2728,14 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1525-7541(2002)003\%3C0524:SSMOWR\%3E2.0.CO;\%202",
+	doi = "10.1175/1525-7541(2002)0030524:SSMOWR2.0.CO;2",
 	journal = "Journal of Hydrometeorology",
 	number = "5",
 	owner = "glaciology1",
 	pages = "524--538",
 	timestamp = "2015.11.06",
 	title = "{Spatial snow modeling of wind-redistributed snow using terrain-based parameters}",
-	url = "http://dx.doi.org/10.1175/1525-7541(2002)003<0524:SSMOWR>2.0.CO; 2",
 	volume = "3",
 	year = "2002"
 }
@@ -2733,6 +2791,7 @@
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
+	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0442(1999)012\%3C2474:TAMAAS\%3E2.0.CO;2",
 	date-modified = "2015-12-19 04:18:31 +0000",
 	doi = "10.1175/1520-0442(1999)012<2474:TAMAAS>2.0.CO;2",
 	journal = "Journal of Climate",
@@ -2804,7 +2863,7 @@
 	year = "1987"
 }
 
-@article{Walmsley2015,
+@mastersthesis{Walmsley2015,
 	author = "Walmsley, Alexander Philip Unwin",
 	title = "{Long-term observations of snow spatial distributions at {H}ellstugubreen and {G}r{\aa}subreen, {N}orway}",
 	year = "2015"
@@ -2829,6 +2888,7 @@
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
 	bdsk-url-5 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
+	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0442(1994)007\%3C1305:SRBTAP\%3E2.0.CO;2",
 	doi = "10.1175/1520-0442(1994)007<1305:SRBTAP>2.0.CO;2",
 	journal = "Journal of climate",
 	number = "9",
@@ -2927,10 +2987,8 @@
 	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S0309170812002394",
 	bdsk-url-2 = "http://dx.doi.org/10.1016/j.advwatres.2012.08.011",
 	doi = "10.1016/j.advwatres.2012.08.011",
-	issn = "0309-1708",
 	journal = "Advances in Water Resources",
 	keywords = "Snow; Wind; Drift; Distributed; Model; Precipitation",
-	note = "Snow--Atmosphere Interactions and Hydrological Consequences",
 	pages = "64--79",
 	title = "{Simulating wind-affected snow accumulations at catchment to basin scales}",
 	url = "http://www.sciencedirect.com/science/article/pii/S0309170812002394",
@@ -3006,7 +3064,7 @@
 	year = "2016"
 }
 
-@techreport{Work1965,
+@proceedings{Work1965,
 	author = "Work, R.A. and Stockwell, H.J. and Freeman, T.G. and Beaumont, R.T.",
 	localfile = "/home/glaciology1/Documents/Papers/CRREL+Technical+Report+163.pdf",
 	organization = "Cold Regions Research \& Engineering Laboratory",
@@ -3069,6 +3127,7 @@
 	bdsk-url-3 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
 	bdsk-url-4 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
 	bdsk-url-5 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
+	bdsk-url-6 = "http://www.forrex.org/sites/default/files/publications/articles/Streamline\_Vol12\_No2\_art2.pdf",
 	journal = "Streamline: Watershed Management Bulletin",
 	month = "Spring",
 	number = "2",
@@ -3096,6 +3155,7 @@
 	abstract = "Abstract Water balance studies in tundra regions require accurate snowfall data but weather station records often underestimate basin snow storage. However, snow storage can be determined by snow surveys conducted prior to the melt period because Arctic snowpacks do not melt during winter. Topography strongly controls snow distribution. A basin can be subdivided into various terrain types and the snow survey then establishes the snow characteristics of each terrain type so that basin snow storage is obtained as their areally weighted mean. Such a survey was carried out in small basins near Resolute, Northwest Territories, traversing different types of terrain. The results confirmed that weather station snowfall grossly underestimated basin snow storage. Since it is also desirable to simplify future snow surveys by reducing the number of transects, an error analysis was performed to determine the error resulting from a grouping of terrain types. It was found that both maximum and mean error increased as the number of terrain types was reduced, but the increase was not substantial when certain terrain types were combined. A mean error of 15\% is expected when only four types of terrain (hilltops, flats, gullies-valleys and slopes) are recognized in the survey, but the error quickly increases when further simplification of the terrain is introduced.",
 	author = "Woo, Ming-Ko and Marsh, Philip",
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
+	bdsk-url-10 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
 	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
@@ -3103,20 +3163,20 @@
 	bdsk-url-6 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
 	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
-	doi = "10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2",
+	bdsk-url-9 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
 	eprint = "http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2",
 	journal = "Journal of Applied Meteorology",
-	localfile = "2",
 	number = "10",
 	pages = "1537--1541",
 	title = "{Analysis of Error in the Determination of Snow Storage for Small High {A}rctic Basins}",
-	url = "http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO",
+	url = "http://dx.doi.org/10.1175/1520-0450(1978)0171537:AOEITD2.0.CO",
 	volume = "17",
 	year = "1978"
 }
 
 @article{Berthier2007,
 	author = "Berthier, Etienne and Arnaud, Yves and Kumar, Rajesh and Ahmad, Sarfaraz and Wagnon, Patrick and Chevallier, Pierre",
+	doi = "10.1016/j.rse.2006.11.017",
 	journal = "Remote Sensing of Environment",
 	number = "3",
 	pages = "327--338",
@@ -3158,7 +3218,7 @@
 	journal = "International Association of Scientific Hydrology. Bulletin",
 	number = "4",
 	pages = "74--78",
-	title = "{Snow sampling results from three sampler}",
+	title = "{Snow sampling results from three samplers}",
 	url = "http://dx.doi.org/10.1080/02626666309493359",
 	volume = "8",
 	year = "1963"
@@ -3183,11 +3243,13 @@
 	doi = "10.1017/jog.2016.110",
 	journal = "Journal of Glaciology",
 	month = "Oct",
+	number = "237",
 	pages = "1--16",
 	place = "Cambridge, UK",
 	publisher = "Cambridge University Press",
 	title = "{Which empirical model is best suited to simulate glacier mass balances?}",
 	url = "https://www.cambridge.org/core/article/div-class-title-which-empirical-model-is-best-suited-to-simulate-glacier-mass-balances-div/210F94E4C2103A82109F323819D8BC72",
+	volume = "63",
 	year = "2016"
 }
 
@@ -3207,7 +3269,6 @@
 @inproceedings{Turcan1975,
 	author = "Turcan, J and Loijens, HS",
 	booktitle = "{32nd {E}astern {S}now {C}onference}",
-	pages = "2--11",
 	title = "{Accuracy of snow survey data and errors in snow sampler measurements}",
 	year = "1975"
 }
@@ -3283,8 +3344,9 @@
 	journal = "Geoscience Australia",
 	location = "Canberra",
 	organization = "Geoscience Australia",
-	publisher = "Geoscience Australia Canberra",
-	title = "{A review of spatial interpolation methods for environmental scientists No. Record 2008/23}",
+	pages = "Record 2008/23",
+	publisher = "Geoscience Australia ",
+	title = "{A review of spatial interpolation methods for environmental scientists}",
 	year = "2008"
 }
 
@@ -3345,11 +3407,11 @@
 	hal_version = "v3",
 	journal = "Journal of Statistical Software",
 	keywords = "Global Optimization; Computer Experiments; Gaussian Processes; Global Optimization.",
+	localfile = "hal-00495766v3",
 	month = dec,
 	pages = "1--55",
 	pdf = "https://hal.archives-ouvertes.fr/hal-00495766/file/jss642.pdf",
 	title = "{DiceKriging, DiceOptim: Two R packages for the analysis of computer experiments by kriging-based metamodeling and optimization}",
-	url = "https://hal.archives-ouvertes.fr/hal-00495766",
 	volume = "21",
 	year = "2012"
 }
@@ -3359,10 +3421,8 @@
 	bdsk-url-1 = "http://www.sciencedirect.com/science/article/pii/S0309170812002382",
 	bdsk-url-2 = "http://dx.doi.org/10.1016/j.advwatres.2012.08.010",
 	doi = "10.1016/j.advwatres.2012.08.010",
-	issn = "0309-1708",
 	journal = "Advances in Water Resources",
 	keywords = "Snow depth and density; Snow water equivalent (SWE); Spatial variability; Pyrenees",
-	note = "Snow--Atmosphere Interactions and Hydrological Consequences",
 	pages = "40--52",
 	title = "{Small scale spatial variability of snow density and depth over complex alpine terrain: Implications for estimating snow water equivalent}",
 	url = "http://www.sciencedirect.com/science/article/pii/S0309170812002382",
@@ -3375,6 +3435,7 @@
 	bdsk-url-1 = "http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3\_s199-217\_kucerova\_jenicek.pdf",
 	bdsk-url-2 = "http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3\_s199-217\_kucerova\_jenicek.pdf",
 	bdsk-url-3 = "http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3\_s199-217\_kucerova\_jenicek.pdf",
+	bdsk-url-4 = "http://geography.cz/sbornik/wp-content/uploads/downloads/2014/10/g14-3\_s199-217\_kucerova\_jenicek.pdf",
 	journal = "Geografie",
 	number = "3",
 	pages = "199--217",
@@ -3450,6 +3511,7 @@
 	bdsk-url-1 = "https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth\_A\_2016.pdf?sequence=1",
 	bdsk-url-2 = "https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth\_A\_2016.pdf?sequence=1",
 	bdsk-url-3 = "https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth\_A\_2016.pdf?sequence=1",
+	bdsk-url-4 = "https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth\_A\_2016.pdf?sequence=1",
 	school = "UNIVERSITY OF ALASKA FAIRBANKS",
 	title = "{Applying a model of orographic precipitation to improve mass balance modeling of the {Juneau Icefield}}",
 	url = "https://scholarworks.alaska.edu/bitstream/handle/11122/7310/Roth_A_2016.pdf?sequence=1",
@@ -3473,6 +3535,7 @@
 	bdsk-url-1 = "http://dx.doi.org/10.1175/1520-0450(1993)032\%3C1669:TRBOSS\%3E2.0.CO;\%202",
 	bdsk-url-2 = "http://dx.doi.org/10.1175/1520-0450(1993)032\%3C1669:TRBOSS\%3E2.0.CO;\%202",
 	bdsk-url-3 = "http://dx.doi.org/10.1175/1520-0450(1993)032\%3C1669:TRBOSS\%3E2.0.CO;\%202",
+	bdsk-url-4 = "http://dx.doi.org/10.1175/1520-0450(1993)032\%3C1669:TRBOSS\%3E2.0.CO;\%202",
 	eprint = "http://dx.doi.org/10.1175/1520-0450(1993)032<1669:TRBOSS>2.0.CO;2",
 	journal = "Journal of Applied Meteorology",
 	number = "11",
@@ -3511,6 +3574,7 @@
 
 @book{Gray1981,
 	author = "Gray, Donald Maurice and Male, David Harold",
+	edition = "1st",
 	publisher = "Pergamon Press",
 	title = "{Handbook of snow: principles, processes, management \& use}",
 	year = "1981"
@@ -3521,8 +3585,11 @@
 	bdsk-url-1 = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089\&context=uaes\_circulars",
 	bdsk-url-2 = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089\&context=uaes\_circulars",
 	bdsk-url-3 = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089\&context=uaes\_circulars",
-	title = "{Circular No. 99-Utah Snow Sampler and Scales for Measuring Water Content of Snow}",
-	url = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089&context=uaes_circulars",
+	bdsk-url-4 = "http://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1089\&context=uaes\_circulars",
+	journal = "UAES Circulars",
+	pages = "Paper 90",
+	title = "{Circular {No. 99-Utah Snow Sampler} and Scales for Measuring Water Content of Snow}",
+	url = "http://digitalcommons.usu.edu/uaes_circulars/90",
 	year = "1932"
 }
 
@@ -3558,6 +3625,7 @@
 	bdsk-url-1 = "http://dx.doi.org/10.1007/978-94-011-5014-9\_23",
 	bdsk-url-2 = "http://dx.doi.org/10.1007/978-94-011-5014-9\_23",
 	bdsk-url-3 = "http://dx.doi.org/10.1007/978-94-011-5014-9\_23",
+	bdsk-url-4 = "http://dx.doi.org/10.1007/978-94-011-5014-9\_23",
 	booktitle = "{Learning in Graphical Models}",
 	doi = "10.1007/978-94-011-5014-9_23",
 	editor = "Jordan, Michael I.",
@@ -3578,7 +3646,7 @@
 	number = "428",
 	pages = "1535--1546",
 	publisher = "[American Statistical Association, Taylor \& Francis, Ltd.]",
-	title = "{Model Selection and Accounting for Model Uncertainty in Graphical Models Using Occam's Window}",
+	title = "{Model Selection and Accounting for Model Uncertainty in Graphical Models Using {Occam's Window}}",
 	url = "http://www.jstor.org/stable/2291017",
 	volume = "89",
 	year = "1994"
@@ -3586,6 +3654,7 @@
 
 @article{Musselman2015,
 	author = "Musselman, Keith N and Pomeroy, John W and Essery, Richard LH and Leroux, Nicolas",
+	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.10595",
 	doi = "10.1002/hyp.10595",
 	journal = "Hydrological Processes",
 	number = "18",
@@ -3598,6 +3667,7 @@
 
 @article{Hock1999,
 	author = "Hock, Regine and Jensen, Holger",
+	bdsk-url-1 = "http://dx.doi.org/10.1111/1468-0459.00089",
 	doi = "10.1111/1468-0459.00089",
 	journal = "Geografiska Annaler: Series A, Physical Geography",
 	number = "4",
@@ -3608,9 +3678,9 @@
 	year = "1999"
 }
 
-@misc{Cogley2011,
+@book{Cogley2011,
 	author = "Cogley, JG and Hock, R and Rasmussen, LA and Arendt, AA and Bauder, Andreas and Braithwaite, RJ and Jansson, P and Kaser, G and M{\"o}ller, M and Nicholson, L and others",
-	journal = " IHP-VII technical documents in hydrology No. 86, IACS Contribution No. 2",
+	journal = "IHP-VII technical documents in hydrology No. 86, IACS Contribution No. 2",
 	publisher = "UNESCO-IHP, Paris",
 	title = "{Glossary of glacier mass balance and related terms}",
 	year = "2011"
@@ -3618,8 +3688,23 @@
 
 @book{Barry1992,
 	author = "Barry, Roger Graham",
-	publisher = "Psychology Press",
+	edition = "3rd",
+	location = "New York",
+	publisher = "Cambridge Univserity Press",
 	title = "{Mountain weather and climate}",
 	year = "1992"
+}
+
+@article{Thibert2008,
+	author = "Thibert, E and Blanc, R and Vincent, Christian and Eckert, N",
+	bdsk-url-1 = "https://www.igsoc.org/journal/54/186/j07j054.pdf",
+	journal = "Journal of Glaciology",
+	number = "186",
+	pages = "522--532",
+	publisher = "International Glaciological Society",
+	title = "{Glaciological and volumetric mass-balance measurements: error analysis over 51 years for {Glacier de Sarennes, French Alps}}",
+	url = "https://www.igsoc.org/journal/54/186/j07j054.pdf",
+	volume = "54",
+	year = "2008"
 }
 

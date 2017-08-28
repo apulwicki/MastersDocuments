@@ -18,6 +18,9 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{caption,threeparttable}
+\usepackage{dblfloatfix}
 
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \renewcommand{\tabularxcolumn}[1]{m{#1}}%
@@ -312,7 +315,7 @@ LR and SK estimate a winter balance of $\sim$0.6\,m\,w.e. for Glacier 4 but both
 Glacier-wide WB is affected by uncertainty introduced when averaging point-scale WBs ($\sigma_{\mathrm{GS}}$), when chosing a density assignment method ($\sigma_{\rho}$), and when interpolating WB data ($\sigma_{\mathrm{INT}}$). We find that when using LR and SK, $\sigma_{\mathrm{INT}}$ has a larger effect on WB uncertainty than $\sigma_{\mathrm{GS}}$ or $\sigma_{\rho}$. In other words, the distribution of glacier-wide WBs that arises from $\sigma_{\mathrm{GS}}$ is much narrower than the distribution that arises from $\sigma_{\mathrm{INT}}$ (Fig. \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). The WB distributions obtained using LR and SK overlap for each glacier, but the distribution modes differ (Fig. \ref{fig:WSMBDist_LR}). SK generally estimates lower WB in the accumulation area, which lowers the glacier-wide WB estimate.  Our results caution against using extrapolated data to compare with WB estimates from remote sensing or modelling studies because this may produce misleading results. If possible, comparison studies should use point-scale WB data rather than interpolated WB values. For both LR and SK, the greatest uncertainty in gridcell-estimated WB occurs in the accumulation area (Fig. \ref{fig:WSMBspatialvar}).
 
 
- \begin{table*}[]
+ \begin{table*}[b]
 \centering
 \caption{Standard deviation ($\times10^{-2}$\,m\,w.e.) of glacier-wide winter balance distributions arising from uncertainties in gridcell-averaged WB ($\sigma_{\mathrm{GS}}$), density assignment ($\sigma_{\rho}$), interpolation ($\sigma_{\mathrm{INT}}$) and all three sources combined ($\sigma_{\mathrm{ALL}}$) for linear regression (left columns) and simple kriging (right columns)}
 \label{tab:WSMBdistribution_sigma}
@@ -362,6 +365,11 @@ We find that interpolating and extrapolating gridcell-averaged WB has a large ef
 
 For our study glaciers, the glacier-wide WB uncertainty ranges from 0.03\,m w.e (8\%) to 0.15\,m w.e (54\%), depending primarily on the interpolation method. Uncertainty within the interpolation method is the largest source of glacier-wide WB uncertainty when compared to uncertainty in grid-scale WB values and density assignment method. Future studies could reduce WB uncertainty by increasing the spatial distribution of snow depth sampling rather than the number of measurements within a single gridcell along a transect. In our work, increased sampling within the accumulation area would better constrain WB data extrapolation and decrease uncertainty. Despite challenges in accurately estimating WB, our data are consistent with a regional-scale WB gradient for the continental side of the St. Elias Mountains. 
 
+
+\section{Acknowledgements}
+
+We thank the Kluane First Nation (KFN), Parks Canada and the Yukon Territorial Government for granting us permission to work in traditional KFN territory and Kluane National Park and Reserve. We are grateful for financial support provided by the Natural Sciences and Engineering Research Council of  Canada, Simon Fraser University, the Northern Scientific  Training  Program and the Polar Continental Shelf Project. We kindly acknowledge Trans North Helicopter pilot Dion Parker, and the Arctic Institute of North America's Kluane Lake Research Station for facilitating field logistics. We are grateful to Alison Criscitiello and Coline Ariagno for all aspects of field assistance and Sarah Furney for data entry assistance. Thank you to Etienne Berthier for providing us with the SPIPT SPOT-5 DEM and for assistance with correcting two DEM sections. We are grateful to Derek Bingham and Michael Grosskopf for assistance with the statistics, including simple kriging. We thank two anonymous reviewers for their insightful comments.
+
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
@@ -371,47 +379,73 @@ For our study glaciers, the glacier-wide WB uncertainty ranges from 0.03\,m w.e 
 \bibliographystyle{igs}
 
 %----------------------------------------------------------------------------------------
-\pagebreak 
-\section{Supplementary material}
+\appendix
+\section{Appendix A}
+\subsection*{Topographic parameters}
 
-%% TOPO DETAILS
-%\begin{table*}[!htbp]
-%\centering%
-%\caption{Description of topographic parameters used in the linear regression.}
-%\label{tab:TopoParams}
-%\begin{tabularx}{\linewidth}{XXXXX}
-%\midrule
-%\textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \hline
-%\textbf{Elevation ($z$)} & Height above sea level & Values taken directly from DEM &  &  \\ \hline
-%\textbf{Distance from centreline ($d_C$)} & Linear distance from user-defined glacier centreline & Minimum distance between the Easting and Northing of the northwest corner of each grid cell and a manually defined centreline &  &  \\ \hline
-%\textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt\{r.slope.aspect\} module in GRASS GIS software run through QGIS &  & \cite\{Mitavsova1993, Hofierka2009, Olaya2009\} \\ \hline
-%\textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt\{r.slope.aspect\} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite\{Mitavsova1993, Hofierka2009, Olaya2009\} \\ \hline
-%\textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential (direction of the contour tangent) curvature & \texttt\{r.slope.aspect\} module in GRASS GIS software run through QGIS & ($+$) mean-concave terrain and ($-$) mean-convex terrain & \cite\{Mitavsova1993, Hofierka2009, Olaya2009\} \\ \hline
-%\textbf{``Northness'' ($N$)} & A value of $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope, and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \citep\{Molotch2005\} \\ \hline
-%\textbf{Wind exposure/shelter parameter (Sx)} &  & Executable obtained from Adam Winstral that follows the procedure outlined in \cite\{Winstral2002\} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \citep\{Winstral2002\}
-%\end{tabularx}
-%\end{table*}
+%% TOPOGRAPHIC PARAMETERS EXPLAINED
+
+Topographic parameters are easy-to-calculate proxies for physical processes, such as orographic precipitation, solar radiation effects, wind redistribution and preferential deposition. We derive all parameters (Table \ref{tab:TopoParams}) for our study from a SPOT-5 DEM ($40\times40$ m) \citep{Korona2009}. Two DEMs are stitched together to cover the Donjek Range. An iterative 3D-coregistration algorithm \citep{Berthier2007} is used to correct the horizontal ($\sim$2\,m E, $\sim$4\,m N) and vertical (5.4\,m) discrepancy between the two DEMs before stitching. 
+
+Visual inspection of the curvature fields calculated using the full DEM shows a noisy spatial distribution. To find an appropriate scale at which the relevant curvature is calculated, various smoothing algorithms and sizes are applied and the combination that produces the highest correlation between curvature and gridcell-averaged WB is chosen. Inverse-distance weighted, Gaussian and gridcell-average smoothing methods, all with window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells are used. Gridcell-average smoothing with a 7$\times$7 window resulted in the highest overall correlation between curvature (second derivative) and gridcell-averaged WB as well as slope (first derivative) and gridcell-averaged WB. We use the smoothed DEM to calculate curvature ($\kappa$), slope ($m$), aspect ($\alpha$) and ``northness'' ($N$).
+
+
+%% TOPO PARAMS TABLE
+\begin{landscape}
+\begin{table*}[H]
+\leftskip=-5cm
+\begin{threeparttable}
+    \captionsetup{singlelinecheck=off, skip=4pt}
+\caption{Description of topographic parameters used in the linear regression.}
+\label{tab:TopoParams}
+\begin{tabularx}{22cm}{XXXXX}
+
+\midrule
+\textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \midrule
+\textbf{Elevation ($z$)} & Height above sea level & Values taken directly from DEM &  &  \\ \midrule
+\textbf{Distance from centreline ($d_C$)} & Linear distance from user-defined glacier centreline & Minimum distance between the Easting and Northing of the northwest corner of each grid cell and a manually defined centreline &  &  \\ \midrule
+\textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential (direction of the contour tangent) curvature & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & ($+$) mean-concave terrain and ($-$) mean-convex terrain & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{``Northness'' ($N$)} & A value of $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope, and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \citep{Molotch2005} \\ \midrule
+\textbf{Wind exposure/shelter parameter (Sx)} & Proxy for snow deposition due to wind redistribution & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \citep{Winstral2002}
+\end{tabularx}
+\end{threeparttable}
+\end{table*}
+\end{landscape}
 
 %% TOPO SAMPLED VS FULL
-\begin{figure*}
+\begin{figure*}[]
 	\centering
-	\includegraphics[width =0.9\textwidth]{TopoParamsSampled1.pdf}\\
+	\includegraphics[width =0.8\textwidth]{TopoParamsSampled1.pdf}\\
 	\caption{Distribution of sampled (gray bars) and all (white bars) topographic parameters for over Glacier 4 (left column), Glacier 2 (middle column) and Glacier 13 (right column). From top to bottom, topographic parameters are elevation ($z$), distance from centreline ($d_C$), aspect ($\alpha$), slope ($m$), northness ($N$), mean curvature ($\kappa$), and wind redistribution ($Sx$).}
 	\label{fig:TopoParamsSampled1}
 \end{figure*}
-\begin{figure*}
-%\ContinuedFloat	
+
+\renewcommand{\thefigure}{\arabic{figure} (Cont.)}
+\addtocounter{figure}{-1}
+
+\begin{figure*}[]
 \centering
-	\includegraphics[width =0.9\textwidth]{TopoParamsSampled2.pdf}\\
-	\caption{See Fig. \ref{fig:TopoParamsSampled1}}
+	\includegraphics[width =0.8\textwidth]{TopoParamsSampled2.pdf}\\
+	\caption{Distribution of sampled (gray bars) and all (white bars) topographic parameters for over Glacier 4 (left column), Glacier 2 (middle column) and Glacier 13 (right column). From top to bottom, topographic parameters are elevation ($z$), distance from centreline ($d_C$), aspect ($\alpha$), slope ($m$), northness ($N$), mean curvature ($\kappa$), and wind redistribution ($Sx$).}
 	\label{fig:TopoParamsSampled2}
 \end{figure*}
 
-%% DENSITY VALUES USED
+\renewcommand{\thefigure}{\arabic{figure}}
 
-\begin{table*}[]
+\pagebreak
+
+\setcounter{equation}{0}
+\renewcommand\theequation{B\arabic{equation}}
+
+%\section{Appendix B}
+%\subsection*{Results}
+
+%% DENSITY VALUES USED
+\begin{table*}[t]
 \centering
-\caption{Snow density values used for interpolating density based on snow pit (SP) densities and Federal Sampler (FS) densities. Four interpolation methods are chosen: (1) using a mean snow density for all three glaciers (Range mean density), (2) using a mean density for each glacier (Glacier mean density), (3) using a regression between density and elevation (Elevation regression), and (4) inverse-distance weighted mean density (not shown).}
+\caption{Snow density values used for density assignment methods. Density values derived from snow pit (SP) densities and Federal Sampler (FS) densities. Four interpolation methods are chosen: (1) using a mean snow density for all three glaciers (S1 or F1), (2) using a mean density for each glacier (S2 or F2), (3) using a regression between density and elevation (S3 or F3), and (4) inverse-distance weighted mean density (not shown, S4 or F4).}
 \label{tab:Density}
 \begin{tabular}{cccccc}
 \midrule
@@ -427,25 +461,20 @@ For our study glaciers, the glacier-wide WB uncertainty ranges from 0.03\,m w.e 
 \end{tabular}
 \end{table*}
 
-%% TOPOGRAPHIC PARAMETERS EXPLAINED
-\subsubsection{Topographic parameters}
 
-Topographic parameters are easy-to-calculate proxies for physical processes, such as orographic precipitation, solar radiation effects, wind redistribution and preferential deposition. We derive all parameters (Table \ref{tab:TopoParams}) for our study from a SPOT-5 DEM ($40\times40$ m) \citep{Korona2009}. Two DEMs are stitched together to cover the Donjek Range. An iterative 3D-coregistration algorithm \citep{Berthier2007} is used to correct the horizontal ($\sim$2\,m E, $\sim$4\,m N) and vertical (5.4\,m) discrepancy between the two DEMs before stitching. 
-
-Visual inspection of the curvature fields calculated using the full DEM shows a noisy spatial distribution. To find an appropriate scale at which the relevant curvature is calculated, various smoothing algorithms and sizes are applied and the combination that produces the highest correlation between curvature and gridcell-averaged WB is chosen. Inverse-distance weighted, Gaussian and gridcell-average smoothing methods, all with window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells are used. Gridcell-average smoothing with a 7$\times$7 window resulted in the highest overall correlation between curvature (second derivative) and gridcell-averaged WB as well as slope (first derivative) and gridcell-averaged WB. We use the smoothed DEM to calculate curvature ($\kappa$), slope ($m$), aspect ($\alpha$) and ``northness'' ($N$).
 
 %% RANGE AND NUGGET VALUES
-\begin{table}[]
+\begin{table*}[]
 \centering
 \caption{Range and nugget values for simple kriging interpolation}
 \label{tab:range&nugget}
 \begin{tabular}{ccc}
 \midrule
  & \textbf{\begin{tabular}[c]{@{}c@{}}Range \\ (m)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Nugget \\ ($\times10^3$m w.e.)\end{tabular}} \\ \midrule
-\textbf{G4} & 90 & 10.5 \\
-\textbf{G2} & 404 & 3.6 \\
-\textbf{G13} & 444 & 4.8
+\textbf{Glacier 4} & 90 & 10.5 \\
+\textbf{Glacier 2} & 404 & 3.6 \\
+\textbf{Glacier 13} & 444 & 4.8
 \end{tabular}
-\end{table}
+\end{table*}
 
 \end{document}

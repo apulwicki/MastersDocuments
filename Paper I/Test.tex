@@ -1,0 +1,72 @@
+
+
+ \documentclass[twocolumn, letterpaper]{igs}
+
+% but use this version when submitting your article:
+% \documentclass[review,oneside, letterpaper]{igs}
+
+ % \usepackage{igsnatbib}
+  \usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{natbib} 
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{lscape}
+
+\usepackage{caption, threeparttable}
+
+
+\usepackage[pdftex]{graphicx}
+    \usepackage{epstopdf}
+\usepackage{adjustbox}
+
+
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}%
+
+
+% check if we are compiling under latex or pdflatex
+%  \ifx\pdftexversion\undefined
+%    \usepackage[dvips]{graphicx}
+%  \else
+%    \usepackage[pdftex]{graphicx}
+%    \usepackage{epstopdf}
+%    \epstopdfsetup{suffix=}
+%  \fi
+
+\setlength{\pdfpageheight}{11in}
+  
+\begin{document}
+%% TOPO DETAILS
+
+\begin{landscape}
+\begin{table*}
+\leftskip=-5cm
+\begin{threeparttable}
+    \captionsetup{singlelinecheck=off, skip=4pt}
+\caption{Description of topographic parameters used in the linear regression.}
+\label{tab:TopoParams}
+%\hspace{-5cm}
+\begin{tabularx}{22cm}{XXXXX}
+
+\midrule
+\textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \midrule
+\textbf{Elevation ($z$)} & Height above sea level & Values taken directly from DEM &  &  \\ \midrule
+\textbf{Distance from centreline ($d_C$)} & Linear distance from user-defined glacier centreline & Minimum distance between the Easting and Northing of the northwest corner of each grid cell and a manually defined centreline &  &  \\ \midrule
+\textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential (direction of the contour tangent) curvature & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & ($+$) mean-concave terrain and ($-$) mean-convex terrain & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{``Northness'' ($N$)} & A value of $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope, and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \citep{Molotch2005} \\ \midrule
+\textbf{Wind exposure/shelter parameter (Sx)} &  & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \citep{Winstral2002}
+
+\end{tabularx}
+\end{threeparttable}
+\end{table*}
+\end{landscape}
+
+
+\end{document}
