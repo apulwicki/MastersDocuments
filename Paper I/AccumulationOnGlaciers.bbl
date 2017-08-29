@@ -1,4 +1,4 @@
-\begin{thebibliography}{79}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -28,12 +28,6 @@ Beauont RT and Work RA (1963) {Snow sampling results from three samplers}.
   \emph{International Association of Scientific Hydrology. Bulletin},
   \textbf{8}(4), 74--78 (\doi {10.1080/02626666309493359})
 
-\bibitem[\protect\citename{Berthier and others, }2007]{Berthier2007}
-Berthier E, Arnaud Y, Kumar R, Ahmad S, Wagnon P and Chevallier P (2007)
-  {Remote sensing estimates of glacier mass balances in the {H}imachal
-  {P}radesh ({W}estern {H}imalaya, {I}ndia)}. \emph{Remote Sensing of
-  Environment}, \textbf{108}(3), 327--338 (\doi {10.1016/j.rse.2006.11.017})
-
 \bibitem[\protect\citename{Burnham and Anderson, }2004]{Burnham2004}
 Burnham KP and Anderson DR (2004) {Multimodel Inference: {U}nderstanding {AIC}
   and {BIC} in Model Selection}. \emph{Sociological Methods \& Research},
@@ -44,6 +38,10 @@ Clark MP, Hendrikx J, Slater AG, Kavetski D, Anderson B, Cullen NJ, Kerr T,
   {{\"O}rn Hreinsson} E and Woods RA (2011) {Representing spatial variability
   of snow water equivalent in hydrologic and land-surface models: A review}.
   \emph{Water Resources Research}, \textbf{47}(7) (\doi {10.1029/2011WR010745})
+
+\bibitem[\protect\citename{Clarke, }2014]{Clarke2014}
+Clarke GK (2014) {A short and somewhat personal history of {Y}ukon glacier
+  studies in the {Twentieth Century}}. \emph{Arctic}, \textbf{37}(1), 1--21
 
 \bibitem[\protect\citename{Clyde, }1932]{Clyde1932}
 Clyde GD (1932) {Circular {No. 99-Utah Snow Sampler} and Scales for Measuring
@@ -129,13 +127,6 @@ Fierz C, Armstrong RL, Durand Y, Etchevers P, Greene E, McClung DM, Nishimura
   K, Satyawali PK and Sokratov SA (2009) \emph{{The international
   classification for seasonal snow on the ground}}, volume~25. UNESCO/IHP Paris
 
-\bibitem[\protect\citename{Flowers and others, }2014]{Flowers2014}
-Flowers GE, Copland L and Schoof CG (2014) {Contemporary Glacier Processes and
-  Global Change: Recent Observations from Kaskawulsh Glacier and the Donjek
-  Range, St. Elias Mountains}. \emph{Arctic}, \textbf{67}, 22--34, copyright -
-  Copyright Arctic Institute of North America 2014; Document feature - Maps;
-  Illustrations; Graphs; ; Last updated - 2015-04-07
-
 \bibitem[\protect\citename{Garbrecht and Martz, }1994]{Garbrecht1994}
 Garbrecht J and Martz L (1994) {Grid size dependency of parameters extracted
   from digital elevation models}. \emph{Computers \& Geosciences},
@@ -195,11 +186,6 @@ Hock R and Jensen H (1999) {Application of kriging interpolation for glacier
   mass balance computations}. \emph{Geografiska Annaler: Series A, Physical
   Geography}, \textbf{81}(4), 611--619 (\doi {10.1111/1468-0459.00089})
 
-\bibitem[\protect\citename{Hofierka and others, }2009]{Hofierka2009}
-Hofierka J, Mit{\'a}\v{s}ov{\'a} H and Neteler M (2009) {Geomorphometry in
-  {GRASS GIS}}. \emph{Developments in Soil Science}, \textbf{33}, 387--410
-  (\doi {10.1016/S0166-2481(08)00017-2})
-
 \bibitem[\protect\citename{Kaser and others, }2002]{Kaser2003}
 Kaser G, Fountain A, Jansson P and others (2002) \emph{{A manual for monitoring
   the mass balance of mountain glaciers}}. {IHP-VI- Technical documents in
@@ -216,13 +202,6 @@ Kohavi R and others (1995) {A study of cross-validation and bootstrap for
   accuracy estimation and model selection}. In \emph{{ {Proceedings of the
   Fourteenth International Joint Conference on Artificial Intelligence}}},
   volume~14, 1137--1145
-
-\bibitem[\protect\citename{Korona and others, }2009]{Korona2009}
-Korona J, Berthier E, Bernard M, R{\'e}my F and Thouvenot E (2009) {{SPIRIT
-  SPOT} 5 stereoscopic survey of {P}olar {I}ce: {R}eference images and
-  topographies during the fourth {International Polar Year} (2007--2009)}.
-  \emph{ISPRS Journal of Photogrammetry and Remote Sensing}, \textbf{64}(2),
-  204--212 (\doi {10.1016/j.isprsjprs.2008.10.005})
 
 \bibitem[\protect\citename{Lehning and others, }2006]{Lehning2006}
 Lehning M, V{\"o}lksch I, Gustafsson D, Nguyen TA, St{\"a}hli M and Zappa M
@@ -292,13 +271,6 @@ McGrath D, Sass L, O'Neel S, Arendt A, Wolken G, Gusmeroli A, Kienholz C and
 Metropolis N and Ulam S (1949) {The Monte Carlo Method}. \emph{Journal of the
   American Statistical Association}, \textbf{44}(247), 335--341, ISSN 01621459
 
-\bibitem[\protect\citename{Mit{\'a}\v{s}ov{\'a} and Hofierka,
-  }1993]{Mitavsova1993}
-Mit{\'a}\v{s}ov{\'a} H and Hofierka J (1993) {Interpolation by regularized
-  spline with tension: {II}. {A}pplication to terrain modeling and surface
-  geometry analysis}. \emph{Mathematical Geology}, \textbf{25}(6), 657--669
-  (\doi {10.1007/BF00893172})
-
 \bibitem[\protect\citename{Molotch and others, }2005]{Molotch2005}
 Molotch N, Colee M, Bales R and Dozier J (2005) {Estimating the spatial
   distribution of snow water equivalent in an alpine basin using binary
@@ -318,10 +290,6 @@ Musselman KN, Pomeroy JW, Essery RL and Leroux N (2015) {Impact of windflow
   calculations on simulations of alpine snow accumulation, redistribution and
   ablation}. \emph{Hydrological Processes}, \textbf{29}(18), 3983--3999 (\doi
   {10.1002/hyp.10595})
-
-\bibitem[\protect\citename{Olaya, }2009]{Olaya2009}
-Olaya V (2009) {Basic land-surface parameters}. \emph{Developments in Soil
-  Science}, \textbf{33}, 141--169 (\doi {10.1016/S0166-2481(08)00006-8})
 
 \bibitem[\protect\citename{Raftery and others, }1997]{Raftery1997}
 Raftery AE, Madigan D and Hoeting JA (1997) {Bayesian Model Averaging for
@@ -399,12 +367,6 @@ Wetlaufer K, Hendrikx J and Marshall L (2016) {Spatial Heterogeneity of Snow
   Density and Its Influence on Snow Water Equivalence Estimates in a Large
   Mountainous Basin}. \emph{Hydrology}, \textbf{3}(3), 1--17 (\doi
   {10.3390/hydrology3010003})
-
-\bibitem[\protect\citename{Winstral and others, }2002]{Winstral2002}
-Winstral A, Elder K and Davis RE (2002) {Spatial snow modeling of
-  wind-redistributed snow using terrain-based parameters}. \emph{Journal of
-  Hydrometeorology}, \textbf{3}(5), 524--538 (\doi
-  {10.1175/1525-7541(2002)0030524:SSMOWR2.0.CO;2})
 
 \bibitem[\protect\citename{Winstral and others, }2013]{Winstral2013}
 Winstral A, Marks D and Gurney R (2013) {Simulating wind-affected snow
