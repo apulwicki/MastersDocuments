@@ -1,0 +1,49 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citename{Berthier and others, }2007]{Berthier2007}
+Berthier E, Arnaud Y, Kumar R, Ahmad S, Wagnon P and Chevallier P (2007)
+  {Remote sensing estimates of glacier mass balances in the {H}imachal
+  {P}radesh ({W}estern {H}imalaya, {I}ndia)}. \emph{Remote Sensing of
+  Environment}, \textbf{108}(3), 327--338 (\doi {10.1016/j.rse.2006.11.017})
+
+\bibitem[\protect\citename{Hofierka and others, }2009]{Hofierka2009}
+Hofierka J, Mit{\'a}\v{s}ov{\'a} H and Neteler M (2009) {Geomorphometry in
+  {GRASS GIS}}. \emph{Developments in Soil Science}, \textbf{33}, 387--410
+  (\doi {10.1016/S0166-2481(08)00017-2})
+
+\bibitem[\protect\citename{Korona and others, }2009]{Korona2009}
+Korona J, Berthier E, Bernard M, R{\'e}my F and Thouvenot E (2009) {{SPIRIT
+  SPOT} 5 stereoscopic survey of {P}olar {I}ce: {R}eference images and
+  topographies during the fourth {International Polar Year} (2007--2009)}.
+  \emph{ISPRS Journal of Photogrammetry and Remote Sensing}, \textbf{64}(2),
+  204--212 (\doi {10.1016/j.isprsjprs.2008.10.005})
+
+\bibitem[\protect\citename{Mit{\'a}\v{s}ov{\'a} and Hofierka,
+  }1993]{Mitavsova1993}
+Mit{\'a}\v{s}ov{\'a} H and Hofierka J (1993) {Interpolation by regularized
+  spline with tension: {II}. {A}pplication to terrain modeling and surface
+  geometry analysis}. \emph{Mathematical Geology}, \textbf{25}(6), 657--669
+  (\doi {10.1007/BF00893172})
+
+\bibitem[\protect\citename{Molotch and others, }2005]{Molotch2005}
+Molotch N, Colee M, Bales R and Dozier J (2005) {Estimating the spatial
+  distribution of snow water equivalent in an alpine basin using binary
+  regression tree models: the impact of digital elevation data and independent
+  variable selection}. \emph{Hydrological Processes}, \textbf{19}(7),
+  1459--1479 (\doi {10.1002/hyp.5586})
+
+\bibitem[\protect\citename{Olaya, }2009]{Olaya2009}
+Olaya V (2009) {Basic land-surface parameters}. \emph{Developments in Soil
+  Science}, \textbf{33}, 141--169 (\doi {10.1016/S0166-2481(08)00006-8})
+
+\bibitem[\protect\citename{Winstral and others, }2002]{Winstral2002}
+Winstral A, Elder K and Davis RE (2002) {Spatial snow modeling of
+  wind-redistributed snow using terrain-based parameters}. \emph{Journal of
+  Hydrometeorology}, \textbf{3}(5), 524--538 (\doi
+  {10.1175/1525-7541(2002)0030524:SSMOWR2.0.CO;2})
+
+\end{thebibliography}
