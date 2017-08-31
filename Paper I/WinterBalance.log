@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  30 AUG 2017 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  31 AUG 2017 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -201,19 +201,13 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen135
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package color Info: Driver file: pdftex.def on input line 143.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -225,20 +219,23 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count108
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 143.
-)
+))
 (./graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
 )
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
@@ -296,22 +293,34 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
 (./WinterBalance.aux)
+Runaway argument?
+{\contentsline {figure}{\numberline {9}{\ignorespaces Relationship be\ETC.
+! File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.36 \begin{document}
+                     
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \openout1 = `WinterBalance.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 37.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 36.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
@@ -348,59 +357,231 @@ Found the 'amsbsy' package on the system, using it.
 \makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks32
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 57.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 58.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 57.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 58.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 57.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 58.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.5> on input line 57.
+(Font)              <13.5> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 57.
+(Font)              <10> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 57.
-LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+(Font)              <7> on input line 58.
+LaTeX Font Info:    Try loading font information for U+msa on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+LaTeX Font Info:    Try loading font information for U+msb on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.5> on input line 57.
+(Font)              <9.5> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 57.
+(Font)              <5> on input line 58.
 
-Underfull \hbox (badness 1242) in paragraph at lines 69--70
-\OT1/lmr/m/n/9.5 Snow distribution in alpine regions is highly variable
+
+Package natbib Warning: Citation `Cogley2011' on page 1 undefined on input line
+ 68.
+
+
+Package natbib Warning: Citation `Hock2005' on page 1 undefined on input line 6
+8.
+
+
+Package natbib Warning: Citation `Reveillet2016' on page 1 undefined on input l
+ine 68.
+
+
+Package natbib Warning: Citation `Clark2011' on page 1 undefined on input line 
+68.
+
+
+Package natbib Warning: Citation `Anderton2004' on page 1 undefined on input li
+ne 70.
+
+
+Package natbib Warning: Citation `Egli2011' on page 1 undefined on input line 7
+0.
+
+
+Package natbib Warning: Citation `Grunewald2010' on page 1 undefined on input l
+ine 70.
+
+
+Package natbib Warning: Citation `Helbig2017' on page 1 undefined on input line
+ 70.
+
+
+Package natbib Warning: Citation `Lopez2011' on page 1 undefined on input line 
+70.
+
+
+Package natbib Warning: Citation `Lopez2013' on page 1 undefined on input line 
+70.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 1 undefined on input li
+ne 70.
+
+
+Package natbib Warning: Citation `Marshall2006' on page 1 undefined on input li
+ne 70.
+
+
+Package natbib Warning: Citation `Barry1992' on page 1 undefined on input line 
+70.
+
+
+Package natbib Warning: Citation `Liston2006' on page 1 undefined on input line
+ 70.
+
+
+Package natbib Warning: Citation `Clark2011' on page 1 undefined on input line 
+70.
+
+
+Package natbib Warning: Citation `Cogley2011' on page 1 undefined on input line
+ 70.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 1 undefined on input lin
+e 70.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 1 undefined on input line 
+70.
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 70--71
+\OT1/lmr/m/n/9.5 detailed meteorological data to drive them (\OT1/lmr/bx/n/9.5 
+?\OT1/lmr/m/n/9.5 ). As a
  []
 
 
-Underfull \hbox (badness 2150) in paragraph at lines 69--70
-\OT1/lmr/m/n/9.5 others, 2004; Egli and others, 2011; Gr^^?unewald and
+Package natbib Warning: Citation `Cullen2017' on page 1 undefined on input line
+ 72.
+
+
+Package natbib Warning: Citation `Sold2013' on page 1 undefined on input line 7
+2.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 1 undefined on input li
+ne 72.
+
+
+Package natbib Warning: Citation `Gusmeroli2014' on page 1 undefined on input l
+ine 72.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 1 undefined on input lin
+e 72.
+
+
+Package natbib Warning: Citation `Kaser2003' on page 1 undefined on input line 
+72.
+
+
+Package natbib Warning: Citation `MacDougall2011' on page 1 undefined on input 
+line 72.
+
+
+Package natbib Warning: Citation `Tangborn1975' on page 1 undefined on input li
+ne 72.
+
+
+Package natbib Warning: Citation `Hock1999' on page 1 undefined on input line 7
+2.
+
+
+Package natbib Warning: Citation `Thibert2008' on page 1 undefined on input lin
+e 72.
+
+
+Package natbib Warning: Citation `Mott2008' on page 1 undefined on input line 7
+2.
+
+
+Package natbib Warning: Citation `Schuler2008' on page 1 undefined on input lin
+e 72.
+
+
+Package natbib Warning: Citation `Dadic2010' on page 1 undefined on input line 
+72.
+
+
+Package natbib Warning: Citation `Schuler2008' on page 1 undefined on input lin
+e 72.
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 72--73
+\OT1/lmr/bx/n/9.5 ?\OT1/lmr/m/n/9.5 ). Measurements are often interpolated usin
+g linear
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 69--70
-\OT1/lmr/m/n/9.5 of models to represent current and projected glacier
+Underfull \hbox (badness 2376) in paragraph at lines 72--73
+\OT1/lmr/m/n/9.5 prohibits their widespread application. Error analysis
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package natbib Warning: Citation `Lopez2010' on page 1 undefined on input line 
+74.
+
+
+Package natbib Warning: Citation `Molotch2005' on page 1 undefined on input lin
+e 74.
+
+
+Package natbib Warning: Citation `Erxleben2002' on page 1 undefined on input li
+ne 74.
+
+
+Package natbib Warning: Citation `Balk2000' on page 1 undefined on input line 7
+4.
+
+
+Package natbib Warning: Citation `Lehning2006' on page 1 undefined on input lin
+e 74.
+
+
+Package natbib Warning: Citation `Schneiderbauer2011' on page 1 undefined on in
+put line 74.
+
+
+Package natbib Warning: Citation `Trujillo2015' on page 1 undefined on input li
+ne 74.
+
+
+Package natbib Warning: Citation `Turcan1975' on page 1 undefined on input line
+ 74.
+
+
+Package natbib Warning: Citation `Woo1978' on page 1 undefined on input line 74
+.
+
+
+Package natbib Warning: Citation `Deems2006' on page 1 undefined on input line 
+74.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -412,38 +593,110 @@ Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
 
 ]
-Underfull \hbox (badness 1681) in paragraph at lines 75--76
+Underfull \hbox (badness 1681) in paragraph at lines 76--77
 \OT1/lmr/m/n/9.5 magnitude and assess their combined contribution to
  []
 
 <Sampling.pdf, id=14, 669.50125pt x 413.545pt>
 File: Sampling.pdf Graphic file (type pdf)
  <use Sampling.pdf>
-Package pdftex.def Info: Sampling.pdf used on input line 83.
+Package pdftex.def Info: Sampling.pdf used on input line 84.
 (pdftex.def)             Requested size: 455.81004pt x 281.56024pt.
 
 
+Package natbib Warning: Citation `Taylor1969' on page 2 undefined on input line
+ 91.
+
+
+Package natbib Warning: Citation `Wood1948' on page 2 undefined on input line 9
+1.
+
+
+Package natbib Warning: Citation `Danby2003' on page 2 undefined on input line 
+91.
+
+
+Package natbib Warning: Citation `Clarke2014' on page 2 undefined on input line
+ 91.
+
+
+Package natbib Warning: Citation `Arendt2008' on page 2 undefined on input line
+ 91.
+
+
+Package natbib Warning: Citation `Burgess2013' on page 2 undefined on input lin
+e 91.
+
+
 Package natbib Warning: Citation `Waechter2015' on page 2 undefined on input li
-ne 90.
+ne 91.
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 90--91
-\OT1/lmr/m/n/9.5 The St. Elias Moun-tains (Fig. 1[]a) rise sharply from
- []
+Package natbib Warning: Citation `Crompton2016' on page 2 undefined on input li
+ne 93.
+
+
+Package natbib Warning: Citation `Wilson2013' on page 2 undefined on input line
+ 93.
+
+
+Package natbib Warning: Citation `Wilson2013a' on page 2 undefined on input lin
+e 93.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 95.
+               Default added (so using `tbp') on input line 96.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.5> on input line 97.
+(Font)              <8.5> on input line 98.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 99.
+(Font)              <8> on input line 100.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 99.
+(Font)              <6> on input line 100.
 
-Underfull \hbox (badness 1014) in paragraph at lines 116--117
-\OT1/lmr/m/n/9.5 steps. (1) Ob-tain di-rect mea-sure-ments of snow depth
+Package natbib Warning: Citation `Clark2011' on page 2 undefined on input line 
+123.
+
+
+Package natbib Warning: Citation `Taylor1969' on page 2 undefined on input line
+ 123.
+
+
+Package natbib Warning: Citation `Kaser2003' on page 2 undefined on input line 
+123.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 2 undefined on input li
+ne 123.
+
+
+Package natbib Warning: Citation `Elder1991' on page 2 undefined on input line 
+127.
+
+
+Package natbib Warning: Citation `Clark2011' on page 2 undefined on input line 
+127.
+
+
+Package natbib Warning: Citation `Lopez2013' on page 2 undefined on input line 
+127.
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 127--128
+\OT1/lmr/m/n/9.5 sampling campaign involved four people and occurred
+ []
+
+
+Package natbib Warning: Citation `Grunewald2010' on page 2 undefined on input l
+ine 129.
+
+
+Package natbib Warning: Citation `Sold2013' on page 2 undefined on input line 1
+29.
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 129--130
+\OT1/lmr/m/n/9.5 combined with positive air temperatures led to cores
  []
 
 
@@ -451,33 +704,105 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [2]
-Underfull \hbox (badness 1783) in paragraph at lines 126--127
-\OT1/lmr/m/n/9.5 Survey Bulletin and Water Supply Forecast, May 1,
+
+Package natbib Warning: Citation `Shea2010' on page 3 undefined on input line 1
+33.
+
+
+Package natbib Warning: Citation `Gray1981' on page 3 undefined on input line 1
+37.
+
+
+Package natbib Warning: Citation `Fierz2009' on page 3 undefined on input line 
+137.
+
+
+Package natbib Warning: Citation `Proksch2016' on page 3 undefined on input lin
+e 137.
+
+
+Package natbib Warning: Citation `Carroll1977' on page 3 undefined on input lin
+e 137.
+
+
+Package natbib Warning: Citation `Clyde1932' on page 3 undefined on input line 
+139.
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 139--140
+\OT1/lmr/m/n/9.5 of snow density, digging and sampling a snow pit is
  []
 
 
-Underfull \vbox (badness 5359) has occurred while \output is active []
+Underfull \hbox (badness 1286) in paragraph at lines 139--140
+\OT1/lmr/m/n/9.5 each glacier and an additional eight Federal Sampler
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [3 <./Sampling.pdf>]
-Underfull \hbox (badness 1215) in paragraph at lines 140--141
+Underfull \hbox (badness 1215) in paragraph at lines 141--142
 \OT1/lmr/m/n/9.5 ac-cu-mu-la-tion mea-sured at one lo-ca-tion on Glacier 2.
  []
 
 
-Underfull \vbox (badness 1147) has occurred while \output is active []
+Package natbib Warning: Citation `Cullen2017' on page 4 undefined on input line
+ 145.
 
 
-Overfull \hbox (2.03723pt too wide) in paragraph at lines 150--163
+Package natbib Warning: Citation `Elder1991' on page 4 undefined on input line 
+145.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 4 undefined on input lin
+e 145.
+
+
+Package natbib Warning: Citation `Elder1998' on page 4 undefined on input line 
+145.
+
+
+Package natbib Warning: Citation `Molotch2005' on page 4 undefined on input lin
+e 145.
+
+
+Package natbib Warning: Citation `Molotch2005' on page 4 undefined on input lin
+e 145.
+
+
+Overfull \hbox (2.03723pt too wide) in paragraph at lines 151--164
  [][] 
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 168--169
+Underfull \hbox (badness 1824) in paragraph at lines 169--170
 \OT1/lmr/m/n/9.5 We average one to six (mean of 2.1 measurements)
+ []
+
+
+Package natbib Warning: Citation `McGrath2015' on page 4 undefined on input lin
+e 173.
+
+
+Package natbib Warning: Citation `Hock1999' on page 4 undefined on input line 1
+73.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 4 undefined on input lin
+e 177.
+
+
+Package natbib Warning: Citation `Davis1986' on page 4 undefined on input line 
+177.
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 177--178
+\OT1/lmr/m/n/9.5 on Glacier 2, where our mea-sure-ments cap-tured only
  []
 
 
@@ -485,121 +810,169 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [4]
-Underfull \hbox (badness 1389) in paragraph at lines 176--177
-\OT1/lmr/m/n/9.5 cross-validation is used to obtain a set of $\OML/lmm/m/it/9.5
- ^^L[]$ \OT1/lmr/m/n/9.5 values
- []
+
+Package natbib Warning: Citation `Kohavi1995' on page 5 undefined on input line
+ 179.
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 176--177
-\OT1/lmr/m/n/9.5 fit the LR and use the remaining data (1/3 of the
- []
+Package natbib Warning: Citation `Madigan1994' on page 5 undefined on input lin
+e 180.
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 176--177
-\OT1/lmr/m/n/9.5 (Kohavi and others, 1995).[]From the 1000 sets of $\OML/lmm/m/
-it/9.5 ^^L[]$
- []
+Package natbib Warning: Citation `Raftery1997' on page 5 undefined on input lin
+e 180.
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 176--177
-\OT1/lmr/m/n/9.5 Information Criterion (BIC) (Burnham and Anderson,
- []
+Package natbib Warning: Citation `Burnham2004' on page 5 undefined on input lin
+e 180.
 
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 180
+
+Package natbib Warning: Citation `Davis1986' on page 5 undefined on input line 
+184.
+
+
+Package natbib Warning: Citation `Li2008' on page 5 undefined on input line 184
+.
+
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 184
 .
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 1024) in paragraph at lines 180--181
-\OT1/lmr/m/n/9.5 package (Roustant and others, 2012) to calculate the
+
+Package natbib Warning: Citation `Roustant2012' on page 5 undefined on input li
+ne 184.
+
+
+Package natbib Warning: Citation `Li2008' on page 5 undefined on input line 184
+.
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 184--185
+\OT1/lmr/m/n/9.5 to interpolate between these locations. We used the
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 185--186
+Underfull \hbox (badness 1546) in paragraph at lines 184--185
+\OT1/lmr/m/n/9.5 ($\OML/lmm/m/it/9.5 ^^R$\OT1/lmr/m/n/9.5 ) and nugget for grid
+cell-averaged values of winter
+ []
+
+
+Package natbib Warning: Citation `Metropolis1949' on page 5 undefined on input 
+line 189.
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 189--190
 \OT1/lmr/m/n/9.5 WB we conduct a Monte Carlo analysis, which uses
  []
 
-
-Underfull \hbox (badness 1442) in paragraph at lines 185--186
-\OT1/lmr/m/n/9.5 1949). We repeat the random sampling process 1000
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 185--186
-\OT1/lmr/m/n/9.5 wide WB based on uncertainties associated with the
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 185--186
-\OT1/lmr/m/n/9.5 are considered separately: the uncertainty due to [](1)
- []
-
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.5> on input line 187.
+(Font)              <10.5> on input line 191.
 
-Underfull \hbox (badness 2818) in paragraph at lines 188--189
+Underfull \hbox (badness 2818) in paragraph at lines 192--193
 \OT1/lmr/m/n/9.5 scale uncertainty so we assume the same grid-scale
+ []
+
+
+Package natbib Warning: Citation `Bagos2015' on page 5 undefined on input line 
+198.
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 198--199
+\OT1/lmr/m/n/9.5 We represent the uncertainty due to interpolation of
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 200--201
+[]\OT1/lmr/m/n/9.5 SK interpolation uncertainty is represented by the
+ []
+
+<DepthBoxplot_SPvsFS.pdf, id=61, 194.17218pt x 364.87495pt>
+File: DepthBoxplot_SPvsFS.pdf Graphic file (type pdf)
+
+<use DepthBoxplot_SPvsFS.pdf>
+Package pdftex.def Info: DepthBoxplot_SPvsFS.pdf used on input line 213.
+(pdftex.def)             Requested size: 177.26375pt x 333.12796pt.
+
+Underfull \hbox (badness 1502) in paragraph at lines 214--214
+\OT1/lmr/m/n/8.5 measured snow depth on Glaciers 4, 2 and 13 with the
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 214--214
+\OT1/lmr/m/n/8.5 which are defined as being outside of the range of 1.5
  []
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[5]
-Underfull \hbox (badness 1412) in paragraph at lines 194--195
-\OT1/lmr/m/n/9.5 We represent the uncertainty due to interpolation of
- []
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 194--195
-\OT1/lmr/m/n/9.5 are randomly sampled and used to calculate gridcell-
- []
-
-
-Underfull \hbox (badness 2103) in paragraph at lines 196--197
-[]\OT1/lmr/m/n/9.5 SK interpolation uncertainty is represented by the
- []
-
-<DepthBoxplot_SPvsFS.pdf, id=65, 194.17218pt x 364.87495pt>
-File: DepthBoxplot_SPvsFS.pdf Graphic file (type pdf)
-
-<use DepthBoxplot_SPvsFS.pdf>
-Package pdftex.def Info: DepthBoxplot_SPvsFS.pdf used on input line 209.
-(pdftex.def)             Requested size: 177.26375pt x 333.12796pt.
-
-Underfull \hbox (badness 1502) in paragraph at lines 210--210
-\OT1/lmr/m/n/8.5 measured snow depth on Glaciers 4, 2 and 13 with the
- []
-
-
-Underfull \hbox (badness 2181) in paragraph at lines 210--210
-\OT1/lmr/m/n/8.5 which are defined as being outside of the range of 1.5
- []
-
-<ZigzagHistogram.pdf, id=66, 506.89375pt x 170.6375pt>
+[5] <ZigzagHistogram.pdf, id=66, 506.89375pt x 170.6375pt>
 File: ZigzagHistogram.pdf Graphic file (type pdf)
 
 <use ZigzagHistogram.pdf>
-Package pdftex.def Info: ZigzagHistogram.pdf used on input line 216.
+Package pdftex.def Info: ZigzagHistogram.pdf used on input line 220.
 (pdftex.def)             Requested size: 481.13454pt x 161.9693pt.
+
+
+Package natbib Warning: Citation `Work1965' on page 6 undefined on input line 2
+30.
+
+
+Package natbib Warning: Citation `Fames1982' on page 6 undefined on input line 
+230.
+
+
+Package natbib Warning: Citation `Conger2009' on page 6 undefined on input line
+ 230.
+
+
+Package natbib Warning: Citation `Molotch2005' on page 6 undefined on input lin
+e 230.
+
+
+Package natbib Warning: Citation `Dixon2012' on page 6 undefined on input line 
+230.
+
+
+Package natbib Warning: Citation `Beaumont1963' on page 6 undefined on input li
+ne 230.
+
+
+Package natbib Warning: Citation `Turcan1975' on page 6 undefined on input line
+ 230.
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 232--233
+\OT1/lmr/m/n/9.5 Sampler measurements would not be expected at the
+ []
+
+
+LaTeX Warning: Reference `tab:Density' on page 6 undefined on input line 236.
+
+
+Package natbib Warning: Citation `Wetlaufer2016' on page 6 undefined on input l
+ine 236.
+
+
+Package natbib Warning: Citation `Elder1991' on page 6 undefined on input line 
+236.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 6 undefined on input lin
+e 236.
+
+
+Package natbib Warning: Citation `Cullen2017' on page 6 undefined on input line
+ 236.
+
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [6 <./DepthBoxplot_SPvsFS.pdf>]
-Underfull \hbox (badness 1038) in paragraph at lines 228--229
-\OT1/lmr/m/n/9.5 Sampler measurements would not be expected at the
- []
-
-
-LaTeX Warning: Reference `tab:Density' on page 7 undefined on input line 232.
-
-
-Underfull \vbox (badness 3590) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 236--237
+Underfull \hbox (badness 1742) in paragraph at lines 240--241
 \OT1/lmr/m/n/9.5 ($\OMS/lmsy/m/n/9.5 ^^X$\OT1/lmr/m/n/9.5 10 times greater than
  zigzag standard deviations).[]
  []
@@ -607,80 +980,160 @@ Underfull \hbox (badness 1742) in paragraph at lines 236--237
 <LR_map.pdf, id=90, 352.11568pt x 192.21915pt>
 File: LR_map.pdf Graphic file (type pdf)
  <use LR_map.pdf>
-Package pdftex.def Info: LR_map.pdf used on input line 240.
+Package pdftex.def Info: LR_map.pdf used on input line 244.
 (pdftex.def)             Requested size: 253.22952pt x 138.23929pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 240--240
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 244--244
  [][] 
  []
 
 <SK_map.pdf, id=91, 351.57652pt x 191.36722pt>
 File: SK_map.pdf Graphic file (type pdf)
  <use SK_map.pdf>
-Package pdftex.def Info: SK_map.pdf used on input line 241.
+Package pdftex.def Info: SK_map.pdf used on input line 245.
 (pdftex.def)             Requested size: 253.22952pt x 137.83977pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 241--241
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 245--245
  [][] 
  []
 
 <BetaCoeffs.pdf, id=92, 244.915pt x 227.85126pt>
 File: BetaCoeffs.pdf Graphic file (type pdf)
  <use BetaCoeffs.pdf>
-Package pdftex.def Info: BetaCoeffs.pdf used on input line 249.
+Package pdftex.def Info: BetaCoeffs.pdf used on input line 253.
 (pdftex.def)             Requested size: 202.58052pt x 188.46982pt.
 
-Underfull \hbox (badness 1694) in paragraph at lines 250--250
+Underfull \hbox (badness 1694) in paragraph at lines 254--254
 \OT1/lmr/m/n/8.5 so values can be compared across parameters. Regression
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 257.
+               Default added (so using `tbp') on input line 261.
 
 <observedVSestimated_S2.pdf, id=93, 506.89375pt x 284.06125pt>
 File: observedVSestimated_S2.pdf Graphic file (type pdf)
 
 <use observedVSestimated_S2.pdf>
-Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 272.
+Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 276.
 (pdftex.def)             Requested size: 354.51978pt x 198.67679pt.
 
 <SpatialVar_LR.pdf, id=94, 354.46527pt x 185.82379pt>
 File: SpatialVar_LR.pdf Graphic file (type pdf)
  <use SpatialVar_LR.pdf>
-Package pdftex.def Info: SpatialVar_LR.pdf used on input line 279.
+Package pdftex.def Info: SpatialVar_LR.pdf used on input line 283.
 (pdftex.def)             Requested size: 253.22952pt x 132.75525pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 279--279
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 283--283
  [][] 
  []
 
 <SpatialVar_SK.pdf, id=95, 350.90016pt x 186.24844pt>
 File: SpatialVar_SK.pdf Graphic file (type pdf)
  <use SpatialVar_SK.pdf>
-Package pdftex.def Info: SpatialVar_SK.pdf used on input line 280.
+Package pdftex.def Info: SpatialVar_SK.pdf used on input line 284.
 (pdftex.def)             Requested size: 253.22952pt x 134.40854pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 280--280
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 284--284
  [][] 
  []
 
 
+Package natbib Warning: Citation `Machguth2006' on page 7 undefined on input li
+ne 291.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 7 undefined on input lin
+e 291.
+
+
+Package natbib Warning: Citation `Winther1998' on page 7 undefined on input lin
+e 291.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 7 undefined on input li
+ne 291.
+
+
+Package natbib Warning: Citation `Grabiec2011' on page 7 undefined on input lin
+e 291.
+
+
+Package natbib Warning: Citation `Grabiec2011' on page 7 undefined on input lin
+e 291.
+
+
+Package natbib Warning: Citation `Lopez2011' on page 7 undefined on input line 
+291.
+
+
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[7 <./ZigzagHistogram.pdf>]
-Underfull \hbox (badness 1406) in paragraph at lines 289--290
-\OT1/lmr/m/n/9.5 such losses, as well as redistribution and preferential
+[7 <./ZigzagHistogram.pdf> <./LR_map.pdf> <./SK_map.pdf>]
+
+Package natbib Warning: Citation `Dadic2010' on page 8 undefined on input line 
+293.
+
+
+Package natbib Warning: Citation `Winstral2013' on page 8 undefined on input li
+ne 293.
+
+
+Package natbib Warning: Citation `Gerber2017' on page 8 undefined on input line
+ 293.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 8 undefined on input lin
+e 293.
+
+
+Package natbib Warning: Citation `Musselman2015' on page 8 undefined on input l
+ine 293.
+
+
+Package natbib Warning: Citation `Grunewald2013' on page 8 undefined on input l
+ine 295.
+
+
+Package natbib Warning: Citation `Machguth2006' on page 8 undefined on input li
+ne 299.
+
+
+Package natbib Warning: Citation `Grabiec2011' on page 8 undefined on input lin
+e 299.
+
+
+Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+
+
+[8 <./BetaCoeffs.pdf>] <WSMBDist.pdf, id=334, 506.89375pt x 227.85126pt>
+File: WSMBDist.pdf Graphic file (type pdf)
+
+<use WSMBDist.pdf>
+Package pdftex.def Info: WSMBDist.pdf used on input line 307.
+(pdftex.def)             Requested size: 481.13454pt x 216.27667pt.
+
+Underfull \hbox (badness 1072) in paragraph at lines 314--315
+\OT1/lmr/m/n/9.5 Glacier-wide winter balance is affected by uncertainty
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+Underfull \hbox (badness 1024) in paragraph at lines 314--315
+\OT1/lmr/m/n/9.5 introduced when by the []representativeness of gridcell-
+ []
 
 
-[8 <./LR_map.pdf> <./SK_map.pdf> <./BetaCoeffs.pdf>]
-Underfull \hbox (badness 1067) in paragraph at lines 291--292
-\OT1/lmr/m/n/9.5 error is large (0.20mw.e.). []Our results are consistent
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 316.
+
+
+Package natbib Warning: Citation `Hock2005' on page 9 undefined on input line 3
+29.
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 329--330
+\OT1/lmr/m/n/9.5 contributor to overall WB uncertainty. This result is
  []
 
 
@@ -691,329 +1144,127 @@ Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
 [9 <./observedVSestimated_S2.pdf> <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
-<WSMBDist.pdf, id=441, 506.89375pt x 227.85126pt>
-File: WSMBDist.pdf Graphic file (type pdf)
- <use WSMBDist.pdf>
-Package pdftex.def Info: WSMBDist.pdf used on input line 303.
-(pdftex.def)             Requested size: 481.13454pt x 216.27667pt.
-
-Underfull \hbox (badness 1072) in paragraph at lines 310--311
-\OT1/lmr/m/n/9.5 Glacier-wide winter balance is affected by uncertainty
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 310--311
-\OT1/lmr/m/n/9.5 introduced when by the []representativeness of gridcell-
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 312.
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 325--326
-\OT1/lmr/m/n/9.5 contributor to overall WB uncertainty. This result is
- []
-
-
-Underfull \hbox (badness 1137) in paragraph at lines 327--328
+Underfull \hbox (badness 1137) in paragraph at lines 331--332
 \OT1/lmr/m/n/9.5 to be encompassed by the sources investigated or to
  []
 
 
-Underfull \hbox (badness 2310) in paragraph at lines 334--335
+LaTeX Warning: Reference `fig:AccumGrad' on page 10 undefined on input line 338
+.
+
+
+Package natbib Warning: Citation `Taylor1969' on page 10 undefined on input lin
+e 338.
+
+
+Package natbib Warning: Citation `Taylor1969' on page 10 undefined on input lin
+e 338.
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 338--339
 \OT1/lmr/m/n/9.5 Although we find considerable inter- and intra-basin
- []
-
-
-Underfull \hbox (badness 1540) in paragraph at lines 334--335
-\OT1/lmr/m/n/9.5 into regional-scale patterns of winter balance can be
  []
 
 <AccumGrad.pdf, id=442, 190.73323pt x 177.76808pt>
 File: AccumGrad.pdf Graphic file (type pdf)
  <use AccumGrad.pdf>
-Package pdftex.def Info: AccumGrad.pdf used on input line 338.
+Package pdftex.def Info: AccumGrad.pdf used on input line 342.
 (pdftex.def)             Requested size: 177.26375pt x 165.22493pt.
 
-Underfull \hbox (badness 1117) in paragraph at lines 339--339
-\OT1/lmr/m/n/8.5 Point-scale values of WB from snow-pit data reported by
+
+Package natbib Warning: Citation `Taylor1969' on page 10 undefined on input lin
+e 343.
+
+
+Package natbib Warning: Citation `Taylor1969' on page 10 undefined on input lin
+e 343.
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 350--351
+\OT1/lmr/m/n/9.5 design, spatially uniform subgrid variability, minimal
  []
+
+
+Package natbib Warning: Citation `Dixon2012' on page 10 undefined on input line
+ 352.
+
+
+Package natbib Warning: Citation `McGrath2015' on page 10 undefined on input li
+ne 354.
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[10]
-Underfull \hbox (badness 2035) in paragraph at lines 352--353
+[10 <./WSMBDist.pdf>]
+Underfull \hbox (badness 2035) in paragraph at lines 356--357
 []\OT1/lmr/m/n/9.5 There is an obvious lack of measurements in the
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 354--355
-\OT1/lmr/m/n/9.5 transects for many mass-balance surveys to replicate.
+Underfull \hbox (badness 1014) in paragraph at lines 356--357
+\OT1/lmr/m/n/9.5 interpolation uncertainty and we would gain a better
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 354--355
-\OT1/lmr/m/n/9.5 about optimal transects configuration and along-track
+Package natbib Warning: Citation `Lopez2010' on page 11 undefined on input line
+ 358.
+
+
+Package natbib Warning: Citation `Grunewald2013' on page 11 undefined on input 
+line 360.
+
+
+Package natbib Warning: Citation `Walmsley2015' on page 11 undefined on input l
+ine 360.
+
+
+Package natbib Warning: Citation `Zhang1994' on page 11 undefined on input line
+ 362.
+
+
+Package natbib Warning: Citation `Garbrecht1994' on page 11 undefined on input 
+line 362.
+
+
+Package natbib Warning: Citation `Guo-an2001' on page 11 undefined on input lin
+e 362.
+
+
+Package natbib Warning: Citation `Lopez2010' on page 11 undefined on input line
+ 362.
+
+
+Package natbib Warning: Citation `Kienzle2004' on page 11 undefined on input li
+ne 362.
+
+
+Package natbib Warning: Citation `Lopez2010' on page 11 undefined on input line
+ 362.
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 362--363
+\OT1/lmr/m/n/9.5 field (see Supplementary Material). A comparison of
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1019) in paragraph at lines 373--374
+\OT1/lmr/m/n/9.5 estimates and 32% for simple-kriging estimates) when
+ []
 
 
 Overfull \vbox (5.1555pt too high) has occurred while \output is active []
 
 
-[11 <./WSMBDist.pdf> <./AccumGrad.pdf>]
-Underfull \hbox (badness 2418) in paragraph at lines 358--359
-[]\OT1/lmr/m/n/9.5 DEM gridcell size is known to significantly affect
- []
-
-
-Underfull \hbox (badness 2698) in paragraph at lines 369--370
-\OT1/lmr/m/n/9.5 resulting from the method of density assignment is
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 375--376
+[11 <./AccumGrad.pdf>]
+Underfull \hbox (badness 1859) in paragraph at lines 379--380
 \OT1/lmr/m/n/9.5 and wrote most of the paper. GEF supported data
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 379--382
+Underfull \hbox (badness 1418) in paragraph at lines 383--384
 \OT1/lmr/m/n/9.5 permission to work in traditional KFN territory and
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 379--382
-\OT1/lmr/m/n/9.5 including simple kriging. Anonymous reviewers, Luke
- []
-
-(./WinterBalance.bbl
-Underfull \hbox (badness 1072) in paragraph at lines 8--11
-[]\OT1/lmr/m/n/8.5 Anderton S, White S and Alvera B (2004) Evaluation of
- []
-
-
-Underfull \hbox (badness 1527) in paragraph at lines 8--11
-\OT1/lmr/m/n/8.5 spatial variability in snow water equivalent for a high
- []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[12]
-Underfull \hbox (badness 2343) in paragraph at lines 13--18
-\OT1/lmr/m/n/8.5 St Elias Mountains, Alaska, USA, using aircraft laser
- []
-
-
-Underfull \hbox (badness 1221) in paragraph at lines 13--18
-\OT1/lmr/m/n/8.5 altimetry. \OT1/lmr/m/it/8.5 Journal of Glaciology\OT1/lmr/m/n
-/8.5 , \OT1/lmr/bx/n/8.5 54\OT1/lmr/m/n/8.5 (188), 778--787 (doi:
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 44--47
-[]\OT1/lmr/m/n/8.5 Burnham KP and An-der-son DR (2004) Mul-ti-model In-fer-
- []
-
-
-Underfull \hbox (badness 1394) in paragraph at lines 44--47
-\OT1/lmr/m/n/8.5 ence: Un-der-stand-ing AIC and BIC in Model Se-lec-tion.
- []
-
-
-Underfull \hbox (badness 3168) in paragraph at lines 44--47
-\OT1/lmr/m/it/8.5 So-ci-o-log-i-cal Meth-ods & Re-search\OT1/lmr/m/n/8.5 , \OT1
-/lmr/bx/n/8.5 33\OT1/lmr/m/n/8.5 (2), 261--304 (doi:
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 69--72
-[]\OT1/lmr/m/n/8.5 Cogley J, Hock R, Rasmussen L, Arendt A, Bauder A,
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 83--88
-\OT1/lmr/m/n/8.5 Glacier, New Zealand, determined using a geostatistical
- []
-
-
-Underfull \hbox (badness 1314) in paragraph at lines 83--88
-\OT1/lmr/m/n/8.5 approach. \OT1/lmr/m/it/8.5 Journal of Glaciology\OT1/lmr/m/n/
-8.5 , \OT1/lmr/bx/n/8.5 63\OT1/lmr/m/n/8.5 (238), 199--217 (doi:
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 111--114
-\OT1/lmr/m/it/8.5 i-cal Pro-cesses\OT1/lmr/m/n/8.5 , \OT1/lmr/bx/n/8.5 26\OT1/l
-mr/m/n/8.5 (17), 2555--2562, ISSN 1099-1085 (doi:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--131
-\OT1/lmr/m/n/8.5 10.1002/(SICI)1099-1085(199808/09)12:10/111793::AID-
- []
-
-
-Underfull \hbox (badness 2884) in paragraph at lines 149--152
-[]\OT1/lmr/m/n/8.5 Garbrecht J and Martz L (1994) Grid size dependency
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 149--152
-\OT1/lmr/m/n/8.5 of parameters extracted from digital elevation models.
- []
-
-
-Underfull \hbox (badness 3557) in paragraph at lines 154--158
-\OT1/lmr/m/n/8.5 n/a--n/a, ISSN 2169-8996 (doi: 10.1002/2016JD026258),
- []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[13]
-Underfull \hbox (badness 4266) in paragraph at lines 187--190
-\OT1/lmr/m/n/8.5 in Alaska. \OT1/lmr/m/it/8.5 An-nals of Glaciol-ogy\OT1/lmr/m/
-n/8.5 , \OT1/lmr/bx/n/8.5 55\OT1/lmr/m/n/8.5 (67), 78--88 (doi:
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 225--229
-\OT1/lmr/m/n/8.5 and Zappa M (2006) ALPINE3D: a detailed model of
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 225--229
-\OT1/lmr/m/n/8.5 mountain surface processes and its application to snow
- []
-
-
-Underfull \hbox (badness 1708) in paragraph at lines 270--274
-[]\OT1/lmr/m/n/8.5 Madigan D and Raftery AE (1994) Model Selection and
- []
-
-
-Underfull \hbox (badness 1466) in paragraph at lines 270--274
-\OT1/lmr/m/n/8.5 Accounting for Model Uncertainty in Graphical Models
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 3623) in paragraph at lines 324--327
-[]\OT1/lmr/m/n/8.5 R^^Seveillet M, Vin-cent C, Six D and Ra-ba-tel A (2016)
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 336--339
-[]\OT1/lmr/m/n/8.5 Schneiderbauer S and Prokop A (2011) The atmospheric
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[14]
-Underfull \hbox (badness 1616) in paragraph at lines 385--387
-\OT1/lmr/m/it/8.5 distributions at Hellstugubreen and Gr^^Wasubreen, Norway\OT1
-/lmr/m/n/8.5 .
- []
-
-
-Underfull \hbox (badness 1975) in paragraph at lines 389--393
-[]\OT1/lmr/m/n/8.5 Wetlaufer K, Hendrikx J and Marshall L (2016) Spatial
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 400--404
-[]\OT1/lmr/m/n/8.5 Wilson NJ, Flowers GE and Mingo L (2013) Comparison
- []
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 400--404
-\OT1/lmr/m/n/8.5 of thermal structure and evolution between neighboring
- []
-
-
-Underfull \hbox (badness 2556) in paragraph at lines 406--409
-[]\OT1/lmr/m/n/8.5 Winstral A, Marks D and Gur-ney R (2013) Sim-u-lat-ing
- []
-
-
-Underfull \hbox (badness 3229) in paragraph at lines 406--409
-\OT1/lmr/m/n/8.5 scales. \OT1/lmr/m/it/8.5 Ad-vances in Wa-ter Re-sources\OT1/l
-mr/m/n/8.5 , \OT1/lmr/bx/n/8.5 55\OT1/lmr/m/n/8.5 , 64--79 (doi:
- []
-
-
-Underfull \hbox (badness 1509) in paragraph at lines 416--419
-[]\OT1/lmr/m/n/8.5 Woo MK and Marsh P (1978) Analysis of Error in the
- []
-
-)
-
-Package natbib Warning: There were undefined citations.
-
-
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[15
-
-] (./WinterBalance.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
-Here is how much of TeX's memory you used:
- 3727 strings out of 493029
- 49482 string characters out of 6136234
- 127894 words of memory out of 5000000
- 7146 multiletter control sequences out of 15000+600000
- 75426 words of font info for 73 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 42i,16n,27p,1657b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/
-lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmb
-x9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-sy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on WinterBalance.pdf (15 pages, 2945417 bytes).
-PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 440 compressed objects within 5 object streams
- 0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Underfull \hbox (badness 2503) in parag
