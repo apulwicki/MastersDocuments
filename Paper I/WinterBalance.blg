@@ -5,45 +5,45 @@ The style file: igs.bst
 Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
 Warning--can't use both volume and number fields in Kohavi1995
 Warning--missing school in Walmsley2015
-You've used 73 entries,
+You've used 79 entries,
             2869 wiz_defined-function locations,
-            1158 strings with 20583 characters,
-and the built_in function-call counts, 83177 in all, are:
-= -- 8995
-> -- 1694
-< -- 68
-+ -- 589
-- -- 517
-* -- 6374
-:= -- 9175
-add.period$ -- 73
-call.type$ -- 73
-change.case$ -- 628
-chr.to.int$ -- 74
-cite$ -- 75
-duplicate$ -- 8517
-empty$ -- 6460
-format.name$ -- 825
-if$ -- 17365
+            1200 strings with 21859 characters,
+and the built_in function-call counts, 89707 in all, are:
+= -- 9699
+> -- 1820
+< -- 72
++ -- 633
+- -- 555
+* -- 6891
+:= -- 9909
+add.period$ -- 79
+call.type$ -- 79
+change.case$ -- 677
+chr.to.int$ -- 80
+cite$ -- 81
+duplicate$ -- 9174
+empty$ -- 6975
+format.name$ -- 884
+if$ -- 18719
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 823
-newline$ -- 226
-num.names$ -- 292
-pop$ -- 3978
+missing$ -- 890
+newline$ -- 244
+num.names$ -- 316
+pop$ -- 4275
 preamble$ -- 1
-purify$ -- 550
+purify$ -- 593
 quote$ -- 0
-skip$ -- 1856
+skip$ -- 1992
 stack$ -- 0
-substring$ -- 9514
-swap$ -- 2076
+substring$ -- 10273
+swap$ -- 2243
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 891
+type$ -- 964
 warning$ -- 2
-while$ -- 528
+while$ -- 571
 width$ -- 0
-write$ -- 934
+write$ -- 1012
 (There were 2 warnings)
