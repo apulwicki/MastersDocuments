@@ -30,13 +30,14 @@
 	date-added = "2017-08-08 15:01:56 +0000",
 	date-modified = "2017-08-08 15:02:31 +0000",
 	doi = "10.1002/2016JD026258",
-	issn = "2169-8996",
 	journal = "Journal of Geophysical Research: Atmospheres",
 	keywords = "Snow; Modeling; Boundary layer processes; leeside flow field; preferential deposition; lidar; TLS",
 	note = "2016JD026258",
-	pages = "n/a--n/a",
+	number = "15",
+	pages = "7737--7754",
 	title = "{A close-ridge small-scale atmospheric flow field and its influence on snow accumulation}",
 	url = "http://dx.doi.org/10.1002/2016JD026258",
+	volume = "122",
 	year = "2017"
 }
 
@@ -46,11 +47,9 @@
 	date-added = "2017-06-23 19:39:59 +0000",
 	date-modified = "2017-06-23 19:40:13 +0000",
 	doi = "10.1111/j.1467-9671.2004.00169.x",
-	issn = "1467-9671",
 	journal = "Transactions in GIS",
 	number = "1",
 	pages = "83--111",
-	publisher = "Blackwell Publishing Ltd",
 	title = "{The Effect of {DEM} Raster Resolution on First Order, Second Order and Compound Terrain Derivatives}",
 	url = "http://dx.doi.org/10.1111/j.1467-9671.2004.00169.x",
 	volume = "8",
@@ -88,7 +87,6 @@
 	date-added = "2017-06-23 19:33:05 +0000",
 	date-modified = "2017-06-23 19:33:05 +0000",
 	doi = "10.1007/BF02837966",
-	issn = "1861-9568",
 	journal = "Journal of Geographical Sciences",
 	number = "4",
 	pages = "393--401",
@@ -106,12 +104,10 @@
 	date-added = "2017-06-23 17:06:42 +0000",
 	date-modified = "2017-06-23 17:14:51 +0000",
 	doi = "10.1002/hyp.7564",
-	issn = "1099-1085",
 	journal = "Hydrological Processes",
 	month = "7",
 	number = "14",
 	pages = "1914--1928",
-	publisher = "Wiley Online Library",
 	title = "{Effects of sample and grid size on the accuracy and stability of regression-based snow interpolation methods}",
 	url = "https://doi.org/10.1002/hyp.7564",
 	volume = "24",
@@ -162,7 +158,6 @@
 	date-added = "2017-06-22 18:14:41 +0000",
 	date-modified = "2017-06-22 18:14:41 +0000",
 	doi = "10.1016/0098-3004(94)90098-1",
-	issn = "0098-3004",
 	journal = "Computers \& Geosciences",
 	number = "1",
 	pages = "85--87",
@@ -195,7 +190,6 @@
 	date-added = "2017-06-21 00:11:46 +0000",
 	date-modified = "2017-06-21 00:11:54 +0000",
 	doi = "10.1002/2016WR019872",
-	issn = "0043-1397",
 	journal = "Water Resources Research",
 	keywords = "Snow Depth; Complex Topography; Coarse‐Scale Models; Subgrid Parameterization; Sky View Factor; Spatial Variability",
 	month = "February",
@@ -252,10 +246,8 @@
 	booktitle = "{ {Proceedings of the Fourteenth International Joint Conference on Artificial Intelligence}}",
 	date-added = "2016-12-11 18:00:58 +0000",
 	date-modified = "2016-12-11 18:02:09 +0000",
-	number = "2",
 	pages = "1137--1145",
 	title = "{A study of cross-validation and bootstrap for accuracy estimation and model selection}",
-	volume = "14",
 	year = "1995"
 }
 
@@ -800,10 +792,9 @@
 @book{Fierz2009,
 	author = "Fierz, CRLA and Armstrong, Richard L and Durand, Yves and Etchevers, Pierre and Greene, Ethan and McClung, David M and Nishimura, Kouichi and Satyawali, Pramod K and Sokratov, Sergey A",
 	bdsk-url-1 = "http://unesdoc.unesco.org/images/0018/001864/186462e.pdf",
-	publisher = "UNESCO/IHP Paris",
+	edition = "UNESCO/IHP Paris",
 	title = "{The international classification for seasonal snow on the ground}",
 	url = "http://unesdoc.unesco.org/images/0018/001864/186462e.pdf",
-	volume = "25",
 	year = "2009"
 }
 
@@ -1625,7 +1616,7 @@
 	owner = "glaciology1",
 	publisher = "US Geological Survey",
 	timestamp = "2015.11.09",
-	title = "{Glaciers of the {S}t. {E}lias mountains}",
+	title = "{Glaciers of the {S}t. {E}lias {M}ountains}",
 	year = "2002"
 }
 
@@ -1634,7 +1625,7 @@
 	bdsk-url-1 = "http://dx.doi.org/10.1029/2009JF001261",
 	date-modified = "2017-08-29 14:44:53 +0000",
 	doi = "10.1029/2009JF001261",
-	journal = "Journal of Geophysical Research: Earth Surface (2003--2012)",
+	journal = "Journal of Geophysical Research: Earth Surface",
 	number = "14",
 	owner = "glaciology1",
 	pages = "1994--2006",
@@ -2248,7 +2239,7 @@
 	pages = "1--5",
 	publisher = "Wiley Online Library",
 	timestamp = "2015.11.06",
-	title = "{Strong spatial variability of snow accumulation observed with helicopter-borne {GPR} on two adjacent Alpine glaciers}",
+	title = "{Strong spatial variability of snow accumulation observed with helicopter-borne {GPR} on two adjacent alpine glaciers}",
 	volume = "33",
 	year = "2006"
 }
@@ -3051,7 +3042,6 @@
 	author = "Dixon, David and Boon, Sarah",
 	bdsk-url-1 = "http://dx.doi.org/10.1002/hyp.9317",
 	doi = "10.1002/hyp.9317",
-	issn = "1099-1085",
 	journal = "Hydrological Processes",
 	keywords = "snow; snow measurement; snow tubes; mountain snow; southwestern Alberta",
 	number = "17",
@@ -3240,7 +3230,7 @@
 }
 
 @article{Beaumont1963,
-	author = "Beauont, Robert T. and Work, R. A.",
+	author = "Beaumont, Robert T. and Work, R. A.",
 	bdsk-url-1 = "http://dx.doi.org/10.1080/02626666309493359",
 	doi = "10.1080/02626666309493359",
 	eprint = "http://dx.doi.org/10.1080/02626666309493359",
@@ -3285,6 +3275,7 @@
 @article{Conger2009,
 	author = "Conger, Steven M and McClung, David M",
 	bdsk-url-1 = "https://doi.org/10.3189/002214309788609038",
+	doi = "10.3189/002214309788609038",
 	journal = "Journal of Glaciology",
 	number = "189",
 	pages = "163--169",
@@ -3596,8 +3587,7 @@
 	bdsk-url-1 = "http://dx.doi.org/10.4236/ojs.2015.57069",
 	doi = "10.4236/ojs.2015.57069",
 	journal = "Open Journal of Statistics",
-	number = "07",
-	pages = "680",
+	pages = "680--701",
 	publisher = "Scientific Research Publishing",
 	title = "{On the Covariance of Regression Coefficients}",
 	volume = "5",
@@ -3631,9 +3621,11 @@
 	bdsk-url-1 = "http://dx.doi.org/10.1017/aog.2016.6",
 	doi = "10.1017/aog.2016.6",
 	journal = "Annals of Glaciology",
+	number = "72",
 	pages = "1--9",
 	publisher = "Cambridge Univ Press",
 	title = "{Correlations of suspended sediment size with bedrock lithology and glacier dynamics}",
+	volume = "57",
 	year = "2016"
 }
 
@@ -3675,11 +3667,9 @@
 	abstract = "We consider the problem of model selection and accounting for model uncertainty in high-dimensional contingency tables, motivated by expert system applications. The approach most used currently is a stepwise strategy guided by tests based on approximate asymptotic P values leading to the selection of a single model; inference is then conditional on the selected model. The sampling properties of such a strategy are complex, and the failure to take account of model uncertainty leads to underestimation of uncertainty about quantities of interest. In principle, a panacea is provided by the standard Bayesian formalism that averages the posterior distributions of the quantity of interest under each of the models, weighted by their posterior model probabilities. Furthermore, this approach is optimal in the sense of maximizing predictive ability. But this has not been used in practice, because computing the posterior model probabilities is hard and the number of models is very large (often greater than 10<sup>11</sup>). We argue that the standard Bayesian formalism is unsatisfactory and propose an alternative Bayesian approach that, we contend, takes full account of the true model uncertainty by averaging over a much smaller set of models. An efficient search algorithm is developed for finding these models. We consider two classes of graphical models that arise in expert systems: the recursive causal models and the decomposable log-linear models. For each of these, we develop efficient ways of computing exact Bayes factors and hence posterior model probabilities. For the decomposable log-linear models, this is based on properties of chordal graphs and hyper-Markov prior distributions and the resultant calculations can be carried out locally. The end product is an overall strategy for model selection and accounting for model uncertainty that searches efficiently through the very large classes of models involved. Three examples are given. The first two concern data sets that have been analyzed by several authors in the context of model selection. The third addresses a urological diagnostic problem. In each example, our model averaging approach provides better out-of-sample predictive performance than any single model that might reasonably have been selected.",
 	author = "Madigan, David and Raftery, Adrian E.",
 	bdsk-url-1 = "http://www.jstor.org/stable/2291017",
-	issn = "01621459",
 	journal = "Journal of the American Statistical Association",
 	number = "428",
 	pages = "1535--1546",
-	publisher = "[American Statistical Association, Taylor \& Francis, Ltd.]",
 	title = "{Model Selection and Accounting for Model Uncertainty in Graphical Models Using {Occam's Window}}",
 	url = "http://www.jstor.org/stable/2291017",
 	volume = "89",
@@ -3746,11 +3736,11 @@
 	author = "Clarke, Garry KC",
 	bdsk-url-1 = "http://www.jstor.org/stable/24363797",
 	journal = "Arctic",
+	localfile = "10.14430/arctic4355",
 	number = "1",
 	pages = "1--21",
 	publisher = "JSTOR",
 	title = "{A short and somewhat personal history of {Y}ukon glacier studies in the {Twentieth Century}}",
-	url = "http://www.jstor.org/stable/24363797",
 	volume = "37",
 	year = "2014"
 }
@@ -3823,5 +3813,31 @@
 	url = "https://www.the-cryosphere.net/10/371/2016",
 	volume = "10",
 	year = "2016"
+}
+
+@article{Waechter2015,
+	author = "Waechter, Alexandra and Copland, Luke and Herdes, Emilie",
+	doi = "10.3189/2015JoG14J147",
+	journal = "Journal of Glaciology",
+	number = "228",
+	pages = "624--634",
+	publisher = "International Glaciological Society",
+	title = "{Modern glacier velocities across the Icefield Ranges, St Elias Mountains, and variability at selected glaciers from 1959 to 2012}",
+	volume = "61",
+	year = "2015"
+}
+
+@article{Crochet2007,
+	abstract = "Abstract A linear model of orographic precipitation that includes airflow dynamics, condensed water advection, and downslope evaporation is adapted for Iceland. The model is driven using coarse-resolution 40-yr reanalysis data from the European Centre for Medium-Range Weather Forecasts (ERA-40) over the period 1958--2002. The simulated precipitation is in good agreement with precipitation observations accumulated over various time scales, both in terms of magnitude and distribution. The results suggest that the model captures the main physical processes governing orographic generation of precipitation in the mountains of Iceland. The approach presented in this paper offers a credible method to obtain a detailed estimate of the distribution of precipitation in mountainous terrain for various conditions involving orographic generation of precipitation. It appears to be of great practical value to the hydrologists, glaciologists, meteorologists, and climatologists.",
+	author = "Crochet, Philippe and J{\'o}hannesson, T{\'o}mas and J{\'o}nsson, Trausti and Sigurðsson, Oddur and Bj{\"o}rnsson, Helgi and P{\'a}lsson, Finnur and Barstad, Idar",
+	doi = "10.1175/2007JHM795.1",
+	eprint = "https://doi.org/10.1175/2007JHM795.1",
+	journal = "Journal of Hydrometeorology",
+	number = "6",
+	pages = "1285--1306",
+	title = "{Estimating the Spatial Distribution of Precipitation in {Iceland} Using a Linear Model of Orographic Precipitation}",
+	url = "https://doi.org/10.1175/2007JHM795.1",
+	volume = "8",
+	year = "2007"
 }
 
