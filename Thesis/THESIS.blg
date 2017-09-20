@@ -1,50 +1,50 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: THESIS.aux
-The style file: plain.bst
+The style file: igs.bst
 Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
 Warning--there's a number but no volume in Clarke2002
 Warning--empty journal in Revuelto2014
-Warning--empty school in Walmsley2015
+Warning--missing school in Walmsley2015
 You've used 138 entries,
-            2118 wiz_defined-function locations,
-            1393 strings with 31156 characters,
-and the built_in function-call counts, 50606 in all, are:
-= -- 5046
-> -- 2643
-< -- 8
-+ -- 1036
-- -- 898
-* -- 4092
-:= -- 8506
-add.period$ -- 414
+            2869 wiz_defined-function locations,
+            1594 strings with 34201 characters,
+and the built_in function-call counts, 152411 in all, are:
+= -- 16483
+> -- 2972
+< -- 117
++ -- 1037
+- -- 899
+* -- 11836
+:= -- 16925
+add.period$ -- 137
 call.type$ -- 138
-change.case$ -- 853
-chr.to.int$ -- 0
+change.case$ -- 1142
+chr.to.int$ -- 139
 cite$ -- 141
-duplicate$ -- 1613
-empty$ -- 3669
-format.name$ -- 898
-if$ -- 10200
-int.to.chr$ -- 0
-int.to.str$ -- 138
-missing$ -- 145
-newline$ -- 693
-num.names$ -- 276
-pop$ -- 671
+duplicate$ -- 15613
+empty$ -- 11926
+format.name$ -- 1462
+if$ -- 31708
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 1521
+newline$ -- 421
+num.names$ -- 552
+pop$ -- 7189
 preamble$ -- 1
-purify$ -- 721
+purify$ -- 1001
 quote$ -- 0
-skip$ -- 1123
+skip$ -- 3281
 stack$ -- 0
-substring$ -- 3742
-swap$ -- 225
-text.length$ -- 8
+substring$ -- 17548
+swap$ -- 3822
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 536
+type$ -- 1667
 warning$ -- 3
-while$ -- 518
-width$ -- 141
-write$ -- 1510
+while$ -- 967
+width$ -- 0
+write$ -- 1759
 (There were 3 warnings)
