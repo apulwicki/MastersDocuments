@@ -32,15 +32,10 @@ Anthony~A Arendt, Scott~B Luthcke, Christopher~F Larsen, Waleed Abdalati,
   altimetry}.
 \newblock {\em Journal of Glaciology}, 54(188):778--787, 2008.
 
-\bibitem{Arnold2003}
-Neil~S Arnold and W~Gareth Rees.
-\newblock {Self-similarity in glacier surface characteristics}.
-\newblock {\em Journal of Glaciology}, 49(167):547--554, 2003.
-
 \bibitem{Bagos2015}
 Pantelis~G Bagos and Maria Adam.
 \newblock {On the Covariance of Regression Coefficients}.
-\newblock {\em Open Journal of Statistics}, 5(07):680, 2015.
+\newblock {\em Open Journal of Statistics}, 5:680--701, 2015.
 
 \bibitem{Balk2000}
 Benjamin Balk and Kelly Elder.
@@ -61,8 +56,8 @@ Alan Basist, Gerald~D Bell, and Vernon Meentemeyer.
 \newblock {\em Journal of climate}, 7(9):1305--1315, 1994.
 
 \bibitem{Beaumont1963}
-Robert~T. Beauont and R.~A. Work.
-\newblock {Snow sampling results from three sampler}.
+Robert~T. Beaumont and R.~A. Work.
+\newblock {Snow sampling results from three samplers}.
 \newblock {\em International Association of Scientific Hydrology. Bulletin},
   8(4):74--78, 1963.
 
@@ -107,11 +102,6 @@ G{\"u}nter Bl{\"o}schl, R~Kirnbauer, and D~Gutknecht.
 \newblock {Distributed snow melt simulations in an alpine catchment}.
 \newblock {\em Water Resources Research}, 27(12):3171--3179, 1991.
 
-\bibitem{Bloschl1995}
-G{\"u}nter Bl{\"o}schl and M~Sivapalan.
-\newblock {Scale issues in hydrological modelling: a review}.
-\newblock {\em Hydrological processes}, 9(3-4):251--290, 1995.
-
 \bibitem{Bring1996}
 Johan Bring.
 \newblock {A geometric approach to compare variables in a regression model}.
@@ -140,7 +130,7 @@ Martyn~P Clark, Jordy Hendrikx, Andrew~G Slater, Dmitri Kavetski, Brian
 
 \bibitem{Clarke2002}
 G.~K. Garry~KC Clarke and Gerald Holdsworth.
-\newblock {Glaciers of the {S}t. {E}lias mountains}.
+\newblock {Glaciers of the {S}t. {E}lias {M}ountains}.
 \newblock {\em US Geological Survey professional paper}, (1386J), 2002.
 
 \bibitem{Clarke1984}
@@ -148,6 +138,12 @@ Garry~KC Clarke, Sam~G Collins, and David~E Thompson.
 \newblock {Flow, thermal structure, and subglacial conditions of a surge-type
   glacier}.
 \newblock {\em Canadian Journal of Earth Sciences}, 21(2):232--240, 1984.
+
+\bibitem{Cogley2011}
+JG~Cogley, R~Hock, LA~Rasmussen, AA~Arendt, Andreas Bauder, RJ~Braithwaite,
+  P~Jansson, G~Kaser, M~M{\"o}ller, L~Nicholson, et~al.
+\newblock {\em {Glossary of glacier mass balance and related terms}}.
+\newblock UNESCO-IHP, Paris, 2011.
 
 \bibitem{Cohen2013}
 Jacob Cohen, Patricia Cohen, Stephen~G West, and Leona~S Aiken.
@@ -164,13 +160,13 @@ Steven~M Conger and David~M McClung.
 Jeff~W Crompton and Gwenn~E Flowers.
 \newblock {Correlations of suspended sediment size with bedrock lithology and
   glacier dynamics}.
-\newblock {\em Annals of Glaciology}, pages 1--9, 2016.
+\newblock {\em Annals of Glaciology}, 57(72):1--9, 2016.
 
 \bibitem{Dadic2010}
-R~Dadic, R~Mott, M~Lehning, and P~Burlando.
+R~Dadi{\'c}, R~Mott, M~Lehning, and P~Burlando.
 \newblock {Parameterization for wind-induced preferential deposition of snow}.
-\newblock {\em Journal of Geophysical Research: Earth Surface (2003--2012)},
-  115, 2010.
+\newblock {\em Journal of Geophysical Research: Earth Surface},
+  24(14):1994--2006, 2010.
 
 \bibitem{Danby2003}
 Ryan~K Danby, David~S Hik, D~Scott Slocombe, and Andrew Williams.
@@ -185,25 +181,19 @@ Richard~B Darlington.
 
 \bibitem{Davis1986}
 John~C Davis and Robert~J Sampson.
-\newblock {\em {Statistics and data analysis in geology}}, volume 646.
-\newblock Wiley New York et al., 1986.
+\newblock {\em {Statistics and data analysis in geology}}.
+\newblock Wiley New York et al., 2nd edition, 1986.
 
 \bibitem{Deems2006a}
 Jeffrey~S Deems, Steven~R Fassnacht, and Kelly~J Elder.
 \newblock {Fractal distribution of snow depth from LiDAR data}.
 \newblock {\em Journal of Hydrometeorology}, 7(2):285--297, 2006.
 
-\bibitem{Deems2008}
-Jeffrey~S Deems, Steven~R Fassnacht, and Kelly~J Elder.
-\newblock {Interannual consistency in fractal snow depth patterns at two
-  Colorado mountain sites}.
-\newblock {\em Journal of Hydrometeorology}, 9(5):977--988, 2008.
-
 \bibitem{Deems2006}
 Jeffrey~S Deems and Thomas~H Painter.
 \newblock {Lidar measurement of snow depth: accuracy and error sources}.
 \newblock In {\em {Proceedings of the International Snow Science Workshop}},
-  pages 1--6, 2006.
+  2006.
 
 \bibitem{Dixon2012}
 David Dixon and Sarah Boon.
@@ -232,7 +222,7 @@ Kelly Elder, Walter Rosenthal, and Robert~E Davis.
 Tyler~A Erickson, Mark~W Williams, and Adam Winstral.
 \newblock {Persistence of topographic controls on the spatial distribution of
   snow in rugged mountain terrain, Colorado, United States}.
-\newblock {\em Water Resources Research}, 41(4), 2005.
+\newblock {\em Water Resources Research}, 41(4):1--17, 2005.
 
 \bibitem{Erxleben2002}
 Jennifer Erxleben, Kelly Elder, and Robert Davis.
@@ -258,6 +248,12 @@ HJ~Fowler, S~Blenkinsop, and C~Tebaldi.
   in downscaling techniques for hydrological modelling}.
 \newblock {\em International Journal of Climatology}, 27(12):1547--1578, 2007.
 
+\bibitem{Garbrecht1994}
+J.~Garbrecht and L.~Martz.
+\newblock {Grid size dependency of parameters extracted from digital elevation
+  models}.
+\newblock {\em Computers \& Geosciences}, 20(1):85--87, 1994.
+
 \bibitem{Gardner2013}
 Alex~S Gardner, Geir Moholdt, J~Graham Cogley, Bert Wouters, Anthony~A Arendt,
   John Wahr, Etienne Berthier, Regine Hock, W~Tad Pfeffer, Georg Kaser, et~al.
@@ -270,12 +266,6 @@ Mariusz Grabiec, Dariusz Puczko, Tomasz Budzik, and Grzegorz Gajek.
 \newblock {Snow distribution patterns on {S}valbard glaciers derived from
   radio-echo soundings}.
 \newblock {\em Polish Polar Research}, 32(4):393--421, 2011.
-
-\bibitem{Granger2002}
-RJ~Granger, JW~Pomeroy, and J~Parviainen.
-\newblock {Boundary-layer integration approach to advection of sensible heat to
-  a patchy snow cover}.
-\newblock {\em Hydrological Processes}, 16(18):3559--3569, 2002.
 
 \bibitem{Gromping2009}
 Ulrike Gr{\"o}mping.
@@ -295,7 +285,7 @@ T~Gr{\"u}newald, Y~B{\"u}hler, and M~Lehning.
 \newblock {\em The Cryosphere}, 8(6):2381--2394, 2014.
 
 \bibitem{Grunewald2010}
-T~Grunewald, M~Schirmer, R~Mott, and M~Lehning.
+T~Gr{\"u}newald, M~Schirmer, R~Mott, and M~Lehning.
 \newblock {Spatial and temporal variability of snow depth and ablation rates in
   a small mountain catchment}.
 \newblock {\em Cryosphere}, 4(2):215--225, 2010.
@@ -306,6 +296,12 @@ T~Gr{\"u}newald, J~St{\"o}tter, JW~Pomeroy, R~Dadic, I~{Moreno Ba{\~n}os},
 \newblock {Statistical modelling of the snow depth distribution in open alpine
   terrain}.
 \newblock {\em Hydrology and Earth System Sciences}, 17(8):3005--3021, 2013.
+
+\bibitem{Guo-an2001}
+Tang Guo-an, Hui Yang-he, Josef Strobl, and Liu Wang-qing.
+\newblock {The impact of resolution on the accuracy of hydrologic data derived
+  from DEMs}.
+\newblock {\em Journal of Geographical Sciences}, 11(4):393--401, 2001.
 
 \bibitem{Gusmeroli2014}
 Alessio Gusmeroli, Gabriel~J Wolken, and Anthony~A Arendt.
@@ -376,6 +372,12 @@ John~W Kidson and Craig~S Thompson.
   for estimating local climate variations}.
 \newblock {\em Journal of Climate}, 11(4):735--753, 1998.
 
+\bibitem{Kienzle2004}
+Stefan Kienzle.
+\newblock {The Effect of {DEM} Raster Resolution on First Order, Second Order
+  and Compound Terrain Derivatives}.
+\newblock {\em Transactions in GIS}, 8(1):83--111, 2004.
+
 \bibitem{Knotters1995}
 M.~Knotters, D.J. Brus, and J.H.~Oude Voshaar.
 \newblock {A comparison of kriging, co-kriging and kriging combined with
@@ -388,7 +390,7 @@ Ron Kohavi et~al.
 \newblock {A study of cross-validation and bootstrap for accuracy estimation
   and model selection}.
 \newblock In {\em { {Proceedings of the Fourteenth International Joint
-  Conference on Artificial Intelligence}}}, volume~14, pages 1137--1145, 1995.
+  Conference on Artificial Intelligence}}}, pages 1137--1145, 1995.
 
 \bibitem{Korona2009}
 J{\'e}r{\^o}me Korona, Etienne Berthier, Marc Bernard, Fr{\'e}d{\'e}rique
@@ -420,13 +422,13 @@ Kristine~M Larson, Ethan~D Gutmann, Valery~U Zavorotny, John~J Braun, Mark~W
 M~Lehning, H~L{\"o}we, M~Ryser, and N~Raderschall.
 \newblock {Inhomogeneous precipitation distribution and snow transport in steep
   terrain}.
-\newblock {\em Water Resources Research}, 44(7), 2008.
+\newblock {\em Water Resources Research}, 44(7):1--19, 2008.
 
 \bibitem{Li2008}
 Jin Li and Andrew~D Heap.
 \newblock {A review of spatial interpolation methods for environmental
-  scientists No. Record 2008/23}.
-\newblock {\em Geoscience Australia}, 2008.
+  scientists}.
+\newblock {\em Geoscience Australia}, page Record 2008/23, 2008.
 
 \bibitem{Li2014}
 Jin Li and Andrew~D. Heap.
@@ -444,6 +446,12 @@ Glen~E Liston and Matthew Sturm.
 \newblock {A snow-transport model for complex terrain}.
 \newblock {\em Journal of Glaciology}, 44(148):498--516, 1998.
 
+\bibitem{Lopez2010}
+JI~L{\'o}pez-Moreno, J.~Latron, and A.~Lehmann.
+\newblock {Effects of sample and grid size on the accuracy and stability of
+  regression-based snow interpolation methods}.
+\newblock {\em Hydrological Processes}, 24(14):1914--1928, 7 2010.
+
 \bibitem{Lopez2006}
 JI~L{\'o}pez-Moreno and D~Nogu{\'e}s-Bravo.
 \newblock {Interpolating local snow depth data: an evaluation of methods}.
@@ -458,8 +466,8 @@ Juan~I L{\'o}pez-Moreno, SR~Fassnacht, Santiago Beguer{\'i}a, and JBP Latron.
 \bibitem{Machguth2006}
 H~Machguth, Olaf Eisen, Frauke Paul, and M~Hoelzle.
 \newblock {Strong spatial variability of snow accumulation observed with
-  helicopter-borne {GPR} on two adjacent Alpine glaciers}.
-\newblock {\em Geophysical Research Letters}, 33(13), 2006.
+  helicopter-borne {GPR} on two adjacent alpine glaciers}.
+\newblock {\em Geophysical Research Letters}, 33(13):1--5, 2006.
 
 \bibitem{Marchand2005}
 Wolf-Dietrich Marchand and {\AA}nund Killingtveit.
@@ -472,14 +480,6 @@ Melvin~G Marcus and Richard~H Ragle.
 \newblock {Snow accumulation in the {Icefield Ranges, St. Elias Mountains,
   Yukon}}.
 \newblock {\em Arctic and Alpine Research}, pages 277--292, 1970.
-
-\bibitem{Marshall2006}
-Hans~Peter Marshall, Gary Koh, Matthew Sturm, JB~Johnson, Mike Demuth, Chris
-  Landry, JS~Deems, and JA~Gleason.
-\newblock {Spatial variability of the snowpack: Experiences with measurements
-  at a wide range of length scales with several different high precision
-  instruments}.
-\newblock In {\em {Proceedings ISSW}}, pages 359--364, 2006.
 
 \bibitem{McCreight2014}
 James~L McCreight, Eric~E Small, and Kristine~M Larson.
@@ -618,12 +618,11 @@ Adrian~E. Raftery, David Madigan, and Jennifer~A. Hoeting.
 \newblock {\em Journal of the American Statistical Association},
   92(437):179--191, 1997.
 
-\bibitem{Reuter2016}
-Benjamin Reuter, Bettina Richter, and J{\"u}rg Schweizer.
-\newblock {Snow instability patterns at the scale of a small basin}.
-\newblock {\em Journal of Geophysical Research: Earth Surface},
-  121(2):257--282, 2016.
-\newblock 2015JF003700.
+\bibitem{Reveillet2016}
+Marion R{\'e}veillet, Christian Vincent, Delphine Six, and Antoine Rabatel.
+\newblock {Which empirical model is best suited to simulate glacier mass
+  balances?}
+\newblock {\em Journal of Glaciology}, 63(237):1--16, Oct 2016.
 
 \bibitem{Revuelto2014}
 Jes{\'u}s Revuelto, Juan~I L{\'o}pez-Moreno, C{\'e}sar Azor{\'i}n-Molina, and
@@ -644,12 +643,6 @@ Wendy~A Ryan, Nolan~J Doesken, and Steven~R Fassnacht.
   measurements}.
 \newblock {\em Journal of Atmospheric and Oceanic Technology}, 25(5):667--684,
   2008.
-
-\bibitem{Schirmer2011a}
-M~Schirmer and M~Lehning.
-\newblock {Persistence in intra-annual snow depth distribution: 2. Fractal
-  analysis of snow depth development}.
-\newblock {\em Water Resources Research}, 47(9), 2011.
 
 \bibitem{Schirmer2011}
 M~Schirmer, V~Wirz, A~Clifton, and M~Lehning.
@@ -674,16 +667,6 @@ Cora Shea and Bruce Jamieson.
 \newblock {Star: an efficient snow point-sampling method}.
 \newblock {\em Annals of Glaciology}, 51(54):64--72, 2010.
 
-\bibitem{Shook1997}
-K~Shook and DM~Gray.
-\newblock {Synthesizing shallow seasonal snow covers}.
-\newblock {\em Water resources research}, 33(3):419--426, 1997.
-
-\bibitem{Shook1996}
-Kevin Shook and DM~Gray.
-\newblock {Small-scale spatial structure of shallow snowcovers}.
-\newblock {\em Hydrological Processes}, 10(10):1283--1292, 1996.
-
 \bibitem{Smith2004}
 Ronald~B Smith and Idar Barstad.
 \newblock {A linear theory of orographic precipitation}.
@@ -702,28 +685,17 @@ Leo Sold, Matthias Huss, Martin Hoelzle, Hubert Andereggen, Philip~C Joerg, and
   on alpine glaciers}.
 \newblock {\em Journal of Glaciology}, 59(218):1047--1059, 2013.
 
-\bibitem{Srivastava2013}
-R~Mohan Srivastava.
-\newblock {Geostatistics: a toolkit for data analysis, spatial prediction and
-  risk management in the coal industry}.
-\newblock {\em International Journal of Coal Geology}, 112:2--13, 2013.
-
 \bibitem{Taylor1969}
 Bea Taylor-Barge.
-\newblock {The summer climate of the {S}t. {E}lias {M}ountain region}.
-\newblock Technical report, DTIC Document, 1969.
+\newblock {\em {The summer climate of the {S}t. {E}lias {M}ountain region}}.
+\newblock {Montreal: Arctic Institute of North America, Research Paper No. 53},
+  1969.
 
 \bibitem{Trujillo2015}
 E~Trujillo and Michael Lehning.
 \newblock {Theoretical analysis of errors when estimating snow distribution
   through point measurements}.
 \newblock {\em The Cryosphere}, 9(3):1249--1264, 2015.
-
-\bibitem{Trujillo2007}
-Ernesto Trujillo, Jorge~A Ram{\'i}rez, and Kelly~J Elder.
-\newblock {Topographic, meteorologic, and canopy controls on the scaling
-  characteristics of the spatial distribution of snow depth fields}.
-\newblock {\em Water Resources Research}, 43(7), 2007.
 
 \bibitem{Trujillo2009}
 Ernesto Trujillo, Jorge~A Ram{\'i}rez, and Kelly~J Elder.
@@ -735,7 +707,7 @@ Ernesto Trujillo, Jorge~A Ram{\'i}rez, and Kelly~J Elder.
 J~Turcan and HS~Loijens.
 \newblock {Accuracy of snow survey data and errors in snow sampler
   measurements}.
-\newblock In {\em {32nd {E}astern {S}now {C}onference}}, pages 2--11, 1975.
+\newblock In {\em {32nd {E}astern {S}now {C}onference}}, 1975.
 
 \bibitem{Pelt2014}
 J~van Pelt, J~Ward, Rickard Pettersson, Veijo~A Pohjola, Sergey Marchenko,
@@ -761,7 +733,7 @@ Cameron~P Wake, Kaplan Yalcin, and Niels~S Gundestrup.
 Alexander Philip~Unwin Walmsley.
 \newblock {Long-term observations of snow spatial distributions at
   {H}ellstugubreen and {G}r{\aa}subreen, {N}orway}.
-\newblock 2015.
+\newblock Master's thesis, 2015.
 
 \bibitem{Wasserman2000}
 Larry Wasserman.
@@ -775,17 +747,18 @@ Fred~GR Watson, Thor~N Anderson, Wendi~B Newman, Susan~E Alexander, and
   in stratified heterogeneous landscapes}.
 \newblock {\em Journal of Hydrology}, 328(3):432--452, 2006.
 
-\bibitem{Webster2001}
-Richard Webster and Margaret~A Oliver.
-\newblock {\em {Geostatistics for environmental scientists (Statistics in
-  Practice)}}.
-\newblock Wiley, 2001.
+\bibitem{Wechsler2006}
+Suzanne~P. Wechsler and Charles~N. Kroll.
+\newblock {Quantifying {DEM} Uncertainty and its Effect on Topographic
+  Parameters}.
+\newblock {\em Photogrammetric Engineering \& Remote Sensing},
+  72(9):1081--1090, 2006.
 
 \bibitem{Wetlaufer2016}
 Karl Wetlaufer, Jordy Hendrikx, and Lucy Marshall.
 \newblock {Spatial Heterogeneity of Snow Density and Its Influence on Snow
   Water Equivalence Estimates in a Large Mountainous Basin}.
-\newblock {\em Hydrology}, 3(1):3, 2016.
+\newblock {\em Hydrology}, 3(3):1--17, 2016.
 
 \bibitem{Wheler2014}
 Brett~A Wheler, Andrew~H MacDougall, Gwenn~E Flowers, Eric~I Petersen, Paul~H
@@ -817,7 +790,6 @@ Adam Winstral, Danny Marks, and Robert Gurney.
 \newblock {Simulating wind-affected snow accumulations at catchment to basin
   scales}.
 \newblock {\em Advances in Water Resources}, 55:64--79, 2013.
-\newblock Snow--Atmosphere Interactions and Hydrological Consequences.
 
 \bibitem{Winther1998}
 JG~Winther, O~Bruland, K~Sand, A~Killingtveit, and D~Marechal.
@@ -835,18 +807,24 @@ Ming-Ko Woo and Philip Marsh.
 Walter~A Wood.
 \newblock {Project {``Snow Cornice"}: the establishment of the {Seward Glacial}
   research station}.
-\newblock {\em Arctic}, pages 107--112, 1948.
+\newblock {\em Arctic}, 1(2):107--112, 1948.
 
 \bibitem{Work1965}
 R.A. Work, H.J. Stockwell, T.G. Freeman, and R.T. Beaumont.
-\newblock {Accuracy of field snow surveys}.
-\newblock Technical report, 1965.
+\newblock {\em {Accuracy of field snow surveys}}.
+\newblock Cold Regions Research \& Engineering Laboratory, 1965.
 
 \bibitem{Zeugner2015}
 Stefan Zeugner and Martin Feldkircher.
 \newblock {Bayesian Model Averaging Employing Fixed and Flexible Priors: The
   {BMS} Package for {R}}.
 \newblock {\em Journal of Statistical Software}, 68(4):1--37, 2015.
+
+\bibitem{Zhang1994}
+Weihua Zhang and David~R. Montgomery.
+\newblock {Digital elevation model grid size, landscape representation, and
+  hydrologic simulations}.
+\newblock {\em Water Resources Research}, 30(4):1019--1028, 1994.
 
 \bibitem{Zorita1999}
 Eduardo Zorita and Hans {Von Storch}.
