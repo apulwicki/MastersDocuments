@@ -163,7 +163,7 @@ Statistical models are a simple way to examine variability. They are computation
 Although the application of statistical downscaling is simple, it has a number of disadvantages. The method is difficult to apply in areas that have minimal historical data, as model performance is better when a long and reliable data set is used for calibration \citep{Fowler2007}. Statistical downscaling also assumes that the relationship between large-scale and local variables is stationary in time, limiting the ability of models to project into the future \citep{Fowler2007}. Furthermore, an empirical relationship assumes that there is no climate system feedback and the data generated through the empirical function are subject to the same biases as those of the original data set \citep{Fowler2007}. \cite{Wilby2000} also notes that the choice of large-scale variable domain (location and spatial extent) exerts a strong effect on the accuracy of the empirical function.
 
 \subsubsection{Terrain-based parametrization}
-Terrain-based parametrization determines empirical relationships between topographic indices and observed data. To determine topographic indices, the terrain in the study area is divided into grid cells where terrain parameters (e.g. slope, curvature, aspect, ``northness'', wind exposure, topographic similarity) are calculated \citep{Anderson2014,McGrath2015}. The variable of interest is then measured in the study area and a relationship between grid-cell terrain parameters and observed data can be established \citep[e.g.][]{Bloschl1991, Liston1998, Anderton2004,McGrath2015}. 
+Terrain-based parametrization determines empirical relationships between topographic indices and observed data. To determine topographic indices, the terrain in the study area is divided into gridcells where terrain parameters (e.g. slope, curvature, aspect, ``northness'', wind exposure, topographic similarity) are calculated \citep{Anderson2014,McGrath2015}. The variable of interest is then measured in the study area and a relationship between grid-cell terrain parameters and observed data can be established \citep[e.g.][]{Bloschl1991, Liston1998, Anderton2004,McGrath2015}. 
 
 Terrain-based parametrization requires a good terrain model and a meaningful network of observed data. For example, \cite{Molotch2005} found that that there were significant differences in modelled snow distribution when different terrain models were used. This is likely because the terrain-model grid size affects the value of the calculated terrain parameter for the cell. Terrain-based parameterization also requires sufficiently high resolution and spatial extent of observed data. When measuring accumulation, the variability within the study area needs to be captured and all areas should be well represented. 
 
@@ -171,7 +171,7 @@ Relating terrain model parameters with observed data is often accomplished with 
 
 Relating topographic parameters and observed data is a simple approach to understanding processes that affect variability. Although no physically-based relations are employed, terrain parameters can act as proxies for processes that are known to occur \citep{McGrath2015}. In this way, dominant processes can be inferred through easy to find statistical relationships. This approach is especially powerful in alpine environments, where topography strongly affects local snow distribution. 
 
-While terrain-based parametrization is easy to employ, its usefulness in understanding snow distribution can be limited. This method assumes that variability between cells is larger than within cell variability, which may not necessarily apply to all cells, especially in steep terrain or where grid size is comparatively large. \cite{Marchand2005} found that the standard deviation within the 30 m by 30 m grid cells used in the study was slightly larger than the between-grid variability. Additionally, \cite{Grunewald2013} observed that local statistical models are able to perform well but that they cannot be transferred to different regions and that regional-scale models are not able to explain the majority of variance. The temporal transferability of terrain-based parameterization is also not reliable. \cite{Grunewald2013} found that local models could be applied between years while \cite{Revuelto2014} found that snow distribution variability could not be explained by their model in low snow years. Furthermore, the use of terrain parameters as proxies does not provide meaningful insight into relevant processes. This is important when attempting to predict distribution of variables in a different climate or location. 
+While terrain-based parametrization is easy to employ, its usefulness in understanding snow distribution can be limited. This method assumes that variability between cells is larger than within cell variability, which may not necessarily apply to all cells, especially in steep terrain or where grid size is comparatively large. \cite{Marchand2005} found that the standard deviation within the 30 m by 30 m gridcells used in the study was slightly larger than the between-grid variability. Additionally, \cite{Grunewald2013} observed that local statistical models are able to perform well but that they cannot be transferred to different regions and that regional-scale models are not able to explain the majority of variance. The temporal transferability of terrain-based parameterization is also not reliable. \cite{Grunewald2013} found that local models could be applied between years while \cite{Revuelto2014} found that snow distribution variability could not be explained by their model in low snow years. Furthermore, the use of terrain parameters as proxies does not provide meaningful insight into relevant processes. This is important when attempting to predict distribution of variables in a different climate or location. 
 
 
 % Measuring accumulation
@@ -187,7 +187,7 @@ Three main methods are currently used to measure snow depth. Probing involves ta
 \begin{figure}
  \centering
       \includegraphics[width=0.4\textwidth]{snowpit.jpg}
-  \caption{Digging a snowpit in the accumulation area of Haig Glacier, Rocky Mountains}
+  \caption{Digging a snow pit in the accumulation area of Haig Glacier, Rocky Mountains}
         \label{snowpit}
 \end{figure}
 
@@ -196,7 +196,7 @@ The most direct way of measuring snow depth is by probing. To determine the snow
 
 In the ablation zone, snow depth is easy to measure because the interface between the end of summer melt surface and the beginning of winter accumulation is well defined (i.e. glacier ice) \citep{McGrath2015}. In the accumulation zone however, the snow surface at the end of the melt season may not be easily distinguishable from the winter accumulation \citep{Grunewald2010}. It is common for the accumulation zone to have a heterogeneous surface at the end of the melt season --- some areas do not experience any melt,  while other areas experience some melt and the melt water percolates through the snow and firn. Melt water generated from warm weather or rain events, especially in the early and late parts of the accumulation season, can refreeze in the snowpack to form ice lenses \citep{Sold2014}. As a result, the interface can be difficult to observe and contain a combination of dense or compacted snow, ice lenses, and/or firn.  Probing in the accumulation zone can therefore result in erroneous depth measurements --- penetration into the dense snow or firn will make it seem like a deeper snowpack exists and probing to an ice lens within the snowpack can make it seem like shallower snow is present \citep{Sold2013}. Snow pits and firn cores are therefore used to examine snow and firn layers and to determine where the current season's snow begins.
 
-To determine the basin-wide snow distribution, point snow depth measurements from probing need to be interpolated and extrapolated. This is often done using a statistical regression on parameters such as slope, aspect, curvature, and susceptibility to wind redistribution \citep[e.g.][]{Wheler2014,McGrath2015}. A regression generates an equation that is site specific and is used to estimate accumulation for each grid cell based on the values of its topographic parameters. 
+To determine the basin-wide snow distribution, point snow depth measurements from probing need to be interpolated and extrapolated. This is often done using a statistical regression on parameters such as slope, aspect, curvature, and susceptibility to wind redistribution \citep[e.g.][]{Wheler2014,McGrath2015}. A regression generates an equation that is site specific and is used to estimate accumulation for each gridcell based on the values of its topographic parameters. 
 
 Snow probing is the simplest and oldest method used to determine accumulation. At the most basic level, it requires little more than a probe to determine depth, a way to determine location (such as a hand-held GPS), and a shovel to dig snow pits (see Figure \ref{snowpit}). Furthermore, this method directly measures snow depth so no data processing or corrections are needed and depth uncertainty is simple to quantify (often multiple depth measurements are taken close together) \citep{Sold2013}. 
 
@@ -345,28 +345,6 @@ A study done by \cite{Pomeroy1999} looked at snow mass balance in a non-glacieri
 
 There is clearly a strong need for a more comprehensive understanding of snow accumulation in the St. Elias Mountains. Although a few studies have examined accumulation, no studies have examined the distribution of snow and how it varies spatially. This is especially true of small alpine glaciers in the St. Elias Mountains, since most of the accumulation differences have been observed on large glaciers. It is likely that orographic lifting as well as wind redistribution and preferential deposition play major roles in determining accumulation on small alpine glaciers, so future studies should focus on the impact of these factors. 
 
-
-\section{Research scope}
-
-There is a need for a multi-scale investigation of snow accumulation on glaciers. The goal of this project is to improve understanding of processes and parameters that affect snow accumulation on glaciers. The snow distribution is characterized by identifying relevant length scales and by investigating the uncertainty, techniques, and controlling factors associated with calculating spatial patterns of winter balance. Throughout the thesis, winter balance refers to the winter surface mass balance, which is the net accumulation and ablation of snow over the winter season \citep{Cogley2011}.
-
-The thesis work aims to examine the spatial variability of snow distribution in the St. Elias Mountains using direct measurements and statistical models. Four spatial scales that are relevant to accumulation on glaciers will be considered: point, gridcell, basin and regional scale (Figure \ref{fig:flowchart_scales}). An extensive snow survey is conducted, using a combination of snow-depth probing and two snow density measurement techniques, on three alpine glaciers in the Donjek Range. The Donjek Range is located on the continental side of the St. Elias Mountains (Table \ref{tab:glacierstats}). A combination of statistical techniques, including basic statistics and regressions, is used to investigate spatial variability at multiple scales. 
-
-The project is structured in four main stages (Figure \ref{fig:flowchart_project}). First, observations are described using basic statistics and a variety of density assignment methods are investigated. Second, regression and kriging methods are used to interpolate winter balance data. An evaluation of the various interpolation techniques is then done and significant topographic parameters are identified. Third, a Monte Carlo approach is  used to investigate the effects of variability and uncertainty associated with the conversion of gridcell-scale winter balance values to an estimate of glacier-wide winter balance. Fourth, the transferability of statistical relationships between glaciers is examined and an winter-balance gradient on the continental side of the St. Elias Mountains is identified.
-
-  \begin{figure}
-           \includegraphics[width = \textwidth]{ScalesOfVariability.png}
-       \caption{Visualization of four spatial scales investigated in project. The lower panels show examples of the amount of data analyzed at each scale.}
-       \label{fig:flowchart_scales}
-\end{figure}
-
- \begin{figure}
- \centering
-           \includegraphics[width =0.8 \textwidth]{MastersFlow.png}
-       \caption{Visual representation of research project. General scope is described on the left (ovals) and specific investigations are shown on the right (squares).}
-       \label{fig:flowchart_project}
-\end{figure}
- 
 \begin{landscape}
 \begin{table}[b]
 \centering
@@ -382,6 +360,32 @@ The project is structured in four main stages (Figure \ref{fig:flowchart_project
 \end{tabular}
 \end{table}
 \end{landscape}
+
+
+  \begin{figure}
+           \includegraphics[width = 0.95\textwidth]{ScalesOfVariability.png}
+       \caption{Visualization of four spatial scales investigated in project. The lower panels show examples of the amount of data analysed at each scale.}
+       \label{fig:flowchart_scales}
+\end{figure}
+
+\section{Research scope}
+
+There is a need for a multi-scale investigation of snow accumulation on glaciers. The goal of this project is to improve understanding of processes and parameters that affect snow accumulation on glaciers. The snow distribution is characterized by identifying relevant length scales and by investigating the uncertainty, techniques, and controlling factors associated with calculating spatial patterns of winter balance. Throughout the thesis, winter balance refers to the winter surface mass balance, which is the net accumulation and ablation of snow over the winter season \citep{Cogley2011}.
+
+The thesis work aims to examine the spatial variability of snow distribution in the St. Elias Mountains using direct measurements and statistical models. Four spatial scales that are relevant to accumulation on glaciers will be considered: point, gridcell, basin and regional scale (Figure \ref{fig:flowchart_scales}). An extensive snow survey is conducted, using a combination of snow-depth probing and two snow density measurement techniques, on three alpine glaciers in the Donjek Range. The Donjek Range is located on the continental side of the St. Elias Mountains (Table \ref{tab:glacierstats}). A combination of statistical techniques, including basic statistics and regressions, is used to investigate spatial variability at multiple scales. 
+
+The project is structured in four main stages (Figure \ref{fig:flowchart_project}). First, observations are described using basic statistics and a variety of density assignment methods are investigated. Second, regression and kriging methods are used to interpolate winter balance data. An evaluation of the various interpolation techniques is then done and significant topographic parameters are identified. Third, a Monte Carlo approach is  used to investigate the effects of variability and uncertainty associated with the conversion of gridcell-scale winter balance values to an estimate of glacier-wide winter balance. Fourth, the transferability of statistical relationships between glaciers is examined and an winter-balance gradient on the continental side of the St. Elias Mountains is identified.
+
+
+
+ \begin{figure}
+ \centering
+           \includegraphics[width =0.7\textwidth]{MastersFlow.png}
+       \caption{Visual representation of research project. General scope is described on the left (ovals) and specific investigations are shown on the right (squares).}
+       \label{fig:flowchart_project}
+\end{figure}
+ 
+
 
 
 \section{Summary}
@@ -411,11 +415,11 @@ The following sections describe the design of the snow survey, how the survey wa
 
 Three glaciers within the Donjek Range were chosen as study sites and can be seen in Figure \ref{studysites}. Glaciers in the Donjek Range are unnamed but working names have been employed by \cite{Crompton2016} and are adopted for this work. Glacier 4, Glacier 2, and Glacier 13 were selected. These glaciers were chosen because these glaciers are spread throughout the Donjek Range and are located increasingly further from the large-scale topographic divide (located at the head of the Kaskawulsh Glacier \citep{Taylor1969}). The three glaciers are also located on different sides of the range-scale topographic divides, which run roughly from west to east in the southern area and from south to north in the eastern area and form an `L' shape. Glacier 4 is located on the southern side of the first arm, Glacier 2 is located on the northern side of the first arm and the western side of the second arm, and Glacier 13 is located on the eastern side of the second arm. These small alpine glaciers are generally oriented southeast-northwest, with Glacier 4 having a predominantly southeast aspect and Glaciers 2 and 13 have generally northwest aspects. The glaciers are situated in valleys with steep walls and have simple. Within the Donjek Range, these glaciers have good SPIRIT SPOT-5 DEM coverage, which provides the highest resolution DEM available for this area. Additionally, the majority of the three glaciers is accessible on foot and the total area is small enough (see Table \ref{tab:glacierstats}) to allow for reasonable coverage using point measurements.
 
-The sampling scheme for each glacier was chosen to be similar so that comparison between glaciers could be done more readily. Each glacier was divided into the accumulation area, upper ablation area, and lower ablation area. In the accumulation area, a central snowpit location was chosen. Additionally, a series of approximately ten snow coring locations was chosen throughout the accumulation area. Steep sections and glacier margins were avoided. In both the upper and lower ablation area a number of linear and curvilinear transects were mapped, which included an `hourglass and circle' (Parr, C., 2016 personal communication) as well as a transverse (below the hourglass) and midline transect. The length and width of each transect was adjusted to span the full dimension of its corresponding area. Snowpit locations in the ablation area were chosen to be at the centre of each hourglass. An overview of the sampling design can be seen in Figure \ref{transect_planned}.
+The sampling scheme for each glacier was chosen to be similar so that comparison between glaciers could be done more readily. Each glacier was divided into the accumulation area, upper ablation area, and lower ablation area. In the accumulation area, a central snow pit location was chosen. Additionally, a series of approximately ten snow coring locations was chosen throughout the accumulation area. Steep sections and glacier margins were avoided. In both the upper and lower ablation area a number of linear and curvilinear transects were mapped, which included an `hourglass and circle' (Parr, C., 2016 personal communication) as well as a transverse (below the hourglass) and midline transect. The length and width of each transect was adjusted to span the full dimension of its corresponding area. Snow pit locations in the ablation area were chosen to be at the centre of each hourglass. An overview of the sampling design can be seen in Figure \ref{transect_planned}.
 
-The full ablation area was also divided into seven zones of approximately equal elevation intervals. Three locations within each zone were then randomly selected (using QGIS) for zigzag \citep{Shea2010} measurements (Figure \ref{zigzag_planned}) and the three locations were randomly labelled as different priorities. The goal was to complete one zigzag in each zone. If possible, the measurement would be completed at the `Priority A' location but if it was not possible due to dangerous conditions then the `Priority B' or `Priority C' locations would be chosen. This allowed for random locations to be used but with the flexibility to adjust locations in the field. Federal Sampler measurements (described below) would be taken within each zigzag, and at snowpit locations with the ablation area.  
+The full ablation area was also divided into seven zones of approximately equal elevation intervals. Three locations within each zone were then randomly selected (using QGIS) for zigzag \citep{Shea2010} measurements (Figure \ref{zigzag_planned}) and the three locations were randomly labelled as different priorities. The goal was to complete one zigzag in each zone. If possible, the measurement would be completed at the `Priority A' location but if it was not possible due to dangerous conditions then the `Priority B' or `Priority C' locations would be chosen. This allowed for random locations to be used but with the flexibility to adjust locations in the field. Federal Sampler measurements (described below) would be taken within each zigzag, and at snow pit locations with the ablation area.  
 
-The location of each snow depth and density measurement was imported into single-frequency GPS devices (Garmin GPSMAP 64s) as a waypoint with a unique name. Points that are part of a transect have a name with the glacier number, the transect and area that the point belongs to, and a three-digit sequential number. The code for the transect area and type includes two letters. The first letter is either `A' for `accumulation area', `U' for `upper ablation area', or `L' for `lower ablation area'. The second letter indicates the transect type, with `H' for `hourglass', `T' for `transverse transect', `C' for `circle', and `M' for `midline'. For example, the name G04\_UM023 is the 23rd point on the Midline transect in the Upper ablation area of Glacier 4, and G13\_LC134 is the 134th point on the circle in the lower ablation area of Glacier 13. Other points that are not part of a transect also follow a similar naming convention. The snowpit locations use the code `SP' (e.g. G04\_LSP is the snowpit located in the lower ablation zone of Glacier 4) and the firn coring locations have the code `FC' and a two digit number (e.g. G02\_AFC04 is the fourth firn core location in the accumulation area of Glacier 2).
+The location of each snow depth and density measurement was imported into single-frequency GPS devices (Garmin GPSMAP 64s) as a waypoint with a unique name. Points that are part of a transect have a name with the glacier number, the transect and area that the point belongs to, and a three-digit sequential number. The code for the transect area and type includes two letters. The first letter is either `A' for `accumulation area', `U' for `upper ablation area', or `L' for `lower ablation area'. The second letter indicates the transect type, with `H' for `hourglass', `T' for `transverse transect', `C' for `circle', and `M' for `midline'. For example, the name G04\_UM023 is the 23rd point on the Midline transect in the Upper ablation area of Glacier 4, and G13\_LC134 is the 134th point on the circle in the lower ablation area of Glacier 13. Other points that are not part of a transect also follow a similar naming convention. The snow pit locations use the code `SP' (e.g. G04\_LSP is the snow pit located in the lower ablation zone of Glacier 4) and the firn coring locations have the code `FC' and a two digit number (e.g. G02\_AFC04 is the fourth firn core location in the accumulation area of Glacier 2).
 
 Zigzag points have a name with the glacier number, the zone that they were located in, the zigzag priority, and the vertex number. The zone and priority (A, B, C) are indicated by a `Z', then the zone number, and then an `A', `B', or `C'. The vertex number is indicated by a `ZZ' and then a sequential number. For example, the vertex labelled G02\_Z2C\_ZZ04 is on Glacier 2 in zone 2 and the fourth point of a priority C zigzag. The vertex labelled G13\_Z7A\_ZZ08 is on Glacier 13 in zone 7 and the eighth point of a priority A zigzag. An example of a zigzag sampling scheme can be seen in Figure \ref{zigzag_vertex}.
 
@@ -586,8 +590,8 @@ G13              & 5             & A                 & 15 May 2016   & AP/AC   &
                       & Z7A               & 3                                                               & 3                                                                             & 10 May 2016   & CA/GF              &                                                                              \\
                       & Z7B               & 3                                                               & 3                                                                             & 10 May 2016   & CA/GF              &                                                                              \\
                       & Z7C               & 3                                                               & 2                                                                             & 10 May 2016   & AP/CA              &                                                                              \\
-                      & LSP               & 2+2+2+2                                                         & 1                                                                             & 10 May 2016   & CA/AC              & \begin{tabular}[t]{@{}l@{}}Used snowpit \\ spring scale (grams)\end{tabular} \\
-                      & Z3B               & 3                                                               & 1                                                                             & 10 May 2016   & CA/AC              & \begin{tabular}[t]{@{}l@{}}Used snowpit \\ spring scale (grams)\end{tabular} \\ \hline
+                      & LSP               & 2+2+2+2                                                         & 1                                                                             & 10 May 2016   & CA/AC              & \begin{tabular}[t]{@{}l@{}}Used snow pit \\ spring scale (grams)\end{tabular} \\
+                      & Z3B               & 3                                                               & 1                                                                             & 10 May 2016   & CA/AC              & \begin{tabular}[t]{@{}l@{}}Used snow pit \\ spring scale (grams)\end{tabular} \\ \hline
 \multirow{19}{*}{G13} & ASP               & 2+2+2+2                                                         & 3                                                                             & 13 May 2016   & AP/AC              &                                                                              \\
                       & AFC05             & 3                                                               & 3                                                                             & 13 May 2016   & AP/CA              & \begin{tabular}[t]{@{}l@{}}Probe depth \\ $\neq$ tube depth\end{tabular}     \\
                       & WP 651            & 3                                                               & 3                                                                             & 13 May 2016   & AP/CA/GF           &                                                                              \\
@@ -641,7 +645,7 @@ Two teams of two people were used to complete each zigzag. The first team would 
     \label{photo_swe}
 \end{figure}
  
-A metric Federal Snow Sampler from Geo Scientific Ltd. was used to measure snow depth and snow water equivalent (SWE). At the predetermined locations, three measurements (within 50 cm of each other) were made using the sampler. At the snowpit locations, a total of eight measurements were made, with two measurements on each side of the snowpit. Density calculated from these values will be compared with density determined from sampling within the snow pit (see Section \ref{sec:snowpit}). 
+A metric Federal Snow Sampler from Geo Scientific Ltd. was used to measure snow depth and snow water equivalent (SWE). At the predetermined locations, three measurements (within 50 cm of each other) were made using the sampler. At the snow pit locations, a total of eight measurements were made, with two measurements on each side of the snow pit. Density calculated from these values will be compared with density determined from sampling within the snow pit (see Section \ref{sec:snowpit}). 
 
 The Federal Snow Sampler consists of four 0.83 m sections that could be screwed together. One end of the sampler has cutter teeth and the other end has a removable thread protector that can be screwed onto the top section of the tube. The sampler has graduations in units of 1 cm and slits along the side of the tube allow the observer to determine the length of the core when it is in the tube. The spring scale that comes with the Federal Sampler is in units of cm SWE.  
 
@@ -668,21 +672,21 @@ In a few locations, sections of the core could be exacted without breaking them 
 
 As a result of these complications, many accumulation area measurements on Glacier 4 and Glacier 2 were abandoned. On Glacier 13, the Federal Sampler was successfully used to obtain snow density measurements. The snow/firn transition could be felt with the Federal Sampler because of a large density change between the snow and firn.  
 
-\subsection{Snowpit}
+\subsection{Snow pit}
 \label{sec:snowpit}
 
 \begin{figure}
 	\centering
 	\fbox{\includegraphics[width = 0.55\textwidth]{map_snowpitlocation_all.jpeg}}\\
-	\caption{Locations and labels for all snowpits dug on Glaciers 4, 2 and 13 (left to right).}
+	\caption{Locations and labels for all snow pits dug on Glaciers 4, 2 and 13 (left to right).}
 	\label{fig:snowpit_location_all}
 	\end{figure}
 
-Three snowpits were excavated on each glacier (Figure \ref{fig:snowpit_location_all}) and snow density sampled every 10 cm using a wedge cutter (Snow Metrics RIP 2 Cutter (250 cc)). The snow temperature was also measured at 10 cm intervals. The snowpit was oriented so that the sampling face was in the shade (typically south wall of snowpit), which reduces melt. 
+Three snow pits were excavated on each glacier (Figure \ref{fig:snowpit_location_all}) and snow density sampled every 10 cm using a wedge cutter (Snow Metrics RIP 2 Cutter (250 cc)). The snow temperature was also measured at 10 cm intervals. The snow pit was oriented so that the sampling face was in the shade (typically south wall of snow pit), which reduces melt. 
 
-The measurement procedure in the snowpit was as follows:
+The measurement procedure in the snow pit was as follows:
 \begin{enumerate}
-\item The face of the wall that was chosen for sampling was smoothed and a ruler was placed against the wall with the 0 cm mark at the bottom of the snowpit. The ruler was used to measure sampling heights within the snow pack. The snow surface directly above this wall was undisturbed during the digging process so that the true snow depth could be determined. 
+\item The face of the wall that was chosen for sampling was smoothed and a ruler was placed against the wall with the 0 cm mark at the bottom of the snow pit. The ruler was used to measure sampling heights within the snow pack. The snow surface directly above this wall was undisturbed during the digging process so that the true snow depth could be determined. 
 \item Air and snow surface temperature were measured by placing the thermometer (dial-stem thermometer ($\pm$0.5$^\circ$)) in the shade of a shovel or ski. 
 \item A snow density sample was taken in 10 cm intervals through the full depth of the snow pack. Samples were offset horizontally from each other so that the snow was not affected by previous measurements. 
 	\begin{enumerate}
@@ -694,12 +698,12 @@ The measurement procedure in the snowpit was as follows:
 
 Modifications to this procedure occurred when snow samples could not be taken because the snow was too dense. This would often occur when ice layers or lenses were present in the snow, which could not be cut by the wedge. In these cases, the measured thickness was recorded. A sample would then be taken using the wedge cutter but aligned horizontally so that a 5 cm tall sample was taken. Additionally, the sample interval closest to the ice surface (0--10 cm) would be difficult to obtain because the ice was rough and the snow above was faceted. Sometimes, this sample could not be obtained or a 5 cm sample needed to be taken. 
 
-After the majority of snowpit measurements were completed, a spring scale with finer resolution was found. For Glacier 4 and 2 the coarse resolution (10 g) scale had been used but for Glacier 13 the fine resolution (2 g) scale was used. Future measurements should use the finer resolution spring scale when using the small wedge sampler. As a result, the snow-density uncertainty is larger for Glacier 4 and 2 than for Glacier 13. 
+After the majority of snow pit measurements were completed, a spring scale with finer resolution was found. For Glacier 4 and 2 the coarse resolution (10 g) scale had been used but for Glacier 13 the fine resolution (2 g) scale was used. Future measurements should use the finer resolution spring scale when using the small wedge sampler. As a result, the snow-density uncertainty is larger for Glacier 4 and 2 than for Glacier 13. 
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[width = 0.95\textwidth]{photo_snowpit.jpg}}\\
-	\caption{Taking snow denisty measurements in a snowpit. An expandable ruler is used to measure snow depth and determine sampling locations. A 250cc wedge cutter is used to extract a known volume of snow and a spring scale is used to weigh the snow. The dial-stem thermometer is used for measureing snow temperature. Note that the sampling wall is shaded, has an undistrubed snow surface above it, and has a smoothed face. Photo credit: A. Criscitiello}
+	\caption{Taking snow denisty measurements in a snow pit. An expandable ruler is used to measure snow depth and determine sampling locations. A 250cc wedge cutter is used to extract a known volume of snow and a spring scale is used to weigh the snow. The dial-stem thermometer is used for measureing snow temperature. Note that the sampling wall is shaded, has an undistrubed snow surface above it, and has a smoothed face. Photo credit: A. Criscitiello}
 	\label{photo_snowpit}
 	\end{figure}
 
@@ -735,14 +739,14 @@ Originally, the location of measurements was found by taking the cumulative dist
 
 \subsection{Snow density}
 
-The snowpit and Federal Sampler measurements were entered into a spreadsheet and the snow density from each measurement was calculated. For snowpit measurements the snow density was calculated by multiplying the measured density from each wedge sample by the thickness of the sample and summing these values. This is known as an integrated snow density. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice-layer thickness, and the `hard' layer density were varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm (representing 20-100\% of the ice-layer thickness), and 500 and 600 kg m$^{-3}$, respectively.  A summary of density values and ranges is shown in Table \ref{tab:density_stats}.
+The snow pit and Federal Sampler measurements were entered into a spreadsheet and the snow density from each measurement was calculated. For snow pit measurements the snow density was calculated by multiplying the measured density from each wedge sample by the thickness of the sample and summing these values. This is known as an integrated snow density. A density of 917 kg m$^{-3}$ was applied to ice layers and a density of 600 kg m$^{-3}$ was applied to layers that were described as `hard' and were too difficult to sample. To determine the error in estimating integrated snow density, the values of ice density, ice-layer thickness, and the `hard' layer density were varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm (representing 20-100\% of the ice-layer thickness), and 500 and 600 kg m$^{-3}$, respectively.  A summary of density values and ranges is shown in Table \ref{tab:density_stats}.
 
 \begin{table}[b!]
 \centering
 \caption{Statistics of integrated densities measured using Federal Sampler or vertical density profiles (of snow wedge measurmenets) in snow pits. Mean, standard deviation (std), and number ($n$) of snow density (kg m$^{-3}$) measurements on study glaciers is shown.}
 \label{tab:density_stats}
 \begin{tabular}{c|ccc|ccc}
-\multirow{2}{*}{} & \multicolumn{3}{c}{\textbf{Snowpits}} & \multicolumn{3}{| c}{\textbf{Federal Sampler}} \\
+\multirow{2}{*}{} & \multicolumn{3}{c}{\textbf{Snow pits}} & \multicolumn{3}{| c}{\textbf{Federal Sampler}} \\
  & Mean & Std & $n$ & Mean & Std & $n$ \\ \hline \hline
 \textbf{Glacier 4} & 348 & 13 & 3 & 327 & 32 & 7 \\
 \textbf{Glacier 2} & 333 & 26 & 4 & 326 & 23 & 7 \\
@@ -767,17 +771,17 @@ The conversion of measured snow depth to point-scale winter balance could not be
 
 Four main interpolation methods are used \citep{McGrath2015, Elder1991}. The first assumes a uniform spatial distribution of density, calculated as the mean from all measurement locations on all three glaciers, over the entire study area. The second  also assumes a uniform spatial distribution of density but uses a mean density for individual glaciers (different value for each glacier). The third and fourth methods involve spatially variable density values. One of these methods involves using a regression of elevation and measured density values to interpolate between measurement locations. The other spatially variable interpolation method uses an inverse-distance weighted mean for interpolation. 
 
-Since the snowpit-derived densities and Federal Sampler-derived densities had no discernible relationship, the two density datasets are kept separate. This means that for each density interpolation option, there are two outputs. In the end, there are eight different interpolations of density that are carried forward throughout the study, which allows for a range of winter balance estimates to be made. 
+Since the snow pit-derived densities and Federal Sampler-derived densities had no discernible relationship, the two density datasets are kept separate. This means that for each density interpolation option, there are two outputs. In the end, there are eight different interpolations of density that are carried forward throughout the study, which allows for a range of winter balance estimates to be made. 
 
-The eight density distributions can be classified as using either snowpit-derived densities (SP) or Federal Sampler-derived densities (FS) and as using a certain method, indicated by a number (Table \ref{tab:densityOptions}).
+The eight density distributions can be classified as using either snow pit-derived densities (SP) or Federal Sampler-derived densities (FS) and as using a certain method, indicated by a number (Table \ref{tab:densityOptions}).
 \begin{itemize}
-	\item[S1] Calculates the mean density of all snowpit measurements.
+	\item[S1] Calculates the mean density of all snow pit measurements.
 	\item[F1] Calculates the mean density of all Federal Sampler measurements.
-	\item[S2] Calculates the mean density for each glacier using the snowpit measurements. 
+	\item[S2] Calculates the mean density for each glacier using the snow pit measurements. 
 	\item[F2] Calculates the mean density for each glacier using the Federal Sampler measurements. 
-	\item[S3] Calculates the slope and intercept of the best-fit regression line of snowpit densities with elevation for each glacier using the `fit' function and then uses slope and intercept to determine density for all elevations associated with each measurement location.
+	\item[S3] Calculates the slope and intercept of the best-fit regression line of snow pit densities with elevation for each glacier using the `fit' function and then uses slope and intercept to determine density for all elevations associated with each measurement location.
 	\item[F3] Calculates the slope and intercept of the best-fit regression line of Federal Sampler densities with elevation for each glacier using the `fit' function and then uses the slope and intercept to determine density for all elevations associated with each measurement location.
-	\item[S4] Determines the distance between each measurement location and each snowpit and then calculates the inverse-distance weight. For each measurement location, each snowpit density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
+	\item[S4] Determines the distance between each measurement location and each snow pit and then calculates the inverse-distance weight. For each measurement location, each snow pit density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
 	\item[F4] Determines the distance between each measurement location and each Federal Sampler and then calculates the inverse-distance weight. For each measurement location, each Federal Sampler density is then multiplied by its weight and these values are added together and divided by the sum of all weights. 
 	\end{itemize}
 
@@ -917,12 +921,12 @@ where the partial derivatives can be approximated by \citep{Mitavsova1993, Netel
 \frac{\partial z}{\partial x} &\approx \frac{(z_7-z_9)+(2z_4-2z_6)+(z_1-z_3)}{8  \Delta x},\nonumber \\
 \frac{\partial z}{\partial y} &\approx \frac{(z_7-z_1)+(2z_8-2z_2)+(z_9-z_3)}{8  \Delta y}.
 \end{align}
-Here, $z_k$ refers to one of the grid cells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. So $z_3 = z_{i+1,j+1}$, $z_7 = z_{i-1,j-1}$, and so on (Figure \ref{fig:DEMgrid}). The grid spacing (resolution) of the DEM is $\Delta x$ and $\Delta y$ in the east-west and north-south direction, respectively \citep{Neteler2008}. 
+Here, $z_k$ refers to one of the gridcells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. So $z_3 = z_{i+1,j+1}$, $z_7 = z_{i-1,j-1}$, and so on (Figure \ref{fig:DEMgrid}). The grid spacing (resolution) of the DEM is $\Delta x$ and $\Delta y$ in the east-west and north-south direction, respectively \citep{Neteler2008}. 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 0.3\textwidth]{DEMGrid.png}\\
-	\caption{Labelling of DEM grid cells surrounding the cell of interest. The eight surrounding cells are used for estimating topographic parameters in QGIS. The cell of interest, which is located at row $i$ and column $j$ of the DEM, is shown as a shaded cell and is labelled $z_5$.}
+	\caption{Labelling of DEM gridcells surrounding the cell of interest. The eight surrounding cells are used for estimating topographic parameters in QGIS. The cell of interest, which is located at row $i$ and column $j$ of the DEM, is shown as a shaded cell and is labelled $z_5$.}
 	\label{fig:DEMgrid}
 \end{figure}
 
@@ -983,7 +987,7 @@ where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates
 \midrule
 \textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \midrule
 \textbf{Elevation ($z$)} & Height above sea level & Values taken directly from DEM &  &  \\ \midrule
-\textbf{Distance from centreline ($d_C$)} & Linear distance from user-defined glacier centreline & Minimum distance between the Easting and Northing of the northwest corner of each grid cell and a manually defined centreline &  &  \\ \midrule
+\textbf{Distance from centreline ($d_C$)} & Linear distance from user-defined glacier centreline & Minimum distance between the Easting and Northing of the northwest corner of each gridcell and a manually defined centreline &  &  \\ \midrule
 \textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
 \textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
 \textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential (direction of the contour tangent) curvature & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & ($+$) mean-concave terrain and ($-$) mean-convex terrain & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
@@ -1213,7 +1217,7 @@ Overall, the sampled topographic parameters are poor representatives of the full
 
 \section{Summary}
 
-Within this chapter, we describe the design and implementation of a snow survey on three glaciers as well as the initial data processing. The processing resulted in snow depth measurements at estimated transect measurement locations and extensive grid cell snow depth measurements obtained using zigzag snow surveys. Snow density values measured using a wedge cutter in snow pits as well as using a Federal Sampler are also presented. A number of methods used for interpolation of density values to obtain values of point-scale winter balance are then described. The resulting data consists of eight different variations of winter balance values at all measurement locations, each one calculated using a different density assignment method. We also document the process of obtaining topographic parameters, which include elevation, slope, curvature, distance from centreline, aspect, ``northness'', and wind redistribution, from a given DEM of the study area.
+Within this chapter, we describe the design and implementation of a snow survey on three glaciers as well as the initial data processing. The processing resulted in snow depth measurements at estimated transect measurement locations and extensive gridcell snow depth measurements obtained using zigzag snow surveys. Snow density values measured using a wedge cutter in snow pits as well as using a Federal Sampler are also presented. A number of methods used for interpolation of density values to obtain values of point-scale winter balance are then described. The resulting data consists of eight different variations of winter balance values at all measurement locations, each one calculated using a different density assignment method. We also document the process of obtaining topographic parameters, which include elevation, slope, curvature, distance from centreline, aspect, ``northness'', and wind redistribution, from a given DEM of the study area.
 
 
 
@@ -1246,26 +1250,26 @@ The Federal Sampler appears to oversample in deep snow and undersample in shallo
 \begin{figure}[p]
 	\centering
 	\includegraphics[width =0.85\textwidth]{DepthDensity_SWEonly.png}\\
-	\caption{Relationship between measured density and snow depth for all Federal Sampler and snowpit locations. A linear regression of depth and density for Federal Sampler (FS) measurements is shown as a solid line and for snowpits (SP) is shown as a dashed line.}
+	\caption{Relationship between measured density and snow depth for all Federal Sampler and snow pit locations. A linear regression of depth and density for Federal Sampler measurements is shown as a solid line and for snow pits is shown as a dashed line.}
 	\label{fig:all_depth}
 \end{figure}
 
 
 \subsection{Density uncertainties}
 
-\subsubsection{Snowpit densities}
+\subsubsection{Snow pit-derived densities}
 
-Uncertainty in estimating density from snowpits stems from measurement errors and incorrect assignment of density to layers that could not be sampled (i.e. ice lenses and `hard' layers). To determine a possible range of snowpit-derived integrated snow density values, the original data are used and three quantities are varied. Ice layer density is varied between 700 and 900 kg m$^{-3}$, ice layer thickness is varied by $\pm$1 cm of the observed thickness, and the density of layers identified as being too hard to sample (but not ice) was varied between 600 and 700 kg m$^{-3}$. 
+Uncertainty in estimating density from snow pits (SP) stems from measurement errors and incorrect assignment of density to layers that could not be sampled (i.e. ice lenses and `hard' layers). To determine a possible range of snow pit-derived integrated snow density values, the original data are used and three quantities are varied. Ice layer density is varied between 700 and 900 kg m$^{-3}$, ice layer thickness is varied by $\pm$1 cm of the observed thickness, and the density of layers identified as being too hard to sample (but not ice) was varied between 600 and 700 kg m$^{-3}$. 
 
-The range of integrated density values is always less than 15\% of the reference density, with the largest ranges present on Glacier 2 (Table \ref{tab:density_SP}). Density values for shallow pits that contained ice lenses were particularly sensitive to changes in density and ice lens thickness. 
+The range of integrated density values is always less than 15\% of the reference density, with the largest ranges present on Glacier 2 (Table \ref{tab:density_SP}). Depth-averaged densities for shallow pits ($<$50\,cm) that contain ice lenses are particularly sensitive to changes in prescribed density and ice-lens thickness.
 
 \begin{sidewaystable}[]
 \centering
-\caption{Summary of reference and range of integrated snow density calculated from  snowpit measurements. The reference density values are calculated with an ice layer density of 917 kg m$^{-3}$ and a `hard' snow density of 600 kg m$^{-3}$. To determine the error in estimating integrated snow density, ice density, ice thickness, and the `hard' layer density are varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm, and 500 and 600 kg m$^{-3}$, respectively.}
+\caption{Summary of integrated snow density values calculated from snow pit measurements. The reference density values are calculated with an ice layer density of 917 kg m$^{-3}$ and a `hard' snow density of 600 kg m$^{-3}$. To determine the error in estimating integrated snow density, ice density, ice thickness, and the `hard' layer density are varied between 700 and 917 kg m$^{-3}$, $\pm$ 1 cm, and 500 and 600 kg m$^{-3}$, respectively.}
 \label{tab:density_SP}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lcccccccc}
-\multirow{2}{*}{\textbf{Snowpit Name}} &  & \multicolumn{4}{c}{\textbf{Density (kg m$^{-3}$)}} &  \\
+\multirow{2}{*}{\textbf{Snow pit name}} &  & \multicolumn{4}{c}{\textbf{Density (kg m$^{-3}$)}} &  \\
 \multirow{-2}{*}{} & \multirow{-2}{*}{\textbf{Depth (m)}} & \textit{Reference} & \textit{Minimum} & \textit{Maximum} & \textit{Range} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Range as \% \\ of reference value\end{tabular}}} & \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Elevation\\ (m a.s.l)\end{tabular}}}& \multirow{-2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Average \\ Temperature ($^{\circ}$) \end{tabular}}}\\ \hline \hline
 
 Glacier 4, Lower & 190 & 350.9 & 343.2 & 359.1 & 15.9 & 4.5 & 2154 & $-$ 4.3\\
@@ -1282,13 +1286,13 @@ Glacier 13, Accumulation & 145 & 307.8 & 306.4 & 308.2 & 1.8 & 0.6 & 2521 & $-$ 
 }
 \end{sidewaystable}
 
-\subsubsection{Federal Sampler densities}
+\subsubsection{Federal Sampler-derived densities}
 
-Mean Federal Sampler derived density has a larger range of values over the study glaciers when compared to snowpit densities (Table \ref{tab:density_TubeRange}). The percent range is also larger than snowpit densities for many of the measurement locations. 
+Error in Federal Sampler (FS)-derived densities is calculated as the standard deviation of the 3--8 measurements taken at each sampling location. Mean FS-derived density has a large range of values over the study glaciers (227--431\,kg\,m$^{-3}$) (Table \ref{tab:density_TubeRange}). The FS-derived density range as a percentage is also large ($>$25\%) for many of the measurement locations. 
 
 \begin{table}[]
 \centering
-\caption{Range of densities estimated from Federal Sampler measurements. The number ($n$) of reliable measurements, as well as the minimum, maximum, and mean density are shown. The density range, given as a percent of the mean density, is also shown. Location refers to the snowpit name as shown in Figure \ref{fig:snowpit_location_all}.}
+\caption{Range of densities estimated from Federal Sampler measurements. The number ($n$) of reliable measurements, as well as the minimum, maximum, and mean density are shown. The density range, given as a percent of the mean density, is also shown. Location refers to the snow pit name as shown in Figure \ref{fig:snowpit_location_all}.}
 \label{tab:density_TubeRange}
 \begin{tabular}{lcccccc}
 \multicolumn{1}{c}{\multirow{2}{*}{\textbf{Location}}} & \multirow{2}{*}{\textbf{$n$}} & \multicolumn{3}{c}{\textbf{Density (kg m$^{-3}$)}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Range as \%\\ of mean (\%)\end{tabular}}}& \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Elevation\\ (m a.s.l)\end{tabular}}} \\
@@ -1327,25 +1331,25 @@ G13\_Z5B\_SWE & 2 & 255 & 254 & 257 & 1 & 2226
 \end{tabular}
 \end{table}
 
-\subsection{Comparing density from snowpit and Federal Sampler measurements}
+\subsection{Comparing density from snow pit and Federal Sampler measurements}
 
-To compare snowpit-derived densities and Federal Sampler-derived densities, eight Federal Sampler measurements were taken around two snowpit locations on each study glacier.  The overall range of Federal Sampler-derived densities is larger than that of the snowpit-derived density values (Figure \ref{fig:density_pitVStube}). Within the minimum and maximum snowpit-derived densities, the values are indistinguishable for all snowpit locations, except for the accumulation snowpit on Galcier 13 (`G13\_ASP').
+To directly compare SP-derived densities and FS-derived densities, eight FS measurements were taken around two SP locations on each study glacier.  The overall range of FS-derived densities is larger than that of the SP-derived density values (Figure \ref{fig:density_pitVStube}). Within the minimum and maximum SP-derived densities, the values are indistinguishable for all SP locations, except for the accumulation SP on Glacier 13 (`G13\_ASP').
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[width =0.95\textwidth]{SnowpitVsSWEtube_all.png}\\
-	\caption{Comparison of integrated density estimated using wedge cutters in a snowpit and density estimated using Federal Sampler measurements for Glacier 4 (G04), Glacier 2 (G02) and Glacier 13 (G13). Error bars are minimum and maximum values for each estimate as reported in Table \ref{tab:density_SP} and \ref{tab:density_TubeRange}. }
+	\includegraphics[width =0.8\textwidth]{SPvsFS.pdf}\\
+	\caption{Comparison of depth-averaged densities estimated using Federal Sampler (FS) measurements and  a wedge cutter in a snow pit (SP)  for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13). Labels indicate snow pit locations in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars for SP-derived densities are calculated by varying the thickness and density of layers that are too hard to sample (Table \ref{tab:density_SP}), and error bars for FS-derived densities are the standard deviation of measurements taken at one location (Table \ref{tab:density_TubeRange}). One-to-one line is dashed.}
 	\label{fig:density_pitVStube}
 \end{figure}
 
 
 \subsection{Density and elevation}
 
-A linear regression of density on topographic parameters is often used to interpolate density values between measurement locations \citep[e.g.][]{Elder1998, Molotch2005,Wetlaufer2016}. Since the density measurement locations spanned a large portion of the elevation range for each glacier, the density values are regressed on elevation only. Regression slopes differ in both magnitude and sign between snowpit-derived and Federal Sampler-derived densities (Table \ref{tab:elev_regress}). 
+A linear regression of density on topographic parameters is often used to interpolate density values between measurement locations \citep[e.g.][]{Elder1998, Molotch2005,Wetlaufer2016}. Since the density measurement locations spanned a large portion of the elevation range for each glacier, the density values are regressed on elevation only. 
 
-Snowpit-derived density decreases with elevation on Glaciers 2 and 13 and does not change with elevation on Glacier 4 (Figure \ref{fig:elev_snowpit}). The lower elevation sites on Glaciers 2 and 13 could have been melt affected. Warmer mean snow temperatures at the lower sites (Table \ref{tab:density_SP}) indicate that melt has occurred, which would increase snow density. Glacier 4 was probably not affect by melt, as snow temperatures are cool at all snowpit sites. 
+Regression slopes differ in both magnitude and sign for SP-derived and FS-derived densities (Table \ref{tab:elev_regress}). SP-derived density decreases with elevation on Glaciers 2 and 13 and does not change with elevation on Glacier 4 (Figure \ref{fig:elev_snowpit}). The lower elevation sites on Glaciers 2 and 13 could have been melt affected. Warmer mean snow temperatures at the lower sites (Table \ref{tab:density_SP}) indicate that melt has occurred, which would increase snow density. Glacier 4 was probably not affect by melt, as snow temperatures are cool at all SP sites. 
 
-Opposite relationship are seen in the regression of Federal Sampler-derived densities and elevation (Figure \ref{fig:elev_tube}). Density increases with elevation on Glacier 2 and there is no relationship with elevation on Glacier 4 and 13. The is a positive relationship between snow density and snow depth (Section \ref{sec:FSdensity&depth}) and a positive relationship between snow depth and elevation (Figure \ref{fig:depth_elev}) on Glacier 2, which results in a positive relationship between snow density and elevation. Since there is no significant relationship between snow depth and elevation on Glaciers 4 and 13, there is no relationship between snow density and elevation. 
+Opposite relationship are seen in the regression of FS-derived densities and elevation (Figure \ref{fig:elev_tube}). Density increases with elevation on Glacier 2 and there is no relationship with elevation on Glacier 4 and 13. The positive relationship between FS-derived density and elevation on Glacier 2 is likely enhanced because of the combination of a positive relationship between FS-derived density and snow depth (Section \ref{sec:FSdensity&depth}) and a positive relationship between snow depth and elevation on Glacier 2 (Figure \ref{fig:depth_elev}). Since there is no significant relationship between snow depth and elevation on Glaciers 4 and 13, the relationship between snow density and elevation is weak. 
 
 
 \begin{table}[]
@@ -1353,7 +1357,7 @@ Opposite relationship are seen in the regression of Federal Sampler-derived dens
 \caption{Summary of linear regressions between integrated density and elevation (m a.s.l.). }
 \label{tab:elev_regress}
 \begin{tabular}{lrrcrcc}
-\multicolumn{1}{c}{\multirow{2}{*}{\textbf{Location}}} & \multicolumn{3}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Snowpit \\ Regression\end{tabular}}} & \multicolumn{3}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Fed. Sampler\\ Regression\end{tabular}}} \\
+\multicolumn{1}{c}{\multirow{2}{*}{\textbf{Location}}} & \multicolumn{3}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Snow pit \\ Regression\end{tabular}}} & \multicolumn{3}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Fed. Sampler\\ Regression\end{tabular}}} \\
 \multicolumn{1}{c}{} & \multicolumn{1}{c}{Equation} & \multicolumn{1}{c}{R$^2$} & \multicolumn{1}{l}{$n$} & \multicolumn{1}{c}{Equation} & R$^2$ & \multicolumn{1}{l}{$n$} \\ \hline \hline
 Glacier 4 & 0.03$z+$274 & 0.16 & 3 & $-$0.16$z+$714 & 0.53 & 7 \\
 Glacier 2 & $-$0.14$z+$659 & 0.75 & 4 & 0.24$z-$282 & 0.72 & 7 \\
@@ -1365,7 +1369,7 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
 
 \begin{figure}[H]
   \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{DepthElevation.png}}%
-	\caption{Relationship between measured snow depth and elevation at all sampling locations.}
+	\caption{Relationship between measured snow depth and elevation at all sampling locations for Glaciers 4 (G04), 2 (G02) and 13 (G13).}
 	\label{fig:depth_elev}
 \end{figure}
 
@@ -1373,7 +1377,7 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.6\textwidth]{ElevationVsSnowpit_all.png}\\
-	\caption{Relationship between snowpit-derived density and elevation for all study glaciers.}
+	\caption{Relationship between snow pit-derived density and elevation for Glaciers 4 (G04), 2 (G02) and 13 (G13).}
 	\label{fig:elev_snowpit}
 \end{figure}
 
@@ -1381,12 +1385,10 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.5\textwidth]{ElevationVsSWEtube_all.png}\\
-	\caption{Relationship between Federal Sampler-derived density and elevation for all study glaciers.}
+	\caption{Relationship between Federal Sampler-derived density and elevation for Glaciers 4 (G04), 2 (G02) and 13 (G13).}
 	\label{fig:elev_tube}
 \end{figure}
 
-
-\pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Linear and curvilinear transect snow depth data}
@@ -1405,19 +1407,18 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
         \label{fig:box_depth_noZZ}
     \end{subfigure}
 
-    \caption{Boxplots of snow depth measured on study glaciers. All snow depth values shown in (a) and snow depth values only from transects (zigzag, snowpit and Federal Sampler measurements excluded) shown in (b). Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$).}
+    \caption{Boxplots of snow depth measured on study glaciers. (a) All snow depth values. (b) Snow depth values only from transects (zigzag, snow pit and Federal Sampler measurements excluded). Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$).}
     \label{fig:box_depth_transects}
 \end{figure}
 
-Glacier 4 has the largest median and range of snow depth values, while Glacier 13 has the smallest (Figure \ref{fig:box_depth_transects}). The boxplot of snow depth on Glacier 4 has different characteristics when only transect data is plotted (zigzag, snowpit and Federal Sampler measurements excluded). The range and IQR are smaller and there are significantly more points that are considered outliers. 
+Glacier 4 has the largest median and range of snow depth values, while Glacier 13 has the smallest (Figure \ref{fig:box_depth_transects}). The boxplot of snow depth on Glacier 4 has different characteristics when only transect data is plotted (zigzag, snow pit and Federal Sampler measurements excluded). The range and IQR are smaller and there are significantly more points that are considered outliers. 
 
-\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zigzag snow depth data}
 
-A comparison of measured snow depth for each zigzag is shown in Figure \ref{fig:ZZ_boxplot}. The zigzags on Glacier 4 show minimal variability with a small range of values observed and few outliers. The mean depth is significantly larger at the highest elevation zigzag. Zigzags on Glacier 2 show more variability. The range on the middle elevation is the largest of all the zigzags measured and the highest zigzag has many outliers. The zigzags on Glacier 13 do not vary considerably in range, although the lower zigzags show a large number of outliers which may be a result of these locations being close to a supraglacial meltwater channel. 
+A comparison of measured snow depth for each zigzag is shown in Figure \ref{fig:ZZ_boxplot}. The zigzags on Glacier 4 show minimal variability with a small range of values observed and few outliers. The mean depth is significantly larger at the highest elevation zigzag. Zigzags on Glacier 2 show more variability. The range on the middle elevation is the largest of all the zigzags measured and the highest elevation zigzag has many outliers. The zigzags on Glacier 13 do not vary considerably in range, although the lower zigzags show a large number of outliers which may be a result of these locations being close to a supraglacial meltwater channel. 
 
-The depths measured in each zigzag are shown in Figures \ref{fig:ZZ_G04}, \ref{fig:ZZ_G02}, and \ref{fig:ZZ_G13}. There is considerable variability both between zigzags and within each zigzag. For example, snow depths in G04\_Z5B are more uniform than in G04\_Z3A (Figure \ref{fig:ZZ_G04}). 
+The depths measured in each zigzag on Glaciers 4, 2 and 13 are shown in Figures \ref{fig:ZZ_G04}, \ref{fig:ZZ_G02} and \ref{fig:ZZ_G13}, respectively. There is considerable variability both between zigzags and within each zigzag. For example, snow depths in G04\_Z5B are more uniform than in G04\_Z3A (Figure \ref{fig:ZZ_G04}). The average standard deviation of all zigzag depth measurements is 0.07\,m, 0.17\,m and 0.14\,m, for Glaciers 4, 2 and 13, respectively. When converted to values of WB using the local FS-derived density measurement, the average standard deviation is 0.027\,m\,w.e., 0.035\,m\,w.e. and 0.040\,m w.e. WB data for each zigzag are not normally distributed.
 
 \begin{figure}[H]
 	\centering
@@ -1438,14 +1439,14 @@ The depths measured in each zigzag are shown in Figures \ref{fig:ZZ_G04}, \ref{f
 \begin{figure}
 	\centering
 	\includegraphics[width = 21 cm]{ZigzagDepth_G04.png}\\
-	\caption{Snow depths measured in zigzags on Glacier 4. Mean depth ($\bar{z}$) is also reported. Zigzag elevations (left to right) are 2162, 2229 and 2360 m a.s.l. See Figure \ref{fig:ZZ_locations} for locations of each zigzag.}
+	\caption{Snow depths measured in zigzags on Glacier 4. Mean depth ($\bar{z}$) is also reported. Zigzag elevations (left to right) are 2162, 2229 and 2360 \,m\,a.s.l. See Figure \ref{fig:ZZ_locations} for locations of each zigzag.}
 	\label{fig:ZZ_G04}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width = 21 cm]{ZigzagDepth_G02.png}\\
-	\caption{Snow depths measured in  zigzags on Glacier 2. Mean depth ($\bar{z}$) is also reported. Zigzag elevations (left to right) are 2172, 2332 and 2403 m a.s.l. See Figure \ref{fig:ZZ_locations} for locations of each zigzag.}
+	\caption{Snow depths measured in  zigzags on Glacier 2. Mean depth ($\bar{z}$) is also reported. Zigzag elevations (left to right) are 2172, 2332 and 2403 \,m\,a.s.l. See Figure \ref{fig:ZZ_locations} for locations of each zigzag.}
 	\label{fig:ZZ_G02}
 \end{figure}
 \end{landscape}
@@ -1453,26 +1454,26 @@ The depths measured in each zigzag are shown in Figures \ref{fig:ZZ_G04}, \ref{f
 \begin{figure}[H] 
 	\centering
 	 \includegraphics[width=0.9\textwidth]{ZigzagDepth_G13.png}%
-	\caption{Snow depths measured in zigzags on Glacier 13. Mean depth ($\bar{z}$) is also reported. Zigzag elevations (a-d) are 2156, 2206, 2271 and 2297 m a.s.l. See Figure \ref{fig:ZZ_locations} for locations of each zigzag.}
+	\caption{Snow depths measured in zigzags on Glacier 13. Mean depth ($\bar{z}$) is also reported. Zigzag elevations (a-d) are 2156, 2206, 2271 and 2297 \,m\,a.s.l. See Figure \ref{fig:ZZ_locations} for locations of each zigzag.}
 	\label{fig:ZZ_G13}
 \end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Snow water equivalent (SWE)}
+\section{Point-scale winter balance}
 
-Snow water equivalent (SWE) at sampling locations is estimated using eight density options (Section \ref{sec:density}). Estimates of SWE on each glacier are significantly different (Figure \ref{fig:AllSWEopts_boxplot}). Glacier 4 has two main groups of SWE estimates with a number of estimates that overlap (belong to group A and C). The estimate calculated using density F1 has a lower mean than the remaining estimates. Glacier 2 has four different grouping of SWE estimates but all estimates belong to multiple groups so there is no one estimate that differs from the rest. SWE estimates on Glacier 13 found using Federal Sampler-derived densities (Group B) have a higher mean SWE than those found using snowpit-derived densities (Groups A, C and D). The percent difference between the means of the SWE estimates are 12\%, 18\% and 19\%  for Glacier 4, 2 and 13, respectively. 
+Point-scale winter balance (WB) at sampling locations is estimated using eight density assignment methods (Section \ref{sec:density}) are tested for differences using analysis of variance (ANOVA with p$<$0.05). Estimates of point-scale WB on each glacier are significantly different when various density assignment methods are applied (Figure \ref{fig:AllSWEopts_boxplot}). Glacier 4 has two main groups of point-scale WB estimates with a number of estimates that overlap (belong to both group A and C). The estimate calculated using F1 has a lower mean than the remaining estimates. Glacier 2 has four different groups of point-scale WB estimates but all estimates belong to multiple groups so there is no one estimate that differs from the rest. Point-scale WB estimates on Glacier 13 found using FS-derived densities (group B) have a higher mean point-scale WB than those found using SP-derived densities (groups A, C and D). The percent difference between the means of the point-scale WB estimates are 12\%, 18\% and 19\%  for Glacier 4, 2 and 13, respectively. 
 
-Density option 3 (Figures \ref{fig:SWEmap_S3} and \ref{fig:SWEmap_F3}), which uses a linear regression of density with elevation, is used in this study to examine how a regression based on topography could affect SWE estimates. Despite opposite relationships between density and elevation for Federal Sampler-derived densities and snowpit-derived densities (Table \ref{tab:elev_regress}), the SWE estimates do not differ significantly for Glaciers 4 and 2. On Glacier 13, these two SWE estimates do differ but all SWE estimates with density F differ from SWE estimates with density S. This systematic difference is perhaps a result of undersampling by the Federal Sampler on Glacier 13. Undersampling could have occurred because a considerable portion of the snowpack had undergone recent melt and snow depths were generally shallow, resulting in snow falling out of the sampling tube. 
+Density assignment method 3 (Figures \ref{fig:SWEmap_S3} and \ref{fig:SWEmap_F3}), which uses a linear regression of density with elevation (S3 and F3), is used in this study to examine how a regression based on topography could affect point-scale WB estimates. Despite opposite relationships between density and elevation for FS-derived densities and SP-derived densities (Table \ref{tab:elev_regress}), the point-scale WB estimates do not differ significantly for Glaciers 4 and 2. On Glacier 13, S3 and F3 point-scale WB estimates do differ but all point-scale WB estimates with density F differ from point-scale WB estimates with density S. This systematic difference is perhaps a result of undersampling by the FS on Glacier 13. Undersampling could have occurred because a considerable portion of the snowpack had undergone recent melt and snow depths were generally shallow, potentially resulting in snow falling out of the sampling tube. 
 
-For all density options, SWE is highest on Glacier 4 and lowest on Glacier 13. Glacier 4 also shows considerable SWE variability within the basin, with both high and low values along a single transect (Figures \ref{fig:SWEmap_S1} to \ref{fig:SWEmap_F4}). The lower, left side of Glacier 2 has low SWE with visible variability along transects. During field data collection, this area was observed to have dune-like ice features ($\sim$2 m) with alternating bare ice and wind-deposited snow patches.
+For all density options, point-scale WB is highest on Glacier 4 and lowest on Glacier 13. Glacier 4 also shows considerable point-scale WB variability within the basin, with both high and low values along a single transect (Figures \ref{fig:SWEmap_S1} to \ref{fig:SWEmap_F4}). The lower, left side of Glacier 2 has low values of point-scale WB with large variations along transects. During field data collection, this area was observed to have dune-like ice features ($\sim$2 m) with alternating bare ice and wind-deposited snow patches.
 
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[height = 0.8\textheight]{AllSWEopts_boxplot.png}\\
-	\caption{Boxplots of estimated SWE at sampling locations for Glacier 4 (a), Glacier 2 (b) and Glacier 13 (c). The density options using snowpit (S) or Federal Sampler (F) derived densities are mean from all glaciers (1), mean for individual glaciers (2), elevation regression (3) and inverse-distance weighting (4). SWE estimations using various density options were tested for differences using ANOVA (p$<$0.05). SWE estimates that were not significantly different for each glacier are labelled with the same letter (e.g. all estimates with A on Glacier 4 are significant different than all estimates with B).}
+	\caption{Boxplots of estimated point-scale winter balance (WB) at sampling locations for (a) Glacier 4, (b) Glacier 2 and (c) Glacier 13. See Table \ref{tab:densityOptions} for explanation of density assignment methods and codes. Point-scale WB estimates using various density assignment methods were tested for differences using ANOVA (p$<$0.05). Point-scale WB estimates that were not significantly different are labelled with the same letter (e.g. all estimates with A on Glacier 4 are significantly different than all estimates with B on Glacier 4).}
 	\label{fig:AllSWEopts_boxplot}
 \end{figure}
 
@@ -1480,56 +1481,56 @@ For all density options, SWE is highest on Glacier 4 and lowest on Glacier 13. G
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt2.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of all snowpit-derived densities from all glaciers (S1). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
+	\caption{Estimated point-scale winter balance at measurement locations. Density was taken to be the mean value of all snow pit-derived densities from all glaciers (S1). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt3.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was taken to be the mean value of all Federal Sampler-derived densities from all glaciers (F1). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
+	\caption{Estimated point-scale winter balance at measurement locations. Density was taken to be the mean value of all Federal Sampler-derived densities from all glaciers (F1). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{SWEmap_opt4.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density for each glacier was taken to be the mean value of snowpit-derived densities from that glacier (S2). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
+	\caption{Estimated point-scale winter balance at measurement locations. Density for each glacier was taken to be the mean value of snow pit-derived densities from that glacier (S2). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt5.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density for each glacier was taken to be the mean value of Federal Sampler-derived densities from that glacier (F2). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
+	\caption{Estimated point-scale winter balance at measurement locations. Density for each glacier was taken to be the mean value of Federal Sampler-derived densities from that glacier (F2). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt6.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was determined by using a linear fit between snowpit-derived density and elevation for each glacier (S3). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
+	\caption{Estimated point-scale winter balance at measurement locations. Density was determined by using a linear fit between snow pit-derived density and elevation for each glacier (S3). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt7.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations.Density was determined by using a linear fit between Federal Sampler-derived density and elevation for each glacier (F3). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
+	\caption{Estimated point-scale winter balance at measurement locations.Density was determined by using a linear fit between Federal Sampler-derived density and elevation for each glacier (F3). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt8.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was calculated using inverse distance weighting using all snowpit-derived densities (S4). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
+	\caption{Estimated point-scale winter balance at measurement locations. Density was calculated using inverse distance weighting using all snow pit-derived densities (S4). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S4}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{SWEmap_opt9.png}\\
-	\caption{Estimated snow water equivalent (SWE) at measurement locations. Density was calculated using inverse distance weighting using all snowpit-derived densities (F4). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
+	\caption{Estimated point-scale winter balance at measurement locations. Density was calculated using inverse distance weighting using all snow pit-derived densities (F4). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F4}
 \end{figure}
 
@@ -1539,113 +1540,111 @@ For all density options, SWE is highest on Glacier 4 and lowest on Glacier 13. G
 \section{Variability at multiple scales}
 %%%%
 
-In an attempt to compare sources of variability in values of observed SWE, a distribution of percent variability of measurements about a local mean is plotted at multiple scales. SWE variability (var$_{\mathrm{SWE}}$) of observations ($x$), expressed as a percent of the local mean $\mu_{\mathrm{loc}}$ is calculated according to 
-\begin{equation}
-\mathrm{var}_{\mathrm{SWE}} = \frac{x-\mu_{\mathrm{loc}}}{\mu_{\mathrm{loc}}}.
-\end{equation}
-
-The coefficient of variation (CV), or relative standard deviation, is a standardized measure of data variability and is defined as 
-\begin{equation}
-\mathrm{CV} = \frac{\sigma}{\mu},
-\end{equation}
-where $\sigma$ is the standard deviation and $\mu$ is the mean of a given data set. The ratio is often displayed as a percentage.
+We examine the distribution of winter balance (WB) values and the coefficient of variation of WB in an attempt to compare variability of WB at different scales. The distribution of WB values ($\mathrm{var}_{\mathrm{SWE}}$) is found by subtracting the local mean WB ($\mu_\mathrm{loc}$) from WB observations ($x$) and can be expressed as $\mathrm{var}_{\mathrm{SWE}} = x-\mu_{\mathrm{loc}}$. The coefficient of variation (CV), or relative standard deviation, is a standardized measure of data variability and is defined as $\mathrm{CV} = \frac{\sigma}{\mu}$. The ratio is often displayed as a percentage.
 
 \begin{table}[b]
 \centering
-\caption{$2\sigma$ values of SWE variability (\%) distributions at the point and grid cell scale.}
+\caption{$2\sigma$ values of winter balance variability (m w.e.) distributions at the point and gridcell scale.}
 \label{tab:2sigmaPointGrid}
 \begin{tabular}{lcccc}
- & \multirow{2}{*}{\textbf{Point Scale}} & \multicolumn{3}{c}{\textbf{Grid Cell Scale}} \\
- &  & \textit{\begin{tabular}[c]{@{}c@{}}Zigzag\\ data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Multiple measurement\\ location data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Density\\ Interpolation\end{tabular}} \\ \hline
+ & \multirow{2}{*}{\textbf{Point Scale}} & \multicolumn{3}{c}{\textbf{Gridcell Scale}} \\
+ &  & \textit{\begin{tabular}[c]{@{}c@{}}Zigzag\\ data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Transect\\ data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Density\\ assignment\end{tabular}} \\ \hline
 \textbf{Glacier 4} & 13\% & 14\% & 15\% & 7\% \\
 \textbf{Glacier 2} & 50\% & 26\% & 29\% & 17\% \\
 \textbf{Glacier 13} & 28\% & 19\% & 57\% & 15\%
 \end{tabular}
 \end{table}
 
-\subsection{Point scale}
+\subsection{Point-scale variability}
 
-The SWE variability at a single measurement location (Figure \ref{fig:SWEvar_oneloc_hist}) varies considerably between glaciers (Table \ref{tab:2sigmaPointGrid}). Glacier 2 has the largest $2\sigma$ value, with SWE values varying by as much as 50\% of the location mean. The map of coefficients of variation (Figure \ref{fig:SWEvar_oneloc_map}) show that the lower portion of Glacier 2, which corresponds to scoured `ice dunes' observed during field work, has large variability. The lower portion of Glacier 13 also has higher variability. This area had shallow snow and bare ice was often observed. From these observations, it appears that areas with almost no snow have relatively high variability.
+The point-scale WB variability at a single measurement location (Figure \ref{fig:SWEvar_oneloc_hist}) varies considerably between glaciers (Table \ref{tab:2sigmaPointGrid}). Glacier 2 has the largest $2\sigma$ value, with point-scale WB values varying by as much as 50\% of the local mean. The maps of CV (Figure \ref{fig:SWEvar_oneloc_map}) show that the lower portion of Glacier 2, which corresponds to scoured `ice dunes' observed during field work, has large variability. The lower portion of Glacier 13 also has relatively high variability. This area had shallow snow and bare ice was often observed. From these observations, it appears that areas with almost no snow have relatively high variability.
 
 \begin{figure}
 	\centering
-	\includegraphics[width =\textwidth]{SWEvarOneLocHIST.png}\\
-	\caption{SWE variability at one measurement location. Three to four snow depth measurement were taken at each location and converted to SWE values using S1 density option.}
+	\includegraphics[width =0.8\textwidth]{SWEvarOneLocHIST.png}\\
+	\caption{Point-scale WB variability at measurement locations. Three to four snow depth measurement were taken at each location and converted to point-scale WB values using S1 density assignment method.}
 	\label{fig:SWEvar_oneloc_hist}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{Map_pointstd.png}\\
-	\caption{Coefficient of variation of observations at one measurement location. Three to four snow depth measurement were taken at each location and converted to SWE values using S1 density option.}
+	\caption{Coefficient of variation of observations at measurement locations. Three to four snow depth measurement were taken at each location and converted to point-scale WB values using S1 density assignment method.}
 	\label{fig:SWEvar_oneloc_map}
 \end{figure}
 
-\subsection{Grid cell scale}
+\subsection{Gridcell-scale variability}
 
-\subsubsection{Zigzag data}
-Two data sets are used to investigate grid cell scale variability. The first is zigzag data (Section \ref{sec:zigzagmethods}), which contains extensive snow depth data within a 40 $x$ 40 m area that corresponds to a DEM grid cell. Snow depth was converted to SWE by using the Federal Sampler density measurement within the zigzag. Kruskal--Wallis test shows that zigzag variability (Figure \ref{fig:SWEvar_ZZ_hist}) has the same distribution within each glacier (p$>$0.05), with the exception of G13\_Z3B and G13\_Z7C having different distributions. Since variability is consistent for each glacier, the distributions are combined to produce a grid cell scale SWE variability for each glacier (Figure \ref{fig:SWEvar_ZZG_hist}). Glacier 4 has the lowest variability and Glacier 13 has the highest variability, with variation of more than 50\% about the grid cell mean (Table  \ref{tab:2sigmaPointGrid}). 
+Zigzag survey data, transect survey data and winter balance data obtained using various density assignment methods are used to investigate gridcell-scale variability. 
 
-\begin{figure}[H]
+\subsubsection{Zigzag survey data}
+Zigzag data (Section \ref{sec:zigzagmethods}) contains extensive snow depth data within a 40 $x$ 40 m area that corresponds to a DEM gridcell. Snow depth was converted to WB values by using the Federal Sampler-derived density within the zigzag. Kruskal--Wallis test shows that zigzag variability (Figure \ref{fig:SWEvar_ZZ_hist}) has the same distribution within each glacier (p$>$0.05), with the exception of G13\_Z3B and G13\_Z7C having different distributions. Since variability is consistent for each glacier, the distributions are combined to produce a gridcell-scale WB variability for each glacier (Figure \ref{fig:SWEvar_ZZG_hist}). Glacier 4 has the lowest variability and Glacier 13 has the highest variability, with variation of more than 50\% about the gridcell mean (Table  \ref{tab:2sigmaPointGrid}). 
+
+\begin{figure}
 	\centering
-	\includegraphics[width =0.8\textwidth]{ZigzagPDF.png}\\
-	\caption{SWE variability for each set of zigzag measurements.}
+	\includegraphics[width =0.6\textwidth]{ZigzagHistogram.pdf}\\
+	\caption{Distributions of estimated winter-balance values for each zigzag survey in lower (L), middle (M) and upper (U) ablation areas (insets). Local mean has been subtracted. (a) Glacier 4. (b) Glacier 2. (c) Glacier 13.}
 	\label{fig:SWEvar_ZZ_hist}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[width =\textwidth]{ZigzagPDF_G.png}\\
-	\caption{SWE variability at the grid cell scale based on zigzag measurements.}
+	\includegraphics[width =0.8\textwidth]{ZigzagPDF_G.png}\\
+	\caption{Gridcell-scale winter balance variability at the gridcell scale based on zigzag measurements.}
 	\label{fig:SWEvar_ZZG_hist}
 \end{figure}
 
-\subsubsection{Multiple measurement location data}
-The second data set includes all grid cells that include more than one sampling location. These grid cells are distributed throughout the sampling area so they can provide insight into spatial changes in grid cell variability. Most grid cells with multiple measurements have two or three measurements (Figure \ref{fig:NumObsPerCell}) so variability values are limited by sample size and generally underestimate variability. The variability is similar between Glaciers 4 and 13 and largest for Glacier 2 (Figure \ref{fig:SWEvar_MultLoc_hist}). The $2\sigma$ values of the two grid cell scale  data sets are similar for Glaciers 4 and 2, but the zigzag $2\sigma$ value on Glacier 13 is considerably larger than the multiple measurement value (Table  \ref{tab:2sigmaPointGrid}). The spatial distribution of grid cell scale variability (Figure \ref{fig:SWEvar_MultLoc_map}) closely resembles that of the point scale variability. Coefficient of variation values are highest in the `ice dune' area of Glacier 2 and in the lower portion of Glacier 13.  
+\subsubsection{Transect survey data}
+There are multiple point-scale WB values (i.e. measurement locations) in many of the gridcells along survey transects. These gridcells are distributed throughout the sampling area so they can provide insight into spatial changes in gridcell variability. We find that WB variability is similar between Glaciers 4 and 13 and largest for Glacier 2 (Figure \ref{fig:SWEvar_MultLoc_hist}). Coefficient of variation values are highest in the `ice dune' area of Glacier 2 and in the lower portion of Glacier 13.  However, most gridcells with multiple measurements have only two or three measurements (Figure \ref{fig:NumObsPerCell}) so variability values are limited by sample size and generally underestimate variability. 
+
+The $2\sigma$ values of the gridcell-scale variability in zigzag and transect survey data are similar for Glaciers 4 and 2, but the zigzag survey $2\sigma$ value on Glacier 13 is considerably larger than the transect survey value (Table  \ref{tab:2sigmaPointGrid}). The spatial distribution of gridcell-scale variability (Figure \ref{fig:SWEvar_MultLoc_map}) closely resembles that of the point-scale variability. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width =\textwidth]{NumObsPerCell.png}\\
-	\caption{Number of measurements locations within DEM grid cells.}
-	\label{fig:NumObsPerCell}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width =\textwidth]{SWEvarMeasureLocHIST.png}\\
-	\caption{SWE variability at the grid cell scale based on multiple measurements in a DEM grid cell.}
+	\includegraphics[width =0.8\textwidth]{SWEvarMeasureLocHIST.png}\\
+	\caption{Gridcell-scale winter balance variability. Transect survey data is used and variability is based on multiple measurement locations in a DEM gridcell.}
 	\label{fig:SWEvar_MultLoc_hist}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{Map_cellstd_measureLoc.png}\\
-	\caption{SWE variability at the grid cell scale based on zigzag measurements.}
+	\caption{Coefficient of variation of observations at measured gridcells. Multiple measurements locations within each gridcell are used to assess variability.}
 	\label{fig:SWEvar_MultLoc_map}
 \end{figure}
 
-\subsubsection{Density interpolation}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{NumObsPerCell.png}\\
+	\caption{Number of measurement locations within DEM gridcells.}
+	\label{fig:NumObsPerCell}
+\end{figure}
 
-Variability due to choice of density interpolation method is investigated at the grid cell scale. SWE variability is calculated using the SWE values estimated at each measurement grid cell using the eight density options (Section \ref{sec:densityoptions}). The choice of density option does results in relatively low variability that is consistent between glaciers (Figure \ref{fig:SWEvar_Density_hist}). However, there are noticeable spatial patterns in the coefficient of variation due to choice of density option that seems to closely follow the elevation gradient, with the lower portions of Glaciers 2 and 13 showing especially high variability (Figure \ref{fig:SWEvar_Density_map}). This spatial pattern likely arises from the elevation dependent interpolation that results in low SWE estimates close to the glacier terminus. Despite this, the density variability has the lowest $2\sigma$ value of the investigated sources of variability (Table  \ref{tab:2sigmaPointGrid})
+
+\subsubsection{Density assignment method}
+
+Variability due to density assignment method is investigated at the gridcell scale. Gridcell-scale WB variability is calculated using the WB values estimated at each measurement gridcell using the eight density assignment methods (Section \ref{sec:densityoptions}). The choice of density assignment method results in relatively low variability that is consistent between glaciers (Figure \ref{fig:SWEvar_Density_hist}). However, there are noticeable spatial patterns in the coefficient of variation due to choice of density assignment method. The coefficient of variation appears to closely follow the elevation gradient, with the lower portions of Glaciers 2 and 13 showing especially high variability (Figure \ref{fig:SWEvar_Density_map}). This spatial pattern likely arises from the elevation dependent interpolation that results in low WB estimates close to the glacier terminus. Despite this, the density variability has the lowest $2\sigma$ value of the investigated sources of variability (Table  \ref{tab:2sigmaPointGrid})
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width =\textwidth]{SWEvarDensityHIST.png}\\
-	\caption{SWE variability at the grid cell scale based on eight different density interpolation methods in a DEM grid cell.}
+	\includegraphics[width =0.8\textwidth]{SWEvarDensityHIST.png}\\
+	\caption{Winter balance variability at the gridcell scale based on eight different density assignment methods in a DEM gridcell.}
 	\label{fig:SWEvar_Density_hist}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{Map_cellstd_density.png}\\
-	\caption{SWE variability at the grid cell scale based on eight different density interpolation methods.}
+	\caption{Coefficient of variation at the gridcell scale based on eight different density assignment methods.}
 	\label{fig:SWEvar_Density_map}
 \end{figure}
+
+\section{Summary}
+
+In this chapter, snow depth and density data are converted to point- and gridcell-scale winter balance values. First, density values derived from snow pit (SP) and Federal Sampler (FS) measurements are compared. FS-derived densities are found to be correlated with snow depth and we establish that the FS is likely oversampling in deep snow and undersampling in shallow snow. Contrary to expectation, co-located FS and SP measurements are found to be  uncorrelated. Further, relationships between density and elevation differ in magnitude and sign between density measurement methods and between glaciers. Assessed uncertainties in density values are found to be small (usually $<$10\%). We then investigate collected snow depth and density data and find that Glacier 4 has the highest mean value and the largest range of observed snow depth and Glacier 13 the lowest mean value and smallest range. Zigzag surveys show that variability of snow depth at the gridcell scale is relatively consistent between zigzag locations but outliers are common. Variability of winter balance values at multiple scales is also investigated. At our study glaciers, the greatest variability in both point- and gridcell-scale winter balance is found close to the terminus of Glaciers 2 and 13. The high variability is likely a result of the ice microtopography affecting the distribution of snow, which is shallow in these areas. The magnitude of point- and gridcell-scale variability is approximately equal, with variability due to density interpolation being the small assessed contributor to data variability.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
 %%%%%% INTERPOLATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Interpolation}
 
@@ -1667,7 +1666,7 @@ To prevent over fitting of the data, regressions are calculated using cross vali
 
 In this study, regressions for all possible combinations of topographic parameters are calculated. The total number of models is $2^n$ , where $n$ is the number of topographic parameters. Eight topographic parameters are used, resulting in $2^8 = 256$ models. Model averaging is then used to determine the final regression coefficients. Model averaging is described in more details for multiple linear regressions (MLRs) in Section \ref{sec:MLR} and for Bayesian Model Averaging (BMA) in Section \ref{sec:BMS}.
 
-Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependent variable in other locations where regressors are known \citep{Davis1986}. For each grid cell, known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of SWE.
+Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependent variable in other locations where regressors are known \citep{Davis1986}. For each gridcell, known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of SWE.
 
 \subsection{Importance of variables in regression models}
 
@@ -1681,15 +1680,15 @@ An assumption for semi-partial correlation is that regressors are independent of
 
 \subsection{Snow density estimation methods}
 \label{sec:densityoptions}
-In this study, snow density was not measured at every location where snow depth was measured. Therefore, snow density values need to be estimated at snow depth measurement locations in order to estimate observed SWE values. There are a number of different methods for interpolating between snow density measurement locations. Four methods were chosen for this study and include (1) using a constant value, the mean of all observed snow density values, for all measurement locations, (2) using a constant value (mean) for each glacier, (3) using a linear regression of elevation and snow density to interpolate for each glacier, and (4) taking an inverse-distance weighted mean of density observations. As discussed in Section \ref{sec:density}, the snowpit-derived densities and Federal Sampler-derived densities are inconsistent so these two data set are kept separate for the analysis. In total there are eight different methods for estimating density, as summarized in Table \ref{tab:densityOptions}.
+In this study, snow density was not measured at every location where snow depth was measured. Therefore, snow density values need to be estimated at snow depth measurement locations in order to estimate observed SWE values. There are a number of different methods for interpolating between snow density measurement locations. Four methods were chosen for this study and include (1) using a constant value, the mean of all observed snow density values, for all measurement locations, (2) using a constant value (mean) for each glacier, (3) using a linear regression of elevation and snow density to interpolate for each glacier, and (4) taking an inverse-distance weighted mean of density observations. As discussed in Section \ref{sec:density}, the snow pit-derived densities and Federal Sampler-derived densities are inconsistent so these two data set are kept separate for the analysis. In total there are eight different methods for estimating density, as summarized in Table \ref{tab:densityOptions}.
 
 \begin{table}[H]
 \centering
-\caption{Description of density interpolation methods used to calculate SWE used in the topographic regression. Abbreviations with `S' used snowpit-derived densities and abbrviations with an `F' used Federal Sampler-derived densities.}
+\caption{Description of density interpolation methods used to calculate SWE used in the topographic regression. Abbreviations with `S' used snow pit-derived densities and abbrviations with an `F' used Federal Sampler-derived densities.}
 \label{tab:densityOptions}
 \begin{tabular}{c|cc|c}
  & \multicolumn{2}{c|}{\textbf{Source of snow density}} &  \\
- & \textit{Snowpit} & \begin{tabular}[c|]{c} \textit{Federal}\\  \textit{Sampler}\end{tabular} & \multirow{-2}{*}{\textbf{\begin{tabular}[|c]{c}Estimation\\ method\end{tabular}}} \\   \hline
+ & \textit{Snow pit} & \begin{tabular}[c|]{c} \textit{Federal}\\  \textit{Sampler}\end{tabular} & \multirow{-2}{*}{\textbf{\begin{tabular}[|c]{c}Estimation\\ method\end{tabular}}} \\   \hline
 
 S1 & $\blacksquare$ &  &  \\
  
@@ -1829,7 +1828,7 @@ The largest difference in estimated SWE between the various density options is f
        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_allLines.png}}
     \end{subfigure}
 
-    \caption{Top panel shows comparison of estimated (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snowpit densities (S4). Bottom panel shows plots of all linear fits between estimated and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. Black line highlights the S4 option from the top panel. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated SWE values.}
+    \caption{Top panel shows comparison of estimated (MLR) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snow pit densities (S4). Bottom panel shows plots of all linear fits between estimated and observed SWE using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. Black line highlights the S4 option from the top panel. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated SWE values.}
     \label{fig:MLRfit}
 \end{figure}
 
@@ -1878,7 +1877,7 @@ The largest difference in estimated SWE between the various density options is f
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{MLRmap_Modelled_Observed8.png}}%
-	\caption{Modelled SWE using coefficients determined using MLR and density interpolated with inverse-distance weighting from snowpits (S4). \swedots}
+	\caption{Modelled SWE using coefficients determined using MLR and density interpolated with inverse-distance weighting from snow pits (S4). \swedots}
 	\label{fig:MLRmodelledSWE}
 \end{figure}
 
@@ -2053,7 +2052,7 @@ The distribution of estimated glacier-wise SWE is different between glaciers but
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSfit_opt8.png}}%
-	\caption{Comparison of predicted (BMA) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snowpit densities (S4).}
+	\caption{Comparison of predicted (BMA) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated inverse distance weighted snow pit densities (S4).}
 	\label{fig:BMSfit_opt8}
 \end{figure}
 
@@ -2109,7 +2108,7 @@ The distribution of estimated glacier-wise SWE is different between glaciers but
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{BMSmap_Modelled_Observed8.png}}%
-	\caption{Modelled SWE using coefficients determined using BMA and density interpolated with inverse-distance weighting from snowpits (S4). Observed SWE values are overlain on the maps.\topomap}
+	\caption{Modelled SWE using coefficients determined using BMA and density interpolated with inverse-distance weighting from snow pits (S4). Observed SWE values are overlain on the maps.\topomap}
 	\label{fig:BMSmodelledSWE}
 \end{figure}
  
@@ -2302,7 +2301,7 @@ Estimates of the nugget found using maximum likelihood in the DiceKriging packag
 
 \begin{table}[]
 \centering
-\caption{Nugget ($\times 10^{-3}$ m w.e.) and range length (m) values for SWE data with various snow density interpolation schemes estimated using maximum likelihood in DiceKriging package. S = Snowpit density values, F = Federal Sampler density values. See Section \ref{sec:densityoptions} for details on density options.}
+\caption{Nugget ($\times 10^{-3}$ m w.e.) and range length (m) values for SWE data with various snow density interpolation schemes estimated using maximum likelihood in DiceKriging package. S = Snow pit density values, F = Federal Sampler density values. See Section \ref{sec:densityoptions} for details on density options.}
 \label{tab:sweKrigNugget}
 \begin{tabular}{ccccccc}
 \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Density\\ Option\end{tabular}}} & \multicolumn{3}{c}{\textbf{Nugget }} & \multicolumn{3}{c}{\textbf{Range length }} \\
@@ -2322,7 +2321,7 @@ Comparing estimated and observed values of SWE (Figure \ref{fig:R2simplekrig}) s
 
 \begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{krigSWEfit.png}}%
-	\caption{Comparison of estimated (simple kriging) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snowpit densities (S4).}
+	\caption{Comparison of estimated (simple kriging) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snow pit densities (S4).}
 	\label{fig:R2simplekrig}
 \end{figure}
 
@@ -2379,7 +2378,7 @@ Regression kriging produces the highest overall set of R$^2$ values (Figure \ref
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{krigRKfit.png}}%
-	\caption{Comparison of estimated (regression kriging) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snowpit densities (S4).}
+	\caption{Comparison of estimated (regression kriging) and observed (original) snow water equivalent (SWE) for three study glaciers. The SWE values were calculated using inverse-distance weighted snow pit densities (S4).}
 	\label{fig:R2regressionkrig}
 \end{figure}
 
@@ -2450,7 +2449,7 @@ Winter surface mass balance is the net accumulation and ablation of snow over th
 To quantify effects of uncertainty on the winter balance estimate, we conduct a Monte Carlo experiment, which uses repeated random sampling to calculate a numerical solution \citep{Metropolis1949}. This random sampling process is done 1000 times, which results in a distribution of possible winter balance values based on uncertainty within the data processing steps. We quantify the effect of uncertainty as the standard deviation of the distribution. Three sources of uncertainty, which encompass error and uncertainty within each processing step, are considered: (1) density uncertainty, (2) SWE uncertainty and (3) interpolation uncertainty. Individual sources of uncertainty are propagated through the process of converting snow measurements to winter balance. Then, all three uncertainty sources are considered together and their combined effect on winter balance uncertainty is quantified.
 
 	\subsection{SWE uncertainty}
-To estimate winter balance, we must represent SWE within a grid cell with a single value despite the fact that each grid cell contains a distribution of SWE values. The resulting uncertainty from this SWE representation is characterized by generating a normal distribution ($\mu=0$), with a standard deviation equal to the mean standard deviation of all zigzags on each glacier ($\sigma_{\mathrm{G4}} = 0.027 $ m w.e., $\sigma_{\mathrm{G2}} = 0.035$ m w.e., $\sigma_{\mathrm{G13}} = 0.040 $ m w.e.). For each iteration of the Monte Carlo, a set of random values is generated from the distribution and added to the observed SWE values. These perturbed SWE values are then used to estimate winter balance. The winter balance uncertainty due to SWE uncertainty ($\sigma_{\mathrm{SWE}}$) is calculated as the standard deviation of the resulting distribution of winter balance estimates.  
+To estimate winter balance, we must represent SWE within a gridcell with a single value despite the fact that each gridcell contains a distribution of SWE values. The resulting uncertainty from this SWE representation is characterized by generating a normal distribution ($\mu=0$), with a standard deviation equal to the mean standard deviation of all zigzags on each glacier ($\sigma_{\mathrm{G4}} = 0.027 $ m w.e., $\sigma_{\mathrm{G2}} = 0.035$ m w.e., $\sigma_{\mathrm{G13}} = 0.040 $ m w.e.). For each iteration of the Monte Carlo, a set of random values is generated from the distribution and added to the observed SWE values. These perturbed SWE values are then used to estimate winter balance. The winter balance uncertainty due to SWE uncertainty ($\sigma_{\mathrm{SWE}}$) is calculated as the standard deviation of the resulting distribution of winter balance estimates.  
 
 	\subsection{Density uncertainty}
 We incorporate uncertainty in interpolating density measurements by carrying forward all eight density interpolation options when estimating winter balance. The density measurement and interpolation methods used in our study encompass a broad spectrum of possible density values. The winter balance uncertainty due to density uncertainty ($\sigma_{\rho}$) is calculated as the standard deviation of winter balance estimates calculated using each density interpolation option.
@@ -2466,14 +2465,14 @@ where $\boldsymbol{X}$ is the $n \times k$ matrix of predictor variables. The va
 \end{equation}
 The standard deviation of each distribution is calculated using the covariance of regression coefficients as outlined in \cite{Bagos2015}. The $\beta_i$ distributions are randomly sampled and the new $\beta_i$ values are used to estimate winter balance. 
 
-SK uncertainty is derived from the 95\% confidence interval SWE surfaces generated within the \texttt{DiceKriging} package. The standard deviation of each grid cell is then calculated from the confidence interval surfaces and the glacier wide standard deviation is found by taking the square root of the average variance. The distribution of winter balance values is centred at the SK winter balance estimate and has a standard deviation equal to the glacier wide standard deviation. For consistency, the standard deviation of winter balance values that result from either LR or SK interpolation uncertainty is referred to as $\sigma_{\mathrm{INT}}$.
+SK uncertainty is derived from the 95\% confidence interval SWE surfaces generated within the \texttt{DiceKriging} package. The standard deviation of each gridcell is then calculated from the confidence interval surfaces and the glacier wide standard deviation is found by taking the square root of the average variance. The distribution of winter balance values is centred at the SK winter balance estimate and has a standard deviation equal to the glacier wide standard deviation. For consistency, the standard deviation of winter balance values that result from either LR or SK interpolation uncertainty is referred to as $\sigma_{\mathrm{INT}}$.
 
 
 \section{Results}
 
 \subsection{Winter balance uncertainty}
 
-Specific winter balance is affected by uncertainty introduced when interpolating density (density uncertainty), when calculating grid cell SWE values (SWE uncertainty), and when interpolating observations (interpolation uncertainty). We find that when using LR and SK, interpolation uncertainty has a larger effect on winter balance uncertainty than density uncertainty or SWE uncertainty. The probability density function (PDF) that arises from SWE uncertainty is much narrower than the PDF that arises from interpolation uncertainty (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}).
+Specific winter balance is affected by uncertainty introduced when interpolating density (density uncertainty), when calculating gridcell SWE values (SWE uncertainty), and when interpolating observations (interpolation uncertainty). We find that when using LR and SK, interpolation uncertainty has a larger effect on winter balance uncertainty than density uncertainty or SWE uncertainty. The probability density function (PDF) that arises from SWE uncertainty is much narrower than the PDF that arises from interpolation uncertainty (Figure \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}).
 
  \begin{table}[]
 \centering
@@ -2501,7 +2500,7 @@ The total winter balance uncertainty from SK interpolation is 3 to 5 times great
 
 \subsection{Spatial patterns of winter balance uncertainty}
 
-Density, SWE, and interpolation uncertainty all contribute to spatial patterns of winter balance uncertainty (Figure \ref{fig:WSMBspatialvar}).  For both LR and SK, the greatest uncertainty in estimated SWE occurs in the accumulation area. When LR is used, estimated SWE is highly sensitive to the elevation regression parameter. In the case of SK, uncertainty is greatest in areas far from observed SWE, which consist of the upper accumulation area on Glaciers 2 and 13. uncertainty is greatest on Glacier 4 when LR interpolation is used at the upper edges of the accumulation area, which correspond to the locations with extreme values of the wind redistribution parameter. When SK is used for interpolation on Glacier 4, uncertainty is greatest at the measured grid cells, which highlights the short correlation length and the large effect of density interpolation on the SK accumulation estimate.
+Density, SWE, and interpolation uncertainty all contribute to spatial patterns of winter balance uncertainty (Figure \ref{fig:WSMBspatialvar}).  For both LR and SK, the greatest uncertainty in estimated SWE occurs in the accumulation area. When LR is used, estimated SWE is highly sensitive to the elevation regression parameter. In the case of SK, uncertainty is greatest in areas far from observed SWE, which consist of the upper accumulation area on Glaciers 2 and 13. uncertainty is greatest on Glacier 4 when LR interpolation is used at the upper edges of the accumulation area, which correspond to the locations with extreme values of the wind redistribution parameter. When SK is used for interpolation on Glacier 4, uncertainty is greatest at the measured gridcells, which highlights the short correlation length and the large effect of density interpolation on the SK accumulation estimate.
 
 \begin{figure*}
 	\centering
@@ -2517,7 +2516,7 @@ Density, SWE, and interpolation uncertainty all contribute to spatial patterns o
 
 Interpolation uncertainty is the greatest contributor to winter balance uncertainty for both SK and LR. A large contributor to uncertainty arises from extrapolation beyond the sampled region, which results in high uncertainty in estimated SWE in the accumulation area. The winter balance distributions obtained using LR and SK overlap for each glacier but the distribution modes differ, with SK generally estimating lower winter balance in the accumulation area, which lowers the overall winter balance estimate. It is important to note that although the distributions from LR are narrower than those from SK, that does not necessitate that LR is a more accurate method of estimating winter balance. Based on the sources of uncertainty chosen, LR appears to be more precise than SK but the methods of calculating interpolation uncertainty are different so the distributions should not be directly compared. 
 
-SWE uncertainty is the smallest contributor to winter balance uncertainty. Therefore, obtaining the most accurate value of SWE to represent a grid cell, even a relatively large grid cell, does not need to be a priority when designing a snow survey. Many parts of a glacier are characterized by a relatively smooth surface, with roughness lengths on the order of centimeters \citep{Hock2005} resulting in low snow depth uncertainty. However, we assume that the sampled grid cells are representative of the uncertainty across the entire glacier, which is likely not true for areas with debris cover, crevasses and steep slopes. 
+SWE uncertainty is the smallest contributor to winter balance uncertainty. Therefore, obtaining the most accurate value of SWE to represent a gridcell, even a relatively large gridcell, does not need to be a priority when designing a snow survey. Many parts of a glacier are characterized by a relatively smooth surface, with roughness lengths on the order of centimeters \citep{Hock2005} resulting in low snow depth uncertainty. However, we assume that the sampled gridcells are representative of the uncertainty across the entire glacier, which is likely not true for areas with debris cover, crevasses and steep slopes. 
 
 Using a Monte Carlo experiment to propagate uncertainty allowed us to quantify effects of uncertainty on estimates of winter balance. However, our analysis did not include uncertainty arising from a number of data sources, which we assumed to contribute negligibly to the uncertainty in winter balance or to be encompassed by investigated sources of uncertainty. These sources of uncertainty include error associated with SP and FS density measurement, DEM vertical and horizontal error and error associated with estimating measurement locations.
 
@@ -2604,7 +2603,7 @@ An accumulation gradient is observed for the continental side of the St. Elias M
 
 Extensions to this work could include an investigation of experimental design, examining the effects of DEM grid size on winter balance and resolving temporal variability. Our sampling design was chosen to extensively sample the ablation area and is likely too finely resolved for many future mass balance surveys to replicate. Determining a sampling design that minimizes error and reduces the number of measurements, known as data efficiency thresholds, would contribute to optimizing snow surveys in mountainous regions. For example, \cite{Lopez2010} concluded that $200-400$ observations are needed to obtain accurate and robust snow distribution models. 
 
-DEM grid cell size is known to significantly affect computed topographic parameters and the ability for a DEM to resolve important hydrological features (i.e. drainage pathways) in the landscape \citep{Zhang1994, Garbrecht1994, Guo-an2001, Lopez2010}, which can have implications for calculating a LR that uses topographic parameters.  \cite{Zhang1994} found that a 10 m grid cell size is an optimal compromise between increasing resolution and large data volumes. Further, the importance of topographic parameters in predicting SWE is correlated with DEM grid size \citep[e.g.][]{Kienzle2004, Lopez2010}. A decrease in spatial resolution of the DEM results in a decrease in the importance of curvature and an increase in the importance of elevation. A detailed and ground controlled DEM is therefore needed to identify the features that drive accumulation variability. Even with a high resolution DEM, microtopography that creates small scale snow variability cannot be resolved. For example, the lower part of Glacier 2 has an undulating ice surface (on the order of 5 m horizontal and 0.5 m vertical) that results in large variability in snow depth. Future studies could also evaluate the effects of DEM uncertainty on elevation and derived topographic parameters \citep [e.g.][]{Guo-an2001, Wechsler2006}. 
+DEM gridcell size is known to significantly affect computed topographic parameters and the ability for a DEM to resolve important hydrological features (i.e. drainage pathways) in the landscape \citep{Zhang1994, Garbrecht1994, Guo-an2001, Lopez2010}, which can have implications for calculating a LR that uses topographic parameters.  \cite{Zhang1994} found that a 10 m gridcell size is an optimal compromise between increasing resolution and large data volumes. Further, the importance of topographic parameters in predicting SWE is correlated with DEM grid size \citep[e.g.][]{Kienzle2004, Lopez2010}. A decrease in spatial resolution of the DEM results in a decrease in the importance of curvature and an increase in the importance of elevation. A detailed and ground controlled DEM is therefore needed to identify the features that drive accumulation variability. Even with a high resolution DEM, microtopography that creates small scale snow variability cannot be resolved. For example, the lower part of Glacier 2 has an undulating ice surface (on the order of 5 m horizontal and 0.5 m vertical) that results in large variability in snow depth. Future studies could also evaluate the effects of DEM uncertainty on elevation and derived topographic parameters \citep [e.g.][]{Guo-an2001, Wechsler2006}. 
 
 Temporal variability in accumulation is not considered in our study. While this limits the extent of our conclusions, a number of studies have found temporal stability in spatial patterns of snow accumulation and that terrain-based model could be applied reliable between years \citep[e.g.][]{Grunewald2013}. For example, \cite{Walmsley2015} analyzed more than 40 years of accumulation recorded on two Norwegian glaciers and found that snow accumulation is spatially heterogeneous yet exhibits robust time stability in its distribution. 
 
@@ -2614,7 +2613,7 @@ We estimate spatial accumulation patterns and specific winter balance for three 
 
 We find that the method used to interpolate observations has a large effect on winter balance estimates and its associated uncertainty. On Glacier 4, winter balance estimates are consistent between linear regression (LR) and simple kriging (SK) but both explain only a small portion of observed variance, highlighting that although the winter balance estimates are relatively precise they may not necessarily be accurate. On Glaciers 2 and 13, LR and SK are better able to estimate observed SWE values but winter balance estimates differ considerably between the two interpolation methods due to extrapolation into the accumulation area. SK is a non-parametric interpolation method that relies heavily on regular and dense sampling so extrapolation is sensitive to marginal data values and the data mean. LR employs parameters that act as proxies for physical processes, which provides insight into drivers of SWE distribution, constrains extrapolation values and can be spatially transferred. It is therefore critical that future winter balance studies report which interpolation method is used to estimate winter balance, the ability for the model to estimate observed measurements and the uncertainty that results from fitting the interpolation model. 
 
-For our study glaciers, the total winter balance uncertainty ranges from 0.03 (8\%) to 0.15 (54\%) m w.e. depending primarily on the interpolation method. The smallest winter balance uncertainty source is the representation of grid cell SWE. Future studies could reduce winter balance uncertainty by increasing the spatial distribution of snow depth sampling rather than obtaining many measurements within a single grid cell. In our work, increased sampling within the accumulation area would better constrain SWE extrapolation and decrease uncertainty. Our results indicate that using extrapolated data to compare with winter balance estimates from remote sensing or modelling studies may produce misleading results. If possible, comparison studies should use observed SWE data rather than interpolated winter balance values. 
+For our study glaciers, the total winter balance uncertainty ranges from 0.03 (8\%) to 0.15 (54\%) m w.e. depending primarily on the interpolation method. The smallest winter balance uncertainty source is the representation of gridcell SWE. Future studies could reduce winter balance uncertainty by increasing the spatial distribution of snow depth sampling rather than obtaining many measurements within a single gridcell. In our work, increased sampling within the accumulation area would better constrain SWE extrapolation and decrease uncertainty. Our results indicate that using extrapolated data to compare with winter balance estimates from remote sensing or modelling studies may produce misleading results. If possible, comparison studies should use observed SWE data rather than interpolated winter balance values. 
 
 Snow distribution patterns are found to differ considerably between glaciers, highlighting strong intra- and inter-basin variability and accumulation drivers acting on multiple scales. SWE distribution on Glacier 4 is highly variable, as indicated by shorter range distance, higher nugget value and lower explained variance. Glaciers 2 and 13 have lower SWE variability and elevation is the primary control of observed variation. Despite challenges in accurately estimating winter balance, our data are consistent with a previously reported linear decrease in SWE with increased distance from the main topographic divide along the continental side of the St. Elias Mountains. This trend indicates that glacier location within a mountain range has a large influence on winter balance. 
 
@@ -2659,7 +2658,7 @@ To create the desired \textbf{zigzag} waypoints and enter them into the GPS devi
 \item Once all the zigzag point groups were created, the file was saved as a `.csv', points named accordingly, and then exported to the GPS device as described above. 
 \end{enumerate}
 
-The locations of snowpits and snow cores were chosen by hand in a separate shape file. This file was then saved as a `.csv', the points named, and the file exported to the GPS devices as described above. 
+The locations of snow pits and snow cores were chosen by hand in a separate shape file. This file was then saved as a `.csv', the points named, and the file exported to the GPS devices as described above. 
 
 The files that had the names of the points were then imported back into QGIS so that the maps with point labels could be created.  Since the order of completing measurements was determined in the field, these maps helped to quickly decide on the most efficient plan because they aided in determining the relative location of zigzags and transects.
 
@@ -2748,7 +2747,7 @@ Data from zigzag surveys, which include the measured snow depths and distances b
 Snow density data were first entered into and organized in a spreadsheet then processed in Matlab as follows (each step corresponds with a section of the Matlab code `Import\_Density.m'): 
 \begin{enumerate}
 \item Snow density data were imported into Matlab and poor quality data were removed. 
-\item Snowpit-derived snow density values were assigned to their respective location names and coordinates.
+\item Snow pit-derived snow density values were assigned to their respective location names and coordinates.
 \item For each zigzag survey, the mean snow density (Federal Sampler), snow density standard deviation, and number of good quality measurements were calculated.
 \item For remaining Federal Sampler measurement locations, the mean snow density, snow density standard deviation, and number of good quality measurements were calculated. 
 \item A structure with the processed data was created (\texttt{Density}).
@@ -2756,8 +2755,8 @@ Snow density data were first entered into and organized in a spreadsheet then pr
 
 The final version of the \texttt{Density} structure includes five fields:
 \begin{itemize}
-\item[]\texttt{Density.snowpit} contains snow density data from snowpits. Columns correspond to snowpit label, integrated density, Easting, Northing, elevation, minimum density, maximum density, snow depth.
-\item[]\texttt{Density.pitANDtube} includes data from locations where measurements were taken in a snowpit and with a Federal Sampler. Columns correspond to snowpit label, Federal  Sampler mean density, standard deviation, minimum Federal Sampler-derived density, maximum Federal Sampler-derived density, number of observations, snowpit-derived density, site elevation, minimum snowpit density, and maximum snowpit density.
+\item[]\texttt{Density.snowpit} contains snow density data from snow pits. Columns correspond to snow pit label, integrated density, Easting, Northing, elevation, minimum density, maximum density, snow depth.
+\item[]\texttt{Density.pitANDtube} includes data from locations where measurements were taken in a snow pit and with a Federal Sampler. Columns correspond to snow pit label, Federal  Sampler mean density, standard deviation, minimum Federal Sampler-derived density, maximum Federal Sampler-derived density, number of observations, snow pit-derived density, site elevation, minimum snow pit density, and maximum snow pit density.
 \item[]\texttt{Density.tube} includes Federal Sampler data. Columns correspond to location label, density mean, standard deviation, minimum and maximum, number of good quality observations, Easting, Northing, elevation, and snow depth. 
 \item[]\texttt{Density.zigzagtube} includes density values at each zigzag location estimated using a Federal Sampler. Columns correspond to zigzag label, mean density, standard deviation, number of observation, and site elevation. 
 \item[]\texttt{Density.SWEdepth} is a summary of all the Federal Sampler derived density data and corresponding snow depth measurements. Columns correspond to location label, mean probe depth, depth measured by the Sampler, and snow density measured using the Federal Sampler. 
@@ -3052,12 +3051,12 @@ The standard deviation as a function of binned elevation show that the standard 
 
 \subsection{Standard deviation of SWE in DEM cell}
 
-The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas that correspond to a single DEM cell containing multiple SWE measurement locations. To extrapolate SWE over the glacier it is valuable to have one value of SWE for each DEM grid cell. Therefore, the mean SWE was used for a DEM cell with multiple observations. Using the mean value is supported by the small standard deviation of SWE within one DEM cell for all glaciers (Figure \ref{fig:DEMcellSTD}). The mean standard deviation is 0.03 m w.e., which is low compared to the variability of SWE over the entire glacier (Section \ref{sec:stdTransects}). Extreme standard deviation values result from highly variable locations such as transects across deep supra glacier streams (Glacier 13) or on debris covered ice or ice-cored moraines (Glacier 4). However, the mean standard deviation is small so future analyses use the mean SWE value within one DEM cell. 
+The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas that correspond to a single DEM cell containing multiple SWE measurement locations. To extrapolate SWE over the glacier it is valuable to have one value of SWE for each DEM gridcell. Therefore, the mean SWE was used for a DEM cell with multiple observations. Using the mean value is supported by the small standard deviation of SWE within one DEM cell for all glaciers (Figure \ref{fig:DEMcellSTD}). The mean standard deviation is 0.03 m w.e., which is low compared to the variability of SWE over the entire glacier (Section \ref{sec:stdTransects}). Extreme standard deviation values result from highly variable locations such as transects across deep supra glacier streams (Glacier 13) or on debris covered ice or ice-cored moraines (Glacier 4). However, the mean standard deviation is small so future analyses use the mean SWE value within one DEM cell. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.6\textwidth]{DEMcellSTD.png}\\
-	\caption[]{Boxplot of the standard deviation of measured SWE in one DEM grid cell. \boxMatlab}
+	\caption[]{Boxplot of the standard deviation of measured SWE in one DEM gridcell. \boxMatlab}
 	\label{fig:DEMcellSTD}
 \end{figure}
 
