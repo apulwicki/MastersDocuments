@@ -1,4 +1,4 @@
-\begin{thebibliography}{138}
+\begin{thebibliography}{140}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -302,6 +302,11 @@ Hock R (2005) {Glacier melt: a review of processes and their modelling}.
   \emph{Progress in Physical Geography}, \textbf{29}(3), 362--391 (\doi
   {10.1191/0309133305pp453ra})
 
+\bibitem[\protect\citename{Hock and Jensen, }1999]{Hock1999}
+Hock R and Jensen H (1999) {Application of kriging interpolation for glacier
+  mass balance computations}. \emph{Geografiska Annaler: Series A, Physical
+  Geography}, \textbf{81}(4), 611--619 (\doi {10.1111/1468-0459.00089})
+
 \bibitem[\protect\citename{Hofierka and others, }2009]{Hofierka2009}
 Hofierka J, Mit{\'a}\v{s}ov{\'a} H and Neteler M (2009) {Geomorphometry in
   {GRASS GIS}}. \emph{Developments in Soil Science}, \textbf{33}, 387--410
@@ -419,6 +424,11 @@ Machguth H, Eisen O, Paul F and Hoelzle M (2006) {Strong spatial variability of
   snow accumulation observed with helicopter-borne {GPR} on two adjacent alpine
   glaciers}. \emph{Geophysical Research Letters}, \textbf{33}(13), 1--5 (\doi
   {10.1029/2006GL026576})
+
+\bibitem[\protect\citename{Madigan and Raftery, }1994]{Madigan1994}
+Madigan D and Raftery AE (1994) {Model Selection and Accounting for Model
+  Uncertainty in Graphical Models Using {Occam's Window}}. \emph{Journal of the
+  American Statistical Association}, \textbf{89}(428), 1535--1546
 
 \bibitem[\protect\citename{Marchand and Killingtveit, }2005]{Marchand2005}
 Marchand WD and Killingtveit {\AA} (2005) {Statistical probability distribution
