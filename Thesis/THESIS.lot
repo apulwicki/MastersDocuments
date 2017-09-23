@@ -23,9 +23,9 @@
 \contentsline {table}{\numberline {4.4}{\ignorespaces ANOVA p-values between estimated WB found using MLR and BMA regression coefficients for various density assignment methods.\relax }}{131}{table.caption.153}
 \contentsline {table}{\numberline {4.5}{\ignorespaces Nugget ($\times 10^{-3}$\tmspace +\thinmuskip {.1667em}m\tmspace +\thinmuskip {.1667em}w.e.) and range length (m) values for WB data with various snow density assignment methods estimated using maximum likelihood in \texttt {DiceKriging} package. S = Snow pit density values, F = Federal Sampler density values. See Table \ref {tab:densityOptions} for details on density assignment methods.\relax }}{136}{table.caption.156}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Standard deviation ([$\times 10^{-2}$ \tmspace +\thinmuskip {.1667em}m\tmspace +\thinmuskip {.1667em}w.e.]) of winter balance distributions arising from WB ($\sigma _{\mathrm {WB}}$), density ($\sigma _{\rho }$) and interpolation ($\sigma _{\mathrm {INT}}$) uncertainty. Result for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13) are shown.\relax }}{148}{table.caption.166}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Standard deviation ($\times 10^{-2}$\tmspace +\thinmuskip {.1667em}m\tmspace +\thinmuskip {.1667em}w.e.) of glacier-wide winter balance distributions arising from uncertainties in grid-scale WB ($\sigma _{\mathrm {GS}}$), density assignment ($\sigma _{\rho }$), interpolation ($\sigma _{\mathrm {INT}}$) and all three sources combined ($\sigma _{\mathrm {ALL}}$) for linear regression (left columns) and simple kriging (right columns)\relax }}{148}{table.caption.169}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Elevation regression coefficients and intercepts used in linear regression transferability. The mean RMSE for all glaciers is also shown.\relax }}{155}{table.caption.171}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Elevation regression coefficients and intercepts used in linear regression transferability. The mean RMSE for all glaciers is also shown.\relax }}{155}{table.caption.174}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
