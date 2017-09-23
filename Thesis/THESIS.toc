@@ -78,55 +78,55 @@
 \contentsline {subsubsection}{Results and Discussion}{106}{section*.121}
 \contentsline {subsection}{\numberline {4.1.4}Bayesian Model Averaging (BMA)}{118}{subsection.4.1.4}
 \contentsline {subsubsection}{Background}{118}{section*.135}
-\contentsline {subsubsection}{Methods}{121}{section*.137}
+\contentsline {subsubsection}{Methods}{120}{section*.137}
 \contentsline {subsubsection}{Results and Discussion}{121}{section*.138}
-\contentsline {subsection}{\numberline {4.1.5}MLR and BMA comparison}{129}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Number of cross validation runs}{131}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.5}MLR and BMA comparison}{130}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Number of cross validation runs}{132}{subsection.4.1.6}
 \contentsline {section}{\numberline {4.2}Kriging}{132}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Background}{132}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Methods}{133}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Results}{133}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Regression kriging}{136}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Background}{136}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Methods}{137}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Results}{137}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Comparison of interpolation methods}{139}{section.4.4}
-\contentsline {section}{\numberline {4.5}Summary}{143}{section.4.5}
-\contentsline {chapter}{\numberline {5}Winter Balance }{144}{chapter.5}
-\contentsline {section}{\numberline {5.1}Background}{144}{section.5.1}
-\contentsline {section}{\numberline {5.2}Methods}{144}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}WB uncertainty}{145}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Density uncertainty}{145}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Interpolation uncertainty}{145}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Results}{146}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Winter balance uncertainty}{146}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Spatial patterns of winter balance uncertainty}{146}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Discussion}{148}{section.5.4}
-\contentsline {chapter}{\numberline {6}Regional Controls}{150}{chapter.6}
-\contentsline {section}{\numberline {6.1}Transferability of linear regression coefficients}{150}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Results}{150}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Accumulation gradient}{154}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Limitations and future work}{154}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Conclusion}{156}{section.6.2}
-\contentsline {chapter}{Bibliography}{158}{section*.174}
-\contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{169}{Appendix.a.A}
-\contentsline {chapter}{Appendix \numberline {B}Field Maps}{171}{Appendix.a.B}
-\contentsline {chapter}{Appendix \numberline {C}Data Processing Scripts}{184}{Appendix.a.C}
-\contentsline {section}{\numberline {C.1}Snow depth measured with graduated avalanche probe}{184}{section.a.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Linear and curvilinear transect surveys}{184}{subsection.a.C.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Zigzag surveys}{185}{subsection.a.C.1.2}
-\contentsline {section}{\numberline {C.2}Snow density}{186}{section.a.C.2}
-\contentsline {section}{\numberline {C.3}Point-scale winter balance}{187}{section.a.C.3}
-\contentsline {chapter}{Appendix \numberline {D}Topographic parameters from QGIS to Matlab}{189}{Appendix.a.D}
-\contentsline {chapter}{Appendix \numberline {E}MLR software}{190}{Appendix.a.E}
-\contentsline {chapter}{Appendix \numberline {F}BMA software}{192}{Appendix.a.F}
-\contentsline {chapter}{Appendix \numberline {G}Kriging software}{194}{Appendix.a.G}
-\contentsline {chapter}{Appendix \numberline {H}Variability of data at various scales}{195}{Appendix.a.H}
-\contentsline {section}{\numberline {H.1}Point Scale}{195}{section.a.H.1}
-\contentsline {subsection}{\numberline {H.1.1}Data normality}{195}{subsection.a.H.1.1}
-\contentsline {subsection}{\numberline {H.1.2}Observer differences}{195}{subsection.a.H.1.2}
-\contentsline {subsection}{\numberline {H.1.3}Standard deviation of snow depth along linear and curvilinear transects}{196}{subsection.a.H.1.3}
-\contentsline {subsection}{\numberline {H.1.4}Standard deviation of WB in DEM cell}{197}{subsection.a.H.1.4}
-\contentsline {chapter}{Appendix \numberline {I}Winter surface mass balance distribution}{201}{Appendix.a.I}
-\contentsline {section}{\numberline {I.1}Linear regression winter balance distribution}{202}{section.a.I.1}
-\contentsline {section}{\numberline {I.2}Simple kriging winter balance distribution}{206}{section.a.I.2}
+\contentsline {subsection}{\numberline {4.2.2}Methods}{134}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Results}{134}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Regression kriging}{137}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Background}{137}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Methods}{138}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Results}{138}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Comparison of interpolation methods}{141}{section.4.4}
+\contentsline {section}{\numberline {4.5}Summary}{144}{section.4.5}
+\contentsline {chapter}{\numberline {5}Winter balance }{146}{chapter.5}
+\contentsline {section}{\numberline {5.1}Background}{146}{section.5.1}
+\contentsline {section}{\numberline {5.2}Methods}{146}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}WB uncertainty}{147}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Density uncertainty}{147}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Interpolation uncertainty}{147}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Results}{148}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Winter balance uncertainty}{148}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Spatial patterns of winter balance uncertainty}{148}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Discussion}{150}{section.5.4}
+\contentsline {chapter}{\numberline {6}Regional Controls}{152}{chapter.6}
+\contentsline {section}{\numberline {6.1}Transferability of linear regression coefficients}{152}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Results}{152}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Accumulation gradient}{156}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Limitations and future work}{156}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Conclusion}{158}{section.6.2}
+\contentsline {chapter}{Bibliography}{160}{section*.174}
+\contentsline {chapter}{Appendix \numberline {A}GPS Waypoint Creation and Upload to GPS Device}{171}{Appendix.a.A}
+\contentsline {chapter}{Appendix \numberline {B}Field Maps}{173}{Appendix.a.B}
+\contentsline {chapter}{Appendix \numberline {C}Data Processing Scripts}{186}{Appendix.a.C}
+\contentsline {section}{\numberline {C.1}Snow depth measured with graduated avalanche probe}{186}{section.a.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Linear and curvilinear transect surveys}{186}{subsection.a.C.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Zigzag surveys}{187}{subsection.a.C.1.2}
+\contentsline {section}{\numberline {C.2}Snow density}{188}{section.a.C.2}
+\contentsline {section}{\numberline {C.3}Point-scale winter balance}{189}{section.a.C.3}
+\contentsline {chapter}{Appendix \numberline {D}Topographic parameters from QGIS to Matlab}{191}{Appendix.a.D}
+\contentsline {chapter}{Appendix \numberline {E}MLR software}{192}{Appendix.a.E}
+\contentsline {chapter}{Appendix \numberline {F}BMA software}{194}{Appendix.a.F}
+\contentsline {chapter}{Appendix \numberline {G}Kriging software}{196}{Appendix.a.G}
+\contentsline {chapter}{Appendix \numberline {H}Variability of data at various scales}{197}{Appendix.a.H}
+\contentsline {section}{\numberline {H.1}Point Scale}{197}{section.a.H.1}
+\contentsline {subsection}{\numberline {H.1.1}Data normality}{197}{subsection.a.H.1.1}
+\contentsline {subsection}{\numberline {H.1.2}Observer differences}{197}{subsection.a.H.1.2}
+\contentsline {subsection}{\numberline {H.1.3}Standard deviation of snow depth along linear and curvilinear transects}{198}{subsection.a.H.1.3}
+\contentsline {subsection}{\numberline {H.1.4}Standard deviation of WB in DEM cell}{199}{subsection.a.H.1.4}
+\contentsline {chapter}{Appendix \numberline {I}Winter surface mass balance distribution}{203}{Appendix.a.I}
+\contentsline {section}{\numberline {I.1}Linear regression winter balance distribution}{204}{section.a.I.1}
+\contentsline {section}{\numberline {I.2}Simple kriging winter balance distribution}{208}{section.a.I.2}

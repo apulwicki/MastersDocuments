@@ -53,11 +53,11 @@
 
 
 \newcommand{\transectAbb}{Data for each glacier are divided into lower hourglass (LH), lower circle (LC), lower midline (LM), upper hourglass (UH), upper circle (UC), upper midline (UM), and upper transect (UT).}
-\newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$), and $Sx$. }
+\newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$), and wind redistribution ($Sx$). }
 \newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box, and outliers as single points. }
 \newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers), and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
 \newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations. }
-\newcommand{\swedots}{Observed WB values are overlain on the maps. }
+\newcommand{\swedots}{Observed winter balance values are overlain on the maps. }
 
 
 %   FRONTMATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -315,7 +315,7 @@ The most recent and comprehensive study of snow distribution on glaciers was don
 
 The study done by \cite{Walmsley2015} contains the longest record of spatial distribution of snow accumulation. \cite{Walmsley2015} analyzed 48 and 44 year records of two Norwegian glaciers for inter-annual stability in distribution patterns. It was found that snow accumulation is spatially heterogeneous yet it exhibits robust time stability in distributions. Reliability maps were then used to reduce the sampling scheme to one index site as well as a transect with 50 m elevation intervals for each glacier. Although winter balance reconstructions produced values within 0.15 m water equivalent, it was determined that a centreline transect underestimated winter balance. Transverse transects were therefore recommend as an addition to the sampling scheme to improve reliability. Additionally, several strongly irregular snow spatial distribution years were identified, which were inconsistent with the overall reduced sampling schemes. 
 
-The majority of studies that have examined snow distribution on glaciers have been done with either airborne or ground-based radar \citep[e.g.][]{Winther1998,Machguth2006, Grabiec2011, Pelt2014,McGrath2015}. In general, the radargrams provided valuable information but ground truthing by probing was always conducted. \cite{Gusmeroli2014} also did a small GPR survey on an Alaskan glacier and found that GPR reflections were difficult to identify in areas of the glacier that had high debris content on the surface or in the upper part of the accumulation area. \cite{Sold2013} did an extensive study that compared snow distribution values obtained by using probing, GPR, and DEM subtraction with lidar. All three methods showed an overall altitudinal trend but with significant small-scale variability (for a comparison of the three methods and their relative benefits, see Section \ref{sec:comparemethods}). \cite{Pelt2014} used GPR and a surface-energy balance model coupled with a snow model to examine accumulation variability. It was found that terrain parameters such as slope and curvature were good representations of preferential deposition. Additionally, \cite{Pelt2014} calculated that small-scale variability of snow accumulation had a negligible effect on the mean net mass balance in the accumulation zone and a negative impact of $-$0.09 m w.e. a$^{-1}$ in the ablation area.
+The majority of studies that have examined snow distribution on glaciers have been done with either airborne or ground-based radar \citep[e.g.][]{Winther1998,Machguth2006, Grabiec2011, Pelt2014,McGrath2015}. In general, the radargrams provided valuable information but ground truthing by probing was always conducted. \cite{Gusmeroli2014} also did a small GPR survey on an Alaskan glacier and found that GPR reflections were difficult to identify in areas of the glacier that had high debris content on the surface or in the upper part of the accumulation area. \cite{Sold2013} did an extensive study that compared snow distribution values obtained by using probing, GPR, and DEM subtraction with lidar. All three methods showed an overall altitudinal trend but with significant small-scale variability (for a comparison of the three methods and their relative benefits, see Section \ref{sec:comparemethods}). \cite{Pelt2014} used GPR and a surface-energy balance model coupled with a snow model to examine accumulation variability. It was found that terrain parameters such as slope and curvature were good representations of preferential deposition. Additionally, \cite{Pelt2014} calculated that small-scale variability of snow accumulation had a negligible effect on the mean net mass balance in the accumulation zone and a negative impact of $-$0.09 \,m\,w.e. a$^{-1}$ in the ablation area.
 
 \cite{Dadic2010} is the only study thus far that has examined snow distribution on glaciers using a dynamic model. This study specifically looked at the effect of wind on snow accumulation and found that glacierized areas with the largest accumulation also experienced the lowest horizontal wind speeds and highest downward wind velocity. Preferential deposition was highest (positive or negative) in troughs located close to steep slopes, where updrafts and down drafts led to decreased and enhanced deposition, respectively. In general, the wind speed was controlled by small-scale topography and had a significant impact on accumulation. 
 
@@ -1418,7 +1418,7 @@ Glacier 4 has the largest median and range of snow depth values, while Glacier 1
 
 A comparison of measured snow depth for each zigzag is shown in Figure \ref{fig:ZZ_boxplot}. The zigzags on Glacier 4 show minimal variability with a small range of values observed and few outliers. The mean depth is significantly larger at the highest elevation zigzag. Zigzags on Glacier 2 show more variability. The range on the middle elevation is the largest of all the zigzags measured and the highest elevation zigzag has many outliers. The zigzags on Glacier 13 do not vary considerably in range, although the lower zigzags show a large number of outliers which may be a result of these locations being close to a supraglacial meltwater channel. 
 
-The depths measured in each zigzag on Glaciers 4, 2 and 13 are shown in Figures \ref{fig:ZZ_G04}, \ref{fig:ZZ_G02} and \ref{fig:ZZ_G13}, respectively. There is considerable variability both between zigzags and within each zigzag. For example, snow depths in G04\_Z5B are more uniform than in G04\_Z3A (Figure \ref{fig:ZZ_G04}). The average standard deviation of all zigzag depth measurements is 0.07\,m, 0.17\,m and 0.14\,m, for Glaciers 4, 2 and 13, respectively. When converted to values of WB using the local FS-derived density measurement, the average standard deviation is 0.027\,m\,w.e., 0.035\,m\,w.e. and 0.040\,m w.e. WB data for each zigzag are not normally distributed.
+The depths measured in each zigzag on Glaciers 4, 2 and 13 are shown in Figures \ref{fig:ZZ_G04}, \ref{fig:ZZ_G02} and \ref{fig:ZZ_G13}, respectively. There is considerable variability both between zigzags and within each zigzag. For example, snow depths in G04\_Z5B are more uniform than in G04\_Z3A (Figure \ref{fig:ZZ_G04}). The average standard deviation of all zigzag depth measurements is 0.07\,m, 0.17\,m and 0.14\,m, for Glaciers 4, 2 and 13, respectively. When converted to values of WB using the local FS-derived density measurement, the average standard deviation is 0.027\,m\,w.e., 0.035\,m\,w.e. and 0.040 \,m\,w.e. WB data for each zigzag are not normally distributed.
 
 \begin{figure}[H]
 	\centering
@@ -1466,7 +1466,7 @@ Point-scale winter balance (WB) at sampling locations is estimated using eight d
 
 Density assignment method 3 (Figures \ref{fig:SWEmap_S3} and \ref{fig:SWEmap_F3}), which uses a linear regression of density with elevation (S3 and F3), is used in this study to examine how a regression based on topography could affect point-scale WB estimates. Despite opposite relationships between density and elevation for FS-derived densities and SP-derived densities (Table \ref{tab:elev_regress}), the point-scale WB estimates do not differ significantly for Glaciers 4 and 2. On Glacier 13, S3 and F3 point-scale WB estimates do differ but all point-scale WB estimates with density F differ from point-scale WB estimates with density S. This systematic difference is perhaps a result of undersampling by the FS on Glacier 13. Undersampling could have occurred because a considerable portion of the snowpack had undergone recent melt and snow depths were generally shallow, potentially resulting in snow falling out of the sampling tube. 
 
-For all density options, point-scale WB is highest on Glacier 4 and lowest on Glacier 13. Glacier 4 also shows considerable point-scale WB variability within the basin, with both high and low values along a single transect (Figures \ref{fig:SWEmap_S1} to \ref{fig:SWEmap_F4}). The lower, left side of Glacier 2 has low values of point-scale WB with large variations along transects. During field data collection, this area was observed to have dune-like ice features ($\sim$2 m) with alternating bare ice and wind-deposited snow patches.
+For all density assignment methods, point-scale WB is highest on Glacier 4 and lowest on Glacier 13. Glacier 4 also shows considerable point-scale WB variability within the basin, with both high and low values along a single transect (Figures \ref{fig:SWEmap_S1} to \ref{fig:SWEmap_F4}). The lower, left side of Glacier 2 has low values of point-scale WB with large variations along transects. During field data collection, this area was observed to have dune-like ice features ($\sim$2 m) with alternating bare ice and wind-deposited snow patches.
 
 
 
@@ -1544,7 +1544,7 @@ We examine the distribution of winter balance (WB) values and the coefficient of
 
 \begin{table}[b]
 \centering
-\caption{$2\sigma$ values of winter balance variability (m w.e.) distributions at the point and gridcell scale.}
+\caption{$2\sigma$ values of winter balance variability (\,m\,w.e.) distributions at the point and gridcell scale.}
 \label{tab:2sigmaPointGrid}
 \begin{tabular}{lcccc}
  & \multirow{2}{*}{\textbf{Point Scale}} & \multicolumn{3}{c}{\textbf{Gridcell Scale}} \\
@@ -1705,13 +1705,13 @@ Parameters not included in a particular model are assigned coefficients of zero.
 
 \subsubsection{Methods}
 
-The MLR of WB values and topographic parameters is done in Matlab (Appendix \ref{sec:MLRMethods}). The best set of regression coefficients for each model is selected using cross-validation of a linear regression, with the coefficients chosen by minimizing the vertical sum of squares. Then, the regression coefficients from all models are weighted according to the BIC value of the model.
+The MLR of WB values and topographic parameters is done in Matlab (see Appendix \ref{sec:MLRMethods} for details). The best set of regression coefficients for each model is selected using cross-validation, with the coefficients chosen by minimizing the vertical sum of squares. Then, the regression coefficients from all models are weighted according to the BIC value of the model.
 
 \subsubsection{Results and Discussion}
 
 \begin{sidewaystable}
 \centering
-\caption{Mean MLR and BMA coefficients for topographic regression between winter balance (WB) data and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. Semi-partial correlation is a metric that describes the increase in R$^2$ from the addition of a parameter to a regression that contains all other regressors. Raw correlation is the square of the Pearson correlation between a parameter and WB.}
+\caption{Mean MLR and BMA coefficients for regression of winter balance (WB) data on standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. Semi-partial correlation is a metric that describes the increase in R$^2$ from the addition of a parameter to a regression that contains all other regressors. Raw correlation is the square of the Pearson correlation between a parameter and WB.}
 \label{tab:MLRmeancoeff}
 \begin{tabular}{ll|rrrrrrrc|c}
  &  & \multicolumn{1}{c}{$z$} & \multicolumn{1}{c}{$d_C$} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{$m$} & \multicolumn{1}{c}{$N$} & \multicolumn{1}{c}{$\kappa$} & \multicolumn{1}{c}{$Sx$} & Intercept & RMSE \\ \hline \hline
@@ -1734,7 +1734,7 @@ The MLR of WB values and topographic parameters is done in Matlab (Appendix \ref
 \begin{sidewaystable}
 \footnotesize
 \centering
-\caption{MLR coefficients for topographic regression between winter balance (WB) data and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. See Table \ref{tab:densityOptions} for description of density options.}
+\caption{MLR coefficients for regression of winter balance (WB) data on standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. See Table \ref{tab:densityOptions} for description of density assignment methods.}
 \label{tab:MLRcoeffFull}
 \begin{tabular}{ccrrrrrrrr}
  & \textbf{Parameter} & \multicolumn{1}{c}{\textbf{S1}} & \multicolumn{1}{c}{\textbf{F1}} & \multicolumn{1}{c}{\textbf{S2}} & \multicolumn{1}{c}{\textbf{F2}} & \multicolumn{1}{c}{\textbf{S3}} & \multicolumn{1}{c}{\textbf{F3}} & \multicolumn{1}{c}{\textbf{S4}} & \multicolumn{1}{c}{\textbf{F4}} \\ \hline \hline
@@ -1768,25 +1768,25 @@ The MLR of WB values and topographic parameters is done in Matlab (Appendix \ref
 \end{tabular}
 \end{sidewaystable}
 
-The importance of the various topographic parameters differs for the three study glaciers (Table \ref{tab:MLRmeancoeff}). The regression for Glacier 2 explains a large portion of the variance (R$^2$=0.66), although the RMSE is higher than that of Glacier 13, for which the regression explains less variance (R$^2$=0.40) (Figure \ref{fig:MLRfit}). Glacier 4 has the least variance explained by the regression (R$^2$=0.12) and the highest RMSE. The intercepts of the regression are similar for Glaciers 2 and 13 ($\sim$0.25 m w.e.) and these are much lower than the intercept for Glacier 4 (0.62 m w.e.). The discrepancy between intercept values is a result of the poor fit of the Glacier 4 regression --- the value of the intercept approaches that of the data mean (0.63 m w.e.). The residuals for Glacier 4 have a larger range than those of Glacier 2 and 13 (Figure \ref{fig:MLRresiduals_all}).
+The importance of the various topographic parameters differs for the three study glaciers (Table \ref{tab:MLRmeancoeff}). The regression for Glacier 2 explains a large portion of the variance (R$^2$=0.66), although the RMSE is higher than that of Glacier 13, for which the regression explains less variance (R$^2$=0.40) (Figure \ref{fig:MLRfit}). Glacier 4 has the least variance explained by the regression (R$^2$=0.12) and the highest RMSE. The intercepts of the regression are similar for Glaciers 2 and 13 ($\sim$0.25 \,m\,w.e.) and these are much lower than the intercept for Glacier 4 (0.62 \,m\,w.e.). The discrepancy between intercept values is a result of the poor fit of the Glacier 4 regression --- the value of the intercept approaches that of the data mean (0.63 \,m\,w.e.). The residuals for Glacier 4 have a larger range than those of Glacier 2 and 13 (Figure \ref{fig:MLRresiduals_all}).
 
-The most important regressor for Glacier 4 is $Sx$. The $Sx$ regression coefficient is a factor of five larger than those of the remaining parameters for all density options (Table \ref{tab:MLRcoeffFull}) and for the mean of all density options (Table \ref{tab:MLRmeancoeff}). $Sx$ has the highest mean semi-partial correlation (0.034)  and raw correlation (0.065) (Table \ref{tab:MLRmeancoeff}). The $Sx$ coefficient is negative, which indicates less snow in `sheltered' areas. The negative correlation is counter intuitive so it is surprising that $Sx$ is the best predictor for accumulation.
+The most important regressor for Glacier 4 is $Sx$. The $Sx$ regression coefficient is a factor of five larger than those of the remaining parameters for all density assignment methods (Table \ref{tab:MLRcoeffFull}) and for the mean of all density assignment methods (Table \ref{tab:MLRmeancoeff}). $Sx$ has the highest mean semi-partial correlation (0.034)  and raw correlation (0.065) (Table \ref{tab:MLRmeancoeff}). The $Sx$ coefficient is negative, which indicates less snow in `sheltered' areas. The negative correlation is counter intuitive so it is surprising that $Sx$ is the best predictor for accumulation.
 
 The map of distributed WB for the entire glacier shows a relatively uniform WB over Glacier 4 (Figure \ref{fig:MLRmodelledSWE}), due to the large influence of the intercept on the regression. Areas with high $Sx$ values (sheltered), especially in the accumulation area, have the lowest WB values. This regression indicates that the wind plays a role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining $Sx$ values that assume wind moving up or down glacier and changing direction to follow the valley could allow the $Sx$ parameter to explain more of the variance. 
 
 For Glacier 2, the most important regressor is elevation (Table \ref{tab:MLRmeancoeff}). This coefficient is positive, which means that WB will increase with elevation. The elevation regression coefficient is an order of magnitude larger than the other coefficients and has the highest semi-partial R$^2$ and raw correlation (Table \ref{tab:MLRmeancoeff}). $Sx$ is the second most important regresor and has a positive correlation, which indicates that `sheltered' areas are likely to have high accumulation. 
 
-The map of distributed WB on Glacier 2 closely matches that of elevation (Figure \ref{map:elev}), which highlights the strong dependence of WB on elevation. The range of predicted WB is largest for Glacier 2 and it also has the highest WB (1.92 m w.e) and the lowest WB (0 m w.e.) values (Figure \ref{fig:MLRsweboxplot}). Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating the regression, which largely depends on elevation. The high WB values in the southwest region of the result from the combination of high elevation and $Sx$ values. The low WB values at the terminus are a result of low elevation values and $Sx$ values close to zero. 
+The map of distributed WB on Glacier 2 closely matches that of elevation (Figure \ref{map:elev}), which highlights the strong dependence of WB on elevation. The range of predicted WB is largest for Glacier 2 and it also has the highest WB (1.92 m w.e) and the lowest WB (0 \,m\,w.e.) values (Figure \ref{fig:MLRsweboxplot}). Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating the regression, which largely depends on elevation. The high WB values in the southwest region of the result from the combination of high elevation and $Sx$ values. The low WB values at the terminus are a result of low elevation values and $Sx$ values close to zero. 
 
 The most important regressor for Glacier 13 is elevation (Table \ref{tab:MLRmeancoeff}). The coefficient is positive, which means that cells at higher elevation had higher values of WB. Despite a low value of raw correlation between elevation and WB, the semi-partial R$^2$ value is  the largest between the glaciers. The high semi-partial R$^2$ value indicates that when elevation is added to the regression the total variance explained increases considerably because the remaining regressors are not important. The map of estimated WB on Glacier 13 (Figure \ref{fig:MLRmodelledSWE}) closely follows elevation although the range of WB values is relatively small so the elevation effect is less pronounced than on Glacier 2. 
 
-Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density options for all glaciers and the residuals display a similar distribution between the density options (Figure \ref{fig:MLRresiduals_all}). The semi-partial R$^2$ and raw correlation for each regressor also varies little between different density options (Figure \ref{fig:MLRsemiR2_densityOptions}).
+Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density assignment methods for all glaciers and the residuals display a similar distribution between the density assignment methods (Figure \ref{fig:MLRresiduals_all}). The semi-partial R$^2$ and raw correlation for each regressor also varies little between different density assignment methods (Figure \ref{fig:MLRsemiR2_densityOptions}).
 
-The distribution of residuals from the MLR regression (Figure \ref{fig:MLRresidualsboxplot}) differs between glaciers. The range is largest for Glacier 4 because of the poor regression and smallest for Glacier 2 because the regression has high explanatory power. The map of residual values (Figure \ref{fig:MLR_residualsMap}) shows high residual values (both negative and positive) throughout Glacier 4. The upper part of the upper hourglass has especially high and low values, indicating that there was significant variability over a short distance that was not captured by the regression. A few high residual values are seen on Glacier 13 as well, which correspond to a deep, snow-filled supraglacial channel.
+The distribution of residuals from the MLR regression (Figure \ref{fig:MLRresidualsboxplot}) differs between glaciers. The range of residual values is largest for Glacier 4 because of the poor regression and the range of values is smallest for Glacier 2 because of the relatively high explanatory power of the regression. The map of residual values (Figure \ref{fig:MLR_residualsMap}) shows high residual values (both negative and positive) throughout Glacier 4. The upper part of the upper hourglass has especially high and low values, indicating that there was significant variability over a short distance that was not captured by the regression. A few high residual values are seen on Glacier 13 as well, which correspond to a deep, snow-filled supraglacial channel.
 
-The choice of density assignment method does not affect the relative importance of regressors. Although there is a range of coefficient values that result from the choice of density options (Figure \ref{fig:MLRcoeff_densityOptions}), the relative dominance of $Sx$ for Glacier 4 and elevation for Glacier 2 and 13 is consistent. The largest range in semi-partial correlation is in elevation for Glaciers 2 and 13 (Figure \ref{fig:MLRsemiR2_densityOptions}). Estimating WB using F3 resulted in the highest semi-partial correlation for Glaciers 2 and 13 (0.24 and 0.30, respectively). Since the FS-derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. 
+The choice of density assignment method does not affect the relative importance of regressors. Although there is a range of coefficient values that result from the choice of density assignment methods (Figure \ref{fig:MLRcoeff_densityOptions}), the relative dominance of $Sx$ for Glacier 4 and elevation for Glacier 2 and 13 is consistent. The largest range in semi-partial correlation is in elevation for Glaciers 2 and 13 (Figure \ref{fig:MLRsemiR2_densityOptions}). Estimating WB using F3 resulted in the highest semi-partial correlation for Glaciers 2 and 13 (0.24 and 0.30, respectively). Since the FS-derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. 
 
-The largest difference in estimated WB between the various density options is found on Glacier 2 in the upper part of the accumulation area (Figure \ref{fig:MLR_SWEdiffMap}). Glacier 2 also has the lowest difference in estimated WB, which result from all density options estimating values of 0 m w.e. at the terminus. The strong relationship between elevation and WB makes the estimation of glacier-wide WB sensitive to this parameter. The difference in estimated WB expressed as a percent (Figure \ref{fig:MLR_SWEdiffMapPercent}) is relatively consistent on each glacier. The mean percent difference is highest on Glacier 2 (25\%) and slightly lower on Glaciers 4 and 13 (18\% and 20\%, respectively). Extreme values in percent difference are located in areas with low values of estimated WB (small denominator), including the terminus of Glaciers 2 and 13 as well as parts of the accumulation area on Glacier 4.  
+The largest difference in estimated WB between the various density assignment methods is found on Glacier 2 in the upper part of the accumulation area (Figure \ref{fig:MLR_SWEdiffMap}). Glacier 2 also has the lowest difference in estimated WB, which result from all density assignment methods estimating values of 0 \,m\,w.e. at the terminus. The strong relationship between elevation and WB makes the estimation of glacier-wide WB sensitive to this parameter. The difference in estimated WB expressed as a percent (Figure \ref{fig:MLR_SWEdiffMapPercent}) is relatively consistent on each glacier. The mean percent difference is highest on Glacier 2 (25\%) and slightly lower on Glaciers 4 and 13 (18\% and 20\%, respectively). Extreme values in percent difference are located in areas with low values of estimated WB (small denominator), including the terminus of Glaciers 2 and 13 as well as parts of the accumulation area on Glacier 4.  
 
 
 
@@ -1800,70 +1800,70 @@ The largest difference in estimated WB between the various density options is fo
        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_allLines.png}}
     \end{subfigure}
 
-    \caption{Modelled versus observed winter balance (WB). (Top row) Comparison of estimated (MLR) and observed (WB) for three study glaciers. The WB values were calculated using inverse-distance weighted snow pit densities (S4). (Bottom row) Plots of all linear fits between estimated and observed WB using eight density assignment methods. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. Black line highlights the S4 option from the top panel. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated WB values.}
+    \caption{Modelled versus observed winter balance (WB). (Top row) Comparison of estimated (MLR) and observed (WB) for three study glaciers. The WB values were calculated using inverse-distance weighted snow pit densities (S4). (Bottom row) Plots of all linear fits between estimated and observed WB using eight density assignment methods. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. Black line highlights the S4 option from the top row. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated WB values.}
     \label{fig:MLRfit}
 \end{figure}
 
 \begin{figure}
 \centering
 	\includegraphics[width =0.6\textwidth]{ModelledSWE_box_MLR.png}\\
-\caption{Summary of estimated winter balance values found using MLR coefficients. \boxMatlab}
+\caption{Summary of estimated gridcell-scale winter balance values found using MLR coefficients. \boxMatlab}
 \label{fig:MLRsweboxplot}
 \end{figure} 
 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRresiduals_all.png}}%
-	\caption{Residuals of WB predicted using MLR for all density interpolation methods.}
+	\caption{Residuals of winter balance predicted using MLR for all density interpolation methods.}
 	\label{fig:MLRresiduals_all}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 	\includegraphics[width =0.6\textwidth]{residuals_box_MLR.png}\\
-\caption{Summary of residuals from estimated WB values found using MLR coefficients (S4). \boxMatlab}
+\caption{Summary of residuals from estimated winter balance values found using MLR coefficients (S4). \boxMatlab}
 \label{fig:MLRresidualsboxplot}
 \end{figure} 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{residualsMap_MLR.png}\\
-	\caption{Map of the residuals from estimated SWE values found using MLR coefficients (S4) for each measurement location.}
+	\caption{Map of the residuals from estimated winter balance values found using MLR coefficients (S4) for each measurement location.}
 	\label{fig:MLR_residualsMap}
 \end{figure} 
 
 \begin{figure}
 	\centering
-	\includegraphics[width =1.1 \textwidth]{MLRcoeff_DensityOpts.png}\\
-	\caption{Boxplot showing the range of regressor coefficients estimated for each density interpolation method used to calculate distributed winter balance. \params \boxplot }
+	\includegraphics[width =1\textwidth]{MLRcoeff_DensityOpts.png}\\
+	\caption{Boxplot showing the range of regressor coefficients that are estimated with winter balance values calculated using all density assignment methods. \params \boxplot }
 	\label{fig:MLRcoeff_densityOptions}
 \end{figure}
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width =1.1 \textwidth]{MLRsemiR2_DensityOpts.png}\\
-	\caption{Boxplot showing the range of semi-partial correlation for each topographic parameter found with each density interpolation method used to calculate distributed winter balance. \params \boxplot }
+	\includegraphics[width =1 \textwidth]{MLRsemiR2_DensityOpts.png}\\
+	\caption{Boxplot showing the range of semi-partial correlation that are estimated with winter balance values calculated using all density assignment methods. \params \boxplot }
 	\label{fig:MLRsemiR2_densityOptions}
 \end{figure} 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{MLRmap_Modelled_Observed8.png}}%
-	\caption{Modelled WB using coefficients determined using MLR and density interpolated with inverse-distance weighting from snow pits (S4). \swedots}
+	\caption{Modelled winter balance using coefficients determined using MLR and density assigned by inverse-distance weighting from snow pits (S4). \swedots}
 	\label{fig:MLRmodelledSWE}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap.png}\\
-	\caption{Map of the difference between maximum and minimum WB values for each DEM cell between all density options using MLR coefficients. \swedots}
+	\caption{Map of the difference between maximum and minimum winter balance estimated with MLR. Winter balance data is calculated with each density assignment method. \topomap}
 	\label{fig:MLR_SWEdiffMap}
 \end{figure}
 
  \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap_percent.png}\\
-	\caption{Map of the difference between maximum and minimum WB values, expressed as a percent of the maximum WB, for each DEM cell between all density options using MLR coefficients. The colours have been scaled to highlight difference in the main part of the glaciers. Values of zero are found where the minimum estimated WB is zero m w.e. \swedots}
+	\caption{Map of the difference between maximum and minimum winter balance (WB) values, expressed as a percent of the maximum WB, estimated with MLR and WB data calculated with each density assignment method. The colours have been scaled to highlight differences in the main part of the glaciers. Values of 0\% are found where the minimum estimated WB is 0\,m\,w.e. \topomap}
 	\label{fig:MLR_SWEdiffMapPercent}
 \end{figure}
  
@@ -1927,8 +1927,8 @@ The largest difference in estimated WB between the various density options is fo
             {{\small F4}}    
         \end{subfigure}
         
-        \caption[Map of modelled WB using the MLR coefficient values for all density options. Measured WB is plotted as overlain filled circles. Glacier flow directions are indicated by black arrows and mean estimated WB values for each glacier are shown.]
-        {\small Map of modelled WB using the MLR coefficient values for all density options. Measured WB is plotted as overlain filled circles. Glacier flow directions are indicated by black arrows and mean estimated WB values for each glacier are shown.} 
+        \caption[Map of modelled winter balance (WB) using the MLR coefficient values for all density assignment methods. Measured WB is plotted as overlain filled circles. Glacier flow directions are indicated by black arrows and mean estimated WB values for each glacier are shown.]
+        {\small Map of modelled winter balance (WB) using the MLR coefficient values for all density assignment methods. Measured WB is plotted as overlain filled circles. Glacier flow directions are indicated by black arrows and mean estimated WB values for each glacier are shown.} 
         \label{fig:allMLRmodelled}
     \end{figure}
     
@@ -1948,17 +1948,19 @@ The largest difference in estimated WB between the various density options is fo
 	\label{fig:uni_model_prior}
 \end{wrapfigure}
 
-Bayesian model averaging (BMA) is a method of estimating all possible linear combinations of predictor variables, in this case topographic parameters, and then averaging over all models \citep{Raftery1997, Wasserman2000, Raftery2005}.  This method is based on Bayesian principals in which the probability of an outcome is determined based on an initial probably distribution that is determined by the researcher, as well as the data provided. Given that the predictive outcome has a probability distribution of $x$ given $y$, written as $P(x|y)$, we use Bayes' theorem to to write this as
+Bayesian model averaging (BMA) is a method of estimating all possible linear combinations of predictor variables, in this case topographic parameters, and then averaging over all models \citep[e.g.][]{Raftery1997, Wasserman2000, Raftery2005}.  This method is based on Bayesian principals in which the probability of an outcome is determined by a combination of an initial probably distribution that is prescribed by the researcher, as well as the available data. 
+
+We can use Bayes' theorem to to write the probability distribution ($P(x|y)$) of the predictive outcome of $x$ given $y$ as
 \begin{equation}
 P(x|y) = \frac{P(y|x)P(x)}{P(y)}.
-\end{equation}•
-$P(x|y)$ is often called the posterior model probability (PMP). The quantity $P(y|x)$ is the likelihood function, which determines unknown parameters from a known outcome (i.e. observed data). The term $P(x)$ is an observer determined prior probability distribution (typically just called a \textit{prior}) and it reflects the prior knowledge of the system \citep{Raftery1997}. Choosing an appropriate prior is one of the most challenge components of Bayesian probability theory \citep{Wasserman2000}. The $P(y)$ term can be obtained by integrating $P(y|x)P(x)$ over all $x$ and is thus a constant for all models that is typically discarded \citep{Wasserman2000}. 
+\end{equation}
+$P(x|y)$ is often called the posterior model probability (PMP). The quantity $P(y|x)$ is the likelihood function, which determines unknown parameters from a known outcome (i.e. observed data). The term $P(x)$ is an observer determined prior probability distribution (typically just called a `prior') and it reflects the prior knowledge of the system \citep{Raftery1997}. Choosing an appropriate prior is one of the most challenging components of Bayesian probability theory \citep{Wasserman2000}. The $P(y)$ term can be obtained by integrating $P(y|x)P(x)$ over all $x$ resulting in a constant for all models that is typically discarded \citep{Wasserman2000}. 
 
 Together then, the posterior model probability is a function of both the model prior, specified by the researcher, as well as the distribution of the observed data --- the PMP is the transformation of the prior as a result of considering collected data \citep{Wasserman2000}. This can be loosely expressed as
 \begin{equation}
 \textrm{posterior} \propto \textrm{prior} \times \textrm{likelihood}.
 \end{equation}
-If the prior is uninformative then the posterior will be strongly influenced by the data \citep{Wasserman2000}. An informative prior will result in a posterior that is a mix of the prior and the data. As the prior becomes more informative, the amount of data needed to transform the distribution increases. If there is a large amount of data then the prior will have little effect on the posterior. The final coefficients for the linear combination of predictor variables is often reported as posterior distribution means or values that maximize the log-likelihood. 
+If the prior is uninformative then the posterior will be strongly influenced by the data \citep{Wasserman2000}. An informative prior will result in a posterior that is a mix of the prior and the data. As the prior becomes more informative, the amount of data needed to transform the distribution increases. If there is a large amount of data then the prior will have little effect on the posterior. The final coefficients for the linear combination of predictor variables is often reported as mean values of the posterior distribution or values that maximize the log-likelihood. 
 
 Within BMA, Bayes' theorem is used to find the posterior model probability and the PMP is used as a weight when averaging over all models \citep{Wasserman2000}. The model weighted posterior distribution for the coefficients $\beta$ of $k$ models after normalization is given by 
 \begin{equation}
@@ -1970,20 +1972,18 @@ There are a number of different priors to describe model size distribution that 
 
 Other types of priors include those that are skewed to favour smaller models, ones with equal probability for all model sizes, and ones with varying probability for individual regressors. In this project, a uniform prior was chosen for two reasons. First, there was no knowledge of the model distribution so we aim to minimize the observer influence on the final distribution. Second, the MLR estimation (Section \ref{sec:MLR}) assumes a uniform distribution so chosing a uniform distribution for BMA allows for consistency between methods. Using a uniform distribution is commonly done in BMA \citep{Wasserman2000}.
 
-With a small number of regressors, the posterior of all possible models can be determined. However, with a large set of regressors, this computation becomes increasingly expensive. To reduce computation time for a large set of regressors, BMA can use Markov chain Monte Carlo (MCMC) model composition to directly approximate the posterior distribution \citep{Wasserman2000}. In our study, there are eight regressors so $2^8 = 256$ models. It is possible to visit all models and to obtain an exact solution so an MCMC model composition was not employed. 
-
 BMA allows for the calculation of a metric called the posterior inclusion probability (PIP), which is used to evaluate the importance of a regressor in explaining the observed data. PIP is the sum of all posterior model probabilities (PMP) where the variable was included in the model \citep{Zeugner2015}. A higher PIP indicates that the regressor is more important in the regression.  
 
 \subsubsection{Methods}
 
-The BMA process was implemented in R (Appendix \ref{sec:BMAmethods}), using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The package computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter.
+The BMA process was implemented in R (see Appendix \ref{sec:BMAmethods} for details), using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The package computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter.
 
 \subsubsection{Results and Discussion}
 
 \begin{sidewaystable}
 \footnotesize
 \centering
-\caption{BMA coefficients for topographic regression between measured WB and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. See Table \ref{tab:densityOptions} for description of density options.}
+\caption{BMA coefficients for regression of WB data and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. See Table \ref{tab:densityOptions} for description of density assignment methods.}
 \label{tab:BMAcoeffFull}
 \begin{tabular}{ccrrrrrrrr}
 \textbf{} & \textbf{Parameter} & \multicolumn{1}{c}{\textbf{S1}} & \multicolumn{1}{c}{\textbf{F1}} & \multicolumn{1}{c}{\textbf{S2}} & \multicolumn{1}{c}{\textbf{F2}} & \multicolumn{1}{c}{\textbf{S3}} & \multicolumn{1}{c}{\textbf{F3}} & \multicolumn{1}{c}{\textbf{S4}} & \multicolumn{1}{c}{\textbf{F4}} \\ \hline \hline
@@ -2017,150 +2017,147 @@ The BMA process was implemented in R (Appendix \ref{sec:BMAmethods}), using the 
 \end{tabular}
 \end{sidewaystable}
 
-The regression coefficients generated using BMA and their relative importance is similar to those generated by MLR. The most important topographic parameter is $Sx$ on Glacier 4 and elevation ($z$) on Glaciers 2 and 13 (Tables \ref{tab:MLRmeancoeff} and \ref{tab:BMAcoeffFull}). The variance explained by the BMA models is also comparable to that of the MLR models (Figures \ref{fig:BMSfit_opt8} and \ref{fig:BMSfit_allLines}). The distribution of residuals is largest for Glacier 4 as a result of the poor fit of the regression (Figures \ref{fig:BMSresiduals_all}). For a more detailed discussion of the regression of WB and topographic parameters refer to Section \ref{sec:MLR}.
+The regression generated using BMA and the relative importance of topographic parameters is similar to that of the MLR regression. The most important topographic parameter is $Sx$ on Glacier 4 and elevation ($z$) on Glaciers 2 and 13 (Table \ref{tab:BMAcoeffFull}, Figures \ref{fig:BMAcoeff_densityOptions} and \ref{fig:BMAsemiR2_densityOptions}). The variance explained by the BMA models is also comparable to that of the MLR models (Figures \ref{fig:BMSfit_opt8} and \ref{fig:BMSfit_allLines}). 
 
-The distribution of estimated glacier-wise WB is different between glaciers but consistent with the distribution found using MLR (Figures \ref{fig:BMAsweboxplot}). The estimated WB range is greatest for Glacier 2 and there are a large number of outliers on Glacier 4. Mean estimated WB decreases with distance from the topographic divide, which is consistent with the observed mean WB (Figure \ref{fig:box_depth_transects}). The distribution of residuals from the regression has a similar distribution between different density options (Figure \ref{fig:BMSresiduals_all}) but it differs considerably between glaciers (Figure \ref{fig:BMAresidualsboxplot}), which is similar to that of MLR. The largest residuals are found on Glacier 4 (Figure \ref{fig:BMS_residualsMap}) because of the poor explanatory power of the regression. The range of regression coefficient values found using the different density options (Figure \ref{fig:BMAcoeff_densityOptions}) and the semi-partial correlation range (Figure \ref{fig:BMAsemiR2_densityOptions}) are also similar to those found using MLR. The glacier wide estimates of WB (Figure \ref{fig:BMSmodelledSWE}), difference between density option variation in WB (Figure \ref{fig:BMS_SWEdiffMap}), and WB difference as percent (Figure \ref{fig:BMS_SWEdiffMap_precent}) resemble those of MLR. The mean percent difference is highest for Glaciers 2 and 13 (22\%) and lowest for Glacier 4 (15\%).  For a more detailed analysis of estimated WB found using the regression coefficients, see Section \ref{sec:MLR}. These consistent results indicate that the choice of regression method does not strongly affect the final regression of WB and topographic parameters.
-
+The estimate of distributed WB is different between glaciers but consistent with the spatial patterns found using MLR (Figures \ref{fig:BMSmodelledSWE}). The estimated WB range is greatest for Glacier 2 and there are a large number of outliers on Glacier 4. The difference between distributed WB estiamted susing different density assignment methods (Figure \ref{fig:BMS_SWEdiffMap}) and the WB difference as a percent (Figure \ref{fig:BMS_SWEdiffMap_precent}) resemble those of MLR. The mean percent difference is highest for Glaciers 2 and 13 (22\%) and lowest for Glacier 4 (15\%). Mean estimated WB decreases with distance from the topographic divide, which is consistent with the observed mean WB (Figure \ref{fig:BMAsweboxplot}). The distribution of regression residuals has a similar distribution between different density assignment methods (Figure \ref{fig:BMSresiduals_all}) but it differs considerably between glaciers (Figure \ref{fig:BMAresidualsboxplot}). The spatial pattern of residuals is similar to that of the MLR regression (Figure \ref{fig:BMS_residualsMap}). For a more detailed analysis of estimated WB found using the regression coefficients, see Section \ref{sec:MLR}. 
 
 \begin{figure}[H]
+	\centering
+	\includegraphics[width =1.1 \textwidth]{BMScoeff_DensityOpts.png}\\
+	\caption{Boxplot showing the range of BMA regressor coefficients that are estimated with winter balance values calculated using all density assignment methods. \params \boxplot }
+	\label{fig:BMAcoeff_densityOptions}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =1.1 \textwidth]{BMSsemiR2_DensityOpts.png}\\
+	\caption{Boxplot showing the range of semi-partial correlation explained by topographic parameters from the BMA regression using each density assignment method of estimating winter balance (WB). \params \boxplot }
+	\label{fig:BMAsemiR2_densityOptions}
+\end{figure} 
+ 
+\begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSfit_opt8.png}}%
-	\caption{Comparison of predicted (BMA) and observed winter balance (WB) for three study glaciers. The WB values were calculated inverse distance weighted snow pit densities (S4).}
+	\caption{Comparison of BMA predicted and observed winter balance (WB) for three study glaciers. The WB values were calculated inverse distance weighted snow pit densities (S4).}
 	\label{fig:BMSfit_opt8}
 \end{figure}
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSfit_allLines.png}}%
-	\caption{Plot of all linear fits between modelled (BMA) and observed WB using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref{fig:BMSfit_opt8} for a plot of the data. }
+	\caption{Plot of all linear fits between BMA modelled and observed winter balance (WB) using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref{fig:BMSfit_opt8} for a plot of the data. }
 	\label{fig:BMSfit_allLines}
 \end{figure}
 
 \begin{figure}[H]
-	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSresiduals_all.png}}%
-	\caption{Residuals of WB predicted using BMA for all options of estimating density.}
-	\label{fig:BMSresiduals_all}
-\end{figure}
-
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width =0.6\textwidth]{residuals_box_BMS.png}\\
-\caption{Summary of residuals from estimated WB values found using BMA coefficients (S4). \boxMatlab}
-\label{fig:BMAresidualsboxplot}
-\end{figure} 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width =\textwidth]{residualsMap_BMS.png}\\
-	\caption{Map of the residuals from estimated WB values found using BMA coefficients (S4) for each measurement location.}
-	\label{fig:BMS_residualsMap}
-\end{figure} 
-
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width =0.6\textwidth]{ModelledSWE_box_BMS.png}\\
-\caption{Summary of estimated WB values found using BMA coefficients (S4). \boxMatlab}
-\label{fig:BMAsweboxplot}
-\end{figure} 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width =1.1 \textwidth]{BMScoeff_DensityOpts.png}\\
-	\caption{Boxplot showing the range of regressor coefficients explained by each topographic parameter for each option of estimating winter balance (WB) using BMA. \params \boxplot }
-	\label{fig:BMAcoeff_densityOptions}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width =1.1 \textwidth]{BMSsemiR2_DensityOpts.png}\\
-	\caption{Boxplot showing the range of semi-partial correlation explained by each topographic parameter for each option of estimating winter balance (WB) using BMA. \params \boxplot }
-	\label{fig:BMAsemiR2_densityOptions}
-\end{figure} 
-
-\begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{BMSmap_Modelled_Observed8.png}}%
-	\caption{Modelled WB using coefficients determined using BMA and density interpolated with inverse-distance weighting from snow pits (S4). Observed WB values are overlain on the maps.\topomap}
+	\caption{Modelled winter balance using coefficients determined using BMA and density interpolated with inverse-distance weighting from snow pits (S4). Observed winter balance values are overlain on the maps.\topomap}
 	\label{fig:BMSmodelledSWE}
 \end{figure}
- 
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{BMS_SWEdifferenceMap.png}\\
-	\caption{Map of the difference between maximum and minimum WB values for each DEM cell between all density options using BMA coefficients.\topomap}
+	\caption{Map of the difference between maximum and minimum winter balance values estimated with BMA and winter balance data calculated with each density assignment method. \topomap}
 	\label{fig:BMS_SWEdiffMap}
 \end{figure} 
  
  \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{BMS_SWEdifferenceMap_percent.png}\\
-	\caption{Map of the difference between maximum and minimum WB values, expressed as a percent of the mean WB, for each DEM cell between all density options using BMA coefficients. The colours have been scaled to highlight difference in the main part of the glaciers. \topomap}
+	\caption{Map of the difference between maximum and minimum winter balance (WB) values, expressed as a percent of the mean WB, estimated with BMA and WB data calculated with each density assignment method. The colours have been scaled to highlight difference in the main part of the glaciers. \topomap}
 	\label{fig:BMS_SWEdiffMap_precent}
 \end{figure} 
 
+\begin{figure}[H]
+\centering
+	\includegraphics[width =0.6\textwidth]{ModelledSWE_box_BMS.png}\\
+\caption{Summary of estimated winter balance values found using BMA coefficients (S4). \boxMatlab}
+\label{fig:BMAsweboxplot}
+\end{figure} 
 
-\begin{figure*}[H]
+\begin{figure}[H]
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSresiduals_all.png}}%
+	\caption{Residuals of winter balance predicted using BMA for all options of estimating density.}
+	\label{fig:BMSresiduals_all}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width =0.6\textwidth]{residuals_box_BMS.png}\\
+\caption{Summary of residuals from estimated winter balance values found using BMA coefficients (S4). \boxMatlab}
+\label{fig:BMAresidualsboxplot}
+\end{figure} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =\textwidth]{residualsMap_BMS.png}\\
+	\caption{Map of the residuals from estimated winter balance values found using BMA coefficients (S4) for each measurement location.}
+	\label{fig:BMS_residualsMap}
+\end{figure} 
+
+
+
+\begin{figure}[H]
         \centering
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
             \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt1.png}
-            \caption[Option 1]%
-            {{\small Option 1}}    
+            \caption[]%
+            {{\small S1}}    
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
             \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt2.png}
             \caption[]%
-            {{\small Option 2}}    
+            {{\small F1}}    
         \end{subfigure}
         \vskip\baselineskip
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt3.png}
             \caption[]%
-            {{\small Option 3}}    
+            {{\small S2}}    
         \end{subfigure}
         \quad
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt4.png}
             \caption[]%
-            {{\small Option 4}}    
+            {{\small F2}}    
         \end{subfigure}
         
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
             \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt5.png}
-            \caption[Option 5]%
-            {{\small Option 5}}    
+            \caption[]%
+            {{\small S3}}    
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
             \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt6.png}
             \caption[]%
-            {{\small Option 6}}    
+            {{\small F3}}    
         \end{subfigure}
         \vskip\baselineskip
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt7.png}
             \caption[]%
-            {{\small Option 7}}    
+            {{\small S4}}    
         \end{subfigure}
         \quad
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
             \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt8.png}
             \caption[]%
-            {{\small Option 8}}    
+            {{\small F4}}    
         \end{subfigure}
               
-        \caption[Map of modelled WB using the BMS coefficient values for all density options. Measured WB is plotted as overlain filled circles.]
-        {\small Map of modelled WB using the BMS coefficient values for all density options. Measured WB is plotted as overlain filled circles.} 
+        \caption[Map of modelled winter balance using the BMS coefficient values for all density assignment methods. Measured winter balance is plotted as overlain filled circles.]
+        {\small Map of modelled winter balance using the BMS coefficient values for all density assignment methods. Measured winter balance is plotted as overlain filled circles.} 
         \label{fig:allBMSmodelled}
-    \end{figure*}
+    \end{figure}
 
 
 
@@ -2168,7 +2165,8 @@ The distribution of estimated glacier-wise WB is different between glaciers but 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{MLR and BMA comparison}
 
-The range of coefficient values resulting from different choices in density interpolation found using MLR and BMA is similar for all glaciers (Figure \ref{fig:allCeoffs_boxplot}). The range of coefficient value for all glaciers are not significantly different between MLR and BMA (p$>$0.05). Visually, these ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density options these coefficients are small. 
+
+Consistent results between MLR and BMA indicate that the choice of regression method does not strongly affect the final regression of WB on topographic parameters. The range of coefficient values resulting from different choices in density interpolation found using MLR and BMA is similar for all glaciers (Figure \ref{fig:allCeoffs_boxplot}). The range of coefficient value for all glaciers are not significantly different between MLR and BMA (p$>$0.05). Visually, these ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density assignment methods these coefficients are small. Further, the relative importance of the coefficients does not change with choice of density assignment method for all glaciers. 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width =1.2 \textwidth]{CoeffBoxplot_BMSMLRcompare.png}}%
@@ -2178,7 +2176,7 @@ The range of coefficient values resulting from different choices in density inte
 
 \begin{wraptable}[15]{r}{10cm}
 \centering
-\caption{ANOVA p-values between estimated WB found using MLR and BMS regression coefficients for various density options. Significance is taken to be p$<$0.05.}
+\caption{ANOVA p-values between estimated WB found using MLR and BMA regression coefficients for various density assignment methods.}
 \label{tab:estimatedSWEpvalue}
 \begin{tabular}{crrr}
 \textbf{\begin{tabular}[c]{@{}c@{}}Density \\ Option\end{tabular}} & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
@@ -2193,13 +2191,18 @@ F4 & 0.01 & 0.01 & 0.96
 \end{tabular}
 \end{wraptable}
 
-The aspect, curvature, and $Sx$ coefficients for Glacier 4 have the largest range of coefficients. Regardless of the choice of density option, the relative importance of these coefficients is the same (i.e. $Sx$ will always be the most important). For Glacier 4, the choice of density option has a negligible impact on modelled WB values - the regression fit is so poor that the fit does not change with the choice of density interpolation method (Figure \ref{fig:MLRfit} and \ref{fig:BMSfit_allLines}). MLR and BMA appear to have similar ranges of coefficient values, although the mean and median within each regression method differs for $Sx$ and slope, with MLR producing larger coefficients.
+The aspect, curvature, and wind redistribution coefficients for Glacier 4 have the largest range of values. Regardless of the choice of density assignment method, the relative importance of these coefficients is the same (i.e. $Sx$ will always be the most important). For Glacier 4, the choice of density assignment method has a negligible impact on modelled WB values --- the regression fit is so poor that the fit does not change with the choice of density interpolation method (Figure \ref{fig:MLRfit} and \ref{fig:BMSfit_allLines}). MLR and BMA appear to have similar ranges of coefficient values, although the mean and median within each regression method differs for wind redistribution and slope, with MLR producing larger coefficients.
 
-The range of coefficient values for Glacier 2 and 13 is generally small for all parameters indicating that the choice of density option does not have a large impact on modelled WB. The range is especially small for Glacier 13 and most coefficients are close to zero, with the exception of elevation and curvature. This highlights the large sei-partial correlation of elevation on Glacier 13. Further, the relative importance of the coefficients does not change with choice of density option. The greatest range of coefficient values is for elevation, which is also the most significant coefficient. The type of regression model used does not appear to have a large impact on the coefficient values.
+The range of coefficient values for Glaciers 2 and 13 is generally small for all parameters indicating that the choice of density assignment method does not have a large impact on modelled WB. The range is especially small for Glacier 13 and most coefficients are close to zero, with the exception of elevation and curvature. The greatest range of coefficient values is for elevation, which is also the most significant coefficient. We can conclude that the type of regression model used does not appear to have a large impact on the regression coefficient values.
 
-For all glaciers, the BMA regression produced a smaller RMSE and a slightly higher R$^2$. It is not clear why the BMA regression is better at minimizing RMSE. For some density options, estimated values of WB can be significantly different when found using either MLR- or BMA-derived coefficients (Table \ref{tab:estimatedSWEpvalue}). Although the range of coefficients is not different between BMA and MLR, the resulting WB values are significantly different. 
+For all glaciers, the BMA regression produced a smaller RMSE and a slightly higher R$^2$ than the MLR regression. It is not clear why the BMA regression is better at minimizing RMSE. For some density assignment methods, estimated values of WB can be significantly different when found using either MLR- or BMA-derived coefficients (Table \ref{tab:estimatedSWEpvalue}). Although the range of coefficients is not different between BMA and MLR, the resulting WB values are significantly different. 
 
 \subsection{Number of cross validation runs}
+
+The number of runs in the cross-validation algorithm used in this study is large to ensure that we find the regression coefficients that result in the lowest RMSE. In our study, we repeat the process of taking a random subset of data and calcuating the RMSE with the remaining data 1000 times.  However, computational time increases with the number of runs so it is desirable to determine the minimum number of runs that provide a reliable set of regression coefficients. 
+
+The mean winter balance for each glacier does not appear to vary after about 200 runs (Figure \ref{fig:MLRruns}). The value of the elevation regression coefficient, which is the most important coefficient for Glaciers 2 and 13, also does not change considerably after 200 runs. A similar decrease in variation is seen for the remaining important regressors (not shown). Therefore, the number of cross validation runs can be decreased to 200 for future analysis if decreased computational time is desired. 
+
 
 \begin{figure}
 \begin{minipage}[l][8cm][t]{.58\textwidth}
@@ -2215,13 +2218,10 @@ For all glaciers, the BMA regression produced a smaller RMSE and a slightly high
   \subcaption{}
   \end{minipage}%
 
-\caption{(a) Mean winter balance and (b) elevation regression coefficient found with varying number of runs for cross validation. }
+\caption{(a) Mean winter balance and (b) elevation regression coefficient found with varying number of runs in the cross validation algorithm. }
 \label{fig:MLRruns}
 \end{figure}
 
-Cross validation is used to prevent overfitting of the regression coefficients in both MLR and BMA. A random subset of the data is used to fit the regression and a RMSE is calculated using the remaining data. The process is repeated 1000 times and the coefficients with the lowest RMSE are chosen. The number of runs is large to ensure that the regression coefficients that result in the lowest RMSE are found. However, computational expense increases with the number of runs so it is desirable to determine the minimum number of runs that provide a reliable set of regression coefficients. 
-
-The mean winter balance for each glacier does not appear to vary after about 200 runs (Figure \ref{fig:MLRruns}). The value of the elevation regression coefficient, which is the most important coefficient for Glaciers 2 and 13, also does not change considerably after 200 runs. A similar decrease in variation is seen for the remaining important regressors (not shown). Therefore, the number of cross validation runs can be decreased to 200 for future analysis if decreased computational time is desired. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 \section{Kriging}
@@ -2229,7 +2229,7 @@ The mean winter balance for each glacier does not appear to vary after about 200
 
 \subsection{Background}
 
-Physical surfaces vary continuously and must therefore be spatially correlated at short distance but statistically independent at large distances \citep{Davis1986}. If sampling points are distributed throughout a surface, the degree of spatial correlation of the observed surface can be determined and the surface can then be interpolated between sampling points. Kriging is a geostatistical interpolation method that finds a set of optimal weights for the values at each sampling location based on the spatial correlation of measured values and then estimates values at unsampled locations \citep{Davis1986, Li2014}. The kriging estimate ($\hat{z}$) at point $x_0$ is found using the equation
+Physical surfaces vary continuously and must therefore be spatially correlated at short distances but statistically independent at large distances \citep{Davis1986}. If sampling points are distributed throughout a surface, the degree of spatial correlation of the observed surface can be determined and the surface can then be interpolated between sampling points. Kriging is a geostatistical interpolation method that finds a set of optimal weights for the values at each sampling location based on the spatial correlation of measured values and then estimates values at unsampled locations \citep{Davis1986, Li2014}. The kriging estimate ($\hat{z}$) at point $x_0$ is found using the equation
 \begin{equation}
 \label{eq:kriging}
 \hat{z}(x_0) - \mu = \sum_{i=1}^{n} \lambda_i [z(x_i)-\mu(x_0)],
@@ -2239,13 +2239,13 @@ where $\mu$ is a known stationary mean, $\lambda_i$ is a kriging weight, $z(x_i)
 \mathrm{var}[\hat{z}(x_0)] &= E[(\hat{z}(x_0)-z(x_0)^2)]\\
 &=\sum_{i=1}^{n}\sum_{j=1}^{n}\lambda_i \lambda_j C(x_i-x_j)+C(x_0-x_0)-2 \sum_{i=1}^{n} \lambda_i C(x_i-x_0),
 \end{align}
-where $C(x_i-x_j) = \mathrm{Cov}[z(x_i),z(x_j)]$ is the covariance of the surface \citep{Li2008}. Kriging assumes that the variance does not depend on the sample location, but depends only on distance between samples.  Anisotropic kriging allows for variance to change with direction but the variance still does not depend on sample location. Isotropic variance was assumed in this study.
+where $C(x_i-x_j) = \mathrm{Cov}[z(x_i),z(x_j)]$ is the covariance of the surface \citep{Li2008}. Kriging assumes that the variance does not depend on the sample location, but depends only on distance between samples.  Anisotropic kriging allows for variance to change with direction but the variance still does not depend on sample location. Isotropic variance is assumed in this study.
 
-A physical surface is usually assumed to be noisy and this noise is captured by a ``nugget'' parameter that allows for the surface to vary smoothly and thus, not pass directly through each measured point. The nugget is a residual that encompasses sampling-error variance as well as the spatial variance at distances less than the minimum sample spacing \citep{Li2008}. Spatial correlation of data is estimated using imperical variance and is often plotted in the form of a variogram (see Section \ref{sec:variogram_intro}).  
+A physical surface is usually assumed to be noisy and this noise is captured by a ``nugget'' parameter that allows for the surface to vary smoothly and thus, not pass directly through each measured point. The nugget is a residual that encompasses sampling-error variance as well as the spatial variance at distances less than the minimum sample spacing \citep{Li2008}. Spatial correlation of data is estimated using imperical variance and is often plotted in the form of a variogram.  
 
-There are many forms of kriging and each one is tailored to suit different data types (see \cite{Li2014}). The most appropriate type of kriging for this study is simple kriging. 
+There are many forms of kriging and each one is tailored to suit different data types (see \cite{Li2014}).We employ simple kriging in this study to produce an estimate of distributed winter balance that is free of interpretation. 
 
-Simple kriging is used to estimate residuals about a constant and stationary mean $\mu$, which is typically calculated as the average of the data. Kriged estimates for simple kriging are found by slightly modifying Equation \ref{eq:kriging} to 
+Simple kriging is the most basic form of kriging and it is a purely data fitting algorithm with no external parameters. This kriging method estimates residuals about a constant and stationary mean $\mu$, which is typically calculated as the average of the data. Kriged estimates for simple kriging are found by slightly modifying Equation \ref{eq:kriging} to 
 \begin{equation}
 \hat{z}(x_0) = \sum_{i=1}^{n} \lambda_i z(x_i) +\left[1-\sum_{i=1}^{n} \lambda_i \right]\mu.
 \end{equation}
@@ -2258,22 +2258,24 @@ Simple kriging is implemented using the R package \texttt{DiceKriging}, which ap
 
 \subsection{Results}
 
-There are large differences in spatial patterns of interpolated WB distributions for the three study glaciers found using simple kriging (Figure \ref{fig:sweKRIGING}). The lower half of Glacier 4 has a relatively uniform WB, while the accumulation area has both low and high values of WB. The low density of sampling points in the accumulation area of Glacier 4 result in large gradients in WB. Glacier 2 has two distinct and relatively uniform areas --- the lower ablation area has low WB ($\sim$ 0.1 m w.e.) and the upper ablation and accumulation areas have higher WB values ($\sim$ 0.6 m w.e.). The boundary between two these zones closely follows the outline of the ice dune area observed during field data collection. Glacier 13 does not appear to have any strong patterns and accumulation is generally low ($\sim$ 0.1--0.5 m w.e.). 
+There are large differences in spatial patterns of interpolated WB distributions for the three study glaciers found using simple kriging (Figure \ref{fig:sweKRIGING}). Glacier 4 has a relatively uniform WB, with a sharp deviations from this mean value at many measurement locations. The low density of sampling points in the accumulation area of Glacier 4 results in little spatial variability in estimated WB in the upper portion of the glacier. Glacier 2 has two distinct and relatively uniform areas --- the lower ablation area has low WB ($\sim$ 0.1 \,m\,w.e.) and the upper ablation and accumulation area have higher WB values ($\sim$ 0.6 \,m\,w.e.). The boundary between two these zones closely follows the outline of the ice-dune area observed during field data collection. Glacier 13 does not appear to have any strong patterns and accumulation is generally low ($\sim$ 0.1--0.5 \,m\,w.e.). 
 
-The glacier-wide winter mass balance on each glacier ($\mathrm{B_w}$), calculated as the mean WB, that is found using simple kriging is considerably different to that found using a topographic regression (Figure \ref{fig:BMSmodelledSWE}). Accumulation on Glacier 4 is 0.09 m w.e. (15\%) higher and has larger spatial gradients in WB when simple kriging is used. Conversely, simple kriging estimates are 0.13 m w.e. (23\%) and 0.08 m w.e. (22\%) lower for Glaciers 2 and 13, respectively, and the range of WB values is smaller. The accumulation distribution estimated by simple kriging and by regression is qualitatively similar for Glacier 13 but differs considerably for Glacier 4 and 2. Glacier 4 has large WB values in the accumulation area when simple kriging is used, which contrasts strongly with the mostly uniform accumulation estimated with regression. The converse is observed on Glacier 2, where the simple kriging estimate has a small WB range and two distinct regions of WB values while the regression estimate has a large range and a significant elevation gradient in accumulation. These spatial patterns highlight that kriging is sensitive to individual observation values in areas with sparse sampling. 
+The glacier-wide WB on each glacier that is found using simple kriging is considerably different on Glacier 2 and 13 to that found using a topographic regression. Simple kriging estimates are 0.24\,m\,w.e. (49\%) and 0.12\,m\,w.e. (35\%) lower for Glaciers 2 and 13, respectively, and the range of WB values is smaller. Conversely, glacier-wide WB is similar between the two interpolation methods for Glacier 4.
 
-Estimates of the nugget found using maximum likelihood in the DiceKriging package also vary between glaciers (Table \ref{tab:sweKrigNugget}). Nugget values are small for both Glacier 2 and 13 ($\sim$ 0.004 m w.e.) and do not vary when different methods for interpolating snow density (Section \ref{sec:densityoptions}) are used. The nugget values for Glacier 4 are an order of magnitude larger and vary by $\sim$80\% of the minimum nugget value for this glacier. 
+The distributed WB estimated by simple kriging and by regression is qualitatively similar for Glacier 4 but differs considerably for Glaciers 2 and 13. A mostly uniform pattern of WB is estimated on Glacier 4 with both interpolation methods. The converse is observed on Glacier 2, where the simple kriging estimate has a small WB range and two distinct regions of WB values while the regression estimate has a large range and a significant elevation gradient in accumulation. Glacier 13 also shows considerable differences in the accumulation area, with the regression estimating higher WB values. 
+
+Estimates of the nugget found using maximum likelihood in the \texttt{DiceKriging} package also vary between glaciers (Table \ref{tab:sweKrigNugget}). Nugget values are small for both Glaciers 2 and 13 ($\sim$ 0.004\,m\,w.e.) and do not vary when different density assignment methods are used. The nugget values for Glacier 4 are an order of magnitude larger and vary by $\sim$80\% of the minimum nugget value for this glacier. 
 
 \begin{figure}
 	\centering
-	\includegraphics[width = \textwidth]{sweKriged.png}\\
-	\caption{WB distributions estimated by kriging. \topomap}
+	\includegraphics[width =0.9 \textwidth]{SK_map.pdf}\\
+	\caption{Spatial distribution of winter balance (WB) estimated using simple kriging with densities assigned as per S2 (Table \ref{tab:densityOptions}). Locations of snow-depth measurements are shown as black dots. Ice-flow directions are indicated by arrows. Values of glacier-wide WB are given below labels.}
 	\label{fig:sweKRIGING}
 \end{figure}
 
 \begin{table}[]
 \centering
-\caption{Nugget ($\times 10^{-3}$ m w.e.) and range length (m) values for WB data with various snow density interpolation schemes estimated using maximum likelihood in DiceKriging package. S = Snow pit density values, F = Federal Sampler density values. See Section \ref{sec:densityoptions} for details on density options.}
+\caption{Nugget ($\times 10^{-3}$\,m\,w.e.) and range length (m) values for WB data with various snow density assignment methods estimated using maximum likelihood in \texttt{DiceKriging} package. S = Snow pit density values, F = Federal Sampler density values. See Table \ref{tab:densityOptions} for details on density assignment methods.}
 \label{tab:sweKrigNugget}
 \begin{tabular}{ccccccc}
 \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Density\\ Option\end{tabular}}} & \multicolumn{3}{c}{\textbf{Nugget }} & \multicolumn{3}{c}{\textbf{Range length }} \\
@@ -2289,7 +2291,7 @@ Estimates of the nugget found using maximum likelihood in the DiceKriging packag
 \end{tabular}
 \end{table}
 
-Comparing estimated and observed values of WB (Figure \ref{fig:R2simplekrig}) shows that kriging is best able to predict WB values on Glacier 2 and that kriging has the lowest predictive power on Glacier 4. This is similar to topographic regression estimates (Figure \ref{fig:BMSfit_opt8}), where the least variance was explained on Glacier 4 and the most variance was explained on Glacier 2. When compared to regression estimates, the R$^2$ values between WB estimated using simple kriging and observed WB are higher for all glaciers. Correlation values increase from 0.11, 0.63 and 0.36 to 0.25, 0.84 and 0.49 for Glaciers 4, 2 and 13, respectively. The largest difference in R$^2$ between these two methods is on Glacier 2, which also has the highest R$^2$ values. Note that the scatter of estimated and observed WB values in Figure \ref{fig:R2simplekrig} is due to the nugget, which encompasses sampling-error variance and variance at distances smaller than the sample spacing.
+Comparing estimated and observed values of WB (Figure \ref{fig:R2simplekrig}) shows that kriging is best able to predict WB values on Glacier 2 and that kriging has the lowest predictive power on Glacier 4. This is similar to topographic regression estimates, where the least variance was explained on Glacier 4 and the most variance was explained on Glacier 2. The R$^2$ values from simple kriging are higher by approximates 0.2 for all glaciers when compared to regression estimates of WB. The largest difference in R$^2$ between these two methods is on Glacier 2, which also has the highest R$^2$ values. Note that the scatter of estimated and observed WB values in Figure \ref{fig:R2simplekrig} can also be described by the nugget, which encompasses sampling-error variance and variance at distances smaller than the sample spacing.
 
 \begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{krigSWEfit.png}}%
@@ -2297,7 +2299,7 @@ Comparing estimated and observed values of WB (Figure \ref{fig:R2simplekrig}) sh
 	\label{fig:R2simplekrig}
 \end{figure}
 
-The confidence intervals for winter balance estimated using simple kriging are a large proportion of the estimated WB values (Figure \ref{fig:krigingCI_percent}). The confidence interval range is at least half of the estimated WB for all areas of the glacier, and in some areas, this proportion is more than four times the WB estimate. The accumulation area, margin, and terminus of Glacier 2 all have especially high uncertainty. 
+The confidence intervals for winter balance estimated using simple kriging are a large proportion of the estimated WB values (Figure \ref{fig:krigingCI_percent}). The confidence interval range is at least half of the estimated WB for all areas of the glacier, and in some areas, this proportion is more than twice the WB estimate. The accumulation area, margin, and terminus of Glaciers 2 and 13 all have especially high uncertainty. 
 
 \begin{figure}[H]
 	\centering
@@ -2312,46 +2314,46 @@ The confidence intervals for winter balance estimated using simple kriging are a
 
 \subsection{Background}
 
-Regression kriging estimates values between measurement locations by combining a regression estimate (see Section \ref{sec:linearregression}) with a kriged estimate of the regression residuals (see Section \ref{sec:kriging}) \citep{Hengl2007}. First, the regression estimate is determined using auxiliary variables (e.g. terrain parameters such as elevation and slope). Then, simple kriging is used to interpolate regression residuals, which have and assumed mean of zero. The two surface estimates are then added. The final estimate can be written as 
+Regression kriging estimates values between measurement locations by combining a regression estimate (see Section \ref{sec:linearregression}) with a kriged estimate of the regression residuals (see Section \ref{sec:kriging}) \citep{Hengl2007}. First, the regression estimate is determined using auxiliary variables (e.g. topographic parameters). Then, simple kriging is used to interpolate regression residuals, which have an assumed mean of zero. The two surface estimates are then added. The final estimate can be written as 
 \begin{align}
 \hat{z}(x_0) &= \hat{m}(x_0) + \hat{e}(x_0)\\
 & = \sum^p_{k=0}\hat{\beta}_k \cdot	q_k(x_0)+ \sum_{i=1}^{n} \lambda_i \cdot e(x_i),
 \end{align}
 where $\hat{m}(x_0)$ is the regression estimate and $\hat{e}(x_0)$ is the interpolated residual, $\hat{\beta}_k$ are the estimated regression coefficients, $q_k(x_0)$ are the regressors, $p$ is the number of regressors, $\lambda_i$ are the kriging weights for the residuals, and $e(x_i)$ is the residual at $x_i$.
 
-Regression kriging can be thought of as an intermediate between pure kriging (no regression) and pure regression (small residuals) and can be more strongly skewed to either end-member based on the strength of the regression correlation \citep{Hengl2007}. Regression kriging is mathematically equivalent to universal kriging, in which auxiliary variables are used directly to determine the kriging weights \citep{Hengl2007}. However, separating the trend analysis and kriging steps has the advantage of being able to test regression methods that go beyond a basic linear trend. Kriging combined with regression has been found to produce better estimates of spatial fields when compared to simple kriging and co-kriging \citep{Knotters1995}.
+Regression kriging can be thought of as an intermediate between pure kriging (no auxiliary variables) and pure regression (small residuals) and can be more strongly skewed to either end-member based on the strength of the regression correlation \citep{Hengl2007}. Regression kriging is mathematically equivalent to universal kriging, in which auxiliary variables are used directly to determine the kriging weights \citep{Hengl2007}. However, separating the trend analysis and kriging steps has the advantage of being able to test regression methods that go beyond a basic linear trend. Kriging combined with regression has been found to produce better estimates of spatial fields when compared to simple kriging and co-kriging \citep{Knotters1995}.
 
 \subsection{Methods}
 
-First, WB values are estimated with a regression of topographic parameters, as described in Section \ref{sec:linearregression}. The BMA regression is used for regression kriging because it resulted in a better fit than MLR between estimated and observed WB. Second, the BMA residuals at each measurement location are calculated and the distributed residuals are found using simple kriging, as described in Section \ref{sec:kriging}. The BMA-estimated distributed WB and kriging-estimated distrubuted residuals are then added together to obtain the final distributed winter balance. 
+First, WB values are estimated with a regression of topographic parameters, as described in Section \ref{sec:linearregression}. The BMA regression is used for regression kriging because it resulted in a better fit than MLR between estimated and observed WB. Second, the BMA residuals at each measurement location are calculated and the distributed residuals are found using simple kriging, as described in Section \ref{sec:kriging}. The BMA-estimated  WB and kriging-estimated residuals are then added together to obtain the final distributed WB. 
 
 \subsection{Results}
 
-The range, magnitude and spatial pattern of estimated regression residuals found using simple kriging varies between the three study glaciers (Figure \ref{fig:residualsKRIGING}). Generally, the range of residual values is highest on Glacier 4 and lowest on Glacier 13. Extreme values are located in the accumulation area of Glacier 4 with both strongly negative and strongly positive residuals located within a kilometre of each other. The low density of sampling points in the accumulation area biases the interpolation of residuals to fit the over- and underestimation of WB at the two uppermost sampling locations. Residuals show less variation on Glacier 2, although relatively large residuals of approximately $\pm 0.4$ m w.e. are present in the upper ablation area along the ice margins. Glacier 13 has the smallest range of residuals but residual values are approximately equal to those of estimated WB. The mean value of distributed residuals is positive for Glacier 4, indicating that the distributed residuals will increase the overall estimate of winter balance. Conversely, the mean residual for Glacier 2 is negative and will decrease the estimated winter balance. 
+The range, magnitude and spatial pattern of estimated regression residuals found using simple kriging varies between the three study glaciers (Figure \ref{fig:residualsKRIGING}). Generally, the range of residual values is highest on Glacier 4 and lowest on Glacier 13. Extreme values are located in the accumulation area of Glacier 4 with both strongly negative and strongly positive residuals located within a kilometre of each other. The low density of sampling points in the accumulation area biases the interpolation of residuals to fit the over- and underestimation of WB at the two uppermost sampling locations. Residuals show less variation on Glacier 2, although relatively large residuals of approximately $\pm 0.4$ \,m\,w.e. are present in the upper ablation area along the ice margins. Glacier 13 has the smallest range of residuals but residual values are approximately equal to those of estimated WB. The mean value of distributed residuals is positive for Glacier 4, indicating that the distributed residuals will increase the overall estimate of WB. Conversely, the mean residual for Glacier 2 is negative and will decrease the estimated WB. 
 
-The winter balance found using simple kriging and regression kriging (Figure \ref{fig:Regression-Kriging}) shows a gradient in accumulation across the mountain range. Glacier 4 has the highest mean WB and Glacier 13 has the lowest mean WB. However, the accumulation gradient is steeper for simple kriged estimates than for regression kriged estimates. Glacier 4 has a similar mean WB between the two methods but mean WB on Glaciers 2 and 13 are much lower. All three glacier have the largest values of WB in the upper part of the accumulation areas. 
+Spatial patterns in estimated WB found using regression kriging are similar to those found with both simple kriging and regression (Figure \ref{fig:Regression-Kriging}) for Glaciers 2 and 13. The regression kriging estimate is closer to a pure regression for Glaciers 2 and 13 due to the relatively high explanatory power of the regressions on these glaciers. The distributed WB on Glacier 4 found using regression kriging has a somewhat uniform value in the central part of the glacier but the accumulation area has considerably larger estimates of WB compared to simple kriging and regression. The spatial patterns of distributed WB on Glacier 4 more strongly resemble those of the distributed residuals (Figure \ref{fig:residualsKRIGING}). This supports the idea that WB estimates are more strongly affected by the kriged residuals because the regression had low explanatory power. Regression kriging applied on Glacier 4 is therefore closer to pure kriging. The marked alteration of the regression estimate by the kriged residuals arises from the large and opposing residual values of the upper-most measurement locations. Higher WB values in the accumulation result in a much higher estimate of glacier-wide WB. The large effect of two measurement locations on the glacier-wide WB highlights the over representation of individual data points in under sampled regions.
 
-WB distribution estimated using regression kriging is similar to the winter balance estimated using topographic regressions for Glaciers 2 and 13 (Figure \ref{fig:Regression-Kriging}). The similarity is due to the relatively high explanatory power of the regressions, so the regression kriging estimate is closer to a pure regression. The distribution of WB on Glacier 4 is more strongly affected by the kriged residuals because the regression had low explanatory power, resulting in larger residual values that changed the snow distribution, particularly in the accumulation area. The regression kriging for Glacier 4 is therefore closer to pure kriging.
+The WB found using simple kriging and regression kriging (Figure \ref{fig:Regression-Kriging}) shows a gradient in glacier-wide WB across the mountain range. Glacier 4 has the highest glacier-wide WB and Glacier 13 has the lowest glacier-wide WB. However, the WB gradient is steeper for simple kriging estimates than for regression kriging estimates of WB. Glacier 4 has a similar glacier-wide WB between the two methods but glacier-wide WB on Glaciers 2 and 13 are much lower.  
 
-Regression kriging produces the highest overall set of R$^2$ values (Figure \ref{fig:R2regressionkrig}). The correlation coefficient for Glacier 2 is especially high, with more than 80\% of the variance in observed WB explained by the regression kriging model. Glacier 4 has the lowest correlation coefficient but this value is considerably higher than that of topographic regression or simple kriging. 
+Regression kriging produces the highest overall set of R$^2$ values (Figure \ref{fig:R2regressionkrig}). The correlation coefficient for Glacier 2 is especially high, with more than 80\% of the variance in observed WB explained by the regression kriging model. Glacier 4 has the lowest correlation coefficient but this value is considerably higher than that of topographic regression or simple kriging alone. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{residualsKriged.png}\\
-	\caption{Distributed BMA residuals estimated by simple kriging.  \topomap Dashed line indicates approximate ELA.}
+	\caption{Distributed BMA residuals estimated by regression kriging.  \topomap Dashed line indicates approximate ELA.}
 	\label{fig:residualsKRIGING}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{RegressionKriging.png}\\
-	\caption{WB distributions estimated by adding the kriged residuals to the WB distributions estimated using topographic regression with BMA. \swedots Arrows indicate glacier flow direction.}
+	\caption{Winter balance estimated by adding kriged regression residuals to winter balance estimated using topographic regression with BMA. \swedots Arrows indicate glacier flow direction.}
 	\label{fig:Regression-Kriging}
 \end{figure}
 
 \begin{figure}[H]
-	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{krigRKfit.png}}%
-	\caption{Comparison of estimated (regression kriging) and observed winter balance (WB) for three study glaciers. The WB values were calculated using inverse-distance weighted snow pit densities (S4).}
+	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{krigRKfit.png}}%
+	\caption{Comparison of estimated (regression kriging) and observed winter balance (WB) for three study glaciers. The WB values are calculated using inverse-distance weighted snow pit densities (S4).}
 	\label{fig:R2regressionkrig}
 \end{figure}
 
@@ -2359,25 +2361,28 @@ Regression kriging produces the highest overall set of R$^2$ values (Figure \ref
 \section{Comparison of interpolation methods}
 \label{sec:compareInterpMethods}
 
-The choice of interpolation method affects the mean winter balance (Figure \ref{fig:InterpMethod_mean}). Kriging interpolation produces the highest mean value of WB on Glacier 4. The estimates of WB in the accumulation area are greatest when kriging is used because there is a single single high WB value in the accumulation area. Kriging is sensitive to outliers in areas with sparse sampling. However, the winter balance is similar between interpolation methods and mean of observed data for Glacier 4. This similarity arises from the low correlation coefficient for all methods, resulting in values closer to the data mean. The observed WB mean values for Glaciers 2 and 13 are much lower than the estimated winter balance. Both glacier show a significant correlation between WB and elevation, so limiting sampling to the ablation area skewed the observed values of WB to be lower than the mean. Relative differences in mean WB between the three interpolation methods are similar for Glacier 2 and 13, with topographic regression producing the highest mean WB and kriging producting the lowest. Kriging estimates lower WB in the accumulation area of both glaciers because elevation is not incorporated into the model. A mountain range accumulation gradient exists when looking at the mean WB values found using kriging and regression kriging, as well as in the observed data, but Glaciers 4 and 2 have the sample winter balance when topographic regression is used.
-
-\begin{figure}
-	\makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{InterpMethod_mean.png}}%
-	\caption{Mean observed WB and estimated winter balance using topographic regression, kriging, and regression kriging , averaged over density options.}
+\begin{figure}[b]
+	\makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{InterpMethod_mean.png}}%
+	\caption{Mean observed winter balance and estimated winter balance using topographic regression (LR), simple kriging (SK), and regression kriging (RK), averaged over density assignment methods.}
 	\label{fig:InterpMethod_mean}
 \end{figure}
 
-For all glaciers, the topographic regression results in the lowest mean variance explained (Figure \ref{fig:InterpMethod_meanR2}). The mean correlation coefficients for kriging and regression kriging are similar for all glaciers, with regression kriging being slightly lower than kriging. Variance explained on Glacier 4 is consistently the lowest, indicating that observed WB values are highly variable. The converse is seen on Glacier 2, where correlation coefficients are consistently high regardless of the interpolation method.
+
+The choice of interpolation method affects the glacier-wide WB (Figure \ref{fig:InterpMethod_mean}). Simple kriging produces the lowest glacier-wide WB on Glaciers 2 and 13 and has the highest R$^2$ value (Figure \ref{fig:InterpMethod_meanR2}). Linear regression and regression kriging estimate higher values of WB in the accumulation area due to the dominant role of elevation in the regression. Despite the wide range of R$^2$ values for the three interpolation methods (Figure \ref{fig:InterpMethod_meanR2}) on Glacier 4, there is little difference between glacier-wide WB values. Regression kriging produces a slightly higher glacier-wide WB, with high estimates of WB in the accumulation area resulting from a single large residual point. The similarity in glacier-wide WB arises from the low correlation coefficient for all methods, resulting in values closer to the data mean. 
+
+For all glaciers, the topographic regression results in the lowest mean variance explained. The mean correlation coefficients for kriging and regression kriging are similar for all glaciers, with regression kriging being slightly lower than kriging. Variance explained on Glacier 4 is consistently the lowest, indicating that observed WB values are highly variable. The converse is seen on Glacier 2, where correlation coefficients are consistently high regardless of the interpolation method.
+
+A mountain-range accumulation gradient exists when looking at the mean glacier-wide WB values when simple kriging and regression kriging are used for interpolation. This trend is also observed in the collected snow depth data. Mean glacier-wide WB is slightly higher on Glacier 2 (0.61\,m\,w.e.) than Glacier 4 (0.58\,m\,w.e.) when topographic regression is used for interpolation. This arises from the large values of estimated WB in the high elevation portion of the accumulation area of Glacier 2.
 
 \begin{figure}
-	\makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{InterpMethod_meanR2.png}}%
-	\caption{Mean correlation coefficient (R$^2$) between observed WB and estimated winter balance using topographic regression, kriging, and regression kriging at sampling locations, averaged over all density options.}
+	\makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{InterpMethod_meanR2.png}}%
+	\caption{Mean correlation coefficient (R$^2$) between observed winter balance and estimated winter balance using topographic regression (LR), simple kriging (SK), and regression kriging (RK) at sampling locations, averaged over all density assignment methods.}
 	\label{fig:InterpMethod_meanR2}
 \end{figure}
 
-The choice of density interpolation method generally does not affect the mean WB value and their relative magnitudes (Figure \ref{fig:InterpMethod_allopts}). The main exception to this is that of kriging interpolation on Glacier 2, where a difference of almost 0.25 m w.e. exists between F3 and F4. The F3 option uses a linear regression between Federal Sampler-derived density and elevation to interpolate density values. There is a positive relationship (Figure ??), which means that the elevation gradient in WB is increased, resulting in higher WB point measurements in the accumulation area. This is turn increases the kriging estimate for the accumulation area beyond these points and raises the mean WB. Again, it is clear that kriging is sensitive to individual measurement in sparsely sampled areas. It is surprising that the R$^2$ value for both these options is similar and high (Figure \ref{fig:InterpMethod_alloptsR2}), indicating that both estimates of winter balance are equally good. 
+The choice of density interpolation method generally does not affect the glacier-wide WB value and the relative magnitudes between glaciers (Figure \ref{fig:InterpMethod_allopts}). The main exception is the simple kriging interpolation on Glacier 2, where a difference of almost 0.25\,m\,w.e. exists between F3 and F4. The F3 option uses a linear regression between Federal Sampler-derived density and elevation to interpolate density values. The positive relationship between Federal Sampler-derived density and snow depth means that the elevation gradient in WB is increased, resulting in higher WB point measurements in the accumulation area when compared to the F4 method.  It is surprising that the R$^2$ value for both these options is similar and high (Figure \ref{fig:InterpMethod_alloptsR2}), indicating that both estimates of WB are equally good.
 
-Regression kriging and kriging outperform topographic regression in predicting WB at measurement locations (Figure \ref{fig:InterpMethod_alloptsR2}). The correlation coefficient is similar for all density options on Glaciers 2 and 13. In all cases, R$^2$ values are highest for kriging and slightly lower for regression kriging (c.f. S3 on Glacier 13). However, the relative magnitude of R$^2$ values on Glacier 4 differs between kriging and regression kriging when different density options are chosen.  
+Regression kriging and kriging outperform topographic regression in predicting WB at measurement locations (Figure \ref{fig:InterpMethod_alloptsR2}). The correlation coefficient is similar for all density assignment methods on Glaciers 2 and 13. In all cases, R$^2$ values are highest for kriging and slightly lower for regression kriging (c.f. S3 on Glacier 13). However, the relative magnitude of R$^2$ values on Glacier 4 differs between kriging and regression kriging when different density assignment methods are chosen.  
 
 \begin{landscape}
 \begin{figure}
@@ -2393,37 +2398,33 @@ Regression kriging and kriging outperform topographic regression in predicting W
 \end{figure}
 \end{landscape}
 
-The two interpolation end-members, topographic regression and kriging, produce distributed fields that have different applications. Topographic regressions are, theoretically, both spatially and temporally transferable. If the field is relatively stationary then the topographic regression model can be applied to the same location at other times and/or at other locations. After the regression model is calculated, only a few measurements are needed to scale the regression values higher or lower to obtain a distributed field. Additionally, topographic parameters are chosen as proxies for physical processes so if the regression coefficients are physically realistic, extrapolation of the regression is likely to produce more realistic fields. Topographic regressions are also less sensitive to data outliers. When extreme values are present in a well sampled area, the regression will not significantly be affected, resulting in more realistic extrapolation. The main limitation of topographic regressions is that the field must be well sampled to initiate the model and the model is highly dependent on the accuracy and resolution of the DEM. 
+The two interpolation end-members, topographic regression and kriging, produce distributed fields that have different applications. Topographic regressions are, theoretically, both spatially and temporally transferable. If the spatial pattern of WB is relatively stationary then the topographic regression model can be applied to the same location at other times and/or at nearby locations. After the regression model is calculated, only a few measurements are needed to scale the regression values higher or lower to obtain a distributed estimate of WB. Additionally, topographic parameters are chosen as proxies for physical processes so if the regression coefficients are physically realistic, extrapolation of the regression is likely to produce somewhat realistic fields. Topographic regressions are less sensitive to data outliers when compared to simple kriging. When extreme values are present in a well sampled area, the regression will not significantly be affected, resulting in more realistic extrapolation. The main limitation of topographic regressions is that the field must be well sampled to initiate the model and the model is dependent on the accuracy and resolution of the DEM. 
 
-Kriging is, in theory, temporally transferable but not spatially transferable. Once kriging weights are calculated, they can be applied to the same area where the mean value is estimated with a few observations. Kriging weights cannot be applied to another location. A benefit of kriging is that the resulting field is not limited to the accuracy, resolution and availability of external data (i.e. DEM). Therefore, this interpolation technique is valuable in areas with no topographic data or at scales less than the resolution of available DEMs. Another benefit of kriging is that confidence intervals can easily be calculated for the field of interest, providing concrete bounds on the distribution of values. However, kriging often produces poor results when extrapolating data. The distributed field is highly sensitive to individual measurements with extreme values in sparsely sampled areas, so extrapolating past these points can result in unrealistic values and large confidence intervals (i.e. accumulation area of Glacier 2). Problems with extrapolation are especially prevalent when observations are locally dense but globally sparse.
-
-
+Kriging is, in theory, temporally transferable but not spatially transferable. Once kriging weights are calculated, they can be applied to the same basin as long as the mean value is estimated with a few observations. Kriging weights should not be applied to another study area. A benefit of kriging is that the resulting field is not limited to the accuracy, resolution and availability of external data (i.e. DEM). Therefore, this interpolation technique is valuable in areas with no topographic data or at scales less than the resolution of available DEMs. However, kriging often produces poor results when extrapolating data. The distributed field is highly sensitive to individual measurements with extreme values in sparsely sampled areas, so extrapolating past these points can result in unrealistic values and large confidence intervals (i.e. accumulation area of Glacier 2). Problems with extrapolation are especially prevalent when observations are locally dense but globally sparse.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
 \section{Summary}
 
-??
+This chapter focuses on three methods of interpolating and extrapolating gridcell-scale values of winter balance (WB) over the study glaciers. From the linear regression of topographic parameters on WB values we find that elevation is the primary driver of spatial pattern of WB on Glaciers 2 and 13. On Glacier 4, the regression was not able to explain the majority of variance in WB data and although wind redistribution was the most significant regressor, the relationship is counter-intuitive. We find no significant difference between regression coefficients found using a multiple linear regression (MLR) and Bayesian model averaging (BMA). The spatial distribution of estimated WB is qualitatively similar for regression and simple kriging interpolation on Glacier 4, which has an almost uniform WB and low R$^2$ values. Large differences in the spatial pattern exist for Glacier 2 and 13, which have WB values that closely mirror elevation patterns when the regression is used for interpolation and WB values that are comparatively lower and more uniform when kriging is used for interpolation . Regression kriging produces a similar spatial pattern in WB to the linear regression for Glaciers 2 and 13. However, regression kriging estimates considerably larger values of WB in the accumulation area of Glacier 4 due to the extrapolation of one especially large regression residuals. Uncertainty in the estimated values of WB are highest in the accumulation area of all glaciers, where data is sparse, and this results in large differences in glacier-wide WB estimates, especially on Glaciers 2 and 13. We find that the choice of density assignment method generally does not change glacier-wide estimates of WB and their relative magnitudes between glaciers.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Winter Balance
+% WINTER BALANCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Winter Balance }
+\chapter{Winter balance }
 \label{sec:WinterBalance}
 
-\section{Background}
-
-Winter surface mass balance is the net accumulation and ablation of snow over the winter season \citep{Cogley2011}, which constitutes glacier mass input. We refer to this quantity as winter balance throughout the thesis. Accurate estimates of winter balance are critical for calculating glacier mass balance, not only because winter balance constitutes half of the glacier mass balance but also because the distribution of snow on a glacier initializes the summer balance and high snow albedo contributes to reduced summer melt \citep[e.g.][]{Hock2005, Reveillet2016}. Currently, uncertainty in winter balance estimates overshadow differences between melt models when estimating glacier mass balance \citep{Reveillet2016}. The goal of this chapter is to show how snow variability, data error and our methodological choices interact to create uncertainty in our estimate of winter balance.
+The goal of this chapter is to show how snow variability, data error and our methodological choices interact to create uncertainty in our estimate of winter balance.
 
 \section{Methods}
 
 To quantify effects of uncertainty on the winter balance estimate, we conduct a Monte Carlo experiment, which uses repeated random sampling to calculate a numerical solution \citep{Metropolis1949}. This random sampling process is done 1000 times, which results in a distribution of possible winter balance values based on uncertainty within the data processing steps. We quantify the effect of uncertainty as the standard deviation of the distribution. Three sources of uncertainty, which encompass error and uncertainty within each processing step, are considered: (1) density uncertainty, (2) WB uncertainty and (3) interpolation uncertainty. Individual sources of uncertainty are propagated through the process of converting snow measurements to winter balance. Then, all three uncertainty sources are considered together and their combined effect on winter balance uncertainty is quantified.
 
 	\subsection{WB uncertainty}
-To estimate winter balance, we must represent WB within a gridcell with a single value despite the fact that each gridcell contains a distribution of WB values. The resulting uncertainty from this WB representation is characterized by generating a normal distribution ($\mu=0$), with a standard deviation equal to the mean standard deviation of all zigzags on each glacier ($\sigma_{\mathrm{G4}} = 0.027 $ m w.e., $\sigma_{\mathrm{G2}} = 0.035$ m w.e., $\sigma_{\mathrm{G13}} = 0.040 $ m w.e.). For each iteration of the Monte Carlo, a set of random values is generated from the distribution and added to the observed WB values. These perturbed WB values are then used to estimate winter balance. The winter balance uncertainty due to WB uncertainty ($\sigma_{\mathrm{WB}}$) is calculated as the standard deviation of the resulting distribution of winter balance estimates.  
+To estimate winter balance, we must represent WB within a gridcell with a single value despite the fact that each gridcell contains a distribution of WB values. The resulting uncertainty from this WB representation is characterized by generating a normal distribution ($\mu=0$), with a standard deviation equal to the mean standard deviation of all zigzags on each glacier ($\sigma_{\mathrm{G4}} = 0.027 $ \,m\,w.e., $\sigma_{\mathrm{G2}} = 0.035$ \,m\,w.e., $\sigma_{\mathrm{G13}} = 0.040 $ \,m\,w.e.). For each iteration of the Monte Carlo, a set of random values is generated from the distribution and added to the observed WB values. These perturbed WB values are then used to estimate winter balance. The winter balance uncertainty due to WB uncertainty ($\sigma_{\mathrm{WB}}$) is calculated as the standard deviation of the resulting distribution of winter balance estimates.  
 
 	\subsection{Density uncertainty}
 We incorporate uncertainty in interpolating density measurements by carrying forward all eight density interpolation options when estimating winter balance. The density measurement and interpolation methods used in our study encompass a broad spectrum of possible density values. The winter balance uncertainty due to density uncertainty ($\sigma_{\rho}$) is calculated as the standard deviation of winter balance estimates calculated using each density interpolation option.
@@ -2450,7 +2451,7 @@ Specific winter balance is affected by uncertainty introduced when interpolating
 
  \begin{table}[]
 \centering
-\caption{Standard deviation ([$\times10^{-2}$ m w.e.]) of winter balance distributions arising from WB ($\sigma_{\mathrm{WB}}$), density ($\sigma_{\rho}$) and interpolation ($\sigma_{\mathrm{INT}}$) uncertainty. Result for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13) are shown.}
+\caption{Standard deviation ([$\times10^{-2}$ \,m\,w.e.]) of winter balance distributions arising from WB ($\sigma_{\mathrm{WB}}$), density ($\sigma_{\rho}$) and interpolation ($\sigma_{\mathrm{INT}}$) uncertainty. Result for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13) are shown.}
 \label{tab:WSMBdistribution_sigma}
 \begin{tabular}{ccccccc}
 \textbf{} & \multicolumn{3}{c}{\textbf{Linear Regression}} & \multicolumn{3}{c}{\textbf{Simple Kriging}} \\
@@ -2470,7 +2471,7 @@ Specific winter balance is affected by uncertainty introduced when interpolating
 	\label{fig:WSMBDist}
 \end{figure*}
 
-The total winter balance uncertainty from SK interpolation is 3 to 5 times greater than uncertainty from LR interpolation. The PDFs overlap between the two interpolation methods although the PDF modes have lower winter balance values when SK is used for Glaciers 2 and 13 and higher for Glacier 4. SK results in winter balance distributions that overlap between glaciers and there is also a small probability of estimating a winter balance value of 0 m w.e. for Glaciers 2 and 13. LR results in overlapping winter balance distributions for Glaciers 2 and 4, with the PDF peak of Glacier 4 being slightly higher than that of Glacier 2. 
+The total winter balance uncertainty from SK interpolation is 3 to 5 times greater than uncertainty from LR interpolation. The PDFs overlap between the two interpolation methods although the PDF modes have lower winter balance values when SK is used for Glaciers 2 and 13 and higher for Glacier 4. SK results in winter balance distributions that overlap between glaciers and there is also a small probability of estimating a winter balance value of 0 \,m\,w.e. for Glaciers 2 and 13. LR results in overlapping winter balance distributions for Glaciers 2 and 4, with the PDF peak of Glacier 4 being slightly higher than that of Glacier 2. 
 
 \subsection{Spatial patterns of winter balance uncertainty}
 
@@ -2511,7 +2512,7 @@ To determine the spatial transferability of LR coefficients, the coefficients fr
 
 There are considerable differences in the spatial pattern and mean estimated winter balance found using transferred regression coefficients (Figure \ref{fig:MapTransferabilityGlaciersMean}). The spatial patterns found using the Glacier 2 and Glacier 13 coefficients reflect the dominance of elevation within the regression. The uniform distributions found using Glacier 4 coefficients reflect the low regression coefficient values for the topographic parameters on Glacier 4. 
 
-The mean estimated winter balance differs considerably when the various LR coefficients are used. Glacier 4 coefficients result in the highest mean winter balance values because the mean value is approximately equal to the mean of the observed values on Glacier 4, which are higher than that of Glaciers 2 and 13. The range of mean winter balance between different coefficients is especially large for Glacier 4 (0.34 m w.e.).
+The mean estimated winter balance differs considerably when the various LR coefficients are used. Glacier 4 coefficients result in the highest mean winter balance values because the mean value is approximately equal to the mean of the observed values on Glacier 4, which are higher than that of Glaciers 2 and 13. The range of mean winter balance between different coefficients is especially large for Glacier 4 (0.34 \,m\,w.e.).
 
 The range-scale accumulation gradient (Glacier 4 highest accumulation, Glacier 13 lowest accumulation) is not present when using transferred coefficients. Glacier 4 coefficients result in an almost uniform snow distribution on all glaciers. Coefficients from Glaciers 2 and 13 result in Glacier 13 having the highest winter balance. For Glaciers 4 and 2, transferring coefficients decreases the mean winter balance and for Glacier 13, using transferred coefficients increases the mean winter balance. When using all the data to estimate a LR, the mean winter balance and spatial pattern of WB on each glacier is similar to when Glacier 13 coefficients are used, but the larger LR intercept value results in a higher mean winter balance. 
 
@@ -2542,7 +2543,7 @@ The winter balance is largely determined by the intercept of the LR used and the
  & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 4\\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 2\\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 13 \\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}All Data \\ Coefficients\end{tabular}} \\ \hline \hline
 \begin{tabular}[c]{@{}c@{}}Elevation \\ Regression\\ Coefficient\end{tabular} & 0.0082 & 0.1084 & 0.0510 & 0.0523 \\ \hline
 \begin{tabular}[c]{@{}c@{}}Intercept\\ (m w.e)\end{tabular} & 0.6217 & 0.2497 & 0.2247 & 0.3435 \\ \hline
-\begin{tabular}[c]{@{}c@{}}Mean RMSE\\ (m w.e.)\end{tabular} & 0.3066 & 0.2065 & 0.2142 & 0.1994
+\begin{tabular}[c]{@{}c@{}}Mean RMSE\\ (\,m\,w.e.)\end{tabular} & 0.3066 & 0.2065 & 0.2142 & 0.1994
 \end{tabular}
 \end{table}
 
@@ -2558,7 +2559,7 @@ The RMSE of estimated winter balance found using transferred coefficients is lar
 
  \subsection{Accumulation gradient}
 
-An accumulation gradient is observed for the continental side of the St. Elias Mountains (Figure \ref{fig:AccumGrad}). Accumulation data are compiled from \cite{Taylor1969}, the three study glaciers, as well as two snow pits we dug near the head of the Kaskawulsh Glacier in May 2016. The data show a linear decrease in observed WB as distance from the main mountain divide (identified by \cite{Taylor1969}) increases, with a gradient of $-0.024$ m w.e. km$^{-1}$. While the three study glaciers fit the regional relationship, the same relationship would not apply when just the Donjek Range is considered. Therefore, glacier location within a mountain range also affects glacier-wide winter balance. Interaction between meso-scale weather patterns and mountain topography is a major driver of glacier-wide accumulation. Further insight into mountain-scale accumulation trends can be achieved by investigating moisture source trajectories and orographic precipitation contribution to accumulation. 
+An accumulation gradient is observed for the continental side of the St. Elias Mountains (Figure \ref{fig:AccumGrad}). Accumulation data are compiled from \cite{Taylor1969}, the three study glaciers, as well as two snow pits we dug near the head of the Kaskawulsh Glacier in May 2016. The data show a linear decrease in observed WB as distance from the main mountain divide (identified by \cite{Taylor1969}) increases, with a gradient of $-0.024$ \,m\,w.e. km$^{-1}$. While the three study glaciers fit the regional relationship, the same relationship would not apply when just the Donjek Range is considered. Therefore, glacier location within a mountain range also affects glacier-wide winter balance. Interaction between meso-scale weather patterns and mountain topography is a major driver of glacier-wide accumulation. Further insight into mountain-scale accumulation trends can be achieved by investigating moisture source trajectories and orographic precipitation contribution to accumulation. 
 
 \begin{figure}
 	\centering
@@ -2587,7 +2588,7 @@ We estimate spatial accumulation patterns and specific winter balance for three 
 
 We find that the method used to interpolate observations has a large effect on winter balance estimates and its associated uncertainty. On Glacier 4, winter balance estimates are consistent between linear regression (LR) and simple kriging (SK) but both explain only a small portion of observed variance, highlighting that although the winter balance estimates are relatively precise they may not necessarily be accurate. On Glaciers 2 and 13, LR and SK are better able to estimate observed WB values but winter balance estimates differ considerably between the two interpolation methods due to extrapolation into the accumulation area. SK is a non-parametric interpolation method that relies heavily on regular and dense sampling so extrapolation is sensitive to marginal data values and the data mean. LR employs parameters that act as proxies for physical processes, which provides insight into drivers of WB distribution, constrains extrapolation values and can be spatially transferred. It is therefore critical that future winter balance studies report which interpolation method is used to estimate winter balance, the ability for the model to estimate observed measurements and the uncertainty that results from fitting the interpolation model. 
 
-For our study glaciers, the total winter balance uncertainty ranges from 0.03 (8\%) to 0.15 (54\%) m w.e. depending primarily on the interpolation method. The smallest winter balance uncertainty source is the representation of gridcell WB. Future studies could reduce winter balance uncertainty by increasing the spatial distribution of snow depth sampling rather than obtaining many measurements within a single gridcell. In our work, increased sampling within the accumulation area would better constrain WB extrapolation and decrease uncertainty. Our results indicate that using extrapolated data to compare with winter balance estimates from remote sensing or modelling studies may produce misleading results. If possible, comparison studies should use observed WB data rather than interpolated winter balance values. 
+For our study glaciers, the total winter balance uncertainty ranges from 0.03 (8\%) to 0.15 (54\%) \,m\,w.e. depending primarily on the interpolation method. The smallest winter balance uncertainty source is the representation of gridcell WB. Future studies could reduce winter balance uncertainty by increasing the spatial distribution of snow depth sampling rather than obtaining many measurements within a single gridcell. In our work, increased sampling within the accumulation area would better constrain WB extrapolation and decrease uncertainty. Our results indicate that using extrapolated data to compare with winter balance estimates from remote sensing or modelling studies may produce misleading results. If possible, comparison studies should use observed WB data rather than interpolated winter balance values. 
 
 Snow distribution patterns are found to differ considerably between glaciers, highlighting strong intra- and inter-basin variability and accumulation drivers acting on multiple scales. WB distribution on Glacier 4 is highly variable, as indicated by shorter range distance, higher nugget value and lower explained variance. Glaciers 2 and 13 have lower WB variability and elevation is the primary control of observed variation. Despite challenges in accurately estimating winter balance, our data are consistent with a previously reported linear decrease in WB with increased distance from the main topographic divide along the continental side of the St. Elias Mountains. This trend indicates that glacier location within a mountain range has a large influence on winter balance. 
 
@@ -2791,7 +2792,7 @@ The MLR was completed with the following steps (executed using the function 'MLR
 
 \item A weighted sum of all models found using linear combinations of topographic parameters was then found. The BIC values for each model (BIC$_i$) were used to determine the normalized weight of each model ($w_i$) relative to the best model (lowest BIC value BIC$_{min}$) according to Eq. \ref{eq:BIC}.
 
-\item The percent variance ($var_\%$) explained by each parameter was calculated using the equation $var_\% = \frac{SSr}{SSt}\times 100$, where $SSr$ is the sum of squares of the residual (fitted topographic parameters) and $SSt$ is the total sum of squares (WB observations). The final coefficients and the percent variance explained by each one can be found in the \texttt{coeffs\_final} table within the function and in the \texttt{mlr} structure when run for all density options and glaciers in the main script `TopoRegression.m'.
+\item The percent variance ($var_\%$) explained by each parameter was calculated using the equation $var_\% = \frac{SSr}{SSt}\times 100$, where $SSr$ is the sum of squares of the residual (fitted topographic parameters) and $SSt$ is the total sum of squares (WB observations). The final coefficients and the percent variance explained by each one can be found in the \texttt{coeffs\_final} table within the function and in the \texttt{mlr} structure when run for all density assignment methods and glaciers in the main script `TopoRegression.m'.
 
 \item The residuals of the fit have also been calculated as a separate variable that can be returned when the function is called. The residual is calculated as the difference between the estimated WB value and observed value. 
 \end{enumerate}
@@ -3025,7 +3026,7 @@ The standard deviation as a function of binned elevation show that the standard 
 
 \subsection{Standard deviation of WB in DEM cell}
 
-The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas that correspond to a single DEM cell containing multiple WB measurement locations. To extrapolate WB over the glacier it is valuable to have one value of WB for each DEM gridcell. Therefore, the mean WB was used for a DEM cell with multiple observations. Using the mean value is supported by the small standard deviation of WB within one DEM cell for all glaciers (Figure \ref{fig:DEMcellSTD}). The mean standard deviation is 0.03 m w.e., which is low compared to the variability of WB over the entire glacier (Section \ref{sec:stdTransects}). Extreme standard deviation values result from highly variable locations such as transects across deep supra glacier streams (Glacier 13) or on debris covered ice or ice-cored moraines (Glacier 4). However, the mean standard deviation is small so future analyses use the mean WB value within one DEM cell. 
+The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas that correspond to a single DEM cell containing multiple WB measurement locations. To extrapolate WB over the glacier it is valuable to have one value of WB for each DEM gridcell. Therefore, the mean WB was used for a DEM cell with multiple observations. Using the mean value is supported by the small standard deviation of WB within one DEM cell for all glaciers (Figure \ref{fig:DEMcellSTD}). The mean standard deviation is 0.03 \,m\,w.e., which is low compared to the variability of WB over the entire glacier (Section \ref{sec:stdTransects}). Extreme standard deviation values result from highly variable locations such as transects across deep supra glacier streams (Glacier 13) or on debris covered ice or ice-cored moraines (Glacier 4). However, the mean standard deviation is small so future analyses use the mean WB value within one DEM cell. 
 
 \begin{figure}[H]
 	\centering
