@@ -8,43 +8,43 @@ Warning--empty journal in Revuelto2014
 Warning--missing school in Walmsley2015
 You've used 139 entries,
             2869 wiz_defined-function locations,
-            1600 strings with 34338 characters,
-and the built_in function-call counts, 152892 in all, are:
-= -- 16524
-> -- 2974
-< -- 121
-+ -- 1038
-- -- 899
-* -- 11880
-:= -- 16992
+            1600 strings with 34476 characters,
+and the built_in function-call counts, 154149 in all, are:
+= -- 16685
+> -- 3004
+< -- 119
++ -- 1048
+- -- 909
+* -- 11972
+:= -- 17100
 add.period$ -- 138
 call.type$ -- 139
-change.case$ -- 1147
+change.case$ -- 1152
 chr.to.int$ -- 140
 cite$ -- 142
-duplicate$ -- 15646
-empty$ -- 11974
-format.name$ -- 1473
-if$ -- 31807
+duplicate$ -- 15797
+empty$ -- 12055
+format.name$ -- 1479
+if$ -- 32072
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1529
+missing$ -- 1534
 newline$ -- 424
 num.names$ -- 556
-pop$ -- 7192
+pop$ -- 7278
 preamble$ -- 1
-purify$ -- 1005
+purify$ -- 1010
 quote$ -- 0
-skip$ -- 3294
+skip$ -- 3309
 stack$ -- 0
-substring$ -- 17584
-swap$ -- 3848
+substring$ -- 17794
+swap$ -- 3856
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1676
+type$ -- 1681
 warning$ -- 3
-while$ -- 971
+while$ -- 976
 width$ -- 0
-write$ -- 1771
+write$ -- 1772
 (There were 3 warnings)

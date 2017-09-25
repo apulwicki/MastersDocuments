@@ -1,28 +1,28 @@
 \BOOKMARK [0][-]{section*.1}{Approval}{}% 1
 \BOOKMARK [0][-]{section*.3}{Abstract}{}% 2
-\BOOKMARK [0][-]{section*.6}{Dedication}{}% 3
-\BOOKMARK [0][-]{section*.8}{Acknowledgements}{}% 4
-\BOOKMARK [0][-]{section*.9}{Table of Contents}{}% 5
-\BOOKMARK [0][-]{section*.11}{List of Tables}{}% 6
-\BOOKMARK [0][-]{section*.13}{List of Figures}{}% 7
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 8
-\BOOKMARK [1][-]{section.1.1}{Accumulation variability}{chapter.1}% 9
-\BOOKMARK [2][-]{subsection.1.1.1}{Topographic scales}{section.1.1}% 10
-\BOOKMARK [2][-]{subsection.1.1.2}{Snow drift and preferential deposition}{section.1.1}% 11
-\BOOKMARK [1][-]{section.1.2}{Snow distribution models}{chapter.1}% 12
-\BOOKMARK [2][-]{subsection.1.2.1}{Dynamic models}{section.1.2}% 13
-\BOOKMARK [2][-]{subsection.1.2.2}{Statistical models}{section.1.2}% 14
-\BOOKMARK [1][-]{section.1.3}{Measuring accumulation}{chapter.1}% 15
-\BOOKMARK [2][-]{subsection.1.3.1}{Snow probing}{section.1.3}% 16
-\BOOKMARK [2][-]{subsection.1.3.2}{GPR}{section.1.3}% 17
-\BOOKMARK [2][-]{subsection.1.3.3}{DEM subtraction}{section.1.3}% 18
-\BOOKMARK [2][-]{subsection.1.3.4}{Comparison of methods}{section.1.3}% 19
-\BOOKMARK [2][-]{subsection.1.3.5}{Temporally resolved methods}{section.1.3}% 20
-\BOOKMARK [1][-]{section.1.4}{Snow distribution on glaciers}{chapter.1}% 21
-\BOOKMARK [1][-]{section.1.5}{Glaciers in the St. Elias Mountains}{chapter.1}% 22
-\BOOKMARK [1][-]{section.1.6}{Research scope}{chapter.1}% 23
-\BOOKMARK [1][-]{section.1.7}{Summary}{chapter.1}% 24
-\BOOKMARK [1][-]{section.1.8}{Thesis overview}{chapter.1}% 25
+\BOOKMARK [0][-]{section*.6}{Acknowledgements}{}% 3
+\BOOKMARK [0][-]{section*.7}{Table of Contents}{}% 4
+\BOOKMARK [0][-]{section*.8}{List of Tables}{}% 5
+\BOOKMARK [0][-]{section*.9}{List of Figures}{}% 6
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
+\BOOKMARK [1][-]{section.1.1}{Accumulation variability}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.1}{Topographic scales}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.2}{Snow drift and preferential deposition}{section.1.1}% 10
+\BOOKMARK [1][-]{section.1.2}{Snow distribution models}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.2.1}{Dynamic models}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.2}{Statistical models}{section.1.2}% 13
+\BOOKMARK [1][-]{section.1.3}{Measuring accumulation}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.3.1}{Snow probing}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.2}{GPR}{section.1.3}% 16
+\BOOKMARK [2][-]{subsection.1.3.3}{DEM subtraction}{section.1.3}% 17
+\BOOKMARK [2][-]{subsection.1.3.4}{Comparison of methods}{section.1.3}% 18
+\BOOKMARK [2][-]{subsection.1.3.5}{Temporally resolved methods}{section.1.3}% 19
+\BOOKMARK [1][-]{section.1.4}{Snow distribution on glaciers}{chapter.1}% 20
+\BOOKMARK [1][-]{section.1.5}{Glaciers in the St. Elias Mountains}{chapter.1}% 21
+\BOOKMARK [1][-]{section.1.6}{Research scope}{chapter.1}% 22
+\BOOKMARK [2][-]{subsection.1.6.1}{Overview of research}{section.1.6}% 23
+\BOOKMARK [2][-]{subsection.1.6.2}{Thesis structure}{section.1.6}% 24
+\BOOKMARK [1][-]{section.1.7}{Summary}{chapter.1}% 25
 \BOOKMARK [0][-]{chapter.2}{Field methods and data processing}{}% 26
 \BOOKMARK [1][-]{section.2.1}{Experimental design}{chapter.2}% 27
 \BOOKMARK [2][-]{subsection.2.1.1}{Sampling Scheme and Naming System}{section.2.1}% 28
@@ -87,27 +87,28 @@
 \BOOKMARK [1][-]{section.6.2}{Regional winter-balance gradient}{chapter.6}% 87
 \BOOKMARK [1][-]{section.6.3}{Summary}{chapter.6}% 88
 \BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 89
-\BOOKMARK [1][-]{subsection.7.0.1}{Limitations and future work}{chapter.7}% 90
-\BOOKMARK [1][-]{section.7.1}{Conclusion}{chapter.7}% 91
-\BOOKMARK [0][-]{section*.179}{Bibliography}{}% 92
-\BOOKMARK [0][-]{chapter.8}{GPS Waypoint Creation and Upload to GPS Device}{}% 93
-\BOOKMARK [0][-]{chapter.9}{Field Maps}{}% 94
-\BOOKMARK [0][-]{chapter.10}{Data Processing Scripts}{}% 95
-\BOOKMARK [1][-]{section.10.1}{Snow depth measured with graduated avalanche probe}{chapter.10}% 96
-\BOOKMARK [2][-]{subsection.10.1.1}{Linear and curvilinear transect surveys}{section.10.1}% 97
-\BOOKMARK [2][-]{subsection.10.1.2}{Zigzag surveys}{section.10.1}% 98
-\BOOKMARK [1][-]{section.10.2}{Snow density}{chapter.10}% 99
-\BOOKMARK [1][-]{section.10.3}{Point-scale winter balance}{chapter.10}% 100
-\BOOKMARK [0][-]{chapter.11}{Topographic parameters from QGIS to Matlab}{}% 101
-\BOOKMARK [0][-]{chapter.12}{MLR software}{}% 102
-\BOOKMARK [0][-]{chapter.13}{BMA software}{}% 103
-\BOOKMARK [0][-]{chapter.14}{Kriging software}{}% 104
-\BOOKMARK [0][-]{chapter.15}{Variability of data at various scales}{}% 105
-\BOOKMARK [1][-]{section.15.1}{Point Scale}{chapter.15}% 106
-\BOOKMARK [2][-]{subsection.15.1.1}{Data normality}{section.15.1}% 107
-\BOOKMARK [2][-]{subsection.15.1.2}{Observer differences}{section.15.1}% 108
-\BOOKMARK [2][-]{subsection.15.1.3}{Standard deviation of snow depth along linear and curvilinear transects}{section.15.1}% 109
-\BOOKMARK [2][-]{subsection.15.1.4}{Standard deviation of WB in DEM cell}{section.15.1}% 110
-\BOOKMARK [0][-]{chapter.16}{Winter surface mass balance distribution}{}% 111
-\BOOKMARK [1][-]{section.16.1}{Linear regression winter balance distribution}{chapter.16}% 112
-\BOOKMARK [1][-]{section.16.2}{Simple kriging winter balance distribution}{chapter.16}% 113
+\BOOKMARK [1][-]{section.7.1}{Significance and strengths}{chapter.7}% 90
+\BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 91
+\BOOKMARK [1][-]{section.7.3}{Summary}{chapter.7}% 92
+\BOOKMARK [0][-]{section*.175}{Bibliography}{}% 93
+\BOOKMARK [0][-]{Appendix.a.A}{Appendix GPS Waypoint Creation and Upload to GPS Device}{}% 94
+\BOOKMARK [0][-]{Appendix.a.B}{Appendix Field Maps}{}% 95
+\BOOKMARK [0][-]{Appendix.a.C}{Appendix Data Processing Scripts}{}% 96
+\BOOKMARK [1][-]{section.a.C.1}{Snow depth measured with graduated avalanche probe}{Appendix.a.C}% 97
+\BOOKMARK [2][-]{subsection.a.C.1.1}{Linear and curvilinear transect surveys}{section.a.C.1}% 98
+\BOOKMARK [2][-]{subsection.a.C.1.2}{Zigzag surveys}{section.a.C.1}% 99
+\BOOKMARK [1][-]{section.a.C.2}{Snow density}{Appendix.a.C}% 100
+\BOOKMARK [1][-]{section.a.C.3}{Point-scale winter balance}{Appendix.a.C}% 101
+\BOOKMARK [0][-]{Appendix.a.D}{Appendix Topographic parameters from QGIS to Matlab}{}% 102
+\BOOKMARK [0][-]{Appendix.a.E}{Appendix MLR software}{}% 103
+\BOOKMARK [0][-]{Appendix.a.F}{Appendix BMA software}{}% 104
+\BOOKMARK [0][-]{Appendix.a.G}{Appendix Kriging software}{}% 105
+\BOOKMARK [0][-]{Appendix.a.H}{Appendix Variability of data at various scales}{}% 106
+\BOOKMARK [1][-]{section.a.H.1}{Point Scale}{Appendix.a.H}% 107
+\BOOKMARK [2][-]{subsection.a.H.1.1}{Data normality}{section.a.H.1}% 108
+\BOOKMARK [2][-]{subsection.a.H.1.2}{Observer differences}{section.a.H.1}% 109
+\BOOKMARK [2][-]{subsection.a.H.1.3}{Standard deviation of snow depth along linear and curvilinear transects}{section.a.H.1}% 110
+\BOOKMARK [2][-]{subsection.a.H.1.4}{Standard deviation of WB in DEM cell}{section.a.H.1}% 111
+\BOOKMARK [0][-]{Appendix.a.I}{Appendix Winter surface mass balance distribution}{}% 112
+\BOOKMARK [1][-]{section.a.I.1}{Linear regression winter balance distribution}{Appendix.a.I}% 113
+\BOOKMARK [1][-]{section.a.I.2}{Simple kriging winter balance distribution}{Appendix.a.I}% 114
