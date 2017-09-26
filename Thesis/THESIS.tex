@@ -1,4 +1,5 @@
 \documentclass{sfuthesis}
+%\documentclass{sfuapprovals}
 
 \title{Multi-scale investigation of winter balance on alpine glaciers}
 \thesistype{Dissertation}
@@ -252,12 +253,12 @@ Gridded sampling designs use regular measurement intervals in a grid pattern. Ma
 
 \subsection{GPR}
 \label{sec:GPR}
-\begin{wrapfigure}{L}{0.5\textwidth}
+\begin{figure}
  \centering
       \includegraphics[width=0.5\textwidth]{gpr_air.png}
   \caption{Schematic diagram of a helicopter-borne radar snow survey. The travel time for the signal to interact with the snow surface is shown as a solid line and the signal travel time of the interaction with the ice is shown as a dashed line. Together, these values can be used to determine snow depth. The inset (a) is an example waveform that would be recorded from these two events. Figure taken from \cite{Gusmeroli2014}.}
         \label{gprair}
-\end{wrapfigure}
+\end{figure}
 
 Ground penetrating radar (GPR) can be used to find snow depth along continuous lines. This method is used to calculate the distance from the radar source to a boundary with a strong contrast in dielectric permittivity, which corresponds to a change in material properties \citep{Sold2013}. When the speed of the radar wave through the material is known, the travel time can be measured and from this the distance calculated. On a glacier, the radar wave is able to penetrate snow and ice at MHz frequencies and the strongest reflections arise when water is present \citep{Sold2013}. To measure snow depth, GPR units are mounted on aircrafts or snowmobiles that then travel over snow covered areas (see Figure \ref{gprair}) \citep{Machguth2006, McGrath2015}. The resulting processed radargram (e.g. Figure \ref{gpr}) gives a continuous snow depth profile. Processing of the radargrams involves using tracking algorithms that are able to trace continuous layers. Interpolation between transects is then done to find the glacier-wide accumulation. \cite{McGrath2015} describe this process in five steps: (i) acquisition of GPR and probing data (ground truthing), (ii) calculation of snow density and radar velocity, (iii) calculation of snow thickness and resulting snow water equivalent (SWE), (iv) application of a correction to measured accumulation based on ground truth data and (v) use of a multiple regression model to extrapolate SWE across the glacier. The extrapolation of SWE can also be done using an inverse approach with a coupled surface energy-balance snow model \citep{Pelt2014}.
 
@@ -448,7 +449,7 @@ Zigzag points have a name with the glacier number, the zone that they were locat
 
 \begin{figure}
 	\centering
-	\fbox{\includegraphics[height = 0.95\textwidth]{ZZ_vertex.jpeg}}\\
+	\fbox{\includegraphics[width = 0.8\textwidth]{ZZ_vertex.jpeg}}\\
 	\caption{Example of zigzag. Vertices are labelled and measurements are taken at random intervals along the dashed lines between vertices. The randomly chosen location of the Federal Sampler measurement is shown as a diamond.}
 	\label{zigzag_vertex}
 \end{figure}
@@ -1337,7 +1338,7 @@ To directly compare SP-derived densities and FS-derived densities, eight FS meas
 
 \begin{figure}
 	\centering
-	\includegraphics[width =0.8\textwidth]{SPvsFS.pdf}\\
+	\includegraphics[width =0.7\textwidth]{SPvsFS.pdf}\\
 	\caption{Comparison of depth-averaged densities estimated using Federal Sampler (FS) measurements and  a wedge cutter in a snow pit (SP)  for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13). Labels indicate snow pit locations in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars for SP-derived densities are calculated by varying the thickness and density of layers that are too hard to sample (Table \ref{tab:density_SP}) and error bars for FS-derived densities are the standard deviation of measurements taken at one location (Table \ref{tab:density_TubeRange}). One-to-one line is dashed.}
 	\label{fig:density_pitVStube}
 \end{figure}
@@ -1472,7 +1473,7 @@ For all density assignment methods, point-scale WB is highest on Glacier 4 and l
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height = 0.8\textheight]{AllSWEopts_boxplot.png}\\
+	\includegraphics[width = 0.8\textwidth]{AllSWEopts_boxplot.png}\\
 	\caption{Boxplots of estimated point-scale winter balance (WB) at sampling locations for (a) Glacier 4, (b) Glacier 2 and (c) Glacier 13. See Table \ref{tab:densityOptions} for explanation of density assignment methods and codes. Point-scale WB estimates using various density assignment methods were tested for differences using ANOVA (p$<$0.05). Point-scale WB estimates that were not significantly different are labelled with the same letter (e.g. all estimates with A on Glacier 4 are significantly different than all estimates with B on Glacier 4).}
 	\label{fig:AllSWEopts_boxplot}
 \end{figure}
@@ -2100,56 +2101,56 @@ The estimate of distributed WB is different between glaciers but consistent with
         \centering
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt1.png}
+            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed1.png}
             \caption[]%
             {{\small S1}}    
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
-            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt2.png}
+            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed2.png}
             \caption[]%
             {{\small F1}}    
         \end{subfigure}
         \vskip\baselineskip
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt3.png}
+            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed3.png}
             \caption[]%
             {{\small S2}}    
         \end{subfigure}
         \quad
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt4.png}
+            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed4.png}
             \caption[]%
             {{\small F2}}    
         \end{subfigure}
         
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt5.png}
+            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed5.png}
             \caption[]%
             {{\small S3}}    
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
-            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt6.png}
+            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed6.png}
             \caption[]%
             {{\small F3}}    
         \end{subfigure}
         \vskip\baselineskip
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt7.png}
+            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed7.png}
             \caption[]%
             {{\small S4}}    
         \end{subfigure}
         \quad
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed_Opt8.png}
+            \includegraphics[width=\textwidth]{BMSmap_Modelled_Observed8.png}
             \caption[]%
             {{\small F4}}    
         \end{subfigure}
