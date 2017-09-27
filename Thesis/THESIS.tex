@@ -2,25 +2,25 @@
 %\documentclass{sfuapprovals}
 
 \title{Multi-scale investigation of winter balance on alpine glaciers}
-\thesistype{Dissertation}
+\thesistype{Thesis}
 \author{Alexandra Pulwicki}
 \previousdegrees{%
 	B.Sc., University of Calgary, 2014}
 \degree{Master of Science}
-\discipline{Earth Science}
-\department{Earth Science}
+\discipline{Department of Earth Sciences}
+\department{Department of Earth Sciences}
 \faculty{Faculty of Science}
 \copyrightyear{2017}
-\semester{Summer 2017}
+\semester{Fall 2017}
 \date{??}
 
 \keywords{glacier; snow; winter balance; spatial statistics; regression}
 
 \committee{%
 	\chair{??}{??}
-	\member{Gwenn Flowers}{Senior Supervisor\\Associate Professor}
-	\member{Valentina Radic}{Committee Member\\Associate Professor}
-	\member{Kirsten Zickfeld}{Committee Member\\Associate Professor}
+	\member{Gwenn Flowers}{Senior Supervisor\\ Professor}
+	\member{Valentina Radic}{Supervisor\\Associate Professor}
+	\member{Kirsten Zickfeld}{Supervisor\\Associate Professor}
 	\member{??}{External Examiner\\Professor\\Department of Quantum Fields\\Mars University}
 }
 
@@ -574,6 +574,7 @@ G13              & 5             & A                 & 15 May 2016   & AP/AC   &
 
 
 \begin{table}[]
+\small
 \centering
 \caption{Summary information for Federal Sampler measurements }
 \label{tab:SWEsummary}
@@ -701,7 +702,7 @@ Modifications to this procedure occurred when snow samples could not be taken be
 
 After the majority of snow pit measurements were completed, a spring scale with finer resolution was found. For Glacier 4 and 2 the coarse resolution (10 g) scale had been used but for Glacier 13 the fine resolution (2 g) scale was used. Future measurements should use the finer resolution spring scale when using the small wedge sampler. As a result, the snow-density uncertainty is larger for Glacier 4 and 2 than for Glacier 13. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\fbox{\includegraphics[width = 0.95\textwidth]{photo_snowpit.jpg}}\\
 	\caption{Taking snow denisty measurements in a snow pit. An expandable ruler is used to measure snow depth and determine sampling locations. A 250cc wedge cutter is used to extract a known volume of snow and a spring scale is used to weigh the snow. The dial-stem thermometer is used for measureing snow temperature. Note that the sampling wall is shaded, has an undistrubed snow surface above it and has a smoothed face. Photo credit: A. Criscitiello}
@@ -717,7 +718,7 @@ After the majority of snow pit measurements were completed, a spring scale with 
 
 Snow depth measurements along the linear and curvilinear transects were taken at locations a certain distance from marked waypoints. Since only the coordinates of the waypoints (WP) were recorded, the measurement coordinates need to be estimated. The measurement locations were assumed to be 10, 20 and 30 m behind the marked WP, in a straight line between the marked WP and the previous WP (Figure \ref{fig:transect_measure_loc}). In cases with only two observers, locations were assumed to be 10 and 20 m behind the marked WP. For the first marked WP of a transect, it was assumed that the measurement locations were along the same line as that between the first and second WPs. Details of the methodology used to estimate measurement locations can be found in Appendix \ref{app:transect_calc}.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = 0.8\textwidth]{transect_measure_locations.jpeg}\\
 	\caption{Example of estimating snow depth measurement locations in one area (indicted by black box) on Glacier 13. Numbered waypoint (WP) locations are shown in blue and estimated measurement locations are shown in orange at a distance of 10, 20 and 30 m from the WP. Measurement locations are taken to be along a straight line between subsequent WPs. For the first WP of a transect, the measurement locations are assumed to be along the same line as that between the first and second WPs of a transect. For example, the measurement locations behind WP 660 fall along the same line as those between WP 660 and WP 661. The same is true for WP 745. }
@@ -815,7 +816,7 @@ Topographic parameters are derived from a digital elevation model (DEM) of the s
 
 Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made from images collected on September 3, 2007 and the second DEM (GES 07-044) was made from images collected on September 13, 2007. The snow extent on September 13, 2007, as imaged by a Landsat 7 satellite, can be seen in Figure \ref{fig:Landsat_2007}. Since the images were collected in September, the surface would likely be at a seasonal minimum with minimum snow cover. Therefore, the surface described by the DEM in the ablation area represents the ice topography. A limitation in using this DEM is that the DEM is from 2007 and there have almost certainly been changes in the end-of-summer glacier surface. However, the SPOT-5 DEM is the best resolution and most current DEM available for the study area \footnote{At the time of project initiation, SPIRIT SPOT-5 was the highest resolution DEM I were able to acquire. At the time of completing this work, ArcticDEM and TanDEM-X are the highest resolution, public DEMs available for the Donjek Range.}. 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \fbox{\includegraphics[width=\textwidth]{8029_original2.jpeg}}
@@ -833,7 +834,7 @@ Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made
     \label{fig:originalDEMs}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
   \makebox[\textwidth][c]{\includegraphics[width=\textwidth]{Landsat_2007.jpeg}}%
 	\caption{Landsat 7 ETM images of study glaciers on September 13, 2007. Snow cover is shown as light blue and ice is shown as dark blue.}
 	\label{fig:Landsat_2007}
@@ -841,7 +842,7 @@ Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made
 
 The GES 08-029 DEM coveres all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds and/or showed limited contrast in the original steroimage pairs, resulting in incorrect elevation data (E. Berthier personal communication, 2016). The cloudy areas appear as black regions on the DEM mask (not shown) and as distortion in the DEM, as seen in the boxed area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044) spans only part of the Donjek Range, covering most of Glacier 4 and $\sim$60\% of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no masked areas over Glaciers 2 and 4. The two DEMs were therefore merged to create a cloud free DEM that spanned all three glaciers. 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \fbox{\includegraphics[width=\textwidth]{diff_7044-8029_original.jpeg}}
@@ -924,7 +925,7 @@ where the partial derivatives can be approximated by \citep{Mitavsova1993, Netel
 \end{align}
 Here, $z_k$ refers to one of the gridcells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. So $z_3 = z_{i+1,j+1}$, $z_7 = z_{i-1,j-1}$ and so on (Figure \ref{fig:DEMgrid}). The grid spacing (resolution) of the DEM is $\Delta x$ and $\Delta y$ in the east-west and north-south direction, respectively \citep{Neteler2008}. 
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
 	\includegraphics[width = 0.3\textwidth]{DEMGrid.png}\\
 	\caption{Labelling of DEM gridcells surrounding the cell of interest. The eight surrounding cells are used for estimating topographic parameters in QGIS. The cell of interest, which is located at row $i$ and column $j$ of the DEM, is shown as a shaded cell and is labelled $z_5$.}
@@ -1026,7 +1027,7 @@ Visual inspection of the curvature fields calculated using the DEM indicated tha
 
 To choose a smoothing algorithm and window size, I applied a number of smoothing algorithms and chose the combination that resulted in the highest correlation between topographic parameters and point-scale winter balance values. Window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells were used. For all sizes, inverse-distance weighted smoothing and Gaussian smoothing were poorly correlated with WB. The smoothing algorithm that calculated the mean values of gridcells within a 7$\times$7 window resulted in the highest correlation between curvature (second derivative) and WB as well as slope (first derivative) and WB. The window size that produced the highest correlation of WB values and curvature for each glacier differed, but for all WB values taken together, the 7$\times$7 window resulted in the highest correlation. For slope, the highest correlation for individual glaciers was from the DEM with a 7$\times$7 smoothing window but the overall correlation was not the highest with this window. To maintain consistency between parameters, the 7$\times$7 smoothing window was chosen and applied to the DEM for calculation of curvature, slope, aspect and ``northness''. 
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
 	\includegraphics[width = 0.7\textwidth]{G13curvatureSmoothing.jpeg}\\
 	\caption{(a) Curvature found using the orginal DEM. (B) 
@@ -1124,92 +1125,92 @@ Overall, the sampled topographic parameters are poor representatives of the full
 \end{sidewaystable}
 
 \pagebreak
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{Map_elevation.png}\\
 	\caption{Distributions of elevation ($z$) used in the topographic regressions for the study glaciers. This DEM is derived from a SPOT5 satellite image and has a grid size of 40$\times$40 m. Subsequent topographic parameters were derived from this DEM. \topomap}
 	\label{map:elev}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
   \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_elevation.png}}%
 	\caption{Histograms of elevation ($z$) sampled (black) as compared to total range of elevation (white) of study glaciers.}
 	\label{sampledRange:elev}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Map_centreD.png}\\
 	\caption{Distributions of distance from centreline ($d_C$) used in the topographic regressions for the study glaciers. Centreline was drawn by hand in QGIS. \topomap}
 	\label{map:centreD}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_centreD.png}}%
 	\caption{Histograms of distance from centreline ($d_c$) sampled (black) as compared to total range (white) of distance from centreline of study glaciers.}
 	\label{sampledRange:centreD}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Map_aspect.png}\\
 	\caption{Distributions of the sine of aspect ($\alpha$), which indicates north-south component of a slope (+1 defined as north), used in the topographic regressions for the study glaciers. Values are derived from a smoothed DEM. \topomap}
 	\label{map:aspect}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_aspect.png}}%
 	\caption{Histograms of aspect ($\alpha$) sampled (black) as compared to total range (white) of aspect of study glaciers.}
 	\label{sampledRange:aspect}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Map_slope.png}\\
 	\caption{Distributions of slope ($m$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:slope}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_slope.png}}%
 	\caption{Histograms of slope ($m$) sampled (black) as compared to total range (white) of slope of study glaciers.}
 	\label{sampledRange:slope}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Map_northness.png}\\
 	\caption{Distributions of ``northness'' ($N$) used in the topographic regressions for the study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope and flat surfaces yield 0. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:northness}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_northness.png}}%
 	\caption{Histograms of ``northness'' ($N$) sampled (black) as compared to total range (white) of ``northness'' of study glaciers.}
 	\label{sampledRange:northness}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Map_curvature.png}\\
 	\caption{Distributions of curvature ($\kappa$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
 	\label{map:curvature}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_curvature.png}}%
 	\caption{Histograms of curvature ($\kappa$) sampled (black) as compared to total range (white) of profile curvature of study glaciers.}
 	\label{sampledRange:curvature}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{Map_Sx.png}\\
 	\caption{Distributions of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for the study glaciers. See Section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier. \topomap }
 	\label{map:Sx}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_Sx.png}}%
 	\caption{Histograms of $Sx$ sampled (black) as compared to total range (white) of $Sx$ of study glaciers.}
 	\label{sampledRange:Sx}
@@ -1368,14 +1369,14 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
 \end{table}
 
 
-\begin{figure}[H]
+\begin{figure}
   \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{DepthElevation.png}}%
 	\caption{Relationship between measured snow depth and elevation at all sampling locations for Glaciers 4 (G04), 2 (G02) and 13 (G13).}
 	\label{fig:depth_elev}
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = 0.6\textwidth]{ElevationVsSnowpit_all.png}\\
 	\caption{Relationship between snow pit-derived density and elevation for Glaciers 4 (G04), 2 (G02) and 13 (G13).}
@@ -1383,7 +1384,7 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = 0.5\textwidth]{ElevationVsSWEtube_all.png}\\
 	\caption{Relationship between Federal Sampler-derived density and elevation for Glaciers 4 (G04), 2 (G02) and 13 (G13).}
@@ -1394,7 +1395,7 @@ All & $-$0.12$z+$618 & 0.50 & 10 & $-$0.14$z+$659 & 0.75 & 31
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Linear and curvilinear transect snow depth data}
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=\textwidth]{box_depth_wZZ.png}
@@ -1421,7 +1422,7 @@ A comparison of measured snow depth for each zigzag is shown in Figure \ref{fig:
 
 The depths measured in each zigzag on Glaciers 4, 2 and 13 are shown in Figures \ref{fig:ZZ_G04}, \ref{fig:ZZ_G02} and \ref{fig:ZZ_G13}, respectively. There is considerable variability both between zigzags and within each zigzag. For example, snow depths in G04\_Z5B are more uniform than in G04\_Z3A (Figure \ref{fig:ZZ_G04}). The average standard deviation of all zigzag depth measurements is 0.07\,m, 0.17\,m and 0.14\,m, for Glaciers 4, 2 and 13, respectively. When converted to values of WB using the local FS-derived density measurement, the average standard deviation is 0.027\,m\,w.e., 0.035\,m\,w.e. and 0.040 \,m\,w.e. WB data for each zigzag are not normally distributed.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	 \makebox[\textwidth][c]{\includegraphics[width = 1.1\textwidth]{Zigzag_Boxplot.png}}%
 	\caption{Boxplots of snow depth data measured at each zigzag location. See Figure \ref{fig:ZZ_locations} for locations of each zigzag.}
@@ -1429,7 +1430,7 @@ The depths measured in each zigzag on Glaciers 4, 2 and 13 are shown in Figures 
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = 0.55\textwidth]{map_zigzaglocation_all.jpeg}\\
 	\caption{Map of zigzag locations on Glaciers 4, 2 and 13 (left to right).}
@@ -1452,7 +1453,7 @@ The depths measured in each zigzag on Glaciers 4, 2 and 13 are shown in Figures 
 \end{figure}
 \end{landscape}
 
-\begin{figure}[H] 
+\begin{figure} 
 	\centering
 	 \includegraphics[width=0.9\textwidth]{ZigzagDepth_G13.png}%
 	\caption{Snow depths measured in zigzags on Glacier 13. Mean depth ($\bar{z}$) is also reported. Zigzag elevations (a-d) are 2156, 2206, 2271 and 2297 \,m\,a.s.l. See Figure \ref{fig:ZZ_locations} for locations of each zigzag.}
@@ -1471,7 +1472,7 @@ For all density assignment methods, point-scale WB is highest on Glacier 4 and l
 
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = 0.8\textwidth]{AllSWEopts_boxplot.png}\\
 	\caption{Boxplots of estimated point-scale winter balance (WB) at sampling locations for (a) Glacier 4, (b) Glacier 2 and (c) Glacier 13. See Table \ref{tab:densityOptions} for explanation of density assignment methods and codes. Point-scale WB estimates using various density assignment methods were tested for differences using ANOVA (p$<$0.05). Point-scale WB estimates that were not significantly different are labelled with the same letter (e.g. all estimates with A on Glacier 4 are significantly different than all estimates with B on Glacier 4).}
@@ -1479,56 +1480,56 @@ For all density assignment methods, point-scale WB is highest on Glacier 4 and l
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt2.png}\\
 	\caption{Estimated point-scale winter balance at measurement locations. Density was taken to be the mean value of all snow pit-derived densities from all glaciers (S1). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S1}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt3.png}\\
 	\caption{Estimated point-scale winter balance at measurement locations. Density was taken to be the mean value of all Federal Sampler-derived densities from all glaciers (F1). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F1}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{SWEmap_opt4.png}\\
 	\caption{Estimated point-scale winter balance at measurement locations. Density for each glacier was taken to be the mean value of snow pit-derived densities from that glacier (S2). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S2}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt5.png}\\
 	\caption{Estimated point-scale winter balance at measurement locations. Density for each glacier was taken to be the mean value of Federal Sampler-derived densities from that glacier (F2). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F2}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt6.png}\\
 	\caption{Estimated point-scale winter balance at measurement locations. Density was determined by using a linear fit between snow pit-derived density and elevation for each glacier (S3). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S3}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt7.png}\\
 	\caption{Estimated point-scale winter balance at measurement locations.Density was determined by using a linear fit between Federal Sampler-derived density and elevation for each glacier (F3). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_F3}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{SWEmap_opt8.png}\\
 	\caption{Estimated point-scale winter balance at measurement locations. Density was calculated using inverse distance weighting using all snow pit-derived densities (S4). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
 	\label{fig:SWEmap_S4}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{SWEmap_opt9.png}\\
 	\caption{Estimated point-scale winter balance at measurement locations. Density was calculated using inverse distance weighting using all snow pit-derived densities (F4). Arrows show ice-flow direction and dashed lines show approximate ELA. Note that the individual measurement locations overlap on the figure.}
@@ -1600,21 +1601,21 @@ There are multiple point-scale WB values (i.e. measurement locations) in many of
 
 The $2\sigma$ values of the gridcell-scale variability in zigzag and transect survey data are similar for Glaciers 4 and 2, but the zigzag survey $2\sigma$ value on Glacier 13 is considerably larger than the transect survey value (Table  \ref{tab:2sigmaPointGrid}). The spatial distribution of gridcell-scale variability (Figure \ref{fig:SWEvar_MultLoc_map}) closely resembles that of the point-scale variability. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =0.8\textwidth]{SWEvarMeasureLocHIST.png}\\
 	\caption{Gridcell-scale winter balance variability. Transect survey data is used and variability is based on multiple measurement locations in a DEM gridcell.}
 	\label{fig:SWEvar_MultLoc_hist}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{Map_cellstd_measureLoc.png}\\
 	\caption{Coefficient of variation of observations at measured gridcells. Multiple measurements locations within each gridcell are used to assess variability.}
 	\label{fig:SWEvar_MultLoc_map}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{NumObsPerCell.png}\\
 	\caption{Number of measurement locations within DEM gridcells.}
@@ -1626,14 +1627,14 @@ The $2\sigma$ values of the gridcell-scale variability in zigzag and transect su
 
 Variability due to density assignment method is investigated at the gridcell scale. Gridcell-scale WB variability is calculated using the WB values estimated at each measurement gridcell using the eight density assignment methods (Section \ref{sec:densityoptions}). The choice of density assignment method results in relatively low variability that is consistent between glaciers (Figure \ref{fig:SWEvar_Density_hist}). However, there are noticeable spatial patterns in the coefficient of variation due to choice of density assignment method. The coefficient of variation appears to closely follow the elevation gradient, with the lower portions of Glaciers 2 and 13 showing especially high variability (Figure \ref{fig:SWEvar_Density_map}). This spatial pattern likely arises from the elevation dependent interpolation that results in low WB estimates close to the glacier terminus. Despite this, the density variability has the lowest $2\sigma$ value of the investigated sources of variability (Table  \ref{tab:2sigmaPointGrid})
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =0.8\textwidth]{SWEvarDensityHIST.png}\\
 	\caption{Winter balance variability at the gridcell scale based on eight different density assignment methods in a DEM gridcell.}
 	\label{fig:SWEvar_Density_hist}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{Map_cellstd_density.png}\\
 	\caption{Coefficient of variation at the gridcell scale based on eight different density assignment methods.}
@@ -1791,7 +1792,7 @@ The largest difference in estimated WB between the various density assignment me
 
 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{subfigure}[b]{\textwidth}
         \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_opt8.png}}
@@ -1813,20 +1814,20 @@ The largest difference in estimated WB between the various density assignment me
 \end{figure} 
 
 
-\begin{figure}[H]
+\begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRresiduals_all.png}}%
 	\caption{Residuals of winter balance predicted using MLR for all density interpolation methods.}
 	\label{fig:MLRresiduals_all}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 	\includegraphics[width =0.6\textwidth]{residuals_box_MLR.png}\\
 \caption{Summary of residuals from estimated winter balance values found using MLR coefficients (S4). \boxMatlab}
 \label{fig:MLRresidualsboxplot}
 \end{figure} 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{residualsMap_MLR.png}\\
 	\caption{Map of the residuals from estimated winter balance values found using MLR coefficients (S4) for each measurement location.}
@@ -1841,27 +1842,27 @@ The largest difference in estimated WB between the various density assignment me
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =1 \textwidth]{MLRsemiR2_DensityOpts.png}\\
 	\caption{Boxplot showing the range of semi-partial correlation that are estimated with winter balance values calculated using all density assignment methods. \params \boxplot }
 	\label{fig:MLRsemiR2_densityOptions}
 \end{figure} 
 
-\begin{figure}[H]
+\begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{MLRmap_Modelled_Observed8.png}}%
 	\caption{Modelled winter balance using coefficients determined using MLR and density assigned by inverse-distance weighting from snow pits (S4). \swedots}
 	\label{fig:MLRmodelledSWE}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap.png}\\
 	\caption{Map of the difference between maximum and minimum winter balance estimated with MLR. Winter balance data is calculated with each density assignment method. \topomap}
 	\label{fig:MLR_SWEdiffMap}
 \end{figure}
 
- \begin{figure}[H]
+ \begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap_percent.png}\\
 	\caption{Map of the difference between maximum and minimum winter balance (WB) values, expressed as a percent of the maximum WB, estimated with MLR and WB data calculated with each density assignment method. The colours have been scaled to highlight differences in the main part of the glaciers. Values of 0\% are found where the minimum estimated WB is 0\,m\,w.e. \topomap}
@@ -1870,7 +1871,7 @@ The largest difference in estimated WB between the various density assignment me
  
 
 
-\begin{figure}[H]
+\begin{figure}
         \centering
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
@@ -2022,73 +2023,73 @@ The regression generated using BMA and the relative importance of topographic pa
 
 The estimate of distributed WB is different between glaciers but consistent with the spatial patterns found using MLR (Figures \ref{fig:BMSmodelledSWE}). The estimated WB range is greatest for Glacier 2 and there are a large number of outliers on Glacier 4. The difference between distributed WB estiamted susing different density assignment methods (Figure \ref{fig:BMS_SWEdiffMap}) and the WB difference as a percent (Figure \ref{fig:BMS_SWEdiffMap_precent}) resemble those of MLR. The mean percent difference is highest for Glaciers 2 and 13 (22\%) and lowest for Glacier 4 (15\%). Mean estimated WB decreases with distance from the topographic divide, which is consistent with the observed mean WB (Figure \ref{fig:BMAsweboxplot}). The distribution of regression residuals has a similar distribution between different density assignment methods (Figure \ref{fig:BMSresiduals_all}) but it differs considerably between glaciers (Figure \ref{fig:BMAresidualsboxplot}). The spatial pattern of residuals is similar to that of the MLR regression (Figure \ref{fig:BMS_residualsMap}). For a more detailed analysis of estimated WB found using the regression coefficients, see Section \ref{sec:MLR}. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =1.1 \textwidth]{BMScoeff_DensityOpts.png}\\
 	\caption{Boxplot showing the range of BMA regressor coefficients that are estimated with winter balance values calculated using all density assignment methods. \params \boxplot }
 	\label{fig:BMAcoeff_densityOptions}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =1.1 \textwidth]{BMSsemiR2_DensityOpts.png}\\
 	\caption{Boxplot showing the range of semi-partial correlation explained by topographic parameters from the BMA regression using each density assignment method of estimating winter balance (WB). \params \boxplot }
 	\label{fig:BMAsemiR2_densityOptions}
 \end{figure} 
  
-\begin{figure}[H]
+\begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSfit_opt8.png}}%
 	\caption{Comparison of BMA predicted and observed winter balance (WB) for three study glaciers. The WB values were calculated inverse distance weighted snow pit densities (S4).}
 	\label{fig:BMSfit_opt8}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSfit_allLines.png}}%
 	\caption{Plot of all linear fits between BMA modelled and observed winter balance (WB) using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref{fig:BMSfit_opt8} for a plot of the data. }
 	\label{fig:BMSfit_allLines}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{BMSmap_Modelled_Observed8.png}}%
 	\caption{Modelled winter balance using coefficients determined using BMA and density interpolated with inverse-distance weighting from snow pits (S4). Observed winter balance values are overlain on the maps.\topomap}
 	\label{fig:BMSmodelledSWE}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{BMS_SWEdifferenceMap.png}\\
 	\caption{Map of the difference between maximum and minimum winter balance values estimated with BMA and winter balance data calculated with each density assignment method. \topomap}
 	\label{fig:BMS_SWEdiffMap}
 \end{figure} 
  
- \begin{figure}[H]
+ \begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{BMS_SWEdifferenceMap_percent.png}\\
 	\caption{Map of the difference between maximum and minimum winter balance (WB) values, expressed as a percent of the mean WB, estimated with BMA and WB data calculated with each density assignment method. The colours have been scaled to highlight difference in the main part of the glaciers. \topomap}
 	\label{fig:BMS_SWEdiffMap_precent}
 \end{figure} 
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 	\includegraphics[width =0.6\textwidth]{ModelledSWE_box_BMS.png}\\
 \caption{Summary of estimated winter balance values found using BMA coefficients (S4). \boxMatlab}
 \label{fig:BMAsweboxplot}
 \end{figure} 
 
-\begin{figure}[H]
+\begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSresiduals_all.png}}%
 	\caption{Residuals of winter balance predicted using BMA for all options of estimating density.}
 	\label{fig:BMSresiduals_all}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 	\includegraphics[width =0.6\textwidth]{residuals_box_BMS.png}\\
 \caption{Summary of residuals from estimated winter balance values found using BMA coefficients (S4). \boxMatlab}
 \label{fig:BMAresidualsboxplot}
 \end{figure} 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width =\textwidth]{residualsMap_BMS.png}\\
 	\caption{Map of the residuals from estimated winter balance values found using BMA coefficients (S4) for each measurement location.}
@@ -2097,7 +2098,7 @@ The estimate of distributed WB is different between glaciers but consistent with
 
 
 
-\begin{figure}[H]
+\begin{figure}
         \centering
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
@@ -2169,7 +2170,7 @@ The estimate of distributed WB is different between glaciers but consistent with
 
 Consistent results between MLR and BMA indicate that the choice of regression method does not strongly affect the final regression of WB on topographic parameters. The range of coefficient values resulting from different choices in density interpolation found using MLR and BMA is similar for all glaciers (Figure \ref{fig:allCeoffs_boxplot}). The range of coefficient value for all glaciers are not significantly different between MLR and BMA (p$>$0.05). Visually, these ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density assignment methods these coefficients are small. Further, the relative importance of the coefficients does not change with choice of density assignment method for all glaciers. 
 
-\begin{figure}[H]
+\begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width =1.2 \textwidth]{CoeffBoxplot_BMSMLRcompare.png}}%
 	\caption{Boxplot showing the range of values of coefficients for each topographic parameter from both MLR and BMA analysis for Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right). Note the different y axes for the three glaciers. \params \boxplot}
 	\label{fig:allCeoffs_boxplot}
@@ -2302,7 +2303,7 @@ Comparing estimated and observed values of WB (Figure \ref{fig:R2simplekrig}) sh
 
 The confidence intervals for winter balance estimated using simple kriging are a large proportion of the estimated WB values (Figure \ref{fig:krigingCI_percent}). The confidence interval range is at least half of the estimated WB for all areas of the glacier and in some areas, this proportion is more than twice the WB estimate. The accumulation area, margin and terminus of Glaciers 2 and 13 all have especially high uncertainty. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{KrigingCI_percent.png}\\
 	\caption{Simple-kriging winter-balance confidence interval (95\%) as a percent of distributed WB, found using kriging. The WB value were estimated using density S4. \topomap}
@@ -2338,21 +2339,21 @@ The WB found using simple kriging and regression kriging (Figure \ref{fig:Regres
 
 Regression kriging produces the highest overall set of R$^2$ values (Figure \ref{fig:R2regressionkrig}). The correlation coefficient for Glacier 2 is especially high, with more than 80\% of the variance in observed WB explained by the regression kriging model. Glacier 4 has the lowest correlation coefficient but this value is considerably higher than that of topographic regression or simple kriging alone. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{residualsKriged.png}\\
 	\caption{Distributed BMA residuals estimated by regression kriging.  \topomap Dashed line indicates approximate ELA.}
 	\label{fig:residualsKRIGING}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width = \textwidth]{RegressionKriging.png}\\
 	\caption{Winter balance estimated by adding kriged regression residuals to winter balance estimated using topographic regression with BMA. \swedots Arrows indicate glacier flow direction.}
 	\label{fig:Regression-Kriging}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{krigRKfit.png}}%
 	\caption{Comparison of estimated (regression kriging) and observed winter balance (WB) for three study glaciers. The WB values are calculated using inverse-distance weighted snow pit densities (S4).}
 	\label{fig:R2regressionkrig}
@@ -3072,9 +3073,9 @@ The standard deviation as a function of binned elevation show that the standard 
 
 The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas that correspond to a single DEM cell containing multiple WB measurement locations. To extrapolate WB over the glacier it is valuable to have one value of WB for each DEM gridcell. Therefore, the mean WB was used for a DEM cell with multiple observations. Using the mean value is supported by the small standard deviation of WB within one DEM cell for all glaciers (Figure \ref{fig:DEMcellSTD}). The mean standard deviation is 0.03 \,m\,w.e., which is low compared to the variability of WB over the entire glacier (Section \ref{sec:stdTransects}). Extreme standard deviation values result from highly variable locations such as transects across deep supra glacier streams (Glacier 13) or on debris covered ice or ice-cored moraines (Glacier 4). However, the mean standard deviation is small so future analyses use the mean WB value within one DEM cell. 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[width = 0.6\textwidth]{DEMcellSTD.png}\\
+	\includegraphics[width = \textwidth]{DEMcellSTD.png}\\
 	\caption[]{Boxplot of the standard deviation of measured WB in one DEM gridcell. \boxMatlab}
 	\label{fig:DEMcellSTD}
 \end{figure}
@@ -3082,42 +3083,42 @@ The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas tha
 %%%
 
 \chapter{Winter surface mass balance distribution}
-
+\pagebreak
 \section{Linear regression winter balance distribution}
 
-\begin{figure}[H]
+\begin{figure}[b!]
 	\centering
-	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_zz.png}}\\%
-	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_beta.png}}\\%
-	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_allDensity_betaNzz.png}}%
+	\makebox[\textwidth][c]{\includegraphics[width=1.1\textwidth]{WSMB_allDensity_zz.png}}\\%
+	\makebox[\textwidth][c]{\includegraphics[width=1.1\textwidth]{WSMB_allDensity_beta.png}}\\%
+	\makebox[\textwidth][c]{\includegraphics[width=1.1\textwidth]{WSMB_allDensity_betaNzz.png}}%
 	\caption[]{Distribution of winter balance obtained using linear regression. (Top) Winter balance values obtained from a Monte Carlo sampling of normally distributed WB variation (obtained from zigzag measurements) about the local WB value. (Middle) Winter balance  values obtained from a Monte Carlo sampling of normally distributed regression coefficients. (Bottom) Winter balance  values obtained using both WB variability and regression coefficient variability. Eight different density interpolation methods are used to obtain WB values used in the regression.}
 	\label{fig:WSMB_LR_allDensity}
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distributionzz.png}}\\
 	\caption[]{Winter surface mass balance distribution obtained using linear regression for eight density interpolation options when variation due to WB measurement ( $\sigma_{ZZ}$) is included. }
 	\label{fig:WSMB_LR_Distributionzz}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distributionbeta.png}}\\
 	\caption[]{Winter surface mass balance distribution obtained using linear regression for eight density interpolation options when variation due to regression coefficient estimation ( $\beta$) is included. }
 	\label{fig:WSMB_LR_Distributionbeta}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_DistributionbetaNzz.png}}\\
 	\caption[]{Winter surface mass balance distribution obtained using linear regression for eight density interpolation options when variation due to regression coefficient estimation and WB measurement ($\beta$ and $\sigma_{ZZ}$) is included. }
 	\label{fig:WSMB_LR_DistributionbetaNzz}
 \end{figure}
 
-
+\pagebreak
 \section{Simple kriging winter balance distribution}
 
-\begin{figure}[H]
+\begin{figure}[b!]
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_SK_allDensity_zz.png}}\\%
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{WSMB_SK_allDensity_beta.png}}\\%
@@ -3127,19 +3128,20 @@ The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas tha
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distribution_SK_zz.png}}\\
 	\caption[]{Winter surface mass balance distribution obtained using simple kriging for eight density interpolation options when variation due to WB measurement ( $\sigma_{ZZ}$) is included. }
 	\label{fig:WSMB_SK_Distributionzz}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distribution_SK_beta.png}}\\
 	\caption[]{Winter surface mass balance distribution obtained using simple kriging for eight density interpolation options when variation due to regression coefficient estimation ( $\beta$) is included. }
 	\label{fig:WSMB_SK_Distributionbeta}
 \end{figure}
-\begin{figure}[H]
+
+\begin{figure}
 	\centering
 	\makebox[\textwidth][c]{\includegraphics[width =1.2\textwidth]{WSMB_Distribution_SK_betaNzz.png}}\\
 	\caption[]{Winter surface mass balance distribution obtained using simple kriging for eight density interpolation options when variation due to regression coefficient estimation and WB measurement ($\beta$ and $\sigma_{ZZ}$) is included. }
