@@ -97,7 +97,7 @@ I thank the Kluane First Nation (KFN), Parks Canada and the Yukon Territorial Go
 
 Snow accumulation, as the dominant input of mass to alpine glaciers, plays an important role in governing their mass balance and the hydrology of alpine catchments more broadly. This has implications not only for the availability of water for local ecological and human use \citep{Barnett2005,ONeel2014}, but also for rates of global sea-level rise \citep{Gardner2013}. It is therefore necessary to understand the spatial distribution of snow on glaciers. However, achieving such an understanding is complicated by the fact that snow distribution in alpine regions is not uniform or static, but rather highly variable and influenced by diverse and dynamic processes operating on multiple spatial and temporal scales. Although previous research has attempted to account for these processes through the development of various techniques of measurement and modelling, little is known about how they operate in glacierized alpine environments. This severely limits possibilities of quantifying and predicting snow distribution on glaciers, particularly in remote locations where frequent empirical measurements are difficult \citep{Nolan2015}.
 
-Chapter 1 examines what is currently known and unknown about the topic of snow accumulation on glaciers and its spatial variability. Section \ref{sec:accumvariabilityintro} begins with an overview of accumulation variability within alpine regions in general, as there is a considerably greater breadth of studies devoted to snow in non-glacierized alpine basins. Section 1.2 reviews different ways of modelling the distribution of snow in alpine environments, while Section 1.3 describes methods for measuring accumulation and their relative merits and challenges. Section 1.4 compiles studies that specifically look at accumulation variability on glaciers and summarizes their key findings. Section 1.5 focuses on mass balance and snow distribution research conducted the St. Elias Mountains, a large glacierized region where little is known about snow distribution and its effects on glacier mass balance. I then identify significant gaps that currently exist in the literature. In Section \ref{sec:ResearchScope} I present an overview of the research scope of this study.
+Chapter 1 examines what is currently known and unknown about the topic of snow accumulation on glaciers and its spatial variability. Section \ref{sec:accumvariabilityintro} begins with an overview of accumulation variability within alpine regions in general, as there is a considerably greater breadth of studies devoted to snow in non-glacierized alpine basins. Section 1.2 reviews terrain-based parametrization, which is a type of statistical model commonly used to estimate the distribution of snow in alpine environments. Section 1.3 describes snow depth probing as a method of measuring accumulation. Section 1.4 compiles studies that specifically look at accumulation variability on glaciers and summarizes their key findings. In Section \ref{sec:ResearchScope} I present an overview of the research scope of this thesis and describe the study region.
 
 \section{Accumulation variability}
 \label{sec:accumvariabilityintro}
@@ -140,32 +140,13 @@ Preferential deposition is inhomogeneous precipitation in the absence of local e
 Both snow drift and preferential deposition can occur at multiple spatial scales. Enhanced accumulation has been observed at the point scale in small depressions and near obstacles, at the hillslope scale along ridges and at the watershed scale in areas with sheltered aspects \citep{Harrison1986, Bloeschl1992, Mott2008, Winstral2002, Clark2011}. 
 
 \section{Snow distribution models}
-The distribution and variability of snow distribution can be estimated using either dynamic or statistical models. These models help to determine relevant processes that affect accumulation, generally by relating its spatial distribution to meteorological and topographic descriptors. Inferences made from these models drive the direction of future studies and provide valuable insight into understanding how snow variability arises. Accounting for wind in snow distribution models is especially important because it plays a dominant role in spatial patterns of accumulation \citep{Winstral2013}.
+The distribution and variability of snow distribution can be estimated using either dynamic or statistical models. These models help to determine relevant processes that affect accumulation, generally by relating its spatial distribution to meteorological and topographic descriptors. Inferences made from these models drive the direction of future studies and provide valuable insight into understanding how snow variability arises. Accounting for wind in snow distribution models is especially important because it plays a dominant role in spatial patterns of accumulation \citep{Winstral2013}. 
 
-\subsection{Dynamic models}
-Deposition and redistribution of snow can be represented using physically based, spatially distributed models. The general aim of these models is to simulate surface processes and how they vary spatially and temporally \citep{Mott2008}. These models usually consider atmospheric conditions including freezing level, precipitation rates, relative humidity and wind speed and direction, as well as processes such as orographic lifting, cloud formation, downslope evaporation, advection and fallout, snow metamorphism and wind redistribution of snow (erosion, saltation) due to terrain induced turbulence \citep{Smith2004, Liston2006, Lehning2008, Mott2008}.  Modelling the dynamically induced flows of these components together describes the preferential deposition and redistribution of snow in alpine environments \citep{Lehning2008,Mott2008,Dadic2010}.
+The work presented in this thesis uses a type of statistical model called terrain-based parametrization. A literature review of snow distribution modelling using terrain-based parametrization is provided below. For a literature review of dynamic models and statistical downscaling see Appendix \ref{app:snow_models}. 
 
-Many models have been developed to describe preferential deposition and redistribution. Early models were developed for flat or gently rolling terrain where boundary layer flow is better understood \citep{Dadic2010}. Boundary layer flow in steep terrain is generally non-linear \citep{Mott2008, Dadic2010}, so a number of different approaches have been applied.  For example, \cite{Dadic2010} and \citep{Lehning2008}modelled wind-flow velocities by solving non-hydrostatic, compressible Navier-Stokes equations in 3-D and aimed to conserve momentum, heat, mass and states of water. \cite{Smith2004} employed Fourier transforms in a linear orographic model, which allowed for a more accurate representation of complex terrain. 
-
-Dynamic models are a valuable way to determine accumulation variability. Since they use physically consistent processes, they can be applied to any site. Dynamic models can also be used in different climatic conditions meaning that they can be applied to past and projected accumulation regimes \citep{Clark2011}. Furthermore, a historic data set of variables is not needed to generate meaningful output. Another advantage of dynamic models is that they allow for high temporal resolution (e.g. \cite{Mott2008} have a 1 hour time step), which allows for snowpack evolution to be examined.
-
-Application of dynamic models is however operationally complex and computationally expensive, and also requires a diverse set of observations. A large number of input parameters, such as precipitation, wind speed and direction, air temperature and relative humidity, need to be measured frequently and extensive sampling within a study region is required for accurate modelling\citep{Liston2006}. For example, \cite{Dadic2010} used meteorological data from three automatic weather stations located throughout the study basin, while in the study done by \cite{Mott2008} monthly stake measurements were needed. Such a well-monitored basin can be difficult to achieve in remote or inaccessible areas. A number of other dynamic models, such as those described in \cite{Fowler2007}, use general circulation model values to drive local circulation models, but model output strongly depends on model boundary choice.  Even with sufficient and appropriate input data, the models must assume a number of parameters and simplify parameter relationships (e.g. constant mean wind speed \citep{Mott2008}) to characterize the atmosphere, which may not realistically describe air movement and stability. Additionally, the models do not account for all modes of snow transport. For example, snow deposition due to avalanching can be an important process of snow transport that is not captured in current models \citep{Mott2008}. 
-
-\subsection{Statistical models}
+\subsection{Terrain-based parametrization}
 Statistical models of snow variability establish empirical relationships between snow distribution and external variables \citep{Fowler2007}. These models assume that local distribution is forced by external factors, such a meteorological conditions or topography, which can be described by proxy parameters.
 
-\subsubsection{Statistical downscaling}
-Statistical downscaling is the process of determining an empirical relationship between large-scale atmospheric conditions and regional climates \citep{Fowler2007}. In general, this relationship is expressed as a function $F$ such that regional variables $R$ are found by $R=F(X)$ where $X$ encompasses large-scale climate variables \citep{Fowler2007}. These models are trained and validated using gridded reanalysis data from global climate models ($X$) and point observations ($R$). Performance of these models is measured using correlation coefficients, distance measures (e.g. root mean squared error), or explained variance \citep{Fowler2007}. 
-
-There are three main types of statistical models \citep{Fowler2007}. The first is a regression model, which directly quantifies a relationship between a local variable and a number of large-scale variables. Statistical methods such as multiple linear regressions \citep{Hanssen-Bauer1998}, principal component analysis \citep{Kidson1998}, canonical-correlation analysis \citep{Busuioc2001}, neural networks \citep{Zorita1999} and singular value decomposition \citep{Widmann2003} can be employed.  The second type of model is a weather typing scheme, which relates the occurrence of a particular `weather class' to local variables. Weather classes can be found using empirical orthogonal functions or cluster analysis \citep{Fowler2007}. The third model uses weather generators that simulate local precipitation using a prescribed distribution of precipitation \citep{Fowler2007}. 
-
-Large-scale input variables that are usually chosen (e.g. sea-level pressure, geopotential heights) for statistical downscaling are representative of large-scale circulation. Increasingly, other variables such as humidity are being incorporated into analyses to account for mechanisms that rely on thermodynamics and vapour content \citep{Fowler2007}. When focusing on precipitation, integrated vapour transport (IVT) can be used as a proxy for precipitable water in the atmosphere and can be used to identify corridors of large water vapour transport that correlate with intense precipitation events \citep{Neiman2008}. 
-
-Statistical models are a simple way to examine variability. They are computationally efficient and comparatively easy to apply because they are based on standard and accepted statistical procedures \citep{Fowler2007}. Furthermore, predicting variables does not require prior knowledge of all the processes that affect the variable. Functions can therefore be calculated for situations where all processes are currently not accounted for or where many processes are equally important. 
-
-Although the application of statistical downscaling is simple, it has a number of disadvantages. The method is difficult to apply in areas that have minimal historical data, as model performance is better when a long and reliable data set is used for calibration \citep{Fowler2007}. Statistical downscaling also assumes that the relationship between large-scale and local variables is stationary in time, limiting the ability of models to project into the future \citep{Fowler2007}. Furthermore, an empirical relationship assumes that there is no climate system feedback and the data generated through the empirical function are subject to the same biases as those of the original data set \citep{Fowler2007}. \cite{Wilby2000} also notes that the choice of large-scale variable domain (location and spatial extent) exerts a strong effect on the accuracy of the empirical function.
-
-\subsubsection{Terrain-based parametrization}
 Terrain-based parametrization determines empirical relationships between topographic indices and observed data. To determine topographic indices, the terrain in the study area is divided into gridcells where terrain parameters (e.g. slope, curvature, aspect, ``northness'', wind exposure, topographic similarity) are calculated \citep{Anderson2014,McGrath2015}. The variable of interest is then measured in the study area and a relationship between grid-cell terrain parameters and observed data can be established \citep[e.g.][]{Bloschl1991, Liston1998, Anderton2004,McGrath2015}. 
 
 Terrain-based parametrization requires a good terrain model and a meaningful network of observed data. For example, \cite{Molotch2005} found that that there were significant differences in modelled snow distribution when different terrain models were used. This is likely because the terrain-model grid size affects the value of the calculated terrain parameter for the cell. Terrain-based parameterization also requires sufficiently high resolution and spatial extent of observed data. When measuring accumulation, the variability within the study area needs to be captured and all areas should be well represented. 
@@ -181,11 +162,14 @@ While terrain-based parametrization is easy to employ, its usefulness in underst
 \section{Measuring accumulation}
 Estimating accumulation requires snow density and depth measurements. Measuring these parameters within a glacierized basin has many challenges. Basin location and topography affect accessibility, while the cost and time required to conduct measurements can be prohibitive. In most cases, the resolution of measurements over a large area is insufficient to approximate the true variability \citep{Bloeschl1999, Deems2006a}.
 
+\subsection{Snow density}
+
 Snow density can be measured directly or with models of snow density change. To measure bulk density, a column of snow with a known volume is excavated (in a snow pit or with a firn corer) and weighed \citep{Sold2013, Sold2014}. Usually, a number of snow-column densities are measured and the average density is taken as representative of glacier-wide density \citep[e.g.][]{Machguth2006, Grunewald2010, McGrath2015}. This can result in error when calculating snow water equivalence (SWE) because density can vary spatially and temporally (due to total snow depth, elevation, solar radiation and wind effects) in a way that is not captured by a limited number of snow density measurements \citep{Grunewald2010, Wetlaufer2016}. However, snow density has been seen to vary over greater spatial scales than snow depth so fewer density measurements than depth measurements are usually made \citep{Elder1998, Clark2011}. Snow and firn density can also be calculated using models that account for relevant processes such as compaction from overlaying snow and refreezing of meltwater \citep{Herron1980, Sold2014}. Densification processes are difficult to capture in models though, so they should be applied with caution \citep{Mellor1974}.
 
-Three main methods are currently used to measure snow depth. Probing involves taking \textit{in situ} point measurements of snow depth, ground-penetrating radar (GPR) surveying involves using radar to detect the snow depth along continuous lines and digital elevation model (DEM) subtraction involves taking the difference between the glacier surface at the end of the ablation and end of the accumulation seasons to find snow depth. Methods are selectively applied based on desired spatial resolution, cost effectiveness and equipment availability. Each is prone to different sources of error and there is ongoing research to reconcile these approaches \citep{Sold2014}.  
+\subsection{Snow depth probing}
 
-\subsection{Snow probing}
+Three main methods are currently used to measure snow depth. Probing involves taking \textit{in situ} point measurements of snow depth, ground-penetrating radar (GPR) surveying involves using radar to detect the snow depth along continuous lines and digital elevation model (DEM) subtraction involves taking the difference between the glacier surface at the end of the ablation and end of the accumulation seasons to find snow depth. Methods are selectively applied based on desired spatial resolution, cost effectiveness and equipment availability. Each is prone to different sources of error and there is ongoing research to reconcile these approaches \citep{Sold2014}. The data used in this thesis is collected using snow depth probes, for which the methodology is described below. For a literature review of GPR and DEM subtraction methods, as well as a comparison of all three methods, see Appendix \ref{app:snow_measure_methods}. A brief description of temporally resolved methods of measuring accumulation is also presented in Appendix \ref{app:snow_measure_methods}.
+
 \label{snowprobing}
 \begin{figure}
  \centering
@@ -194,7 +178,6 @@ Three main methods are currently used to measure snow depth. Probing involves ta
         \label{snowpit}
 \end{figure}
 
-\subsubsection{Measurement}
 The most direct way of measuring snow depth is by probing. To determine the snowpack thickness, the height of the snow above the end of the previous year's ablation surface is measured. Usually, a number of snow height measurements are obtained close to each other and the mean value is taken to be representative of that location. For example, \cite{Machguth2006} took the mean of nine snow probe measurements within a 7 m radius as representative of a measurement location.  
 
 In the ablation zone, snow depth is easy to measure because the interface between the end of summer melt surface and the beginning of winter accumulation is well defined (i.e. glacier ice) \citep{McGrath2015}. In the accumulation zone however, the snow surface at the end of the melt season may not be easily distinguishable from the winter accumulation \citep{Grunewald2010}. It is common for the accumulation zone to have a heterogeneous surface at the end of the melt season --- some areas do not experience any melt,  while other areas experience some melt and the melt water percolates through the snow and firn. Melt water generated from warm weather or rain events, especially in the early and late parts of the accumulation season, can refreeze in the snowpack to form ice lenses \citep{Sold2014}. As a result, the interface can be difficult to observe and contain a combination of dense or compacted snow, ice lenses and/or firn.  Probing in the accumulation zone can therefore result in erroneous depth measurements --- penetration into the dense snow or firn will make it seem like a deeper snowpack exists and probing to an ice lens within the snowpack can make it seem like shallower snow is present \citep{Sold2013}. Snow pits and firn cores are therefore used to examine snow and firn layers and to determine where the current season's snow begins.
@@ -205,7 +188,7 @@ Snow probing is the simplest and oldest method used to determine accumulation. A
 
 There are however many drawbacks to this method. \textit{In situ} probing and digging snow pits is incredibly time-consuming \citep{Deems2006}. This limits the number of measurements that can be made, which means that accumulation distribution is under-represented and spatial variability in accumulation is difficult to capture \citep{Sold2014}. Measurement is also limited to areas that are both accessible and safe for researchers. In complex terrain many areas cannot be surveyed, resulting in data gaps. \cite{Sold2013} noted that this systematic bias can result in incorrect values of glacier-wide accumulation --- particularly because inaccessible areas such as cliffs and ridges have relatively shallow accumulations (due to wind erosion), while heavily crevassed areas can accumulate deep snow packs. 
 
-\subsubsection{Sampling Design}
+\subsection{Sampling Design}
 
 Optimal sampling schemes for snow probing are central for accurately estimating snow distribution and mass balance from \textit{in situ} measurements. Measuring snow depth and travelling between measurement locations is both time consuming and can disturb the snow so care must be taken to choose a sampling scheme that avoids bias, allow for the greatest variability to be measured and minimizes distance travelled \citep{Shea2010}. A design that maximizes accuracy and minimizes effort is therefore desired \citep{Elder1991} and both theoretical \citep{Trujillo2015} and applied \citep{Kronholm2004,Shea2010} investigations of various sampling designs have been pursued. There are a number of different designs that have been employed to obtain point measurements, including pure random, linear random, nested, gridded random and gridded. 
 
@@ -251,61 +234,7 @@ Nested sampling is a scheme that maintains a certain sampling pattern and applie
 
 Gridded sampling designs use regular measurement intervals in a grid pattern. Many variations of this scheme exist \citep{Molotch2005a, Kronholm2007, Lopez2011} with the most popular one being the Swiss cross \citep{Kronholm2004}. This nested arrangement allows for a larger area to be covered than a fully quadratic grid and measures at various spatial scales, leading to more reliable geospatial statistics. This method allows for easy measurement and reveals details at various scales. However, measurements are biased by regular spaced intervals and linear orientation, which could result in an under representation of the snow distribution further from the centre. A gridded sampling scheme can be seen in Figure \ref{schemes}(e). 
 
-\subsection{GPR}
-\label{sec:GPR}
-\begin{figure}
- \centering
-      \includegraphics[width=0.5\textwidth]{gpr_air.png}
-  \caption{Schematic diagram of a helicopter-borne radar snow survey. The travel time for the signal to interact with the snow surface is shown as a solid line and the signal travel time of the interaction with the ice is shown as a dashed line. Together, these values can be used to determine snow depth. The inset (a) is an example waveform that would be recorded from these two events. Figure taken from \cite{Gusmeroli2014}.}
-        \label{gprair}
-\end{figure}
 
-Ground penetrating radar (GPR) can be used to find snow depth along continuous lines. This method is used to calculate the distance from the radar source to a boundary with a strong contrast in dielectric permittivity, which corresponds to a change in material properties \citep{Sold2013}. When the speed of the radar wave through the material is known, the travel time can be measured and from this the distance calculated. On a glacier, the radar wave is able to penetrate snow and ice at MHz frequencies and the strongest reflections arise when water is present \citep{Sold2013}. To measure snow depth, GPR units are mounted on aircrafts or snowmobiles that then travel over snow covered areas (see Figure \ref{gprair}) \citep{Machguth2006, McGrath2015}. The resulting processed radargram (e.g. Figure \ref{gpr}) gives a continuous snow depth profile. Processing of the radargrams involves using tracking algorithms that are able to trace continuous layers. Interpolation between transects is then done to find the glacier-wide accumulation. \cite{McGrath2015} describe this process in five steps: (i) acquisition of GPR and probing data (ground truthing), (ii) calculation of snow density and radar velocity, (iii) calculation of snow thickness and resulting snow water equivalent (SWE), (iv) application of a correction to measured accumulation based on ground truth data and (v) use of a multiple regression model to extrapolate SWE across the glacier. The extrapolation of SWE can also be done using an inverse approach with a coupled surface energy-balance snow model \citep{Pelt2014}.
-
-GPR is an effective tool for measuring accumulation. It provides continuous snow depth transects, which means that spatial variability is well represented along the radar lines. Surveys also need to be conducted only once to gain depth observations, which makes data collection fast and and reduces logistical efforts \citep{Machguth2006}. GPR snow depth estimates are not affected by glacier dynamics and the ability to fly over steep or inaccessible regions means that all areas of a glacier can be measured. 
-
-A large limitation of GPR is the difficultly of processing radargrams. Areas where the snow--ice boundary is not well defined (i.e. the accumulation area) lack clearly contrasted material properties, which can lead to misinterpretation of their internal layers \citep{McGrath2015}. In the ablation area, the presence of crevasses can also result in radargram misinterpretation \citep{Machguth2006}. Variation and uncertainty in radar wave speed due to differing snow density and liquid water content can also affect depth calculations \citep{Sold2013}. Often, wave speed is only measured in a few reference locations so changes in snow pack properties cannot be accounted for. Lastly, there is no universal procedure for processing GPR data. Selection of parameters and processing algorithms is dependent on available equipment, field conditions, survey design and intention \citep{Sold2013}, which hampers the reproducibility of surveys.
-
-\begin{figure}
- \centering
-      \includegraphics[width=\textwidth]{gpr.png}
-  \caption{Radargram from the accumulation area of Findelengletscher, Valais, Switzerland. (a) The reflection at the air-snow interface. (b) The reflection at the snow-ice interface. Figure taken from \cite{Sold2013}.}
-        \label{gpr}
-\end{figure}
-
-\subsection{DEM subtraction}
-\begin{wrapfigure}{R}{0.5\textwidth}
- \centering
-      \includegraphics[width=0.5\textwidth]{lidar.png}
-  \caption{Schematic of airborne LiDAR system geometry. Scan angle ($\theta$), height ($h$) and swath width ($SW$) are shown. Figure from \cite{Deems2006}.}
-        \label{lidar}
-\end{wrapfigure}
-
-Digital elevation model (DEM) subtraction involves taking two detailed surface topography scans --- one at the end of the melt season and one at the end of the accumulation season --- and subtracting them from each other to find the snowpack height. The largest advantage of this remote sensing method is that it provides a highly resolved spatial measurement of snow depth over an entire basin \citep{Deems2006, Sold2013}. Data collection is fast, although two surveys must be conducted. This technique is sensitive to other processes that change the glacier surface elevation, including vertical displacement due to ice flow (positive in the ablation area and negative in the accumulation area), firn compaction and surface lowering due to melt after the acquisition of the end of melt season DEM \citep{Sold2013}. For example, \citep{Sold2013} found that a first-order approach (where the observed elevation change was interpreted as snow accumulation) was inconsistent with snow depth probing --- DEM subtraction showed decreasing accumulation with an increase in elevation. Corrections can be made to account for these discrepancies but they rely on \textit{in situ} measurement of snow depth, knowledge of long-term mass balance, or information about the vertical displacement of ice from GPS towers \citep{Sold2013}. 
-
-Lidar and photogrammetry are the two main methods of producing DEMs. Lidar produces a surface elevation model by calculating the distance to a target (by measuring the time between an emitted and return laser signal) \citep{Deems2006, Sold2013}. Terrestrial lidar systems involve stationary units placed in vantage points from which they are able to scan the basin surface \citep{Grunewald2010}. Large basins require multiple overlapping scans to acquire a complete surface profile. Airborne lidar systems (see Figure \ref{lidar}) can also only scan a certain size footprint so the aircraft must fly over all parts of the basin to acquire a full surface profile. These systems also require an accurate global positioning system (GPS) --- which is often corrected by referencing to a stationary GPS --- to determine the 3D locations of the surface \citep{Deems2006}. Airborne systems are widely applied and favourable in large basins or ones where no vantage point exists or is inaccessible. However, these systems are expensive so terrestrial scanners, which are comparatively more cost effective, are becoming popular \citep{Grunewald2010}. 
-
-Complex topography and multiple laser reflections can cause problems when producing a DEM from lidar data \citep{Deems2006}. Significant vertical changes result in the spreading of the laser footprint and an incorrect interpretation of distance. \citep{Deems2006} shows that an error of 50 cm can result from lidar scans of 45$^\circ$ terrain from 1000 m flight height. Careful planning of flight paths can reduce this error. Scattering of laser light and penetration into the snow pack can also introduce error into height calculations, although its magnitude is small ($\sim$cm) \citep{Deems2006}. When subtracting the two measured DEMs, misclassification of corresponding point locations can occur, resulting in error in the final accumulation value \citep{Deems2006}.  
-
-Photogrammetry uses photographs to produce a series of DEMs that can be subtracted to find snow depth. Early attempts in the 1960s at applying this technique in snow covered areas suffered from poor vertical resolution due to overexposed photographs and the necessity of manual differencing \citep{Nolan2015}. Modern photography equipment, GPS and software technology have allowed for an increase in accuracy and lowering of costs associated with photogrammetry \citep{Nolan2015}. Current photogrammetry software is able to determine a snow surface profile relative to stable, snow-free points within the mapped area \citep{Farinotti2010}. The photos collected for DEM creation can also be used to identify suspect changes in the snow pack \citep{Nolan2015}.
-Errors in photogrammetric measurements arise from sensor noise and poor lighting. Camera sensor noise is present in all digital photographs and its location changes from picture to picture. These erroneous pixels can be misinterpreted by the software as actual differences in height and thus lead to significant topographic noise, especially in steep mountainous terrain \citep{Nolan2015}. Additionally, having sufficient contrast in the photographed snow surface is critical for determining surface profile. Flat light conditions can reduce the resolution of the DEM or result in an absence of data in those parts of the photograph \citep{Nolan2015}. These effects can be avoided by waiting for better lighting. 
-
-\subsection{Comparison of methods}
-\label{sec:comparemethods}
-The three methods of measuring accumulation differ in the extent of spatial information, collection techniques, costs and processing needs. Spatial footprint is lowest for probing, which means that data must be interpolated. Although the actual measurement is simple and has relatively low uncertainty, the interpolation of points can lead to misrepresentation of spatial variability and significant errors that are difficult to quantify. GPR provides continuous snow depth profiles, but interpolation is still needed between lines. Further, significant errors can arise from misinterpretation of layers in radargrams. DEM differencing has the advantage of allowing for the measurement of surface topography across the whole basin, but error can result when glacier dynamics affect surface height changes. 
-
-Large differences in data collection time and cost also exist. Probing has low equipment costs but requires a large amount of human hours for ground-based measurements. GPR and DEM subtraction both require the use of aircrafts and expensive electronic equipment. However, these methods require lower logistical effort and data collection occurs quickly.  
-
-The three methods also have different data processing requirements. Simple statistical relations can be used for interpolating accumulation found by probing. However, GPR and DEM subtraction both require specialized software and knowledge of image processing methods, which increases the likelihood that misinterpretations of observations will occur. GPR has an advantage over DEM subtraction because it is not subject to elevation changes due to glacier dynamics and firn compaction. However, DEM subtraction has the advantage of more easily detecting the previous year's surface in the accumulation area and provides complete coverage of the study area \citep{Sold2013}. 
-
-In general, \cite{Machguth2006} and \cite{Sold2013} found good correlations between probing measurements, GPR and DEM subtraction. However, \citep{Sold2013} found that the methods did not always corroborate each other, particularly in crevassed areas and marginal regions. In crevassed areas, accumulation has large variation on small scales. The footprint of the GPR was usually too large to detect changes in snow depth and the movement of crevasses with time affected the lidar-derived snow depth. Marginal regions were misrepresented in the probing-derived profile because measurement was often not conducted in these areas. This area also included the uppermost part of the glacier where wind erosion had a significant effect on accumulation. 
-
-Choice of measurement technique for a snow survey is therefore dependent on project specific needs. Resolution, cost and equipment availability need to be considered when selecting the most appropriate method. To reduce errors and misrepresentation of measurements, multiple methods can also be applied \citep{Machguth2006}. 
-
-\subsection{Temporally resolved methods}
-Temporally resolved methods take continuous measurements to provide a time series of snow accumulation. Usually, these methods involve relatively few measurement locations so they do not represent spatial variability well. However, they are especially useful for identifying large snowfall events (rapid increases in accumulation) and wind erosion (gradual decreases in accumulation). 
-
-There are a number of methods of measuring accumulation with time. Snow depth sensors, such as the SR50, measure the time between emission and return of an ultrasonic pulse \citep{Ryan2008}. As snow accumulates, the distance between the sensor and the snow surface decreases. Snow pillows, which are large (3 m diameter) bladders filled with antifreeze solution, directly measure changes in snow water equivalent with time \citep{Archer1995}. As snow accumulates on the pillow, the weight of the snow forces an equivalent amount of the solution from the pillow to a standpipe. The height of the solution in the pipe is then recorded. Another method for measuring snow depth involves using multipath modulation of GPS signals \citep{Larson2009,McCreight2014}. Multipath modulation involves isolating GPS signals that are reflected from horizonal, planar reflectors, such as a snow surface. The distance between the geodetic GPS receivers and the reflection point will change during the accumulation season, thus recording changes in snow depth. This method allows for the measurement of average snow depth in a $\sim$1000 m$^2$ area around the antenna \citep{McCreight2014}.
 
 \section{Snow distribution on glaciers}
 While studies of snow distribution in alpine regions are plentiful \citep[and sources within]{Clark2011} there are comparatively few studies on the distribution of snow on glaciers. Although glaciers are often found in alpine environments, they present a different setting for accumulation. The freezing temperatures of glacier ice allow for snow to stick earlier than on the surrounding rocks, which can be above freezing especially in the early part of the accumulation season. Additionally, the surface of a glacier is often less steep than the surrounding peaks, which allows for snow to deposit more easily. The margin of the glacier can also accumulate snow from avalanches released from the surrounding peaks \citep{Bloschl1991, Mott2008}. Further, most glaciers do not support vegetation, which has significant effects on snow accumulation in many alpine basins \citep{Pomeroy1999}. \cite{Alford1985} found that in open alpine areas with snow fields and small cirque glaciers there was a wide range of SWE values over a relatively small range of elevation, while in the montane areas there was a strong relationship between elevation and SWE where SWE values increased rapidly with elevation. Since few studies have been done on this topic, it is difficult to say whether snow distribution on glaciers is fundamentally different than that of an alpine basin. This lack of snow variability quantification points to a significant gap in the literature.
@@ -324,29 +253,9 @@ The majority of studies that have examined snow distribution on glaciers have be
 
 Although there are still relatively few studies of snow distribution on glaciers, the work described above provides a good starting point for such investigations. Comparisons of variability between neighbouring glaciers and within a basin are both important areas of research.
 
-\section{Glaciers in the St. Elias Mountains}
-\begin{figure}
- \centering
-      \includegraphics[width=\textwidth]{stelias.png}
-  \caption{Map of the St. Elias Mountains and surrounding area. Figure taken from \cite{Danby2003}.}
-        \label{map}
-\end{figure}
+\section{Research scope}
+\label{sec:ResearchScope}
 
-Snow data are generally sparse in mountain regions, especially those that are far from population centres \citep{Marcus1970}. The St. Elias Mountains (Figure \ref{map}) are one such area. These mountains contain the largest non-polar ice field and the longest valley glaciers outside of Greenland and Antarctica \citep{Marcus1970, Danby2003}. Steep climatic gradients across the mountains create sharp changes in glacier cover and mass balance \citep{Clarke2002}. This region currently has the most negative mass budget and is the largest contributor to sea-level rise in the world \citep{Kaser2006, Gardner2013}. Understanding how local glacier mass balance is affected by distribution of snow is therefore critical for accurate predictions of glacier response to a warming climate. 
-
-The weather in the St. Elias varies considerably over the range. The west side of the mountains is characterized by a cool, Marine West Coast climate due to the influence of the Pacific Ocean, while the eastern side (just 250 from the coast) is considered subarctic \citep{Marcus1970}. \cite{Taylor1969} studied the relationship between synoptic weather conditions and basin weather conditions across the St. Elias Mountains. It was observed that the mountains are oriented perpendicular to frequent and intense storms that originate in the ocean, which results in considerable interaction between weather and topography. When weather moves from the Gulf of Alaska, it is orographically lifted, which creates significant precipitation. If the front is perpendicular to the mountains, it can be deflected north or south, depending on the upper atmospheric flow. Fronts that are more or less aligned parallel to the mountains or very strong perpendicular fronts travel without deflection. The fronts can also stall on the west side of the mountains. Occasionally, the fronts spill over the mountain divide (located to the west of the Kaskawulsh Glacier) and descend along the eastern side, which often results in decreased precipitation. The rain shadow is likely a major cause of differences in accumulation and equilibrium line altitude (ELA) between the two sides of the mountains --- the marine side has an ELA of $\sim$1100 m and the continental side has an ELA of $\sim$2100 m, while at the same elevation there is three times more accumulation on the marine side \citep{Marcus1970}.
-
-Although the characterization of synoptic conditions by \cite{Taylor1969} is useful, it was conducted during the summer when weather conditions are considerably different than during winter. \cite{Taylor1969} does note though that the weather patterns observed would likely be strengthened during winter because many of the spatial gradients are enhanced. The synoptic air masses present during the winter produce a strong temperature and moisture gradient, with warm, moisture-laden air coming from the Pacific Ocean and cold, dry air coming from the Mackenzie Basin. These gradients would likely result in even more precipitation and stronger winds. The presence of a high pressure Arctic system could decrease the ability of low-pressure systems to pass over the divide, leading to a further enhancement of precipitation on the western side of the mountains. 
-
-The study done by \cite{Taylor1969} also identified weather patterns at multiple scales. Synoptic conditions, including front movement, affected regional-scale differences in weather and precipitation patterns. Watershed-scale topography was responsible for differences in weather between nearby basins and affected wind speed and direction most significantly. Point-scale topography had strong effects on snow accumulation. Orographic effects were found to be significant on all scales. 
-
-Research on snow distribution and glacier mass balance in the St. Elias is limited. The first significant investigations took place under Project Snow Cornice \citep{Wood1948}. Researchers looked at snow accumulation and ice formation as well as ice-mass thermal regime, density and depth. Studies were conducted primarily on large glaciers such as the Kaskawulsh and Seward Glaciers and thus provided insights into large-scale accumulation patterns. This initiative was then followed by the Icefield Ranges Research Project (IRRP), which was established in 1961 \citep{Danby2003}. A number of subsequent long-term studies have been established in the St. Elias since IRRP \citep[e.g.][]{Clarke1984, Paoli2009}. For example, \cite{Wheler2014} determined the end-of-winter accumulation for the mass balance of a small alpine glacier in the Donjek Range. The study measured snow depth at a number of fixed stakes and used a multiple linear regression model --- that accounted for slope, curvature and elevation --- to extrapolate these points and estimate basin-wide winter balance. \cite{Arendt2008} also briefly studied the mass balance of a number of glaciers in the St. Elias.
-
-Two ice cores have been retrieved from the St. Elias Mountains. The first one was taken from the summit of Mt. Logan (5340 m) in 1980 and was 103 m long. The accumulation history in this core has been used to study the local \citep{Holdsworth1991} and regional \citep{Moore2002} climate history. A second core, called the Eclipse core, was taken from a site 45 km northeast of Mt. Logan, 2 km lower in altitude, with an accumulation almost five times as large \citep{Wake2002}. This core is 160 m and has also been used for studying local and regional climate history \citep{Wake2002}. 
-
-A study done by \cite{Pomeroy1999} looked at snow mass balance in a non-glacierized alpine basin within the St. Elias. It was found that wind had a significant impact on the distribution of snow --- up to 79$\%$ of the snow was redistributed from alpine areas to (primarily) hillsides, where accumulation was tripled. In the study basin, measured accumulation ranged from 54$\%$ to 419$\%$ of the actual snowfall. However, in a subsequent study year, which had two large wet snow events, the redistribution of snow was minimal and accumulation variability was much lower. The type of snow and how susceptible it is to wind effects therefore also plays a critical role in distribution. Additionally, areas within the basin can have different accumulation patterns throughout the winter. One area within the basin studied by \cite{Pomeroy1999} had almost no redistribution (despite heavy winds) from the beginning of winter through to March. After this, all of the snow was lost even though additional accumulation events occurred in the basin. This could indicate a dependence of redistribution on weather conditions such as temperature, or that a critical depth was reached that allowed for redistribution to occur. Sublimation was also observed to occur throughout the study period and since sublimation is several orders of magnitude faster when blowing snow is present ($\sim$20\% of winter days in this study), it could have a significant impact.
-
-There is clearly a strong need for a more comprehensive understanding of snow accumulation in the St. Elias Mountains. Although a few studies have examined accumulation, no studies have examined the distribution of snow and how it varies spatially. This is especially true of small alpine glaciers in the St. Elias Mountains, since most of the accumulation differences have been observed on large glaciers. It is likely that orographic lifting as well as wind redistribution and preferential deposition play major roles in determining accumulation on small alpine glaciers, so future studies should focus on the impact of these factors. 
 
 \begin{landscape}
 \begin{table}[b]
@@ -371,8 +280,19 @@ There is clearly a strong need for a more comprehensive understanding of snow ac
        \label{fig:flowchart_scales}
 \end{figure}
 
-\section{Research scope}
-\label{sec:ResearchScope}
+\subsection{Study site}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.9\textwidth]{Sampling.pdf}\\
+	\caption{Study area location and sampling design for Glaciers 4, 2 and 13. (a) Study region in the Donjek Range of the St. Elias Mountains of Yukon, Canada. (b) Study glaciers located along a southwest-northeast transect through the Donjek Range. The local topographic divide is shown as a dashed line. Imagery from Landsat8 (5 September 2013, data available from the U.S. Geological Survey). (c) Details of the snow-survey sampling design, with centreline and transverse transects (blue dots), hourglass and circle designs (green dots) and locations of snow density measurements (orange squares). Arrows indicate ice-flow directions. Approximate location of ELA on each glacier is shown as a black dashed line. (d) Close up of linear and curvilinear transects. (e) Configuration of navigator and observers. (f) Point-scale snow-depth sampling. (g) Linear-random snow-depth measurements in `zigzag' design (grey dots) with one density measurement (orange square) per zigzag.}
+	\label{fig:Sampling}
+\end{figure}
+
+The St. Elias Mountains (Fig. \ref{fig:Sampling}a) rise sharply from the Pacific Ocean, creating a significant climatic gradient between coastal maritime conditions, generated by Aleutian--Gulf of Alaska low-pressure systems, and interior continental conditions, driven by the Yukon--Mackenzie high-pressure system \citep{Taylor1969}. The boundary between the two climatic zones is generally aligned with the divide between the Hubbard and Kaskawulsh Glaciers, approximately 130\,km from the coast. Research on snow distribution and glacier mass balance in this area is limited. A series of research programs, including Project ``Snow Cornice''  and the Icefield Ranges Research Project, were operational in the 1950s and 60s \citep{Wood1948, Danby2003} and in the last 30 years, there have been a few long-term studies on selected alpine glaciers \citep[e.g.][]{Clarke2014} as well as several regional studies of glacier mass balance and dynamics \citep[e.g.][]{Arendt2008, Burgess2013,Waechter2015}.
+
+We carried out winter balance surveys on three unnamed glaciers in the Donjek Range of the St. Elias Mountains. The Donjek Range is located approximately 40 km to the east of the regional mountain divide and has an area of about $30\times30$\,km$^2$. Glacier 4, Glacier 2 and Glacier 13 (labelling adopted from \cite{Crompton2016}) are located along a southwest-northeast transect through the range (Fig. \ref{fig:Sampling}b, Table \ref{tab:glacierstats}). These small alpine glaciers are generally oriented southeast-northwest, with Glacier 4 having a predominantly southeast aspect and Glaciers 2 and 13 have generally northwest aspects. The glaciers are situated in valleys with steep walls and have simple geometries. Based on a detailed study of Glacier 2  \citep{Wilson2013} and related theoretical modelling \citep{Wilson2013a} we suspect all of the study glaciers to be polythermal. 
+
 
 \subsection{Overview of research}
 Our work addresses the need for a multi-scale investigation of snow accumulation on alpine glaciers in the St. Elias Mountains. I focus on estimating winter surface mass balance (`winter balance'), which is the net accumulation and ablation of snow over the winter season \citep{Cogley2011}, at multiple scales on three alpine glaciers in the Donjek Range (Table \ref{tab:glacierstats}). The goals of this study are to (1) critically examine methods of converting direct snow depth and density measurements to distributed estimates of winter balance and (2) identify sources of uncertainty, evaluate their magnitude and assess their combined contribution to uncertainty in glacier-wide winter balance. 
@@ -403,9 +323,9 @@ Accumulation in the St. Elias Mountains is poorly understood. There is a need to
 
 \chapter{Field methods and data processing}
 
-The thesis work is centred around data collected during a snow survey, which occurred during a two week period in May 2016 on three glaciers within the Donjek Range, St. Elias Mountains, Yukon, Canada. The intent of the survey design was to capture the spatial variability of winter balance (WB) at various scales. Measurement locations are concentrated in the ablation area of the glacier, where a clearly defined boundary between snow and ice allows for accurate identification of snow that has accumulated during the 2015--2016 winter season. Snow depth was measured using avalanche probes and snow density was measuring using a Federal Sampler. Attempts were also made to use a firn corer in the accumulation area of the study glaciers. Snow depth and density data was manually recorded in the field and waypoints, from which measurement locations were later estimated, were recorded using a single-band GPS. 
+The thesis work is centred around data collected during a snow survey, which occurred during a two week period in May 2016 on three glaciers within the Donjek Range, St. Elias Mountains, Yukon, Canada. The intent of the survey design was to capture the spatial variability of winter balance (WB) at various scales. Measurement locations are concentrated in the ablation area of the glacier, where a clearly defined boundary between snow and ice allows for accurate identification of snow that has accumulated during the 2015--2016 winter season. Snow depth was measured using avalanche probes and snow density was measured using a wedge sampler in snow pits and using a Federal Sampler. Attempts were also made to use a firn corer in the accumulation area of the study glaciers but the core could not be extracted. Snow depth and density data was manually recorded in the field and waypoints, from which measurement locations were later estimated, were recorded using a single-band GPS. 
 
-The following sections describe the design of the snow survey, how the survey was implemented in the field and how the data was digitized. Initial processing methods to obtain data for future analysis are also detailed. Section 2.1 describes the survey naming scheme and shows planned snow measurement locations. Section 2.2 provides detailed steps of how I executed the snow survey with four people and how I used various snow measurement tools. Section 2.3 focuses on how the data is processed to obtain the full data set that is used for analysis in subsequent sections. Section 2.4 documents how I obtain topographic parameters from a given DEM of my study region. Processing steps such as DEM stitching, smoothing and raster calculations are described in detail. Appendices A, B, C and D contain more details on GPS waypoint creation, maps used in the field, as well as in depth description of steps used in the data processing and topographic parameter calculation scripts. 
+The following sections describe the design of the snow survey, how the survey was implemented in the field and how the data was digitized. Initial processing methods to obtain data for future analysis are also detailed. Section 2.1 describes the survey naming scheme and shows planned snow measurement locations. Section 2.2 provides detailed steps of how  the snow survey was executed with four people and how various snow measurement tools were used. Section 2.3 described how the data is processed to obtain the point- and gridcell-scale WB data that is used for analysis in subsequent sections. 
 
 %%%%
 \section{Experimental design}
@@ -806,428 +726,16 @@ F4 &  & $\blacksquare$ &
 \end{tabular}
 \end{table}
 
-%%%%
-\section{Topographic parameters}
-%%%%
-
-\subsection{Obtaining digital elevation models (DEMs) for study glaciers}
-
-Topographic parameters are derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery collected by the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m. The DEM was created using a set of correlation parameters fit for steeper slopes (E. Berthier personal communication, 2016). 
-
-Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made from images collected on September 3, 2007 and the second DEM (GES 07-044) was made from images collected on September 13, 2007. The snow extent on September 13, 2007, as imaged by a Landsat 7 satellite, can be seen in Figure \ref{fig:Landsat_2007}. Since the images were collected in September, the surface would likely be at a seasonal minimum with minimum snow cover. Therefore, the surface described by the DEM in the ablation area represents the ice topography. A limitation in using this DEM is that the DEM is from 2007 and there have almost certainly been changes in the end-of-summer glacier surface. However, the SPOT-5 DEM is the best resolution and most current DEM available for the study area \footnote{At the time of project initiation, SPIRIT SPOT-5 was the highest resolution DEM I were able to acquire. At the time of completing this work, ArcticDEM and TanDEM-X are the highest resolution, public DEMs available for the Donjek Range.}. 
-
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.48\textwidth}
-        \fbox{\includegraphics[width=\textwidth]{8029_original2.jpeg}}
-        \caption{}
-        \label{fig:8029_original}
-    \end{subfigure}
-    ~
-    \begin{subfigure}[b]{0.48\textwidth}
-        \fbox{\includegraphics[width=\textwidth]{7044_original.jpeg}}
-        \caption{}
-        \label{fig:7044_original}
-    \end{subfigure}
-
-    \caption{SPOT-5 DEMs available for the Donjek Range. Study glaciers are shown as red outlines. The DEM made from imagery collected on September 3, 2007 (GES 08-029) is shown in (a) and the DEM made from imagery collected on September 13, 2007 (GES 07-044) is shown in (b). Imagery that contains cloud cover result in a distorted DEM, as seen in the boxed area of (a).}
-    \label{fig:originalDEMs}
-\end{figure}
-
-\begin{figure}
-  \makebox[\textwidth][c]{\includegraphics[width=\textwidth]{Landsat_2007.jpeg}}%
-	\caption{Landsat 7 ETM images of study glaciers on September 13, 2007. Snow cover is shown as light blue and ice is shown as dark blue.}
-	\label{fig:Landsat_2007}
-\end{figure}
-
-The GES 08-029 DEM coveres all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds and/or showed limited contrast in the original steroimage pairs, resulting in incorrect elevation data (E. Berthier personal communication, 2016). The cloudy areas appear as black regions on the DEM mask (not shown) and as distortion in the DEM, as seen in the boxed area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044) spans only part of the Donjek Range, covering most of Glacier 4 and $\sim$60\% of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no masked areas over Glaciers 2 and 4. The two DEMs were therefore merged to create a cloud free DEM that spanned all three glaciers. 
-
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.48\textwidth}
-        \fbox{\includegraphics[width=\textwidth]{diff_7044-8029_original.jpeg}}
-        \caption{Difference between original DEMs}
-        \label{fig:DEMdifferenceOriginal}
-    \end{subfigure}
-    ~
-    \begin{subfigure}[b]{0.48\textwidth}
-        \fbox{\includegraphics[width=\textwidth]{diff_7044-8029_shift.jpeg}}
-        \caption{Difference between corrected DEMs.}
-        \label{fig:DEMdifferenceCorrected}
-    \end{subfigure}
-
-    \caption{Vertical difference between DEMs in overlapping area. Difference was found by subtracting GES 08-029 from GES 07-044. Positive values indicate that GES 07-044 values are higher than GES 08-029 values. }
- \label{fig:DEMdifference}
-\end{figure}    
-    
-\begin{wrapfigure}{L}{0.6\textwidth}
-	\centering
-	\includegraphics[width = 0.6\textwidth]{DEMcorrection_hist.png}\\
-	\caption{Histogram of the vertical difference between GES 08-029 and GES 07-044 before (dark blue) and after (light blue) correction. }
-	\label{fig:DEMcorrection_hist}
-\end{wrapfigure}    
-    
-    
-   
-
-The merging process was complicated by the fact that there was a horizontal and vertical discrepancy between the two DEMs. Although the discrepancy was not consistent throughout the study area, the GES 07-044 DEM was generally higher than the first, as can be seen by the overall purple colour in Figure \ref{fig:DEMdifferenceOriginal} and the positive skew of the vertical difference between the two DEMs in Figure \ref{fig:DEMcorrection_hist}. The mean vertical difference is +6.3 m.
-
-
-\begin{wrapfigure}{R}{0.6\textwidth}
-	\centering
-	\includegraphics[width = 0.6\textwidth]{mergeLine.jpeg}\\
-	\caption{Outlines of the cropped GES 07-044 DEM (pink, left) and cropped GES 08-029 DEM (blue, right) used for merging. There is a slight overlap between the two DEMs that cannot be seen at this scale.}
-	\label{fig:mergeLine}
-\end{wrapfigure}
-
-The discrepancy was corrected by E. Bertier (2016, personal communication) using an iterative 3D-coregistration algorithm \citep{Berthier2007}. The GES 07-044 DEM was arbitrarily chosen to be used as the reference DEM. Note that the absolute value of the elevation is not necessarily important for the topographic regression, as long as the relative elevations are correct. The reference DEM (GES 07-044) was first shifted vertically by +5.4 m, which was estimated using ICESat data \citep{Berthier2010}. Then, the mean horizontal and vertical (X, Y, Z) shift between the reference DEM and the GES 08-029 DEM was found by minimizing the standard deviation of the elevation differences between the DEMs. Using this correlation, the GES 08-029 DEM  was shifted $\sim$2 m east, $\sim$4 m north and $\sim$1.9 m vertically. The GES 08-029 DEM was then reprojected in the same projection as the reference DEM (GES 07-044). The difference map between the two shifted DEMs is shown in Figure \ref{fig:DEMdifferenceCorrected}. Difference values are not uniform but do show both positive and negative values. The distribution of vertical difference values (Figure \ref{fig:DEMcorrection_hist}) after correction is centred at zero with a mean difference of -0.2 m.
-
-Merging of the corrected DEMs was completed in QGIS. First, the rasters were cropped to overlap by a few cells. The crop line was chosen by hand to include as much of the reference DEM as possible (fewer areas of poor data) but was a relatively small distance from the edge of the DEM (see Figure \ref{fig:mergeLine}). The second DEM was cropped to follow the same merge line but overlap with the first DEM by a few cells. This was done to avoid gaps in cell values that arise from cropping across a DEM cell. The merging was completed using the built in QGIS tool `Merge' and in areas where the two DEMs overlapped, the GES 08-029 DEM values were chosen.
-
-The final DEM used for subsequent analysis can be seen in Figure 4. Despite the corrections, there were still discrepancies along the intersection of the DEMs, which can be seen as sharp boundaries in the contour lines. However, these discrepancies are not present on the study glaciers and are located more than 250 m from the edge of the glacier so this DEM was used as the final version for the Donjek Range.
-
-\begin{figure}
-\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
-      Merged DEM of the Donjek range from two corrected SPOT-5 DEMs, plotted with 10 m contour lines. Study glaciers are shown in red. Discrepancies between the DEMs along the merge line can be seen as anomalous linear features in the contour map (yellow boxes). Distorted contours in the eastern regions (white box) are a result of errors in the DEM. 
-      }\end{minipage}},rotate=90,center}
-     	\includegraphics[height = 0.9\textwidth]{mergedDEM2.jpeg}%
- \end{adjustbox}  
-  \label{fig:finalDEM}
-\end{figure}
-
-\subsection{Calculating topographic parameters}
-\label{sec:topoCalc}
-
-Topographic parameters are used to describe characteristics of the local topography that may affect snow distribution and can act as proxies for physical processes that determine snow deposition and redistribution. Topographic parameters used in snow accumulation studies on glaciers include elevation ($z$), distance from centreline ($d_C$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, ``northness'' ($N$), aspect ($\alpha$) and wind redistribution parameter ($Sx$) \citep{Basist1994, Revuelto2014, McGrath2015}.	
- 
-A number of programs are used to calculate topographic parameters from the DEM. Distance from centreline and ``northness'' were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. The remaining parameters were calculated using the \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS as described in \cite{Mitavsova1993} and \cite{Hofierka2009}. Note that topographic parameters were calculated using the full DEM and then trimmed to Randolph Glacier Inventory defined glacier outlines so as to avoid errors that arise at the edge of the DEM when taking derivatives. Note that the outlines defined by the Randolph Glacier Inventory were modified slightly to match the 2015 glacier outlines as seen in Landsat 7 imagery.
-
-Details about the calculation of topographic parameters are described below and a summary of topographic parameters is found in Table \ref{tab:TopoParams}.
-\subsubsection*{Elevation}
-
-Elevation ($z$) values were taken from the (corrected) SPOT-5 DEMs directly (Figure \ref{map:elev}).
-
-\subsubsection*{Distance from centreline}
-
-Distance from centreline ($d_C$) was calculated as the minimum distance between the Easting and Northing of the northwest corner of each cell and a manually defined centreline (Figure \ref{map:centreD}). 
-
-
-\subsubsection*{Slope} 
-
-Slope ($m$) is the maximal rate of change of elevation and is defined as the angle between a plane tangential to the surface (gradient) and the horizontal \citep{Olaya2009} (Figure \ref{map:slope}). Slope ($m$) is calculated according to 
-\begin{equation}
-m = \arctan \sqrt{\left( \frac{\partial z}{\partial x} \right) ^2 + \left( \frac{\partial z}{\partial y} \right) ^2},
-\end{equation}
-where the partial derivatives can be approximated by \citep{Mitavsova1993, Neteler2008, Hofierka2009}
-\begin{align} \label{eq:firstpartial}
-\frac{\partial z}{\partial x} &\approx \frac{(z_7-z_9)+(2z_4-2z_6)+(z_1-z_3)}{8  \Delta x},\nonumber \\
-\frac{\partial z}{\partial y} &\approx \frac{(z_7-z_1)+(2z_8-2z_2)+(z_9-z_3)}{8  \Delta y}.
-\end{align}
-Here, $z_k$ refers to one of the gridcells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. So $z_3 = z_{i+1,j+1}$, $z_7 = z_{i-1,j-1}$ and so on (Figure \ref{fig:DEMgrid}). The grid spacing (resolution) of the DEM is $\Delta x$ and $\Delta y$ in the east-west and north-south direction, respectively \citep{Neteler2008}. 
-
-\begin{figure}
-	\centering
-	\includegraphics[width = 0.3\textwidth]{DEMGrid.png}\\
-	\caption{Labelling of DEM gridcells surrounding the cell of interest. The eight surrounding cells are used for estimating topographic parameters in QGIS. The cell of interest, which is located at row $i$ and column $j$ of the DEM, is shown as a shaded cell and is labelled $z_5$.}
-	\label{fig:DEMgrid}
-\end{figure}
-
-\subsubsection*{Curvature} 
-
-Curvature describes the convexity or concavity of a surface. The curvature of a surface is different in different directions, so there are various types of curvature. Profile and tangential curvature are the most common types to consider in geophysical systems. For this study, the mean curvature ($\kappa$), found by taking the average of profile and tangential curvature, is used. The mean curvature emphasizes mean-concave (positive values) areas with relative accumulation and mean-convex (negative values) terrain with relative scouring \citep{Olaya2009}.
-
-Profile curvature is the curvature in the direction of the surface gradient and it describes the change is slope angle. The equation for profile curvature ($\kappa_p \left[\mathrm{m}^{-1}\right]$) is \citep{Neteler2008}
-\begin{equation} 
-\kappa_p = \frac{\frac{\partial^2 z}{\partial x^2} \big(\frac{\partial z}{\partial x}\big)^2 + 2\frac{\partial^2 z}{\partial x \partial y}\frac{\partial z}{\partial x}\frac{\partial z}{\partial y} +  \frac{\partial^2 z}{\partial y^2} \big(\frac{\partial z}{\partial y}\big)^2}{\left[\big( \frac{\partial z}{\partial x} \big) ^2 + \big(\frac{\partial z}{\partial y} \big)^2\right] \sqrt{\left[\big(\frac{\partial z}{\partial x} \big) ^2 + \big( \frac{\partial z}{\partial y}\big) ^2+1\right]^3}}
-\end{equation} 
-where first-order partial derivatives are found using Equation \ref{eq:firstpartial}. Second-order partial derivatives can be approximated by \citep{Hofierka2009, Neteler2008}
-\begin{align}\label{eq:secondpartial}
-\frac{\partial^2 z}{\partial x^2} &\approx\frac{z_1-2z_2+z_3+4z_4-8z_5+4z_6+z_7-2z_8+z_9}{6  (\Delta x)^2},\nonumber\\
-\frac{\partial^2 z}{\partial y^2} &\approx \frac{z_1-4z_2+z_3-2z_4-8z_5-2z_6+z_7+4z_8+z_9}{6  (\Delta y)^2},\nonumber\\
-\frac{\partial^2 z}{\partial x \partial y} &\approx \frac{(z_7-z_9)-(z_1-z_3)}{4  \Delta x \Delta y}.
-\end{align}
-
-Tangential Curvature represents the curvature in the direction of the contour tangent. The equation for profile curvature ($\kappa_t \left[\mathrm{m}^{-1}\right]$) is \citep{Neteler2008}
-\begin{equation}
-\kappa_t = \frac{\frac{\partial^2 z}{\partial x^2} \big(\frac{\partial z}{\partial y}\big)^2 - 2\frac{\partial^2 z}{\partial x \partial y}\frac{\partial z}{\partial x}\frac{\partial z}{\partial y} +  \frac{\partial^2 z}{\partial y^2} \big(\frac{\partial z}{\partial x}\big)^2}{\left[\big( \frac{\partial z}{\partial x} \big) ^2 + \big(\frac{\partial z}{\partial y} \big)^2\right] \sqrt{\big(\frac{\partial z}{\partial x} \big) ^2 + \big( \frac{\partial z}{\partial y}\big) ^2 +1}},
-\end{equation} 	
-where first- and second-order partial derivatives are approximated using Equation \ref{eq:firstpartial} and \ref{eq:secondpartial}. 
-
-\subsubsection*{``Northness''} 
-
-``Northness'' ($N$) is a solar radiation parameter that has been shown to  increasingly affect accumulation distribution during the spring \citep{Revuelto2014}. It is also likely that this parameter may be related to sun induced snow metamorphosis and/or sun crusts, both of which affect point-scale winter balance \citep{McGrath2015}. ``Northness'' ($N$) is defined as the product of the cosine of aspect and sine of slope \citep{Molotch2005}. A value of -1 represents a vertical, south facing slope, a value of +1 represents a vertical, north facing slope and a flat surface yields 0. 
-
-\subsubsection*{Aspect} 
-
-Aspect ($\alpha$) represents the orientation of the steepest slope, with 0${^\circ}$ defined as North and no value given to cells that have zero slope. The equation for aspect in degrees is \citep{Neteler2008}
-	\begin{equation}
-	\alpha = \arctan\left(\frac{\partial z}{\partial y} \bigg/ \frac{\partial z}{\partial x}\right), 
-	\end{equation}
-where the partial derivatives are approximated by Equations \ref{eq:firstpartial}. Here, $\alpha = 0$ is in the west direction but the computed values were transformed to reflect 0${^\circ}$ as north (clockwise). 
-
-Aspect is a circular parameter (0${^\circ}$ is the same as 360${^\circ}$) but regressions (Section \ref{sec:linearregression}) require that a parameter is linear. Therefore, only the sine of aspect was used in topographic analysis. The sine of aspect is representative of the relative amount of direct solar radiation incident on a slope, which can result in snow metamorphosis. 
-
-\subsubsection*{Wind redistribution parameter} 
-
-$Sx$ represents wind exposure/shelter and is based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest \citep{Winstral2002}. This cell is referred to as the maximum upwind slope. Negative $Sx$ values represent exposure relative to the shelter-defining pixel, which means that the cell of interest is higher than the cell with greatest upward slope. Conversely, positive values represent sheltered cells. To determine $Sx$ values, I use the equation
-\begin{equation}
-Sx_{A, d\max}(x_i, y_i) = \textrm{max} \left[ \textrm{tan}^{-1} \left( \frac{z(x_v,y_v)-z(x_i,y_i)}{[(x_v-x_i)^2+(y_v-y_i)^2]^{1/2}} \right) \right] ,
-\end{equation}
-where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates of the cell of interest and $(x_v, y_v)$ are the set of all cell coordinates located along the search vector defined by	$(x_i, y_i)$, the azimuth ($A$) and maximum search distance ($d$max). Code for this calculation was provided by Adam Winstral (2016, personal communication). As done by \cite{McGrath2015}, I compute $Sx$ at 5$^{\circ}$ azimuth increments for $d$max distances of 100, 200 and 300 m. These values are then correlated (Pearson correlation) with observed values of point-scale winter balance and the $Sx$ values from the combination of azimuth and $d$max input values that have the highest correlation are used for subsequent analysis (Table \ref{tab:Sxparams}). The code for calculating $Sx$ requires a UTM raster formatted to ASCII in ArcGIS. 
-
-
-
-%% TOPO PARAMS TABLE
-\begin{landscape}
-\begin{table}
-\footnotesize
-\begin{threeparttable}
-   %\captionsetup{singlelinechec\FloatBarrierk=off, skip=4pt}
-\caption{Description of topographic parameters used in the linear regression.}
-\label{tab:TopoParams}
-\begin{tabularx}{22cm}{XXXXX}
-\midrule
-\textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \midrule
-\textbf{Elevation ($z$)} & Height above sea level & Values taken directly from DEM &  &  \\ \midrule
-\textbf{Distance from centreline ($d_C$)} & Linear distance from user-defined glacier centreline & Minimum distance between the Easting and Northing of the northwest corner of each gridcell and a manually defined centreline &  &  \\ \midrule
-\textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
-\textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
-\textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential (direction of the contour tangent) curvature & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & ($+$) mean-concave terrain and ($-$) mean-convex terrain & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
-\textbf{``Northness'' ($N$)} & A value of $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \citep{Molotch2005} \\ \midrule
-\textbf{Wind exposure/shelter parameter ($Sx$)} & Proxy for snow deposition due to wind redistribution & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \citep{Winstral2002}
-\end{tabularx}
-\end{threeparttable}
-\end{table}
-\end{landscape}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width = 0.6\textwidth]{Sx_infographic.jpeg}\\
-	\caption{ Example of $Sx$ calculations for three cells of interest along a 270$^\circ$ search vector. As depicted, with $d$max set equal to 300 m, the shelter-defining pixel for cells 1 and 2 is cell A, producing positive $Sx$ values. The shelter-defining cell for cell 3 is cell B, producing a negative $Sx$. Had $d$max been equal to 100 m, the search for the shelter-defining  pixel  for  cell  1  would  not  extend  across  the  valley,  thus producing a negative $Sx$ for cell 1, while $Sx$ for cell 2 would remain the same and that for cell 3 would be slightly lower. Image and description from \citep{Winstral2002}.}
-	\label{fig:Sx_infographic}
-\end{figure}
-
-
-\begin{table}
-\centering
-\caption{Values of azimuth ($A$) and maximum search distance ($d$max), that correspond to the $Sx$ that had the highest absolute correlation to observed WB.}
-\label{tab:Sxparams}
-\begin{tabular}{lccc}
- & \begin{tabular}[c]{@{}c@{}}$A$\\ ($^{\circ}$ from North)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$d$max \\ (m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Correlation\\ Coefficient\end{tabular} \\ \hline
-Glacier 4 & 85 & 300 & $-$0.26 \\
-Glacier 2 & 330 & 300 & 0.56 \\
-Glacier 13 & 280 & 200 & 0.28
-\end{tabular}
-\end{table} 
-
-\subsection{DEM smoothing}
-
-Visual inspection of the curvature fields calculated using the DEM indicated that that the spatial patterns of curvature were noisy and did not vary smoothly. \cite{Olaya2009} states that the curvature calculation is sensitive to noisy data and a smoothing filter often needs to be applied to the DEM prior to calculation. Curvature, as well as slope, aspect and ``northness'', are all sensitive to noise because calculating these parameters involve calculating the first and second derivatives of the elevation, which are highly dependent on the size of the DEM cell. To minimize the effect of noise on these four parameters, a smoothing filter was applied to the DEM and this smoothed DEM was used to calculate curvature, slope, aspect and ``northness''. The non-smoothed DEM was used to determine elevation and $Sx$ because these parameters do not depend on a topographic length scale and their values are not sensitive to the size of the DEM cell size.
-
-To choose a smoothing algorithm and window size, I applied a number of smoothing algorithms and chose the combination that resulted in the highest correlation between topographic parameters and point-scale winter balance values. Window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells were used. For all sizes, inverse-distance weighted smoothing and Gaussian smoothing were poorly correlated with WB. The smoothing algorithm that calculated the mean values of gridcells within a 7$\times$7 window resulted in the highest correlation between curvature (second derivative) and WB as well as slope (first derivative) and WB. The window size that produced the highest correlation of WB values and curvature for each glacier differed, but for all WB values taken together, the 7$\times$7 window resulted in the highest correlation. For slope, the highest correlation for individual glaciers was from the DEM with a 7$\times$7 smoothing window but the overall correlation was not the highest with this window. To maintain consistency between parameters, the 7$\times$7 smoothing window was chosen and applied to the DEM for calculation of curvature, slope, aspect and ``northness''. 
-
-\begin{figure}
-	\centering
-	\includegraphics[width = 0.7\textwidth]{G13curvatureSmoothing.jpeg}\\
-	\caption{(a) Curvature found using the orginal DEM. (B) 
-	The smoothed (7$\times$7 window moving average) DEM.}
-	\label{fig:smoothingCurve}
-\end{figure}
-
-
-\subsection{Parameter correlations}
-
-The correlation between topographic parameters at sampling locations on each glacier is shown in Table \ref{tab:pearson_correlation}. Correlation values are generally low, with the exception of the correlation between northness and aspect on Glacier 2 and northness and $Sx$ on Glacier 13, which were both larger than 0.7. Since there is little correlation between parameters and the correlations vary between glaciers, the use of a linear regression with these topographic parameters as predictor variables is warranted. 
-
-\begin{table}[H]
-\centering
-\caption{Pearson correlation coefficients between topographic parameters at sampled locations. \params}
-\label{tab:pearson_correlation}
-\begin{tabular}{cc|ccccccc}
- &  & $z$ & $d_C$ & $\alpha$ & $m$ & $N$ & $\kappa$ & $Sx$ \\ \hline
-\multirow{7}{*}{Glacier 4} & $z$ & 1 & 0.16 & $-$0.57 & $-$0.08 & $-$0.51 & 0.17 & 0.43 \\
- & $d_C$ &  & 1 & 0.13 & 0.56 & 0.16 & $-$0.43 & 0.35 \\
- & $\alpha$ &   &  & 1 & 0.57 & 0.95 & $-$0.61 & $-$0.58 \\
- & $m$ &   &   &   & 1 & 0.64 & $-$0.58 & $-$0.10 \\
- & $N$ &   &   &   &   & 1 & $-$0.59 & $-$0.59 \\
- & $\kappa$ &   &   &   &   &   & 1 & 0.05 \\
- & $Sx$ &   &   &   &   &   &   & 1 \\ \hline
-\multirow{7}{*}{Glacier 2} & $z$ & 1 & 0.06 & $-$0.52 & $-$0.58 & $-$0.62 & 0.45 & 0.57 \\
- & $d_C$ &   & 1 & 0.06 & 0.13 & 0.11 & $-$0.27 & 0.01 \\
- & $\alpha$ &   &  & 1 & 0.33 & 0.86 & $-$0.42 & $-$0.45 \\
- & $m$ &   &   &   & 1 & 0.74 & $-$0.67 & $-$0.41 \\
- & $N$ &   &   &   &   & 1 & $-$0.67 & $-$0.48 \\
- & $\kappa$ & &   &   &   &   & 1 & 0.28 \\
- & $Sx$ &   &   &   &   &   &   & 1 \\ \hline
-\multirow{7}{*}{Glacier 13} & $z$ & 1 & 0.15 & 0.19 & $-$0.15 & 0.10 & 0.02 & 0.27 \\
- & $d_C$ &   & 1 & $-$0.05 & 0.18 & 0.10 & $-$0.45 & 0.06 \\
- & $\alpha$ &   &   & 1 & $-$0.07 & 0.68 & $<$0.01 & 0.45 \\
- & $m$ &   &   &   & 1 & 0.63 & $-$0.22 & $-$0.22 \\
- & $N$ &   &   &   &   & 1 & $-$0.21 & 0.23 \\
- & $\kappa$ &   &   &   &   &   & 1 & $-$0.30 \\
- & $Sx$ &   &   &   &   &   &   & 1
-\end{tabular}
-\end{table}
-
-
-\subsection{Maps of topographic parameters and distribution of parameters sampled}
-
-
-Elevation maps (Figure \ref{map:elev}) show that both Glacier 2 and 13 have a low proportion of high elevation areas, which correspond to steep headwalls. Mean elevation is the same for all glaciers for the full and sampled distribution within one standard deviation (Table \ref{tab:sampled&fullParams_stats}). However, maximum elevation values are lower for Glacier 4 than the other two glaciers (Figure \ref{sampledRange:elev}) and the sampled elevation means are approximately 200 m less than that of the full distribution. Standard deviations are smaller for sampled ranges for all glaciers. The skewness of sampled and full distributions is different for all glaciers. Elevation full distributions are similar for the study glaciers, with kurtosis for all distributions, except sampled elevation on Glacier 13, being less than 3 (value for a normal distribution). Kurtosis of sampled distributions show that Glacier 13 had a broader distribution and Glacier 2 has a narrower distribution. 
-
-The distribution of sampled distance from centreline (Figure \ref{sampledRange:centreD}) is different from that of the full distribution. Generally, large distances were not sampled. Larger values of skewness and kurtosis in the full distribution indicate that these distributions are broader and span a larger range of values (Table \ref{tab:sampled&fullParams_stats}). This is also seen in the mean and standard deviation values, which are also larger for the full distribution. Large values of distance from centreline are located at the edges of the glacier in the accumulation area (Figure \ref{map:centreD}), which constitute steep, inaccessible terrain. Within the ablation area, the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier.
-
-The aspect of Glaciers 2 and 13 indicate that the majority of these two glaciers is north facing, while the majority of Glacier 4 is south facing (Figure \ref{map:aspect}). This is also highlighted in the mean values of aspect, which are positive for Glaciers 2 and 13 and negative for Glacier 4 (Table \ref{tab:sampled&fullParams_stats}). Sampled mean aspect is similar to the full distribution, although the standard deviation of sampled aspects is much lower. Further, the skewness and kurtosis of the sampled distributions differs considerably from the full distribution and there are many aspects that were not sampled (Figure \ref{sampledRange:aspect}). 
-
-Slope of the three study glaciers (Figure \ref{map:slope}) is generally less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 having steep slopes. The full and sampled distributions of slope are similar between glaciers (Table \ref{tab:sampled&fullParams_stats}), with mean values of $\sim$13$^{\circ}$ for the full distribution and 5$^{\circ}$ to 8$^{\circ}$ for the sampled distribution. The sampled distributions are all different than the full range, as indicated by the lower means, standard deviations and skewness, as well as larger kurtosis. This shows that the sampled distributions are generally narrower than full distributions and severely under sample steep slopes (Figure \ref{sampledRange:slope}).
-
-The mean ``northness'' values for all glaciers were close to zero and the majority of cells have values close to zero, which is likely due to their low slope values (Figure \ref{map:northness}). Even for Glacier 4, which is largely south facing and should thus have lower values of ``northness'', has a distribution with a mean close to zero (Table \ref{tab:sampled&fullParams_stats}). The low slope values mean that the values of ``northness'' were determined largely by the aspect, which can be seen by the resemblance between the ``northness'' map and the aspect map and their high correlation (Table \ref{tab:pearson_correlation}). Sampled distributions of ``northness'' did not resemble the full distributions. Although the mean values were similar, the skewness and kurtosis values were higher for all glaciers, indicating that the sampling was biased.
-
-Curvature values on all glaciers are largely negative, indicating that concave topography is more prevalent than convex topography (Figures \ref{map:curvature} and \ref{sampledRange:curvature}). The sampled distribution of curvature is a poor representation of the full distribution as shown by the dramatically different values of skewness, which are positive for the full distribution and negative for the sampled distribution (Table \ref{tab:sampled&fullParams_stats}). 
-
-$Sx$ maps over the study glaciers are shown in Figure \ref{map:Sx} and the wind direction and maximum search distance with the highest correlation to point-scale winter balance for each glacier are shown in Table \ref{tab:Sxparams}. For Glacier 4, an approximately east wind and 300 m search distance were most strongly correlated. The correlation was negative, which means that negative values of $Sx$ (exposure) correspond to areas with higher winter balance (more snow). This is counter intuitive and perhaps indicates that $Sx$ is not an appropriate topographic parameter to correlate with WB on Glacier 4. Despite this, $Sx$ was retained in future analysis for consistency between glaciers. For Glacier 2, a north wind with a 300 m search distance was most strongly correlated and for Glacier 13, a west wind with a 200 m search distance produced the strongest correlation. Both of these correlations were positive, so a more positive $Sx$ value (sheltered) corresponds to higher values of point-scale winter balance (more snow). The correlation values for Glacier 4 and 2 are low ($<$0.3) which indicates that $Sx$ will likely be insignificant in estimating snow accumulation. The correlation between $Sx$ and point-scale winter balance on Glacier 2 is higher (0.56). 
-
-The full distribution of $Sx$ (Figure \ref{sampledRange:Sx}) is different for each glacier and differs greatly between sampled and full distributions. Glacier 2 has a mean less than zero, indicating that a large portion of the glacier has exposed topography (Table \ref{tab:sampled&fullParams_stats}). Glacier 4 and 13 have positive mean values of $Sx$, indicating more sheltered topography. Extreme values of $Sx$ are generally located along the edges of the accumulation areas (Figure \ref{map:Sx}). The sampled distribution mean for Glacier 2 is close to that of its full distribution, while the sampled distribution means of Glacier 4 and 13 are different (negative) than that of the full distribution means (positive). The sampled distribution are more sharply peaked, as indicated by the smaller standard deviation values and larger kurtosis when compared to the full distributions. The skewness also differs for Glaciers 4 and 2, with the sampled distributions skewed more to the right than full distributions. Overall, the sampled distribution of $Sx$ is a poor representation of the full distribution. 
-
-Overall, the sampled topographic parameters are poor representatives of the full distribution of parameters. Extreme values of all parameters are grossly under sampled and the distribution of the sampled parameters generally differs from the full distribution. This was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. These errors are especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the highest winter balance values and is likely to heavily influence glacier-wide winter balance values. Generally, the sampled values do not fully capture the variance in topographic parameters but a regression is still valuable  since topographic regressions are common when estimating winter balance.  
-
-\begin{sidewaystable}
-\small
-\centering
-\caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature and are unitless for cosine of aspect ($\alpha$), ``northness'' ($N$), slope ($m$) and wind redistribution ($Sx$). Skewness is a measure of the data asymmetry about the mean, with positive values indicating data that are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
-\label{tab:sampled&fullParams_stats}
-\begin{tabular}{cc|cccc|cccc}
- & \textbf{} & \multicolumn{4}{c|}{\textbf{Full}} & \multicolumn{4}{c}{\textbf{Sampled}} \\
-\textit{\textbf{}} & \textit{} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} \\ \hline
-\multirow{7}{*}{\textbf{Glacier 4}} & $z$ & 2343.76 & 178.36 & $-$0.17 & 2.13 & 2242.63 & 89.52 & 0.00 & 2.59 \\
- & $d_C$ & 258.95 & 233.49 & 1.82 & 6.52 & 124.33 & 89.56 & 0.32 & 2.04 \\
- & $\alpha$ & $-$0.35 & 0.61 & 0.75 & 2.23 & $-$0.37 & 0.53 & 0.85 & 2.57 \\
- & $m$ & 12.81 & 7.03 & 1.11 & 3.37 & 8.32 & 3.17 & 2.19 & 8.10 \\
- & $N$ & $-$0.05 & 0.17 & 0.52 & 4.04 & $-$0.04 & 0.10 & 1.35 & 5.04 \\
- & $\kappa$ & $-$53.32 & 70.30 & 0.76 & 7.81 & $-$33.34 & 38.33 & $-$0.80 & 2.95 \\
- & $Sx$ & 1.56 & 11.46 & 1.03 & 4.28 & $-$1.06 & 5.17 & 1.62 & 6.21 \\ \hline
-\multirow{7}{*}{\textbf{Glacier 2}} & $z$ & 2494.71 & 233.03 & 0.09 & 2.82 & 2306.90 & 93.74 & $-$0.02 & 1.93 \\
- & $d_C$ & 304.95 & 236.97 & 1.22 & 4.51 & 140.65 & 98.84 & 0.37 & 2.74 \\
- & $\alpha$ & 0.59 & 0.43 & $-$1.43 & 4.83 & 0.52 & 0.33 & $-$0.42 & 2.14 \\
- & $m$ & 13.02 & 9.48 & 1.08 & 3.00 & 6.54 & 2.24 & 1.97 & 9.12 \\
- & $N$ & 0.14 & 0.16 & 0.74 & 3.68 & 0.06 & 0.05 & 1.01 & 4.10 \\
- & $\kappa$ & $-$18.40 & 91.35 & 1.30 & 6.83 & $-$22.94 & 43.91 & $-$1.44 & 4.75 \\
- & $Sx$ & $-$3.82 & 9.34 & $-$0.18 & 6.09 & $-$3.63 & 2.59 & 0.81 & 4.81 \\ \hline
-\multirow{7}{*}{\textbf{Glacier 13}} & $z$ & 2427.62 & 225.15 & 0.13 & 2.45 & 2219.45 & 82.25 & 0.92 & 5.67 \\
- & $d_C$ & 443.88 & 308.48 & 0.76 & 3.21 & 181.91 & 152.29 & 0.46 & 2.33 \\
- & $\alpha$ & 0.55 & 0.49 & $-$1.30 & 3.89 & 0.69 & 0.28 & $-$1.31 & 4.91 \\
- & $m$ & 13.36 & 10.13 & 1.15 & 3.51 & 5.10 & 1.98 & 2.20 & 12.99 \\
- & $N$ & 0.13 & 0.18 & 1.01 & 4.02 & 0.06 & 0.04 & 1.58 & 9.63 \\
- & $\kappa$ & $-$13.31 & 89.16 & 1.24 & 6.65 & $-$6.93 & 32.44 & $-$0.77 & 4.51 \\
- & $Sx$ & 3.69 & 12.08 & 0.97 & 3.68 & $-$1.62 & 3.94 & 0.90 & 4.95
-\end{tabular}
-\end{sidewaystable}
-
-\pagebreak
-\begin{figure}
-	\centering
-	\includegraphics[width = \textwidth]{Map_elevation.png}\\
-	\caption{Distributions of elevation ($z$) used in the topographic regressions for the study glaciers. This DEM is derived from a SPOT5 satellite image and has a grid size of 40$\times$40 m. Subsequent topographic parameters were derived from this DEM. \topomap}
-	\label{map:elev}
-\end{figure}
-
-\begin{figure}
-  \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_elevation.png}}%
-	\caption{Histograms of elevation ($z$) sampled (black) as compared to total range of elevation (white) of study glaciers.}
-	\label{sampledRange:elev}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{Map_centreD.png}\\
-	\caption{Distributions of distance from centreline ($d_C$) used in the topographic regressions for the study glaciers. Centreline was drawn by hand in QGIS. \topomap}
-	\label{map:centreD}
-\end{figure}
-
-\begin{figure}
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_centreD.png}}%
-	\caption{Histograms of distance from centreline ($d_c$) sampled (black) as compared to total range (white) of distance from centreline of study glaciers.}
-	\label{sampledRange:centreD}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{Map_aspect.png}\\
-	\caption{Distributions of the sine of aspect ($\alpha$), which indicates north-south component of a slope (+1 defined as north), used in the topographic regressions for the study glaciers. Values are derived from a smoothed DEM. \topomap}
-	\label{map:aspect}
-\end{figure}
-
-\begin{figure}
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_aspect.png}}%
-	\caption{Histograms of aspect ($\alpha$) sampled (black) as compared to total range (white) of aspect of study glaciers.}
-	\label{sampledRange:aspect}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{Map_slope.png}\\
-	\caption{Distributions of slope ($m$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
-	\label{map:slope}
-\end{figure}
-
-\begin{figure}
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_slope.png}}%
-	\caption{Histograms of slope ($m$) sampled (black) as compared to total range (white) of slope of study glaciers.}
-	\label{sampledRange:slope}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{Map_northness.png}\\
-	\caption{Distributions of ``northness'' ($N$) used in the topographic regressions for the study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope and flat surfaces yield 0. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
-	\label{map:northness}
-\end{figure}
-
-\begin{figure}
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_northness.png}}%
-	\caption{Histograms of ``northness'' ($N$) sampled (black) as compared to total range (white) of ``northness'' of study glaciers.}
-	\label{sampledRange:northness}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{Map_curvature.png}\\
-	\caption{Distributions of curvature ($\kappa$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
-	\label{map:curvature}
-\end{figure}
-
-\begin{figure}
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_curvature.png}}%
-	\caption{Histograms of curvature ($\kappa$) sampled (black) as compared to total range (white) of profile curvature of study glaciers.}
-	\label{sampledRange:curvature}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{Map_Sx.png}\\
-	\caption{Distributions of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for the study glaciers. See Section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier. \topomap }
-	\label{map:Sx}
-\end{figure}
-
-\begin{figure}
-	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_Sx.png}}%
-	\caption{Histograms of $Sx$ sampled (black) as compared to total range (white) of $Sx$ of study glaciers.}
-	\label{sampledRange:Sx}
-\end{figure}
-
-
 \section{Summary}
 
-Within this chapter, I describe the design and implementation of a snow survey on three glaciers as well as the initial data processing. The processing resulted in snow depth measurements at estimated transect measurement locations and extensive gridcell snow depth measurements obtained using zigzag snow surveys. Snow density values measured using a wedge cutter in snow pits as well as using a Federal Sampler are also presented. A number of methods used for interpolation of density values to obtain values of point-scale winter balance are then described. The resulting data consists of eight different variations of winter balance values at all measurement locations, each one calculated using a different density assignment method. I also document the process of obtaining topographic parameters, which include elevation, slope, curvature, distance from centreline, aspect, ``northness'' and wind redistribution, from a given DEM of the study area.
+Within this chapter, I describe the design and implementation of a snow survey on three glaciers as well as the initial data processing. The experimental design is structured to capture
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SAMPLING
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Sampling}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Field results}
 
 The sampling component of this thesis focuses on presenting observations from collected snow density and depth data. Comparison of density values found within snow pits and with using a Federal Sampler are detailed. Basic statistics are then used to examine snow depth variability at multiple scales.  Section 3.1 examines snow density and its associated uncertainty, with a focus on understanding discrepancies between the snow pit-derived and Federal Sampler-derived densities. The relationship between density and elevation is examined. Sections 3.2 and 3.3 summarize snow depth data within the transects and zigzag surveys, respectively. A brief description of point-scale winter balance values is presented in Section 3.4. The spatial variability of point-scale winter balance values at the point and gridcell scales is then investigated in Section 3.5.
 
@@ -1432,7 +940,7 @@ The depths measured in each zigzag on Glaciers 4, 2 and 13 are shown in Figures 
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 0.55\textwidth]{map_zigzaglocation_all.jpeg}\\
+	\includegraphics[width = 0.7\textwidth]{map_zigzaglocation_all.jpeg}\\
 	\caption{Map of zigzag locations on Glaciers 4, 2 and 13 (left to right).}
 	\label{fig:ZZ_locations}
 \end{figure}
@@ -1462,7 +970,7 @@ The depths measured in each zigzag on Glaciers 4, 2 and 13 are shown in Figures 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Point-scale winter balance}
+\section{Estimating point-scale winter balance}
 
 Point-scale winter balance (WB) at sampling locations is estimated using eight density assignment methods (Section \ref{sec:density}) are tested for differences using analysis of variance (ANOVA with p$<$0.05). Estimates of point-scale WB on each glacier are significantly different when various density assignment methods are applied (Figure \ref{fig:AllSWEopts_boxplot}). Glacier 4 has two main groups of point-scale WB estimates with a number of estimates that overlap (belong to both group A and C). The estimate calculated using F1 has a lower mean than the remaining estimates. Glacier 2 has four different groups of point-scale WB estimates but all estimates belong to multiple groups so there is no one estimate that differs from the rest. Point-scale WB estimates on Glacier 13 found using FS-derived densities (group B) have a higher mean point-scale WB than those found using SP-derived densities (groups A, C and D). The percent difference between the means of the point-scale WB estimates are 12\%, 18\% and 19\%  for Glacier 4, 2 and 13, respectively. 
 
@@ -1536,114 +1044,433 @@ For all density assignment methods, point-scale WB is highest on Glacier 4 and l
 	\label{fig:SWEmap_F4}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%
-\section{Variability at multiple scales}
-%%%%
-
-We examine the distribution of winter balance (WB) values and the coefficient of variation of WB in an attempt to compare variability of WB at different scales. The distribution of WB values ($\mathrm{var}_{\mathrm{WB}}$) is found by subtracting the local mean WB ($\mu_\mathrm{loc}$) from WB observations ($x$) and can be expressed as $\mathrm{var}_{\mathrm{WB}} = x-\mu_{\mathrm{loc}}$. The coefficient of variation (CV), or relative standard deviation, is a standardized measure of data variability and is defined as $\mathrm{CV} = \frac{\sigma}{\mu}$. The ratio is often displayed as a percentage.
-
-\begin{table}[b]
-\centering
-\caption{$2\sigma$ values of winter balance variability (\,m\,w.e.) distributions at the point and gridcell scale.}
-\label{tab:2sigmaPointGrid}
-\begin{tabular}{lcccc}
- & \multirow{2}{*}{\textbf{Point Scale}} & \multicolumn{3}{c}{\textbf{Gridcell Scale}} \\
- &  & \textit{\begin{tabular}[c]{@{}c@{}}Zigzag\\ data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Transect\\ data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Density\\ assignment\end{tabular}} \\ \hline
-\textbf{Glacier 4} & 13\% & 14\% & 15\% & 7\% \\
-\textbf{Glacier 2} & 50\% & 26\% & 29\% & 17\% \\
-\textbf{Glacier 13} & 28\% & 19\% & 57\% & 15\%
-\end{tabular}
-\end{table}
-
-\subsection{Point-scale variability}
-
-The point-scale WB variability at a single measurement location (Figure \ref{fig:SWEvar_oneloc_hist}) varies considerably between glaciers (Table \ref{tab:2sigmaPointGrid}). Glacier 2 has the largest $2\sigma$ value, with point-scale WB values varying by as much as 50\% of the local mean. The maps of CV (Figure \ref{fig:SWEvar_oneloc_map}) show that the lower portion of Glacier 2, which corresponds to scoured `ice dunes' observed during field work, has large variability. The lower portion of Glacier 13 also has relatively high variability. This area had shallow snow and bare ice was often observed. From these observations, it appears that areas with almost no snow have relatively high variability.
-
-\begin{figure}
-	\centering
-	\includegraphics[width =0.8\textwidth]{SWEvarOneLocHIST.png}\\
-	\caption{Point-scale WB variability at measurement locations. Three to four snow depth measurement were taken at each location and converted to point-scale WB values using S1 density assignment method.}
-	\label{fig:SWEvar_oneloc_hist}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width =\textwidth]{Map_pointstd.png}\\
-	\caption{Coefficient of variation of observations at measurement locations. Three to four snow depth measurement were taken at each location and converted to point-scale WB values using S1 density assignment method.}
-	\label{fig:SWEvar_oneloc_map}
-\end{figure}
-
-\subsection{Gridcell-scale variability}
-
-Zigzag survey data, transect survey data and winter balance data obtained using various density assignment methods are used to investigate gridcell-scale variability. 
-
-\subsubsection{Zigzag survey data}
-Zigzag data (Section \ref{sec:zigzagmethods}) contains extensive snow depth data within a 40 $x$ 40 m area that corresponds to a DEM gridcell. Snow depth was converted to WB values by using the Federal Sampler-derived density within the zigzag. Kruskal--Wallis test shows that zigzag variability (Figure \ref{fig:SWEvar_ZZ_hist}) has the same distribution within each glacier (p$>$0.05), with the exception of G13\_Z3B and G13\_Z7C having different distributions. Since variability is consistent for each glacier, the distributions are combined to produce a gridcell-scale WB variability for each glacier (Figure \ref{fig:SWEvar_ZZG_hist}). Glacier 4 has the lowest variability and Glacier 13 has the highest variability, with variation of more than 50\% about the gridcell mean (Table  \ref{tab:2sigmaPointGrid}). 
-
-\begin{figure}
-	\centering
-	\includegraphics[width =0.6\textwidth]{ZigzagHistogram.pdf}\\
-	\caption{Distributions of estimated winter-balance values for each zigzag survey in lower (L), middle (M) and upper (U) ablation areas (insets). Local mean has been subtracted. (a) Glacier 4. (b) Glacier 2. (c) Glacier 13.}
-	\label{fig:SWEvar_ZZ_hist}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width =0.8\textwidth]{ZigzagPDF_G.png}\\
-	\caption{Gridcell-scale winter balance variability at the gridcell scale based on zigzag measurements.}
-	\label{fig:SWEvar_ZZG_hist}
-\end{figure}
-
-\subsubsection{Transect survey data}
-There are multiple point-scale WB values (i.e. measurement locations) in many of the gridcells along survey transects. These gridcells are distributed throughout the sampling area so they can provide insight into spatial changes in gridcell variability. I find that WB variability is similar between Glaciers 4 and 13 and largest for Glacier 2 (Figure \ref{fig:SWEvar_MultLoc_hist}). Coefficient of variation values are highest in the `ice dune' area of Glacier 2 and in the lower portion of Glacier 13.  However, most gridcells with multiple measurements have only two or three measurements (Figure \ref{fig:NumObsPerCell}) so variability values are limited by sample size and generally underestimate variability. 
-
-The $2\sigma$ values of the gridcell-scale variability in zigzag and transect survey data are similar for Glaciers 4 and 2, but the zigzag survey $2\sigma$ value on Glacier 13 is considerably larger than the transect survey value (Table  \ref{tab:2sigmaPointGrid}). The spatial distribution of gridcell-scale variability (Figure \ref{fig:SWEvar_MultLoc_map}) closely resembles that of the point-scale variability. 
-
-\begin{figure}
-	\centering
-	\includegraphics[width =0.8\textwidth]{SWEvarMeasureLocHIST.png}\\
-	\caption{Gridcell-scale winter balance variability. Transect survey data is used and variability is based on multiple measurement locations in a DEM gridcell.}
-	\label{fig:SWEvar_MultLoc_hist}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width =\textwidth]{Map_cellstd_measureLoc.png}\\
-	\caption{Coefficient of variation of observations at measured gridcells. Multiple measurements locations within each gridcell are used to assess variability.}
-	\label{fig:SWEvar_MultLoc_map}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width =\textwidth]{NumObsPerCell.png}\\
-	\caption{Number of measurement locations within DEM gridcells.}
-	\label{fig:NumObsPerCell}
-\end{figure}
-
-
-\subsubsection{Density assignment method}
-
-Variability due to density assignment method is investigated at the gridcell scale. Gridcell-scale WB variability is calculated using the WB values estimated at each measurement gridcell using the eight density assignment methods (Section \ref{sec:densityoptions}). The choice of density assignment method results in relatively low variability that is consistent between glaciers (Figure \ref{fig:SWEvar_Density_hist}). However, there are noticeable spatial patterns in the coefficient of variation due to choice of density assignment method. The coefficient of variation appears to closely follow the elevation gradient, with the lower portions of Glaciers 2 and 13 showing especially high variability (Figure \ref{fig:SWEvar_Density_map}). This spatial pattern likely arises from the elevation dependent interpolation that results in low WB estimates close to the glacier terminus. Despite this, the density variability has the lowest $2\sigma$ value of the investigated sources of variability (Table  \ref{tab:2sigmaPointGrid})
-
-\begin{figure}
-	\centering
-	\includegraphics[width =0.8\textwidth]{SWEvarDensityHIST.png}\\
-	\caption{Winter balance variability at the gridcell scale based on eight different density assignment methods in a DEM gridcell.}
-	\label{fig:SWEvar_Density_hist}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width =\textwidth]{Map_cellstd_density.png}\\
-	\caption{Coefficient of variation at the gridcell scale based on eight different density assignment methods.}
-	\label{fig:SWEvar_Density_map}
-\end{figure}
 
 \section{Summary}
 
-In this chapter, snow depth and density data are converted to point- and gridcell-scale winter balance values. First, density values derived from snow pit (SP) and Federal Sampler (FS) measurements are compared. FS-derived densities are found to be correlated with snow depth and I establish that the FS is likely oversampling in deep snow and undersampling in shallow snow. Contrary to expectation, co-located FS and SP measurements are found to be  uncorrelated. Relationships between density and elevation differ in magnitude and sign between density measurement methods and between glaciers. Assessed uncertainties in density values are found to be small (usually $<$10\%). I then investigate collected snow depth and density data and find that Glacier 4 has the highest mean value and the largest range of observed snow depth and Glacier 13 has the lowest mean value and smallest range. Zigzag surveys show that variability of snow depth at the gridcell scale is relatively consistent between zigzag locations but outliers are common. I also investigate variability of winter balance values at multiple scales. At the study glaciers, the greatest variability in both point- and gridcell-scale winter balance is found close to the terminus of Glaciers 2 and 13. The high variability is likely a result of the ice microtopography affecting the distribution of snow, which is shallow in these areas. The magnitude of point- and gridcell-scale variability is approximately equal, with variability due to density interpolation being the small assessed contributor to data variability.
+Snow density values measured using a wedge cutter in snow pits as well as using a Federal Sampler are also presented. A number of methods used for interpolation of density values to obtain values of point-scale winter balance are then described. The resulting data consists of eight different variations of winter balance values at all measurement locations, each one calculated using a different density assignment method.
+
+In this chapter, snow depth and density data are converted to point- and gridcell-scale winter balance values. First, density values derived from snow pit (SP) and Federal Sampler (FS) measurements are compared. FS-derived densities are found to be correlated with snow depth and I establish that the FS is likely oversampling in deep snow and undersampling in shallow snow. Contrary to expectation, co-located FS and SP measurements are found to be  uncorrelated. Relationships between density and elevation differ in magnitude and sign between density measurement methods and between glaciers. Assessed uncertainties in density values are found to be small (usually $<$10\%). I then investigate collected snow depth and density data and find that Glacier 4 has the highest mean value and the largest range of observed snow depth and Glacier 13 has the lowest mean value and smallest range. 
+
+%%%%
+\chapter{DEMs and topographic parameters}
+%%%%
+
+
+Section 2.4 documents how I obtain topographic parameters from a given DEM of my study region. Processing steps such as DEM stitching, smoothing and raster calculations are described in detail. Appendices A, B, C and D contain more details on GPS waypoint creation, maps used in the field, as well as in depth description of steps used in the data processing and topographic parameter calculation scripts. 
+
+\section{Obtaining DEMs for study glaciers}
+
+Topographic parameters are derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery collected by the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m. The DEM was created using a set of correlation parameters fit for steeper slopes (E. Berthier personal communication, 2016). 
+
+Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made from images collected on September 3, 2007 and the second DEM (GES 07-044) was made from images collected on September 13, 2007. The snow extent on September 13, 2007, as imaged by a Landsat 7 satellite, can be seen in Figure \ref{fig:Landsat_2007}. Since the images were collected in September, the surface would likely be at a seasonal minimum with minimum snow cover. Therefore, the surface described by the DEM in the ablation area represents the ice topography. A limitation in using this DEM is that the DEM is from 2007 and there have almost certainly been changes in the end-of-summer glacier surface. However, the SPOT-5 DEM is the best resolution and most current DEM available for the study area \footnote{At the time of project initiation, SPIRIT SPOT-5 was the highest resolution DEM I were able to acquire. At the time of completing this work, ArcticDEM and TanDEM-X are the highest resolution, public DEMs available for the Donjek Range.}. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \fbox{\includegraphics[width=\textwidth]{8029_original2.jpeg}}
+        \caption{}
+        \label{fig:8029_original}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.48\textwidth}
+        \fbox{\includegraphics[width=\textwidth]{7044_original.jpeg}}
+        \caption{}
+        \label{fig:7044_original}
+    \end{subfigure}
+
+    \caption{SPOT-5 DEMs available for the Donjek Range. Study glaciers are shown as red outlines. The DEM made from imagery collected on September 3, 2007 (GES 08-029) is shown in (a) and the DEM made from imagery collected on September 13, 2007 (GES 07-044) is shown in (b). Imagery that contains cloud cover result in a distorted DEM, as seen in the boxed area of (a).}
+    \label{fig:originalDEMs}
+\end{figure}
+
+\begin{figure}
+  \makebox[\textwidth][c]{\includegraphics[width=\textwidth]{Landsat_2007.jpeg}}%
+	\caption{Landsat 7 ETM images of study glaciers on September 13, 2007. Snow cover is shown as light blue and ice is shown as dark blue.}
+	\label{fig:Landsat_2007}
+\end{figure}
+
+The GES 08-029 DEM coveres all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds and/or showed limited contrast in the original steroimage pairs, resulting in incorrect elevation data (E. Berthier personal communication, 2016). The cloudy areas appear as black regions on the DEM mask (not shown) and as distortion in the DEM, as seen in the boxed area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044) spans only part of the Donjek Range, covering most of Glacier 4 and $\sim$60\% of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no masked areas over Glaciers 2 and 4. The two DEMs were therefore merged to create a cloud free DEM that spanned all three glaciers. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \fbox{\includegraphics[width=\textwidth]{diff_7044-8029_original.jpeg}}
+        \caption{Difference between original DEMs}
+        \label{fig:DEMdifferenceOriginal}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.48\textwidth}
+        \fbox{\includegraphics[width=\textwidth]{diff_7044-8029_shift.jpeg}}
+        \caption{Difference between corrected DEMs.}
+        \label{fig:DEMdifferenceCorrected}
+    \end{subfigure}
+
+    \caption{Vertical difference between DEMs in overlapping area. Difference was found by subtracting GES 08-029 from GES 07-044. Positive values indicate that GES 07-044 values are higher than GES 08-029 values. }
+ \label{fig:DEMdifference}
+\end{figure}    
+    
+\begin{wrapfigure}{L}{0.6\textwidth}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{DEMcorrection_hist.png}\\
+	\caption{Histogram of the vertical difference between GES 08-029 and GES 07-044 before (dark blue) and after (light blue) correction. }
+	\label{fig:DEMcorrection_hist}
+\end{wrapfigure}    
+    
+    
+   
+
+The merging process was complicated by the fact that there was a horizontal and vertical discrepancy between the two DEMs. Although the discrepancy was not consistent throughout the study area, the GES 07-044 DEM was generally higher than the first, as can be seen by the overall purple colour in Figure \ref{fig:DEMdifferenceOriginal} and the positive skew of the vertical difference between the two DEMs in Figure \ref{fig:DEMcorrection_hist}. The mean vertical difference is +6.3 m.
+
+
+\begin{wrapfigure}{R}{0.6\textwidth}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{mergeLine.jpeg}\\
+	\caption{Outlines of the cropped GES 07-044 DEM (pink, left) and cropped GES 08-029 DEM (blue, right) used for merging. There is a slight overlap between the two DEMs that cannot be seen at this scale.}
+	\label{fig:mergeLine}
+\end{wrapfigure}
+
+The discrepancy was corrected by E. Bertier (2016, personal communication) using an iterative 3D-coregistration algorithm \citep{Berthier2007}. The GES 07-044 DEM was arbitrarily chosen to be used as the reference DEM. Note that the absolute value of the elevation is not necessarily important for the topographic regression, as long as the relative elevations are correct. The reference DEM (GES 07-044) was first shifted vertically by +5.4 m, which was estimated using ICESat data \citep{Berthier2010}. Then, the mean horizontal and vertical (X, Y, Z) shift between the reference DEM and the GES 08-029 DEM was found by minimizing the standard deviation of the elevation differences between the DEMs. Using this correlation, the GES 08-029 DEM  was shifted $\sim$2 m east, $\sim$4 m north and $\sim$1.9 m vertically. The GES 08-029 DEM was then reprojected in the same projection as the reference DEM (GES 07-044). The difference map between the two shifted DEMs is shown in Figure \ref{fig:DEMdifferenceCorrected}. Difference values are not uniform but do show both positive and negative values. The distribution of vertical difference values (Figure \ref{fig:DEMcorrection_hist}) after correction is centred at zero with a mean difference of -0.2 m.
+
+Merging of the corrected DEMs was completed in QGIS. First, the rasters were cropped to overlap by a few cells. The crop line was chosen by hand to include as much of the reference DEM as possible (fewer areas of poor data) but was a relatively small distance from the edge of the DEM (see Figure \ref{fig:mergeLine}). The second DEM was cropped to follow the same merge line but overlap with the first DEM by a few cells. This was done to avoid gaps in cell values that arise from cropping across a DEM cell. The merging was completed using the built in QGIS tool `Merge' and in areas where the two DEMs overlapped, the GES 08-029 DEM values were chosen.
+
+The final DEM used for subsequent analysis can be seen in Figure 4. Despite the corrections, there were still discrepancies along the intersection of the DEMs, which can be seen as sharp boundaries in the contour lines. However, these discrepancies are not present on the study glaciers and are located more than 250 m from the edge of the glacier so this DEM was used as the final version for the Donjek Range.
+
+\begin{figure}
+\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
+      Merged DEM of the Donjek range from two corrected SPOT-5 DEMs, plotted with 10 m contour lines. Study glaciers are shown in red. Discrepancies between the DEMs along the merge line can be seen as anomalous linear features in the contour map (yellow boxes). Distorted contours in the eastern regions (white box) are a result of errors in the DEM. 
+      }\end{minipage}},rotate=90,center}
+     	\includegraphics[height = 0.9\textwidth]{mergedDEM2.jpeg}%
+ \end{adjustbox}  
+  \label{fig:finalDEM}
+\end{figure}
+
+\section{Topographic parameters}
+\label{sec:topoCalc}
+
+Topographic parameters are used to describe characteristics of the local topography that may affect snow distribution and can act as proxies for physical processes that determine snow deposition and redistribution. Topographic parameters used in snow accumulation studies on glaciers include elevation ($z$), distance from centreline ($d_C$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, ``northness'' ($N$), aspect ($\alpha$) and wind redistribution parameter ($Sx$) \citep{Basist1994, Revuelto2014, McGrath2015}.	
+ 
+A number of programs are used to calculate topographic parameters from the DEM. Distance from centreline and ``northness'' were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. The remaining parameters were calculated using the \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS as described in \cite{Mitavsova1993} and \cite{Hofierka2009}. Note that topographic parameters were calculated using the full DEM and then trimmed to Randolph Glacier Inventory defined glacier outlines so as to avoid errors that arise at the edge of the DEM when taking derivatives. Note that the outlines defined by the Randolph Glacier Inventory were modified slightly to match the 2015 glacier outlines as seen in Landsat 7 imagery.
+
+\subsection{Calculating topographic parameters}
+
+Details about the calculation of topographic parameters are described below and a summary of topographic parameters is found in Table \ref{tab:TopoParams}.
+\subsubsection*{Elevation}
+
+Elevation ($z$) values were taken from the (corrected) SPOT-5 DEMs directly (Figure \ref{map:elev}).
+
+\subsubsection*{Distance from centreline}
+
+Distance from centreline ($d_C$) was calculated as the minimum distance between the Easting and Northing of the northwest corner of each cell and a manually defined centreline (Figure \ref{map:centreD}). 
+
+
+\subsubsection*{Slope} 
+
+Slope ($m$) is the maximal rate of change of elevation and is defined as the angle between a plane tangential to the surface (gradient) and the horizontal \citep{Olaya2009} (Figure \ref{map:slope}). Slope ($m$) is calculated according to 
+\begin{equation}
+m = \arctan \sqrt{\left( \frac{\partial z}{\partial x} \right) ^2 + \left( \frac{\partial z}{\partial y} \right) ^2},
+\end{equation}
+where the partial derivatives can be approximated by \citep{Mitavsova1993, Neteler2008, Hofierka2009}
+\begin{align} \label{eq:firstpartial}
+\frac{\partial z}{\partial x} &\approx \frac{(z_7-z_9)+(2z_4-2z_6)+(z_1-z_3)}{8  \Delta x},\nonumber \\
+\frac{\partial z}{\partial y} &\approx \frac{(z_7-z_1)+(2z_8-2z_2)+(z_9-z_3)}{8  \Delta y}.
+\end{align}
+Here, $z_k$ refers to one of the gridcells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. So $z_3 = z_{i+1,j+1}$, $z_7 = z_{i-1,j-1}$ and so on (Figure \ref{fig:DEMgrid}). The grid spacing (resolution) of the DEM is $\Delta x$ and $\Delta y$ in the east-west and north-south direction, respectively \citep{Neteler2008}. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.3\textwidth]{DEMGrid.png}\\
+	\caption{Labelling of DEM gridcells surrounding the cell of interest. The eight surrounding cells are used for estimating topographic parameters in QGIS. The cell of interest, which is located at row $i$ and column $j$ of the DEM, is shown as a shaded cell and is labelled $z_5$.}
+	\label{fig:DEMgrid}
+\end{figure}
+
+\subsubsection*{Curvature} 
+
+Curvature describes the convexity or concavity of a surface. The curvature of a surface is different in different directions, so there are various types of curvature. Profile and tangential curvature are the most common types to consider in geophysical systems. For this study, the mean curvature ($\kappa$), found by taking the average of profile and tangential curvature, is used. The mean curvature emphasizes mean-concave (positive values) areas with relative accumulation and mean-convex (negative values) terrain with relative scouring \citep{Olaya2009}.
+
+Profile curvature is the curvature in the direction of the surface gradient and it describes the change is slope angle. The equation for profile curvature ($\kappa_p \left[\mathrm{m}^{-1}\right]$) is \citep{Neteler2008}
+\begin{equation} 
+\kappa_p = \frac{\frac{\partial^2 z}{\partial x^2} \big(\frac{\partial z}{\partial x}\big)^2 + 2\frac{\partial^2 z}{\partial x \partial y}\frac{\partial z}{\partial x}\frac{\partial z}{\partial y} +  \frac{\partial^2 z}{\partial y^2} \big(\frac{\partial z}{\partial y}\big)^2}{\left[\big( \frac{\partial z}{\partial x} \big) ^2 + \big(\frac{\partial z}{\partial y} \big)^2\right] \sqrt{\left[\big(\frac{\partial z}{\partial x} \big) ^2 + \big( \frac{\partial z}{\partial y}\big) ^2+1\right]^3}}
+\end{equation} 
+where first-order partial derivatives are found using Equation \ref{eq:firstpartial}. Second-order partial derivatives can be approximated by \citep{Hofierka2009, Neteler2008}
+\begin{align}\label{eq:secondpartial}
+\frac{\partial^2 z}{\partial x^2} &\approx\frac{z_1-2z_2+z_3+4z_4-8z_5+4z_6+z_7-2z_8+z_9}{6  (\Delta x)^2},\nonumber\\
+\frac{\partial^2 z}{\partial y^2} &\approx \frac{z_1-4z_2+z_3-2z_4-8z_5-2z_6+z_7+4z_8+z_9}{6  (\Delta y)^2},\nonumber\\
+\frac{\partial^2 z}{\partial x \partial y} &\approx \frac{(z_7-z_9)-(z_1-z_3)}{4  \Delta x \Delta y}.
+\end{align}
+
+Tangential Curvature represents the curvature in the direction of the contour tangent. The equation for profile curvature ($\kappa_t \left[\mathrm{m}^{-1}\right]$) is \citep{Neteler2008}
+\begin{equation}
+\kappa_t = \frac{\frac{\partial^2 z}{\partial x^2} \big(\frac{\partial z}{\partial y}\big)^2 - 2\frac{\partial^2 z}{\partial x \partial y}\frac{\partial z}{\partial x}\frac{\partial z}{\partial y} +  \frac{\partial^2 z}{\partial y^2} \big(\frac{\partial z}{\partial x}\big)^2}{\left[\big( \frac{\partial z}{\partial x} \big) ^2 + \big(\frac{\partial z}{\partial y} \big)^2\right] \sqrt{\big(\frac{\partial z}{\partial x} \big) ^2 + \big( \frac{\partial z}{\partial y}\big) ^2 +1}},
+\end{equation} 	
+where first- and second-order partial derivatives are approximated using Equation \ref{eq:firstpartial} and \ref{eq:secondpartial}. 
+
+\subsubsection*{``Northness''} 
+
+``Northness'' ($N$) is a solar radiation parameter that has been shown to  increasingly affect accumulation distribution during the spring \citep{Revuelto2014}. It is also likely that this parameter may be related to sun induced snow metamorphosis and/or sun crusts, both of which affect point-scale winter balance \citep{McGrath2015}. ``Northness'' ($N$) is defined as the product of the cosine of aspect and sine of slope \citep{Molotch2005}. A value of -1 represents a vertical, south facing slope, a value of +1 represents a vertical, north facing slope and a flat surface yields 0. 
+
+\subsubsection*{Aspect} 
+
+Aspect ($\alpha$) represents the orientation of the steepest slope, with 0${^\circ}$ defined as North and no value given to cells that have zero slope. The equation for aspect in degrees is \citep{Neteler2008}
+	\begin{equation}
+	\alpha = \arctan\left(\frac{\partial z}{\partial y} \bigg/ \frac{\partial z}{\partial x}\right), 
+	\end{equation}
+where the partial derivatives are approximated by Equations \ref{eq:firstpartial}. Here, $\alpha = 0$ is in the west direction but the computed values were transformed to reflect 0${^\circ}$ as north (clockwise). 
+
+Aspect is a circular parameter (0${^\circ}$ is the same as 360${^\circ}$) but regressions (Section \ref{sec:linearregression}) require that a parameter is linear. Therefore, only the sine of aspect was used in topographic analysis. The sine of aspect is representative of the relative amount of direct solar radiation incident on a slope, which can result in snow metamorphosis. 
+
+\subsubsection*{Wind redistribution parameter} 
+
+$Sx$ represents wind exposure/shelter and is based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest \citep{Winstral2002}. This cell is referred to as the maximum upwind slope. Negative $Sx$ values represent exposure relative to the shelter-defining pixel, which means that the cell of interest is higher than the cell with greatest upward slope. Conversely, positive values represent sheltered cells. To determine $Sx$ values, I use the equation
+\begin{equation}
+Sx_{A, d\max}(x_i, y_i) = \textrm{max} \left[ \textrm{tan}^{-1} \left( \frac{z(x_v,y_v)-z(x_i,y_i)}{[(x_v-x_i)^2+(y_v-y_i)^2]^{1/2}} \right) \right] ,
+\end{equation}
+where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates of the cell of interest and $(x_v, y_v)$ are the set of all cell coordinates located along the search vector defined by	$(x_i, y_i)$, the azimuth ($A$) and maximum search distance ($d$max). Code for this calculation was provided by Adam Winstral (2016, personal communication). As done by \cite{McGrath2015}, I compute $Sx$ at 5$^{\circ}$ azimuth increments for $d$max distances of 100, 200 and 300 m. These values are then correlated (Pearson correlation) with observed values of point-scale winter balance and the $Sx$ values from the combination of azimuth and $d$max input values that have the highest correlation are used for subsequent analysis (Table \ref{tab:Sxparams}). The code for calculating $Sx$ requires a UTM raster formatted to ASCII in ArcGIS. 
+
+
+
+%% TOPO PARAMS TABLE
+\begin{landscape}
+\begin{table}
+\footnotesize
+\begin{threeparttable}
+   %\captionsetup{singlelinechec\FloatBarrierk=off, skip=4pt}
+\caption{Description of topographic parameters used in the linear regression.}
+\label{tab:TopoParams}
+\begin{tabularx}{22cm}{XXXXX}
+\midrule
+\textbf{\begin{tabular}[c]{@{}l@{}}Topographic\\ parameter\end{tabular}} & \textbf{Definition} & \textbf{\begin{tabular}[c]{@{}l@{}}Calculation \\ method\end{tabular}} & \textbf{Notes} & \textbf{Source} \\ \midrule
+\textbf{Elevation ($z$)} & Height above sea level & Values taken directly from DEM &  &  \\ \midrule
+\textbf{Distance from centreline ($d_C$)} & Linear distance from user-defined glacier centreline & Minimum distance between the Easting and Northing of the northwest corner of each gridcell and a manually defined centreline &  &  \\ \midrule
+\textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential (direction of the contour tangent) curvature & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & ($+$) mean-concave terrain and ($-$) mean-convex terrain & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
+\textbf{``Northness'' ($N$)} & A value of $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \citep{Molotch2005} \\ \midrule
+\textbf{Wind exposure/shelter parameter ($Sx$)} & Proxy for snow deposition due to wind redistribution & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \citep{Winstral2002}
+\end{tabularx}
+\end{threeparttable}
+\end{table}
+\end{landscape}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.6\textwidth]{Sx_infographic.jpeg}\\
+	\caption{ Example of $Sx$ calculations for three cells of interest along a 270$^\circ$ search vector. As depicted, with $d$max set equal to 300 m, the shelter-defining pixel for cells 1 and 2 is cell A, producing positive $Sx$ values. The shelter-defining cell for cell 3 is cell B, producing a negative $Sx$. Had $d$max been equal to 100 m, the search for the shelter-defining  pixel  for  cell  1  would  not  extend  across  the  valley,  thus producing a negative $Sx$ for cell 1, while $Sx$ for cell 2 would remain the same and that for cell 3 would be slightly lower. Image and description from \citep{Winstral2002}.}
+	\label{fig:Sx_infographic}
+\end{figure}
+
+
+\begin{table}
+\centering
+\caption{Values of azimuth ($A$) and maximum search distance ($d$max), that correspond to the $Sx$ that had the highest absolute correlation to observed WB.}
+\label{tab:Sxparams}
+\begin{tabular}{lccc}
+ & \begin{tabular}[c]{@{}c@{}}$A$\\ ($^{\circ}$ from North)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$d$max \\ (m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Correlation\\ Coefficient\end{tabular} \\ \hline
+Glacier 4 & 85 & 300 & $-$0.26 \\
+Glacier 2 & 330 & 300 & 0.56 \\
+Glacier 13 & 280 & 200 & 0.28
+\end{tabular}
+\end{table} 
+
+\subsection{DEM smoothing}
+
+Visual inspection of the curvature fields calculated using the DEM indicated that that the spatial patterns of curvature were noisy and did not vary smoothly. \cite{Olaya2009} states that the curvature calculation is sensitive to noisy data and a smoothing filter often needs to be applied to the DEM prior to calculation. Curvature, as well as slope, aspect and ``northness'', are all sensitive to noise because calculating these parameters involve calculating the first and second derivatives of the elevation, which are highly dependent on the size of the DEM cell. To minimize the effect of noise on these four parameters, a smoothing filter was applied to the DEM and this smoothed DEM was used to calculate curvature, slope, aspect and ``northness''. The non-smoothed DEM was used to determine elevation and $Sx$ because these parameters do not depend on a topographic length scale and their values are not sensitive to the size of the DEM cell size.
+
+To choose a smoothing algorithm and window size, I applied a number of smoothing algorithms and chose the combination that resulted in the highest correlation between topographic parameters and point-scale winter balance values. Window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells were used. For all sizes, inverse-distance weighted smoothing and Gaussian smoothing were poorly correlated with WB. The smoothing algorithm that calculated the mean values of gridcells within a 7$\times$7 window resulted in the highest correlation between curvature (second derivative) and WB as well as slope (first derivative) and WB. The window size that produced the highest correlation of WB values and curvature for each glacier differed, but for all WB values taken together, the 7$\times$7 window resulted in the highest correlation. For slope, the highest correlation for individual glaciers was from the DEM with a 7$\times$7 smoothing window but the overall correlation was not the highest with this window. To maintain consistency between parameters, the 7$\times$7 smoothing window was chosen and applied to the DEM for calculation of curvature, slope, aspect and ``northness''. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.7\textwidth]{G13curvatureSmoothing.jpeg}\\
+	\caption{(a) Curvature found using the orginal DEM. (B) 
+	The smoothed (7$\times$7 window moving average) DEM.}
+	\label{fig:smoothingCurve}
+\end{figure}
+
+
+\subsection{Parameter correlations}
+
+The correlation between topographic parameters at sampling locations on each glacier is shown in Table \ref{tab:pearson_correlation}. Correlation values are generally low, with the exception of the correlation between northness and aspect on Glacier 2 and northness and $Sx$ on Glacier 13, which were both larger than 0.7. Since there is little correlation between parameters and the correlations vary between glaciers, the use of a linear regression with these topographic parameters as predictor variables is warranted. 
+
+\begin{table}[H]
+\centering
+\caption{Pearson correlation coefficients between topographic parameters at sampled locations. \params}
+\label{tab:pearson_correlation}
+\begin{tabular}{cc|ccccccc}
+ &  & $z$ & $d_C$ & $\alpha$ & $m$ & $N$ & $\kappa$ & $Sx$ \\ \hline
+\multirow{7}{*}{Glacier 4} & $z$ & 1 & 0.16 & $-$0.57 & $-$0.08 & $-$0.51 & 0.17 & 0.43 \\
+ & $d_C$ &  & 1 & 0.13 & 0.56 & 0.16 & $-$0.43 & 0.35 \\
+ & $\alpha$ &   &  & 1 & 0.57 & 0.95 & $-$0.61 & $-$0.58 \\
+ & $m$ &   &   &   & 1 & 0.64 & $-$0.58 & $-$0.10 \\
+ & $N$ &   &   &   &   & 1 & $-$0.59 & $-$0.59 \\
+ & $\kappa$ &   &   &   &   &   & 1 & 0.05 \\
+ & $Sx$ &   &   &   &   &   &   & 1 \\ \hline
+\multirow{7}{*}{Glacier 2} & $z$ & 1 & 0.06 & $-$0.52 & $-$0.58 & $-$0.62 & 0.45 & 0.57 \\
+ & $d_C$ &   & 1 & 0.06 & 0.13 & 0.11 & $-$0.27 & 0.01 \\
+ & $\alpha$ &   &  & 1 & 0.33 & 0.86 & $-$0.42 & $-$0.45 \\
+ & $m$ &   &   &   & 1 & 0.74 & $-$0.67 & $-$0.41 \\
+ & $N$ &   &   &   &   & 1 & $-$0.67 & $-$0.48 \\
+ & $\kappa$ & &   &   &   &   & 1 & 0.28 \\
+ & $Sx$ &   &   &   &   &   &   & 1 \\ \hline
+\multirow{7}{*}{Glacier 13} & $z$ & 1 & 0.15 & 0.19 & $-$0.15 & 0.10 & 0.02 & 0.27 \\
+ & $d_C$ &   & 1 & $-$0.05 & 0.18 & 0.10 & $-$0.45 & 0.06 \\
+ & $\alpha$ &   &   & 1 & $-$0.07 & 0.68 & $<$0.01 & 0.45 \\
+ & $m$ &   &   &   & 1 & 0.63 & $-$0.22 & $-$0.22 \\
+ & $N$ &   &   &   &   & 1 & $-$0.21 & 0.23 \\
+ & $\kappa$ &   &   &   &   &   & 1 & $-$0.30 \\
+ & $Sx$ &   &   &   &   &   &   & 1
+\end{tabular}
+\end{table}
+
+
+\subsection{Topographic parameter distributions}
+
+
+Elevation maps (Figure \ref{map:elev}) show that both Glacier 2 and 13 have a low proportion of high elevation areas, which correspond to steep headwalls. Mean elevation is the same for all glaciers for the full and sampled distribution within one standard deviation (Table \ref{tab:sampled&fullParams_stats}). However, maximum elevation values are lower for Glacier 4 than the other two glaciers (Figure \ref{sampledRange:elev}) and the sampled elevation means are approximately 200 m less than that of the full distribution. Standard deviations are smaller for sampled ranges for all glaciers. The skewness of sampled and full distributions is different for all glaciers. Elevation full distributions are similar for the study glaciers, with kurtosis for all distributions, except sampled elevation on Glacier 13, being less than 3 (value for a normal distribution). Kurtosis of sampled distributions show that Glacier 13 had a broader distribution and Glacier 2 has a narrower distribution. 
+
+The distribution of sampled distance from centreline (Figure \ref{sampledRange:centreD}) is different from that of the full distribution. Generally, large distances were not sampled. Larger values of skewness and kurtosis in the full distribution indicate that these distributions are broader and span a larger range of values (Table \ref{tab:sampled&fullParams_stats}). This is also seen in the mean and standard deviation values, which are also larger for the full distribution. Large values of distance from centreline are located at the edges of the glacier in the accumulation area (Figure \ref{map:centreD}), which constitute steep, inaccessible terrain. Within the ablation area, the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier.
+
+The aspect of Glaciers 2 and 13 indicate that the majority of these two glaciers is north facing, while the majority of Glacier 4 is south facing (Figure \ref{map:aspect}). This is also highlighted in the mean values of aspect, which are positive for Glaciers 2 and 13 and negative for Glacier 4 (Table \ref{tab:sampled&fullParams_stats}). Sampled mean aspect is similar to the full distribution, although the standard deviation of sampled aspects is much lower. Further, the skewness and kurtosis of the sampled distributions differs considerably from the full distribution and there are many aspects that were not sampled (Figure \ref{sampledRange:aspect}). 
+
+Slope of the three study glaciers (Figure \ref{map:slope}) is generally less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 having steep slopes. The full and sampled distributions of slope are similar between glaciers (Table \ref{tab:sampled&fullParams_stats}), with mean values of $\sim$13$^{\circ}$ for the full distribution and 5$^{\circ}$ to 8$^{\circ}$ for the sampled distribution. The sampled distributions are all different than the full range, as indicated by the lower means, standard deviations and skewness, as well as larger kurtosis. This shows that the sampled distributions are generally narrower than full distributions and severely under sample steep slopes (Figure \ref{sampledRange:slope}).
+
+The mean ``northness'' values for all glaciers were close to zero and the majority of cells have values close to zero, which is likely due to their low slope values (Figure \ref{map:northness}). Even for Glacier 4, which is largely south facing and should thus have lower values of ``northness'', has a distribution with a mean close to zero (Table \ref{tab:sampled&fullParams_stats}). The low slope values mean that the values of ``northness'' were determined largely by the aspect, which can be seen by the resemblance between the ``northness'' map and the aspect map and their high correlation (Table \ref{tab:pearson_correlation}). Sampled distributions of ``northness'' did not resemble the full distributions. Although the mean values were similar, the skewness and kurtosis values were higher for all glaciers, indicating that the sampling was biased.
+
+Curvature values on all glaciers are largely negative, indicating that concave topography is more prevalent than convex topography (Figures \ref{map:curvature} and \ref{sampledRange:curvature}). The sampled distribution of curvature is a poor representation of the full distribution as shown by the dramatically different values of skewness, which are positive for the full distribution and negative for the sampled distribution (Table \ref{tab:sampled&fullParams_stats}). 
+
+$Sx$ maps over the study glaciers are shown in Figure \ref{map:Sx} and the wind direction and maximum search distance with the highest correlation to point-scale winter balance for each glacier are shown in Table \ref{tab:Sxparams}. For Glacier 4, an approximately east wind and 300 m search distance were most strongly correlated. The correlation was negative, which means that negative values of $Sx$ (exposure) correspond to areas with higher winter balance (more snow). This is counter intuitive and perhaps indicates that $Sx$ is not an appropriate topographic parameter to correlate with WB on Glacier 4. Despite this, $Sx$ was retained in future analysis for consistency between glaciers. For Glacier 2, a north wind with a 300 m search distance was most strongly correlated and for Glacier 13, a west wind with a 200 m search distance produced the strongest correlation. Both of these correlations were positive, so a more positive $Sx$ value (sheltered) corresponds to higher values of point-scale winter balance (more snow). The correlation values for Glacier 4 and 2 are low ($<$0.3) which indicates that $Sx$ will likely be insignificant in estimating snow accumulation. The correlation between $Sx$ and point-scale winter balance on Glacier 2 is higher (0.56). 
+
+The full distribution of $Sx$ (Figure \ref{sampledRange:Sx}) is different for each glacier and differs greatly between sampled and full distributions. Glacier 2 has a mean less than zero, indicating that a large portion of the glacier has exposed topography (Table \ref{tab:sampled&fullParams_stats}). Glacier 4 and 13 have positive mean values of $Sx$, indicating more sheltered topography. Extreme values of $Sx$ are generally located along the edges of the accumulation areas (Figure \ref{map:Sx}). The sampled distribution mean for Glacier 2 is close to that of its full distribution, while the sampled distribution means of Glacier 4 and 13 are different (negative) than that of the full distribution means (positive). The sampled distribution are more sharply peaked, as indicated by the smaller standard deviation values and larger kurtosis when compared to the full distributions. The skewness also differs for Glaciers 4 and 2, with the sampled distributions skewed more to the right than full distributions. Overall, the sampled distribution of $Sx$ is a poor representation of the full distribution. 
+
+Overall, the sampled topographic parameters are poor representatives of the full distribution of parameters. Extreme values of all parameters are grossly under sampled and the distribution of the sampled parameters generally differs from the full distribution. This was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. These errors are especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the highest winter balance values and is likely to heavily influence glacier-wide winter balance values. Generally, the sampled values do not fully capture the variance in topographic parameters but a regression is still valuable  since topographic regressions are common when estimating winter balance.  
+
+\begin{sidewaystable}
+\small
+\centering
+\caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature and are unitless for cosine of aspect ($\alpha$), ``northness'' ($N$), slope ($m$) and wind redistribution ($Sx$). Skewness is a measure of the data asymmetry about the mean, with positive values indicating data that are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
+\label{tab:sampled&fullParams_stats}
+\begin{tabular}{cc|cccc|cccc}
+ & \textbf{} & \multicolumn{4}{c|}{\textbf{Full}} & \multicolumn{4}{c}{\textbf{Sampled}} \\
+\textit{\textbf{}} & \textit{} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} & \textit{Mean} & \textit{\begin{tabular}[c]{@{}c@{}}Standard \\ Deviation\end{tabular}} & \textit{Skewness} & \textit{Kurtosis} \\ \hline
+\multirow{7}{*}{\textbf{Glacier 4}} & $z$ & 2343.76 & 178.36 & $-$0.17 & 2.13 & 2242.63 & 89.52 & 0.00 & 2.59 \\
+ & $d_C$ & 258.95 & 233.49 & 1.82 & 6.52 & 124.33 & 89.56 & 0.32 & 2.04 \\
+ & $\alpha$ & $-$0.35 & 0.61 & 0.75 & 2.23 & $-$0.37 & 0.53 & 0.85 & 2.57 \\
+ & $m$ & 12.81 & 7.03 & 1.11 & 3.37 & 8.32 & 3.17 & 2.19 & 8.10 \\
+ & $N$ & $-$0.05 & 0.17 & 0.52 & 4.04 & $-$0.04 & 0.10 & 1.35 & 5.04 \\
+ & $\kappa$ & $-$53.32 & 70.30 & 0.76 & 7.81 & $-$33.34 & 38.33 & $-$0.80 & 2.95 \\
+ & $Sx$ & 1.56 & 11.46 & 1.03 & 4.28 & $-$1.06 & 5.17 & 1.62 & 6.21 \\ \hline
+\multirow{7}{*}{\textbf{Glacier 2}} & $z$ & 2494.71 & 233.03 & 0.09 & 2.82 & 2306.90 & 93.74 & $-$0.02 & 1.93 \\
+ & $d_C$ & 304.95 & 236.97 & 1.22 & 4.51 & 140.65 & 98.84 & 0.37 & 2.74 \\
+ & $\alpha$ & 0.59 & 0.43 & $-$1.43 & 4.83 & 0.52 & 0.33 & $-$0.42 & 2.14 \\
+ & $m$ & 13.02 & 9.48 & 1.08 & 3.00 & 6.54 & 2.24 & 1.97 & 9.12 \\
+ & $N$ & 0.14 & 0.16 & 0.74 & 3.68 & 0.06 & 0.05 & 1.01 & 4.10 \\
+ & $\kappa$ & $-$18.40 & 91.35 & 1.30 & 6.83 & $-$22.94 & 43.91 & $-$1.44 & 4.75 \\
+ & $Sx$ & $-$3.82 & 9.34 & $-$0.18 & 6.09 & $-$3.63 & 2.59 & 0.81 & 4.81 \\ \hline
+\multirow{7}{*}{\textbf{Glacier 13}} & $z$ & 2427.62 & 225.15 & 0.13 & 2.45 & 2219.45 & 82.25 & 0.92 & 5.67 \\
+ & $d_C$ & 443.88 & 308.48 & 0.76 & 3.21 & 181.91 & 152.29 & 0.46 & 2.33 \\
+ & $\alpha$ & 0.55 & 0.49 & $-$1.30 & 3.89 & 0.69 & 0.28 & $-$1.31 & 4.91 \\
+ & $m$ & 13.36 & 10.13 & 1.15 & 3.51 & 5.10 & 1.98 & 2.20 & 12.99 \\
+ & $N$ & 0.13 & 0.18 & 1.01 & 4.02 & 0.06 & 0.04 & 1.58 & 9.63 \\
+ & $\kappa$ & $-$13.31 & 89.16 & 1.24 & 6.65 & $-$6.93 & 32.44 & $-$0.77 & 4.51 \\
+ & $Sx$ & 3.69 & 12.08 & 0.97 & 3.68 & $-$1.62 & 3.94 & 0.90 & 4.95
+\end{tabular}
+\end{sidewaystable}
+
+\pagebreak
+\begin{figure}
+	\centering
+	\includegraphics[width = \textwidth]{Map_elevation.png}\\
+	\caption{Distributions of elevation ($z$) used in the topographic regressions for the study glaciers. This DEM is derived from a SPOT5 satellite image and has a grid size of 40$\times$40 m. Subsequent topographic parameters were derived from this DEM. \topomap}
+	\label{map:elev}
+\end{figure}
+
+\begin{figure}
+  \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_elevation.png}}%
+	\caption{Histograms of elevation ($z$) sampled (black) as compared to total range of elevation (white) of study glaciers.}
+	\label{sampledRange:elev}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Map_centreD.png}\\
+	\caption{Distributions of distance from centreline ($d_C$) used in the topographic regressions for the study glaciers. Centreline was drawn by hand in QGIS. \topomap}
+	\label{map:centreD}
+\end{figure}
+
+\begin{figure}
+	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_centreD.png}}%
+	\caption{Histograms of distance from centreline ($d_c$) sampled (black) as compared to total range (white) of distance from centreline of study glaciers.}
+	\label{sampledRange:centreD}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Map_aspect.png}\\
+	\caption{Distributions of the sine of aspect ($\alpha$), which indicates north-south component of a slope (+1 defined as north), used in the topographic regressions for the study glaciers. Values are derived from a smoothed DEM. \topomap}
+	\label{map:aspect}
+\end{figure}
+
+\begin{figure}
+	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_aspect.png}}%
+	\caption{Histograms of aspect ($\alpha$) sampled (black) as compared to total range (white) of aspect of study glaciers.}
+	\label{sampledRange:aspect}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Map_slope.png}\\
+	\caption{Distributions of slope ($m$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
+	\label{map:slope}
+\end{figure}
+
+\begin{figure}
+	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_slope.png}}%
+	\caption{Histograms of slope ($m$) sampled (black) as compared to total range (white) of slope of study glaciers.}
+	\label{sampledRange:slope}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Map_northness.png}\\
+	\caption{Distributions of ``northness'' ($N$) used in the topographic regressions for the study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope and flat surfaces yield 0. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
+	\label{map:northness}
+\end{figure}
+
+\begin{figure}
+	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_northness.png}}%
+	\caption{Histograms of ``northness'' ($N$) sampled (black) as compared to total range (white) of ``northness'' of study glaciers.}
+	\label{sampledRange:northness}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Map_curvature.png}\\
+	\caption{Distributions of curvature ($\kappa$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
+	\label{map:curvature}
+\end{figure}
+
+\begin{figure}
+	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_curvature.png}}%
+	\caption{Histograms of curvature ($\kappa$) sampled (black) as compared to total range (white) of profile curvature of study glaciers.}
+	\label{sampledRange:curvature}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Map_Sx.png}\\
+	\caption{Distributions of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for the study glaciers. See Section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier. \topomap }
+	\label{map:Sx}
+\end{figure}
+
+\begin{figure}
+	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_Sx.png}}%
+	\caption{Histograms of $Sx$ sampled (black) as compared to total range (white) of $Sx$ of study glaciers.}
+	\label{sampledRange:Sx}
+\end{figure}
+
+
+\section{Summary}
+
+ I also document the process of obtaining topographic parameters, which include elevation, slope, curvature, distance from centreline, aspect, ``northness'' and wind redistribution, from a given DEM of the study area.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2416,10 +2243,128 @@ This chapter focuses on three methods of interpolating and extrapolating gridcel
 % WINTER BALANCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Winter balance }
-\label{sec:WinterBalance}
+\chapter{Uncertainty analysis}
+\label{sec:UncertaintyAnalysis}
+
+
+%%%%
+%Uncertainty
+%%%%
+\section{Variability at multiple scales}
+%%%%
+
+We examine the distribution of winter balance (WB) values and the coefficient of variation of WB in an attempt to compare variability of WB at different scales. The distribution of WB values ($\mathrm{var}_{\mathrm{WB}}$) is found by subtracting the local mean WB ($\mu_\mathrm{loc}$) from WB observations ($x$) and can be expressed as $\mathrm{var}_{\mathrm{WB}} = x-\mu_{\mathrm{loc}}$. The coefficient of variation (CV), or relative standard deviation, is a standardized measure of data variability and is defined as $\mathrm{CV} = \frac{\sigma}{\mu}$. The ratio is often displayed as a percentage.
+
+\begin{table}[b]
+\centering
+\caption{$2\sigma$ values of winter balance variability (\,m\,w.e.) distributions at the point and gridcell scale.}
+\label{tab:2sigmaPointGrid}
+\begin{tabular}{lcccc}
+ & \multirow{2}{*}{\textbf{Point Scale}} & \multicolumn{3}{c}{\textbf{Gridcell Scale}} \\
+ &  & \textit{\begin{tabular}[c]{@{}c@{}}Zigzag\\ data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Transect\\ data\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Density\\ assignment\end{tabular}} \\ \hline
+\textbf{Glacier 4} & 13\% & 14\% & 15\% & 7\% \\
+\textbf{Glacier 2} & 50\% & 26\% & 29\% & 17\% \\
+\textbf{Glacier 13} & 28\% & 19\% & 57\% & 15\%
+\end{tabular}
+\end{table}
+
+\subsection{Point-scale variability}
+
+The point-scale WB variability at a single measurement location (Figure \ref{fig:SWEvar_oneloc_hist}) varies considerably between glaciers (Table \ref{tab:2sigmaPointGrid}). Glacier 2 has the largest $2\sigma$ value, with point-scale WB values varying by as much as 50\% of the local mean. The maps of CV (Figure \ref{fig:SWEvar_oneloc_map}) show that the lower portion of Glacier 2, which corresponds to scoured `ice dunes' observed during field work, has large variability. The lower portion of Glacier 13 also has relatively high variability. This area had shallow snow and bare ice was often observed. From these observations, it appears that areas with almost no snow have relatively high variability.
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.8\textwidth]{SWEvarOneLocHIST.png}\\
+	\caption{Point-scale WB variability at measurement locations. Three to four snow depth measurement were taken at each location and converted to point-scale WB values using S1 density assignment method.}
+	\label{fig:SWEvar_oneloc_hist}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =\textwidth]{Map_pointstd.png}\\
+	\caption{Coefficient of variation of observations at measurement locations. Three to four snow depth measurement were taken at each location and converted to point-scale WB values using S1 density assignment method.}
+	\label{fig:SWEvar_oneloc_map}
+\end{figure}
+
+\subsection{Gridcell-scale variability}
+
+Zigzag survey data, transect survey data and winter balance data obtained using various density assignment methods are used to investigate gridcell-scale variability. 
+
+\subsubsection{Zigzag survey data}
+Zigzag data (Section \ref{sec:zigzagmethods}) contains extensive snow depth data within a 40 $x$ 40 m area that corresponds to a DEM gridcell. Snow depth was converted to WB values by using the Federal Sampler-derived density within the zigzag. Kruskal--Wallis test shows that zigzag variability (Figure \ref{fig:SWEvar_ZZ_hist}) has the same distribution within each glacier (p$>$0.05), with the exception of G13\_Z3B and G13\_Z7C having different distributions. Since variability is consistent for each glacier, the distributions are combined to produce a gridcell-scale WB variability for each glacier (Figure \ref{fig:SWEvar_ZZG_hist}). Glacier 4 has the lowest variability and Glacier 13 has the highest variability, with variation of more than 50\% about the gridcell mean (Table  \ref{tab:2sigmaPointGrid}). 
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.6\textwidth]{ZigzagHistogram.pdf}\\
+	\caption{Distributions of estimated winter-balance values for each zigzag survey in lower (L), middle (M) and upper (U) ablation areas (insets). Local mean has been subtracted. (a) Glacier 4. (b) Glacier 2. (c) Glacier 13.}
+	\label{fig:SWEvar_ZZ_hist}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.8\textwidth]{ZigzagPDF_G.png}\\
+	\caption{Gridcell-scale winter balance variability at the gridcell scale based on zigzag measurements.}
+	\label{fig:SWEvar_ZZG_hist}
+\end{figure}
+
+\subsubsection{Transect survey data}
+There are multiple point-scale WB values (i.e. measurement locations) in many of the gridcells along survey transects. These gridcells are distributed throughout the sampling area so they can provide insight into spatial changes in gridcell variability. I find that WB variability is similar between Glaciers 4 and 13 and largest for Glacier 2 (Figure \ref{fig:SWEvar_MultLoc_hist}). Coefficient of variation values are highest in the `ice dune' area of Glacier 2 and in the lower portion of Glacier 13.  However, most gridcells with multiple measurements have only two or three measurements (Figure \ref{fig:NumObsPerCell}) so variability values are limited by sample size and generally underestimate variability. 
+
+The $2\sigma$ values of the gridcell-scale variability in zigzag and transect survey data are similar for Glaciers 4 and 2, but the zigzag survey $2\sigma$ value on Glacier 13 is considerably larger than the transect survey value (Table  \ref{tab:2sigmaPointGrid}). The spatial distribution of gridcell-scale variability (Figure \ref{fig:SWEvar_MultLoc_map}) closely resembles that of the point-scale variability. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.8\textwidth]{SWEvarMeasureLocHIST.png}\\
+	\caption{Gridcell-scale winter balance variability. Transect survey data is used and variability is based on multiple measurement locations in a DEM gridcell.}
+	\label{fig:SWEvar_MultLoc_hist}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =\textwidth]{Map_cellstd_measureLoc.png}\\
+	\caption{Coefficient of variation of observations at measured gridcells. Multiple measurements locations within each gridcell are used to assess variability.}
+	\label{fig:SWEvar_MultLoc_map}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =\textwidth]{NumObsPerCell.png}\\
+	\caption{Number of measurement locations within DEM gridcells.}
+	\label{fig:NumObsPerCell}
+\end{figure}
+
+
+\subsubsection{Density assignment method}
+
+Variability due to density assignment method is investigated at the gridcell scale. Gridcell-scale WB variability is calculated using the WB values estimated at each measurement gridcell using the eight density assignment methods (Section \ref{sec:densityoptions}). The choice of density assignment method results in relatively low variability that is consistent between glaciers (Figure \ref{fig:SWEvar_Density_hist}). However, there are noticeable spatial patterns in the coefficient of variation due to choice of density assignment method. The coefficient of variation appears to closely follow the elevation gradient, with the lower portions of Glaciers 2 and 13 showing especially high variability (Figure \ref{fig:SWEvar_Density_map}). This spatial pattern likely arises from the elevation dependent interpolation that results in low WB estimates close to the glacier terminus. Despite this, the density variability has the lowest $2\sigma$ value of the investigated sources of variability (Table  \ref{tab:2sigmaPointGrid})
+
+\begin{figure}
+	\centering
+	\includegraphics[width =0.8\textwidth]{SWEvarDensityHIST.png}\\
+	\caption{Winter balance variability at the gridcell scale based on eight different density assignment methods in a DEM gridcell.}
+	\label{fig:SWEvar_Density_hist}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width =\textwidth]{Map_cellstd_density.png}\\
+	\caption{Coefficient of variation at the gridcell scale based on eight different density assignment methods.}
+	\label{fig:SWEvar_Density_map}
+\end{figure}
+
+\subsection{Summary}
+
+Zigzag surveys show that variability of snow depth at the gridcell scale is relatively consistent between zigzag locations but outliers are common. I also investigate variability of winter balance values at multiple scales. At the study glaciers, the greatest variability in both point- and gridcell-scale winter balance is found close to the terminus of Glaciers 2 and 13. The high variability is likely a result of the ice microtopography affecting the distribution of snow, which is shallow in these areas. The magnitude of point- and gridcell-scale variability is approximately equal, with variability due to density interpolation being the small assessed contributor to data variability.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The goal of this chapter is to conduct a rigorous analysis of sources of uncertainty that lead to uncertainty in estimated winter balance (WB). I identify three sources of uncertainty that arise during the process of converting snow depth and density measurements to glacier-wide WB: grid-scale uncertainty, density assignment uncertainty and interpolation uncertainty. I then propagate these sources of uncertainty, individually and combined together, using a Monte Carlo analysis to obtain an uncertainty in glacier-wide WB. Section \ref{sec:Unc_methods} details the three assessed sources of uncertainty and the results of the analysis are presented in Section \ref{sec:Unc_results} and discussed in Section \ref{sec:Unc_discuss}. I do not conduct an uncertainty analysis for regression kriging. 
+
+The final chapter of this thesis encompasses the spatial transferability of the regression models developed in previous chapters as well as an investigation of WB distribution at the regional scale. In Section \ref{sec:transferability} I apply regression models fitted for each study glacier to the remaining glaciers and examine the error that arises. In Section \ref{sec:DonjekAccumGrad} I place the glacier-wide WB of my three study glaciers in the context of snow accumulation on the continental side of the St. Elias Mountains. I draw on previously reported values of WB along the Kaskawulsh Glacier to obtain a regional-scale gradient of WB.
+
 
 \section{Methods}
 \label{sec:Unc_methods}
@@ -2509,10 +2454,6 @@ In this chapter, I use Monte Carlo analysis to quantify the effects of grid-scal
 % Regional Controls
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Regional Controls}
-\label{sec:RegionalControls}
-
-The final chapter of this thesis encompasses the spatial transferability of the regression models developed in previous chapters as well as an investigation of WB distribution at the regional scale. In Section \ref{sec:transferability} I apply regression models fitted for each study glacier to the remaining glaciers and examine the error that arises. In Section \ref{sec:DonjekAccumGrad} I place the glacier-wide WB of my three study glaciers in the context of snow accumulation on the continental side of the St. Elias Mountains. I draw on previously reported values of WB along the Kaskawulsh Glacier to obtain a regional-scale gradient of WB.
 
 
 \section{Transferability of linear regression coefficients}
@@ -2655,6 +2596,114 @@ My results suggest that processes governing distributed WB differ between glacie
 	\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 
 \begin{appendices} 
+
+\chapter{Literature review: Snow models }
+\label{app:snow_models}
+
+\section{Dynamic models}
+
+Deposition and redistribution of snow can be represented using physically based, spatially distributed models. The general aim of these models is to simulate surface processes and how they vary spatially and temporally \citep{Mott2008}. These models usually consider atmospheric conditions including freezing level, precipitation rates, relative humidity and wind speed and direction, as well as processes such as orographic lifting, cloud formation, downslope evaporation, advection and fallout, snow metamorphism and wind redistribution of snow (erosion, saltation) due to terrain induced turbulence \citep{Smith2004, Liston2006, Lehning2008, Mott2008}.  Modelling the dynamically induced flows of these components together describes the preferential deposition and redistribution of snow in alpine environments \citep{Lehning2008,Mott2008,Dadic2010}.
+
+Many models have been developed to describe preferential deposition and redistribution. Early models were developed for flat or gently rolling terrain where boundary layer flow is better understood \citep{Dadic2010}. Boundary layer flow in steep terrain is generally non-linear \citep{Mott2008, Dadic2010}, so a number of different approaches have been applied.  For example, \cite{Dadic2010} and \citep{Lehning2008}modelled wind-flow velocities by solving non-hydrostatic, compressible Navier-Stokes equations in 3-D and aimed to conserve momentum, heat, mass and states of water. \cite{Smith2004} employed Fourier transforms in a linear orographic model, which allowed for a more accurate representation of complex terrain. 
+
+Dynamic models are a valuable way to determine accumulation variability. Since they use physically consistent processes, they can be applied to any site. Dynamic models can also be used in different climatic conditions meaning that they can be applied to past and projected accumulation regimes \citep{Clark2011}. Furthermore, a historic data set of variables is not needed to generate meaningful output. Another advantage of dynamic models is that they allow for high temporal resolution (e.g. \cite{Mott2008} have a 1 hour time step), which allows for snowpack evolution to be examined.
+
+Application of dynamic models is however operationally complex and computationally expensive, and also requires a diverse set of observations. A large number of input parameters, such as precipitation, wind speed and direction, air temperature and relative humidity, need to be measured frequently and extensive sampling within a study region is required for accurate modelling\citep{Liston2006}. For example, \cite{Dadic2010} used meteorological data from three automatic weather stations located throughout the study basin, while in the study done by \cite{Mott2008} monthly stake measurements were needed. Such a well-monitored basin can be difficult to achieve in remote or inaccessible areas. A number of other dynamic models, such as those described in \cite{Fowler2007}, use general circulation model values to drive local circulation models, but model output strongly depends on model boundary choice.  Even with sufficient and appropriate input data, the models must assume a number of parameters and simplify parameter relationships (e.g. constant mean wind speed \citep{Mott2008}) to characterize the atmosphere, which may not realistically describe air movement and stability. Additionally, the models do not account for all modes of snow transport. For example, snow deposition due to avalanching can be an important process of snow transport that is not captured in current models \citep{Mott2008}. 
+
+\section{Statistical downscaling}
+
+Statistical downscaling is the process of determining an empirical relationship between large-scale atmospheric conditions and regional climates \citep{Fowler2007}. In general, this relationship is expressed as a function $F$ such that regional variables $R$ are found by $R=F(X)$ where $X$ encompasses large-scale climate variables \citep{Fowler2007}. These models are trained and validated using gridded reanalysis data from global climate models ($X$) and point observations ($R$). Performance of these models is measured using correlation coefficients, distance measures (e.g. root mean squared error), or explained variance \citep{Fowler2007}. 
+
+There are three main types of statistical models \citep{Fowler2007}. The first is a regression model, which directly quantifies a relationship between a local variable and a number of large-scale variables. Statistical methods such as multiple linear regressions \citep{Hanssen-Bauer1998}, principal component analysis \citep{Kidson1998}, canonical-correlation analysis \citep{Busuioc2001}, neural networks \citep{Zorita1999} and singular value decomposition \citep{Widmann2003} can be employed.  The second type of model is a weather typing scheme, which relates the occurrence of a particular `weather class' to local variables. Weather classes can be found using empirical orthogonal functions or cluster analysis \citep{Fowler2007}. The third model uses weather generators that simulate local precipitation using a prescribed distribution of precipitation \citep{Fowler2007}. 
+
+Large-scale input variables that are usually chosen (e.g. sea-level pressure, geopotential heights) for statistical downscaling are representative of large-scale circulation. Increasingly, other variables such as humidity are being incorporated into analyses to account for mechanisms that rely on thermodynamics and vapour content \citep{Fowler2007}. When focusing on precipitation, integrated vapour transport (IVT) can be used as a proxy for precipitable water in the atmosphere and can be used to identify corridors of large water vapour transport that correlate with intense precipitation events \citep{Neiman2008}. 
+
+Statistical models are a simple way to examine variability. They are computationally efficient and comparatively easy to apply because they are based on standard and accepted statistical procedures \citep{Fowler2007}. Furthermore, predicting variables does not require prior knowledge of all the processes that affect the variable. Functions can therefore be calculated for situations where all processes are currently not accounted for or where many processes are equally important. 
+
+Although the application of statistical downscaling is simple, it has a number of disadvantages. The method is difficult to apply in areas that have minimal historical data, as model performance is better when a long and reliable data set is used for calibration \citep{Fowler2007}. Statistical downscaling also assumes that the relationship between large-scale and local variables is stationary in time, limiting the ability of models to project into the future \citep{Fowler2007}. Furthermore, an empirical relationship assumes that there is no climate system feedback and the data generated through the empirical function are subject to the same biases as those of the original data set \citep{Fowler2007}. \cite{Wilby2000} also notes that the choice of large-scale variable domain (location and spatial extent) exerts a strong effect on the accuracy of the empirical function.
+
+\chapter{Literature review: Other methods of measuring snow accumulation }
+\label{app:snow_measure_methods}
+
+\section{Ground-penetrating radar (GPR)}
+\begin{figure}
+ \centering
+      \includegraphics[width=0.5\textwidth]{gpr_air.png}
+  \caption{Schematic diagram of a helicopter-borne radar snow survey. The travel time for the signal to interact with the snow surface is shown as a solid line and the signal travel time of the interaction with the ice is shown as a dashed line. Together, these values can be used to determine snow depth. The inset (a) is an example waveform that would be recorded from these two events. Figure taken from \cite{Gusmeroli2014}.}
+        \label{gprair}
+\end{figure}
+
+Ground penetrating radar (GPR) can be used to find snow depth along continuous lines. This method is used to calculate the distance from the radar source to a boundary with a strong contrast in dielectric permittivity, which corresponds to a change in material properties \citep{Sold2013}. When the speed of the radar wave through the material is known, the travel time can be measured and from this the distance calculated. On a glacier, the radar wave is able to penetrate snow and ice at MHz frequencies and the strongest reflections arise when water is present \citep{Sold2013}. To measure snow depth, GPR units are mounted on aircrafts or snowmobiles that then travel over snow covered areas (see Figure \ref{gprair}) \citep{Machguth2006, McGrath2015}. The resulting processed radargram (e.g. Figure \ref{gpr}) gives a continuous snow depth profile. Processing of the radargrams involves using tracking algorithms that are able to trace continuous layers. Interpolation between transects is then done to find the glacier-wide accumulation. \cite{McGrath2015} describe this process in five steps: (i) acquisition of GPR and probing data (ground truthing), (ii) calculation of snow density and radar velocity, (iii) calculation of snow thickness and resulting snow water equivalent (SWE), (iv) application of a correction to measured accumulation based on ground truth data and (v) use of a multiple regression model to extrapolate SWE across the glacier. The extrapolation of SWE can also be done using an inverse approach with a coupled surface energy-balance snow model \citep{Pelt2014}.
+
+GPR is an effective tool for measuring accumulation. It provides continuous snow depth transects, which means that spatial variability is well represented along the radar lines. Surveys also need to be conducted only once to gain depth observations, which makes data collection fast and and reduces logistical efforts \citep{Machguth2006}. GPR snow depth estimates are not affected by glacier dynamics and the ability to fly over steep or inaccessible regions means that all areas of a glacier can be measured. 
+
+A large limitation of GPR is the difficultly of processing radargrams. Areas where the snow--ice boundary is not well defined (i.e. the accumulation area) lack clearly contrasted material properties, which can lead to misinterpretation of their internal layers \citep{McGrath2015}. In the ablation area, the presence of crevasses can also result in radargram misinterpretation \citep{Machguth2006}. Variation and uncertainty in radar wave speed due to differing snow density and liquid water content can also affect depth calculations \citep{Sold2013}. Often, wave speed is only measured in a few reference locations so changes in snow pack properties cannot be accounted for. Lastly, there is no universal procedure for processing GPR data. Selection of parameters and processing algorithms is dependent on available equipment, field conditions, survey design and intention \citep{Sold2013}, which hampers the reproducibility of surveys.
+
+\begin{figure}
+ \centering
+      \includegraphics[width=\textwidth]{gpr.png}
+  \caption{Radargram from the accumulation area of Findelengletscher, Valais, Switzerland. (a) The reflection at the air-snow interface. (b) The reflection at the snow-ice interface. Figure taken from \cite{Sold2013}.}
+        \label{gpr}
+\end{figure}
+
+\subsection{DEM subtraction}
+\begin{wrapfigure}{R}{0.5\textwidth}
+ \centering
+      \includegraphics[width=0.5\textwidth]{lidar.png}
+  \caption{Schematic of airborne LiDAR system geometry. Scan angle ($\theta$), height ($h$) and swath width ($SW$) are shown. Figure from \cite{Deems2006}.}
+        \label{lidar}
+\end{wrapfigure}
+
+Digital elevation model (DEM) subtraction involves taking two detailed surface topography scans --- one at the end of the melt season and one at the end of the accumulation season --- and subtracting them from each other to find the snowpack height. The largest advantage of this remote sensing method is that it provides a highly resolved spatial measurement of snow depth over an entire basin \citep{Deems2006, Sold2013}. Data collection is fast, although two surveys must be conducted. This technique is sensitive to other processes that change the glacier surface elevation, including vertical displacement due to ice flow (positive in the ablation area and negative in the accumulation area), firn compaction and surface lowering due to melt after the acquisition of the end of melt season DEM \citep{Sold2013}. For example, \citep{Sold2013} found that a first-order approach (where the observed elevation change was interpreted as snow accumulation) was inconsistent with snow depth probing --- DEM subtraction showed decreasing accumulation with an increase in elevation. Corrections can be made to account for these discrepancies but they rely on \textit{in situ} measurement of snow depth, knowledge of long-term mass balance, or information about the vertical displacement of ice from GPS towers \citep{Sold2013}. 
+
+Lidar and photogrammetry are the two main methods of producing DEMs. Lidar produces a surface elevation model by calculating the distance to a target (by measuring the time between an emitted and return laser signal) \citep{Deems2006, Sold2013}. Terrestrial lidar systems involve stationary units placed in vantage points from which they are able to scan the basin surface \citep{Grunewald2010}. Large basins require multiple overlapping scans to acquire a complete surface profile. Airborne lidar systems (see Figure \ref{lidar}) can also only scan a certain size footprint so the aircraft must fly over all parts of the basin to acquire a full surface profile. These systems also require an accurate global positioning system (GPS) --- which is often corrected by referencing to a stationary GPS --- to determine the 3D locations of the surface \citep{Deems2006}. Airborne systems are widely applied and favourable in large basins or ones where no vantage point exists or is inaccessible. However, these systems are expensive so terrestrial scanners, which are comparatively more cost effective, are becoming popular \citep{Grunewald2010}. 
+
+Complex topography and multiple laser reflections can cause problems when producing a DEM from lidar data \citep{Deems2006}. Significant vertical changes result in the spreading of the laser footprint and an incorrect interpretation of distance. \citep{Deems2006} shows that an error of 50 cm can result from lidar scans of 45$^\circ$ terrain from 1000 m flight height. Careful planning of flight paths can reduce this error. Scattering of laser light and penetration into the snow pack can also introduce error into height calculations, although its magnitude is small ($\sim$cm) \citep{Deems2006}. When subtracting the two measured DEMs, misclassification of corresponding point locations can occur, resulting in error in the final accumulation value \citep{Deems2006}.  
+
+Photogrammetry uses photographs to produce a series of DEMs that can be subtracted to find snow depth. Early attempts in the 1960s at applying this technique in snow covered areas suffered from poor vertical resolution due to overexposed photographs and the necessity of manual differencing \citep{Nolan2015}. Modern photography equipment, GPS and software technology have allowed for an increase in accuracy and lowering of costs associated with photogrammetry \citep{Nolan2015}. Current photogrammetry software is able to determine a snow surface profile relative to stable, snow-free points within the mapped area \citep{Farinotti2010}. The photos collected for DEM creation can also be used to identify suspect changes in the snow pack \citep{Nolan2015}.
+Errors in photogrammetric measurements arise from sensor noise and poor lighting. Camera sensor noise is present in all digital photographs and its location changes from picture to picture. These erroneous pixels can be misinterpreted by the software as actual differences in height and thus lead to significant topographic noise, especially in steep mountainous terrain \citep{Nolan2015}. Additionally, having sufficient contrast in the photographed snow surface is critical for determining surface profile. Flat light conditions can reduce the resolution of the DEM or result in an absence of data in those parts of the photograph \citep{Nolan2015}. These effects can be avoided by waiting for better lighting.
+
+\subsection{Comparison of methods}
+\label{sec:comparemethods}
+The three methods of measuring accumulation differ in the extent of spatial information, collection techniques, costs and processing needs. Spatial footprint is lowest for probing, which means that data must be interpolated. Although the actual measurement is simple and has relatively low uncertainty, the interpolation of points can lead to misrepresentation of spatial variability and significant errors that are difficult to quantify. GPR provides continuous snow depth profiles, but interpolation is still needed between lines. Further, significant errors can arise from misinterpretation of layers in radargrams. DEM differencing has the advantage of allowing for the measurement of surface topography across the whole basin, but error can result when glacier dynamics affect surface height changes. 
+
+Large differences in data collection time and cost also exist. Probing has low equipment costs but requires a large amount of human hours for ground-based measurements. GPR and DEM subtraction both require the use of aircrafts and expensive electronic equipment. However, these methods require lower logistical effort and data collection occurs quickly.  
+
+The three methods also have different data processing requirements. Simple statistical relations can be used for interpolating accumulation found by probing. However, GPR and DEM subtraction both require specialized software and knowledge of image processing methods, which increases the likelihood that misinterpretations of observations will occur. GPR has an advantage over DEM subtraction because it is not subject to elevation changes due to glacier dynamics and firn compaction. However, DEM subtraction has the advantage of more easily detecting the previous year's surface in the accumulation area and provides complete coverage of the study area \citep{Sold2013}. 
+
+In general, \cite{Machguth2006} and \cite{Sold2013} found good correlations between probing measurements, GPR and DEM subtraction. However, \citep{Sold2013} found that the methods did not always corroborate each other, particularly in crevassed areas and marginal regions. In crevassed areas, accumulation has large variation on small scales. The footprint of the GPR was usually too large to detect changes in snow depth and the movement of crevasses with time affected the lidar-derived snow depth. Marginal regions were misrepresented in the probing-derived profile because measurement was often not conducted in these areas. This area also included the uppermost part of the glacier where wind erosion had a significant effect on accumulation. 
+
+Choice of measurement technique for a snow survey is therefore dependent on project specific needs. Resolution, cost and equipment availability need to be considered when selecting the most appropriate method. To reduce errors and misrepresentation of measurements, multiple methods can also be applied \citep{Machguth2006}. 
+
+\subsection{Temporally resolved methods}
+Temporally resolved methods take continuous measurements to provide a time series of snow accumulation. Usually, these methods involve relatively few measurement locations so they do not represent spatial variability well. However, they are especially useful for identifying large snowfall events (rapid increases in accumulation) and wind erosion (gradual decreases in accumulation). 
+
+There are a number of methods of measuring accumulation with time. Snow depth sensors, such as the SR50, measure the time between emission and return of an ultrasonic pulse \citep{Ryan2008}. As snow accumulates, the distance between the sensor and the snow surface decreases. Snow pillows, which are large (3 m diameter) bladders filled with antifreeze solution, directly measure changes in snow water equivalent with time \citep{Archer1995}. As snow accumulates on the pillow, the weight of the snow forces an equivalent amount of the solution from the pillow to a standpipe. The height of the solution in the pipe is then recorded. Another method for measuring snow depth involves using multipath modulation of GPS signals \citep{Larson2009,McCreight2014}. Multipath modulation involves isolating GPS signals that are reflected from horizonal, planar reflectors, such as a snow surface. The distance between the geodetic GPS receivers and the reflection point will change during the accumulation season, thus recording changes in snow depth. This method allows for the measurement of average snow depth in a $\sim$1000 m$^2$ area around the antenna \citep{McCreight2014}.
+
+\chapter{Literature review: Glaciers in the St. Elias Mountains}
+\begin{figure}
+ \centering
+      \includegraphics[width=\textwidth]{stelias.png}
+  \caption{Map of the St. Elias Mountains and surrounding area. Figure taken from \cite{Danby2003}.}
+        \label{map}
+\end{figure}
+
+Snow data are generally sparse in mountain regions, especially those that are far from population centres \citep{Marcus1970}. The St. Elias Mountains (Figure \ref{map}) are one such area. These mountains contain the largest non-polar ice field and the longest valley glaciers outside of Greenland and Antarctica \citep{Marcus1970, Danby2003}. Steep climatic gradients across the mountains create sharp changes in glacier cover and mass balance \citep{Clarke2002}. This region currently has the most negative mass budget and is the largest contributor to sea-level rise in the world \citep{Kaser2006, Gardner2013}. Understanding how local glacier mass balance is affected by distribution of snow is therefore critical for accurate predictions of glacier response to a warming climate. 
+
+The weather in the St. Elias varies considerably over the range. The west side of the mountains is characterized by a cool, Marine West Coast climate due to the influence of the Pacific Ocean, while the eastern side (just 250 from the coast) is considered subarctic \citep{Marcus1970}. \cite{Taylor1969} studied the relationship between synoptic weather conditions and basin weather conditions across the St. Elias Mountains. It was observed that the mountains are oriented perpendicular to frequent and intense storms that originate in the ocean, which results in considerable interaction between weather and topography. When weather moves from the Gulf of Alaska, it is orographically lifted, which creates significant precipitation. If the front is perpendicular to the mountains, it can be deflected north or south, depending on the upper atmospheric flow. Fronts that are more or less aligned parallel to the mountains or very strong perpendicular fronts travel without deflection. The fronts can also stall on the west side of the mountains. Occasionally, the fronts spill over the mountain divide (located to the west of the Kaskawulsh Glacier) and descend along the eastern side, which often results in decreased precipitation. The rain shadow is likely a major cause of differences in accumulation and equilibrium line altitude (ELA) between the two sides of the mountains --- the marine side has an ELA of $\sim$1100 m and the continental side has an ELA of $\sim$2100 m, while at the same elevation there is three times more accumulation on the marine side \citep{Marcus1970}.
+
+Although the characterization of synoptic conditions by \cite{Taylor1969} is useful, it was conducted during the summer when weather conditions are considerably different than during winter. \cite{Taylor1969} does note though that the weather patterns observed would likely be strengthened during winter because many of the spatial gradients are enhanced. The synoptic air masses present during the winter produce a strong temperature and moisture gradient, with warm, moisture-laden air coming from the Pacific Ocean and cold, dry air coming from the Mackenzie Basin. These gradients would likely result in even more precipitation and stronger winds. The presence of a high pressure Arctic system could decrease the ability of low-pressure systems to pass over the divide, leading to a further enhancement of precipitation on the western side of the mountains. 
+
+The study done by \cite{Taylor1969} also identified weather patterns at multiple scales. Synoptic conditions, including front movement, affected regional-scale differences in weather and precipitation patterns. Watershed-scale topography was responsible for differences in weather between nearby basins and affected wind speed and direction most significantly. Point-scale topography had strong effects on snow accumulation. Orographic effects were found to be significant on all scales. 
+
+Research on snow distribution and glacier mass balance in the St. Elias is limited. The first significant investigations took place under Project Snow Cornice \citep{Wood1948}. Researchers looked at snow accumulation and ice formation as well as ice-mass thermal regime, density and depth. Studies were conducted primarily on large glaciers such as the Kaskawulsh and Seward Glaciers and thus provided insights into large-scale accumulation patterns. This initiative was then followed by the Icefield Ranges Research Project (IRRP), which was established in 1961 \citep{Danby2003}. A number of subsequent long-term studies have been established in the St. Elias since IRRP \citep[e.g.][]{Clarke1984, Paoli2009}. For example, \cite{Wheler2014} determined the end-of-winter accumulation for the mass balance of a small alpine glacier in the Donjek Range. The study measured snow depth at a number of fixed stakes and used a multiple linear regression model --- that accounted for slope, curvature and elevation --- to extrapolate these points and estimate basin-wide winter balance. \cite{Arendt2008} also briefly studied the mass balance of a number of glaciers in the St. Elias.
+
+Two ice cores have been retrieved from the St. Elias Mountains. The first one was taken from the summit of Mt. Logan (5340 m) in 1980 and was 103 m long. The accumulation history in this core has been used to study the local \citep{Holdsworth1991} and regional \citep{Moore2002} climate history. A second core, called the Eclipse core, was taken from a site 45 km northeast of Mt. Logan, 2 km lower in altitude, with an accumulation almost five times as large \citep{Wake2002}. This core is 160 m and has also been used for studying local and regional climate history \citep{Wake2002}. 
+
+A study done by \cite{Pomeroy1999} looked at snow mass balance in a non-glacierized alpine basin within the St. Elias. It was found that wind had a significant impact on the distribution of snow --- up to 79$\%$ of the snow was redistributed from alpine areas to (primarily) hillsides, where accumulation was tripled. In the study basin, measured accumulation ranged from 54$\%$ to 419$\%$ of the actual snowfall. However, in a subsequent study year, which had two large wet snow events, the redistribution of snow was minimal and accumulation variability was much lower. The type of snow and how susceptible it is to wind effects therefore also plays a critical role in distribution. Additionally, areas within the basin can have different accumulation patterns throughout the winter. One area within the basin studied by \cite{Pomeroy1999} had almost no redistribution (despite heavy winds) from the beginning of winter through to March. After this, all of the snow was lost even though additional accumulation events occurred in the basin. This could indicate a dependence of redistribution on weather conditions such as temperature, or that a critical depth was reached that allowed for redistribution to occur. Sublimation was also observed to occur throughout the study period and since sublimation is several orders of magnitude faster when blowing snow is present ($\sim$20\% of winter days in this study), it could have a significant impact.
+
+There is clearly a strong need for a more comprehensive understanding of snow accumulation in the St. Elias Mountains. Although a few studies have examined accumulation, no studies have examined the distribution of snow and how it varies spatially. This is especially true of small alpine glaciers in the St. Elias Mountains, since most of the accumulation differences have been observed on large glaciers. It is likely that orographic lifting as well as wind redistribution and preferential deposition play major roles in determining accumulation on small alpine glaciers, so future studies should focus on the impact of these factors. 
+
 
 	\chapter{GPS Waypoint Creation and Upload to GPS Device}
 	
