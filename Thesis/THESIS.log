@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  1 OCT 2017 09:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  1 OCT 2017 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -867,19 +867,25 @@ Overfull \hbox (0.46846pt too wide) in paragraph at lines 58--58
 /m/n/10.95 ) sam-pled (black) as com-pared to to-tal (white) 
  []
 
+
+Overfull \hbox (1.04214pt too wide) in paragraph at lines 66--66
+ \T1/lmr/m/n/10.95 The WB val-ues were cal-cu-lated us-ing inverse-distance wei
+ghted snow- 
+ []
+
 [18] [19]
 Overfull \hbox (23.42053pt too wide) in paragraph at lines 82--82
  \T1/lmr/m/n/10.95 pits (S4). Ob-served win-ter bal-ance val-ues are over-lain 
 on the maps.Arrows 
  []
 
-[20] [21]
+[20]
 Overfull \hbox (0.13168pt too wide) in paragraph at lines 91--91
  [][] [][]\T1/lmr/m/n/10.95 (a) Mean win-ter bal-ance and (b) el-e-va-tion re-g
 res-sion co-ef-fi-cient found 
  []
 
-[22] [23])
+[21] [22] [23])
 \tf@lof=\write6
 \openout6 = `THESIS.lof'.
 
@@ -893,43 +899,43 @@ Chapter 1.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 120.
 
-[3] [4] [5] <snowpit.jpg, id=1744, 1365.1pt x 2055.68pt>
+[3] [4] [5] <snowpit.jpg, id=1743, 1365.1pt x 2055.68pt>
 File: snowpit.jpg Graphic file (type jpg)
  <use snowpit.jpg>
 Package pdftex.def Info: snowpit.jpg used on input line 176.
 (pdftex.def)             Requested size: 173.44534pt x 261.16257pt.
 
-[6] [7 <./snowpit.jpg>] [8] <random.png, id=1819, 511.9125pt x 480.79625pt>
+[6] [7 <./snowpit.jpg>] [8] <random.png, id=1818, 511.9125pt x 480.79625pt>
 File: random.png Graphic file (type png)
 
 <use random.png>
 Package pdftex.def Info: random.png used on input line 203.
 (pdftex.def)             Requested size: 142.26439pt x 128.03398pt.
- <star.png, id=1821, 511.9125pt x 474.77374pt>
+ <star.png, id=1820, 511.9125pt x 474.77374pt>
 File: star.png Graphic file (type png)
  <use star.png>
 Package pdftex.def Info: star.png used on input line 206.
 (pdftex.def)             Requested size: 142.26439pt x 128.03848pt.
 
-<Lgrid.png, id=1822, 511.9125pt x 483.8075pt>
+<Lgrid.png, id=1821, 511.9125pt x 483.8075pt>
 File: Lgrid.png Graphic file (type png)
  <use Lgrid.png>
 Package pdftex.def Info: Lgrid.png used on input line 212.
 (pdftex.def)             Requested size: 142.26439pt x 128.03857pt.
 
-<nested.png, id=1823, 820.06375pt x 609.27625pt>
+<nested.png, id=1822, 820.06375pt x 609.27625pt>
 File: nested.png Graphic file (type png)
  <use nested.png>
 Package pdftex.def Info: nested.png used on input line 215.
 (pdftex.def)             Requested size: 142.262pt x 128.03545pt.
 
-<swiss.png, id=1824, 516.93124pt x 486.81876pt>
+<swiss.png, id=1823, 516.93124pt x 486.81876pt>
 File: swiss.png Graphic file (type png)
  <use swiss.png>
 Package pdftex.def Info: swiss.png used on input line 221.
 (pdftex.def)             Requested size: 142.26302pt x 128.03325pt.
 
-<hourglass.png, id=1825, 683.55376pt x 524.96124pt>
+<hourglass.png, id=1824, 683.55376pt x 524.96124pt>
 File: hourglass.png Graphic file (type png)
  <use hourglass.png>
 Package pdftex.def Info: hourglass.png used on input line 224.
@@ -941,20 +947,20 @@ Package pdftex.def Info: hourglass.png used on input line 224.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 258.
 
-<Sampling.pdf, id=1992, 669.50125pt x 413.545pt>
+<Sampling.pdf, id=1991, 669.50125pt x 413.545pt>
 File: Sampling.pdf Graphic file (type pdf)
  <use Sampling.pdf>
 Package pdftex.def Info: Sampling.pdf used on input line 280.
 (pdftex.def)             Requested size: 390.25536pt x 241.06781pt.
 
-<ScalesOfVariability.png, id=1993, 957.5775pt x 580.1675pt>
+<ScalesOfVariability.png, id=1992, 957.5775pt x 580.1675pt>
 File: ScalesOfVariability.png Graphic file (type png)
 
 <use ScalesOfVariability.png>
 Package pdftex.def Info: ScalesOfVariability.png used on input line 287.
 (pdftex.def)             Requested size: 411.93768pt x 249.58223pt.
  [14] [15] [16 <./Sampling.pdf>] [17 <./ScalesOfVariability.png>] <MastersFlow.
-png, id=2049, 918.43124pt x 495.8525pt>
+png, id=2048, 918.43124pt x 495.8525pt>
 File: MastersFlow.png Graphic file (type png)
 
 <use MastersFlow.png>
@@ -964,7 +970,7 @@ Package pdftex.def Info: MastersFlow.png used on input line 303.
 Chapter 2.
 [20
 
-] <chosenglaciers.jpeg, id=2077, 796.42023pt x 599.4301pt>
+] <chosenglaciers.jpeg, id=2076, 796.42023pt x 599.4301pt>
 File: chosenglaciers.jpeg Graphic file (type jpg)
 
 <use chosenglaciers.jpeg>
@@ -975,7 +981,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 339--339
  [][] 
  []
 
-<Transects_planned.jpeg, id=2078, 721.24977pt x 559.06525pt>
+<Transects_planned.jpeg, id=2077, 721.24977pt x 559.06525pt>
 File: Transects_planned.jpeg Graphic file (type jpg)
 
 <use Transects_planned.jpeg>
@@ -986,7 +992,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 346--346
  [][] 
  []
 
-<Zigzag_planned.jpeg, id=2079, 721.24977pt x 559.06525pt>
+<Zigzag_planned.jpeg, id=2078, 721.24977pt x 559.06525pt>
 File: Zigzag_planned.jpeg Graphic file (type jpg)
 
 <use Zigzag_planned.jpeg>
@@ -997,7 +1003,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 353--353
  [][] 
  []
 
-<ZZ_vertex.jpeg, id=2080, 1084.05pt x 1025.8325pt>
+<ZZ_vertex.jpeg, id=2079, 1084.05pt x 1025.8325pt>
 File: ZZ_vertex.jpeg Graphic file (type jpg)
  <use ZZ_vertex.jpeg>
 Package pdftex.def Info: ZZ_vertex.jpeg used on input line 360.
@@ -1005,13 +1011,13 @@ Package pdftex.def Info: ZZ_vertex.jpeg used on input line 360.
 
 [21] [22 <./chosenglaciers.jpeg>] [23 <./Transects_planned.jpeg>] [24 <./Zigzag
 _planned.jpeg>] [25 <./ZZ_vertex.jpeg>] [26]
-<photo_probing.jpg, id=2118, 1027.84pt x 770.88pt>
+<photo_probing.jpg, id=2117, 1027.84pt x 770.88pt>
 File: photo_probing.jpg Graphic file (type jpg)
  <use photo_probing.jpg>
 Package pdftex.def Info: photo_probing.jpg used on input line 397.
 (pdftex.def)             Requested size: 411.93768pt x 308.95819pt.
 
-[27] <probers1.jpg, id=2123, 963.6pt x 542.025pt>
+[27] <probers1.jpg, id=2122, 963.6pt x 542.025pt>
 File: probers1.jpg Graphic file (type jpg)
  <use probers1.jpg>
 Package pdftex.def Info: probers1.jpg used on input line 405.
@@ -1021,7 +1027,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 405--406
 [][] 
  []
 
-<probers2.jpg, id=2124, 963.6pt x 542.025pt>
+<probers2.jpg, id=2123, 963.6pt x 542.025pt>
 File: probers2.jpg Graphic file (type jpg)
  <use probers2.jpg>
 Package pdftex.def Info: probers2.jpg used on input line 411.
@@ -1044,7 +1050,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 453.
 
-<zigzag_completed.png, id=2129, 511.9125pt x 405.76593pt>
+<zigzag_completed.png, id=2128, 511.9125pt x 405.76593pt>
 File: zigzag_completed.png Graphic file (type png)
 
 <use zigzag_completed.png>
@@ -1065,7 +1071,7 @@ Overfull \hbox (20.18991pt too wide) in paragraph at lines 487--523
  []
 
 [32 <./zigzag_completed.png (PNG copy)>] [33]
-<photo_swe1.JPG, id=2159, 1886.04625pt x 2498.33376pt>
+<photo_swe1.JPG, id=2158, 1886.04625pt x 2498.33376pt>
 File: photo_swe1.JPG Graphic file (type jpg)
  <use photo_swe1.JPG>
 Package pdftex.def Info: photo_swe1.JPG used on input line 541.
@@ -1075,7 +1081,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 541--542
 [][] 
  []
 
-<photo_swe2.jpg, id=2160, 581.17125pt x 523.9575pt>
+<photo_swe2.jpg, id=2159, 581.17125pt x 523.9575pt>
 File: photo_swe2.jpg Graphic file (type jpg)
  <use photo_swe2.jpg>
 Package pdftex.def Info: photo_swe2.jpg used on input line 547.
@@ -1091,20 +1097,20 @@ Overfull \hbox (4.37852pt too wide) in paragraph at lines 562--563
 $\T1/lmr/m/n/10.95 50cm of each other) were made us-ing an avalanche
  []
 
-[35] <map_snowpitlocation_all.jpeg, id=2178, 721.24977pt x 559.06525pt>
+[35] <map_snowpitlocation_all.jpeg, id=2177, 721.24977pt x 559.06525pt>
 File: map_snowpitlocation_all.jpeg Graphic file (type jpg)
 
 <use map_snowpitlocation_all.jpeg>
 Package pdftex.def Info: map_snowpitlocation_all.jpeg used on input line 588.
 (pdftex.def)             Requested size: 238.49232pt x 184.85892pt.
  [36] [37 <./map_snowpitlocation_all.jpeg>]
-<photo_snowpit.jpg, id=2193, 4015.0pt x 3011.25pt>
+<photo_snowpit.jpg, id=2192, 4015.0pt x 3011.25pt>
 File: photo_snowpit.jpg Graphic file (type jpg)
  <use photo_snowpit.jpg>
 Package pdftex.def Info: photo_snowpit.jpg used on input line 613.
 (pdftex.def)             Requested size: 411.93768pt x 308.95378pt.
 
-[38] <transect_measure_locations.jpeg, id=2202, 2740.2375pt x 1313.90875pt>
+[38] <transect_measure_locations.jpeg, id=2201, 2740.2375pt x 1313.90875pt>
 File: transect_measure_locations.jpeg Graphic file (type jpg)
 
 <use transect_measure_locations.jpeg>
@@ -1112,7 +1118,7 @@ Package pdftex.def Info: transect_measure_locations.jpeg used on input line 629
 .
 (pdftex.def)             Requested size: 346.89732pt x 166.32324pt.
  [39 <./photo_snowpit.jpg>]
-<Zigzag_calOptions.png, id=2208, 433.62pt x 433.62pt>
+<Zigzag_calOptions.png, id=2207, 433.62pt x 433.62pt>
 File: Zigzag_calOptions.png Graphic file (type png)
 
 <use Zigzag_calOptions.png>
@@ -1120,7 +1126,7 @@ Package pdftex.def Info: Zigzag_calOptions.png used on input line 638.
 (pdftex.def)             Requested size: 216.81pt x 216.80946pt.
  [40 <./transect_measure_locations.jpeg>] [41 <./Zigzag_calOptions.png (PNG cop
 y)>] [42]
-<NumObsPerCell.png, id=2233, 880.79062pt x 276.28218pt>
+<NumObsPerCell.png, id=2232, 880.79062pt x 276.28218pt>
 File: NumObsPerCell.png Graphic file (type png)
 
 <use NumObsPerCell.png>
@@ -1130,7 +1136,7 @@ Package pdftex.def Info: NumObsPerCell.png used on input line 716.
 Chapter 3.
 [45
 
-] <DepthDensity_SWEonly.png, id=2266, 505.89pt x 469.755pt>
+] <DepthDensity_SWEonly.png, id=2265, 505.89pt x 469.755pt>
 File: DepthDensity_SWEonly.png Graphic file (type png)
 
 <use DepthDensity_SWEonly.png>
@@ -1146,7 +1152,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 795.
 
 [46] [47 <./DepthDensity_SWEonly.png (PNG copy)>] [48] [49]
-<SPvsFS.pdf, id=2298, 244.915pt x 227.85126pt>
+<SPvsFS.pdf, id=2297, 244.915pt x 227.85126pt>
 File: SPvsFS.pdf Graphic file (type pdf)
  <use SPvsFS.pdf>
 Package pdftex.def Info: SPvsFS.pdf used on input line 842.
@@ -1156,33 +1162,33 @@ Package pdftex.def Info: SPvsFS.pdf used on input line 842.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 857.
 
-<DepthElevation.png, id=2331, 939.51pt x 361.35pt>
+<DepthElevation.png, id=2330, 939.51pt x 361.35pt>
 File: DepthElevation.png Graphic file (type png)
  <use DepthElevation.png>
 Package pdftex.def Info: DepthElevation.png used on input line 873.
 (pdftex.def)             Requested size: 520.34268pt x 200.13258pt.
 
-<ElevationVsSnowpit_all.png, id=2332, 505.89pt x 469.755pt>
+<ElevationVsSnowpit_all.png, id=2331, 505.89pt x 469.755pt>
 File: ElevationVsSnowpit_all.png Graphic file (type png)
 
 <use ElevationVsSnowpit_all.png>
 Package pdftex.def Info: ElevationVsSnowpit_all.png used on input line 881.
 (pdftex.def)             Requested size: 216.81pt x 201.3241pt.
  [51 <./DepthElevation.png (PNG copy)>]
-<ElevationVsSWEtube_all.png, id=2337, 527.72156pt x 505.89pt>
+<ElevationVsSWEtube_all.png, id=2336, 527.72156pt x 505.89pt>
 File: ElevationVsSWEtube_all.png Graphic file (type png)
 
 <use ElevationVsSWEtube_all.png>
 Package pdftex.def Info: ElevationVsSWEtube_all.png used on input line 889.
 (pdftex.def)             Requested size: 216.81pt x 207.84079pt.
 
-<box_depth_wZZ.png, id=2338, 429.2838pt x 338.7054pt>
+<box_depth_wZZ.png, id=2337, 429.2838pt x 338.7054pt>
 File: box_depth_wZZ.png Graphic file (type png)
  <use box_depth_wZZ.png>
 Package pdftex.def Info: box_depth_wZZ.png used on input line 901.
 (pdftex.def)             Requested size: 208.13574pt x 164.21507pt.
 
-<box_depth_noZZ.png, id=2339, 429.2838pt x 338.7054pt>
+<box_depth_noZZ.png, id=2338, 429.2838pt x 338.7054pt>
 File: box_depth_noZZ.png Graphic file (type png)
 
 <use box_depth_noZZ.png>
@@ -1191,33 +1197,33 @@ Package pdftex.def Info: box_depth_noZZ.png used on input line 907.
  [52 <./ElevationVsSnowpit_all.png (PNG copy)> <./ElevationVsSWEtube_all.png (P
 NG copy)>] [53 <./box_depth_wZZ.png (PNG copy)> <./box_depth_noZZ.png (PNG copy
 )>]
-<Zigzag_Boxplot.png, id=2354, 1084.05pt x 361.35pt>
+<Zigzag_Boxplot.png, id=2353, 1084.05pt x 361.35pt>
 File: Zigzag_Boxplot.png Graphic file (type png)
  <use Zigzag_Boxplot.png>
 Package pdftex.def Info: Zigzag_Boxplot.png used on input line 927.
 (pdftex.def)             Requested size: 476.98465pt x 158.99449pt.
 
-<map_zigzaglocation_all.jpeg, id=2357, 721.24977pt x 559.06525pt>
+<map_zigzaglocation_all.jpeg, id=2356, 721.24977pt x 559.06525pt>
 File: map_zigzaglocation_all.jpeg Graphic file (type jpg)
 
 <use map_zigzaglocation_all.jpeg>
 Package pdftex.def Info: map_zigzaglocation_all.jpeg used on input line 935.
 (pdftex.def)             Requested size: 303.53267pt x 235.28352pt.
 
-<ZigzagDepth_G04.png, id=2358, 1011.78pt x 289.08pt>
+<ZigzagDepth_G04.png, id=2357, 1011.78pt x 289.08pt>
 File: ZigzagDepth_G04.png Graphic file (type png)
  <use ZigzagDepth_G04.png>
 Package pdftex.def Info: ZigzagDepth_G04.png used on input line 942.
 (pdftex.def)             Requested size: 433.62001pt x 123.89174pt.
 
 [54 <./Zigzag_Boxplot.png (PNG copy)> <./map_zigzaglocation_all.jpeg>]
-<ZigzagDepth_G02.png, id=2365, 1011.78pt x 289.08pt>
+<ZigzagDepth_G02.png, id=2364, 1011.78pt x 289.08pt>
 File: ZigzagDepth_G02.png Graphic file (type png)
  <use ZigzagDepth_G02.png>
 Package pdftex.def Info: ZigzagDepth_G02.png used on input line 949.
 (pdftex.def)             Requested size: 433.62001pt x 123.89174pt.
 
-<ZigzagDepth_G13.png, id=2368, 722.7pt x 578.16pt>
+<ZigzagDepth_G13.png, id=2367, 722.7pt x 578.16pt>
 File: ZigzagDepth_G13.png Graphic file (type png)
  <use ZigzagDepth_G13.png>
 Package pdftex.def Info: ZigzagDepth_G13.png used on input line 956.
@@ -1225,63 +1231,63 @@ Package pdftex.def Info: ZigzagDepth_G13.png used on input line 956.
 
 [55 <./ZigzagDepth_G04.png (PNG copy)> <./ZigzagDepth_G02.png (PNG copy)>]
 [56 <./ZigzagDepth_G13.png (PNG copy)>]
-<AllSWEopts_boxplot.png, id=2388, 704.6325pt x 794.97pt>
+<AllSWEopts_boxplot.png, id=2387, 704.6325pt x 794.97pt>
 File: AllSWEopts_boxplot.png Graphic file (type png)
 
 <use AllSWEopts_boxplot.png>
 Package pdftex.def Info: AllSWEopts_boxplot.png used on input line 975.
 (pdftex.def)             Requested size: 346.89732pt x 391.37038pt.
  [57]
-<SWEmap_opt2.png, id=2395, 939.51pt x 433.62pt>
+<SWEmap_opt2.png, id=2394, 939.51pt x 433.62pt>
 File: SWEmap_opt2.png Graphic file (type png)
  <use SWEmap_opt2.png>
 Package pdftex.def Info: SWEmap_opt2.png used on input line 983.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [58 <./AllSWEopts_boxplot.png (PNG copy)>]
-<SWEmap_opt3.png, id=2400, 939.51pt x 433.62pt>
+<SWEmap_opt3.png, id=2399, 939.51pt x 433.62pt>
 File: SWEmap_opt3.png Graphic file (type png)
  <use SWEmap_opt3.png>
 Package pdftex.def Info: SWEmap_opt3.png used on input line 990.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-<SWEmap_opt4.png, id=2401, 939.51pt x 433.62pt>
+<SWEmap_opt4.png, id=2400, 939.51pt x 433.62pt>
 File: SWEmap_opt4.png Graphic file (type png)
  <use SWEmap_opt4.png>
 Package pdftex.def Info: SWEmap_opt4.png used on input line 997.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [59 <./SWEmap_opt2.png (PNG copy)> <./SWEmap_opt3.png (PNG copy)>]
-<SWEmap_opt5.png, id=2406, 939.51pt x 433.62pt>
+<SWEmap_opt5.png, id=2405, 939.51pt x 433.62pt>
 File: SWEmap_opt5.png Graphic file (type png)
  <use SWEmap_opt5.png>
 Package pdftex.def Info: SWEmap_opt5.png used on input line 1004.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-<SWEmap_opt6.png, id=2407, 939.51pt x 433.62pt>
+<SWEmap_opt6.png, id=2406, 939.51pt x 433.62pt>
 File: SWEmap_opt6.png Graphic file (type png)
  <use SWEmap_opt6.png>
 Package pdftex.def Info: SWEmap_opt6.png used on input line 1011.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [60 <./SWEmap_opt4.png (PNG copy)> <./SWEmap_opt5.png (PNG copy)>]
-<SWEmap_opt7.png, id=2412, 939.51pt x 433.62pt>
+<SWEmap_opt7.png, id=2411, 939.51pt x 433.62pt>
 File: SWEmap_opt7.png Graphic file (type png)
  <use SWEmap_opt7.png>
 Package pdftex.def Info: SWEmap_opt7.png used on input line 1018.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-<SWEmap_opt8.png, id=2413, 939.51pt x 433.62pt>
+<SWEmap_opt8.png, id=2412, 939.51pt x 433.62pt>
 File: SWEmap_opt8.png Graphic file (type png)
  <use SWEmap_opt8.png>
 Package pdftex.def Info: SWEmap_opt8.png used on input line 1025.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [61 <./SWEmap_opt6.png (PNG copy)> <./SWEmap_opt7.png (PNG copy)>]
-<SWEmap_opt9.png, id=2419, 939.51pt x 433.62pt>
+<SWEmap_opt9.png, id=2418, 939.51pt x 433.62pt>
 File: SWEmap_opt9.png Graphic file (type png)
  <use SWEmap_opt9.png>
 Package pdftex.def Info: SWEmap_opt9.png used on input line 1032.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [62 <./SWEmap_opt8.png (PNG copy)> <./SWEmap_opt9.png (PNG copy)>] [63]
 Chapter 4.
-<8029_original2.jpeg, id=2433, 3307.35625pt x 2489.3pt>
+<8029_original2.jpeg, id=2432, 3307.35625pt x 2489.3pt>
 File: 8029_original2.jpeg Graphic file (type jpg)
 
 <use 8029_original2.jpeg>
@@ -1292,7 +1298,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 1057--1058
 [][] 
  []
 
-<7044_original.jpeg, id=2434, 796.42023pt x 599.4301pt>
+<7044_original.jpeg, id=2433, 796.42023pt x 599.4301pt>
 File: 7044_original.jpeg Graphic file (type jpg)
 
 <use 7044_original.jpeg>
@@ -1305,14 +1311,14 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 1063--1064
 
 [64
 
-] <Landsat_2007.jpeg, id=2443, 3520.15125pt x 1095.09125pt>
+] <Landsat_2007.jpeg, id=2442, 3520.15125pt x 1095.09125pt>
 File: Landsat_2007.jpeg Graphic file (type jpg)
 
 <use Landsat_2007.jpeg>
 Package pdftex.def Info: Landsat_2007.jpeg used on input line 1073.
 (pdftex.def)             Requested size: 433.62001pt x 134.88089pt.
 
-<diff_7044-8029_original.jpeg, id=2447, 3307.35625pt x 2489.3pt>
+<diff_7044-8029_original.jpeg, id=2446, 3307.35625pt x 2489.3pt>
 File: diff_7044-8029_original.jpeg Graphic file (type jpg)
 
 <use diff_7044-8029_original.jpeg>
@@ -1323,7 +1329,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 1083--1084
 [][] 
  []
 
-<diff_7044-8029_shift.jpeg, id=2448, 3307.35625pt x 2489.3pt>
+<diff_7044-8029_shift.jpeg, id=2447, 3307.35625pt x 2489.3pt>
 File: diff_7044-8029_shift.jpeg Graphic file (type jpg)
 
 <use diff_7044-8029_shift.jpeg>
@@ -1335,14 +1341,14 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 1089--1090
  []
 
 [65 <./8029_original2.jpeg> <./7044_original.jpeg> <./Landsat_2007.jpeg>]
-<DEMcorrection_hist.png, id=2453, 527.72156pt x 505.89pt>
+<DEMcorrection_hist.png, id=2452, 527.72156pt x 505.89pt>
 File: DEMcorrection_hist.png Graphic file (type png)
 
 <use DEMcorrection_hist.png>
 Package pdftex.def Info: DEMcorrection_hist.png used on input line 1100.
 (pdftex.def)             Requested size: 260.17465pt x 249.40895pt.
 
-<mergeLine.jpeg, id=2456, 796.42023pt x 599.4301pt>
+<mergeLine.jpeg, id=2455, 796.42023pt x 599.4301pt>
 File: mergeLine.jpeg Graphic file (type jpg)
  <use mergeLine.jpeg>
 Package pdftex.def Info: mergeLine.jpeg used on input line 1111.
@@ -1354,7 +1360,7 @@ Overfull \hbox (0.62025pt too wide) in paragraph at lines 1118--1119
 [][]\T1/lmr/m/n/10.95 Merging of the cor-rected DEMs
  []
 
-<mergedDEM2.jpeg, id=2472, 3307.35625pt x 2489.3pt>
+<mergedDEM2.jpeg, id=2471, 3307.35625pt x 2489.3pt>
 File: mergedDEM2.jpeg Graphic file (type jpg)
  <use mergedDEM2.jpeg>
 Package pdftex.def Info: mergedDEM2.jpeg used on input line 1126.
@@ -1401,7 +1407,7 @@ Underfull \hbox (badness 1205) in paragraph at lines 1231--1231
 \T1/lmr/m/n/9 the pro-ce-dure out-lined in
  []
 
-[73] <Sx_infographic.jpeg, id=2661, 1421.31pt x 963.6pt>
+[73] <Sx_infographic.jpeg, id=2660, 1421.31pt x 963.6pt>
 File: Sx_infographic.jpeg Graphic file (type jpg)
 
 <use Sx_infographic.jpeg>
@@ -1411,21 +1417,21 @@ Package pdftex.def Info: Sx_infographic.jpeg used on input line 1239.
 
 
  <./Sx_infographic.jpeg>]
-<G13curvatureSmoothing.jpeg, id=2672, 3043.37pt x 1759.57375pt>
+<G13curvatureSmoothing.jpeg, id=2671, 3043.37pt x 1759.57375pt>
 File: G13curvatureSmoothing.jpeg Graphic file (type jpg)
 
 <use G13curvatureSmoothing.jpeg>
 Package pdftex.def Info: G13curvatureSmoothing.jpeg used on input line 1265.
 (pdftex.def)             Requested size: 303.53267pt x 175.4844pt.
  [75 <./G13curvatureSmoothing.jpeg>] [76]
-[77] [78] [79] <Map_elevation.png, id=2719, 939.51pt x 433.62pt>
+[77] [78] [79] <Map_elevation.png, id=2718, 939.51pt x 433.62pt>
 File: Map_elevation.png Graphic file (type png)
 
 <use Map_elevation.png>
 Package pdftex.def Info: Map_elevation.png used on input line 1363.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-<SampledRangeTopo_elevation.png, id=2720, 1011.78pt x 289.08pt>
+<SampledRangeTopo_elevation.png, id=2719, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_elevation.png Graphic file (type png)
 
 <use SampledRangeTopo_elevation.png>
@@ -1433,55 +1439,55 @@ Package pdftex.def Info: SampledRangeTopo_elevation.png used on input line 1369
 .
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
-<Map_centreD.png, id=2721, 939.51pt x 433.62pt>
+<Map_centreD.png, id=2720, 939.51pt x 433.62pt>
 File: Map_centreD.png Graphic file (type png)
  <use Map_centreD.png>
 Package pdftex.def Info: Map_centreD.png used on input line 1376.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [80 <./Map_elevation.png (PNG copy)> <./SampledRangeTopo_elevation.png (PNG co
 py)>]
-<SampledRangeTopo_centreD.png, id=2726, 1011.78pt x 289.08pt>
+<SampledRangeTopo_centreD.png, id=2725, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_centreD.png Graphic file (type png)
 
 <use SampledRangeTopo_centreD.png>
 Package pdftex.def Info: SampledRangeTopo_centreD.png used on input line 1382.
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
-<Map_aspect.png, id=2727, 939.51pt x 433.62pt>
+<Map_aspect.png, id=2726, 939.51pt x 433.62pt>
 File: Map_aspect.png Graphic file (type png)
  <use Map_aspect.png>
 Package pdftex.def Info: Map_aspect.png used on input line 1389.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [81 <./Map_centreD.png (PNG copy)> <./SampledRangeTopo_centreD.png (PNG copy)>
 ]
-<SampledRangeTopo_aspect.png, id=2732, 1011.78pt x 289.08pt>
+<SampledRangeTopo_aspect.png, id=2731, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_aspect.png Graphic file (type png)
 
 <use SampledRangeTopo_aspect.png>
 Package pdftex.def Info: SampledRangeTopo_aspect.png used on input line 1395.
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
-<Map_slope.png, id=2733, 939.51pt x 433.62pt>
+<Map_slope.png, id=2732, 939.51pt x 433.62pt>
 File: Map_slope.png Graphic file (type png)
  <use Map_slope.png>
 Package pdftex.def Info: Map_slope.png used on input line 1402.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [82 <./Map_aspect.png (PNG copy)> <./SampledRangeTopo_aspect.png (PNG copy)>]
-<SampledRangeTopo_slope.png, id=2738, 1011.78pt x 289.08pt>
+<SampledRangeTopo_slope.png, id=2737, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_slope.png Graphic file (type png)
 
 <use SampledRangeTopo_slope.png>
 Package pdftex.def Info: SampledRangeTopo_slope.png used on input line 1408.
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
-<Map_northness.png, id=2739, 939.51pt x 433.62pt>
+<Map_northness.png, id=2738, 939.51pt x 433.62pt>
 File: Map_northness.png Graphic file (type png)
  <use Map_northness.png>
 Package pdftex.def Info: Map_northness.png used on input line 1415.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
 [83 <./Map_slope.png (PNG copy)> <./SampledRangeTopo_slope.png (PNG copy)>]
-<SampledRangeTopo_northness.png, id=2744, 1011.78pt x 289.08pt>
+<SampledRangeTopo_northness.png, id=2743, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_northness.png Graphic file (type png)
 
 <use SampledRangeTopo_northness.png>
@@ -1489,14 +1495,14 @@ Package pdftex.def Info: SampledRangeTopo_northness.png used on input line 1421
 .
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
-<Map_curvature.png, id=2745, 939.51pt x 433.62pt>
+<Map_curvature.png, id=2744, 939.51pt x 433.62pt>
 File: Map_curvature.png Graphic file (type png)
  <use Map_curvature.png>
 Package pdftex.def Info: Map_curvature.png used on input line 1428.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
 [84 <./Map_northness.png (PNG copy)> <./SampledRangeTopo_northness.png (PNG cop
-y)>] <SampledRangeTopo_curvature.png, id=2750, 1011.78pt x 289.08pt>
+y)>] <SampledRangeTopo_curvature.png, id=2749, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_curvature.png Graphic file (type png)
 
 <use SampledRangeTopo_curvature.png>
@@ -1504,14 +1510,14 @@ Package pdftex.def Info: SampledRangeTopo_curvature.png used on input line 1434
 .
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
-<Map_Sx.png, id=2751, 939.51pt x 433.62pt>
+<Map_Sx.png, id=2750, 939.51pt x 433.62pt>
 File: Map_Sx.png Graphic file (type png)
  <use Map_Sx.png>
 Package pdftex.def Info: Map_Sx.png used on input line 1441.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [85 <./Map_curvature.png (PNG copy)> <./SampledRangeTopo_curvature.png (PNG co
 py)>]
-<SampledRangeTopo_Sx.png, id=2765, 1011.78pt x 289.08pt>
+<SampledRangeTopo_Sx.png, id=2764, 1011.78pt x 289.08pt>
 File: SampledRangeTopo_Sx.png Graphic file (type png)
 
 <use SampledRangeTopo_Sx.png>
@@ -1521,20 +1527,20 @@ Package pdftex.def Info: SampledRangeTopo_Sx.png used on input line 1447.
 Chapter 5.
 [88
 
-] [89] [90] <MLRfit_opt8.png, id=2860, 867.24pt x 289.08pt>
+] [89] [90] <MLRfit_opt8.png, id=2859, 867.24pt x 289.08pt>
 File: MLRfit_opt8.png Graphic file (type png)
 
 <use MLRfit_opt8.png>
 Package pdftex.def Info: MLRfit_opt8.png used on input line 1585.
 (pdftex.def)             Requested size: 520.34268pt x 173.45374pt.
- <MLRfit_allLines.png, id=2861, 867.24pt x 289.08pt>
+ <MLRfit_allLines.png, id=2860, 867.24pt x 289.08pt>
 File: MLRfit_allLines.png Graphic file (type png)
 
 <use MLRfit_allLines.png>
 Package pdftex.def Info: MLRfit_allLines.png used on input line 1589.
 (pdftex.def)             Requested size: 520.34268pt x 173.45374pt.
  [91] [92] [93]
-<ModelledSWE_box_MLR.png, id=2881, 572.1375pt x 451.6875pt>
+<ModelledSWE_box_MLR.png, id=2879, 572.1375pt x 451.6875pt>
 File: ModelledSWE_box_MLR.png Graphic file (type png)
 
 <use ModelledSWE_box_MLR.png>
@@ -1542,35 +1548,35 @@ Package pdftex.def Info: ModelledSWE_box_MLR.png used on input line 1598.
 (pdftex.def)             Requested size: 260.17465pt x 205.40096pt.
  [94 <./MLRfit_opt8.png (PNG copy)> <./MLRfit_allLines.png (PNG copy)>] [95 <./
 ModelledSWE_box_MLR.png>]
-<MLRresiduals_all.png, id=2907, 1084.05pt x 361.35pt>
+<MLRresiduals_all.png, id=2904, 1084.05pt x 361.35pt>
 File: MLRresiduals_all.png Graphic file (type png)
 
 <use MLRresiduals_all.png>
 Package pdftex.def Info: MLRresiduals_all.png used on input line 1617.
 (pdftex.def)             Requested size: 520.34268pt x 173.45154pt.
 
-<residuals_box_MLR.png, id=2908, 429.10312pt x 338.76563pt>
+<residuals_box_MLR.png, id=2905, 429.10312pt x 338.76563pt>
 File: residuals_box_MLR.png Graphic file (type png)
 
 <use residuals_box_MLR.png>
 Package pdftex.def Info: residuals_box_MLR.png used on input line 1624.
 (pdftex.def)             Requested size: 260.17465pt x 205.40096pt.
  [96 <./MLRresiduals_all.png (PNG copy)>]
-<residualsMap_MLR.png, id=2913, 939.51pt x 433.62pt>
+<residualsMap_MLR.png, id=2910, 939.51pt x 433.62pt>
 File: residualsMap_MLR.png Graphic file (type png)
 
 <use residualsMap_MLR.png>
 Package pdftex.def Info: residualsMap_MLR.png used on input line 1631.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-<MLRcoeff_DensityOpts.png, id=2916, 939.51pt x 722.7pt>
+<MLRcoeff_DensityOpts.png, id=2913, 939.51pt x 722.7pt>
 File: MLRcoeff_DensityOpts.png Graphic file (type png)
 
 <use MLRcoeff_DensityOpts.png>
 Package pdftex.def Info: MLRcoeff_DensityOpts.png used on input line 1641.
 (pdftex.def)             Requested size: 433.62001pt x 333.54878pt.
  [97 <./residuals_box_MLR.png (PNG copy)> <./residualsMap_MLR.png (PNG copy)>]
-<MLRsemiR2_DensityOpts.png, id=2922, 939.51pt x 722.7pt>
+<MLRsemiR2_DensityOpts.png, id=2919, 939.51pt x 722.7pt>
 File: MLRsemiR2_DensityOpts.png Graphic file (type png)
 
 <use MLRsemiR2_DensityOpts.png>
@@ -1578,7 +1584,7 @@ Package pdftex.def Info: MLRsemiR2_DensityOpts.png used on input line 1648.
 (pdftex.def)             Requested size: 433.62001pt x 333.54878pt.
  [98 <./MLRcoeff_DensityOpts.png (PNG copy)>]
 [99 <./MLRsemiR2_DensityOpts.png (PNG copy)>]
-<MLRmap_Modelled_Observed8.png, id=2935, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed8.png, id=2932, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed8.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed8.png>
@@ -1586,14 +1592,14 @@ Package pdftex.def Info: MLRmap_Modelled_Observed8.png used on input line 1658.
 
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-<MLR_SWEdifferenceMap.png, id=2936, 939.51pt x 433.62pt>
+<MLR_SWEdifferenceMap.png, id=2933, 939.51pt x 433.62pt>
 File: MLR_SWEdifferenceMap.png Graphic file (type png)
 
 <use MLR_SWEdifferenceMap.png>
 Package pdftex.def Info: MLR_SWEdifferenceMap.png used on input line 1665.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [100 <./MLRmap_Modelled_Observed8.png (PNG copy)>] <MLR_SWEdifferenceMap_perce
-nt.png, id=2941, 939.51pt x 433.62pt>
+nt.png, id=2938, 939.51pt x 433.62pt>
 File: MLR_SWEdifferenceMap_percent.png Graphic file (type png)
 
 <use MLR_SWEdifferenceMap_percent.png>
@@ -1601,7 +1607,7 @@ Package pdftex.def Info: MLR_SWEdifferenceMap_percent.png used on input line 16
 72.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-<MLRmap_Modelled_Observed1.png, id=2942, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed1.png, id=2939, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed1.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed1.png>
@@ -1609,7 +1615,7 @@ Package pdftex.def Info: MLRmap_Modelled_Observed1.png used on input line 1683.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<MLRmap_Modelled_Observed2.png, id=2943, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed2.png, id=2940, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed2.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed2.png>
@@ -1617,7 +1623,7 @@ Package pdftex.def Info: MLRmap_Modelled_Observed2.png used on input line 1690.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<MLRmap_Modelled_Observed3.png, id=2944, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed3.png, id=2941, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed3.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed3.png>
@@ -1625,7 +1631,7 @@ Package pdftex.def Info: MLRmap_Modelled_Observed3.png used on input line 1697.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<MLRmap_Modelled_Observed4.png, id=2945, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed4.png, id=2942, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed4.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed4.png>
@@ -1633,7 +1639,7 @@ Package pdftex.def Info: MLRmap_Modelled_Observed4.png used on input line 1704.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<MLRmap_Modelled_Observed5.png, id=2946, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed5.png, id=2943, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed5.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed5.png>
@@ -1641,7 +1647,7 @@ Package pdftex.def Info: MLRmap_Modelled_Observed5.png used on input line 1711.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<MLRmap_Modelled_Observed6.png, id=2947, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed6.png, id=2944, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed6.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed6.png>
@@ -1649,7 +1655,7 @@ Package pdftex.def Info: MLRmap_Modelled_Observed6.png used on input line 1718.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<MLRmap_Modelled_Observed7.png, id=2948, 939.51pt x 433.62pt>
+<MLRmap_Modelled_Observed7.png, id=2945, 939.51pt x 433.62pt>
 File: MLRmap_Modelled_Observed7.png Graphic file (type png)
 
 <use MLRmap_Modelled_Observed7.png>
@@ -1664,7 +1670,7 @@ Package pdftex.def Info: MLRmap_Modelled_Observed8.png used on input line 1732.
 
 [101 <./MLR_SWEdifferenceMap.png (PNG copy)> <./MLR_SWEdifferenceMap_percent.pn
 g (PNG copy)>]
-<DistributionOfNumParams_topoRegress.png, id=2953, 433.62pt x 433.62pt>
+<DistributionOfNumParams_topoRegress.png, id=2950, 433.62pt x 433.62pt>
 File: DistributionOfNumParams_topoRegress.png Graphic file (type png)
 
 <use DistributionOfNumParams_topoRegress.png>
@@ -1680,154 +1686,159 @@ Underfull \hbox (badness 1590) in paragraph at lines 1762--1764
 \T1/lmr/m/n/10.95 func-tion, which de-ter-mines un-
  []
 
-[103 <./DistributionOfNumParams_topoRegress.png (PNG copy)>] [104]
-<BMScoeff_DensityOpts.png, id=3027, 939.51pt x 722.7pt>
+
+Underfull \hbox (badness 1565) in paragraph at lines 1762--1764
+\T1/lmr/m/n/10.95 out-come (i.e. ob-served data).
+ []
+
+[103 <./DistributionOfNumParams_topoRegress.png (PNG copy)>] [104] [105]
+<BMScoeff_DensityOpts.png, id=3029, 939.51pt x 722.7pt>
 File: BMScoeff_DensityOpts.png Graphic file (type png)
 
 <use BMScoeff_DensityOpts.png>
-Package pdftex.def Info: BMScoeff_DensityOpts.png used on input line 1832.
+Package pdftex.def Info: BMScoeff_DensityOpts.png used on input line 1830.
 (pdftex.def)             Requested size: 476.98465pt x 366.90697pt.
 
-Overfull \hbox (43.36464pt too wide) in paragraph at lines 1832--1832
+Overfull \hbox (43.36464pt too wide) in paragraph at lines 1830--1830
  [][] 
  []
 
-[105] [106] <BMSsemiR2_DensityOpts.png, id=3038, 939.51pt x 722.7pt>
+[106] <BMSsemiR2_DensityOpts.png, id=3036, 939.51pt x 722.7pt>
 File: BMSsemiR2_DensityOpts.png Graphic file (type png)
 
 <use BMSsemiR2_DensityOpts.png>
-Package pdftex.def Info: BMSsemiR2_DensityOpts.png used on input line 1839.
+Package pdftex.def Info: BMSsemiR2_DensityOpts.png used on input line 1837.
 (pdftex.def)             Requested size: 476.98465pt x 366.90697pt.
 
-Overfull \hbox (43.36464pt too wide) in paragraph at lines 1839--1839
+Overfull \hbox (43.36464pt too wide) in paragraph at lines 1837--1837
  [][] 
  []
 
 [107 <./BMScoeff_DensityOpts.png (PNG copy)>]
-<BMSfit_opt8.png, id=3044, 867.24pt x 289.08pt>
+<BMSfit_opt8.png, id=3042, 867.24pt x 289.08pt>
 File: BMSfit_opt8.png Graphic file (type png)
  <use BMSfit_opt8.png>
-Package pdftex.def Info: BMSfit_opt8.png used on input line 1845.
+Package pdftex.def Info: BMSfit_opt8.png used on input line 1843.
 (pdftex.def)             Requested size: 520.34268pt x 173.45374pt.
  [108 <./BMSsemiR2_DensityOpts.png (PNG copy)>]
-<BMSfit_allLines.png, id=3049, 867.24pt x 289.08pt>
+<BMSfit_allLines.png, id=3047, 867.24pt x 289.08pt>
 File: BMSfit_allLines.png Graphic file (type png)
  <use BMSfit_allLines.png>
-Package pdftex.def Info: BMSfit_allLines.png used on input line 1851.
+Package pdftex.def Info: BMSfit_allLines.png used on input line 1849.
 (pdftex.def)             Requested size: 520.34268pt x 173.45374pt.
 
-<BMSmap_Modelled_Observed8.png, id=3052, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed8.png, id=3050, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed8.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed8.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed8.png used on input line 1857.
+Package pdftex.def Info: BMSmap_Modelled_Observed8.png used on input line 1855.
 
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [109 <./BMSfit_opt8.png (PNG copy)> <./BMSfit_allLines.png (PNG copy)>]
-<BMS_SWEdifferenceMap.png, id=3058, 939.51pt x 433.62pt>
+<BMS_SWEdifferenceMap.png, id=3056, 939.51pt x 433.62pt>
 File: BMS_SWEdifferenceMap.png Graphic file (type png)
 
 <use BMS_SWEdifferenceMap.png>
-Package pdftex.def Info: BMS_SWEdifferenceMap.png used on input line 1864.
+Package pdftex.def Info: BMS_SWEdifferenceMap.png used on input line 1862.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-<BMS_SWEdifferenceMap_percent.png, id=3059, 939.51pt x 433.62pt>
+<BMS_SWEdifferenceMap_percent.png, id=3057, 939.51pt x 433.62pt>
 File: BMS_SWEdifferenceMap_percent.png Graphic file (type png)
 
 <use BMS_SWEdifferenceMap_percent.png>
 Package pdftex.def Info: BMS_SWEdifferenceMap_percent.png used on input line 18
-71.
+69.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [110 <./BMSmap_Modelled_Observed8.png (PNG copy)> <./BMS_SWEdifferenceMap.png 
 (PNG copy)>]
-<ModelledSWE_box_BMS.png, id=3064, 572.1375pt x 451.6875pt>
+<ModelledSWE_box_BMS.png, id=3062, 572.1375pt x 451.6875pt>
 File: ModelledSWE_box_BMS.png Graphic file (type png)
 
 <use ModelledSWE_box_BMS.png>
-Package pdftex.def Info: ModelledSWE_box_BMS.png used on input line 1878.
+Package pdftex.def Info: ModelledSWE_box_BMS.png used on input line 1876.
 (pdftex.def)             Requested size: 260.17465pt x 205.40096pt.
 
-<BMSresiduals_all.png, id=3065, 1084.05pt x 361.35pt>
+<BMSresiduals_all.png, id=3063, 1084.05pt x 361.35pt>
 File: BMSresiduals_all.png Graphic file (type png)
 
 <use BMSresiduals_all.png>
-Package pdftex.def Info: BMSresiduals_all.png used on input line 1884.
+Package pdftex.def Info: BMSresiduals_all.png used on input line 1882.
 (pdftex.def)             Requested size: 520.34268pt x 173.45154pt.
  [111 <./BMS_SWEdifferenceMap_percent.png (PNG copy)> <./ModelledSWE_box_BMS.pn
 g>]
-<residuals_box_BMS.png, id=3071, 421.575pt x 316.18124pt>
+<residuals_box_BMS.png, id=3069, 421.575pt x 316.18124pt>
 File: residuals_box_BMS.png Graphic file (type png)
 
 <use residuals_box_BMS.png>
-Package pdftex.def Info: residuals_box_BMS.png used on input line 1891.
+Package pdftex.def Info: residuals_box_BMS.png used on input line 1889.
 (pdftex.def)             Requested size: 260.17465pt x 195.13298pt.
 
-<residualsMap_BMS.png, id=3072, 939.51pt x 433.62pt>
+<residualsMap_BMS.png, id=3070, 939.51pt x 433.62pt>
 File: residualsMap_BMS.png Graphic file (type png)
 
 <use residualsMap_BMS.png>
-Package pdftex.def Info: residualsMap_BMS.png used on input line 1898.
+Package pdftex.def Info: residualsMap_BMS.png used on input line 1896.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [112 <./BMSresiduals_all.png (PNG copy)> <./residuals_box_BMS.png (PNG copy)>]
 
-<BMSmap_Modelled_Observed1.png, id=3077, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed1.png, id=3075, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed1.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed1.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed1.png used on input line 1909.
+Package pdftex.def Info: BMSmap_Modelled_Observed1.png used on input line 1907.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<BMSmap_Modelled_Observed2.png, id=3078, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed2.png, id=3076, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed2.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed2.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed2.png used on input line 1916.
+Package pdftex.def Info: BMSmap_Modelled_Observed2.png used on input line 1914.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<BMSmap_Modelled_Observed3.png, id=3079, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed3.png, id=3077, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed3.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed3.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed3.png used on input line 1923.
+Package pdftex.def Info: BMSmap_Modelled_Observed3.png used on input line 1921.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<BMSmap_Modelled_Observed4.png, id=3080, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed4.png, id=3078, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed4.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed4.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed4.png used on input line 1930.
+Package pdftex.def Info: BMSmap_Modelled_Observed4.png used on input line 1928.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<BMSmap_Modelled_Observed5.png, id=3081, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed5.png, id=3079, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed5.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed5.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed5.png used on input line 1937.
+Package pdftex.def Info: BMSmap_Modelled_Observed5.png used on input line 1935.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<BMSmap_Modelled_Observed6.png, id=3082, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed6.png, id=3080, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed6.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed6.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed6.png used on input line 1944.
+Package pdftex.def Info: BMSmap_Modelled_Observed6.png used on input line 1942.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
-<BMSmap_Modelled_Observed7.png, id=3083, 939.51pt x 433.62pt>
+<BMSmap_Modelled_Observed7.png, id=3081, 939.51pt x 433.62pt>
 File: BMSmap_Modelled_Observed7.png Graphic file (type png)
 
 <use BMSmap_Modelled_Observed7.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed7.png used on input line 1951.
+Package pdftex.def Info: BMSmap_Modelled_Observed7.png used on input line 1949.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 File: BMSmap_Modelled_Observed8.png Graphic file (type png)
  <use BMSmap_Modelled_Observed8.png>
-Package pdftex.def Info: BMSmap_Modelled_Observed8.png used on input line 1958.
+Package pdftex.def Info: BMSmap_Modelled_Observed8.png used on input line 1956.
 
 (pdftex.def)             Requested size: 205.97214pt x 95.05925pt.
 
@@ -1836,154 +1847,154 @@ Package pdftex.def Info: BMSmap_Modelled_Observed8.png used on input line 1958.
 served3.png (PNG copy)> <./BMSmap_Modelled_Observed4.png (PNG copy)> <./BMSmap_
 Modelled_Observed5.png (PNG copy)> <./BMSmap_Modelled_Observed6.png (PNG copy)>
  <./BMSmap_Modelled_Observed7.png (PNG copy)>]
-<CoeffBoxplot_BMSMLRcompare.png, id=3093, 1011.78pt x 289.08pt>
+<CoeffBoxplot_BMSMLRcompare.png, id=3091, 1011.78pt x 289.08pt>
 File: CoeffBoxplot_BMSMLRcompare.png Graphic file (type png)
 
 <use CoeffBoxplot_BMSMLRcompare.png>
-Package pdftex.def Info: CoeffBoxplot_BMSMLRcompare.png used on input line 1978
+Package pdftex.def Info: CoeffBoxplot_BMSMLRcompare.png used on input line 1976
 .
 (pdftex.def)             Requested size: 520.34268pt x 148.67274pt.
 
-Underfull \hbox (badness 7504) in paragraph at lines 2000--2001
+Underfull \hbox (badness 7504) in paragraph at lines 1998--1999
 [][]\T1/lmr/m/n/10.95 The as-pect, cur-va-ture
  []
 
 [115 <./CoeffBoxplot_BMSMLRcompare.png (PNG copy)>]
-<MLRrunWSMB.png, id=3104, 527.72156pt x 505.89pt>
+<MLRrunWSMB.png, id=3102, 527.72156pt x 505.89pt>
 File: MLRrunWSMB.png Graphic file (type png)
  <use MLRrunWSMB.png>
-Package pdftex.def Info: MLRrunWSMB.png used on input line 2017.
+Package pdftex.def Info: MLRrunWSMB.png used on input line 2015.
 (pdftex.def)             Requested size: 192.92679pt x 184.9429pt.
 
-<MLRrunCoeffs.png, id=3105, 527.72156pt x 505.89pt>
+<MLRrunCoeffs.png, id=3103, 527.72156pt x 505.89pt>
 File: MLRrunCoeffs.png Graphic file (type png)
  <use MLRrunCoeffs.png>
-Package pdftex.def Info: MLRrunCoeffs.png used on input line 2023.
+Package pdftex.def Info: MLRrunCoeffs.png used on input line 2021.
 (pdftex.def)             Requested size: 192.92679pt x 184.9429pt.
 
-Overfull \hbox (28.14908pt too wide) in paragraph at lines 2023--2024
+Overfull \hbox (28.14908pt too wide) in paragraph at lines 2021--2022
  [][] 
  []
 
 [116] [117 <./MLRrunWSMB.png (PNG copy)> <./MLRrunCoeffs.png (PNG copy)>]
-<MapTransferabilityG4Coeffs.png, id=3116, 939.51pt x 433.62pt>
+<MapTransferabilityG4Coeffs.png, id=3114, 939.51pt x 433.62pt>
 File: MapTransferabilityG4Coeffs.png Graphic file (type png)
 
 <use MapTransferabilityG4Coeffs.png>
-Package pdftex.def Info: MapTransferabilityG4Coeffs.png used on input line 2046
+Package pdftex.def Info: MapTransferabilityG4Coeffs.png used on input line 2044
 .
 (pdftex.def)             Requested size: 390.25536pt x 180.11435pt.
 
-<MapTransferabilityG2Coeffs.png, id=3117, 939.51pt x 433.62pt>
+<MapTransferabilityG2Coeffs.png, id=3115, 939.51pt x 433.62pt>
 File: MapTransferabilityG2Coeffs.png Graphic file (type png)
 
 <use MapTransferabilityG2Coeffs.png>
-Package pdftex.def Info: MapTransferabilityG2Coeffs.png used on input line 2047
+Package pdftex.def Info: MapTransferabilityG2Coeffs.png used on input line 2045
 .
 (pdftex.def)             Requested size: 390.25536pt x 180.11435pt.
 
-<MapTransferabilityG13Coeffs.png, id=3118, 939.51pt x 433.62pt>
+<MapTransferabilityG13Coeffs.png, id=3116, 939.51pt x 433.62pt>
 File: MapTransferabilityG13Coeffs.png Graphic file (type png)
 
 <use MapTransferabilityG13Coeffs.png>
 Package pdftex.def Info: MapTransferabilityG13Coeffs.png used on input line 204
-8.
+6.
 (pdftex.def)             Requested size: 390.25536pt x 180.11435pt.
  [118] [119 <./MapTransferabilityG4Coeffs.png (PNG copy)> <./MapTransferability
 G2Coeffs.png (PNG copy)> <./MapTransferabilityG13Coeffs.png (PNG copy)>]
-<TransferabilityRMSE.png, id=3129, 593.21625pt x 344.78813pt>
+<TransferabilityRMSE.png, id=3127, 593.21625pt x 344.78813pt>
 File: TransferabilityRMSE.png Graphic file (type png)
 
 <use TransferabilityRMSE.png>
-Package pdftex.def Info: TransferabilityRMSE.png used on input line 2069.
+Package pdftex.def Info: TransferabilityRMSE.png used on input line 2067.
 (pdftex.def)             Requested size: 346.89732pt x 201.62921pt.
  [120 <./TransferabilityRMSE.png (PNG copy)>]
-<MapTransferabilityComboCoeffs.png, id=3139, 939.51pt x 433.62pt>
+<MapTransferabilityComboCoeffs.png, id=3137, 939.51pt x 433.62pt>
 File: MapTransferabilityComboCoeffs.png Graphic file (type png)
 
 <use MapTransferabilityComboCoeffs.png>
 Package pdftex.def Info: MapTransferabilityComboCoeffs.png used on input line 2
-080.
+078.
 (pdftex.def)             Requested size: 390.25536pt x 180.11435pt.
  [121 <./MapTransferabilityComboCoeffs.png (PNG copy)>] [122] <SK_map.pdf, id=3
-186, 351.57652pt x 191.36722pt>
+184, 351.57652pt x 191.36722pt>
 File: SK_map.pdf Graphic file (type pdf)
 
 <use SK_map.pdf>
-Package pdftex.def Info: SK_map.pdf used on input line 2130.
+Package pdftex.def Info: SK_map.pdf used on input line 2128.
 (pdftex.def)             Requested size: 390.25536pt x 212.42595pt.
  [123]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2135.
+               Default added (so using `tbp') on input line 2133.
 
-[124 <./SK_map.pdf>] <krigSWEfit.png, id=3234, 867.24pt x 289.08pt>
+[124 <./SK_map.pdf>] <krigSWEfit.png, id=3232, 867.24pt x 289.08pt>
 File: krigSWEfit.png Graphic file (type png)
 
 <use krigSWEfit.png>
-Package pdftex.def Info: krigSWEfit.png used on input line 2156.
+Package pdftex.def Info: krigSWEfit.png used on input line 2154.
 (pdftex.def)             Requested size: 520.34268pt x 173.45374pt.
- <KrigingCI_percent.png, id=3236, 939.51pt x 433.62pt>
+ <KrigingCI_percent.png, id=3234, 939.51pt x 433.62pt>
 File: KrigingCI_percent.png Graphic file (type png)
 
 <use KrigingCI_percent.png>
-Package pdftex.def Info: KrigingCI_percent.png used on input line 2165.
+Package pdftex.def Info: KrigingCI_percent.png used on input line 2163.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [125 <./krigSWEfit.png (PNG copy)> <./KrigingCI_percent.png (PNG copy)>] [126]
 
-<residualsKriged.png, id=3268, 939.51pt x 433.62pt>
+<residualsKriged.png, id=3266, 939.51pt x 433.62pt>
 File: residualsKriged.png Graphic file (type png)
  <use residualsKriged.png>
-Package pdftex.def Info: residualsKriged.png used on input line 2201.
+Package pdftex.def Info: residualsKriged.png used on input line 2199.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-[127] <RegressionKriging.png, id=3274, 1252.68pt x 578.16pt>
+[127] <RegressionKriging.png, id=3272, 1252.68pt x 578.16pt>
 File: RegressionKriging.png Graphic file (type png)
 
 <use RegressionKriging.png>
-Package pdftex.def Info: RegressionKriging.png used on input line 2208.
+Package pdftex.def Info: RegressionKriging.png used on input line 2206.
 (pdftex.def)             Requested size: 433.62001pt x 200.12706pt.
- <krigRKfit.png, id=3275, 867.24pt x 289.08pt>
+ <krigRKfit.png, id=3273, 867.24pt x 289.08pt>
 File: krigRKfit.png Graphic file (type png)
 
 <use krigRKfit.png>
-Package pdftex.def Info: krigRKfit.png used on input line 2214.
+Package pdftex.def Info: krigRKfit.png used on input line 2212.
 (pdftex.def)             Requested size: 433.62001pt x 144.53964pt.
  [128 <./residualsKriged.png> <./RegressionKriging.png>]
-<InterpMethod_mean.png, id=3282, 581.92406pt x 210.03468pt>
+<InterpMethod_mean.png, id=3280, 581.92406pt x 210.03468pt>
 File: InterpMethod_mean.png Graphic file (type png)
 
 <use InterpMethod_mean.png>
-Package pdftex.def Info: InterpMethod_mean.png used on input line 2224.
+Package pdftex.def Info: InterpMethod_mean.png used on input line 2222.
 (pdftex.def)             Requested size: 303.53267pt x 109.55516pt.
 
-Overfull \hbox (14.59987pt too wide) in paragraph at lines 2223--2225
+Overfull \hbox (14.59987pt too wide) in paragraph at lines 2221--2223
 []\T1/lmr/m/n/10.95 [b] [] 
  []
 
 [129 <./krigRKfit.png (PNG copy)> <./InterpMethod_mean.png (PNG copy)>]
-<InterpMethod_meanR2.png, id=3290, 588.69937pt x 231.86626pt>
+<InterpMethod_meanR2.png, id=3288, 588.69937pt x 231.86626pt>
 File: InterpMethod_meanR2.png Graphic file (type png)
 
 <use InterpMethod_meanR2.png>
-Package pdftex.def Info: InterpMethod_meanR2.png used on input line 2237.
+Package pdftex.def Info: InterpMethod_meanR2.png used on input line 2235.
 (pdftex.def)             Requested size: 303.53267pt x 119.54866pt.
  [130 <./InterpMethod_meanR2.png (PNG copy)>]
-<InterpMethod_allopts.png, id=3298, 1078.0275pt x 282.30469pt>
+<InterpMethod_allopts.png, id=3296, 1078.0275pt x 282.30469pt>
 File: InterpMethod_allopts.png Graphic file (type png)
 
 <use InterpMethod_allopts.png>
-Package pdftex.def Info: InterpMethod_allopts.png used on input line 2248.
+Package pdftex.def Info: InterpMethod_allopts.png used on input line 2246.
 (pdftex.def)             Requested size: 629.23714pt x 164.77771pt.
 
-<InterpMethod_alloptsR2.png, id=3299, 1403.2425pt x 349.305pt>
+<InterpMethod_alloptsR2.png, id=3297, 1403.2425pt x 349.305pt>
 File: InterpMethod_alloptsR2.png Graphic file (type png)
 
 <use InterpMethod_alloptsR2.png>
-Package pdftex.def Info: InterpMethod_alloptsR2.png used on input line 2254.
+Package pdftex.def Info: InterpMethod_alloptsR2.png used on input line 2252.
 (pdftex.def)             Requested size: 661.96501pt x 164.77771pt.
 
-Overfull \hbox (17.31674pt too wide) in paragraph at lines 2254--2255
+Overfull \hbox (17.31674pt too wide) in paragraph at lines 2252--2253
 [][] 
  []
 
@@ -1995,99 +2006,99 @@ Overfull \hbox (17.31674pt too wide) in paragraph at lines 2254--2255
 Chapter 6.
 [134
 
-] <SWEvarOneLocHIST.png, id=3321, 722.7pt x 433.62pt>
+] <SWEvarOneLocHIST.png, id=3319, 722.7pt x 433.62pt>
 File: SWEvarOneLocHIST.png Graphic file (type png)
 
 <use SWEvarOneLocHIST.png>
-Package pdftex.def Info: SWEvarOneLocHIST.png used on input line 2311.
+Package pdftex.def Info: SWEvarOneLocHIST.png used on input line 2309.
 (pdftex.def)             Requested size: 346.89732pt x 208.13524pt.
- <Map_pointstd.png, id=3322, 939.51pt x 433.62pt>
+ <Map_pointstd.png, id=3320, 939.51pt x 433.62pt>
 File: Map_pointstd.png Graphic file (type png)
 
 <use Map_pointstd.png>
-Package pdftex.def Info: Map_pointstd.png used on input line 2318.
+Package pdftex.def Info: Map_pointstd.png used on input line 2316.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [135 <./SWEvarOneLocHIST.png (PNG copy)>]
-<ZigzagHistogram.pdf, id=3333, 244.915pt x 506.89375pt>
+<ZigzagHistogram.pdf, id=3331, 244.915pt x 506.89375pt>
 File: ZigzagHistogram.pdf Graphic file (type pdf)
 
 <use ZigzagHistogram.pdf>
-Package pdftex.def Info: ZigzagHistogram.pdf used on input line 2332.
+Package pdftex.def Info: ZigzagHistogram.pdf used on input line 2330.
 (pdftex.def)             Requested size: 260.17465pt x 538.4882pt.
  [136 <./Map_pointstd.png (PNG copy)>]
-<ZigzagPDF_G.png, id=3339, 722.7pt x 433.62pt>
+<ZigzagPDF_G.png, id=3337, 722.7pt x 433.62pt>
 File: ZigzagPDF_G.png Graphic file (type png)
  <use ZigzagPDF_G.png>
-Package pdftex.def Info: ZigzagPDF_G.png used on input line 2339.
+Package pdftex.def Info: ZigzagPDF_G.png used on input line 2337.
 (pdftex.def)             Requested size: 346.89732pt x 208.13524pt.
- [137 <./ZigzagHistogram.pdf>] <SWEvarMeasureLocHIST.png, id=3524, 722.7pt x 43
+ [137 <./ZigzagHistogram.pdf>] <SWEvarMeasureLocHIST.png, id=3522, 722.7pt x 43
 3.62pt>
 File: SWEvarMeasureLocHIST.png Graphic file (type png)
 
 <use SWEvarMeasureLocHIST.png>
-Package pdftex.def Info: SWEvarMeasureLocHIST.png used on input line 2351.
+Package pdftex.def Info: SWEvarMeasureLocHIST.png used on input line 2349.
 (pdftex.def)             Requested size: 346.89732pt x 208.13524pt.
  [138 <./ZigzagPDF_G.png (PNG copy)>]
-<Map_cellstd_measureLoc.png, id=3530, 939.51pt x 433.62pt>
+<Map_cellstd_measureLoc.png, id=3528, 939.51pt x 433.62pt>
 File: Map_cellstd_measureLoc.png Graphic file (type png)
 
 <use Map_cellstd_measureLoc.png>
-Package pdftex.def Info: Map_cellstd_measureLoc.png used on input line 2358.
+Package pdftex.def Info: Map_cellstd_measureLoc.png used on input line 2356.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
 
 LaTeX Warning: Reference `sec:densityoptions' on page 139 undefined on input li
-ne 2367.
+ne 2365.
 
 [139 <./SWEvarMeasureLocHIST.png (PNG copy)> <./Map_cellstd_measureLoc.png (PNG
- copy)>] <SWEvarDensityHIST.png, id=3541, 722.7pt x 433.62pt>
+ copy)>] <SWEvarDensityHIST.png, id=3539, 722.7pt x 433.62pt>
 File: SWEvarDensityHIST.png Graphic file (type png)
 
 <use SWEvarDensityHIST.png>
-Package pdftex.def Info: SWEvarDensityHIST.png used on input line 2371.
+Package pdftex.def Info: SWEvarDensityHIST.png used on input line 2369.
 (pdftex.def)             Requested size: 346.89732pt x 208.13524pt.
 
-<Map_cellstd_density.png, id=3542, 939.51pt x 433.62pt>
+<Map_cellstd_density.png, id=3540, 939.51pt x 433.62pt>
 File: Map_cellstd_density.png Graphic file (type png)
 
 <use Map_cellstd_density.png>
-Package pdftex.def Info: Map_cellstd_density.png used on input line 2378.
+Package pdftex.def Info: Map_cellstd_density.png used on input line 2376.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
  [140 <./SWEvarDensityHIST.png (PNG copy)> <./Map_cellstd_density.png (PNG copy
 )>] [141]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2421.
+               Default added (so using `tbp') on input line 2419.
 
-[142] <WSMBDist.pdf, id=3575, 506.89375pt x 227.85126pt>
+[142] <WSMBDist.pdf, id=3573, 506.89375pt x 227.85126pt>
 File: WSMBDist.pdf Graphic file (type pdf)
  <use WSMBDist.pdf>
-Package pdftex.def Info: WSMBDist.pdf used on input line 2436.
+Package pdftex.def Info: WSMBDist.pdf used on input line 2434.
 (pdftex.def)             Requested size: 476.98465pt x 214.41315pt.
 
-[143 <./WSMBDist.pdf>] <SpatialVar_LR.pdf, id=3596, 354.46527pt x 185.82379pt>
+[143 <./WSMBDist.pdf>] <SpatialVar_LR.pdf, id=3594, 354.46527pt x 185.82379pt>
 File: SpatialVar_LR.pdf Graphic file (type pdf)
 
 <use SpatialVar_LR.pdf>
-Package pdftex.def Info: SpatialVar_LR.pdf used on input line 2449.
+Package pdftex.def Info: SpatialVar_LR.pdf used on input line 2447.
 (pdftex.def)             Requested size: 346.89732pt x 181.86789pt.
 
-<SpatialVar_SK.pdf, id=3597, 350.90016pt x 186.24844pt>
+<SpatialVar_SK.pdf, id=3595, 350.90016pt x 186.24844pt>
 File: SpatialVar_SK.pdf Graphic file (type pdf)
 
 <use SpatialVar_SK.pdf>
-Package pdftex.def Info: SpatialVar_SK.pdf used on input line 2450.
+Package pdftex.def Info: SpatialVar_SK.pdf used on input line 2448.
 (pdftex.def)             Requested size: 346.89732pt x 184.13643pt.
  [144] [145 <./SpatialVar_LR.pdf> <./SpatialVar_SK.pdf>]
-Overfull \hbox (2.554pt too wide) in paragraph at lines 2472--2473
+Overfull \hbox (2.554pt too wide) in paragraph at lines 2470--2471
 \T1/lmr/m/n/10.95 in win-ter bal-ance with dis-tance from the re-gional to-po-g
 raphic di-vide be-tween the Kaskawulsh
  []
 
-<AccumGrad.pdf, id=3680, 190.73323pt x 177.76808pt>
+<AccumGrad.pdf, id=3678, 190.73323pt x 177.76808pt>
 File: AccumGrad.pdf Graphic file (type pdf)
  <use AccumGrad.pdf>
-Package pdftex.def Info: AccumGrad.pdf used on input line 2476.
+Package pdftex.def Info: AccumGrad.pdf used on input line 2474.
 (pdftex.def)             Requested size: 216.81pt x 202.08534pt.
 
 [146] [147 <./AccumGrad.pdf>] [148]
@@ -2113,7 +2124,7 @@ Appendix C.
 ] [174] [175]
 Appendix D.
 
-Overfull \hbox (1.09383pt too wide) in paragraph at lines 2643--2644
+Overfull \hbox (1.09383pt too wide) in paragraph at lines 2641--2642
 \T1/lmr/m/n/10.95 The lo-ca-tion of each snow depth and den-sity mea-sure-ment 
 are im-ported into single-frequency
  []
@@ -2122,54 +2133,54 @@ are im-ported into single-frequency
 
 ] [177] [178]
 Appendix E.
-<G04_Topo.jpeg, id=4136, 847.66183pt x 599.4301pt>
+<G04_Topo.jpeg, id=4134, 847.66183pt x 599.4301pt>
 File: G04_Topo.jpeg Graphic file (type jpg)
  <use G04_Topo.jpeg>
-Package pdftex.def Info: G04_Topo.jpeg used on input line 2678.
+Package pdftex.def Info: G04_Topo.jpeg used on input line 2676.
 (pdftex.def)             Requested size: 410.22302pt x 290.08975pt.
 
-<G04_Overview.jpeg, id=4137, 844.8363pt x 597.432pt>
+<G04_Overview.jpeg, id=4135, 844.8363pt x 597.432pt>
 File: G04_Overview.jpeg Graphic file (type jpg)
  <use G04_Overview.jpeg>
-Package pdftex.def Info: G04_Overview.jpeg used on input line 2679.
+Package pdftex.def Info: G04_Overview.jpeg used on input line 2677.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-<G04_ZZ.jpeg, id=4138, 844.8363pt x 597.432pt>
+<G04_ZZ.jpeg, id=4136, 844.8363pt x 597.432pt>
 File: G04_ZZ.jpeg Graphic file (type jpg)
  <use G04_ZZ.jpeg>
-Package pdftex.def Info: G04_ZZ.jpeg used on input line 2680.
+Package pdftex.def Info: G04_ZZ.jpeg used on input line 2678.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-<G04_LH.jpeg, id=4139, 844.8363pt x 597.432pt>
+<G04_LH.jpeg, id=4137, 844.8363pt x 597.432pt>
 File: G04_LH.jpeg Graphic file (type jpg)
  <use G04_LH.jpeg>
-Package pdftex.def Info: G04_LH.jpeg used on input line 2681.
+Package pdftex.def Info: G04_LH.jpeg used on input line 2679.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 File: G04_LH.jpeg Graphic file (type jpg)
 
 <use G04_LH.jpeg>
-Package pdftex.def Info: G04_LH.jpeg used on input line 2682.
+Package pdftex.def Info: G04_LH.jpeg used on input line 2680.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G04_UH.jpeg, id=4140, 844.8363pt x 597.432pt>
+ <G04_UH.jpeg, id=4138, 844.8363pt x 597.432pt>
 File: G04_UH.jpeg Graphic file (type jpg)
 
 <use G04_UH.jpeg>
-Package pdftex.def Info: G04_UH.jpeg used on input line 2683.
+Package pdftex.def Info: G04_UH.jpeg used on input line 2681.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G04_M.jpeg, id=4141, 844.8363pt x 597.432pt>
+ <G04_M.jpeg, id=4139, 844.8363pt x 597.432pt>
 File: G04_M.jpeg Graphic file (type jpg)
 
 <use G04_M.jpeg>
-Package pdftex.def Info: G04_M.jpeg used on input line 2684.
+Package pdftex.def Info: G04_M.jpeg used on input line 2682.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G04_A.jpeg, id=4142, 844.8363pt x 597.432pt>
+ <G04_A.jpeg, id=4140, 844.8363pt x 597.432pt>
 File: G04_A.jpeg Graphic file (type jpg)
 
 <use G04_A.jpeg>
-Package pdftex.def Info: G04_A.jpeg used on input line 2685.
+Package pdftex.def Info: G04_A.jpeg used on input line 2683.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2677--2686
+Underfull \hbox (badness 10000) in paragraph at lines 2675--2684
 
  []
 
@@ -2177,107 +2188,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 2677--2686
 
  <./G04_Topo.jpeg>] [180 <./G04_Overview.jpeg> <./G04_ZZ.jpeg>] [181 <./G04_LH.
 jpeg>] [182 <./G04_UH.jpeg> <./G04_M.jpeg>] [183 <./G04_A.jpeg>]
-<G02_topo.jpeg, id=4165, 847.66183pt x 599.4301pt>
+<G02_topo.jpeg, id=4163, 847.66183pt x 599.4301pt>
 File: G02_topo.jpeg Graphic file (type jpg)
  <use G02_topo.jpeg>
-Package pdftex.def Info: G02_topo.jpeg used on input line 2689.
+Package pdftex.def Info: G02_topo.jpeg used on input line 2687.
 (pdftex.def)             Requested size: 410.22302pt x 290.08975pt.
 
-<G02_Overview.jpeg, id=4166, 844.8363pt x 597.432pt>
+<G02_Overview.jpeg, id=4164, 844.8363pt x 597.432pt>
 File: G02_Overview.jpeg Graphic file (type jpg)
  <use G02_Overview.jpeg>
-Package pdftex.def Info: G02_Overview.jpeg used on input line 2690.
+Package pdftex.def Info: G02_Overview.jpeg used on input line 2688.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-<G02_ZZ.jpeg, id=4167, 844.8363pt x 597.432pt>
+<G02_ZZ.jpeg, id=4165, 844.8363pt x 597.432pt>
 File: G02_ZZ.jpeg Graphic file (type jpg)
  <use G02_ZZ.jpeg>
-Package pdftex.def Info: G02_ZZ.jpeg used on input line 2691.
+Package pdftex.def Info: G02_ZZ.jpeg used on input line 2689.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-<G02_LH.jpeg, id=4168, 844.8363pt x 597.432pt>
+<G02_LH.jpeg, id=4166, 844.8363pt x 597.432pt>
 File: G02_LH.jpeg Graphic file (type jpg)
  <use G02_LH.jpeg>
-Package pdftex.def Info: G02_LH.jpeg used on input line 2692.
+Package pdftex.def Info: G02_LH.jpeg used on input line 2690.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 File: G02_LH.jpeg Graphic file (type jpg)
 
 <use G02_LH.jpeg>
-Package pdftex.def Info: G02_LH.jpeg used on input line 2693.
+Package pdftex.def Info: G02_LH.jpeg used on input line 2691.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G02_UH.jpeg, id=4169, 844.8363pt x 597.432pt>
+ <G02_UH.jpeg, id=4167, 844.8363pt x 597.432pt>
 File: G02_UH.jpeg Graphic file (type jpg)
 
 <use G02_UH.jpeg>
-Package pdftex.def Info: G02_UH.jpeg used on input line 2694.
+Package pdftex.def Info: G02_UH.jpeg used on input line 2692.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G02_M.jpeg, id=4170, 844.8363pt x 597.432pt>
+ <G02_M.jpeg, id=4168, 844.8363pt x 597.432pt>
 File: G02_M.jpeg Graphic file (type jpg)
 
 <use G02_M.jpeg>
-Package pdftex.def Info: G02_M.jpeg used on input line 2695.
+Package pdftex.def Info: G02_M.jpeg used on input line 2693.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G02_A.jpeg, id=4171, 844.8363pt x 597.432pt>
+ <G02_A.jpeg, id=4169, 844.8363pt x 597.432pt>
 File: G02_A.jpeg Graphic file (type jpg)
 
 <use G02_A.jpeg>
-Package pdftex.def Info: G02_A.jpeg used on input line 2696.
+Package pdftex.def Info: G02_A.jpeg used on input line 2694.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2688--2697
+Underfull \hbox (badness 10000) in paragraph at lines 2686--2695
 
  []
 
 [184 <./G02_topo.jpeg> <./G02_Overview.jpeg>] [185 <./G02_ZZ.jpeg> <./G02_LH.jp
 eg>] [186 <./G02_UH.jpeg>] [187 <./G02_M.jpeg> <./G02_A.jpeg>]
-<G13_Topo.jpeg, id=4189, 847.66183pt x 599.4301pt>
+<G13_Topo.jpeg, id=4187, 847.66183pt x 599.4301pt>
 File: G13_Topo.jpeg Graphic file (type jpg)
  <use G13_Topo.jpeg>
-Package pdftex.def Info: G13_Topo.jpeg used on input line 2700.
+Package pdftex.def Info: G13_Topo.jpeg used on input line 2698.
 (pdftex.def)             Requested size: 410.22302pt x 290.08975pt.
 
-<G13_Overview.jpeg, id=4190, 844.8363pt x 597.432pt>
+<G13_Overview.jpeg, id=4188, 844.8363pt x 597.432pt>
 File: G13_Overview.jpeg Graphic file (type jpg)
  <use G13_Overview.jpeg>
-Package pdftex.def Info: G13_Overview.jpeg used on input line 2701.
+Package pdftex.def Info: G13_Overview.jpeg used on input line 2699.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-<G13_ZZ.jpeg, id=4191, 844.8363pt x 597.432pt>
+<G13_ZZ.jpeg, id=4189, 844.8363pt x 597.432pt>
 File: G13_ZZ.jpeg Graphic file (type jpg)
  <use G13_ZZ.jpeg>
-Package pdftex.def Info: G13_ZZ.jpeg used on input line 2702.
+Package pdftex.def Info: G13_ZZ.jpeg used on input line 2700.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-<G13_LH.jpeg, id=4192, 844.8363pt x 597.432pt>
+<G13_LH.jpeg, id=4190, 844.8363pt x 597.432pt>
 File: G13_LH.jpeg Graphic file (type jpg)
  <use G13_LH.jpeg>
-Package pdftex.def Info: G13_LH.jpeg used on input line 2703.
+Package pdftex.def Info: G13_LH.jpeg used on input line 2701.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 File: G13_LH.jpeg Graphic file (type jpg)
 
 <use G13_LH.jpeg>
-Package pdftex.def Info: G13_LH.jpeg used on input line 2704.
+Package pdftex.def Info: G13_LH.jpeg used on input line 2702.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G13_UH.jpeg, id=4193, 844.8363pt x 597.432pt>
+ <G13_UH.jpeg, id=4191, 844.8363pt x 597.432pt>
 File: G13_UH.jpeg Graphic file (type jpg)
 
 <use G13_UH.jpeg>
-Package pdftex.def Info: G13_UH.jpeg used on input line 2705.
+Package pdftex.def Info: G13_UH.jpeg used on input line 2703.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G13_M.jpeg, id=4194, 844.8363pt x 597.432pt>
+ <G13_M.jpeg, id=4192, 844.8363pt x 597.432pt>
 File: G13_M.jpeg Graphic file (type jpg)
 
 <use G13_M.jpeg>
-Package pdftex.def Info: G13_M.jpeg used on input line 2706.
+Package pdftex.def Info: G13_M.jpeg used on input line 2704.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
- <G13_A.jpeg, id=4195, 844.8363pt x 597.432pt>
+ <G13_A.jpeg, id=4193, 844.8363pt x 597.432pt>
 File: G13_A.jpeg Graphic file (type jpg)
 
 <use G13_A.jpeg>
-Package pdftex.def Info: G13_A.jpeg used on input line 2707.
+Package pdftex.def Info: G13_A.jpeg used on input line 2705.
 (pdftex.def)             Requested size: 410.23499pt x 290.08975pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2699--2708
+Underfull \hbox (badness 10000) in paragraph at lines 2697--2706
 
  []
 
@@ -2288,10 +2299,10 @@ Appendix F.
 
 ] [193] [194]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 2784.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 2782.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 2787.
+(Font)              <12> on input line 2785.
  [195] [196]
 Appendix G.
 [197
@@ -2299,7 +2310,7 @@ Appendix G.
 ]
 Appendix H.
 
-Overfull \hbox (31.6265pt too wide) in paragraph at lines 2817--2818
+Overfull \hbox (31.6265pt too wide) in paragraph at lines 2815--2816
 []\T1/lmr/m/n/12 The to-po-graphic pa-ram-e-ters are im-ported to Mat-lab us-in
 g the script `Im-port_Topo.m'. 
  []
@@ -2318,162 +2329,162 @@ Appendix J.
 Appendix K.
 [203
 
-] <DEMcellSTD.png, id=4340, 939.51pt x 433.62pt>
+] <DEMcellSTD.png, id=4338, 939.51pt x 433.62pt>
 File: DEMcellSTD.png Graphic file (type png)
  <use DEMcellSTD.png>
-Package pdftex.def Info: DEMcellSTD.png used on input line 2931.
+Package pdftex.def Info: DEMcellSTD.png used on input line 2929.
 (pdftex.def)             Requested size: 433.62001pt x 200.12927pt.
 
-[204] <box_depth.png, id=4356, 429.2838pt x 338.7054pt>
+[204] <box_depth.png, id=4354, 429.2838pt x 338.7054pt>
 File: box_depth.png Graphic file (type png)
  <use box_depth.png>
-Package pdftex.def Info: box_depth.png used on input line 2950.
+Package pdftex.def Info: box_depth.png used on input line 2948.
 (pdftex.def)             Requested size: 303.53267pt x 239.48505pt.
 
-Underfull \hbox (badness 1077) in paragraph at lines 2955--2956
+Underfull \hbox (badness 1077) in paragraph at lines 2953--2954
 \T1/lmr/m/n/12 creases with el-e-va-tion
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 2955--2956
+Underfull \hbox (badness 4048) in paragraph at lines 2953--2954
 \T1/lmr/m/n/12 (Fig-ure []K.3[]). The
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 2955--2956
+Underfull \hbox (badness 4846) in paragraph at lines 2953--2954
 \T1/lmr/m/n/12 0.38) and Glacier 4
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 2955--2956
+Underfull \hbox (badness 1845) in paragraph at lines 2953--2954
 \T1/lmr/m/n/12 fewer depth mea-sure-
  []
 
 [205 <./DEMcellSTD.png (PNG copy)> <./box_depth.png (PNG copy)>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 3007.
+               Default added (so using `tbp') on input line 3005.
 
 
-Overfull \hbox (7.46097pt too wide) in paragraph at lines 3012--3052
+Overfull \hbox (7.46097pt too wide) in paragraph at lines 3010--3050
  [][] 
  []
 
-<binned_std.png, id=4365, 578.16pt x 325.215pt>
+<binned_std.png, id=4363, 578.16pt x 325.215pt>
 File: binned_std.png Graphic file (type png)
  <use binned_std.png>
-Package pdftex.def Info: binned_std.png used on input line 3058.
+Package pdftex.def Info: binned_std.png used on input line 3056.
 (pdftex.def)             Requested size: 346.89732pt x 195.1305pt.
 
-<binned_std_percent.png, id=4366, 578.16pt x 325.215pt>
+<binned_std_percent.png, id=4364, 578.16pt x 325.215pt>
 File: binned_std_percent.png Graphic file (type png)
 
 <use binned_std_percent.png>
-Package pdftex.def Info: binned_std_percent.png used on input line 3063.
+Package pdftex.def Info: binned_std_percent.png used on input line 3061.
 (pdftex.def)             Requested size: 346.89732pt x 195.1305pt.
  [206] [207] [208 <./binned_std.png (PNG copy)> <./binned_std_percent.png (PNG 
 copy)>]
 Appendix L.
 [209
 
-] <WSMB_allDensity_zz.png, id=4386, 992.95969pt x 235.63031pt>
+] <WSMB_allDensity_zz.png, id=4384, 992.95969pt x 235.63031pt>
 File: WSMB_allDensity_zz.png Graphic file (type png)
 
 <use WSMB_allDensity_zz.png>
-Package pdftex.def Info: WSMB_allDensity_zz.png used on input line 3084.
+Package pdftex.def Info: WSMB_allDensity_zz.png used on input line 3082.
 (pdftex.def)             Requested size: 476.98465pt x 113.19115pt.
 
-<WSMB_allDensity_beta.png, id=4387, 992.95969pt x 235.63031pt>
+<WSMB_allDensity_beta.png, id=4385, 992.95969pt x 235.63031pt>
 File: WSMB_allDensity_beta.png Graphic file (type png)
 
 <use WSMB_allDensity_beta.png>
-Package pdftex.def Info: WSMB_allDensity_beta.png used on input line 3085.
+Package pdftex.def Info: WSMB_allDensity_beta.png used on input line 3083.
 (pdftex.def)             Requested size: 476.98465pt x 113.19115pt.
 
-<WSMB_allDensity_betaNzz.png, id=4388, 992.95969pt x 235.63031pt>
+<WSMB_allDensity_betaNzz.png, id=4386, 992.95969pt x 235.63031pt>
 File: WSMB_allDensity_betaNzz.png Graphic file (type png)
 
 <use WSMB_allDensity_betaNzz.png>
-Package pdftex.def Info: WSMB_allDensity_betaNzz.png used on input line 3086.
+Package pdftex.def Info: WSMB_allDensity_betaNzz.png used on input line 3084.
 (pdftex.def)             Requested size: 476.98465pt x 113.19115pt.
 
-<WSMB_Distributionzz.png, id=4389, 648.92438pt x 710.655pt>
+<WSMB_Distributionzz.png, id=4387, 648.92438pt x 710.655pt>
 File: WSMB_Distributionzz.png Graphic file (type png)
 
 <use WSMB_Distributionzz.png>
-Package pdftex.def Info: WSMB_Distributionzz.png used on input line 3094.
+Package pdftex.def Info: WSMB_Distributionzz.png used on input line 3092.
 (pdftex.def)             Requested size: 520.34268pt x 569.88023pt.
 
-<WSMB_Distributionbeta.png, id=4390, 648.92438pt x 710.655pt>
+<WSMB_Distributionbeta.png, id=4388, 648.92438pt x 710.655pt>
 File: WSMB_Distributionbeta.png Graphic file (type png)
 
 <use WSMB_Distributionbeta.png>
-Package pdftex.def Info: WSMB_Distributionbeta.png used on input line 3100.
+Package pdftex.def Info: WSMB_Distributionbeta.png used on input line 3098.
 (pdftex.def)             Requested size: 520.34268pt x 569.88023pt.
 
-<WSMB_DistributionbetaNzz.png, id=4391, 648.92438pt x 710.655pt>
+<WSMB_DistributionbetaNzz.png, id=4389, 648.92438pt x 710.655pt>
 File: WSMB_DistributionbetaNzz.png Graphic file (type png)
 
 <use WSMB_DistributionbetaNzz.png>
-Package pdftex.def Info: WSMB_DistributionbetaNzz.png used on input line 3106.
+Package pdftex.def Info: WSMB_DistributionbetaNzz.png used on input line 3104.
 (pdftex.def)             Requested size: 520.34268pt x 569.88023pt.
  [210 <./WSMB_allDensity_zz.png (PNG copy)> <./WSMB_allDensity_beta.png (PNG co
 py)> <./WSMB_allDensity_betaNzz.png (PNG copy)>] [211 <./WSMB_Distributionzz.pn
 g (PNG copy)>] [212 <./WSMB_Distributionbeta.png (PNG copy)>] [213 <./WSMB_Dist
 ributionbetaNzz.png (PNG copy)>]
-<WSMB_SK_allDensity_zz.png, id=4413, 1035.11719pt x 218.31563pt>
+<WSMB_SK_allDensity_zz.png, id=4411, 1035.11719pt x 218.31563pt>
 File: WSMB_SK_allDensity_zz.png Graphic file (type png)
 
 <use WSMB_SK_allDensity_zz.png>
-Package pdftex.def Info: WSMB_SK_allDensity_zz.png used on input line 3116.
+Package pdftex.def Info: WSMB_SK_allDensity_zz.png used on input line 3114.
 (pdftex.def)             Requested size: 520.34268pt x 109.75049pt.
 
-<WSMB_SK_allDensity_beta.png, id=4414, 1035.11719pt x 218.31563pt>
+<WSMB_SK_allDensity_beta.png, id=4412, 1035.11719pt x 218.31563pt>
 File: WSMB_SK_allDensity_beta.png Graphic file (type png)
 
 <use WSMB_SK_allDensity_beta.png>
-Package pdftex.def Info: WSMB_SK_allDensity_beta.png used on input line 3117.
+Package pdftex.def Info: WSMB_SK_allDensity_beta.png used on input line 3115.
 (pdftex.def)             Requested size: 520.34268pt x 109.75049pt.
 
-<WSMB_SK_allDensity_betaNzz.png, id=4415, 1035.11719pt x 218.31563pt>
+<WSMB_SK_allDensity_betaNzz.png, id=4413, 1035.11719pt x 218.31563pt>
 File: WSMB_SK_allDensity_betaNzz.png Graphic file (type png)
 
 <use WSMB_SK_allDensity_betaNzz.png>
-Package pdftex.def Info: WSMB_SK_allDensity_betaNzz.png used on input line 3118
+Package pdftex.def Info: WSMB_SK_allDensity_betaNzz.png used on input line 3116
 .
 (pdftex.def)             Requested size: 520.34268pt x 109.75049pt.
 
-<WSMB_Distribution_SK_zz.png, id=4416, 725.71124pt x 708.39656pt>
+<WSMB_Distribution_SK_zz.png, id=4414, 725.71124pt x 708.39656pt>
 File: WSMB_Distribution_SK_zz.png Graphic file (type png)
 
 <use WSMB_Distribution_SK_zz.png>
-Package pdftex.def Info: WSMB_Distribution_SK_zz.png used on input line 3126.
+Package pdftex.def Info: WSMB_Distribution_SK_zz.png used on input line 3124.
 (pdftex.def)             Requested size: 520.34268pt x 507.93733pt.
 
-<WSMB_Distribution_SK_beta.png, id=4417, 725.71124pt x 708.39656pt>
+<WSMB_Distribution_SK_beta.png, id=4415, 725.71124pt x 708.39656pt>
 File: WSMB_Distribution_SK_beta.png Graphic file (type png)
 
 <use WSMB_Distribution_SK_beta.png>
-Package pdftex.def Info: WSMB_Distribution_SK_beta.png used on input line 3132.
+Package pdftex.def Info: WSMB_Distribution_SK_beta.png used on input line 3130.
 
 (pdftex.def)             Requested size: 520.34268pt x 507.93733pt.
 
-<WSMB_Distribution_SK_betaNzz.png, id=4418, 725.71124pt x 708.39656pt>
+<WSMB_Distribution_SK_betaNzz.png, id=4416, 725.71124pt x 708.39656pt>
 File: WSMB_Distribution_SK_betaNzz.png Graphic file (type png)
 
 <use WSMB_Distribution_SK_betaNzz.png>
 Package pdftex.def Info: WSMB_Distribution_SK_betaNzz.png used on input line 31
-39.
+37.
 (pdftex.def)             Requested size: 520.34268pt x 507.93733pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3146.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3144.
  [214 <./WSMB_SK_allDensity_zz.png (PNG copy)> <./WSMB_SK_allDensity_beta.png (
 PNG copy)> <./WSMB_SK_allDensity_betaNzz.png (PNG copy)>] [215 <./WSMB_Distribu
 tion_SK_zz.png (PNG copy)>] [216 <./WSMB_Distribution_SK_beta.png (PNG copy)>] 
 [217 <./WSMB_Distribution_SK_betaNzz.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3146.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3144.
  (./THESIS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3146.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3146.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3144.
 
 
 
@@ -2482,8 +2493,8 @@ Package rerunfilecheck Warning: File `THESIS.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `THESIS.out':
-(rerunfilecheck)             Before: AEB0DC62682DBD6284C621B6E265659B;8694
-(rerunfilecheck)             After:  27E4E409D2A7CADD6AF97EB9AD3F02BB;8696.
+(rerunfilecheck)             Before: 27E4E409D2A7CADD6AF97EB9AD3F02BB;8696
+(rerunfilecheck)             After:  5C1EBA6CB016CCB40858DB38204585C6;8696.
 
 LaTeX Warning: There were undefined references.
 
@@ -2492,80 +2503,71 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 12961 strings out of 494501
- 200203 string characters out of 6167030
- 394047 words of memory out of 5000000
+ 12957 strings out of 494501
+ 200138 string characters out of 6167030
+ 393689 words of memory out of 5000000
  15003 multiletter control sequences out of 15000+600000
  127542 words of font info for 103 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  44i,21n,83p,2088b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.172} has been referenced but does 
+pdfTeX warning (dest): name{figure.caption.171} has been referenced but does 
 not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.174} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.173} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.170} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.169} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.167} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.166} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.164} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.163} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.158} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.157} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.155} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.154} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.152} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.151} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.149} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.148} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.146} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.145} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.136} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.135} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.132} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.131} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.129} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.128} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.113} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.111} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.163} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.162} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.147} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.146} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.137} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.136} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.133} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.132} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.130} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.129} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.116} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.115} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.100} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.168} has been referenced but does not exis
+pdfTeX warning (dest): name{section*.167} has been referenced but does not exis
 t, replaced by a fixed one
 
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/loc
@@ -2596,10 +2598,10 @@ y9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt10.pf
 b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></u
 sr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on THESIS.pdf (241 pages, 50847961 bytes).
+Output written on THESIS.pdf (241 pages, 50847875 bytes).
 PDF statistics:
- 4707 PDF objects out of 5155 (max. 8388607)
- 4079 compressed objects within 41 object streams
- 807 named destinations out of 1000 (max. 500000)
+ 4704 PDF objects out of 5155 (max. 8388607)
+ 4075 compressed objects within 41 object streams
+ 803 named destinations out of 1000 (max. 500000)
  1823 words of extra memory for PDF output out of 10000 (max. 10000000)
 

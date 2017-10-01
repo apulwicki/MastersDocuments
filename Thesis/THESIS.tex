@@ -1681,7 +1681,7 @@ The largest difference in estimated WB between the various density assignment me
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
             \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed1.png}
-            \caption[Option 1]%
+            \caption[]%
             {{\small S1}}    
         \end{subfigure}
         \hfill
@@ -1709,7 +1709,7 @@ The largest difference in estimated WB between the various density assignment me
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
             \includegraphics[width=\textwidth]{MLRmap_Modelled_Observed5.png}
-            \caption[Option 5]%
+            \caption[]%
             {{\small S3}}    
         \end{subfigure}
         \hfill
@@ -1745,51 +1745,49 @@ The largest difference in estimated WB between the various density assignment me
 \subsection{Bayesian Model Averaging (BMA)}
 \label{sec:BMS}
 
-\subsubsection{Background}
+\subsubsection{Background and implementation}
 
 \begin{wrapfigure}{L}{0.6\textwidth}
 	\centering
 	\includegraphics[width = 0.6\textwidth]{DistributionOfNumParams_topoRegress.png}\\
-	\caption{Uniform model prior for eight topographic regressors used in BMA.}
+	\caption{Model prior for eight topographic regressors used in BMA.}
 	\label{fig:uni_model_prior}
 \end{wrapfigure}
 
-Bayesian model averaging (BMA) is a method of estimating all possible linear combinations of predictor variables, in this case topographic parameters and then averaging over all models \citep[e.g.][]{Raftery1997, Wasserman2000, Raftery2005}.  This method is based on Bayesian principals in which the probability of an outcome is determined by a combination of an initial probably distribution that is prescribed by the researcher, as well as the available data. 
+Bayesian model averaging (BMA) is a method of estimating all possible linear combinations of predictor variables, in this case topographic parameters and then averaging over all models \citep[e.g.][]{Raftery1997, Wasserman2000, Raftery2005}.  This method is based on Bayesian principles in which the probability of an outcome is determined by a combination of a prescribed initial probability distribution, as well as the available data. 
 
 We can use Bayes' theorem to to write the probability distribution ($P(x|y)$) of the predictive outcome of $x$ given $y$ as
 \begin{equation}
 P(x|y) = \frac{P(y|x)P(x)}{P(y)}.
 \end{equation}
-$P(x|y)$ is often called the posterior model probability (PMP). The quantity $P(y|x)$ is the likelihood function, which determines unknown parameters from a known outcome (i.e. observed data). The term $P(x)$ is an observer determined prior probability distribution (typically just called a `prior') and it reflects the prior knowledge of the system \citep{Raftery1997}. Choosing an appropriate prior is one of the most challenging components of Bayesian probability theory \citep{Wasserman2000}. The $P(y)$ term can be obtained by integrating $P(y|x)P(x)$ over all $x$ resulting in a constant for all models that is typically discarded \citep{Wasserman2000}. 
+$P(x|y)$ is often called the posterior model probability (PMP). The quantity $P(y|x)$ is the likelihood function, which determines unknown parameters from a known outcome (i.e. observed data). The term $P(x)$ is an observer-determined prior probability distribution (typically just called a `prior') and it reflects the prior knowledge of the system \citep{Raftery1997}. Choosing an appropriate prior is one of the most challenging components of Bayesian probability theory \citep{Wasserman2000}. $P(y)$ can be obtained by integrating $P(y|x)P(x)$ over all $x$, resulting in a constant for all models that is typically discarded \citep{Wasserman2000}. 
 
-Together then, the posterior model probability is a function of both the model prior, specified by the researcher, as well as the distribution of the observed data --- the PMP is the transformation of the prior as a result of considering collected data \citep{Wasserman2000}. This can be loosely expressed as
+The posterior model probability is then a function of both the model prior, specified by the researcher, as well as the distribution of the observed data; the PMP is the transformation of the prior as a result of considering available data \citep{Wasserman2000}. This can be loosely expressed as
 \begin{equation}
 \textrm{posterior} \propto \textrm{prior} \times \textrm{likelihood}.
 \end{equation}
-If the prior is uninformative then the posterior will be strongly influenced by the data \citep{Wasserman2000}. An informative prior will result in a posterior that is a mix of the prior and the data. As the prior becomes more informative, the amount of data needed to transform the distribution increases. If there is a large amount of data then the prior will have little effect on the posterior. The final coefficients for the linear combination of predictor variables is often reported as mean values of the posterior distribution or values that maximize the log-likelihood. 
+If the prior is uninformative then the posterior will be strongly influenced by the data \citep{Wasserman2000}. An informative prior will result in a posterior that is a mix of the prior and the data. As the prior becomes more informative, the number of data needed to transform the distribution increases. If there are many data then the prior will have little effect on the posterior. The final coefficients for the linear combination of predictor variables are often reported as mean values of the posterior distribution or values that maximize the log-likelihood. 
 
 Within BMA, Bayes' theorem is used to find the posterior model probability and the PMP is used as a weight when averaging over all models \citep{Wasserman2000}. The model weighted posterior distribution for the coefficients $\beta$ of $k$ models after normalization is given by 
 \begin{equation}
 P(\beta| y,X) = \sum\limits_{i=1}^{2^k} P(M_i | X,y)P(\beta | M_i , y, X),
 \end{equation}
-where the responding variable is given by $y$ and the matrix of variables is given by $X$ \citep{Raftery1997}. Here, the model prior is $P(M_i | X,y)$ and the likelihood of the $\beta$ coefficient is $P(\beta | M_i , y, X)$.
+where the response variable is given by $y$ and the matrix of variables is given by $X$ \citep{Raftery1997}. Here, the model prior is $P(M_i | X,y)$ and the likelihood of $\beta$ is $P(\beta | M_i , y, X)$.
 
 There are a number of different priors to describe model size distribution that have been applied in BMA. A commonly used prior is the `uniform' prior, which assumes a normal model distribution with a total of $2^n$ models, where $n$ is the number of regressors \citep{Wasserman2000}.  This model prior states that the observer has no knowledge of the system and all models are equally likely. The uniform prior has a prior model probability of the form $P(M_i)=2^{-n}$ (Figure \ref{fig:uni_model_prior}), which is symmetric about the mean $n/2$ \citep{Zeugner2015}. This prior inherently favours models of an intermediate size. 
 
-Other types of priors include those that are skewed to favour smaller models, ones with equal probability for all model sizes and ones with varying probability for individual regressors. In this project, a uniform prior was chosen for two reasons. First, there was no knowledge of the model distribution so I aim to minimize the observer influence on the final distribution. Second, the MLR estimation (Section \ref{sec:MLR}) assumes a uniform distribution so chosing a uniform distribution for BMA allows for consistency between methods. Using a uniform distribution is commonly done in BMA \citep{Wasserman2000}.
+Other types of priors include those that are skewed to favour smaller models, ones with equal probability for all model sizes and ones with varying probability for individual regressors. In this project, a uniform prior was chosen for two reasons. First, there was no knowledge of the model distribution so I aim to minimize the observer influence on the final distribution. Second, the MLR estimation (Section \ref{sec:MLR}) assumes a uniform distribution, so choosing a uniform distribution for BMA allows for consistency between methods. A uniform distribution is commonly chosen in BMA \citep{Wasserman2000}.
 
 BMA allows for the calculation of a metric called the posterior inclusion probability (PIP), which is used to evaluate the importance of a regressor in explaining the observed data. PIP is the sum of all posterior model probabilities (PMP) where the variable was included in the model \citep{Zeugner2015}. A higher PIP indicates that the regressor is more important in the regression.  
 
-\subsubsection{Methods}
-
-The BMA process was implemented in R (see Appendix \ref{sec:BMAmethods} for details), using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The package computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter.
+BMA is implemented in R (see Appendix \ref{sec:BMAmethods} for details), using the Bayesian model statistics (BMS) package developed by \cite{Zeugner2015}. The package computes the posterior distribution mean value of all $\beta$ coefficients for topographic parameters as well as the percent variance explained by each parameter.
 
 \subsubsection{Results and Discussion}
 
 \begin{sidewaystable}
 \footnotesize
 \centering
-\caption{BMA coefficients for regression of WB data and standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. See Table \ref{tab:densityOptions} for description of density assignment methods.}
+\caption{BMA coefficients for regression of winter balance (WB) on standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled and observed WB is also given. See Table \ref{tab:densityOptions} for description of density assignment methods.}
 \label{tab:BMAcoeffFull}
 \begin{tabular}{ccrrrrrrrr}
 \textbf{} & \textbf{Parameter} & \multicolumn{1}{c}{\textbf{S1}} & \multicolumn{1}{c}{\textbf{F1}} & \multicolumn{1}{c}{\textbf{S2}} & \multicolumn{1}{c}{\textbf{F2}} & \multicolumn{1}{c}{\textbf{S3}} & \multicolumn{1}{c}{\textbf{F3}} & \multicolumn{1}{c}{\textbf{S4}} & \multicolumn{1}{c}{\textbf{F4}} \\ \hline \hline
@@ -1823,66 +1821,66 @@ The BMA process was implemented in R (see Appendix \ref{sec:BMAmethods} for deta
 \end{tabular}
 \end{sidewaystable}
 
-The regression generated using BMA and the relative importance of topographic parameters is similar to that of the MLR regression. The most important topographic parameter is $Sx$ on Glacier 4 and elevation ($z$) on Glaciers 2 and 13 (Table \ref{tab:BMAcoeffFull}, Figures \ref{fig:BMAcoeff_densityOptions} and \ref{fig:BMAsemiR2_densityOptions}). The variance explained by the BMA models is also comparable to that of the MLR models (Figures \ref{fig:BMSfit_opt8} and \ref{fig:BMSfit_allLines}). 
+The regression generated using BMA and the relative importance of topographic parameters is similar to that generated using MLR. The most important topographic parameter is $Sx$ on Glacier 4 and elevation ($z$) on Glaciers 2 and 13 (Table \ref{tab:BMAcoeffFull}, Figures \ref{fig:BMAcoeff_densityOptions} and \ref{fig:BMAsemiR2_densityOptions}). The variance explained by the BMA models is also comparable to that of the MLR models (Figures \ref{fig:BMSfit_opt8} and \ref{fig:BMSfit_allLines}). 
 
-The estimate of distributed WB is different between glaciers but consistent with the spatial patterns found using MLR (Figures \ref{fig:BMSmodelledSWE}). The estimated WB range is greatest for Glacier 2 and there are a large number of outliers on Glacier 4. The difference between distributed WB estiamted susing different density assignment methods (Figure \ref{fig:BMS_SWEdiffMap}) and the WB difference as a percent (Figure \ref{fig:BMS_SWEdiffMap_precent}) resemble those of MLR. The mean percent difference is highest for Glaciers 2 and 13 (22\%) and lowest for Glacier 4 (15\%). Mean estimated WB decreases with distance from the topographic divide, which is consistent with the observed mean WB (Figure \ref{fig:BMAsweboxplot}). The distribution of regression residuals has a similar distribution between different density assignment methods (Figure \ref{fig:BMSresiduals_all}) but it differs considerably between glaciers (Figure \ref{fig:BMAresidualsboxplot}). The spatial pattern of residuals is similar to that of the MLR regression (Figure \ref{fig:BMS_residualsMap}). For a more detailed analysis of estimated WB found using the regression coefficients, see Section \ref{sec:MLR}. 
+Spatial patterns of WB are consistent with those generated using MLR (Figures \ref{fig:BMSmodelledSWE}). The estimated WB range is greatest for Glacier 2 and there are a large number of outliers on Glacier 4. The difference between distributed WB estimated using different density assignment methods (Figure \ref{fig:BMS_SWEdiffMap}) and the WB difference as a percent (Figure \ref{fig:BMS_SWEdiffMap_precent}) resemble those of MLR. The mean percent difference is highest for Glaciers 2 and 13 (22\%) and lowest for Glacier 4 (15\%). Mean estimated WB decreases with distance from the regional topographic divide, which is consistent with the observed mean WB (Figure \ref{fig:BMAsweboxplot}). Regression residuals have a similar distribution between different density assignment methods (Figure \ref{fig:BMSresiduals_all}) but it differs considerably between glaciers (Figure \ref{fig:BMAresidualsboxplot}). The spatial pattern of residuals is similar to that of the MLR regression (Figure \ref{fig:BMS_residualsMap}). For a more detailed analysis of estimated WB found using the regression coefficients, see Section \ref{sec:MLR}. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =1.1 \textwidth]{BMScoeff_DensityOpts.png}\\
-	\caption{Boxplot showing the range of BMA regressor coefficients that are estimated with winter balance values calculated using all density assignment methods. \params \boxplot }
+	\caption{BMA coefficients for regression of winter balance (WB) on standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled and observed WB is also given. See Table \ref{tab:densityOptions} for description of density assignment methods. \boxplot}
 	\label{fig:BMAcoeff_densityOptions}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =1.1 \textwidth]{BMSsemiR2_DensityOpts.png}\\
-	\caption{Boxplot showing the range of semi-partial correlation explained by topographic parameters from the BMA regression using each density assignment method of estimating winter balance (WB). \params \boxplot }
+	\caption{Boxplot showing the range of BMA semi-partial correlation coefficients that are estimated with winter-balance values calculated using all density assignment methods. \params \boxplot }
 	\label{fig:BMAsemiR2_densityOptions}
 \end{figure} 
  
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSfit_opt8.png}}%
-	\caption{Comparison of BMA predicted and observed winter balance (WB) for three study glaciers. The WB values were calculated inverse distance weighted snow pit densities (S4).}
+	\caption{Comparison of estimated (BMA) and observed (WB) for each study glacier. The WB values were calculated using inverse-distance weighted snow-pit densities (S4)}
 	\label{fig:BMSfit_opt8}
 \end{figure}
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSfit_allLines.png}}%
-	\caption{Plot of all linear fits between BMA modelled and observed winter balance (WB) using eight options for calculating density. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. See Figure \ref{fig:BMSfit_opt8} for a plot of the data. }
+	\caption{Plots of all linear fits between BMA estimated and observed WB using eight density assignment methods. Mean R$^2$ value is shown for each sub-plot with 1:1 line (dashed). Black line highlights the regression with S4 from Figure \ref{fig:BMSfit_opt8}. }
 	\label{fig:BMSfit_allLines}
 \end{figure}
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{BMSmap_Modelled_Observed8.png}}%
-	\caption{Modelled winter balance using coefficients determined using BMA and density interpolated with inverse-distance weighting from snow pits (S4). Observed winter balance values are overlain on the maps.\topomap}
+	\caption{Winter balance modelled with coefficients determined using BMA and density assigned by inverse-distance weighting from snow pits (S4). \swedots}
 	\label{fig:BMSmodelledSWE}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{BMS_SWEdifferenceMap.png}\\
-	\caption{Map of the difference between maximum and minimum winter balance values estimated with BMA and winter balance data calculated with each density assignment method. \topomap}
+	\caption{Differences between maximum and minimum winter balance estimated with BMA using the eight different density assignment methods. \topomap}
 	\label{fig:BMS_SWEdiffMap}
 \end{figure} 
  
  \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{BMS_SWEdifferenceMap_percent.png}\\
-	\caption{Map of the difference between maximum and minimum winter balance (WB) values, expressed as a percent of the mean WB, estimated with BMA and WB data calculated with each density assignment method. The colours have been scaled to highlight difference in the main part of the glaciers. \topomap}
+	\caption{Differences between maximum and minimum winter balance (WB), expressed as a percentage of the the maximum WB, estimated with BMA using the eight different density assignment methods. Values of 0\% are found where the minimum estimated WB is 0\,m\,w.e. \topomap}
 	\label{fig:BMS_SWEdiffMap_precent}
 \end{figure} 
 
 \begin{figure}[H]
 \centering
 	\includegraphics[width =0.6\textwidth]{ModelledSWE_box_BMS.png}\\
-\caption{Summary of estimated winter balance values found using BMA coefficients (S4). \boxMatlab}
+\caption{Boxplot of all estimated winter balance values found using BMA coefficients (S4). \boxMatlab}
 \label{fig:BMAsweboxplot}
 \end{figure} 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{BMSresiduals_all.png}}%
-	\caption{Residuals of winter balance predicted using BMA for all options of estimating density.}
+	\caption{Residuals of winter balance predicted using BMA for all density interpolation methods.}
 	\label{fig:BMSresiduals_all}
 \end{figure}
 
@@ -1960,8 +1958,8 @@ The estimate of distributed WB is different between glaciers but consistent with
             {{\small F4}}    
         \end{subfigure}
               
-        \caption[Map of modelled winter balance using the BMS coefficient values for all density assignment methods. Measured winter balance is plotted as overlain filled circles.]
-        {\small Map of modelled winter balance using the BMS coefficient values for all density assignment methods. Measured winter balance is plotted as overlain filled circles.} 
+        \caption[]
+        {Map of modelled winter balance (WB) using BMA coefficients for each density assignment method. \swedots} 
         \label{fig:allBMSmodelled}
     \end{figure}
 
