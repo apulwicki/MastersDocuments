@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  30 SEP 2017 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  1 OCT 2017 08:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -779,9 +779,9 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 69--69
  [8] (./THESIS.lot [9
 
 ]
-Overfull \hbox (3.3431pt too wide) in paragraph at lines 17--17
+Overfull \hbox (7.90562pt too wide) in paragraph at lines 17--17
  [][] [][]\T1/lmr/m/n/10.95 Pearson cor-re-la-tion co-ef-fi-cients be-tween to-
-po-graphic pa-ram-e-ters at sam- 
+po-graphic pa-ram-e-ters at snow- 
  []
 
 [10]
@@ -2480,7 +2480,7 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  12940 strings out of 494501
  199824 string characters out of 6167030
- 394797 words of memory out of 5000000
+ 394785 words of memory out of 5000000
  15003 multiletter control sequences out of 15000+600000
  127542 words of font info for 103 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -2514,7 +2514,7 @@ pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><
 /usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/l
 ocal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on THESIS.pdf (242 pages, 50847770 bytes).
+Output written on THESIS.pdf (242 pages, 50847302 bytes).
 PDF statistics:
  4686 PDF objects out of 5155 (max. 8388607)
  4057 compressed objects within 41 object streams

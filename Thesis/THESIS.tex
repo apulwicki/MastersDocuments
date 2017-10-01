@@ -57,7 +57,7 @@
 \newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$) and wind redistribution ($Sx$). }
 \newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box and outliers as single points. }
 \newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers) and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
-\newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow depth sampling locations. }
+\newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow-depth sampling locations. }
 \newcommand{\swedots}{Observed winter balance values are overlain on the maps. }
 
 
@@ -1319,16 +1319,16 @@ The mean northness values for all glaciers is close to zero and the majority of 
 
 Curvature values on all glaciers are largely negative, indicating that concave topography is more prevalent than convex topography (Figures \ref{map:curvature} and \ref{sampledRange:curvature}). The sampled distribution of curvature is a poor representation of the full distribution as shown by the dramatically different values of skewness, which are positive for the full distribution and negative for the sampled distribution (Table \ref{tab:sampled&fullParams_stats}). 
 
-$Sx$ maps over the study glaciers are shown in Figure \ref{map:Sx} and the wind direction and maximum search distance with the highest correlation to point-scale winter balance for each glacier are shown in Table \ref{tab:Sxparams}. For Glacier 4, an approximately east wind and 300 m search distance were most strongly correlated. The correlation was negative, which means that negative values of $Sx$ (exposure) correspond to areas with higher winter balance (more snow). This is counter intuitive and perhaps indicates that $Sx$ is not an appropriate topographic parameter to correlate with WB on Glacier 4. Despite this, $Sx$ was retained in future analysis for consistency between glaciers. For Glacier 2, a north wind with a 300 m search distance was most strongly correlated and for Glacier 13, a west wind with a 200 m search distance produced the strongest correlation. Both of these correlations were positive, so a more positive $Sx$ value (sheltered) corresponds to higher values of point-scale winter balance (more snow). The correlation values for Glacier 4 and 2 are low ($<$0.3) which indicates that $Sx$ will likely be insignificant in estimating snow accumulation. The correlation between $Sx$ and point-scale winter balance on Glacier 2 is higher (0.56). 
+$Sx$ maps over the study glaciers are shown in Figure \ref{map:Sx}. The wind direction and maximum search distance with the highest correlation to point-scale winter balance for each glacier are shown in Table \ref{tab:Sxparams}. For Glacier 4, an approximately east wind direction and 300\,m search distance were most strongly correlated. The correlation was negative, which means that negative values of $Sx$ (exposure) correspond to areas with higher winter balance (more snow). This is counter-intuitive and perhaps indicates that $Sx$ is not an appropriate topographic parameter to correlate with WB on Glacier 4. Despite this, $Sx$ was retained in future analysis for consistency between glaciers. For Glacier 2, a north wind direction with a 300\,m search distance was most strongly correlated and for Glacier 13, a west wind direction with a 200\,m search distance produced the strongest correlation. Both of these correlations are positive, so a more positive $Sx$ value (sheltered) corresponds to higher values of point-scale winter balance (more snow). The correlation coefficients for Glacier 4 and 2 are low ($<$0.3), indicating that $Sx$ will likely be insignificant in estimating snow accumulation. The correlation between $Sx$ and point-scale winter balance on Glacier 2 is higher (0.56). 
 
-The full distribution of $Sx$ (Figure \ref{sampledRange:Sx}) is different for each glacier and differs greatly between sampled and full distributions. Glacier 2 has a mean less than zero, indicating that a large portion of the glacier has exposed topography (Table \ref{tab:sampled&fullParams_stats}). Glacier 4 and 13 have positive mean values of $Sx$, indicating more sheltered topography. Extreme values of $Sx$ are generally located along the edges of the accumulation areas (Figure \ref{map:Sx}). The sampled distribution mean for Glacier 2 is close to that of its full distribution, while the sampled distribution means of Glacier 4 and 13 are different (negative) than that of the full distribution means (positive). The sampled distribution are more sharply peaked, as indicated by the smaller standard deviation values and larger kurtosis when compared to the full distributions. The skewness also differs for Glaciers 4 and 2, with the sampled distributions skewed more to the right than full distributions. Overall, the sampled distribution of $Sx$ is a poor representation of the full distribution. 
+The full distribution of $Sx$ (Figure \ref{sampledRange:Sx}) is different for each glacier and the full distribution differs from the sampled distribution. Glacier 2 has a mean less than zero, indicating that a large fraction of the glacier surface is topographically exposed (Table \ref{tab:sampled&fullParams_stats}). Glacier 4 and 13 have positive mean values of $Sx$, indicating more sheltered topography. Extreme values of $Sx$ are generally located along the edges of the accumulation areas (Figure \ref{map:Sx}). The sampled distribution mean for Glacier 2 is close to that of its full distribution, while the sampled distribution means of Glacier 4 and 13 are different (negative) than those of the full distribution means (positive). The sampled distributions are more sharply peaked, as indicated by the lower standard deviations and larger values of kurtosis when compared to the full distributions. The skewness also differs for Glaciers 4 and 2, with the sampled distributions skewed more to the right than the full distributions. 
 
-Overall, the sampled topographic parameters are poor representatives of the full distribution of parameters. Extreme values of all parameters are grossly under sampled and the distribution of the sampled parameters generally differs from the full distribution. This was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. These errors are especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the highest winter balance values and is likely to heavily influence glacier-wide winter balance values. Generally, the sampled values do not fully capture the variance in topographic parameters but a regression is still valuable  since topographic regressions are common when estimating winter balance.  
+Overall, the sampled topographic parameters are poor representatives of the full distribution of parameters. Extreme values of all parameters are under sampled, which was largely do to dangerous travel conditions and an inability to quickly and accurately measure snow depth in the accumulation area. As a result, extrapolation of regression models will likely result in large errors. These errors are especially relevant in the accumulation area, which has extreme values for all parameters. Errors in the accumulation area are especially important to acknowledge because this area has the highest winter balance values and is likely to heavily influence the glacier-wide winter balance. 
 
 \begin{sidewaystable}
 \small
 \centering
-\caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature and are unitless for cosine of aspect ($\alpha$), northness ($N$), slope ($m$) and wind redistribution ($Sx$). Skewness is a measure of the data asymmetry about the mean, with positive values indicating data that are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
+\caption{Descriptive statistics of the full and sampled distributions of topographic parameters. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature and are unitless for cosine of aspect ($\alpha$), northness ($N$), slope ($m$) and wind redistribution ($Sx$). Skewness is a measure of the data asymmetry about the mean, with positive values indicating data that are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
 \label{tab:sampled&fullParams_stats}
 \begin{tabular}{cc|cccc|cccc}
  & \textbf{} & \multicolumn{4}{c|}{\textbf{Full}} & \multicolumn{4}{c}{\textbf{Sampled}} \\
@@ -1361,98 +1361,98 @@ Overall, the sampled topographic parameters are poor representatives of the full
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{Map_elevation.png}\\
-	\caption{Distributions of elevation ($z$) used in the topographic regressions for the study glaciers. This DEM is derived from a SPOT5 satellite image and has a grid size of 40$\times$40 m. Subsequent topographic parameters were derived from this DEM. \topomap}
+	\caption{Distributions of elevation ($z$) used in the topographic regressions. The DEM is derived from a SPOT-5 satellite image and has a grid size of 40$\times$40 m. \topomap}
 	\label{map:elev}
 \end{figure}
 
 \begin{figure}[H]
   \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_elevation.png}}%
-	\caption{Histograms of elevation ($z$) sampled (black) as compared to total range of elevation (white) of study glaciers.}
+	\caption{Histograms of elevation ($z$) sampled (black) as compared to total (white) for each study glacier.}
 	\label{sampledRange:elev}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_centreD.png}\\
-	\caption{Distributions of distance from centreline ($d_C$) used in the topographic regressions for the study glaciers. Centreline was drawn by hand in QGIS. \topomap}
+	\caption{Distributions of distance from centreline ($d_C$) used in the topographic regressions. Centreline was drawn by hand in QGIS. \topomap}
 	\label{map:centreD}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_centreD.png}}%
-	\caption{Histograms of distance from centreline ($d_c$) sampled (black) as compared to total range (white) of distance from centreline of study glaciers.}
+	\caption{Histograms of distance from centreline ($d_c$) sampled (black) as compared to total (white) for each study glacier.}
 	\label{sampledRange:centreD}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_aspect.png}\\
-	\caption{Distributions of the sine of aspect ($\alpha$), which indicates north-south component of a slope (+1 defined as north), used in the topographic regressions for the study glaciers. Values are derived from a smoothed DEM. \topomap}
+	\caption{Distributions of the sine of aspect ($\alpha$), which indicates north-south component of a slope (+1 defined as north), used in the topographic regressions. Values are derived from a smoothed DEM (grid size of 40$\times$40 m). \topomap}
 	\label{map:aspect}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_aspect.png}}%
-	\caption{Histograms of aspect ($\alpha$) sampled (black) as compared to total range (white) of aspect of study glaciers.}
+	\caption{Histograms of aspect ($\alpha$) sampled (black) as compared to total (white) for each study glacier.}
 	\label{sampledRange:aspect}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_slope.png}\\
-	\caption{Distributions of slope ($m$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
+	\caption{Distributions of slope ($m$) used in the topographic regressions. Values are derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:slope}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_slope.png}}%
-	\caption{Histograms of slope ($m$) sampled (black) as compared to total range (white) of slope of study glaciers.}
+	\caption{Histograms of slope ($m$) sampled (black) as compared to total (white) for each study glacier.}
 	\label{sampledRange:slope}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_northness.png}\\
-	\caption{Distributions of northness ($N$) used in the topographic regressions for the study glaciers. Northness is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope and flat surfaces yield 0. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
+	\caption{Distributions of northness ($N$) used in the topographic regressions. Northness is defined as the product of the cosine of aspect and sine of slope. A value of $-$1 represents a steep, south facing slope, a value of $+$1 represents a steep, north facing slope and flat surfaces yield 0. Values are derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:northness}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_northness.png}}%
-	\caption{Histograms of northness ($N$) sampled (black) as compared to total range (white) of northness of study glaciers.}
+	\caption{Histograms of northness ($N$) sampled (black) as compared to total (white) for each study glacier.}
 	\label{sampledRange:northness}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_curvature.png}\\
-	\caption{Distributions of curvature ($\kappa$) used in the topographic regressions for the study glaciers. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. Colour axis has been scaled to better resolve values close to zero. \topomap}
+	\caption{Distributions of curvature ($\kappa$) used in the topographic regressions. Values are derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:curvature}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_curvature.png}}%
-	\caption{Histograms of curvature ($\kappa$) sampled (black) as compared to total range (white) of profile curvature of study glaciers.}
+	\caption{Histograms of curvature ($\kappa$) sampled (black) as compared to total (white) for each study glacier.}
 	\label{sampledRange:curvature}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_Sx.png}\\
-	\caption{Distributions of $Sx$, which is a wind redistribution parameter, used in the topographic regressions for the study glaciers. See Section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for more details on calculation. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier. \topomap }
+	\caption{Distributions of a wind redistribution parameter ($Sx$) used in the topographic regressions. See Section \ref{sec:topoCalc} and the original paper by \cite{Winstral2002} for details. See Table \ref{tab:Sxparams} for values of best correlated azimuth and maximum search distance for each glacier. \topomap }
 	\label{map:Sx}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_Sx.png}}%
-	\caption{Histograms of $Sx$ sampled (black) as compared to total range (white) of $Sx$ of study glaciers.}
+	\caption{Histograms of $Sx$ sampled (black) as compared to total (white) for each study glacier.}
 	\label{sampledRange:Sx}
 \end{figure}
 
 
 \section{Summary}
 
-This chapter documents the process of obtaining topographic parameters, which include elevation, slope, curvature, distance from centreline, aspect, northness and wind redistribution, from a given DEM of the study area. Maps of each topographic parameter, as well as distributions of sampled and total values are shown. Processing steps, which include DEM corrections and stitching are also described. I find that a smoothing algorithm that takes the mean value of 7$\times$7 gridcells results in the highest correlation between curvature and WB data. The smoothed DEM is used for further analysis. 
+This chapter documents the process of obtaining topographic parameters, which include elevation, slope, curvature, distance from centreline, aspect, northness and wind redistribution, from a given DEM of the study area. Maps of each topographic parameter, as well as distributions of sampled and total values are shown. Processing steps, which include DEM corrections and stitching are also described. A smoothing algorithm that takes the mean value of 7$\times$7 gridcells results in the highest correlation between curvature and WB data. The smoothed DEM is used for further analysis. 
 
 
 
