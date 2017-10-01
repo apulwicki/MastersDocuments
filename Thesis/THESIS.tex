@@ -54,11 +54,11 @@
 
 
 \newcommand{\transectAbb}{Data for each glacier are divided into lower hourglass (LH), lower circle (LC), lower midline (LM), upper hourglass (UH), upper circle (UC), upper midline (UM) and upper transect (UT).}
-\newcommand{\params}{Topographic parameters are distance from centreline ($d_C$), elevation ($z$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$) and wind redistribution ($Sx$). }
-\newcommand{\boxplot}{Within each box, the mean is shown as a circle, the median as a horizontal line, the interquartile range (IQR) as a coloured box, two times the IQR as dashed lines beyond the box and outliers as single points. }
+\newcommand{\params}{Topographic parameters are: elevation ($z$), distance from centreline ($d_C$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$) and wind redistribution ($Sx$). }
+\newcommand{\boxplot}{Within each coloured box (interquartile range, IQR), the mean is shown as a circle, the median as a horizontal line, and two times the IQR as dashed lines beyond the box and outliers as single points. }
 \newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers) and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
 \newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow-depth sampling locations. }
-\newcommand{\swedots}{Observed winter balance values are overlain on the maps. }
+\newcommand{\swedots}{Arrows indicate glacier flow direction and observed values of winter balance are overlain on the maps. }
 
 
 %   FRONTMATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1460,49 +1460,49 @@ This chapter documents the process of obtaining topographic parameters, which in
 %%%%%% INTERPOLATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Interpolation}
 
-To obtain a distributed estimate of winter balance (WB), gridcell-scale winter balance values need to be interpolated and extrapolated. Linear regression (LR), simple kriging (SK) and regression kriging (RK) are used to interpolate data. Linear regression (Section \ref{sec:linearregression}) relates gridcell-averaged WB and various topographic parameters. This method is simple and has precedent for success \citep[e.g.][]{McGrath2015}. Instead of a basic regression however, cross-validation and model averaging are used to test all combinations of the topographic parameters. The results from regression analysis are compared with simple kriging (SK) (Section \ref{sec:kriging}), a data-driven interpolation method free of any physical interpretation \citep[e.g.][]{Hock1999}. The two methods are then combined by kriging the residuals of the LR and adding them to the LR interpolation, a method known as regression kriging (Section \ref{sec:regressionkriging}). In Section \ref{sec:compareInterpMethods} the distributed WB estimates found using these three methods are compared.
+To obtain a distributed estimate of winter balance (WB), gridcell-scale winter balance values must be interpolated and extrapolated. Linear regression (LR), simple kriging (SK) and regression kriging (RK) are used to interpolate data. Linear regression (Section \ref{sec:linearregression}) relates gridcell-averaged WB and various topographic parameters. This method is simple and has precedent for success \citep[e.g.][]{McGrath2015}. Instead of a basic regression however, cross-validation and model averaging are used to test all combinations of the topographic parameters. The results from regression analysis are compared with simple kriging (SK) (Section \ref{sec:kriging}), a data-driven interpolation method free of any physical interpretation \citep[e.g.][]{Hock1999}. The two methods are then combined by kriging the residuals of the LR and adding them to the LR interpolation, a method known as regression kriging (Section \ref{sec:regressionkriging}). In Section \ref{sec:compareInterpMethods} the distributed WB estimates found using these three methods are compared.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Linear topographic regressions}
 \label{sec:linearregression}
 
 \subsection{Background}
-Relating WB values and terrain parameters to better predict distributed WB within a basin has been employed for decades \citep[e.g.][]{Woo1978, Molotch2005, McGrath2015}. The most common type of relation between topographic parameters and WB is a linear regression, where the observed WB is related to a linear combination of topographic parameters at each measurement location. 
+Relating WB values and terrain parameters to better predict distributed WB within a basin has been employed for decades \citep[e.g.][]{Woo1978, Molotch2005, McGrath2015}. The most common means of relating topographic parameters and WB is a linear regression, where the observed WB is related to a linear combination of topographic parameters at each measurement location. 
 
 A linear regression takes the form
 \begin{equation}
 \vector{y} = \vector{X} \bm{\beta} + \bm{\varepsilon},
 \end{equation}
-where the matrix $\vector{X}$ contains the set of independent regressors $\vector{x}_i$ used to explain the dependant variable $\vector{y}$ \citep[e.g.][]{Davis1986}. The regression coefficient for each regressor is given by $\bm{\beta}$ and the error of the system is given by $\bm{\varepsilon}$. In my work, the matrix of independent regressors ($\vector{X}$) contains the topographic parameters at the sampling locations, the dependent variable $\vector{y}$ contains the gridcell-averaged values of WB and the $\bm{\beta}$ values are determined using a fitting model. While there are many types of fitting models, the ones employed in this study are multiple linear regression (MLR) and Bayesian model averaging (BMA).
+where the matrix $\vector{X}$ contains the set of independent regressors $\vector{x}_i$ used to explain the dependent variable $\vector{y}$ \citep[e.g.][]{Davis1986}. The regression coefficient for each regressor is given by $\bm{\beta}$ and the error of the system is given by $\bm{\varepsilon}$. In this work, the matrix of independent regressors ($\vector{X}$) contains the topographic parameters at the sampling locations, the dependent variable $\vector{y}$ contains the gridcell-averaged values of WB and the $\bm{\beta}$ values are determined using a fitting model. Topographic parameters are standardized to allow for direct comparison of regression coefficient magnitudes. While there are many types of fitting models, the ones employed in this study are multiple linear regression (MLR) and Bayesian model averaging (BMA).
 
-To prevent over fitting of the data, regressions are calculated using cross validation. This means that for each regression, a randomly selected portion of the data is used to estimate regression coefficients and the coefficients are used to predict values that correspond to the remaining data \citep{Kohavi1995}. The root mean squared error (RMSE) between the estimated and observed data is then calculated. This process is repeated 1000 times and the regression coefficients that result in the lowest RMSE are then chosen for that model. 
+To prevent over fitting of the data, the basic regression analysis described above is extended by calculating $\beta$ coefficients using cross validation. For a given model, a randomly selected portion of the data is used to estimate regression coefficients and the coefficients are used to predict values that correspond to the remaining data \citep{Kohavi1995}. The root mean squared error (RMSE) between the estimated and observed data is then calculated. This process is repeated 1000 times and the regression coefficients that result in the lowest RMSE are chosen. 
 
-We use model averaging to account for uncertainty when selecting predictors and to maximize the model's predictive ability \citep{Madigan1994}. The total number of models is $2^n$ , where $n$ is the number of topographic parameters. Seven topographic parameters are used, resulting in $2^7 = 128$ models. Model averaging is then used to determine the final regression coefficients. Model averaging is described in more detail for multiple linear regressions (MLRs) in Section \ref{sec:MLR} and for Bayesian Model Averaging (BMA) in Section \ref{sec:BMS}.
+Model averaging is then used to account for uncertainty when selecting predictors and to maximize the predictive ability of the regression \citep{Madigan1994}. Linear combinations of subsets of the topographic parameters are used to generate a suite of regression models (e.g. only include aspect and elevation in the regression). The total number of possible models is $2^n$ , where $n$ is the number of topographic parameters. Seven topographic parameters are used, resulting in $2^7 = 128$ models. Model averaging is then used to determine the final regression coefficients. Model averaging is described in more detail using multiple linear regressions (MLRs) in Section \ref{sec:MLR} and Bayesian Model Averaging (BMA) in Section \ref{sec:BMS}.
 
-Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependent variable in other locations where regressors are known \citep{Davis1986}. For each gridcell, known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted value of WB.
+Once $\bm{\beta}$ values have been estimated, they can then be used to predict values of the dependent variable in other locations where regressors are known \citep{Davis1986}. For each gridcell, known values of topographic parameters can be multiplied by their respective $\bm{\beta}$ coefficients and added together to obtain the modelled or predicted WB.
 
-\subsection{Importance of variables in regression models}
+\subsection{Significance of variables in regression models}
 
-Regressions are used not only for estimating the response variable but also for assessing the relative importance of the regressors. Most types of regression models, including the ones used in this study, cannot be used to directly determine variable importance, so many additional metrics have been developed to address this need. \cite{Gromping2015} lists seven simple metrics for assessing variable importance in a univariate regression (one dependant variable). Two of these metrics, raw correlation and semi-partial correlation, are chosen for this study. For both metrics, a larger value indicates a larger influence of a regressor in the model.
+Regressions are used not only for estimating the response variable but also for assessing the relative importance of the regressors. Most types of regression models, including the ones used in this study, cannot be used to directly determine variable importance, so many additional metrics have been developed to address this need. \cite{Gromping2015} lists seven simple metrics for assessing variable importance in a univariate regression (one dependent variable). Two of these metrics, raw correlation and semi-partial correlation, are chosen for this study. For both metrics, a greater value indicates a larger influence of a regressor in the model.
 
 The first metric is the square of the raw correlations between regressors and response variable \citep{Gromping2015}. Raw correlation values can aid in identifying important variables for explaining and interpreting results because it is ignorant of which other regressors are included in the model \citep{Darlington1968}. 
 
-The second metric is the square of the semi-partial (or part) correlations for each regressor variable \citep{Gromping2015}. Semi-partial correlations are the correlation between the response variable and the residuals of the regression between each regressor and the remaining regressors. The value can be interprested as the unique variance accounted for by $\vector{x}_1$ in the presence of other predictors $\vector{x}_2,...,\vector{x}_\mathrm{k}$ \citep{Darlington1968, Bring1996}. Semi-partial correlations are helpful in identifying a small number of regressors that have the most influence in the regression \citep{Gromping2009}. An assumption for semi-partial correlation is that regressors are independent of each other. When regressors are independent, the semi-partial correlations of all regressors sum to the total coefficient of determination (R$^2$) of the regression  \citep{Gromping2015}. In this study, the regressors are all independent (R$^2<$0.35 for all glaciers) except for aspect and northness, which have R$^2$ values of 0.79, 0.83 and 0.64 for Glaciers 4, 2 and 13, respectively. Despite this correlation, semi-partial correlation is used because of its simplicity. 
+The second metric is the square of the semi-partial (or partial) correlations for each regressor variable \citep{Gromping2015}. Semi-partial correlation is the correlation between the response variable and the residuals of the regression between each regressor and the remaining regressors. The value can be interpreted as the unique variance accounted for by $\vector{x}_1$ in the presence of other predictors $\vector{x}_2,...,\vector{x}_\mathrm{k}$ \citep{Darlington1968, Bring1996}. Semi-partial correlations are helpful in identifying a small number of regressors that have the most influence \citep{Gromping2009}. An assumption in semi-partial correlation is that regressors are independent of each other. When regressors are independent, the semi-partial correlations of all regressors sum to the total coefficient of determination (R$^2$) of the regression  \citep{Gromping2015}. In this study, the regressors are all poorly correlated to each other (R$^2<$0.35 for all glaciers) except for aspect and northness, which have R$^2$ values of 0.79, 0.83 and 0.64 for Glaciers 4, 2 and 13, respectively. Despite this correlation, semi-partial correlation is used because of its simplicity. 
 
 \subsection{Multiple Linear Regression (MLR)}
 \label{sec:MLR}
 
-\subsubsection{Background}
+\subsubsection{Background and implementation}
 
-Perhaps the most basic and well used method for relating WB and topographic parameters is a multiple linear regression (MLR) \citep[e.g.][]{Cohen2013}. The best-fit line between WB and a linear combination of topographic parameters is the one described by coefficients that minimize the sum of squares of the vertical deviations of each data point ($Y_i$) from the estimated value according to the equation ($\hat{Y}_i$) \citep{Davis1986}
+The most basic and well used method for relating WB and topographic parameters is a multiple linear regression (MLR) \citep[e.g.][]{Cohen2013}. The best-fit line between WB and a linear combination of topographic parameters is the one described by coefficients that minimize the sum of squares of the vertical deviations of each datum ($Y_i$) from the estimated value according to the equation ($\hat{Y}_i$) \citep{Davis1986}
 \begin{equation}
 \sum^n_{i=1}(\hat{Y}_i-Y_i)^2 = \mathrm{minimum}.
 \end{equation}
-Note that if a point falls on the line then the deviation is zero and  the positive and negative deviations from the line do not cancel because the values are first squared and then summed. The residuals are simply the differences between the estimated and observed data values. To prevent over fitting of the data, cross validation is done for each MLR, as described in Section \ref{sec:linearregression}.
+Note that if a datum falls on the line then the deviation is zero and  the positive and negative deviations from the line do not cancel because the values are first squared and then summed. The residuals are simply the differences between the estimated and observed data values. To prevent over fitting of the data, cross validation is done for each MLR, as described in Section \ref{sec:linearregression}.
 
 In this study, there are $2^7$ models that encompass all possible linear combinations of topographic parameters. There is no reason to favour any of the models so a weighted sum of all models is used to estimate regression coefficients.   The Bayesian information criterion (BIC) value is used to assess the relative predictive success of each model. 
 
-A BIC value is found according to
+A BIC value is computed as
 \begin{equation}
 \textrm{BIC} = -2 \ln L(\hat\theta_k  | y) + k \ln(n),
 \end{equation}
@@ -1515,38 +1515,14 @@ w_i = \frac{e^{-0.5(\mathrm{BIC}_i-\mathrm{BIC}_{\min})}}{\Sigma_{i=1}^R e^{-0.5
 \end{equation}
 Parameters not included in a particular model are assigned coefficients of zero. The sum of the weighted coefficients gives the final $\bm{\beta}$ values.
 
-\subsubsection{Methods}
-
-The MLR of WB values and topographic parameters is done in Matlab (see Appendix \ref{sec:MLRMethods} for details). The best set of regression coefficients for each model is selected using cross-validation, with the coefficients chosen by minimizing the vertical sum of squares. Then, the regression coefficients from all models are weighted according to the BIC value of the model.
+The MLR of WB values and topographic parameters is performed in Matlab (see Appendix \ref{sec:MLRMethods} for details). The best set of regression coefficients for each model is selected using cross-validation, with the coefficients chosen by minimizing the vertical sum of squares. Then, the regression coefficients from all models are weighted according to the BIC value of the model.
 
 \subsubsection{Results and Discussion}
 
 \begin{sidewaystable}
-\centering
-\caption{Mean MLR and BMA coefficients for regression of winter balance (WB) data on standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. Semi-partial correlation is a metric that describes the increase in R$^2$ from the addition of a parameter to a regression that contains all other regressors. Raw correlation is the square of the Pearson correlation between a parameter and WB.}
-\label{tab:MLRmeancoeff}
-\begin{tabular}{ll|rrrrrrrc|c}
- &  & \multicolumn{1}{c}{$z$} & \multicolumn{1}{c}{$d_C$} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{$m$} & \multicolumn{1}{c}{$N$} & \multicolumn{1}{c}{$\kappa$} & \multicolumn{1}{c}{$Sx$} & Intercept & RMSE \\ \hline \hline
-\multirow{4}{*}{\textbf{Glacier 4}} & MLR Coefficient & 0.008 & $-$0.001 & $-$0.012 & $-$0.004 & $-$0.002 & 0.016 & $-$0.051 & 0.619 & 0.145 \\
- & BMA Coefficient & 0.006 & $-$0.001 & $-$0.010 & $-$0.007 & $-$0.003 & 0.016 & $-$0.050 & 0.619 & 0.106 \\
- & Semi-partial R$^2$ & 0.015 & $<$0.001 & $<$0.001 & 0.007 & 0.001 & 0.010 & 0.034 & --- & --- \\
- & Raw correlation & 0.003 & 0.044 & 0.001 & 0.027 & 0.001 & 0.041 & 0.065 & --- & --- \\ \hline
-\multirow{4}{*}{\textbf{Glacier 2}} & MLR Coefficient & 0.110 & 0.008 & $-$0.010 & 0.026 & 0.011 & 0.001 & 0.036 & 0.262 & 0.089 \\
- & BMA Coefficient & 0.111 & 0.008 & $-$0.011 & 0.029 & 0.012 & 0.002 & 0.036 & 0.261 & 0.075 \\
- & Semi-partial R$^2$ & 0.205 & 0.014 & 0.004 & $<$0.001 & 0.003 & 0.004 & 0.028 & --- & --- \\
- & Raw correlation & 0.586 & 0.031 & 0.211 & 0.100 & 0.193 & 0.078 & 0.333 & --- & --- \\ \hline
-\multirow{4}{*}{\textbf{Glacier 13}} & MLR Coefficient & 0.054 & $<$0.001 & $<$0.001 & 0.001 & 0.001 & $-$0.021 & 0.003 & 0.229 & 0.076 \\
- & BMA Coefficient & 0.054 & $<$0.001 & $-$0.001 & $<$0.001 & 0.001 & $-$0.019 & 0.003 & 0.228 & 0.060 \\
- & Semi-partial R$^2$ & 0.245 & 0.003 & 0.007 & 0.002 & 0.005 & 0.008 & 0.009 & --- & --- \\
- & Raw correlation & 0.347 & 0.051 & 0.012 & $<$0.001 & 0.022 & 0.040 & 0.083 & --- & ---
-\end{tabular}
-\end{sidewaystable}
-
-
-\begin{sidewaystable}
 \footnotesize
 \centering
-\caption{MLR coefficients for regression of winter balance (WB) data on standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled WB using those coefficients and observed WB is also given. See Table \ref{tab:densityOptions} for description of density assignment methods.}
+\caption{MLR coefficients for regression of winter balance (WB) on standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled and observed WB is also given. See Table \ref{tab:densityOptions} for description of density assignment methods.}
 \label{tab:MLRcoeffFull}
 \begin{tabular}{ccrrrrrrrr}
  & \textbf{Parameter} & \multicolumn{1}{c}{\textbf{S1}} & \multicolumn{1}{c}{\textbf{F1}} & \multicolumn{1}{c}{\textbf{S2}} & \multicolumn{1}{c}{\textbf{F2}} & \multicolumn{1}{c}{\textbf{S3}} & \multicolumn{1}{c}{\textbf{F3}} & \multicolumn{1}{c}{\textbf{S4}} & \multicolumn{1}{c}{\textbf{F4}} \\ \hline \hline
@@ -1580,27 +1556,28 @@ The MLR of WB values and topographic parameters is done in Matlab (see Appendix 
 \end{tabular}
 \end{sidewaystable}
 
-The importance of the various topographic parameters differs for the three study glaciers (Table \ref{tab:MLRmeancoeff}). The regression for Glacier 2 explains a large portion of the variance (R$^2$=0.66), although the RMSE is higher than that of Glacier 13, for which the regression explains less variance (R$^2$=0.40) (Figure \ref{fig:MLRfit}). Glacier 4 has the least variance explained by the regression (R$^2$=0.12) and the highest RMSE. The intercepts of the regression are similar for Glaciers 2 and 13 ($\sim$0.25 \,m\,w.e.) and these are much lower than the intercept for Glacier 4 (0.62 \,m\,w.e.). The discrepancy between intercept values is a result of the poor fit of the Glacier 4 regression --- the value of the intercept approaches that of the data mean (0.63 \,m\,w.e.). The residuals for Glacier 4 have a larger range than those of Glacier 2 and 13 (Figure \ref{fig:MLRresiduals_all}).
+\begin{sidewaystable}
+\centering
+\caption{Mean MLR and BMA coefficients for regression of winter balance (WB) data on standardized topographic parameters. \params  Since parameters are standardized, the magnitude of the coefficients is representative of their importance in predicting WB. The root-mean-squared error (RMSE) between modelled and observed WB is also given. Semi-partial correlation is a metric that describes the increase in R$^2$ from the addition of a parameter to a regression that contains all other regressors. Raw correlation is the square of the Pearson correlation coefficient between a parameter and WB.}
+\label{tab:MLRmeancoeff}
+\begin{tabular}{ll|rrrrrrrc|c}
+ &  & \multicolumn{1}{c}{$z$} & \multicolumn{1}{c}{$d_C$} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{$m$} & \multicolumn{1}{c}{$N$} & \multicolumn{1}{c}{$\kappa$} & \multicolumn{1}{c}{$Sx$} & Intercept & RMSE \\ \hline \hline
+\multirow{4}{*}{\textbf{Glacier 4}} & MLR Coefficient & 0.008 & $-$0.001 & $-$0.012 & $-$0.004 & $-$0.002 & 0.016 & $-$0.051 & 0.619 & 0.145 \\
+ & BMA Coefficient & 0.006 & $-$0.001 & $-$0.010 & $-$0.007 & $-$0.003 & 0.016 & $-$0.050 & 0.619 & 0.106 \\
+ & Semi-partial R$^2$ & 0.015 & $<$0.001 & $<$0.001 & 0.007 & 0.001 & 0.010 & 0.034 & --- & --- \\
+ & Raw correlation & 0.003 & 0.044 & 0.001 & 0.027 & 0.001 & 0.041 & 0.065 & --- & --- \\ \hline
+\multirow{4}{*}{\textbf{Glacier 2}} & MLR Coefficient & 0.110 & 0.008 & $-$0.010 & 0.026 & 0.011 & 0.001 & 0.036 & 0.262 & 0.089 \\
+ & BMA Coefficient & 0.111 & 0.008 & $-$0.011 & 0.029 & 0.012 & 0.002 & 0.036 & 0.261 & 0.075 \\
+ & Semi-partial R$^2$ & 0.205 & 0.014 & 0.004 & $<$0.001 & 0.003 & 0.004 & 0.028 & --- & --- \\
+ & Raw correlation & 0.586 & 0.031 & 0.211 & 0.100 & 0.193 & 0.078 & 0.333 & --- & --- \\ \hline
+\multirow{4}{*}{\textbf{Glacier 13}} & MLR Coefficient & 0.054 & $<$0.001 & $<$0.001 & 0.001 & 0.001 & $-$0.021 & 0.003 & 0.229 & 0.076 \\
+ & BMA Coefficient & 0.054 & $<$0.001 & $-$0.001 & $<$0.001 & 0.001 & $-$0.019 & 0.003 & 0.228 & 0.060 \\
+ & Semi-partial R$^2$ & 0.245 & 0.003 & 0.007 & 0.002 & 0.005 & 0.008 & 0.009 & --- & --- \\
+ & Raw correlation & 0.347 & 0.051 & 0.012 & $<$0.001 & 0.022 & 0.040 & 0.083 & --- & ---
+\end{tabular}
+\end{sidewaystable}
 
-The most important regressor for Glacier 4 is $Sx$. The $Sx$ regression coefficient is a factor of five larger than those of the remaining parameters for all density assignment methods (Table \ref{tab:MLRcoeffFull}) and for the mean of all density assignment methods (Table \ref{tab:MLRmeancoeff}). $Sx$ has the highest mean semi-partial correlation (0.034)  and raw correlation (0.065) (Table \ref{tab:MLRmeancoeff}). The $Sx$ coefficient is negative, which indicates less snow in `sheltered' areas. The negative correlation is counter intuitive so it is surprising that $Sx$ is the best predictor for accumulation.
-
-The map of distributed WB for the entire glacier shows a relatively uniform WB over Glacier 4 (Figure \ref{fig:MLRmodelledSWE}), due to the large influence of the intercept on the regression. Areas with high $Sx$ values (sheltered), especially in the accumulation area, have the lowest WB values. This regression indicates that the wind plays a role in snow distribution but since the valley in which the glacier sits is steep walled and curved, perhaps having a single cardinal direction for wind is inappropriate. Examining $Sx$ values that assume wind moving up or down glacier and changing direction to follow the valley could allow the $Sx$ parameter to explain more of the variance. 
-
-For Glacier 2, the most important regressor is elevation (Table \ref{tab:MLRmeancoeff}). This coefficient is positive, which means that WB will increase with elevation. The elevation regression coefficient is an order of magnitude larger than the other coefficients and has the highest semi-partial R$^2$ and raw correlation (Table \ref{tab:MLRmeancoeff}). $Sx$ is the second most important regresor and has a positive correlation, which indicates that `sheltered' areas are likely to have high accumulation. 
-
-The map of distributed WB on Glacier 2 closely matches that of elevation (Figure \ref{map:elev}), which highlights the strong dependence of WB on elevation. The range of predicted WB is largest for Glacier 2 and it also has the highest WB (1.92 m w.e) and the lowest WB (0 \,m\,w.e.) values (Figure \ref{fig:MLRsweboxplot}). Both extremes are perhaps unexpected on this glacier and are likely an artefact from extrapolating the regression, which largely depends on elevation. The high WB values in the southwest region of the result from the combination of high elevation and $Sx$ values. The low WB values at the terminus are a result of low elevation values and $Sx$ values close to zero. 
-
-The most important regressor for Glacier 13 is elevation (Table \ref{tab:MLRmeancoeff}). The coefficient is positive, which means that cells at higher elevation had higher values of WB. Despite a low value of raw correlation between elevation and WB, the semi-partial R$^2$ value is  the largest between the glaciers. The high semi-partial R$^2$ value indicates that when elevation is added to the regression the total variance explained increases considerably because the remaining regressors are not important. The map of estimated WB on Glacier 13 (Figure \ref{fig:MLRmodelledSWE}) closely follows elevation although the range of WB values is relatively small so the elevation effect is less pronounced than on Glacier 2. 
-
-Qualitatively, there is little variation in the fit between modelled and observed winter balance between the various density assignment methods for all glaciers and the residuals display a similar distribution between the density assignment methods (Figure \ref{fig:MLRresiduals_all}). The semi-partial R$^2$ and raw correlation for each regressor also varies little between different density assignment methods (Figure \ref{fig:MLRsemiR2_densityOptions}).
-
-The distribution of residuals from the MLR regression (Figure \ref{fig:MLRresidualsboxplot}) differs between glaciers. The range of residual values is largest for Glacier 4 because of the poor regression and the range of values is smallest for Glacier 2 because of the relatively high explanatory power of the regression. The map of residual values (Figure \ref{fig:MLR_residualsMap}) shows high residual values (both negative and positive) throughout Glacier 4. The upper part of the upper hourglass has especially high and low values, indicating that there was significant variability over a short distance that was not captured by the regression. A few high residual values are seen on Glacier 13 as well, which correspond to a deep, snow-filled supraglacial channel.
-
-The choice of density assignment method does not affect the relative importance of regressors. Although there is a range of coefficient values that result from the choice of density assignment methods (Figure \ref{fig:MLRcoeff_densityOptions}), the relative dominance of $Sx$ for Glacier 4 and elevation for Glacier 2 and 13 is consistent. The largest range in semi-partial correlation is in elevation for Glaciers 2 and 13 (Figure \ref{fig:MLRsemiR2_densityOptions}). Estimating WB using F3 resulted in the highest semi-partial correlation for Glaciers 2 and 13 (0.24 and 0.30, respectively). Since the FS-derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. 
-
-The largest difference in estimated WB between the various density assignment methods is found on Glacier 2 in the upper part of the accumulation area (Figure \ref{fig:MLR_SWEdiffMap}). Glacier 2 also has the lowest difference in estimated WB, which result from all density assignment methods estimating values of 0 \,m\,w.e. at the terminus. The strong relationship between elevation and WB makes the estimation of glacier-wide WB sensitive to this parameter. The difference in estimated WB expressed as a percent (Figure \ref{fig:MLR_SWEdiffMapPercent}) is relatively consistent on each glacier. The mean percent difference is highest on Glacier 2 (25\%) and slightly lower on Glaciers 4 and 13 (18\% and 20\%, respectively). Extreme values in percent difference are located in areas with low values of estimated WB (small denominator), including the terminus of Glaciers 2 and 13 as well as parts of the accumulation area on Glacier 4.  
-
-
+The regression for Glacier 2 explains a large fraction of the variance (R$^2$=0.66), although the RMSE is higher than that of Glacier 13, for which the regression explains less variance (R$^2$=0.40) (Figure \ref{fig:MLRfit}). Glacier 4 has the least variance explained by the regression (R$^2$=0.12) and the highest RMSE (Table \ref{tab:MLRcoeffFull}). The intercepts of the regression are similar for Glaciers 2 and 13 ($\sim$0.25 \,m\,w.e.) and these are much lower than the intercept for Glacier 4 (0.62 \,m\,w.e.). The discrepancy between intercept values is a result of the poor fit of the Glacier 4 regression; the value of the intercept approaches that of the data mean for Glacier 4 (0.63 \,m\,w.e.). The residuals for Glacier 4 have a larger range than those of Glacier 2 and 13 (Figure \ref{fig:MLRresiduals_all}).
 
 \begin{figure}[H]
     \centering
@@ -1612,16 +1589,28 @@ The largest difference in estimated WB between the various density assignment me
        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{MLRfit_allLines.png}}
     \end{subfigure}
 
-    \caption{Modelled versus observed winter balance (WB). (Top row) Comparison of estimated (MLR) and observed (WB) for three study glaciers. The WB values were calculated using inverse-distance weighted snow pit densities (S4). (Bottom row) Plots of all linear fits between estimated and observed WB using eight density assignment methods. Mean R$^2$ value is shown for each sub-plot and a reference 1:1 line is also provided. Black line highlights the S4 option from the top row. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated WB values.}
+    \caption{Modelled versus observed winter balance (WB). (Top row) Comparison of estimated (MLR) and observed (WB) for each study glacier. The WB values were calculated using inverse-distance weighted snow-pit densities (S4). (Bottom row) Plots of all linear fits between estimated and observed WB using eight density assignment methods. Mean R$^2$ value is shown for each sub-plot with 1:1 line (dashed). Black line highlights the regression with S4 from the top row. See Figure \ref{fig:allMLRmodelled} for a plot of all estimated WB values.}
     \label{fig:MLRfit}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 	\includegraphics[width =0.6\textwidth]{ModelledSWE_box_MLR.png}\\
-\caption{Summary of estimated gridcell-scale winter balance values found using MLR coefficients. \boxMatlab}
+\caption{Boxplot of all estimated winter balance values found using MLR coefficients. \boxMatlab}
 \label{fig:MLRsweboxplot}
 \end{figure} 
+
+The importance of the various topographic parameters differs for the three study glaciers (Table \ref{tab:MLRmeancoeff}). However, the relative importance of the topographic parameters is generally consistent for WB values calculated using each density assignment method (Table \ref{tab:MLRcoeffFull}). The most important regressor for Glacier 4 is $Sx$. The $Sx$ regression coefficient is a factor of five larger than those of the remaining parameters for all density assignment methods  and for the mean of all density assignment methods (Table \ref{tab:MLRmeancoeff}). $Sx$ has the highest mean semi-partial correlation (0.034)  and raw correlation (0.065) (Table \ref{tab:MLRmeancoeff}). The $Sx$ coefficient is negative, indicating less snow in topographically sheltered areas. The negative correlation is counter intuitive, so it is surprising that $Sx$ is the best predictor of WB.
+
+The distributed WB across Glacier 4 is relatively uniform (Figure \ref{fig:MLRmodelledSWE}), due to the large influence of the intercept on the regression. Areas with high $Sx$ values (sheltered), especially in the accumulation area, have the lowest WB values. This regression indicates that the wind plays a role in snow distribution but since the valley in which the glacier sits is steep-walled and curved, having a single cardinal direction for wind is perhaps inappropriate. Modifying the wind redistribution parameters to allow for non-uniform wind direction within a basin could allow $Sx$ to explain more of the variance. 
+
+For Glacier 2, the most important regressor is elevation (Table \ref{tab:MLRmeancoeff}). This coefficient is positive, which means that WB increases with elevation. The elevation regression coefficient is an order of magnitude larger than the other coefficients and has the highest semi-partial R$^2$ and raw correlation (Table \ref{tab:MLRmeancoeff}). $Sx$ is the second most important regresor and has a positive correlation, which indicates that topographically sheltered areas are likely to have high WB. 
+
+The map of distributed WB on Glacier 2 closely matches that of elevation (Figure \ref{map:elev}), which highlights the strong dependence of WB on elevation. The range of predicted WB is largest for Glacier 2, which also has the highest WB (1.92 m w.e) and the lowest WB (0 \,m\,w.e.) values (Figure \ref{fig:MLRsweboxplot}). The high values of WB in the accumulation area are likely an artefact of the extrapolation to high-elevation areas. The high WB values in the southwest portion of Glacier 2 result from the combination of high elevation and $Sx$ values. The low WB values at the terminus are a result of low elevation values and $Sx$ values close to zero. 
+
+The most important regressor for Glacier 13 is elevation (Table \ref{tab:MLRmeancoeff}). The coefficient is positive, which means that cells at higher elevation had higher values of WB. Despite a low value of raw correlation between elevation and WB, the semi-partial R$^2$ value is the largest of any parameter for any glacier. The high semi-partial R$^2$ value indicates that when elevation is added to the regression the total variance explained increases considerably because the remaining regressors are not important. The map of estimated WB on Glacier 13 (Figure \ref{fig:MLRmodelledSWE}) closely follows elevation, although the range of WB values is relatively small so the elevation effect is less pronounced than on Glacier 2. 
+
+Qualitatively, there is little variation between density assignment methods in the fit between modelled and observed WB (Figure \ref{fig:MLRfit}). The residuals display a similar distribution between the density assignment methods (Figure \ref{fig:MLRresiduals_all}). The semi-partial R$^2$ and raw correlation for each regressor also varies little between different density assignment methods (Figure \ref{fig:MLRsemiR2_densityOptions}).
 
 
 \begin{figure}[H]
@@ -1644,38 +1633,44 @@ The largest difference in estimated WB between the various density assignment me
 	\label{fig:MLR_residualsMap}
 \end{figure} 
 
+
+The distribution of residuals from the MLR regression (Figure \ref{fig:MLRresidualsboxplot}) differs between glaciers. The range of residual values is largest for Glacier 4 because of the poor regression and the range of values is smallest for Glacier 2 because of the relatively high explanatory power of the regression. The map of residual values (Figure \ref{fig:MLR_residualsMap}) shows high residual values throughout Glacier 4. The upper part of the upper hourglass has especially high and low values, indicating that there was significant variability over a short distance that was not captured by the regression. A few high residual values are seen on Glacier 13 that correspond to a deep, snow-filled supraglacial channel.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =1\textwidth]{MLRcoeff_DensityOpts.png}\\
-	\caption{Boxplot showing the range of regressor coefficients that are estimated with winter balance values calculated using all density assignment methods. \params \boxplot }
+	\caption{Boxplot showing the range of regression coefficients that are estimated with winter-balance values calculated using all density assignment methods. \params \boxplot }
 	\label{fig:MLRcoeff_densityOptions}
 \end{figure}
-
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =1 \textwidth]{MLRsemiR2_DensityOpts.png}\\
-	\caption{Boxplot showing the range of semi-partial correlation that are estimated with winter balance values calculated using all density assignment methods. \params \boxplot }
+	\caption{Boxplot showing the range of semi-partial correlation coefficients that are estimated with winter-balance values calculated using all density assignment methods. \params \boxplot }
 	\label{fig:MLRsemiR2_densityOptions}
 \end{figure} 
 
+The choice of density-assignment method does not affect the relative importance of regressors. Although each method produces a different set of $\beta$ values (Figure \ref{fig:MLRcoeff_densityOptions}), the relative dominance of $Sx$ for Glacier 4 and elevation for Glacier 2 and 13 is persistent. When considering all density assignment methods, the largest range in semi-partial correlation is in elevation for Glaciers 2 and 13 (Figure \ref{fig:MLRsemiR2_densityOptions}). Estimating WB using F3 resulted in the highest semi-partial correlation for Glaciers 2 and 13 (0.24 and 0.30, respectively). Since the FS-derived densities are correlated with snow depth, which is correlated with elevation, it is likely that these density values amplify the elevation component of the regression. 
+
+The largest difference in estimated WB between the various density assignment methods is found on Glacier 2 in the upper part of the accumulation area (Figure \ref{fig:MLR_SWEdiffMap}). Estimated WB on Glacier is least sensitive to the method of density assignment, which results from all density assignment methods being capped at values of 0\,m\,w.e. at the terminus to prevent unphysical values. The strong relationship between elevation and WB makes the estimation of glacier-wide WB sensitive to this parameter. The difference in estimated WB expressed as a percent (Figure \ref{fig:MLR_SWEdiffMapPercent}) is relatively consistent between glaciers. The mean percent difference is highest on Glacier 2 (25\%) and slightly lower on Glaciers 4 and 13 (18\% and 20\%, respectively). Extreme values in percent difference are located in areas with low values of estimated WB (small denominator), including the terminus of Glaciers 2 and 13 as well as parts of the accumulation area of Glacier 4.  
+
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{MLRmap_Modelled_Observed8.png}}%
-	\caption{Modelled winter balance using coefficients determined using MLR and density assigned by inverse-distance weighting from snow pits (S4). \swedots}
+	\caption{Winter balance modelled with coefficients determined using MLR and density assigned by inverse-distance weighting from snow pits (S4). \swedots}
 	\label{fig:MLRmodelledSWE}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap.png}\\
-	\caption{Map of the difference between maximum and minimum winter balance estimated with MLR. Winter balance data is calculated with each density assignment method. \topomap}
+	\caption{Differences between maximum and minimum winter balance estimated with MLR using the eight different density assignment methods. \topomap}
 	\label{fig:MLR_SWEdiffMap}
 \end{figure}
 
  \begin{figure}[H]
 	\centering
 	\includegraphics[width =\textwidth]{MLR_SWEdifferenceMap_percent.png}\\
-	\caption{Map of the difference between maximum and minimum winter balance (WB) values, expressed as a percent of the maximum WB, estimated with MLR and WB data calculated with each density assignment method. The colours have been scaled to highlight differences in the main part of the glaciers. Values of 0\% are found where the minimum estimated WB is 0\,m\,w.e. \topomap}
+	\caption{Differences between maximum and minimum winter balance (WB), expressed as a percentage of the the maximum WB, estimated with MLR using the eight different density assignment methods. Values of 0\% are found where the minimum estimated WB is 0\,m\,w.e. \topomap}
 	\label{fig:MLR_SWEdiffMapPercent}
 \end{figure}
  
@@ -1739,8 +1734,7 @@ The largest difference in estimated WB between the various density assignment me
             {{\small F4}}    
         \end{subfigure}
         
-        \caption[Map of modelled winter balance (WB) using the MLR coefficient values for all density assignment methods. Measured WB is plotted as overlain filled circles. Glacier flow directions are indicated by black arrows and mean estimated WB values for each glacier are shown.]
-        {\small Map of modelled winter balance (WB) using the MLR coefficient values for all density assignment methods. Measured WB is plotted as overlain filled circles. Glacier flow directions are indicated by black arrows and mean estimated WB values for each glacier are shown.} 
+        \caption{Map of modelled winter balance (WB) using MLR coefficients for each density assignment method. \swedots} 
         \label{fig:allMLRmodelled}
     \end{figure}
     
