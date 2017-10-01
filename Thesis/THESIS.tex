@@ -148,7 +148,7 @@ The work presented in this thesis uses a type of statistical model called terrai
 \subsection{Terrain-based parametrization}
 Statistical models of snow variability establish empirical relationships between snow distribution and external variables \citep{Fowler2007}. These models assume that local snow distribution is forced by external factors, such as meteorological conditions or topography, which can be described by proxy parameters.
 
-Terrain-based parametrization determines empirical relationships between topographic indices and observed data. To determine topographic indices, the terrain in the study area is divided into gridcells where terrain parameters (e.g. slope, curvature, aspect, ``northness'', wind exposure, topographic similarity) are calculated \citep{Anderson2014,McGrath2015}. The variable of interest is then measured in the study area and a relationship between grid-cell terrain parameters and observed data can be established \citep[e.g.][]{Bloschl1991, Liston1998, Anderton2004,McGrath2015}. 
+Terrain-based parametrization determines empirical relationships between topographic indices and observed data. To determine topographic indices, the terrain in the study area is divided into gridcells where terrain parameters (e.g. slope, curvature, aspect, northness, wind exposure, topographic similarity) are calculated \citep{Anderson2014,McGrath2015}. The variable of interest is then measured in the study area and a relationship between grid-cell terrain parameters and observed data can be established \citep[e.g.][]{Bloschl1991, Liston1998, Anderton2004,McGrath2015}. 
 
 Terrain-based parametrization requires a good terrain model and a meaningful network of observed data. For example, \cite{Molotch2005} found that that there were significant differences in modelled snow distribution when different terrain models were used. This is likely because the terrain-model grid size affects the value of the calculated terrain parameter for the cell. Terrain-based parameterization also requires sufficiently high resolution and spatial extent of observed data. When measuring accumulation, the variability within the study area must be captured and all areas should be well represented. 
 
@@ -1045,11 +1045,11 @@ In this chapter, snow depth and density data are investigated. First, density va
 
 This chapter documents how topographic parameters are obtained from a given DEM of the study region. Processing steps such as DEM stitching, smoothing and raster calculations are described in detail.  Appendix \ref{app:topoparams_QGIS_Matlab} describes how to import topographic parameters from QGIS to Matlab. 
 
-\section{Obtaining DEMs for study glaciers}
+\section{DEMs for the study glaciers}
 
 Topographic parameters are derived from a digital elevation model (DEM) of the study area. The DEM used in this project was created from imagery collected by the SPOT-5 satellite and it was provided at no cost by the French Space Agency (CNES) through the SPIRIT International Polar Year project \citep{Korona2009}. The DEM has a cell size of 40$\times$40 m. The DEM was created using a set of correlation parameters fit for steeper slopes (E. Berthier personal communication, 2016). 
 
-Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made from images collected on September 3, 2007 and the second DEM (GES 07-044) was made from images collected on September 13, 2007. The snow extent on September 13, 2007, as imaged by a Landsat 7 satellite, can be seen in Figure \ref{fig:Landsat_2007}. Since the images were collected in September, the surface would likely be at a seasonal minimum with minimum snow cover. Therefore, the surface described by the DEM in the ablation area represents the ice topography. A limitation in using this DEM is that the DEM is from 2007 and there have almost certainly been changes in the end-of-summer glacier surface. However, the SPOT-5 DEM is the best resolution and most current DEM available for the study area \footnote{At the time of project initiation, SPIRIT SPOT-5 was the highest resolution DEM available. At the time of completing this work, ArcticDEM and TanDEM-X are the highest resolution, public DEMs available for the Donjek Range.}. 
+Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made from images collected on September 3, 2007 and the second DEM (GES 07-044) from images collected on September 13, 2007. The snow extent on September 13, 2007, as imaged by the Landsat 7 satellite, can be seen in Figure \ref{fig:Landsat_2007}. Since the images were collected in September, the snow would likely be at a seasonal minimum. Therefore, the surface described by the DEM in the ablation area represents the ice topography. A limitation in using this DEM is that it is from 2007 and there have almost certainly been changes in the end-of-summer glacier surface. However, the SPOT-5 DEM is the highest resolution and most current DEM available for the study area \footnote{At the time of project initiation, SPIRIT SPOT-5 was the highest resolution DEM available. At the time of completing this work, ArcticDEM and TanDEM-X are the highest resolution, freely-available DEMs available for the Donjek Range.}. 
 
 \begin{figure}[H]
     \centering
@@ -1065,7 +1065,7 @@ Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made
         \label{fig:7044_original}
     \end{subfigure}
 
-    \caption{SPOT-5 DEMs available for the Donjek Range. Study glaciers are shown as red outlines. The DEM made from imagery collected on September 3, 2007 (GES 08-029) is shown in (a) and the DEM made from imagery collected on September 13, 2007 (GES 07-044) is shown in (b). Imagery that contains cloud cover result in a distorted DEM, as seen in the boxed area of (a).}
+    \caption{SPOT-5 DEMs available for the Donjek Range. Study glaciers are shown as red outlines. The DEM made from imagery collected on September 3, 2007 (GES 08-029) is shown in (a) and the DEM made from imagery collected on September 13, 2007 (GES 07-044) is shown in (b). Imagery with cloud cover results in a distorted DEM, as seen in the boxed area of (a).}
     \label{fig:originalDEMs}
 \end{figure}
 
@@ -1075,7 +1075,7 @@ Two DEMs are available for the Donjek Range. The first DEM (GES 08-029) was made
 	\label{fig:Landsat_2007}
 \end{figure}
 
-The GES 08-029 DEM coveres all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds and/or showed limited contrast in the original steroimage pairs, resulting in incorrect elevation data (E. Berthier personal communication, 2016). The cloudy areas appear as black regions on the DEM mask (not shown) and as distortion in the DEM, as seen in the boxed area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044) spans only part of the Donjek Range, covering most of Glacier 4 and $\sim$60\% of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no masked areas over Glaciers 2 and 4. The two DEMs were therefore merged to create a cloud free DEM that spanned all three glaciers. 
+The GES 08-029 DEM covers all three study glaciers (see Figure \ref{fig:8029_original}) but a large part of Glacier 4 and some areas of Glacier 2 were masked by clouds and/or showed limited contrast in the original stero-image pairs, resulting in incorrect elevation data (E. Berthier personal communication, 2016). The cloudy areas appear as black regions in the DEM mask (not shown) and as distortion in the DEM, as seen in the boxed area of Figure \ref{fig:8029_original}. The second DEM (GES 07-044) spans only part of the Donjek Range, covering most of Glacier 4 and $\sim$60\% of Glacier 2 (see Figure \ref{fig:7044_original}). This DEM had no masked areas over Glaciers 2 and 4. The two DEMs were therefore merged to create a cloud-free DEM that spanned all three glaciers. 
 
 \begin{figure}[H]
     \centering
@@ -1102,10 +1102,8 @@ The GES 08-029 DEM coveres all three study glaciers (see Figure \ref{fig:8029_or
 	\label{fig:DEMcorrection_hist}
 \end{wrapfigure}    
     
-    
-   
 
-The merging process was complicated by the fact that there was a horizontal and vertical discrepancy between the two DEMs. Although the discrepancy was not consistent throughout the study area, the GES 07-044 DEM was generally higher than the first, as can be seen by the overall purple colour in Figure \ref{fig:DEMdifferenceOriginal} and the positive skew of the vertical difference between the two DEMs in Figure \ref{fig:DEMcorrection_hist}. The mean vertical difference is +6.3 m.
+The merging process was complicated by the fact that there was a horizontal discrepancy between the two DEMs. Although the discrepancy was not consistent throughout the study area, the GES 07-044 DEM was generally higher than the first, as can be seen by the overall purple colour in Figure \ref{fig:DEMdifferenceOriginal} and the positive skew of the vertical difference between the two DEMs in Figure \ref{fig:DEMcorrection_hist}. The mean vertical difference is +6.3 m.
 
 
 \begin{wrapfigure}{R}{0.6\textwidth}
@@ -1115,15 +1113,15 @@ The merging process was complicated by the fact that there was a horizontal and 
 	\label{fig:mergeLine}
 \end{wrapfigure}
 
-The discrepancy was corrected by E. Bertier (2016, personal communication) using an iterative 3D-coregistration algorithm \citep{Berthier2007}. The GES 07-044 DEM was arbitrarily chosen to be used as the reference DEM. Note that the absolute value of the elevation is not necessarily important for the topographic regression, as long as the relative elevations are correct. The reference DEM (GES 07-044) was first shifted vertically by +5.4 m, which was estimated using ICESat data \citep{Berthier2010}. Then, the mean horizontal and vertical (X, Y, Z) shift between the reference DEM and the GES 08-029 DEM was found by minimizing the standard deviation of the elevation differences between the DEMs. Using this correlation, the GES 08-029 DEM  was shifted $\sim$2 m east, $\sim$4 m north and $\sim$1.9 m vertically. The GES 08-029 DEM was then reprojected in the same projection as the reference DEM (GES 07-044). The difference map between the two shifted DEMs is shown in Figure \ref{fig:DEMdifferenceCorrected}. Difference values are not uniform but do show both positive and negative values. The distribution of vertical difference values (Figure \ref{fig:DEMcorrection_hist}) after correction is centred at zero with a mean difference of -0.2 m.
+The discrepancy was corrected by E. Bertier (2016, personal communication) using an iterative 3D-coregistration algorithm \citep{Berthier2007}. The GES 07-044 DEM was arbitrarily chosen to be used as the reference DEM. Note that the absolute value of the elevation is not necessarily important for the topographic regression, as long as the relative elevations are correct. The reference DEM (GES 07-044) was first shifted vertically by $+$5.4\,m, which was estimated using ICESat data \citep{Berthier2010}. Then, the mean horizontal and vertical (X, Y, Z) shift between the reference DEM and the GES 08-029 DEM was found by minimizing the standard deviation of the elevation differences between the DEMs. Using this correlation, the GES 08-029 DEM  was shifted $\sim$2\,m east, $\sim$4\,m north and $\sim$1.9\,m vertically. The GES 08-029 DEM was then reprojected in the same projection as the reference DEM (GES 07-044). The difference map between the two shifted DEMs is shown in Figure \ref{fig:DEMdifferenceCorrected}. Difference values are not uniform but do show both positive and negative values. The distribution of vertical difference values (Figure \ref{fig:DEMcorrection_hist}) after correction is centred at zero with a mean difference of $-$0.2\,m.
 
-Merging of the corrected DEMs was completed in QGIS. First, the rasters were cropped to overlap by a few cells. The crop line was chosen by hand to include as much of the reference DEM as possible (fewer areas of poor data) but was a relatively small distance from the edge of the DEM (see Figure \ref{fig:mergeLine}). The second DEM was cropped to follow the same merge line but overlap with the first DEM by a few cells. This was done to avoid gaps in cell values that arise from cropping across a DEM cell. The merging was completed using the built in QGIS tool `Merge' and in areas where the two DEMs overlapped, the GES 08-029 DEM values were chosen.
+Merging of the corrected DEMs was completed in QGIS. First, the rasters were cropped to overlap by a few cells. The crop line was chosen by hand to include as much of the reference DEM as possible (Figure \ref{fig:mergeLine}). The second DEM was cropped to follow the same merge line but overlap with the first DEM by a few cells. This was done to avoid gaps in cell values that arise from cropping across a DEM cell. The merging was completed using the built in QGIS tool `Merge' and in areas where the two DEMs overlapped, the GES 08-029 DEM values were chosen.
 
-The final DEM used for subsequent analysis can be seen in Figure 4. Despite the corrections, there were still discrepancies along the intersection of the DEMs, which can be seen as sharp boundaries in the contour lines. However, these discrepancies are not present on the study glaciers and are located more than 250 m from the edge of the glacier so this DEM was used as the final version for the Donjek Range.
+The final DEM used for subsequent analysis can be seen in Figure 4. Despite the corrections, there were still discrepancies along the intersection of the DEMs, which can be seen as sharp boundaries in the contour lines. However, these discrepancies are more than 250\,m from the edge of any of the glaciers so this DEM was used as the final version for the Donjek Range.
 
 \begin{figure}[H]
 \begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption{%
-      Merged DEM of the Donjek range from two corrected SPOT-5 DEMs, plotted with 10 m contour lines. Study glaciers are shown in red. Discrepancies between the DEMs along the merge line can be seen as anomalous linear features in the contour map (yellow boxes). Distorted contours in the eastern regions (white box) are a result of errors in the DEM. 
+      Merged DEM of the Donjek Range from two corrected SPOT-5 DEMs, plotted with 10\,m contour lines. Study glaciers are shown in red. Discrepancies between the DEMs along the merge line can be seen as anomalous linear features in the contour map (yellow boxes). Distorted contours in the eastern regions (white box) are a result of errors in the DEM. 
       }\end{minipage}},rotate=90,center}
      	\includegraphics[height = 0.9\textwidth]{mergedDEM2.jpeg}%
  \end{adjustbox}  
@@ -1133,9 +1131,9 @@ The final DEM used for subsequent analysis can be seen in Figure 4. Despite the 
 \section{Topographic parameters}
 \label{sec:topoCalc}
 
-Topographic parameters are used to describe characteristics of the local topography that may affect snow distribution and can act as proxies for physical processes that determine snow deposition and redistribution. Topographic parameters used in snow accumulation studies on glaciers include elevation ($z$), distance from centreline ($d_C$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, ``northness'' ($N$), aspect ($\alpha$) and wind redistribution parameter ($Sx$) \citep{Basist1994, Revuelto2014, McGrath2015}.	
+Topographic parameters are used to describe characteristics of the local landscape that may affect snow distribution and can act as proxies for physical processes that determine snow deposition and redistribution. Topographic parameters used in snow accumulation studies on glaciers include elevation ($z$), slope ($m$), tangential ($\kappa_T$) and profile ($\kappa_P$) curvature, northness ($N$), aspect ($\alpha$) and wind redistribution parameter ($Sx$) \citep{Basist1994, Revuelto2014, McGrath2015}.	We add distance from centreline ($d_C$) as an additional parameter.
  
-A number of programs are used to calculate topographic parameters from the DEM. Distance from centreline and ``northness'' were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. The remaining parameters were calculated using the \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS as described in \cite{Mitavsova1993} and \cite{Hofierka2009}. Note that topographic parameters were calculated using the full DEM and then trimmed to Randolph Glacier Inventory defined glacier outlines so as to avoid errors that arise at the edge of the DEM when taking derivatives. Note that the outlines defined by the Randolph Glacier Inventory were modified slightly to match the 2015 glacier outlines as seen in Landsat 7 imagery.
+A number of programs are used to calculate topographic parameters from the DEM. Distance from centreline and northness were calculated in Matlab. $Sx$ was determined using a executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002}. The remaining parameters were calculated using the \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS as described in \cite{Mitavsova1993} and \cite{Hofierka2009}. Note that topographic parameters were calculated using the full DEM and then trimmed to the glacier outlines as defined in the Randolph Glacier Inventory so as to avoid errors that arise at the edge of the DEM when taking derivatives. Note that the outlines defined by the Randolph Glacier Inventory were modified slightly to match the 2015 glacier outlines as seen in Landsat 7 imagery.
 
 \subsection{Calculating topographic parameters}
 
@@ -1146,7 +1144,7 @@ Elevation ($z$) values were taken from the (corrected) SPOT-5 DEMs directly (Fig
 
 \subsubsection*{Distance from centreline}
 
-Distance from centreline ($d_C$) was calculated as the minimum distance between the Easting and Northing of the northwest corner of each cell and a manually defined centreline (Figure \ref{map:centreD}). 
+Distance from centreline ($d_C$) was calculated as the minimum distance between the Easting and Northing coordinates of the northwest corner of each cell and a manually defined centreline (Figure \ref{map:centreD}). 
 
 
 \subsubsection*{Slope} 
@@ -1157,56 +1155,54 @@ m = \arctan \sqrt{\left( \frac{\partial z}{\partial x} \right) ^2 + \left( \frac
 \end{equation}
 where the partial derivatives can be approximated by \citep{Mitavsova1993, Neteler2008, Hofierka2009}
 \begin{align} \label{eq:firstpartial}
-\frac{\partial z}{\partial x} &\approx \frac{(z_7-z_9)+(2z_4-2z_6)+(z_1-z_3)}{8  \Delta x},\nonumber \\
-\frac{\partial z}{\partial y} &\approx \frac{(z_7-z_1)+(2z_8-2z_2)+(z_9-z_3)}{8  \Delta y}.
+\frac{\partial z}{\partial x} &\approx \frac{(z_{i-1,j-1}-z_{i+1,j-1})+(2z_{i-1,j}-2z_{i+1,j})+(z_{i-1,j+1}-z_{i+1,j+1})}{8  \Delta x},\nonumber \\
+\frac{\partial z}{\partial y} &\approx \frac{(z_{i-1,j-1}-z_{i-1,j+1})+(2z_{i,j-1}-2z_{i,j+1})+(z_{i+1,j-1}-z_{i+1,j+1})}{8  \Delta y}.
 \end{align}
-Here, $z_k$ refers to one of the gridcells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. So $z_3 = z_{i+1,j+1}$, $z_7 = z_{i-1,j-1}$ and so on (Figure \ref{fig:DEMgrid}). The grid spacing (resolution) of the DEM is $\Delta x$ and $\Delta y$ in the east-west and north-south direction, respectively \citep{Neteler2008}. 
+Here, $z_k$ refers to one of the gridcells surrounding the cell of interest, which is located at row $i$ and column $j$ of the DEM. The grid spacing (resolution) of the DEM is $\Delta x$ and $\Delta y$ in the east-west and north-south direction, respectively \citep{Neteler2008}. 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width = 0.3\textwidth]{DEMGrid.png}\\
-	\caption{Labelling of DEM gridcells surrounding the cell of interest. The eight surrounding cells are used for estimating topographic parameters in QGIS. The cell of interest, which is located at row $i$ and column $j$ of the DEM, is shown as a shaded cell and is labelled $z_5$.}
-	\label{fig:DEMgrid}
-\end{figure}
+\subsubsection*{Aspect} 
+
+Aspect ($\alpha$) represents the orientation of the steepest slope, with 0${^\circ}$ defined as North and no value given to cells that have zero slope. The equation for aspect is \citep{Neteler2008}
+	\begin{equation}
+	\alpha = \arctan\left(\frac{\partial z}{\partial y} \bigg/ \frac{\partial z}{\partial x}\right), 
+	\end{equation}
+where the partial derivatives are approximated by Equations \ref{eq:firstpartial}. Here, $\alpha = 0$ is west but the computed values are transformed such that 0${^\circ}$ is north (clockwise). 
+
+Aspect is a circular parameter (0${^\circ}$ is the same as 360${^\circ}$) but regressions (Section \ref{sec:linearregression}) require that a parameter is linear. Therefore, only the sine of aspect was used in topographic analysis. The sine of aspect is a proxy for the relative amount of direct solar radiation incident on a slope.
+
 
 \subsubsection*{Curvature} 
 
-Curvature describes the convexity or concavity of a surface. The curvature of a surface is different in different directions, so there are various types of curvature. Profile and tangential curvature are the most common types to consider in geophysical systems. For this study, the mean curvature ($\kappa$), found by taking the average of profile and tangential curvature, is used. The mean curvature emphasizes mean-concave (positive values) areas with relative accumulation and mean-convex (negative values) terrain with relative scouring \citep{Olaya2009}.
+Curvature describes the convexity or concavity of a surface. The curvature of a surface is different in different directions, so curvature may be defined in various ways. Profile and tangential curvature are the most common types to consider in geophysical systems. For this study, the mean curvature ($\kappa$), found by taking the average of profile and tangential curvature, is used. Relative accumulation would be expected to occur in mean-concave (positive values) areas and relative scour would be expected to occur in and mean-convex (negative values) terrain \citep{Olaya2009}.
 
-Profile curvature is the curvature in the direction of the surface gradient and it describes the change is slope angle. The equation for profile curvature ($\kappa_p \left[\mathrm{m}^{-1}\right]$) is \citep{Neteler2008}
+Profile curvature is the curvature in the direction of the surface gradient and it describes the change in slope angle. The equation for profile curvature ($\kappa_p \left[\mathrm{m}^{-1}\right]$) is \citep{Neteler2008}
 \begin{equation} 
 \kappa_p = \frac{\frac{\partial^2 z}{\partial x^2} \big(\frac{\partial z}{\partial x}\big)^2 + 2\frac{\partial^2 z}{\partial x \partial y}\frac{\partial z}{\partial x}\frac{\partial z}{\partial y} +  \frac{\partial^2 z}{\partial y^2} \big(\frac{\partial z}{\partial y}\big)^2}{\left[\big( \frac{\partial z}{\partial x} \big) ^2 + \big(\frac{\partial z}{\partial y} \big)^2\right] \sqrt{\left[\big(\frac{\partial z}{\partial x} \big) ^2 + \big( \frac{\partial z}{\partial y}\big) ^2+1\right]^3}}
 \end{equation} 
 where first-order partial derivatives are found using Equation \ref{eq:firstpartial}. Second-order partial derivatives can be approximated by \citep{Hofierka2009, Neteler2008}
 \begin{align}\label{eq:secondpartial}
-\frac{\partial^2 z}{\partial x^2} &\approx\frac{z_1-2z_2+z_3+4z_4-8z_5+4z_6+z_7-2z_8+z_9}{6  (\Delta x)^2},\nonumber\\
-\frac{\partial^2 z}{\partial y^2} &\approx \frac{z_1-4z_2+z_3-2z_4-8z_5-2z_6+z_7+4z_8+z_9}{6  (\Delta y)^2},\nonumber\\
-\frac{\partial^2 z}{\partial x \partial y} &\approx \frac{(z_7-z_9)-(z_1-z_3)}{4  \Delta x \Delta y}.
+\frac{\partial^2 z}{\partial x^2} &\approx\frac{z_{i-1,j+1}-2z_{i,j+1}+z_{i+1,j+1}+4z_{i-1,j}-8z_{i,j}+4z_{i+1,j}+z_{i-1,j-1}-2z_{i,j-1}+z_{i+1,j-1}}{6  (\Delta x)^2},\nonumber\\
+\frac{\partial^2 z}{\partial y^2} &\approx \frac{z_{i-1,j+1}-4z_{i,j+1}+z_{i+1,j+1}-2z_{i-1,j}-8z_{i,j}-2z_{i+1,j}+z_{i-1,j-1}+4z_{i,j-1}+z_{i+1,j-1}}{6  (\Delta y)^2},\nonumber\\
+\frac{\partial^2 z}{\partial x \partial y} &\approx \frac{(z_{i-1,j-1}-z_{i+1,j-1})-(z_{i-1,j+1}-z_{i+1,j+1})}{4  \Delta x \Delta y}.
 \end{align}
-
 Tangential Curvature represents the curvature in the direction of the contour tangent. The equation for profile curvature ($\kappa_t \left[\mathrm{m}^{-1}\right]$) is \citep{Neteler2008}
 \begin{equation}
 \kappa_t = \frac{\frac{\partial^2 z}{\partial x^2} \big(\frac{\partial z}{\partial y}\big)^2 - 2\frac{\partial^2 z}{\partial x \partial y}\frac{\partial z}{\partial x}\frac{\partial z}{\partial y} +  \frac{\partial^2 z}{\partial y^2} \big(\frac{\partial z}{\partial x}\big)^2}{\left[\big( \frac{\partial z}{\partial x} \big) ^2 + \big(\frac{\partial z}{\partial y} \big)^2\right] \sqrt{\big(\frac{\partial z}{\partial x} \big) ^2 + \big( \frac{\partial z}{\partial y}\big) ^2 +1}},
 \end{equation} 	
-where first- and second-order partial derivatives are approximated using Equation \ref{eq:firstpartial} and \ref{eq:secondpartial}. 
+where first- and second-order partial derivatives are approximated using Equations \ref{eq:firstpartial} and \ref{eq:secondpartial}. 
 
-\subsubsection*{``Northness''} 
+\subsubsection*{Northness} 
 
-``Northness'' ($N$) is a solar radiation parameter that has been shown to  increasingly affect accumulation distribution during the spring \citep{Revuelto2014}. It is also likely that this parameter may be related to sun induced snow metamorphosis and/or sun crusts, both of which affect point-scale winter balance \citep{McGrath2015}. ``Northness'' ($N$) is defined as the product of the cosine of aspect and sine of slope \citep{Molotch2005}. A value of -1 represents a vertical, south facing slope, a value of +1 represents a vertical, north facing slope and a flat surface yields 0. 
+``Northness'' ($N$) is a proxy parameter for solar radiation processes that affect accumulation distribution, especially during the spring \citep{Revuelto2014}. It is also been suggested that this parameter is related to sun-induced snow metamorphosis and/or sun crusts, both of which affect point-scale winter balance \citep{McGrath2015}. Northness is defined as 
+\begin{equation}
+N = \cos{\alpha} \times \sin{m},
+\end{equation}
+where $\alpha$ is aspect and $m$ is slope \citep{Molotch2005}. A value of $-$1 represents a vertical, south facing slope, a value of $+$1 represents a vertical, north facing slope and a flat surface yields 0. 
 
-\subsubsection*{Aspect} 
-
-Aspect ($\alpha$) represents the orientation of the steepest slope, with 0${^\circ}$ defined as North and no value given to cells that have zero slope. The equation for aspect in degrees is \citep{Neteler2008}
-	\begin{equation}
-	\alpha = \arctan\left(\frac{\partial z}{\partial y} \bigg/ \frac{\partial z}{\partial x}\right), 
-	\end{equation}
-where the partial derivatives are approximated by Equations \ref{eq:firstpartial}. Here, $\alpha = 0$ is in the west direction but the computed values were transformed to reflect 0${^\circ}$ as north (clockwise). 
-
-Aspect is a circular parameter (0${^\circ}$ is the same as 360${^\circ}$) but regressions (Section \ref{sec:linearregression}) require that a parameter is linear. Therefore, only the sine of aspect was used in topographic analysis. The sine of aspect is representative of the relative amount of direct solar radiation incident on a slope, which can result in snow metamorphosis. 
 
 \subsubsection*{Wind redistribution parameter} 
 
-$Sx$ represents wind exposure/shelter and is based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest \citep{Winstral2002}. This cell is referred to as the maximum upwind slope. Negative $Sx$ values represent exposure relative to the shelter-defining pixel, which means that the cell of interest is higher than the cell with greatest upward slope. Conversely, positive values represent sheltered cells. To determine $Sx$ values, the following equation is used
+$Sx$ represents wind exposure/shelter and requires the identification of a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest \citep{Winstral2002}. The identified cell is referred to as the maximum upwind slope. Negative $Sx$ values represent exposure relative to the shelter-defining pixel, which means that the cell of interest is higher than the cell with greatest upwind slope. Conversely, positive values represent sheltered cells. To determine $Sx$ values, the following equation is used
 \begin{equation}
 Sx_{A, d\max}(x_i, y_i) = \textrm{max} \left[ \textrm{tan}^{-1} \left( \frac{z(x_v,y_v)-z(x_i,y_i)}{[(x_v-x_i)^2+(y_v-y_i)^2]^{1/2}} \right) \right] ,
 \end{equation}
@@ -1230,8 +1226,8 @@ where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates
 \textbf{Slope ($m$)} & Angle between a plane tangential to the surface (gradient) and the horizontal & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS &  & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
 \textbf{Aspect ($\alpha$)} & Dip direction of the slope & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & $\sin(\alpha)$, a linear quantity describing a slope as north/south facing, is used in the regression & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
 \textbf{Mean curvature ($\kappa$)} & Average of profile (direction of the surface gradient) and tangential (direction of the contour tangent) curvature & \texttt{r.slope.aspect} module in GRASS GIS software run through QGIS & ($+$) mean-concave terrain and ($-$) mean-convex terrain & \cite{Mitavsova1993, Hofierka2009, Olaya2009} \\ \midrule
-\textbf{``Northness'' ($N$)} & A value of $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \citep{Molotch2005} \\ \midrule
-\textbf{Wind exposure/shelter parameter ($Sx$)} & Proxy for snow deposition due to wind redistribution & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \citep{Winstral2002}
+\textbf{Northness ($N$)} & A value of $-1$ represents a vertical, south facing slope, a value of $+1$ represents a vertical, north facing slope and a flat surface yields 0 & Product of the cosine of aspect and sine of slope &  & \citep{Molotch2005} \\ \midrule
+\textbf{Wind redistribution parameter ($Sx$)} & Proxy for snow deposition due to wind redistribution & Executable obtained from Adam Winstral that follows the procedure outlined in \cite{Winstral2002} & Calculation based on selecting a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest & \citep{Winstral2002}
 \end{tabularx}
 \end{threeparttable}
 \end{table}
@@ -1241,7 +1237,7 @@ where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.6\textwidth]{Sx_infographic.jpeg}\\
-	\caption{ Example of $Sx$ calculations for three cells of interest along a 270$^\circ$ search vector. As depicted, with $d$max set equal to 300 m, the shelter-defining pixel for cells 1 and 2 is cell A, producing positive $Sx$ values. The shelter-defining cell for cell 3 is cell B, producing a negative $Sx$. Had $d$max been equal to 100 m, the search for the shelter-defining  pixel  for  cell  1  would  not  extend  across  the  valley,  thus producing a negative $Sx$ for cell 1, while $Sx$ for cell 2 would remain the same and that for cell 3 would be slightly lower. Image and description from \citep{Winstral2002}.}
+	\caption{ Example of $Sx$ calculations for three cells of interest along a 270$^\circ$ search vector. As depicted, with $d$max set equal to 300 m, the shelter-defining cell for cells 1 and 2 is cell A, producing positive $Sx$ values. The shelter-defining cell for cell 3 is cell B, producing a negative $Sx$. Had $d$max been equal to 100\,m, the search for the shelter-defining  cell  for  cell  1  would  not  extend  across  the  valley,  thus producing a negative $Sx$ for cell 1, while $Sx$ for cell 2 would remain the same and that for cell 3 would be slightly lower. Image and description from \citep{Winstral2002}.}
 	\label{fig:Sx_infographic}
 \end{figure}
 
@@ -1260,26 +1256,26 @@ Glacier 13 & 280 & 200 & 0.28
 
 \subsection{DEM smoothing}
 
-Visual inspection of the curvature fields calculated using the DEM indicated that that the spatial patterns of curvature were noisy and did not vary smoothly. \cite{Olaya2009} states that the curvature calculation is sensitive to noisy data and a smoothing filter often needs to be applied to the DEM prior to calculation. Curvature, as well as slope, aspect and ``northness'', are all sensitive to noise because calculating these parameters involve calculating the first and second derivatives of the elevation, which are highly dependent on the size of the DEM cell. To minimize the effect of noise on these four parameters, a smoothing filter was applied to the DEM and this smoothed DEM was used to calculate curvature, slope, aspect and ``northness''. The non-smoothed DEM was used to determine elevation and $Sx$ because these parameters do not depend on a topographic length scale and their values are not sensitive to the size of the DEM cell size.
+Visual inspection of the curvature fields calculated using the DEM indicated that the spatial patterns of curvature were noisy and did not vary smoothly. \cite{Olaya2009} states that the curvature calculation is sensitive to noisy data and a smoothing filter must often be applied to the DEM prior to calculation. Curvature, as well as slope, aspect and northness, are all sensitive to noise because calculating these parameters involves calculating the first and second derivatives of the elevation which are highly dependent on the size of the DEM cell. To minimize the effect of noise on these four parameters, a smoothing filter was applied to the DEM and this smoothed DEM was used to calculate curvature, slope, aspect and northness. The unsmoothed DEM was used to determine elevation and $Sx$ because these parameters do not depend on a topographic length scale and their values are not as sensitive to the size of the DEM gridcell.
 
-To choose a smoothing algorithm and window size, I applied a number of smoothing algorithms and chose the combination that resulted in the highest correlation between topographic parameters and point-scale winter balance values. Window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells were used. For all sizes, inverse-distance weighted smoothing and Gaussian smoothing were poorly correlated with WB. The smoothing algorithm that calculated the mean values of gridcells within a 7$\times$7 window resulted in the highest correlation between curvature (second derivative) and WB as well as slope (first derivative) and WB. The window size that produced the highest correlation of WB values and curvature for each glacier differed, but for all WB values taken together, the 7$\times$7 window resulted in the highest correlation. For slope, the highest correlation for individual glaciers was from the DEM with a 7$\times$7 smoothing window but the overall correlation was not the highest with this window. To maintain consistency between parameters, the 7$\times$7 smoothing window was chosen and applied to the DEM for calculation of curvature, slope, aspect and ``northness''. 
+To choose a smoothing algorithm and window size, I applied a number of smoothing algorithms and chose the combination that resulted in the highest correlation between topographic parameters and point-scale winter balance values. Window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells were used. For all sizes, inverse-distance weighted smoothing and Gaussian smoothing were poorly correlated with WB. The smoothing algorithm that used 7$\times$7 window resulted in the highest correlation between curvature (second derivative) and WB as well as slope (first derivative) and WB. The window size that produced the highest correlation of WB values and curvature for each glacier differed, but for all WB values taken together, the 7$\times$7 window resulted in the highest correlation. For slope, all three glaciers showed highest correlation with 7$\times$7 smoothing window, but not when combined. To maintain consistency between parameters, the 7$\times$7 smoothing window was chosen and applied to the DEM for calculation of curvature, slope, aspect and northness. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.7\textwidth]{G13curvatureSmoothing.jpeg}\\
-	\caption{(a) Curvature found using the orginal DEM. (B) 
-	The smoothed (7$\times$7 window moving average) DEM.}
+	\caption{(a) Curvature found using the original DEM. (b) 
+	Curvature found using the smoothed (7$\times$7 window moving average) DEM.}
 	\label{fig:smoothingCurve}
 \end{figure}
 
 
 \subsection{Parameter correlations}
 
-The correlation between topographic parameters at sampling locations on each glacier is shown in Table \ref{tab:pearson_correlation}. Correlation values are generally low, with the exception of the correlation between northness and aspect on Glacier 2 and northness and $Sx$ on Glacier 13, which were both larger than 0.7. Since there is little correlation between parameters and the correlations vary between glaciers, the use of a linear regression with these topographic parameters as predictor variables is warranted. 
+The correlation between topographic parameters at sampling locations on each glacier is shown in Table \ref{tab:pearson_correlation}. Correlation values are generally low, with the exception of the correlation between northness and aspect on Glacier 2 and northness and $Sx$ on Glacier 13 which were both larger than 0.7. Since there is little correlation between parameters and the correlations vary between glaciers, the use of a linear regression with these topographic parameters as predictor variables is warranted. 
 
 \begin{table}[H]
 \centering
-\caption{Pearson correlation coefficients between topographic parameters at sampled locations. \params}
+\caption{Pearson correlation coefficients between topographic parameters at snow-depth sampling locations. \params}
 \label{tab:pearson_correlation}
 \begin{tabular}{cc|ccccccc}
  &  & $z$ & $d_C$ & $\alpha$ & $m$ & $N$ & $\kappa$ & $Sx$ \\ \hline
@@ -1311,15 +1307,15 @@ The correlation between topographic parameters at sampling locations on each gla
 \subsection{Topographic parameter distributions}
 
 
-Elevation maps (Figure \ref{map:elev}) show that both Glacier 2 and 13 have a low proportion of high elevation areas, which correspond to steep headwalls. Mean elevation is the same for all glaciers for the full and sampled distribution within one standard deviation (Table \ref{tab:sampled&fullParams_stats}). However, maximum elevation values are lower for Glacier 4 than the other two glaciers (Figure \ref{sampledRange:elev}) and the sampled elevation means are approximately 200 m less than that of the full distribution. Standard deviations are smaller for sampled ranges for all glaciers. The skewness of sampled and full distributions is different for all glaciers. Elevation full distributions are similar for the study glaciers, with kurtosis for all distributions, except sampled elevation on Glacier 13, being less than 3 (value for a normal distribution). Kurtosis of sampled distributions show that Glacier 13 had a broader distribution and Glacier 2 has a narrower distribution. 
+Elevation maps (Figure \ref{map:elev}) show that high elevation area on both Glacier 2 and 13 are confined to steep headwalls. Mean elevation is within one standard deviation for all glaciers for the full and sampled distribution (Table \ref{tab:sampled&fullParams_stats}). However, maximum elevation values are lower for Glacier 4 than the other two glaciers (Figure \ref{sampledRange:elev}) and the sampled elevation means are approximately 200\,m less than that of the full distribution. Standard deviations are smaller for sampled ranges for all glaciers. The skewness of sampled and full distributions is different for all glaciers. Full distributions of elevation are similar for the study glaciers, with kurtosis for all distributions, except sampled elevation on Glacier 13, being less than 3 (value for a normal distribution). Kurtosis of sampled distributions shows that Glacier 13 has a broader distribution and Glacier 2 has a narrower distribution. 
 
-The distribution of sampled distance from centreline (Figure \ref{sampledRange:centreD}) is different from that of the full distribution. Generally, large distances were not sampled. Larger values of skewness and kurtosis in the full distribution indicate that these distributions are broader and span a larger range of values (Table \ref{tab:sampled&fullParams_stats}). This is also seen in the mean and standard deviation values, which are also larger for the full distribution. Large values of distance from centreline are located at the edges of the glacier in the accumulation area (Figure \ref{map:centreD}), which constitute steep, inaccessible terrain. Within the ablation area, the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier.
+The mean of sampled distance from centreline (Figure \ref{sampledRange:centreD}) is different from that of the full distribution for all glaciers (Table \ref{tab:sampled&fullParams_stats}). Large values of distance from centreline are located at the edges of the glacier in the accumulation area (Figure \ref{map:centreD}), which constitute steep, inaccessible terrain. Within the ablation area, the hourglass sampling pattern allowed for locations across the whole width of the glacier to be measured. Note that Glacier 13 has two centrelines in the accumulation area because of the confluence of two major arms of the glacier.
 
-The aspect of Glaciers 2 and 13 indicate that the majority of these two glaciers is north facing, while the majority of Glacier 4 is south facing (Figure \ref{map:aspect}). This is also highlighted in the mean values of aspect, which are positive for Glaciers 2 and 13 and negative for Glacier 4 (Table \ref{tab:sampled&fullParams_stats}). Sampled mean aspect is similar to the full distribution, although the standard deviation of sampled aspects is much lower. Further, the skewness and kurtosis of the sampled distributions differs considerably from the full distribution and there are many aspects that were not sampled (Figure \ref{sampledRange:aspect}). 
+The aspect of Glaciers 2 and 13 indicate that most of the glacier area is north facing, while most of Glacier 4 is south facing (Figure \ref{map:aspect}). This is also highlighted in the mean values of aspect, which are positive for Glaciers 2 and 13 and negative for Glacier 4 (Table \ref{tab:sampled&fullParams_stats}). Sampled mean aspect is similar to the full distribution, although the standard deviation of sampled aspects is much lower. Further, the skewness and kurtosis of the sampled distributions differ considerably from the full distribution and there are many aspects that were not sampled (Figure \ref{sampledRange:aspect}). 
 
-Slope of the three study glaciers (Figure \ref{map:slope}) is generally less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 having steep slopes. The full and sampled distributions of slope are similar between glaciers (Table \ref{tab:sampled&fullParams_stats}), with mean values of $\sim$13$^{\circ}$ for the full distribution and 5$^{\circ}$ to 8$^{\circ}$ for the sampled distribution. The sampled distributions are all different than the full range, as indicated by the lower means, standard deviations and skewness, as well as larger kurtosis. This shows that the sampled distributions are generally narrower than full distributions and severely under sample steep slopes (Figure \ref{sampledRange:slope}).
+Slope of the three study glaciers (Figure \ref{map:slope}) is generally less than 20$^{\circ}$, with only the margins of the accumulation area and a few steps on Glacier 13 having steep slopes. The full and sampled distributions of slope are similar between glaciers (Table \ref{tab:sampled&fullParams_stats}), with mean values of $\sim$13$^{\circ}$ for the full distribution and 5$^{\circ}$ to 8$^{\circ}$ for the sampled distribution. The sampled distributions are all different than the full range, as indicated by the lower means, standard deviations and skewness, as well as larger kurtosis. The sampled distributions severely under-represent steep slopes (Figure \ref{sampledRange:slope}).
 
-The mean ``northness'' values for all glaciers were close to zero and the majority of cells have values close to zero, which is likely due to their low slope values (Figure \ref{map:northness}). Even for Glacier 4, which is largely south facing and should thus have lower values of ``northness'', has a distribution with a mean close to zero (Table \ref{tab:sampled&fullParams_stats}). The low slope values mean that the values of ``northness'' were determined largely by the aspect, which can be seen by the resemblance between the ``northness'' map and the aspect map and their high correlation (Table \ref{tab:pearson_correlation}). Sampled distributions of ``northness'' did not resemble the full distributions. Although the mean values were similar, the skewness and kurtosis values were higher for all glaciers, indicating that the sampling was biased.
+The mean northness values for all glaciers is close to zero and the majority of cells have values close to zero, which is likely due to their low slope values (Figure \ref{map:northness}). Even for Glacier 4, which is largely south facing and should thus have lower values of northness, has a distribution with a mean close to zero (Table \ref{tab:sampled&fullParams_stats}). The low slope values mean that the values of northness were determined largely by the aspect, which can be seen by the resemblance between the northness map and the aspect map and their high correlation (Table \ref{tab:pearson_correlation}). Sampled distributions of northness do not resemble the full distributions. Although the mean values are similar, the skewness and kurtosis values are higher for all glaciers, indicating that the sampling is biased.
 
 Curvature values on all glaciers are largely negative, indicating that concave topography is more prevalent than convex topography (Figures \ref{map:curvature} and \ref{sampledRange:curvature}). The sampled distribution of curvature is a poor representation of the full distribution as shown by the dramatically different values of skewness, which are positive for the full distribution and negative for the sampled distribution (Table \ref{tab:sampled&fullParams_stats}). 
 
@@ -1332,7 +1328,7 @@ Overall, the sampled topographic parameters are poor representatives of the full
 \begin{sidewaystable}
 \small
 \centering
-\caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature and are unitless for cosine of aspect ($\alpha$), ``northness'' ($N$), slope ($m$) and wind redistribution ($Sx$). Skewness is a measure of the data asymmetry about the mean, with positive values indicating data that are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
+\caption{Descriptive statics of topographic parameter full and sampled distribution. Mean and standard deviation are in units of meters for distance from centreline ($d_C$) and elevation ($z$), in units of m$^{-1}$ for profile ($\kappa_P$) and tangential ($\kappa_T$) curvature and are unitless for cosine of aspect ($\alpha$), northness ($N$), slope ($m$) and wind redistribution ($Sx$). Skewness is a measure of the data asymmetry about the mean, with positive values indicating data that are more spread to the right of the mean and zero indicating a perfectly symmetric distribution. Kurtosis is a measure of how prone a distribution is to outliers. A normal distribution has a kurtosis value of 3 and larger values indicate distributions that are more prone to outliers.}
 \label{tab:sampled&fullParams_stats}
 \begin{tabular}{cc|cccc|cccc}
  & \textbf{} & \multicolumn{4}{c|}{\textbf{Full}} & \multicolumn{4}{c}{\textbf{Sampled}} \\
@@ -1417,13 +1413,13 @@ Overall, the sampled topographic parameters are poor representatives of the full
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Map_northness.png}\\
-	\caption{Distributions of ``northness'' ($N$) used in the topographic regressions for the study glaciers. ``Northness'' is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope and flat surfaces yield 0. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
+	\caption{Distributions of northness ($N$) used in the topographic regressions for the study glaciers. Northness is defined as the product of the cosine of aspect and sine of slope. A value of -1 represents a steep, south facing slope, a value of +1 represents a steep, north facing slope and flat surfaces yield 0. Values were derived from a smoothed DEM (grid size of 40$\times$40 m) in QGIS. \topomap}
 	\label{map:northness}
 \end{figure}
 
 \begin{figure}[H]
 	 \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{SampledRangeTopo_northness.png}}%
-	\caption{Histograms of ``northness'' ($N$) sampled (black) as compared to total range (white) of ``northness'' of study glaciers.}
+	\caption{Histograms of northness ($N$) sampled (black) as compared to total range (white) of northness of study glaciers.}
 	\label{sampledRange:northness}
 \end{figure}
 
@@ -1456,7 +1452,7 @@ Overall, the sampled topographic parameters are poor representatives of the full
 
 \section{Summary}
 
-This chapter documents the process of obtaining topographic parameters, which include elevation, slope, curvature, distance from centreline, aspect, ``northness'' and wind redistribution, from a given DEM of the study area. Maps of each topographic parameter, as well as distributions of sampled and total values are shown. Processing steps, which include DEM corrections and stitching are also described. I find that a smoothing algorithm that takes the mean value of 7$\times$7 gridcells results in the highest correlation between curvature and WB data. The smoothed DEM is used for further analysis. 
+This chapter documents the process of obtaining topographic parameters, which include elevation, slope, curvature, distance from centreline, aspect, northness and wind redistribution, from a given DEM of the study area. Maps of each topographic parameter, as well as distributions of sampled and total values are shown. Processing steps, which include DEM corrections and stitching are also described. I find that a smoothing algorithm that takes the mean value of 7$\times$7 gridcells results in the highest correlation between curvature and WB data. The smoothed DEM is used for further analysis. 
 
 
 
