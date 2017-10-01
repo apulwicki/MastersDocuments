@@ -1970,7 +1970,7 @@ Spatial patterns of WB are consistent with those generated using MLR (Figures \r
 \subsection{MLR and BMA comparison}
 
 
-Consistent results between MLR and BMA indicate that the choice of regression method does not strongly affect the final regression of WB on topographic parameters. The range of coefficient values resulting from different choices in density interpolation found using MLR and BMA is similar for all glaciers (Figure \ref{fig:allCeoffs_boxplot}). The range of coefficient value for all glaciers are not significantly different between MLR and BMA (p$>$0.05). Visually, these ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density assignment methods these coefficients are small. Further, the relative importance of the coefficients does not change with choice of density assignment method for all glaciers. 
+Consistent results between MLR and BMA indicate that the choice of regression fitting model does not strongly affect the final regression of WB on topographic parameters. The range of coefficient values resulting from different choices in density interpolation found using MLR and BMA is similar for all glaciers (Figure \ref{fig:allCeoffs_boxplot}). The range of coefficient value for all glaciers is not significantly different between MLR and BMA (p$>$0.05). Visually, these ranges always overlap, although the mean and median values can differ between these two methods. The range of unimportant variables is always small, indicating that for all density assignment methods these coefficients are small. Further, the relative importance of the coefficients does not change with the method of density assignment. 
 
 \begin{figure}[H]
 	\makebox[\textwidth][c]{\includegraphics[width =1.2 \textwidth]{CoeffBoxplot_BMSMLRcompare.png}}%
@@ -1980,7 +1980,7 @@ Consistent results between MLR and BMA indicate that the choice of regression me
 
 \begin{wraptable}[15]{r}{10cm}
 \centering
-\caption{ANOVA p-values between estimated WB found using MLR and BMA regression coefficients for various density assignment methods.}
+\caption{ANOVA p-values between estimated WB found using MLR and BMA regression coefficients for various density assignment methods. Values $<0.05$ indicate statical difference between WB found using MLR and BMA regression coefficients.}
 \label{tab:estimatedSWEpvalue}
 \begin{tabular}{crrr}
 \textbf{\begin{tabular}[c]{@{}c@{}}Density \\ Option\end{tabular}} & \textbf{Glacier 4} & \textbf{Glacier 2} & \textbf{Glacier 13} \\ \hline
@@ -1995,15 +1995,15 @@ F4 & 0.01 & 0.01 & 0.96
 \end{tabular}
 \end{wraptable}
 
-The aspect, curvature and wind redistribution coefficients for Glacier 4 have the largest range of values. Regardless of the choice of density assignment method, the relative importance of these coefficients is the same (i.e. $Sx$ will always be the most important). For Glacier 4, the choice of density assignment method has a negligible impact on modelled WB values --- the regression fit is so poor that the fit does not change with the choice of density interpolation method (Figure \ref{fig:MLRfit} and \ref{fig:BMSfit_allLines}). MLR and BMA appear to have similar ranges of coefficient values, although the mean and median within each regression method differs for wind redistribution and slope, with MLR producing larger coefficients.
+The aspect, curvature and wind redistribution coefficients for Glacier 4 have the largest range of values. Regardless of the choice of density assignment method, the relative importance of these coefficients is the same (i.e. $Sx$ is always the most important). For Glacier 4, the choice of density assignment method has a negligible impact on modelled WB values; the regression fit is so poor that the fit does not change with the choice of density interpolation method (Figure \ref{fig:MLRfit} and \ref{fig:BMSfit_allLines}). MLR and BMA appear to have similar ranges of coefficient values, although the mean and median within each regression method differs for wind redistribution and slope, with MLR producing larger coefficients.
 
-The range of coefficient values for Glaciers 2 and 13 is generally small for all parameters indicating that the choice of density assignment method does not have a large impact on modelled WB. The range is especially small for Glacier 13 and most coefficients are close to zero, with the exception of elevation and curvature. The greatest range of coefficient values is for elevation, which is also the most significant coefficient. I can conclude that the type of regression model used does not appear to have a large impact on the regression coefficient values.
+The range of coefficient values for Glaciers 2 and 13 is generally small for all parameters indicating that the choice of density assignment method does not have a significant impact on modelled WB. The range is especially small for Glacier 13 and most coefficients are close to zero, with the exception of elevation and curvature. The greatest range of coefficient values is for elevation, which is also the most significant coefficient. The type of regression model therefore does not appear to have a significant impact on the regression coefficient values.
 
-For all glaciers, the BMA regression produced a smaller RMSE and a slightly higher R$^2$ than the MLR regression. It is not clear why the BMA regression is better at minimizing RMSE. For some density assignment methods, estimated values of WB can be significantly different when found using either MLR- or BMA-derived coefficients (Table \ref{tab:estimatedSWEpvalue}). Although the range of coefficients is not different between BMA and MLR, the resulting WB values are significantly different. 
+Although the range of coefficients is not different between BMA and MLR, the resulting WB values are significantly different. For all glaciers, the BMA regression produced a lower RMSE and a slightly higher R$^2$ than the MLR regression. It is not clear why the BMA regression is better at minimizing RMSE. An analysis of variance (ANOVA) is used to determine whether WB estimated using MLR and BMA coefficients is significantly different (Table \ref{tab:estimatedSWEpvalue}). For some density assignment methods, estimated values of WB are significantly different when found using either MLR- or BMA-derived coefficients. 
 
-\subsection{Number of cross validation runs}
+\subsection{Number of cross-validation runs}
 
-The number of runs in the cross-validation algorithm used in this study is large to ensure that I find the regression coefficients that result in the lowest RMSE. In my study, I repeat the process of taking a random subset of data and calcuating the RMSE with the remaining data 1000 times.  However, computational time increases with the number of runs so it is desirable to determine the minimum number of runs that provide a reliable set of regression coefficients. 
+The number of runs in the cross-validation algorithm used in this study is large to ensure that I find the regression coefficients that result in the lowest RMSE. In this study, I repeat the process of taking a random subset of data and calculating the RMSE with the remaining data 1000 times.  However, computational time increases with the number of runs so it is desirable to determine the minimum number of runs that provides a reliable set of regression coefficients. 
 
 The mean winter balance for each glacier does not appear to vary after about 200 runs (Figure \ref{fig:MLRruns}). The value of the elevation regression coefficient, which is the most important coefficient for Glaciers 2 and 13, also does not change considerably after 200 runs. A similar decrease in variation is seen for the remaining important regressors (not shown). Therefore, the number of cross validation runs can be decreased to 200 for future analysis if decreased computational time is desired. 
 
@@ -2022,7 +2022,7 @@ The mean winter balance for each glacier does not appear to vary after about 200
   \subcaption{}
   \end{minipage}%
 
-\caption{(a) Mean winter balance and (b) elevation regression coefficient found with varying number of runs in the cross validation algorithm. }
+\caption{Regression results with differing number of cross-validation runs. (a) Mean winter balance and (b) elevation regression coefficient found with varying number of runs in the cross validation algorithm. }
 \label{fig:MLRruns}
 \end{figure}
 
@@ -2031,28 +2031,30 @@ The mean winter balance for each glacier does not appear to vary after about 200
 \subsection{Transferability of linear regression coefficients}
 \label{sec:transferability}
 
-To determine the spatial transferability of regression coefficients, the coefficients from each glacier are used to estimate WB on the remaining glaciers. All collected data is then used to generate regression coefficients, using the methods described in Chapter 4, which are then also applied to the study glaciers to estimate WB. 
+Regression relationships could be extrapolated to nearby glaciers to obtain an estimate of WB for the entire Donjek Range. To determine whether the spatial transfer of regression coefficients yields acceptable estimates of WB and to quantify the resulting error, the coefficients from each glacier are used to estimate WB on the remaining glaciers. Data from all study glaciers are then combined and used to generate a single set of regression coefficients. These regression coefficients, which are representative of the relationship between WB and topographic parameters across the Donjek Range, are also applied to the study glaciers to estimate WB.
 
-We find that there are considerable differences in the spatial pattern and mean estimated WB found using transferred regression coefficients (Figure \ref{fig:MapTransferabilityGlaciersMean}). The spatial patterns found using the Glacier 2 and Glacier 13 coefficients reflect the dominance of elevation within the regression. When Glacier 4 coefficients are used, the WB distribution is highly uniform and approximately equal to the regression intercept. Transferring coefficients decreases the glacier-wide WB for Glaciers 4 and 2 and increases the glacier-wide WB for Glacier 13. The range of mean WB between different coefficient sets is large for all glaciers ($\sim$0.30\,m\,w.e.). 
+We find that there are considerable differences in the spatial patterns and values of glacier-wide WB found using each set of transferred regression coefficients (Figure \ref{fig:MapTransferabilityGlaciersMean}). The spatial patterns found using the Glacier 2 and Glacier 13 coefficients reflect the dominance of elevation in the regression. When Glacier 4 coefficients are used, the WB distribution is nearly uniform and the glacier-wide WB is approximately equal to the regression intercept. Transferring coefficients decreases the glacier-wide WB for Glaciers 4 and 2 and increases the glacier-wide WB for Glacier 13. The range of mean WB between different coefficient sets is large for all glaciers ($\sim$0.30\,m\,w.e.). 
 
-The mean estimated WB differs considerably when the various regression coefficients are used. Overall, WB estimates are greatest when Glacier 4 coefficients are used and lowest when Glacier 13 coefficients are used. Glacier 4 coefficients result in the highest mean WB values because the mean value is approximately equal to the mean of the observed values on Glacier 4, which are higher than those of Glaciers 2 and 13. When coefficient from Glacier 2 or 13 are used, the WB for Glacier 4 is approximately half the original estimate because a much smaller portion of the glacier area is at high elevations. Conversely, Glacier 13 has high values of glacier-wide WB because the accumulation area is large and at a high elevation. 
+The mean estimated WB differs considerably when the various regression coefficients are used. Overall, WB estimates are greatest when Glacier 4 coefficients are used and lowest when Glacier 13 coefficients are used. Glacier 4 coefficients result in the highest mean WB values because the mean value is approximately equal to the mean of the observed values on Glacier 4, which are higher than those of Glaciers 2 and 13. When coefficients from Glacier 2 or 13 are used, the WB for Glacier 4 is approximately half the original estimate because a much smaller portion of the glacier area is at high elevation. Conversely, Glacier 13 has high values of glacier-wide WB when Glacier 2 or 13 coefficients are used because the accumulation area is large and at high elevation. 
 
-When regression relations are transferred, Glacier 13 always has the highest glacier-wide WB, which is contrary to the relative to the gradient in observed snow depth (Glacier 4 deepest snow, Glacier 13 shallow snow) and to WB estimated using all three interpolation methods. This result indicates that spatial transfer of regressions, even to nearby basins, can lead to significant errors in the interpretation of snow distribution patterns. It is therefore invaluable to collect data across a mountain range to gain knowledge of regional-scale WB patterns.
+When regression relations are transferred, Glacier 13 always has the highest glacier-wide WB, which is contrary to the gradient in observed snow depth (greatest on Glacier 4 and least on Glacier 13) and to WB estimated using all three interpolation methods. This result indicates that spatial transfer of regression coefficients, even to nearby glaciers, can lead to significant errors in the interpretation of snow distribution patterns.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width =0.9\textwidth]{MapTransferabilityG4Coeffs.png}\\
-	\includegraphics[width =0.9\textwidth]{MapTransferabilityG2Coeffs.png}\\
-	\includegraphics[width =0.9\textwidth]{MapTransferabilityG13Coeffs.png}\\
-	\caption{Transfer of regression coefficients to estimate distributed winter balance on study glaciers. winter balance found using Glacier 4 (top), Glacier 2 (middle) and Glacier 13 (bottom) regression coefficients. The mean WB from all density interpolation options is shown. Arrows indicate glacier flow direction.}
+	\includegraphics[width =0.7\textwidth]{MapTransferabilityG4Coeffs.png}\\
+	\includegraphics[width =0.7\textwidth]{MapTransferabilityG2Coeffs.png}\\
+	\includegraphics[width =0.7\textwidth]{MapTransferabilityG13Coeffs.png}\\	
+	\includegraphics[width =0.7\textwidth]{MapTransferabilityComboCoeffs.png}\\
+	\caption{Transfer of regression coefficients to estimate distributed winter balance (WB). WB found using Glacier 4 (first row), Glacier 2 (second row) and Glacier 13 (third row) regression coefficients. WB found using regression coefficients estimated from all WB data (fourth row). The mean WB from all density assignment methods (S1-S4, F1-F4) is shown. Arrows indicate glacier-flow direction.}
 	\label{fig:MapTransferabilityGlaciersMean}
 \end{figure}
 
-The total RMSE arising from transferred coefficients is smallest for Glacier 2 coefficients and greatest for Glacier 4 coefficients (Table \ref{tab:TransferabilityElevCoeffIntercept} and Figure \ref{fig:TransferabilityRMSE}). Glacier 13 coefficients also result in relatively low RMSE. Since snow distribution on both Glaciers 2 and 13 depends on elevation, using coefficients from either of these two glaciers results in lower total RMSE. Glacier 4 coefficients introduce a large RMSE for Glaciers 2 and 13, while all other coefficient sets result in large RMSE on Glacier 4. 
+The total RMSE arising from transferred coefficients is lowest for Glacier 2 coefficients and highest for Glacier 4 coefficients (Table \ref{tab:TransferabilityElevCoeffIntercept} and Figure \ref{fig:TransferabilityRMSE}). Glacier 13 coefficients also result in relatively low RMSE. Since WB on both Glaciers 2 and 13 depends on elevation, using coefficients from either of these two glaciers results in lower total RMSE. Glacier 4 coefficients introduce a high RMSE for Glaciers 2 and 13, while all other coefficient sets result in high RMSE on Glacier 4. 
 
 \begin{table}
+\small
 \centering
-\caption{Elevation regression coefficients and intercepts used in linear regression transferability. The total root mean squared error (RMSE) for all glaciers arising from each set of regression coefficients is also given.}
+\caption{Elevation regression coefficients and intercepts used in linear-regression transferability tests. The total root mean squared error (RMSE) resulting from coefficient transfer is also given.}
 \label{tab:TransferabilityElevCoeffIntercept}
 \begin{tabular}{ccccc}
  & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 4\\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 2\\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Glacier 13 \\ Coefficients\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}All Data \\ Coefficients\end{tabular}} \\ \hline \hline
@@ -2065,18 +2067,16 @@ The total RMSE arising from transferred coefficients is smallest for Glacier 2 c
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =0.8\textwidth]{TransferabilityRMSE.png}\\
-	\caption{Root mean squared error (RMSE) at sampling locations when regression coefficients are transfered between glaciers. The mean RMSE from all density assignment options is shown.}
+	\caption{Root mean squared error (RMSE) at sampling locations when regression coefficients are transferred between glaciers. The mean RMSE from all density assignment methods is shown.}
 	\label{fig:TransferabilityRMSE}
 \end{figure}
 
-When all the WB data is to estimate a regression, the glacier-wide WB values and the spatial patterns of WB (Figure \ref{fig:MapTransferabilityComboMean}) are similar to WB estimated with Glacier 13 coefficients. The elevation regression coefficient is almost the same between these two regression but the larger regression intercept arising from the full data set results in higher estaimtes of glacier-wide WB. 
-
-Interestingly, RMSE is not greatly reduced when all data is used to generate regression coefficients (Table \ref{tab:TransferabilityElevCoeffIntercept} and Figure \ref{fig:TransferabilityRMSE}). Elevation is the only significant predictor of WB and the coefficient value is almost the same as when Glacier 13 data is used. In the Donjek Range overall, elevation appears to be the only consistent predictor of WB but it's magnitude varies considerably between basins. 
+When WB data from all glaciers are used in the regression, the glacier-wide WB values and the spatial distribution of WB (Figure \ref{fig:MapTransferabilityComboMean}) are similar to those estimated with Glacier 13 coefficients. The elevation regression coefficient is almost the same between these two regressions but the larger regression intercept arising from the full data set results in higher estimates of glacier-wide WB. Interestingly, RMSE is not significantly reduced when all data are used to generate regression coefficients (Table \ref{tab:TransferabilityElevCoeffIntercept} and Figure \ref{fig:TransferabilityRMSE}). In the Donjek Range overall, elevation appears to be the only consistent predictor of WB but its magnitude varies considerably between basins. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width =0.9\textwidth]{MapTransferabilityComboCoeffs.png}\\
-	\caption{Winter balance (WB) estimated using transferred regression coefficients from each glacier. (Top row) Glacier 4 regression coefficients applied to all glaciers. (Middle row) Glacier 2 regression coefficients applied to all glaciers. (Bottom row) Glacier 13 regression coefficients applied to all glaciers. The glacier-wide WB is also shown. Arrows indicate glacier flow direction.}
+	\caption{}
 	\label{fig:MapTransferabilityComboMean}
 \end{figure}
 
