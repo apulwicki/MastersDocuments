@@ -117,7 +117,7 @@ Regional-scale variability occurs when areas within a mountain range have differ
 
 Generally, spatial variability increases with spatial scale \citep{Clark2011}. Extent and spacing of measurements must therefore capture variability both across the study area and at smaller scales. \cite{Clark2011} note that studies of snow water equivalent (SWE) that have been conducted in alpine environments vary considerably in the extent and spacing of their measurements. 
 
-\begin{table}[]
+\begin{table}
 \centering
 \caption[Relevant spatial scales for snow variability on glaciers]{ Relevant spatial scales for snow variability on glaciers. Information from \cite{Clark2011}.}
 \label{scale}
@@ -481,7 +481,7 @@ G13              & 5             & A                 & 15 May 2016   & AP/AC   &
 \end{figure}
 
 
-\begin{table}[]
+\begin{table}
 \small
 \centering
 \caption{Summary information for Federal Sampler measurements }
@@ -794,7 +794,7 @@ Glacier 13, Accumulation & 145 & 307.8 & 306.4 & 308.2 & 1.8 & 0.6 & 2521 & $-$ 
 
 Error in Federal Sampler (FS)-derived densities is calculated as the standard deviation of the 3--8 measurements taken at each sampling location. The mean FS-derived density has a large range of values over the study glaciers (227--431\,kg\,m$^{-3}$) (Table \ref{tab:density_TubeRange}). The FS-derived density range as a percentage is also large ($>$25\%) for many of the measurement locations. 
 
-\begin{table}[]
+\begin{table}
 \centering
 \caption[Range of densities estimated from Federal Sampler measurements]{Range of densities estimated from Federal Sampler measurements. The number ($n$) of reliable measurements, as well as the minimum, maximum and mean density are shown. The density range, given as a percent of the mean density, is also shown. Location refers to the snow pit name as shown in Figure \ref{fig:snowpit_location_all}.}
 \label{tab:density_TubeRange}
@@ -856,7 +856,7 @@ Regression slopes differ in both magnitude and sign for SP-derived and FS-derive
 Opposite relationships are seen in the regression of FS-derived densities on elevation (Figure \ref{fig:elev_tube}). Density increases with elevation on Glacier 2 and there is no relationship with elevation on Glacier 4 and 13. The positive relationship between FS-derived density and elevation on Glacier 2 is likely enhanced because of the combination of a positive relationship between FS-derived density and snow depth (Section \ref{sec:FSdensity&depth}) and a positive relationship between snow depth and elevation on Glacier 2 (Figure \ref{fig:depth_elev}). Since there is no significant relationship between snow depth and elevation on Glaciers 4 and 13, the relationship between snow density and elevation is weak. 
 
 
-\begin{table}[]
+\begin{table}
 \centering
 \caption{Summary of linear regressions between integrated density and elevation (m a.s.l.). }
 \label{tab:elev_regress}
@@ -2128,7 +2128,7 @@ Estimates of the nugget found using maximum likelihood in the \texttt{DiceKrigin
 	\label{fig:sweKRIGING}
 \end{figure}
 
-\begin{table}[]
+\begin{table}
 \centering
 \caption{Nugget ($\times 10^{-3}$\,m\,w.e.) and range length (m) values for WB data for different snow-density assignment methods estimated using maximum likelihood in \texttt{DiceKriging} package. S = Snow-pit density values, F = Federal-Sampler density values. See Table \ref{tab:densityOptions} for details on density-assignment methods.}
 \label{tab:sweKrigNugget}
@@ -2409,7 +2409,7 @@ Simple kriging interpolation uncertainty is represented by the 95\% confidence i
 
 Glacier-wide winter balance is affected by uncertainty introduced by the representativeness of gridcell-averaged values of WB ($\sigma_{\mathrm{GS}}$), choosing a method of density assignment ($\sigma_{\rho}$) and interpolating WB values across the domain ($\sigma_{\mathrm{INT}}$). Using a Monte Carlo analysis, I find that interpolation uncertainty contributes more to WB uncertainty than gridcell-scale uncertainty or density-assignment method. In other words, the uncertainty in glacier-wide WB that arises from gridcell-scale uncertainty and density-assignment uncertainty are narrower than the distribution that arises from interpolation uncertainty (Fig. \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). The WB distributions obtained using regression and kriging overlap for a given glacier, but the distribution modes differ (Fig. \ref{fig:WSMBDist_LR}). For reasons outlined above, kriging-estimated values of WB in the accumulation area are generally lower, which lowers the glacier-wide WB estimate. 
 
- \begin{table}[]
+ \begin{table}
 \centering
 \caption{Standard deviation ($\times10^{-2}$\,m\,w.e.) of glacier-wide winter-balance distributions arising from uncertainties in gridcell-scale WB ($\sigma_{\mathrm{GS}}$), density assignment ($\sigma_{\rho}$), interpolation ($\sigma_{\mathrm{INT}}$) and all three sources combined ($\sigma_{\mathrm{ALL}}$) for linear regression (left columns) and simple kriging (right columns)}
 \label{tab:WSMBdistribution_sigma}
@@ -2458,7 +2458,7 @@ Using a Monte Carlo experiment to propagate uncertainty permitted and objective 
  \section{Regional winter-balance gradient}
  \label{sec:DonjekAccumGrad}
 
-To place the estimated WB and the associated uncertainties in their geographical location on the continental side of the St. Elias Mountains, I drawn upon additional data from published and unpublished sources. Accumulation data are compiled from \cite{Taylor1969} and the three study glaciers, as well as two snow pits that were analyzed near the head of the Kaskawulsh Glacier in May 2016. Together these data span almost 50 years and encompass diverse accumulation sites (i.e. small alpine glaciers and large glaciers with major ice divides) over a distance of 50\,km.
+To place the estimated WB and the associated uncertainties in their geographical location on the continental side of the St. Elias Mountains, I drawn upon additional data from published and unpublished sources. Accumulation data are compiled from \cite{Taylor1969} and the three study glaciers, as well as two snow pits that were analyzed near the head of the Kaskawulsh Glacier in May 2016. Together these data span almost 50 years and encompass diverse accumulation sites (i.e. small alpine glaciers and an icefield outlet glacier) over a distance of 50\,km. It is assumed that the inter-annual variability of WB at any point is smaller than the spatial variation across the distances measured so data from these sources is combined.
 
 A regional winter-balance gradient is observed for the continental side of the St. Elias Mountains (Figure \ref{fig:AccumGrad}). The data show a linear decrease of 0.024\,m\,w.e. km$^{-1}$ (R$^2$=0.85) in winter balance with distance from the regional topographic divide between the Kaskawulsh and Hubbard Glaciers, as identified by \cite{Taylor1969}. While the three study glaciers fit the regional relationship, the same relationship would not apply when just the Donjek Range is considered. Interaction between meso-scale weather patterns and mountain topography is a major driver of glacier-wide accumulation. Further insight into mountain-scale winter-balance trends can be achieved by investigating moisture source trajectories and  the contribution of orographic precipitation. 
 
@@ -2484,23 +2484,26 @@ Monte Carlo analysis is used to quantify the effects of gridcell-scale, density-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusion}
 
-Winter balance (WB) is estimated for three glaciers (termed Glacier 2, Glacier 4 and Glacier 13) in the St. Elias Mountains, Yukon, Canada from multiscale snow depth and density measurements. Linear regression, simple kriging and regression kriging are used to obtain estimates of distributed WB. I use Monte Carlo analysis to evaluate the contributions of interpolation, the assignment of snow density and gridcell-scale variability of winter balance to uncertainty in glacier-wide WB. 
+Winter balance (WB) is estimated for three glaciers (termed Glacier 2, Glacier 4 and Glacier 13) in the St. Elias Mountains, Yukon, Canada from multiscale snow depth and density measurements. Linear regression, simple kriging and regression kriging are used to obtain estimates of distributed WB. I use Monte Carlo analysis to evaluate the contributions of interpolation, the assignment of snow density and gridcell-scale variability of winter balance to uncertainty in glacier-wide WB. Below I outline the significance and strength of the work presented in this thesis. Limitations in experimental design and data analysis as well as possible extensions of this study are also discussed.
+
+My results suggest that processes governing distributed WB differ between glaciers, highlighting the value of sampling multiple basins. The estimated distribution of WB on Glacier 4 is characterized by high variability, as indicated by the poor correlation between estimated and observed values and large number of data outliers. Glaciers 2 and 13 appear to have lower spatial variability, with elevation being the dominant predictor of WB. A wind-redistribution parameter is found to be a weak but significant predictor of WB, though conflicting relationships between glaciers make it difficult to interpret. Although challenges persist when estimating WB, these data are consistent with a regional-scale WB gradient for the continental side of the St. Elias Mountains.
+
 
 \section{Significance and strengths}
 
-The work presented in this thesis constitutes a unique contribution to the current methods of estimating winter balance (WB) on alpine glaciers. The data are a notable contribution to snow accumulation studies in the St. Elias Mountains, a region with few winter-balance research programs. We collected more than 9000 snow-depth measurements at multiple spatial scales, as well as more than 100 snow density measurements using various techniques. The data, by their nature, have minimal measurement error because there is little interpretation and processing needed to obtain snow depth and density values. Variability in point- and gridcell-scale WB data is relatively low and is consistent between glaciers. Variability at basin- and regional scales is comparatively high, which highlights the value of collecting data on multiple glaciers and discourages one from over-generalizing relationships between topographic parameters and WB data within a region. I am also able to combine data from this thesis with previously reported WB data to identify a WB gradient along the continental side of the St. Elias Mountains. This gradient is derived from independent data sets, spans almost 50 years and is from different types of glaciers (i.e. small alpine glaciers and an icefield outlet glacier).
+The work presented in this thesis constitutes a unique contribution to the current methods of estimating winter balance (WB) on alpine glaciers. The data are a notable contribution to snow accumulation studies in the St. Elias Mountains, a region with few winter-balance research programs. We collected more than 9000 snow-depth measurements at multiple spatial scales, as well as more than 100 snow-density measurements using various techniques. The data, by their nature, have minimal measurement error because there is little interpretation and processing needed to obtain snow depth and density values. Variability in point- and gridcell-scale WB data is relatively low and is consistent between glaciers. Variability at basin- and regional scales is comparatively high, which highlights the value of collecting data on multiple glaciers and discourages one from over-generalizing relationships between topographic parameters and WB data within a region. I am also able to combine data from this thesis with previously reported WB data to identify a WB gradient along the continental side of the St. Elias Mountains. 
 
-The use of eight different density assignment methods is a distinctive way to account for uncertainty in  measurement and interpolation of snow density. The broad range of assignment methods incorporates two commonly used ways of measuring snow density (i.e. wedge cutter in snow pit and Federal Sampler) and draws upon density interpolation methods from both the snow science- and glaciological literature. Despite the generous assessment of possible density values at each measurement location, I find that the choice of density-interpolation method is not the largest source of uncertainty in the interpolation/extrapolation of WB data. This result can aid in identifying ways to reduce uncertainty in estimating WB for future studies. 
+The use of eight different density-assignment methods is a distinctive way to account for uncertainty in  measurement and interpolation of snow density. The broad range of assignment methods incorporates two commonly used methods of measuring snow density (i.e. wedge cutter in snow pit and Federal Sampler) and draws upon density-interpolation methods from both the snow science- and glaciological literature. Despite the generous assessment of possible density values at each measurement location, I find that the choice of density-interpolation method is not the largest source of uncertainty in the interpolation/extrapolation of WB data. This result can aid in identifying ways to reduce uncertainty in estimating WB for future studies. 
 
-The regression methods presented in this thesis are also a novel contribution to WB studies. Use of cross-validation and model averaging allows for all combinations of previously reported topographic parameters to be used in the regression without requiring \textit{a priori} decisions about which parameters to include, as is done in many other studies \citep[e.g.][]{Wheler2014}. This approach to regression analysis also prevents data overfitting, making the interpretation of regression coefficients more reliable. Further, I find that there is little difference between regression fitting methods (multiple linear regression versus Bayesian model averaging) and that approximately 200 cross-validation runs produce stable coefficient estimates. Together, these results can provide a template for studies to explore the full range of topographic parameters and make statistically defensible determinations of regression models.
+The regression methods presented in this thesis are also a novel contribution to WB studies. Use of cross-validation and model averaging allows for all combinations of previously reported topographic parameters to be used in the regression without requiring \textit{a priori} decisions about which parameters to include, as is done in many other studies \citep[e.g.][]{Wheler2014}. This approach to regression analysis also prevents data overfitting, making the interpretation of regression coefficients more reliable. Further, I find that there is little difference between regression fitting methods (multiple linear regression versus Bayesian model averaging) and that approximately 200 cross-validation runs produce stable coefficient estimates. Together, these results provide a template for studies to explore the full range of topographic parameters and make statistically defensible determinations of regression models.
 
-Use of a Monte Carlo analysis is a unique contribution to estimating WB uncertainty. I am able to identify key sources of uncertainty in the methods used to estimate WB and to quantify their individual and combined effect on glacier-wide WB uncertainty. This analysis method is highly adaptable. Additional sources of uncertainty, such as vertical and horizontal errors of the DEM or snow density measurement error, can be incorporated in the Monte Carlo analysis. The analysis can also be applied to other methods of interpolating WB data that are not investigated in this thesis (e.g. hierarchal trees). 
+Use of a Monte Carlo analysis is a unique contribution to estimating WB uncertainty. I am able to identify key sources of uncertainty in the methods used to estimate WB and to quantify their individual and combined effect on glacier-wide WB uncertainty. This analysis method is highly adaptable, allowing additional sources of uncertainty to be incorporated, such as those arising from vertical and horizontal errors of the DEM or snow-density measurement error. The analysis can also be applied to other methods of interpolating WB data that are not investigated in this thesis (e.g. hierarchal trees). 
 
 \section{Limitations and future work}
 
-In this section, I address potential limitations of the thesis work, including the restriction of our data to a single year, minimal sampling in the accumulation area, the problem of uncorrelated snow-pit- and Federal-Sampler-derived densities, a sampling design that could not be optimized \textit{a priori}, the assumption of spatially uniform subgrid variability and lack of more finely resolved DEMs. Future work that could address these shortcomings is presented. I also suggest improvements to the current work, including potential ways to increase explanatory power of topographic parameters and additional sources of uncertainty that can be incorporated in the Monte Carlo analysis. 
+In this section, I address potential limitations of the thesis work, including the restriction of our data to a single year, minimal sampling in the accumulation area, the problem of uncorrelated snow-pit- and Federal-Sampler-derived densities, a sampling design that could not be optimized \textit{a priori}, the assumption of spatially uniform subgrid variability and the lack of more finely resolved DEMs. Future work that could address these shortcomings is presented. I also suggest improvements to the current work, including potential ways to increase explanatory power of topographic parameters and additional sources of uncertainty that were not included in analysis. 
 
-Inter-annual variability in winter balance is not considered in our study. A number of studies have found temporal stability in spatial patterns of snow distribution and that statistical models based on topographic parameters could be applied reliably between years \citep[e.g.][]{Grunewald2013}. For example, \cite{Walmsley2015} analysed more than 40 years of winter balance recorded on two Norwegian glaciers and found that snow distribution is spatially heterogeneous yet exhibits robust temporal stability. Contrary to this, \cite{Crochet2007} found that snow distribution in Iceland differed considerably between years and depended primarily on the dominant wind direction over the course of a winter. Therefore, multiple but not necessarily consecutive years of snow depth and density measurements, are needed to characterize inter-annual variability in winter-balance distribution within the Donjek Range.
+Inter-annual variability in winter balance is not considered in our study. A number of studies have found temporal stability in spatial patterns of snow distribution and that statistical models based on topographic parameters could be applied reliably between years \citep[e.g.][]{Grunewald2013}. For example, \cite{Walmsley2015} analysed more than 40 years of winter balance recorded on two Norwegian glaciers and found that snow distribution is spatially heterogeneous yet exhibits robust temporal stability. Contrary to this, \cite{Crochet2007} found that snow distribution in Iceland differed considerably between years and depended primarily on the dominant wind direction over the course of a winter. Therefore, multiple (but not necessarily consecutive) years of snow depth and density measurements, are needed to characterize inter-annual variability in winter-balance distributions within the Donjek Range.
 
 There is a conspicuous lack of data in the accumulation areas of the study glaciers. With increased sampling in the accumulation area, interpolation uncertainties would be reduced where they are currently greatest and the linear regression would be better constrained. Sampling the full elevation range should be a priority within the accumulation area, because elevation is a dominant driver of the WB distribution and because extrapolation of the relationship between WB and elevation has a large effect on the glacier-wide WB and results in high WB uncertainty. In addition, some studies suggest that the WB-elevation gradient is greatly reduced in the accumulation area \citep[e.g.][]{Winther1998}. Although more observations in the accumulation area are needed to investigate the WB-elevation gradient, one could perform the regression with a non-linear elevation component in the accumulation area to examine its effects on WB estimates. Our ability to obtain samples in the accumulation area was limited by problems with the coring device, so future work would benefit from finding solutions to better extract and measure snow cores. Although certain regions of the glaciers remain inaccessible for direct measurements, other methods of obtaining winter-balance, including ground-penetrating radar and DEM differencing with photogrammetry or lidar, could be used in conjunction with manual probing to increase the spatial coverage of measurements.
 
@@ -2510,20 +2513,17 @@ The sampling design was chosen to achieve broad spatial coverage of the ablation
 
 In this study, I assume that the subgrid variability of WB is uniform across a given glacier. Contrary to this assumption, \cite{McGrath2015} found greater variability of WB values close to the terminus. Testing this assumption could be a simple matter of prioritizing the labour-intensive zigzags surveys. To ensure consistent quantification of subgrid variability, zigzag survey measurements could also be tested against other measurements methods, such as repeat lidar. 
 
-DEM gridcell size is known to influence values of computed topographic parameters \citep{Zhang1994, Garbrecht1994, Guo-an2001, Lopez2010}. The relationship between topographic parameters and WB is, therefore, not independent of DEM gridcell size. For example, \cite{Kienzle2004} and \cite{Lopez2010} found that a decrease in spatial resolution of the DEM results in a decrease in the importance of curvature and an increase in the importance of elevation in regressions of snow distribution on topographic parameters in unglacierized basins. The importance of curvature in our study is affected by the DEM smoothing that we applied to obtain a spatially continuous curvature field. \cite{Zhang1994} found that simulating geomorphic and hydrological processes for many landscapes is best accomplished with a 10\,m gridcell size, which is an optimal compromise between increasing resolution and large data volumes. They found that a 30 and 90\,m gridcell size were insufficient for resolving terrain features in moderate- to steep topography. \cite{Lopez2010} state that a gridcell size of 5\,m is need to reliably represent terrain in a small catchment (6\,km$^2$) in the Pyrenees and to accurately identity solar radiation, curvature and slope. They find that relevant topographic parameters are completely lost at grid sizes greater than 55$\times$55\,m. To further confound the use of DEMs to estimate WB, \cite{Molotch2005} found that estimated WB distributions were dependent on the DEM chosen. Even different DEMs with similar spatial resolutions can generate significantly different topographic parameters and resulting WB distributions. A comparison of regression coefficients from higher-resolution DEMs obtained from various sources (e.g. ArcticDEM, TanDEM-X) and sampled with various gridcell sizes could be used to characterize the dependence of topographic parameters on DEMs, and therefore assess the robustness of inferred relationships between WB and topographic parameters. 
+DEM gridcell size is known to influence values of computed topographic parameters \citep{Zhang1994, Garbrecht1994, Guo-an2001, Lopez2010}. The relationship between topographic parameters and WB is, therefore, not independent of DEM gridcell size. For example, \cite{Kienzle2004} and \cite{Lopez2010} found that a decrease in spatial resolution of the DEM results in a decrease in the importance of curvature and an increase in the importance of elevation in regressions of snow distribution on topographic parameters in unglacierized basins. The importance of curvature in our study is affected by the DEM smoothing that we applied to obtain a spatially continuous curvature field. \cite{Zhang1994} found that simulating geomorphic and hydrological processes for many landscapes is best accomplished with a 10\,m gridcell size, which is an optimal compromise between increasing resolution and large data volumes. They found that a 30 and 90\,m gridcell sizes were insufficient for resolving terrain features in moderate- to steep topography. \cite{Lopez2010} state that a gridcell size of 5\,m is need to reliably represent terrain in a small catchment (6\,km$^2$) in the Pyrenees and to accurately calculate solar radiation, curvature and slope. They find that relevant topographic parameters are completely lost at grid sizes greater than 55\,m. To further confound the use of DEMs to estimate WB, \cite{Molotch2005} found that estimated WB distributions were dependent on the DEM chosen. Even different DEMs with similar spatial resolutions can generate significantly different topographic parameters and resulting WB distributions. A comparison of regression coefficients from higher-resolution DEMs obtained from various sources (e.g. ArcticDEM, TanDEM-X) and sampled with various gridcell sizes could be used to characterize the dependence of topographic parameters on DEMs, and therefore assess the robustness of inferred relationships between WB and topographic parameters. 
 
-The topographic parameters used in this study are not able to fully explain the observed distributions of WB, especially on Glacier 4. Poor correlations are likely a combined result of high snow-depth variability, the DEM gridcell side and exclusion of important topographic parameters. Glaciers with high snow-depth variability may require a decreased sample location spacing. Insights into measurement-location spacing could be gained from analysis of variograms. A more finely resolved DEM may be needed to fully capture spatial distribution of WB. Future WB research could make use of new DEMs (e.g. ArcticDEM, TanDEM-X) or employ photogrametry or lidar to obtain detailed DEMs. Additional or modified topographic parameters, particularly for characterizing wind effects on snow distribution, are likely needed to improve the regression. Curvature and $Sx$ are used as proxies for wind effects in this thesis but contradicting results indicate that wind processes are not fully characterized. It is possible that a parameter that incorporates multiple wind directions throughout a basin, such as one that follows the glacier centreline, would improve correlations between WB data and wind parameters. 
+The topographic parameters used in this study are not able to explain the majority of observed variance, especially on Glacier 4 where only 12\% of the variance could be explained. Poor correlations between WB and topographic parameters are likely a combined result of high snow-depth variability, the DEM gridcell side and exclusion of important topographic parameters. Glaciers with high snow-depth variability may require a decreased sample-location spacing. Insights into measurement-location spacing could be gained from analysis of variograms. A more finely resolved DEM may be needed to fully capture the spatial distribution of WB. Future WB research could make use of new DEMs (e.g. ArcticDEM, TanDEM-X) or employ photogrametry or lidar to obtain detailed DEMs. Additional or modified topographic parameters, particularly for characterizing wind effects on snow distribution, are likely needed to improve the regression. Curvature and $Sx$ are used as proxies for wind-related effects in this thesis but contradicting results indicate that wind processes are not fully characterized. It is possible that a parameter that incorporates multiple wind directions throughout a basin, such as one that follows the glacier centreline, would improve correlations between WB data and wind parameters. 
 
-The quantification of glacier-wide WB uncertainty can be improved by considering additional sources of uncertainty and propagating them through the data processing steps. These additional uncertainty sources include snow-density measurement error, vertical and horizontal error of the DEM and error associated with the estimation of measurement locations. Other sources of uncertainty, such as those arising from melt and/or accumulation during the sampling period, misinterpretation of the snow-ice interface during probing and potential effects of debris cannot be quantified using the methodology presented but would be worth investigating. 
+The quantification of glacier-wide WB uncertainty can be improved by considering additional sources of uncertainty and propagating them through the data processing steps. In addition to uncertainty arising from snow-density measurement error and vertical and horizontal error of the DEM, error associated with the estimation of measurement locations could also be incorporated in the Monte Carlo analysis. Other sources of uncertainty, such as those arising from melt and/or accumulation during the sampling period, misinterpretation of the snow-ice interface during probing and potential effects of debris cannot be quantified using the methodology presented but would be worth investigating. 
 
 \section{Summary}
 
-From the work conducted in this thesis, several key messages can be directly applied to WB studies in any context. First, interpolation of WB data can introduce large uncertainties. It is important to take measurements in locations distributed throughout the glacier and sample the full range of all topographic parameters where possible; elevation in particular should be well sampled because it plays a major role in determining WB. Large uncertainty resulting from interpolation is also important to consider and to report when using WB estimates for other applications, such as validation for different methods of estimating WB, hydrological models or climate models. My work indicates that despite a rigorous statistical approach to regression analysis, the ability of regression models to estimate WB varies considerably between glaciers. Second, it is possible to collect extensive snow depth and density data at multiple scales within a reasonable time frame. Even with labour-intensive methods, such as snow probing, thousands of measurements can be collected by three to four people in a matter of days. Given the heterogeneous nature of snow distribution, survey designs that focus on good spatial coverage of measurement locations over high sampling density within gridcells is advised. The results from this thesis indicate that density assignment method is not the dominant source of WB uncertainty, so the method of measuring density and the number of measurements collected does not need to be a priority for WB surveys.  
+From the work conducted in this thesis, several key messages can be directly applied to WB studies in any context. First, interpolation of WB data can introduce large uncertainties. It is important to take measurements in locations distributed throughout the glacier and sample the full range of all topographic parameters where possible; elevation, in particular, should be well sampled because it plays a major role in determining WB. Large uncertainty resulting from interpolation is also important to consider and to report when using WB estimates for other applications, such as validation of other methods and hydrological- and climate models. My work indicates that despite a rigorous statistical approach to regression analysis, the ability of regression models to estimate WB varies considerably between glaciers. Second, it is possible to collect extensive snow depth and density data at multiple scales within a reasonable time frame. Even with labour-intensive methods, such as snow probing, thousands of measurements can be collected by three to four people in a matter of days. Given the multiscale snow distributions identified in this thesis, survey designs that focus on good spatial coverage over high sampling density are advised. The results from this thesis indicate that the method of density assignment is not the dominant source of WB uncertainty, so the method of measuring density and the number of measurements collected does not need to be a priority for WB surveys.  
 
-Values of glacier-wide WB estimated using the investigated interpolation methods differ by up to 0.24\,m\,w.e. ($\sim$50\%) on individual glaciers. The results indicate that interpolation uncertainty is the largest assessed source of uncertainty in glacier-wide WB (5\% for linear-regression estimates and 32\% for simple-kriging estimates). Uncertainty resulting from the method of density assignment is comparatively low, despite the wide range of methods explored. Given the representation of gridcell-scale variability, the resulting WB uncertainty is small suggesting that extensive subgrid-scale sampling is not required to reduce overall uncertainty. 
-
-My results suggest that processes governing distributed WB differ between glaciers, highlighting the value of sampling multiple basins. The estimated distribution of WB on Glacier 4 is characterized by high variability, as indicated by the poor correlation between estimated and observed values and large number of data outliers. Glaciers 2 and 13 appear to have lower spatial variability, with elevation being the dominant predictor of WB. A wind-redistribution parameter is found to be a weak but significant predictor of WB, though conflicting relationships between glaciers make it difficult to interpret. Although challenges persist when estimating WB, these data are consistent with a regional-scale WB gradient for the continental side of the St. Elias Mountains.
-
+Values of glacier-wide WB estimated using the investigated interpolation methods differ by up to 0.24\,m\,w.e. ($\sim$50\%) on individual glaciers. The results indicate that interpolation uncertainty is the largest assessed source of uncertainty in glacier-wide WB. Uncertainty resulting from the method of density assignment is comparatively low, despite the wide range of methods explored. Given the representation of gridcell-scale variability, the resulting WB uncertainty is small suggesting that extensive subgrid-scale sampling is not required to reduce overall uncertainty. Together, these results fulfill my goals of critically examining methods of converting snow depth and density measurements to distributed estimates of winter balance and of assessing sources of uncertainty that contribute to uncertainty in glacier-wide winter balance. 
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   BACK MATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2666,37 +2666,119 @@ The files that had the names of the points were then imported back into QGIS so 
 \chapter{Field Maps}
 \label{app:fieldmaps}
 
-\noindent \large{\textbf{Glacier 4}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G04_Topo.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G04_Overview.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G04_ZZ.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G04_LH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G04_LH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G04_UH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G04_M.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G04_A.jpeg}}\\
+	%% Glacier 4
+\section*{Glacier 4}
+	\begin{figure}[b]
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G04_Topo.jpeg}}\\
+\caption[]{Glacier 4 topography. Dividing lines between upper and lower ablation zones and the accumulation area are shown (red lines). Camp location is shown (triangle) }
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G04_Overview.jpeg}}\\
+\caption[]{Glacier 4: all sampling locations}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G04_ZZ.jpeg}}\\
+\caption[]{Glacier 4: potential locations of prioritized zigzag surveys}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G04_LH.jpeg}}\\
+\caption[]{Glacier 4: hourglass and inscribed circle transect sampling locations in the lower ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G04_UH.jpeg}}\\
+\caption[]{Glacier 4: hourglass and inscribed circle transect sampling locations in the upper ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G04_M.jpeg}}\\
+\caption[]{Glacier 4: centreline transect sampling locations in the ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G04_A.jpeg}}\\
+\caption[]{Glacier 4: sampling locations in the accumulation area}
+\end{figure}
 
-\pagebreak
-\noindent \large{\textbf{Glacier 2}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G02_topo.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G02_Overview.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G02_ZZ.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G02_LH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G02_LH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G02_UH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G02_M.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G02_A.jpeg}}\\
+	%% Glacier 2
+\section*{Glacier 2}
+	\begin{figure}[b]
+	\centering	
+	\fbox{\includegraphics[height = 0.3\textheight]{G02_Topo.jpeg}}\\
+\caption[]{Glacier 2 topography. Dividing lines between upper and lower ablation zones and the accumulation area are shown (red lines). Camp location is shown (triangle) }
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G02_Overview.jpeg}}\\
+\caption[]{Glacier 2: all sampling locations}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G02_ZZ.jpeg}}\\
+\caption[]{Glacier 2: potential locations of prioritized zigzag surveys}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G02_LH.jpeg}}\\
+\caption[]{Glacier 2: hourglass and inscribed circle transect sampling locations in the lower ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G02_UH.jpeg}}\\
+\caption[]{Glacier 2: hourglass and inscribed circle transect sampling locations in the upper ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G02_M.jpeg}}\\
+\caption[]{Glacier 2: centreline transect sampling locations in the ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G02_A.jpeg}}\\
+\caption[]{Glacier 2: sampling locations in the accumulation area}
+\end{figure}
 
-\pagebreak
-\noindent \large{\textbf{Glacier 13}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G13_Topo.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G13_Overview.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G13_ZZ.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G13_LH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G13_LH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G13_UH.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G13_M.jpeg}}\\
-\fbox{\includegraphics[height = 0.45\textheight]{G13_A.jpeg}}\\
+
+\section*{Glacier 13}
+	\begin{figure}[b]
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G13_Topo.jpeg}}\\
+\caption[]{Glacier 13 topography. Dividing lines between upper and lower ablation zones and the accumulation area are shown (red lines). Camp location is shown (triangle) }
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G13_Overview.jpeg}}\\
+\caption[]{Glacier 13: all sampling locations}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G13_ZZ.jpeg}}\\
+\caption[]{Glacier 13: potential locations of prioritized zigzag surveys}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G13_LH.jpeg}}\\
+\caption[]{Glacier 13: hourglass and inscribed circle transect sampling locations in the lower ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G13_UH.jpeg}}\\
+\caption[]{Glacier 13: hourglass and inscribed circle transect sampling locations in the upper ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G13_M.jpeg}}\\
+\caption[]{Glacier 13: centreline transect sampling locations in the ablation area}
+\end{figure}
+	\begin{figure}
+	\centering
+	\fbox{\includegraphics[height = 0.3\textheight]{G13_A.jpeg}}\\
+\caption[]{Glacier 13: sampling locations in the accumulation area}
+\end{figure}
 
 
 %%%%
@@ -2919,7 +3001,6 @@ An ANOVA for each transect of snow depth measurements taken by different observe
 The chosen sampling design (Section \ref{sec:FieldDesign}) resulted in areas that correspond to a single DEM cell containing multiple WB measurement locations. To extrapolate WB over the glacier it is valuable to have one value of WB for each DEM gridcell. Therefore, the mean WB was used for a DEM cell with multiple observations. Using the mean value is supported by the small standard deviation of WB within one DEM cell for all glaciers (Figure \ref{fig:DEMcellSTD}). The mean standard deviation is 0.03 \,m\,w.e., which is low compared to the variability of WB over the entire glacier (Section \ref{sec:stdTransects}). Extreme standard deviation values result from highly variable locations such as transects across deep supra glacier streams (Glacier 13) or on debris covered ice or ice-cored moraines (Glacier 4). However, the mean standard deviation is small so future analyses use the mean WB value within one DEM cell. 
 
 \begin{figure}
-	\centering
 	\includegraphics[width = \textwidth]{DEMcellSTD.png}\\
 	\caption[]{Boxplot of the standard deviation of measured WB in one DEM gridcell. \boxMatlab}
 	\label{fig:DEMcellSTD}
@@ -2950,7 +3031,7 @@ The standard deviation as a function of binned elevation show that the standard 
 \begin{table}[h]
 \footnotesize
 \centering
-\caption[]{Mean standard deviation (cm) of snow depth measurements for the entire glacier (Overall Glacier), different transects (Overall Transect) and each observer. Standard deviation as a percent of the mean snow depth is shown in brackets. \transectAbb}
+\caption[Mean standard deviation (cm) of snow depth measurements for the entire glacier]{Mean standard deviation (cm) of snow depth measurements for the entire glacier (Overall Glacier), different transects (Overall Transect) and each observer. Standard deviation as a percent of the mean snow depth is shown in brackets. \transectAbb}
 \label{tab:std_reproduce}
 \begin{tabular}{cccccccc}
  &  &  &  & \multicolumn{4}{c}{\textbf{Observer}} \\
@@ -2996,7 +3077,7 @@ The standard deviation as a function of binned elevation show that the standard 
 
 
 %% Std of measurement
-\begin{table}[]
+\begin{table}
 \footnotesize
 \centering
 \caption[]{Overall standard deviation (cm) of snow depth measurements for the entire glacier (Overall Glacier), different transects (Overall Transect) and each observer. Standard deviation as a percent of the mean snow depth is shown in brackets. \transectAbb The standard deviation of all transect data was 64.6\,cm.}
