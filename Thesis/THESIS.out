@@ -56,4 +56,64 @@
 \BOOKMARK [1][-]{section.4.3}{Summary}{chapter.4}% 56
 \BOOKMARK [0][-]{chapter.5}{Interpolation}{}% 57
 \BOOKMARK [1][-]{section.5.1}{Linear topographic regressions}{chapter.5}% 58
-\BOOKMARK [2][-]{subsection.5
+\BOOKMARK [2][-]{subsection.5.1.1}{Background}{section.5.1}% 59
+\BOOKMARK [2][-]{subsection.5.1.2}{Significance of variables in regression models}{section.5.1}% 60
+\BOOKMARK [2][-]{subsection.5.1.3}{Multiple Linear Regression \(MLR\)}{section.5.1}% 61
+\BOOKMARK [2][-]{subsection.5.1.4}{Bayesian Model Averaging \(BMA\)}{section.5.1}% 62
+\BOOKMARK [2][-]{subsection.5.1.5}{MLR and BMA comparison}{section.5.1}% 63
+\BOOKMARK [2][-]{subsection.5.1.6}{Number of cross-validation runs}{section.5.1}% 64
+\BOOKMARK [2][-]{subsection.5.1.7}{Transferability of linear regression coefficients}{section.5.1}% 65
+\BOOKMARK [1][-]{section.5.2}{Kriging}{chapter.5}% 66
+\BOOKMARK [2][-]{subsection.5.2.1}{Background}{section.5.2}% 67
+\BOOKMARK [2][-]{subsection.5.2.2}{Methods}{section.5.2}% 68
+\BOOKMARK [2][-]{subsection.5.2.3}{Results}{section.5.2}% 69
+\BOOKMARK [1][-]{section.5.3}{Regression kriging}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.3.1}{Background}{section.5.3}% 71
+\BOOKMARK [2][-]{subsection.5.3.2}{Methods}{section.5.3}% 72
+\BOOKMARK [2][-]{subsection.5.3.3}{Results}{section.5.3}% 73
+\BOOKMARK [1][-]{section.5.4}{Comparison of interpolation methods}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.5}{Summary}{chapter.5}% 75
+\BOOKMARK [0][-]{chapter.6}{Uncertainty analysis}{}% 76
+\BOOKMARK [1][-]{section.6.1}{Variability at multiple scales}{chapter.6}% 77
+\BOOKMARK [2][-]{subsection.6.1.1}{Point-scale variability}{section.6.1}% 78
+\BOOKMARK [2][-]{subsection.6.1.2}{Gridcell-scale variability}{section.6.1}% 79
+\BOOKMARK [1][-]{section.6.2}{Monte Carlo analysis}{chapter.6}% 80
+\BOOKMARK [2][-]{subsection.6.2.1}{Methods}{section.6.2}% 81
+\BOOKMARK [2][-]{subsection.6.2.2}{Results and discussion}{section.6.2}% 82
+\BOOKMARK [1][-]{section.6.3}{Regional winter-balance gradient}{chapter.6}% 83
+\BOOKMARK [1][-]{section.6.4}{Summary}{chapter.6}% 84
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 85
+\BOOKMARK [1][-]{section.7.1}{Significance and strengths}{chapter.7}% 86
+\BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 87
+\BOOKMARK [1][-]{section.7.3}{Summary}{chapter.7}% 88
+\BOOKMARK [0][-]{section*.161}{Bibliography}{}% 89
+\BOOKMARK [0][-]{Appendix.a.A}{Appendix Literature review: Snow models }{}% 90
+\BOOKMARK [1][-]{section.a.A.1}{Dynamic models}{Appendix.a.A}% 91
+\BOOKMARK [1][-]{section.a.A.2}{Statistical downscaling}{Appendix.a.A}% 92
+\BOOKMARK [0][-]{Appendix.a.B}{Appendix Literature review: Indirect methods of measuring snow accumulation }{}% 93
+\BOOKMARK [1][-]{section.a.B.1}{Ground-penetrating radar \(GPR\)}{Appendix.a.B}% 94
+\BOOKMARK [2][-]{subsection.a.B.1.1}{DEM subtraction}{section.a.B.1}% 95
+\BOOKMARK [2][-]{subsection.a.B.1.2}{Comparison of methods}{section.a.B.1}% 96
+\BOOKMARK [2][-]{subsection.a.B.1.3}{Temporally resolved methods}{section.a.B.1}% 97
+\BOOKMARK [0][-]{Appendix.a.C}{Appendix Literature review: Snow distribution in the St. Elias Mountains}{}% 98
+\BOOKMARK [0][-]{Appendix.a.D}{Appendix GPS Waypoint Creation and Upload to GPS Device}{}% 99
+\BOOKMARK [0][-]{Appendix.a.E}{Appendix Field Maps}{}% 100
+\BOOKMARK [0][-]{Appendix.a.F}{Appendix Data Processing Scripts}{}% 101
+\BOOKMARK [1][-]{section.a.F.1}{Snow depth measured with graduated avalanche probe}{Appendix.a.F}% 102
+\BOOKMARK [2][-]{subsection.a.F.1.1}{Linear and curvilinear transect surveys}{section.a.F.1}% 103
+\BOOKMARK [2][-]{subsection.a.F.1.2}{Zigzag surveys}{section.a.F.1}% 104
+\BOOKMARK [1][-]{section.a.F.2}{Snow density}{Appendix.a.F}% 105
+\BOOKMARK [1][-]{section.a.F.3}{Point-scale winter balance}{Appendix.a.F}% 106
+\BOOKMARK [0][-]{Appendix.a.G}{Appendix Topographic parameters from QGIS to Matlab}{}% 107
+\BOOKMARK [0][-]{Appendix.a.H}{Appendix Multiple linear regression \(MLR\) software}{}% 108
+\BOOKMARK [0][-]{Appendix.a.I}{Appendix Bayesian model averaging \(BMA\) software}{}% 109
+\BOOKMARK [0][-]{Appendix.a.J}{Appendix Kriging software}{}% 110
+\BOOKMARK [0][-]{Appendix.a.K}{Appendix Variability of data at multiple scales}{}% 111
+\BOOKMARK [1][-]{section.a.K.1}{Point Scale}{Appendix.a.K}% 112
+\BOOKMARK [2][-]{subsection.a.K.1.1}{Data normality}{section.a.K.1}% 113
+\BOOKMARK [2][-]{subsection.a.K.1.2}{Observer differences}{section.a.K.1}% 114
+\BOOKMARK [2][-]{subsection.a.K.1.3}{Gridcell scale}{section.a.K.1}% 115
+\BOOKMARK [2][-]{subsection.a.K.1.4}{Basin scale}{section.a.K.1}% 116
+\BOOKMARK [0][-]{Appendix.a.L}{Appendix Glacier-wide winter balance uncertainty}{}% 117
+\BOOKMARK [1][-]{section.a.L.1}{Linear regression winter balance distribution}{Appendix.a.L}% 118
+\BOOKMARK [1][-]{section.a.L.2}{Simple kriging winter balance distribution}{Appendix.a.L}% 119
