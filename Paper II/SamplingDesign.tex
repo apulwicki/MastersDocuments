@@ -4,13 +4,23 @@
 \NeedsTeXFormat{LaTeX2e}
 
 % check that the math fits the two-column format:
-\documentclass[twocolumn, letterpaper]{igs}
+ \documentclass[twocolumn,letterpaper]{igs}
 
 % but use this version when submitting your article:
-%\documentclass[review,oneside, letterpaper]{igs}
+ % \documentclass[review,oneside]{igs}
+
+% other options are available
+%   authors printing on US letter size are advised 
+%   to use the slightly shorter [letterpaper] option
+% SINGLE COLUMN
+%   \documentclass{igs}              
+% SINGLE COLUMN, FEWER LINES/PAGE
+%   \documentclass[letterpaper]{igs} 
+% DOUBLE COLUMN, FEWER LINES/PAGE
+%   \documentclass[twocolumn,letterpaper]{igs} 
 
   \usepackage{igsnatbib}
-  \usepackage{lmodern}
+\usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{wrapfig}
 \usepackage{enumitem}
@@ -19,10 +29,6 @@
 \usepackage{booktabs}
 \usepackage{lscape}
 \usepackage{color}
-
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-\renewcommand{\tabularxcolumn}[1]{m{#1}}%
-
 
 % check if we are compiling under latex or pdflatex
   \ifx\pdftexversion\undefined
@@ -33,15 +39,6 @@
     \epstopdfsetup{suffix=}
   \fi
 
-
-%?	Ensure that the paper falls within the aims/scope of the journal��http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291099-1085/homepage/aims_and_scope.htm��(applies to�CGU�Special Issue papers)
-%	?	Ensure that the submitted paper (incl. title, abstract, major conclusion) clearly states how the paper enhances our understanding of hydrological processes
-%	?	Ensure that the novelty of the work is clearly stated in the paper
-%	?	Ensure that it is clearly stated in the paper how the research is of interest for a wider, international readership
-%	?	(i.e.�contextualisation with the international literature is crucial)
-%	?	Geographic references could come in keywords (if appropriate) rather than in titles
-%	?	Ensure that the paper is within the word limit (not exceed 7500 word limit)
-%	?	See Author Guidelines��http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291099-1085/homepage/ForAuthors.html
 
 
 \begin{document}
@@ -56,7 +53,6 @@ $^1$ Department of Earth Sciences, Faculty of Science, Simon Fraser University, 
   Correspondence: Alexandra Pulwicki 
   $<$apulwick@sfu.ca$>$}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	ABSTRACT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,9 +60,8 @@ $^1$ Department of Earth Sciences, Faculty of Science, Simon Fraser University, 
 \abstract{Efficient collection of snow depth and density data is critical to a successful snow measurement campaign and to accurately estimate glacier winter balance. Since snow accumulation is spatially variable, snow properties must be measured over an extensive area within a short period of time. Extensive, high resolution and accurate snow accumulation measurements on glaciers are almost impossible to achieve so surveys need to optimize the extent and spacing of snow measurements to obtain reliable estimates of winter balance. To address this need, we estimate winter balance and root mean squared error (RMSE) from subsets of extensive surveys and examine snow accumulation correlation lengths on three glaciers in the St. Elias Mountains, Yukon. From the 9000 direct measurements we generate five different subsets, which encompass possible snow sampling survey designs, and further divide the data into various measurement spacings. We then use linear regression with topographic parameters  to interpolate measurements. An `hourglass' shaped sampling design results in the lowest RMSE and the centreline with no transverse transects results in high RMSE values for all glaciers. RMSE decreases with increased sample size, with no further reduction after about 50 measurement locations. Winter balance estimates are variable but not systematically affected by the measurement spacing. These results may indicate a minimum spatial correlation for snow on glaciers and can give insight into the combined effects of underlying topography and wind redistribution for winter balance. This study highlights the ability for future winter balance and snow survey studies to optimize snow data collection within a glacierized basin.
 
 glacier; alpine; snow survey design; optimize; St. Elias Mountains; snow probing}
+
 \maketitle
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	INTRODUCTION
@@ -82,7 +77,6 @@ Optimal sampling schemes for snow probing are central to accurately estimating s
 Snow surveys on glaciers are conducted to estimate winter balance and multi-year sampling programs are often established to monitor changes in winter balance with time. An optimized sampling design requires (1) a sampling pattern that captures spatial variability and minimizes travel distance and (2) knowledge of the minimum number of measurement locations needed to accurately estimate WB. The sampling pattern used for most winter balance programs does not included randomness and measurements are typically collected along the glacier midline. However, midline transects are known to underestimate winter balance so transverse transects are often added to improve the reliability of the sampling scheme \citep[e.g.][]{Walmsley2015}. An hourglass with inscribed circle (personal communication from C. Parr, 2016) is an alternative sampling design that is attractive because it is able to capture changes in WB with elevation but is not biased along the midline and is easy to travel. To our knowledge, no study has yet compared the ability of these two sampling designs to capture spatial variability in WB. There are few studies that investigate the number of measurement locations needed to effectively sample WB distribution \citep[c.f.][]{Walmsley2015}. Fountain?? investigated the number of measurement locations needed to estimate glacier mass balance, but snow is known to vary at much shorter length scales than melt, so an investigate into WB survey design is needed. 
 
 The goal of our work is to provide insight into ways to optimize WB sampling design by investigating various sampling patterns and number of measurement locations. The role of sub-gridcell variability in choosing a sampling design is investigated by varying the noise introduced to the assumed WB distribution. We examine three study glaciers with differing spatial patterns of WB to determine the applicability of our conclusions between glaciers. 
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	STUDY SITE
@@ -117,9 +111,10 @@ We investigate WB on three unnamed glaciers in the Donjek Range of the St. Elias
 %	METHODS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-**** Random design too!
 
 \section{Methods}
+
+Random design too!
 
 We assume a spatial distribution of WB on the three study glaciers, which is equivalent to the distribution presented in \cite{Pulwicki2017}. The assumed WB is estimated using a linear regression fitted to WB data on each glacier, which is obtained from direct measurements of snow depth and density. All estimated values of WB that are calculated using various sampling patterns in this paper are compared against this assumed spatial distribution of WB. By using an assumed distribution as the ``true'' distribution of WB, we are able to calculate spatially-resolved error.  
 
@@ -137,28 +132,28 @@ The process of adding random noise to sampled WB values and fitting a regression
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results and Discussion}
 
-FIGURES & TABLES
-Fig 1. Study site and assumed WB distribution
-Fig 2. Sampling patterns
-Fig 3. Computer model results  
-	a) Line plot of WB vs n for all sampling (light coloured and thin) and mean WB (dark coloured and thick) for each glacier
-	b) Same as above but RMSE vs n 
-Fig 4. Map of mean (or max?) RMSE for each G (high/low noise) (best/worst pattern)
-
-Fig ?. Stability of subset sampling -> box plot of RMSE from each pattern (which n?)
-
-Table 1. Assumed WB values and high/low noise std.
-
-
-- which is further to travel, hourglass or midline + transects?
-
-
-Questions?
-- optimal sampling size?
-- best sampling pattern?
-- spread of WB estimates and RMSE with noise
-- grid scale variability (i.e. high/low noise) matters?
-- different for each glacier? captures dominant topographic parameter for each glacier?
+%FIGURES & TABLES
+%Fig 1. Study site and assumed WB distribution
+%Fig 2. Sampling patterns
+%Fig 3. Computer model results  
+%	a) Line plot of WB vs n for all sampling (light coloured and thin) and mean WB (dark coloured and thick) for each glacier
+%	b) Same as above but RMSE vs n 
+%Fig 4. Map of mean (or max?) RMSE for each G (high/low noise) (best/worst pattern)
+%
+%Fig ?. Stability of subset sampling -> box plot of RMSE from each pattern (which n?)
+%
+%Table 1. Assumed WB values and high/low noise std.
+%
+%
+%- which is further to travel, hourglass or midline + transects?
+%
+%
+%Questions?
+%- optimal sampling size?
+%- best sampling pattern?
+%- spread of WB estimates and RMSE with noise
+%- grid scale variability (i.e. high/low noise) matters?
+%- different for each glacier? captures dominant topographic parameter for each glacier?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONCLUSION
@@ -175,13 +170,11 @@ We thank the Kluane First Nation (KFN), Parks Canada and the Yukon Territorial G
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
 %
-\bibliography{MastersLit}
-%\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
+%\bibliography{MastersLit}
+\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 %\bibliography{/Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit}
 \bibliographystyle{igs}
 
 %----------------------------------------------------------------------------------------
 
-
 \end{document}
-

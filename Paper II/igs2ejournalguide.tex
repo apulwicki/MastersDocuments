@@ -1,0 +1,90 @@
+% igs2ejournalguide.tex
+% v4.00 3-sept-2015
+
+\NeedsTeXFormat{LaTeX2e}
+
+% check that the math fits the two-column format:
+% \documentclass[twocolumn]{igs}
+
+% but use this version when submitting your article:
+  \documentclass[review,oneside]{igs}
+
+% other options are available
+%   authors printing on US letter size are advised 
+%   to use the slightly shorter [letterpaper] option
+% SINGLE COLUMN
+%   \documentclass{igs}              
+% SINGLE COLUMN, FEWER LINES/PAGE
+%   \documentclass[letterpaper]{igs} 
+% DOUBLE COLUMN, FEWER LINES/PAGE
+%   \documentclass[twocolumn,letterpaper]{igs} 
+
+  \usepackage{igsnatbib}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{color}
+
+% check if we are compiling under latex or pdflatex
+  \ifx\pdftexversion\undefined
+    \usepackage[dvips]{graphicx}
+  \else
+    \usepackage[pdftex]{graphicx}
+    \usepackage{epstopdf}
+    \epstopdfsetup{suffix=}
+  \fi
+
+% the default is for unnumbered section heads
+% if you really must have numbered sections, remove
+% the % from the beginning of the following command
+% and insert the level of sections you wish to be
+% numbered (up to 4):
+
+% \setcounter{secnumdepth}{2}
+
+\begin{document}
+
+\title[Optimizing snow survey design for winter balance]{Optimizing snow survey design for winter balance of alpine glaciers}
+
+\author[Pulwicki and Flowers]{Alexandra PULWICKI,$^1$
+  Gwenn E. FLOWERS,$^1$}
+
+\affiliation{%
+$^1$ Department of Earth Sciences, Faculty of Science, Simon Fraser University, Burnaby, BC, Canada\\
+  Correspondence: Alexandra Pulwicki 
+  $<$apulwick@sfu.ca$>$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	ABSTRACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract{Efficient collection of snow depth and density data is critical to a successful snow measurement campaign and to accurately estimate glacier winter balance. Since snow accumulation is spatially variable, snow properties must be measured over an extensive area within a short period of time. Extensive, high resolution and accurate snow accumulation measurements on glaciers are almost impossible to achieve so surveys need to optimize the extent and spacing of snow measurements to obtain reliable estimates of winter balance. To address this need, we estimate winter balance and root mean squared error (RMSE) from subsets of extensive surveys and examine snow accumulation correlation lengths on three glaciers in the St. Elias Mountains, Yukon. From the 9000 direct measurements we generate five different subsets, which encompass possible snow sampling survey designs, and further divide the data into various measurement spacings. We then use linear regression with topographic parameters  to interpolate measurements. An `hourglass' shaped sampling design results in the lowest RMSE and the centreline with no transverse transects results in high RMSE values for all glaciers. RMSE decreases with increased sample size, with no further reduction after about 50 measurement locations. Winter balance estimates are variable but not systematically affected by the measurement spacing. These results may indicate a minimum spatial correlation for snow on glaciers and can give insight into the combined effects of underlying topography and wind redistribution for winter balance. This study highlights the ability for future winter balance and snow survey studies to optimize snow data collection within a glacierized basin.
+
+glacier; alpine; snow survey design; optimize; St. Elias Mountains; snow probing}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	INTRODUCTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+Estimates of basin-wide seasonal snow accumulation are critical for the availability and timing of surface runoff, especially in mountainous regions. On glaciers, the distribution of snow is half of the seasonally resolved mass balance, initializes ablation conditions and affects energy and mass exchange between the land and atmosphere \citep[e.g.][]{Hock2005, Reveillet2016}. The net accumulation and ablation of snow on a glacier over a winter season is known as the winter surface mass balance, or ``winter balance'' (WB) \citep{Cogley2011}. 
+
+Snow distribution is spatially variable so properties, such as snow depth, must be measured over an extensive area. In addition, the period of peak accumulation is short so snow measurement must be completed quickly and efficiently. As a result, extensive and high-resolution measurements of snow depth are nearly impossible to obtain. Snow surveys must therefore be optimized in the extent and spacing of snow measurement locations, especially when labour-intensive methods like snow probing are used. 
+
+Optimal sampling schemes for snow probing are central to accurately estimating snow distribution and mass balance from \textit{in situ} measurements. Measuring snow depth and travelling between measurement locations is both time consuming and can disturb the snow so care must be taken to choose a sampling scheme that avoids bias, allows for the greatest variability to be measured and minimizes distance travelled \citep{Shea2010}. There are a number of different designs that have been employed to obtain point measurements, including pure random \citep[e.g.][]{Elder1991}, linear random \cite[e.g.][]{Shea2010}, nested \citep[e.g.][]{Schweizer2008}, gridded random \citep[e.g.][]{Bellaire2008, Elder2009, Bellaire2011} and gridded \citep[e.g.][]{Molotch2005a, Kronholm2004, Lopez2011}. Sampling designs that incorporate randomness are favourable because they limit sampling bias by varying sample spacing and direction. However, they are less efficient than sampling designs that incorporate grids. Grid-style sampling designs minimize travel distance but measurements are biased by regularly spaced intervals and linear orientations, which could result in an under representation of the snow variability \citep{Kronholm2004} (check this ref??).
+
+Snow surveys on glaciers are conducted to estimate winter balance and multi-year sampling programs are often established to monitor changes in winter balance with time. An optimized sampling design requires (1) a sampling pattern that captures spatial variability and minimizes travel distance and (2) knowledge of the minimum number of measurement locations needed to accurately estimate WB. The sampling pattern used for most winter balance programs does not included randomness and measurements are typically collected along the glacier midline. However, midline transects are known to underestimate winter balance so transverse transects are often added to improve the reliability of the sampling scheme \citep[e.g.][]{Walmsley2015}. An hourglass with inscribed circle (personal communication from C. Parr, 2016) is an alternative sampling design that is attractive because it is able to capture changes in WB with elevation but is not biased along the midline and is easy to travel. To our knowledge, no study has yet compared the ability of these two sampling designs to capture spatial variability in WB. There are few studies that investigate the number of measurement locations needed to effectively sample WB distribution \citep[c.f.][]{Walmsley2015}. Fountain?? investigated the number of measurement locations needed to estimate glacier mass balance, but snow is known to vary at much shorter length scales than melt, so an investigate into WB survey design is needed. 
+
+The goal of our work is to provide insight into ways to optimize WB sampling design by investigating various sampling patterns and number of measurement locations. The role of sub-gridcell variability in choosing a sampling design is investigated by varying the noise introduced to the assumed WB distribution. We examine three study glaciers with differing spatial patterns of WB to determine the applicability of our conclusions between glaciers. 
+
+
+
+
+\end{document}

@@ -3183,12 +3183,12 @@
 	bdsk-url-7 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
 	bdsk-url-8 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO;2",
 	bdsk-url-9 = "http://dx.doi.org/10.1175/1520-0450(1978)017\%3C1537:AOEITD\%3E2.0.CO",
+	doi = "10.1175/1520-0450(1978)0171537:AOEITD2.0.CO;2",
 	eprint = "http://dx.doi.org/10.1175/1520-0450(1978)017<1537:AOEITD>2.0.CO;2",
 	journal = "Journal of Applied Meteorology",
 	number = "10",
 	pages = "1537--1541",
 	title = "{Analysis of Error in the Determination of Snow Storage for Small High {A}rctic Basins}",
-	url = "http://dx.doi.org/10.1175/1520-0450(1978)0171537:AOEITD2.0.CO",
 	volume = "17",
 	year = "1978"
 }
@@ -3837,5 +3837,12 @@
 	url = "https://doi.org/10.1175/2007JHM795.1",
 	volume = "8",
 	year = "2007"
+}
+
+@article{Pulwicki2017,
+	author = "Pulwicki, Alexandra and Flowers, G.E. and Radi{\'c}, Valentina",
+	journal = "Journal of Glaciology",
+	title = "{Uncertainties in estimating winter balance from direct measurements of snow depth and density on alpine glaciers}",
+	volume = "in submission"
 }
 
