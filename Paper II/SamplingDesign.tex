@@ -20,6 +20,8 @@
 \usepackage{booktabs}
 \usepackage{lscape}
 \usepackage{color}
+\usepackage{graphicx}
+\usepackage{subcaption}
 
 % check if we are compiling under latex or pdflatex
   \ifx\pdftexversion\undefined
@@ -59,7 +61,7 @@ $^1$ Department of Earth Sciences, Faculty of Science, Simon Fraser University, 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-Estimates of basin-wide seasonal snow accumulation are critical for monitoring glacier mass balance and for predicting the availability and timing of surface runoff, especially in mountainous regions. The net accumulation and ablation of snow on a glacier over a winter season is known as the winter surface mass balance, or ``winter balance'' (WB) \citep{Cogley2011}. Winter balance accounts for half of the seasonally resolved mass balance, initializes ablation conditions and affects energy and mass exchange between the land and atmosphere \citep[e.g.][]{Hock2005, Reveillet2016}. 
+Estimates of basin-wide seasonal snow accumulation are critical for monitoring glacier mass balance and for predicting the availability and timing of surface runoff, especially in mountainous regions. The net accumulation and ablation of snow on a glacier over a winter season is known as the winter surface mass balance, or ``winter balance'' (WB) and is typically reported in meters of water equivalent (m\,w.e.) \citep{Cogley2011}. Winter balance accounts for half of the seasonally resolved mass balance, initializes ablation conditions and affects energy and mass exchange between the land and atmosphere \citep[e.g.][]{Hock2005, Reveillet2016}. 
 
 Snow distribution is spatially variable so properties, such as snow depth, must be measured over an extensive area \citep[e.g.][]{Kinar2015}. In addition, the period of peak accumulation is short so snow measurement must be completed quickly and efficiently. As a result, representative measurements of snow depth are nearly impossible to obtain. Snow surveys must therefore be optimized in the extent and spacing of snow measurement locations, especially when labour-intensive methods like snow probing are used. 
 
@@ -85,23 +87,51 @@ We investigate sampling design for winter balance surveys on three unnamed glaci
 
 Glacier 4, Glacier 2 and Glacier 13 (labelling adopted from \cite{Crompton2016}) are small alpine glaciers (3.8--12.6\,km$^2$) with simple geometries. Elevation of these glaciers ranges from 1900 to 3100\,m\,a.s.l. and ELAs are located at $\sim$2500\,m. The glaciers are generally oriented southeast-northwest in valleys with steep walls. We suspect that the glaciers are polythermal, based on a detailed study of Glacier 2 \citep{Wilson2013} and related theoretical modelling \citep{Wilson2013a}. A detailed analysis of estimating winter balance on these three glaciers is presented by \cite{Pulwicki2017}.
 
-%\begin{table*}[]
-%\centering
-%\caption{Physical characteristics of the study glaciers and May 2016 winter-balance survey details, including number of snow-depth measurement locations along transects ($n_{\mathrm{T}}$), total length of transects ($d_{\mathrm{T}}$), number of combined snow pit and Federal Sampler density measurement locations ($n_{\rho}$) and number of zigzag surveys ($n_{\mathrm{zz}}$).}
-%\label{tab:GlacierDetails}
-%\begin{tabular}{cccccccccccc}
-%\midrule
-%\textbf{} & \textbf{Location} & \multicolumn{3}{c}{\textbf{Elevation (m a.s.l)}} & \textbf{Slope ($^{\circ}$)} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Area \\ (km$^2$)\end{tabular}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Survey\\ Dates\end{tabular}}} & \multicolumn{4}{c}{\textbf{Survey Details}} \\
-% & UTM Zone 7 & \textit{Mean} & \textit{Range} & \textit{ELA} & \textit{Mean} &  &  & $n_{\mathrm{T}}$ & $d_{\mathrm{T}}$ (km) & $n_{\rho}$ & $n_{\mathrm{zz}}$ \\ \midrule
-%\textbf{Glacier 4} & \begin{tabular}[c]{@{}c@{}}595470 E\\ 6740730 N\end{tabular} & 2344 & 1958--2809 & $\sim$2500 & 12.8 & 3.8 & 4--7 May 2016 & 649 & 13.1 & 10 & 3 \\
-%\textbf{Glacier 2} & \begin{tabular}[c]{@{}c@{}}601160 E\\ 6753785 N\end{tabular} & 2495 & 1899--3103 & $\sim$2500 & 13.0 & 7.0 & 8--11 May 2016 & 762 & 13.6 & 11 & 3 \\
-%\textbf{Glacier 13} & \begin{tabular}[c]{@{}c@{}}604602 E\\ 6763400 N\end{tabular} & 2428 & 1923--3067 & $\sim$2380 & 13.4 & 12.6 & 12--15 May 2016 & 941 & 18.1 & 20 & 4
-%\end{tabular}
-%\end{table*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	METHODS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.475\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_centreline.png}
+            \caption[]{}    
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.475\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_trans.png}
+             \caption[]{}    
+        \end{subfigure}
+        \vskip\baselineskip
+ \begin{subfigure}[b]{0.475\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_circle.png}
+            \caption[]{}    
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.475\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_hourglass.png}
+             \caption[]{}    
+        \end{subfigure}
+        \vskip\baselineskip
+        \begin{subfigure}[b]{0.475\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_hourCircle.png}
+             \caption[]{}    
+        \end{subfigure}
+        \quad
+        \begin{subfigure}[b]{0.475\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_random.png}
+            \caption[]{}    
+        \end{subfigure}
+        \caption{Synthetic sampling designs on three study glacier. (a) Midline. (b) Midline and transverse. (c) Circle. (d) Hourglass. (e) Hourglass and circle. (f) Random across entire glacier. All synthetic observation measurement locations (small, black dots) and a subset including 20 measurement locations (open circles) is shown for each sampling pattern. Sampling designs are overlain on the prescribed winter balance (WB). } 
+        \label{fig:SyntheticSampleDesign}
+    \end{figure*}
 
 
 \section{Methods}
@@ -125,7 +155,7 @@ Validation WB is estimated using a linear regression between all gridcell-scale 
 
 We obtain synthetic observations using various sampling designs from the validation WB to test which sampling design best estimates WB. Gridcell values of WB that fall within each sampling design are extracted from the validation WB distribution and then used to estimate a new WB distribution. The WB distribution derived from various sampling designs is directly compared to the validation WB distribution to estimate spatially resolved error. 
 
-To simulate the process of measuring WB, we first obtain WB values from the validation WB distribution at selected measurement locations for each sampling pattern. Then, we add a low or high amount of noise to the WB data. Low noise is defined by a normal distribution that is centred at zero and has a standard deviation equal to the mean standard deviation of WB data from a series of high-density gridcell-scale surveys on each glacier \citep[see][for details]{Pulwicki2017}. High noise is defined in the same way as low noise but the standard deviation of the normal distribution is five times larger. The standard deviation of low noise is $\sim$5\% of the glacier-wide WB, while high noise is $\sim$25\% of the glacier-wide WB. For each gridcell value of WB, a random number from the high or low noise distribution is added to obtain a synthetic observation of WB.
+To simulate the process of measuring WB, we first obtain WB values from the validation WB distribution at selected measurement locations for each sampling pattern (Figure \ref{fig:SyntheticSampleDesign}). Then, we add a low or high amount of noise to the WB data. Low noise is defined by a normal distribution that is centred at zero and has a standard deviation equal to the mean standard deviation of WB data from a series of high-density gridcell-scale surveys on each glacier \citep[see][for details]{Pulwicki2017}. High noise is defined in the same way as low noise but the standard deviation of the normal distribution is five times larger. The standard deviation of low noise is $\sim$5\% of the glacier-wide WB, while high noise is $\sim$25\% of the glacier-wide WB. For each gridcell value of WB, a random number from the high or low noise distribution is added to obtain a synthetic observation of WB.
 
 A linear regression is then used to interpolate the synthetic values of WB for each glacier. Synthetic WB is regressed on the seven topographic parameters described above. The linear regression calculates regression coefficients that minimize the sum of squares of the vertical deviations of each datum from the regression line \citep{Davis1986}. To allow for small sample sizes ($<$40 measurement locations), cross correlation and model averaging are not used for this linear regression. The resulting regression coefficients are then applied to the topographic parameters associated with each gridcell to obtain an estimate of distributed WB. RMSE is calculated by taking the square root of the mean difference between all gridcells in the validation WB distribution and the WB distribution derived with the sampling design.
 
