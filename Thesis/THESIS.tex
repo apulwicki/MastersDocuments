@@ -12,16 +12,16 @@
 \faculty{Faculty of Science}
 \copyrightyear{2017}
 \semester{Fall 2017}
-\date{??}
+\date{17 November 2017}
 
 \keywords{glacier; snow; winter balance; spatial statistics; regression}
 
 \committee{%
-	\chair{??}{??}
+	\chair{Dan Gibson}{Professor}
 	\member{Gwenn Flowers}{Senior Supervisor\\ Professor}
 	\member{Valentina Radic}{Supervisor\\Associate Professor}
 	\member{Kirsten Zickfeld}{Supervisor\\Associate Professor}
-	\member{??}{External Examiner\\Professor\\Department of Quantum Fields\\Mars University}
+	\member{Joseph Shea}{External Examiner\\Research Scientist\\Centre for Hydrology\\University of Saskatchewan}
 }
 
 %   PACKAGES AND CUSTOMIZATIONS  %%%%%%%%%%%%%%%%%%%%%%%%
@@ -171,7 +171,7 @@ Snow density can be measured directly or estimated with snow density models. To 
 Three main methods are currently used to measure snow depth. Probing involves taking \textit{in situ} point measurements of snow depth. Ground-penetrating radar (GPR) surveying uses radar to detect snow depth along continuous lines. Digital elevation model (DEM) subtraction involves calculating the change in glacier surface height between the end of the ablation and end of the accumulation seasons. Methods are selectively applied based on the research questions, desired spatial resolution, cost effectiveness and equipment availability. Each is prone to different sources of error and there is ongoing research to reconcile these approaches \citep{Sold2014}. The data used in this thesis is collected using snow depth probes, for which the methodology is described below. For a literature review of GPR and DEM subtraction methods, as well as a comparison of all three methods, see Appendix \ref{app:snow_measure_methods}. A brief description of temporally resolved methods of measuring accumulation is also presented in Appendix \ref{app:snow_measure_methods}.
 
 \label{snowprobing}
-\begin{figure}[H]
+\begin{figure}[t]
  \centering
       \includegraphics[width=0.4\textwidth]{snowpit.jpg}
  \caption{Measuring snow depth and density in a snow pit located in the accumulation area of Haig Glacier, Rocky Mountains}
@@ -196,7 +196,7 @@ A purely random distribution of points (Figure \ref{schemes}(a)) is favourable b
 
 Linear-random sampling schemes impose a structure to traverse as much of the study area as possible but allow for a random distance between sampling points. An example of this scheme is the `star', created by \cite{Shea2010}. A significant advantage of this scheme is that it was designed to minimize distance travelled while still measuring snow properties in various orientations and various distances apart, which reduces bias. However, since the observer travels in straight transects there is still a potential to miss smaller features or ones that parallel the transects (spatial autocorrelation). \cite{Shea2010} used comparative Monte Carlo simulations to validate that the star scheme performs as well as or better than other (more structured) sampling methods and that it converges to the true distribution as well as a purely random scheme. One example of a linear-random sampling scheme can be seen in Figure \ref{schemes}(b). Linear-random sampling can also be done in an `hourglass' shape with an inscribed circle (referred to as an hourglass sampling scheme). As seen in Figure \ref{schemes}(f), this pattern allows sampling in all directions and captures a wide range of snow depths from the underlying snow distribution (Parr, C., 2016 personal communication).
 
-\begin{figure}[H]
+\begin{figure}[t]
 \begin{minipage}[c][11cm][t]{.33\textwidth}
         \vspace*{\fill}
   \centering
@@ -585,7 +585,7 @@ As a result of these complications, many planned accumulation area measurements 
 \subsection{Snow pit}
 \label{sec:snowpit}
 
-\begin{figure}[H]
+\begin{figure}[t]
 	\centering
 	\fbox{\includegraphics[width = 0.55\textwidth]{map_snowpitlocation_all.jpeg}}\\
 	\caption[Locations and labels for all snow pits dug on study glaciers]{Locations and labels for all snow pits dug on Glaciers 4, 2 and 13 (left to right).}
@@ -1640,7 +1640,7 @@ The distribution of residuals from the MLR regression (Figure \ref{fig:MLRresidu
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width =1 \textwidth]{MLRsemiR2_DensityOpts.png}\\
+	 \makebox[\textwidth][c]{\includegraphics[width =1.18 \textwidth]{MLRsemiR2_DensityOpts.png}}\\
 	\caption[Regression coefficients and semi-partial correlation for MLR interpolation]{Regression coefficients and semi-partial correlation for MLR interpolation. (Left) Boxplot showing the range of regression coefficients that are estimated with winter-balance values calculated using all density assignment methods. (Right) Boxplot showing the range of semi-partial correlation coefficients that are estimated with winter-balance values calculated using all density assignment methods. \params \boxplot }
 	\label{fig:MLRsemiR2_densityOptions}
 \end{figure} 
@@ -1995,7 +1995,7 @@ The number of runs in the cross-validation algorithm used in this study is large
 The mean winter balance for each glacier does not appear to vary after about 200 runs (Figure \ref{fig:MLRruns}). The value of the elevation regression coefficient, which is the most important coefficient for Glaciers 2 and 13, also does not change considerably after 200 runs. A similar decrease in variation is seen for the remaining important regressors (not shown). Therefore, the number of cross validation runs can be decreased to 200 for future analysis if decreased computational time is desired. 
 
 
-\begin{figure}[H]
+\begin{figure}[t]
 \begin{minipage}[l][8cm][t]{.58\textwidth}
         \vspace*{\fill}
   \centering

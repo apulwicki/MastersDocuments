@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  5 OCT 2017 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 09:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -138,8 +138,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(/usr/share/texlive/texmf-dist/tex/latex/nowidow/nowidow.sty
+) (./nowidow.sty
 Package: nowidow 2011/09/20 1.0 Easily prevent widows and orphans
 Package: nowidow 
 
@@ -167,9 +166,9 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 ))))
-(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
-Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 44.
+(./tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip43
 \cftbeforetoctitleskip=\skip44
 \cftaftertoctitleskip=\skip45
@@ -206,8 +205,7 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cftbeforetabskip=\skip74
 \cfttabindent=\skip75
 \cfttabnumwidth=\skip76
-)
-(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+) (./appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count94
 \c@@ppsavesec=\count95
@@ -504,8 +502,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rotFPbot=\skip90
 \rot@float@box=\box32
 \rot@mess@toks=\toks33
-)
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+) (./adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -519,14 +516,12 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@depth=\count129
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+(./adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+) (./trimclip.sty
 Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
-
-(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+ (./collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box33
 )
@@ -535,8 +530,7 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@urx=\dimen146
 \tc@ury=\dimen147
 Package trimclip Info: Using driver 'tc-pdftex.def'.
-
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+ (./tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen148
@@ -583,11 +577,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count135
 \@thisrulewidth=\dimen166
 )
-(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+(./threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box35
-)
-(/usr/share/texlive/texmf-dist/tex/latex/dblfloatfix/dblfloatfix.sty
+) (./dblfloatfix.sty
 Package: dblfloatfix 2012/12/31 v1.0a (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
@@ -835,62 +828,62 @@ File: snowpit.jpg Graphic file (type jpg)
 Package pdftex.def Info: snowpit.jpg used on input line 176.
 (pdftex.def)             Requested size: 173.44534pt x 261.16257pt.
  [6] [7 <./snowpit.jpg>] [8]
-<random.png, id=1382, 511.9125pt x 480.79625pt>
+<random.png, id=1383, 511.9125pt x 480.79625pt>
 File: random.png Graphic file (type png)
  <use random.png>
 Package pdftex.def Info: random.png used on input line 203.
 (pdftex.def)             Requested size: 142.26439pt x 128.03398pt.
 
-<star.png, id=1384, 511.9125pt x 474.77374pt>
+<star.png, id=1385, 511.9125pt x 474.77374pt>
 File: star.png Graphic file (type png)
  <use star.png>
 Package pdftex.def Info: star.png used on input line 206.
 (pdftex.def)             Requested size: 142.26439pt x 128.03848pt.
 
-<Lgrid.png, id=1385, 511.9125pt x 483.8075pt>
+<Lgrid.png, id=1386, 511.9125pt x 483.8075pt>
 File: Lgrid.png Graphic file (type png)
  <use Lgrid.png>
 Package pdftex.def Info: Lgrid.png used on input line 212.
 (pdftex.def)             Requested size: 142.26439pt x 128.03857pt.
 
-<nested.png, id=1386, 820.06375pt x 609.27625pt>
+<nested.png, id=1387, 820.06375pt x 609.27625pt>
 File: nested.png Graphic file (type png)
  <use nested.png>
 Package pdftex.def Info: nested.png used on input line 215.
 (pdftex.def)             Requested size: 142.262pt x 128.03545pt.
 
-<swiss.png, id=1387, 516.93124pt x 486.81876pt>
+<swiss.png, id=1388, 516.93124pt x 486.81876pt>
 File: swiss.png Graphic file (type png)
  <use swiss.png>
 Package pdftex.def Info: swiss.png used on input line 221.
 (pdftex.def)             Requested size: 142.26302pt x 128.03325pt.
 
-<hourglass.png, id=1388, 683.55376pt x 524.96124pt>
+<hourglass.png, id=1389, 683.55376pt x 524.96124pt>
 File: hourglass.png Graphic file (type png)
  <use hourglass.png>
 Package pdftex.def Info: hourglass.png used on input line 224.
 (pdftex.def)             Requested size: 142.25719pt x 128.03589pt.
 
 [9] [10 <./random.png> <./star.png> <./Lgrid.png> <./nested.png> <./swiss.png> 
-<./hourglass.png>] [11] [12] [13]
+<./hourglass.png>] [11] [12]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 258.
 
-<Sampling.pdf, id=1556, 669.50125pt x 413.545pt>
+[13] [14] <Sampling.pdf, id=1561, 669.50125pt x 413.545pt>
 File: Sampling.pdf Graphic file (type pdf)
  <use Sampling.pdf>
 Package pdftex.def Info: Sampling.pdf used on input line 280.
 (pdftex.def)             Requested size: 390.25536pt x 241.06781pt.
 
-<ScalesOfVariability.png, id=1557, 957.5775pt x 580.1675pt>
+<ScalesOfVariability.png, id=1562, 957.5775pt x 580.1675pt>
 File: ScalesOfVariability.png Graphic file (type png)
 
 <use ScalesOfVariability.png>
 Package pdftex.def Info: ScalesOfVariability.png used on input line 287.
 (pdftex.def)             Requested size: 411.93768pt x 249.58223pt.
- [14] [15] [16 <./Sampling.pdf>] [17 <./ScalesOfVariability.png>] <MastersFlow.
-png, id=1614, 918.43124pt x 495.8525pt>
+ [15] [16 <./Sampling.pdf>] [17 <./ScalesOfVariability.png>] <MastersFlow.png, 
+id=1614, 918.43124pt x 495.8525pt>
 File: MastersFlow.png Graphic file (type png)
 
 <use MastersFlow.png>
@@ -1030,40 +1023,41 @@ File: map_snowpitlocation_all.jpeg Graphic file (type jpg)
 Package pdftex.def Info: map_snowpitlocation_all.jpeg used on input line 590.
 (pdftex.def)             Requested size: 238.49232pt x 184.85892pt.
  [36] [37 <./map_snowpitlocation_all.jpeg>]
-<photo_snowpit.jpg, id=1757, 4015.0pt x 3011.25pt>
+<photo_snowpit.jpg, id=1759, 4015.0pt x 3011.25pt>
 File: photo_snowpit.jpg Graphic file (type jpg)
  <use photo_snowpit.jpg>
 Package pdftex.def Info: photo_snowpit.jpg used on input line 615.
 (pdftex.def)             Requested size: 411.93768pt x 308.95378pt.
 
-[38] <transect_measure_locations.jpeg, id=1766, 2740.2375pt x 1313.90875pt>
+[38 <./photo_snowpit.jpg>]
+<transect_measure_locations.jpeg, id=1766, 2740.2375pt x 1313.90875pt>
 File: transect_measure_locations.jpeg Graphic file (type jpg)
 
 <use transect_measure_locations.jpeg>
 Package pdftex.def Info: transect_measure_locations.jpeg used on input line 631
 .
 (pdftex.def)             Requested size: 346.89732pt x 166.32324pt.
- [39 <./photo_snowpit.jpg>]
-<Zigzag_calOptions.png, id=1772, 433.62pt x 433.62pt>
+
+<Zigzag_calOptions.png, id=1767, 433.62pt x 433.62pt>
 File: Zigzag_calOptions.png Graphic file (type png)
 
 <use Zigzag_calOptions.png>
 Package pdftex.def Info: Zigzag_calOptions.png used on input line 640.
 (pdftex.def)             Requested size: 216.81pt x 216.80946pt.
- [40 <./transect_measure_locations.jpeg>] [41 <./Zigzag_calOptions.png (PNG cop
-y)>]
+ [39 <./transect_measure_locations.jpeg>] [40 <./Zigzag_calOptions.png (PNG cop
+y)>] [41]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 686.
 
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-[42] <NumObsPerCell.png, id=1799, 880.79062pt x 276.28218pt>
+<NumObsPerCell.png, id=1794, 880.79062pt x 276.28218pt>
 File: NumObsPerCell.png Graphic file (type png)
 
 <use NumObsPerCell.png>
 Package pdftex.def Info: NumObsPerCell.png used on input line 718.
 (pdftex.def)             Requested size: 433.62001pt x 136.01602pt.
- [43] [44 <./NumObsPerCell.png (PNG copy)>]
+ [42] [43 <./NumObsPerCell.png (PNG copy)>] [44]
 Chapter 3.
 [45
 
@@ -1497,7 +1491,7 @@ File: MLRsemiR2_DensityOpts.png Graphic file (type png)
 
 <use MLRsemiR2_DensityOpts.png>
 Package pdftex.def Info: MLRsemiR2_DensityOpts.png used on input line 1643.
-(pdftex.def)             Requested size: 433.62001pt x 185.83763pt.
+(pdftex.def)             Requested size: 511.66843pt x 219.29065pt.
  [97 <./residuals_box_MLR.png (PNG copy)> <./residualsMap_MLR.png (PNG copy)>] 
 [98 <./MLRsemiR2_DensityOpts.png (PNG copy)>]
 <MLRmap_Modelled_Observed8.png, id=2493, 939.51pt x 433.62pt>
@@ -2353,10 +2347,10 @@ Package rerunfilecheck Info: File `THESIS.out' has not changed.
 (rerunfilecheck)             Checksum: EAB35C738E0671CF3E60ABC13C3FDF46;8696.
  ) 
 Here is how much of TeX's memory you used:
- 13012 strings out of 493029
- 200310 string characters out of 6136234
- 320589 words of memory out of 5000000
- 15320 multiletter control sequences out of 15000+600000
+ 13013 strings out of 493029
+ 199087 string characters out of 6136234
+ 320768 words of memory out of 5000000
+ 15328 multiletter control sequences out of 15000+600000
  119602 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,21n,85p,2011b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2378,7 +2372,7 @@ r8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts
 /public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msam10.pfb>
-Output written on THESIS.pdf (228 pages, 50860696 bytes).
+Output written on THESIS.pdf (228 pages, 50818457 bytes).
 PDF statistics:
  4242 PDF objects out of 4296 (max. 8388607)
  3635 compressed objects within 37 object streams
