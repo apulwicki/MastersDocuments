@@ -60,7 +60,7 @@ Snow distribution is spatially variable so properties, such as snow depth, must 
 
 Optimal sampling schemes for snow probing are central to accurately estimating snow distribution and mass balance from \textit{in situ} measurements. Measuring snow depth and travelling between measurement locations is both time consuming and can disturb the snow so care must be taken to choose a sampling scheme that avoids bias, allows for the greatest variability to be measured and minimizes distance travelled \citep{Shea2010}. There are a number of different designs that have been employed to obtain point measurements, including pure random \citep[e.g.][]{Elder1991}, linear random \cite[e.g.][]{Shea2010}, nested \citep[e.g.][]{Schweizer2008}, gridded random \citep[e.g.][]{Bellaire2008, Elder2009, Bellaire2011} and gridded \citep[e.g.][]{Molotch2005a, Kronholm2007, Lopez2011}. Sampling designs that incorporate randomness are favourable because they limit sampling bias by varying sample spacing and direction. However, they are less efficient than sampling designs that incorporate grids. Grid-style sampling designs minimize travel distance but measurements are biased by regularly spaced intervals and linear orientations, which could result in an under representation of the snow variability \citep{Kronholm2007}.
 
-Snow surveys on glaciers are conducted to estimate winter balance and multi-year sampling programs are often established to monitor changes in winter balance with time. An optimized sampling design requires (1) a sampling pattern that captures spatial variability and minimizes travel distance and (2) knowledge of the minimum number of measurement locations needed to accurately estimate WB. There are few studies that investigate the number of measurement locations needed to effectively sample WB distribution \citep[c.f.][]{Fountain1999,Walmsley2015}. The sampling pattern used for most winter balance programs does not included randomness and measurements are typically collected along the glacier midline \citep[e.g.][]{Kaser2003} to capture changes in snow depth due to orographic effects \citep[e.g.][]{Grunewald2014}. However, midline transects are known to underestimate winter balance so transverse transects are often added to improve the reliability of the sampling scheme \citep[e.g.][]{Walmsley2015}. An hourglass with inscribed circle (personal communication from C. Parr, 2016) is an alternative sampling design that is attractive because it is able to capture changes in WB with elevation but is not biased along the midline and is easy to travel. To our knowledge, no study has yet compared the ability of these sampling designs to capture spatial variability in WB.  
+Snow surveys on glaciers are conducted to estimate winter balance and multi-year sampling programs are often established to monitor changes in winter balance with time. Optimization of sampling design is rarely investigated because the locations of snow depth measurements are often dictated by field resources. An optimized sampling design requires (1) a sampling pattern that captures spatial variability and minimizes travel distance and (2) knowledge of the minimum number of measurement locations needed to accurately estimate WB. There are few studies that investigate the number of measurement locations needed to effectively sample WB distribution \citep[c.f.][]{Fountain1999,Walmsley2015}. The sampling pattern used for most winter balance programs does not included randomness and measurements are typically collected along the glacier midline \citep[e.g.][]{Kaser2003} to capture changes in snow depth due to orographic effects \citep[e.g.][]{Grunewald2014}. However, midline transects are known to underestimate winter balance so transverse transects are often added to improve the reliability of the sampling scheme \citep[e.g.][]{Walmsley2015}. An hourglass with inscribed circle (personal communication from C. Parr, 2016) is an alternative sampling design that is attractive because it is able to capture changes in WB with elevation but is not biased along the midline and is easy to travel. To our knowledge, no study has yet compared the ability of these sampling designs to capture spatial variability in WB.  
 
 The goal of our work is to provide insight into ways to optimize WB sampling design by investigating various sampling patterns and number of measurement locations. We use both a computer model and observational data to examine the effect of sampling design on estimates of glacier-wide WB for three alpine glaciers. The computer model allows for exact comparison between validation- and estimated WB. To obtain estimated WB using the computer model, we sample a validation WB distribution, which is derived from direct measurements of snow depth and density, using various sampling designs. The role of sub-gridcell variability in choosing a sampling design is investigated by varying the noise introduced into the assumed WB distribution. A linear regression of sampled WB on topographic parameters is then used to estimate distributed WB. WB is also estimated using the same process as above but using subsets of observational WB that are based on various sampling designs. We use observational data to examine changes in estimated WB that could occur when optimizing a snow survey design. We examine three study glaciers with differing spatial patterns of WB to determine the applicability of our conclusions between glaciers. 
 
@@ -70,7 +70,7 @@ The goal of our work is to provide insight into ways to optimize WB sampling des
 \begin{figure*}
 	\centering
 	\includegraphics[width =\textwidth]{PaperII-StudySite.pdf}\\
-	\caption{Study area location and sampling design for Glaciers 4, 2 and 13. (Left) Study region in the Donjek Range of the St. Elias Mountains of Yukon, Canada (inset). Imagery from Landsat8 (29 August 2013, data available from the U.S. Geological Survey). (Right) Details of the snow-survey sampling design, with centreline and transverse transects (blue dots), hourglass and circle designs (orange dots) and locations of snow density measurements (green squares). Arrows indicate ice-flow directions. Approximate location of ELA on each glacier is shown as a black dashed line. Control lines in increments of 50\,m are shown in grey.}
+	\caption{Study area location and sampling design for Glaciers 4, 2 and 13. (Left) Study region in the Donjek Range of the St. Elias Mountains of Yukon, Canada (inset). Imagery from Landsat8 (29 August 2013, data available from the U.S. Geological Survey). (Right) Details of the snow-survey sampling design, with centreline and transverse transects (blue dots), hourglass and circle designs (orange dots) and locations of snow density measurements (green squares). Arrows indicate ice-flow directions. Approximate location of ELA on each glacier is shown as a black dashed line. Contour lines in increments of 50\,m are shown in grey.}
 	\label{fig:Sampling}
 \end{figure*}
 
@@ -89,104 +89,120 @@ Glacier 4, Glacier 2 and Glacier 13 (labelling adopted from \cite{Crompton2016})
         \centering
         \begin{subfigure}[b]{0.475\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_centreline.png}
+            \includegraphics[width=\textwidth]{SampleDesign_Centreline.pdf}
             \caption[]{}    
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
-            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_trans.png}
+            \includegraphics[width=\textwidth]{SampleDesign_CentreTransect.pdf}
              \caption[]{}    
         \end{subfigure}
         \vskip\baselineskip
  \begin{subfigure}[b]{0.475\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_circle.png}
+            \includegraphics[width=\textwidth]{SampleDesign_Circle.pdf}
             \caption[]{}    
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
-            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_hourglass.png}
+            \includegraphics[width=\textwidth]{SampleDesign_Hourglass.pdf}
              \caption[]{}    
         \end{subfigure}
         \vskip\baselineskip
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_hourCircle.png}
+            \includegraphics[width=\textwidth]{SampleDesign_HourCircle.pdf}
              \caption[]{}    
         \end{subfigure}
         \quad
         \begin{subfigure}[b]{0.475\textwidth}   
             \centering 
-            \includegraphics[width=\textwidth]{/Users/Alexandra/Documents/SFU/Data/Plots/SampleDesign_random.png}
+            \includegraphics[width=\textwidth]{SampleDesign_RandomSafe.pdf}
             \caption[]{}    
         \end{subfigure}
-        \caption{Synthetic sampling designs on three study glacier. (a) Midline. (b) Midline and transverse. (c) Circle. (d) Hourglass. (e) Hourglass and circle. (f) Random across entire glacier. All synthetic observation measurement locations (small, black dots) and a subset including 20 measurement locations (open circles) is shown for each sampling pattern. Sampling designs are overlain on the prescribed winter balance (WB). } 
+        \caption{Synthetic sampling designs on three study glacier. (a) Midline. (b) Midline and transverse. (c) Circle. (d) Hourglass. (e) Hourglass and circle. (f) Random. All synthetic observation measurement locations (small, black dots) and a subset including 15 measurement locations (open circles) is shown for each sampling pattern. Sampling designs are overlain on the prescribed winter balance (WB). } 
         \label{fig:SyntheticSampleDesign}
     \end{figure*}
 
 
 \section{Methods}
 
-We aim to determine the optimal sampling pattern and number of measurement locations to obtain accurate estimates of WB for small alpine glaciers by comparing estimated WB found using various sampling designs to validation WB. We estimate distributed WB using both sythestic- and direct-observations of gridcell-scale WB. First, we describe how WB data was collected in the field and interpolated/extrapolated to obtain validation WB on the three study glaciers. Then, we detail the process of obtaining synthetic observations and describe the various sampling patterns and number of measurement locations investigated in this study. A comparison of validation WB and WB estimated using different sampling designs with synthetic observations is presented. We then investigate the affect of various sampling designs with direct observations on estimated WB.
-
-%Questions?
-%- optimal sampling size?
-%- best sampling pattern?
-%- spread of WB estimates and RMSE with noise
-%- grid scale variability (i.e. high/low noise) matters?
-%- different for each glacier? captures dominant topographic parameter for each glacier?
+We aim to determine the optimal sampling pattern and number of measurement locations to obtain accurate estimates of WB for small alpine glaciers by comparing estimated WB found using various sampling designs to validation values of WB. We estimate distributed WB using both synthetic- and real values of gridcell-scale WB. First, we describe the process of collecting WB data in the field and interpolating/extrapolating to obtain validation WB on the three study glaciers. Then, we detail the methods used to obtain synthetic data and describe the various sampling patterns and number of measurement locations investigated in this study. A comparison of validation WB and WB estimated using different sampling designs with synthetic data is presented. We then used real data to investigate the effect of various sampling designs on the error associated with estimating gridcell-scale values of WB.
 
 \subsection{Validation WB}
 
-Point-scale values of WB are found by obtaining direct measurement of snow depth and density. Snow depth was measured using a 3.2\,m graduated aluminium avalanche probe. Measurement locations followed linear and curvilinear transects, which were similar between study glaciers, with a sample spacing of 10--60\,m.  Spacing was constrained by protocols for safe glacier travel. Each observer made 3--4 depth measurements within $\sim$1\,m at each transect measurement location. We restricted snow-depth sampling to the ablation area, where the clear distinction between snow and ice ensure that only snow from the current accumulation season is measured. In total, we collected more than 9000 snow-depth measurements throughout the study area. Snow density was measured using a wedge cutter in three snow pits that spanned a large portion of the elevation on each glacier. A mean density was then calculated for each glacier and this value was used to convert snow depth at all measurement locations to values of point-scale WB. Mean density was 348$\pm$13\,kg\,m$^{-3}$ on Glacier 4, 333$\pm$26\,kg\,m$^{-3}$ on Glacier 2 and 349$\pm$38\,kg\,m$^{-3}$ on Glacier 13. All point-scale values of WB located within a common DEM gridcell ($40\times40$\,m) are averaged to obtain values of gridcell-scale WB. 
+Point-scale values of WB are found by obtaining direct measurements of snow depth and density (Figure \ref{fig:Sampling}). Snow depth was measured using a 3.2\,m graduated aluminium avalanche probe. Measurement locations followed linear and curvilinear transects, which were similar between study glaciers, with a sample spacing of 10--60\,m.  Spacing was constrained by protocols for safe glacier travel. Each observer made 3--4 depth measurements within $\sim$1\,m at each transect measurement location. We restricted snow-depth sampling to the ablation area, where the clear distinction between snow and ice ensured that only snow from the current accumulation season was measured. In total, we collected more than 9000 snow-depth measurements throughout the study area. Snow density was measured using a wedge cutter in three snow pits that spanned a large portion of the elevation on each glacier. A mean density was then calculated for each glacier and this value was used to convert snow depth at all measurement locations to values of point-scale WB. Mean density was 348$\pm$13\,kg\,m$^{-3}$ on Glacier 4, 333$\pm$26\,kg\,m$^{-3}$ on Glacier 2 and 349$\pm$38\,kg\,m$^{-3}$ on Glacier 13. All point-scale values of WB located within a common DEM gridcell ($40\times40$\,m) were averaged to obtain values of gridcell-scale WB. 
 
-Validation WB is estimated using a linear regression between all gridcell-scale values of WB and topographic parameters on each glacier \citep{Pulwicki2017}. Topographic parameters are derived from a SPIRIT SPOT-5 DEM \citep{Korona2009} and include commonly applied topographic parameters \citep[e.g.][]{McGrath2015} such as elevation, slope, aspect, distance from glacier centreline, ``northness'', curvature and a wind redistribution parameter. A linear regression, along with cross-validation and model averaging, is used to obtain a set of regression coefficients for the standardized topographic parameters \citep{Pulwicki2017} on each glacier. Distributed WB is found by multiplying fitted regression coefficients by corresponding topographic parameters for each gridcell. The distributed WB calculated using all available WB data is hereafter referred to as the validation WB.
+Validation WB is estimated using a linear regression between all gridcell-scale values of WB and topographic parameters on each glacier \citep{Pulwicki2017}. Topographic parameters are derived from a SPIRIT SPOT-5 DEM \citep{Korona2009} and include commonly applied topographic parameters \citep[e.g.][]{McGrath2015} such as elevation, slope, aspect, distance from glacier centreline, ``northness'', curvature and a wind redistribution parameter. A linear regression, along with cross-validation and model averaging, is used to obtain a set of regression coefficients for the standardized topographic parameters on each glacier \citep{Pulwicki2017}. Distributed WB is found by multiplying fitted regression coefficients by corresponding topographic parameters for each gridcell. The distributed WB calculated using all available WB data is hereafter referred to as the validation WB.
 
-\subsection{Synthetic observations}
+\subsection{Synthetic data}
 
-We obtain synthetic observations using various sampling designs from the validation WB to test which sampling design best estimates WB. Gridcell values of WB that fall within each sampling design are extracted from the validation WB distribution and then used to estimate a new WB distribution. The WB distribution derived from various sampling designs is directly compared to the validation WB distribution to estimate spatially resolved error. 
+We obtain synthetic data using various sampling designs from the validation WB to test which sampling design best estimates WB. Gridcell values of WB that fall within each sampling design are extracted from the validation WB distribution and then used to estimate a new WB distribution. The WB distribution derived from various sampling designs is directly compared to the validation WB distribution to estimate spatially resolved error. 
 
-To simulate the process of measuring WB, we first obtain WB values from the validation WB distribution at selected measurement locations for each sampling pattern (Figure \ref{fig:SyntheticSampleDesign}). Then, we add a low or high amount of noise to the WB data. Low noise is defined by a normal distribution that is centred at zero and has a standard deviation equal to the mean standard deviation of WB data from a series of high-density gridcell-scale surveys on each glacier \citep[see][for details]{Pulwicki2017}. High noise is defined in the same way as low noise but the standard deviation of the normal distribution is five times larger. The standard deviation of low noise is $\sim$5\% of the glacier-wide WB, while high noise is $\sim$25\% of the glacier-wide WB. For each gridcell value of WB, a random number from the high or low noise distribution is added to obtain a synthetic observation of WB.
+To simulate the process of measuring WB, we first obtain WB values from the validation WB distribution at selected measurement locations for each sampling pattern (Figure \ref{fig:SyntheticSampleDesign}). Then, we add a low or high amount of noise to the WB data. Low noise is defined by a normal distribution that is centred at zero and has a standard deviation equal to the mean standard deviation of WB data from a series of high-density gridcell-scale surveys on each glacier \citep[see][for details]{Pulwicki2017}. High noise is defined in the same way as low noise but the standard deviation of the normal distribution is three times larger, which is approximately equal to the standard deviation of the WB probability distribution that accounts for uncertainity due in grid-sclae WB, density assignmenet, and interpolation for the three study glaciers \citep{Pulwicki2017}. For each gridcell value of WB, a random number from the high or low noise distribution is added to obtain a synthetic observation of WB.
 
 A linear regression is then used to interpolate the synthetic values of WB for each glacier. Synthetic WB is regressed on the seven topographic parameters described above. The linear regression calculates regression coefficients that minimize the sum of squares of the vertical deviations of each datum from the regression line \citep{Davis1986}. To allow for small sample sizes ($<$40 measurement locations), cross correlation and model averaging are not used for this linear regression. The resulting regression coefficients are then applied to the topographic parameters associated with each gridcell to obtain an estimate of distributed WB. RMSE is calculated by taking the square root of the mean difference between all gridcells in the validation WB distribution and the WB distribution derived with the sampling design.
 
 The process of adding random noise to gridcell-scale values of WB to obtain synthetic observations and fitting a regression to then estimate distributed WB is repeated 100 times to create a population of possible WB estimates. Each repetition uses a different set of random noise resulting in a range of WB and RMSE values. A mean WB and RMSE from all runs is then calculated. 
 
-We investigate numerous sampling designs that are unique combinations of six different sampling patterns and the number of measurement locations (Figure 2). All sampling patterns are restricted to the ablation area, where terrain is accessible and direct measurements of snow depth are easy to obtain. Midline (M) and midline with transverse transects (M+T) are the most common survey designs used in WB studies \citep[e.g.][]{Kaser2002,Machguth2006}. The midline survey aims to capture changes in WB with elevation and transverse transects provide observation of lateral variations in WB. Hourglass (H) and inscribed circle (C) allow for sampling in multiple directions and are easy to travel (personal communication from C. Parr, 2016). We use hourglass and circle patterns separately and combined. Finally, a random pattern (R) of measurement locations is obtained by selecting random gridcells within the ablation area for synthetic observations. For comparison, we also use a random pattern that spans the entire glacier, which is known to be the most representative sampling pattern for spatial variables (ref?). For all sampling patterns we estimate WB using $n$ measurement locations, where $n$ ranges from a minimum of eight (constrained by using all seven topographic parameters for interpolation) to a maximum determined by the number of gridcells within a sampling pattern. The measurement locations are evenly distributed within the sampling pattern. 
+We investigate numerous sampling designs that are unique combinations of six different sampling patterns and the number of measurement locations (Figure 2). All sampling patterns are restricted to the ablation area, where terrain is accessible and direct measurements of snow depth are easy to obtain. Midline (M) and midline with transverse transects (M+T) are the most common survey designs used in WB studies \citep[e.g.][]{Kaser2002,Machguth2006}. The midline survey aims to capture changes in WB with elevation and transverse transects provide observation of lateral variations in WB. Hourglass (H) and inscribed circle (C) allow for sampling in multiple directions and are easy to travel (personal communication from C. Parr, 2016). We use hourglass and circle patterns separately and combined. Finally, a random pattern (R) of measurement locations is obtained by selecting random gridcells within the sampling area designed by the perious dsampling designs for synthetic observations. For all sampling patterns we estimate WB using $n$ measurement locations, where $n$ ranges from a minimum of eight (constrained by using all seven topographic parameters for interpolation) to a maximum determined by the number of gridcells within a sampling pattern. The measurement locations are evenly distributed within the sampling pattern. 
 
 \subsection{Direct observations}
 
 The process of estimating distributed WB using various sampling designs is then applied to direct observations of WB. Sampling designs are derived from all measurement locations for each study glacier (Figure \ref{fig:Sampling}). As above, midline, midline with transects, circle, hourglass, circle with hourglass and random sampling patterns are used. Values of $n$ from eight to the maximum number of observation with each sampling pattern are investigated. One hundred iterations of adding random noise, both low and high, and then executing a linear regression to estimate distributed WB are completed, as above. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  RESULTS AND DISCUSSION
+%%  RESULTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Results and Discussion}
+\section{Results }
 
-%FIGURES & TABLES
-%Fig 1. Study site and assumed WB distribution
-%Fig 2. Sampling patterns
-%Fig 3. Computer model results  
-%	a) Line plot of WB vs n for all sampling (light coloured and thin) and mean WB (dark coloured and thick) for each glacier
-%	b) Same as above but RMSE vs n 
-%Fig 4. Map of mean (or max?) RMSE for each G (high/low noise) (best/worst pattern)
-%
-%Fig ?. Stability of subset sampling -> box plot of RMSE from each pattern (which n?)
-%
-%Table 1. Assumed WB values and high/low noise std.
-%
-%
-%- which is further to travel, hourglass or midline + transects?
-%
-%
-%Questions?
-%- optimal sampling size?
-%- best sampling pattern?
-%- spread of WB estimates and RMSE with noise
-%- grid scale variability (i.e. high/low noise) matters?
-%- different for each glacier? captures dominant topographic parameter for each glacier?
+\subsection{Synthetic data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}
+	\centering
+	\includegraphics[width =\textwidth]{SyntheticObsWB.pdf}\\
+	\caption{Glacier-wide winter balance (WB) estimated with various sampling designs for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). Sampling patterns are shown in columns. Insets show an example of a sampling design corresponding to the panel. Mean WB from 100 runs of a linear regression of synthetic WB on topographic parameters for various patterns and sample sizes (solid coloured line) with second-order exponential fit (solid black line). Standard deviation in glacier-wide WB due to low noise (dark shading) and high noise (light shading). Glacier-wide WB of validation data (black dashed line). Sample size when fitted mean is within 10\% of true mean (black dotted line) and 5\% of true mean (black dotted-dashed line).}
+	\label{fig:SyntheticObsWB}
+\end{figure*}
+
+Pattern
+P1 MT and H are best -> smallest std and quickly approch true WB, smallest travel dist
+P2 R also good but is more strongly affected by uncertainty
+     HC not better than H
+     Both have further distance to travel
+P3 midline worst, circle also bad -> high std and poor estimator of WB
+P4 Glaciers -> general trends are the same, converges most quickly for G4 because the regression explains little of the variance, G13 longest to converge
+P5 sample size -> low n results in over estimate of WB, n = 20 generally suffices with no marked increase after that
+
+\begin{table*}[]
+\centering
+\caption{Minimum travel distance (km) required to fulfil each sampling pattern. Distance for random design ($n=40$) is the sum of distances between closest measurement locations and a range is provided for an array of different random locations.}
+\label{tab:DistanceTravelled}
+\begin{tabular}{ccccccc}
+\midrule
+ & \textbf{Midline} & \textbf{\begin{tabular}[c]{@{}c@{}}Midline \&\\ Transect\end{tabular}} & \textbf{Circle} & \textbf{Hourglass} & \textbf{\begin{tabular}[c]{@{}c@{}}Hourglass\\ \& Circle\end{tabular}} & \textbf{Random} \\ \midrule
+\textbf{Glacier 4} & 6.3 & 8.3 & 4.8 & 6.9 & 11.1 & 5.5--10.2 \\
+\textbf{Glacier 2} & 4.3 & 8.6 & 5.7 & 8.4 & 12.5 & 6.6--11.8 \\
+\textbf{Glacier 13} & 8.0 & 11.0 & 7.0 & 10.6 & 16.8 & 8.3--14.2
+\end{tabular}
+\end{table*}
+
+\begin{figure*}
+	\centering
+	\includegraphics[width =\textwidth]{SynObsRMSEmap.pdf}\\
+	\caption{Root-mean-squared-error (RMSE) between validation WB and WB estimated with various sample patterns ($n=40$) for 100 runs of high noise linear regression. Sampling patterns are shown in columns for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). RMSE for the entire glacier is displayed. Synthetic sampling locations are shown (black dots).}
+	\label{fig:SyntheticObsWB}
+\end{figure*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DISCUSSION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONCLUSION

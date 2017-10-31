@@ -1,8 +1,15 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citename{Arendt and others, }2008]{Arendt2008}
+Arendt AA, Luthcke SB, Larsen CF, Abdalati W, Krabill WB and Beedle MJ (2008)
+  {Validation of high-resolution {GRACE} mascon estimates of glacier mass
+  changes in the {St Elias Mountains, Alaska, USA}, using aircraft laser
+  altimetry}. \emph{Journal of Glaciology}, \textbf{54}(188), 778--787 (\doi
+  {10.3189/002214308787780067})
 
 \bibitem[\protect\citename{Bellaire and Schweizer, }2008]{Bellaire2008}
 Bellaire S and Schweizer J (2008) {Deriving spatial stability variations from
@@ -14,6 +21,15 @@ Bellaire S and Schweizer J (2011) {Measuring spatial variations of weak layer
   Science and Technology}, \textbf{65}(2), 234--241 (\doi
   {10.1016/j.coldregions.2010.08.013})
 
+\bibitem[\protect\citename{Burgess and others, }2013]{Burgess2013}
+Burgess EW, Forster RR and Larsen CF (2013) {Flow velocities of {A}laskan
+  glaciers}. \emph{Nature communications}, \textbf{4}, 2146--2154 (\doi
+  {10.1038/ncomms3146})
+
+\bibitem[\protect\citename{Clarke, }2014]{Clarke2014}
+Clarke GK (2014) {A short and somewhat personal history of {Y}ukon glacier
+  studies in the {Twentieth Century}}. \emph{Arctic}, \textbf{37}(1), 1--21
+
 \bibitem[\protect\citename{Cogley and others, }2011]{Cogley2011}
 Cogley J, Hock R, Rasmussen L, Arendt A, Bauder A, Braithwaite R, Jansson P,
   Kaser G, M{\"o}ller M, Nicholson L and others (2011) \emph{{Glossary of
@@ -23,6 +39,16 @@ Cogley J, Hock R, Rasmussen L, Arendt A, Bauder A, Braithwaite R, Jansson P,
 Crompton JW and Flowers GE (2016) {Correlations of suspended sediment size with
   bedrock lithology and glacier dynamics}. \emph{Annals of Glaciology},
   \textbf{57}(72), 1--9 (\doi {10.1017/aog.2016.6})
+
+\bibitem[\protect\citename{Danby and others, }2003]{Danby2003}
+Danby RK, Hik DS, Slocombe DS and Williams A (2003) {Science and the {St.
+  Elias}: an evolving framework for sustainability in {North America's} highest
+  mountains}. \emph{The Geographical Journal}, \textbf{169}(3), 191--204 (\doi
+  {10.1111/1475-4959.00084})
+
+\bibitem[\protect\citename{Davis and Sampson, }1986]{Davis1986}
+Davis JC and Sampson RJ (1986) \emph{{Statistics and data analysis in
+  geology}}. Wiley New York et al., 2nd edition
 
 \bibitem[\protect\citename{Elder and others, }1991]{Elder1991}
 Elder K, Dozier J and Michaelsen J (1991) {Snow accumulation and distribution
@@ -40,15 +66,37 @@ Fountain AG and Vecchia A (1999) How many stakes are required to measure the
   mass balance of a glacier? \emph{Geografiska Annaler: Series A, Physical
   Geography}, \textbf{81}(4), 563--573 (\doi {10.1111/1468-0459.00084})
 
+\bibitem[\protect\citename{Gr{\"u}newald and others, }2014]{Grunewald2014}
+Gr{\"u}newald T, B{\"u}hler Y and Lehning M (2014) {Elevation dependency of
+  mountain snow depth}. \emph{The Cryosphere}, \textbf{8}(6), 2381--2394 (\doi
+  {10.5194/tc-8-2381-2014})
+
 \bibitem[\protect\citename{Hock, }2005]{Hock2005}
 Hock R (2005) {Glacier melt: a review of processes and their modelling}.
   \emph{Progress in Physical Geography}, \textbf{29}(3), 362--391 (\doi
   {10.1191/0309133305pp453ra})
 
-\bibitem[\protect\citename{Kronholm and others, }2004]{Kronholm2004}
-Kronholm K, Schneebeli M and Schweizer J (2004) {Spatial variability of
-  micropenetration resistance in snow layers on a small slope}. \emph{Annals of
-  Glaciology}, \textbf{38}(1), 202--208 (\doi {10.3189/172756404781815257})
+\bibitem[\protect\citename{Kaser and others, }2002]{Kaser2003}
+Kaser G, Fountain A, Jansson P and others (2002) \emph{{A manual for monitoring
+  the mass balance of mountain glaciers}}. {IHP-VI- Technical documents in
+  hydrology}
+
+\bibitem[\protect\citename{Kinar and Pomeroy, }2015]{Kinar2015}
+Kinar N and Pomeroy J (2015) Measurement of the physical properties of the
+  snowpack. \emph{Reviews of Geophysics}, \textbf{53}(2), 481--544 (\doi
+  {10.1002/2015RG000481})
+
+\bibitem[\protect\citename{Korona and others, }2009]{Korona2009}
+Korona J, Berthier E, Bernard M, R{\'e}my F and Thouvenot E (2009) {{SPIRIT
+  SPOT} 5 stereoscopic survey of {P}olar {I}ce: {R}eference images and
+  topographies during the fourth {International Polar Year} (2007--2009)}.
+  \emph{ISPRS Journal of Photogrammetry and Remote Sensing}, \textbf{64}(2),
+  204--212 (\doi {10.1016/j.isprsjprs.2008.10.005})
+
+\bibitem[\protect\citename{Kronholm and Birkeland, }2007]{Kronholm2007}
+Kronholm K and Birkeland KW (2007) {Reliability of sampling designs for spatial
+  snow surveys}. \emph{Computers \& geosciences}, \textbf{33}(9), 1097--1110
+  (\doi {10.1016/j.cageo.2006.10.004})
 
 \bibitem[\protect\citename{L{\'o}pez-Moreno and others, }2011]{Lopez2011}
 L{\'o}pez-Moreno JI, Fassnacht S, Beguer{\'\i}a S and Latron J (2011)
@@ -61,6 +109,12 @@ Machguth H, Eisen O, Paul F and Hoelzle M (2006) {Strong spatial variability of
   snow accumulation observed with helicopter-borne {GPR} on two adjacent alpine
   glaciers}. \emph{Geophysical Research Letters}, \textbf{33}(13), 1--5 (\doi
   {10.1029/2006GL026576})
+
+\bibitem[\protect\citename{McGrath and others, }2015]{McGrath2015}
+McGrath D, Sass L, O'Neel S, Arendt A, Wolken G, Gusmeroli A, Kienholz C and
+  McNeil C (2015) {End-of-winter snow depth variability on glaciers in
+  {A}laska}. \emph{Journal of Geophysical Research: Earth Surface},
+  \textbf{120}(8), 1530--1550 (\doi {10.1002/2015JF003539})
 
 \bibitem[\protect\citename{Molotch and Bales, }2005]{Molotch2005a}
 Molotch NP and Bales RC (2005) {Scaling snow observations from the point to the
@@ -88,8 +142,29 @@ Shea C and Jamieson B (2010) {Star: an efficient snow point-sampling method}.
   \emph{Annals of Glaciology}, \textbf{51}(54), 64--72 (\doi
   {10.3189/172756410791386463})
 
+\bibitem[\protect\citename{Waechter and others, }2015]{Waechter2015}
+Waechter A, Copland L and Herdes E (2015) {Modern glacier velocities across the
+  Icefield Ranges, St Elias Mountains, and variability at selected glaciers
+  from 1959 to 2012}. \emph{Journal of Glaciology}, \textbf{61}(228), 624--634
+  (\doi {10.3189/2015JoG14J147})
+
 \bibitem[\protect\citename{Walmsley, }2015]{Walmsley2015}
 Walmsley APU (2015) \emph{{Long-term observations of snow spatial distributions
   at {H}ellstugubreen and {G}r{\aa}subreen, {N}orway}}. Master's thesis
+
+\bibitem[\protect\citename{Wilson and Flowers, }2013]{Wilson2013a}
+Wilson N and Flowers G (2013) {Environmental controls on the thermal structure
+  of alpine glaciers}. \emph{The Cryosphere}, \textbf{7}(1), 167--182 (\doi
+  {10.5194/tc-7-167-2013})
+
+\bibitem[\protect\citename{Wilson and others, }2013]{Wilson2013}
+Wilson NJ, Flowers GE and Mingo L (2013) {Comparison of thermal structure and
+  evolution between neighboring subarctic glaciers}. \emph{Journal of
+  Geophysical Research: Earth Surface}, \textbf{118}(3), 1443--1459 (\doi
+  {10.1002/jgrf.20096})
+
+\bibitem[\protect\citename{Wood, }1948]{Wood1948}
+Wood WA (1948) {Project {``Snow Cornice"}: the establishment of the {Seward
+  Glacial} research station}. \emph{Arctic}, \textbf{1}(2), 107--112
 
 \end{thebibliography}
