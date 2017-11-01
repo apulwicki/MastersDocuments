@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  30 OCT 2017 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  31 OCT 2017 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -276,11 +276,7 @@ Package caption Info: wrapfig package is loaded.
 )
 \c@subfigure=\count110
 \c@subtable=\count111
-) (./SamplingDesign.aux
-
-LaTeX Warning: Label `fig:SyntheticObsWB' multiply defined.
-
-)
+) (./SamplingDesign.aux)
 \openout1 = `SamplingDesign.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -420,17 +416,24 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 50.
 
-Underfull \hbox (badness 2469) in paragraph at lines 57--58
+<PaperII-StudySite.pdf, id=1, 667.49374pt x 279.0425pt>
+File: PaperII-StudySite.pdf Graphic file (type pdf)
+
+<use PaperII-StudySite.pdf>
+Package pdftex.def Info: PaperII-StudySite.pdf used on input line 59.
+(pdftex.def)             Requested size: 506.45905pt x 211.72961pt.
+
+Underfull \hbox (badness 2469) in paragraph at lines 64--65
 \OT1/lmr/m/n/9.5 critical for monitoring glacier mass balance and for
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 59--60
+Underfull \hbox (badness 1242) in paragraph at lines 66--67
 \OT1/lmr/m/n/9.5 obtain. Snow surveys must therefore be optimized in
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 61--62
+Underfull \hbox (badness 1609) in paragraph at lines 68--69
 \OT1/lmr/m/n/9.5 could result in an under representation of the snow
  []
 
@@ -447,134 +450,165 @@ Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
 
 ]
-<PaperII-StudySite.pdf, id=14, 667.49374pt x 279.0425pt>
-File: PaperII-StudySite.pdf Graphic file (type pdf)
-
-<use PaperII-StudySite.pdf>
-Package pdftex.def Info: PaperII-StudySite.pdf used on input line 72.
-(pdftex.def)             Requested size: 506.45905pt x 211.72961pt.
-
-Underfull \hbox (badness 1117) in paragraph at lines 81--82
+Underfull \hbox (badness 1117) in paragraph at lines 83--84
 \OT1/lmr/m/n/9.5 from Crompton and Flowers (2016)) are small alpine
  []
 
-<SampleDesign_Centreline.pdf, id=15, 244.915pt x 244.915pt>
-File: SampleDesign_Centreline.pdf Graphic file (type pdf)
+<SamplingDesignAll.pdf, id=15, 546.04pt x 596.2275pt>
+File: SamplingDesignAll.pdf Graphic file (type pdf)
 
-<use SampleDesign_Centreline.pdf>
-Package pdftex.def Info: SampleDesign_Centreline.pdf used on input line 92.
-(pdftex.def)             Requested size: 240.57114pt x 240.5756pt.
+<use SamplingDesignAll.pdf>
+Package pdftex.def Info: SamplingDesignAll.pdf used on input line 91.
+(pdftex.def)             Requested size: 506.45905pt x 553.01202pt.
 
-<SampleDesign_CentreTransect.pdf, id=16, 244.915pt x 244.915pt>
-File: SampleDesign_CentreTransect.pdf Graphic file (type pdf)
-
-<use SampleDesign_CentreTransect.pdf>
-Package pdftex.def Info: SampleDesign_CentreTransect.pdf used on input line 98.
-
-(pdftex.def)             Requested size: 240.57114pt x 240.5756pt.
-
-<SampleDesign_Circle.pdf, id=17, 244.915pt x 244.915pt>
-File: SampleDesign_Circle.pdf Graphic file (type pdf)
-
-<use SampleDesign_Circle.pdf>
-Package pdftex.def Info: SampleDesign_Circle.pdf used on input line 104.
-(pdftex.def)             Requested size: 240.57114pt x 240.5756pt.
-
-<SampleDesign_Hourglass.pdf, id=18, 244.915pt x 244.915pt>
-File: SampleDesign_Hourglass.pdf Graphic file (type pdf)
-
-<use SampleDesign_Hourglass.pdf>
-Package pdftex.def Info: SampleDesign_Hourglass.pdf used on input line 110.
-(pdftex.def)             Requested size: 240.57114pt x 240.5756pt.
-
-<SampleDesign_HourCircle.pdf, id=19, 244.915pt x 244.915pt>
-File: SampleDesign_HourCircle.pdf Graphic file (type pdf)
-
-<use SampleDesign_HourCircle.pdf>
-Package pdftex.def Info: SampleDesign_HourCircle.pdf used on input line 116.
-(pdftex.def)             Requested size: 240.57114pt x 240.5756pt.
-
-<SampleDesign_RandomSafe.pdf, id=20, 244.915pt x 244.915pt>
-File: SampleDesign_RandomSafe.pdf Graphic file (type pdf)
-
-<use SampleDesign_RandomSafe.pdf>
-Package pdftex.def Info: SampleDesign_RandomSafe.pdf used on input line 122.
-(pdftex.def)             Requested size: 240.57114pt x 240.5756pt.
+<SyntheticObsWB.pdf, id=16, 506.89375pt x 341.275pt>
+File: SyntheticObsWB.pdf Graphic file (type pdf)
+ <use SyntheticObsWB.pdf>
+Package pdftex.def Info: SyntheticObsWB.pdf used on input line 98.
+(pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
 
 
-LaTeX Warning: Float too large for page by 159.2268pt on input line 127.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 103.
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 107.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 107.
+<SynObsRMSEmap.pdf, id=17, 763.85374pt x 514.92375pt>
+File: SynObsRMSEmap.pdf Graphic file (type pdf)
+ <use SynObsRMSEmap.pdf>
+Package pdftex.def Info: SynObsRMSEmap.pdf used on input line 118.
+(pdftex.def)             Requested size: 506.45905pt x 341.40642pt.
 
-Underfull \hbox (badness 1924) in paragraph at lines 132--133
+<DataObsWB.pdf, id=18, 506.89375pt x 341.275pt>
+File: DataObsWB.pdf Graphic file (type pdf)
+ <use DataObsWB.pdf>
+Package pdftex.def Info: DataObsWB.pdf used on input line 125.
+(pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
+
+Underfull \hbox (badness 1924) in paragraph at lines 136--137
 \OT1/lmr/m/n/9.5 number of measurement locations to obtain accurate
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 136--137
+Underfull \hbox (badness 1275) in paragraph at lines 140--141
 \OT1/lmr/m/n/9.5 and curvilinear transects, which were similar between
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 136--137
+Underfull \hbox (badness 1694) in paragraph at lines 140--141
 \OT1/lmr/m/n/9.5 between snow and ice ensured that only snow from
  []
 
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [2]
-Underfull \hbox (badness 1199) in paragraph at lines 146--147
+ [2 <./PaperII-StudySite.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [3 <./SamplingDesignAll.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [4 <./SyntheticObsWB.pdf>]
+Underfull \hbox (badness 1199) in paragraph at lines 150--151
 []\OT1/lmr/m/n/9.5 A lin-ear re-gres-sion is then used to in-ter-po-late the
  []
 
 
-Package natbib Warning: Citation `Kaser2002' on page 3 undefined on input line 
-150.
+Package natbib Warning: Citation `Kaser2002' on page 5 undefined on input line 
+154.
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 150--151
+Underfull \hbox (badness 1314) in paragraph at lines 154--155
 []\OT1/lmr/m/n/9.5 We investigate numerous sampling designs that are
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 150--151
-\OT1/lmr/m/n/9.5 the sampling area designed by the perious dsampling
+Underfull \hbox (badness 1184) in paragraph at lines 154--155
+\OT1/lmr/m/n/9.5 using $\OML/lmm/m/it/9.5 n$ \OT1/lmr/m/n/9.5 measurement locat
+ions, where $\OML/lmm/m/it/9.5 n$ \OT1/lmr/m/n/9.5 ranges from
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 154--155
+\OT1/lmr/m/n/9.5 a minimum of eight (constrained by using all seven
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<SyntheticObsWB.pdf, id=27, 506.89375pt x 341.275pt>
-File: SyntheticObsWB.pdf Graphic file (type pdf)
- <use SyntheticObsWB.pdf>
-Package pdftex.def Info: SyntheticObsWB.pdf used on input line 165.
-(pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
+Underfull \hbox (badness 1189) in paragraph at lines 167--168
+\OT1/lmr/m/n/9.5 Based on synthetic data, the most effective sampling
+ []
+
+
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [5]
+Underfull \hbox (badness 1622) in paragraph at lines 190--191
+\OT1/lmr/m/n/9.5 of WB estimated and does not decrease error. This
+ []
+
+
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [6 <./SynObsRMSEmap.pdf>]
+Underfull \hbox (badness 1292) in paragraph at lines 192--193
+\OT1/lmr/m/n/9.5 parameters. Despite the fact that the validation WB
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 192--193
+\OT1/lmr/m/n/9.5 becomes sensitive to noise. Further, the accuracy of
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 192--193
+\OT1/lmr/m/n/9.5 parameters. However, if there are a large portion of
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 192--193
+\OT1/lmr/m/n/9.5 measurement locations far from the midline then the
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 194--195
+\OT1/lmr/m/n/9.5 As a result, glacier-wide WB is approximately equal
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [3 <./PaperII-StudySite.pdf>]
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
+ [7 <./DataObsWB.pdf>]
+Underfull \hbox (badness 1226) in paragraph at lines 196--197
+[]\OT1/lmr/m/n/9.5 Further work into the optimization of snow survey
+ []
 
- [4 <./SampleDesign_Centreline.pdf> <./SampleDesign_CentreTransect.pdf> <./Samp
-leDesign_Circle.pdf> <./SampleDesign_Hourglass.pdf> <./SampleDesign_HourCircle.
-pdf> <./SampleDesign_RandomSafe.pdf>]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 179.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 183.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 183.
-<SynObsRMSEmap.pdf, id=183, 763.85374pt x 514.92375pt>
-File: SynObsRMSEmap.pdf Graphic file (type pdf)
- <use SynObsRMSEmap.pdf>
-Package pdftex.def Info: SynObsRMSEmap.pdf used on input line 194.
-(pdftex.def)             Requested size: 506.45905pt x 341.40642pt.
+Underfull \hbox (badness 1910) in paragraph at lines 196--197
+\OT1/lmr/m/n/9.5 However, direct measurements of snow depth in the
+ []
 
 (./SamplingDesign.bbl
 Underfull \hbox (badness 4416) in paragraph at lines 19--23
@@ -643,18 +677,15 @@ Underfull \hbox (badness 5189) in paragraph at lines 97--100
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 108--112
-\OT1/lmr/m/n/9.5 with helicopter-borne GPR on two adjacent alpine
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [8]
+Underfull \hbox (badness 1418) in paragraph at lines 108--112
+\OT1/lmr/m/n/9.5 with helicopter-borne GPR on two adjacent alpine
+ []
 
 
 Underfull \hbox (badness 1917) in paragraph at lines 161--165
@@ -667,41 +698,30 @@ Underfull \hbox (badness 1184) in paragraph at lines 161--165
  of Geo-phys-i-
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [6 <./SyntheticObsWB.pdf>])
+)
 
 Package natbib Warning: There were undefined citations.
 
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [7
+ [9
 
 ]
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [8 <./SynObsRMSEmap.pdf>] (./SamplingDesign.aux)
+(./SamplingDesign.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 4693 strings out of 493029
- 67864 string characters out of 6136234
- 144166 words of memory out of 5000000
- 8115 multiletter control sequences out of 15000+600000
- 61598 words of font info for 61 fonts, out of 8000000 for 9000
+ 4667 strings out of 493029
+ 67046 string characters out of 6136234
+ 142143 words of memory out of 5000000
+ 8094 multiletter control sequences out of 15000+600000
+ 58651 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,1758b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1758b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/s
 hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
@@ -709,14 +729,13 @@ c/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/l
 mr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmsy7.pfb>
-Output written on SamplingDesign.pdf (8 pages, 2855611 bytes).
+/usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsy7.pfb>
+Output written on SamplingDesign.pdf (9 pages, 3210150 bytes).
 PDF statistics:
- 3371 PDF objects out of 3580 (max. 8388607)
- 3240 compressed objects within 33 object streams
+ 5651 PDF objects out of 6186 (max. 8388607)
+ 5547 compressed objects within 56 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
