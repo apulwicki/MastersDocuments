@@ -24,7 +24,14 @@
 \usepackage{subcaption}
 
 
+\definecolor{M}{rgb}{ 0,    0.4470,    0.7410}
+\definecolor{MT}{rgb}{0.8500,    0.3250,    0.0980}
+\definecolor{C}{rgb}{0.9290,    0.6940,    0.1250}
+\definecolor{H}{rgb}{ 0.4940,    0.1840,    0.5560}
+\definecolor{HC}{rgb}{0.4660 ,   0.6740 ,   0.1880}
+\definecolor{R}{rgb}{0.3010 ,   0.7450 ,   0.9330}
 
+ 
 
 
 \begin{document}
@@ -106,16 +113,34 @@ Glacier 4, Glacier 2 and Glacier 13 (labelling adopted from \cite{Crompton2016})
 	\label{fig:SyntheticObsWB}
 \end{figure*}
 
+%\begin{table*}[]
+%\centering
+%\caption{Minimum travel distance (km) required to fulfil each sampling pattern. Distance for random design ($n=40$) is the sum of distances between closest measurement locations and a range is provided for an array of different random locations.}
+%\label{tab:DistanceTravelled}
+%\begin{tabular}{ccccccc}
+%\midrule
+% & \textbf{Midline} & \textbf{\begin{tabular}[c]{@{}c@{}}Midline \&\\ Transect\end{tabular}} & \textbf{Circle} & \textbf{Hourglass} & \textbf{\begin{tabular}[c]{@{}c@{}}Hourglass\\ \& Circle\end{tabular}} & \textbf{Random} \\ \midrule
+%\textbf{Glacier 4} & 6.3 & 8.3 & 4.8 & 6.9 & 11.1 & 5.5--10.2 \\
+%\textbf{Glacier 2} & 4.3 & 8.6 & 5.7 & 8.4 & 12.5 & 6.6--11.8 \\
+%\textbf{Glacier 13} & 8.0 & 11.0 & 7.0 & 10.6 & 16.8 & 8.3--14.2
+%\end{tabular}
+%\end{table*}
+
 \begin{table*}[]
 \centering
-\caption{Minimum travel distance (km) required to fulfil each sampling pattern. Distance for random design ($n=40$) is the sum of distances between closest measurement locations and a range is provided for an array of different random locations.}
-\label{tab:DistanceTravelled}
+\caption{My caption}
+\label{my-label}
 \begin{tabular}{ccccccc}
-\midrule
- & \textbf{Midline} & \textbf{\begin{tabular}[c]{@{}c@{}}Midline \&\\ Transect\end{tabular}} & \textbf{Circle} & \textbf{Hourglass} & \textbf{\begin{tabular}[c]{@{}c@{}}Hourglass\\ \& Circle\end{tabular}} & \textbf{Random} \\ \midrule
-\textbf{Glacier 4} & 6.3 & 8.3 & 4.8 & 6.9 & 11.1 & 5.5--10.2 \\
-\textbf{Glacier 2} & 4.3 & 8.6 & 5.7 & 8.4 & 12.5 & 6.6--11.8 \\
-\textbf{Glacier 13} & 8.0 & 11.0 & 7.0 & 10.6 & 16.8 & 8.3--14.2
+ & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\ \midrule \midrule
+\textbf{Glacier 4} & \begin{tabular}[c]{@{}c@{}}\textcolor{C}{C} (8)\\ \textcolor{H}{H} (8)\end{tabular} &  & \begin{tabular}[c]{@{}c@{}}\textcolor{MT}{MT} (9)\\ \textcolor{HC}{HC} (9)\end{tabular} &  & \textcolor{R}{R} (10) & \textcolor{M}{M} (14) \\ \midrule
+\textbf{Glacier 2} & \begin{tabular}[c]{@{}c@{}}\textcolor{C}{C} (10)\\ \textcolor{H}{H} (10)\end{tabular} &  & \begin{tabular}[c]{@{}c@{}}\textcolor{MT}{MT} (11)\\ \textcolor{HC}{HC} (11)\end{tabular} &  & \textcolor{R}{R} (12) & \textcolor{M}{M} (43) \\ \midrule
+\textbf{Glacier 13} & \textcolor{MT}{MT} (9) & \textcolor{HC}{HC} (11) & \begin{tabular}[c]{@{}c@{}}\textcolor{C}{C} (12)\\ \textcolor{H}{H} (12)\end{tabular} &  & \textcolor{R}{R} (13) & \textcolor{M}{M} (101) \\ \midrule \midrule
+\textbf{Glacier 4} & \begin{tabular}[c]{@{}c@{}}\textcolor{C}{C} (8)\\ \textcolor{H}{H} (8)\end{tabular} &  & \textcolor{HC}{HC} (9) & \textcolor{R}{R} (10) & \textcolor{MT}{MT} (13) & \textcolor{M}{M} (--) \\ \midrule
+\textbf{Glacier 2} & \textcolor{MT}{MT} (21) & \textcolor{H}{H} (26) & \begin{tabular}[c]{@{}c@{}}\textcolor{HC}{HC} (29)\\ \textcolor{R}{R} (29)\end{tabular} &  & \textcolor{C}{C} (47) & \textcolor{M}{M} (--) \\ \midrule
+\textbf{Glacier 13} & \textcolor{MT}{MT} (34) & \textcolor{H}{H} (44) & \textcolor{R}{R} (49) & \textcolor{HC}{HC} (50) & \textcolor{C}{C} (96) & \textcolor{M}{M} (--) \\ \midrule \midrule
+\textbf{Glacier 4} & \textcolor{C}{C} (4.8\,km) & \textcolor{M}{M} (6.3\,km) & \textcolor{H}{H} (6.9\,km) & \textcolor{R}{R} ($\sim$7.9\,km) & \textcolor{MT}{MT} (8.3\,km) & \textcolor{HC}{HC} (11.1\,km) \\ \midrule
+\textbf{Glacier 2} & \textcolor{M}{M} (4.3\,km) & \textcolor{C}{C} (5.7\,km) & \textcolor{H}{H} (8.4\,km) & \textcolor{MT}{MT} (8.6\,km) & \textcolor{R}{R} ($\sim$9.2\,km) & \textcolor{HC}{HC} (12.5\,km) \\ \midrule
+\textbf{Glacier 13} & \textcolor{C}{C} (7.0\,km) & \textcolor{M}{M} (8.0\,km) & \textcolor{H}{H} (10.6\,km) & \textcolor{MT}{MT} (11.0\,km) & \textcolor{R}{R} ($\sim$11.3\,km) & \textcolor{HC}{HC} (16.8\,km)
 \end{tabular}
 \end{table*}
 
