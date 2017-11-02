@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  31 OCT 2017 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  1 NOV 2017 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,62 +378,62 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 50.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 55.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 55.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 50.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 55.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.5> on input line 50.
+(Font)              <13.5> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 50.
+(Font)              <10> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 50.
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+(Font)              <7> on input line 55.
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.5> on input line 50.
+(Font)              <9.5> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 50.
+(Font)              <5> on input line 55.
 
 <PaperII-StudySite.pdf, id=1, 667.49374pt x 279.0425pt>
 File: PaperII-StudySite.pdf Graphic file (type pdf)
 
 <use PaperII-StudySite.pdf>
-Package pdftex.def Info: PaperII-StudySite.pdf used on input line 59.
+Package pdftex.def Info: PaperII-StudySite.pdf used on input line 64.
 (pdftex.def)             Requested size: 506.45905pt x 211.72961pt.
 
-Underfull \hbox (badness 2469) in paragraph at lines 64--65
+Underfull \hbox (badness 2469) in paragraph at lines 69--70
 \OT1/lmr/m/n/9.5 critical for monitoring glacier mass balance and for
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 66--67
+Underfull \hbox (badness 1242) in paragraph at lines 71--72
 \OT1/lmr/m/n/9.5 obtain. Snow surveys must therefore be optimized in
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 68--69
+Underfull \hbox (badness 1609) in paragraph at lines 73--74
 \OT1/lmr/m/n/9.5 could result in an under representation of the snow
  []
 
@@ -441,7 +441,24 @@ Underfull \hbox (badness 1609) in paragraph at lines 68--69
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package natbib Warning: Citation `Kaser2003' on page 1 undefined on input line 
+75.
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 75--76
+\OT1/lmr/m/n/9.5 depth due to orographic effects (e.g. Gr^^?unewald and
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 77--78
+[]\OT1/lmr/m/n/9.5 The goal of our work is to provide insight into
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 77--78
+\OT1/lmr/m/n/9.5 optimization of WB sampling design by investigating
+ []
 
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
@@ -450,54 +467,64 @@ Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
 
 ]
-Underfull \hbox (badness 1117) in paragraph at lines 83--84
+Underfull \hbox (badness 1117) in paragraph at lines 89--90
 \OT1/lmr/m/n/9.5 from Crompton and Flowers (2016)) are small alpine
  []
 
-<SamplingDesignAll.pdf, id=15, 546.04pt x 596.2275pt>
+<SamplingDesignAll.pdf, id=15, 612.2875pt x 644.4075pt>
 File: SamplingDesignAll.pdf Graphic file (type pdf)
 
 <use SamplingDesignAll.pdf>
-Package pdftex.def Info: SamplingDesignAll.pdf used on input line 91.
-(pdftex.def)             Requested size: 506.45905pt x 553.01202pt.
+Package pdftex.def Info: SamplingDesignAll.pdf used on input line 97.
+(pdftex.def)             Requested size: 455.81004pt x 479.71545pt.
 
 <SyntheticObsWB.pdf, id=16, 506.89375pt x 341.275pt>
 File: SyntheticObsWB.pdf Graphic file (type pdf)
  <use SyntheticObsWB.pdf>
-Package pdftex.def Info: SyntheticObsWB.pdf used on input line 98.
+Package pdftex.def Info: SyntheticObsWB.pdf used on input line 104.
 (pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 103.
+               Default added (so using `tbp') on input line 109.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 107.
+(Font)              <8> on input line 113.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 107.
+(Font)              <6> on input line 113.
 <SynObsRMSEmap.pdf, id=17, 763.85374pt x 514.92375pt>
 File: SynObsRMSEmap.pdf Graphic file (type pdf)
  <use SynObsRMSEmap.pdf>
-Package pdftex.def Info: SynObsRMSEmap.pdf used on input line 118.
+Package pdftex.def Info: SynObsRMSEmap.pdf used on input line 124.
 (pdftex.def)             Requested size: 506.45905pt x 341.40642pt.
 
 <DataObsWB.pdf, id=18, 506.89375pt x 341.275pt>
 File: DataObsWB.pdf Graphic file (type pdf)
  <use DataObsWB.pdf>
-Package pdftex.def Info: DataObsWB.pdf used on input line 125.
+Package pdftex.def Info: DataObsWB.pdf used on input line 131.
 (pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
 
-Underfull \hbox (badness 1924) in paragraph at lines 136--137
-\OT1/lmr/m/n/9.5 number of measurement locations to obtain accurate
+Underfull \hbox (badness 1132) in paragraph at lines 142--143
+\OT1/lmr/m/n/9.5 of gridcell WB. Real data are subsets of all gridcell
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 140--141
+Underfull \hbox (badness 1158) in paragraph at lines 142--143
+\OT1/lmr/m/n/9.5 of WB, which is based on field measurements, using
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 142--143
+\OT1/lmr/m/n/9.5 various sampling designs. Uncertainty in gridcell WB
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 148--149
 \OT1/lmr/m/n/9.5 and curvilinear transects, which were similar between
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 140--141
+Underfull \hbox (badness 1694) in paragraph at lines 148--149
 \OT1/lmr/m/n/9.5 between snow and ice ensured that only snow from
  []
 
@@ -505,16 +532,17 @@ Underfull \hbox (badness 1694) in paragraph at lines 140--141
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
  [2 <./PaperII-StudySite.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
  [3 <./SamplingDesignAll.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1028) in paragraph at lines 152--153
+\OT1/lmr/m/n/9.5 and are easy to travel (per-sonal com-mu-ni-ca-tion from
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 154--155
+\OT1/lmr/m/n/9.5 the square root of the mean dif-fer-ence be-tween WB
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -523,90 +551,76 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
  [4 <./SyntheticObsWB.pdf>]
-Underfull \hbox (badness 1199) in paragraph at lines 150--151
-[]\OT1/lmr/m/n/9.5 A lin-ear re-gres-sion is then used to in-ter-po-late the
+Underfull \hbox (badness 1168) in paragraph at lines 159--160
+\OT1/lmr/m/n/9.5 from the synthetic distribution of WB to test which
  []
 
 
-Package natbib Warning: Citation `Kaser2002' on page 5 undefined on input line 
-154.
-
-
-Underfull \hbox (badness 1314) in paragraph at lines 154--155
-[]\OT1/lmr/m/n/9.5 We investigate numerous sampling designs that are
+Underfull \hbox (badness 2961) in paragraph at lines 161--162
+[]\OT1/lmr/m/n/9.5 The synthetic distribution of WB is obtained by
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 154--155
-\OT1/lmr/m/n/9.5 using $\OML/lmm/m/it/9.5 n$ \OT1/lmr/m/n/9.5 measurement locat
-ions, where $\OML/lmm/m/it/9.5 n$ \OT1/lmr/m/n/9.5 ranges from
+Underfull \hbox (badness 1019) in paragraph at lines 161--162
+\OT1/lmr/m/n/9.5 topographic parameters on each glacier (Pulwicki and
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 154--155
-\OT1/lmr/m/n/9.5 a minimum of eight (constrained by using all seven
+Underfull \hbox (badness 1975) in paragraph at lines 163--164
+\OT1/lmr/m/n/9.5 patterns are used (Figure 2[]) and values of $\OML/lmm/m/it/9.
+5 n$ \OT1/lmr/m/n/9.5 from
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 167--168
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [5 <./SynObsRMSEmap.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 171--172
+\OT1/lmr/m/n/9.5 we use two per-for-mance met-rics. The first met-ric is
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 171--172
+\OT1/lmr/m/n/9.5 it here). Con-ver-gence is a met-ric that de-scribes the
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [6 <./DataObsWB.pdf>]
+Underfull \hbox (badness 1189) in paragraph at lines 180--181
 \OT1/lmr/m/n/9.5 Based on synthetic data, the most effective sampling
  []
 
 
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [5]
-Underfull \hbox (badness 1622) in paragraph at lines 190--191
+Underfull \hbox (badness 1622) in paragraph at lines 198--199
 \OT1/lmr/m/n/9.5 of WB estimated and does not decrease error. This
  []
 
 
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [6 <./SynObsRMSEmap.pdf>]
-Underfull \hbox (badness 1292) in paragraph at lines 192--193
-\OT1/lmr/m/n/9.5 parameters. Despite the fact that the validation WB
+Underfull \hbox (badness 1314) in paragraph at lines 200--201
+\OT1/lmr/m/n/9.5 capture relationships between WB and the remaining
  []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 192--193
-\OT1/lmr/m/n/9.5 becomes sensitive to noise. Further, the accuracy of
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 192--193
-\OT1/lmr/m/n/9.5 parameters. However, if there are a large portion of
- []
-
-
-Underfull \hbox (badness 1137) in paragraph at lines 192--193
-\OT1/lmr/m/n/9.5 measurement locations far from the midline then the
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 194--195
-\OT1/lmr/m/n/9.5 As a result, glacier-wide WB is approximately equal
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [7 <./DataObsWB.pdf>]
-Underfull \hbox (badness 1226) in paragraph at lines 196--197
+ [7]
+Underfull \hbox (badness 1226) in paragraph at lines 204--205
 []\OT1/lmr/m/n/9.5 Further work into the optimization of snow survey
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 196--197
+Underfull \hbox (badness 1910) in paragraph at lines 204--205
 \OT1/lmr/m/n/9.5 However, direct measurements of snow depth in the
  []
 
@@ -655,6 +669,12 @@ Underfull \hbox (badness 1917) in paragraph at lines 65--68
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [8]
 Underfull \hbox (badness 1137) in paragraph at lines 85--88
 \OT1/lmr/m/n/9.5 properties of the snowpack. \OT1/lmr/m/it/9.5 Reviews of Geoph
 ysics\OT1/lmr/m/n/9.5 ,
@@ -677,15 +697,12 @@ Underfull \hbox (badness 5189) in paragraph at lines 97--100
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [8]
 Underfull \hbox (badness 1418) in paragraph at lines 108--112
 \OT1/lmr/m/n/9.5 with helicopter-borne GPR on two adjacent alpine
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 1917) in paragraph at lines 161--165
@@ -705,9 +722,7 @@ Package natbib Warning: There were undefined citations.
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [9
-
-]
+ [9]
 (./SamplingDesign.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -721,9 +736,9 @@ Here is how much of TeX's memory you used:
  8094 multiletter control sequences out of 15000+600000
  58651 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,1758b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/s
+ 42i,14n,40p,1566b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/s
 hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/l
@@ -732,10 +747,10 @@ nts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsy7.pfb>
-Output written on SamplingDesign.pdf (9 pages, 3210150 bytes).
+Output written on SamplingDesign.pdf (9 pages, 3093509 bytes).
 PDF statistics:
- 5651 PDF objects out of 6186 (max. 8388607)
- 5547 compressed objects within 56 object streams
+ 2906 PDF objects out of 2984 (max. 8388607)
+ 2827 compressed objects within 29 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
