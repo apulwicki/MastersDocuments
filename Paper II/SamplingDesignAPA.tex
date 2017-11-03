@@ -4,11 +4,14 @@
 \NeedsTeXFormat{LaTeX2e}
 
 % check that the math fits the two-column format:
- \documentclass[twocolumn,letterpaper]{igs}
+% \documentclass[twocolumn,letterpaper]{igs}
 
 % but use this version when submitting your article:
  %\documentclass[review,oneside]{igs}
-
+ 
+ %APA format article
+%\documentclass[jou]{apa6}
+\documentclass{article}
 
   \usepackage{igsnatbib}
 \usepackage{lmodern}
@@ -22,6 +25,14 @@
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{subcaption}
+\usepackage[british]{babel}
+\usepackage{setspace}
+\doublespacing
+
+
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{british}{british-apa}
+\addbibresource{/home/glaciology1/Documents/MastersDocuments/MastersLit.bib}
 
 
 \definecolor{M}{rgb}{ 0,    0.4470,    0.7410}
@@ -34,27 +45,33 @@
  
 
 
-\begin{document}
 
-\title[Optimal snow-survey design for estimating winter balance]{Optimal snow-survey design for the estimation of winter balance on alpine glaciers}
 
-\author[Pulwicki and Flowers]{Alexandra PULWICKI,$^a$
+\title{Optimal snow-survey design for the estimation of winter balance on alpine glaciers}
+\shorttitle{Survey design for estimating winter balance}
+
+
+\author{Alexandra PULWICKI,$^a$
   Gwenn E. FLOWERS,$^b$}
+  \affiliation{Simon Fraser University}
+  \leftheader{Pulwicki and Flowers}
 
-\affiliation{%
-$^a$ Department of Earth Sciences, Simon Fraser University, 8888 University Drive, Burnaby, BC, V5A 1S6, Canada\\
-  $<$apulwick@sfu.ca$>$
+\authornote{%
+$^a$  Corresponding author: apulwick@sfu.ca  1 (403) 975-9033\\
+Department of Earth Sciences, Simon Fraser University, 8888 University Drive, Burnaby, BC, V5A 1S6, Canada\\
+ 
  $^b$ Department of Earth Sciences, Simon Fraser University, 8888 University Drive, Burnaby, BC, V5A 1S6, Canada\\
-  $<$gflowers@sfu.ca$>$ }
+  Email: gflowers@sfu.ca}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	ABSTRACT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\abstract{Efficient collection of snow depth and density data is critical to a successful snow measurement campaign and to accurately estimate glacier winter balance. Extensive, high resolution and accurate snow accumulation measurements on glaciers are almost impossible to achieve so surveys need to optimize the extent and spacing of snow measurements to obtain reliable estimates of winter balance. To address this need, we estimate winter balance and root mean squared error (RMSE) using synthetic and real data from subsets of extensive surveys on three glaciers in the St. Elias Mountains, Yukon. We generate six different survey designs, which encompass possible snow sampling patterns and various numbers of measurement locations. We then use linear regression with topographic parameters to interpolate measurements. Analysis of both synthetic and real data indicates that an `midline \& transect' and`hourglass' sampling patterns result in the most efficient and accurate estimate of winter balance, while the midline pattern results in poor estimates of winter balance for all glaciers. RMSE decreases with increased sample size, with no further reduction after about 30 measurement locations. This study highlights the ability for future winter balance and snow survey studies to optimize snow data collection within a glacierized basin.
+\abstract{Efficient collection of snow depth and density data is critical to a successful snow measurement campaign and to accurately estimate glacier winter balance. Extensive, high resolution and accurate snow accumulation measurements on glaciers are almost impossible to achieve so surveys need to optimize the extent and spacing of snow measurements to obtain reliable estimates of winter balance. To address this need, we estimate winter balance and root mean squared error (RMSE) using synthetic and real data from subsets of extensive surveys on three glaciers in the St. Elias Mountains, Yukon. We generate six different survey designs, which encompass possible snow sampling patterns and various numbers of measurement locations. We then use linear regression with topographic parameters to interpolate measurements. Analysis of both synthetic and real data indicates that an `midline \& transect' and`hourglass' sampling patterns result in the most efficient and accurate estimate of winter balance, while the midline pattern results in poor estimates of winter balance for all glaciers. RMSE decreases with increased sample size, with no further reduction after about 30 measurement locations. This study highlights the ability for future winter balance and snow survey studies to optimize snow data collection within a glacierized basin.}
 
-\vspace{0.3cm} Keywords: {\normalfont glacier; alpine; snow survey design; optimize; St. Elias Mountains; snow probing}}
+\keywords{glacier; alpine; snow survey design; optimize; St. Elias Mountains; snow probing}
 
+\begin{document}
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,19 +86,19 @@ $^a$ Department of Earth Sciences, Simon Fraser University, 8888 University Driv
 	\label{fig:Sampling}
 \end{figure*} 
 
-Estimates of basin-wide seasonal snow accumulation are critical for monitoring glacier mass balance and for predicting the availability and timing of surface runoff, especially in mountainous regions. The net accumulation of snow on a glacier over a winter season is known as the winter surface mass balance, or ``winter balance'' (WB) and is typically reported in meters of water equivalent (m\,w.e.) \citep{Cogley2011}. Winter balance accounts for half of the seasonally resolved mass balance, initializes ablation conditions and affects energy and mass exchange between the land and atmosphere \citep[e.g.][]{Hock2005, Reveillet2016}. 
+Estimates of basin-wide seasonal snow accumulation are critical for monitoring glacier mass balance and for predicting the availability and timing of surface runoff, especially in mountainous regions. The net accumulation of snow on a glacier over a winter season is known as the winter surface mass balance, or ``winter balance'' (WB) and is typically reported in meters of water equivalent (m\,w.e.)  \parencite{Cogley2011}. Winter balance accounts for half of the seasonally resolved mass balance, initializes ablation conditions and affects energy and mass exchange between the land and atmosphere  \parencite[e.g.][]{Hock2005, Reveillet2016}. 
 
-Optimal survey designs for snow depth are central to accurately estimating snow distribution and mass balance from \textit{in situ} measurements. Measuring snow depth and travelling between measurement locations is both time consuming and can disturb the snow, so care must be taken to choose a survey design that avoids bias, allows for the greatest variability to be measured and minimizes distance travelled \citep[e.g.][]{Shea2010,Kinar2015}. Moreover, the period of seasonal maximum snow depth can be brief, further motivating the need for time-efficient survey designs. 
+Optimal survey designs for snow depth are central to accurately estimating snow distribution and mass balance from \textit{in situ} measurements. Measuring snow depth and travelling between measurement locations is both time consuming and can disturb the snow, so care must be taken to choose a survey design that avoids bias, allows for the greatest variability to be measured and minimizes distance travelled  \parencite[e.g.][]{Shea2010,Kinar2015}. Moreover, the period of seasonal maximum snow depth can be brief, further motivating the need for time-efficient survey designs. 
 
 % HERE'S WHAT I'M THINKING FOR DICTION:
 % survey design: the whole thing: spatial sampling pattern plus # measurements
 % sampling pattern: just the spatial design 
 % sample size: # measurements
 
-There are a number of different spatial sampling patterns that have been employed to obtain point measurements of snow depth, including pure random \citep[e.g.][]{Elder1991}, linear random \cite[e.g.][]{Shea2010}, nested \citep[e.g.][]{Schweizer2008}, gridded random \citep[e.g.][]{Bellaire2008, Elder2009, Bellaire2011} and gridded \citep[e.g.][]{Molotch2005a, Kronholm2007, Lopez2011}. Sampling patterns that incorporate randomness are favourable because they limit sampling bias by varying sample spacing and direction. However, they are less efficient than designs that incorporate grids. Grid-based designs minimize travel distance but measurements are biased by regularly spaced intervals and linear orientations which can result in an under-representation of  snow-depth variability \citep{Kronholm2007}.
+There are a number of different spatial sampling patterns that have been employed to obtain point measurements of snow depth, including pure random  \parencite[e.g.][]{Elder1991}, linear random \parencite[e.g.][]{Shea2010}, nested  \parencite[e.g.][]{Schweizer2008}, gridded random  \parencite[e.g.][]{Bellaire2008, Elder2009, Bellaire2011} and gridded  \parencite[e.g.][]{Molotch2005a, Kronholm2007, Lopez2011}. Sampling patterns that incorporate randomness are favourable because they limit sampling bias by varying sample spacing and direction. However, they are less efficient than designs that incorporate grids. Grid-based designs minimize travel distance but measurements are biased by regularly spaced intervals and linear orientations which can result in an under-representation of  snow-depth variability  \parencite{Kronholm2007}.
 
 Snow surveys on glaciers are conducted to estimate winter balance, and multi-year sampling programs are often established to monitor changes in winter balance with time. An optimized survey design requires (1) a sampling scheme that captures spatial variability and minimizes travel distance and (2) knowledge of the minimum number of measurement locations needed to estimate WB to the desired precision. 
-Optimization of winter-balance survey design is rarely investigated because the locations of snow-depth measurements are often dictated by field resources and logistics. Few studies have investigated the number of measurement locations needed to effectively sample the winter-balance distribution \citep[c.f.][]{Fountain1999,Walmsley2015}. The sampling patterns used for most winter-balance programs do not include randomness, and measurements are typically made along the glacier centreline \citep[e.g.][]{Kaser2003} to capture the expected orographic effects \citep[e.g.][]{Grunewald2014}. However, centreline surveys are known to underestimate winter balance, so transverse profiles are often added to improve the reliability of the sampling scheme \citep[e.g.][]{Walmsley2015}. An hourglass with an inscribed circle (personal communication from C. Parr, 2016) is an alternative sampling scheme that captures changes in winter balance with elevation while avoiding the centreline bias, and is easy to travel. To our knowledge, no study has yet compared the performance of these different sampling patterns in estimating the spatially distributed winter balance.
+Optimization of winter-balance survey design is rarely investigated because the locations of snow-depth measurements are often dictated by field resources and logistics. Few studies have investigated the number of measurement locations needed to effectively sample the winter-balance distribution  \parencite[c.f.][]{Fountain1999,Walmsley2015}. The sampling patterns used for most winter-balance programs do not include randomness, and measurements are typically made along the glacier centreline  \parencite[e.g.][]{Kaser2003} to capture the expected orographic effects  \parencite[e.g.][]{Grunewald2014}. However, centreline surveys are known to underestimate winter balance, so transverse profiles are often added to improve the reliability of the sampling scheme  \parencite[e.g.][]{Walmsley2015}. An hourglass with an inscribed circle (personal communication from C. Parr, 2016) is an alternative sampling scheme that captures changes in winter balance with elevation while avoiding the centreline bias, and is easy to travel. To our knowledge, no study has yet compared the performance of these different sampling patterns in estimating the spatially distributed winter balance.
 
 % CORRECT IF WRONG. I'M THINKING THE SYNTHETIC DATA COMPARISON ADDRESSES PRECISION OF GLACIER-WIDE WB, WHILE THE REAL-DATA COMPARISON ADDRESSES ACCURACY AT REAL MEASUREMENT LOCATIONS. I THINK IT'S USEFUL TO ESTABLISH IN THE INTRO THESE TWO ELEMENTS OF THE STUDY AND USE THE WORDS THAT WILL HELP READERS CONNECT OBJECTIVES WITH RESULTS AND FIGURES.
 
@@ -97,9 +114,9 @@ The goal of this work is to determine the optimal survey design for estimating  
 
 \section{Study site}
 
-We investigate winter-balance survey design for three unnamed glaciers in the Donjek Range of southwest Yukon, Canada. Situated on the northern flanks of the St. Elias Mountains, which rise sharply from the Pacific Ocean, the Donjek Range experiences a continental climate. Monitoring of snow distribution and glacier mass balance in the St. Elias Mountains began in the 1950s and 1960s with a series of research programs, including Project ``Snow Cornice''  and the Icefield Ranges Research Project \citep{Wood1948, Danby2003}. More recent studies have focused on studies of individual alpine glaciers \citep[e.g.][]{Clarke2014,Flowers2014} as well as regional glacier mass balance and dynamics \citep[e.g.][]{Arendt2008, Burgess2013,Waechter2015}. 
+We investigate winter-balance survey design for three unnamed glaciers in the Donjek Range of southwest Yukon, Canada. Situated on the northern flanks of the St. Elias Mountains, which rise sharply from the Pacific Ocean, the Donjek Range experiences a continental climate. Monitoring of snow distribution and glacier mass balance in the St. Elias Mountains began in the 1950s and 1960s with a series of research programs, including Project ``Snow Cornice''  and the Icefield Ranges Research Project  \parencite{Wood1948, Danby2003}. More recent studies have focused on studies of individual alpine glaciers  \parencite[e.g.][]{Clarke2014,Flowers2014} as well as regional glacier mass balance and dynamics  \parencite[e.g.][]{Arendt2008, Burgess2013,Waechter2015}. 
 
-Glacier 4, Glacier 2 and Glacier 13 (labelling adopted from \cite{Crompton2016}) are small alpine glaciers (3.8--12.6\,km$^2$) with simple geometries. The elevation of these glaciers ranges from 1900 to 3100\,m\,a.s.l. and ELAs are located at $\sim$2500\,m. The glaciers are generally oriented southeast-northwest in steep-walled valleys. We suspect that all three glaciers are polythermal, based on a targeted study of Glacier 2 \citep{Wilson2013} and related theoretical modelling \citep{Wilson2013a}. A detailed analysis of winter-balance estimation on these three glaciers is presented by \cite{Pulwicki2017}.
+Glacier 4, Glacier 2 and Glacier 13 (labelling adopted from \Textcite{Crompton2016}) are small alpine glaciers (3.8--12.6\,km$^2$) with simple geometries. The elevation of these glaciers ranges from 1900 to 3100\,m\,a.s.l. and ELAs are located at $\sim$2500\,m. The glaciers are generally oriented southeast-northwest in steep-walled valleys. We suspect that all three glaciers are polythermal, based on a targeted study of Glacier 2  \parencite{Wilson2013} and related theoretical modelling  \parencite{Wilson2013a}. A detailed analysis of winter-balance estimation on these three glaciers is presented by \Textcite{Pulwicki2017}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	FIGURES & TABLES
@@ -168,20 +185,20 @@ Point-scale values of WB are found by obtaining direct measurements of snow dept
 
 \subsection{Real data}
 
-survey designs are derived from all measurement locations for each study glacier (Figure \ref{fig:Sampling}). We investigate numerous survey designs that are unique combinations of six different sampling patterns and the number of measurement locations. Midline and midline \& transverse transects are the most common survey designs used in WB studies \citep[e.g.][]{Kaser2002, Machguth2006}. The midline survey aims to capture changes in WB with elevation and transverse transects provide observation of lateral variations in WB. Hourglass and inscribed circle allow for sampling in multiple directions and are easy to travel (personal communication from C. Parr, 2016). We use hourglass and circle patterns separately and combined. Finally, a random pattern of measurement locations is obtained by selecting random gridcells from the full data set. For all sampling patterns we estimate WB using $n$ measurement locations, where $n$ ranges from a minimum of eight (constrained by using all seven topographic parameters for interpolation) to a maximum determined by the number of gridcells within a sampling pattern (ranges between 57--228 gridcells). The measurement locations are evenly distributed within the sampling pattern. 
+Survey designs are derived from all measurement locations for each study glacier (Figure \ref{fig:Sampling}). We investigate numerous survey designs that are unique combinations of six different sampling patterns and the number of measurement locations. Midline and midline \& transverse transects are the most common survey designs used in WB studies  \parencite[e.g.][]{Kaser2002, Machguth2006}. The midline survey aims to capture changes in WB with elevation and transverse transects provide observation of lateral variations in WB. Hourglass and inscribed circle allow for sampling in multiple directions and are easy to travel (personal communication from C. Parr, 2016). We use hourglass and circle patterns separately and combined. Finally, a random pattern of measurement locations is obtained by selecting random gridcells from the full data set. For all sampling patterns we estimate WB using $n$ measurement locations, where $n$ ranges from a minimum of eight (constrained by using all seven topographic parameters for interpolation) to a maximum determined by the number of gridcells within a sampling pattern (ranges between 57--228 gridcells). The measurement locations are evenly distributed within the sampling pattern. 
 
-A linear regression is then used to interpolate the real values of WB for each glacier. Real data is regressed on elevation, slope, aspect, distance from glacier centreline, ``northness'', curvature and a wind redistribution parameter. The linear regression calculates regression coefficients that minimize the sum of squares of the vertical deviations of each datum from the regression line \citep{Davis1986}. The resulting regression coefficients are then applied to the topographic parameters associated with each gridcell to obtain an estimate of distributed WB. Results are presented as a RMSE value, which is calculated by taking the square root of the mean difference between WB estimated using various survey designs and real data at all measurement locations.
+A linear regression is then used to interpolate the real values of WB for each glacier. Real data is regressed on elevation, slope, aspect, distance from glacier centreline, ``northness'', curvature and a wind redistribution parameter. The linear regression calculates regression coefficients that minimize the sum of squares of the vertical deviations of each datum from the regression line  \parencite{Davis1986}. The resulting regression coefficients are then applied to the topographic parameters associated with each gridcell to obtain an estimate of distributed WB. Results are presented as a RMSE value, which is calculated by taking the square root of the mean difference between WB estimated using various survey designs and real data at all measurement locations.
 
 
 \subsection{Synthetic data}
 
 We obtain synthetic data using various survey designs from the synthetic distribution of WB to test which survey design best estimates WB. Gridcell values of WB that fall within each survey design are extracted from the synthetic distribution of WB distribution and then used to estimate a new WB distribution. The WB distribution derived from various survey designs is directly compared to the synthetic distribution of WB distribution to estimate spatially resolved error. 
 
-The synthetic distribution of WB is obtained by computing a linear regression of gridcell values of WB on topographic parameters for each glacier \citep{Pulwicki2017}. Topographic parameters are derived from a SPIRIT SPOT-5 DEM \citep{Korona2009} and include commonly applied topographic parameters \citep[e.g.][]{McGrath2015} such as elevation, slope, aspect, distance from glacier centreline, ``northness'', curvature and a wind redistribution parameter. A linear regression, along with cross-validation and model averaging, is used to obtain a set of regression coefficients for the standardized topographic parameters on each glacier \citep{Pulwicki2017}. Distributed WB is found by multiplying fitted regression coefficients by corresponding topographic parameters for each gridcell. The distributed WB calculated using all available WB data is hereafter referred to as the synthetic distribution of WB.
+The synthetic distribution of WB is obtained by computing a linear regression of gridcell values of WB on topographic parameters for each glacier  \parencite{Pulwicki2017}. Topographic parameters are derived from a SPIRIT SPOT-5 DEM  \parencite{Korona2009} and include commonly applied topographic parameters  \parencite[e.g.][]{McGrath2015} such as elevation, slope, aspect, distance from glacier centreline, ``northness'', curvature and a wind redistribution parameter. A linear regression, along with cross-validation and model averaging, is used to obtain a set of regression coefficients for the standardized topographic parameters on each glacier  \parencite{Pulwicki2017}. Distributed WB is found by multiplying fitted regression coefficients by corresponding topographic parameters for each gridcell. The distributed WB calculated using all available WB data is hereafter referred to as the synthetic distribution of WB.
 
 Synthetic data are obtained for all of the survey designs presented above. Midline, midline \& transects, circle, hourglass, hourglass \& circle and random sampling patterns are used (Figure \ref{fig:SyntheticSampleDesign}) and values of $n$ from eight to the maximum number of observation with each sampling pattern are investigated. All sampling patterns are restricted to the ablation area, where terrain is accessible and direct measurements of snow depth are easy to obtain. The random pattern selects measurements locations within the area that encompasses the original survey designs.
 
-To simulate the process of measuring WB, we first obtain WB values from the synthetic distribution of WB distribution at selected measurement locations for each sampling pattern. Then, we add a low or high level of noise to the WB data. Low noise is defined by a normal distribution that is centred at zero and has a standard deviation equal to the mean standard deviation of WB data from a series of high-density gridcell-scale surveys on each glacier \citep{Pulwicki2017}. High noise is defined in the same way as low noise but the standard deviation of the normal distribution is three times larger, which is approximately equal to the standard deviation of the WB probability distribution that accounts for uncertainty due in grid-scale WB, density assignment, and interpolation for the three study glaciers \citep{Pulwicki2017}. For each gridcell value of WB, a random number from the high or low noise distribution is added to obtain a synthetic observation of WB.
+To simulate the process of measuring WB, we first obtain WB values from the synthetic distribution of WB distribution at selected measurement locations for each sampling pattern. Then, we add a low or high level of noise to the WB data. Low noise is defined by a normal distribution that is centred at zero and has a standard deviation equal to the mean standard deviation of WB data from a series of high-density gridcell-scale surveys on each glacier  \parencite{Pulwicki2017}. High noise is defined in the same way as low noise but the standard deviation of the normal distribution is three times larger, which is approximately equal to the standard deviation of the WB probability distribution that accounts for uncertainty due in grid-scale WB, density assignment, and interpolation for the three study glaciers  \parencite{Pulwicki2017}. For each gridcell value of WB, a random number from the high or low noise distribution is added to obtain a synthetic observation of WB.
 
 As above, a linear regression is calculated between synthetic data and topographic parameters and an estimated WB is then calculated. The process of adding random noise to gridcell-scale values of WB to obtain synthetic observations and fitting a regression to then estimate distributed WB is repeated 100 times to create a population of possible WB estimates. Each repetition uses a different set of random noise resulting in a range of WB values from which a mean WB and RMSE is then calculated. RMSE is found by taking the square root of the mean difference between all gridcells in the synthetic distribution of WB distribution and the WB distribution derived with the survey design.
  
@@ -218,7 +235,7 @@ The most effective survey designs capture the dominant WB-elevation trend but al
 
 On Glacier 4, the standard deviation of WB due to noise and the number of measurement locations needed to estimate WB is smaller than Glaciers 2 and 13. This trend is likely a result of the small influence of topographic parameters in the distribution of synthetic distribution of WB. The synthetic distribution of WB is derived from a linear regression between field measurements of WB and topographic parameters that explains little of the observed variance (R$^2=$0.07). As a result, glacier-wide WB is approximately equal to the mean of WB field measurements. This mostly uniform distribution of snow can therefore be described with few measurement locations, regardless of where the measurements are obtained. 
 
-We find that, on average, WB is over-estimated with small sample sizes ($<20$), especially on Glaciers 2 and 13 with $n<10$. We hypothesize that over-estimation results from an exaggeration of the elevation regression coefficient, which is the dominant explanatory parameter for Glaciers 2 and 13. At small sample sizes, the elevation trend over-shadows the relationships with other topographic parameters and is sensitive to noise, which results in large WB values in the accumulation area. Our finds are inconsistent with \cite{Walmsley2015}, who found that using only midline probings underestimates WB.
+We find that, on average, WB is over-estimated with small sample sizes ($<20$), especially on Glaciers 2 and 13 with $n<10$. We hypothesize that over-estimation results from an exaggeration of the elevation regression coefficient, which is the dominant explanatory parameter for Glaciers 2 and 13. At small sample sizes, the elevation trend over-shadows the relationships with other topographic parameters and is sensitive to noise, which results in large WB values in the accumulation area. Our finds are inconsistent with \Textcite{Walmsley2015}, who found that using only midline probings underestimates WB.
 
 Further work into the optimization of snow survey survey design is needed. The most obvious limitation of our study is the restriction of survey design to accessible locations in the ablation area. Lack of measurements in the accumulation area is a sub-optimal survey design. However, direct measurements of snow depth in the accumulation area are extremely costly because a large amount of time is needed to dig a snow pit, especially in regions with high accumulation. Given the importance of spatially distributed measurements though, there is likely an optimal balance between costly measurements in the accumulation area and less costly measurements in the ablation area. Use of more efficient snow-depth measurement methods, such a ground-penetrating radar (GPR) and lidar, in the accumulation area can also be investigated. Additional extensions to our work include an investigation of the size and placement of hourglass patterns and to optimize measurement locations based on factors such as topographic parameters. 
 
@@ -244,9 +261,9 @@ We thank the Kluane First Nation (KFN), Parks Canada and the Yukon Territorial G
 %----------------------------------------------------------------------------------------
 %
 %\bibliography{MastersLit.bib}
-\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
+%\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 %\bibliography{/Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit}
-\bibliographystyle{igs}
+%\bibliographystyle{igs}
 
 %----------------------------------------------------------------------------------------
 

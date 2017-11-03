@@ -1,0 +1,40 @@
+\begin{figure*}
+\centering
+\includegraphics[width =\textwidth]{PaperII-StudySite.pdf}\\
+\caption{Study area location and sampling schemes for Glaciers 4, 2 and 13. (Left) Study region in the Donjek Range of the St. Elias Mountains of Yukon, Canada (inset). Imagery from Landsat8 (29 August 2013, data available from the U.S. Geological Survey). (Right) Details of the spatial sampling schemes, with centreline and transverse profiles (blue dots), hourglass and circle designs (orange dots) and locations of snow-density measurements (green squares). Arrows indicate ice-flow directions. Approximate location of ELA on each glacier is shown as a black dashed line. Contour lines in increments of 50\,m are shown in grey.}
+\label{fig:Sampling}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+\centering
+\includegraphics[width =0.9\textwidth]{SamplingDesignAll.pdf}\\
+\caption{Synthetic sampling patterns on the three study glaciers. All synthetic sampling locations (small black dots) and a subset of 15 synthetic sampling locations (open circles) are shown for each sampling scheme. The random scheme shows a total of 200 synthetic sampling locations. Sampling patterns are overlain on the synthetic distribution of winter balance (WB) in colour. }
+       \label{fig:SyntheticSampleDesign}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+\centering
+\includegraphics[width =\textwidth]{SyntheticObsWB.pdf}\\
+\caption{Glacier-wide winter balance (WB) estimated with various survey designs for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). Sampling patterns are shown in columns. Insets show an example of a survey design corresponding to the panel. Mean WB from 100 runs of a linear regression of synthetic WB on topographic parameters for various patterns and sample sizes (solid coloured line) with second-order exponential fit (solid black line). Standard deviation in glacier-wide WB due to low noise (dark shading) and high noise (light shading). Glacier-wide WB of validation data (black dashed line). Sample size when fitted mean is within 0.05\,m\,w.e. of true mean (black dotted line) and when standard deviation due to high noise is less than 0.15\,m\,w.e. (black dotted-dashed line) are shown.}
+\label{fig:SyntheticObsWB}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+\centering
+\includegraphics[width =\textwidth]{SynObsRMSEmap.pdf}\\
+\caption{Root-mean-squared-error (RMSE) between validation WB and WB estimated with various sample patterns ($n=40$) for 100 runs of high noise linear regression. Sampling patterns are shown in columns for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). RMSE for the entire glacier is displayed. Synthetic sampling locations are shown (black dots).}
+\label{fig:SynObsRMSEmap}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+\centering
+\includegraphics[width =\textwidth]{DataObsWB.pdf}\\
+\caption{Root-mean-squared-error (RMSE) between WB estimated with various survey designs of real data and field values of WB at all measurement locations for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). Sampling patterns are shown in columns. Insets show an example of a survey design corresponding to the panel. Mean RMSE from 100 runs of a linear regression of real WB on topographic parameters for various patterns and sample sizes (solid coloured line) with second-order exponential fit (solid black line). Standard deviation in RMSE due to low noise (dark shading) and high noise (light shading). RMSE of estimated WB when all measurement locations are used in the linear regression (black dashed line). Sample size when fitted RMSE mean is within 0.05\,m\,w.e. of true RMSE mean (black dotted line) and when standard deviation due to high noise is less than 0.01\,m\,w.e. (black dotted-dashed line) are shown.}
+\label{fig:RealObsWB}
+\end{figure*}
+\efloatseparator
+ 

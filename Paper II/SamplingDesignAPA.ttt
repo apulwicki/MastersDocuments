@@ -1,0 +1,20 @@
+\begin{table*}[]
+\centering
+\caption{Ranking of survey designs from 1 to 6 (top row) for Glaciers 4, 2 and 13 (GL 4, Gl 2, Gl 13, left column) based on three different metrics: precision of estimated glacier-wide winter balance using synthetic data (top three rows), accuracy of estimated winter balance at real measurement locations distributed across the glacier (middle three rows) and travel distance required to perform survey (bottom three rows). Sampling patterns are: midline (M), midline and transverse (MT), circle (C), hourglass (H), hourglass and circle (HC) and random (R). Colours follow figures. Values in parentheses represent number of samples required to achieve a precision of 5\% (top three rows), number of samples required to achieve an accuracy of 25\% (middle three rows) or travel distance (km). Travel distances given for random sampling scheme are averages.}
+\label{tab:PatternRanks}
+\begin{tabular}{lcclclclclclcl}
+\hline
+Metric &  & \textbf{1} &  & \textbf{2} &  & \textbf{3} &  & \textbf{4} &  & \textbf{5} &  & \textbf{6} &  \\ \hline
+\multirow{3}{*}{Convergence} & \textbf{G4} & \textcolor{C}{C},\textcolor{H}{H} & (8) &  &  & \textcolor{MT}{MT},\textcolor{HC}{HC} & (9) &  &  & \textcolor{R}{R} & (10) & \textcolor{M}{M} & (14) \\
+ & \textbf{G2} & \textcolor{C}{C},\textcolor{H}{H} & (10) &  &  & \textcolor{MT}{MT},\textcolor{HC}{HC} & (11) &  &  & \textcolor{R}{R} & (12) & \textcolor{M}{M} & (43) \\
+ & \textbf{G13} & \textcolor{MT}{MT} & (9) & \textcolor{HC}{HC} & (11) & \textcolor{C}{C},\textcolor{H}{H} & (12) &  &  & \textcolor{R}{R} & (13) & \textcolor{M}{M} & (101) \\ \hline
+\multirow{3}{*}{Variability} & \textbf{G4} & \textcolor{C}{C},\textcolor{H}{H} & (8) &  &  & \textcolor{HC}{HC} & (9) & \textcolor{R}{R} & (10) & \textcolor{MT}{MT} & (13) & \textcolor{M}{M} & (--) \\
+ & \textbf{G2} & \textcolor{MT}{MT} & (21) & \textcolor{H}{H} & (26) & \textcolor{HC}{HC},\textcolor{R}{R} & (29) &  &  & \textcolor{C}{C} & (47) & \textcolor{M}{M} & (--) \\
+ & \textbf{G13} & \textcolor{MT}{MT} & (34) & \textcolor{H}{H} & (44) & \textcolor{R}{R} & (49) & \textcolor{HC}{HC} & (50) & \textcolor{C}{C} & (96) & \textcolor{M}{M} & (--) \\ \hline
+\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Distance\\ (km)\end{tabular}} & \textbf{G4} & \textcolor{C}{C} & (4.8) & \textcolor{M}{M} & (6.3) & \textcolor{H}{H} & (6.9) & \textcolor{R}{R} & ($\sim$7.9) & \textcolor{MT}{MT} & (8.3) & \textcolor{HC}{HC} & (11.1) \\
+ & \textbf{G2} & \textcolor{M}{M} & (4.3) & \textcolor{C}{C} & (5.7) & \textcolor{H}{H} & (8.4) & \textcolor{MT}{MT} & (8.6) & \textcolor{R}{R} & ($\sim$9.2) & \textcolor{HC}{HC} & (12.5) \\
+ & \textbf{G13} & \textcolor{C}{C} & (7.0) & \textcolor{M}{M} & (8.0) & \textcolor{H}{H} & (10.6) & \textcolor{MT}{MT} & (11.0) & \textcolor{R}{R} & ($\sim$11.3) & \textcolor{HC}{HC} & (16.8)
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
