@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  3 NOV 2017 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  4 NOV 2017 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -280,7 +280,11 @@ Package caption Info: wrapfig package is loaded.
 )
 \c@subfigure=\count110
 \c@subtable=\count111
-) (./SamplingDesign.aux)
+) (./SamplingDesign.aux
+
+LaTeX Warning: Label `tab:PatternRanks' multiply defined.
+
+)
 \openout1 = `SamplingDesign.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -296,8 +300,7 @@ LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 37.
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmr.fd
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
@@ -419,11 +422,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 58.
 
-<PaperII-StudySite.pdf, id=1, 667.49374pt x 279.0425pt>
-File: PaperII-StudySite.pdf Graphic file (type pdf)
-
-<use PaperII-StudySite.pdf>
-Package pdftex.def Info: PaperII-StudySite.pdf used on input line 67.
+<Pulwicki_Fig1.pdf, id=1, 667.49374pt x 279.0425pt>
+File: Pulwicki_Fig1.pdf Graphic file (type pdf)
+ <use Pulwicki_Fig1.pdf>
+Package pdftex.def Info: Pulwicki_Fig1.pdf used on input line 67.
 (pdftex.def)             Requested size: 506.45905pt x 211.72961pt.
 
 Underfull \hbox (badness 2469) in paragraph at lines 72--73
@@ -467,86 +469,115 @@ Underfull \hbox (badness 1117) in paragraph at lines 101--102
 \OT1/lmr/m/n/9.5 from Cromp-ton and Flow-ers (2016)) are small alpine
  []
 
-<SamplingDesignAll.pdf, id=15, 612.2875pt x 644.4075pt>
-File: SamplingDesignAll.pdf Graphic file (type pdf)
-
-<use SamplingDesignAll.pdf>
-Package pdftex.def Info: SamplingDesignAll.pdf used on input line 109.
-(pdftex.def)             Requested size: 455.81004pt x 479.71545pt.
-
-<SyntheticObsWB.pdf, id=16, 506.89375pt x 341.275pt>
-File: SyntheticObsWB.pdf Graphic file (type pdf)
- <use SyntheticObsWB.pdf>
-Package pdftex.def Info: SyntheticObsWB.pdf used on input line 116.
-(pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 121.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 125.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 125.
-<SynObsRMSEmap.pdf, id=17, 687.56876pt x 409.53pt>
-File: SynObsRMSEmap.pdf Graphic file (type pdf)
- <use SynObsRMSEmap.pdf>
-Package pdftex.def Info: SynObsRMSEmap.pdf used on input line 146.
-(pdftex.def)             Requested size: 506.45905pt x 301.65395pt.
-
-<DataObsWB.pdf, id=18, 506.89375pt x 341.275pt>
-File: DataObsWB.pdf Graphic file (type pdf)
- <use DataObsWB.pdf>
-Package pdftex.def Info: DataObsWB.pdf used on input line 153.
-(pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [2 <./PaperII-StudySite.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [3 <./SamplingDesignAll.pdf>]
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [4 <./SyntheticObsWB.pdf>]
-Underfull \hbox (badness 1484) in paragraph at lines 176--177
+ [2 <./Pulwicki_Fig1.pdf>]
+Underfull \hbox (badness 1484) in paragraph at lines 122--123
 \OT1/lmr/m/n/9.5 include commonly used quantities (e.g. McGrath and
  []
 
 
-Underfull \vbox (badness 2150) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 178--182
+Underfull \hbox (badness 1406) in paragraph at lines 124--128
 []\OT1/lmr/m/n/9.5 Synthetic data are used to evaluate survey design,
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 178--182
+Underfull \hbox (badness 2818) in paragraph at lines 124--128
 \OT1/lmr/m/n/9.5 including the sampling pattern and sample number.
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 183--188
+Underfull \hbox (badness 1142) in paragraph at lines 129--134
 []\OT1/lmr/m/n/9.5 To generate a synthetic sample size $\OML/lmm/m/it/9.5 n$ \O
 T1/lmr/m/n/9.5 for a given
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 183--188
+Underfull \hbox (badness 1062) in paragraph at lines 129--134
 \OT1/lmr/m/n/9.5 that are regularly spaced within the chosen sampling
  []
 
 
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [3]
+<SyntheticObsWB.pdf, id=47, 506.89375pt x 341.275pt>
+File: SyntheticObsWB.pdf Graphic file (type pdf)
+ <use SyntheticObsWB.pdf>
+Package pdftex.def Info: SyntheticObsWB.pdf used on input line 163.
+(pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
+
+
+LaTeX Warning: Reference `tab:SynthPatternRanks' on page 4 undefined on input l
+ine 170.
+
+
+LaTeX Warning: Reference `tab:SynthPatternRanks' on page 4 undefined on input l
+ine 172.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 177.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 181.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 181.
+<SynObsRMSEmap.pdf, id=48, 687.56876pt x 409.53pt>
+File: SynObsRMSEmap.pdf Graphic file (type pdf)
+ <use SynObsRMSEmap.pdf>
+Package pdftex.def Info: SynObsRMSEmap.pdf used on input line 203.
+(pdftex.def)             Requested size: 506.45905pt x 301.65395pt.
+
+Underfull \hbox (badness 1389) in paragraph at lines 209--211
+[]\OT1/lmr/m/n/9.5 The remaining sampling patterns, midline (M) and
+ []
+
+<DataObsWB.pdf, id=49, 506.89375pt x 341.275pt>
+File: DataObsWB.pdf Graphic file (type pdf)
+ <use DataObsWB.pdf>
+Package pdftex.def Info: DataObsWB.pdf used on input line 218.
+(pdftex.def)             Requested size: 506.45905pt x 340.99295pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 224.
+
+
+LaTeX Warning: Reference `tab:SynthPatternRanks' on page 4 undefined on input l
+ine 226.
+
+
+LaTeX Warning: Reference `tab:SynthPatternRanks' on page 4 undefined on input l
+ine 226.
+
+
+LaTeX Warning: Reference `tab:RealPatternRanks' on page 4 undefined on input li
+ne 250.
+
+
+LaTeX Warning: Reference `tab:RealPatternRanks' on page 4 undefined on input li
+ne 253.
+
+
+LaTeX Warning: Reference `tab:SynthPatternRanks' on page 4 undefined on input l
+ine 253.
+
+
+Package natbib Warning: Citation `Surjanovic2016' on page 4 undefined on input 
+line 260.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [5 <./SynObsRMSEmap.pdf>]
+ [4]
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [5 <./SyntheticObsWB.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -555,56 +586,41 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [6 <./DataObsWB.pdf>]
-Underfull \hbox (badness 1189) in paragraph at lines 215--216
-\OT1/lmr/m/n/9.5 Based on synthetic data, the most effective sampling
- []
-
-
+ [6 <./SynObsRMSEmap.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 217--218
-[]\OT1/lmr/m/n/9.5 The remaining sampling patterns are less effective
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 224--225
-\OT1/lmr/m/n/9.5 random make these patterns less efficient. Again, the
- []
-
-
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [7]
-Underfull \hbox (badness 1226) in paragraph at lines 239--240
+Underfull \hbox (badness 1226) in paragraph at lines 268--269
 []\OT1/lmr/m/n/9.5 Further work into the optimization of snow survey
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 247--248
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [7 <./DataObsWB.pdf>]
+Underfull \hbox (badness 1097) in paragraph at lines 276--277
 \OT1/lmr/m/n/9.5 with a sample size of approximately 30 measurement
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 247--248
+Underfull \hbox (badness 1062) in paragraph at lines 276--277
 \OT1/lmr/m/n/9.5 locations are distributed throughout the sample basin
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 255--256
+Underfull \hbox (badness 1735) in paragraph at lines 280--281
 \OT1/lmr/m/n/9.5 the Northern Scientific Training Program. We kindly
  []
 
 
-Underfull \hbox (badness 2150) in paragraph at lines 255--256
+Underfull \hbox (badness 2150) in paragraph at lines 280--281
 \OT1/lmr/m/n/9.5 Lance Goodwin and Trans North pilot Dion Parker
  []
 
 (./SamplingDesign.bbl
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [8]
 Underfull \hbox (badness 4416) in paragraph at lines 19--23
 []\OT1/lmr/m/n/9.5 Bellaire S and Schweizer J (2011) Mea-sur-ing spa-
  []
@@ -643,13 +659,13 @@ Underfull \hbox (badness 5607) in paragraph at lines 55--59
  []
 
 
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [8]
 Underfull \hbox (badness 1917) in paragraph at lines 68--71
 \OT1/lmr/m/it/9.5 Geografiska Annaler: Series A, Physical Geography\OT1/lmr/m/n
 /9.5 ,
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 1137) in paragraph at lines 88--91
@@ -682,9 +698,6 @@ Underfull \hbox (badness 1418) in paragraph at lines 111--115
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [9]
 Underfull \hbox (badness 1917) in paragraph at lines 164--168
 []\OT1/lmr/m/n/9.5 Wilson NJ, Flow-ers GE and Mingo L (2013) Com-
  []
@@ -702,23 +715,27 @@ Package natbib Warning: There were undefined citations.
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [10
-
-]
+ [9]
 (./SamplingDesign.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 4646 strings out of 494501
- 67801 string characters out of 6167030
- 146286 words of memory out of 5000000
- 7818 multiletter control sequences out of 15000+600000
+ 4644 strings out of 494501
+ 67718 string characters out of 6167030
+ 156908 words of memory out of 5000000
+ 7817 multiletter control sequences out of 15000+600000
  58651 words of font info for 60 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,10n,40p,1450b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,40p,1885b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/u
 sr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
 texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texli
@@ -737,10 +754,10 @@ al/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/tex
 live/2015basic/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/
 2015basic/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015ba
 sic/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on SamplingDesign.pdf (10 pages, 3273563 bytes).
+Output written on SamplingDesign.pdf (9 pages, 2853791 bytes).
 PDF statistics:
- 4307 PDF objects out of 5155 (max. 8388607)
- 4209 compressed objects within 43 object streams
+ 4278 PDF objects out of 4296 (max. 8388607)
+ 4193 compressed objects within 42 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

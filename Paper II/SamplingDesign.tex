@@ -64,7 +64,7 @@ $^a$ Department of Earth Sciences, Simon Fraser University, 8888 University Driv
 
 \begin{figure*}
 	\centering
-	\includegraphics[width =\textwidth]{PaperII-StudySite.pdf}\\
+	\includegraphics[width =\textwidth]{Pulwicki_Fig1.pdf}\\
 	\caption{Study area location and sampling patterns for Glaciers 4, 2 and 13. (Left) Study region in the Donjek Range of the St. Elias Mountains of Yukon, Canada (inset). Imagery from Landsat8 (29 August 2013, data available from the U.S. Geological Survey). (Right) Details of the spatial sampling patterns, with midline and transverse profiles (blue dots), hourglass with inscribed circle designs (orange dots) and locations of snow-density measurements (green squares). Arrows indicate ice-flow directions. Approximate location of ELA on each glacier is shown as a black dashed line. Contour interval is 50\,m (grey).}
 	\label{fig:Sampling}
 \end{figure*} 
@@ -100,60 +100,6 @@ We investigate winter-balance survey design for three unnamed glaciers in the Do
 
 Glacier 4, Glacier 2 and Glacier 13 (labelling adopted from \cite{Crompton2016}) are small alpine glaciers (3.8--12.6\,km$^2$) with simple geometries. The elevation of these glaciers ranges from 1900 to 3100\,m\,a.s.l. and ELAs are located at $\sim$2500\,m. The glaciers are generally oriented southeast-northwest in steep-walled valleys. We suspect that all three glaciers are polythermal, based on a targeted study of Glacier 2 \citep{Wilson2013} and related theoretical modelling \citep{Wilson2013a}. A detailed analysis of winter-balance estimation on these three glaciers is presented by \cite{Pulwicki2017}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	FIGURES & TABLES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{figure*}
-	\centering
-	\includegraphics[width =0.9\textwidth]{SamplingDesignAll.pdf}\\
-	\caption{Synthetic sampling patterns on the three study glaciers. All synthetic sampling locations (small black dots) and a subset of synthetic sampling locations ($n=15$, open circles) are shown for each sampling pattern. The random pattern shows a total of 200 synthetic sampling locations. Sampling patterns are overlain on the synthetic distribution of winter balance (WB) in colour. } 
-       \label{fig:SyntheticSampleDesign}
-\end{figure*}
-
-\begin{figure*}
-	\centering
-	\includegraphics[width =\textwidth]{SyntheticObsWB.pdf}\\
-	\caption{Glacier-wide winter balance (WB) estimated with various sampling patterns (columns) and sample sizes (x-axes) for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). Insets show example sampling patterns. Bold solid lines are smoothed mean values of WB estimated from 100 linear regressions of synthetic samples of WB on topographic parameters for each spatial sampling patterns (columns) and sample sizes from 8 to $>$45 (x-axes). Dark and light shading indicate the standard deviation in estimated WB for low- and high-noise cases, respectively. Horizontal dashed lines indicate the synthetic target value of glacier-wide WB. Vertical dotted lines show sample size $n_{\rm c}$ that achieves an accuracy of 5\% (difference between smoothed mean and target value). Vertical dot-dashed lines show sample size $n_{\rm v}$ for which the standard deviation comes within 25\% of the target value in the high-noise case. Not all sampling patterns have $n_{\rm c}$ and $n_{\rm v}$ within the range of samples sizes shown.}
-	\label{fig:SyntheticObsWB}
-\end{figure*}
-
-\begin{table*}[]
-\centering
-\caption{ Ranking of survey designs from 1 to 6 (top row) for Glaciers 4, 2 and 13 (G4, G2, G13) based on three different metrics (see text) from synthetic tests: $n_{\rm c}$ (top three rows), $n_{\rm v}$ (middle three rows) and travel distance ($d$) required to perform survey (bottom three rows). Sampling patterns are: midline (M), midline and transverse (MT), circle (C), hourglass (H), hourglass and circle (HC) and random (R). Colours follow figures. Values in parentheses are $n_{\rm c}$, $n_{\rm v}$ or travel distance (km). Travel distances given for random sampling scheme are averages.}
-\label{tab:PatternRanks}
-\begin{tabular}{clclclclclclcl}
-\hline
- Metric 	&& \textbf{1} && \textbf{2} && \textbf{3} && \textbf{4} && \textbf{5} && \textbf{6} \\ 
- \hline
-		& \textbf{G4}    & \textcolor{C}{C}, \textcolor{H}{H} 	& (8) 	&  	& 	&  \textcolor{MT}{MT}, \textcolor{HC}{HC}  	& (9) 	&  	&   	& \textcolor{R}{R} 	& (10) & \textcolor{M}{M} & (14) \\
-$n_{\rm c}$ 	& \textbf{G2}   & \textcolor{C}{C}, \textcolor{H}{H} 	& (10) 	&  	&   	& \textcolor{MT}{MT}, \textcolor{HC}{HC} 	& (11) 	&  	&  	& \textcolor{R}{R} 	& (12) & \textcolor{M}{M} & (43) \\ 
-		& \textbf{G13} & \textcolor{MT}{MT} 	& (9) 	& \textcolor{HC}{HC} & (11) 	& \textcolor{C}{C}, \textcolor{H}{H} 		& (12) 	&  		&   	& \textcolor{R}{R} 	& (13) & \textcolor{M}{M} & (101) \\ 
-\hline
-		& \textbf{G4}   & \textcolor{C}{C},  \textcolor{H}{H} 	& (8) 	& 	&   	& \textcolor{HC}{HC} 	& (9) 	& \textcolor{R}{R} 		& (10) 	& \textcolor{MT}{MT} & (13) & \textcolor{M}{M} & (--) \\
-$n_{\rm v}$ 	& \textbf{G2}   & \textcolor{MT}{MT} 	& (21) 	& \textcolor{H}{H} 	& (26) 	& \textcolor{HC}{HC},  \textcolor{R}{R} 	& (29)	&  		& 	&  \textcolor{C}{C} 	& (47) & \textcolor{M}{M} & (--) \\ 
-		& \textbf{G13} & \textcolor{MT}{MT} 	& (34) 	& \textcolor{H}{H} 	& (44) 	& \textcolor{R}{R} 		& (49) 	& \textcolor{HC}{HC} 	& (50) 	& \textcolor{C}{C} 	& (96) & \textcolor{M}{M} & (--) \\ 
-\hline
-		& \textbf{G4}   & \textcolor{C}{C} 	& (4.8) & \textcolor{M}{M} 	& (6.3) & \textcolor{H}{H} 		& (6.9) 	& \textcolor{R}{R} 	& ($\sim$7.9) & \textcolor{MT}{MT} 	& (8.3) & \textcolor{HC}{HC} & (11.1) \\ 
-$d$	& \textbf{G2}   & \textcolor{M}{M} 	& (4.3) & \textcolor{C}{C} 	& (5.7) & \textcolor{H}{H} 		& (8.4) 	& \textcolor{MT}{MT} & (8.6) 	& \textcolor{R}{R} 		& ($\sim$9.2) & \textcolor{HC}{HC} & (12.5) \\ 
-		& \textbf{G13} & \textcolor{C}{C} 	& (7.0) & \textcolor{M}{M} 	& (8.0) & \textcolor{H}{H} 		& (10.6) 	& \textcolor{MT}{MT} & (11.0) 	& \textcolor{R}{R} 		& ($\sim$11.3) & \textcolor{HC}{HC} & (16.8)\\
-\hline
-\end{tabular}
-\end{table*}
-
-\begin{figure*}
-	\centering
-	\includegraphics[width =\textwidth]{SynObsRMSEmap.pdf}\\
-	\caption{RMSE between synthetic target distribution of WB and distributed WB estimated with various sample patterns, $n=40$ and 100 regressions of the high-noise sample set. Sampling patterns are shown in columns for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). RMSE for the entire glacier is displayed. Synthetic sampling locations are shown as black dots.}
-	\label{fig:SynObsRMSEmap}
-\end{figure*}
-
-\begin{figure*}
-	\centering
-	\includegraphics[width =\textwidth]{DataObsWB.pdf}\\
-	\caption{RMSE between all observed values of winter balance and the co-located estimates of winter balance from randomly selected subsets of the real data, with various sampling patterns (columns) and sample sizes (x-axes) for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). Insets show example sampling patterns. Bold solid lines are smoothed mean values of RMSE from 100 linear regressions. Shading indicates the standard deviation of RMSE values arising from different subsets of the randomly chosen data. Horizontal dashed lines indicate RMSE when all data are used to estimate WB.  Vertical dotted lines show sample size $n_{\rm c}$ that achieves RMSE $\leq 5$\% (difference between smoothed mean and target value). Vertical dot-dashed lines show sample size $n_{\rm v}$ for which the standard deviation comes within 25\% of the target value. Not all sampling patterns have $n_{\rm c}$ and $n_{\rm v}$ within the range of samples sizes shown.}
-	\label{fig:RealObsWB}
-\end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	METHODS
@@ -210,25 +156,108 @@ We also compute the total travel distance required to obtain the measurements re
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results }
 
-\subsection{Synthetic data}
+\subsection{Tests with synthetic data}
 
-Based on synthetic data, the most effective sampling patterns are midline \& transect and hourglass. Midline \& transect and hourglass quickly converge to the synthetic glacier-wide value of WB, have comparatively low standard deviations due to noise and involve the shortest travel distances (Figure \ref{fig:SyntheticObsWB} and Table \ref{tab:PatternRanks}). Hourglass requires slightly fewer measurements to converge to the synthetic WB and is slightly shorter than midline \& transect but midline \& transect has slightly lower variability. If using midline \& transect or hourglass sampling patterns, a sampling size of $\sim$35 is sufficient to estimate glacier-wide WB on all glaciers with no marked improvement in accuracy or precision at larger sample sizes. With all sampling patterns, WB is significantly overestimated at low sample size.
+\begin{figure*}
+	\centering
+	\includegraphics[width =\textwidth]{SyntheticObsWB.pdf}\\
+	\caption{Glacier-wide winter balance (WB) estimated with various sampling patterns (columns) and sample sizes (x-axes) for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). Insets show example sampling patterns. Bold solid lines are smoothed mean values of WB estimated from 100 linear regressions of synthetic samples of WB on topographic parameters for each spatial sampling patterns (columns) and sample sizes from 8 to $>$45 (x-axes). Dark and light shading indicate the standard deviation in estimated WB for low- and high-noise cases, respectively. Horizontal dashed lines indicate the synthetic target value of glacier-wide WB. Vertical dotted lines show sample size $n_{\rm c}$ that achieves an accuracy of 5\% (difference between smoothed mean and target value). Vertical dot-dashed lines show sample size $n_{\rm v}$ for which the standard deviation comes within 5\% of the target value in the high-noise case. Not all sampling patterns have $n_{\rm c}$ and $n_{\rm v}$ within the range of samples sizes shown.}
+	\label{fig:SyntheticObsWB}
+\end{figure*}
 
-The remaining sampling patterns are less effective for estimating WB. Circle and hourglass \& circle also require small sample sizes for convergence but circle has exceptionally high variability on Glaciers 2 and 13 and hourglass \& circle requires a substantially greater travel distance. Notably, hourglass \& circle is not a substantial improvement on the hourglass sampling pattern given the considerable increase in travel distance required to sample the along the hourglass \& circle. By far the worst sampling pattern is the midline. WB values are highly sensitive to noise and even with a large number of measurement locations the validation values of WB are not achieved.
-
-Although the convergence patterns are similar between glaciers, the standard deviation due to noise and the sample size needed to accurately estimate WB are smallest for Glacier 4 and greatest for Glacier 13 for all sampling patterns. RMSE is also larger on Glaciers 2 and 13 than on Glacier 4, especially in the accumulation area (Figure \ref{fig:SynObsRMSEmap}). When midline pattern is used, the errors are exceptionally high in areas that do not fall along the midline for all glaciers.
 
 
-\subsection{Real data}
+Based on the synthetic tests, the most effective sampling patterns are circle (C), hourglass (H) or midline \& transect (MT), depending on the metric used ($n_{\rm c}$ or $n_{\rm v}$) and the glacier (Figure \ref{fig:SyntheticObsWB}, Table \ref{tab:SynthPatternRanks}). 
+With all sampling patterns, winter balance is overestimated at low sample size.
+For Glacier 4, C and H converge equally quickly ($n_{\rm c}=11$) to the target synthetic value of glacier-wide winter balance, and exhibit the least sensitivity to noise ($n_{\rm v}=11$). For Glacier 13, MT is best, with $n_{\rm c}=12$ and $n_{\rm v}=36$. For Glacier 2, C and H converge most quickly ($n_{\rm c}=13$) but variability is minimized with MT ($n_{\rm v}=24$). Among these three sampling patterns, C requires the least travel and MT the most (Table \ref{tab:SynthPatternRanks}, bottom three rows). 
+If using H, C, HC or MT sampling patterns, a sample size $\leq 15$ is sufficient for convergence of the mean to the target synthetic value of winter balance for all glaciers. 
+To insure convergence in the presence of noise for all glaciers, a sample size of  $\leq 36$ is sufficient for MT, $ \leq 46$ for H and $\leq 52$ for HC. For C the sample size is up to 99. These values are much lower for Glaciers 4 and 2 than for Glacier 13.   
+Of note is the fact that H, C and HC perform similarly as judged by convergence ($n_{\rm c}$) for all glaciers, and variability ($n_{\rm v}$) for Glacier 4; C performs much more poorly in terms of variability for Glaciers 2 and 13.
 
-The RMSE rapidly decreases with an increased sample size for all sampling patterns on all three glaciers (Figure\ref{fig:RealObsWB}). The sampling patterns trends are similar to those of the synthetic data. Midline \& transverse, hourglass, circle, hourglass \& circle and random all perform well. However, the higher travelling distance of hourglass \& circle and random make these patterns less efficient.  Again, the worst sampling pattern is the midline, which results in exceptionally high values of RMSE for all three glaciers. There is no marked decrease in RMSE for sample sizes greater than $\sim30$ for all sampling patterns. None of the sampling patterns result in the RMSE reaching that of the full data for all three glaciers. 
+\begin{table*}[]
+\centering
+\caption{Synthetic data tests. Ranking of survey designs from 1 to 6 (top row) for Glaciers 4, 2 and 13 (G4, G2, G13) based on three different metrics (see text): $n_{\rm c}$ (top three rows), $n_{\rm v}$ (middle three rows) and travel distance ($d$) required to perform survey (bottom three rows). Sampling patterns are: midline (M), midline and transverse (MT), circle (C), hourglass (H), hourglass and circle (HC) and random (R). Colours follow figures. Values in parentheses are $n_{\rm c}$, $n_{\rm v}$ or travel distance (km). Travel distances given for random sampling scheme are averages.}
+\label{tab:SynthPatternRanks}
+\begin{tabular}{clclclclclclcl}
+\hline
+ Metric         && \textbf{1} && \textbf{2} && \textbf{3} && \textbf{4} && \textbf{5} && \textbf{6} \\
+ \hline
+                & \textbf{G4}    & \textcolor{C}{C}, \textcolor{H}{H}         & (11)         &          &         &  \textcolor{MT}{MT}, \textcolor{HC}{HC}, \textcolor{R}{R}         & (12)         &          &           &          &  & \textcolor{M}{M} & (17) \\
+$n_{\rm c}$         & \textbf{G2}   & \textcolor{C}{C}, \textcolor{H}{H}         & (13)         &          &           & \textcolor{MT}{MT}, \textcolor{HC}{HC}         & (14)         &          &          & \textcolor{R}{R}         & (15) & \textcolor{M}{M} & (45) \\
+                & \textbf{G13} & \textcolor{MT}{MT}         & (12)         & \textcolor{HC}{HC},\textcolor{C}{C} & (14)         &  \textcolor{H}{H}                 & (15)         &                  &           & \textcolor{R}{R}         & (16) & \textcolor{M}{M} & (104) \\
+\hline
+                & \textbf{G4}   & \textcolor{C}{C},  \textcolor{H}{H}         & (11)         &         &           & \textcolor{HC}{HC}         & (12)         & \textcolor{R}{R}                 & (13)         & \textcolor{MT}{MT} & (14) & \textcolor{M}{M} & (--) \\
+$n_{\rm v}$         & \textbf{G2}   & \textcolor{MT}{MT}         & (24)         & \textcolor{H}{H}         & (29)         & \textcolor{HC}{HC},  \textcolor{R}{R}         & (30)        &                  &         &  \textcolor{C}{C}         & (50) & \textcolor{M}{M} & (--) \\
+                & \textbf{G13} & \textcolor{MT}{MT}         & (36)         & \textcolor{H}{H}         & (46)         & \textcolor{R}{R}, \textcolor{HC}{HC}                 & (52)         &         &          & \textcolor{C}{C}         & (99) & \textcolor{M}{M} & (--) \\
+\hline
+                & \textbf{G4}   & \textcolor{C}{C}         & (4.8) & \textcolor{M}{M}         & (6.3) & \textcolor{H}{H}                 & (6.9)         & \textcolor{R}{R}         & ($\sim$7.9) & \textcolor{MT}{MT}         & (8.3) & \textcolor{HC}{HC} & (11.1) \\
+$d$        & \textbf{G2}   & \textcolor{M}{M}         & (4.3) & \textcolor{C}{C}         & (5.7) & \textcolor{H}{H}                 & (8.4)         & \textcolor{MT}{MT} & (8.6)         & \textcolor{R}{R}                 & ($\sim$9.2) & \textcolor{HC}{HC} & (12.5) \\
+                & \textbf{G13} & \textcolor{C}{C}         & (7.0) & \textcolor{M}{M}         & (8.0) & \textcolor{H}{H}                 & (10.6)         & \textcolor{MT}{MT} & (11.0)         & \textcolor{R}{R}                 & ($\sim$11.3) & \textcolor{HC}{HC} & (16.8)\\
+\hline
+\end{tabular}
+\end{table*}
+
+
+\begin{figure*}
+	\centering
+	\includegraphics[width =\textwidth]{SynObsRMSEmap.pdf}\\
+	\caption{RMSE between synthetic target distribution of WB and [MEAN?] WB estimated with various sample patterns, $n=40$ and 100 regressions of the high-noise sample set. Sampling patterns are shown in columns for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). RMSE for the entire glacier is displayed. Synthetic sampling locations are shown as black dots.}
+	\label{fig:SynObsRMSEmap}
+\end{figure*}
+
+
+The remaining sampling patterns, midline (M) and random (R), are less effective for estimating the synthetic winter balance, though R performs comparably to the others particularly as assessed by convergence $n_{\rm c}$. 
+Midline is decisively the worst sampling pattern, ranked last for all glaciers for both $n_{\rm c}$ and $n_{\rm v}$. Winter balance estimated with a midline sampling pattern is highly sensitive to noise for all glaciers and only achieves convergence to the target synthetic value for low sample sizes ($n_{\rm c}=14$) on Glacier 4. 
+
+Although the convergence patterns are generally similar between glaciers, the sample sizes needed to accurately estimate winter balance ($n_{\rm c}$) and insure convergence in the presence of noise ($n_{\rm v}$) are smallest for Glacier 4 and largest for Glacier 13 for all sampling patterns (compare top row to bottom row in Figure  \ref{fig:SyntheticObsWB}). The RMSE between estimated and synthetic values of winter balance is also greater on Glaciers 2 and 13 than on Glacier 4, especially in the accumulation area (Figure \ref{fig:SynObsRMSEmap}). When the midline pattern is used, the RMSE is high over a large areal fraction of the glacier.
+
+\subsection{Tests with real data}
+
+\begin{figure*}
+	\centering
+	\includegraphics[width =\textwidth]{DataObsWB.pdf}\\
+	\caption{RMSE between all observed values of winter balance and the co-located estimates of winter balance from randomly selected subsets of the real data, with various sampling schemes (columns) and sample sizes (x-axes) for Glacier 4 (top row), Glacier 2 (middle row) and Glacier 13 (bottom row). Insets show example sampling schemes. Bold solid lines are smoothed mean values of RMSE from 100 linear regressions. Shading indicates the standard deviation [STD OF RMSE?] arising from different subsets of the randomly chosen data. Horizontal dashed lines indicate  RMSE when all data are used to estimate WB.  Vertical dotted lines show sample size $n_{\rm c}$ that achieves RMSE $\leq 5$\% (difference between smoothed mean and target value). Vertical dot-dashed lines show sample size $n_{\rm v}$ for which the standard deviation comes within 5\% of the target value. Not all sampling patterns have $n_{\rm c}$ and $n_{\rm v}$ within the range of samples sizes shown.}
+	\label{fig:RealObsWB}
+\end{figure*}
+
+%%% REAL DATA TABLE %%%%%
+\begin{table*}[]
+\centering
+\caption{Real data tests. Ranking of survey designs from 1 to 6 (top row) for Glaciers 4, 2 and 13 (G4, G2, G13) based on two different metrics (see text): $n_{\rm c}$ (top three rows) and $n_{\rm v}$ (bottom three rows). Sampling patterns are: midline (M), midline and transverse (MT), circle (C), hourglass (H), hourglass and circle (HC) and random (R). Colours follow figures. Values in parentheses are $n_{\rm c}$ or $n_{\rm v}$. Travel distances for each sampling pattern are given in Table \ref{tab:SynthPatternRanks}.}
+\label{tab:RealPatternRanks}
+\begin{tabular}{clclclclclclcl}
+\hline
+ Metric         && \textbf{1} && \textbf{2} && \textbf{3} && \textbf{4} && \textbf{5} && \textbf{6} \\
+ \hline
+                & \textbf{G4}   & \textcolor{R}{R}         & (19) & \textcolor{MT}{MT}         & (22)         &  \textcolor{H}{H}        &  (24)        & \textcolor{HC}{HC}         & (25)           &  \textcolor{C}{C}        & (44) & \textcolor{M}{M} & (--) \\
+$n_{\rm c}$         & \textbf{G2}   & \textcolor{H}{H}         & (16)         &  \textcolor{HC}{HC}        &  (17)          & \textcolor{MT}{MT}, \textcolor{C}{C}        & (20)         &          &          & \textcolor{R}{R}         & (21) & \textcolor{M}{M} & (29) \\
+                & \textbf{G13} & \textcolor{R}{R}         & (16)         & \textcolor{HC}{HC} & (19)         & \textcolor{C}{C}                 & (20)         &           \textcolor{H}{H}        &   (21)        & \textcolor{MT}{MT}         & (36) & \textcolor{M}{M} & (--) \\
+\hline
+                & \textbf{G4}   & \textcolor{R}{R}         & (21)         &   \textcolor{MT}{MT}        &  (22)         & \textcolor{C}{C}         & (25)         & \textcolor{H}{H}                 & (26)         & \textcolor{HC}{HC} & (29) & \textcolor{M}{M} & (47) \\
+$n_{\rm v}$         & \textbf{G2}   & \textcolor{H}{H}         & (22)         & \textcolor{HC}{HC}, \textcolor{C}{C}         & (25)         &            &         &  \textcolor{R}{R}                & (26)        &  \textcolor{MT}{MT}         & (28) & \textcolor{M}{M} & (38) \\
+                & \textbf{G13} & \textcolor{R}{R}         & (20)         & \textcolor{HC}{HC}         & (29)         & \textcolor{C}{C}                 & (30)         &  \textcolor{H}{H}        & (34)         & \textcolor{MT}{MT}         & (47) & \textcolor{M}{M} & (--) \\
+%\hline
+%                & \textbf{G4}   & \textcolor{C}{C}         & (4.8) & \textcolor{M}{M}         & (6.3) & \textcolor{H}{H}                 & (6.9)         & \textcolor{R}{R}         & ($\sim$7.9) & \textcolor{MT}{MT}         & (8.3) & \textcolor{HC}{HC} & (11.1) \\
+%$d$        & \textbf{G2}   & \textcolor{M}{M}         & (4.3) & \textcolor{C}{C}         & (5.7) & \textcolor{H}{H}                 & (8.4)         & \textcolor{MT}{MT} & (8.6)         & \textcolor{R}{R}                 & ($\sim$9.2) & \textcolor{HC}{HC} & (12.5) \\
+%                & \textbf{G13} & \textcolor{C}{C}         & (7.0) & \textcolor{M}{M}         & (8.0) & \textcolor{H}{H}                 & (10.6)         & \textcolor{MT}{MT} & (11.0)         & \textcolor{R}{R}                 & ($\sim$11.3) & \textcolor{HC}{HC} & (16.8)\\
+\hline
+\end{tabular}
+\end{table*}
+
+%[I WONDER IF THIS IS REALLY NOT A FAIR TEST, USING THE RANDOM SAMPLE OF REAL DATA, RATHER THAN REGULARLY SPACED. HOW EASY IS IT TO GENERATE THE CURVES FOR THE REGULARLY SPACED CASE?] -> see email
+
+The RMSE between estimated and observed winter balance decreases rapidly with increasing sample size for most sampling patterns on any of the glaciers (Figure \ref{fig:RealObsWB}), with inflection points around $n=10$. 
+The performance of the sampling patterns as assessed by comparison with real data (Table \ref{tab:RealPatternRanks}) shows hourglass (H) to rank highest for Glacier 2, and random (R) to rank highest for Glaciers 4 and 13, for both $n_{\rm c}$ and $n_{\rm v}$. Hourglass \& circle (HC), circle (C) and midline \& transverse (MT) rank anywhere from 2--5, while midline (M) is again last in every case. 
+Compared to the tests with synthetic data, greater sample sizes are generally required to reach the 5\% targets [NOT A FAIR COMPARISON SINCE RMSE AND WB ARE TWO DIFF QUANTITIES?], but the range of $n_{\rm c}$ and $n_{\rm v}$ are smaller  [AGAIN PROB NOT FAIR BECAUSE RANDOMNESS ARISES FROM DIFF SOURCES IN REAL VS SYNTH TESTS].
+None of the sampling patterns result in RMSE falling to that of the full dataset with $n < 45$, but R comes close for Glaciers 4 and 13, while H comes closest for Glacier 2. A sample size of $n \leq 30$ is sufficient to reach the $n_{\rm c}$ and $n_{\rm v}$ targets for all sampling patterns excluding the midline. 
+Though the rankings in Table \ref{tab:RealPatternRanks} differ from those using synthetic data (Table \ref{tab:SynthPatternRanks}), the overall picture of performance is not dissimilar in that midline (M) is the only pattern that can be easily ruled out for all glaciers based on either $n_{\rm c}$ or $n_{\rm v}$.      
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DISCUSSION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
 
-The optimal survey design for our study region is the midline \& transverse or  hourglass pattern with a sample size of $\sim30$. Based on both synthetic and real data, both designs result in low error, is least sensitive to noise and involves relatively small travelling distance. A sample size greater than 30 does not significantly improve the accuracy of WB estimated and does not decrease error. This surprisingly low number of measurement locations indicates that high-resolution sampling is not required to accurately estimate WB. Instead, taking measurements throughout the study basin should be prioritized when choosing a survey design. If the goal is to estimate WB then field resources should be more strongly allocated to distributing measurement locations to capture basin-scale spatial trends in WB since error is greatest in areas far from sampling locations and in areas with extreme values of topographic parameters. 
+The optimal survey design for our study region is the midline \& transverse or hourglass pattern with a sample size of $\sim30$. Based on both synthetic and real data, both designs result in low error, are least sensitive to noise and involve relatively short travel distance. A sample size greater than 30 does not significantly improve the accuracy of WB estimated and does not decrease error. This surprisingly low number of measurement locations indicates that high-resolution sampling is not required to accurately estimate WB. Instead, taking measurements throughout the study basin should be prioritized when choosing a survey design. If the goal is to estimate WB then field resources should be more strongly allocated to distributing measurement locations to capture basin-scale spatial trends in WB since error is greatest in areas far from sampling locations and in areas with extreme values of topographic parameters. Based on our results, midline is a poor choice of sample design regardless of the number of measurement locations. In contrast, \citep{Surjanovic2016} finds that a midline pattern does well for some ablation survey designs and \cite{Fountain1999} found that as few as 5 stakes are needed to estimate mass balance of a glacier. We hypothesize that a greater number of measurement locations are needed to estimate winter balance because snow distribution is governed by processes that vary on shorter spatial scales than processes that govern ablation. \cite{Walmsley2015} recommends one measurement for every 50\,m elevation band, which would amount to 9--12 measurement locations on our study glaciers when only the ablation area is considered (17--24 for the full glacier). This suggestion is consistent with the $n_{\rm c}$ or $n_{\rm v}$ value for circle, hourglass and midline \& transect on some of the glaciers. 
 
 The most effective survey designs capture the dominant WB-elevation trend but also have measurement locations in gridcells that span the range of other topographic parameters. Despite the fact that the synthetic distribution of WB on Glaciers 2 and 13 is largely controlled by elevation, measurements locations that are not along the midline are needed to constrain the regression. When the midline pattern is used, the topographic parameters (excluding elevation) fall within a narrow range so the regression becomes sensitive to noise. Further, the accuracy of estimated WB does not improve at large sample sizes along a midline pattern because the sampling locations do not capture relationships between WB and the remaining topographic parameters. However, if there are a large portion of measurement locations far from the midline then the elevation trend may be less strong resulting in larger errors. Random and hourglass \& circle patterns may have larger errors on Glaciers 2 and 13 as a result of the higher proportion of measurement locations far from the midline. 
 
@@ -245,10 +274,6 @@ Further work into the optimization of snow survey survey design is needed. The m
 \section{Conclusion}
 
 From an analysis of synthetic and real WB data, we find that `midline \& transect' and`hourglass' sampling patterns with a sample size of approximately 30 measurement locations is the optimal survey design for estimating glacier-wide WB. Since a relatively low sample size is needed and errors are greatest in the accumulation area, we recommend that field resources be allocated such that measurements locations are distributed throughout the sample basin rather than obtaining high-resolution WB measurements. A midline sampling pattern results in poor estimates of WB and high sensitivity to noise. We find that WB is over-estimated with very small sample sizes ($n<10$) and along the midline so care should be made to adequately sample the basin to capture changes in elevation as well as transverse variation in WB. 
-
-
-%add fountain and walmsey to sample size!!!!!!!!!!
-
 
 \section{Acknowledgements}
 
