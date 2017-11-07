@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  2 NOV 2017 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 NOV 2017 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,11 +930,11 @@ Overfull \hbox (165.79288pt too wide) in paragraph at lines 143--156
  [][] 
  []
 
-<SynObsRMSEmap.pdf, id=56, 763.85374pt x 514.92375pt>
+<SynObsRMSEmap.pdf, id=56, 687.56876pt x 409.53pt>
 File: SynObsRMSEmap.pdf Graphic file (type pdf)
  <use SynObsRMSEmap.pdf>
 Package pdftex.def Info: SynObsRMSEmap.pdf used on input line 160.
-(pdftex.def)             Requested size: 345.0pt x 232.56996pt.
+(pdftex.def)             Requested size: 345.0pt x 205.48936pt.
 
 <DataObsWB.pdf, id=57, 506.89375pt x 341.275pt>
 File: DataObsWB.pdf Graphic file (type pdf)
@@ -983,9 +983,6 @@ LaTeX Warning: Citation 'Walmsley2015' on page 20 undefined on input line 238.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                SamplingDesignAPA
 (biblatex)                and rerun LaTeX afterwards.
@@ -997,7 +994,7 @@ Package logreq Info: Writing requests to 'SamplingDesignAPA.run.xml'.
 Here is how much of TeX's memory you used:
  10703 strings out of 493029
  176276 string characters out of 6136234
- 630877 words of memory out of 5000000
+ 630878 words of memory out of 5000000
  14055 multiletter control sequences out of 15000+600000
  47505 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1015,7 +1012,7 @@ r12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmsy7.pfb>
-Output written on SamplingDesignAPA.pdf (22 pages, 3164384 bytes).
+Output written on SamplingDesignAPA.pdf (22 pages, 3242784 bytes).
 PDF statistics:
  4341 PDF objects out of 5155 (max. 8388607)
  4232 compressed objects within 43 object streams
