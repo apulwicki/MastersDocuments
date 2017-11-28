@@ -73,42 +73,41 @@
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Differences between maximum and minimum winter balance estimated with MLR using the eight different density assignment methods}}{99}{figure.caption.107}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Differences between maximum and minimum winter balance (WB), expressed as a percentage of the the maximum WB, estimated with MLR using the eight different density assignment methods}}{100}{figure.caption.108}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Map of modelled winter balance (WB) using MLR coefficients for each density assignment method}}{101}{figure.caption.109}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Model prior for eight topographic regressors used in BMA.\relax }}{102}{figure.caption.111}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Regression coefficient and semi-partial correlation for BMA interpolation}}{105}{figure.caption.114}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Comparison of estimated (BMA) and observed (WB) for each study glacier}}{106}{figure.caption.115}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Plots of all linear fits between BMA estimated and observed WB using eight density assignment methods}}{106}{figure.caption.116}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Winter balance modelled with coefficients determined using BMA and density assigned by inverse-distance weighting from snow pits (S4)}}{107}{figure.caption.117}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Differences between maximum and minimum winter balance estimated with BMA using the eight different density assignment methods}}{107}{figure.caption.118}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Differences between maximum and minimum winter balance (WB), expressed as a percentage of the the maximum WB, estimated with BMA using the eight different density assignment methods}}{108}{figure.caption.119}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Boxplot of all estimated winter balance values found using BMA coefficients (S4)}}{108}{figure.caption.120}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Residuals of winter balance predicted using BMA for all density interpolation methods.\relax }}{109}{figure.caption.121}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Summary of residuals from estimated winter balance values found using BMA coefficients (S4)}}{109}{figure.caption.122}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Map of the residuals from estimated winter balance values found using BMA coefficients (S4) for each measurement location.\relax }}{110}{figure.caption.123}
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Map of modelled winter balance (WB) using BMA coefficients for each density assignment method}}{111}{figure.caption.124}
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Boxplot showing the range of values of coefficients for each topographic parameter from both MLR and BMA analysis for study glaciers}}{112}{figure.caption.125}
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Regression results with differing number of cross-validation runs}}{114}{figure.caption.127}
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Transfer of regression coefficients to estimate distributed winter balance}}{116}{figure.caption.128}
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Root mean squared error (RMSE) at sampling locations when regression coefficients are transferred between glaciers}}{117}{figure.caption.130}
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Spatial distribution of winter balance (WB) estimated using simple kriging with densities assigned as per S2}}{120}{figure.caption.131}
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Comparison of estimated (simple kriging) and observed winter balance (WB) for three study glaciers}}{121}{figure.caption.133}
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Simple-kriging winter-balance confidence interval (95\%) as a percent of local winter-balance value}}{122}{figure.caption.134}
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Distributed BMA residuals estimated by regression kriging}}{124}{figure.caption.135}
-\contentsline {figure}{\numberline {5.31}{\ignorespaces Winter balance estimated by adding kriged regression residuals to winter balance estimated using topographic regression with BMA}}{125}{figure.caption.136}
-\contentsline {figure}{\numberline {5.32}{\ignorespaces Comparison of estimated (regression kriging) and observed winter balance (WB) for study glaciers}}{125}{figure.caption.137}
-\contentsline {figure}{\numberline {5.33}{\ignorespaces Comparison of winter balance (WB) and R$^2$ for topographic regression (LR), simple kriging (SK) and regression kriging (RK), averaged over density assignment methods}}{126}{figure.caption.138}
-\contentsline {figure}{\numberline {5.34}{\ignorespaces Comparison of winter balance (WB) and R$^2$ for topographic regression (LR), simple kriging (SK) and regression kriging (RK) for all density options}}{128}{figure.caption.139}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Regression coefficient and semi-partial correlation for BMA interpolation}}{105}{figure.caption.113}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Comparison of estimated (BMA) and observed (WB) for each study glacier}}{106}{figure.caption.114}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Plots of all linear fits between BMA estimated and observed WB using eight density assignment methods}}{106}{figure.caption.115}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Winter balance modelled with coefficients determined using BMA and density assigned by inverse-distance weighting from snow pits (S4)}}{107}{figure.caption.116}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Differences between maximum and minimum winter balance estimated with BMA using the eight different density assignment methods}}{107}{figure.caption.117}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Differences between maximum and minimum winter balance (WB), expressed as a percentage of the the maximum WB, estimated with BMA using the eight different density assignment methods}}{108}{figure.caption.118}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Boxplot of all estimated winter balance values found using BMA coefficients (S4)}}{108}{figure.caption.119}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Residuals of winter balance predicted using BMA for all density interpolation methods.\relax }}{109}{figure.caption.120}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Summary of residuals from estimated winter balance values found using BMA coefficients (S4)}}{109}{figure.caption.121}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Map of the residuals from estimated winter balance values found using BMA coefficients (S4) for each measurement location.\relax }}{110}{figure.caption.122}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Map of modelled winter balance (WB) using BMA coefficients for each density assignment method}}{111}{figure.caption.123}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Boxplot showing the range of values of coefficients for each topographic parameter from both MLR and BMA analysis for study glaciers}}{112}{figure.caption.124}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Regression results with differing number of cross-validation runs}}{114}{figure.caption.126}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Transfer of regression coefficients to estimate distributed winter balance}}{116}{figure.caption.127}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Root mean squared error (RMSE) at sampling locations when regression coefficients are transferred between glaciers}}{117}{figure.caption.129}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Spatial distribution of winter balance (WB) estimated using simple kriging with densities assigned as per S2}}{120}{figure.caption.130}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Comparison of estimated (simple kriging) and observed winter balance (WB) for three study glaciers}}{121}{figure.caption.132}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Simple-kriging winter-balance confidence interval (95\%) as a percent of local winter-balance value}}{122}{figure.caption.133}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Distributed BMA residuals estimated by regression kriging}}{124}{figure.caption.134}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Winter balance estimated by adding kriged regression residuals to winter balance estimated using topographic regression with BMA}}{125}{figure.caption.135}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Comparison of estimated (regression kriging) and observed winter balance (WB) for study glaciers}}{125}{figure.caption.136}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Comparison of winter balance (WB) and R$^2$ for topographic regression (LR), simple kriging (SK) and regression kriging (RK), averaged over density assignment methods}}{126}{figure.caption.137}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Comparison of winter balance (WB) and R$^2$ for topographic regression (LR), simple kriging (SK) and regression kriging (RK) for all density options}}{128}{figure.caption.138}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Point-scale WB variability at individual measurement locations}}{132}{figure.caption.141}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Coefficient of variation of WB at measurement locations}}{133}{figure.caption.142}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Probability density functions (PDFs) of estimated winter-balance values for each zigzag survey in lower (L), middle (M) and upper (U) ablation areas}}{134}{figure.caption.144}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Probability density functions (PDFs) that represent gridcell-scale winter balance variability based on zigzag survey measurements.\relax }}{135}{figure.caption.145}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Probability density functions (PDFs) of transect survey data from multiple measurement locations in a DEM gridcell.\relax }}{136}{figure.caption.147}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Coefficient of variation of observations at measured gridcells}}{136}{figure.caption.148}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Probability density functions (PDFs) at the gridcell scale based on eight different density-assignment methods in a DEM gridcell.\relax }}{137}{figure.caption.150}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Coefficient of variation at the gridcell scale based on eight different density-assignment methods.\relax }}{137}{figure.caption.151}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Distributions of glacier-wide winter balance (WB) for study glaciers that arise from various sources of uncertainty}}{140}{figure.caption.157}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Relative uncertainty in distributed winter balance (WB) found using linear regression and simple kriging}}{142}{figure.caption.159}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Relationship between winter balance (WB) and linear distance from the regional topographic divide between the Kaskawulsh and Hubbard Glaciers in the St. Elias Mountains}}{144}{figure.caption.160}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Point-scale WB variability at individual measurement locations}}{132}{figure.caption.140}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Coefficient of variation of WB at measurement locations}}{133}{figure.caption.141}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Probability density functions (PDFs) of estimated winter-balance values for each zigzag survey in lower (L), middle (M) and upper (U) ablation areas}}{134}{figure.caption.143}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Probability density functions (PDFs) that represent gridcell-scale winter balance variability based on zigzag survey measurements.\relax }}{135}{figure.caption.144}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Probability density functions (PDFs) of transect survey data from multiple measurement locations in a DEM gridcell.\relax }}{136}{figure.caption.146}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Coefficient of variation of observations at measured gridcells}}{136}{figure.caption.147}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Probability density functions (PDFs) at the gridcell scale based on eight different density-assignment methods in a DEM gridcell.\relax }}{137}{figure.caption.149}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Coefficient of variation at the gridcell scale based on eight different density-assignment methods.\relax }}{137}{figure.caption.150}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Distributions of glacier-wide winter balance (WB) for study glaciers that arise from various sources of uncertainty}}{140}{figure.caption.156}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Relative uncertainty in distributed winter balance (WB) found using linear regression and simple kriging}}{142}{figure.caption.158}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Relationship between winter balance (WB) and linear distance from the regional topographic divide between the Kaskawulsh and Hubbard Glaciers in the St. Elias Mountains}}{144}{figure.caption.159}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
