@@ -1,4 +1,4 @@
-\begin{thebibliography}{147}
+\begin{thebibliography}{152}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -245,6 +245,11 @@ Fowler H, Blenkinsop S and Tebaldi C (2007) {Linking climate change modelling
   hydrological modelling}. \emph{International Journal of Climatology},
   \textbf{27}(12), 1547--1578 (\doi {10.1002/joc.1556})
 
+\bibitem[\protect\citename{Funk and others, }1997]{Funk1997}
+Funk M, Morelli R and Stahel W (1997) {Mass balance of {Griesgletscher
+  1961-1994:} different methods of determination}. \emph{Zeitschrift fur
+  Gletscherkunde und Glazialgeologie}, \textbf{33}(1), 41--56
+
 \bibitem[\protect\citename{Garbrecht and Martz, }1994]{Garbrecht1994}
 Garbrecht J and Martz L (1994) {Grid size dependency of parameters extracted
   from digital elevation models}. \emph{Computers \& Geosciences},
@@ -345,6 +350,12 @@ Holdsworth G, Fogarasi S and Krouse H (1991) {Variation of the stable isotopes
   of water with altitude in the {Saint Elias Mountains of Canada}}.
   \emph{Journal of Geophysical Research: Atmospheres (1984--2012)},
   \textbf{96}(D4), 7483--7494 (\doi {10.1029/91JD00048})
+
+\bibitem[\protect\citename{Jansson, }1999]{Jansson1999}
+Jansson P (1999) {Effect of uncertainties in measured variables on the
+  calculated mass balance of {Storglaci{\"a}ren}}. \emph{Geografiska Annaler:
+  Series A, Physical Geography}, \textbf{81}(4), 633--642 (\doi
+  {10.1111/1468-0459.00091})
 
 \bibitem[\protect\citename{Kaser and others, }2006]{Kaser2006}
 Kaser G, Cogley JG, Dyurgerov MB, Meier MF and Ohmura A (2006) {Mass balance of
@@ -590,6 +601,11 @@ Raftery AE, Gneiting T, Balabdaoui F and Polakowski M (2005) {Using Bayesian
   Model Averaging to Calibrate Forecast Ensembles}. \emph{Monthly Weather
   Review}, \textbf{133}(5), 1155--1174 (\doi {10.1175/MWR2906.1})
 
+\bibitem[\protect\citename{R{\'e}veillet and others, }2016]{Reveillet2016}
+R{\'e}veillet M, Vincent C, Six D and Rabatel A (2016) {Which empirical model
+  is best suited to simulate glacier mass balances?} \emph{Journal of
+  Glaciology}, \textbf{63}(237), 1--16 (\doi {10.1017/jog.2016.110})
+
 \bibitem[\protect\citename{Revuelto and others, }2014]{Revuelto2014}
 Revuelto J, L{\'o}pez-Moreno JI, Azor{\'i}n-Molina C and {Vicente Serrano} SM
   (2014) {Topographic control of snowpack distribution in a small catchment in
@@ -691,6 +707,13 @@ Waechter A, Copland L and Herdes E (2015) {Modern glacier velocities across the
   from 1959 to 2012}. \emph{Journal of Glaciology}, \textbf{61}(228), 624--634
   (\doi {10.3189/2015JoG14J147})
 
+\bibitem[\protect\citename{Wagnon and others, }2013]{Wagnon2013}
+Wagnon P, Vincent C, Arnaud Y, Berthier E, Vuillermoz E, Gruber S,
+  M{\'e}n{\'e}goz M, Gilbert A, Dumont M, Shea J and others (2013) {Seasonal
+  and annual mass balances of {Mera and Pokalde glaciers (Nepal Himalaya)}
+  since 2007}. \emph{The Cryosphere}, \textbf{7}(6), 1769--1786 (\doi
+  {10.5194/tc-7-1769-2013})
+
 \bibitem[\protect\citename{Wake and others, }2002]{Wake2002}
 Wake CP, Yalcin K and Gundestrup NS (2002) {The climate signal recorded in the
   oxygen-isotope, accumulation and major-ion time series from the {Eclipse ice
@@ -779,6 +802,11 @@ Wood WA (1948) {Project {``Snow Cornice"}: the establishment of the {Seward
 \bibitem[\protect\citename{Work and others, }1965]{Work1965}
 Work R, Stockwell H, Freeman T and Beaumont R (1965) \emph{{Accuracy of field
   snow surveys}}. Cold Regions Research \& Engineering Laboratory
+
+\bibitem[\protect\citename{Zemp and others, }2009]{Zemp2009}
+Zemp M, Hoelzle M and Haeberli W (2009) {Six decades of glacier mass-balance
+  observations: a review of the worldwide monitoring network}. \emph{Annals of
+  Glaciology}, \textbf{50}(50), 101--111 (\doi {10.3189/172756409787769591})
 
 \bibitem[\protect\citename{Zeugner and Feldkircher, }2015]{Zeugner2015}
 Zeugner S and Feldkircher M (2015) {Bayesian Model Averaging Employing Fixed

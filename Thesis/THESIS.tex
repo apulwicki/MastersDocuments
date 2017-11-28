@@ -2418,7 +2418,11 @@ Glacier-wide winter balance is affected by uncertainty introduced by the represe
 	\label{fig:WSMBDist_LR}
 \end{figure}
 
-The probability density functions overlap between the two interpolation methods although the probability-density-function modes are lower when simple kriging is used for Glaciers 2 and 13 and higher for Glacier 4. Simple kriging results in WB distributions that overlap between glaciers, with a small probability of estimating glacier-wide WB equal to 0\,m\,w.e. for Glaciers 2 and 13. Linear regression results in overlapping WB distributions for Glaciers 2 and 4, with the probability density function being slightly narrower for Glacier 4 than that of Glacier 2. 
+The probability density functions overlap between the two interpolation methods although the probability-density-function modes are lower when simple kriging is used for Glaciers 2 and 13 and higher for Glacier 4. Simple kriging results in WB distributions that overlap between glaciers, with a small probability of estimating glacier-wide WB equal to 0\,m\,w.e. for Glaciers 2 and 13 {\color{red}(PDF crosses y-axis)}. Linear regression results in overlapping WB distributions for Glaciers 2 and 4, with the probability density function being slightly narrower for Glacier 4 than that of Glacier 2. 
+
+{\color{red}The standard deviation of WB when considering all three sources of uncertainty 
+(Table \ref{tab:WSMBdistribution_sigma}) is smaller than previously reported errors of annual mass balance. Error values (two standard error) range from 0.1\,m\,w.e. \citep{Jansson1999} to 0.6\,m\,w.e. \citep{Funk1997}, with intermediate values of 0.25--0.5\,m\,w.e. being the most prevalent \citep[e.g.][]{Zemp2009,Wagnon2013}. Error found in this study for WB is $\sim$20\% of the reported error for annual mass balance. Estimates of WB are generally accepted to be less accurate than estimates of summer balance \citep[e.g.][]{Zemp2009,Reveillet2016}, indicating that the WB uncertainty is likely underestimated in this work. To better capture the uncertainty in WB estimates, additional sources of uncertainty need to be considered (see Section \ref{sec:conc_limitations}). In particular, uncertainty due to interpolation/extrapolation was only quantified for linear relations, which may not apply in the accumulation area. It is likely that interpolation uncertainty is larger than assessed in this study and is a major contributor to annual mass balance uncertainty.}
+
 
 \subsubsection{Spatial patterns of winter balance uncertainty}
 
@@ -2489,6 +2493,7 @@ The regression methods presented in this thesis are also a novel contribution to
 Use of a Monte Carlo analysis is a unique contribution to estimating WB uncertainty. I am able to identify key sources of uncertainty in the methods used to estimate WB and to quantify their individual and combined effect on glacier-wide WB uncertainty. This analysis method is highly adaptable, allowing additional sources of uncertainty to be incorporated, such as those arising from vertical and horizontal errors of the DEM or snow-density measurement error. The analysis can also be applied to other methods of interpolating WB data that are not investigated in this thesis (e.g. hierarchal trees). 
 
 \section{Limitations and future work}
+\label{sec:conc_limitations}
 
 In this section, I address potential limitations of the thesis work, including the restriction of our data to a single year, minimal sampling in the accumulation area, the problem of uncorrelated snow-pit- and Federal-Sampler-derived densities, a sampling design that could not be optimized \textit{a priori}, the assumption of spatially uniform subgrid variability and the lack of more finely resolved DEMs. Future work that could address these shortcomings is presented. I also suggest improvements to the current work, including potential ways to increase explanatory power of topographic parameters and additional sources of uncertainty that were not included in analysis. 
 

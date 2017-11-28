@@ -3963,3 +3963,50 @@
 	year = "2016"
 }
 
+@article{Buhler2015,
+	author = "B{\"u}hler, Y and Marty, M and Egli, L and Veitinger, J and Jonas, T and Thee, P and Ginzler, C",
+	doi = "10.5194/tc-10-1075-2016",
+	journal = "Cryosphere",
+	number = "1",
+	title = "{Snow depth mapping in high-alpine catchments using digital photogrammetry.}",
+	volume = "9",
+	year = "2015"
+}
+
+@article{Jagt2015,
+	abstract = "Alpine areas pose challenges for many existing remote sensing methods for snow depth retrieval, thus leading to uncertainty in water forecasting and budgeting. Herein, we present the results of a field campaign conducted in Tasmania, Australia in 2013 from which estimates of snow depth were derived using a low-cost photogrammetric approach on-board a micro unmanned aircraft system (UAS). Using commercial off-the-shelf (COTS) sensors mounted on a multi-rotor UAS and photogrammetric image processing techniques, the results demonstrate that snow depth can be accurately retrieved by differencing two surface models corresponding to the snow-free and snow-covered scenes, respectively. In addition to accurate snow depth retrieval, we show that high-resolution (50 cm) spatially continuous snow depth maps can be created using this methodology. Two types of photogrammetric bundle adjustment (BA) routines are implemented in this study to determine the optimal estimates of sensor position and orientation, in addition to 3D scene information; conventional BA (which relies on measured ground control points) and direct BA (which does not require ground control points). Error sources that affect the accuracy of the BA and subsequent snow depth reconstruction are discussed. The results indicate the UAS is capable of providing high-resolution and high-accuracy (\&lt;10 cm) estimates of snow depth over a small alpine area (~0.7 ha) with significant snow accumulation (depths greater than one meter) at a fraction of the cost of full-size aerial survey approaches. The RMSE of estimated snow depths using the conventional BA approach is 9.6 cm, whereas the direct BA is characterized by larger error, with an RMSE of 18.4 cm. If a simple affine transformation is applied to the point cloud derived from the direct BA, the overall RMSE is reduced to 8.8 cm RMSE.",
+	author = "{Vander Jagt}, Benjamin and Lucieer, Arko and Wallace, Luke and Turner, Darren and Durand, Michael",
+	doi = "10.3390/geosciences5030264",
+	issn = "2076-3263",
+	journal = "Geosciences",
+	number = "3",
+	pages = "264--285",
+	title = "{Snow Depth Retrieval with UAS Using Photogrammetric Techniques}",
+	url = "http://www.mdpi.com/2076-3263/5/3/264",
+	volume = "5",
+	year = "2015"
+}
+
+@article{Zemp2009,
+	author = "Zemp, M and Hoelzle, M and Haeberli, W",
+	doi = "10.3189/172756409787769591",
+	journal = "Annals of Glaciology",
+	number = "50",
+	pages = "101--111",
+	publisher = "International Glaciological Society",
+	title = "{Six decades of glacier mass-balance observations: a review of the worldwide monitoring network}",
+	volume = "50",
+	year = "2009"
+}
+
+@article{Wagnon2013,
+	author = "Wagnon, Patrick and Vincent, C and Arnaud, Yves and Berthier, E and Vuillermoz, E and Gruber, S and M{\'e}n{\'e}goz, M and Gilbert, A and Dumont, M and Shea, JM and others",
+	journal = "The Cryosphere",
+	localfile = "hal-00982297",
+	number = "6",
+	pages = "1769--1786",
+	title = "{Seasonal and annual mass balances of {Mera and Pokalde glaciers (Nepal Himalaya)} since 2007}",
+	volume = "7",
+	year = "2013"
+}
+
