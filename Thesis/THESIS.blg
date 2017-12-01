@@ -3,48 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: THESIS.aux
 The style file: igs.bst
 Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
-Warning--I didn't find a database entry for "Braithwaite2002"
 Warning--there's a number but no volume in Clarke2002
 Warning--empty journal in Revuelto2014
-You've used 162 entries,
+You've used 163 entries,
             2869 wiz_defined-function locations,
-            1749 strings with 38980 characters,
-and the built_in function-call counts, 178536 in all, are:
-= -- 19295
-> -- 3494
-< -- 139
-+ -- 1219
-- -- 1057
-* -- 13865
-:= -- 19840
-add.period$ -- 161
-call.type$ -- 162
-change.case$ -- 1339
-chr.to.int$ -- 163
-cite$ -- 164
-duplicate$ -- 18287
-empty$ -- 13973
-format.name$ -- 1721
-if$ -- 37131
+            1753 strings with 39102 characters,
+and the built_in function-call counts, 179251 in all, are:
+= -- 19368
+> -- 3502
+< -- 141
++ -- 1222
+- -- 1059
+* -- 13917
+:= -- 19929
+add.period$ -- 162
+call.type$ -- 163
+change.case$ -- 1345
+chr.to.int$ -- 164
+cite$ -- 165
+duplicate$ -- 18360
+empty$ -- 14036
+format.name$ -- 1725
+if$ -- 37280
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1785
-newline$ -- 493
-num.names$ -- 648
-pop$ -- 8423
+missing$ -- 1794
+newline$ -- 496
+num.names$ -- 652
+pop$ -- 8449
 preamble$ -- 1
-purify$ -- 1176
+purify$ -- 1181
 quote$ -- 0
-skip$ -- 3832
+skip$ -- 3849
 stack$ -- 0
-substring$ -- 20543
-swap$ -- 4469
+substring$ -- 20615
+swap$ -- 4492
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1956
+type$ -- 1966
 warning$ -- 2
-while$ -- 1133
+while$ -- 1138
 width$ -- 0
-write$ -- 2061
-(There were 3 warnings)
+write$ -- 2074
+(There were 2 warnings)
