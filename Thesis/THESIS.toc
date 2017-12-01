@@ -18,9 +18,9 @@
 \contentsline {section}{\numberline {1.4}Snow distribution on glaciers}{11}{section.1.4}
 \contentsline {section}{\numberline {1.5}Research scope}{14}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Study site}{14}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Overview of research}{16}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.2}Overview of research}{17}{subsection.1.5.2}
 \contentsline {subsection}{\numberline {1.5.3}Thesis structure}{18}{subsection.1.5.3}
-\contentsline {section}{\numberline {1.6}Summary}{18}{section.1.6}
+\contentsline {section}{\numberline {1.6}Summary}{19}{section.1.6}
 \contentsline {chapter}{\numberline {2}Field methods and data processing}{20}{chapter.2}
 \contentsline {section}{\numberline {2.1}Experimental design}{20}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Sampling scheme and naming system}{20}{subsection.2.1.1}
@@ -59,7 +59,7 @@
 \contentsline {subsection}{\numberline {4.2.3}Parameter correlations}{75}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Topographic parameter distributions}{76}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}Summary}{86}{section.4.3}
-\contentsline {chapter}{\numberline {5}Interpolation}{88}{chapter.5}
+\contentsline {chapter}{\numberline {5}Distribution of winter balance}{88}{chapter.5}
 \contentsline {section}{\numberline {5.1}Linear topographic regressions}{88}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Background}{88}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Significance of variables in regression models}{89}{subsection.5.1.2}
@@ -82,7 +82,7 @@
 \contentsline {subsection}{\numberline {5.3.3}Results}{123}{subsection.5.3.3}
 \contentsline {section}{\numberline {5.4}Comparison of interpolation methods}{125}{section.5.4}
 \contentsline {section}{\numberline {5.5}Summary}{129}{section.5.5}
-\contentsline {chapter}{\numberline {6}Uncertainty analysis}{131}{chapter.6}
+\contentsline {chapter}{\numberline {6}Winter-balance uncertainty}{131}{chapter.6}
 \contentsline {section}{\numberline {6.1}Variability at multiple scales}{131}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Point-scale variability}{131}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Gridcell-scale variability}{133}{subsection.6.1.2}
@@ -100,37 +100,37 @@
 \contentsline {section}{\numberline {6.3}Regional winter-balance gradient}{143}{section.6.3}
 \contentsline {section}{\numberline {6.4}Summary}{144}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusion}{146}{chapter.7}
-\contentsline {section}{\numberline {7.1}Significance and strengths}{146}{section.7.1}
-\contentsline {section}{\numberline {7.2}Limitations and future work}{147}{section.7.2}
-\contentsline {section}{\numberline {7.3}Summary}{150}{section.7.3}
-\contentsline {chapter}{Bibliography}{152}{section*.160}
-\contentsline {chapter}{Appendix \numberline {A}Literature review: Snow models }{164}{Appendix.a.A}
-\contentsline {section}{\numberline {A.1}Dynamic models}{164}{section.a.A.1}
-\contentsline {section}{\numberline {A.2}Statistical downscaling}{165}{section.a.A.2}
-\contentsline {chapter}{Appendix \numberline {B}Literature review: Indirect methods of measuring snow accumulation }{167}{Appendix.a.B}
-\contentsline {section}{\numberline {B.1}Ground-penetrating radar (GPR)}{167}{section.a.B.1}
-\contentsline {subsection}{\numberline {B.1.1}DEM subtraction}{168}{subsection.a.B.1.1}
-\contentsline {subsection}{\numberline {B.1.2}Comparison of methods}{169}{subsection.a.B.1.2}
-\contentsline {subsection}{\numberline {B.1.3}Temporally resolved methods}{170}{subsection.a.B.1.3}
-\contentsline {chapter}{Appendix \numberline {C}Literature review: Snow distribution in the St. Elias Mountains}{171}{Appendix.a.C}
-\contentsline {chapter}{Appendix \numberline {D}GPS Waypoint Creation and Upload to GPS Device}{174}{Appendix.a.D}
-\contentsline {chapter}{Appendix \numberline {E}Field Maps}{177}{Appendix.a.E}
-\contentsline {chapter}{Appendix \numberline {F}Data Processing Scripts}{189}{Appendix.a.F}
-\contentsline {section}{\numberline {F.1}Snow depth measured with graduated avalanche probe}{189}{section.a.F.1}
-\contentsline {subsection}{\numberline {F.1.1}Linear and curvilinear transect surveys}{189}{subsection.a.F.1.1}
-\contentsline {subsection}{\numberline {F.1.2}Zigzag surveys}{190}{subsection.a.F.1.2}
-\contentsline {section}{\numberline {F.2}Snow density}{191}{section.a.F.2}
-\contentsline {section}{\numberline {F.3}Point-scale winter balance}{192}{section.a.F.3}
-\contentsline {chapter}{Appendix \numberline {G}Topographic parameters from QGIS to Matlab}{194}{Appendix.a.G}
-\contentsline {chapter}{Appendix \numberline {H}Multiple linear regression (MLR) software}{195}{Appendix.a.H}
-\contentsline {chapter}{Appendix \numberline {I}Bayesian model averaging (BMA) software}{197}{Appendix.a.I}
-\contentsline {chapter}{Appendix \numberline {J}Kriging software}{199}{Appendix.a.J}
-\contentsline {chapter}{Appendix \numberline {K}Variability of data at multiple scales}{200}{Appendix.a.K}
-\contentsline {section}{\numberline {K.1}Point Scale}{200}{section.a.K.1}
-\contentsline {subsection}{\numberline {K.1.1}Data normality}{200}{subsection.a.K.1.1}
-\contentsline {subsection}{\numberline {K.1.2}Observer differences}{200}{subsection.a.K.1.2}
-\contentsline {subsection}{\numberline {K.1.3}Gridcell scale}{200}{subsection.a.K.1.3}
-\contentsline {subsection}{\numberline {K.1.4}Basin scale}{202}{subsection.a.K.1.4}
-\contentsline {chapter}{Appendix \numberline {L}Glacier-wide winter balance uncertainty}{206}{Appendix.a.L}
-\contentsline {section}{\numberline {L.1}Linear regression winter balance distribution}{207}{section.a.L.1}
-\contentsline {section}{\numberline {L.2}Simple kriging winter balance distribution}{211}{section.a.L.2}
+\contentsline {section}{\numberline {7.1}Significance and strengths}{147}{section.7.1}
+\contentsline {section}{\numberline {7.2}Limitations and future work}{148}{section.7.2}
+\contentsline {section}{\numberline {7.3}Summary}{151}{section.7.3}
+\contentsline {chapter}{Bibliography}{153}{section*.160}
+\contentsline {chapter}{Appendix \numberline {A}Literature review: Snow models }{165}{Appendix.a.A}
+\contentsline {section}{\numberline {A.1}Dynamic models}{165}{section.a.A.1}
+\contentsline {section}{\numberline {A.2}Statistical downscaling}{166}{section.a.A.2}
+\contentsline {chapter}{Appendix \numberline {B}Literature review: Indirect methods of measuring snow accumulation }{168}{Appendix.a.B}
+\contentsline {section}{\numberline {B.1}Ground-penetrating radar (GPR)}{168}{section.a.B.1}
+\contentsline {subsection}{\numberline {B.1.1}DEM subtraction}{169}{subsection.a.B.1.1}
+\contentsline {subsection}{\numberline {B.1.2}Comparison of methods}{170}{subsection.a.B.1.2}
+\contentsline {subsection}{\numberline {B.1.3}Temporally resolved methods}{171}{subsection.a.B.1.3}
+\contentsline {chapter}{Appendix \numberline {C}Literature review: Snow distribution in the St. Elias Mountains}{172}{Appendix.a.C}
+\contentsline {chapter}{Appendix \numberline {D}GPS Waypoint Creation and Upload to GPS Device}{175}{Appendix.a.D}
+\contentsline {chapter}{Appendix \numberline {E}Field Maps}{178}{Appendix.a.E}
+\contentsline {chapter}{Appendix \numberline {F}Data Processing Scripts}{190}{Appendix.a.F}
+\contentsline {section}{\numberline {F.1}Snow depth measured with graduated avalanche probe}{190}{section.a.F.1}
+\contentsline {subsection}{\numberline {F.1.1}Linear and curvilinear transect surveys}{190}{subsection.a.F.1.1}
+\contentsline {subsection}{\numberline {F.1.2}Zigzag surveys}{191}{subsection.a.F.1.2}
+\contentsline {section}{\numberline {F.2}Snow density}{192}{section.a.F.2}
+\contentsline {section}{\numberline {F.3}Point-scale winter balance}{193}{section.a.F.3}
+\contentsline {chapter}{Appendix \numberline {G}Topographic parameters from QGIS to Matlab}{195}{Appendix.a.G}
+\contentsline {chapter}{Appendix \numberline {H}Multiple linear regression (MLR) software}{196}{Appendix.a.H}
+\contentsline {chapter}{Appendix \numberline {I}Bayesian model averaging (BMA) software}{198}{Appendix.a.I}
+\contentsline {chapter}{Appendix \numberline {J}Kriging software}{200}{Appendix.a.J}
+\contentsline {chapter}{Appendix \numberline {K}Variability of data at multiple scales}{201}{Appendix.a.K}
+\contentsline {section}{\numberline {K.1}Point Scale}{201}{section.a.K.1}
+\contentsline {subsection}{\numberline {K.1.1}Data normality}{201}{subsection.a.K.1.1}
+\contentsline {subsection}{\numberline {K.1.2}Observer differences}{201}{subsection.a.K.1.2}
+\contentsline {subsection}{\numberline {K.1.3}Gridcell scale}{201}{subsection.a.K.1.3}
+\contentsline {subsection}{\numberline {K.1.4}Basin scale}{203}{subsection.a.K.1.4}
+\contentsline {chapter}{Appendix \numberline {L}Glacier-wide winter balance uncertainty}{207}{Appendix.a.L}
+\contentsline {section}{\numberline {L.1}Linear regression winter balance distribution}{208}{section.a.L.1}
+\contentsline {section}{\numberline {L.2}Simple kriging winter balance distribution}{212}{section.a.L.2}
