@@ -5,45 +5,45 @@ The style file: igs.bst
 Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
 Warning--there's a number but no volume in Clarke2002
 Warning--empty journal in Revuelto2014
-You've used 152 entries,
+You've used 160 entries,
             2869 wiz_defined-function locations,
-            1687 strings with 37186 characters,
-and the built_in function-call counts, 169441 in all, are:
-= -- 18340
-> -- 3330
-< -- 125
-+ -- 1161
-- -- 1009
-* -- 13162
-:= -- 18791
-add.period$ -- 151
-call.type$ -- 152
-change.case$ -- 1267
-chr.to.int$ -- 153
-cite$ -- 154
-duplicate$ -- 17370
-empty$ -- 13235
-format.name$ -- 1620
-if$ -- 35244
+            1737 strings with 38585 characters,
+and the built_in function-call counts, 176748 in all, are:
+= -- 19108
+> -- 3454
+< -- 137
++ -- 1205
+- -- 1045
+* -- 13736
+:= -- 19631
+add.period$ -- 159
+call.type$ -- 160
+change.case$ -- 1324
+chr.to.int$ -- 161
+cite$ -- 162
+duplicate$ -- 18100
+empty$ -- 13832
+format.name$ -- 1699
+if$ -- 36759
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1687
-newline$ -- 463
-num.names$ -- 608
-pop$ -- 8011
+missing$ -- 1767
+newline$ -- 487
+num.names$ -- 640
+pop$ -- 8328
 preamble$ -- 1
-purify$ -- 1112
+purify$ -- 1162
 quote$ -- 0
-skip$ -- 3629
+skip$ -- 3788
 stack$ -- 0
-substring$ -- 19562
-swap$ -- 4234
+substring$ -- 20365
+swap$ -- 4435
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1848
+type$ -- 1935
 warning$ -- 2
-while$ -- 1075
+while$ -- 1123
 width$ -- 0
-write$ -- 1941
+write$ -- 2039
 (There were 2 warnings)
