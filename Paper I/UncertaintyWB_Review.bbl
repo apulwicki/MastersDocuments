@@ -1,4 +1,4 @@
-\begin{thebibliography}{82}
+\begin{thebibliography}{83}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -240,6 +240,10 @@ Li J and Heap AD (2008) {A review of spatial interpolation methods for
 Liston GE and Elder K (2006) {A distributed snow-evolution modeling system
   ({SnowModel})}. \emph{Journal of Hydrometeorology}, \textbf{7}(6), 1259--1276
   (\doi {10.1175/JHM548.1})
+
+\bibitem[\protect\citename{Liston and Sturm, }1998]{Liston1998}
+Liston GE and Sturm M (1998) {A snow-transport model for complex terrain}.
+  \emph{Journal of Glaciology}, \textbf{44}(148), 498--516
 
 \bibitem[\protect\citename{L{\'o}pez-Moreno and others, }2010]{Lopez2010}
 L{\'o}pez-Moreno J, Latron J and Lehmann A (2010) {Effects of sample and grid

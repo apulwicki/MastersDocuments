@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: UncertaintyWB_Review.aux
 The style file: igs.bst
 Database file #1: /Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit.bib
-You've used 82 entries,
+You've used 83 entries,
             2869 wiz_defined-function locations,
-            1217 strings with 22569 characters,
-and the built_in function-call counts, 93593 in all, are:
-= -- 10142
-> -- 1898
-< -- 72
-+ -- 660
-- -- 579
-* -- 7198
-:= -- 10328
-add.period$ -- 82
-call.type$ -- 82
-change.case$ -- 704
-chr.to.int$ -- 83
-cite$ -- 82
-duplicate$ -- 9578
-empty$ -- 7272
-format.name$ -- 921
-if$ -- 19516
+            1223 strings with 22677 characters,
+and the built_in function-call counts, 94423 in all, are:
+= -- 10226
+> -- 1912
+< -- 74
++ -- 665
+- -- 583
+* -- 7265
+:= -- 10425
+add.period$ -- 83
+call.type$ -- 83
+change.case$ -- 711
+chr.to.int$ -- 84
+cite$ -- 83
+duplicate$ -- 9658
+empty$ -- 7341
+format.name$ -- 932
+if$ -- 19687
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 923
-newline$ -- 253
-num.names$ -- 328
-pop$ -- 4490
+missing$ -- 933
+newline$ -- 256
+num.names$ -- 332
+pop$ -- 4522
 preamble$ -- 1
-purify$ -- 617
+purify$ -- 623
 quote$ -- 0
-skip$ -- 2056
+skip$ -- 2075
 stack$ -- 0
-substring$ -- 10797
-swap$ -- 2295
+substring$ -- 10881
+swap$ -- 2323
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1000
+type$ -- 1011
 warning$ -- 0
-while$ -- 592
+while$ -- 598
 width$ -- 0
-write$ -- 1042
+write$ -- 1054
