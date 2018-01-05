@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  4 JAN 2018 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  5 JAN 2018 11:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -461,50 +461,53 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [5]
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
+
+
+[6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[6]
-Overfull \vbox (6.54431pt too high) has occurred while \output is active []
-
-
 [7]
-Overfull \vbox (6.54431pt too high) has occurred while \output is active []
-
-
-[8]
-Overfull \vbox (6.54431pt too high) has occurred while \output is active []
-
-
-[9]
 Underfull \vbox (badness 3690) has occurred while \output is active []
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[10]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 201
-.
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \vbox (badness 4595) has occurred while \output is active []
+[8]
+Underfull \vbox (badness 1803) has occurred while \output is active []
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
+[9]
+Underfull \vbox (badness 1264) has occurred while \output is active []
+
+
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
+
+
+[10]
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 199
+.
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
+
+
 [11]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 209.
+(Font)              <12> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 209.
+(Font)              <8> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 209.
+(Font)              <6> on input line 207.
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
@@ -513,15 +516,18 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 File: DepthBoxplot_SPvsFS.pdf Graphic file (type pdf)
 
 <use DepthBoxplot_SPvsFS.pdf>
-Package pdftex.def Info: DepthBoxplot_SPvsFS.pdf used on input line 231.
+Package pdftex.def Info: DepthBoxplot_SPvsFS.pdf used on input line 229.
 (pdftex.def)             Requested size: 177.26375pt x 333.12796pt.
 
 <ZigzagHistogram.pdf, id=83, 506.89375pt x 170.6375pt>
 File: ZigzagHistogram.pdf Graphic file (type pdf)
 
 <use ZigzagHistogram.pdf>
-Package pdftex.def Info: ZigzagHistogram.pdf used on input line 238.
+Package pdftex.def Info: ZigzagHistogram.pdf used on input line 236.
 (pdftex.def)             Requested size: 405.16878pt x 136.3956pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
@@ -530,56 +536,64 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[14 <./ZigzagHistogram.pdf>] <BetaCoeffs.pdf, id=257, 244.915pt x 255.95625pt>
-File: BetaCoeffs.pdf Graphic file (type pdf)
+[14 <./ZigzagHistogram.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use BetaCoeffs.pdf>
-Package pdftex.def Info: BetaCoeffs.pdf used on input line 262.
-(pdftex.def)             Requested size: 202.58052pt x 211.71718pt.
- <LR_map.pdf, id=258, 352.11568pt x 192.21915pt>
-File: LR_map.pdf Graphic file (type pdf)
-
-<use LR_map.pdf>
-Package pdftex.def Info: LR_map.pdf used on input line 269.
-(pdftex.def)             Requested size: 253.22952pt x 138.23929pt.
- <SK_map.pdf, id=259, 351.57652pt x 191.36722pt>
-File: SK_map.pdf Graphic file (type pdf)
-
-<use SK_map.pdf>
-Package pdftex.def Info: SK_map.pdf used on input line 270.
-(pdftex.def)             Requested size: 253.22952pt x 137.83977pt.
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[15]
+[15] <BetaCoeffs.pdf, id=261, 244.915pt x 255.95625pt>
+File: BetaCoeffs.pdf Graphic file (type pdf)
+ <use BetaCoeffs.pdf>
+Package pdftex.def Info: BetaCoeffs.pdf used on input line 260.
+(pdftex.def)             Requested size: 202.58052pt x 211.71718pt.
+
+<LR_map.pdf, id=262, 352.11568pt x 192.21915pt>
+File: LR_map.pdf Graphic file (type pdf)
+ <use LR_map.pdf>
+Package pdftex.def Info: LR_map.pdf used on input line 267.
+(pdftex.def)             Requested size: 253.22952pt x 138.23929pt.
+
+<SK_map.pdf, id=263, 351.57652pt x 191.36722pt>
+File: SK_map.pdf Graphic file (type pdf)
+ <use SK_map.pdf>
+Package pdftex.def Info: SK_map.pdf used on input line 268.
+(pdftex.def)             Requested size: 253.22952pt x 137.83977pt.
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 278.
+               Default added (so using `tbp') on input line 276.
 
 <SpatialVar_LR.pdf, id=264, 354.46527pt x 185.82379pt>
 File: SpatialVar_LR.pdf Graphic file (type pdf)
  <use SpatialVar_LR.pdf>
-Package pdftex.def Info: SpatialVar_LR.pdf used on input line 293.
+Package pdftex.def Info: SpatialVar_LR.pdf used on input line 291.
 (pdftex.def)             Requested size: 253.22952pt x 132.75525pt.
 
 <SpatialVar_SK.pdf, id=265, 350.90016pt x 186.24844pt>
 File: SpatialVar_SK.pdf Graphic file (type pdf)
  <use SpatialVar_SK.pdf>
-Package pdftex.def Info: SpatialVar_SK.pdf used on input line 294.
+Package pdftex.def Info: SpatialVar_SK.pdf used on input line 292.
 (pdftex.def)             Requested size: 253.22952pt x 134.40854pt.
 
 <observedVSestimated_S2.pdf, id=266, 385.9417pt x 244.42336pt>
 File: observedVSestimated_S2.pdf Graphic file (type pdf)
 
 <use observedVSestimated_S2.pdf>
-Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 301.
+Package pdftex.def Info: observedVSestimated_S2.pdf used on input line 299.
 (pdftex.def)             Requested size: 354.51978pt x 224.52162pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [16 <./BetaCoeffs.pdf>]
+Overfull \vbox (19.67448pt too high) has occurred while \output is active []
+
+
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
@@ -598,7 +612,7 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 <WSMBDist.pdf, id=431, 506.89375pt x 227.85126pt>
 File: WSMBDist.pdf Graphic file (type pdf)
  <use WSMBDist.pdf>
-Package pdftex.def Info: WSMBDist.pdf used on input line 324.
+Package pdftex.def Info: WSMBDist.pdf used on input line 322.
 (pdftex.def)             Requested size: 481.13454pt x 216.27667pt.
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
@@ -607,23 +621,22 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 [20]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 333.
+               Default added (so using `tbp') on input line 331.
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[21 <./WSMBDist.pdf>] <AccumGrad.pdf, id=450, 190.73323pt x 177.76808pt>
-File: AccumGrad.pdf Graphic file (type pdf)
+[21 <./WSMBDist.pdf>]
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
-<use AccumGrad.pdf>
-Package pdftex.def Info: AccumGrad.pdf used on input line 359.
+
+[22] <AccumGrad.pdf, id=453, 190.73323pt x 177.76808pt>
+File: AccumGrad.pdf Graphic file (type pdf)
+ <use AccumGrad.pdf>
+Package pdftex.def Info: AccumGrad.pdf used on input line 357.
 (pdftex.def)             Requested size: 177.26375pt x 165.22493pt.
 
-Overfull \vbox (6.54431pt too high) has occurred while \output is active []
-
-
-[22]
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
@@ -639,13 +652,17 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [25] (./UncertaintyWB_Review.bbl
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
+
+
+[26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[26]
+[27]
 Underfull \hbox (badness 1681) in paragraph at lines 135--139
 []\OT1/lmr/m/n/10 Elder K, Rosen-thal W and Davis RE (1998) Es-ti-mat-ing the s
 pa-tial dis-tri-bu-tion of snow wa-ter equiv-
@@ -662,13 +679,6 @@ i-cal Pro-cesses\OT1/lmr/m/n/10 , \OT1/lmr/bx/n/10 12\OT1/lmr/m/n/10 (1011), 17
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (6.54431pt too high) has occurred while \output is active []
-
-
 [28]
 Underfull \hbox (badness 1546) in paragraph at lines 251--254
 []\OT1/lmr/m/n/10 Liston GE and Elder K (2006) A distributed snow-evolution mod
@@ -676,11 +686,14 @@ eling system (SnowModel). \OT1/lmr/m/it/10 Journal of
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [29]
-Underfull \vbox (badness 1946) has occurred while \output is active []
+Underfull \vbox (badness 5260) has occurred while \output is active []
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
@@ -702,15 +715,18 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  3970 strings out of 494501
  54411 string characters out of 6167030
- 120871 words of memory out of 5000000
+ 118871 words of memory out of 5000000
  7133 multiletter control sequences out of 15000+600000
  89427 words of font info for 86 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,17n,27p,1630b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,17n,27p,1630b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr
 /local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/loca
 l/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/tex
@@ -732,7 +748,7 @@ basic/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/
 texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-
 dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2015basic/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on UncertaintyWB_Review.pdf (32 pages, 2892484 bytes).
+Output written on UncertaintyWB_Review.pdf (32 pages, 2892584 bytes).
 PDF statistics:
  563 PDF objects out of 1000 (max. 8388607)
  419 compressed objects within 5 object streams
