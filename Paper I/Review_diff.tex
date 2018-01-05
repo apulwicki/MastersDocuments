@@ -1,24 +1,16 @@
 % igs2ejournalguide.tex
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL WinterBalance.tex          Tue Jan  2 09:55:36 2018
-%DIF ADD UncertaintyWB_Review.tex   Thu Jan  4 08:27:23 2018
+%DIF ADD UncertaintyWB_Review.tex   Fri Jan  5 12:07:11 2018
 % v4.00 3-sept-2015
 
 \NeedsTeXFormat{LaTeX2e}
 
 % check that the math fits the two-column format:
-%DIF 7c7
-%DIF < \documentclass[twocolumn, letterpaper]{igs}
-%DIF -------
-%\documentclass[twocolumn, letterpaper]{igs} %DIF > 
-%DIF -------
+\documentclass[twocolumn, letterpaper]{igs}
 
 % but use this version when submitting your article:
-%DIF 10c10
-%DIF < %\documentclass[review,oneside, letterpaper]{igs}
-%DIF -------
-\documentclass[review,oneside, letterpaper]{igs} %DIF > 
-%DIF -------
+%\documentclass[review,oneside, letterpaper]{igs}
 
   \usepackage{igsnatbib}
   \usepackage{lmodern}
@@ -232,18 +224,19 @@ We carried out winter balance surveys on three unnamed glaciers in the Donjek Ra
 
 \section{Methods}
 
-Estimating glacier-wide winter balance involves transforming measurements of snow depth and density into values of winter balance distributed across a defined grid. We do this in four steps. (1) Obtain direct measurements of snow depth and density in the field. (2) Assign density values to all depth-measurement locations to calculate point-scale values of WB at each location. (3) Average all point-scale  values within each gridcell of a digital elevation model (DEM) to obtain the gricell-averaged WB. (4) Interpolate and extrapolate these gridcell-averaged WB values to obtain estimates of WB (in m\,w.e.) in each gridcell across the domain. \DIFaddbegin \DIFadd{Glacier-wide WB is then calculated by taking the average of all gridcell-averaged WB values for each glacier. }\DIFaddend For brevity, we refer to these four steps as (1) field measurements, (2) density assignment, (3) gridcell-averaged WB and (4) distributed WB. Detailed methodology for each step is outlined below. \DIFaddbegin \DIFadd{We use the SPIRIT SPOT-5 DEM (40$\times$40\,m) from 2005 \mbox{%DIFAUXCMD
+Estimating glacier-wide winter balance involves transforming measurements of snow depth and density into values of winter balance distributed across a defined grid. We do this in four steps. (1) Obtain direct measurements of snow depth and density in the field. (2) Assign density values to all depth-measurement locations to calculate point-scale values of WB at each location. \DIFaddbegin \DIFadd{Winter balance can be estimated as the product of snow depth and depth-averaged density. }\DIFaddend (3) Average all point-scale values within each gridcell of a digital elevation model (DEM) to obtain the gricell-averaged WB. (4) Interpolate and extrapolate these gridcell-averaged WB values to obtain estimates of WB (in m\,w.e.) in each gridcell across the domain. \DIFaddbegin \DIFadd{Glacier-wide WB is then calculated by taking the average of all gridcell-averaged WB values for each glacier. }\DIFaddend For brevity, we refer to these four steps as (1) field measurements, (2) density assignment, (3) gridcell-averaged WB and (4) distributed WB. Detailed methodology for each step is outlined below. \DIFaddbegin \DIFadd{We use the SPIRIT SPOT-5 DEM (40$\times$40\,m) from 2005 \mbox{%DIFAUXCMD
 \citep{Korona2009} }\hspace{0pt}%DIFAUXCMD
 throughout this study.
 }\DIFaddend 
 
 \subsection{Field measurements}
 
-\DIFaddbegin \DIFadd{!!!!!!!!!!!!!!
-In total, we collected more than 9000 snow-depth measurements throughout the study area (Table \ref }{\DIFadd{tab:GlacierDetails}}\DIFadd{). 
-Winter balance can be estimated as the product of snow depth and depth-averaged density.
- Our sampling campaign involved four people and occurred between 5--15 May 2016, which falls within the period of historical peak snow accumulation in southwestern Yukon (Yukon Snow Survey Bulletin and Water Supply Forecast, May 1, 2016).
- During the field campaign there were two small accumulation events. The first, on 6 May 2016, also involved high winds so accumulation could not be determined. The second, on 10 May 2016, resulted in 0.01 m w.e accumulation measured at one location on Glacier 2. Positive temperatures and clear skies occurred between 11--16 May 2016, which we suspect resulted in melt occurring on Glacier 13. The snow in the lower part of the ablation area of Glacier 13 was isothermal and showed clear signs of melt and metamorphosis. The total amount of accumulation and melt during the study period was not be estimated so no corrections were made. 
+\DIFaddbegin \DIFadd{Our sampling campaign involved four people and occurred between 5--15 May 2016, which falls within the period of historical peak snow accumulation in southwestern Yukon (Yukon Snow Survey Bulletin and Water Supply Forecast, May 1, 2016). Snow depth is generally accepted to be more variable than density \mbox{%DIFAUXCMD
+\citep{Elder1991, Clark2011, Lopez2013} }\hspace{0pt}%DIFAUXCMD
+so we chose a sampling design that resulted in a high ratio ($\sim$55:1) of snow depth to density measurements. In total, we collected more than 9000 snow-depth measurements and more than 100 density measurements throughout the study area (Table \ref }{\DIFadd{tab:GlacierDetails}}\DIFadd{).
+}
+
+\DIFadd{During the field campaign there were two small accumulation events. The first, on 6 May 2016, also involved high winds so accumulation could not be determined. The second, on 10 May 2016, resulted in 0.01\,m\,w.e accumulation measured at one location on Glacier 2. Assuming both accumulation events contributed a uniform 0.01\,m\,w.e accumulation to all study glaciers then our survey did not capture $\sim$3\% and $\sim$2\% of estimated glacier-wide winter balance on Glaciers 4 and 2, respectively. We therefore assume that these accumulation events were negligible. Positive temperatures and clear skies occurred between 11--16 May 2016, which we suspect resulted in melt occurring on Glacier 13. The snow in the lower part of the ablation area of Glacier 13 was isothermal and showed clear signs of melt and metamorphosis. The total amount of melt during the study period was not estimated so no corrections were made. 
 }
 
 \DIFaddend \subsubsection{Sampling design}
@@ -258,7 +251,9 @@ The snow surveys were designed to capture variability in snow depth at regional,
 
 \subsubsection{Snow depth: transects}
 
-\DIFdelbegin \DIFdel{Winter balance can be estimated as the product of snow depth and depth-averaged density. }\DIFdelend Snow depth is generally accepted to be more variable than density \citep{Elder1991, Clark2011, Lopez2013} so we chose a sampling design that resulted in a high ratio ($\sim$55:1) of snow depth to density measurements. \DIFdelbegin \DIFdel{Our sampling campaign involved four people and occurred between 5--15 May 2016, which falls within the period of historical peak snow accumulation in southwestern Yukon (Yukon Snow Survey Bulletin and Water Supply Forecast, May 1, 2016). }\DIFdelend While roped-up for glacier travel with fixed distances between observers, the lead observer used a single-frequency GPS unit (Garmin GPSMAP 64s) to navigate between predefined transect measurement locations (Fig. \ref{fig:Sampling}e). The remaining three observers used 3.2 m graduated aluminum avalanche probes to make snow-depth measurements. The locations of each set of depth measurements, made by the second, third and fourth observers, are estimated using the recorded location of the first observer, the approximate distance between observers and the direction of travel. \DIFaddbegin \DIFadd{The 3--4 point-scale depth measurements are averaged to obtain a single depth measurement at each transect measurement location. When considering snow variability at the point scale as a source of uncertainty in snow depth measurements, we find that the mean standard deviation of point-scale snow depth measurements is found to be $<$7\% of the mean snow depth for all study glaciers.
+\DIFdelbegin \DIFdel{Winter balance can be estimated as the product of snow depth and depth-averaged density. Snow depth is generally accepted to be more variable than density \mbox{%DIFAUXCMD
+\citep{Elder1991, Clark2011, Lopez2013} }\hspace{0pt}%DIFAUXCMD
+so we chose a sampling design that resulted in a high ratio ($\sim$55:1) of snow depth to density measurements. Our sampling campaign involved four people and occurred between 5--15 May 2016, which falls within the period of historical peak snow accumulation in southwestern Yukon (Yukon Snow Survey Bulletin and Water Supply Forecast, May 1, 2016). }\DIFdelend While roped-up for glacier travel with fixed distances between observers, the lead observer used a single-frequency GPS unit (Garmin GPSMAP 64s) to navigate between predefined transect measurement locations (Fig. \ref{fig:Sampling}e). The remaining three observers used 3.2 m graduated aluminum avalanche probes to make snow-depth measurements. The locations of each set of depth measurements, made by the second, third and fourth observers, are estimated using the recorded location of the first observer, the approximate distance between observers and the direction of travel. \DIFaddbegin \DIFadd{The 3--4 point-scale depth measurements are averaged to obtain a single depth measurement at each transect measurement location. When considering snow variability at the point scale as a source of uncertainty in snow depth measurements, we find that the mean standard deviation of point-scale snow depth measurements is found to be $<$7\% of the mean snow depth for all study glaciers.
 }\DIFaddend 
 
 Snow-depth sampling was concentrated in the ablation area to ensure that only snow from the current accumulation season was measured. The boundary between snow and firn in the accumulation area can be difficult to detect and often misinterpreted, especially when using an avalanche probe \citep{Grunewald2010,Sold2013}. We intended to use a firn corer to measure winter balance in the accumulation area, but cold snow combined with positive air temperatures led to cores being unrecoverable. Successful snow depth \DIFdelbegin \DIFdel{and density }\DIFdelend measurements within the accumulation area were made either in snow pits or using a Federal Sampler (described below) to unambiguously identify the snow--firn transition. 
@@ -275,7 +270,7 @@ Snow-depth sampling was concentrated in the ablation area to ensure that only sn
 
 Snow density was measured using a Snowmetrics wedge cutter in three snow pits on each glacier\DIFdelbegin \DIFdel{, as well as with a Geo Scientific Ltd. metric Federal Sampler. }\DIFdelend \DIFaddbegin \DIFadd{. }\DIFaddend Within the snow pits (SP), we measured a vertical density profile (in 5 cm increments) with the $5\times10\times 10$ cm wedge-shaped cutter (250 cm$^3$) and a Presola 1000\,g spring scale \citep[e.g.][]{Gray1981,Fierz2009}. Wedge-cutter error is approximately $\pm$6\% \citep[e.g.][]{Proksch2016,Carroll1977}. Uncertainty in estimating density from \DIFdelbegin \DIFdel{snow-pit }\DIFdelend \DIFaddbegin \DIFadd{SP }\DIFaddend measurements also stems from incorrect assignment of density to layers that cannot be sampled (e.g. ice lenses and hard layers). We attempt to quantify this uncertainty by varying estimated ice-layer thickness by $\pm$1 cm ($\leq$100\%) of the recorded thickness, ice layer density between 700 and 900\,kg\,m$^{-3}$ and the density of layers identified as being too hard to sample (but not ice) between 600 and 700\,kg\,m$^{-3}$. When considering all three sources of uncertainty, the range of integrated density values is always less than 15\% of the reference density. Depth-averaged densities for shallow pits ($<$50\,cm) that contain ice lenses are particularly sensitive to changes in prescribed density and ice-lens thickness. 
 
-While \DIFdelbegin \DIFdel{snow pits }\DIFdelend \DIFaddbegin \DIFadd{SP }\DIFaddend provide the most accurate measure of snow density, digging and sampling a \DIFdelbegin \DIFdel{snow pit }\DIFdelend \DIFaddbegin \DIFadd{SP }\DIFaddend is time and labour intensive. Therefore, a \DIFdelbegin \DIFdel{Federal Snow }\DIFdelend \DIFaddbegin \DIFadd{Geo Scientific Ltd. metric Federal }\DIFaddend Sampler (FS) \citep{Clyde1932}, which directly measures depth-integrated snow-water equivalent, was used to augment the snow pit measurements. A minimum of three \DIFdelbegin \DIFdel{Federal Sampler }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend measurements were taken at each of 7--19 locations on each glacier and an additional eight \DIFdelbegin \DIFdel{Federal Sampler }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend measurements were co-located with each snow pit profile. Measurements for which the snow core length inside the sampling tube was less than 90\% of the snow depth were discarded. Densities at each measurement location (eight at each snow pit, three elsewhere) were then averaged, with the standard deviation taken to represent the uncertainty. \DIFdelbegin %DIFDELCMD < 
+While \DIFdelbegin \DIFdel{snow pits }\DIFdelend \DIFaddbegin \DIFadd{SP }\DIFaddend provide the most accurate measure of snow density, digging and sampling a \DIFdelbegin \DIFdel{snow pit }\DIFdelend \DIFaddbegin \DIFadd{SP }\DIFaddend is time and labour intensive. Therefore, a \DIFdelbegin \DIFdel{Federal Snow }\DIFdelend \DIFaddbegin \DIFadd{Geo Scientific Ltd. metric Federal }\DIFaddend Sampler (FS) \citep{Clyde1932} \DIFaddbegin \DIFadd{with a 3.2--3.8\,cm diameter sampling tube}\DIFaddend , which directly measures depth-integrated snow-water equivalent, was used to augment the snow pit measurements. A minimum of three \DIFdelbegin \DIFdel{Federal Sampler }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend measurements were taken at each of 7--19 locations on each glacier and an additional eight \DIFdelbegin \DIFdel{Federal Sampler }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend measurements were co-located with each snow pit profile. Measurements for which the snow core length inside the sampling tube was less than 90\% of the snow depth were discarded. Densities at each measurement location (eight at each snow pit, three elsewhere) were then averaged, with the standard deviation taken to represent the uncertainty. \DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < %%%
 \DIFdel{During the field campaign there were two small accumulation events. The first, on 6 May 2016, also involved high winds so accumulation could not be determined. The second, on 10 May 2016, resulted in 0.01 m w.e accumulation measured at one location on Glacier 2. Positive temperatures and clear skies occurred between 11--16 May 2016, which we suspect resulted in melt occurring on Glacier 13. The snow in the lower part of the ablation area of Glacier 13 was isothermal and showed clear signs of melt and metamorphosis. The total amount of accumulation and melt during the study period could not be estimated so no corrections were made}\DIFdelend \DIFaddbegin \DIFadd{The mean standard deviation of FS-derived density was $\leq$4\% of the mean density for all glaciers}\DIFaddend .
@@ -318,10 +313,28 @@ Gridcell-averaged values of WB are interpolated and extrapolated across each gla
 
 In the \DIFdelbegin \DIFdel{regression}\DIFdelend \DIFaddbegin \DIFadd{LR}\DIFaddend , we use commonly applied topographic parameters as in \cite{McGrath2015}, including elevation, slope, aspect, curvature, ``northness'' and a wind-redistribution parameter \DIFaddbegin \DIFadd{($Sx$ from \mbox{%DIFAUXCMD
 \cite{Winstral2002}}\hspace{0pt}%DIFAUXCMD
-)}\DIFaddend ; we add distance-from-centreline as an additional parameter. Our sampling design ensured that the ranges of topographic parameters associated with our measurement locations represent more than 70\% of the total area of each glacier (except elevation on Glacier 2, where our measurements captured only 50\%). Topographic parameters are standardized and then weighted by a set of fitted regression coefficients ($\beta_i$) calculated by minimizing the sum of squares of the vertical deviations of each datum from the regression line \citep{Davis1986}. For details on data and methods used to estimate the topographic parameters see the Supplementary Material. 
+)}\DIFaddend ; we add distance-from-centreline as an additional parameter. \DIFaddbegin \DIFadd{Topographic parameters are standardized for use in the LR. For details on data and methods used to estimate the topographic parameters see the Supplementary Material. }\DIFaddend Our sampling design ensured that the ranges of topographic parameters associated with our measurement locations represent more than 70\% of the total area of each glacier (except elevation on Glacier 2, where our measurements captured only 50\%). 
+\DIFdelbegin \DIFdel{Topographic parameters are standardized and then weighted by }\DIFdelend \DIFaddbegin 
 
-To avoid overfitting the data and to incorporate every possible combination of topographic parameters, cross-validation and model averaging are implemented. First, cross-validation is used to obtain a set of $\beta_i$ values that have the greatest predictive ability. We randomly select 1000 subsets of the data (2/3 of the values) to  \DIFdelbegin \DIFdel{fit the LR }\DIFdelend \DIFaddbegin \DIFadd{obtain regression coefficients with a basic multiple linear regression algorithm (MATLAB) }\DIFaddend and use the remaining data (1/3 of the values) to calculate a root mean squared error (RMSE) \citep{Kohavi1995}.
-From the 1000 sets of $\beta_i$ values, we select the set that results in the lowest RMSE. Second, we use model averaging to account for uncertainty when selecting predictors and to maximize the model's predictive ability \citep{Madigan1994}.  Models are generated by calculating a set of $\beta_i$ as described above for all possible combinations of topographic parameters (2$^7$ models). Using a Bayesian framework, model averaging involves weighting all models by their posterior model probabilities \citep{Raftery1997}. To obtain the final regression coefficients, the $\beta_i$ values from each model are weighted according to the relative predictive success of the model, as assessed by the value of the Bayesian Information Criterion (BIC) \citep{Burnham2004}. BIC penalizes more complex models which further reduces the risk of overfitting. The distributed WB is then obtained by applying the resulting regression coefficients to the topographic parameters associated with each gridcell. 
+\DIFadd{The goal of the LR is to obtain }\DIFaddend a set of fitted regression coefficients ($\beta_i$) \DIFdelbegin \DIFdel{calculated by minimizing the sum of squares of the vertical deviations of each datum from the regression line \mbox{%DIFAUXCMD
+\citep{Davis1986}}\hspace{0pt}%DIFAUXCMD
+. For details on data and methods used to estimate the topographic parameters see the Supplementary Material. }%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{To }\DIFdelend \DIFaddbegin \DIFadd{that correspond to each topographic parameter and to a model intercept. The LR implemented in this study is an extension of a basic multiple linear regression; we use cross-validation to }\DIFaddend avoid overfitting the data and \DIFaddbegin \DIFadd{model averaging }\DIFaddend to incorporate every possible combination of topographic parameters\DIFdelbegin \DIFdel{, cross-validation and model averaging are implemented. 
+}\DIFdelend \DIFaddbegin \DIFadd{. 
+}
+
+\DIFaddend First, cross-validation is used to obtain a set of \DIFdelbegin \DIFdel{$\beta_i$ values }\DIFdelend \DIFaddbegin \DIFadd{regression coefficients }\DIFaddend that have the greatest predictive ability \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep{Kohavi1995}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . We randomly select 1000 subsets of the data (2/3 of the values) \DIFdelbegin \DIFdel{to fit the LR and }\DIFdelend \DIFaddbegin \DIFadd{and fit a basic multiple linear regression (implemented in MATLAB) to the data subsets, thus obtaining 1000 sets of regression coefficients. The basic multiple linear regression calculates a set of regression coefficients by minimizing the sum of squares of the vertical deviations of each datum from the regression line \mbox{%DIFAUXCMD
+\citep{Davis1986}}\hspace{0pt}%DIFAUXCMD
+. Distributed winter balance is then calculated by weighting each topographic parameter by the corresponding regression coefficient for all DEM gridcells. We then }\DIFaddend use the remaining data (1/3 of the values) to calculate a root mean squared error (RMSE) \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{Kohavi1995}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{between the estimated WB and the observed WB for corresponding locations}\DIFaddend . From the 1000 sets of $\beta_i$ values, we select the set that results in the lowest RMSE. 
+\DIFaddbegin 
+
+\DIFaddend Second, we use model averaging to account for uncertainty when selecting predictors and to maximize the model's predictive ability \citep{Madigan1994}. Models are generated by calculating a set of \DIFdelbegin \DIFdel{$\beta_i$ }\DIFdelend \DIFaddbegin \DIFadd{regression coefficients }\DIFaddend as described above for all possible combinations of topographic parameters (\DIFaddbegin \DIFadd{resulting in }\DIFaddend 2$^7$ models\DIFaddbegin \DIFadd{, or sets of regression coefficients}\DIFaddend ). Using a Bayesian framework, model averaging involves weighting all models by their posterior model probabilities \citep{Raftery1997}. \DIFdelbegin \DIFdel{To obtain the final regression coefficients, the $\beta_i$ values from each model }\DIFdelend \DIFaddbegin \DIFadd{The models (i.e. sets of regression coefficients) }\DIFaddend are weighted according to the relative predictive success of the model, as assessed by the value of the Bayesian Information Criterion (BIC) \citep{Burnham2004}. BIC penalizes more complex models which further reduces the risk of overfitting. The \DIFdelbegin \DIFdel{distributed WB is then }\DIFdelend \DIFaddbegin \DIFadd{final set of regression coefficients is then the weighted sum of regression coefficients from all models. Distributed WB is }\DIFaddend obtained by applying the \DIFdelbegin \DIFdel{resulting }\DIFdelend \DIFaddbegin \DIFadd{final set of }\DIFaddend regression coefficients to the topographic parameters associated with each gridcell. 
 
 \subsubsection{Simple kriging}
 
@@ -350,16 +363,17 @@ SK interpolation uncertainty is represented by the \DIFdelbegin \DIFdel{95\% con
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  RESULTS AND DISCUSSION
+%DIF < %  RESULTS AND DISCUSSION
+%DIF > %  RESULTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Results and Discussion}
+\section{Results\DIFdelbegin \DIFdel{and Discussion}\DIFdelend }
 
 \subsection{Field measurements}
 
 \begin{figure}
 	\centering
 	\includegraphics[width =0.35\textwidth]{DepthBoxplot_SPvsFS.pdf}\\
-	\caption{Measured snow depth and density. (a) Boxplot of measured snow depth on Glaciers 4, 2 and 13 with the first quartiles (box), median (line within box), minimum and maximum values excluding outliers (bar) and outliers (circles), which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). (b) Comparison of depth-averaged densities estimated using Federal Sampler (FS) measurements and  a wedge cutter in a snow pit (SP)  for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13). Labels indicate snow pit locations in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars for SP-derived densities are calculated by varying the thickness and density of layers that are too hard to sample, and error bars for FS-derived densities are the standard deviation of measurements taken at one location. One-to-one line is dashed.}
+	\caption{Measured snow depth and density. (a) Boxplot of measured snow depth on Glaciers 4, 2 and 13 with the first quartiles (box), median (line within box), minimum and maximum values excluding outliers (bar) and outliers (circles), which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). (b) Comparison of depth-averaged densities estimated using Federal Sampler (FS) measurements and  a wedge cutter in a snow pit (SP)  for Glacier 4 (G4), Glacier 2 (G2) and Glacier 13 (G13). Labels indicate \DIFdelbeginFL \DIFdelFL{snow pit }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{SP }\DIFaddendFL locations in the accumulation area (ASP), upper ablation area (USP) and lower ablation area (LSP). Error bars for SP-derived densities are calculated by \DIFdelbeginFL \DIFdelFL{varying }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{varying100 }\DIFaddendFL the thickness and density of layers that are too hard to sample, and error bars for FS-derived densities are the standard deviation of measurements taken at one location. One-to-one line is dashed.}
 	\label{fig:DepthBoxplot_SPvsFS}
 \end{figure}
 
@@ -371,13 +385,14 @@ SK interpolation uncertainty is represented by the \DIFdelbegin \DIFdel{95\% con
 \end{figure*}
 
 \subsubsection{Snow depth}
-Mean snow depth varied systematically across the study region, with Glacier 4 having the highest mean snow depth and Glacier 13 having the lowest (Fig. \ref{fig:DepthBoxplot_SPvsFS}). At each measurement location, the median range of measured depths (3--4 points) as a percent of the mean local depth is 2\%, 11\% and 12\%, for Glaciers 4, 2 and 13, respectively. While Glacier 4 has the lowest point-scale variability, as assessed above, it also has the highest proportion of outliers, indicating a more variable snow depth across the glacier. The average standard deviation of all zigzag depth measurements is 0.07\,m, 0.17\,m and 0.14\,m, for Glaciers 4, 2 and 13, respectively. When converted to values of WB using the local FS-derived density measurement, the average standard deviation is 0.027\,m\,w.e., 0.035\,m\,w.e. and 0.040\,m w.e. WB data for each zigzag are not normally distributed (Fig. \ref{fig:ZigzagHistogram}).
+Mean snow depth varied systematically across the study region, with Glacier 4 having the highest mean snow depth and Glacier 13 having the lowest (Fig. \ref{fig:DepthBoxplot_SPvsFS}\DIFaddbegin \DIFadd{a}\DIFaddend ). At each measurement location, the median range of measured depths (3--4 points) as a percent of the mean local depth is 2\%, 11\% and 12\%, for Glaciers 4, 2 and 13, respectively. While Glacier 4 has the lowest point-scale variability, as assessed above, it also has the highest proportion of outliers, indicating a more variable snow depth across the glacier. The average standard deviation of all zigzag depth measurements is 0.07\,m, 0.17\,m and 0.14\,m, for Glaciers 4, 2 and 13, respectively. When converted to values of WB using the local FS-derived density measurement, the average standard deviation is 0.027\,m\,w.e., 0.035\,m\,w.e. and 0.040\,m w.e. WB data for each zigzag are not normally distributed (Fig. \ref{fig:ZigzagHistogram}).
 
 \subsubsection{Snow density}
 
-Contrary to expectation, co-located FS and SP measurements are found to be uncorrelated (R$^2=0.25$, Fig. \ref{fig:DepthBoxplot_SPvsFS}b). The Federal Sampler appears to oversample in deep snow and undersample in shallow snow. Oversampling by small-diameter (3.2--3.8\,cm) sampling tubes has been observed in previous studies, with a percent error between 6.8\% and 11.8\% \citep[e.g.][]{Work1965, Fames1982, Conger2009}. Studies that use Federal Samplers often apply a 10\% correction to all measurements for this reason \citep[e.g.][]{Molotch2005}. Oversampling has been attributed to slots ``shaving'' snow into the tube as it is rotated \citep[e.g.][]{Dixon2012} and to snow falling into the slots, particularly for snow samples with densities $>$400\,kg\,m$^{-3}$ and snow depths $>$1\,m \citep[e.g.][]{Beaumont1963}. Undersampling is likely to occur due to loss of snow from the bottom of the sampler \citep{Turcan1975}. Loss by this mechanism may have occurred in our study, given the isothermal and melt-affected snow conditions observed over the lower reaches of Glaciers 2 and 13. Relatively poor Federal Sampler spring-scale sensitivity also calls into question the reliability of measurements for snow depths $<$20\,cm.
+Contrary to expectation, co-located FS and SP measurements are found to be uncorrelated (R$^2=0.25$, Fig. \ref{fig:DepthBoxplot_SPvsFS}b). The \DIFdelbegin \DIFdel{Federal Sampler }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend appears to oversample in deep snow and undersample in shallow snow. Oversampling by small-diameter \DIFdelbegin \DIFdel{(3.2--3.8\,cm) }\DIFdelend sampling tubes has been observed in previous studies, with a percent error between 6.8\% and 11.8\% \citep[e.g.][]{Work1965, Fames1982, Conger2009}. Studies that use \DIFdelbegin \DIFdel{Federal Samplers }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend often apply a 10\% correction to all measurements for this reason \citep[e.g.][]{Molotch2005}. Oversampling has been attributed to slots ``shaving'' snow into the tube as it is rotated \citep[e.g.][]{Dixon2012} and to snow falling into the slots, particularly for snow samples with densities $>$400\,kg\,m$^{-3}$ and snow depths $>$1\,m \citep[e.g.][]{Beaumont1963}. Undersampling is likely to occur due to loss of snow from the bottom of the sampler \citep{Turcan1975}. Loss by this mechanism may have occurred in our study, given the isothermal and melt-affected snow conditions observed over the lower reaches of Glaciers 2 and 13. Relatively poor \DIFdelbegin \DIFdel{Federal Sampler }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend spring-scale sensitivity also calls into question the reliability of measurements for snow depths $<$20\,cm.
 
-Our FS-derived density values are positively correlated with snow depth (R$^2= 0.59$). This relationship could be a result of physical processes, such as compaction in deep snow and preferential formation of depth hoar in shallow snow, but is more likely a result of measurement artefacts for a number of reasons. First, the total range of densities measured by the Federal Sampler seems improbably large (227--431\,kg\,m$^{-3}$) given the conditions at the time of sampling. Moreover, the range of FS-derived values is much larger than than of SP-derived values when co-located measurements are compared. Second, compaction effects of the magnitude required to explain the density differences between SP and FS measurements would not be expected at the measured snow depths (up to 340\,cm). Third, no linear relationship exists between depth and SP-derived density (R$^2 = 0.05$). These findings suggest that the Federal Sampler measurements have a bias for which we have not identified a suitable correction.
+Our FS-derived density values are positively correlated with snow depth (R$^2= 0.59$). This relationship could be a result of physical processes, such as compaction in deep snow and preferential formation of depth hoar in shallow snow, but is more likely a result of measurement artefacts for a number of reasons. First, the total range of densities measured by the \DIFdelbegin \DIFdel{Federal Sampler }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend seems improbably large (227--431\,kg\,m$^{-3}$)\DIFdelbegin \DIFdel{given the conditions at the }\DIFdelend \DIFaddbegin \DIFadd{. At the }\DIFaddend time of sampling \DIFaddbegin \DIFadd{the snow pack had little fresh snow, which confounds the low density values, and was not yet saturated and had few ice lenses, which confounds the high density values}\DIFaddend . Moreover, the range of FS-derived values is much larger than than of SP-derived values when co-located measurements are compared. Second, compaction effects of the magnitude required to explain the density differences between SP and FS measurements would not be expected at the measured snow depths (up to 340\,cm). Third, no linear relationship exists between depth and SP-derived density (R$^2 = 0.05$). These findings suggest that the \DIFdelbegin \DIFdel{Federal Sampler }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend measurements have a bias for which we have not identified a suitable correction. \DIFaddbegin \DIFadd{Despite this bias, we use FS-derived densities to generate a range of possible WB estimates and to provide a generous estimate of uncertainty arising from density assignment.
+}\DIFaddend 
 
 \subsection{Density assignment}
 
@@ -385,27 +400,49 @@ Given the lack of correlation between co-located SP- and FS-derived densities (F
 
 \subsection{Gridcell-averaged winter balance}
 
-The distributions of gridcell-averaged WB values for the individual glaciers are similar to those in Fig. \ref{fig:DepthBoxplot_SPvsFS}a but with fewer outliers. The standard deviations of WB values determined from the zigzag surveys are almost twice as large as the mean standard deviation of point-scale WB values within a gridcell measured along transects. However, a small number of gridcells sampled in transect surveys have standard deviations in WB that exceed 0.25\,m\,w.e. ($\sim$10 times greater than those for zigzag surveys). We nevertheless assume that the gridcell uncertainty is captured with dense sampling in zigzag gridcells. 
+The distributions of gridcell-averaged WB values for the individual glaciers are similar to those in Fig. \ref{fig:DepthBoxplot_SPvsFS}a but with fewer outliers \DIFaddbegin \DIFadd{(see Supplementary Material)}\DIFaddend . The standard deviations of WB values determined from the zigzag surveys are almost twice as large as the mean standard deviation of point-scale WB values within a gridcell measured along transects \DIFaddbegin \DIFadd{(see Supplementary Material)}\DIFaddend . However, a small number of gridcells sampled in transect surveys have standard deviations in WB that exceed 0.25\,m\,w.e. ($\sim$10 times greater than those for zigzag surveys). 
+\DIFdelbegin \DIFdel{We nevertheless assume that the gridcell uncertainty is captured with dense sampling in zigzag gridcells. 
+}\DIFdelend 
 
-\begin{figure}
-	\centering
-	\includegraphics[width =0.4\textwidth]{BetaCoeffs.pdf}\\
-	\caption{Distribution of coefficients ($\beta_i$) determined by linear regression of gridcell-averaged WB on DEM-derived topographic parameters for the eight different density assignment methods (Table \ref{tab:densityOptions}). Coefficients are calculated using standardized data, so values can be compared across parameters. Regression coefficients that are not significant are assigned a value of zero. Topographic parameters include elevation ($z$), distance from centreline ($d_C$), slope ($m$), curvature ($\kappa$) and wind redistribution ($Sx$).  Aspect ($\alpha$) and ``northness'' ($N$) are not shown because coefficient values are zero in every case. The box plot shows first quartiles (box), median (line within box), mean (circle within box), minimum and maximum values excluding outliers (bars) and outliers (gray dots), which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
-	\label{fig:BetaCoeffs}
-\end{figure}
+\DIFdelbegin %DIFDELCMD < \begin{figure}
+%DIFDELCMD < 	\centering
+%DIFDELCMD < 	\includegraphics[width =0.4\textwidth]{BetaCoeffs.pdf}\\
+%DIFDELCMD < 	\caption{%%%
+\DIFdelFL{Distribution of coefficients ($\beta_i$) determined by linear regression of gridcell-averaged WB on DEM-derived topographic parameters for the eight different density assignment methods (Table \ref{tab:densityOptions}). Coefficients are calculated using standardized data, so values can be compared across parameters. Regression coefficients that are not significant are assigned a value of zero. Topographic parameters include elevation ($z$), distance from centreline ($d_C$), slope ($m$), curvature ($\kappa$) and wind redistribution ($Sx$).  Aspect ($\alpha$) and ``northness'' ($N$) are not shown because coefficient values are zero in every case. The box plot shows first quartiles (box), median (line within box), mean (circle within box), minimum and maximum values excluding outliers (bars) and outliers (gray dots), which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }%DIFDELCMD < }
+%DIFDELCMD < 	%DIFDELCMD < \label{fig:BetaCoeffs}%%%
+%DIFDELCMD < \end{figure}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \subsection{\DIFadd{Distributed winter balance}}
+\DIFaddend 
 
 \begin{figure}
 	\centering
 	\includegraphics[width =0.5\textwidth]{LR_map.pdf}\\
     \includegraphics[width =0.5\textwidth]{SK_map.pdf}\\
-	\caption{Spatial distribution of winter balance (WB) estimated using linear regression (top row) and simple kriging (bottom row) with densities assigned as per S2 (Table \ref{tab:densityOptions}). Locations of snow-depth measurements are shown as black dots. Ice-flow directions are indicated by arrows. Values of glacier-wide WB are given below labels.}
+	\caption{Spatial distribution of winter balance (WB) estimated using linear regression (top row) and simple kriging (bottom row) with densities assigned as per S2 (Table \ref{tab:densityOptions}). \DIFaddbeginFL \DIFaddFL{The linear regression method involves multiplying regression coefficients, found using cross validation and model averaging, by topographic parameters for each gridcell. Simple kriging uses the covariance of measured values to find a set of optimal weights for estimating values at unmeasured locations. }\DIFaddendFL Locations of snow-depth measurements \DIFaddbeginFL \DIFaddFL{taken in May 2016 }\DIFaddendFL are shown as black dots. Ice-flow directions are indicated by arrows. Values of glacier-wide WB are given below labels.}
 	\label{fig:LR_SK_map}
 \end{figure}
 
+\DIFdelbegin \subsection{\DIFdel{Distributed winter balance}}
+ %DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \begin{figure}
+	\centering
+	\includegraphics[width =0.5\textwidth]{SpatialVar_LR.pdf}\\
+	\includegraphics[width =0.5\textwidth]{SpatialVar_SK.pdf}\\
+	\caption{\DIFaddFL{Relative uncertainty in distributed winter balance (WB) (Fig. \ref{fig:LR_SK_map}) found using linear regression (top row) and simple kriging (bottom row). Values closer to one indicate higher relative uncertainty. Ice-flow directions are indicated by arrows.}}
+	\label{fig:WSMBspatialvar}
+\end{figure}
+\DIFaddend 
 
-\subsection{Distributed winter balance}
+\DIFaddbegin \begin{figure*}
+	\centering
+	\includegraphics[width =0.7\textwidth]{observedVSestimated_S2.pdf}\\
+	\caption{\DIFaddFL{Winter balance (WB) estimated by linear regression (LR, top row) or simple kriging (SK, bottom row) versus the grid-cell averaged WB data for Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right). Each circle represents a single gridcell. Best-fit (solid) and one-to-one (dashed) lines are shown.}}
+	\label{fig:observedVSestimated_S2}
+\end{figure*}
 
- \begin{table}[]
+\DIFaddend \begin{table}[]
 \centering
 \caption{Glacier-wide winter balance (WB, m\,w.e.) estimated using linear regression and simple kriging for the three study glaciers. Root mean squared error (RMSE, m\,w.e.) is computed as the average of all RMSE values between gridcell-averaged values of WB (the data) that were randomly selected and excluded from interpolation ($1/3$ of all data) and those estimated by interpolation. RMSE as a percent of the glacier-wide WB is shown in brackets.}
 \label{tab:WSMB&RMSE}
@@ -418,67 +455,218 @@ The distributions of gridcell-averaged WB values for the individual glaciers are
 \end{tabular}
 \end{table}
 
+\DIFdelbegin %DIFDELCMD < \begin{figure}
+%DIFDELCMD < 	\centering
+%DIFDELCMD < 	\includegraphics[width =0.5\textwidth]{SpatialVar_LR.pdf}\\
+%DIFDELCMD < 	\includegraphics[width =0.5\textwidth]{SpatialVar_SK.pdf}\\
+%DIFDELCMD < 	%%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Relative uncertainty in distributed winter balance (WB) (Fig. \ref{fig:LR_SK_map}) found using linear regression (top row) and simple kriging (bottom row). Values closer to one indicate higher relative uncertainty. Ice-flow directions are indicated by arrows.}}
+	%DIFAUXCMD
+%DIFDELCMD < \label{fig:WSMBspatialvar}
+%DIFDELCMD < \end{figure}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \subsubsection{\DIFadd{Linear regression}}
+\DIFaddend 
+
+\DIFaddbegin \DIFadd{The highest values of estimated WB are found in the upper portions of the accumulation areas of Glaciers 2 and 13 (Fig. \ref{fig:LR_SK_map}). These areas also correspond to large values of elevation, slope, and wind redistribution. Extrapolation of the positive relation between WB and elevation, as well as slope and $Sx$ for Glacier 2, results in high WB estimates and large relative uncertainty in these estimates (Fig. \ref{fig:WSMBspatialvar}). On Glacier 4, distributed WB estimated with LR and the relatively uncertainty is almost uniform due to the small regression coefficients for all topographic parameters. The explained variance of the LR-estimated WB differs considerably between glaciers (Fig. \ref{fig:observedVSestimated_S2}), with the best correlation between modelled and observed WB on Glacier 2. LR is an especially poor predictor of WB on Glacier 4, where there LR does not improve the estimate beyond the data mean. RMSE is also highest for Glacier 4 (Table \ref{tab:WSMB&RMSE}). 
+}
+
+\subsubsection{\DIFadd{Simple kriging}}
+
+\DIFadd{G4 has short correlation length so most G has uniform WB (equal to mean) with slight changes close to collected data points, uncertainty highest at the correlation length distance away from points that vary significant from mean values
+}
+
+\DIFadd{G2 and 13 have higher correlation length so field varies more smoothly. generally lower WB close to terminus, WB approaches mean in accum, where few measurement locations. uncertainty high in accum of G2 and far from measurement loc in G13
+}
+
+\DIFadd{Explained var quite good for G 2 and 13 but that is because it is a data fitting algorithm. Despite the data fitting bias, the fit for G4 is still quite poor, so snow is highly variable. , greatest RMSE for G4 (table)
+}
+
+
+
+\subsection{\DIFadd{Uncertainty analysis using a Monte Carlo approach}}
+
+\DIFaddend \begin{figure*}
+	\centering
+	\DIFdelbeginFL %DIFDELCMD < \includegraphics[width =0.7\textwidth]{observedVSestimated_S2.pdf}%%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width =0.95\textwidth]{WSMBDist.pdf}\DIFaddendFL \\
+	\caption{\DIFdelbeginFL \DIFdelFL{Winter }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Distributions of glacier-wide winter }\DIFaddendFL balance (WB) \DIFdelbeginFL \DIFdelFL{estimated }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{for Glaciers 4 (G4), 2 (G2) and 13 (G13) that arise from various sources of uncertainty. WB distribution arising from grid-scale uncertainty ($\sigma_{\mathrm{GS}}$) (left column). WB distribution arising from interpolation uncertainty ($\sigma_{INT}$) (middle column). WB distribution arising from a combination of $\sigma_{\mathrm{GS}}$, $\sigma_{\mathrm{INT}}$ and density assignment uncertainty ($\sigma_{\rho}$) (right column). Results are shown for interpolation }\DIFaddendFL by linear regression (LR, top row) \DIFdelbeginFL \DIFdelFL{or }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{and }\DIFaddendFL simple kriging (SK, bottom row)\DIFdelbeginFL \DIFdelFL{versus the grid-cell averaged WB data for Glacier 4 }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{. Left two columns include eight distributions per glacier }\DIFaddendFL (\DIFdelbeginFL \DIFdelFL{left}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{colour}\DIFaddendFL ) \DIFdelbeginFL \DIFdelFL{, Glacier 2 (middle) }\DIFdelendFL and \DIFdelbeginFL \DIFdelFL{Glacier 13 (right). Each circle represents }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{each corresponds to }\DIFaddendFL a \DIFdelbeginFL \DIFdelFL{single gridcell. Best-fit }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{density assignment method }\DIFaddendFL (\DIFdelbeginFL \DIFdelFL{solid) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{S1--S4 }\DIFaddendFL and \DIFdelbeginFL \DIFdelFL{one-to-one (dashed}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{F1--F4}\DIFaddendFL )\DIFdelbeginFL \DIFdelFL{lines are shown}\DIFdelendFL .}
+	\DIFdelbeginFL %DIFDELCMD < \label{fig:observedVSestimated_S2}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \label{fig:WSMBDist_LR}
+\DIFaddendFL \end{figure*}
+
+\DIFdelbegin \subsubsection{\DIFdel{Linear Regression}}
+%DIFAUXCMD
+\addtocounter{subsubsection}{-1}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \begin{table*}[]
+\centering
+\caption{\DIFaddFL{Standard deviation ($\times10^{-2}$\,m\,w.e.) of glacier-wide winter balance (WB) distributions arising from uncertainties in grid-scale WB ($\sigma_{\mathrm{GS}}$), density assignment ($\sigma_{\rho}$), interpolation ($\sigma_{\mathrm{INT}}$) and all three sources combined ($\sigma_{\mathrm{ALL}}$) for linear regression (left columns) and simple kriging (right columns)}}
+\label{tab:WSMBdistribution_sigma}
+\begin{tabular}{c|cccc|cccc}
+ & \multicolumn{4}{c|}{\textbf{Linear regression}} & \multicolumn{4}{c}{\textbf{Simple kriging}} \\
+\textbf{} & \DIFaddFL{$\sigma_{\mathrm{GS}}$ }& \DIFaddFL{$\sigma_{\rho}$ }& \DIFaddFL{$\sigma_{INT}$ }& \DIFaddFL{$\sigma_{ALL}$ }& \DIFaddFL{$\sigma_{\mathrm{GS}}$ }& \DIFaddFL{$\sigma_{\rho}$ }& \DIFaddFL{$\sigma_{INT}$ }& \DIFaddFL{$\sigma_{ALL}$ }\\ \hline
+\textbf{\DIFaddFL{Glacier 4}} & \DIFaddFL{0.86 }& \DIFaddFL{1.90 }& \DIFaddFL{2.13 }& \DIFaddFL{2.90 }& \DIFaddFL{0.85 }& \DIFaddFL{2.15 }& \DIFaddFL{14.05 }& \DIFaddFL{14.72 }\\
+\textbf{\DIFaddFL{Glacier 2}} & \DIFaddFL{1.80 }& \DIFaddFL{3.37 }& \DIFaddFL{3.09 }& \DIFaddFL{4.90 }& \DIFaddFL{2.53 }& \DIFaddFL{2.03 }& \DIFaddFL{13.78 }& \DIFaddFL{13.44 }\\
+\textbf{\DIFaddFL{Glacier 13}} & \DIFaddFL{1.12 }& \DIFaddFL{1.68 }& \DIFaddFL{2.80 }& \DIFaddFL{3.20 }& \DIFaddFL{1.15 }& \DIFaddFL{1.27 }& \DIFaddFL{9.65 }& \DIFaddFL{10.43
+}\end{tabular}
+\end{table*}
+\DIFaddend 
+
+\DIFaddbegin \DIFadd{Glacier-wide winter balance is affected by uncertainty introduced by the representativeness of gridcell-averaged values of WB ($\sigma_{\mathrm{GS}}$), choosing a method of density assignment ($\sigma_{\rho}$), and interpolating/extrapolating WB values across the domain ($\sigma_{\mathrm{INT}}$). Using a Monte Carlo analysis, we find that interpolation uncertainty contributes more to WB uncertainty than grid-scale uncertainty or density assignment method. In other words, the distribution of glacier-wide WB that arises from grid-scale uncertainty and the differences in distributions between methods of density assignment are smaller than the distribution that arises from interpolation uncertainty (Fig. \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). The WB distributions obtained using LR and SK overlap for a given glacier, but the distribution modes differ (Fig. \ref{fig:WSMBDist_LR}). For reasons outlined above, SK-estimated values of WB in the accumulation area are generally lower, which lowers the glacier-wide WB estimate.  The uncertainty in SK-estimated values of WB is large, and unrealistic glacier-wide values of WB of 0\,m\,w.e. can be estimated (Fig. \ref{fig:WSMBDist_LR}).
+}
+
+\DIFadd{The values of glacier-wide WB for our study glaciers (using LR and S2 density assignment method), with an uncertainty equal to one standard deviation of the distribution found with Monte Carlo analysis, are: 0.59\,$\pm$\,0.03\,m\,w.e. for Glacier 4, 0.61\,$\pm$\,0.05\,m\,w.e. for Glacier 2 and 0.40\,$\pm$\,0.03\,m\,w.e. for Glacier 13. The glacier-wide WB uncertainty from the three investigated sources of uncertainty ranges from 0.03\,m w.e (5\%) to 0.05\,m w.e (8\%) for LR estimates and from 0.10\,m w.e (37\%) to 0.15\,m w.e (24\%) for simple-kriging estimates (Table \ref{tab:WSMB&RMSE}).
+}
+
+%DIF > %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%DIF > %  DISCUSSION
+%DIF > %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\DIFadd{Discussion}}
+
+\subsection{\DIFadd{Distributed winter balance}}
+
+\subsubsection{\DIFadd{Linear regression}}
+
 \begin{figure}
 	\centering
-	\includegraphics[width =0.5\textwidth]{SpatialVar_LR.pdf}\\
-	\includegraphics[width =0.5\textwidth]{SpatialVar_SK.pdf}\\
-	\caption{Relative uncertainty in distributed winter balance (WB) (Fig. \ref{fig:LR_SK_map}) found using linear regression (top row) and simple kriging (bottom row). Values closer to one indicate higher relative uncertainty. Ice-flow directions are indicated by arrows.}
-	\label{fig:WSMBspatialvar}
+	\includegraphics[width =0.4\textwidth]{BetaCoeffs.pdf}\\
+	\caption{\DIFaddFL{Distribution of coefficients ($\beta_i$) determined by linear regression of gridcell-averaged WB on DEM-derived topographic parameters for the eight different density assignment methods (Table \ref{tab:densityOptions}). Coefficients are calculated using standardized data, so values can be compared across parameters. Regression coefficients that are not significant are assigned a value of zero. Topographic parameters include elevation ($z$), distance from centreline ($d_C$), slope ($m$), curvature ($\kappa$) and wind redistribution ($Sx$).  Aspect ($\alpha$) and ``northness'' ($N$) are not shown because coefficient values are zero in every case. The box plot shows first quartiles (box), median (line within box), mean (circle within box), minimum and maximum values excluding outliers (bars) and outliers (gray dots), which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }}
+	\label{fig:BetaCoeffs}
 \end{figure}
 
-\begin{figure*}
-	\centering
-	\includegraphics[width =0.7\textwidth]{observedVSestimated_S2.pdf}\\
-	\caption{Winter balance (WB) estimated by linear regression (LR, top row) or simple kriging (SK, bottom row) versus the grid-cell averaged WB data for Glacier 4 (left), Glacier 2 (middle) and Glacier 13 (right). Each circle represents a single gridcell. Best-fit (solid) and one-to-one (dashed) lines are shown.}
-	\label{fig:observedVSestimated_S2}
-\end{figure*}
+\DIFaddend Of the topographic parameters in the \DIFdelbegin \DIFdel{linear regression}\DIFdelend \DIFaddbegin \DIFadd{LR}\DIFaddend , elevation ($z$) is the most significant predictor of gridcell-averaged WB for Glaciers 2 and 13, while wind redistribution ($Sx$) is the most significant predictor for Glacier 4 (Fig. \ref{fig:BetaCoeffs}\DIFdelbegin \DIFdel{, Fig. \ref{fig:LR_SK_map}}\DIFdelend ). As expected, gridcell-averaged WB is positively correlated with elevation where the correlation is significant. It is possible that the elevation correlation was accentuated due to melt onset for Glacier 13 in particular. \DIFdelbegin \DIFdel{Many  studies }\DIFdelend \DIFaddbegin \DIFadd{Our results are consistent with many studies that }\DIFaddend have found elevation to be the most significant predictor of winter-balance data \citep[e.g.][]{Machguth2006, McGrath2015}. \DIFdelbegin \DIFdel{However, }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend WB--elevation \DIFdelbegin \DIFdel{gradients vary considerably between glaciers \mbox{%DIFAUXCMD
+\citep[e.g.][]{Winther1998} }\hspace{0pt}%DIFAUXCMD
+and other factors, such as glacier shape and orientation relative to dominant wind direction, are strong predictors of the winter-balance distribution \mbox{%DIFAUXCMD
+\citep{Machguth2006,Grabiec2011}}\hspace{0pt}%DIFAUXCMD
+. Some studies find no significant }\DIFdelend \DIFaddbegin \DIFadd{gradient is 13\,mm/100\,m on Glacier 2 and 7\,mm/100\,m on Glacier 13. These gradients are consistent with those reported for a few glaciers in Svalbard \mbox{%DIFAUXCMD
+\citep{Winther1998} }\hspace{0pt}%DIFAUXCMD
+but considerably smaller than many reported WB--elevation gradients, which range from about 60--240\,mm/100\,m \mbox{%DIFAUXCMD
+\citep[e.g.][]{Hagen1990,Tveit1996,Winther1998}}\hspace{0pt}%DIFAUXCMD
+. Extrapolating linear relationships to unmeasured locations typically results in large uncertainties, as seen by the large WB values (Fig. \ref{fig:LR_SK_map}) and large relative uncertainty (Fig. \ref{fig:WSMBspatialvar}) in the high-elevation regions of the accumulation areas of Glaciers 2 and 13. The low of }\DIFaddend correlation between WB \DIFdelbegin \DIFdel{on glaciers and topographic parameters, with }\DIFdelend \DIFaddbegin \DIFadd{and elevation Glacier 4 is consistent with \mbox{%DIFAUXCMD
+\cite{Grabiec2011} }\hspace{0pt}%DIFAUXCMD
+and \mbox{%DIFAUXCMD
+\cite{Lopez2011}}\hspace{0pt}%DIFAUXCMD
+, who conclude that }\DIFaddend highly variable distributions of snow \DIFaddbegin \DIFadd{are }\DIFaddend attributed to complex interactions between topography and the atmosphere that could not be easily quantified\DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep[e.g.][]{Grabiec2011,Lopez2011}}\hspace{0pt}%DIFAUXCMD
+. 
+Extrapolating relationships to unmeasured locations, especially the accumulation area, is susceptible to large uncertainties (Fig. \ref{fig:WSMBspatialvar}). This extrapolation has a considerable effect on values of glacier-wide WB, as the highest values of WB are typically found in the accumulation area  (Fig. \ref{fig:LR_SK_map}). 
+}\DIFdelend \DIFaddbegin \DIFadd{. 
+}\DIFaddend 
 
-\subsubsection{Linear Regression}
-
-Of the topographic parameters in the \DIFdelbegin \DIFdel{linear regression}\DIFdelend \DIFaddbegin \DIFadd{LR}\DIFaddend , elevation ($z$) is the most significant predictor of gridcell-averaged WB for Glaciers 2 and 13, while wind redistribution ($Sx$) is the most significant predictor for Glacier 4 (Fig. \ref{fig:BetaCoeffs}, Fig. \ref{fig:LR_SK_map}). As expected, gridcell-averaged WB is positively correlated with elevation where the correlation is significant. It is possible that the elevation correlation was accentuated due to melt onset for Glacier 13 in particular. Many  studies have found elevation to be the most significant predictor of winter-balance data \citep[e.g.][]{Machguth2006, McGrath2015}. However, WB--elevation gradients vary considerably between glaciers \citep[e.g.][]{Winther1998} and other factors, such as glacier shape and orientation relative to dominant wind direction, are strong predictors of the winter-balance distribution \citep{Machguth2006,Grabiec2011}. Some studies find no significant correlation between WB on glaciers and topographic parameters, with highly variable distributions of snow attributed to complex interactions between topography and the atmosphere that could not be easily quantified \citep[e.g.][]{Grabiec2011,Lopez2011}. Extrapolating relationships to unmeasured locations, especially the accumulation area, is susceptible to large uncertainties (Fig. \ref{fig:WSMBspatialvar}). This extrapolation has a considerable effect on values of glacier-wide WB, as the highest values of WB are typically found in the accumulation area  (Fig. \ref{fig:LR_SK_map}). 
-
-Gridcell-averaged WB is negatively correlated with $Sx$ on Glacier 4, counter-intuitively indicating less snow in what would be interpreted as sheltered areas. Gridcell-averaged WB is positively correlated with $Sx$ on Glaciers 2 and 13. Similarly, gridcell-averaged WB is positively correlated with curvature on Glacier 4 and negatively correlated on Glaciers 2 and 13. Wind redistribution and preferential deposition of snow are known to have a large influence on snow distribution at sub-basin scales \citep[e.g.][]{Dadic2010, Winstral2013,Gerber2017}. Our results point to wind having an impact on snow distribution, but the wind redistribution parameter ($Sx$) may not adequately capture these effects at our study sites. For example, Glacier 4 is located in a curved valley with steep side walls, so specifying a single cardinal direction for wind may not be adequate. Further, the scale of deposition may be smaller than the resolution of the $Sx$ parameter estimated from the DEM. Our results corroborate those of \cite{McGrath2015} in a study of six glaciers in Alaska (DEM resolutions of 5 m) where elevation and $Sx$ were the only significant parameters for all glaciers; $Sx$ regression coefficients were smaller than elevation regression coefficients, and in some cases, negative. In addition to wind redistribution, sublimation from blowing snow has also been shown to be an important mechanism of mass loss from ridges  \citep[e.g.][]{Musselman2015}. Incorporating such losses, as well as redistribution and preferential deposition, may be important for improving representations of distributed winter balance. 
+Gridcell-averaged WB is negatively correlated with $Sx$ on Glacier 4, counter-intuitively indicating less snow in what would be interpreted as sheltered areas. Gridcell-averaged WB is positively correlated with $Sx$ on Glaciers 2 and 13. Similarly, gridcell-averaged WB is positively correlated with curvature on Glacier 4 and negatively correlated on Glaciers 2 and 13. \DIFdelbegin \DIFdel{Wind redistribution and preferential deposition of snow are known to have a large influence on snow distribution at sub-basin scales \mbox{%DIFAUXCMD
+\citep[e.g.][]{Dadic2010, Winstral2013,Gerber2017}}\hspace{0pt}%DIFAUXCMD
+. Our }\DIFdelend \DIFaddbegin \DIFadd{Our results corroborate those of \mbox{%DIFAUXCMD
+\cite{McGrath2015} }\hspace{0pt}%DIFAUXCMD
+in a study of six glaciers in Alaska (DEM resolutions of 5 m) where elevation and $Sx$ were the only significant parameters for all glaciers; $Sx$ regression coefficients were smaller than elevation regression coefficients, and in some cases, negative. While our }\DIFaddend results point to wind having an impact on snow distribution, \DIFdelbegin \DIFdel{but }\DIFdelend the wind redistribution parameter ($Sx$) may not adequately capture these effects at our study sites. For example, Glacier 4 is located in a curved valley with steep side walls, so specifying a single cardinal direction for wind may not be adequate. Further, the scale of deposition may be smaller than the resolution of the $Sx$ parameter estimated from the DEM. \DIFdelbegin \DIFdel{Our results corroborate those of \mbox{%DIFAUXCMD
+\cite{McGrath2015} }\hspace{0pt}%DIFAUXCMD
+in a study of six glaciers in Alaska (DEM resolutions of 5 m) where elevation and $Sx$ were the only significant parameters for all glaciers; $Sx$ regression coefficients were smaller than elevation regression coefficients, and in some cases, negative. In addition to wind redistribution, }\DIFdelend \DIFaddbegin \DIFadd{Creation of a parametrization for }\DIFaddend sublimation from blowing snow\DIFdelbegin \DIFdel{has also }\DIFdelend \DIFaddbegin \DIFadd{, which has }\DIFaddend been shown to be an important mechanism of mass loss from ridges \citep[e.g.][]{Musselman2015}\DIFdelbegin \DIFdel{. Incorporating such losses, as well as redistribution and preferential deposition, may be important for improving representations of distributed winter balance}\DIFdelend \DIFaddbegin \DIFadd{, may also improve explanatory power of LR for our study sites}\DIFaddend .
 
 We find that transfer of LR coefficients between glaciers results in large estimation errors. Regression coefficients from Glacier 4 produce the highest root mean squared error (0.38\,m\,w.e. on Glacier 2 and 0.40\,m\,w.e. on Glacier 13, see Table \ref{tab:WSMB&RMSE} for comparison) and glacier-wide WB values are the same for all glaciers (0.64\,m\,w.e.) due to the dominance of the regression intercept. Even if the \DIFdelbegin \DIFdel{regression }\DIFdelend \DIFaddbegin \DIFadd{LR }\DIFaddend is performed with WB values from all glaciers combined, the resulting coefficients produce large root mean squared errors when applied to  individual glaciers (0.31\,m\,w.e., 0.15\,m\,w.e. and 0.14\,m\,w.e. for Glaciers 4, 2 and 13, respectively). Our results are consistent with those of \cite{Grunewald2013}, who found that local statistical models cannot be transferred across basins and that regional-scale models are not able to explain the majority of observed variance in winter balance. 
 
 \subsubsection{Simple kriging}
 
-Fitted kriging parameters, including the nugget and spatial correlation length, can provide insight into important scales of winter-balance variability. The model fitted to the gridcell-averaged values of WB for Glacier 4 has a short correlation length (90 m) and large nugget (see Supplementary Material Table S3), suggesting variability in winter balance at smaller scales. Conversely, Glaciers 2 and 13 have longer correlation lengths ($\sim$450\,m) and smaller nuggets, suggesting variability at larger scales. 
-Additionally, \DIFdelbegin \DIFdel{simple kriging }\DIFdelend \DIFaddbegin \DIFadd{SK }\DIFaddend is better able to estimate values of WB for Glaciers 2 and 13 than for Glacier 4 (Fig. \ref{fig:observedVSestimated_S2}). Due to a paucity of data, \DIFdelbegin \DIFdel{simple kriging }\DIFdelend \DIFaddbegin \DIFadd{SK }\DIFaddend produces almost uniform gridcell-estimated values of winter balance in the accumulation area of each glacier,  inconsistent with observations described in the literature \citep[e.g.][]{Machguth2006, Grabiec2011}. Extrapolation using \DIFdelbegin \DIFdel{simple kriging }\DIFdelend \DIFaddbegin \DIFadd{SK }\DIFaddend leads to large uncertainty (Fig. \ref{fig:WSMBspatialvar}), further emphasizing the need for spatially distributed point-scale measurements. 
+Fitted kriging parameters, including the nugget and spatial correlation length, can provide insight into important scales of winter-balance variability. The model fitted to the gridcell-averaged values of WB for Glacier 4 has a short correlation length (90 m) and large nugget (see Supplementary Material Table S3), suggesting variability in winter balance at smaller scales. Conversely, Glaciers 2 and 13 have longer correlation lengths ($\sim$450\,m) and smaller nuggets, suggesting variability at larger scales. Additionally, \DIFdelbegin \DIFdel{simple kriging }\DIFdelend \DIFaddbegin \DIFadd{SK }\DIFaddend is better able to estimate values of WB for Glaciers 2 and 13 than for Glacier 4 (Fig. \ref{fig:observedVSestimated_S2}). Due to a paucity of data, \DIFdelbegin \DIFdel{simple kriging }\DIFdelend \DIFaddbegin \DIFadd{SK }\DIFaddend produces almost uniform gridcell-estimated values of winter balance in the accumulation area of each glacier,  inconsistent with observations described in the literature \citep[e.g.][]{Machguth2006, Grabiec2011}. \DIFdelbegin \DIFdel{Extrapolation using simple kriging }\DIFdelend \DIFaddbegin \DIFadd{As expected, extrapolation using SK }\DIFaddend leads to large uncertainty (Fig. \ref{fig:WSMBspatialvar}), further emphasizing the need for spatially distributed point-scale measurements. 
 
 \subsubsection{LR and SK comparison}
 
-Glacier-wide WB estimates found using both LR and SK are $\sim$0.58\,m\,w.e. for Glacier 4 but both are poor predictors of  WB in measured gridcells (Table \ref{tab:WSMB&RMSE}). For Glaciers 2 and 13, SK estimates are more than 0.1\,m\,w.e. (up to 40\%) lower than LR estimates (Table \ref{tab:WSMB&RMSE}). RMSE as a percentage of the glacier-wide WB are comparable between LR and SK (Table \ref{tab:WSMB&RMSE}) with an average RMSE of 22\%. This comparability is interesting, given that all of the data were used to generate the SK model, while only 2/3 were used in the LR. Gridcell-estimated values of WB found using LR and SK differ markedly in the upper accumulation areas of Glaciers 2 and 13 (Fig. \ref{fig:LR_SK_map}), where observations are sparse and topographic parameters, such as elevation, vary considerably. The influence of elevation results in substantially higher LR-estimated values of WB at high elevation, whereas SK-estimated values approximate the nearest data. Estimates of ablation-area-wide WB differ by $<$7\% between LR and SK on each glacier, further emphasizing the combined role of interpolation method and measurement scarcity in the accumulation area on glacier-wide WB estimates.
+Glacier-wide WB estimates found using both LR and SK are $\sim$0.58\,m\,w.e. for Glacier 4 but both are poor predictors of  WB in measured gridcells (Table \ref{tab:WSMB&RMSE}). For Glaciers 2 and 13, SK estimates are more than 0.1\,m\,w.e. (up to 40\%) lower than LR estimates (Table \ref{tab:WSMB&RMSE}). RMSE as a percentage of the glacier-wide WB are comparable between LR and SK (Table \ref{tab:WSMB&RMSE}) with an average RMSE of 22\%. This comparability is interesting, given that all of the data were used to generate the SK model, while only 2/3 were used in the LR \DIFaddbegin \DIFadd{(consistent with the best SK model estimated with 2/3 of the data)}\DIFaddend . Gridcell-estimated values of WB found using LR and SK differ markedly in the upper accumulation areas of Glaciers 2 and 13 (Fig. \ref{fig:LR_SK_map}), where observations are sparse and topographic parameters, such as elevation, vary considerably. The influence of elevation results in substantially higher LR-estimated values of WB at high elevation, whereas SK-estimated values approximate the nearest data. Estimates of ablation-area-wide WB differ by $<$7\% between LR and SK on each glacier, further emphasizing the combined role of interpolation method and measurement scarcity in the accumulation area on glacier-wide WB estimates.
 
-\begin{figure*}
-	\centering
-	\includegraphics[width =0.95\textwidth]{WSMBDist.pdf}\\
-	\caption{Distributions of glacier-wide winter balance (WB) for Glaciers 4 (G4), 2 (G2) and 13 (G13) that arise from various sources of uncertainty. WB distribution arising from grid-scale uncertainty ($\sigma_{\mathrm{GS}}$) (left column). WB distribution arising from interpolation uncertainty ($\sigma_{INT}$) (middle column). WB distribution arising from a combination of $\sigma_{\mathrm{GS}}$, $\sigma_{\mathrm{INT}}$ and density assignment uncertainty ($\sigma_{\rho}$) (right column). Results are shown for interpolation by linear regression (LR, top row) and simple kriging (SK, bottom row). Left two columns include eight distributions per glacier (colour) and each corresponds to a density assignment method (S1--S4 and F1--F4).}
-	\label{fig:WSMBDist_LR}
-\end{figure*}
 
-\subsection{Uncertainty analysis}
+\DIFdelbegin %DIFDELCMD < \begin{figure*}
+%DIFDELCMD < 	\centering
+%DIFDELCMD < 	\includegraphics[width =0.95\textwidth]{WSMBDist.pdf}\\
+%DIFDELCMD < 	%%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Distributions of glacier-wide winter balance (WB) for Glaciers 4 (G4), 2 (G2) and 13 (G13) that arise from various sources of uncertainty. WB distribution arising from grid-scale uncertainty ($\sigma_{\mathrm{GS}}$) (left column). WB distribution arising from interpolation uncertainty ($\sigma_{INT}$) (middle column). WB distribution arising from a combination of $\sigma_{\mathrm{GS}}$, $\sigma_{\mathrm{INT}}$ and density assignment uncertainty ($\sigma_{\rho}$) (right column). Results are shown for interpolation by linear regression (LR, top row) and simple kriging (SK, bottom row). Left two columns include eight distributions per glacier (colour) and each corresponds to a density assignment method (S1--S4 and F1--F4).}}
+	%DIFAUXCMD
+%DIFDELCMD < \label{fig:WSMBDist_LR}
+%DIFDELCMD < \end{figure*}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \subsection{\DIFadd{Uncertainty analysis using a Monte Carlo approach}}
+\DIFaddend 
 
-Glacier-wide winter balance is affected by uncertainty introduced by the representativeness of gridcell-averaged values of WB ($\sigma_{\mathrm{GS}}$), choosing a method of density assignment ($\sigma_{\rho}$), and interpolating WB values across the domain ($\sigma_{\mathrm{INT}}$). Using a Monte Carlo analysis, we find that interpolation uncertainty contributes more to WB uncertainty than grid-scale uncertainty or density assignment method. In other words, the distribution of glacier-wide WB that arises from grid-scale uncertainty and the differences in distributions between methods of density assignment are smaller than the distribution that arises from interpolation uncertainty (Fig. \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). The WB distributions obtained using LR and SK overlap for a given glacier, but the distribution modes differ (Fig. \ref{fig:WSMBDist_LR}). For reasons outlined above, SK-estimated values of WB in the accumulation area are generally lower, which lowers the glacier-wide WB estimate.  The uncertainty in SK-estimated values of WB is large, and unrealistic glacier-wide values of WB of 0\,m\,w.e. can be estimated (Fig. \ref{fig:WSMBDist_LR}). Our results caution strongly against including extrapolated values of WB in comparisons with remote sensing- or model-derived estimates of WB. If possible, such comparisons should be restricted to point-scale data. 
+\DIFdelbegin \subsection{\DIFdel{Uncertainty analysis}}
+%DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+%DIFDELCMD < 
 
- \begin{table*}[]
-\centering
-\caption{Standard deviation ($\times10^{-2}$\,m\,w.e.) of glacier-wide winter balance distributions arising from uncertainties in grid-scale WB ($\sigma_{\mathrm{GS}}$), density assignment ($\sigma_{\rho}$), interpolation ($\sigma_{\mathrm{INT}}$) and all three sources combined ($\sigma_{\mathrm{ALL}}$) for linear regression (left columns) and simple kriging (right columns)}
-\label{tab:WSMBdistribution_sigma}
-\begin{tabular}{c|cccc|cccc}
- & \multicolumn{4}{c|}{\textbf{Linear regression}} & \multicolumn{4}{c}{\textbf{Simple kriging}} \\
-\textbf{} & $\sigma_{\mathrm{GS}}$ & $\sigma_{\rho}$ & $\sigma_{INT}$ & $\sigma_{ALL}$ & $\sigma_{\mathrm{GS}}$ & $\sigma_{\rho}$ & $\sigma_{INT}$ & $\sigma_{ALL}$ \\ \hline
-\textbf{Glacier 4} & 0.86 & 1.90 & 2.13 & 2.90 & 0.85 & 2.15 & 14.05 & 14.72 \\
-\textbf{Glacier 2} & 1.80 & 3.37 & 3.09 & 4.90 & 2.53 & 2.03 & 13.78 & 13.44 \\
-\textbf{Glacier 13} & 1.12 & 1.68 & 2.80 & 3.20 & 1.15 & 1.27 & 9.65 & 10.43
-\end{tabular}
-\end{table*}
+%DIFDELCMD < %%%
+\DIFdel{Glacier-wide winter balance is affected by uncertainty introduced by the representativeness of gridcell-averaged values of WB ($\sigma_{\mathrm{GS}}$), choosing a method of density assignment ($\sigma_{\rho}$), and interpolating WB values across the domain ($\sigma_{\mathrm{INT}}$). Using a Monte Carlo analysis, we find that interpolation uncertainty contributes more to WB uncertainty than grid-scale uncertainty or density assignment method. In other words, the distribution of glacier-wide WB that arises from grid-scale uncertainty and the differences in distributions between methods of density assignment are smaller than the distribution that arises from interpolation uncertainty (Fig. \ref{fig:WSMBDist_LR} and Table \ref{tab:WSMBdistribution_sigma}). The WB distributions obtained using LR and SK overlap for a given glacier, but the distribution modes differ (Fig. \ref{fig:WSMBDist_LR}). For reasons outlined above, SK-estimated values of WB in the accumulation area are generally lower, which lowers the glacier-wide WB estimate.  The uncertainty in SK-estimated values of WB is large, and unrealistic glacier-wide values of WB of 0\,m\,w.e. can be estimated (Fig. \ref{fig:WSMBDist_LR}). }\DIFdelend Our results caution strongly against including \DIFaddbegin \DIFadd{interpolated/}\DIFaddend extrapolated values of WB in comparisons with remote sensing- or model-derived estimates of WB. If possible, such comparisons should be restricted to point-scale data. 
 
-Grid-scale uncertainty ($\sigma_{\mathrm{GS}}$) is the smallest assessed contributor to overall WB uncertainty. This result is consistent with the generally smoothly-varying snow depths encountered in zigzag surveys, and previously reported ice-roughness lengths on the order of centimetres \citep[e.g.][]{Hock2005} compared to snow depths on the order of decimetres to metres. Given our assumption that zigzags are an adequate representation of grid-scale variability, the low WB uncertainty arising from $\sigma_{\mathrm{GS}}$ implies that subgrid-scale sampling need not be a high priority for reducing overall uncertainty. Our assumption that the 3--4 zigzag surveys can be used to estimate glacier-wide $\sigma_{\mathrm{GS}}$ may be flawed, particularly in areas with debris cover, crevasses and steep slopes.
+\DIFdelbegin %DIFDELCMD < \begin{table*}[]
+%DIFDELCMD < \centering
+%DIFDELCMD < %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Standard deviation ($\times10^{-2}$\,m\,w.e.) of glacier-wide winter balance distributions arising from uncertainties in grid-scale WB ($\sigma_{\mathrm{GS}}$), density assignment ($\sigma_{\rho}$), interpolation ($\sigma_{\mathrm{INT}}$) and all three sources combined ($\sigma_{\mathrm{ALL}}$) for linear regression (left columns) and simple kriging (right columns)}}
+%DIFAUXCMD
+%DIFDELCMD < \label{tab:WSMBdistribution_sigma}
+%DIFDELCMD < \begin{tabular}{c|cccc|cccc}
+%DIFDELCMD <  & \multicolumn{4}{c|}{\textbf{Linear regression}} & \multicolumn{4}{c}{\textbf{Simple kriging}} \\
+%DIFDELCMD < %%%
+\textbf{} %DIFAUXCMD
+%DIFDELCMD < & %%%
+\DIFdelFL{$\sigma_{\mathrm{GS}}$ }%DIFDELCMD < & %%%
+\DIFdelFL{$\sigma_{\rho}$ }%DIFDELCMD < & %%%
+\DIFdelFL{$\sigma_{INT}$ }%DIFDELCMD < & %%%
+\DIFdelFL{$\sigma_{ALL}$ }%DIFDELCMD < & %%%
+\DIFdelFL{$\sigma_{\mathrm{GS}}$ }%DIFDELCMD < & %%%
+\DIFdelFL{$\sigma_{\rho}$ }%DIFDELCMD < & %%%
+\DIFdelFL{$\sigma_{INT}$ }%DIFDELCMD < & %%%
+\DIFdelFL{$\sigma_{ALL}$ }%DIFDELCMD < \\ \hline
+%DIFDELCMD < %%%
+\textbf{\DIFdelFL{Glacier 4}} %DIFAUXCMD
+%DIFDELCMD < & %%%
+\DIFdelFL{0.86 }%DIFDELCMD < & %%%
+\DIFdelFL{1.90 }%DIFDELCMD < & %%%
+\DIFdelFL{2.13 }%DIFDELCMD < & %%%
+\DIFdelFL{2.90 }%DIFDELCMD < & %%%
+\DIFdelFL{0.85 }%DIFDELCMD < & %%%
+\DIFdelFL{2.15 }%DIFDELCMD < & %%%
+\DIFdelFL{14.05 }%DIFDELCMD < & %%%
+\DIFdelFL{14.72 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\textbf{\DIFdelFL{Glacier 2}} %DIFAUXCMD
+%DIFDELCMD < & %%%
+\DIFdelFL{1.80 }%DIFDELCMD < & %%%
+\DIFdelFL{3.37 }%DIFDELCMD < & %%%
+\DIFdelFL{3.09 }%DIFDELCMD < & %%%
+\DIFdelFL{4.90 }%DIFDELCMD < & %%%
+\DIFdelFL{2.53 }%DIFDELCMD < & %%%
+\DIFdelFL{2.03 }%DIFDELCMD < & %%%
+\DIFdelFL{13.78 }%DIFDELCMD < & %%%
+\DIFdelFL{13.44 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\textbf{\DIFdelFL{Glacier 13}} %DIFAUXCMD
+%DIFDELCMD < & %%%
+\DIFdelFL{1.12 }%DIFDELCMD < & %%%
+\DIFdelFL{1.68 }%DIFDELCMD < & %%%
+\DIFdelFL{2.80 }%DIFDELCMD < & %%%
+\DIFdelFL{3.20 }%DIFDELCMD < & %%%
+\DIFdelFL{1.15 }%DIFDELCMD < & %%%
+\DIFdelFL{1.27 }%DIFDELCMD < & %%%
+\DIFdelFL{9.65 }%DIFDELCMD < & %%%
+\DIFdelFL{10.43
+}%DIFDELCMD < \end{tabular}
+%DIFDELCMD < \end{table*}
+%DIFDELCMD < 
 
-Our analysis did not include uncertainty arising from a number of sources, which we assume either to be  encompassed by the sources investigated or to be negligible contributors. These sources of uncertainty include density measurement errors associated with the Federal Sampler, wedge cutters and spring scales, vertical and horizontal errors in the DEM and error associated with estimating measurement locations.
+%DIFDELCMD < %%%
+\DIFdelend Grid-scale uncertainty ($\sigma_{\mathrm{GS}}$) is the smallest assessed contributor to overall WB uncertainty. This result is consistent with the generally smoothly-varying snow depths encountered in zigzag surveys, and previously reported ice-roughness lengths on the order of centimetres \citep[e.g.][]{Hock2005} compared to snow depths on the order of decimetres to metres. Given our assumption that zigzags are an adequate representation of grid-scale variability, the low WB uncertainty arising from $\sigma_{\mathrm{GS}}$ implies that subgrid-scale sampling need not be a high priority for reducing overall uncertainty. Our assumption that the 3--4 zigzag surveys can be used to estimate glacier-wide $\sigma_{\mathrm{GS}}$ may be flawed, particularly in areas with debris cover, crevasses and steep slopes.
 
-The values of glacier-wide WB for our study glaciers (using LR and S2 density assignment method), with an uncertainty equal to one standard deviation of the distribution found with Monte Carlo analysis, are: 0.59\,$\pm$\,0.03\,m\,w.e. for Glacier 4, 0.61\,$\pm$\,0.05\,m\,w.e. for Glacier 2 and 0.40\,$\pm$\,0.03\,m\,w.e. for Glacier 13. The glacier-wide WB uncertainty from combined sources of uncertainty ranges from 0.03\,m w.e (5\%) to 0.05\,m w.e (8\%) for \DIFdelbegin \DIFdel{linear-regression }\DIFdelend \DIFaddbegin \DIFadd{LR }\DIFaddend estimates and from 0.10\,m w.e (37\%) to 0.15\,m w.e (24\%) for simple-kriging estimates (Table \ref{tab:WSMB&RMSE}).
+Our analysis did not include uncertainty arising from \DIFdelbegin \DIFdel{a number of sources, which we assume either to be  encompassed by the sources investigated or to be negligible contributors. These sources of uncertainty include }\DIFdelend density measurement errors associated with the \DIFdelbegin \DIFdel{Federal Sampler}\DIFdelend \DIFaddbegin \DIFadd{FS}\DIFaddend , wedge cutters and spring scales, \DIFaddbegin \DIFadd{from }\DIFaddend vertical and horizontal errors in the DEM \DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{or from }\DIFaddend error associated with estimating measurement locations \DIFdelbegin \DIFdel{.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{The values of glacier-wide WB for our study glaciers (using LR and S2 density assignment method), with an uncertainty equal to one standard deviation of the distribution found with Monte Carlo analysis, are: 0.59\,$\pm$\,0.03\,m\,w. e. for Glacier 4, 0.61\,$\pm$\,0.05\,m\,w.e. for Glacier 2 and 0.40\,$\pm$\,0.03\,m\,w.e. for Glacier 13. The glacier-wide WB uncertainty from combined }\DIFdelend \DIFaddbegin \DIFadd{based on the GPS position of the lead observer. We assume that these }\DIFaddend sources of uncertainty \DIFdelbegin \DIFdel{ranges from 0.03\,m w.
+e (5\%) to 0.05\,m w.e (8\%) for linear-regression estimates and from 0.10\,m w.e (37\%) to 0.15\,m w.e (24\%) for simple-kriging estimates (Table \ref{tab:WSMB&RMSE}).
+}\DIFdelend \DIFaddbegin \DIFadd{are either encompassed by the sources investigated or negligible.
+}\DIFaddend 
+
 
 \subsection{Context and caveats}
 \subsubsection{Regional winter-balance gradient}
@@ -494,14 +682,13 @@ Although we find considerable inter- and intra-basin variability in winter balan
 
 \subsubsection{Limitations and future work}
 
-
 The potential limitations of our work include the restriction of our data to a single year, minimal sampling in the accumulation area, the problem of uncorrelated SP- and FS-derived densities, a sampling design that could not be optimized a priori, the assumption of spatially uniform subgrid variability and lack of more finely resolved DEMs.
 
 Inter-annual variability in winter balance is not considered in our study. A number of studies have found temporal stability in spatial patterns of snow distribution and that statistical models based on topographic parameters could be applied reliably between years \citep[e.g.][]{Grunewald2013}. For example, \cite{Walmsley2015} analyzed more than 40 years of winter balance recorded on two Norwegian glaciers and found that snow distribution is spatially heterogeneous yet exhibits robust temporal stability. Contrary to this, \cite{Crochet2007} found that snow distribution in Iceland differed considerably between years and depended primarily on the dominant wind direction over the course of a winter. Therefore, multiple years of snow depth and density measurements, that are not necessarily consecutive, are needed to better understand inter-annual variability in winter-balance distribution within the Donjek Range.
 
 There is a conspicuous lack of data in the accumulation areas of our study glaciers. With increased sampling in the accumulation area, interpolation uncertainties would be reduced where they are currently greatest and the \DIFdelbegin \DIFdel{linear regression }\DIFdelend \DIFaddbegin \DIFadd{LR }\DIFaddend would be better constrained. Although certain regions of the glaciers remain inaccessible for direct measurements, other methods of obtaining winter-balance, including ground-penetrating radar and DEM differencing with photogrammetry or lidar, could be used in conjunction with manual probing to increase the spatial coverage of measurements.
 
-The lack of correlation between SP- and FS-derived densities needs to be reconciled. Contrary to our results, most studies that compare SP- and FS-derived densities report minimal discrepancy \citep[e.g.][and sources within]{Dixon2012}. Additional co-located density measurements are needed to better compare the two methods of obtaining density values. Comparison with other Federal Samplers would also be informative. Even with this limitation, density assignment was, fortunately, not the largest source of uncertainty in estimating glacier-wide winter balance. 
+The lack of correlation between SP- and FS-derived densities needs to be reconciled. Contrary to our results, most studies that compare SP- and FS-derived densities report minimal discrepancy \citep[e.g.][and sources within]{Dixon2012}. Additional co-located density measurements are needed to better compare the two methods of obtaining density values. Comparison with other \DIFdelbegin \DIFdel{Federal Samplers }\DIFdelend \DIFaddbegin \DIFadd{FS }\DIFaddend would also be informative. Even with this limitation, density assignment was, fortunately, not the largest source of uncertainty in estimating glacier-wide winter balance. 
 
 Our sampling design was chosen to achieve broad spatial coverage of the ablation area, but is likely too finely resolved along transects for many mass-balance surveys to replicate. An optimal sampling design would minimize uncertainty in winter balance while reducing the number of required measurements. Analysis of the estimated winter balance obtained using subsets of the data is underway to make recommendations on optimal transect configuration and along-track spacing of measurements. \cite{Lopez2010} found that 200--400 observations are needed within a non-glacierized alpine basin (6\,km$^2$) to obtain accurate and robust snow distribution models. Similar guidelines would be useful for glacierized environments.
 
@@ -519,8 +706,7 @@ We estimate winter balance for three glaciers (termed Glacier 2, Glacier 4 and G
 
 Values of glacier-wide winter balance estimated using linear regression and simple kriging differ by up to 0.24\,m\,w.e. ($\sim$50\%). We find that interpolation uncertainty is the largest assessed source of uncertainty in glacier-wide winter balance (5\% for linear-regression estimates and 32\% for simple-kriging estimates). Uncertainty resulting from the method of density assignment is comparatively low, despite the wide range of methods explored. Given our representation of grid-scale variability, the resulting winter balance uncertainty is small indicating that extensive subgrid-scale sampling is not required to reduce overall uncertainty. 
 
-Our results suggest that processes governing distributed winter balance differ between glaciers, highlighting the importance of regional-scale winter-balance studies. The estimated distribution of winter balance on Glacier 4 is characterized by high variability, as indicated by the poor correlation between estimated and observed values and large number of data outliers. Glaciers 2 and 13 appear to have lower spatial variability, with elevation being the dominant predictor of gridcell-averaged winter balance. A wind-redistribution parameter is found to be a weak but significant predictor of winter balance, though conflicting relationships between glaciers make it difficult to interpret.
-Although challenges persist when estimating winter balance, our data are consistent with a regional-scale winter-balance gradient for the continental side of the St. Elias Mountains. 
+Our results suggest that processes governing distributed winter balance differ between glaciers, highlighting the importance of regional-scale winter-balance studies. The estimated distribution of winter balance on Glacier 4 is characterized by high variability, as indicated by the poor correlation between estimated and observed values and large number of data outliers. Glaciers 2 and 13 appear to have lower spatial variability, with elevation being the dominant predictor of gridcell-averaged winter balance. A wind-redistribution parameter is found to be a weak but significant predictor of winter balance, though conflicting relationships between glaciers make it difficult to interpret\DIFaddbegin \DIFadd{. The major limitations of our work include the restriction of our data to a single year and minimal sampling in the accumulation area}\DIFaddend . Although challenges persist when estimating winter balance, our data are consistent with a regional-scale winter-balance gradient for the continental side of the St. Elias Mountains. 
 
 \section{Author contribution statement}
 
