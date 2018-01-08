@@ -20,6 +20,9 @@
  \usepackage{epstopdf}
 \usepackage{caption}
 
+
+\newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers) and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
+
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \renewcommand{\tabularxcolumn}[1]{m{#1}}%
 
@@ -38,9 +41,42 @@
 
 %% TOPOGRAPHIC PARAMETERS EXPLAINED
 
-Topographic parameters are easy-to-calculate proxies for physical processes, such as orographic precipitation, solar radiation effects, wind redistribution and preferential deposition. We derive all parameters (Table \ref{tab:TopoParams}) for our study from a SPOT-5 DEM ($40\times40$ m) \citep{Korona2009}. Two DEMs are stitched together to cover the Donjek Range. An iterative 3D-coregistration algorithm \citep{Berthier2007} is used to correct the horizontal ($\sim$2\,m E, $\sim$4\,m N) and vertical (5.4\,m) discrepancy between the two DEMs before stitching. 
+Topographic parameters are easy-to-calculate proxies for physical processes, such as orographic precipitation, solar radiation effects, wind redistribution and preferential deposition. We derive all parameters (Table \ref{tab:TopoParams}) for our study from a SPOT-5 DEM ($40\times40$ m) \citep{Korona2009}. Two DEMs are stitched together to cover the Donjek Range. An iterative 3D-coregistration algorithm \citep{Berthier2007} is used to correct the horizontal ($\sim$2\,m E, $\sim$4\,m N) and vertical (5.4\,m) discrepancy between the two DEMs before stitching. See \cite{Pulwicki2017} for details regarding DEM stitching.
 
-Visual inspection of the curvature fields calculated using the full DEM shows a noisy spatial distribution. To find an appropriate scale at which the relevant curvature is calculated, various smoothing algorithms and sizes are applied and the combination that produces the highest correlation between curvature and gridcell-averaged WB is chosen. Inverse-distance weighted, Gaussian and gridcell-average smoothing methods, all with window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells are used. Gridcell-average smoothing with a 7$\times$7 window resulted in the highest overall correlation between curvature (second derivative) and gridcell-averaged WB as well as slope (first derivative) and gridcell-averaged WB. We use the smoothed DEM to calculate curvature ($\kappa$), slope ($m$), aspect ($\alpha$) and ``northness'' ($N$).
+Visual inspection of the curvature fields calculated using the full DEM shows a noisy spatial distribution. To find an appropriate scale at which the relevant curvature is calculated, various smoothing algorithms and sizes are applied and the combination that produces the highest correlation between curvature and gridcell-averaged WB is chosen. Inverse-distance weighted, Gaussian and gridcell-average smoothing methods, all with window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells are used (see below for details). Gridcell-average smoothing with a 7$\times$7 window resulted in the highest overall correlation between curvature (second derivative) and gridcell-averaged WB as well as slope (first derivative) and gridcell-averaged WB. We use the smoothed DEM to calculate curvature ($\kappa$), slope ($m$), aspect ($\alpha$) and ``northness'' ($N$). See \cite{Pulwicki2017} for full details on topographic parameter calculation.
+
+\subsection*{DEM smoothing}
+
+Visual inspection of the curvature fields calculated using the DEM indicated that the spatial patterns of curvature were noisy and did not vary smoothly. \cite{Olaya2009} states that the curvature calculation is sensitive to noisy data and a smoothing filter must often be applied to the DEM prior to calculation. Curvature, as well as slope, aspect and northness, are all sensitive to noise because calculating these parameters involves calculating the first and second derivatives of the elevation which are highly dependent on the size of the DEM cell. To minimize the effect of noise on these four parameters, a smoothing filter was applied to the DEM and this smoothed DEM was used to calculate curvature, slope, aspect and northness. The unsmoothed DEM was used to determine elevation and $Sx$ because these parameters do not depend on a topographic length scale and their values are not as sensitive to the size of the DEM gridcell.
+
+To choose a smoothing algorithm and window size, we applied a number of smoothing algorithms and chose the combination that resulted in the highest correlation between topographic parameters and point-scale winter balance values. Window sizes of 3$\times$3, 5$\times$5, 7$\times$7 and 9$\times$9 gridcells were used. For all sizes, inverse-distance weighted smoothing and Gaussian smoothing were poorly correlated with WB. The smoothing algorithm that used 7$\times$7 window resulted in the highest correlation between curvature (second derivative) and WB as well as slope (first derivative) and WB. The window size that produced the highest correlation of WB values and curvature for each glacier differed, but for all WB values taken together, the 7$\times$7 window resulted in the highest correlation. For slope, all three glaciers showed highest correlation with 7$\times$7 smoothing window, but not when combined. To maintain consistency between parameters, the 7$\times$7 smoothing window was chosen and applied to the DEM for calculation of curvature, slope, aspect and northness. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.4\textwidth]{G13curvatureSmoothing.jpeg}\\
+	\caption[Curvature found using the original and smoothed DEM]{(a) Curvature found using the original DEM. (b) Curvature found using the smoothed (7$\times$7 window moving average) DEM.}
+	\label{fig:smoothingCurve}
+\end{figure}
+
+\subsection*{Wind redistribution parameter} 
+
+$Sx$ represents wind exposure/shelter and requires the identification of a cell within a certain angle and distance from the cell of interest that has the greatest upward slope relative to the cell of interest \citep{Winstral2002}. The identified cell is referred to as the maximum upwind slope. Negative $Sx$ values represent exposure relative to the shelter-defining pixel, which means that the cell of interest is higher than the cell with greatest upwind slope. Conversely, positive values represent sheltered cells. To determine $Sx$ values, the following equation is used
+\begin{equation}
+Sx_{A, d\max}(x_i, y_i) = \textrm{max} \left[ \textrm{tan}^{-1} \left( \frac{z(x_v,y_v)-z(x_i,y_i)}{[(x_v-x_i)^2+(y_v-y_i)^2]^{1/2}} \right) \right] ,
+\end{equation}
+where A is the azimuth of the search direction, $(x_i, y_i)$ are the coordinates of the cell of interest and $(x_v, y_v)$ are the set of all cell coordinates located along the search vector defined by	$(x_i, y_i)$, the azimuth ($A$) and maximum search distance ($d$max). Code for this calculation was provided by Adam Winstral (2016, personal communication). As done by \cite{McGrath2015}, I compute $Sx$ at 5$^{\circ}$ azimuth increments for $d$max distances of 100, 200 and 300 m. These values are then correlated (Pearson correlation) with observed values of point-scale winter balance and the $Sx$ values from the combination of azimuth and $d$max input values that have the highest correlation are used for subsequent analysis (Table \ref{tab:Sxparams}). The code for calculating $Sx$ requires a UTM raster formatted to ASCII in ArcGIS. 
+
+\begin{table*}[b]
+\centering
+\caption{Values of azimuth ($A$) and maximum search distance ($d$max), that correspond to the $Sx$ that had the highest absolute correlation to observed WB.}
+\label{tab:Sxparams}
+\begin{tabular}{lccc}
+ & \begin{tabular}[c]{@{}c@{}}$A$\\ ($^{\circ}$ from North)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$d$max \\ (m)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Correlation\\ Coefficient\end{tabular} \\ \hline
+Glacier 4 & 85 & 300 & $-$0.26 \\
+Glacier 2 & 330 & 300 & 0.56 \\
+Glacier 13 & 280 & 200 & 0.28
+\end{tabular}
+\end{table*} 
 
 
 %% TOPO SAMPLED VS FULL
@@ -88,6 +124,9 @@ Visual inspection of the curvature fields calculated using the full DEM shows a 
 
 \clearpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Additional Results
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection*{Additional results}
 
@@ -112,6 +151,25 @@ Visual inspection of the curvature fields calculated using the full DEM shows a 
 
 
 
+\renewcommand{\thefigure}{S\arabic{figure}}
+\addtocounter{figure}{+1}
+
+%% Gridcell-averaged WB values
+\begin{figure*}[h!]
+\centering
+	\includegraphics[width =0.5\textwidth]{GridcellWB_boxplot.png}\\
+	\caption{Boxplot of gridcell-averaged winter balance on three study glaciers. \boxMatlab}
+	\label{fig:GridcellWB_boxplot}
+\end{figure*}
+
+%% Standard deviation of point-scale WB values within a gridcell measured along transects
+\begin{figure*}[h!]
+\centering
+	\includegraphics[width = 0.8\textwidth]{DEMcellSTD.png}\\
+	\caption[]{Boxplot of the standard deviation of measured winter balance in one DEM gridcell. \boxMatlab}
+	\label{fig:DEMcellSTD}
+\end{figure*}
+
 %% RANGE AND NUGGET VALUES
 \begin{table}[h]
 \centering
@@ -132,8 +190,8 @@ Visual inspection of the curvature fields calculated using the full DEM shows a 
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
 %
-\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
-%\bibliography{/Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit}
+%\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
+\bibliography{/Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit}
 \bibliographystyle{igs}
 
 %----------------------------------------------------------------------------------------

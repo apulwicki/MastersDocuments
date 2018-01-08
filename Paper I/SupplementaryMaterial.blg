@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: SupplementaryMaterial.aux
 The style file: igs.bst
-Database file #1: /home/glaciology1/Documents/MastersDocuments/MastersLit.bib
-You've used 7 entries,
+Database file #1: /Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit.bib
+You've used 9 entries,
             2869 wiz_defined-function locations,
-            656 strings with 6325 characters,
-and the built_in function-call counts, 8133 in all, are:
-= -- 885
-> -- 158
-< -- 4
-+ -- 55
-- -- 49
-* -- 639
-:= -- 906
-add.period$ -- 7
-call.type$ -- 7
-change.case$ -- 59
-chr.to.int$ -- 8
-cite$ -- 7
-duplicate$ -- 828
-empty$ -- 631
-format.name$ -- 72
-if$ -- 1682
+            672 strings with 6786 characters,
+and the built_in function-call counts, 10554 in all, are:
+= -- 1153
+> -- 216
+< -- 6
++ -- 75
+- -- 67
+* -- 818
+:= -- 1176
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 77
+chr.to.int$ -- 10
+cite$ -- 9
+duplicate$ -- 1076
+empty$ -- 808
+format.name$ -- 95
+if$ -- 2184
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 80
-newline$ -- 28
-num.names$ -- 28
-pop$ -- 383
+missing$ -- 101
+newline$ -- 34
+num.names$ -- 36
+pop$ -- 507
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 69
 quote$ -- 0
-skip$ -- 165
+skip$ -- 216
 stack$ -- 0
-substring$ -- 966
-swap$ -- 195
+substring$ -- 1253
+swap$ -- 244
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 87
+type$ -- 114
 warning$ -- 0
-while$ -- 52
+while$ -- 67
 width$ -- 0
-write$ -- 97
+write$ -- 122

@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -22,6 +22,12 @@ Korona J, Berthier E, Bernard M, R{\'e}my F and Thouvenot E (2009) {{SPIRIT
   \emph{ISPRS Journal of Photogrammetry and Remote Sensing}, \textbf{64}(2),
   204--212 (\doi {10.1016/j.isprsjprs.2008.10.005})
 
+\bibitem[\protect\citename{McGrath and others, }2015]{McGrath2015}
+McGrath D, Sass L, O'Neel S, Arendt A, Wolken G, Gusmeroli A, Kienholz C and
+  McNeil C (2015) {End-of-winter snow depth variability on glaciers in
+  {A}laska}. \emph{Journal of Geophysical Research: Earth Surface},
+  \textbf{120}(8), 1530--1550 (\doi {10.1002/2015JF003539})
+
 \bibitem[\protect\citename{Mit{\'a}\v{s}ov{\'a} and Hofierka,
   }1993]{Mitavsova1993}
 Mit{\'a}\v{s}ov{\'a} H and Hofierka J (1993) {Interpolation by regularized
@@ -39,6 +45,10 @@ Molotch N, Colee M, Bales R and Dozier J (2005) {Estimating the spatial
 \bibitem[\protect\citename{Olaya, }2009]{Olaya2009}
 Olaya V (2009) {Basic land-surface parameters}. \emph{Developments in Soil
   Science}, \textbf{33}, 141--169 (\doi {10.1016/S0166-2481(08)00006-8})
+
+\bibitem[\protect\citename{Pulwicki, }2017]{Pulwicki2017}
+Pulwicki A (2017) \emph{Multi-scale investigation of winter balance on alpine
+  glaciers}. Master's thesis, Simon Fraser University
 
 \bibitem[\protect\citename{Winstral and others, }2002]{Winstral2002}
 Winstral A, Elder K and Davis RE (2002) {Spatial snow modeling of
