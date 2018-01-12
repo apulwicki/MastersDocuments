@@ -21,7 +21,12 @@
 \usepackage{caption}
 
 
+\newcommand{\transectAbb}{Data for each glacier are divided into lower hourglass (LH), lower circle (LC), lower midline (LM), upper hourglass (UH), upper circle (UC), upper midline (UM) and upper transect (UT).}
+\newcommand{\params}{Topographic parameters are: elevation ($z$), distance from centreline ($d_C$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$) and wind redistribution ($Sx$). }
+\newcommand{\boxplot}{Within each coloured box (interquartile range, IQR), the mean is shown as a circle, the median as a horizontal line, and two times the IQR as dashed lines beyond the box and outliers as single points. }
 \newcommand{\boxMatlab}{Red line indicates median, blue box shows first quantiles, bars indicate minimum and maximum values (excluding outliers) and red crosses show outliers, which are defined as being outside of the range of 1.5 times the quartiles (approximately $\pm2.7\sigma$). }
+\newcommand{\topomap}{Arrows indicate glacier flow direction and black dots show snow-depth sampling locations. }
+\newcommand{\swedots}{Arrows indicate glacier flow direction and observed values of winter balance are overlain on the maps. }
 
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \renewcommand{\tabularxcolumn}[1]{m{#1}}%
@@ -35,6 +40,9 @@
   
 \begin{document}
 
+\title[Estimating winter balance and its uncertainty]{}
+\author[Pulwicki and others, 2018]{}
+  
 \section*{Supplementary material}
 
 \subsection*{Topographic parameters}
@@ -170,26 +178,66 @@ Glacier 13 & 280 & 200 & 0.28
 	\label{fig:DEMcellSTD}
 \end{figure*}
 
-%% RANGE AND NUGGET VALUES
-\begin{table}[h]
-\centering
-\caption{Range and nugget values for simple kriging interpolation}
-\label{tab:range&nugget}
-\begin{tabular}{ccc}
-\midrule
- & \textbf{\begin{tabular}[c]{@{}c@{}}Range \\ (m)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Nugget \\ ($\times10^3$m w.e.)\end{tabular}} \\ \midrule
-\textbf{Glacier 4} & 90 & 10.5 \\
-\textbf{Glacier 2} & 404 & 3.6 \\
-\textbf{Glacier 13} & 444 & 4.8
-\end{tabular}
-\end{table}
 
-\clearpage
+%% REGRESSION KRIGING
+
+\section{Regression kriging}
+\label{sec:regressionkriging}
+
+\subsection{Background}
+
+Regression kriging estimates values between measurement locations by combining a regression estimate with a kriged estimate of the regression residuals \citep{Hengl2007}. First, the regression estimate is determined using auxiliary variables (e.g. topographic parameters). Then, simple kriging is used to interpolate regression residuals, which have an assumed mean of zero. The two surface estimates are then added. The final estimate can be written as 
+\begin{align}
+\hat{z}(x_0) &= \hat{m}(x_0) + \hat{e}(x_0)\\
+& = \sum^p_{k=0}\hat{\beta}_k \cdot	q_k(x_0)+ \sum_{i=1}^{n} \lambda_i \cdot e(x_i),
+\end{align}
+where $\hat{m}(x_0)$ is the regression estimate and $\hat{e}(x_0)$ is the interpolated residual, $\hat{\beta}_k$ are the estimated regression coefficients, $q_k(x_0)$ are the regressors, $p$ is the number of regressors, $\lambda_i$ are the kriging weights for the residuals and $e(x_i)$ is the residual at $x_i$. 
+
+Regression kriging can be thought of as an intermediate between pure kriging (no auxiliary variables) and pure regression (small residuals) and can be more strongly skewed to either end-member based on the strength of the regression correlation \citep{Hengl2007}. Regression kriging is mathematically equivalent to universal kriging, in which auxiliary variables are used directly to determine the kriging weights \citep{Hengl2007}. However, separating the trend analysis and kriging steps has the advantage of being able to test interpolation methods that go beyond a basic linear trend. Kriging combined with regression has been found to produce better estimates of spatial fields when compared to simple kriging and co-kriging \citep[e.g.][]{Knotters1995}.
+
+Regression kriging is mathematically equivalent to universal kriging, for which the results are presented in the main paper. However, the trend in the universal kriging estimate is based only on the spatial coordinates of the data. Here, we use regression kriging to incorporate the trend estimated with our LR methodology, which incorporates topographic parameters. 
+
+\subsection{Methods}
+
+Distributed $b_\mathrm{w}$ values are first estimated with a LR of gridcell-averaged $b_\mathrm{w}$ on topographic parameters, as described in the manuscript. Second, the residuals at each measurement location are calculated and the distributed residuals are found using OK, as described above. The LR and OK-estimated residuals are then added together to obtain the final distributed $b_\mathrm{w}$. 
+
+\subsection{Results}
+
+The range of residual values is highest on Glacier 4 and lowest on Glacier 13 (Figure \ref{fig:residualsKRIGING}). Extreme values are located in the accumulation area of Glacier 4 with both strongly negative and strongly positive residuals located within a kilometre of each other. The low sampling density in the accumulation area biases the interpolation of residuals to fit the over- and under-estimated values of WB at the two uppermost sampling locations. Residuals show less variation on Glacier 2, although relatively large residuals of approximately $\pm 0.4$ \,m\,w.e. are present in the upper ablation area along the ice margins. Glacier 13 has the smallest range of residuals. The glacier-wide value of distributed residuals is positive for Glacier 4, indicating that the distributed residuals will increase the overall estimate of WB. Conversely, the glacier-wide residual for Glacier 2 is negative and will decrease the estimated WB. 
+
+Spatial patterns in estimated WB found using regression kriging are similar to those found with both simple kriging and regression (Figure \ref{fig:Regression-Kriging}) for Glaciers 2 and 13. The regression kriging estimate is closer to the linear regression for Glaciers 2 and 13 due to the relatively high explanatory power of the regressions for these glaciers. The distributed WB on Glacier 4 found using regression kriging is somewhat uniform in the central region of the glacier, but the accumulation area has considerably larger estimates of WB compared to simple kriging and regression. The spatial patterns of distributed WB on Glacier 4 more strongly resemble those of the distributed residuals (Figure \ref{fig:residualsKRIGING}). This supports the idea that WB estimates are more strongly affected by the kriged residuals because the regression had low explanatory power. Regression kriging applied to Glacier 4 is therefore closer to simple kriging. The marked alteration of the regression estimate by the kriged residuals arises from the large and opposing residual values at the upper-most measurement locations. Higher WB values in the accumulation area result in a much higher estimate of glacier-wide WB. The large effect of two measurement locations on the glacier-wide WB highlights the over representation of individual data points in under-sampled regions.
+
+Both simple kriging and regression kriging produce a gradient in glacier-wide WB across the mountain range (Figure \ref{fig:Regression-Kriging}). Glacier 4 has the highest glacier-wide WB and Glacier 13 has the lowest glacier-wide WB. However, the WB gradient is steeper for simple kriging estimates when compared with regression kriging estimates. Glacier 4 has a similar glacier-wide WB between the two methods but glacier-wide WB on Glaciers 2 and 13 are much lower than on Glacier 4.  
+
+Regression kriging produces the highest overall set of R$^2$ values (Figure \ref{fig:R2regressionkrig}). The correlation coefficient for Glacier 2 is especially high, with more than 80\% of the observed variance explained by the regression kriging model. Glacier 4 has the lowest correlation coefficient but this value is considerably higher than that arising from topographic regression or simple kriging alone. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.7\textwidth]{residualsKriged.png}\\
+	\caption[Distributed BMA residuals estimated by regression kriging]{Distributed BMA residuals estimated by regression kriging. \topomap Dashed line indicates approximate ELA.}
+	\label{fig:residualsKRIGING}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.7\textwidth]{RegressionKriging.png}\\
+	\caption[Winter balance estimated by adding kriged regression residuals to winter balance estimated using topographic regression with BMA]{Winter balance estimated by adding kriged regression residuals to winter balance estimated using topographic regression with BMA. \swedots}
+	\label{fig:Regression-Kriging}
+\end{figure}
+
+\begin{figure}
+	\makebox[\textwidth][c]{\includegraphics[width=0.8\textwidth]{krigRKfit.png}}%
+	\caption[Comparison of estimated (regression kriging) and observed winter balance (WB) for study glaciers]{Comparison of estimated (regression kriging) and observed winter balance (WB) for study glaciers. The WB values are calculated using inverse-distance weighted snow-pit densities (S4).}
+	\label{fig:R2regressionkrig}
+\end{figure}
+
+
+
 
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
-%
+\clearpage
 %\bibliography{/home/glaciology1/Documents/MastersDocuments/MastersLit}
 \bibliography{/Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit}
 \bibliographystyle{igs}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  8 JAN 2018 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  11 JAN 2018 07:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,19 +326,19 @@ l.14 \newcommand{\captionsize}{}
 ) (./SupplementaryMaterial.aux)
 \openout1 = `SupplementaryMaterial.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 41.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -377,34 +377,34 @@ Found the 'amsbsy' package on the system, using it.
 \makeMPintoPDFobject=\count118
 \everyMPtoPDFconversion=\toks32
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 44.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 52.
  (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 52.
 
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 44.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 52.
 
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.5> on input line 44.
+(Font)              <9.5> on input line 52.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 44.
+(Font)              <7> on input line 52.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 44.
-LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+(Font)              <5> on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -413,149 +413,170 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: G13curvatureSmoothing.jpeg Graphic file (type jpg)
 
 <use G13curvatureSmoothing.jpeg>
-Package pdftex.def Info: G13curvatureSmoothing.jpeg used on input line 56.
+Package pdftex.def Info: G13curvatureSmoothing.jpeg used on input line 64.
 (pdftex.def)             Requested size: 202.58052pt x 117.1149pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.5> on input line 57.
+(Font)              <8.5> on input line 65.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 73.
+(Font)              <8> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 73.
+(Font)              <6> on input line 81.
 
 <TopoParamsSampled1.pdf, id=2, 506.89375pt x 426.59375pt>
 File: TopoParamsSampled1.pdf Graphic file (type pdf)
 
 <use TopoParamsSampled1.pdf>
-Package pdftex.def Info: TopoParamsSampled1.pdf used on input line 85.
+Package pdftex.def Info: TopoParamsSampled1.pdf used on input line 93.
 (pdftex.def)             Requested size: 455.81004pt x 383.61186pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 93.
+               Default added (so using `tbp') on input line 101.
 
 <TopoParamsSampled2.pdf, id=3, 506.89375pt x 569.12625pt>
 File: TopoParamsSampled2.pdf Graphic file (type pdf)
 
 <use TopoParamsSampled2.pdf>
-Package pdftex.def Info: TopoParamsSampled2.pdf used on input line 95.
+Package pdftex.def Info: TopoParamsSampled2.pdf used on input line 103.
 (pdftex.def)             Requested size: 455.81004pt x 511.78337pt.
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
-
-[1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
+ [2 <./G13curvatureSmoothing.jpeg> <./TopoParamsSampled1.pdf>]
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
-[2 <./G13curvatureSmoothing.jpeg> <./TopoParamsSampled1.pdf>]
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
-
-
-[3 <./TopoParamsSampled2.pdf>]
+ [3 <./TopoParamsSampled2.pdf>]
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmtt.fd)
-Underfull \hbox (badness 4120) in paragraph at lines 119--119
+Underfull \hbox (badness 4120) in paragraph at lines 127--127
 \OT1/lmr/m/n/8 East-ing and Nor-thing of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 []|\OT1/lmtt/m/n/8 r.slope.aspect \OT1/lmr/m/n/8 mod-ule in
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 119--119
+Underfull \hbox (badness 1946) in paragraph at lines 127--127
 []|\OT1/lmr/m/n/8 Mit^^Sa^^Tsov^^Sa and Hofierka (1993);
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 []|\OT1/lmtt/m/n/8 r.slope.aspect \OT1/lmr/m/n/8 mod-ule in
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 119--119
+Underfull \hbox (badness 1946) in paragraph at lines 127--127
 []|\OT1/lmr/m/n/8 Mit^^Sa^^Tsov^^Sa and Hofierka (1993);
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 []|\OT1/lmtt/m/n/8 r.slope.aspect \OT1/lmr/m/n/8 mod-ule in
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 119--119
+Underfull \hbox (badness 1946) in paragraph at lines 127--127
 []|\OT1/lmr/m/n/8 Mit^^Sa^^Tsov^^Sa and Hofierka (1993);
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 119--119
+Underfull \hbox (badness 2057) in paragraph at lines 127--127
 []|\OT1/lmr/bx/n/8 Wind ex-po-sure/shelter pa-
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 119--119
+Underfull \hbox (badness 1281) in paragraph at lines 127--127
 \OT1/lmr/m/n/8 Win-stral that fol-lows the pro-
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 119--119
+Underfull \hbox (badness 2600) in paragraph at lines 127--127
 \OT1/lmr/m/n/8 that has the greatest upward
  []
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
-
-[4] <GridcellWB_boxplot.png, id=1123, 562.1pt x 421.575pt>
+ [4]
+<GridcellWB_boxplot.png, id=1123, 562.1pt x 421.575pt>
 File: GridcellWB_boxplot.png Graphic file (type png)
 
 <use GridcellWB_boxplot.png>
-Package pdftex.def Info: GridcellWB_boxplot.png used on input line 160.
+Package pdftex.def Info: GridcellWB_boxplot.png used on input line 168.
 (pdftex.def)             Requested size: 253.22952pt x 189.91927pt.
  <DEMcellSTD.png, id=1124, 939.51pt x 433.62pt>
 File: DEMcellSTD.png Graphic file (type png)
 
 <use DEMcellSTD.png>
-Package pdftex.def Info: DEMcellSTD.png used on input line 168.
+Package pdftex.def Info: DEMcellSTD.png used on input line 176.
 (pdftex.def)             Requested size: 405.16878pt x 187.00214pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
-
-[5
+ [5
 
 
 
  <./GridcellWB_boxplot.png (PNG copy)>]
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
+ [6 <./DEMcellSTD.png (PNG copy)>] <residualsKriged.png, id=1132, 939.51pt x 43
+3.62pt>
+File: residualsKriged.png Graphic file (type png)
 
-[6 <./DEMcellSTD.png (PNG copy)>] (./SupplementaryMaterial.bbl)
-Overfull \vbox (5.1555pt too high) has occurred while \output is active []
+<use residualsKriged.png>
+Package pdftex.def Info: residualsKriged.png used on input line 216.
+(pdftex.def)             Requested size: 354.51978pt x 163.61942pt.
 
+<RegressionKriging.png, id=1133, 939.51pt x 433.62pt>
+File: RegressionKriging.png Graphic file (type png)
 
-[7
+<use RegressionKriging.png>
+Package pdftex.def Info: RegressionKriging.png used on input line 223.
+(pdftex.def)             Requested size: 354.51978pt x 163.61942pt.
+ <krigRKfit.png, id=1134, 867.24pt x 289.08pt>
+File: krigRKfit.png Graphic file (type png)
 
-] (./SupplementaryMaterial.aux)
+<use krigRKfit.png>
+Package pdftex.def Info: krigRKfit.png used on input line 229.
+(pdftex.def)             Requested size: 405.16878pt x 135.05598pt.
+
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [7 <./residualsKriged.png (PNG copy)> <./RegressionKriging.png (PNG copy)>]
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [8 <./krigRKfit.png (PNG copy)>] (./SupplementaryMaterial.bbl)
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [9
+
+]
+(./SupplementaryMaterial.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3660 strings out of 494501
- 49637 string characters out of 6167030
- 120888 words of memory out of 5000000
- 6827 multiletter control sequences out of 15000+600000
+ 3687 strings out of 494501
+ 50119 string characters out of 6167030
+ 121756 words of memory out of 5000000
+ 6851 multiletter control sequences out of 15000+600000
  49242 words of font info for 55 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,18n,26p,1116b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,18n,26p,1431b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/l
 ocal/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/te
 xlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive
@@ -581,10 +602,10 @@ type1/public/lm/lmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1
 c/lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/l
 msy8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmsy9.p
 fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on SupplementaryMaterial.pdf (7 pages, 1301662 bytes).
+Output written on SupplementaryMaterial.pdf (9 pages, 1477495 bytes).
 PDF statistics:
- 1213 PDF objects out of 1440 (max. 8388607)
- 1159 compressed objects within 12 object streams
+ 1222 PDF objects out of 1440 (max. 8388607)
+ 1163 compressed objects within 12 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
