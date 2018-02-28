@@ -430,96 +430,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--132
 
 
 Underfull \hbox (badness 2150) in paragraph at lines 129--132
-\OT1/lmr/m/n/9.5 oth-ers, 2004; Egli and oth-ers, 2011; Gr^^?unewald and
- []
+\OT1/lmr/m/n/9.5 oth-ers, 2004; Egli fo:    Try loading font information for U+msb on input line 126.
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 126.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <11> on input line 126.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.69997> on input line 126.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 126.
+
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 129--132
-\OT1/lmr/m/n/9.5 in-ten-sive and re-quire de-tailed me-te-o-ro-log-i-cal data t
-o
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2150) in paragraph at lines 133--134
-\OT1/lmr/m/n/9.5 data generally prohibits their widespread application.
- []
-
-
-Underfull \hbox (badness 1571) in paragraph at lines 135--142
-\OT1/lmr/m/n/9.5 en-sur-ing that all ter-rain types are sam-pled. A wide
- []
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 135--142
-\OT1/lmr/m/n/9.5 in-clud-ing lin-ear (e.g. L^^Sopez-Moreno and oth-ers, 2010)
- []
-
-
-Underfull \hbox (badness 1264) in paragraph at lines 135--142
-\OT1/lmr/m/n/9.5 that in-clude nu-mer-ous ter-rain pa-ram-e-ters, as well as
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 135--142
-\OT1/lmr/m/n/9.5 geospa-tial in-ter-po-la-tion []|   []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--142
-[][]|   []
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 135--142
-\OT1/lmr/m/n/9.5 adds kriged resid-u-als to a field ob-tained with lin-ear
- []
-
-
-Underfull \hbox (badness 1038) in paragraph at lines 135--142
-\OT1/lmr/m/n/9.5 re-gres-sion (e.g. Balk and El-der, 2000). Phys-i-cal snow
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 1681) in paragraph at lines 143--144
-\OT1/lmr/m/n/9.5 magnitude and assess their combined contribution to
+Overfull \hbox (18.88025pt too wide) in paragraph at lines 137--140
+[]\OT1/lmr/m/n/11 Winter bal-ance (WB) is no-to-ri-ously dif-fi-cult to es-ti-m
+ate []|   []
  []
 
-<Sampling.pdf, id=15, 669.50125pt x 413.545pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
+
+
+[2]
+Underfull \hbox (badness 2689) in paragraph at lines 143--150
+[][]|   []   []\OT1/lmr/m/n/11 including various forms of kriging. Different
+ []
+
+<Sampling.pdf, id=19, 669.50125pt x 413.545pt>
 File: Sampling.pdf Graphic file (type pdf)
  <use Sampling.pdf>
-Package pdftex.def Info: Sampling.pdf used on input line 151.
+Package pdftex.def Info: Sampling.pdf used on input line 159.
 (pdftex.def)             Requested size: 455.81004pt x 281.56024pt.
 
-Underfull \hbox (badness 1342) in paragraph at lines 158--159
-\OT1/lmr/m/n/9.5 The St. Elias Moun-tains (Fig. 1[]a) rise sharply from
- []
+Underfull \vbox (badness 3977) has occurred while \output is active []
 
+
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
+
+
+[3]
+
+LaTeX Warning: Reference `tab:GlacierDetails' on page 4 undefined on input line
+ 168.
+
+
+Overfull \vbox (6.54431pt too high) has occurred while \output is active []
+
+
+[4 <./Sampling.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 163.
+               Default added (so using `tbp') on input line 171.
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.5> on input line 165.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 170.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 170.
-./Review_diff.tex:173: Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.173 ...nFL \multicolumn{2}{c}{\textbf{Location}}
+./Review_diff.tex:186: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.186 }
+       \end{table*}
+? 
+./Review_diff.tex:186: Emergency stop.
+<inserted text> 
+                \endgroup 
+l.186 }
+       \end{table*}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 3993 strings out of 494501
+ 54216 string characters out of 6167030
+ 119039 words of memory out of 5000000
+ 7167 multiletter control sequences out of 15000+600000
+ 69572 words of font info for 62 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 42i,6n,24p,1350b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+./Review_diff.tex:186:  ==> Fatal error occurred, no output PDF file produced!
+tion}}
                                                    \DIFaddendFL & \multicolu...
 
 ? 
