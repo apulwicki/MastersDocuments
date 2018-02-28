@@ -5,36 +5,36 @@ The style file: igs.bst
 Database file #1: /Users/Alexandra/Documents/SFU/MastersDocuments/MastersLit.bib
 You've used 90 entries,
             2869 wiz_defined-function locations,
-            1267 strings with 24004 characters,
-and the built_in function-call counts, 101359 in all, are:
-= -- 10969
+            1265 strings with 24069 characters,
+and the built_in function-call counts, 101397 in all, are:
+= -- 10975
 > -- 2028
 < -- 85
 + -- 706
 - -- 617
-* -- 7790
-:= -- 11206
+* -- 7792
+:= -- 11208
 add.period$ -- 90
 call.type$ -- 90
 change.case$ -- 763
 chr.to.int$ -- 91
 cite$ -- 90
-duplicate$ -- 10370
-empty$ -- 7897
+duplicate$ -- 10378
+empty$ -- 7899
 format.name$ -- 997
-if$ -- 21140
+if$ -- 21148
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 1003
 newline$ -- 277
 num.names$ -- 360
-pop$ -- 4833
+pop$ -- 4837
 preamble$ -- 1
 purify$ -- 668
 quote$ -- 0
 skip$ -- 2235
 stack$ -- 0
-substring$ -- 11660
+substring$ -- 11666
 swap$ -- 2516
 text.length$ -- 1
 text.prefix$ -- 0

@@ -19,7 +19,7 @@
 \usepackage[pdftex]{graphicx}
  \usepackage{epstopdf}
 \usepackage{caption}
-
+\usepackage{hyperref}
 
 \newcommand{\transectAbb}{Data for each glacier are divided into lower hourglass (LH), lower circle (LC), lower midline (LM), upper hourglass (UH), upper circle (UC), upper midline (UM) and upper transect (UT).}
 \newcommand{\params}{Topographic parameters are: elevation ($z$), distance from centreline ($d_C$), aspect ($\alpha$), slope ($m$), northness ($N$), curvature ($\kappa$) and wind redistribution ($Sx$). }
@@ -45,9 +45,15 @@
   
 \section*{Supplementary material}
 
-\subsection*{Topographic parameters}
+
+%%ESTIMATING MELT
+\subsection*{Estimating snow melt prior to field data collection}
+
+Positive temperatures and clear skies occurred between 11--16 May 2016, which we suspect resulted in melt occurring on Glacier 13. The snow in the lower part of the ablation area of Glacier 13 was isothermal and showed clear signs of melt and metamorphosis. To estimate the total amount of melt we use a degree-day factor for melting snow \citep{Braithwaite2008} and temperatures from a high-elevation site that have been scaled for the minimum elevation of Glacier 13 (2054\,m). The high-elevation weather station is located close to the head of the Kaskawulsh Glacier (UTM Zone 7 565512\,E 6729971\,N), approximately 50\,km from Glacier 13, at an elevation of 3050\,m. Data for this weather station is publicly available at \url{https://datagarrison.com/users/300034012631040/300234060337540/temp/DataGarrison_Sat_Station_015.txt}. A lapse rate of --6.5\,K\,km$^{-1}$ elevation is applied to the temperature recorded at the high-elevation weather station to obtain approximate air temperature at the toe of Glacier 13. We find that a total of six days throughout the accumulation season experienced positive temperature and five of those days occurred between May 11--15. To obtain hourly melt the hourly temperature is converted to equivalent days and then multiplied by a degree-day factor for melting snow equal to 4\,mm\,day\,$^{-1}$\,K$^{-1}$ \citep{Braithwaite2008}. The sum of all melt is found to be 0.002\,m\,w.e. This amount of melt is estimated for the toe of Glacier 13 so melt at higher elevations is likely smaller.  Since the estimated melt is small compared to observed $b_\mathrm{w}$ and estimated $B_\mathrm{w}$ on Glacier 13 (Table 4), no corrections were made. 
+
 
 %% TOPOGRAPHIC PARAMETERS EXPLAINED
+\subsection*{Topographic parameters}
 
 Topographic parameters are easy-to-calculate proxies for physical processes, such as orographic precipitation, solar radiation effects, wind redistribution and preferential deposition. We derive all parameters (Table \ref{tab:TopoParams}) for our study from a SPOT-5 DEM ($40\times40$ m) \citep{Korona2009}. Two DEMs are stitched together to cover the Donjek Range. An iterative 3D-coregistration algorithm \citep{Berthier2007} is used to correct the horizontal ($\sim$2\,m E, $\sim$4\,m N) and vertical (5.4\,m) discrepancy between the two DEMs before stitching. See \cite{Pulwicki2017} for details regarding DEM stitching.
 
