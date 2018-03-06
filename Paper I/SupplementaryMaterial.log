@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  28 FEB 2018 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  5 MAR 2018 17:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -546,37 +546,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: G13curvatureSmoothing.jpeg Graphic file (type jpg)
 
 <use G13curvatureSmoothing.jpeg>
-Package pdftex.def Info: G13curvatureSmoothing.jpeg used on input line 70.
+Package pdftex.def Info: G13curvatureSmoothing.jpeg used on input line 68.
 (pdftex.def)             Requested size: 202.58052pt x 117.1149pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.5> on input line 71.
+(Font)              <8.5> on input line 69.
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
  [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
+ <./G13curvatureSmoothing.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 87.
+(Font)              <8> on input line 85.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 87.
+(Font)              <6> on input line 85.
 
-<TopoParamsSampled1.pdf, id=72, 506.89375pt x 426.59375pt>
+<TopoParamsSampled1.pdf, id=70, 506.89375pt x 426.59375pt>
 File: TopoParamsSampled1.pdf Graphic file (type pdf)
 
 <use TopoParamsSampled1.pdf>
-Package pdftex.def Info: TopoParamsSampled1.pdf used on input line 99.
+Package pdftex.def Info: TopoParamsSampled1.pdf used on input line 97.
 (pdftex.def)             Requested size: 455.81004pt x 383.61186pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 107.
+               Default added (so using `tbp') on input line 105.
 
-<TopoParamsSampled2.pdf, id=73, 506.89375pt x 569.12625pt>
+<TopoParamsSampled2.pdf, id=71, 506.89375pt x 569.12625pt>
 File: TopoParamsSampled2.pdf Graphic file (type pdf)
 
 <use TopoParamsSampled2.pdf>
-Package pdftex.def Info: TopoParamsSampled2.pdf used on input line 109.
+Package pdftex.def Info: TopoParamsSampled2.pdf used on input line 107.
 (pdftex.def)             Requested size: 455.81004pt x 511.78337pt.
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
@@ -584,7 +584,7 @@ Overfull \vbox (5.511pt too high) has occurred while \output is active []
  [2]
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
- [3 <./G13curvatureSmoothing.jpeg> <./TopoParamsSampled1.pdf>]
+ [3 <./TopoParamsSampled1.pdf>]
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
  [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
@@ -592,54 +592,54 @@ Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.116 \begin{landscape}
+l.114 \begin{landscape}
                         <./TopoParamsSampled2.pdf>]
-Underfull \hbox (badness 4120) in paragraph at lines 133--133
+Underfull \hbox (badness 4120) in paragraph at lines 131--131
 \OT1/lmr/m/n/8 East-ing and Nor-thing of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 []|\OT1/lmtt/m/n/8 r.slope.aspect \OT1/lmr/m/n/8 mod-ule in
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 133--133
+Underfull \hbox (badness 1946) in paragraph at lines 131--131
 []|[]\OT1/lmr/m/n/8 Mit^^Sa^^Tsov^^Sa and Hofierka[] ([]1993[]);
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 []|\OT1/lmtt/m/n/8 r.slope.aspect \OT1/lmr/m/n/8 mod-ule in
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 133--133
+Underfull \hbox (badness 1946) in paragraph at lines 131--131
 []|[]\OT1/lmr/m/n/8 Mit^^Sa^^Tsov^^Sa and Hofierka[] ([]1993[]);
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 []|\OT1/lmtt/m/n/8 r.slope.aspect \OT1/lmr/m/n/8 mod-ule in
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 133--133
+Underfull \hbox (badness 1946) in paragraph at lines 131--131
 []|[]\OT1/lmr/m/n/8 Mit^^Sa^^Tsov^^Sa and Hofierka[] ([]1993[]);
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 133--133
+Underfull \hbox (badness 2057) in paragraph at lines 131--131
 []|\OT1/lmr/bx/n/8 Wind ex-po-sure/shelter pa-
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 133--133
+Underfull \hbox (badness 1281) in paragraph at lines 131--131
 \OT1/lmr/m/n/8 Win-stral that fol-lows the pro-
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 133--133
+Underfull \hbox (badness 2600) in paragraph at lines 131--131
 \OT1/lmr/m/n/8 that has the greatest upward
  []
 
@@ -647,17 +647,17 @@ Underfull \hbox (badness 2600) in paragraph at lines 133--133
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
  [5]
-<GridcellWB_boxplot.png, id=1267, 562.1pt x 421.575pt>
+<GridcellWB_boxplot.png, id=1266, 562.1pt x 421.575pt>
 File: GridcellWB_boxplot.png Graphic file (type png)
 
 <use GridcellWB_boxplot.png>
-Package pdftex.def Info: GridcellWB_boxplot.png used on input line 174.
+Package pdftex.def Info: GridcellWB_boxplot.png used on input line 172.
 (pdftex.def)             Requested size: 253.22952pt x 189.91927pt.
- <DEMcellSTD.png, id=1268, 939.51pt x 433.62pt>
+ <DEMcellSTD.png, id=1267, 939.51pt x 433.62pt>
 File: DEMcellSTD.png Graphic file (type png)
 
 <use DEMcellSTD.png>
-Package pdftex.def Info: DEMcellSTD.png used on input line 182.
+Package pdftex.def Info: DEMcellSTD.png used on input line 180.
 (pdftex.def)             Requested size: 405.16878pt x 187.00214pt.
 
 
@@ -671,27 +671,26 @@ Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
 
  <./GridcellWB_boxplot.png (PNG copy)>]
-Overfull \vbox (5.511pt too high) has occurred while \output is active []
-
- [7 <./DEMcellSTD.png (PNG copy)>] <residualsKriged.png, id=1303, 939.51pt x 43
-3.62pt>
+<residualsKriged.png, id=1293, 939.51pt x 433.62pt>
 File: residualsKriged.png Graphic file (type png)
-
-<use residualsKriged.png>
-Package pdftex.def Info: residualsKriged.png used on input line 222.
+ <use residualsKriged.png>
+Package pdftex.def Info: residualsKriged.png used on input line 218.
 (pdftex.def)             Requested size: 354.51978pt x 163.61942pt.
 
-<RegressionKriging.png, id=1304, 939.51pt x 433.62pt>
+Overfull \vbox (5.511pt too high) has occurred while \output is active []
+
+ [7 <./DEMcellSTD.png (PNG copy)>]
+<RegressionKriging.png, id=1303, 939.51pt x 433.62pt>
 File: RegressionKriging.png Graphic file (type png)
 
 <use RegressionKriging.png>
-Package pdftex.def Info: RegressionKriging.png used on input line 229.
+Package pdftex.def Info: RegressionKriging.png used on input line 225.
 (pdftex.def)             Requested size: 354.51978pt x 163.61942pt.
- <krigRKfit.png, id=1305, 867.24pt x 289.08pt>
+ <krigRKfit.png, id=1304, 867.24pt x 289.08pt>
 File: krigRKfit.png Graphic file (type png)
 
 <use krigRKfit.png>
-Package pdftex.def Info: krigRKfit.png used on input line 235.
+Package pdftex.def Info: krigRKfit.png used on input line 231.
 (pdftex.def)             Requested size: 405.16878pt x 135.05598pt.
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
@@ -700,18 +699,18 @@ Overfull \vbox (5.511pt too high) has occurred while \output is active []
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
  [9 <./krigRKfit.png (PNG copy)>] (./SupplementaryMaterial.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
 
 Overfull \vbox (5.511pt too high) has occurred while \output is active []
 
  [10
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
 
 (./SupplementaryMaterial.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `SupplementaryMaterial.out' has not changed.
 (rerunfilecheck)             Checksum: 5640F3E29E4FB7CE0635FE4B0F6F2F12;175.
 
@@ -719,24 +718,24 @@ Package rerunfilecheck Info: File `SupplementaryMaterial.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
  7276 strings out of 494501
  105319 string characters out of 6167030
- 203963 words of memory out of 5000000
+ 204005 words of memory out of 5000000
  10349 multiletter control sequences out of 15000+600000
  49553 words of font info for 56 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,18n,26p,1813b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,18n,26p,1840b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{section*.7} has been referenced but does not exis
 t, replaced by a fixed one
 
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/loc
 al/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texl
 ive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2
-015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2015ba
-sic/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2015basic/t
+015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2015ba
+sic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2015basic/t
 exmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2015basic/texmf-
 dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2015basic/texmf-dist/f
 onts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/t
@@ -758,10 +757,10 @@ lm/lmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lms
 y8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmsy9.pfb
 ></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on SupplementaryMaterial.pdf (10 pages, 1509468 bytes).
+Output written on SupplementaryMaterial.pdf (10 pages, 1508960 bytes).
 PDF statistics:
- 1414 PDF objects out of 1440 (max. 8388607)
- 1303 compressed objects within 14 object streams
+ 1413 PDF objects out of 1440 (max. 8388607)
+ 1302 compressed objects within 14 object streams
  48 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

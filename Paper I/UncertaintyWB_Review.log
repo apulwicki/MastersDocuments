@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  5 MAR 2018 09:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.3)  5 MAR 2018 22:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -459,16 +459,10 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
@@ -486,7 +480,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 202
  (/usr/local/texlive/2015basic/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \vbox (badness 3690) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
@@ -602,9 +596,6 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [20]
-Underfull \vbox (badness 3199) has occurred while \output is active []
-
-
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
@@ -613,9 +604,6 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
@@ -624,9 +612,6 @@ File: AccumGrad.pdf Graphic file (type pdf)
  <use AccumGrad.pdf>
 Package pdftex.def Info: AccumGrad.pdf used on input line 381.
 (pdftex.def)             Requested size: 177.26375pt x 165.22493pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
@@ -639,16 +624,10 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [25]
-Underfull \vbox (badness 3977) has occurred while \output is active []
-
-
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [26] (./UncertaintyWB_Review.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
@@ -660,20 +639,17 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [28]
-Underfull \hbox (badness 1681) in paragraph at lines 141--145
+Underfull \hbox (badness 1681) in paragraph at lines 140--144
 []\OT1/lmr/m/n/10 Elder K, Rosen-thal W and Davis RE (1998) Es-ti-mat-ing the s
 pa-tial dis-tri-bu-tion of snow wa-ter equiv-
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 141--145
+Underfull \hbox (badness 2042) in paragraph at lines 140--144
 \OT1/lmr/m/n/10 a-lence in a mon-tane wa-ter-shed. \OT1/lmr/m/it/10 Hy-dro-log-
 i-cal Pro-cesses\OT1/lmr/m/n/10 , \OT1/lmr/bx/n/10 12\OT1/lmr/m/n/10 (1011), 17
 93--1808 (doi: 10.1002/(SICI)1099-
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
@@ -684,7 +660,7 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [30]
-Underfull \hbox (badness 1546) in paragraph at lines 261--264
+Underfull \hbox (badness 1546) in paragraph at lines 260--263
 []\OT1/lmr/m/n/10 Liston GE and Elder K (2006) A distributed snow-evolution mod
 eling system (SnowModel). \OT1/lmr/m/it/10 Journal of
  []
@@ -697,21 +673,17 @@ Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
 [31]
-Underfull \vbox (badness 1946) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[32]
+[32])
 Overfull \vbox (6.54431pt too high) has occurred while \output is active []
 
 
-[33])
-Overfull \vbox (6.54431pt too high) has occurred while \output is active []
-
-
-[34] (./UncertaintyWB_Review.aux)
+[33] (./UncertaintyWB_Review.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -719,12 +691,12 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  3973 strings out of 494501
- 54455 string characters out of 6167030
- 118975 words of memory out of 5000000
+ 54452 string characters out of 6167030
+ 118983 words of memory out of 5000000
  7136 multiletter control sequences out of 15000+600000
  89427 words of font info for 86 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,17n,27p,2167b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,17n,27p,2165b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr
 /local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/loca
 l/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/tex
@@ -746,10 +718,10 @@ basic/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015basic/
 texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2015basic/texmf-
 dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2015basic/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on UncertaintyWB_Review.pdf (34 pages, 3295059 bytes).
+Output written on UncertaintyWB_Review.pdf (33 pages, 3295172 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 357 compressed objects within 4 object streams
+ 506 PDF objects out of 1000 (max. 8388607)
+ 355 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
