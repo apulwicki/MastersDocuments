@@ -1,4 +1,4 @@
-\begin{thebibliography}{90}
+\begin{thebibliography}{92}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
@@ -223,6 +223,12 @@ Hock R and Jensen H (1999) {Application of kriging interpolation for glacier
 Kaser G, Fountain A, Jansson P and others (2003) \emph{{A manual for monitoring
   the mass balance of mountain glaciers}}. ICSI/UNESCO
 
+\bibitem[\protect\citename{Kaufman and others, }2011]{Kaufman2011}
+Kaufman CG, Bingham D, Habib S, Heitmann K and Frieman JA (2011) Efficient
+  emulators of computer experiments using compactly supported correlation
+  functions, with an application to cosmology. \emph{The Annals of Applied
+  Statistics}, 2470--2492 (\doi {10.1214/11-AOAS489})
+
 \bibitem[\protect\citename{Kienzle, }2004]{Kienzle2004}
 Kienzle S (2004) {The Effect of {DEM} Raster Resolution on First Order, Second
   Order and Compound Terrain Derivatives}. \emph{Transactions in GIS},
@@ -395,6 +401,10 @@ Sold L, Huss M, Hoelzle M, Andereggen H, Joerg PC and Zemp M (2013)
   {Methodological approaches to infer end-of-winter snow distribution on alpine
   glaciers}. \emph{Journal of Glaciology}, \textbf{59}(218), 1047--1059 (\doi
   {10.3189/2013JoG13J015})
+
+\bibitem[\protect\citename{Stein, }1999]{Stein1999}
+Stein ML (1999) \emph{Interpolation of spatial data: some theory for kriging}.
+  Springer Science \& Business Media
 
 \bibitem[\protect\citename{Tangborn and others, }1975]{Tangborn1975}
 Tangborn WV, Krimmel RM and Meier MF (1975) {A comparison of glacier mass
